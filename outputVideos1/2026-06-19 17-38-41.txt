@@ -1,1 +1,0 @@
-La siguiente es una guía de cómo realizar testeos en tareas que involucren correos electrónicos de la plataforma, particularmente cómo acercarse lo más posible a un testeo.

@@ -1,9 +1,0 @@
-Kike, para el tema del recibo, si buscás la OTC Transaction con este ID, si no me equivoco, tenés dos OTC Transactions. Son de One Money Transfer, que son de menos 7,000 y menos 1,100.
-El Additional Service para la información de banca que estaba faltando, literal, es lo mismo que un Withdrawal. O sea, es la misma. La misma Additional Service, lo mismo de Tail Info.
-Yo ya estoy sacando un Fix. Primero hice una migración para actualizar todos con la data. Y ahora estoy sacando un Fix, que lo que va a hacer es que a partir de ahora las Transfers de venta que vos cierres en el BBO, cuando las cierres y emitan ese evento, vos vas a ir a la OTC Transaction Manual.
-Vas a fijar si tiene un Transfer ID como vimos juntos. Ese Transfer ID va a ser como este que te estoy pasando ahora. Por ejemplo, este es de Soldimac.
-Pero...
-Pero tenés otro de Twitch UI Solution SR. Y ahí vos lo que vas a hacer es que cuando se completa, vas a ir a la OTC Transaction y vas a poder obtener los detalles del banco porque son iguales que lo de Withdrawal en el Additional Service.
-Y ahí la vas a asignar a esa transacción. Por ejemplo, en este caso, esta transacción, cuando corramos la migración o la actualización, debería empezar a tener... No son muchas, ¿eh? No son muchas.
-Pero deberían empezar a tener el recibo correspondiente.
-Y el recibo, la única información que nos estaba faltando era esta de Post Instruction que si te fijás la va a poder tener. Pero esto para el lunes, ¿eh?

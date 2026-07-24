@@ -1,9 +1,0 @@
-Lo que es importante a chequear acá es cómo bajan las
-quantities.
-A medida que yo, pueden hacer el mismo ejemplo creando 3
-LNCs con planes mensuales y después pasarlo anual.
-Y lo que tiene que pasar es que va a poner un price con 3,
-cuando pasan anual con 2, cuando pasan anual con 1 y al final
-elimina de por sí la suscripción y queda solo una suscripción
-anual.
-Eso es lo que tendría que mostrar.

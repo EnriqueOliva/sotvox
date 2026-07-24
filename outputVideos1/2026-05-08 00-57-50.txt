@@ -1,1 +1,0 @@
-Esta es una demostración de cómo trabajar CDT.

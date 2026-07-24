@@ -40,27 +40,38 @@ Managed automatically by the setup script:
 
 ## Quick Start
 
-### First-time setup
+### Install
 
-1. Double-click `setup/setup.vbs`
-2. Approve the admin prompt
-3. Wait for the setup to complete (~5-10 minutes depending on internet speed)
+**Option A — Installer (recommended).** Run **`Sotvox-Setup.exe`**. It installs Sotvox per-user (no admin needed), adds Start Menu and optional Desktop shortcuts, and offers to install the runtime (Python + dependencies) when it finishes. Uninstall anytime from *Add or remove programs* or the Start Menu.
+
+**Option B — Manual setup.** Double-click `setup/setup.vbs`, approve the admin prompt, and wait for setup to complete (~5-10 minutes depending on internet speed).
+
+Either way, the first transcription downloads the AI model (~1.5 GB) and caches it.
 
 ### Daily use
 
-1. Double-click `launch.vbs`
+1. Launch **Sotvox** (Start Menu / Desktop shortcut, or double-click `launch.vbs`)
 2. Drop files onto the window
-3. Click **TRANSCRIBE**
-4. Click **Open output folder** to see results
+3. Click **Transcribe**
+4. Click **Open Output Folder** to see results
+
+### Building the installer
+
+Install [Inno Setup](https://jrsoftware.org/isinfo.php) (`winget install --id JRSoftware.InnoSetup -e`), then run `installer\build.ps1`. It produces **`Sotvox-Setup.exe`** in the project root.
 
 ## Project Structure
 
 ```
 sotvox/
+├── Sotvox-Setup.exe        # Built installer (produced by installer/build.ps1)
 ├── launch.vbs              # App launcher (double-click to run)
+├── installer/              # Installer build sources
+│   ├── sotvox.iss          # Inno Setup script
+│   └── build.ps1           # Compiles Sotvox-Setup.exe into the project root
 ├── setup/
 │   ├── setup.vbs           # Setup launcher (requests admin, runs setup.ps1)
 │   └── setup.ps1           # Automated installer (uv, FFmpeg, Python, dependencies)
+├── assets/                 # App icon (sotvox.ico + PNGs)
 ├── src/
 │   ├── main.py             # Entry point (CUDA path setup, app launch)
 │   ├── ui.py               # GUI (tkinter + tkinterdnd2)

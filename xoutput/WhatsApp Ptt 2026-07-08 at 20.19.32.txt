@@ -1,5 +1,0 @@
-Cuando te transformas de PDF a EPUB, el diseño de las páginas es raro.
-Los textos están en el lado derecho o el lado izquierdo.
-Estos textos no están ajustados.
-Y los personajes turcos están faltando.
-En lugar de personajes turcos, solo personajes ingleses.

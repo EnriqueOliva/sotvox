@@ -1,5 +1,0 @@
-Esta es una demostración de cómo trabajar con las facturas, en este caso OTC Transactions, de lo que es la parte de testing.
-Tenemos dos maneras. La primera es para cuando estamos iterando, cuando todavía no tenemos la PR pronta, digamos, y estamos haciendo ajustes.
-Lo que podemos hacer es crear un script nosotros o incluso ayudarnos con la IA para que nos genere un script que genere varios ejemplos localmente,
-que no genere operaciones en S3 y que genere localmente PDFs de ejemplo, porque esto lo hace muy rápido y es bastante práctico.
-Entonces, esta lógica testea lo que es la parte del armado.
