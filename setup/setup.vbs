@@ -6,7 +6,7 @@ baseDir = fso.GetParentFolderName(WScript.ScriptFullName)
 psScript = baseDir & "\setup.ps1"
 
 If Not fso.FileExists(psScript) Then
-    MsgBox "setup.ps1 not found in:" & vbCrLf & baseDir, vbCritical, "Whisper Transcriber Setup"
+    MsgBox "setup.ps1 not found in:" & vbCrLf & baseDir, vbCritical, "Sotvox Setup"
     WScript.Quit
 End If
 

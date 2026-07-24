@@ -19,5 +19,5 @@ for _d in _nvidia_dirs:
 
 if __name__ == "__main__":
     import ui
-    app = ui.TranscriberApp()
+    app = ui.SotvoxApp()
     app.run()

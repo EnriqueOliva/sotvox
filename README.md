@@ -1,4 +1,4 @@
-# Whisper Transcriber
+# Sotvox
 
 A local audio/video transcription desktop app for Windows. Drag and drop files, get text transcripts. Runs 100% locally — no internet, no cloud, no subscriptions. Supports GPU acceleration via NVIDIA CUDA, and works on CPU-only machines too.
 
@@ -56,7 +56,7 @@ Managed automatically by the setup script:
 ## Project Structure
 
 ```
-whisper-transcriber/
+sotvox/
 ├── launch.vbs              # App launcher (double-click to run)
 ├── setup/
 │   ├── setup.vbs           # Setup launcher (requests admin, runs setup.ps1)

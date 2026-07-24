@@ -21,7 +21,7 @@ function Write-Err($msg) {
 
 Write-Host ""
 Write-Host "  =============================================" -ForegroundColor DarkCyan
-Write-Host "       Whisper Transcriber - Setup" -ForegroundColor White
+Write-Host "       Sotvox - Setup" -ForegroundColor White
 Write-Host "  =============================================" -ForegroundColor DarkCyan
 Write-Host "  Project: $projectRoot" -ForegroundColor DarkGray
 Write-Host ""

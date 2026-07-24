@@ -139,10 +139,10 @@ class _ThumbScrollbar(tk.Canvas):
         self._draw()
 
 
-class TranscriberApp:
+class SotvoxApp:
     def __init__(self):
         self.root = tkdnd.Tk()
-        self.root.title("Whisper Transcriber")
+        self.root.title("Sotvox")
         _s = self.root.winfo_fpixels('1i') / 96.0
         self.root.geometry(f"{int(840 * _s)}x{int(800 * _s)}")
         self.root.minsize(int(700 * _s), int(660 * _s))
@@ -308,7 +308,7 @@ class TranscriberApp:
             self._waves.append(line)
 
         self.header_canvas.create_text(
-            26, 16, text="WHISPER TRANSCRIBER", anchor="w",
+            26, 16, text="SOTVOX", anchor="w",
             fill=P["text"], font=("Bahnschrift SemiBold", 18)
         )
         self.header_canvas.create_text(
