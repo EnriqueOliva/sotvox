@@ -41,29 +41,29 @@ FONT_TITLE = ("MS Sans Serif", 8, "bold")
 FONT_MONO = ("Fixedsys", 9)
 
 
-def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE):
+def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE, t=1):
     if fill:
         canvas.create_rectangle(x0, y0, x1, y1, fill=fill, outline="")
     if raised:
         tl_out, br_out, tl_in, br_in = HILIGHT, DKSHADOW, LIGHT, SHADOW
     else:
         tl_out, br_out, tl_in, br_in = SHADOW, HILIGHT, DKSHADOW, LIGHT
-    canvas.create_line(x0, y0, x1, y0, fill=tl_out)
-    canvas.create_line(x0, y0, x0, y1, fill=tl_out)
-    canvas.create_line(x0, y1, x1, y1, fill=br_out)
-    canvas.create_line(x1, y0, x1, y1, fill=br_out)
-    canvas.create_line(x0 + 1, y0 + 1, x1 - 1, y0 + 1, fill=tl_in)
-    canvas.create_line(x0 + 1, y0 + 1, x0 + 1, y1 - 1, fill=tl_in)
-    canvas.create_line(x0 + 1, y1 - 1, x1 - 1, y1 - 1, fill=br_in)
-    canvas.create_line(x1 - 1, y0 + 1, x1 - 1, y1 - 1, fill=br_in)
+    canvas.create_rectangle(x0, y0, x1, y0 + t, fill=tl_out, outline="")
+    canvas.create_rectangle(x0, y0, x0 + t, y1, fill=tl_out, outline="")
+    canvas.create_rectangle(x0, y1 - t, x1, y1, fill=br_out, outline="")
+    canvas.create_rectangle(x1 - t, y0, x1, y1, fill=br_out, outline="")
+    canvas.create_rectangle(x0 + t, y0 + t, x1 - t, y0 + 2 * t, fill=tl_in, outline="")
+    canvas.create_rectangle(x0 + t, y0 + t, x0 + 2 * t, y1 - t, fill=tl_in, outline="")
+    canvas.create_rectangle(x0 + t, y1 - 2 * t, x1 - t, y1 - t, fill=br_in, outline="")
+    canvas.create_rectangle(x1 - 2 * t, y0 + t, x1 - t, y1 - t, fill=br_in, outline="")
 
 
 class _Win95Scrollbar(tk.Canvas):
-    BAR = 16
-
-    def __init__(self, parent, command=None, **kwargs):
-        super().__init__(parent, width=self.BAR, height=48, highlightthickness=0,
-                         bd=0, bg=FACE, **kwargs)
+    def __init__(self, parent, command=None, scale=1.0, **kwargs):
+        self._scale = scale
+        self.BAR = max(12, int(round(16 * scale)))
+        super().__init__(parent, width=self.BAR, height=int(round(48 * scale)),
+                         highlightthickness=0, bd=0, bg=FACE, **kwargs)
         self._command = command
         self._lo = 0.0
         self._hi = 1.0
@@ -96,20 +96,23 @@ class _Win95Scrollbar(tk.Canvas):
         h, bar, track_h, thumb_y, thumb_h = self._metrics()
         if h < bar * 2 + 4:
             return
+        t = max(1, int(round(self._scale)))
         self.create_rectangle(0, bar, w, h - bar, fill=FACE, outline="")
         self.create_rectangle(0, bar, w, h - bar, fill=WHITE, outline="", stipple="gray50")
-        _bevel_lines(self, 0, 0, w - 1, bar - 1, raised=True, fill=FACE)
+        _bevel_lines(self, 0, 0, w - 1, bar - 1, raised=True, fill=FACE, t=t)
         self._triangle(w // 2, bar // 2, "up")
-        _bevel_lines(self, 0, h - bar, w - 1, h - 1, raised=True, fill=FACE)
+        _bevel_lines(self, 0, h - bar, w - 1, h - 1, raised=True, fill=FACE, t=t)
         self._triangle(w // 2, h - bar // 2 - 1, "down")
         if self._hi - self._lo < 1.0:
-            _bevel_lines(self, 0, thumb_y, w - 1, thumb_y + thumb_h, raised=True, fill=FACE)
+            _bevel_lines(self, 0, thumb_y, w - 1, thumb_y + thumb_h, raised=True, fill=FACE, t=t)
 
     def _triangle(self, cx, cy, direction):
+        a = int(round(4 * self._scale))
+        b = int(round(3 * self._scale))
         if direction == "up":
-            self.create_polygon(cx, cy - 3, cx - 4, cy + 2, cx + 4, cy + 2, fill=BLACK, outline="")
+            self.create_polygon(cx, cy - b, cx - a, cy + b, cx + a, cy + b, fill=BLACK, outline="")
         else:
-            self.create_polygon(cx, cy + 3, cx - 4, cy - 2, cx + 4, cy - 2, fill=BLACK, outline="")
+            self.create_polygon(cx, cy + b, cx - a, cy - b, cx + a, cy - b, fill=BLACK, outline="")
 
     def _press(self, event):
         if not self._command:
@@ -143,13 +146,21 @@ class SotvoxApp:
         self.root = tkdnd.Tk()
         self.root.title("Sotvox")
         self.root.configure(bg=FACE)
-        win_w, win_h = 588, 690
+
+        self.S = self.root.winfo_fpixels("1i") / 96.0
+        self._ui_line = tkfont.Font(family="MS Sans Serif", size=8).metrics("linespace")
+
+        win_w, win_h = self.px(588), self.px(690)
+        self._min_w, self._min_h = self.px(560), self.px(520)
         screen_w = self.root.winfo_screenwidth()
         screen_h = self.root.winfo_screenheight()
         pos_x = (screen_w - win_w) // 2
-        pos_y = max(0, (screen_h - win_h) // 2 - 20)
+        pos_y = max(0, (screen_h - win_h) // 2 - self.px(20))
         self.root.geometry(f"{win_w}x{win_h}+{pos_x}+{pos_y}")
+        self._normal_geometry = f"{win_w}x{win_h}+{pos_x}+{pos_y}"
         self._maximized = False
+        self._resize = None
+        self._drag_offset = (0, 0)
 
         self.files = []
         self.model = None
@@ -162,7 +173,6 @@ class SotvoxApp:
         self._log_flush_idx = 0
         self._log_path = None
         self._session_start = time.time()
-        self._drag_offset = (0, 0)
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3")
@@ -186,6 +196,9 @@ class SotvoxApp:
         self.multilingual_var.trace_add("write", lambda *_: self._slog(f"Setting changed: multilingual = {self.multilingual_var.get()}"))
         self.output_var.trace_add("write", lambda *_: self._slog(f"Setting changed: output path = {self.output_var.get()}"))
 
+    def px(self, n):
+        return max(1, int(round(n * self.S)))
+
     def _apply_taskbar_presence(self):
         try:
             GWL_EXSTYLE = -20
@@ -207,11 +220,12 @@ class SotvoxApp:
             ring = [SHADOW, HILIGHT, DKSHADOW, LIGHT]
         else:
             ring = [SHADOW, HILIGHT, HILIGHT, SHADOW]
+        t = self.px(1)
         a = tk.Frame(parent, bg=ring[0])
-        b = tk.Frame(a, bg=ring[1]); b.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
-        c = tk.Frame(b, bg=ring[2]); c.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
-        d = tk.Frame(c, bg=ring[3]); d.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
-        content = tk.Frame(d, bg=bg); content.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
+        b = tk.Frame(a, bg=ring[1]); b.pack(fill="both", expand=True, padx=(t, 0), pady=(t, 0))
+        c = tk.Frame(b, bg=ring[2]); c.pack(fill="both", expand=True, padx=(0, t), pady=(0, t))
+        d = tk.Frame(c, bg=ring[3]); d.pack(fill="both", expand=True, padx=(t, 0), pady=(t, 0))
+        content = tk.Frame(d, bg=bg); content.pack(fill="both", expand=True, padx=(0, t), pady=(0, t))
         return a, content
 
     def _mk_button(self, parent, text, command=None, font=None, pad_x=10, pad_y=3,
@@ -220,19 +234,21 @@ class SotvoxApp:
         raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW, FACE]
         sunken = [SHADOW, HILIGHT, DKSHADOW, LIGHT, FACE]
         state = {"enabled": True}
+        t = self.px(1)
+        px_pad, py_pad = self.px(pad_x), self.px(pad_y)
 
         holder = tk.Frame(parent, bg=BLACK if default else FACE)
-        ring_pad = 1 if default else 0
+        ring_pad = t if default else 0
         a = tk.Frame(holder, bg=raised[0]); a.pack(padx=ring_pad, pady=ring_pad)
-        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(1, 0), pady=(1, 0))
-        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, 1), pady=(0, 1))
-        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(1, 0), pady=(1, 0))
-        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, 1), pady=(0, 1))
+        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(t, 0), pady=(t, 0))
+        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, t), pady=(0, t))
+        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(t, 0), pady=(t, 0))
+        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, t), pady=(0, t))
         label_kwargs = {"text": text, "font": font, "bg": FACE, "fg": BLACK}
         if width_chars:
             label_kwargs["width"] = width_chars
         lbl = tk.Label(face, **label_kwargs)
-        lbl.pack(padx=pad_x, pady=pad_y)
+        lbl.pack(padx=px_pad, pady=py_pad)
         rings = [a, b, c, d, face]
 
         def press(_=None):
@@ -240,14 +256,14 @@ class SotvoxApp:
                 return
             for fr, col in zip(rings, sunken):
                 fr.configure(bg=col)
-            lbl.pack_configure(padx=(pad_x + 1, pad_x - 1), pady=(pad_y + 1, pad_y - 1))
+            lbl.pack_configure(padx=(px_pad + t, px_pad - t), pady=(py_pad + t, py_pad - t))
 
         def release(event=None):
             if not state["enabled"]:
                 return
             for fr, col in zip(rings, raised):
                 fr.configure(bg=col)
-            lbl.pack_configure(padx=pad_x, pady=pad_y)
+            lbl.pack_configure(padx=px_pad, pady=py_pad)
             if event is not None and command:
                 ex, ey = event.x_root, event.y_root
                 fx, fy = face.winfo_rootx(), face.winfo_rooty()
@@ -258,12 +274,12 @@ class SotvoxApp:
             widget.bind("<ButtonPress-1>", press)
             widget.bind("<ButtonRelease-1>", release)
 
-        def set_text(t):
-            lbl.configure(text=t)
+        def set_text(text_value):
+            lbl.configure(text=text_value)
 
-        def set_enabled(v):
-            state["enabled"] = v
-            lbl.configure(fg=BLACK if v else GRAYTEXT)
+        def set_enabled(value):
+            state["enabled"] = value
+            lbl.configure(fg=BLACK if value else GRAYTEXT)
 
         holder.set_text = set_text
         holder.set_enabled = set_enabled
@@ -272,26 +288,31 @@ class SotvoxApp:
     def _group(self, parent, title):
         holder = tk.Frame(parent, bg=FACE)
         border, content = self._bevel(holder, style="etched", bg=FACE)
-        border.pack(fill="both", expand=True, pady=(8, 0))
-        tk.Label(holder, text=f" {title} ", bg=FACE, fg=BLACK, font=FONT_UI).place(x=9, y=0)
+        border.pack(fill="both", expand=True, pady=(self._ui_line // 2, 0))
+        tk.Label(holder, text=f" {title} ", bg=FACE, fg=BLACK, font=FONT_UI).place(x=self.px(9), y=0)
         return holder, content
 
     def _combo(self, parent, variable, values, width_chars=14):
         border, content = self._bevel(parent, style="sunken", bg=WHITE)
         content.configure(bg=WHITE)
         lbl = tk.Label(content, textvariable=variable, font=FONT_UI, bg=WHITE, fg=BLACK,
-                       anchor="w", width=width_chars, padx=3, pady=1, cursor="arrow")
+                       anchor="w", width=width_chars, padx=self.px(3), pady=self.px(1))
         lbl.pack(side="left", fill="both", expand=True)
 
-        arrow_raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
-        aa = tk.Frame(content, bg=arrow_raised[0])
-        ab = tk.Frame(aa, bg=arrow_raised[1]); ab.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
-        ac = tk.Frame(ab, bg=arrow_raised[2]); ac.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
-        ad = tk.Frame(ac, bg=arrow_raised[3]); ad.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
-        aface = tk.Frame(ad, bg=FACE); aface.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
-        arrow_canvas = tk.Canvas(aface, width=15, height=15, bg=FACE, highlightthickness=0, bd=0)
-        arrow_canvas.pack(padx=2, pady=1)
-        arrow_canvas.create_polygon(4, 6, 11, 6, 7, 10, fill=BLACK, outline="")
+        raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
+        t = self.px(1)
+        aa = tk.Frame(content, bg=raised[0])
+        ab = tk.Frame(aa, bg=raised[1]); ab.pack(fill="both", expand=True, padx=(t, 0), pady=(t, 0))
+        ac = tk.Frame(ab, bg=raised[2]); ac.pack(fill="both", expand=True, padx=(0, t), pady=(0, t))
+        ad = tk.Frame(ac, bg=raised[3]); ad.pack(fill="both", expand=True, padx=(t, 0), pady=(t, 0))
+        aface = tk.Frame(ad, bg=FACE); aface.pack(fill="both", expand=True, padx=(0, t), pady=(0, t))
+        size = self.px(15)
+        arrow_canvas = tk.Canvas(aface, width=size, height=size, bg=FACE, highlightthickness=0, bd=0)
+        arrow_canvas.pack(padx=self.px(2), pady=self.px(1))
+        cx = size // 2
+        w = self.px(4)
+        arrow_canvas.create_polygon(cx - w, cx - self.px(1), cx + w, cx - self.px(1),
+                                    cx, cx + self.px(3), fill=BLACK, outline="")
         aa.pack(side="right", fill="y")
 
         menu = tk.Menu(content, tearoff=0, bg=FACE, fg=BLACK,
@@ -303,33 +324,28 @@ class SotvoxApp:
         def show(_=None):
             menu.post(border.winfo_rootx(), border.winfo_rooty() + border.winfo_height())
 
-        for w in (content, lbl, arrow_canvas, aface):
-            w.bind("<Button-1>", show)
+        for w2 in (content, lbl, arrow_canvas, aface):
+            w2.bind("<Button-1>", show)
         return border
 
     def _check(self, parent, variable, text):
         outer = tk.Frame(parent, bg=FACE, cursor="arrow")
-        box = tk.Canvas(outer, width=13, height=13, bg=FACE, highlightthickness=0, bd=0)
-        box.pack(side="left", padx=(0, 5))
+        sz = self.px(13)
+        box = tk.Canvas(outer, width=sz, height=sz, bg=FACE, highlightthickness=0, bd=0)
+        box.pack(side="left", padx=(0, self.px(5)))
         lbl = tk.Label(outer, text=text, font=FONT_UI, bg=FACE, fg=BLACK)
         lbl.pack(side="left")
+        t = self.px(1)
 
         def draw():
             box.delete("all")
-            box.create_rectangle(0, 0, 12, 12, fill=WHITE, outline="")
-            box.create_line(0, 0, 12, 0, fill=SHADOW)
-            box.create_line(0, 0, 0, 12, fill=SHADOW)
-            box.create_line(1, 1, 11, 1, fill=DKSHADOW)
-            box.create_line(1, 1, 1, 11, fill=DKSHADOW)
-            box.create_line(0, 12, 12, 12, fill=HILIGHT)
-            box.create_line(12, 0, 12, 12, fill=HILIGHT)
-            box.create_line(1, 11, 11, 11, fill=LIGHT)
-            box.create_line(11, 1, 11, 11, fill=LIGHT)
+            _bevel_lines(box, 0, 0, sz - 1, sz - 1, raised=False, fill=WHITE, t=t)
             if variable.get():
-                box.create_line(3, 6, 5, 9, fill=BLACK, width=1)
-                box.create_line(3, 7, 5, 10, fill=BLACK, width=1)
-                box.create_line(5, 9, 10, 3, fill=BLACK, width=1)
-                box.create_line(5, 10, 10, 4, fill=BLACK, width=1)
+                s = self.S
+                pts = [(3, 6), (5, 9), (10, 3)]
+                for width_off in range(t):
+                    self._polyline(box, [(int(x * s), int(y * s) + width_off) for x, y in pts], BLACK)
+                    self._polyline(box, [(int(x * s) + width_off, int(y * s)) for x, y in pts], BLACK)
 
         def toggle(_=None):
             variable.set(not variable.get())
@@ -340,31 +356,51 @@ class SotvoxApp:
         draw()
         return outer
 
+    def _polyline(self, canvas, points, color):
+        for i in range(len(points) - 1):
+            canvas.create_line(points[i][0], points[i][1], points[i + 1][0], points[i + 1][1], fill=color)
+
     def _title_button(self, parent, glyph, command, enabled=True):
         raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
+        t = self.px(1)
         a = tk.Frame(parent, bg=raised[0])
-        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(1, 0), pady=(1, 0))
-        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, 1), pady=(0, 1))
-        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(1, 0), pady=(1, 0))
-        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, 1), pady=(0, 1))
-        canvas = tk.Canvas(face, width=13, height=11, bg=FACE, highlightthickness=0, bd=0)
-        canvas.pack(padx=1, pady=1)
+        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(t, 0), pady=(t, 0))
+        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, t), pady=(0, t))
+        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(t, 0), pady=(t, 0))
+        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, t), pady=(0, t))
+        cw, ch = self.px(13), self.px(11)
+        canvas = tk.Canvas(face, width=cw, height=ch, bg=FACE, highlightthickness=0, bd=0)
+        canvas.pack(padx=self.px(1), pady=self.px(1))
         gcol = BLACK if enabled else SHADOW
-        if glyph == "min":
-            canvas.create_rectangle(2, 8, 9, 10, fill=gcol, outline="")
-        elif glyph == "max":
-            canvas.create_rectangle(1, 1, 11, 10, outline=gcol, width=1)
-            canvas.create_line(1, 2, 11, 2, fill=gcol, width=1)
-        elif glyph == "restore":
-            canvas.create_rectangle(3, 1, 10, 6, outline=gcol, width=1)
-            canvas.create_line(3, 2, 10, 2, fill=gcol)
-            canvas.create_rectangle(1, 4, 8, 9, outline=gcol, width=1)
-            canvas.create_line(1, 5, 8, 5, fill=gcol)
-            canvas.create_rectangle(2, 5, 7, 8, fill=FACE, outline="")
-        elif glyph == "close":
-            for dx in (0, 1):
-                canvas.create_line(2 + dx, 1, 10 + dx, 9, fill=gcol)
-                canvas.create_line(10 + dx, 1, 2 + dx, 9, fill=gcol)
+        s = self.S
+
+        def scaled(x, y):
+            return int(x * s), int(y * s)
+
+        def draw(g):
+            canvas.delete("all")
+            if g == "min":
+                x0, y0 = scaled(2, 8); x1, y1 = scaled(9, 10)
+                canvas.create_rectangle(x0, y0, x1, y1, fill=gcol, outline="")
+            elif g == "max":
+                x0, y0 = scaled(1, 1); x1, y1 = scaled(11, 10)
+                canvas.create_rectangle(x0, y0, x1, y1, outline=gcol, width=self.px(1))
+                canvas.create_rectangle(x0, y0, x1, scaled(11, 2)[1], fill=gcol, outline="")
+            elif g == "restore":
+                canvas.create_rectangle(*scaled(3, 1), *scaled(10, 6), outline=gcol, width=self.px(1))
+                canvas.create_rectangle(*scaled(3, 1), *scaled(10, 2), fill=gcol, outline="")
+                canvas.create_rectangle(*scaled(1, 4), *scaled(8, 9), outline=gcol, width=self.px(1))
+                canvas.create_rectangle(*scaled(1, 4), *scaled(8, 5), fill=gcol, outline="")
+                canvas.create_rectangle(*scaled(2, 5), *scaled(7, 8), fill=FACE, outline="")
+            elif g == "close":
+                x0, y0 = scaled(2, 1)
+                x1, y1 = scaled(10, 9)
+                lw = self.px(1)
+                canvas.create_line(x0, y0, x1, y1, fill=gcol, width=lw)
+                canvas.create_line(x1, y0, x0, y1, fill=gcol, width=lw)
+
+        draw(glyph)
+        a.set_glyph = draw
         if enabled and command:
             for w in (canvas, face):
                 w.bind("<Button-1>", lambda e: command())
@@ -380,7 +416,7 @@ class SotvoxApp:
         self._build_statusbar()
 
         main = tk.Frame(shell, bg=FACE)
-        main.pack(fill="both", expand=True, padx=8, pady=(4, 2))
+        main.pack(fill="both", expand=True, padx=self.px(8), pady=(self.px(4), self.px(2)))
 
         self._build_files(main)
         self._build_options(main)
@@ -390,31 +426,35 @@ class SotvoxApp:
         self._build_log(main)
 
     def _build_titlebar(self):
-        bar = tk.Frame(self._shell, bg=NAVY, height=20)
+        bar = tk.Frame(self._shell, bg=NAVY, height=self.px(20))
         bar.pack(fill="x", side="top")
         bar.pack_propagate(False)
         self.titlebar = bar
 
-        icon = tk.Canvas(bar, width=16, height=16, bg=NAVY, highlightthickness=0, bd=0)
-        icon.pack(side="left", padx=(3, 3), pady=2)
-        icon.create_rectangle(2, 1, 12, 15, fill=WHITE, outline=BLACK)
-        icon.create_line(4, 4, 10, 4, fill=NAVY)
-        icon.create_line(4, 6, 10, 6, fill=NAVY)
-        icon.create_line(4, 8, 8, 8, fill=NAVY)
-        icon.create_polygon(11, 9, 14, 6, 14, 14, 11, 11, fill=TEAL, outline=BLACK)
+        isz = self.px(16)
+        icon = tk.Canvas(bar, width=isz, height=isz, bg=NAVY, highlightthickness=0, bd=0)
+        icon.pack(side="left", padx=(self.px(3), self.px(3)), pady=self.px(2))
+        s = self.S
+        icon.create_rectangle(int(2 * s), int(1 * s), int(12 * s), int(15 * s), fill=WHITE, outline=BLACK)
+        for yy in (4, 6, 8):
+            icon.create_line(int(4 * s), int(yy * s), int(10 * s), int(yy * s), fill=NAVY)
+        icon.create_polygon(int(11 * s), int(9 * s), int(14 * s), int(6 * s),
+                            int(14 * s), int(14 * s), int(11 * s), int(11 * s), fill=TEAL, outline=BLACK)
 
         self.title_label = tk.Label(bar, text="Sotvox", bg=NAVY, fg=TITLETEXT, font=FONT_TITLE)
         self.title_label.pack(side="left")
 
         btns = tk.Frame(bar, bg=NAVY)
-        btns.pack(side="right", padx=2, pady=1)
-        self._title_button(btns, "close", self._on_close).pack(side="right", padx=(2, 0))
-        self._title_button(btns, "max", None, enabled=False).pack(side="right")
+        btns.pack(side="right", padx=self.px(2), pady=self.px(1))
+        self._title_button(btns, "close", self._on_close).pack(side="right", padx=(self.px(2), 0))
+        self._max_button = self._title_button(btns, "max", self._toggle_max)
+        self._max_button.pack(side="right")
         self._title_button(btns, "min", self._minimize).pack(side="right")
 
         for w in (bar, icon, self.title_label):
             w.bind("<ButtonPress-1>", self._drag_start)
             w.bind("<B1-Motion>", self._drag_move)
+            w.bind("<Double-Button-1>", lambda e: self._toggle_max())
 
     def _build_menubar(self):
         bar = tk.Frame(self._shell, bg=FACE)
@@ -441,17 +481,17 @@ class SotvoxApp:
 
     def _menu_item(self, bar, text, menu):
         font = tkfont.Font(family="MS Sans Serif", size=8)
-        pad = 7
+        pad = self.px(7)
         first_w = font.measure(text[0])
-        baseline = 2 + font.metrics("ascent")
+        baseline = self.px(2) + font.metrics("ascent")
         canvas = tk.Canvas(bar, width=font.measure(text) + pad * 2,
-                           height=baseline + 4, bg=FACE, highlightthickness=0, bd=0)
+                           height=baseline + self.px(4), bg=FACE, highlightthickness=0, bd=0)
         canvas.pack(side="left")
 
         def redraw(bg, fg):
             canvas.delete("all")
             canvas.configure(bg=bg)
-            canvas.create_text(pad, 2, text=text, anchor="nw", fill=fg, font=font)
+            canvas.create_text(pad, self.px(2), text=text, anchor="nw", fill=fg, font=font)
             canvas.create_line(pad, baseline + 1, pad + first_w, baseline + 1, fill=fg)
 
         def post(event):
@@ -468,10 +508,10 @@ class SotvoxApp:
 
         hint = tk.Label(content, text="Drag audio or video files onto the list, or click Add Files.",
                         bg=FACE, fg=BLACK, font=FONT_UI, anchor="w")
-        hint.pack(fill="x", padx=8, pady=(6, 4))
+        hint.pack(fill="x", padx=self.px(8), pady=(self.px(6), self.px(4)))
 
         list_row = tk.Frame(content, bg=FACE)
-        list_row.pack(fill="both", expand=True, padx=8, pady=(0, 6))
+        list_row.pack(fill="both", expand=True, padx=self.px(8), pady=(0, self.px(6)))
 
         border, well = self._bevel(list_row, style="sunken", bg=WHITE)
         border.pack(side="left", fill="both", expand=True)
@@ -481,7 +521,7 @@ class SotvoxApp:
             borderwidth=0, highlightthickness=0, relief="flat",
             selectbackground=SELBG, selectforeground=SELFG,
             activestyle="none", selectmode="extended", exportselection=False)
-        scrollbar = _Win95Scrollbar(well, command=self.file_listbox.yview)
+        scrollbar = _Win95Scrollbar(well, command=self.file_listbox.yview, scale=self.S)
         self.file_listbox.configure(yscrollcommand=scrollbar.set)
         scrollbar.pack(side="right", fill="y")
         self.file_listbox.pack(side="left", fill="both", expand=True)
@@ -490,62 +530,62 @@ class SotvoxApp:
         self.file_listbox.dnd_bind("<<Drop>>", self._on_drop)
 
         btn_col = tk.Frame(list_row, bg=FACE)
-        btn_col.pack(side="left", fill="y", padx=(6, 0))
+        btn_col.pack(side="left", fill="y", padx=(self.px(6), 0))
         self._mk_button(btn_col, "Add Files...", command=self._browse_files,
-                        width_chars=10).pack(fill="x", pady=(0, 4))
+                        width_chars=10).pack(fill="x", pady=(0, self.px(4)))
         self._mk_button(btn_col, "Remove", command=self._remove_selected,
-                        width_chars=10).pack(fill="x", pady=(0, 4))
+                        width_chars=10).pack(fill="x", pady=(0, self.px(4)))
         self._mk_button(btn_col, "Clear All", command=self._clear_files,
                         width_chars=10).pack(fill="x")
 
     def _build_options(self, parent):
         group, content = self._group(parent, "Options")
-        group.pack(fill="x", pady=(6, 0))
+        group.pack(fill="x", pady=(self.px(6), 0))
 
         row1 = tk.Frame(content, bg=FACE)
-        row1.pack(fill="x", padx=10, pady=(8, 4))
+        row1.pack(fill="x", padx=self.px(10), pady=(self.px(8), self.px(4)))
 
         tk.Label(row1, text="Language:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.language_var,
                     ["Auto-detect", "Spanish", "English", "Portuguese", "French",
                      "German", "Italian", "Japanese", "Chinese", "Korean"],
-                    width_chars=11).pack(side="left", padx=(4, 14))
+                    width_chars=11).pack(side="left", padx=(self.px(4), self.px(14)))
 
         tk.Label(row1, text="Model:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.model_var,
                     ["large-v3", "medium", "small", "base", "tiny"],
-                    width_chars=9).pack(side="left", padx=(4, 14))
+                    width_chars=9).pack(side="left", padx=(self.px(4), self.px(14)))
 
         tk.Label(row1, text="Device:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.device_var,
                     ["Auto", "CPU", "GPU (CUDA)"],
-                    width_chars=9).pack(side="left", padx=(4, 0))
+                    width_chars=9).pack(side="left", padx=(self.px(4), 0))
 
         row2 = tk.Frame(content, bg=FACE)
-        row2.pack(fill="x", padx=10, pady=(2, 8))
+        row2.pack(fill="x", padx=self.px(10), pady=(self.px(2), self.px(8)))
         self._check(row2, self.multilingual_var,
                     "Multilingual mode  (auto-detect language per 30s chunk; overrides Language)").pack(side="left")
 
     def _build_output(self, parent):
         group, content = self._group(parent, "Output")
-        group.pack(fill="x", pady=(6, 0))
+        group.pack(fill="x", pady=(self.px(6), 0))
 
         row = tk.Frame(content, bg=FACE)
-        row.pack(fill="x", padx=10, pady=(8, 8))
+        row.pack(fill="x", padx=self.px(10), pady=(self.px(8), self.px(8)))
 
         tk.Label(row, text="Folder:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         border, well = self._bevel(row, style="sunken", bg=WHITE)
-        border.pack(side="left", fill="x", expand=True, padx=(4, 6))
+        border.pack(side="left", fill="x", expand=True, padx=(self.px(4), self.px(6)))
         entry = tk.Entry(well, textvariable=self.output_var, font=FONT_UI, bg=WHITE, fg=BLACK,
                          relief="flat", borderwidth=0, highlightthickness=0,
                          insertbackground=BLACK)
-        entry.pack(fill="both", expand=True, ipady=1, padx=1, pady=1)
+        entry.pack(fill="both", expand=True, ipady=self.px(1), padx=self.px(1), pady=self.px(1))
         self._mk_button(row, "Browse...", command=self._browse_output,
                         width_chars=8).pack(side="left")
 
     def _build_actions(self, parent):
         action = tk.Frame(parent, bg=FACE)
-        action.pack(fill="x", pady=(8, 2))
+        action.pack(fill="x", pady=(self.px(8), self.px(2)))
 
         self.transcribe_btn = self._mk_button(
             action, "Transcribe", command=self._toggle_transcription,
@@ -557,10 +597,10 @@ class SotvoxApp:
 
     def _build_progress(self, parent):
         group, content = self._group(parent, "Progress")
-        group.pack(fill="x", pady=(6, 0))
+        group.pack(fill="x", pady=(self.px(6), 0))
 
         status_row = tk.Frame(content, bg=FACE)
-        status_row.pack(fill="x", padx=10, pady=(8, 4))
+        status_row.pack(fill="x", padx=self.px(10), pady=(self.px(8), self.px(4)))
         self.progress_label = tk.Label(status_row, text="Ready", bg=FACE, fg=BLACK,
                                        font=FONT_UI, anchor="w")
         self.progress_label.pack(side="left")
@@ -568,24 +608,24 @@ class SotvoxApp:
         self.progress_pct.pack(side="right")
 
         bar_border, bar_well = self._bevel(content, style="sunken", bg=FACE)
-        bar_border.pack(fill="x", padx=10, pady=(0, 8))
-        self.progress_canvas = tk.Canvas(bar_well, bg=FACE, highlightthickness=0, bd=0, height=18)
-        self.progress_canvas.pack(fill="x", padx=1, pady=1)
+        bar_border.pack(fill="x", padx=self.px(10), pady=(0, self.px(8)))
+        self.progress_canvas = tk.Canvas(bar_well, bg=FACE, highlightthickness=0, bd=0, height=self.px(18))
+        self.progress_canvas.pack(fill="x", padx=self.px(1), pady=self.px(1))
         self.progress_canvas.bind("<Configure>", lambda e: self._draw_progress())
 
     def _build_log(self, parent):
         group, content = self._group(parent, "Log")
-        group.pack(fill="both", expand=True, pady=(6, 0))
+        group.pack(fill="both", expand=True, pady=(self.px(6), 0))
 
         border, well = self._bevel(content, style="sunken", bg=WHITE)
-        border.pack(fill="both", expand=True, padx=8, pady=8)
+        border.pack(fill="both", expand=True, padx=self.px(8), pady=self.px(8))
 
         self.log_text = tk.Text(well, bg=WHITE, fg=BLACK, font=FONT_MONO, height=6,
                                 wrap="word", state="disabled", borderwidth=0,
-                                relief="flat", highlightthickness=0, padx=3, pady=2,
+                                relief="flat", highlightthickness=0, padx=self.px(3), pady=self.px(2),
                                 insertbackground=BLACK, selectbackground=SELBG,
                                 selectforeground=SELFG)
-        log_scroll = _Win95Scrollbar(well, command=self.log_text.yview)
+        log_scroll = _Win95Scrollbar(well, command=self.log_text.yview, scale=self.S)
         self.log_text.configure(yscrollcommand=log_scroll.set)
         log_scroll.pack(side="right", fill="y")
         self.log_text.pack(side="left", fill="both", expand=True)
@@ -594,18 +634,30 @@ class SotvoxApp:
         bar = tk.Frame(self._shell, bg=FACE)
         bar.pack(fill="x", side="bottom")
         inner = tk.Frame(bar, bg=FACE)
-        inner.pack(fill="x", padx=2, pady=2)
+        inner.pack(fill="x", padx=self.px(2), pady=self.px(2))
+
+        grip = tk.Canvas(inner, width=self.px(16), height=self.px(16), bg=FACE,
+                         highlightthickness=0, bd=0, cursor="sizing")
+        grip.pack(side="right", padx=(self.px(2), 0))
+        s = self.S
+        for off in (0, 4, 8):
+            x2, y2 = int((15) * s), int((15 - off) * s)
+            x1, y1 = int((15 - off) * s), int(15 * s)
+            grip.create_line(x1, int(15 * s), int(15 * s), y2, fill=HILIGHT, width=self.px(1))
+            grip.create_line(x1 + self.px(1), int(15 * s), int(15 * s), y2 + self.px(1), fill=SHADOW, width=self.px(1))
+        grip.bind("<ButtonPress-1>", self._resize_start)
+        grip.bind("<B1-Motion>", self._resize_move)
 
         p1_border, p1 = self._bevel(inner, style="sunken", bg=FACE)
         p1_border.pack(side="left", fill="x", expand=True)
         self.status_left = tk.Label(p1, text="Ready", bg=FACE, fg=BLACK, font=FONT_UI,
-                                    anchor="w", padx=4, pady=1)
+                                    anchor="w", padx=self.px(4), pady=self.px(1))
         self.status_left.pack(fill="x")
 
         p2_border, p2 = self._bevel(inner, style="sunken", bg=FACE)
-        p2_border.pack(side="left", padx=(2, 0))
+        p2_border.pack(side="left", padx=(self.px(2), self.px(2)))
         self.status_files = tk.Label(p2, text="0 files", bg=FACE, fg=BLACK, font=FONT_UI,
-                                     anchor="w", padx=6, pady=1, width=10)
+                                     anchor="w", padx=self.px(6), pady=self.px(1), width=10)
         self.status_files.pack()
 
     def _drag_start(self, event):
@@ -619,6 +671,19 @@ class SotvoxApp:
         y = event.y_root - self._drag_offset[1]
         self.root.geometry(f"+{x}+{y}")
 
+    def _resize_start(self, event):
+        if self._maximized:
+            self._toggle_max()
+        self._resize = (event.x_root, event.y_root, self.root.winfo_width(), self.root.winfo_height())
+
+    def _resize_move(self, event):
+        if not self._resize:
+            return
+        start_x, start_y, start_w, start_h = self._resize
+        new_w = max(self._min_w, start_w + (event.x_root - start_x))
+        new_h = max(self._min_h, start_h + (event.y_root - start_y))
+        self.root.geometry(f"{new_w}x{new_h}")
+
     def _minimize(self):
         self.root.update_idletasks()
         self.root.overrideredirect(False)
@@ -628,32 +693,57 @@ class SotvoxApp:
         if str(event.widget) == "." and not self.root.overrideredirect():
             self.root.overrideredirect(True)
 
+    def _toggle_max(self):
+        if self._maximized:
+            self.root.geometry(self._normal_geometry)
+            self._maximized = False
+            self._max_button.set_glyph("max")
+        else:
+            self._normal_geometry = self.root.geometry()
+            work_left, work_top, work_right, work_bottom = self._work_area()
+            self.root.geometry(f"{work_right - work_left}x{work_bottom - work_top}+{work_left}+{work_top}")
+            self._maximized = True
+            self._max_button.set_glyph("restore")
+
+    def _work_area(self):
+        try:
+            class RECT(ctypes.Structure):
+                _fields_ = [("left", ctypes.c_long), ("top", ctypes.c_long),
+                            ("right", ctypes.c_long), ("bottom", ctypes.c_long)]
+            rect = RECT()
+            ctypes.windll.user32.SystemParametersInfoW(0x0030, 0, ctypes.byref(rect), 0)
+            return rect.left, rect.top, rect.right, rect.bottom
+        except Exception:
+            return 0, 0, self.root.winfo_screenwidth(), self.root.winfo_screenheight()
+
     def _about(self):
         dialog = tk.Toplevel(self.root, bg=FACE)
         dialog.overrideredirect(True)
-        dw, dh = 320, 150
+        dw, dh = self.px(320), self.px(150)
         dx = self.root.winfo_x() + (self.root.winfo_width() - dw) // 2
         dy = self.root.winfo_y() + (self.root.winfo_height() - dh) // 2
         dialog.geometry(f"{dw}x{dh}+{dx}+{dy}")
 
-        bar = tk.Frame(dialog, bg=NAVY, height=20)
+        shell_border, shell = self._bevel(dialog, style="raised", bg=FACE)
+        shell_border.pack(fill="both", expand=True)
+
+        bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
         bar.pack(fill="x")
         bar.pack_propagate(False)
-        tk.Label(bar, text="About Sotvox", bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=6)
-        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=2, pady=2)
+        tk.Label(bar, text="About Sotvox", bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
+        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
 
-        body = tk.Frame(dialog, bg=FACE)
-        body.pack(fill="both", expand=True, padx=12, pady=12)
+        body = tk.Frame(shell, bg=FACE)
+        body.pack(fill="both", expand=True, padx=self.px(12), pady=self.px(12))
         tk.Label(body, text="Sotvox", bg=FACE, fg=BLACK, font=("MS Sans Serif", 14, "bold")).pack(anchor="w")
         tk.Label(body, text="Local audio / video transcription", bg=FACE, fg=BLACK,
-                 font=FONT_UI).pack(anchor="w", pady=(2, 0))
+                 font=FONT_UI).pack(anchor="w", pady=(self.px(2), 0))
         tk.Label(body, text="Powered by faster-whisper. Runs 100% on your machine.",
-                 bg=FACE, fg=BLACK, font=FONT_UI).pack(anchor="w", pady=(8, 0))
-        self._mk_button(body, "OK", command=dialog.destroy, width_chars=8).pack(pady=(12, 0))
+                 bg=FACE, fg=BLACK, font=FONT_UI).pack(anchor="w", pady=(self.px(8), 0))
+        self._mk_button(body, "OK", command=dialog.destroy, width_chars=8).pack(pady=(self.px(12), 0))
 
-        for w in (bar,):
-            w.bind("<ButtonPress-1>", lambda e: dialog.__setattr__("_off", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
-            w.bind("<B1-Motion>", lambda e: dialog.geometry(f"+{e.x_root - dialog._off[0]}+{e.y_root - dialog._off[1]}"))
+        bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__("_off", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
+        bar.bind("<B1-Motion>", lambda e: dialog.geometry(f"+{e.x_root - dialog._off[0]}+{e.y_root - dialog._off[1]}"))
         dialog.grab_set()
 
     def _draw_progress(self):
@@ -665,12 +755,13 @@ class SotvoxApp:
             return
         c.create_rectangle(0, 0, w, h, fill=FACE, outline="")
         if self._progress_value > 0:
-            filled = int((w - 4) * self._progress_value / 100)
-            block_w = 8
-            gap = 2
-            x = 2
-            while x + block_w <= 2 + filled:
-                c.create_rectangle(x, 2, x + block_w, h - 2, fill=NAVY, outline="")
+            margin = self.px(2)
+            filled = int((w - margin * 2) * self._progress_value / 100)
+            block_w = self.px(8)
+            gap = self.px(2)
+            x = margin
+            while x + block_w <= margin + filled:
+                c.create_rectangle(x, margin, x + block_w, h - margin, fill=NAVY, outline="")
                 x += block_w + gap
 
     def _on_drop(self, event):
