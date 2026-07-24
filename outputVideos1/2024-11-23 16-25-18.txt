@@ -1,0 +1,397 @@
+Perdón, uppercase no, uppercase con guión bajo de separador y van afuera del describe.
+Eso está espectacular. Como esta, literal, está perfecto. Bien, ¿qué más?
+Perdón, no es por ser peleador, solo para intentar entender. Esta constante de la Unique
+Test Identifier, ¿viste? Arriba, Test Data, Test Susery.
+Esa la tiene que haber arreglado Tatato, yo todavía no miré nada de esas perras, pero
+no es una constante porque es un objeto que se genera nuevo, entonces no es una constante,
+es una variable. O sea, por más que se podría decir que es una constante, en realidad es
+una variable porque estás haciendo un new. Yo las constantes noto en los objetos que
+vos sabés todo lo que estás haciendo arriba. Si estás haciendo un new, a mí es una variable.
+Es por eso. Igual tengo que mirar.
+Sí, porque Tatato todavía no miré todas las perras que tiene Tatato, porque Martina
+le hizo pila de comentarios. En esta lo mismo, Kike, o sea, pasarlo mismo. Yo hubo una que
+te pedí, creo que ahora viendo esta tiene que haber sido esta.
+Claro, en una sola.
+Que creo que te pedí, claro, te pedí si podíamos agregarlo a la documentación y podías ponerla
+en la PR, ¿está? Es nomás agregar estas cosas.
+A la documentación, al guidelines, digamos.
+Al guidelines, sí, sí, sí, tal cual. O sea, ese guidelines también nos va a servir porque
+de nuevo, muy probablemente el mes que viene arranque, cuando Tatato entre, ustedes arranquen
+a chequear cosas, entonces como que está, es como la Biblia, ¿entendés? O sea, ante
+la duda, al guidelines, ya está. Y el guidelines está aprobado por mí, así que ya está, ya
+está. Bien, teníamos que, oh, tenemos que ver el clavito de este.
+Está, lo de los test de regresión le decía, solucione lo sencillo, o sea, no importa tres
+carajos, que la numeración tenga sentido, lo que importa es que la numeración sea consecutiva.
+Igual nosotros lo estamos ordenando por baja prioridad y poca prioridad, así que es nomás,
+está, si sacamos uno del medio, metemos el de abajo del todo, lo metemos para arriba
+y ya está, listo. Terminá. No es la idea complicarnos con eso. ¿Te parece bien?
+Sí, logré hacer eso con la nueva PR, la 401, que son los test de regresión.
+De pago de un servicio, de pago único. Se me queda terminar de implementar ese cambio
+en la PR de la eliminación de los casos de México y Venezuela, porque esa toca tres
+planillas distintas, viste, la subscriptions, update payment, etc.
+Está, por eso. Está, eso, sí, porque ahí yo vi que también se mandaron esos casos
+para el agregar que no deberían estar.
+Sí, eso es lo que quiero.
+Bien, está, bien. Está, o sea, eso es actualizar en el, es actualizar en el express, en el
+excel y en lo otro. Una vez que esté, me pegás el grito y se va, porque eso ya, ya
+está chequeado.
+La 401 ya. Ah, pero ojo, porque la PR 401 no tiene los casos eliminados de Venezuela
+y México de las otras planillas, ¿se entiende? Porque no está mergeada la PR donde se eliminan
+los casos de México.
+¿De Venezuela? ¿Me explico?
+Claro, ya, sacalos del excel. Aunque no estén mergeadas, ya sacalos. Y reordenalo.
+Del excel, sí. Sí, del excel sí. Pero y de la PR, de la 401, o sea, en las otras, no sé si me explico.
+Bueno, no, si querés compartimos, o no, que se me ocurra.
+La 401, esta.
+¿401?
+Sí, agrega estos, estos casos que son los de.
+Ah, va.
+Pero como no está mergeada la otra.
+La PR, donde se eliminan los casos de Venezuela de, de estas otras, subscriptions, paying
+company, ¿me explico? Todavía están acá. O sea, que habría que mergear primero la
+otra, ¿no? Habría que mergear.
+Sí, pero, sí, pero, ¿qué pasa? Como vos no tocás, olvídate de esos archivos. Si
+se mergea esta y después la otra, no pasa nada, porque en realidad vos, no, no tocan
+los mismos archivos, entonces no hay problema. O sea, vos, no, no va a pasar nada, porque
+vos en esta lo sacás.
+En la otra lo sacás, mergeás, son archivos distintos, no pasa nada. Ya no va a haber
+conflicto.
+O sea, esta queda así como está, digamos.
+Claro, porque vos en esa, en la 401, vos estás creando los single payment.
+Sí.
+Vos ahí tenés que, lo sacás de ahí y ya está. Lo sacás de ahí y lo, este, que
+la numeración sea consecutiva y listo. Se terminó. Este, no, no, no leemos más vuelta.
+Y después, vos pensá que estos son archivos nuevos, entonces vos estás mechando archivos
+nuevos.
+La otra también en develop va a tocar archivos que vos no tocaste y ya está. No hay, no
+hay conflicto. El conflicto se da cuando vos tocás archivos, cuando vos tocás los mismos
+archivos. Ahí se da conflicto. O sea, sí, sí, sí, sí, sí, sí, sí. El conflicto
+es ese, ese es el conflicto. El conflicto surge. Sí, mismo, puede haber conflicto.
+No, el conflicto surge cuando vos tocás los mismos archivos, o sea, si vos, puede ser,
+que vos
+puede ser que hoy
+haya salido una versión muy vieja
+de develop y en develop se haya
+hecho algún cherry pick o alguna cosa
+que cambió el historial de comic
+entonces ahí puede ser
+que surja conflicto por eso como nos ha pasado
+pero si no
+el conflicto solo surge
+de que tocas archivos
+archivos viejos o modificas
+archivos de develop que otro
+también toco
+pero si vos agregas cosas nuevas no debería pasar nada
+eso
+o sea que es un poco también
+la idea del refactor de los test unitarios
+que vos agregues test, tatato
+también y que todo importe entre carajos
+si querés
+compartime la propuesta ahí lo debatimos juntos
+ahí va
+hoy en día tenemos 8 puntos
+destinados a la tarea esta
+vos me decís
+esas tareas
+pensás meterlas todas en el mismo archivo
+va todo en el mismo archivo
+porque
+el problema es que vamos a tener esto para todos los empos
+eso me da un poquito de miedo
+o sea entiendo que la primera vez
+sea así pero para mi no da
+yo pensé que eran etapas
+pero del mismo archivo
+porque que pasa
+vamos a tener este problema para muchos
+y no puede ser que hagamos
+no podemos ser que hagamos todo este trabajo para todos
+deberíamos
+sacar ciertas generalidades
+es lo que te mostré
+el switch del otro día tiene una cantidad
+se aplica para todos ese switch
+cual era tu idea contame
+no digerir de a poquito
+pero bueno tampoco
+a ver acá que tenés
+15 casos
+yo digo que va a haber código repetido por eso son 15 casos
+me parece que entra en un archivo
+pero capaz que vos me querías justificar no mira voy a hacerlo por separado
+y después lo que hacemos es unirlos
+otra estrategia
+es esa
+creamos una rama en paralelo a develop
+que sea de esto
+de repente le ponemos la 234
+y en base a la 234
+para estas 3 tareas
+creamos 3 tareas que las vamos mergeando contra la 234
+una vez que esta toda
+ahí en la 234 se va una PR
+con todo ya
+esto es una propuesta
+pero capaz me decís que me rompe lo bueno
+yo porque también quiero que vos vayas
+mandando cosas y te vayamos aprobando
+me parece que eso es una buena estrategia
+ahora
+es como que bueno
+la 234 creamos una rama con la 234
+rama
+base
+234
+de la 234
+para cada una de estas etapas
+pongo
+ponemos como desarrollador quiero validar
+que se envíe en correo
+que se envíe en correo para avisarle de su carrito
+vacío cuando no se concreta
+la compañía
+esa sería la base
+yo lo que voy a hacer
+tengo una propuesta
+tenemos 34 puntos
+que te parece si esta
+hacemos el trabajo correcto
+como corresponde
+te la paso a 21 puntos
+acomodamos un poco las otras
+como en realidad vos este sprint hiciste 50
+capaz de la de coreview y eso
+mira voy a hacer un test voy a pasarla a 21
+a ver como quedamos
+quedamos con 47
+ya esta listo
+coreview pasa 5
+no coreview pasa 5 no
+porque coreview no va a pasar a 5
+vamos a pasar la de
+adicional de un solo pago lo voy a pasar a otro
+va a ser mejor
+y ahi ya tenemos 50
+y ahi sabes que
+vos la 234 la base
+osea ahora vos te creas
+te paras en la rama de worker
+si
+lo que le voy a decir a martu
+yo te aviso ahora
+vos ya creaste una 234
+localmente
+hace una cosa salí de esa 234
+y lo que te voy a pedir es
+en la andate a la tarea
+de la 234
+no no no
+pará andate a la tarea de la 234
+viste que tenia 21 puntos
+creale
+3 etapas
+crea la etapa 1 y crea vos la sub tarea
+ahi esta
+como igual que
+si igual que coreview
+ahi va si igual que coreview
+le creas add
+acordate que
+acordate todos esos coreview y asignatelos todos a vos
+si le das control y los seleccionas todos
+podes seleccionar
+y asignar a vos o estan sin asignarte
+a vos despues quedan como que vos no los hiciste
+dale control y todo
+que cosa barbaro
+no me deja mirá
+me da de cualquier cosa
+no te tenes que pagar abuela wey
+pará
+donde me paro
+agranda el coso
+andate a la barra
+la barra de la izquierda agranda
+bien
+apretá control en cada uno de esos
+no te dejas seleccionar
+no no
+mirá
+dale pestaña
+ta bueno seleccioná
+ponete cara ahi
+tu foto es una c***
+entre las nuevas
+y ponelas en done
+porque sino esas se pierden y quedan como tarea
+después me salta hay una tarea que no se finalizó
+y eso se pasa
+no queda en el sprint como que se hizo
+que pasa yo cuando cierro el sprint las tareas no estan terminadas
+se pasan
+y estas no las encuentro ni en pedo
+yo por ejemplo me paso a veces con
+martu y me pasa en el trabajo también
+que cierro y las subtareas
+se pasan para el siguiente sprint
+y eso es una c***
+osea siempre cuando queres esta tarea es automático
+copias link te la asignas a vos
+done ya esta
+asi te olvidas que la tenes que pasar
+lo correcto seria dejarla en progre
+despues de done pero
+asi ya te olvidas que tenes que pasarla
+a improbre
+ta entonces en esta de 21
+create esas 3 tareas que me dijiste
+esos 3 hijos
+ahi no tienen que tener un formato de nombre
+ta
+avisame cuando esten creadas
+y lo que te voy a proponer es lo siguiente
+vos pensas que esto lo liquidamos este sprint?
+mucho huevo si
+pero claro pasa que con la beta
+tato y la investigación
+no se que
+cuanta fe no me tengo no se
+bueno
+si meto
+mucho corazon
+ta vamos viendo vamos viendo
+en teoria por lo menos la idea
+es que la etapa 1 y 2 quede terminada
+y que quedemos con la etapa 3
+osea vamos a
+apuntar a eso a liquidar la etapa 3
+a liquidar la etapa 1 y 2
+si? si
+entonces lo que te propongo es lo siguiente
+porque es ultima creo una continuacion
+y volves a decir
+y la etapa 3 la pasamos para la continuacion
+ta lo que te propongo es lo siguiente
+etapa 1 2 y 3 que sean
+tareas
+no tenes que puntuarlas
+que sean tareas
+y vas a crear una rama
+a partir de la 123
+y me vas a enviar PRs
+como envias siempre en el channel de purgikue
+pero son para mergear a tu rama
+osea es lo mismo solo que no mergeas a velo
+mergeas a tu rama
+porque que pasa
+porque si no se termina este sprint
+ya fuimos por lo menos
+decimos ta revisamos la etapa 1 y 2
+chequeamos
+y nos queda la etapa 3
+y esta ahi
+queda registro de este trabajo
+nosotros te fuimos chequeando cosas
+pero el sprint que viene se va a la rama
+original contra esto
+bien
+en cada una de estas tareas
+pone el titulo
+y si queres toda esta descripcion de etapa 1 2 y 3
+pone la tarea padre
+bueno tiene trabajo
+no se puede quejar
+se acabo el recreo
+si
+tiene varias cosas
+tiene que revisar PRs
+tiene que hacer eso
+y ahora todavia tiene que
+hacer esa cosa de investigación
+la investigación es 5 segundos
+estas haciendo caca
+y pones opciones
+probas un poco
+generame un prefijo
+si un prefijo
+o en realidad es post fijo
+es algo a poner ahi
+que siempre
+mi idea es que sea
+algo arroba melinator punto com
+entonces cuando yo detecto eso digo esta perfecto
+este no lo van a usar
+si estas en dev este no lo van a usar
+y eso
+te digo
+bueno lo utilizan todos
+hay otro parecido
+por eso te digo es
+che dame alternativa melinator probar
+haber la idea es usar uno que les quede comodo
+y que sea gratis
+porque hay una cantidad que son gratis
+bueno es eso
+pongase a laburar
+yo estuve leyendo que va a ganar delgado
+asi que saque su comunismo
+saque su comunismo sus ideas
+que le meten en la embajada
+a todo bien yo se que los quiere mucho a la embajada
+que tiene un trato especial
+con un embajador
+si
+el guille
+el guille me manda
+gira se hace solo
+con un coso
+y un robot tipo leyendo un chat de lag
+y pasando
+y quedando la tarea
+y guille me dice no se porque te hace tanto problema
+yo le mandaria
+ah si como hago para pasar esto
+y charlas de guille
+no porque esto hay que hacerlo asi hay que hacerlo
+vamos para aca
+crea team mate
+no vos sabes que team mate no sacalo
+a ver como hace la inteligencia artificial
+se le mando reflexiones
+por lo que le quiero decir en estos momentos
+dale ponela y echame la mierda
+claro
+lo de team mate por ejemplo
+nunca me voy a olvidar despues que armamos toda la arquitectura para team mate
+me dice si complica mucho sacalo
+no mijo
+funciona si funciona
+no esto de team mate y de multi compañia
+es una pija
+que vamos a tener en el culo una cantidad de tiempo
+pero es algo que
+vos ponete a pensar
+nos da un estatus de la concha de la madre
+osea vos podes crear la cantidad de compañias que quieras
+no tenes que andar
+teniendo diez mil cuentas con compañias
+podes crear todo lo que quieras
+podes se dedo de la administracion
+de tus cosas a un contador
+es una pegada
+realmente es una pegada
+porque vos ponete a pensar lo siguiente
+empresas de estados unidos
+van a poder entrar y generar pagos
+entonces vos me das a me cedes a mi tu cuenta
+yo entro y te genero pagos
+te entiendes esta de mas
+osea
+es plata
+a ver es mas posibilidades
+y yo creo que
+yo creo que
+con eso atacamos al 1%
+si pero

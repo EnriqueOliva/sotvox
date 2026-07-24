@@ -1,0 +1,258 @@
+este para agregar un documento si no me equivoco y este es el que procesa todo el tipo de documento
+no no no pero este archivo a no ser que yo te quedando loco vos has trabajado yo arreglar yo
+subió 10.000 ajustes de seguro pero si lo hice yo cuando hicimos el documento para el s 4 y eso
+de los aprendizajes que saque acá lo arreglamos en él en el documento el documento eficaz el
+cambio fuerte con generar documentos y después separamos lo que es el general de todas las
+operaciones trató el general
+peor que tiene todos los mapeos y todas las cosas raras y el fin al fin los como separan
+y no sé si voy a estar tocando este documento está tocando con utilizar
+este trámite y tocaste por toda la si son por el cambio bastante puntuales
+el chico lo que hay que hacer esto debería una función auxiliar es el único cambio de
+abril es el único cambio de abril y acá
+escuchó el texto que pues no Apple-beРor
+알� dictate
+würde
+das
+entonces
+el otro
+lo llamo
+efe
+la
+blanca
+cuando
+el
+boli
+desde
+ha Cortado
+Internet
+por eso
+locelo
+peste
+a ella
+para este documento. O sea, es el mismo código pero solo para este documento. Entonces tenemos
+todo este código. Si te fijás, todo esto es repetido. Mirá. Distinto de New. Es el
+mismo código, mirá. Voy a buscar esta línea. Exacto, así, random. Me aparece dos veces
+que eso es igual. Vos me vas a odiar con tu alma, ¿sabés? Me vas a odiar con toda
+tu alma. Pero tenemos 50 documentos para rellenar. No hay mejor momento para refactorizar.
+Porque si lo dejamos para después, no lo vamos a probar como lo vamos a probar ahora.
+Va a estar todo el equipo de administración probándolo. Y de última, el lunes, si vemos
+que muchos salen con errores, el lunes lo que hacemos es que lo arreglamos y lo volvemos
+a mandar. Que ya vamos a estar con salida de producción de compra y venta. Acá el
+refactor es concreto. No lo hago yo porque vos ya estuviste tocando cosas. Lo hago yo.
+El tema es, Santi, que yo esto no lo entiendo.
+O sea, yo si toqué algo fue una línea. No, no estoy seguro, yo no estoy seguro de haber
+tocado esto para estos tax forms. Quizás algo habré trabajado para el SC4, no para
+estos tax forms. Entonces yo no, no, desconozco cómo funcionan estos tax forms. Esto, el
+F1065, el F1120, donde llegue a distorsionarse algo. Yo ni siquiera sé si está mal o no.
+Me explico. No sé qué está bien y qué está mal. Qué campos están bien, qué campos
+están mal, qué campos están mal. No sé.
+No sé si alguien llega a romper algo y yo, yo ni siquiera sé si se rompe o no. Ese es
+el tema. Cómo testeo esto, cómo testeamos. No, a ver, el testeo es el mismo que el de
+SC4. Sí, pero el de SC4 yo sabía porque Guillermo
+nos explicó en una reunión de Zoom cómo era el SC4. Esto no tengo idea cómo es estos
+documentos. No tengo idea que se llena y que no.
+No, pero lo que se llena en los documentos son los campos vistos. No sé si hay algún
+cheque acá. O sea, acá. Esto está muy bien. No sé si hay algún cheque en este. Sí, esto
+Esto genera un pdf con transacción. Este no cambia. Este if de acá de new no cambia.
+Acá lo que es este valor, es este acá donde vos tenés que trabajar. Y los más chequeables
+son los checkbox. Ah, los checkbox. Esos son como los más jodidos porque después es reemplazar
+buscando por el nombre, que eso ya lo... que es muy lógica de lo que ya sacamos para
+documentos. Muy parecido a lo que sacamos para documentos. Porque es... lo más jodido
+acá Kike, y esto hay más yo por no haber hecho un check contigo, son estos checkbox.
+¿Ota? Que si vos te acordás, estas mierditas que tal hace 10... o sea, todos estos checkbox
+que... acá ya están.
+¿Están entonces?
+hay que ver de donde mierda salen
+esto es lo jodido
+porque después el resto son todos string
+se quería copiar y pegar
+nosotros acá tenemos
+los fields, los archivos
+en este caso son 4
+son 4 archivos
+y en el caso que tenga
+más de un socio
+este se genera por socio
+son 4 y dependiendo
+el caso
+dependiendo el tipo de
+compañía, vamos a aplicar
+un poquito este punto, dependiendo
+el tipo de compañía vos generás
+unos documentos y vos
+completás la declaración
+para que estemos alineados
+si vos completás la declaración
+con un solo partner
+te van a generar dos documentos si no me equivoco
+no me acuerdo donde estaba esa división
+hay un lugar donde está
+acá lo voy a buscar, hay un lugar
+mirá
+además yo tenía un widget
+tenía un script que creé
+para poder
+para poder imprimirlos
+los nombres
+de los lugares a editar
+no sé si vos llegaste a tocar este script
+pero este es tan script
+capaz que esto te puede dar una mano
+mirá que buen detalle
+este script te puede dar una mano
+yo lo que hacía era imprimir los checkbox
+y todas esas cosas, mirá por ejemplo acá
+los checkbox
+en algún momento imprimías el campo
+tal cual
+entonces es lo que yo venía y ponía a mano
+que esto vos debes
+haber utilizado alguna herramienta o algo
+para ver estos nombres
+calculo yo
+si
+esta herramienta ya estaba
+capaz que correr el script
+te puede dar una mano
+para los checkbox
+después estábamos en el con
+hay un lugar donde vos determinás
+no me acuerdo
+donde carajo sea
+el documento
+el documento es para multi partner
+o partner
+hay un lugar donde
+supongo que estos documentos es para tal tipo
+porque estoy intentando descubrirlo
+acá tenés get multi partner mappings
+viste, si tenés muchos partners
+se genera
+un documento fijo
+y después es
+ahí se generan documentos dependiendo de la cantidad
+de partners que vos tengas
+esto es por partners
+por partners se generan estos tres documentos
+el sk1, el sk2 y el sk3
+si tenés un single partner
+por acá
+se generan estos tres documentos
+y hay uno
+que en realidad lo que hace es
+nosotros generamos un pdf
+vos me decís que esto todavía
+osea vos estuviste haciendo ajustes puntuales
+no?
+si, dos o tres líneas
+tenés los números de documentos que cambiaste?
+o que cambiaron?
+solo dos
+el template del pdf
+y este account in service
+no, no, no, los tres que te pasé
+los nombres de los tres que te pasé
+si, f1065
+este después
+f1065 sk1
+si
+y f1120
+cambió el sk1
+el 1065
+y el f1120 este
+si
+tiene como cinco páginas
+hay cosas que ya tiene prechequeadas viste?
+vamos a verlo
+acá lo que hay que hacer
+Kike es un trabajo medio manual
+pero es agregar los campos
+tal cual dice acá
+el código nuestro
+detecta estos campos
+pero cambiaron
+cambiaron los campos
+pero como que cambiaron los campos?
+cambiaron los campos
+es distinto, mirá el 2025
+y vas a ver
+no todo, no absolutamente todo
+son cosas más bien puntuales
+este cual es el
+y este es el
+pero como que cambiaron los campos?
+cambiaron de lugar?
+cambiaron los campos
+en city, por ejemplo
+ahí arriba
+city or town
+state or province
+esos pasaron a ser como cuatro campos distintos
+por poner un ejemplo
+y cambió la numeración de los campos
+o sea el nombre código de los campos
+que chupa verga
+que chupa pija
+este es el que más me
+este va a ser un huevo
+adres state
+este state
+esto hay que probar el formulario
+pero este state creo que se rellena con google
+el adres
+o sea
+en el formulario
+o sea en el site
+cuando llenas el tax form pones la dirección
+o sea es un solo campo
+donde el usuario, el cliente pone su dirección
+si no me equivoco
+pero no es con google ese? creo que es con google
+vamos a asumir
+que tiene el formato de una fecha
+que chupa verga
+creo que es con google
+a que te referimos bien?
+yo algo me acuerdo pero muy poco
+que cosa es con google?
+que cuando hacés la declaración es con google
+que el cliente tiene la opción de
+usar google
+creo que cuando completás
+este campo tenés que poner la fecha
+no sabés que no me acuerdo bien
+como se llama?
+antes start
+vos llegaste a completar alguna
+transacción?
+te referís a declaración capaz?
+de prueba?
+si llegaste a completar
+si recién hace un ratito
+ahí te pidió
+como pusiste el estado
+claro es un solo campo
+en el que vos tenés que poner
+la dirección completa
+calle tanto, ciudad tanto
+podés apostar tanto
+es un solo campo que vos escribís
+y no vís algo que no haya prestado atención
+creo que no me ofreció otra opción de nada
+era tipo
+podemos verlo ratito y que no
+si obvio
+pero creo que me tendría que crear una
+otra compañía creo
+hagamos una cosa aquí veremos
+pará que voy a tener que charlar con Martina algo
+para que ella pueda seguir trabajando y esto nos va a llevar un ratito más
+vos te quedás un ratito más hoy
+así que
+yo te llamo
+andá dejando todo eso pronto para crear
+y nos conectamos
+porque claro
+ese pequeño cambio hace que todo sea más en el campo
+vamos arriba
+hasta luego

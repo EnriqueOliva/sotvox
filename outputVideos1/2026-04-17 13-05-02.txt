@@ -1,0 +1,249 @@
+Buenas, buenas.
+El restaurante falta
+Santi y Jon.
+Sí.
+Se animan a pinguearlos ahí.
+Ahí vino Santi.
+Falta Jon.
+Compartiendo.
+Bien.
+Bueno, ahí entró Jon.
+Bueno, a mi lado estoy trabajando con Hotfix.
+Estoy trabajando con Hotfix.
+Dicta producción.
+Recién tuve la reunión.
+Está interna que tenemos ahí.
+Con Guille y con Beto.
+Con el CEO y el CEO.
+Ah.
+Qué sigla.
+Este.
+Un poco para estar alineado con lo que estamos haciendo.
+Esto es lo que venimos trabajando.
+Tenemos que ajustar los términos y condiciones.
+Que ya se los pasé a Jona.
+Nahue, te tengo que delegar una tareita.
+Enrique.
+Al parecer ayer ya corregí lo del worker.
+Porque lo estuve probando y ya lo corregí.
+Era un tema bastante delicado y urgente.
+Así que ya lo.
+Lo ataqué.
+No podíamos tomarnos más tiempito.
+Este, de todas maneras igual.
+Seguimos con el issue del site que lo está borrando.
+Hay que ver qué carajo está pasando ahí.
+A ver por qué lo está borrando.
+Este.
+Y ahora estoy sacando unas cositas.
+Y ya quedaría.
+O sea, quedaría ajustado lo de One Money.
+Así que nada, sería revisar las PR.
+Este, yo no te voy a avisar cuando.
+Cuando termine con el Hotfix Approved.
+Porque estoy ajustando unas cosas al Hotfix Approved.
+Por eso tu PR dio un poco de conflicto.
+Y bueno, ya veré en qué anda cada uno.
+Quique.
+Bueno, nosotros estuvimos con la parte de test unitarios.
+Sí, de test unitarios.
+Bueno, ayer estábamos viendo justamente ese tema ahí del worker.
+Y bueno, del lado de Fernando, allí él hizo avances en lo que es el tema de la cobertura de los test.
+Y los casos de prueba que faltan en los test existentes.
+Eso me dijo como que sigue en marcha.
+Y de momento seguimos sacando test unitarios.
+Y de momento seguimos sacando test unitarios.
+Que están ahí en internos o en idas y vueltas con Copilot.
+Así que estamos avanzando bien en ese sentido.
+La idea sería continuar con eso básicamente.
+Perfecto. Bien de bien.
+Con tareas estamos bastante bien, Quique.
+Ahí también mandaste lo del...
+Para que lo chequeen todos, lo del Prompt Engineer, ¿no?
+Eso me olvidé, sí.
+Ahí también hoy le comenté a los muchachos a ver si nos podíamos revisar.
+Ahí también hoy le comenté a los muchachos a ver si nos podíamos revisar.
+Las PRs, porque bueno, están todas enviadas pero solo falta algunos Approves.
+Las PRs, porque bueno, están todas enviadas pero solo falta algunos Approves.
+Las PRs, porque bueno, están todas enviadas pero solo falta algunos Approves.
+Así que ya estamos con eso también.
+Creo que falta Nahuel que estaba con otra cosa y Fernando.
+Yona y yo ya aprobamos todo, creo.
+Fernando envió las dos PRs al channel principal, ¿no?
+Tendría que confirmar, creo que sí.
+Yo saqué las mías del principal.
+Si podés escribile que las saque cuando esté.
+Si podés escribile que las saque cuando esté.
+Si podés escribile que las saque cuando esté.
+Dale, OK.
+Dale, OK.
+because Fernando com center nos las envió Gaussian y las aprobamos.
+Ah, ¿está aprobado por todos? Ni lo escribo.
+Ya está, está bien que esté ahí.
+Sí, sí.
+Divino, hermoso, precioso.
+Y que después de una Manonたту al lunes cuando vuelva con el Sprint.
+Y que después de una Manonたту al lunes cuando vuelva con el Sprint.
+Y que después de una Manonたту al lunes cuando vuelva con el Sprint.
+capaz que dejarle un mensajito, un poco no basta, dejarle un mensajito y con eso
+para alinearlo un poco, capaz que antes de la daily
+bien, ya yo ajusté la APR con los comentarios que había dejado Santi y Pandin
+ya dejó aprobado el diseño, falta nomás que le de una miradita a Jonna
+que te la re pingueo para que la puedas ver
+ahora estaba por subir el tema de las APRs de Promi Engineering para que la vean los chicos ya
+y voy a aprovechar para ver la de Kike y creo que también está la de Jonna
+bien, ustedes me pasaron las APRs del tema de TeamMate, no?
+de las tareas de APRs
+si, ayer las mandó una web al canal
+si, ayer en el chat
+tendré que hacerlo
+lo último, si es lo último
+ta, necesito que nos quedemos como post-cram ahí con Jonna
+vamos a atacar una cosita antes de eso
+dale
+vamos a atacar un tema de asignación
+Enrique, vuelvo hacia vos
+le había asignado una tarea a Fernando
+le había asignado una tarea a Fernando
+no sé cómo venís vos con los tests unitarios y con lo de SciPress
+porque también necesitaríamos ponerle orden
+si, preferí seguir con eso
+no tenía prioridad, pero le había asignado una tarea a Fernando del BackOffice
+que había una cosita que alinear
+lo puedo tocar sin problema
+donde está?
+a ver si puedo compartirte todo esto
+te voy a compartir por chat privado
+bueno, ahora veo que compartitelo
+que ahora lo que veo Fernando hizo un draft de eso
+si lo pudieras completar
+no va a producción, va a contradeo
+pero es para un rol que habían pedido las muchachas de banca
+dale
+si
+voy a ver si te lo puedo compartir más lindo
+porque como tiene fotos
+ahora me dedico a pasártelo
+y ahí va a surgir una tarea, o sea si podés robarle la tarea a Tato
+que creo que ya la tiene
+creo que ya se la cree
+creo que es de seguridad
+limitar el acceso a la frontera
+dentro de la compañía hace un rol
+no, creo que es esta
+es la 3011
+si querés esa sacasela
+dale
+3011
+tiene tareas cerradas
+después del lunes dale una mano con eso
+a ver qué carajo hacemos
+ahora no vamos a complicar la vida
+yo no
+bien, ayer quedaron hechas ahí varias PDRs
+estuve actualizando las que ya tenían
+las estuve ahí actualizando con Dev y eso que habían
+las que se estuvieron mergeando ahí un montón de cosas
+y nada, me puse ya con lo de términos sin condiciones y políticas
+ya casi que lo tengo
+estoy tipo volviendo a rechequear los textos
+de que estén bien y eso
+así que nada, ya mandaría la PDR a internet
+y te iba a preguntar, no sé si por lo que hablamos ayer
+si querías que pusiera a alguien más además de Nahue
+como para revisar bien ahí las traducciones y eso
+o si lo mando nomás
+sí, arrobalo en interno a los dos
+a Nahue y a Enrique
+y ahí por favor seamos lo más explícito posible
+en cuanto a la traducción
+o sea, peguemos
+más allá de que yo haga todo el diseño y todo
+fíjense si ustedes pueden agarrar, bajarse la rama
+y preguntarse
+la traducción base es la de inglés
+o sea, la que está bien es la de inglés
+¿sí?
+¿está?
+funciona, si querés
+en la descripción de la PDR poné los links al drive
+bien
+para que lo revisemos
+o sea, eso es sumamente importante
+que no tengamos ningún typo ni nada
+sí
+y que la traducción tenga la mejor calidad posible
+más allá de que hoy o mañana van a tener que revisar los abogados
+pero la traducción que tenga
+como pasó con los primeros términos y condiciones
+lo importante también es en los términos y condiciones
+hay que seguir poniendo el link, viste, abajo del todo
+que estaba ahí, que estaba suelto
+sí, sí, eso sí
+está
+eso viene bien
+perfecto
+Santi
+buenas
+ayer dejé terminada la parte de Ready for Dev
+quedó todo lo de TeamMakes que era lo que faltaba
+unificado
+ya quedó todo prolijo eso
+y después terminé la guía de grabación
+me falta hacer un video
+que fue lo que el otro me habías pedido para eso
+pero la guía en sí ya la dejé al lado
+la dejé actualizada ahí con tres recomendaciones
+tanto para Mac como para iOS
+como para Windows, perdón
+y ahora continúo en paralelo trabajando con el tema de la NATBAR
+que fue lo otro que me habías pedido y que le dimos prioridad
+bien
+tenemos que reunirnos por el de la IA
+no sé si nos reunimos a la tarde después del almuerzo
+me avisan ustedes cuando vuelvan del almuerzo, ¿les parece?
+dale
+y ya de paso hacemos lo del Cloud
+eso es que está faltando la cuenta
+dale, genial
+Gastón
+buenas
+bueno, yo estuve seguida haciendo la presentación para Gafi
+ahora ya la tengo terminada
+se la voy a mandar a Santiago para que la corrija
+y después mandársela a Guillermo
+por otro lado también estuve reuniéndome
+con el equipo de Roundup
+con Ana y Ramiro y Matías
+para empezar la semana que viene con eso
+que es el 29 creo
+este mes
+y nada, con el tema de puntos
+si termino esas
+bueno, la presentación
+y tal vez faltaría la revisión de notificaciones
+me quedaría en 90
+y bueno, con la tarea
+con los 5 puntos de hoy
+los de lunes ya quedaría en 100
+así que, a eso por mi lado
+bien, perfecto
+bien de bien
+bueno
+bueno, entonces
+estaba pensando
+Enrique, vos no notaste ningún issue con el tema de descargar el documento
+así que es un tema de permiso
+o sea, el pad que está generando el file
+el coso está bien, ¿no?
+el file service
+sí, entiéndete, sí
+sí
+lo reviso de nuevo
+a ver qué corno pasa
+bien
+si se pueden quedar Jonathan y Nahuel
+con el resto, buen provecho
+nos hablamos
+chau chau
+chau, buen provecho

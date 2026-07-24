@@ -1,0 +1,2420 @@
+Sí, si querés, compartime
+De hecho, me olvidé, te lo iba
+a sugerir, de hecho
+Bueno, sí, te comparto
+Compartí
+pantalla, pantalla 1
+Es un laburo enorme
+ir a PR825
+por ejemplo, es bastante grande
+Sí, sí
+Porque, ¿qué pasa?
+Estas dos tareas, por ejemplo, son viejas
+en realidad, pero les hice un refacto
+Entonces, les
+agregué casos
+Ahora te paso que tengo
+mira, tengo un punto
+cloud y un punto
+cloud house
+que acá puse
+tipo, creé pila
+de agentes
+y skills, todo
+después, si querés
+te comparto, básicamente
+para
+bichar tipo, el estatus
+de los
+endpoints y eso, después
+te comparto, tipo, ambos
+en un zip
+o en un router
+Genial
+Acá, por ejemplo, estos dos
+que eran de las otras tareas
+o sea, no es que los eliminé
+ni nada de eso, o sea, en realidad
+getStatus, por ejemplo, es
+a ver
+acá, getUserOutStatus
+lo mismo con
+verifarReset
+es
+¿qué es?
+verifarResetCode
+o sea, le agregué casos
+y lo puse en una carpeta
+básicamente, y lo dividí en dos
+la nomenclatura que estoy usando
+es el nombre de la carpeta
+más
+lo que hace, happy
+and readlim, validation
+and error, porque lo que me ponía
+lo que me sugería era
+validation and error, por ejemplo
+pero pasa que habrían varios archivos
+definidos igual
+entonces después para
+llamarlos con el
+arroba
+y poner ese nombre del archivo, ¿viste?
+para llamarlo con cloud
+tipo, joder, ahí un poco
+o sea, tendrías que elegir
+entre varios, y si crece y crece
+hay que elegir entre más
+esto en carpetas
+básicamente
+es el
+el nombre de la carpeta es básicamente
+el nombre de
+si no me equivoco
+y si lo hizo bien, Claude
+es el nombre de
+el método en el controller
+o sea, porque
+si ves en los index
+vamos por ejemplo
+a lo de OTCR
+que lo que pasó
+en esto, ¿viste?
+que comentaba acá de
+esto era OTCR
+en realidad antes
+se llamaba OTCR
+pero nunca usó
+el
+el
+, el rail controller
+siempre usó este controller
+simplemente fue un error
+tipo de nomenclatura que después lo corrigió
+Martín, o sea
+puso la R sin querer
+nada más, pero en realidad
+no llamó nunca
+a rail controller
+o sea, esto
+parece que te devuelve
+un rail controller que no sé
+cómo excedió desde acá, pero
+lo busco
+la cosa es que cada método
+o sea, este sería el nombre
+del método dentro del
+controller, vamos a ver
+esto como ejemplo
+lo voy a poner por acá
+bueno
+a qué tal
+estoy en rail controller
+pero estoy buscando otra cosa
+vamos con este
+ok, va, o sea
+acá está, por ejemplo, el método
+se define acá, no sé qué
+bla bla bla, entonces
+entonces
+la idea sería
+la nomenclatura de las carpetas
+o el archivo, o sea
+el archivo si no supera los 15 tests
+que en realidad
+todos superan los 15 tests
+pero ta, la idea sería
+ponerle el nombre del método
+ok
+accept exchange
+que raro
+cuando yo vi esto
+por ejemplo, lo vi en una
+materia que usa otro lenguaje
+pues hay algunas cositas que me resultan
+un poquito raras, pero
+perdón por la preguntonta
+solo por
+un modo de curiosidad
+vos decís que
+Santiago
+él dijo algo sobre
+esta nueva nomenclatura
+algún comentario o algo
+es para no confundirnos
+por esto que pasó, viste
+si vamos a hacer
+OTC, o sea, si vamos a hacer
+test de
+por ejemplo, viste
+OTCR, yo junté
+varios test de OTCR
+pero claro, había uno que
+como estaba mal la nomenclatura, en realidad
+estabas testeando
+o sea, yo
+estaba testeando
+otro
+controller, entonces si vamos a hacer
+PRs grandes
+tiene que ser de un solo controller
+o si son PRs
+o sea, si son
+pocos test, como en el caso en este
+que esta
+PR, por ejemplo
+creo que es
+esta
+si, se tocan
+dos controllers, creo
+si
+creo que si, se tocan dos controllers
+pero ta, son dos test locos
+entonces no pasa nada
+de hecho, no sé si, no me acuerdo
+si hice un helper
+para cada uno, si, hice un helper
+para cada controller
+entonces, esa sería más o menos
+la idea de lo que se me ocurre a mi
+de, vamos a
+agarrar, por ejemplo, OTCR
+OTCR
+ahora aparecen
+esas nueve porque les cambié
+y agarramos
+tipo, todos estos
+y hacemos, o sea
+el análisis de casos
+que, el análisis
+de casos, tipo, los estoy
+haciendo directamente con
+tipo, con cloud
+o sea, con tipo
+agentes, no me acuerdo si era un skill o qué
+cuando lo hice
+o sea, literal le voy a preguntar
+necesito hacer el análisis de casos
+hacémelo, y
+creo que lo deja en aux
+o algo así, si no me equivoco
+si, acá tiene
+los flows
+te pone el controller
+y el método
+el control
+y te pone, tipo, todos los flows
+¿quiénes son esos flows Tato?
+estos archivos
+bien, los flows son
+tipo, ponele
+vos llamás
+a uno de los
+métodos, y dependiendo
+es como si
+fuera un árbol, ponele
+cuando vos llamás un método
+podés tener
+tales cosas bien, pero tener
+una cosa mal, entonces te va
+a salir mal en tal caso
+y de ahí tipo, es que vemos
+los casos, o sea
+todo lo que
+puede, todas las cosas
+que puede, que pueden
+pasar, o sea
+digamos que los flows son
+todos
+los casos, o sea, todas las cosas que pueden
+pasar si vos llamás a X
+método, o sea, te puede
+te puede dar, o sea
+dos cosas diferentes, porque no puede ser
+que te den el mismo resultado
+eso también puede ser a veces
+después, probar casos
+límites, y que tipo
+happy path, que se
+que estén bien, pero que sean igual
+casos límites
+tipo todos los
+todos los flows, tipo
+todo lo que puede pasar si llamás
+a ese método, entonces como vos
+testeás
+el controller
+el controller llama a un service
+de repente los service se llaman
+entre ellos, después se empiezan
+a abrir a los repositorios, etc
+etc, es todo como un árbol
+bueno, o sea los flows
+son cada uno de esos
+mirá, por eso
+al final queda medio gigante
+cada uno de estos flows
+si ves, o sea
+son bastante grandes
+algunos más grandes que otros
+miráte este
+por ejemplo
+tenés una banda de flows
+tam, cada flow en teoría
+sería un test
+esto también por ejemplo te
+analiza los gaps
+creo que estuvimos hablando, no sé
+si te acordás
+un poco
+los gaps es tipo
+de los flows cuáles no están
+cubiertos en xtest
+y los va
+los va registrando
+creo que era acá
+y los
+tipo los pone en orden de
+prioridad, bueno hay varios
+como podrás ver
+por lo que corrí
+976 gaps
+entiendo
+eh
+qué te iba a decir
+ah, esto no importa
+estos son tipo
+archivos temporales, la mayoría
+lo que importa en realidad son
+estos
+por lo general tipo
+tenés todo
+tipo listar los endpoints
+eh
+creo que
+creo que crea algo bueno, tipo
+si lo ves
+tipo creo que está bueno
+me gusta
+en un principio lo que yo quería hacer
+era crear
+algo que vos le pases
+un conjunto de
+por ejemplo todo un
+controller, que vos le agarrás y le pasás
+todo un controller y de repente
+arranque un flow
+que primero
+cree todos los flows
+después de ver todos los
+flows que hay
+haga
+por eso acá están los drafts
+pero tal, lo borré porque
+estaba creando tipo pura basura
+por eso, o sea
+era la idea nomás, pero la idea
+era que, o sea
+te digo la idea concreta, la idea concreta
+era, le pasás
+un controller o le pasás
+una lista de endpoints
+y que te cree los tests
+con su helper y que agregue
+al index las constantes
+eh
+o sea, automatizar todo eso
+si claro
+es un huevo y demora mucho
+pero tal, estuve
+en su momento estuve probándolo
+no pude, fue
+una basura todo lo que creo
+pero
+creo que no es tan
+irreal crearlo si
+si nos sentamos a eso
+y ahí
+sería
+nos mandan hacer
+todos los tests de endpoints
+te decimos, tal, si
+esto
+no debería estar grabado
+pero decimos, tal, si
+para hacer todo este controller
+nos va a llevar tres días
+agarramos, ponemos a correr ese flujo
+y queda
+se entiende?
+ok, no, está bueno
+eh
+tal, después
+lo bueno es que tiene corrido
+tipo bastante, por eso que tiene
+muchos flujos
+ya analizados, porque tiene corrido
+tipo ya bastante
+ehm
+que más
+bueno, sobre
+OTCR en específico
+así como pasa con OTCR
+calculo que
+de test en general
+mirá, voy a
+mostrar el caso específico de OTCR
+estas tres son de OTCR
+estas tres, acá van
+tres, acá eran
+tres pero al final una no es
+que es esta, que está registrada como
+OTCR pero no es OTCR
+así que van cinco
+acá vos creaste tres, van
+ocho, y acá
+hay una
+eh, que está, son
+el total que son nueve
+que si vamos al
+no sé qué es esto
+es este
+si vamos acá
+ponemos OTCR
+vas a ver que son
+nueve, o sea y si
+o sea ves acá
+son nueve, o sea
+y si vos tocas
+el Rail Controller
+Rail Controller te van a aparecer que
+son diez porque acá se define
+pero se llama nueve veces
+o sea se llama cada vez
+que es
+OTCR, entonces está
+hay que tener cuidado ahí
+verificarlo, no
+vaya a ser que vuelva a pasar eso porque
+tipo se corrompe todo
+porque lo que pasó fue eso básicamente
+creo que fue Martina
+que se equivocó ahí en vez de poner
+OTCR, eh, OTC puso OTCR
+entonces después se creó mal
+el ticket, yo
+actué según eso y el
+el helper está tipo
+contaminado, las ramas están contaminadas
+mira
+y bueno, básicamente
+sería, sería eso, tipo
+agarrar, juntar
+todo, todo lo de
+como te
+como te decía, mira
+acá por ejemplo esta
+esta PR
+le sacaría directamente
+el test de
+OTCR, sí que
+de repente lo copio y
+pego el archivo pero lo saco
+saco el OTCR de
+de esta PR
+ocho once
+claro y después viste
+esto de acá
+estas dos PRs
+o sea después se van a cerrar básicamente
+si no ya
+no sé, decís que
+las cierres ya o?
+yo creo que
+la podés poner como cerrada igual ya
+o sea queda en la lista igual
+digo si por alguna razón
+se puede volver
+a abrir, sí
+queda ahí igual
+claro, está bien
+la cierro entonces
+ok, porque
+o sea
+básicamente lo que dice acá
+porque al fin y al cabo son
+dos PRs
+o sea esta y esta
+lo que hice acá fue
+mergear una
+y después mergear la otra
+después hice tipo todo un
+refactor y también el refactor de esto
+pasé por varias conversaciones
+porque claramente que te consume
+un montón de cosas, tipo
+lo estuve, tipo haciendo
+pila de pasadas
+a vista a ver si tenían X cosas
+X cosas, porque son
+tantas cosas que ni un pedo
+que la idea lo saca bien
+qué sería lo ideal desde mi punto de vista
+para que sea más fácil
+de corregir
+que eliminar
+lo más que se pueda el código repetido
+cosa que la cantidad de líneas que se modifiquen
+sean
+la menor cantidad de líneas
+posible, a qué me refiero
+con eso, hice un análisis
+de código repetido, Fede
+por ejemplo un amigo mío
+código repetido
+tenía en su repositorio
+menor al 3%
+nosotros
+tenemos en la parte de
+test
+un 60%
+repetido
+o sea
+hay muchísimo
+refactor para hacer y
+si queremos centrarnos en
+automatizar los test
+y que tengamos menos
+trabajo para hacer
+automatizar los test
+y poder entender y centrarnos bien
+en los casos
+hay que arrancar de a poco a ver cómo
+podemos ir refactoreando
+haciendo refactor
+porque la palabra es en inglés
+entonces no sé si sería refactorizando
+refactoreando
+haciendo refactor
+de los
+de los endpoints
+o sea
+de los controllers
+agarrás tu controller
+y de ahí es que me planteo
+que
+varias
+de repente varias
+carpetas no sean
+o sea la nomenclatura de repente
+de varias carpetas no sean las correctas
+no sé si
+ponerle tipo
+nombre las carpetas
+según como sea
+esto
+o según el controller
+bueno pasa por el middleware
+entonces sí que sería según esto
+o sea el principio
+del endpoint
+porque viste que
+siempre pasan por el controller
+y después pasan por todas
+estas cosas de hecho
+bueno hay algunos que pasan
+por el middleware
+de configuration o algo así
+configuration middleware
+ahora no lo veo
+pero tal no importa
+eh
+acá agregaron más de teammate todavía
+si
+o como hacemos la nomenclatura de teammate
+porque de teammate hay
+en v1 también
+ah no ya no hay en v1
+ah
+ah
+otra cosa pequeño detalle
+viste que siempre rompen las
+vuelas con el
+empty string tipo
+no pusiste empty string
+cuando o sea son dos
+comillas
+bueno estoy
+empezando a implementar lo mismo con
+el logpad
+o sea esto
+ahí
+o sea a ver
+si encuentro
+algo que tenga solo el logpad
+o sea si está solo el logpad
+poner eso voy a ir a
+algún bueno chucha
+lo voy a ver de acá directamente
+logpad
+y es porque
+porque así
+que pasa si vos ves
+en cualquier test
+te vas a topar viste que hay cosas que
+se repiten
+siempre tipo por ejemplo
+esto así que se
+repite siempre
+eh este por ejemplo
+no tiene lo del logpad
+eh esto
+así es una constante al fin
+y al cabo que se repite siempre
+y no está definida
+cookie también o sea
+y qué pasa
+a mí no me rompe las bolas yo
+si fuera por mí agarro
+simplemente agarro y le pido a Claude
+che Claude analizá
+los casos
+bien ta Claude
+pega eh
+hace los test basándose
+basándote en los otros test
+quedan como están ahora que son
+larguísimos y tienen 500 millones
+de detalles eso
+sería lo que yo haría
+ta
+estando en el lugar de Santiago y así como dice
+estoy desesperado por sacarme los test
+pero a la vez que pasa
+nosotros hacemos eso que nos dice
+pero
+tenemos el problema que después
+nos están comentando
+eh tenés mala práctica acá
+que no estás poniendo en constante
+tenés mala práctica acá que tenés código
+repetido tenés mala práctica acá
+qué pasa
+eso al final
+me tipo me estresa
+porque hago una boludez que él me pidió
+que la haga como una boludez
+y
+y me empieza tipo
+entonces son cosas que
+en realidad demoran poco porque yo tipo
+agarro Claude le digo
+eh
+usa
+la
+cual
+me dice
+los flow
+de
+un
+entonces yo
+ahí está
+eh
+básicamente es
+viste controller
+o sea ta y después
+eh
+analiza los gaps esto es para los
+endpoints ya existentes
+se entiende o sea si
+o sea con test perdón ya existen
+si ya están los test
+se eh
+o sea se fija che mira
+tales casos los tenés cubiertos tales no
+entiendo
+eh qué más
+o sea ta me parece
+que está
+o sea está
+bastante rápido todo esto yo
+le pido che analizarme
+eh los flows de tal cosa ta
+bien ahora basándote en tal test
+hace los test de tal cosa ta
+y los crea los los crea sin helper
+los crean te digo en
+diez minutos tenés un endpoint
+pero qué pasa
+vos tenés diez minutos que tenés
+un endpoint lo subís
+ta claramente decís que estuviste
+todo el día haciendo eso
+pero después
+qué pasa tenés leés el
+comentario ta
+te comenta
+tenés un error porque además no te hace
+tipo no no mira todo el código y te
+te hace varios comentarios como te hace Martina
+viste o como te hace
+Copilot
+tenés un error acá
+tenés un error acá corregís
+tenés un error acá corregís tenés un error acá
+corregís el error
+subís
+fallo en seguridad
+ta ta
+corregís esperás a que corrijan
+el fallo en seguridad ta
+subís te fallan
+los test por qué porque actualizaron
+el código ta
+entonces es un dolor de cabeza qué sería
+lo ideal vos vas a estar
+tres días así vos
+o sea
+es o sea es lo que me pasa
+a mí no y espero
+que esta charla
+esta grabación
+quede bien entre nosotros
+se destruya en diez segundos
+que pasa
+vos hacés un test en
+en diez minutos lo que son
+test para hacer en diez minutos
+o sea lo decís
+que lo hacés en medio día te lleva
+medio día ok ta ta bien te lleva
+medio día pero al final
+si te lleva medio día
+por qué
+tenés que estar corrigiendo
+cada cada boludez
+porque además viste que
+Martina te agarra y te comenta
+todas las boludeces igual que Copilot
+Santiago te comenta una la primera
+que lees pisma te la comenta
+corregís y después sigue
+y ahí pisma te la comenta
+y así están días
+a mí me pasa
+a vos no pero
+pero ta
+es igual conmigo
+y ahora con el
+archivo este de index
+que no
+nos hizo crear este
+el famosísimo
+hay 500 millones de
+de conflictos
+qué pasa acá
+bien ahora
+salió con esto de que
+el archivo index
+es una
+mala práctica y claro que es una
+mala práctica tener esto así
+o sea
+si me decís que esto no es una mala práctica
+o sea
+porque además
+tipo tenés pura basura acá
+tenés endpoints
+definidos
+que no están
+ni ordenados o sea
+es horrible esto
+no está nada organizado
+ni nada
+entonces
+qué sería lo ideal
+poder
+porque qué es lo que nos está
+pasando tenemos poco tiempo
+o sea
+el trabajo real dura poco tiempo
+pero estamos
+trabajando realmente
+de más
+por comentarios boludos
+que surgen sí coincide
+entonces qué sería
+lo ideal ponerle que
+trabajamos
+real real
+y
+lo dicho
+trabajamos 10 minutos
+y decimos
+que son 3 sp
+cuál
+cuál sería la idea
+pero qué pasa perdón qué pasa
+después o sea esta
+sería la idea perdón
+lo que pasa es que son
+10 minutos
+de trabajo real
+y lo decimos como 3 sp
+pero esos 10 minutos
+se le suman
+1000 por comentarios
+entonces
+lo ideal
+lo ideal
+es que esto se cumpla
+se entiende porque al final
+si no
+a esto
+voy a hacerlo profesional
+entonces
+entonces
+real es igual
+es igual
+a dicho
+y esto no lo
+queremos
+estamos
+de acuerdo
+entonces
+por eso
+es que lo que quiero
+hacer es justamente decir
+bueno son
+x tareas
+es un
+en point cada una
+acá cada
+tarea no sé ponerle
+3 sp
+por tarea si
+juntas 10 en point
+tenés 30 puntos
+se entiende
+y es un trabajo que lo haces
+en un día y después
+te puedes rascar las bolas mientras
+estudias y manejas
+bien los tiempos de que santiago te está
+diciendo che mira
+salió esto porque a mí me tira
+de repente una tarea que
+como pasó con los de payments yo estaba
+con los test de payments
+y me tiró
+tipo me tiró
+agrega una nueva tab
+agregándose que corregir
+tal cosa y eso es lo prioritario y eso
+tiene que estar para hoy llegó un punto
+que le dije mira lo de payment
+está tan obsoleto
+que lo
+tengo que arrancar de cero para hacerlo
+y
+y tal entonces si vos ves
+yo tenía en mi tablero
+de gira lo de payment
+voy al tablero
+perdón a mi backlog
+tablero no
+tenés lo de payment que lo agarré y lo tiré
+de nuevo para el backlog
+y que por qué
+porque son 5 de
+payment que me suman
+15 puntos 15
+puntos son 3 días yo
+en menos de un día hago esto o sea lo dejo
+corriendo en paralelo
+entiendes
+estaría buenísimo
+estaría buenísimo
+porque a mi
+o sea me gusta y aprendo pila
+cuando o sea y te lo estoy
+diciendo sinceramente y sabés
+que te lo estoy diciendo sinceramente
+ya por todo lo que hemos hablado a esta
+altura
+me gusta y aprendo
+y me divierte hasta hacer
+cosas de
+de frontend y backend
+el tema es que de repente hay veces
+necesito más tiempo
+entonces yo estoy apuntando
+a justamente
+lo que quiere Santiago que es que
+saquemos
+porque tenemos
+test para sacar para rato
+entonces quería nomás que
+estemos alineados
+en eso viste
+en esas cuentitas viste
+y expresar
+un poco eso de hacerlo por
+controladores viste para que
+se cumpla eso cosa de que
+está
+ahora qué pasa
+en el día uno entregamos
+y después estamos
+tres días corrigiendo
+bueno ahora
+esos cuatro días
+son agarramos
+y entregamos en los cuatro días
+se entiende una cosa así o sea
+decir
+estamos
+trabajando más en eso
+entregamos un poco después
+y ya se sube
+al final lo que pasa es que
+realmente terminas dedicándole tiempo
+a algo que no tendrías
+que estar dedicando tiempo
+me entendés
+o sea el tiempo que
+tenés que dedicarle en realidad es poco
+si el test unitario
+o sea
+porque qué pasa los test unitarios
+son tan grandes
+que se confunde
+o sea
+tiene 500 millones de errores después de
+que se olvida de poner
+ambos log info y log error
+por ejemplo eso pasa siempre
+yo digo
+tiene que tener los dos siempre pero pasa
+siempre que se los olvida
+hay 500 cosas
+que se olvida y
+y ta de ahí tipo
+que tengo que hacer varias iteraciones
+realizando
+esos digamos patrones
+de
+de
+de desarrollo de test por así decirlo
+que tengo archivos
+que de hecho te los pasé porque ya están viejos los archivos
+pero no los actualicé
+dos archivos que
+uy estoy en
+dos archivos
+que
+que son
+testing patterns
+que te los pasé créeme
+believe me
+y guía testing
+guía testing es
+uno que me pasaste vos pero
+un poquitito
+sin duda que me lo pasaste
+pero un poquitito
+arreglado con el tema de
+este
+bueno
+debe estar acá el testing
+pattern
+acá
+de estaviar
+los logs de debug
+para que no
+se vea tipo tan sucia la salida
+y estaviar
+configuration
+porque esto
+y me parece tipo bastante importante esto
+demoran mucho
+más los test
+bueno yo vi el otro día como te corrían
+a vos era como si nada pero
+a mi me demoran tipo
+mucho más los test porque acá
+si no se estavea esto
+se intenta acceder a la base de datos
+entonces es por eso que vos cuando corres
+los test ves cosas como estas
+no claro viste
+de hecho
+en
+en el tipo de las action de github
+vas a ver que es
+tipo alguna vez calculo que has tenido
+que ver action de github
+que esten fallando
+con test o no
+si alguna vez
+debes haber visto que habian 500 millones
+de errores pero no eran errores de test
+sino que eran database
+bueno
+básicamente eso osea sale
+error pero estan bien los test
+entonces como es eso
+y es siempre lo mismo
+el mismo error
+entiendo
+no se ahora que queria
+santiago no se si
+santiago queria
+meterle alguna cosa
+de
+voy a sumar aca tu
+tu tablero no se si
+claro es que
+a esto en parte es a lo que me refiero
+tipo hay mucha osea
+quiere que hagamos full test
+full cosas pero
+este
+osea nos pone mucho al tipo
+corregir tal cosa corregir tal cosa
+y tenemos que levantar
+osea hacer las demo y todo
+y una pequeña corrección
+es levantar
+hacer la demo blablabla
+blablabla
+que de hecho a mucha gente viene a encontrar
+el error y todo eso
+osea suenan como pocas
+pero al final una tras otra
+te termina comiendo el tiempo y
+no terminas haciendo ningun test
+no se bien que plantea el
+eh o que
+te planteaba vos por ejemplo
+lo que vi que nos dijo la lady era
+que nos centremos en test unitarios
+y
+y en test de cypress
+eh
+no se si
+cual seria tipo la prioridad
+test de cypress
+test unitarios
+eh no no conmigo
+entiendo que en principio
+esto de test unitarios como estabilizar lo que tenes
+digamos
+yo capaz que te consulto
+entonces nosotros
+esta nueva nomenclatura digamos
+esta estructura
+Santiago no la vio
+se la estaríamos presentando
+vamos a decir verdad
+es que
+esto es de otra materia
+de la facultad
+pasa que
+nosotros
+esta nomenclatura en realidad
+no
+osea
+lo de la nomenclatura en realidad lo que
+usamos desde tiempos inmemoriales
+es
+eh basicamente esto
+eh y es lo que dice te acordas
+en el
+ah chucha
+cual cual cual
+no no es que no me esta dejando
+entrar porque tengo
+a ver si puedo entrar con esta cuenta
+pero
+bueno eh
+es lo que esta en la regla
+de testing basicamente
+osea que es esta la
+la nomenclatura y despues
+eh
+eh que se pone el get
+esta esta en el drive
+la nomenclatura esta en el drive
+eh despues
+el tema de
+que es basicamente
+en el drive en realidad lo que dice
+es que es
+esto ta y despues
+una subcarpeta con
+esto
+adentro de una subcarpeta
+o un test con esto si es
+lo ultimo y asi con
+todo eso es basicamente lo que dice
+en el drive no se cumple
+nunca eh
+te lo adelanto desde ahora que no se cumple
+nunca aca
+por ejemplo en add teammate
+si que es un mismo metodo
+eh es un mismo
+perdon end point
+pero a ver
+ah yo me dedico a minecraft
+creo creo que es el mismo
+mismo end point
+pero ta osea es un
+despelote es un despelote
+eh es un
+verdadero despelote
+pero pero ta
+eh digo pa
+poner un poco tipo de
+decir ta si lo llamamos asi
+y despues
+eh adentro de eso
+le ponemos
+tipo los archivos o las carpetas
+es mas que
+voy a abrir porque
+es
+no suelen pasar
+tipo la no no no hay dos carpetas
+tipo una dentro de otra
+creo que por aca
+capaz habia no
+aca viste por ejemplo
+renewals summary
+no se si justo cumplia
+mira claro por aca viste que es
+renewals barra summary
+esto era exactamente el ejemplo
+que
+que podria estar buscando
+eh entendes esto que es una carpeta
+osea no lo cumplimos nunca
+este test
+debe tener
+200 millones de años
+si literal
+eh
+pr 238
+si si
+osea
+lo dice
+lo dice la primera vez que estaba aca
+osea pero viste que se usa
+el primero
+despues el segundo
+ta despues no lo ves nunca
+se entiende
+osea que es si pensas que este bueno
+hacerlo
+o pensas que sea medio al pedo como aca
+por ejemplo que tenes en renewals
+que de hecho voy a buscar
+en v1 renewals
+no renewals
+tenes
+tenes solo uno entonces es al re pedo
+osea de hecho
+esto deberia ser asi
+ay
+perdon tengo el teclado en ingles
+deberia ser asi osea
+concordamos en eso
+si
+porque no hay otro de renewals
+pero ta
+eh ok
+eh
+digamos entonces que
+hablando un poco de lo que es
+el tema justamente de automatizacion
+y cloud
+creo que habria que actualizar con lo que vos decís
+la apr que yo tengo
+yo tengo una apr abierta
+en la que
+agrego mis
+dos cosas de test
+a ver mis dos
+agentes por asi decirlo
+ok yo no se si
+si
+actualizar esa apr
+o con lo de esa apr
+actualizar esto y esto mantenerlo entre nosotros
+entiendo
+no claro
+creo que
+es mejor mantenerlo
+porque mira a ver estoy viendo
+en la perronia el prompt base
+unit tests
+si a fin de cuentas nosotros vamos a usar
+nuestras herramientas
+secretas yo no nos vamos a apoyar
+tanto en esto que
+esta mergeando
+que se quiere mergear
+osea ahi yo lo tomo como
+tomar estas
+son las reglas por si alguien
+alguna vez quiere hacer test
+pero osea
+este pipeline por ejemplo magico
+que agarras y decís
+audit
+eh talent point
+eh
+de donde lo sacas
+osea lo vas a subir
+todo este punto cloud con el punto
+cloud out
+o lo mantenemos entre nosotros
+que hacen
+ahi
+ahi vamos a ver
+me refería creo mas bien
+al tema por ejemplo
+lo de configuration yo no se
+si lo agregué o no
+pero
+no si tenes razon
+es mejor no tocar mucho esa parte
+y quedarnos nosotros con lo que sabemos
+que funciona
+y eso que subimos ahi
+a github es mas como para tapar el ojo
+que otra cosa
+ahi esta
+exactamente
+exactamente
+y
+que te iba a decir chucha
+eh
+que te iba a decir
+yo intente
+mira el apr
+si
+si
+parece que el
+osea mas ayer el viejo santiago
+tambien estaba con problemas para
+para regresar
+a mi me aparece la opcion
+y después lo que veo vos tambien pero no
+ah es que viste
+si le pedí varias veces
+y después vi que
+veo ahora que le pediste vos tambien
+pero no
+claro a ver si me funcionaba pero
+pero no ahora no
+ya te tiro un comentario
+yo no te quiero comentar nada en realidad
+osea mantener al minimo
+eh la puse
+la puse en draft justamente
+eh para que la
+bicharas y
+bicharas a ver que te parece
+yo la estuve viendo
+si ves por ejemplo
+voy al primer archivo
+eh siempre intento
+basarme en
+constante que uso
+osea constante que uso
+una vez en un archivo la dejo donde esta
+y no la defino
+constante que uso tipo
+tres veces o mas en el mismo archivo
+la defino arriba del archivo
+constante que uso
+constante que uso
+en dos o mas archivos
+la defino en el
+index o de repente
+en el
+el tema es que esta muy
+en el aire todo entonces
+si ves aca por ejemplo
+vamos a barra qr code
+que es el path qr code
+ese esta
+tambien definida aca
+path qr code
+y este metodo
+es el mismo que este
+porque al final son
+osea
+esto testea el mismo
+el mismo metodo
+del controller
+este es el controller
+user out
+y estos son los metodos
+entonces
+no se yo
+al final
+no se
+si queremos
+lo ideal que seria
+definirlo bien
+definirlo bien
+el tema que capaz que
+otra cosa que se me habia
+ocurrido es
+hacer tipo un
+una especie de
+de utils
+con
+helper y constantes
+para cada controller
+se entiende
+y asi el tipo
+el aislamiento
+era controller
+por controller osea
+se entiende eso
+el aislamiento
+especifico
+en controller cosa de que
+si vos estas haciendo un test de payment
+y yo un test de
+de
+no se
+user out
+por ejemplo
+no nos pisemos
+tipo que no tengan absolutamente nada que dar
+mas ahora si vamos a hacer test
+por endpoints
+osea por controllers enteros
+se entiende
+si vamos a hacer test
+de todo payment
+o en este caso por ejemplo
+que hago test de todo user out
+que antes era
+compañia out
+que por ejemplo habia un comentario
+que lo corregi en esta parra
+que era compañia out cambiarlo por
+user out
+creo que era compañia out no
+bueno
+el tema es que lo cambiaron
+osea sigue siendo lo mismo pero
+le cambiaron el nombre
+que te iba a decir
+tan
+no se
+no se si
+tenes alguna opinion o algo por el estilo
+creo que es mucha data capaz
+son cosas que estuve analizando
+bastante bastante tiempo
+eh
+estuve haciendo tipo analisis de
+cobertura y eso
+y todavia esta la pr
+para bichar
+siempre que se quiera
+esta
+que tiene
+tiene cosas
+muy lindas
+tiene cosas muy lindas
+que se pueden
+tener en cuenta y se pueden estudiar
+en el momento que
+que vayas a tomar la decision de hacer un
+re factor
+osea esta este re factor imaginate
+lo que fue
+lo hice tipo
+casi que por diversión este re factor
+medio que sabia como me lo iban a aceptar
+claramente no pero
+si ves utils esta
+gigante utils
+osea entonces
+no se si lo mejor seria
+ok paso por ejemplo
+que a los dos estar tocando
+test de otcdr
+ambos hicimos hellpad
+eso con
+con
+looser out tambien que ambos hicimos hellpad
+ah otra cosa
+de los hellpads es que cuanto mas
+codigo pueda cubrir un hellpad
+mejor
+por ejemplo
+creo que era este
+vamos a cualquier test
+viste esto
+por ejemplo
+en los test
+lo vas a ubicar por
+por esto que a mi santiago me rompio
+millones de veces las bolas
+para que no poner esto como constante
+usar la constante
+que ya se usa no se que
+si no te fijas por ejemplo
+aca
+esa parte no esta
+porque se define en el hellpad
+se define siempre en el hellpad
+que pasa
+se podria
+se podria
+hacer tipo
+despues
+digamos tiempo
+etc etc
+un estandar
+para los hellpads
+por eso que tampoco se
+que tanto seria bueno
+poner hellpad
+adentro de la carpeta del controller
+sino ponerlo
+en utilities hellpads
+pero
+hay codigo repetido
+entre hellpads tambien
+osea codigo repetido
+hay por todos lados
+hasta cuando uno
+intenta sacar codigo repetido
+haciendo hellpads
+empieza a haber codigo repetido
+adentro tipo entre hellpad y hellpad
+por ejemplo esto
+que estas lineas estan en todos lados
+estan tipo
+en todos los test
+estan estas lineas
+entonces si sacamos estas lineas
+son 8 lineas menos
+no en realidad es de aca
+asi 8
+y despues esta todos los estados
+si se definen todos de uno aca
+y despues en cada uno
+no es como que se define un 100%
+porque despues aca se definen
+pero tipo
+los que tienen en comun viste se definen aca
+o se pueden definir todos
+y hasta los que
+se tienen en comun viste
+hasta los que no estan en comun
+definirlos tambien
+cosa de ahorrar lineas aca
+despues
+eso lo ve cada uno
+eh
+total aca los llamas
+o no los llamas
+entonces de repente estos
+los podes poner adentro del hellpad
+osea se entiende la idea
+osea esto en vez de
+definirlos aca
+se definen en el hellpad
+y despues los llamas aca
+o si otro archivo
+por ejemplo no usa los mismos
+no los llama viste por ejemplo
+esto no los necesita definir
+entiendo
+la cosa es que
+los archivos de test
+el primer
+digamos arranque cuanto antes
+vamos a ver
+un algun
+este por ejemplo
+algun
+test viejo
+por las dudas tata
+estamos sobre tu hora
+ah estamos sobre tu hora
+no no no
+yo 7 y media hora
+ok ok
+pero y tu hora
+vos a que hora tendes
+5 y media
+no no no
+no quiero
+gracias
+o bueno por aca
+aca por ejemplo
+que onda
+porque esta tan cortito este
+es create ip registries
+no
+bueno
+pero a lo que
+claro es que aca se hace esto
+es que tipo
+cuanto mas este en el hellpad
+menos lineas van a ver aca
+y cuanto
+menos lineas hay en cada
+osea cuanto menos codigo repetido
+menos codigo neto
+y cuanto menos codigo neto
+menos
+contexto
+para cloud
+a eso basicamente es a lo que quiero
+llegar tambien
+hay muchas ventajas
+en sacar el codigo repetido
+principalmente para nosotros
+si queremos trabajar menos
+y
+empezamos a tener tipo buenas practicas
+y ta
+basicamente
+basicamente eso
+empezamos a tener buenas practicas
+santiago no nos rompe mas las bolas
+los tiempos que
+nosotros estimamos
+y sabemos que nos lo podemos tomar libre
+para estudiar
+para rascarnos las bolas
+lo tenemos para estudiar o rascarnos las bolas
+y
+de repente
+estaria bueno plantearle a santiago
+yo le dije a santiago
+pasa que yo de repente tengo tantos test para hacer
+pero vos me empezas a mandar
+tarea tarea tarea
+y no puedo
+pequeños fixes o lo que sea
+y no puedo usar
+entonces dejame centrarme en los test
+pero
+yo creo que
+esta bueno
+que analicemos
+vamos a seguir
+escribiendo test tanto vos como yo unitarios
+y creo que es importante
+no contradecirnos
+justamente con esto por ejemplo de los helpers
+y demás
+estaria bueno
+te lo tiro como idea
+no se que opinas vos
+capaz que es una mala idea
+o no se que pensaras
+pero capaz que estaria bueno tener
+y no quiero entrar en micromanagement
+pero
+podria estar bueno que los dos tengamos exactamente
+el mismo setup de cloud
+al menos en lo que
+refiere a las agentes skills
+y demás que toquen test unitarios
+pensé en lo mismo
+alguna manera
+quizás de hacer
+un repo no muy oficial
+o algo que vos
+puedas clonar y copiar en tu
+cloud que no toque todo
+tu cloud sino que contenga
+solamente lo de test unitarios
+osea el objetivo
+el target seria que los dos
+podamos
+escribir una sola linea
+de texto en cloud
+correr el pipeline tanto
+y lo que produzca
+tanto mi cloud como el tuyo que sea lo mismo
+claro
+estar sincronizado
+basicamente
+pero como podemos
+hacerlo
+yo lo pense en la peor instancia
+pero lo unico que seria
+lo ideal por asi decirlo
+seria plantearlo a santiago de sumar
+estas dos carpetas
+por donde estoy otra vez
+viendo otro
+sumar estas dos
+carpetas cosas que claramente santiago
+nunca primero no aceptaria
+y segundo no nos conviene
+extra oficialmente
+claro
+lo ideal estamos de acuerdo que seria
+que este
+este repositorio tenga estas dos carpetas
+si
+te comento porque cloud
+aux
+si empezas a
+si creas por ejemplo
+todos estos
+todos estos los creas en una carpeta
+que sea por ejemplo aca dentro cloud aux
+cada vez que
+vayas a hacer una modificacion te pide
+permiso
+y vos tenes que darle yes
+no es como que lo modifica automatico
+cada modificacion
+adentro de cloud
+es tipo
+ask before yes o si
+no se si te has dado cuenta
+si es correcto
+por eso
+el punto cloud
+yo no habia visto
+el punto cloud adentro
+de un repositorio yo tengo un solo punto
+cloud en mi usuario digamos
+de windows no sabia eso
+claro
+yo por ejemplo
+te voy a mostrar algo
+para que esto es de la
+de la universidad
+tengo esto
+que basicamente es un pipeline
+que despues si te interesa te lo paso
+que lo que hace es
+bueno justo esto
+no es un buen ejemplo
+no esta el pipeline
+pero si yo corro
+limpiar lo que hace es
+a ver si
+de algun lado
+te dice
+ex
+limpiar
+limpiar
+limpiar dios
+es que no se que estoy diciendo
+ahi
+ahi esta bien
+me pasa
+espero
+que no
+me entiendo
+osea lo que hace es
+separa
+es para analizar transcripciones
+dejame que
+si encuentro aca
+mp
+ciberseguridad
+tendra alguna si creo que si
+ciberseguridad
+mira
+mira aca por ejemplo
+lo que hace es
+primero las
+tipo separa porque de repente
+una transcripcion es toda una linea
+entonces lo que hace es
+te va separando tipo
+en parrafos despues
+tipo en oraciones
+despues a cada uno
+le encaja una idea tipo
+a que piensa que se refiere
+entonces teniendo el
+contexto
+despues las palabras
+esto te acordas que lo charlamos
+que lo ideal seria que se vaya
+tipo actualizando el contexto
+si habia algo que transcribia
+tipo en tiempo real
+bueno
+plantea la idea
+osea separa en parrafos
+despues plantea osea
+explica que es lo que se esta diciendo en cada
+parrafo
+en ese parrafo y lo separa por partes
+y despues
+lo
+hay un agente corrector
+que basicamente es
+analiza
+analiza las
+mira
+si le hace mayuscula analiza
+las tipo
+las palabras medias raras
+y piensa a ver
+que capaz que se quiso referir
+por ejemplo ves
+esto
+lo saco el automatico
+y nunca en la puta vida
+ven la padula
+alguien te lo va a transcribir bien
+se entiende
+tipo
+lo bueno que esta para mi esto
+hasta la ley
+la ley que te defina no se va
+no le va a errar
+PSI, HI, PAA
+osea
+te das cuenta que
+osea esto
+backdoor, phishing
+son todos palabras
+que porque estan aca
+y porque se confundieron con otras palabras
+no entiendo
+por ejemplo aca te dice
+tipo ejemplos
+de mal escrito que es lo que
+NIS 2
+NIS 2
+AGESI
+es AGESI
+ley 18
+tipo todo esto que se traduzca esto
+y asi tipo con
+con todo osea igual aca
+ta hay 500 millones
+hay 500 millones
+de
+y se va auto
+tipo va aprendiendo
+porque viste que esto
+tiene todo cosas de ciberseguridad
+en especifico
+lexico tecnico
+de ciberseguridad
+entonces va aprendiendo
+y va mejorando el agente
+mira
+el agente corrector
+osea inicia
+de una forma base digamos
+y despues
+se va aprendiendo
+y aprendiendo
+eh
+y ta despues de eso
+tenes cada idea
+con lo que quiere decir
+y ese conjunto de ideas
+para mi mucho mas valioso que una transcripcion
+porque
+osea tenes hasta que quiere decir con cada cosa
+tenes las palabras bien
+de la transcripcion
+eh
+las ideas
+las sub ideas
+y lo uso pila de hecho tu
+lo hacía el martes pasado
+y tipo lo hice
+de inteligencia artificial justo
+y lo hice tipo todo con eso
+esta bueno
+pienso ponerlo tipo tambien
+eh para duffman
+pero a eso te lo queria
+te queria mostrar esto
+justamente para mostrarte que cada
+osea que tengo varios
+cloud osea punto cloud
+tengo un punto cloud especifico
+para cada
+para cada repositorio
+por eso es que
+viste por ejemplo lo del agente corrector
+el agente corrector para la materia
+inteligencia artificial
+va a estar va a haber aprendido
+y va a estar entrenado
+digamos eh
+para inteligencia artificial
+no para ciberseguridad
+se entiende
+eh pasa
+parecidas con el no se
+el
+el punto cloud de worker
+el punto cloud de
+el punto cloud de
+lo que sea se entiende
+si grand no yo no
+simplemente no sabia que estaba esa opcion
+digamos sin duda que volveria a empezar a usar
+eh
+tener un cloud optimizado para cada
+digamos cada repo
+eh pero es que
+de hecho si
+cuando vos pones
+eh viste que tenes un
+yes o yes allowed
+no se que no se cuanto y te pone un
+coso subrayado aca vas que vos no
+usas mucho la extensión pero
+tipo te pone
+permitir siempre para esta sesion
+osea digamos para este chat
+permitir siempre para
+para este proyecto
+que
+que te lo agrega aca
+en este punto cloud
+o permitir siempre para este usuario
+que calculo que si yo voy a mi usuario
+debo tener tambien un punto cloud
+se entiende
+por eso que yo osea
+en cada proyecto eh
+intento definir
+un buen buen buen
+punto cloud con pipeline de cada
+cosa que yo quiera hacer
+para despues si por ejemplo
+quiero desarrollar
+una una
+bueno igual yo uso mucho
+eh
+ubicase este
+super power perdon
+si
+bueno super power
+brainstorming y eso suelo usarlo
+mucho y me es
+muy util
+y te lo super recomiendo
+te lo super recomiendo
+eh yo como
+comentario asi tambien ya para
+la facultad tengo como un tambien
+un conjunto de skills
+o agentes que lo que hace es
+va documentando va mejorando asi
+recursivamente
+un markdown que crea al principio
+que se llama voz del profesor
+que lo que hace es
+eh osea yo tengo
+todas las transcripciones de una materia
+en un repo
+o en una carpeta
+y el luego las analiza
+y crea esa voz del profesor
+entonces cada vez que yo le explico
+o que le pido que me genere
+un markdown no explicame el tema tal
+o explicame estos temas o lo que sea
+me genera un markdown
+pero me lo explica
+como decirlo con el estilo
+del profesor con la forma que tiene
+el profe
+ok
+como es
+esta bueno esta bueno
+de hecho osea
+al profesor
+tipo si le haces un trabajo asi le debe
+re gustar
+porque se va a identificar tipo los patrones
+inconscientemente
+le va a gustar
+puede ser
+eh pero vos que opinas
+en general no te quiero cerrar mucho tiempo
+que ya se acerca tu hora
+pero decís que podría llegar a ser una opción
+tipo en algún momento crear un repo medio clandestino
+que nosotros podamos clonar
+que produzca el mismo código
+básicamente a la hora de hacer test unitario
+osea te parece
+remotamente buena idea
+si si re
+eh tendríamos
+que
+a mi me preocuparía que no pise
+que no sobre escriba
+lo que vos tenés
+por ejemplo si vos tenés muchas cosas
+que justamente usas en otros repos
+o para otras cosas que no
+que no corrompa
+lo que vos ya tenés
+no es que lo que
+osea seria
+eh osea
+algo simple como
+tipo
+tipo
+creo
+creo un nuevo repo
+eh
+le pongo
+dasone.clan
+y
+eh
+lo pongo privado
+si si
+y
+yo no le pongo nada
+yo cuando creo un repo lo dejo así como lo creo
+y le paso el ssh el coso a cloud
+para que le cree todo
+no se si me explico
+mira ahí te va a generar eso
+ssh ahí lo ves
+ah ok
+yo literalmente
+eh no
+tipo no creo
+si tengo que crear un repositorio
+ni siquiera lo creo yo
+si
+yo creo en la carpeta
+arranco con bscode ahí
+pero creo que queda
+queda cloud de autor o coautor o algo así
+me parece por eso
+yo lo creo uno yo vacío
+tipo literal vacío
+y ahí cloud lo edita
+no
+vos sabés que
+a mi no me ha quedado como coautor
+no
+con el tema del commits y eso
+capaz que si pero
+el comando tipo desde
+gh
+osea calculo
+que has visto
+gh y un
+curl ahí de algo para
+por ejemplo que cloud te haga
+un comentario
+osea desde terminal
+te hace un comentario a
+yo estoy
+viendo tu pr
+comentario de copilot
+y yo le respondo desde
+desde mi cloud de la terminal
+de cloud code
+y ahí tipo
+corre
+te voy a invitar como colaborador
+y lo que
+lo que hago porque yo tengo
+un que no lo he actualizado
+nada pero
+que tengo tipo
+eh
+ay donde esta
+yo 3
+eh no lo he actualizado nada
+pero tengo un
+como sos vos enrique?
+ah
+eh oliva eras no?
+eh me que
+que precisar mi email o que?
+eh tu
+username email o
+full name tu cuenta
+de github es la misma que usas
+para eh
+esta con el correo de la facultad
+o el correo del trabajo
+de esta de la facultad
+ok
+ah ok
+ah ok
+aguantame que no se donde tengo el slack
+no el slack
+lo tengo
+aca
+ok
+ta perfecto
+bien eh
+no porque yo tengo uno que lo que hago es
+separo en sus carpetas
+porque
+no podes tener tipo
+punto cloud punto cloud punto cloud
+porque al final serian todos sellados
+osea son todos con el mismo nombre al final
+no se eh site web app
+y adentro le pongo el punto cloud
+se entiende?
+y ahi tipo
+asi lo armaria tipo con
+carpetas para cada punto cloud
+y
+y despues tipo vamos
+colaborando
+colaborando ok
+osea actualizandolo
+eh ahora
+ya me estan pinchando
+eh para hacer un trabajo
+que en teoria se entrega al
+día de hoy pero la profe dijo
+que tenemos hasta mañana
+ya me estan llegando whatsapp
+debes estar escuchando chucha
+si no puedo seleccionar
+te pregunto rapido tato
+entonces yo le mando un mensaje
+a como es
+a
+a santiago y a martina
+de mis pr vos tocaste algo
+puede ser
+puede ser que si
+mira pr
+eh
+a las que separe
+ah dejame
+que las dicho
+esta
+esta esta esta
+esta es la que me consultaste hoy
+que si pero
+segui la voz nomas tranquilamente
+si
+eh la actualize la descripcion
+si solo para la
+para cloud digo el
+numero de la pr es 774
+si si si
+ahi que es la descripcion?
+eh
+despues esta
+esta
+que es una de
+user out
+y despues de
+759
+756
+es la mia
+759
+si
+despues de otcr
+la cosa es
+si quieres tipo
+tocar de estas que tenes abiertas
+eh lo que pensaba era
+yo ponerme con otcr
+ta y si
+si queres tipo si una es
+100% de otcr por ejemplo
+esta es 100% otcr
+si
+dejarmela si queres
+o a menos que vos te quieras poner a probar tipo
+hacer esto que hice yo con user out
+hacerlo con otcr
+eh
+o por ejemplo
+es la 775
+como? si no que esa
+el numero de esa pr es 775
+eh esta era
+811 que esta es
+100% otcr
+811 tambien ok
+775
+eh tiene
+una de otcr
+una una una una
+asi que la
+la 811 es puramente
+otcr y la de 775
+es tiene un endpoint
+de otcr si
+ahi esta despues
+esta esta
+que es mia
+que tiene dos de otcr
+y esta mal llamada otcr
+pero en realidad es otc
+ajá
+esta mal
+las otras dos pr
+eran mías y esta pr
+es tuya
+si si si si
+eh pero porque te lo menciono
+porque
+eh ignorando un poco de quien es cada pr
+si lo vamos a
+a crear prs nuevas
+dependiendo de cada endpoint
+no se que que quieras
+vos de agarrar de test
+por ejemplo capaz que esta
+bueno eh
+agarrar de otcmo
+eh que es one money
+otcom
+creo que es
+dejame dejame
+otra vez me voy al
+otcom
+ot
+ot
+o
+creo que lo tengo acá igual eh
+otcom
+una pucha
+otcom
+hay 11 de otcom
+de one money
+que santiago estaría como loco
+porque no tenemos ninguna
+eh definida
+puede ser
+si
+no tenemos ninguna de one money
+definida como tarea
+eh de repente empezaría por ahí
+las tareas de one money
+eh y
+y de repente yo me pongo con
+otcr
+y vos te pones con otcm
+le planteamos eso a santiago
+las
+las prs
+las prs de test
+que toquen
+ya sea otcr
+otcl o bien
+le sacamos la parte de otcr
+que es lo que recomendaría
+por ejemplo
+esta pr
+creo que es esta
+si que tenés
+no perdón esta
+tenés dos de cripto
+cripto kib
+dejaría estos dos
+sacaría esta
+sacaría la esta
+dejaría la de cripto kib
+y sacaría este archivo
+se entiende
+counterparty.t
+claro
+estamos hablando de la 775
+claro
+para no eliminarla del todo
+después esta ya
+por ejemplo si
+estas tres que tocan tipo
+eh
+un 100%
+por ejemplo estas dos tuyas
+tocan 100% otcr
+808
+y 811
+si tocan 100% otcr
+eh
+irían todas a
+una misma rama
+no sé
+tipo si te parece bien
+que
+y acá por ejemplo
+esta pr también ponerla como draft
+o cerrarla directamente
+y hacerlo
+757
+eh 808
+811 y esta
+no te digo de cerrarla y ponerla
+tipo como si fuera una de estas dos
+viste que la cerramos y
+la después sacamos
+acá tipo las
+las pongo como referencia viste
+sino que
+acá como hay solo un test
+lo que haría yo
+lo agarro y lo saco
+claro sacamos el test de otcr de esta pr
+775
+que tiene cosas que no
+no tienen relación
+esta pr tiene solo un test
+que no es de otcr es de otc
+eh
+que voy a hacer
+al respecto y la voy a tomar
+como corrupta la esta pr
+porque
+porque tiene
+tiene un helper
+y a la vez modifico otro
+entonces todo medio un quilombo
+eh
+entonces digo
+me echo para atrás
+estas prs osea
+es cerrar estas tres
+eh pero se van a tomar
+como
+como cerrarlas y
+juntas en una sola verdad
+básicamente
+por recurso osea tomarlas como otcr
+una pr sobre otcr digamos
+claro eh lo mismo
+que como user out
+el tema es el
+el problema que no tuvo user out
+es que hay prs
+que tienen test de otros
+controllers como esta por ejemplo
+que tiene dos de queue baby
+o esta que tiene solo
+una osea eh
+pasan casos contrarios
+acá voy a eliminar toda la
+pr por completo y acá
+vas a eliminar una parte y vas a dejar
+la pr osea es
+eliminar toda la pr
+después estas dos es
+dejarlas como referencia
+ya sea osea close o como
+draft pero referenciarlas
+esta se va a eliminar por completo
+y después esta
+eh digo eso porque esta completamente
+corrupta y después esta que es
+simplemente se elimina este caso y si que
+sigue abierta la pr
+osea podes seguir eh
+eh viste esto
+que te comenté
+por ejemplo hace mil años
+meses anteriores
+ta eh
+queres que ponga acá según lo hablado
+eh
+que
+son
+los test
+de ok
+y tanto tengo
+una sola pregunta la pr tuya
+gigante esta 825
+no tiene al ser user out
+no tiene relación con estas de otcr
+digamos no tienen que
+nada
+eh de hecho
+lo único que
+podría joder es
+el index
+eh pero nada mas
+osea
+nada mas que el index
+osea la cosa es que la veas
+a ver si ta lo tipico
+de un review osea ya se puede hacer
+review
+una imagen muy grande yo la estuve revisando
+y otra vez el tema es que
+ta te pido el review
+porque capaz que me estoy comiendo uno
+de esos casos viste que santiago dice
+no
+los he hecho se entiende
+si osea
+son cosas que a ver las hacemos con
+no estamos
+osea y los miramos y los miramos una y otra vez
+pero algunas cosas nos comemos
+como eso que nos comimos repositorios
+yo estaba con un
+amigo trabajando esa vuelta
+tipo yo me cagaba de la risa después tuve un
+una reunión conmigo santiago
+que estuvo como una hora y media explicandome
+explicandome cosas
+tipo no no porque esto no puede ser
+yo no
+estaba que no sabía si echarlos
+o que
+no no
+horrible
+eh anda tato no te preocupes
+mas este yo les mando
+ya les avise ahi
+que estamos en reunión y eso
+y yo les mando un mensaje de estatus vale
+eh dale
+eh si si
+si podes tambien mandarle
+osea si en el estatus
+eh puede quedar
+tambien como parte de mi estatus
+osea estatus
+por los dos
+claro si si
+no yo le mando un estatus pero
+basicamente
+basicamente eso
+mi estatus no cambio para nada sigue siendo el mismo
+que
+que les mande
+eh pero ta comentarle un poco
+lo comentable que
+de ahora porque
+no se cuanto llevamos de la reunión
+pero creo que fue bastante fructifero
+al menos para nosotros
+si
+eh si si totalmente
+eh va a estar bueno a ver si podemos
+hacer eso del repo clandestino o algo
+para poder hacer codigo que sea
+igual en terminos de texto unitario
+eh
+anda tato no te quiero
+retener
+antes dime lo que queria hacer a
+pasarte
+eh
+pasarte
+esto a ver
+estamos aca
+estoy en tu chat no
+paso
+aca esta
+claudia en clodaux
+probablemente en clodaux
+eh tenga varias partes desactualizadas
+pero ta
+me lo paso por mientras que no esta
+el el repo
+eh por mientras
+genial ta ok
+al final ah eh
+planteales eso de
+de que no esta nada de lo de
+tes de one money
+hay no se cuantos vimos
+cuantos endpoints vimos
+si son bastantes
+ah literal hay 11 endpoints
+de one money bueno
+ta literal
+eh plantearle lo de
+crear las 11 nuevas tareas
+eh no se si vos
+queres eh
+meterle a one money
+que este es el controller por la duda
+el controller
+eh no se si vos queres meterle a one money
+o preferis meterle a
+a rail
+a mi me da exactamente lo mismo
+eh coincido
+como vos dijiste tato post
+otcr yo one money
+no se cual de los sea mas dificil o si son iguales
+no se pero capaz intentemos
+hacerlo asi en principio y
+ta y nada yo te planteo eso
+ta y no te olvides eso de
+esta pr eh sacarle
+lo de lo de
+otcr simplemente sacarlo
+y ta
+dale
+eh 775
+ok
+sacarle es
+osea no tiene
+no tiene tipo
+ni modificaciones en el index
+no tiene ni modificaciones en el helper
+entonces solo eliminar un archivo osea
+es lo mas facil
+osea literal
+esta por ejemplo
+no me acuerdo si esta o esta
+eh tienen helper
+y otras modificaciones en el index algo
+va y de hecho
+yo tambien creo un helper entonces
+esta todo como medio corrupto
+voy a intentar de cuando haga
+la de otcr traerme
+alguna cosa pero
+va a quedar todo como medio corruptito asi
+eh el tema es que
+muchas tareas que no se como plantearlo
+eso porque muchas tareas
+otcr
+muchas tareas
+ya estan como
+las parque como hechas
+a pedido de
+de santiago en realidad
+pero osea y a
+continuacion
+si si si
+son continuacion
+bueno viene bien
+y no grabe
+no grabe nada de esto despues si
+si tengo alguna duda o algo
+te pido la transcripcion
+si tengo alguna duda
+bueno
+bueno nos vemos bien
+chau hasta luego
+hasta luego

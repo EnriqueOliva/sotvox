@@ -1,0 +1,715 @@
+1, 2, 3, 4, 5, 6, 7, 8
+bueno, bien de bien
+estuvimos analizando
+justo nos reunimos con el equipo de desarrollo
+y tomamos la decisión que vamos a sacar
+fuera de la penca al equipo de design
+así que nada, fue una decisión unánime
+la teoría que tenemos
+pero todavía no encontramos las pruebas suficientes
+es que Santiago está jugando con el perfil de Gastón
+esa es la teoría
+es la teoría que venimos trabajando
+ya tenemos contacto con la policía científica
+estamos organizando con Interpol
+para poder bajar el caso más a tierra
+por ahora venimos trabajando
+bueno, ayer
+no nos dio para salir
+pero avanzamos bastante bien
+y es un poco el objetivo
+terminar de cerrarlo
+la realidad ahí también es que
+Nahuel y Jonathan
+Carlos tampoco había contestado ciertos detalles
+entonces nosotros no podemos ponernos a generar
+este MT-103
+y todas estas cosas a lo loco sin tener eso
+entonces ganamos un poquito de tiempo
+saquémosle jugo
+a revisar la PDR
+y todas esas cosas
+yo en Agüe ayer en particular
+habré estado una hora o dos ahí
+con todo lo que es
+generando contra todas las transacciones
+que están en PROD
+directamente
+como para ver detalles
+y ahí generó esos comentarios el amigo
+pero literal estuve iterando ahí
+con todas las transacciones
+generando PDFs y todas esas cosas
+eso por un lado
+después estuve revisando las PDRs
+o sea estuve revisando ahí la PDR de Marti
+y algunas otras más
+donde fui dejando comentarios
+me reuní con Ana
+con Andrea
+Ana no, Andrea no
+Andrea
+para ver el estatus de las 116 empresas
+¿qué más?
+¿qué más? ¿qué más? ¿qué más?
+bueno, nada, eso
+y ahora
+bueno, taqué doble de counterparties
+y todas esas cosas mergeados
+también corrí la migración para actualizar lo de Swift
+saqué hotfix a producción
+ayer saqué
+dos hotfix
+dos, dos, varios commits en realidad
+de noche
+de tarde-noche
+directo a Develo porque eran chotadas ahí
+pero Marti sincronicé dos KYB
+porque One Money no permite que el zip code sea numérico
+entonces ta, lo mandé de una
+Guillermo me lo pidió medio urgente
+pero lo mandé solo a Dev para que quede
+así que en la salida de producción se va
+pero ya corregí los dos que estaban
+para así no perdemos tiempo con todo esto de la factura
+con esas cosas
+y también agregué unos permisos ahí
+que estaban faltando en particular para el manager y para
+bueno, no sé quién más
+estaban faltando para la parte de asignación ejecutivos y eso
+que cuando sacamos a producción van a quedar prontos
+por las dudas
+fueron cosas que fui cometiendo directo contra Develo para que se vayan ahora
+tengo que registrarlos en tareas
+hoy me tengo que reunir con Mati, tenemos que mirar todas las PDRs
+tengo que mirar lo de
+Zoom Zoom
+para lo que es el KYB, viste que ahí Marti nos ha agregado en el canal
+por ahora no leemos pelota, pero si querés andá leyendo un poco de qué trata
+qué más, qué más, qué más
+bueno, la idea de hoy es intentar cerrar todo esto de la factura si salí a producción
+o sea, ganamos un rato
+hay que sacarle jugo a ese rato
+te iba a consultar con tema del sprint
+probablemente lo cerremos el jueves, tranquilo
+lo que les pido es vayan acomodándolos
+al final del día pónganse un reminder y vuélvanos a actualizar las propuestas de este día
+las propuestas de cada uno
+eso para todos
+los que no tengan el sprint pronto
+los que tengan el sprint pronto porfa no cierren tareas de más
+les pido porfa que no cierren tareas de más
+sino que las dejen en progress
+así yo lo cierro
+y Enrique es muy probable que tu cronjob no lo mergiemos
+por feo
+así que bueno, nada de eso
+vamos a
+eso nomás, ¿está?
+hablando en serio
+es muy probable que el cronjob en vez de registrarlo
+y seguir ensuciando el worker
+te iba a consultar si hay algo en ese cronjob
+que necesite ser mergeado
+que no sea el cronjob
+porque lo hice con el cronjob de Nahuel y estuvo bien
+que tipo cuando ustedes lo armaron
+yo lo que hice directamente es lo corrí una vez
+como se tiene que correrse una vez, lo corrí yo directamente una vez
+contra producción
+y no ensuciamos el worker al pedo
+¿se entiende?
+y así no lo mergeamos y después lo tenemos que sacar
+y así no lo mergeamos y después lo tenemos que sacar
+importante que nos anotemos Kike
+que después de la salida de producción hoy
+me interesaría limpiar todos los maintain
+y todas las cosas al pedo que tenemos ahí
+¿está?
+este
+o sea todos los cronjobs que hicimos
+como este mismo
+que son para correr una sola vez
+entonces si querés
+ahí Tatato en background
+también o vos pueden ir viendo todos esos cronjobs
+para correr una vez
+y hacer una propuesta para borrarlos
+¿está? si limpiamos un poco el worker que de repente hoy en día
+tiene una cantidad de código muerto
+por ejemplo lo de intercom y todas esas cosas
+que nos migramos hace millones de años
+que estaría bueno limpiar de worker
+¿si? para tener más visibilidad
+de lo que realmente se está usando
+entonces ahí o sea
+creense una tarea de un puntito de repente como para
+uno de los dos
+como para pasarme ese análisis
+de cuáles borraríamos
+lo pueden pasar directamente al channel
+de developer
+y una vez que salgamos a producción
+arrancamos a borrarlo
+bien eso de mi lado
+bien ayer estuve con el
+worker
+haciendo el cronjob que no es cronjob
+y nada después me puse
+con todo esto del
+del Drawer y ta sigo hasta ahora
+estuve corrigiendo unas PRs que ya quedaron
+ahí aprobadas
+así que de mi lado voy a seguir un poquito más con esto
+a ver si puedo encontrar ahí esa solución
+antes de así puedo mergear eso de una vez
+genial
+perfecto bien de bien
+si o sea trabajalo un poquito más
+iteralo tranquilo
+porque es algo que tiene que salir bien
+o sea la idea es que esto sea una linda experiencia
+para el usuario y que ayude
+si al final del día esto termina
+o sea termina sacándonos esa funcionalidad
+nos complica más
+este entonces tiene que ser algo
+que renderice bien
+eh Santi
+buenas ¿me escuchan ese?
+si si
+bueno estuve trabajando en la parte
+de los mails, comencé con los mails
+de Enrique
+ya dejé enviado a DesignReview
+que este
+Gastón me dejó un comentario
+el primer mail que sería de la parte de
+de cuando la cuenta está bloqueada
+me tengo que crear tarea para eso
+que no me he creado
+y ta ya hice el ajuste ahí
+que me dijo Gastón así que ya en breve
+se lo paso a DesignReview
+a DesignReview ustedes
+después
+hoy me habló Carlos por el MT103
+estoy terminando de ajustar
+y ya ahora en breve también
+se lo voy a pasar primero a Gastón
+por las dudas
+lo anterior que era
+estuve creando el mail
+de cuando estaba
+cuando se bloqueaba una cuenta
+¿cuando se bloqueó una cuenta?
+eh si
+si es un mail que tenía warning
+por todos lados
+de los que pasó Enrique para atacar
+era el primero
+ah ta si no dije nada
+no está ya
+ya lo ajusté
+y después está Carlos me habló
+estuve con lo
+ajustando el MT103
+ya lo estoy terminando
+ahora en 5 minutos menos
+ya liquido eso así que se lo voy a pasar a Gastón
+para que lo revise
+ah si pueden Santi y Gastón
+tenemos a Nahue ahí bloqueado por eso
+ta y literal
+es lo que se tiene que mover así que
+para mi no hay mayor prioridad
+desbloquear ese documento
+bien tranqui
+esto ya nada ya sale
+este fue un ajustecito chiquito así que
+que nada
+eh y ta y después
+voy a continuar con la parte de mail
+si te parece bien después de liquidar eso
+para chatbot en que está
+ah chatbot
+era el otro que te tenía que comentar
+estoy ajustando eso a
+tablet y mobile pero lo dejé pausado
+por las otras cosas
+si querés retomo eso
+y trato de liquidarlo
+para tenemos chatbot
+y tenemos configuraciones también
+en que quedó configuración
+configuraciones ya está terminado
+eso ayer no lo vimos
+pero si querés lo podemos ver hoy
+como postgram yo lo adapté a
+tablet y mobile
+ah y la parte de configuración nueva
+el nuevo lo de
+cerrar sesiones también quedó terminado
+eso si que es mi chavo
+cerrar sesión?
+si si cerrar sesiones
+ah cerrar sesiones
+lo que pediste la última funcionalidad
+nahue Jonathan
+los pop up de desloguearse
+y eso que hizo Santi ya están en la PR de Drawer no?
+efectivamente
+perfecto hermoso
+ahí Santi
+te diría de quedarnos
+como postgram pero liquidemos el documento
+me avisás y nos juntamos
+capaz que después del almuerzo a las 2 si les parece
+nos juntamos con
+nos juntamos ahí con
+con Jona y Marti
+para revisar lo de configuración
+pero primero en este tiempito
+que se termine la daily y ya ahora
+liquidemos ahí entre ustedes el documento
+porfa
+vale
+después lo del chatbot y también lo vemos
+vemos lo del chatbot ahí si lo tenés
+o bueno liquidalo y nos juntamos
+porque habría que pasárselo a Marti
+entonces si ya lo
+antes de seguir con los mails
+lo del chatbot
+va a quedar para el final del día más o menos
+porque me queda pasar la tablet y no leí
+probabilidades a un orden
+antes de seguir con los mails intentemos liquidar
+la charla de configuraciones
+que tenemos ahora a las 2
+juntémonos para chequearlo
+y después sigamos con lo del chatbot
+así también lo sacamos
+porque yo no sé ahí que voy a hacer con Jona
+si voy a poner lo primero a hacer es
+configuraciones o capaz que lo
+mando a hacer el chatbot
+está
+en sí ya está todo deployado
+bien
+Nahue?
+yo la mañana de hoy estuve ajustando los comentarios que dejaste en la
+PR iterando bastante y por eso
+este
+como es
+o sea ya estaría pronto para volver a revisar
+al menos para ver que la data está bien
+porque el cambio que va a ser
+seguramente va a ser antes de hacer los diseños
+y la data se va a mantener igual
+este fuera
+de eso también revisé algunas PR
+que habían quedado en Inter de Kike
+este y ta
+hasta eso más bien
+ahí lo que te pido
+Nahue es enseguida que tengas
+los ajustes de diseño la volvés a enviar
+a diseño
+a diseño cuando tengas los ajustes
+que marque Santi
+y después que pase Inter
+o sea que pase Inter revisemos las Inter
+así ya cuando nos llegue a Marti
+y a mi ya por lo menos tiene esa revisión
+bien?
+pero debería quedar
+o sea debería quedar si Dios quiere
+todo para hoy
+ahora si algo más Nahue?
+negativo
+genial
+Kike?
+estamos contigo Santi
+trabajando el tema de lo que es la nueva
+tarea de factura
+de estas transfers excepcionales
+nada ya
+logré que queden en Inter
+como usted comentaba hoy
+vi ahí que ya surgieron comentarios
+por ejemplo en la PR del worker
+así que nada la idea es
+liquidar eso cuanto antes
+ya está todo o sea solo estamos en
+iteraciones con comentarios así que
+nada cuando resolvamos
+todos los comentarios
+mi consulta es
+es un nuevo evento?
+no no
+no es un nuevo evento es el mismo
+solo que soportas ahora que también sea una
+transfer
+básicamente en esencia
+bien
+yo lo que te diría ahí Kike
+no sé si ya lo hiciste pero podes hacerlo
+directamente
+o sea le podes decir a Claude
+yo lo hice ayer
+me llevo bastante rato
+pero podes llevarlo contra las transacciones
+de Prod
+y ver como las carga
+o sea literalmente podes casi conectarlo
+a las transacciones de Prod y que genere algunas
+facturas
+simule generar facturas para esas transacciones
+no sé como lo probaste vos
+te lo digo porque las transacciones de Prod están
+impecables y la información
+de Prod está impecable
+entonces podes agarrar en particular
+de One Money
+no de Rail
+en particular de One Money podes agarrar alguna
+transfer que cumpla con las condiciones
+y también de paso probarse alguna
+transfer que no se está comiendo
+si?
+es eso mismo que está ahí en pantalla
+agarré datos de Prod y
+ah está entonces está
+básicamente si
+si perdón está
+medio largo traté de acotarlo pero
+no no está bien está bien
+yo igual ahora voy a mirar los videos
+más allá de que lo están revisando los chicos
+Fernando ahí también
+es importante
+podes darle una mano a Enrique en eso
+revisar esas PR
+y ya de paso si Quique no tiene más nada
+Fernando
+bueno estuve haciendo como review
+bastante
+tengo un problema y es que cada cinco
+segundos cada vez que
+me llegan algo se rompen todos los test
+así que estoy cada cinco
+segundos
+los test de One Money ya no deberían cambiar más
+ok
+cuáles hay que revisar?
+hay test hay PRS
+hay PRS de test unitario en QA
+en full request QA
+yo no solo
+si fue la que la que vos me pediste
+que le sume estos test
+que ahora la voy a devolver a Intan
+que le sume tres test eh
+cuatro test perdón
+yo no veo PRS que tendría que revisar
+yo en QA
+no por ahora no
+estoy trabajando en eso voy a seguir trabajando en eso
+y tuve ese problema
+que ahora por ejemplo
+fui a hacer el push
+con los
+o sea con las correcciones
+del último
+ayer y se volvió a romper
+entonces
+ta por eso eso estoy corrigiendo
+y
+y ta el test
+de delete este
+del endpoint nuevo que agregaste
+ya quedó hecho
+quedó pronto y con el formato
+de OTC
+así que ta
+no más termine esto
+ya me pongo con los otros cuatro test
+y queda todo subido
+ta bien hay test que tocan
+que tiene que hacer Enrique o todos los tenes de tu lado
+o sea eran de la
+PR de Enrique
+que ayer quedamos contigo
+que los iba
+a meter yo ahí
+no se si es que Enrique estaba en algo
+no lo que quedamos es que si eran de Enrique
+le ibas a comentar a Enrique
+ibas a bloquear la PR
+para decirle que faltaba eso pero ya
+los hiciste
+no no no los hice
+ta entonces comentale la PR a Enrique
+que seguramente las PR están en pull request
+interno no se donde están Kike
+si están en pull request inter
+lo que tenes que hacer no es sentarte a hacer
+los test de Kike
+sino es bloquearle la PR como si fuera
+un comentario normal y decir ojo que
+que falta esto
+ta ta ta porque entendí mal
+tipo me la asigné a mi
+no no no
+son tareas de Kike lo que vos tenes que hacer
+es bloquearle osea por ejemplo
+si en una PR se tocaba esto
+y falta el dilito falta alguna cosa
+decirle che Kike ojo que esta faltando
+esto acá sumalo ta y le
+dejas un comentario es como si fuera una
+review ta
+dale
+para el día de hoy tu prioridad
+Tato es revisar PRs y a ver si
+podemos pinchar
+de tu lado todo lo que puedas
+para que estas tareas
+lleguen a pull request
+o a pull request 4
+en realidad
+dale una mano en la revisión de las PRs
+y centrate en todo lo que vos
+puedas hacer
+y pinchar ahí
+a los involucrados
+para que esta PR
+al final del día llegue a pull request 4
+y a ver si la podemos mergear
+eso sería un éxito
+no agregué la
+la tarea del endpoint nuevo
+pensaba agregarla para el próximo
+sprint porque como que entraría
+para el próximo sprint pasala
+la mandas para el próximo sprint
+y la dejas en dev
+review la pasas a de review
+de review intern todo lo que quieras
+pero no la cerras la cerras cuando se
+abra el próximo sprint
+dale
+bien genial
+entonces ahí la idea de hoy sería
+que des una mano ahí a los chicos con las
+PRs que te vayan asignando y
+este y a ver si podemos
+hacer llegar esta aqua
+Gastón
+bueno yo tuve
+trabajando en un posteo
+que me había pedido marketing
+de bueno de
+de mitos del LC para Dasman Basic
+eso ya quedó terminado
+ya quedó entregado
+y ahora pasé a
+trabajar en
+uno de los mails en el de
+problema con suscripción de servicios
+que eso
+ya lo tengo casi terminado
+ahora se lo iba a mandar a Santiago
+y iba a empezar a trabajar
+en el próximo
+igual
+voy a ver si
+bueno si Santiago me pasa
+lo que tenía pendiente
+para revisar para Nahuel
+así que
+quedo pendiente de eso y bueno
+ya después sigo trabajando con los otros mails
+ta
+que mails vas a atacar vos Gastón
+estoy atacando de abajo
+para arriba o sea
+la lista que mando
+Enrique
+le mando a un grupo que estamos en
+Santiago y yo
+pero básicamente
+o sea con Santiago no nos vamos a
+como es
+a chocar en ese sentido
+porque el ataca de arriba para abajo
+yo de abajo para arriba
+este mail cuando se envía
+este creo que es un mail que se envía
+una sola vez no?
+creo que este es un mail que
+se corrió una migración que se va a correr
+una sola vez
+ojo con eso porque la idea sería que
+primero los mails que enviamos todos los días
+porque hay mails que tenemos
+que actualizar pero
+pero o sea
+Kike hagamos una cosa
+no
+pasémosle los mails
+que surgen de notificaciones
+Kike que hay que actualizar
+y separémoslo de los mails de los cronjo
+capaz que ya lo tenés pero
+reactualicemos ese mensaje a Gastón y a Santiago
+y
+Gastón y Santiago
+los mails que se envían de los cronjo
+ahora no los ataquen
+porque ahí es lo que vamos a hacer Kike es limpieza
+vamos a eliminar todos esos mails
+ese mail me juego las bolas
+a que es un mail
+o sea viéndolo
+es un mail de un cronjo que se envió una sola vez
+y ya ni se va a ejecutar
+yo prefiero atacar mails por ejemplo
+como lo que es transacciones
+mail de bienvenida, contacto
+mail de está pronto tu
+form de renovaciones
+o sea tenemos 10.000 mails
+la factura, tenemos 10.000 mails
+que tenemos que actualizar
+y ninguno de los cronjo
+o sea no quiero que se pongan a trabajar en los de los cronjo
+que todavía este mail estoy seguro que
+dentro de la limpieza se va a ir
+son cronjo que se corrieron
+una sola vez
+entonces este
+si podés Kike actualizales esa lista
+a Santiago y a Gastón
+y enviemos todos los mails
+que sean de sns event
+y lo de los cronjo
+que no los ataquen
+y Santiago y Gastón cuando reciban eso
+si estaban atacando
+alguno de lo de los cronjo
+ataquen solo los eventos diarios
+no los de los
+los que se envían de una sola vez
+como por ejemplo fin de año
+todas esas cosas, me chupan un huevo eso
+saquémoslo después
+porque es muy probable que la limpieza que hagamos
+a partir de mañana
+todos esos mails los limpiemos a la mierda
+si ya ni tenemos que dedicarle tiempo
+ojo con eso
+entonces ahí
+Enrique si podés pasale eso
+o bueno Fernando o cualquiera de los dos
+pasenle eso a Santiago y a Gastón
+y Santiago y a Gastón acomoden lo que están atacando
+para que esos no los ataquen
+tenemos 10.000 mails
+este en particular que dice
+advertencia
+me juego las pelotas
+bloqueo de cuenta
+este que es
+subscription file warning
+que tan mal estoy
+mirá
+es este método que probable eliminemos
+check company with additional service
+and no subscription
+es un cronjob eliminado hace 10.000 años
+o sea que se corrió
+hace un año, hace más de un año
+y estos son los cronjobs, por ejemplo
+este es uno de los cronjobs que yo te digo
+que tenemos que sacar todo el código relacionado
+que no impacte en otro lado
+o sea para así
+limpiamos el worker
+entonces ya no
+no tenemos necesidad de ensuciar
+el worker porque el problema
+va a haber que separar estos repositorios
+pero la idea es que
+podamos limpiar el worker
+porque tiene mucho código obsoleto
+todo lo de intercom
+de incorponet o de wordpress
+no tiene sentido, es una cantidad de código muerto
+que no aporta valor
+y el día que queramos regenerarlo
+buscamos los commits viejos
+no aporta nada de valor
+pero este mail está muerto
+así que ahí Gastón y Santi
+tengan eso en cuenta
+cuando se los pase Kike
+algo más Gastón?
+espectacular
+Martina?
+bien, de mi lado
+estuve con la
+el poder ver los archivos
+del mt103
+del lado del site y backoffice
+el lado del site
+ya estaba pronto
+y mandé el APR
+y ahora estaba testeando lo del backoffice
+pero también ya estaría pronto
+y voy a armar el APR para eso también
+y
+en el site dije comentarios
+ok
+y después
+también estuvimos
+hablando un poco del tema del APR del drover
+ahí con Shona
+para algunos cambios
+y básicamente
+después de esto
+voy a seguir con la parte de revisar lo del
+mapeo de datos
+que hizo Nahue
+y básicamente eso
+bien, bien
+me está faltando alguien?
+genial
+está
+dos minutos pasados
+Santi
+pegás el grito ahí cuando esté pronto ahí con Gastón
+eso para que Nahue...
+acabo de terminar eso, ya lo ha dicho Gastón
+si querés verlo ahora, lo vamos a ver
+ah, ya lo ha dicho Gastón?
+si, ya me dejó ahí el comentario
+que eficiente
+bueno, si dale, nos quedamos ahí
+Nahue, lo siento, Nahue va a tener que esperar
+para tomar ahí
+nos quedamos ahí
+con Gastón, Santi
+y Nahue, el resto buen provecho
+se me escapó un integrante
+chau, buen provecho
+se me fugó
+se me fugó
+me acaba de escribir
+se me cayó el internet
+digo la clásica, está con hambre
+está con hambre
+está con hambre
+bueno, dale, quédense
+nos vemos

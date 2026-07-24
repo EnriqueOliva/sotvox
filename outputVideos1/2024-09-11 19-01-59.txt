@@ -1,0 +1,471 @@
+Tendríamos que ver cómo moquear el Securalize, pero nosotros, a nivel de test, no podemos simular nunca una conexión con... ¿Dónde está? Lo perdí. No podemos simular un new como hace el Securalize. Esto no podemos hacerlo. Esto tiene que ser todo moqueado.
+¿Sí? Ahí capaz que requiere un pienso, un reveo de la estrategia. Sin lugar a dudas que es algo nuevo, porque cuando nosotros creamos una compañía se hace en una sola transacción, porque se hacen muchas operaciones.
+Esto con el objetivo de que si falla, todas estas operaciones fallan, o sea, se revierten. Por ejemplo, cuando creamos la compañía, cuando creamos la compañía se crea con una transacción.
+Después se crean todos los partners con esa transacción y se crean todas las relaciones de los additional service y después se comitea esa transacción.
+Si falla, se hace un rollback. Quiero decir que, por ejemplo, creaste una compañía, la base de datos, creaste 20 socios y falla cada una, se revierten todos los cambios.
+Por eso la importancia de tratarlo de esta forma atómica. Ahora, esto está bueno. Ahora, claro, al moquear...
+No, no moqueamos solo user. Probablemente tengas que moquear Securalize. Viste que user, si nosotros agarramos user, lo que exporta de user es una clase.
+A nivel de Securalize, ¿qué exporta? Algo de tipo Securalize. Esto es lo que hay que moquear. No deberíamos tener que setear todo esto.
+Nunca se debería hacer un new de este loco. Porque en sí, esto lo que hace es levantar una conexión. Y nosotros, para los test, no podemos hacer una conexión.
+¿Por qué no?
+Lo que hacemos con Cognito. ¿Dónde está?
+Cognito, en realidad, ahí sí. En ese caso, sí. Login. En el caso de Cognito, si te fijás, sí usamos variable de entorno porque le decimos, bueno, create.
+Porque a diferencia de Securalize, cuando vos haces un new, como que le importa tres chotos, capaz que eso podemos hacerlo.
+O sea, si cuando creás la sesión de Securalize, le importa tres chotos.
+No sea falsa, no pasa nada.
+O acá, por ejemplo, con Cognito, lo que dice es, bueno, en realidad, si vos me ponés datos corruptos, me importa tres carajos.
+Mandame los datos y, en realidad, yo voy a utilizar la operación. Yo voy a intentar hacer la conexión recién con el send.
+Ahora, yo creo que Securalize, cuando vos haces un new, prueba la conexión y si falla, no.
+No, porque no estamos chequeando si anda.
+Podríamos jugar con algo de las variables de entorno, seteándolas.
+Y después, jugando con el protocolo.
+Otro type de Securalize.
+Capaz que puede ser una opción.
+Muy parecido a Cognito.
+Esta estrategia de Cognito, capaz que no puede solucionar.
+No sé.
+Pero deberíamos seguir con el mismo orden de moqueo.
+Y el mismo orden de las cosas.
+Yo vi bastantes stops.
+Vi que esto estaba...
+El código que hiciste...
+Dame un segundo, ya lo comparto.
+Pero no tiene nada que ver a lo que veníamos trabajando.
+Dame un segundo.
+Está bastante desalineado con respecto a lo que veníamos laburando.
+A la estructura de tests que veníamos trabajando.
+Dame un segundo acá.
+Claro, fíjate.
+Las variables de entorno arriba del todo.
+Estos métodos deberían estar fuera del describe.
+Pues son métodos auxiliares al test.
+Debatibles.
+Pero, a mí deberían...
+Puede ser que pasen.
+Pero si ya es una función o lo que sea, yo no lo pondría dentro del describe.
+Puedes pasar.
+Ves acá que no tiene nada que ver con el orden.
+Definir los stops.
+Después el API.
+El sandbox.
+Y acá haces un reset directo.
+¿Sí?
+Entonces ahí está.
+Después de que miré esto, ya ni miré más abajo cómo se hacen las cosas.
+No veo que se moquee SecureLights en ningún lado.
+Entonces calculo que esto está levantando una conexión directa.
+Sí.
+Sí.
+Eso.
+Para mí esto debería hacerse...
+En el before.
+Arriba del todo.
+Y vos esto, reordenarlo.
+Y acá podrías agregar un mock a SecureLights si fuera necesario.
+Obviamente que esto acá debe estar corrompiendo todo.
+Lo mismo que nos pasaba antes.
+El reset.
+Cuando tenés varias operaciones, las resetea y...
+No está bueno.
+Debería ser para acá en concreto.
+Vos hiciste un comentario de que había mucho código repetido.
+De que había que definir cosas a alto nivel.
+En ese sentido.
+Sí.
+No, no, no.
+Estos métodos están bien.
+Esto está bien.
+Mi comentario ha referido a esto.
+Está bien.
+Yo de repente debería sacarlo para afuera, capaz.
+Del describe.
+Porque son constantes.
+Menos...
+Capaz que este método sacarlo para afuera.
+Que quedó como un método.
+Las constantes sí están bien que estén dentro del describe.
+Pero este método definirlo afuera y reutilizarlo.
+Es una función.
+Es una función.
+Pero después el resto está bien.
+Pero el tema es que el orden en que se hacen las cosas acá y la manera que se moquean no tiene nada que ver a lo que venimos laburando.
+Eso hay que ajustarlo.
+Además acá ya te digo que faltan cosas a moquear.
+Por ejemplo falta...
+No sé.
+Por más que no se utilice.
+O sea que no lleguen los tests.
+Si nosotros vamos al código.
+No sé si estoy compartiendo toda la pantalla.
+A ver.
+Creo que no.
+Pero si nosotros vamos al código en concreto.
+Utiliza otros servicios.
+El Company Services.
+Utiliza otros repositorios.
+Entre ellos.
+Rápidamente.
+Si vamos al Company Services.
+Utiliza.
+Banned Info Repository.
+Y utiliza User Repository.
+Utiliza User Repository, Company Repository y Banned Info Repository.
+Y no utiliza más nada.
+Cuando se crea una Company Draft.
+Ah no.
+No utiliza más nada.
+Pero hay varios repositorios ahí.
+Hay varias operaciones.
+¿Cómo?
+A mí me genera duda.
+Mirá.
+Por ejemplo yo acá cuando se valida toda la información.
+Enseguida se hace el chequeo de baneo.
+Esto pensabas hacerlo en otro test.
+Porque no se está moqueando ninguna de esas operaciones.
+Si vas al Company Services.
+Donde está la lógica.
+A ver si lo puedo abrir acá.
+No.
+Vamos a un tinto.
+Vamos a compartir pantalla anterior.
+No.
+Pero lo muevo por acá.
+Si vamos al Company Services.
+Ves que acá por ejemplo.
+Se utiliza Banned Info Repository.
+Más allá de que.
+Calculo que estás probando bastante de esto.
+O Your Info.
+Entonces.
+Debería moquearse este repositorio.
+O estas operaciones.
+Y chequearse que todavía no se están llamando.
+Lo mismo.
+Con operaciones de.
+Hay varias operaciones acá.
+Create.
+Hay varias operaciones que.
+Más allá de que se chequee esta parte de arriba.
+Hay que asegurarse de que no se esté.
+Se esté validando.
+O asegurarse de que estén moqueadas.
+Por lo menos.
+De que estén moqueadas esas operaciones.
+Después vos vas.
+Sí.
+Las operaciones.
+Nunca repositorio.
+Pero si querés ahí metele un pienso.
+Hoy necesitamos yo así terminarlo de.
+Del template y esas cosas.
+Así que si querés metele a eso.
+Y después le metemos un pienso a eso.
+Y de última lo charlamos más de noche.
+Este.
+A ver.
+Si encontrás alguna solución.
+Que se adapte un poco más.
+Al.
+Al orden que venimos.
+Trabajando.
+De los test.
+Este.
+Pero es eso.
+Y habría que moquear todas las.
+O sea.
+Es como te digo.
+Más allá de que vos llegues hasta acá.
+Vos tenés pilado.
+Esta es la complejidad que tiene esto.
+Por eso yo.
+Dije bueno.
+Cuando salga uno.
+Van a salir todos más rápido.
+Porque hay una cantidad de operaciones acá.
+Que se hacen a nivel de repositorio.
+Y uso repository.
+Que vos tenés que moquear.
+Las operaciones en concreto.
+Y decir.
+No se están llamando.
+Pero es parte del flujo.
+Se entiende.
+O sea.
+Nosotros tenemos que garantizar.
+Son operaciones.
+Parte del flujo.
+Principal.
+O de todo el método.
+Entonces tenés que.
+Hay que moquearlas.
+Mismo acá.
+Get.
+Banet.
+Info.
+Está.
+Después que tenés.
+Son.
+No son tantas.
+Una.
+Dos.
+Tres.
+Y esta.
+Esta.
+De creer.
+Company.
+Draft.
+Está.
+Por lo menos fijarse.
+Que no se esté llamando.
+Capaz que esta.
+Es mucho más sencilla.
+Porque.
+En vez de.
+Moquear cada.
+En un principio.
+Podés moquear.
+Únicamente.
+El transactional.
+No sé.
+El tema.
+Que.
+Exacto.
+Este método.
+Sí.
+Exacto.
+Con.
+Vale.
+Create.
+Company.
+Draft.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Es un tema que tenés muchas llamadas.
+Que se hacen ahí.
+Entonces.
+Eh.
+Vos tenés que validar.
+O sea.
+Más allá de que valides.
+Los datos incorrectos.
+Vas a.
+O sea.
+De pi.
+Qué vas a tener un caso en que.
+Ponemos.
+Datos.
+Correctos.
+A no ser que.
+Vos estés pensando solo.
+Acer los test.
+Incorrectos.
+Pero de todas maneras.
+Es lo difícil que tiene la parte de.
+Company.
+Draft.
+Vos tenés que asegurarte.
+Que estas cosas.
+No se están.
+No estás llegando.
+Fíjate si yo agarro por ejemplo cualquiera, vamos a agarrar login, vos cuando haces login te quedas el find one y el cognit, entonces vos te fijás que se han llamado ambos,
+a ver si tenés alguna que no se ha llamado alguno, cache one, este falla login, falla login por short password, que raro que nunca falle porque no existe,
+hay un caso que falle porque el email ya existe, acá tenemos un debe técnico, no hay caso para que se fije que el email no existe,
+en la base de datos, no lo encuentro, bueno justo agarramos un ejemplo y encontramos una falla super importante, no hay un solo caso que chequee el flujo de que el email no existe,
+cagado, eso es un debe, me lo voy a anotar, vamos a agarrar otro, logout, también estos telos si hemos ido trabajando y hemos tenido idas y vueltas,
+esto chequea las cookies, logout justo es especial, create user no está tan bien,
+está terminado, a ver get user, o refresh, refresh si está bien, tenemos los moqueos de las dos, se llama este y este se llama dos veces,
+alguno que no se ha llamado, cache one, fall one, capaz que el de create, pero que ahora el de create está fallando, está en obsoleto,
+acá tenemos, no, fallo, no tenemos test, no tenemos test, capaz que hay muchos in progress o están en calendar,
+cómo podemos cargar esto, cuando haces validaciones vos tenés algún flujo correcto, algún flujo que ande, o sea que es correcto, que vuelva creado,
+si acá hay uno, esto es lo que yo te digo, debería rehusar, no existe nadie, si el email es exacto, claro pero acá falta moquear una cantidad de cosas,
+a ver este es el de, está llamando a create company draft,
+el código, hay una cantidad de operaciones, vos acá tenés user create, user find one, yo no sé cómo llega esto al final,
+cómo me vuelve created, o si yo voy acá, por ejemplo, voy rápidamente a mirar el company services,
+acá get banned info, acá se está llamando a, que esto además tiene su complicación, está haciendo dos requests en paralelo,
+si yo bajo, acá tenemos el find one, estos dos los moqueás, y este no se está moqueando, cómo devuelve create esto,
+estoy usando la base de datos falso,
+ah, está, entonces ahí está el problema, ah, no me di cuenta, claro, por eso vos le ponés todos esos datos de arriba, porque es una base de datos local esto,
+ah, claro, ahí está más el problema, yo pensé que era como cognito, vos ponés cualquier mierda y te importa tres carajos porque vos la función send,
+la moqueás, entonces nunca llamás a la send original, entonces nunca enviás ningún comando a cognito, no, no, vamos a hacer una cosa,
+porque si no, no vamos a terminar más, vamos a hacerlo progresivo esto,
+tenemos, como desarrollador quiero validar la información del usuario que creó una company draft,
+quiero validar la información general de la compañía, quiero validar la sección de industria y opciones,
+quiero validar los servicios adicionales que creó una company y presidir seguro,
+quiero validar la información de socios y la suma de porcentajes al 100% correcta,
+quiero asegurarme que el sistema maneje correctamente los errores esperados al crear una company draft para mantener estabilidad del sistema,
+entonces vamos a una cosa, de acá hasta acá, desde la 150 hasta la 154, si miramos el código,
+si vamos al company services, es todo lógica de validación, entonces no necesitaríamos moquear toda la parte de abajo,
+¿estamos alineados? Bien, entonces vamos a hacer una cosa,
+a ver si se puede, porque acá hay dos caminos, o hacemos un test bien moqueando todo,
+pensando en un flujo que pase, pero moqueando todo, o empezás a de repente decir, bueno,
+no moqueo tanta cosa porque quiero validar solo Iorinfo, entonces solo creás un test para casos inválidos de Iorinfo,
+inválidos, ninguno válido, porque si tenés alguno válido va a seguir pasando para ahí abajo y va a chocar con los métodos,
+que llama la API, ¿entiendes? Entonces no queremos ninguno válido, eso es una opción,
+entonces vos acá haces un test de todos los casos inválidos que fallen acá,
+después otro archivo, todos los casos inválidos que fallen acá, pero ya pasaron este, ¿se entiende?
+Otro test con todos los casos inválidos acá, pero ya pasaron estos dos, porque si vos te fijás secuencialmente ya pasaron esos dos,
+¿sí?
+Otro, que si vos entrás a validar acá, quiere decir que acá pusiste datos válidos,
+el primer archivo cae acá, todos los casos de prueba caen acá,
+segundo archivo, ponés datos válidos para que pasen la línea 43, y así sucesivamente,
+hasta que en un punto vas a arrancar, terminás partners, y vas a arrancar con validaciones que sí tenés que moquear,
+¿está? Y las podés ir haciendo secuencialmente, eso es una opción.
+Entonces ahí tendríamos un archivo para esto, un archivo para esto, un archivo para esto, no para esto, no para esto,
+y después, bueno, las validaciones.
+Yo creo que tendríamos un archivo para esto, para todo lo que es el código de baneo,
+otro archivo para lo que es la parte de usuario, y otro archivo particular para esto, que va a tener, tiene una cantidad de temas a validar.
+Eso es una opción, ¿sí?
+Ahora, lo que pasa con esa opción es que si vos acá, cuando haces esa opción, ya por más que quieras validar esto,
+te falla, te falla porque Secularize inicia algo,
+y bueno, ahí vamos.
+Va a tener que moquear todo, o sea, va a tener que hacer un test polenta bien, que moquees todo.
+Entonces ahí, yo lo que te diría es centrar, es el proceso totalmente inverso a lo que te acabo de decir.
+Hacés un test que moquee todo y pase todo bien,
+o sea que vos creés una Company Draft con todo bien, y después lo que vas haciendo,
+volviendo pasitos para atrás, para ir diciendo, bueno, ahora tira excepción acá, tira excepción acá,
+¿se entiende?
+Es medio, este es el método, si no es,
+uno de los más difíciles, es el más difícil.
+Después, obviamente que esto también va a estar mucho más complejo en el Backoffice,
+porque vos vas a poder modificar, además de esto, vas a poder modificar ciertos campos.
+Pero es uno de los métodos complicados,
+donde tenés que hacer una cantidad de validaciones.
+Así que ahí, Kiketo, mi recomendación es que, ta, vea, si querés, primero liquidemos la parte de,
+si querés, cambiate, ponete ropita,
+ponete, como se llama, liquidemos la parte del Template, del Excel, para ya dejar eso pronto.
+Yo voy a ver si, qué falta de Calendly, a ver si ya lo podemos liquidar,
+sí, que eso nos quedó pendiente, y qué más, y después ya ponete de nuevo con esto, a ver si hoy podemos llegar a algo,
+a ver si encontramos el flujo a seguir, porque en base a eso vamos a tener que cambiar las tareas, ta.
+Yo ahí, claro, cuando yo creé eso, este,
+este es, me olvidé del chiste del Securalize,
+que es, bueno, eso es una piedrita más,
+porque, por eso yo decía que no tenía nada que ver a lo que veníamos armando.
+Nosotros nunca podríamos conectarnos, o sea,
+negativo central, conectarnos a una base de datos.
+Vos pensá que esto se corre con GitHub Action.
+O sea, lo que hace es, npm install, run test.
+Vos si te conectás a una base de datos de prueba, ¿cómo haces desde GitHub para correrlo?
+¿Se entiende? Y tampoco es escalable, porque qué, ¿vas a levantar una base de datos para hacer pruebas?
+Ah, no, no, carajo.
+No es escalable.
+Hay que, esto es una, es una, es un bloqueo más que tenemos que descubrir cómo moquear.
+Sí, con todas las herramientas y todo lo que hemos visto.
+Tenemos que descubrir cuál es la mejor manera de moquear, o si, bueno, si hay que bloquearlo, moquearlo bruto.
+O sea, directamente, todo el importe de Securalize, pimba.
+Te, te, te doy un, uno moqueado mismo.
+Que devuelve, que cuando haces Transaction, devuelve lo que se te canta al ojete.
+Lo bueno de las Transaction en sí, es que lo único que tenés que chequear es que se llamen, porque no tienen que retornar nada.
+Si vos fijás cuando se llama el commit y cuando se llama el rollback, es que se llamen nomás.
+Pero bueno, ahí hay que meterle un pienso a la parte de cómo moquearlo.
+O sea, entonces ahí, de nuevo, prioridades.
+Template, yo ahora ya mismo miro Calendly y después seguimos con eso.
+Dale.
+Y a ver si hoy, si hoy podemos más o menos tener una idea de cuál, de cómo seguimos con esto, así reestructuramos las tareas.
+Porque probablemente esto haga que cambiemos el orden de las tareas, de los tests.
+¿Alguna consulta o algo?
+Bueno, ese es lo bueno, ¿no?
+Todavía no arrancó a la acción repetitiva, así tiene que seguir inventando cosas.
+No es complicado, es meterle un, o sea, ta.
+Yo lo digo desde mi lado, obviamente que no es lo mismo.
+Es meterle un pienso ahí con todas las estrategias que venimos haciendo para moquear y encontrarle el jayto, nada más.
+Estoy seguro que no debe ser, debe tener alguna vuelta de tuerca con todo lo que venimos usando para moquear lo que son funciones.
+Entre proxy require, stubs, todas esas cosas, es encontrarle un orden.
+Después probablemente sea repetitivo.
+O sea, una vez que le...
+Como los otros tests, una vez que le encontramos el jayto, es nomás, ta.
+Si sale uno, salen todos.
+Si, si, ta.
+Yo me quedo preocupado por esto del login, que no tenemos un caso...
+No llegamos a hacer un caso donde el usuario no exista.
+¿Cómo nos comimos?
+O sea, yo voy a compro y me ladre.
+¿Cómo se me pasó este?
+Están los exitosos primero y los que fallan después.
+I log in a short password.
+Digit...
+Claro, pero vos en sí haces un chequeo.
+Se huele a Injection, lo...
+No, vos, o sea, si vamos al código, user service, vos acá cuando haces el login, te fijás y tirás este error.
+Si el usuario vino nulo, no existe.
+Esto no lo estamos atrapando en ningún lado.
+Es un temita.
+Y ahora, ta, bueno, crear user tiene sus otras vueltas.
+¿Vos considerás que CreateUser puede tener cierto nivel de complejidad también?
+Entonces, como el 150, un chequito extra.
+No creo, no, porque en realidad es lo que usan Traxation, que es lo único nuevo que estamos viendo.
+Después del resto, por eso a mí me resultó raro, después ahora me puse a pensar.
+Y digo, claro, es la primera vez que lo atacamos.
+Tenemos que moquearse con un alias directo.
+Pero después del resto es todo lo mismo.
+Variar un poquito, pero...
+CreateUser, si te fijás...
+Es todo lo mismo.
+No es nada raro.
+Mayor chequeo.
+Lo que sí, fijate, que esto me asusta, Kike.
+Fijate todas las veces que nosotros acá devolvemos esta excepción, ¿no?
+User not found.
+Si yo voy al buscador, no encuentro un solo test que chequee que llega a esto.
+Y eso me preocupa.
+Ta, ojo, hay endpoint nuevo, ¿no?
+Estos son endpoint nuevos.
+Pero RefreshToken, por ejemplo.
+Ese lo hicimos.
+No capturamos nunca este caso.
+Tampoco para login.
+RefreshToken, login, CreateUser, GetUserById, GetMyInfo, faltan tantos.
+No, GetMyInfo ya está hecho, sí.
+GetMyInfo está hecho, sí.
+No, tiene un caso nomás, ¿no?
+No, tiene varios.
+Ratón 400.
+Sí, tuvimos tarea, ¿no?
+Sí, tenemos una falla ahí con todos los tests de usuario de que el usuario no existe.
+Vamos a crear una tarea de repente de 13 puntos para hacerle un refactor a eso.
+Porque hay que agregar en todos esos casos.
+Yo ya...
+Ya tenemos tareas para el Spring que viene.
+Y ya taco este caso.
+Porque si esto pasa acá, también tenemos este problema en el Backoffice.
+Bueno.
+Tranqui.
+Ah, son cosas que pasan.
+Ahora tenemos muchas cosas, chicas.
+Esa es la cagada de que...
+De que hay que ir razonando, chequeando los flujos.
+Chequeando todos esos flujos, que anden, que no anden.
+Este.
+Bien.
+Está.
+Bueno.
+De nuevo, prioridades.
+Terminar Template.
+Yo cerramos Calendly y volvemos a esto.
+Yo eso lo voy a crear como un bug para el siguiente Spring.
+Pero hoy tenemos que liquidar porque tenemos que reorganizar las tareas.
+Ya de pique no creo que lleguemos a terminar el Spring para el domingo.
+Vamos a tener que replantear.
+Vamos a tener que replantear.
+El Create Company y Draft tienen mucho flujo.
+Y también yo necesito que termine con los tests de regresión.
+Hasta donde dijimos.
+Ya hagamos eso.
+Haga ese research.
+A ver a qué llegamos.
+Bien.
+Y vamos bien.
+Yo creo que la dificultad en sí está en este hijo de puta.
+En el Transaction, que es lo nuevo.
+Porque después el resto son todas operaciones que ya moqueamos de alguna manera.
+Pero ese...
+Es este.
+Bien.
+Bueno.
+Enseguida que tenga el template me lo manda y seguimos con lo otro.
+Me sumo a la clase y estoy a sync hasta las 10 y media.
+Vamos arriba.
+Hasta luego.

@@ -1,10 +1,16 @@
 import os
 import re
+import sys
 import glob
 import time
 import math
+import ctypes
 import random
+import platform
 import threading
+import traceback
+import subprocess
+import winsound
 import tkinter as tk
 from tkinter import filedialog
 from datetime import datetime
@@ -13,9 +19,9 @@ from faster_whisper import WhisperModel
 
 from constants import (
     SUPPORTED_EXTENSIONS, VIDEO_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP,
-    LOG_DIR,
+    LOG_DIR, SOUNDS_DIR,
 )
-from engine import extract_audio, transcribe_audio, save_transcript
+from engine import extract_audio, transcribe_audio, transcribe_audio_multilingual, save_transcript, probe_file
 
 
 P = {
@@ -156,10 +162,12 @@ class TranscriberApp:
         self._session_log = []
         self._log_flush_idx = 0
         self._log_path = None
+        self._session_start = time.time()
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3")
         self.device_var = tk.StringVar(value="Auto")
+        self.multilingual_var = tk.BooleanVar(value=False)
         self.output_var = tk.StringVar(value=DEFAULT_OUTPUT_DIR)
 
         self._build_ui()
@@ -171,6 +179,7 @@ class TranscriberApp:
         self.language_var.trace_add("write", lambda *_: self._slog(f"Setting changed: language = {self.language_var.get()}"))
         self.model_var.trace_add("write", lambda *_: self._slog(f"Setting changed: model = {self.model_var.get()}"))
         self.device_var.trace_add("write", lambda *_: self._slog(f"Setting changed: device = {self.device_var.get()}"))
+        self.multilingual_var.trace_add("write", lambda *_: self._slog(f"Setting changed: multilingual = {self.multilingual_var.get()}"))
         self.output_var.trace_add("write", lambda *_: self._slog(f"Setting changed: output path = {self.output_var.get()}"))
 
     def _hover_bind(self, widget, bg_from, bg_to):
@@ -212,6 +221,69 @@ class TranscriberApp:
             w.bind("<Button-1>", show)
         outer.bind("<Enter>", lambda e: outer.configure(highlightbackground=P["accent"]))
         outer.bind("<Leave>", lambda e: outer.configure(highlightbackground=P["border"]))
+        return outer
+
+    def _toggle(self, parent, variable, label_text, hint_text=None):
+        outer = tk.Frame(parent, bg=P["elevated"], cursor="hand2")
+
+        box = tk.Canvas(outer, width=32, height=18, bg=P["elevated"],
+                        highlightthickness=0, cursor="hand2")
+        box.pack(side="left", padx=(0, 8))
+
+        label = tk.Label(outer, text=label_text, font=("Bahnschrift", 10),
+                         bg=P["elevated"], fg=P["text_sec"], cursor="hand2")
+        label.pack(side="left")
+
+        state = {"hovered": False}
+
+        def draw():
+            box.delete("all")
+            is_on = variable.get()
+            canvas_width = 32
+            canvas_height = 18
+            if is_on:
+                track_color = P["accent_hover"] if state["hovered"] else P["accent"]
+                knob_color = P["bg"]
+            else:
+                track_color = P["text_dim"] if state["hovered"] else P["border"]
+                knob_color = P["text"]
+            corner_radius = canvas_height // 2
+            box.create_oval(0, 0, canvas_height, canvas_height, fill=track_color, outline="")
+            box.create_oval(canvas_width - canvas_height, 0, canvas_width, canvas_height,
+                            fill=track_color, outline="")
+            box.create_rectangle(corner_radius, 0, canvas_width - corner_radius, canvas_height,
+                                 fill=track_color, outline="")
+            knob_diameter = canvas_height - 4
+            knob_x = (canvas_width - knob_diameter - 2) if is_on else 2
+            box.create_oval(knob_x, 2, knob_x + knob_diameter, 2 + knob_diameter,
+                            fill=knob_color, outline="")
+
+        def on_enter(e):
+            state["hovered"] = True
+            draw()
+
+        def on_leave(e):
+            state["hovered"] = False
+            draw()
+
+        def on_click(e=None):
+            variable.set(not variable.get())
+
+        widgets_to_bind = [outer, label, box]
+
+        if hint_text:
+            hint = tk.Label(outer, text=hint_text, font=("Bahnschrift Light", 9),
+                            bg=P["elevated"], fg=P["text_dim"], cursor="hand2")
+            hint.pack(side="left", padx=(8, 0))
+            widgets_to_bind.append(hint)
+
+        for widget in widgets_to_bind:
+            widget.bind("<Button-1>", on_click)
+            widget.bind("<Enter>", on_enter)
+            widget.bind("<Leave>", on_leave)
+
+        variable.trace_add("write", lambda *_: draw())
+        draw()
         return outer
 
     def _build_ui(self):
@@ -375,6 +447,11 @@ class TranscriberApp:
         self._dropdown(row1, self.device_var,
                        ["Auto", "CPU", "GPU (CUDA)"],
                        width=12).pack(side="left", padx=(8, 0))
+
+        row_mid = tk.Frame(inner, bg=P["elevated"])
+        row_mid.pack(fill="x", pady=(0, 8))
+        self._toggle(row_mid, self.multilingual_var, "Multilingual mode",
+                     hint_text="auto-detect language per 30s chunk; overrides Language setting").pack(side="left")
 
         row2 = tk.Frame(inner, bg=P["elevated"])
         row2.pack(fill="x")
@@ -589,6 +666,11 @@ class TranscriberApp:
             if ext in SUPPORTED_EXTENSIONS and p not in self.files:
                 self.files.append(p)
                 self._slog(f"File added: {os.path.basename(p)}")
+                self._slog(f"  Path: {p}")
+                try:
+                    self._slog(f"  Size: {self._fmt_size(os.path.getsize(p))}")
+                except OSError:
+                    pass
                 added += 1
         if added:
             self._slog(f"Total files in queue: {len(self.files)}")
@@ -652,7 +734,7 @@ class TranscriberApp:
             self._log("No files to transcribe. Add some files first.")
             return
 
-        self._slog(f"Transcription started: {len(self.files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}")
+        self._slog(f"Transcription started: {len(self.files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}, multilingual={self.multilingual_var.get()}")
         self.is_transcribing = True
         self.cancel_requested = False
         self.transcribe_btn.configure(text="\u25a0  CANCEL", bg=P["red"],
@@ -662,12 +744,16 @@ class TranscriberApp:
     def _resolve_device(self):
         choice = self.device_var.get()
         if choice == "CPU":
+            self._slog("Device resolved: CPU (user selected)")
             return "cpu", "int8"
         if choice == "GPU (CUDA)":
+            self._slog("Device resolved: CUDA (user selected)")
             return "cuda", "float16"
         try:
             import ctranslate2
-            if ctranslate2.get_cuda_device_count() > 0:
+            gpu_count = ctranslate2.get_cuda_device_count()
+            self._slog(f"Auto-detect: {gpu_count} CUDA device(s) found")
+            if gpu_count > 0:
                 return "cuda", "float16"
         except Exception as e:
             self._slog(f"CUDA detection failed ({e}), defaulting to CPU")
@@ -678,24 +764,35 @@ class TranscriberApp:
         os.makedirs(output_dir, exist_ok=True)
         total = len(self.files)
 
+        self._slog(f"Output directory: {output_dir}")
+        self._slog(f"Files in queue ({total}):")
+        for f in self.files:
+            self._slog(f"  - {f}")
+
         try:
             model_name = self.model_var.get()
             device, compute_type = self._resolve_device()
+            self._slog(f"Loading model: name={model_name}, device={device}, compute_type={compute_type}")
             self._update_status(f"Loading model '{model_name}'...")
             self._set_progress(0)
 
+            model_load_start = time.time()
             if self.model is None or self._loaded_model_name != model_name or self._loaded_device != device:
                 try:
                     self.model = WhisperModel(model_name, device=device, compute_type=compute_type)
                 except Exception as e:
                     if device == "cuda":
                         self._log(f"CUDA load failed ({e}), falling back to CPU")
+                        self._slog(f"CUDA load traceback:\n{traceback.format_exc()}")
                         device, compute_type = "cpu", "int8"
                         self.model = WhisperModel(model_name, device=device, compute_type=compute_type)
                     else:
                         raise
                 self._loaded_model_name = model_name
                 self._loaded_device = device
+                self._slog(f"Model loaded in {time.time() - model_load_start:.1f}s")
+            else:
+                self._slog(f"Model already loaded: {model_name} on {device}")
 
             device_label = "GPU (CUDA)" if device == "cuda" else "CPU"
             self._log(f"Model '{model_name}' loaded on {device_label}")
@@ -704,7 +801,14 @@ class TranscriberApp:
                 self._log("Note: large-v3 on CPU may be slow. Consider small or medium.")
 
             language = self.language_var.get()
+            multilingual = self.multilingual_var.get()
             lang_code = None if language == "Auto-detect" else LANG_MAP.get(language)
+
+            if multilingual:
+                self._slog("Multilingual mode active — language selection will be ignored")
+
+            succeeded = 0
+            failed = 0
 
             for i, filepath in enumerate(self.files):
                 if self.cancel_requested:
@@ -723,20 +827,64 @@ class TranscriberApp:
                     ext = os.path.splitext(filepath)[1].lower()
                     temp_audio = None
 
+                    self._slog(f"  Full path: {filepath}")
+                    try:
+                        self._slog(f"  File size: {self._fmt_size(os.path.getsize(filepath))}")
+                    except OSError:
+                        pass
+
                     if ext in VIDEO_EXTENSIONS:
+                        try:
+                            probe = probe_file(filepath)
+                            if probe:
+                                fmt = probe.get("format", {})
+                                self._slog(f"  Probe format: {fmt.get('format_long_name', 'unknown')}, duration={fmt.get('duration', '?')}s, bitrate={fmt.get('bit_rate', '?')} bps")
+                                for stream in probe.get("streams", []):
+                                    st = stream.get("codec_type", "?")
+                                    cn = stream.get("codec_name", "?")
+                                    if st == "video":
+                                        self._slog(f"  Probe stream [video]: {cn} {stream.get('width', '?')}x{stream.get('height', '?')} @ {stream.get('r_frame_rate', '?')} fps")
+                                    elif st == "audio":
+                                        self._slog(f"  Probe stream [audio]: {cn} {stream.get('sample_rate', '?')} Hz, {stream.get('channels', '?')} ch")
+                                    else:
+                                        self._slog(f"  Probe stream [{st}]: {cn}")
+                            else:
+                                self._slog(f"  Probe: failed to read file metadata")
+                        except Exception as e:
+                            self._slog(f"  Probe error (non-fatal): {e}")
+
                         self._log(f"  Extracting audio from video...")
-                        temp_audio = extract_audio(filepath, output_dir)
+                        temp_audio = extract_audio(filepath, output_dir, log=self._slog)
                         audio_path = temp_audio
 
                     def on_progress(seg_end, duration):
                         pct = (i / total + (seg_end / duration) / total) * 100
                         self._set_progress(min(pct, 99))
 
-                    text_parts, info, status = transcribe_audio(
-                        self.model, audio_path, lang_code,
-                        on_progress=on_progress,
-                        is_cancelled=lambda: self.cancel_requested
-                    )
+                    if multilingual:
+                        def on_chunk(chunk_number, total_chunks, time_start, time_end, detected_lang, probability):
+                            self._slog(f"  Chunk [{chunk_number}/{total_chunks}] {time_start:.1f}s-{time_end:.1f}s: language={detected_lang} (probability={probability:.4f})")
+
+                        self._slog("  Transcribing audio (multilingual mode, 30s chunks)...")
+                        text_parts, info, status = transcribe_audio_multilingual(
+                            self.model, audio_path,
+                            on_progress=on_progress,
+                            is_cancelled=lambda: self.cancel_requested,
+                            on_chunk=on_chunk
+                        )
+                    else:
+                        self._slog(f"  Transcribing audio (lang_code={lang_code})...")
+                        text_parts, info, status = transcribe_audio(
+                            self.model, audio_path, lang_code,
+                            on_progress=on_progress,
+                            is_cancelled=lambda: self.cancel_requested
+                        )
+
+                    self._slog(f"  Transcription result: status={status}, segments={len(text_parts)}")
+                    self._slog(f"  Audio duration: {info.duration:.1f}s")
+                    self._slog(f"  Detected language: {info.language} (probability: {info.language_probability:.4f})")
+                    if hasattr(info, "duration_after_vad") and info.duration_after_vad:
+                        self._slog(f"  Duration after VAD: {info.duration_after_vad:.1f}s")
 
                     if status == "timed_out":
                         self._log(f"  Timed out, skipping")
@@ -761,26 +909,48 @@ class TranscriberApp:
                         continue
 
                     saved_name = save_transcript(filepath, full_text, output_dir)
+                    self._slog(f"  Text length: {len(full_text)} chars")
+                    try:
+                        out_path = os.path.join(output_dir, saved_name)
+                        self._slog(f"  Output file: {out_path} ({self._fmt_size(os.path.getsize(out_path))})")
+                    except OSError:
+                        pass
 
                     elapsed = time.time() - start_time
-                    detected = info.language if language == "Auto-detect" else language
+                    if multilingual or language == "Auto-detect":
+                        detected = info.language
+                    else:
+                        detected = language
                     self._log(f"  Done in {elapsed:.1f}s \u00b7 {detected} \u00b7 {saved_name}")
+                    succeeded += 1
 
                     if temp_audio and os.path.exists(temp_audio):
                         os.remove(temp_audio)
 
                 except Exception as e:
                     self._log(f"  Error: {str(e)}")
+                    self._slog(f"  Traceback:\n{traceback.format_exc()}")
+                    failed += 1
                     continue
 
             if not self.cancel_requested:
                 self._set_progress(100)
-                self._update_status(f"Complete \u2014 {total} file(s) processed")
+                if failed == 0:
+                    self._update_status(f"Complete \u2014 {succeeded} file(s) transcribed")
+                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+                elif succeeded == 0:
+                    self._update_status(f"Failed \u2014 {failed} file(s) had errors")
+                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "error.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+                else:
+                    self._update_status(f"Done \u2014 {succeeded} transcribed, {failed} failed")
+                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
                 self._log(f"All done. Output: {output_dir}")
 
         except Exception as e:
             self._log(f"Fatal error: {str(e)}")
+            self._slog(f"Fatal traceback:\n{traceback.format_exc()}")
             self._update_status("Error occurred")
+            winsound.PlaySound(os.path.join(SOUNDS_DIR, "error.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
 
         finally:
             self.is_transcribing = False
@@ -818,20 +988,85 @@ class TranscriberApp:
     def _slog(self, text):
         self._session_log.append(f"[{datetime.now().strftime('%H:%M:%S')}] {text}")
 
+    def _fmt_size(self, size_bytes):
+        for unit in ("B", "KB", "MB", "GB"):
+            if size_bytes < 1024:
+                return f"{size_bytes:.1f} {unit}"
+            size_bytes /= 1024
+        return f"{size_bytes:.1f} TB"
+
     def _init_log(self):
         os.makedirs(LOG_DIR, exist_ok=True)
-        for old in glob.glob(os.path.join(LOG_DIR, "*.txt")):
-            os.remove(old)
-        stamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        stamp = datetime.now().strftime("[%d-%m-%Y] - [%H-%M-%S]")
         self._log_path = os.path.join(LOG_DIR, f"{stamp}.txt")
-        header = (
-            f"Session started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-            f"Model: {self.model_var.get()}  |  Language: {self.language_var.get()}  |  Device: {self.device_var.get()}\n"
-            f"Output path: {self.output_var.get()}\n"
-            + "=" * 60 + "\n"
-        )
+
+        now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        lines = [
+            "=" * 60,
+            f"SESSION STARTED: {now}",
+            "=" * 60,
+            "",
+            "SYSTEM",
+            f"  OS: {platform.platform()}",
+            f"  Python: {sys.version}",
+        ]
+
+        try:
+            r = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True,
+                               creationflags=subprocess.CREATE_NO_WINDOW)
+            lines.append(f"  FFmpeg: {r.stdout.splitlines()[0]}")
+        except Exception as e:
+            lines.append(f"  FFmpeg: not found ({e})")
+
+        try:
+            r = subprocess.run(
+                ["nvidia-smi", "--query-gpu=name,memory.total,driver_version",
+                 "--format=csv,noheader,nounits"],
+                capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW)
+            if r.returncode == 0 and r.stdout.strip():
+                parts = [p.strip() for p in r.stdout.strip().split(",")]
+                lines.append(f"  GPU: {parts[0]} ({float(parts[1])/1024:.1f} GB VRAM)")
+                lines.append(f"  NVIDIA driver: {parts[2]}")
+        except Exception:
+            lines.append("  GPU: not detected")
+
+        try:
+            r = subprocess.run(["nvidia-smi"], capture_output=True, text=True,
+                               creationflags=subprocess.CREATE_NO_WINDOW)
+            for line in r.stdout.splitlines():
+                if "CUDA Version" in line:
+                    lines.append(f"  CUDA: {line.split('CUDA Version:')[1].strip().rstrip('|').strip()}")
+                    break
+        except Exception:
+            pass
+
+        try:
+            class _MEMSTAT(ctypes.Structure):
+                _fields_ = [("dwLength", ctypes.c_ulong), ("dwMemoryLoad", ctypes.c_ulong),
+                            ("ullTotalPhys", ctypes.c_ulonglong), ("ullAvailPhys", ctypes.c_ulonglong),
+                            ("ullTotalPageFile", ctypes.c_ulonglong), ("ullAvailPageFile", ctypes.c_ulonglong),
+                            ("ullTotalVirtual", ctypes.c_ulonglong), ("ullAvailVirtual", ctypes.c_ulonglong),
+                            ("ullAvailExtendedVirtual", ctypes.c_ulonglong)]
+            stat = _MEMSTAT(dwLength=ctypes.sizeof(_MEMSTAT))
+            ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(stat))
+            lines.append(f"  RAM: {stat.ullTotalPhys / (1024**3):.1f} GB total, {stat.ullAvailPhys / (1024**3):.1f} GB available")
+        except Exception:
+            pass
+
+        lines += [
+            "",
+            "SETTINGS",
+            f"  Model: {self.model_var.get()}",
+            f"  Language: {self.language_var.get()}",
+            f"  Device: {self.device_var.get()}",
+            f"  Multilingual: {self.multilingual_var.get()}",
+            f"  Output path: {self.output_var.get()}",
+            "",
+            "=" * 60,
+        ]
+
         with open(self._log_path, "w", encoding="utf-8") as f:
-            f.write(header)
+            f.write("\n".join(lines) + "\n")
         self._slog("Application started")
         self._flush_log()
 
@@ -847,6 +1082,10 @@ class TranscriberApp:
         self.root.after(2000, self._flush_log)
 
     def _on_close(self):
+        elapsed = time.time() - self._session_start
+        hours, remainder = divmod(int(elapsed), 3600)
+        minutes, seconds = divmod(remainder, 60)
+        self._slog(f"Session duration: {hours}h {minutes}m {seconds}s")
         self._slog("Application closed")
         if self._log_path:
             try:

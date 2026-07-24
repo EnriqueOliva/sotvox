@@ -1,0 +1,332 @@
+Bueno, hoy es el último día del sprint, creo que estamos todos, ¿no?
+¿Está alguien? Martu, ven a confirmarme.
+¿Está Jona? ¿Sanrique? ¿Quién me está hablando? ¿Santiago?
+Santi.
+Yo le escribo.
+Ahí entra.
+Bueno, ¿cómo va?
+Bueno, hacemos un listo.
+Bien, bueno, genial.
+Bien, último día del sprint.
+Santi se cortó el pelo.
+Martina se peinó por un lado.
+Así que está todo en orden para arrancar junio.
+Gastón, vos seguís igual.
+No te digas nada.
+Bien.
+Vos también seguís igual.
+Ya saben de quién se habla.
+Bien.
+Genial.
+Último día del sprint.
+Este es el sprint doble, así que ya no lo podemos hacer más.
+Ahora hay que cerrarlo.
+Yo tengo que acompañar mi sprint.
+Vamos a acomodar mi sprint.
+Lo que tenemos que hacer ahora, o sea, lo que tengo que hacer de mi lado,
+estoy trabajando en dos cosas.
+Uno es la factura de recibo.
+Entonces, ahí vamos a tener un pequeño post-cram.
+Ya te voy avisando que tenemos que ver ahí un temita.
+Y después estoy trabajando en la actualización.
+O sea, vamos a tener que hacer un pequeño cambio que probablemente,
+tristemente, va a cambiar lo que es el update payment method.
+Y lo que es el modelo de suscripciones.
+El modelo de suscripciones hoy en día crea siempre una suscripción en Stripe nuevo.
+No, pues Jonathan, no sé si lo han visto, Martina vos lo sabés, Enrique también.
+Siempre crea una suscripción nueva.
+El problema de eso es que cuando falla
+mucha, después de tener otras habilidades de suscripción, va la compañía.
+Lo primero que hicimos con Martina fue, bueno, dar de baja a todos los clientes
+que no tengan una suscripción activa, digo, que tengan algún inconveniente con esto.
+Sí.
+Como segundo punto, lo que hicimos fue, además de eso, de dar de baja, sincronizarlos.
+Pero imagínense un cliente que tenga mil suscripciones.
+Ahora no nos pasa, pero tenemos clientes con 80.
+Cuando empiezan a fallar, reactivarlas.
+Es un dolor de huevo y es muy complicado.
+Entonces, el modelo que vamos a pasar a tener ahora es,
+el cliente va a tener como máximo dos suscripciones y va a funcionar de la siguiente forma.
+Cada vez que el cliente compra una suscripción, se va a cobrar un rateo.
+Sí.
+Y se va a sumar a lo restante.
+Entonces, si el cliente quiere contratar una suscripción, va a funcionar de esta forma.
+O sea, con la misma suscripción que antes era de 50, va a ser de 100.
+Entonces, si nosotros queremos un cambio de plan, es eso, es cambiar el price ID.
+Entonces, debería ser todo mucho más sencillo.
+Y sin, bien, este, jugando un poco con esto, evitamos tener que registrar algunas cosas.
+Además de eso, estoy con el tema de las facturas.
+Y tengo que ver las PR que Martina me vaya diciendo.
+Así que, bueno, voy a estar con eso.
+Vayan pensando, o sea, cuando vayan diciéndome su daily,
+váyanme proponiendo ya cómo hacemos con cada uno de los puntos, ¿bien?
+O sea, cómo hacemos para cerrarlo, más allá de que me hayan enviado la propuesta o no.
+¿Sí? Vamos a arrancar por Sam.
+Buenas, ¿cómo va?
+Bueno, por mi parte,
+la idea para cerrar puntos, si bajás ahí, tengo como tres, cuatro que están en Design Review.
+La idea sería crear una continuación de esas.
+Ahora te comento igual en qué estado están.
+Hay una sola que tengo en progres que ya la tengo terminada.
+Estoy iterando un poquito con Cloud, pero ya en breve se iría a ir a Design Review también.
+Bueno,
+te comento el estado de cada una de las tareas esas que tengo en Design Review.
+La de, la del chatbot.
+Hoy,
+yo estoy haciendo el chatbot con
+con Mati, este, del lado de ellos que va aprobado.
+Así que ya en breve te lo mando para que lo revisen ustedes y ya se instale.
+Ya eso se puede ir para, para ella.
+Me comentó Mati con respecto a la reunión de hoy.
+Vamos a esperar hasta mañana para el chatbot porque vamos a depender.
+¿Qué pasa? Hay dos cosas, hay una cosita que es clave, ¿no?
+O sea, no sabemos si vamos a poder tener el historial de los chats anteriores o no.
+Es algo que yo le pedía.
+A ver, no sé si eso lo habíamos dicho de Begón.
+Pero yo le pedí hoy y tampoco sabemos si podiamos tener eso.
+Entonces ahí lo que te voy a pedir es aguantemos mañana, a ver que nos respondan.
+Mañana a las 5 de la tarde, por lo cual, ¿cuándo es eso?
+Para preguntarle, ¿cuándo es la reunión?
+¿Cuándo es la reunión?
+Ah, está bien, yo te decía, fue muy contado Mati que teníamos reuniones y se desesperaron.
+Eh, bien, lo siguiente.
+Eh,
+el menú, este, el menú yo lo tengo que bajar, lo he decidido, lo he bajado porque
+se lo mandé a cazar a Sony y me hizo un par de comentarios que quedan ocultando todavía.
+Este, es otra tarea, voy a necesitar ahí una, una continuación de lo del menú.
+Yo estaba bastante engañado.
+Eh, después, lo de...
+Quería dar email y espero que los usuarios, yo como yo, yo no sé por qué, no sé por qué, no sé por qué soy.
+Lo del email de notificado al usuario con mi plan de asociación adicional fue cancelado directamente.
+Eso se lo pediría de extrema forma para que lo revisara.
+Eh, ya hice los ajustes, así que el mail ya lo paso a ustedes.
+Y...
+Y tal y como es, estuve trabajando en los estados de cuenta que sería en el...
+En el...
+En el comprobante con el que mandamos, que en realidad es el Payment Details.
+O sea, los datos de pago que se envían.
+Eh, estuve mejorando ahí.
+Y esa...
+Es ese documento que enviamos, eh, va a ser un poco el feedback que me había dejado Carlos.
+Ya tengo una, una opción ahí que estoy estudiando ahí con Clau.
+Pero en breve yo, yo ya lo podría enviar a Gastón.
+Así que en breve ya tendré que realizar el review de eso.
+Y bueno, ahí tendré la continuación de las, de las tareas que sean necesarias.
+Pero en realidad solo Gastón me saldrá el review de momento.
+Bien, muy bien.
+Eh, Sandra y Guido, quería preguntarle.
+Que...
+O sea, ahora en sencillez...
+Ya, ya, ya.
+Ya terminó.
+Lo mismo que van haciendo todos.
+Mientras le hago copy, ¿sí?
+Necesito que os diga más fácil la respuesta.
+Yo le aplico el T para que lo dejas con Pum.
+Igual, todos van a leer la tarea.
+Dejo la información.
+Vamos, así es, así está.
+Bien.
+Entonces...
+Y que lo que le pido es la TAS.
+Me pasará la respuesta.
+Voy a hacer la lista.
+Y ya lo explican.
+Más tarde en la noche puedo cerrar el review.
+Bien, bien.
+Están raro.
+Están raro.
+Están raro.
+Están raro.
+Entonces, me tendría que mandar una respuesta.
+Me la paso a mi coleguita.
+Yo apruebo.
+Y cada uno, todos, van a crear sus tareas de continuación, ¿sí?
+Y van a dejar lo que deberían estar comunitarias hasta el día 10.
+El proceso es el que haya de continuación en el instituto.
+No, yo no lo hace usted.
+Bueno.
+Lo que hace usted es generar la tarea.
+Crear la tarea de continuación.
+Van a hacer un video o un comentario.
+Esta tarea se va a formular en tal cosa.
+Otra se va a formular en tal cosa.
+Se cierra con tal cosa.
+La cierran.
+Arrancan la discusión.
+Bien.
+Bien.
+Gastón.
+Bien.
+Yo, por mi parte, el día 10 estuve revisando
+un flujo que me mandó Santi, que era el menú para saber.
+Le di un par de comentarios en eso.
+Y le pasé también a trabajar en los flujos que me faltaban a mí,
+que eran los de notificaciones y los de configuración.
+Que eso ya quedó listo de mi lado.
+Pero nada, lo tengo que verificar con Santi
+para ver si está todo OK, si se los puedo mandar a ustedes.
+Pero cerrando esas dos tareas, ya estaría, bueno, más la de CoreReview.
+Tenía 95 puntos.
+No sé si haría falta ajustar alguna otra.
+Creo que tenemos 70, 30, ¿no?
+Estamos bien.
+O sea, acá si ficamos en 98, le digo para todos, tampoco hagamos más.
+Ficamos en 98, 93, 97, 96.
+Así que menos la de CoreReview, ya apliquen todo lo que sea necesario.
+Notificaciones, ¿qué falta?
+No, no falta nada.
+O sea, tengo que pasarlo nada más al tablet y mobile.
+Pero bueno, eso una vez aprobado, lo haría rápido.
+El tema es que nada, habría que verlo primero a ver si está todo OK para esto.
+Bien.
+Y Santi, ¿vos tenés ya el croquis?
+Como para presentárselo a Guille de lo que es la navegación, la nueva.
+Sí, sí, sí.
+O sea, me faltan los ajustes estos que estoy trabajando ahí que me dejó Gastón,
+pero ya está el diseño idealmente armado.
+Si querés lo vemos ahora como post-crum te muestro lo que está hecho.
+Los ajustes no creo que vayan a ser grandes cambios.
+Ahora, si querés mostrar una base inicial, una primera versión del diseño,
+creo que se puede mostrar perfectamente.
+Perfecto, viene bien.
+Joana.
+Bien, yo entre el viernes y hoy pude avanzar bastante con todo eso,
+lo de cancelar planes, poder reactivarlos, hacer todo el refactor de cómo se estaba obteniendo hoy.
+Así que está todo en interno.
+Así que ahí todas esas tareas que están ahí en The Review se podrían hacer como de continuación.
+Pues ya está todo en interno, falta ahí chequearlo nomás.
+No sé si al final creaste la épica para todas esas tareas.
+Vamos a crear una que va a llamarse Stripe B2.
+A ver cómo le estamos llamando.
+A mí me las queda como un fila.
+Stripe B2.
+Y ahí las asignalas.
+Lo mismo.
+Yo lo voy a usar también.
+Precioso.
+O sea, que tendrías que crear solo la continuación.
+Sí, sí, con eso y ya pasa.
+¿Alguna épica más que estés faltando?
+Está agregar barbos y muestras.
+Eso creo que es refactor, me parece, más que nada.
+Refactor.
+Sería esta, esta, esta y esta.
+Solucionado.
+Entonces ahí, bien.
+Me pegaste grita.
+Nos escriben a mí y a Martina por privado y nos pasan el plan y luego lo aplican.
+Pero lo mismo que todo.
+Sí, co-review no es necesario.
+Bien, perfecto.
+Vamos los dos antes de terminar el tiempo.
+A ver.
+Bien, yo con mi parte temprano con lo que estaba trabajando era con la parte de hacer el cron shop.
+También de la parte de hacer la lógica del webhook y también trabajar en el design cuando al usuario se le vence efectivamente lo que es la suscripción del plano del servicio adicional recurrente.
+Ya verifique si tiene, si está cancelado, lo elimine.
+También entregueré un mail.
+La parte del mail tendría que actualizar con el diseño de Santi.
+Claro, con lo que he aprobado.
+Así que ya dejo eso en tres prs separado.
+Y ahora estaba.
+Aproveché que Marti hizo el review de las prs.
+Estaba liando razas y ya las dejo también para que las vuelva a corregir.
+Bien, perfecto.
+Ahí necesitamos cerrar.
+Necesitamos cerrar.
+Así que lo mismo que le dije a todo el mundo.
+En tu caso.
+Tenemos muchos puntos abiertos.
+Este papá que no, no me agrupe.
+Yo le digo todo.
+Si tienen muchas tareas, capaz que agrupe la de tres.
+De repente vean.
+Bueno, estas son dos del worker.
+Estas son del bajo.
+Y bueno, tareas tanto, tanto, tanto.
+Continuación del bajo.
+Tareas tanto y tanto.
+Continuación de worker.
+No podemos tener tareas de continuación de 21 puntos o lo que sea.
+Y entonces hay que continuar.
+Pero tenemos.
+Bien.
+Igual lo tuyo ya está bastante iterado.
+Lo tuyo ya está bastante iterado.
+Sí, perfecto.
+Bien de bien.
+Enrique.
+Bueno, de mi lado estuve.
+Estuvimos trabajando con varias cosas ahí.
+Desde lo que eran los comprobantes de Bolivia hasta el arreglo de los test de Cypress.
+O sea, ya quedó todo enviado.
+Lo último que estaba haciendo ahora, que no está enviado todavía es, bueno, empecé,
+como habíamos dicho, el tema de los test de Cypress de QRs.
+Así que bueno, lo que hemos hecho, lo hemos hecho.
+La idea sería continuar con eso, porque lo demás está, bueno, está en revisión.
+Y en ese sentido, bueno, lo que sería mi board.
+Yo como falté 6 días, tengo que llegar a 70.
+La propuesta que había armado era subir, pasar de 8 a 13 puntos.
+Las únicas dos tareas de 8 puntos que había ahí en el board.
+Y con eso ya quedo en 68.
+Y bueno, las demás pasarlas a hacer tareas de continuación.
+Son bastante diferentes las tareas.
+No sé si capaz que una tarea de continuación para todas o no, o una para cada una.
+Pero son pocas ahí, si bajás, son pocas las que están abiertas.
+Así que son muy grandes.
+También lo grande que queda por hacer o lo grande que quede por revisar.
+O sea, estimen.
+Si esto vamos a estar 2 o 3 días revisando PDR, no me las agrupe en una sola.
+O sea, tomen ahí la decisión con respecto a eso.
+Bien.
+Nos va a quedar pendiente cerrar el sprint de TAT.
+Así que dejemos todo armado.
+Lo que te voy a pedir es una manito ahí, Enrique.
+Que le transmitas esto también a Fernando.
+Para que nos pase.
+O sea, creo que ya nos pasó la propuesta.
+Pero no sé si...
+A ver.
+Un segundito.
+No sé dónde lo mandó Fernando.
+No sé que algo mandó.
+El título de propuesta de cierre del sprint.
+¿Este refactor está aprobado por vos, Enrique?
+Lo que mandó Fernando en el hilo.
+Me lo consultó.
+Yo le dije que lo mandara.
+Tres para todas las pictures cripto OTC.
+Quiero crear tres para todas las pictures user out y hacer refactores de sus experiencias.
+Quiero hacer una análisis de patrones repetidos en el código.
+No, esto no sé.
+Esa no sé de dónde sale.
+Sí, yo le dije.
+De repente las primeras dos tareas que son como...
+Tienen puntos muy altos para hacer tareas de análisis o investigación.
+Que capaz convendría refactorizarlo.
+O que de última lo mandara así y que ustedes vieran.
+No está mal.
+Pero es algo...
+Es lo que les comenté el otro día.
+Una vez que sumemos todos los seis, ¿no?
+¿Estás?
+Vale.
+Bien, perfecto.
+Bien.
+Sí, lo mismo que el resto aquí.
+Que no me cierres ahí la parte de code review.
+Está bien.
+Ahí no sé los días que vos no estuviste.
+Porque estos son dos sprints.
+Bien.
+Si se puede quedar.
+Para el equipo de diseño.
+Jonathan y Martín.
+Buen provecho.
+Buen provecho.
+Bien.
+Jonathan y Martu.
+¿Cómo está el estado del tracto bancario?
+Porque ya de mi lado está todo pronto.
+Entonces falta de su lado.
+Está raro.

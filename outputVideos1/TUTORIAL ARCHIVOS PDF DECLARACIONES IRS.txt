@@ -1,0 +1,175 @@
+Tato, buenos días. ¿Cómo estás? ¿Todo bien?
+Mira, te paso a explicar la tarea que hemos estado haciendo sobre los PDFs de las declaraciones,
+los distintos archivos o documentos legales que manejamos en el proyecto.
+Mira, te cuento primero que nada cómo funciona la lógica.
+Capaz que ya lo sabés, probablemente ya sabés bastante de esto,
+pero como para hacer un repaso, nosotros en nuestra plataforma,
+una de las funcionalidades que ofrecemos es esto que ves acá en pantalla,
+que las empresas tienen que hacer todos los años.
+Las empresas tienen que presentar todos los años unos documentos a lo que es la oficina impositiva de Estados Unidos.
+Lo que acá es DGI, allá es IRS.
+Y nosotros ofrecemos.
+A través de este formulario que ves, el llenado automático de estos documentos.
+Es decir, el cliente, la empresa, llena, completa estos pasos, llena unos datos,
+y cuando le da a enviar, se genera básicamente un PDF.
+A ver que los debo tener por acá.
+Por poner un ejemplo este, estos documentos se generan automáticamente, que en realidad no se envían,
+no se envían al principio, sino que quedan como una especie de draft,
+para que los administrativos puedan desde el BBO abrirlos manualmente y revisarlos manualmente
+para ver que esté todo bien y lo pueden modificar.
+Si hace falta alguna modificación por cualquier razón, los administrativos lo pueden modificar
+y recién ahí los administrativos hacen lo que es la subida final.
+Nosotros manejamos varios documentos legales.
+Pero, ¿qué pasó?
+Guillermo dio la directiva de actualizar tres de estos documentos, particularmente estos tres,
+porque en realidad, perdón, tenemos más, acá son más, los que manejamos son varios.
+Pero Guillermo dio la directiva de actualizar el template de tres de ellos,
+el 1065, el 1065SK1 y el 1120, de la versión 2024 a la 2025.
+Justo este es el 1065 que yo ya actualicé a la versión 2025, pero quedan actualizar otros dos.
+Te abro para que tengas un ejemplo, y esto ya te lo voy a estar pasando también,
+pero para que veas un ejemplo justamente del 1065, o incluso capaz que el 1120,
+que es el que te voy a pedir hacer, el 1120, la versión nueva y la versión vieja,
+tienen algunas diferencias, mirá.
+Son sutiles, como ves, la mayoría del documento en sí es igual,
+nada más que cambian algunos campos, fíjate cómo algunos campos son distintos.
+Pero esto representa un desafío a nivel de código, porque los campos,
+bueno, obviamente tienen un nombre a nivel código,
+que los podemos ver con un script que Santiago tiene en el worker este,
+o, por ejemplo, con una herramienta online, a mí me quedó más cómodo usar una herramienta online.
+Fíjate que los campos de un PDF tienen un nombre, digamos, en términos de código,
+y lo que hace nuestra lógica, que vive en Accounting Service más que nada,
+es, bueno, machear o mapear, digamos,
+la información que la empresa o el usuario ingresa en este formulario con los campos del PDF.
+El problema que terminamos teniendo es que actualizar el template
+no es solamente una cuestión de subir un archivo PDF nuevo,
+sino que también tenemos que actualizar esta lógica de macheo o de mapeo de los campos
+de la información que se ingresa desde el site,
+porque algunos campos cambiaron.
+Mirá, yo te muestro el que yo hice, que yo sé más o menos,
+ya sé bastante exactamente qué cambió.
+Este es el nuevo y este es el viejo.
+Fíjate cómo en la versión 2024 este tiene un solo campo para lo que es la dirección,
+¿sí?
+Y en la versión 2025, mirá lo que tenemos, tenemos algo distinto, ¿ves?
+Entonces yo, a nivel código, tuve que hacer una lógica de parseo
+para que el usuario en este formulario ingrese una sola dirección
+y con este parseo la dirección se divida automáticamente y correctamente
+en ciudad, estado, país, etc.
+Lo que yo te voy a pedir es...
+Bueno, tenemos que actualizar, yo actualicé el 1065, actualicemos el 1120, ¿sí?
+Capaz que yo no lo estudié, capaz que por más que nosotros vemos estas diferencias,
+quizás a nivel código, a nivel campos, los campos son iguales,
+más allá de que están posicionados de forma diferente, quizás son los mismos, no lo sé.
+Hay que estudiarlo.
+Si te preguntás, ¿cómo sé?
+¿De dónde saco los nombres de los campos?
+¿Tengo que realmente mirar uno por uno con esta herramienta online, por ejemplo?
+No.
+Puede ser con el script de Santiago, que le podés pedir a la IA que lo corra
+y que lo use por vos, o yo en realidad ya te voy a pasar esta carpeta
+con una versión de estos documentos que ya tienen los campos, mirá.
+Yo los convertí a imágenes, mirá.
+Yo usé un script que yo mismo creé, bueno, con IA, que lo que hace es imprime el nombre de cada campo.
+Cada campo tiene su nombre en términos de código, ¿lo ves?
+Para que te resulte más fácil.
+Para que la IA lo use, porque si vos le das esto a Cloud, por ejemplo, creo que no lo analiza bien,
+no lo utiliza bien, entonces yo lo que hice es, me tomé el trabajo de convertir
+los PDFs a imagen, para que esto se lo puedas tirar a la IA.
+Esto literalmente agarrás, se lo tirás a la IA y la IA entiende perfectamente qué campo tiene qué nombre.
+Así que te va a resultar súper fácil trabajar con esto en ese sentido.
+Obviamente esto es el 1065, yo ya lo hice para el 1120, ya te lo voy a pasar.
+Te paso la versión nueva del 1120 con sus campos y la versión vieja también.
+Perdón, acá, en imágenes.
+Entonces vos, literalmente, lo único que tenés que hacer es pasarle a la IA, si querés,
+estas imágenes, que es la versión vieja con sus campos, y la versión nueva con sus campos,
+y la IA va a entender perfectamente qué campos cambiaron, qué campos no,
+y en base a eso, actualizar la lógica de mapeo que vive acá,
+en Accounting Service.
+Si es necesario, quizás no es necesario.
+Espero no haberte mareado.
+De nuevo, como resumen, la idea es, tenemos documentos que se generan automáticamente
+cuando el cliente llena cierta información.
+Guillermo pidió actualizar los templates de esos PDFs a la versión 2025.
+Eso representa un desafío porque...
+quizás la lógica de mapeo se vea afectada.
+¿Cómo nosotros correspondemos esta información con los campos del PDF?
+Lo que tenemos que hacer es, básicamente, hacer un estudio de qué campos cambiaron
+y actualizar la lógica de mapeo.
+De nuevo, eso se hace de manera muy fácil y rápida con la IA,
+porque la IA, con esto que yo te paso, va a entender perfectamente qué campos cambiaron y qué campos no.
+Y luego, testear.
+La forma de testear es...
+Y otra vez, yo te voy a pasar unos scripts que quizás funcionan para el 1120, no lo sé.
+Sé que funcionan para el 1065.
+Le podés pedir a la IA que los use o que los abra y los vea a ver si funcionan o no.
+Pero le podés, para testear, pedir a la IA que corra un script que genere PDFs de ejemplo.
+¿Sí?
+Y con eso, lo que te permite es...
+No testear toda la lógica.
+Obviamente, no estás testeando la lógica real.
+Pero te permite ver, por lo menos, si tiene sentido.
+Es decir, te permite abrir un archivo generado y ver si en estado o provincia figura un estado
+o si figura Chinchulín o si figura el código postal.
+¿Me entendés?
+O sea, si en país figura código postal, bueno, obviamente, algo salió mal.
+Estoy hablando del 1065.
+Esto, en realidad, vos no te acordás.
+Concierne.
+Es este, el 1120.
+Si querés hacer una prueba real de la lógica, es muy tedioso.
+Yo lo hice.
+Lo hice una vez.
+Lo que tendrías que hacer es, en esencia, crearte vos una compañía en develop.
+¿Sí?
+Con dos partners.
+Preguntale a la IA a ver el 1120.
+No me acuerdo en qué caso se genera el documento 1120.
+Creo que es cuando una compañía tiene más de dos partners.
+No lo sé.
+Consultale a la IA por las dudas.
+Pero, en esencia, crear, tenés que crear una compañía en develop.
+¿Sí?
+Con dos partners, quizás.
+O quizás no.
+Llenar la, completar la declaración.
+¿Sí?
+Y cuando la tenga, después abrir en pgadmin.
+Agarrar el ID, el UUID de la declaración.
+Correr el worker local.
+Y enviarle con postman.
+Enviar el evento de generación de documento para esa declaración.
+Y nada, y ver visualmente, comprobar vos a ver qué se generó.
+Esa es una forma de testear, de testeo real.
+De nuevo, si te perdés, si esto te resultó muy entreverado.
+Esto mismo, este mismo video, pasaselo a la IA, a notebook.lm.
+Te va a generar una transcripción.
+Y Claude va a entender exactamente lo que yo te estoy diciendo.
+Si vos no lo entendés, Claude lo va a entender seguro.
+Me voy a asegurar de que este video no pese más de 200 megas.
+Así lo podés subir literalmente a notebook.lm.
+Agarrar la transcripción y pegársela a Claude.
+Que de seguro la va a entender.
+Si algo no quedó claro, le podés, en base a esta transcripción, preguntarle a Claude.
+Y te garantizo que te va a responder bien.
+Capaz que vos te preguntás, de repente vos escuchás todo esto y decís.
+Ah, era más rápido que vos lo hagas a que me expliques todo esto.
+Quizás sí, de hecho, porque como te digo, es bastante rápido.
+No la parte de testeo, sino la parte de ajustar el código.
+Quizás era, yo lo podría haber hecho en este rato que te estuve hablando.
+Pero la idea, lo que quiere Santiago es que vos te familiarices con esto.
+La razón por la que yo no hago el 11-20 es simplemente para que vos te familiarices con esto.
+Por si hoy o mañana hay que continuar trabajando con esto y yo no estoy por X razón.
+Ponerle que justo tengo licencia o lo que sea.
+La idea es que vos hayas tocado algo de esto.
+Es la única razón.
+En realidad, yo podría haber hecho los tres documentos.
+Pero nada, es simplemente para que vos tomes un poco de práctica.
+Nada más.
+Cualquier cosa, consultame.
+De nuevo, esta transcripción Claude la entiende perfecto.
+Por si hay algo que no entendés.
+También te lo puede explicar Claude, quizás mejor que yo.
+Así que nada, quedo a disposición.
+Creo que no me olvidé de nada.
+Pero bueno, si hay alguna parte ahí que precisás discutir, decime.
+Saludos.

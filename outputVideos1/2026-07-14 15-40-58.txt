@@ -1,0 +1,529 @@
+Marti, ¿estás ahí?
+Estoy
+¿Te animás a liderar vos?
+Salteame, por favor
+Ok, lo comparto
+Me tenés que dejar compartir
+Listo
+Ok
+Empezamos
+¿Cómo acá?
+Santi
+Ahora sí, ¿no?
+Bueno, por mi parte
+Estuve trabajando en los
+Emails
+Estuve trabajando en casi todos los emails que estaban
+En review, tengo todos terminados
+Ya ajusté el tamaño
+Ya probé
+El resizing de los emails
+Y me faltarían
+Los emails de configuraciones, que son los que estoy
+Ahora, y después pasar
+Con los emails que ya están terminados
+De esos hice solamente el de cerrar
+Sesiones
+Pero está, me faltarían esos
+Hay
+Aviso para Gastón
+Creé componentes
+Para los
+Para las ilustraciones
+Así es un poco más fácil
+Este, hacer el reajuste
+Así que si en algún momento pasas a trabajar
+En los mails
+Que habías armado en ajustarlos
+Ya hay
+Componentes de algunas de las ilustraciones
+No de todas todavía, pero
+Algunas ya tienen
+Ok
+Bien, después ayer estuve trabajando también
+En la parte de teammates
+Y hoy voy a continuar con eso
+Ok, bien, bien
+Nahue
+Por mi parte dejamos la prueba
+De lo que era el tema de prop de las skills
+Ya en el canal de Pull Request
+Con Tato
+Fuera de eso estuve revisando
+Otros PRs
+Y ahora estoy muy privado de probar
+Lo que son los cambios referentes a las cosas de teammates
+Así ya voy a dejar la PR
+En el inter con todo
+Ok
+Ok
+La PR del prompt quedó en intern
+Ya pasó a intern
+Está en Pull Request
+Esa es la última que dejé
+Ok, bien
+Jonah
+Bien, yo estuve corrigiendo comentarios
+Ya dejé enviado de nuevo
+Que vi ahí los comments que me dejaste
+Tanto para la PR del prompt
+Como la de configuraciones
+Ya quedó
+Ambas enviadas de nuevo
+Y nada, sigo metiéndole a full con lo del chat
+Y nada, sigo metiéndole a full con lo del chat
+Y nada, sigo metiéndole a full con lo del chat
+Ayer ahí Santi me habilitó ahí los permisos
+Entonces ya pude
+Testear todo el tema de los mensajes
+Y eso, así que estoy
+Refinando un poco el CSS
+Y nada, sigo ahí conectando todo lo del backend
+Ok
+Bien, bien
+Gastón
+Buenas
+Por mi parte estuve terminando
+El carrusel del post-evento
+De Mastermini
+Que eso ya
+Ya quedó en el chat
+Ya quedó subido
+Se subió hoy
+Después estuve haciendo un PDF
+Que me pidieron el marketing
+Para mostrar los precios
+Del servicio del LSI
+En los diferentes estados
+Para mandar por Whatsapp
+A posibles clientes
+Y eso quedó todo hecho el diseño
+Estoy esperando
+Que Mati me pase
+Una información
+Que quería agregar
+Y mientras tanto
+Estoy ahora mismo
+Con un posteo
+Que también me pidieron el lunes
+Mostrando todo lo que es
+Lo ejecutivo de cuentas
+Para presentarlo
+En redes sociales
+Ok
+Bien, bien
+Ahí si
+Tanto vos como Santi
+Si tienen algún
+No recuerdo si queda algún
+Correo colgado
+Que todavía le falte review
+Pero
+Si queda alguno
+Manden
+Les pido ahí
+Si pueden hacer un post
+Hagan un follow up
+Bien
+Eso es nada más
+Vale
+Bien
+Fernando
+Bien
+Estuve con un poco
+De todo review
+Después
+Estuvimos con
+Nauy
+Como comentó
+Con el tema
+De
+Lo que había
+Mandado
+De las skills
+Hay unas imágenes
+En
+Pull request
+Que después
+Le voy a hacer
+Follow up
+Porque
+Da eso
+Dos imágenes
+Ya corregí
+Que había un comentario
+En cuanto a un título
+Que estaba mal
+Pero era solo el título
+De la rama
+Estaba bien
+Así que no lo pude cambiar
+Después
+Mientras tanto
+Había también
+Algún comentario
+De diseño
+Y eso
+Que estuve arreglando
+Tengo que
+Subir
+Como se quedaron
+Las imágenes
+Ahora
+Y
+Estuve con
+Seguí con los tests
+Y
+Que agregué
+Qué raro
+Que se ve eso
+Porque yo
+Acá lo tengo ahí
+A ver
+A ver
+¿Te animás a recargar?
+Sí
+Raro igual
+Porque
+Los que estaban en
+To do
+Los había puesto
+En progress
+Antes de ayer
+Pero
+Está
+No importa
+Los de arriba
+Estuve con
+Todos esos tests
+Sumé
+Cuatro
+Más porque
+Tenía
+Vi que
+Tipo
+Compartían varios patrones
+Entonces
+Está
+Eso
+Le quería que compartan
+Helper
+Y basarlo más clean
+Y no son así
+De una cantidad
+Exagerada de tests
+Así que
+Está
+Lo sumé también
+Los cuatro
+Ok
+Bien
+Bien
+Eh
+Mandate
+Si querés
+Esas PR
+Que
+Que decís que son imágenes
+Eh
+Mandalas al
+Al chat
+Dale
+Arroba
+No nos
+Así
+Ya
+Revisamos
+Bien
+Entonces
+Que
+De mi lado
+Ayer
+Hubo una
+Corrida de
+Cypress
+Estaba todo casi perfecto
+Había solamente
+Un
+Un caso que fallaba
+Por
+Porque
+Dependía de
+Del sujeto
+De un correo
+Ahí de recuperación
+De contraseña
+O sea
+Era un error muy
+Muy puntual
+Que ya lo
+Lo corregí
+Ya hice
+Hice PR
+Y ya pasó por internet
+Ya llevo de nuevo ahí a
+PuRequest QA
+Eh
+Después
+Este
+Tengo algunas PR
+Que están en curso todavía
+Pero bueno
+No han generado
+Nuevos comentarios
+Así que me mantengo
+Atento a eso
+Por ejemplo
+Las PR
+De configuración de WhatsApp
+Que
+Que están allí para
+Para revisar
+Eh
+Después bueno
+Estuve con la PR
+De lo que es el
+Prompt Engineering
+Que ahí ya
+También yo llevo a PuRequest
+Así que eso ya
+Ya está para bichar también
+Y bueno
+Ahora vi
+Por ejemplo
+Los comentarios de Fernando
+En lo que es correos
+Hay una PR
+Un correo que estoy haciendo
+Que bueno
+Ahí tiene unos comentarios
+En internet
+Que estoy resolviendo
+Pero ahí noté
+Eh
+Santiago y Martina
+Que
+Los
+O Santiago Pantin
+Incluso que los correos
+Que están
+En TheReview
+Que de repente
+No he atacado todavía
+Eh
+Son correos nuevos
+Digamos
+No son rediseños
+Sino que son correos que
+Son a implementar
+Entonces capaz
+Ahí no me
+No me animé a tocarlos
+O a pedir tareas
+Que
+Que requiere también ver
+Cómo es la lógica
+Y todo
+Así que
+Eh
+Creo que de momento
+No
+No estoy teniendo correos
+De rediseño ahí para
+Para atacar
+Capaz que me vendría bien
+Eh
+Si tienen alguna tarea
+O algo
+Algo en que los pueda ayudar
+Tareas nuevas
+Como para ir agarrando
+Este
+Me vendría bien
+Porque capaz
+Que me quedo sin tarea
+Ahora
+En breves
+Ah
+Quique
+Entonces empecemos ya
+Con los
+Test
+Ah no
+Esa es la palabra
+Teammates
+De teammates
+Empecemos ya
+Con la
+Tenemos el
+El reajuste de los mails
+Esto de tamaño
+También
+Para trabajar
+Ok
+O sea
+Ahí
+Ah
+Tenés razón
+Santi
+Eh
+Contactate con Santi
+Porque
+También lo que va a ir pasando
+Es va a haber un
+Reajuste en el tamaño
+De muchos mails
+Que ya salieron
+O mismo lo que están en
+Review
+No se va a margear ninguno
+Hasta que se le haga
+Reajuste
+Que vio un tema
+Con el scroll
+Y se está ajustando
+Dale
+Eh
+También ahí
+Contactate con Santi
+Con eso
+Dale
+Genial
+Genial
+Hago eso entonces
+Bien
+Eh
+Bueno
+De mi lado
+Eh
+Estuve revisando
+PR
+Ahora le estaba dando
+Prioridad
+Más que nada
+A
+La PR
+De Nagoy
+Yona
+De notificaciones
+Y configuración
+Eh
+Estoy viendo también
+La de
+Eh
+La de los test
+Y
+También tuve que hacer
+Eh
+Un pequeño
+Ajuste
+En master
+Para repetir una cosita
+Ahí chica
+Y
+Eh
+Está básicamente
+Voy a seguir con los
+Revisos
+Así puedo
+Ir desbloqueándolos ahí
+Con eso
+Eh
+Y
+Mucho más
+Eso por mi lado
+¿Alguien tiene algún post?
+¿Creamo algo para chequear?
+Negativo central
+No
+No
+De mi parte
+No
+Ya chequeo
+Que
+Lo de los mails
+Y hay dos mails
+Que están para revisar ahí Martina
+Les
+Los arroba ahora
+Lo ve
+Eh
+Bueno
+Genial
+Bueno
+Bien de bien
+Eh
+Quique si se puede
+Es
+Quique
+Y
+Eh
+Marti
+Se pueden quedar un segundito
+Resto buen provecho
+Bye bye
+Bueno nos hablamos
+Yo ya voy
+De verdad
+Que vos me habías pasado algo del cupón
+Me habías preguntado
+Hace unos días
+Me contó 10
+Ese que era 10%
+No
+Eh
+10 dólares
+Y ponía
+Ponía 25
+Yo lo que entendí
+Es que a nivel de frontend
+Viste que
+Allí en la factura
+Aparece
+Ahí en el checkout
+Digamos
+Aparece total
+Y
+Recorre en total
+O sea
+Dos totales
+Y a nivel de frontend
+Esos 10 dólares
+Los resta
+5 a cada uno
+Pero lo que es
+Stripe
+O sea
+El descuento efectivo
+Real
+Lo descuenta bien
+Es un tema visual
+No más
+Está bien
+Bien de bien
+Está
+Quique liberado
+Eh
+Fijate lo de los correos
+Que van a ir cambiando
+Después tenemos lo de Timber
+Buenísimo
+Genial
+Dale vamos
+Eh Marti
+¿Tenés algo para ver?
+Eh
+¿Yo?
+Si
+Eh
+Tenía una duda cortita
+De algo
+En 2 segundos
+Quedate un segundito
+Ahora tengo que ir al baño
+Porque quedate un segundito
+Y vamos
+Bueno
+Te veo entonces
+Hasta luego
+Hasta luego

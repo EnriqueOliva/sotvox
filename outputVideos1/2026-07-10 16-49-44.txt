@@ -1,0 +1,201 @@
+y esto está tal cual acá en el film pero eso es design review tanto los mails no están de
+red y por debes o para hacer si es el de cerrar sesiones y estoy agregando esto acá todos los
+otros tiene un de no que te dice que si esto si yo ya me contate con enrique para tener la
+misma lógica porque él estaba haciendo ya tenía algo hecho de esto ahora pero después de estos
+acá de configuración no tienen eso esa parte de configuración no lo tenía en el diseño de
+armados a principio no lo colocamos que vamos a agregar si quieren sí sí sí sí sí sí porque si
+no se nos va a pasar los humos no sé si el desarrollo de sesiones y no lo tenía
+que se lo agregamos si creo que es el único que de los de configuración es el único que lo tiene
+es el de cambiar emails creo que tampoco bueno si ahora lo tiene a no prestar el recordatorio compra
+se agrega para todos los de configuración entonces son de osa estamos viendo uno por uno pero cual
+cual más tiene mail de configuraciones por ejemplo estoy estoy mirando ahora de cambio de contraseña
+no no tiene correo a ese está bien este de cambio de correo tampoco tampoco
+pero ahí tenés ahí tenés uno ahí tenés uno de cambio de correo que dirige al zoom confirma
+tono está pero no tenés una vez que confirma que se te cambió el correo no
+si se autorizó tu correo se autorizó tu correo es ella le manda a presionar si éste está
+en la pr de los correos está pero ese tiene esa lógica no está igual acá en el firma está entonces
+éste tiene que tener esa lógica y cuál es el otro más cambio de correo y el de contraseña
+el de contraseña exitoso y si bien o sea los dos casos de éxito digamos el de cambio de correo
+exitoso de contraseña exitoso y cerrar sesiones y la lógica que tenemos que tener que hablamos con
+enrique no es un fracaso es un fracaso es un fracaso es un fracaso es un fracaso es un fracaso es un fracaso
+es un fracaso es un fracaso es un fracaso es un fracaso es un encontrar si tiene eso si quieren
+ahora nos mandaría un rumbo a que lo charlen pero charla lo con enrique que la lógica es si tiene
+una compañía que los border porque estamos haciendo un final y eso es peligroso si bien entonces si
+tiene una sola compañía de los border y después tenemos el exitoso de entrar al fin un segundito
+mismo y después tenemos el exitoso de se cerraron sesiones también creo que está ahí santa y acá
+cerrar sesiones creo que exitoso creo que no tiene tiene sólo el código no más pero no tenés un mail
+creo que no hay un mail de se cerraron las sesiones exitosamente o algo así no no no no no no perdamos
+nada pero ahí sí tenemos ahí si tenemos casi que estoy agregando ahora sí tanto se hacemos esos dos
+y ahí la lógica que hicimos que charlamos con y que es la siguiente si tiene una compañía en cripto
+cross border va el de otc está con una compañía en cripto cross border valdó tc bien paja si no
+me conociera está la pr que me pasó enrique o cual era que estaba siendo la misma lógica esta la que
+claro viste que ahí hacemos un find all deberíamos find one que tenga una compañía y ya buscas que el
+company type sea ahora tiene que haber una compañía que el company type sea este crypto
+cross border con una sola que sea el crypto cross border ya nos vamos consulta el dex el de
+desactorizar la contraseña también tendría que tener esto no como el cuando se actualiza la
+contraseña también deberíamos colocar acá en lo que necesitas de ayuda en este caso no sería
+necesario no porque ya lo estás poniendo lo estás poniendo de arriba si no fuiste tú
+y después yo no ha mostrado tu perro el segundo la que se emergió sí sí sí
+mostramos el grave claro nosotros tenemos este mail que es la contraseña fue actualizada
+para mostrarlo o sea es lo que enviábamos antes cuando vos pones sol te olvidaste tu contraseña
+santi también bien tenemos este mail darle un poquito más un bolso no es una o sea
+abril o una nota si ustedes ven el creador del chónaco bueno no quiere no quiere abrir
+esta altura
+a ver si le pongo
+talo lo que se puede viste está este es el que se envía santi cuando el usuario está la cavidad
+que no sé si son 20 o 10 minutos ahora dice 20 en este viejo 20 no sé si queremos mantener esos
+20 o poner diez pero en nuevo cuántos son la misma lógica gozáis pero que en el nuevo fueron 10 pero
+mi pregunta Santi es, ¿no podemos usar el mismo
+correo?
+son cosas diferentes
+pero se utilizaría
+el mismo formato y todo
+es que la idea para mí era usar el mismo
+correo, porque vos estás solicitando
+el código, o sea
+es lo mismo
+la idea era reutilizar toda la lógica de cambio
+de contraseña, entonces
+fíjate acá te dice
+hola Jonathan, hemos recibido tu YouTube para
+continuar el proceso, si no has solicitado
+a papá por seguridad
+mostrame el nuevo
+hemos recibido tu YouTube
+si no solicitaste de cambio
+tu cuenta es libre, no compartes el código
+con nadie, vos es lo mismo
+o sea, Santi
+chequeá con Gastón que no hagan
+rediseño del otro
+y Jonah
+utilicemos el mismo código
+y los mismos minutos
+perfecto
+yo tenía hecho acá
+el de recuperación de contraseña
+¿no?
+pero no, usamos eso
+¿qué tan distinto es?
+¿qué tan distinto es?
+dice, recibimos una solicitud
+a ver, lo chequeamos
+paso a design and review
+y estamos
+mirando
+este acá
+es público
+¿no?
+yo puse el mismo formato y te dice
+solicitud de cambio de contraseña
+recuperación de contraseña
+y dice, recibimos una solicitud
+para restablecer
+la contraseña de tu cuenta
+ingresa el código de verificación para continuar
+te dice el código que es lo mismo
+y después
+exactamente igual
+y abajo te dice
+restablecer contraseña y el otro que te dice
+acceder
+a mi cuenta
+hagamos una cosa
+a ver
+dame los títulos nuevos nomás
+¿no?
+recuperación de contraseña
+y eso sería nuestro cambio
+hagamos una cosa
+pasalo ya a design
+¿sí? Santi
+pasalo ya a design
+y decir que para este caso
+lo único que cambiamos son este título y este título
+ni lo vamos a pasar en a design and review
+este mail ya
+si ya pasaste el otro, este ya está
+y Jonah, lo que vas a hacer es un condicional
+los minutos son los mismos
+lo único que vamos a cambiar son esos dos títulos
+y después el action button y eso es lo mismo
+¿está?
+perfecto
+y después
+voy a dejar en una dev note
+en el de
+acá aclarando esos cambios
+¿está? si te parece bien
+pero Jonah hagamos esos cambios
+ojo que esto está en dev review
+debería estar en
+ah
+debería estar en ready for dev esto
+si esto ya se aprobó
+así que lo podemos pasar ahora
+haz una cosa
+armá esos titulitos
+¿está?
+y ya pasalo a
+pasalo a design
+cosa que le quede a Jonah
+y dejarlo en ready for dev
+y Jonah, esta PR la mandás directo a pull request
+¿está?
+acá lo que quiero que mandes es
+los ajustes de los correos
+¿sí?
+y esos cambios de títulos
+nada más
+y deberías eliminar el correo viejo
+¿estamos?
+bien, perfecto
+¿sí?
+perfecto
+ahí Kike dale una mano para pasarle la nueva logica
+cuando la tengas que es únicamente
+si tiene una cuenta cripto cross border
+vamos a preferenciar la cross border
+la lógica es esa a partir de ahora
+si nosotros sabemos la compañía
+cuando enviamos un correo a una compañía
+¿sí?
+nosotros ahí ya podemos decidir cuál va
+¿está?
+¿sí?
+entonces si nosotros enviamos una notificación a la compañía
+ya podemos definir cuál va
+yo los correos estoy intentando ser explícito poniéndoselo a Santiago eso
+¿está?
+si nosotros hacemos una notificación de LNC va a contra LNC
+si enviamos una por más que sea LNC
+si el loco está enviando una transacción va a OTC
+¿se entiende?
+esa es la lógica
+¿está?
+bien
+bien
+¿está?
+igual después vamos a tener que hacer un recheck de todo esto de los correos porque
+pero la lógica es así si nosotros
+enviamos algo relacionado a la parte de cripto vamos a OTC
+si nosotros enviamos algo relacionado a LNC va a info
+si nosotros enviamos comunicación general
+si nosotros enviamos algo relacionado a LNC va a info
+generica la lógica es
+si tiene al menos una cripto cross border va a OTC
+¿está?
+bien perfecto
+entonces acá no iría el bloque ese de support
+sino que lo que cambio acá es el mail dependiendo si tiene cross border o si es LNC
+lo cambio acá en este cuadradito naranja perfecto
+exacto
+sí
+antes te avisas en diseño a Enrique le das una mano a Jonathan y seguís trabajando lo que tenes
+Jonathan arreglas eso y vamos directo a Puerto Rico
+bye bye
+ahora que sale
+bien, bien
+bueno, chao
+thank you
+hasta luego

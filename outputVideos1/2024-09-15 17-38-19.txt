@@ -1,0 +1,744 @@
+tarjeta, te quedan como dos
+pagos diferidos con el mismo correo electrónico
+y Stripe solo permite
+un método de pago por defecto.
+Entonces eso generaba que tuviéramos que hacer
+toda una lógica
+para sincronizar con Stripe
+que no tenía sentido de, bueno, vos tenés
+una empresa, van tus suscripciones
+y tu pago acá, pero tenés una tarjeta
+por defecto y si falla el pago, te cambio
+algunas suscripciones, pero a otras no.
+Era toda una lógica súper complicada
+y que naturalmente iba a fallar
+porque ante el mínimo cambio que tuviéramos Stripe
+iba a fallar. Y realmente
+una de las cosas que
+nosotros hablábamos con
+Guille es que hacer toda esa lógica
+rebuscada cuando tenés
+una o dos personas que compran
+dos cuentas de la misma cuenta, era un bolazo.
+Entonces la solución que
+decidimos es la siguiente. Vos podés
+comprar una cuenta y tenés un método de pago
+asociado, podés cambiarlo como vos cambiás
+el método de pago de Netflix, Prime
+o lo que sea. En ese sentido vamos a
+funcionar igual, vamos a crecer
+suscripciones. Lo bueno de esto
+es que vamos a tener suscripciones activas
+y vamos a tener maneras de bloquear el sitio
+para esas personas que no pagan. Entonces
+eso realmente nos aporta un gran valor
+porque vamos a tener mecanismos
+donde automáticamente
+de manera proactiva vamos a
+incitar a esas personas a pagar, que hoy en día
+los vendedores se tienen que dar cuenta de eso.
+¿Está? O sea,
+les digo, para que tengan
+una idea en cuanto a números
+y van a verlo, o sea,
+de lo que factura
+Guillermo de suscripciones
+el 40% falla.
+Y realmente, y de ese 40%
+aprox, me acuerdo el número si era
+40 y algo, ¿está?
+Más de la mitad cuando le avisan
+van y pagan. O sea, es por pelotudes.
+Que falló el pago, lo que sea.
+Eso quiere decir que
+muchas veces si se avisara a más
+personas probablemente pagarían.
+Y más, ¿qué es lo que pasa?
+El sitio no bloquea cuando no pagan. Entonces no pagan
+pero pueden seguir accediendo a todos
+los documentos, toda la información. Entonces los tipos
+también como que les chupa tres huevos.
+Entonces realmente por eso pensamos
+que eso va a ser un cambio bastante importante.
+O sea, ya con un ingreso
+que nos va a mover
+un poquito el piso.
+Estimamos que va a ser superior al ingreso
+que destinamos hoy en día de pagar
+al equipo y a la campaña
+de marketing. O sea que es mucha guita.
+Pero bueno, eso es como
+datos adicionales como para que tengan
+idea de la importancia que tiene eso.
+Bueno, además de eso
+entonces ahora cuando
+hagan un pago
+si compran otra empresa
+le vamos a avisar. Che, mirá Carlitos
+que estás comprando, o sea, estás registrando
+ya tenés una empresa
+que tiene la cuenta. Si vos pagás con una
+tarjeta nueva, mirá que ahora
+esta tarjeta se va a contar
+para toda la suscripción.
+Como que vos tenés una tarjeta con Netflix
+contratás otra cuenta con el mismo correo.
+Y bueno, mirá que te voy a cambiar y a partir de ahora
+la tarjeta te va a venir
+las suscripciones de la
+compañía.
+La compañía 1 y la compañía 2
+las dos tarjetas.
+Es nomás para...
+Lo que llegamos al acuerdo con Guille es
+tolerar ese caso, pero
+es un caso
+muy particular.
+El tipo que lo quiera hacer lo puede hacer
+y bueno, está. Y después en un
+futuro veremos si vale la pena.
+Pero Guille me dice que en realidad de todas las compañías
+que ha cerrado a lo largo de los años, creo que tiene dos
+que ha pasado esto. Entonces es como que
+imagínense a nivel de prioridad
+hay cosas que hay que desarrollar.
+Desarrollar de una para un nivel de prioridad
+y chupar tres huevos.
+Es más, en un momento yo lo intenté convencer
+para llegar a que podamos tener varias compañías.
+Porque en realidad ya tenemos
+toda la lógica. Pero en un momento
+me dijo, ¿sabés qué? Sácalo.
+Y yo lo convencí para ir para atrás.
+Y creo que a nosotros a nivel de test nos va a facilitar
+la vida porque vamos a poder con la misma cuenta
+crear varias compañías. Entonces también
+es suma para todos lados.
+Bueno, nada. Eso de mi lado.
+Martu.
+Bien.
+Yo
+cerré la PR
+de la parte de la vista de teammates.
+Y nada, ayer estuve hablando con Santi
+temas de las que están en progreso
+porque tenían que ver con
+la migración que dijo.
+Así que nada, una vez
+eso esté hecho,
+ya estoy regresando a esa PR también.
+Y nada, una vez que eso esté hecho
+ya puedo
+seguir con esa parte.
+Pero ya casi estaba pronta.
+Y mucho más.
+Bien.
+Ahí Martu.
+Enseguida que marche eso yo te aviso.
+Pero ya ahora ya en 5 segundos
+mando la par.
+Igual estamos.
+Quique, pasate por aquí un segundito
+antes que hablaras.
+Quería decirle las siguientes cosas.
+Estuve pensando qué hacer con esto
+porque tenemos la mayoría de las tareas
+van a pasar para el siguiente sprint.
+Por el tema racional.
+Estuve pensando cómo acomodar esto
+o qué podemos hacer para
+hacer un improve de esto.
+A ver qué te parece.
+Justo estuve viendo el mensaje que vos mandaste ayer
+y hoy investigué un poquito.
+Sinón es más polenta, como te había dicho.
+Pero al parecer
+SPECT ofrece
+todas las funcionalidades que tiene el Sinón Assert.
+¿Sí? Pará.
+Sí, lo vas a tener que volver para atrás.
+Ya te lo dije antes.
+Y me parece que está bueno.
+Que a nivel de Assert usemos la misma librería.
+Entonces,
+el problema que me surge
+es si nosotros
+podemos hacer como hacemos con el Refresh
+de chequear uno y dos veces.
+El Refresh Token.
+¿Sí?
+Entonces, vos ahora actualmente
+la 178.
+Bueno, comentame un poquito
+el estatus de las tareas sin progreso
+en DevReview.
+No, en teoría
+la...
+Los test de regresión,
+si vos en algún momento querés pegar una bichada,
+a ver si se te ocurren muchos casos más que falten.
+Lo único que
+ahora se me ocurre que puede estar faltando
+como casos es
+no toqué mucho la parte de
+percentage ownership.
+Es lo único que
+no sé, que siento que pudo
+se me pudo haber chispoteado.
+Eso es importante porque
+o sea, es lo que te digo.
+O sea, vos ahora
+podés encontrar bugs porque
+es la idea de los test de regresión, que encuentren bugs.
+O sea, que es normal y está bueno.
+O sea, te fijás, es una pantalla que tiene
+aproximadamente
+entre 20 y 30 campos.
+Sin contar la parte de pago
+que suma otros 6 más.
+7. Y cada campo
+con todas sus validaciones.
+Y todavía tenés que ir para atrás y para adelante.
+¿Está? Entonces,
+es lo que yo te había dicho. Ahí
+yo la veo en progreso,
+pero me parece que esté bien porque
+tenés que contar los casos correctos.
+Pero además tenés que jugar con toda esa lógica.
+Así que si querés, no sé si vos le pusiste
+ya las prioridades, también a las
+¿está? Eso agregalo como
+comentario o en la descripción.
+¿Está? Porque además, o
+como comentario también
+se tuvo que hacer las prioridades.
+Porque eso está bueno para poder hacer
+seguimiento de lo que fue pasando con las tareas.
+¿Está? Ya que estoy, lo mismo vos
+Martu, con la
+demora de la migración de teammates,
+agregalo en los comentarios en la tarea que tenés.
+¿Está? O sea, ya anotate
+luego y guárdatelo.
+Me pareció que estuvieron bien.
+Sinceramente son muchos, tengo que sentarme
+a leerlos. ¿Está?
+Probablemente eso lo haga el martes.
+El martes o el miércoles.
+Sentarme a leerlos tranquilo.
+¿Está? O sea, ahora le voy a pegar una bichada
+como para dejarla
+pseudo cerrada. ¿Sí?
+Es que, pues son
+muchos casos, sinceramente, para todo lo que tenemos
+para sacar. Para que yo me ponga ahora a leerlos
+todos. Entonces voy a leer un poco
+por arriba, a ver si veo algo que me falta.
+Que no me
+cuadra. Y ya lo cerramos.
+¿Está? Eso, o sea,
+cuando vos tengas eso de las prioridades,
+no sé si lo habías hecho, pero
+las prioridades, el idioma,
+los casos de percentage,
+tener en cuenta todos
+los casos correctos, variaciones, todas
+esas cosas.
+Ahí me
+mandás el dev review, yo la chequeo
+y entre hoy y mañana
+yo ya te envío la proof.
+¿Sí?
+Bien.
+Este, después
+la documentación de los
+test unitarios,
+realmente, ¿qué esperás vos?
+No estoy muy seguro, yo lo dejé pronto,
+o sea, pronto, entre comillas, digo, capaz que
+falta mucha cosa para corregir
+o no, si lo querés
+visitar. Sí, era un poco lo que ya tenías
+y que comentaras un poco lo que es la
+estructura, de cómo,
+o sea, si querés,
+no sé si,
+capaz que ya lo hiciste todo, pero que comentaras
+un poco la estructura, cómo
+hacés para moquear, cómo hacés,
+qué es lo que va en el before, qué es lo que va en el
+after, dificultades para
+moquear cognito, dificultades para
+moquear las bases
+de datos, casos particulares
+donde tuviste que hacer algunos chequeos, qué funciones
+utilizar,
+qué librerías no
+moquear, por ejemplo, capaz que estaría
+bueno
+que expliques cinco segundos,
+¿no? Pero si vos te fijás dentro de ese repositorio
+hay una imagen que hicimos cuando arrancamos
+con un zoom de todas las capas,
+¿tá? Desde lo que era
+routes hasta lo que era
+los repositorios, entonces
+ahí que expliques un poco esa imagen, que no quede
+colgada, capaz que meterla ahí en el documento,
+¿tá? O sea,
+es como más un
+bajar todas esas dificultades a
+tierra y también la idea,
+yo te lo voy a ir diciendo, pero que
+proactivamente vos también vayas
+documentando cosas que te parece que
+son, que tienen que empezar a ser
+estándares, que también es un poco lo que te voy
+a decir con el exception este,
+que tienen que empezar a ser estándares,
+¿tá? O sea,
+tenemos que empezar a tener
+un estándar de test,
+como ya estamos teniendo estándar de frontend
+y backend, los test también tienen que tener un estándar
+para poder guiar.
+Después otra cosa,
+vi que mandaste la de create,
+te voy a hacer ir para atrás, pero es solo
+darle casi control
+Z, pero te voy a crear una tarea para
+rellenar el sprint, ¿tá?
+Para poder taponear,
+donde vas a
+intentar refactorizar todos o usar
+el espectro, ¿tá?
+Y así ya lo dejamos como estándar, ¿te parece?
+Entonces,
+este sprint en sí sería
+liquidar las tres que, todas las
+que tenés en celestito, que ya
+la única que faltaría
+la de, faltaría
+ahora hacer los ajustes del 83,
+que ya vi que estaban bastante ordenados,
+¿sí?
+¿La pudiste bichar entonces?
+Nada que rompa los ojos.
+No, nada que rompa los ojos,
+lo que sí me pregunto es,
+¿ya había una abierta?
+Si ya había una abierta
+de crearse y creaste una nueva,
+cerrala. No me acuerdo
+si reusaste la que tenías
+o abriste una nueva.
+Abrí una nueva.
+Entonces, cerrala
+la que tenías abierta de create user
+que quedó pendiente.
+No me equivoco, quedó una pendiente.
+Y de paso, fíjate,
+no sé si la usaste como
+referencia o no, pero si
+no la usaste como referencia,
+chequeá lo que hiciste ahí en su momento
+a ver si te faltó algo.
+A ver si hay algo que esté faltando.
+¿Está?
+Pará, volvamos a hacer recap.
+Entonces, en cuanto a los
+test de regresión,
+liquidar esos detalles
+de percentage owner, hacer esas pruebas
+todos, ¿está?
+Y también es
+importante,
+capaz que,
+o sea, que ya dejes
+una pseudo corrida
+de los test de regresión.
+Sí, una corrida de los test de regresión.
+O sea que, ahora terminar,
+no sé si ya lo hiciste,
+si ya lo hiciste, está bien,
+pero hacerlo
+para los nuevos casos o los casos
+que faltaron. O sea, agarrar de velo
+y hacer una corrida de los test de regresión.
+Yo vi que ya fuiste rellenando columnas,
+pero ahí solo debería haber
+que, para marcar
+esa tarea como dan, la de los test de regresión,
+debería quedar.
+Una columna con el día de la fecha
+de hoy o mañana, con todos los test
+corridos, ¿está?
+Con el día de hoy, o sea, que quede el día de hoy.
+Los que ya corriste no los tenés que volver a correr,
+porque no quiero que pierdas tiempo con eso, ¿está?
+Solo con los nuevos o los que
+pienses que vale la pena volver a correr.
+¿Está? O lo de mobile y eso.
+¿Sí? Pero es
+para que quede como que
+hoy o mañana, cuando
+lo hagas, que quede una fecha única,
+como el historial
+de lo que se corrió, ¿está? Y después, bueno,
+vemos cómo,
+así nos juntamos
+después, capaz que para el inicio del
+sprint que viene, o yo el martes analizo
+eso, ¿está? Que el martes cerramos
+el sprint, yo analizo eso y veo la
+mejor forma de cómo
+correr los test de migración el miércoles cuando
+salgamos a, de tarea de regresión, el miércoles
+cuando salgamos a producción, ¿sí?
+¿Está?
+Otra cosa que me
+parecía que estaba bueno en el Excel,
+que puede ser más sencillo que
+modificar los documentos, esto capaz que vos me lo decís,
+es que en el Excel ponga las prioridades
+y lo, y lo hagamos con un filtro,
+viste que el Excel vos podés hacer filtro.
+Eso fue lo que hice, de hecho,
+además, hice las dos cosas.
+¿En el Excel tienen las prioridades?
+Sí. ¿Querés pegar
+un ojo un segundo?
+O... A ver, vamos a entrar.
+Poner... Ah, podés
+entrar vos, claro. Me quiero
+sacar mucho tiempo de Martina, pero...
+Eh... Guíate
+sanitario, esto lo tengo que chequear.
+Templo y parate. Está, acá
+eliminar los títulos
+los templates y eso, eliminarlo.
+Que queden solo documentos
+ehm... concretos.
+¿Sí? Ok.
+O sea, lo de los templates, eh, creo que acá...
+Ah, este nomás, acá lo hará, carajo.
+O sea... Ah, lo pusiste
+con color, hijo de puta.
+Bueno, podemos... O sea,
+vos lo, vos ves ahí. No, creo que sea
+lo siguiente que creo que te va a facilitar la vida a vos.
+Acordate de lo que yo te digo. Mirá.
+Eh, pensá que esto después tenés
+que agregar columnas nuevas, ¿no?
+O sea, fijate la forma que te quede más cómodo,
+hacerlo. Ahí...
+Si, si es duplicar o lo que sea.
+Yo lo que te digo acá es lo siguiente.
+Agregá una columna más a la izquierda.
+¿Tá?
+Claro. Que diga la prioridad.
+Alta, media o baja. Entonces vos cuando
+aplicás un filtro, sólo
+te muestra las filas con la
+prioridad. Entonces vos vas al documento
+y ya mirás las filas que te está marcando el Excel.
+¿Se entiende?
+Claro. Eso, eso puede ser bastante útil
+porque puede ser mucho más rápido que
+reordenar los documentos.
+¿Se entiende? Entiendo.
+No sé qué te parece. Sí.
+Vos creo que tenés una función.
+A ver, Marto, fijate. Clic derecho, filtros o algo así.
+¿Tá? Si le pones alta,
+media o baja, fijate cómo hacerlo.
+No, en la columna.
+Paráte en la...
+Creo que... Create filter. Ahí va.
+¿Tá? Bueno. Eh, no.
+Cérralo. Vos ahí podés agregar una
+columna más a la izquierda, capaz de
+caso de uso, porque eso va a ser más
+mantenible y más escalable
+a lo largo del tiempo. Porque si vos
+te ponés a pensar, si tenemos que
+cambiar los documentos, reordenar documentos
+es una cagada. ¿No?
+O sea, pero de repente cambiarle la prioridad
+acá son cinco segundos
+y ya si te querés esmerar un poquito
+que... Me encantó eso del color que hiciste.
+Hacelo.
+Pero que se pinte automático.
+Según la prioridad se pinta toda la fila
+de un color. Podés agregar
+if. Ahí es un segundo.
+Es un... Ya GPT te lo dice en dos
+segundos como un carajo.
+¿Tá? Pero tipo, estaría bueno que toda la
+que vos hagas acá, por ejemplo, click,
+filtro, alta prioridad,
+ya tenemos el test de regresión de alta
+prioridad y yo te digo, el miércoles
+hacemos una prueba. Corremos
+este, corremos el de alta
+y vemos cuánto sale. ¿Tá?
+¿Bien? Ok.
+Genial.
+Todo eso anotalo en la descripción, agregarlo
+en la descripción del test de regresión.
+Descripción, no comentario, ¿no?
+Comentario o descripción.
+No, porque el comentario es un problema
+que surgió. La descripción
+es parte... Recordemos que la descripción es
+parte agregada a la
+funcionalidad. O sea, comentario sería, por ejemplo,
+yo que sé, me quebré una pierna o
+tuve problemas al
+entrar al Excel. No, pero tuve problemas
+al entrar al Excel.
+Por ejemplo, comentario sería, Santiago
+se deployó, Martina,
+Santiago deployó una nueva funcionalidad y hizo que
+cambiaran los test de regresión. Comentario es
+cosas que justifiquen que se agregó el tiempo.
+Descripción es qué es
+lo que hiciste. Entonces está bueno que si vos hiciste
+algo que no se desprende de la tarea de
+trabajo que surgió,
+es descripción, porque le agrega
+valor a tu tarea. Comentario es un
+problema que surgió para dejar
+evidencia nomás de por qué la tarea se
+pudo haber reestimado. O bueno, una
+complicación que tuviste
+que justifica que la tarea estuvo en progreso
+varios días.
+Pero el comentario
+agrega valor. Por ejemplo,
+en tu caso, Martu, el comentario
+que hablamos
+es que vos estuviste a cargo de la
+migración.
+Después es capaz
+que la descripción, si estaría
+bueno, que pongas lo de cognito, porque lo de
+cognito de repente no estaba
+previsto.
+¿Qué más?
+Volvamos a esto.
+Acá faltaba la prioridad.
+Ojo con eso.
+¿Seguro?
+¿Dónde está la prioridad?
+Le puse el P2, entonces.
+Probablemente, a ver.
+¿Dónde dice?
+No me lo chequeé.
+No, pará, porque lo agregué en algún...
+Estoy seguro que lo agregué.
+Ah, los primeros casos.
+Mirá más abajo.
+Ah, bueno, está.
+Este está bien, ahí va.
+¿Dónde está?
+Hay algunos que tienen y otros no.
+Pero ¿cómo es eso posible?
+¿Los habré comido?
+Bueno.
+Algunos dicen prioridad baja.
+Media. Me gustan los colores.
+Este no. Hay una cantidad que no tiene.
+Ojo.
+A ver, pará. Organicemos esto.
+Organicemos esto. Los dos archivos.
+Ponerles prioridad.
+¿Sí? Actualizar el Excel.
+Y comentarios.
+Pero pará, si no fallan, o sea,
+si pasan, los tests pasan, no tienen prioridad.
+¿No?
+No, no, no, no, no.
+Claro, capaz que ahí me prese más yo.
+La prioridad es la prioridad
+de que vos chequees
+qué es.
+Prioridad, relevancia.
+Yo digo prioridad.
+Es que ante nuevas funcionalidades
+que se nos lleguen en prod,
+se corra este test de regresión.
+El caso de uso.
+El doble cheque. ¿Qué prioridad tiene?
+Esa es la prioridad.
+O relevancia.
+Me parece que prioridad es más amigable.
+El miércoles, cuando salgamos a producción,
+¿qué tan importante es que vos corras
+el caso de uso 1?
+¿O qué tan importante es que corras el caso de uso 2?
+Porque, de nuevo, ahí la idea,
+y Martu, vos que lo estás viendo ahora por primera vez,
+la idea es que Kike...
+Ah, no, yo había visto esto.
+La idea es que Kike acá
+agrega un filtro,
+le filtra y le pone todos los verdes,
+rojo o naranja.
+¿Tá?
+Eso, como te digo, podés automatizarlo.
+O sea, algo que tiene bueno esto
+es que te permite scripts, que los haces
+en 5 segundos contra GPT.
+Pero si no, tipo, si
+la prioridad es alta, te pinta toda la columna
+de un color. Es un bolazo, realmente es un bolazo.
+¿Tá?
+Es agregar una columnita más.
+Recordá que...
+A ver...
+Sí, Kiketo, algo que recién me estoy dando cuenta.
+Recordá que este Excel debería estar acá.
+Que nosotros deberíamos tener
+varias...
+O sea, en un Excel debería guardarse todo.
+¿Te acordás de lo que hablamos en hojas?
+Sí, simplemente que pensé que el template
+estaba aparte. Vos querés poner template
+y todo junto.
+Una carpeta de template.
+Capaz que podemos crear una carpeta para mover esos
+templates. Company Draft.
+Lo único que va a haber es los casos de uso.
+Y acá, genérico, el Excel suelto.
+Porque acordáte que yo lo que voy a ir a ver
+es el Excel y después voy a ir a abrir el documento
+en particular. Pero el Excel
+tiene que ser algo rápido.
+Además, después tendríamos que tener alguna función
+o algo que nos...
+Que saquemos datos
+de esto. ¿Sí?
+Te vas a volver un contador vos con esto.
+Pero...
+Estaría bueno después investigar una función.
+Capaz que eso... Si querés dedicarle un minutito.
+Porque estaría bueno... A mí lo que me
+gustaría es que a medida que
+pase el tiempo le demostremos a Guille con
+gráficas que los bugs bajan.
+Y la única manera de demostrar eso
+es con estas tablets.
+O sea, entonces me gustaría
+demostrarle que los test de regresión
+detectan cada vez menos cosas.
+Y si no, no le mostramos nada
+pero nosotros sabemos que estamos en problemas.
+O sea, estaría... Después capaz que
+investigate ahí alguna cosita.
+Que tipo pueda sacar
+la fecha y
+se corrieron tantos, fallaron tantos.
+De alta prioridad a baja prioridad. Columnas.
+¿Sí?
+Creo que también se puede integrar con Python
+por si te compro. Pero está.
+Tiene Python.
+El Excel. Además vos podés pasarle
+el... Puedes descargar como Excel
+y se lo pasás a Python como hacíamos con los
+CSV en el postgrado.
+¿Sí?
+Eso está bueno. Puedes limpieza y análisis
+de archivo. ¿Está?
+Que ahí está bueno porque podemos
+sacar predicciones
+y cosas y podemos hacer análisis.
+Como digo, hay muchas cosas que vamos a poder ir
+haciendo a medida que... Por eso es lo importante
+la importancia de relevar datos, sacar
+cosas, tener documentación. Una vez que nosotros
+tenemos la información, después podemos autoanalizarnos
+y mejorar. Eso es lo...
+Y tener esos procesos de automejora
+casi automatizado.
+Entonces, esto de nuevo.
+Acá en Company Draft
+uno o varios docs
+nada más. Una carpeta de...
+Template y después
+el Excel genérico que tiene todo.
+¿Sí?
+Cuando pongas
+Endeavor Review
+no importa que después yo te le haga
+hacer ajustes o lo que sea o tenga cambios.
+Cuando pongas Endeavor Review
+corre todos los test de regresión y deja
+al día de la fecha una corrida.
+No importa que después tenga cambios o lo que sea.
+Es nomás para que quede una evidencia
+de que se corrió. No te voy a hacer hacerlo de nuevo.
+Yo cuando los creé los corrí.
+O sea...
+Ya están, ya están.
+Y si no lo...
+Y los nuevos que agregues los vas agregando y listo.
+Se terminó. No quiero que pierdas más tiempo con eso.
+Porque en sí la corrida real va a ser el
+miércoles y los días siguientes.
+¿Bien? Eso con respecto a eso.
+Con respecto a
+esta guía la voy a analizar yo.
+¿Sí? Esta avísame cuando
+esté y no te olvides ponerla en Endeavor Review.
+Cuando tenga los ajustes que hablamos recién.
+Y agregar
+la descripción.
+La 183.
+La tengo que chequear.
+Pero ya te voy diciendo que volvé para atrás los cambios
+del SPECT.
+Y te voy a crear una tarea que quiero que
+haga arranques antes que esta.
+Que es bien sencillita. Es nomás
+pasar todos los tests que tenemos a SPECT.
+¿Tá?
+Que le voy a sumar puntos.
+Porque en sí si te pones a contar puntos esa tarea
+sale y va a salir seguro
+antes de terminar el sprint.
+¿Tá? Entonces
+vamos a proponernos en lo que queda el día de hoy.
+A ver si podemos...
+Por un lado podés cerrar
+esto que hablamos recién.
+Y yo ahora ya te creo una tarea.
+Para lo que sería
+rehacer.
+Yo ya te la paso por backend.
+Pero que sería pasar de
+Sinon a SPECT. Si vemos que tenemos
+un problema de pasar de Sinon a SPECT
+hacemos al revés. Pasamos de
+Sinon a SPECT, pasamos de SPECT a Sinon.
+¿Tá?
+Eso va a incluir los 3 repos.
+¿Sí?
+Así tenemos los 3 repos conectados.
+¿Tá?
+¿Bien? Bueno. Perdón Martu la demora.
+Pero está bueno que tengas sin con esto.
+Sigamos con eso.
+Kike nos vas actualizando.
+Y yo sigo con los métodos de pago.
+¿Bien?
+Vamos arriba.
+Nos vemos.
+Adiós.
+Adiós.
+Fi nos ha llevado de vuelta juntos.
+Adiós.
+Adiós.
+Adiós.

@@ -1,0 +1,109 @@
+de toda la mañana con eso
+este
+ahora hace una cagada
+inclusive la de Stripe
+me estaba tirando problemas
+entonces, lo que necesito
+es
+que usted pruebe
+a diferencia de lo que le había dicho
+que pruebes
+la rama del site
+que anda todo
+good, o sea
+más o menos pruebas local
+una vez que vos me digas
+están dando todo bien, o sea, la compra de compañía
+la compra de suscripciones
+la declaración, todas esas cosas
+ahí salimos a dev
+lo mismo con el back office
+literal es lo mismo con el back office
+vamos a tener que hacer el mismo
+la misma actualización
+o sea, nada más hay que hacer
+y también la vamos a tener que hacer
+con el worker
+el worker lo voy a sacar yo ahora
+directamente a dev
+o sea, primero
+vamos a tener que probar las ramas local
+que está todo bien, que están dando bien
+que nos está dejando comprar y esas cosas
+y después vamos a ir contra la rama de
+vamos a ir contra dev
+a probarlo en dev
+este, es eso
+así que nada, yo ahora te voy pasando
+la rama
+y te voy a pasar la rama
+del back office y del site
+ahí es una especie de smoke
+de todo lo que se te ocurra, compra de suscripciones
+compra de compañía, teammates
+lo mismo en el back office, crear blogs
+lo que se te ocurra
+o sea, fijarse que no tiene
+ningún comportamiento raro
+y probablemente esto
+después en la tarde o noche cuando vuelvas
+tengamos que salir a producción con estos chiches
+pero la idea ahora
+es asegurar la calidad
+de esto y que por lo menos
+antes de que vos te vayas quede todo en dev
+cosa de que también en el rato
+que va a estar Martina también
+se fije ella que dev esté todo bien
+y de noche cuando vos vuelvas
+te esperamos para
+salir a producción con todo esto
+tuve que actualizar una cantidad de librerías
+entonces es algo delicado
+entonces ahí necesito todo el apoyo
+que se pueda
+bien
+hay que correr entonces site y back office local
+claro, site y back office local
+y hacer un smoke test
+luego después cuando eso se vaya a producción
+volver a correrlo
+o sea en dev, perdón
+cuando se vaya a dev, cuando se marche a dev
+volver a correrlo en dev
+es eso
+ese es el chiche
+si nos quedamos en dev y está todo bien
+ahí se va a producción
+ni nos calentamos en stage
+pero hay que estar tranqui...
+porque no hemos sacado mucha cosa a dev
+pero es eso
+tenemos que actualizar la librería
+porque tuve que hacer un hotfix en producción
+y no me está dejando porque hay librerías
+sé que hay una librería, una dependencia que se actualizó
+y nos está trancando todo
+y eso es un problema porque está rompido
+o sea es un bug que tenemos con el tema de pagos
+entonces es prioridad uno
+hay que atacarlo
+yo ya te paso la rama del site
+que ya la tengo pronta
+después te paso la del back office
+y worker lo voy a mergear
+voy esperando tu zapro
+para ir creando prs y mergeando
+y mergeando
+yo igual voy a estar probando
+yo estuve probando hasta ahora
+estuve reconstruyendo todo y probando hasta ahora
+dale
+seguía que vos me digas
+esta rama del site está todo bien
+no encontré nada, pasás para la del back office
+y yo mergeo la del site a dev
+idem con la del back office
+vamos arriba
+ya te paso
+taladro

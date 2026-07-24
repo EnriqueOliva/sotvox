@@ -1,0 +1,7 @@
+importante importante lo importante es que el update donde nosotros vamos a cambiar el estado
+cancel vamos a eliminar la dirección y ponérsela como vacía y vamos a poner poner en null la fecha
+de creación y asimismo lo que vamos a hacer es eliminarle las suscripciones esas cosas estaría
+bueno que se hagan en una transacción ya dentro del repositorio porque porque si vos los haces
+en dos llamadas distintas desde el servicio al repositorio lo que puede pasar es que por
+ejemplo se actualizan los estatus pero no se le saquen los servicios al cliente y se entendió eso
+vamos a roca entonces

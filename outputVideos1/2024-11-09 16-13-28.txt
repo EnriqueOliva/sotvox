@@ -1,0 +1,7 @@
+La idea con eso sigue siendo la misma, no moquear Stripe Repository, no sé cómo se llama, no me acuerdo,
+sino moquear las llamadas a la librería de Stripe, ¿sí?
+Bien, gracias.
+Es solo un caso de éxito, más que nada también como para entenderlo y poder debatirlo.
+La idea también es como medio que la misma, como es medio un spike o una investigación
+para poder armar el caso base, la idea también para este caso es que cuando lo tengamos,
+tengamos una meeting donde vos me muestres, mirá, porque por más que es un caso,

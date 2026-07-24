@@ -1,0 +1,921 @@
+Buenas, buenas, buenas
+Bueno, buenas
+Ya que está clavido, clav
+Vamos a aprovechar para adelantar la daily
+Así que
+Aprovechamos tiempo
+Igual, justo se jodía con Enrique, punto
+Para copilot con esto
+Yo sigo trabajando con codecs sin problema
+Este
+El plan pro al parecer
+El básico, ya no te incluye los
+Concha de la madre, ya no te incluye
+Algunas cositas ahí
+Bien, vamos a compartir pantalla
+Mientras que voy creando los chichayonas
+Y a Nau que me pidieron
+Ahí ya están sumando
+Está, dado que no nos dio
+Personalmente a mí no me dio
+La vida para cerrar el sprint
+Este, y ahora estamos con cosas
+Mucho más importantes
+Gastón, ¿cómo va?
+Hola, ¿cómo están?
+¿Todo bien? ¿Tenés novedades de Santi?
+No, no hablé con él
+Le mando un mensaje
+No, Kike, no
+Ya sé lo que vas a decir
+Que se solucionó parcialmente
+No, era del sprint
+Perdón, como siempre decís alguna cosa ordinaria
+Y yo no quería
+No quería interrumpir el equipo
+No, está perfecto
+Estamos concentrados, trabajando
+¿Viste cómo es?
+Sí, sí, por supuesto
+Tengo que cuidar al resto de compañía
+Tiene sentido
+Bueno, vamos arrancando con las cosas de desarrollo
+Nada, ayer salió una bola de mierda
+A
+Bueno, no hay más
+Ayer salió una bola de mierda
+A producción
+Y de noche
+De madrugada volvió a salir otra bola de mierda
+Así que sí
+Literal fue una cantidad de cambio
+Medio peligroso el hotfix directo a producción
+Pero la razón es porque estaba iterando
+Directamente con cuenta de banco
+Entonces todos los ajustes que iban saliendo
+Iban siendo directos
+O sea, iban siendo códigos
+Que necesitaba deployar y probar
+Entonces como que fui haciendo varios deploy
+Y aproveché la madrugada
+Ya que nosotros no teníamos
+No tenemos clientes activos aquí
+Como para poder iterar un poquito más
+Bueno, yo sé cómo se trajeron de velo
+Habrán visto una cantidad de cosas que cambiaron
+Pero tal
+Eso
+Ahí Kike encontró un bug
+Y yo estoy trabajando en otros bugsitos
+Voy a estar trabajando ahora
+La idea es
+Este
+La idea de mi lado ahora
+Es corregir esos bugs
+Que probablemente va a salir otro hotfix
+Ahí también
+El Kike tuyo
+El tuyo yo me encargo
+Bien atacado
+Porque está pasando bastante cliente
+O sea, la verdad viene bien
+O sea, me ahorraste pila de tiempo
+Eso está bueno
+Este
+Porque lo que hace es que
+O sea, recuerden que más allá de responder
+Si pueden hacer una pequeña investigación
+Del bug
+Es clave
+Ah, el background, lo que sea
+Esto está genial
+Ahí está
+Ahí Kike, por ejemplo
+Se puso a investigar
+Qué podía estar pasando
+Cosas
+Cosas
+Este
+Cosas que pueden ustedes utilizar
+O me pueden solicitar
+Que por ahora no me lo han solicitado
+Nau y Jonathan
+Pero sí lo pueden tener
+Es acceso al video
+En producción
+Donde pueden ver los outings
+Y ver qué carajo está pasando realmente
+Está
+Entonces ahí capaz
+También pueden adelantarlo
+Este
+Yo después puedo crearle usuarios
+O sea, cuando llegue el momento
+Me lo pueden pedir
+O sea, me lo pueden pedir
+¿Sí?
+Este
+Pero usuarios del BBO
+Para poder tener
+¿Cómo se llama?
+Más que nada para que ustedes puedan
+Verlos o dirlos
+Ahí Kike se puso a investigar
+Y encontró
+Entonces literal me ahorró pilas de tiempo
+En solucionar el bug
+Y eso está bueno
+O sea, es parte del
+Es parte de lo que ustedes tienen que hacer
+Sí
+Este
+No es que no lo hayan hecho
+Porque no surgieron los bugs
+Pero está
+Pero es una prueba
+Es una muestra de cómo
+Lo han solucionado
+Hay muchas cosas que
+Incluyen pago
+Por ejemplo
+Ahí pasó
+Pasaba algo con la cuenta de Carlos
+Que estaba
+Producen
+Entonces es muy difícil
+Darse cuenta de esas cosas
+Porque
+Si no tenés acceso
+A la plataforma
+A model
+Entonces está
+Este
+Pero ahí
+Por ejemplo
+Algo que sí pasaba
+Para tenerlo en cuenta
+Kike
+Con la cuenta de Carlos
+Es que si miraba los audit logs
+En producción
+Cuando Carlos traía
+Sus cuentas de depósito
+Y eso
+Te decía que estaba congelada
+La cuenta
+Como detalle
+Yo voy a solucionar
+Estos issues
+¿Sí?
+Y
+Nada
+Voy a salir con esa producción
+La idea en sí
+Tenemos que reunirnos
+En la tarde
+De Santi
+Y Gastón
+Para ver lo que hay
+¿Está?
+Este
+Tengo
+No he visto lo de notificaciones
+Gastón
+Aprovechemos a meterlo
+De marketing
+No he visto nada
+De lo de notificaciones
+¿Qué más?
+Este
+No
+No
+, o sea
+Y obviamente
+Tenemos que
+Manejar Cypress
+Ahí tienen carta libre
+O sea
+O sea
+Nada más me pasan
+Me mantienen actualizados
+Creamos tales tareas
+Eliminamos tal
+Hicimos tal cosa
+Con los PDRs
+O sea
+Necesito que tengan
+Que me informen
+De todo
+Pero tienen total autonomía
+Ahí en el hecho
+No hay blocker
+De mi lado
+O sea
+Es
+No es tipo
+Se ponen a hacer todo
+Sin avisarme
+El Santi
+Creo que
+Si creamos estas tareas
+Estamos atacando estas
+Necesitamos
+O sea
+Al final del día
+Como los test unitarios
+Puede ser que vayan
+Mandando mucho
+Y yo estoy con cosas
+Que estoy
+Emplotando producción
+Al final del día
+Necesito que me digan
+Santi
+Necesito que revises
+Estas tareas
+¿Está?
+Y yo las reviso
+¿Sí?
+O sea
+De ambos
+¿Está?
+Con respecto a
+Nau y Jonathan
+Les dejé dos packsitos
+¿Sí?
+Todos
+O sea
+Los cuatro
+Cuatro devs
+Tienen
+Las tareas del propio ingeniero
+Que
+O sea
+No hay nada prioritario
+No hay nada urgente ahora
+De su lado
+¿Sí?
+Más allá de un vago
+No hay nada urgente
+Eso quiere decir
+Que además de los test unitarios
+Con el caso de Nau y Jonathan
+Que les dejé
+Las
+Les dejé unas tareas chotas
+Y tienen que arrancar
+A trabajar con los de teammates
+Y
+Y los de selector
+Pero no es nada
+No hay nada
+Que tenga que salir ya
+¿Se entiende?
+O sea
+Nau y los de teammates
+Pueden salir despacito
+Y Jonathan también
+O sea
+Carrefacto y detector
+Puede salir despacito
+Probémoslo bien
+No hay apuro
+O sea
+Lo que ya tenía que salir con apuro
+Que eran las migraciones
+Y las cosas grandes
+Ya salieron
+¿Tá?
+Todo el resto son chiches
+Que si los podemos sacar
+Mejor
+¿Tá?
+Si
+En realidad lo que más me interesa
+Ahora sacar
+Es la funcionalidad
+De Nau
+Que es el hecho
+De poder
+Ver tus permisos
+Y borrarte como teammates
+Eso para mí
+Me parece clave
+Que enseguida que lo tenga
+Y esté bien testado
+Testiado
+Sacá
+¿Tá?
+Que ahí sí
+Bueno ahí
+Quique
+Eh
+Nau
+Cuando lo saques
+Cuando lo mercedes
+Avísale a Enrique
+Porque ahí
+Bueno
+Me mentí yo
+Van a agregar unos
+Creo que no
+A ver
+No sé si agrega unos endpoints
+Creo que puede ser
+Que agregue un endpoint
+Creo que agrega alguno
+No sé
+Nau
+Agrega
+Creo que agrega alguno
+Si no
+Agrega
+La eliminación de
+O sea
+Eliminarme como teammate
+Agrega también
+Este
+Poder
+Bordarte los permisos
+Que es un endpoint nuevo
+Para
+Bordarte los permisos
+Y ahí ya
+Difere
+Ese tráiler
+Que es un endpoint nuevo
+De la compañía en concreto
+O los permisos globales
+Si
+Tá
+Bueno
+Agrega
+Después de ser listado
+Los teammates
+Eso ya lo tenés
+Agrega dos endpoints
+¿Tá?
+Pero este
+De todas maneras
+La masa de endpoints
+Grandes
+Ya la tenemos
+Para probar
+Entonces este
+Cuando lo saques
+Le avisas a Enrique
+Y a Fernando
+¿Tá?
+Y de nuevo
+Jonathan
+Ahí tienen ustedes
+Una vez que saquen este lector
+Tienen para empezar a trabajar
+Con lo de multipermiso
+Si
+Que eso
+Tiene que ser
+Están los endpoints
+Hay que empezar a probarlo
+Si
+Y iterarlo
+Va a llevar tiempo
+Hay que refactorizar
+Toda la página de team
+Entonces no hay
+No hay nada
+O sea lo que voy
+Con eso es
+No hay nada
+Que tenga que salir ya ya
+No hay nada
+Que tenga que salir ya ya
+Si tenemos que llegar
+Al fin de
+Al viernes
+Y tener resultados
+En cuanto a código
+Pero no
+No hay nada
+Que tenga que salir ya ya
+Entonces lo que les pido es
+Pongamos como deadline
+Lo de
+Prompting
+¿Sí?
+Todos tienen que mandar
+O sea para el viernes
+Tienen que estar las 4
+Para el viernes
+O sea yo me levanto el viernes
+¿Sí?
+Y yo
+Y soy bastante permisivo
+Porque normalmente me levanto
+A las 11 o 12
+Entonces
+Cuando yo me levante
+Quiero ver
+Este
+O sea tienen que estar
+Las 4 PRs
+Ya de mi lado
+Así que ese
+Ese es su deadline
+Y lo que tienen que manejar
+Ustedes
+¿Bien?
+Dicho todo eso
+Ahora sí
+Pasamos al lado
+En rec
+Bueno
+Yo no me quiero olvidar
+De nada
+Pero
+Si
+Tuvimos trabajando
+Con varios arreglos
+De distintos bugs
+Que fueron surgiendo
+Como ya sabés
+Anti-testeo
+De varias cosas
+Sobre todo lo de teammates
+Ayer había explotado
+Eso de Carlos
+De lo de JP Morgan
+Y lo de Luciano
+De teammates
+Que bueno
+Ahora ellos volvían
+A consultar
+Y yo
+Te pasé ahí
+Lo de JP Morgan
+Y ataqué
+Como decías vos
+Eso de teammates
+De Luciano
+Y está
+El fix es bastante simple
+Ya tengo la PR
+Y ya grabé el video
+O sea ya lo
+Reproduje
+La
+La
+, la situación
+De Luciano
+En dev
+Y grabé un video
+Y ya vi que
+El fix soluciona
+Lo que le pasaba
+A Luciano
+Ya lo estoy por mandar
+Estoy solamente con
+Iteraciones de copilot
+Y bueno
+En paralelo
+Que es más prioritario
+Lo que vos habías dicho
+De
+De Dropy
+Estuve haciendo
+Varias pruebas
+De
+De declaraciones
+Ahí con respecto
+A lo de Luciano
+No lo subamos
+Con PR aparte
+Pasame los
+Literal
+Pasame los archivos
+Que modificaste
+Y yo lo veo de metal
+Ok
+Está
+O estoy por sacar
+Un code
+Fixa producción
+Con algo
+Entonces así
+Solo trabajamos en uno
+Si
+Dale
+Ok
+Eh
+Ok
+Eh
+Hice pruebas
+Con un partner
+Con dos partners
+En paralelo
+Ahí me ayudé un poco
+Con IA
+Que me
+A que me ayude
+A corroborar
+Que todos los
+Checkboxes
+Todos los campos
+Funcionan correctamente
+Y no
+No he logrado encontrar
+Así inconveniente
+Digamos
+Este
+Incluso la IA
+Es capaz de analizar
+Otras declaraciones
+Que ya están en dev
+Y no
+No hemos encontrado nada
+Pero
+No hemos encontrado nada
+No hemos encontrado nada
+Ahí ya
+Como ves
+Le escribí a
+A Ramiro
+Viste
+Estamos pendientes
+A que bueno
+Está
+Tengamos una reunión con él
+Y ver bien capaz
+Que pasa ahí con Dropy
+De nuestro lado
+Creo que estamos cubiertos
+Como te he dicho
+Salvo que sea un caso
+Medio rebuscado
+O algo que no esté sabiendo ver
+Pero
+Por lo que veo
+De nuestro lado
+Funciona bien
+Yo no sé
+Cómo
+Puede ser posible
+Que el de
+El loco de Dropy
+Se esté equivocando
+Pero
+Pero está
+Eso lo vemos
+Del lado de
+De Fernando y yo
+En cuanto a
+Nuestra prioridad
+De test unitarios
+Ya hicimos ahí
+Bueno
+Como viste
+En el chat
+Ya te pasamos
+O te pasó Fernando
+La propuesta
+De tareas
+Para
+Lo que son
+Los endpoints
+Que todavía no tienen
+Test unitarios
+En site
+Y lo que estamos haciendo ahora
+Que debería haber venido primero
+En realidad
+Es
+Estamos haciendo
+Un relevamiento
+De
+Bueno
+De los test que ya tenemos
+Qué casos de prueba
+Pueden llegar a estar faltando
+Que nos hallamos conmigo
+Es un relevamiento
+Bastante extenso
+Como te imaginarás
+Pero está ahí ya
+Fernando lo está atacando
+Y bueno
+La idea es
+Obviamente
+Seguir con
+Eso
+Ya tenemos
+PRs de test unitarios
+O sea que ya estamos avanzando
+Y tal
+La idea sería
+Meterle a eso
+Básicamente
+Bien
+Bien
+Lo que voy a necesitar ahí
+Es
+Que me pasen
+Cuando puedan
+En QA
+Que Fernando
+El otro día justo
+Lo estuvimos hablando con Fernando
+La cobertura actual
+Sí
+Y después
+Vayamos actualizando
+Cuando se emercen
+Varios test unitarios
+El progreso
+Pasemos la cobertura actual
+De los
+De todos los test unitarios
+De todos los sitios
+Sí
+Obviamente que es
+Solo lo del server
+Y después veamos
+Qué progreso tenemos
+A medida que estamos llegando
+Con los test unitarios
+Sí
+Ok
+Eso
+Vale
+Genial Kike
+Fernando
+Si podés Kike
+Mientras pasame
+Los
+Los ajustes que tengas
+Dale
+Perfecto
+Fernando
+Sobre cobertura
+Es
+No solo
+Tipo el análisis
+De los gaps
+De los gaps
+Digamos
+De los flujos
+Para probar
+Tipo de un tema más lógico
+Los test de integración
+Si no
+Decís tipo de
+De ejecutar
+Tipo una librería
+Que analice la cobertura
+Mismo
+Exacto
+Sí
+Ok
+Pero que solo
+Solo corra el server
+Que no toque el client
+Claro
+Ok
+Está
+Bueno
+Está un poco
+Lo que dijo Kike
+Que estuvimos
+Ahí
+Pasando
+Esas cosas
+Ahora
+Que
+Estaba
+Desde hace rato
+Se trancó un poco
+Pero
+Estaba viendo
+Eso mismo
+De que gaps
+Habían
+Seguía con eso
+Ayer
+Estuvimos ahí
+Con el testing manual
+Y
+Básicamente
+Eso
+Creo que
+Lo demás
+Quedó
+Quedó dicho
+Por Kike
+Lo que sí
+Ahora
+Le meto entonces
+Al prompt engineering
+Calculo que le puedo meter
+En paralelo
+Mientras que estoy
+Haciendo lo de
+Lo de
+Lo del análisis
+De cobertura
+Y
+Y bichar también
+Porque hay alguna
+Perda
+Que salió
+Algún conflicto
+¿Está bien?
+Bien
+Perfecto
+Sí, sí
+Sí, lo importante
+También ahí de tu lado
+Tato
+Es que tenemos
+Muchas tareas
+In progress
+De review
+Bla, bla, bla
+Entonces
+Normalizar un poco
+Esa situación
+¿Está?
+Este
+Bien
+O sea
+Me dejaría cerrar
+Yo por ejemplo
+Cerré una
+Kike te cerré
+La de
+La de ocultar
+Bastado
+Porque terminé
+Haciendo yo
+Con otro approach
+Entonces la cerré
+O sea
+Normalizar ahí
+Las PRs
+Que quedaron
+Sueltas
+¿Está?
+Eso
+Viene de bien
+Y las tareas
+Obviamente
+Obviamente no eliminar
+Sino hacer
+Renombres
+Y todas esas cosas
+Gastón
+Buenas
+Bueno
+Yo estuve
+Haciendo
+Varias tareas
+En marketing
+Ayer
+Liquidé todo
+Lo que me había pedido
+Matías
+Y
+Y Ana
+Así ya
+Yo me quedaba libre
+Solo para hacer
+La presentación
+Que había pedido
+Guillermo
+Entonces nada
+Eso quedó
+Todo pronto
+Y ahora estoy con eso
+Y voy a estar
+Hoy
+Y
+Mediodía de mañana
+Bien
+Bien
+Perfecto
+Bien de bien
+Está con el avance
+La ciudad
+Y todo eso
+Ya tienen todo pronto
+Para discutirlo
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Sí
+Yo les aviso en la tarde
+Cuando esté
+Eso
+Yo no
+Bien
+Bueno
+Ayer estuvimos atacando
+Ahí también
+Un poquito
+Lo que dijimos todos
+Ahí todos esos bugs
+Que habían salido
+Después estuve con
+Actualizando el diseño
+De la página de banking
+Ahí de los headers
+De los selectores
+Y eso
+Que eso ya
+Ya había quedado
+Y ayer también
+Estuve haciendo
+Como esa
+Versión 2
+Del acordeón
+Con los batch
+Ahí adentro
+Eso ya lo tengo
+Ahora que ya tengo la tarea ya voy a subir video y hacer la PR de eso
+También tengo lo de cambiar el color del botón del backoffice
+Eso ya está, así que ahora también ya que está la tarea ya voy a subir la PR
+Y estaba empezando de a poquito a pasar las cosas todo para Dropi
+Lo del selector y lo de mis compañías
+Pero está, viendo el tema del prompt engineer y eso
+Capaz que le meto full focus a eso para tenerlo listo
+Como digo, de tu lado Chona no hay nada que sea urgente
+Lo de ti me pongo a atacarlo tranquilo
+Lo que sí tiene el deadline es lo del prompt engineer
+De tu lado Nahue no
+Así que de ti me vas a encantar
+Bien, temprano en realidad había posado un poco el tema de los permisos
+Porque está casi cerrado para ver el tema del back que reportaste
+Como básicamente no lo pude reproducir
+¿Qué pensás?
+Lo que pasa es que no podías conseguir el payload que trae las accounts
+A ver si es un problema con la data
+Pero fuera de eso, ahora voy a cerrar la PR de los permisos
+Y los ajustes de teammates, así ya la mando
+Ya pude resolver conflictos ayer, unificar el trabajo que hizo Chona
+Me queda por ir a alguna cosa, corregir alguna constante
+O alguna cosa de BEMI, ya dejó la PR
+De review
+Espectacular, bien de bien
+Sí, esa es la única que estaría bueno mandarle
+Después yo no les creé las tareas para
+Ahora me puedo pensar que yo no les creé las tareas para todo lo que es la B3 de teammates
+O crearon alguna
+Pero no para todo lo que es permisos personalizados
+Así que capaz que júntense en la tarde tranqui para dividirlo
+A ver qué tocan, fijándoselo en porque hay de todas esas cosas
+Santi, dale
+Buenas, ¿cómo va?
+Ayer dejé ajustados los planes
+No sé si te acordás que me habías pedido chequear con Guille y Alberto
+Cómo quedaba el plan de Bridge
+Que no lo teníamos más
+Lo dejé ajustado
+También noté que en varias pantallas estaba desactualizado
+Y ya aproveché para actualizarlo
+Dejé en todas las pantallas ya actualizado ese plan como quedaría
+Dejé en todas las pantallas ya actualizado ese plan como quedaría
+Y lo otro
+Que ando trabajando ahora, que me falta un poco para terminar
+Es en la parte de teammates
+Que tengo que unificar todas las partes que tenemos de teammates
+que tenemos como repetía en varias secciones las mismas pantallas
+Y están desactualizadas
+Así ya dejamos terminado todo lo que es la parte de design review
+Así ya dejamos terminado todo lo que es la parte de design review
+Bien, y una vez que liquide eso, ya me queda liquidar lo de la parte del video, y me tengo que crear las tareas para esas dos cosas que te comenté.
+Bien, perfecto. Viene bien.
+Tá, denme un segundito.
+Ah, ya la cámara comenzó a apuntar.
+Denme un segundito, yo ya los llamo Santi Gastón y Enrique.
+Tá, a ver.
+Santi y Enrique.
+No. Llamo Santi Gastón, vemos lo de la IA, ¿sí?
+Denme un segundito si me das, si no lo vemos después del almuerzo.
+Si pueden quedarse, a no ser que tengan la comida, si pueden quedarse y lo vemos un segundito, así ya queda pronto para la tarde eso.
+Yo tengo que bajar 5 segundos, pero ya estoy.
+Y ya vemos a quién le asignamos, dependiendo de cómo sea lo de Bridge, vemos a quién se lo asignan.
+Bien. Bueno, vamos arriba.
+Hasta luego.
+Si quieren, Santi y Gastón, quédense 5 segundos, yo ya vengo, o sea, quédense en el Zoom, muteados y con la cámara bajada.
+Dale, dale.

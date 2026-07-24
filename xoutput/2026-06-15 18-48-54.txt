@@ -1,0 +1,816 @@
+así no ganamos nada
+así no vamos a ganar
+así no vamos a ganar nada
+por más que haga fuerza
+lo que sea
+¿te animás a compartirme la pantalla del BBO?
+¿del BBO?
+¿del BBO?
+de producción
+si me habilitás ahí
+a parar, loco, a parar
+no me salta
+lo que pasa es que te voy a habilitar
+ahí te podés ir viendo una mierda
+bueno
+bien
+así que vas a ver Uruguay
+¿apostaste? ¿qué apostaste?
+¿estás jugando a la penca?
+para hacerte unos pesos
+a ver si jugás algo
+poné monitoreo
+no me vas a calentar
+perdón
+ahí va, bien
+mierda, ¿por qué tan pendiente es eso?
+bueno
+no sé si
+ahí va, poné Slack
+o yo te digo
+pero hay muchas
+pero entrá Slack
+vos deberías de estar
+entrá Slack de Dashbank
+ahí va, entrá problema de transacciones
+pagos, manuales
+viste que hay una cantidad
+que se envía este mensaje gigantesco automático
+¿no?
+sí
+por ejemplo, agarremos una random
+la última
+la de 1542,24
+sí
+está, esa, bien
+entremos
+es un pago Swift, en teoría, ¿no?
+ok
+sí, Red Swift
+no cortes
+a ver si me atienden
+Guille, ¿cómo estás?
+mirá, estamos viendo lo del tema de generar
+los recibos, las facturas
+para las transacciones que hacemos
+por los flujos de China y Hong Kong
+¿sí?
+la pregunta es
+nosotros para ese tipo de facturas
+cuando son Swift
+ponemos el IMAD
+¿no?
+o el IOTR
+bueno, en caso de Wire
+pero ponemos el IMAD
+¿correcto?
+no, me varié
+bueno, está, está, me varié
+el IMAD es cuando es local
+el IOTR
+está
+la cosa es
+nosotros
+como lo único que tenemos
+es la información de la transacción
+porque ustedes hacen un retiro
+del otro lado
+nosotros no tenemos el IOTR
+entonces
+entonces la solución
+que yo te propongo
+es
+vos lo tenés desde
+Infinite
+cuando hacen estas cosas
+pues yo lo que puedo hacer
+es que salte un pop-up
+te pide el código
+y se lo pone
+y se lo implanta la factura
+no, no, no
+le puedo poner el transaction ID
+pero capaz que vos
+te preguntaba
+porque capaz que vos querías poner
+algo específico
+sí, sí, sí
+yo le dije a Santi
+que se juntara
+lo del MTR
+sí, sí, sí
+no, no, está bien
+para nosotros es lo mismo
+sacar un pop-up
+que pongas el código
+o generar nosotros
+te preguntaba por eso
+ah, está, está, está
+si no lo tienes
+está, listo
+bien
+bien
+está
+no, no, está, está
+lo hago para generar
+este
+bien
+está genial
+y lo otro que te iba a decir
+era
+este
+¿qué más?
+está
+no, es
+lo del MTR
+el MTR-113
+eso ya
+estaba Santi
+que se tenía que juntar
+con
+con Carlos ahí
+porque estaba con una cantidad
+de dudas
+de cómo sacar el coso ese
+voy a rellenarle
+toda esa información
+pero si estamos bien
+este
+gracias
+igual estamos moviéndonos
+bueno
+no, no, estaba para el miércoles
+estaba para el miércoles
+la idea que conté
+sería
+sí, sí, sí
+no, no, no
+por eso, por eso
+el problema que
+es un coso gigante
+y está
+sacamos con el micoso
+pero a ver
+está, está, está
+el tema que tenemos
+no, no, a ver
+recién lo atacamos hoy
+no, o sea
+¿dónde está?
+no te olvides
+que recién lo atacamos hoy
+la charla que tuvimos
+fue el viernes
+este
+y Santi se puso a trabajar
+el viernes de tarde
+y hoy
+le pido una pregunta a Carlos
+entonces
+se van a abrir mañana
+o sea
+no lo hagamos
+o sea
+no nos compliquemos mucho
+en el diseño
+lo saquemos rápido
+eso es lo que me quiere decir
+está ahí
+está, perfecto
+está, dale
+se lo voy a
+está, perfecto
+lo voy a transmitir a Santi
+para así sacamos todo
+para que
+dale
+porque tiene
+tiene una cantidad de datos
+Carlos le pasó también
+pero a Carlos le pasó
+unos comprobantes
+con chat GPT
+con diseño
+por eso
+vamos a tener algo en diseño
+yo entendí que
+Santi me había dicho que sí
+pero bueno
+bueno
+, no importa
+lo sacamos
+lo sacamos rápido
+en teoría deberíamos tener
+toda la información
+porque Carlos la tiene
+está, perfecto
+dale, vamos arriba
+cuídese
+chao, chao
+escuchame
+te doy
+la cosa es así
+te viste esa factura
+de 103
+de 100, 1000
+está, entonces si vas
+o sea
+1500 y algo
+entonces
+si vamos a verlo
+sí
+1524 o algo así
+1542
+búscala en las otras
+si querés ponerles como transfer
+pero así te apárece más rápido
+en mon geldó
+entonces
+si, si, si, si pero ya estás ahí
+estás ahí
+sólo buscarla en
+transaction time
+poner transactu
+transfer
+si
+apply
+aprobación
+aclaración
+si
+Andate a la lista del todo
+Andate a
+UDTAIL
+Aroja
+82
+Deposit Instruction
+El problema que tenemos acá es el siguiente
+El tipo está haciendo un retiro
+Y lo está haciendo a China
+Entonces está asociando esta transacción
+¿Qué pasa?
+El tipo hace un retiro
+Y no se da cuenta que nosotros usamos otro RAIN
+En particular
+Entonces, ¿qué es lo que nosotros
+Tenemos que hacer acá?
+Esto se mergea después de lo tuyo de facturas
+No sé, ahí Marti, por eso te traía
+Marti, ¿estás ahí?
+¿Marto?
+Sí, John
+No sé en qué está lo de facturas de Kike
+Lo de Worker
+Pero había dejado comentarios
+Está
+Esto se saca después, Kike
+Pero en teoría nosotros deberíamos agarrar esta transacción
+A hacer un botoncito
+¿No?
+Si no tiene el recibo
+Si es una
+O sea, el if sería el siguiente
+Si es una transfer
+Posted
+Negativa
+¿Sí?
+Si es una transfer
+Posted, negativa
+Vos deberías, donde muestra el recibo
+Deberías poner la opción de generar el recibo
+¿Está?
+Donde muestra el recibo deberías poner la opción
+De generar el recibo
+Y eso envía un evento al Worker
+Que tiene que generar la factura
+Como que si fuera un retiro
+¿Sí?
+O sea, tiene que generar las tres facturas
+¿Está?
+Va a ser como un caso excepcional
+Entre comillas
+Entonces vas a generar las tres facturas para esto
+¿Y estás seguro que está bien?
+Que esto que estamos viendo es 1582
+Y acá es 1542
+A ver, pará
+Sí, te voy a explicar por qué
+Porque nosotros le sacamos el fee
+Le cobramos el fee
+Que son 40 dólares
+Pero lo que hay que depositarle
+Es 1542,24
+Si no me equivoco, lo que aparece ahí es 1582,24
+Perfecto
+Estamos cobrando 40 dólares
+Algo que vamos a tener
+Mierda
+Anotate también
+Hay que fijarse en el site
+Cómo carajos estamos automatizando esto
+¿Está?
+O sea, cómo carajos estamos detectando esos 40 dólares
+Un lado y en el otro
+Porque si hay una variable de entorno
+Tenemos que usarla
+También en el back office
+¿Sí?
+O en el Word
+En realidad
+Hay que fijarse
+Pero la idea
+El objetivo de esto aquí que es
+Si detecto esta transacción
+¿Está?
+La agarro
+Y envío un evento al worker
+Para que
+Para que genere la factura
+Es como una especie de generar manual
+Entonces genera las facturas manual
+¿Está?
+Algo que es muy importante
+Y hay que chequear antes de enviar el evento al worker
+Es este transaction ID
+El provider transaction ID
+Que tiene la OTC
+¿Está?
+Transaction
+No puede bajo ningún concepto
+Estar asociado a una OTC transaction manual
+Pero eso lo vas a
+No lo vas a chequear cuando listes
+Lo vas a chequear únicamente a nivel de backend
+Y tenemos que mostrar ese error
+Es decir, che, mirá, no
+Esta transacción está
+Esta transacción no puede generar recibo
+Porque está asociada a una transacción manual
+¿Está?
+Ok
+¿Por qué?
+Porque las transacciones manuales
+Son el flujo de compra y venta
+Que vos ya hiciste el flujo
+Para generar el recibo
+En el cell o triangulation
+Vos ya hiciste el flujo para generar este recibo
+¿Sí?
+En realidad en el cell
+¿Está?
+En triangulation no, pero sí en el cell
+Entonces acá lo que necesitamos es eso
+Necesitamos
+Que vos agarres
+Y si detectás que es una
+Es una transfer negativa a Postel
+Y no tiene el receive document
+Pones para recibirlo
+Para generarlo
+Cuando envías el evento
+Obviamente te fijás
+¿Sí?
+Este
+Te vas a fijar
+Che, mirá
+Este tipo
+Esta transacción
+No está asociada a una OTC transaction manual
+Es el proceso contrario
+A lo que vos hacés
+Lo que hiciste en el cell
+Que es fijarte
+Enlazar
+Traquear una OTC transaction
+A partir de una OTC transaction manual
+En fin
+Vos acá tenés la OTC transaction
+Esta lista de OTC transaction
+Las manuales
+Son las de Bolivia
+Entonces
+Vos ahí te fijás eso
+Y con eso
+Lo que hacemos es
+Este
+Generar el receive
+Deberías tener la misma información
+Para generar el receive
+¿Tá?
+Lo que hay que restarle
+Son esos 40 dólares
+Que hay que fijarse en el site
+Porque si te fijás
+El site lo está haciendo
+Fíjate que acá
+Le puso
+1582,24
+Pero a Slack
+Envió
+40
+Eso quiere decir que le sacó el fee
+¿Se entiende?
+Se lo cobramos al cliente
+Pero se lo sacó
+¿Tá?
+Entonces hay que
+En la factura de OTC transaction manual
+Tiene que aparecer
+Y si querés
+Grabate este ejemplo
+Tiene que aparecer
+1542,24
+Que es lo que nosotros le depositamos
+¿Tá?
+Ese recibo
+La comisión
+Nunca la pusimos
+En la factura
+Nunca pusimos el fee
+En la factura
+Estamos alineados con eso
+¿No?
+Ok
+Bien
+Entonces
+Vos mañana
+El objetivo que tenés
+Quique
+De tu lado
+Va a ser
+Yo no me voy a matar
+Si lo llamo
+Voy a tener que levantar
+Mañana temprano
+Me cago en la...
+Está jugando Uruguay
+La concha la mano
+¿Tá?
+Quique
+Yo mañana necesito que esto
+Quede lo más
+O sea
+Que vos mañana testees el cron
+Todo
+Y que esto pronto
+Y necesito
+Esta funcionalidad pronta
+No sé
+Magia
+¿Sí?
+O sea
+Tenés todo el día de mañana
+Tranqui
+Este
+O sea
+Ya sabes
+Todo esto
+Podés ir adelantándolo
+Reutilizando la lógica que tenés
+Esto va a ser un flujo especial
+Porque es para esto especial
+O sea
+Pero hay que saberlo
+Sacarlo
+Yo necesito que la gente
+Pueda empezar a generar
+Estas facturas
+Porque lo que va a pasar
+Es eso
+O sea
+Vamos a tener que ir nosotros
+Ir a hacer click
+Y generarle la factura al cliente
+¿Tá?
+¿Sí?
+Porque no hay
+No hay trigger
+En sí
+Porque como usan
+Es como que si yo
+Me depositara mi cuenta
+A Santander
+Y yo en Santander
+Verá que hacer el pago
+Ahí hago cualquier cosa
+No tenemos esa conexión
+A cualquier cosa
+¿Entendés?
+Entonces
+Sí o sí
+Una vez que se hace el pago
+Por ejemplo
+Yo hago la transferita
+Uy
+Lo que mierda
+Se hace el pago
+Lo que mierda sea
+Este
+Recién ahí
+Es cuando pueden ir a hacer
+La transfer al otro lado
+¿Tá?
+Entonces recién ahí
+Perdón
+Es cuando pueden generar recibo
+Entonces
+Yo necesito
+Mañana
+Quique
+100% foco
+En terminar todo lo de recibo
+Yo me voy a
+Marti
+Yo me voy a encargar del site
+¿Tá?
+Pero necesito 100% foco
+En lo de los recibos
+¿Tá?
+No ataquemos otra cosa
+No le des pelón
+O sea
+Tato
+Tirale cosas
+Decirle ponete con mails
+O lo que sea
+¿Tá?
+Y
+Ataquemos eso
+¿Sí?
+Y ahí Marti
+Voy a tener
+Vamos a tener que meter a Jonathan
+Eh
+Hacer otro recibo
+En particular
+Que tiene que salir también
+En el día
+Que es el MT-103
+¿Tá?
+Entonces
+¿Tá?
+Es eso
+Quique
+Si tenés
+Si tenés alguna duda
+Es el momento
+Dile
+¿Me van a dar borillas
+Si les mando
+Lo de la factura ahora
+O
+Él sale con lo de
+Yo voy a estar
+Voy a estar literal
+Todavía no me voy a levantar
+A ver
+Un poco
+Todavía no hay partido
+De Uruguay para mí
+Así que este
+Si lo mandás ahora
+Yo te voy a dar pelota
+Y Marti sería lo más alto
+Eh
+Este
+Pero tá
+Eso
+Si querés bajate
+Quique
+Si tenés alguna duda
+Decime
+Si no bajate
+Pero sí serían esas tareas
+¿Tá?
+O sea
+Vuelve a involucrar
+De nuevo
+Back office y site
+¿Sí?
+¿Se entiende?
+O sea
+Vuelve a involucrar
+Back office y site
+Todo este chiste
+Ok
+¿Tá?
+Sigo
+Sigo con esto
+¿Tá?
+Todo lo que puedas
+Todo lo que puedas adelantar
+Los comentarios de Martina
+Todo lo que podamos hallar
+Si podés probar el worker
+Con un usuario tuyo
+Que creás algo
+Y fijarte que esté todo ok
+La migración
+Sí, sí
+Lo hice, lo hice
+¿Tá?
+Entonces
+Sacale la mierda al dry run
+O sea
+Si ya lo probaste
+Y está ok
+Quique
+Sacale al carajo el dry run
+Sí
+O sea
+Ni saquemos dry run
+O sea
+Ya
+Dale que es tarde
+Y es más
+Lo sacamos
+Si que
+Si
+O sea
+Una vez que esté marchado
+El back office
+Lo que podemos hacer
+Es yo saco el fix
+Para el site
+Porque es más o menos
+Hacer un copy paste
+De lo que vos hiciste
+En el back office
+Para el site
+Saco el fix
+Para el site
+Y nos vamos
+O sea
+Mañana tendríamos que salir
+A producción
+Con todo esto
+Y algo que Jonathan
+También tiene que sacar
+¿Sí?
+Ok
+Dale
+Marti
+Quédate un segundito
+Y vamos arriba
+Un abrazo
+Pasá
+Si querés
+La apartaría
+Pasála tranqui
+No hay apuro
+Este
+Eso manejá
+Ah
+También otra cosa
+Que podés ver
+Es sumar a la PR
+Ya generación
+Del worker
+Podés sumar
+Ya lo que sería
+Este
+¿Cómo se llama?
+Podés sumar
+El
+Este
+¿Cómo se llama?
+Podés sumar esto
+De generar la factura
+De este evento
+Si te viene bien
+O sea
+Si te queda práctico
+Porque
+Corregir los comentarios
+Seguramente quedan pocos
+De Martu
+¿Tá?
+Debe ser alguna boludez
+Y ya podés
+O sea
+Para no crear PR
+Y otra cosa
+Porque ahí ya tenés
+Todo el código
+El otro
+¿Se entiende?
+Y tenés que generar
+Estas tres facturas
+Mientras no les quede denso
+De corregir a ustedes
+Digo
+Quiera
+Sí
+O sea
+No sé qué pensás vos Marti
+Si no lo que podés hacer
+Es una PR contra esa
+Capaz que podés hacer
+Una PR contra esa
+Capaz que es mejor
+Si hacés una PR contra esa
+Ya está
+¿Tá?
+Hacés una PR contra esa
+Si nosotros podemos corregir
+Podés corregir el código
+Vos vas a poder reutilizar
+Todo esto que ya está
+¿Se entiende?
+Entonces eso va a ser
+Lo más sencillo
+Mientras que no se marche
+Igual corregí los comentarios
+Ahora de esa PR
+Capaz que lo marcheamos
+Y ya generás una nueva
+Digo porque
+La idea es que reutilices
+Toda esta puta lógica
+Que hiciste de worker
+Que la reutilices
+Porque son las
+La misma factura
+Solo que en vez de usar
+Una OTC transaction
+Que es un withdrawal
+Es una transfer
+Capaz que podés poner un if
+Y ya está
+Yo qué sé
+No sé
+Fíjate eso vos
+Ok
+Este
+La restricción es esa
+O sea
+Tiene que ser una transfer
+Negativa
+Posted
+A nivel de backend
+Fijarse que no esté alineada
+A una OTC transaction manual
+Y ya está
+Y ahí le generás
+La misma factura
+Es más
+Es la misma factura
+Que una
+Que lo que estás haciendo ahora
+Porque en el caso de Bolivia
+Viste que nosotros poníamos banco
+Generábamos
+En español
+¿Te acordás?
+Creo que la de Bolivia
+No generábamos ni en inglés
+No, creo que no
+Está en español
+Claro
+Y ahora la de Bolivia
+Quedó en español
+Y con este fallback
+Que vamos a hacer
+Tipo va a seguir funcionando
+Y ya está
+Vamos a traerlo en español
+Está listo
+Entonces
+Esta factura
+Sí la vamos a necesitar
+En varios idiomas
+Entonces es literal
+Es un
+Capaz que vos
+Podés poner un if
+Para que funcione literal
+Este mismo evento
+Porque vos le vas a pasar
+Al final del día
+Una OTC transaction
+Entonces podés poner un if
+Y reutilizar todo el evento
+Hay que ver ahí
+El additional info
+Si tiene la misma información
+Lo complicado acá
+Es ver en el site
+Esos 40 dólares
+Que está restando
+Cómo carajo
+Hace el site
+Si lo saca una variable
+En torno
+Si el site no lo saca
+De una variable en torno
+Vamos a tener que
+Hardcodear 40 dólares
+Y no queda otro
+¿Está?
+Ok
+Literal no nos va a quedar otro
+Bueno
+Vamos arriba
+Quédate Marcio
+Si podés
+Gracias
+Deja

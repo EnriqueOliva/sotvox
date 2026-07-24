@@ -1,0 +1,338 @@
+Hola, ¿estás motivado Santi?
+Ah bueno, hablé del pedo y eso
+Estamos teniendo dos temas
+Uno, Nowex
+El problema que estamos teniendo es el de... ¿cómo se llama?
+Es bastante retorcido, pero nosotros los documentos de respawning y los documentos de liquidación los guardamos con nombres distintos
+Entonces lo que está pasando en la triangulación
+Que para mí también está pasando para el flujo de compra y venta
+Y es un caso súper recontra, recontra, retorcido
+Es, vos te pones a liquidar la operación y subir los documentos
+Viste, ya se sube en la base de datos y en el C3
+Después vas y cancelás la operación
+Te quedan los documentos subidos corruptos
+Voy de nuevo
+Está en Awaiting Phone, la compra, la venta o la triangulación
+Voy, subo los documentos en la página de reconciliación
+¿Sí?
+No importa para el caso que sea
+¿Está?
+O sea, normalmente es cuando estás liquidando
+Tanto compra, como venta, como triangulación
+Estás liquidando
+Vos ahí subís los documentos
+Vos cuando la cancelás nunca podés descancelarla
+¿Estamos alineados?
+Ahí no
+Pero el flujo es que vos cuando estás a Awaiting Phone la podés cancelar
+Y es el único momento, tanto en compra, venta o triangulación que podés subir documentos
+Entonces ahí lo que está pasando es que si vos subís los documentos
+Quedan en la base de datos
+Después el cliente va y la cancela
+O sea, se cancela
+¿Sí?
+Lo que está pasando es que quedan esos documentos corruptos
+Ah, es un caso de recontra, retorcida
+Pero lo que hay que hacer en backend
+Es que si hay documentos
+En cuanto vos
+Y el Estado subís a Awaiting Phone
+Y la cancelás
+Sea la operación que sea
+Y eso está bueno porque te hace
+Hace que esto te sirva para
+Para compra, para venta y para triangulación
+¿Sí?
+Venga
+Lo que vos lo que tenés que decir es
+En la operación que cambia de Estado
+Si el Estado está a Awaiting Phone
+Y se pasa para Refunding
+¿Sí?
+O sea, si estás pasando entre esos dos
+Y tenés documentos
+En los Own, Towns, Own Receipt
+Y Destination Own Receipt
+Los tenés que borrar
+Tanto de ese 3
+Como de la base de datos
+Si no llegan a existir en ese 3
+Lo borrás solo de la base de datos
+¿Ah?
+Es un caso bastante retorcido
+Pero está
+Porque recién nos pasó con Martina
+Que por ejemplo
+Estábamos liquidando
+La cancelamos
+Entonces cuando fuimos a ver
+Pasaron los documentos
+Y viste que se te cuelga
+El Temporary Link
+Se te cuelga
+¿Ah?
+Entonces lo que tiene que pasar es que
+Para ese caso puntual
+No importa el tipo de lo que sea
+¿Ah?
+Vos tenés que agarrar
+Y eliminar
+Los documentos de los Own
+Que son los que tenés subidos
+Hasta el momento de nuestro lado
+¿Ah?
+Los tenés que borrarlos
+Tanto de la base de datos
+Como de ese 3
+Y lo importante ahí
+Nahue
+Es que esos se borran
+Se borran de la base de datos
+Se borran de ese 3
+Y esos
+Hacelo global
+O sea va
+Medio global
+Vigate hasta donde puedas
+Pero
+Es como medio global
+Porque si no
+No importa
+Vas a necesitar
+La triangulación
+Para armar el pad
+¿Ah?
+Vos acceso a ese 3 tenés
+¿No?
+A ese 3
+O sea
+Te digo
+Te digo
+Si el usuario que tengo
+Tiene acceso
+¿Ah?
+¿Ah?
+Chijate
+Porque lo que estaría bueno
+Es que vos chequees
+También que los archivos
+Se están borrando en ese 3
+¿Ah?
+¿Sí?
+Y el caso
+Es que no existan ese 3
+Pero si existe el documento
+En el array
+Lo eliminás del array
+Y dejás en el array vacío
+¿Ah?
+Yo sé que estabas
+Con otras cosas
+Pero necesito poder
+Es un fix
+Chiquito
+Si
+Si
+Este
+Este
+Así no te
+No te complico
+¿Ah?
+Vale
+Me pongo con eso
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si ves que te sale
+Ahora en un ratito
+Lo sacamos
+Si no
+Lo vamos a mandar
+Como hotfix
+A producción
+Porque tenemos que salir
+A pronto
+¿Ah?
+Porque es un
+En realidad es bastante retorcido
+Pero quiero evitar esos casos
+En que se corrompa todo
+¿Ah?
+Bien
+De más
+Después
+Cuando lo tengas
+El fix y todo eso
+Ya
+No sé si tenías tarea
+Para el otro
+Pero si no
+Creamos una tarea en conjunta
+Que sea
+Arreglar esas cosas
+Creo que nos enviaste ahí
+Sí
+Ahí te mandé para
+Algo simple nomás
+Sí
+O sea
+Ojo que es para ese caso
+Nomás
+El resto de casos
+Se tiene que seguir viendo bien
+Ojo no
+Claro
+Es nomás
+O sea
+Lo que nos pasaba
+Que quedaba un ancho
+Quedaba con un espacio
+Entre botón y eso
+Que quedaba horrible
+Si podemos liquidarlo
+Nomás para esos casos
+Fijate que el resto de casos
+No se corrompa con eso
+Porque
+Había quedado lindo
+Sin moda
+Y que lo que nos está pasando
+Con los correos
+Es que cuando
+Finalizamos
+O reyectamos
+No nos está llegando
+El correo
+A la venta
+Al comprador
+Y a la gente
+Por otra parte
+No sé por qué
+Ok
+En los casos de liquidación
+¿Tá?
+No sé por qué
+Pero no nos está
+O sea
+Con Martina es el único
+El correo
+Que envías
+Cuando es completed
+O rejected
+Esos dos casos
+Ni para compra
+Ni para venta
+Ni para liquidación
+Ahí jugá con las compras
+Y ventas
+Y triangulaciones
+Que vos tenés creadas
+A tu nombre
+¿Tá?
+O alguna que esté
+Media corrupta
+Como para llevar
+A la sociedad
+¿Tá?
+Pero por alguna razón
+No nos está llegando
+El correo
+¿Cuál es el estado original
+Y cuál es el estatus
+Final, digamos
+En esa parte?
+Awaiting phone
+A completed
+Awaiting phone
+A completed
+Y después tenés
+El otro que es
+Rejected
+A este
+Refunding
+A rejected
+Awaiting phone
+A completed
+Y refunding
+A rejected
+Si necesitas
+Unite con yo
+En la
+¿Tá?
+Para
+Le pedís una manito
+A John
+¿Tá?
+Porque no están
+No están llegando
+No sé
+No sé qué está pasando
+No están llegando
+¿Ok?
+¿Eh?
+O sea
+Yo estaba seguro
+Que estaban llegando
+Pero no
+O que me llegó
+Alguna vez
+Ese correo
+Por importante
+Es el único caso
+En que enviamos
+Como que a dos usuarios
+Lo estamos haciendo bien
+Esos 3 encargos
+¿No?
+¿Quién cree?
+O sea
+Es como que le enviamos a uno
+Y después también
+Le enviamos al otro
+¿Tú crees que le enviamos
+A uno o al otro?
+¿Tá?
+Porque tendría
+Que llegarle a Jonah
+Y a mí
+Dos correos
+Cuando la liquidás
+Y
+No nos llega
+Lo bueno
+Es que no nos llega a ninguno
+Así que capaz
+Que está por ahí
+¿Ok?
+Bueno
+Nahue te dejo
+Y yo
+Y
+¿Qué te pides?
+¿Avisas?
+Ya te confirmo
+El acceso a ese 3
+Lo tengo
+¿Ok?
+Y que le puedes pedir
+Una mano a Jonah
+Si estás medio apretado
+Puedes pedirle
+Que te recree
+En esos casos
+Y a ver si le llega
+A esos correos
+¿Ok?
+¿Tá?
+Dale
+Vamos a reír
+¿Ok?
+Dale
+Dale
+Dale
+Dale

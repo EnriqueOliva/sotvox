@@ -1,0 +1,476 @@
+Bueno, bien de bien, tenemos un poquito que ya comparto, me voy a arrancar la onda.
+Buenas, buenas, buenas, el modelo 4.7 no está, ¿no?
+Este, Kike, que lo pasaste.
+Sí, sí.
+No, aún no.
+A mí, yo los tengo, sí, yo los estoy usando, ya se me actualizó.
+¿En serio?
+Sí.
+¿En Joke Gold?
+Sí.
+No sé cómo alijan los usuarios, pero...
+Creo que será una beta, ah, mirá, ya está el 4.7, ya está, bueno, bien de bien.
+Bueno, este, arranca Andonga.
+Está, nada, yo lo que vengo haciendo es apagando un poco los incendios, tengo que ordenar el sprint, la verdad.
+Estoy arreglando los incendios con los que son Webhook y transacciones, ¿está?
+Ayer, este, también sincronicé, ya se, o sea, para noticia de todos,
+ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede, ya se puede.
+Se puso, se pudo hacer un retiro con OneMoney, tanto, y depósitos y exchange, o sea que está todo funcional, lo que, lo que estoy trabajando ahora, este, es el hecho de tener, ¿cómo se llama?
+El, ah, me sale la palabra, el, bueno, nada, que se genere todo bien, ahí estamos teniendo un temita con la factura que no se está generando, este, hay una cosita más que no se está, que no se está generando y vamos a tener que trabajarlo.
+Está, este, ahí probablemente Kike te pide un postcramp para verlo de la factura, este, que eso vamos a tener que manejarlo, y, este, bueno, nada, estoy cuadrando todo lo que es los webhooks y eso para alinearlo para que al cliente se le muestre toda la información, pero ya están dando bastante bien.
+Eh, ¿qué otra cosa?
+Eh, está, nada, de eso de mi lado y después estoy, bueno, ahí más o menos viendo los, los bugs que vengan surgiendo, tengo que atacarlo de los, los métodos de pago.
+Y cambiar los, los correos, ¿tá? Que eso, este, los sigue estando pendiente, ¿bien?
+Eh, ¿Kike?
+Sí, más allá de esos bugs y eso que estaba saliendo ayer, que se estaban comentando, pasamos enseguida a lo que fueron test unitarios con, con Fernando, estamos ya, como decís, vos atacando a Mansalva, yo ya creé, eh, todos los, eh, creé tareas para todos los endpoints que no tienen test, eso lo puse en mi backlog porque el de Fernando ya,
+ya está bastante cargado, le voy a ir pasando de a poco, eh, ya, yo mandé test unitarios ahí para revisar, Fernando también, este, así que bueno, la idea es seguir con eso, eh, Fernando seguramente lo comentará ahora, pero, eh, también, bueno, obviamente estamos con el relevamiento de qué, qué cobertura actual tenemos, qué test tenemos ahora y por otro lado, eh, qué casos de pruebas faltan en el site, en los test que ya están en el site, eso ya, ya lo estamos por mandar también.
+Así que nada, y también estamos, ahora ya estamos también por mandar, obviamente, lo que es la, las tareas de Promi Ingenier, que eso, bueno, vos comentabas que es importante que para mañana ya lo tengas de tu lado, así que vamos a asegurarnos de que eso quede pronto hoy también, así que eso.
+Bien, bien, eh, Fernando.
+Bien, eh, está un poco, siguiendo lo que dijo Enrique, seguimos analizando a fondo los test y sus coberturas están más allá de, de, de la librería esa.
+Bien, bien, eh, Fernando.
+Sí, igual yo lo que les pedí, o sea, capaz que no quedó claro, pero necesito que me digan la cobertura que les da, aunque sea un 10, 15%, 30%, lo que sea, no, es un número, no es, no es, eh, no es que.
+De la librería.
+No es tipo, no me interesa resulta, analizar el resultado, sino me interesa.
+El, el, el porcentaje que nos da y después lo que me interesaría ver es cuando ustedes terminen poder comparar ese porcentaje con lo que está ahora y ver cuánto avanzamos, ¿tá?
+Ignorando lo que es toda la carpeta client, ¿sí? O sea, no, no interesa, por lo menos para que quede claro, no me interesa que el porcentaje sea bajo, alto o que el análisis realmente aporte valor.
+En el sentido de que les permita a ustedes decir si están atacando bien los test o no. O sea, estaría bueno que sí, pero es lo que necesito.
+Como probablemente nosotros.
+No ataca, o probablemente no, nosotros no lo atacamos unitariamente, sino hacemos test de integración, ¿sí? Lo que necesito es ver qué cobertura tenemos hoy en día con esos test de integración y lo que me interesaría comparar es posteriormente cuando ustedes saquen todos los test nuevos al site, qué resultado tuvimos, qué avance tuvimos de esa cobertura, ¿tá?
+Y también empezar a usar, empezar a usarlo como, como métrica para ver si estamos atacando un test unitario bien o no.
+Sí, o sea, decir, bueno, está más o menos como lo hacemos y este de forma de como un test de integración, bueno, está, ¿qué tanto cubre un test de integración? Por ejemplo, si yo, algo que estaría bueno también a futuro es ver, decir, bueno, está, yo subo un test nuevo, yo subo un test nuevo, ¿sí? Y bueno, está, como es un test de integración, me cubre el 70% de la cobertura de lo que está de código, ¿está? Porque no es unitario.
+Claro.
+Como lo atacamos nosotros, debería cubrir el 100%, pero, bueno, está.
+Otra cosa, Tato, es, para que Kike esté al tanto, Fernando se tiene que reunir con el equipo de banca para, este, relevar lo que son los permisos. Nosotros sacamos un nuevo permiso Banca Assistance, ¿sí? Y solo se está, o sea, solo le dimos permiso al KYB.
+Entonces, ahí lo que necesitamos, Tato, es que vos te juntes con el equipo y releves ahí.
+Sí, sí, ya acordé.
+Permisos.
+Está. La idea es relevar qué permisos están faltando o qué es lo que tocan ellos que ahora no están pudiendo tocar. La idea es que en lo posible le des permisos de read y si es necesario le das permisos de editar, ¿está? Pero la medida de lo posible es solo de read, ¿está?
+Puede ser que vos tengas unificado algún permiso que es editar y visualizar y ellos te digan solo necesito verlo. Entonces, ahí vamos a tener que separarlo en dos, ¿sí?
+Bien.
+Eso es importante.
+Entonces, una vez que tengas eso en claro, eso, en tu caso, es más prioritario que los tres unitarios. Así que yo necesitaría que vos, enseguida que tengas eso, me pases la proyección y ya te pongas a atacarlo contra el Bacofi y el Dev, ¿está?
+Ok, ok. Bien. Después estuve corrigiendo comentarios y actualizando PRs porque, claro, después de este último tipo, ¿verdad?
+Sí.
+Que hubo IPRs que están bien, tipo, aparecen todavía, pero si hago el merge, después saltan errores. O sea, falla el pipeline. Entre ellas, las que estuve revisando comentarios, por ejemplo, las de prompt engineering, estuve cada vez organizando la reunión por el rol de banco asista que están bloqueados.
+Ahora tengo la reunión y les propongo la tarea.
+Gracias a ustedes. La idea era, después de eso, de proponerme las tareas, seguir con los análisis de cobertura, luchar algunas otras PRs, también luchar las PRs de prompt engineering de Kike y seguir corrigiendo mis PRs que queda eso. O sea, entiendo que lo prioritario es lo de banco asista y me gustaría, ¿está? Eso, corrigir las PRs.
+Ok.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+que cerrar concierto. Entonces el viernes recién, antes de irte una hora antes, necesito
+que te pongas con esto para decirme qué hacemos con tu sprint o cómo vamos ajustando el sprint
+a lo que se va a hacer el lunes. Dado que es un caso sumamente especial con lo que pasó
+con los test unitarios y que tu caso es solo test unitario, una de las soluciones podría
+ser crear una tarea que refleje eso, con una gran descripción. Sería una excepción única
+que no hemos hecho hasta ahora porque es un sprint doble también. Para poder acercar
+y mover a todo esto que tiene un punto y tiene sentido volver a crearlo.
+Bueno, yo estuve revisando el APR de Jonathan, leí los comentarios. Después seguí haciendo
+test en Figma con Codex.
+Para diseñar, más que nada. Ya habíamos probado alguna cosa ayer, pero bueno, seguí
+un poco. Nada, profundizando en eso. Que lo vemos bien el viernes, porque da como para
+hablar. Después seguí con la presentación de Guillermo para AFI. Lo bueno es que sigo
+en eso todavía y supongo que la termino hoy. La tenía para mañana.
+Como tiempo límite, pero bueno, creo que para hoy ya queda. Y bueno, después sigo
+esperando también la review del sistema de notificaciones. Ahí cuando lo puedas ver.
+Eso que nada, puede tener alguna iteración más. Pero nada más.
+Y eso lo tengo pendiente. Yo hoy lo voy a intentar revisar hoy de tarde.
+Este...
+Pero bien. Sí, porque así lo empezamos a desbloquear.
+Viene bien.
+¿Santi?
+Buenas. Por mi parte, no sé si viste ayer, Santi, que te pasé lo del copy ese del KYB.
+Que quedó ajustado y en base a lo que me habías dicho.
+Sí.
+Sí.
+Sí.
+Lo que te iba a decir con ese copy es borrarlo.
+Sí.
+Efectivamente.
+OK.
+Porque está... O sea, no lo borres. Dejémoslo en Standby. Pero no lo pasemos a Rayford.
+O sea, dejalo por ahí en Rayford. Porque por el paso hablé con Guille y cambiamos de opinión
+sobre como tratar esos temas con Banca. Entonces este... Nada.
+Lo dejo ahí en Design Review por las dudas. O sino lo paso a Unhaul. Lo que pasa es que
+es... No. Que quede ahí, por si en algún momento lo volvemos a utilizar.
+La tarea ya matale
+Perfecto
+Bien
+Bien, lo otro
+Ahora estaba bichando
+La PR que pasó en la web
+Ya le dejé comentarios
+Recién
+Creo que probablemente
+Dejé comentarios de más
+Porque vi como que
+Había un video en el que se mostraban
+Cosas que no estaban actualizadas
+Pero sin embargo en las capturas de abajo
+Vi que ya lo había actualizado
+Así que puede ser que algún comentario haya dejado
+Que ya esté actualizado
+Ahora estaba terminando
+Con ajustar
+Lo de teammates
+Que ya debería quedar para dentro de un ratito
+Y ya desean ready for dev
+Si, toda la parte de ready for dev
+Y ahí ya quedaría todo liquidado
+Este
+Que tal, realmente eso me llevó un poco más de tiempo
+De lo que esperaba, pero todo
+Y bueno
+Ahora después me voy a terminar
+De meter
+De
+De
+A parte de la guía esta
+De videos que la dejé abandonado
+Voy a retomar eso
+Si, después tenemos también lo del drawware
+¿Te acordás?
+El drawware de?
+O sea, el napback
+Ese ajuste que teníamos que hacer
+Para la parte de notificaciones
+Si, es como aparte
+Lo de notificaciones
+O sea, ¿te acordás que nosotros habíamos
+Pensado en
+Gastón había arrancado vos
+Con los chequeos de la landing
+Y yo había arrancado
+La idea era que
+El napbar
+O sea, una de las cosas que vimos
+Es que el napbar se estaba mostrando
+Trabajando en espacio mobile
+Y no estaba acoplado a lo que es diseño
+Entonces
+Está corajido un poquito
+Definir ahí como
+Continuamos con el napbar
+Si, si, mismo también chequear
+En dev como está el
+Drawware de la derecha, a ver como lo tendríamos
+Que trabajar
+Porque es un poquito
+Complicado dejarlo fijo con el
+Largo fijo
+Hay como un glitch ahí raro
+A veces con los largos
+Entonces, nada, tenemos que
+Tenemos que trabajar
+Está perfecto, yo me creo una tarea
+Para eso, si no me olvido
+Y está
+Le doy más prioridad a eso que la guía de video
+¿No?
+No, dale prioridad a la guía de video
+Dale prioridad a la guía de video porque
+Seguimos sacando features
+Y yo me gustaría que este salía video antes de que
+De que saquemos
+Todo el nuevo video
+Todo el nuevo módulo de teammates, de personalizaciones
+Pues ya Nahue sacó
+Otra cosita y seguimos sin la guía
+Entonces este, creo que la prioridad
+En sí sería lo de la guía de video
+Más allá de optimizar, dejar en
+Ready for dev todo lo de teammates, creo que esas dos
+Cositas, sería lo más importante
+Después, este, volví a pincharme
+En la tarde por lo de Claude
+¿Está?
+Porque ahora voy a estar bastante
+Volví a pincharme en la tarde
+Dale, impecable
+Bien de bien, Nahue
+Había visto que Santi hace nada de juego con los comentarios
+Este, voy a resolverlos ahora
+Después de subir la APR
+Con el fixa, el bug del drop down
+Que vimos hoy
+Este, en el caso de Digital Wallet
+Y después de eso
+Y corregir los comentarios
+Se irían a terminar lo que teníamos
+De Promission Earring
+Bien, bien, perfecto
+Bien de bien
+Está ahí, tenemos lo del drop down
+Chiquito, eso
+Ese bug
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Eso
+Paseme tareas
+También te digo, Jonah
+Bien, este, bueno
+Yo ayer estuve terminando ahí con todos los
+Los bugsitos esos que fuiste mandando
+Ahí a front
+Vi que Gastón había dejado ahí unos
+Unos comentarios
+Que ya iba a atajar y ahora estaba atacando esto
+Lo de
+Lo de la URL de los sitios
+Que tal, te comenté ahí que estaba dando
+Está dando cores
+Ahí no sé, te iba a preguntar después a ver cómo queremos
+Hacerlo
+Hacerlo porque
+Si lo dejamos
+Porque hoy se hace el llamado, se hace directo desde el front
+Claro, yo lo que te decía es
+Cualquier sitio que tenga, que no tenga bien los headers
+Va a dar problema de cores
+Siendo desde el browser mismo
+Porque es más una restricción del browser que de
+Vamos a tener que hacer un endpoint
+Como había hecho Martín al inicio
+Y intentemos
+No sé si podemos evitar eso desde
+Desde el backend
+Calculo que el backend lo único que necesita
+Mirá, para ser concreto
+Lo único que necesitamos saber es que devuelva un 200, 301
+O sea, que haya algo vivo del otro lado
+No tiene más ciencia que eso
+Que sea HTTPS y que tenga
+Algo vivo
+Creo que es HTTPS que pedimos
+Obligatorio, ¿no?
+Sí, yo ahí estaba hablando
+Estuvimos discutiendo
+Un poco con Nahue
+Si lo hacemos desde el backend
+Tema de seguridad y eso puede estar medio
+Complicado
+Ayer estaba comentando que
+Tendríamos que variar
+Ejemplo, no sé, porque
+Estamos dejando que cualquier usuario
+O sea, que tenga acceso a QIBI
+Pueda poner una URL
+O sea, como esperada
+O maliciosa
+O capaz que le arroba un type
+Y termina en una URL maliciosa
+Cosa de que no nos
+No nos acabamos algo en ese endpoint
+Por ejemplo, que le pongo un timeout
+Para que no
+Porque te pongo una URL que tarda en responder
+Y dejarte colgado
+Pero ahí con Axio puedo ponerlo
+Un timeout de un segundo
+De repente
+Yo no lo quería hacer en el backend por eso
+Para evitar que el backend tuviera ese procesamiento
+Y dejárselo al usuario
+Pero, a ver
+Fijémonos a ver si
+Si desde el
+Si desde el frontend
+Hay alguna manera de evitar esos cortos
+O sea, si hay alguna manera de
+Porque lo único que necesitamos es que nos devuelvan
+Un 200, un 301
+Obviamente con un timeout
+¿Está?
+Si no nos queda otra que hacerlo desde backend
+Yo lo que haría es lo siguiente
+O sea, la lógica que haría es lo siguiente
+Si tenemos alguna manera de detectar en el front
+Que son cores
+Si tenemos algún mecanismo en el front
+Para detectar que son cores
+Yo lo que haría es
+Este
+Diría, bueno
+Primero intentás pegarle
+Normal desde el front
+Si falla la request del front
+Le pegás a lo aquel
+O sea, como que quede como segunda opción
+Es peor porque puede demorar un poco más
+¿Está?
+Pero
+Hagámoslo así
+Cosa de intentar evitar
+Pese a para el menor de los casos
+Ese problema
+¿Está?
+Para las webs que están mal hechas
+Yo igual voy a hablar con Mati
+Porque esa web la estamos haciendo nosotros
+Y la estamos haciendo a mano
+Entonces
+¿Está?
+Yo le voy a decir a Mati eso
+O le voy a llamar ahora
+Pero
+Lo que les voy a pedir es eso
+Y si lo hacemos en backend
+O sea, la response
+El contenido, el body
+Todo eso me importa tres carajos
+El tipo nomás
+El start
+Que sea 200 o 301
+Que haga dirección
+Listo, hay algo del otro lado
+¿Está?
+Este
+Y obviamente poner un timeout cortito
+¿Está?
+Bien
+Así
+Sí, es como que quede en los dos lados
+Si el front se puede hacer cargo
+¿Qué tal que lo valide?
+Y si no, ¿qué tal pase a una segunda instancia?
+Lo que en el caso de los que no
+Sí, yo creo que eso va a ser lo más sano
+¿Está?
+Perfecto
+Eso lo pones en el
+En el
+Servicio B2
+De la web
+Escrito KYB
+Que debería estar en B2
+En el site
+Y si no creas uno de B2
+Pero es todo de KYB
+O sea, relacionado al KYB
+Si KYB Form está en B1
+Generás todo un servicio en B2
+Bien, perfecto
+Pero es eso
+Bien ahí
+Bien, bien atajado
+Cuando tengan el hotfix
+Va contra
+Va contra master
+¿Sí?
+Pero
+Pase que pase por intern
+Primero, revisen entre ustedes
+Bien, buenas
+Bien de bien
+Bueno, ¿quedaba algo más?
+No, por mi lado no
+Está genial
+No, creo que
+Lo único es que
+Después te pasamos
+Las tareas de
+De teammates
+Que las estuvimos viendo hoy
+Dale
+Pasan tareas de teammates
+Y estas tareas de los hotfix
+También
+Así me las
+Si podés quedate
+No sé si alguien tenía un podcast
+Si no, quedate en Rikenoa

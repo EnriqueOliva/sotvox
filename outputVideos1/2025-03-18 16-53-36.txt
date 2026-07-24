@@ -1,0 +1,78 @@
+corra hoy
+a las
+a las
+17 horas
+le pondrías
+17 en realidad son
+20 horas, entonces vamos a decir
+vamos a poner 0 0
+20
+de 18
+del 3 asterisco
+si
+eso va a ser mucho más efectivo
+porque ahí lo que le estás diciendo es
+correte en una hora, entonces vos lo corres y a los minutos
+se tendría que correr porque vos le estás diciendo
+correte hoy
+o sea correte
+el 18 del 3
+a las 20 horas
+entonces eso va a ser mucho más efectivo que poner
+esto cada 27 que es una pija
+y ahí no tenés que borrarlo y podés
+analizar el last result porque vos cuando
+volvás a cargar y vos te fijás
+en el cron show controller
+en el cron show controller
+una vez que termina lo que hacés es
+update cron show
+de la línea 109, todos lo tienen
+el update cron show
+y lo que hacés es guardás el resultado
+bien
+te dejo Kiketo, igual esto
+esto lo hacemos justo
+solo tiene un asterisco porque es minutos
+hora, en UTC
+día, mes, pero vos tenés que
+siempre ponerle una recurrencia, vos no podés
+fijar un año para que se ejecute solo una vez
+¿entendés?
+esta es la manera más segura de poner los
+cron show, porque vos lo ponés así
+y estás diciendo, bueno, se va a ejecutar
+la próxima vez que se ejecuta es en un año
+entonces yo por ejemplo la migración
+si vos te fijás, la línea 1 la puse
+para que se corriera de modo de prueba
+el 12, el 27, el 0, el 7, el 3
+entonces se corre
+¿está? y registra todo
+¿sí?
+cuando nosotros setiemos la migración
+y para todos los cron show que vas a probar
+usemos este mismo mecanismo en vez
+del 10 barra 27 que pusimos
+que es una pija
+¿está bien?
+ojo, esto es un ejemplo, por ejemplo ahí en ese caso
+se está corriendo a las 6 de la tarde
+¿ah?
+recordemos que siempre la hora es UTC
+entonces arregle todo, vamos a ver si Dios quiere
+a ver si nos sale esto hoy, podemos
+liquidar con el trypoint, así mañana
+ya lo mandamos a producción y no nos hinchan
+más las pelotas con estas cuentas que faltan
+¿sí? y después bueno
+ya se puede, yo voy a ver si me da
+el tiempo para mirar la
+PR de Cypress
+y le doy una mano, ¿sí?
+vamos arriba
+voy a hacer una paradita por el baño
+me parece
+bueno, abrazo
+gracias por la ayuda
+hasta luego, Kike

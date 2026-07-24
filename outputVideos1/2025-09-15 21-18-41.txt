@@ -1,0 +1,480 @@
+Pero qué atorrante, mi amigo.
+Escuchame, mirá, bueno, acá estamos con Flochi.
+¿Qué vas a ver ahí?
+¿Viste qué lindo que es?
+¿Viste qué bien que se porta?
+Bueno, escuchá.
+Es este gato precioso que me hace mimo a mí, que me quiere mucho.
+Escuchame, te iba a decir.
+¿Tenés tiempo o la clase puede retomar en cualquier momento?
+Puede retomar en cualquier momento, pero no...
+Está, me apuro.
+Me apuro, me apuro.
+Pero, primero de nada, volví las tareas.
+Fueron muchas tareas que teníamos de payment.
+Entonces, volví las tareas a tu room.
+Y lo que hice fue generar una tarea donde comenté un poquito
+lo que vamos a hablar ahora a continuación
+y ese registro de todas las tareas.
+Después, si podés, ir a cada una de esas tareas
+y comentar esto o dejar una referencia,
+limpiar cada una de esas tareas a esta en particular.
+Está, se deja esta tarea para contactar.
+Se da, se dio a profundidad lo que necesitamos testear.
+Se vuelven a abrir.
+Lo que pasó fue lo siguiente,
+que es acá el problema que empezamos a tener.
+Hoy mergeamos esta, esta tarea.
+Esta tarea fue la que rompió todo,
+pero en realidad no fue solo que rompió.
+¿Por qué? ¿Qué pasa?
+Nosotros cambiamos al agregar Cristo Crossborders,
+cambiamos muchas de las cosas que se habían hecho en esta tarea.
+Y no que nos hizo darnos cuenta,
+Martina, cuando estábamos revisando,
+que había algo que nosotros estábamos haciendo mal.
+Y por eso es que...
+O sea, más allá de que tenían ajustes,
+hay algo que nosotros estábamos haciendo mal en esto y tal.
+Por eso hizo que todas las otras tareas volvieran para atrás.
+¿Qué es esta parte citada?
+Este fragmento del código acá.
+¿Lo ves?
+Sí.
+Está, ahí lo que estamos haciendo, primero que nada,
+nosotros dijimos que nunca vamos a tocar el container
+ni vamos a moquear repositorios.
+¿Sí?
+O sea, nunca vamos a moquear directamente una función de repositorio
+ni tampoco podemos trabajar con el container.
+¿Por qué? ¿Qué pasa?
+El container es cross todos los tests.
+Entonces, si nosotros modificamos esto,
+lo que a mí me empezó a pasar es que yo empecé a solucionar estos problemas.
+Primero lo solucioné.
+Cuando soluciono los tests,
+me di cuenta de que a veces lo corría y fallaban los de usuario,
+que los usuarios estaban súper validados,
+venían andándolo más bien.
+Y a veces no.
+Entonces ya empezábamos con eso.
+Y después lo otro que pasaba,
+era que, claro, cuando yo empecé a ver,
+no puede ser que yo arregle estos tests y se rompan 55 de los usuarios o 44.
+Y los únicos arreglos que hacía era tipo casos chotos.
+El arreglo no era muy complejo.
+Y acá empecé a ver este temita.
+Cuando vos sacás, moqueás el container y moqueás y vos sobre escribís estas funciones,
+lo que pasa,
+primero que nada, nosotros no podemos moquear el repositorio.
+¿Sí?
+Y en particular para Payment Intent sería una cagada moquearlo porque no es como una función de repositorio,
+no son tipo de una línea.
+Estas funciones, vos las habrás visto, son gigantes.
+O sea, viste que son gigantes.
+Entonces nosotros tenemos que testearlo porque si no,
+al final tenés una cantidad de código que vos acá estás reemplazando y decís, anda contra el estado.
+¿Estamos alineados con eso?
+Más o menos.
+O sea, a lo que voy es, vos acá tenés el Stray Repository, ¿sí?
+Vos el Create Payment Intent.
+Vos, en realidad, nosotros, lo desarrollamos y lo codeamos.
+Nosotros dijimos que el código en particular, pensando en test de integración,
+no lo íbamos a moquear.
+Íbamos a directamente moquear los modelos o la llamada de los clientes en concreto.
+Eso era una complejidad que tenían los métodos de Payment.
+Por eso son tan grandes.
+Porque si vos vas a un método de Payment,
+mirá,
+vamos a verlo juntos y hablamos en el mismo video.
+Si yo voy, por ejemplo, a Stray Repository.
+Fijate acá, por ejemplo, en Create Subscription.
+Fijate todo el código que hace Create Subscription.
+¿Lo ves?
+Para que...
+Ah, te lo está marcando acá.
+¿Ves?
+Create Subscription, mirá todo el código que tiene.
+¿Sí?
+Y esto es código desarrollado por nosotros.
+O sea, no es que...
+Ustedes no saben una dificultad que tiene esto.
+¿Qué es lo que nosotros deberíamos modificar?
+Y acá es donde viene la parte compleja de esto.
+Es el client.
+Es el Subscription Create.
+¿Sí?
+Por ejemplo, es esta acá, el client.
+Porque esta es la llamada en particular,
+que esto acá es Retrieve, el método este.
+Nosotros no lo desarrollamos.
+¿Está?
+Y bueno, y acá fijate que esto tiene métodos,
+que el Clean Up Stray Item también.
+En realidad, vos no deberías moquear ese,
+sino...
+O sea, vos deberías, a ver dónde está, acá.
+Fijate que este también internamente tiene su llamada,
+Client Invoice Item.
+¿Te nota?
+Yo eso lo entiendo y está buenísima la idea de no moquear el código nuestro,
+pero yo pasé horas y horas y horas y horas y horas y horas intentando esto
+y realmente no encontré una vuelta.
+Yo no sé siquiera si es posible o por lo menos necesitaría...
+Mirá, yo te digo algo.
+Yo en el proyecto que estaba anteriormente, se hizo.
+Te moqueó.
+No necesito saber cómo, entonces, porque yo no, realmente...
+Porque vos acá lo que...
+Está, lo que hay que hacer es jugar con el Prototype.
+O sea, no sé, o sea, es eso.
+Es interesante, jugué diez, veinte millones de horas con el Prototype.
+No, no, realmente no sé.
+Te juro que no, ya a esta altura, mucho probar.
+Realmente probé muchísimo.
+No es verlo un poquito más y sale.
+Esto no, no sé, realmente ya probé mil cosas.
+No sé si hay manera.
+No sé cómo.
+Bien.
+Viste, cada proyecto, aparte, es, es, tiene sus, ¿no?
+Su, su enfoque.
+No, no hay dos proyectos iguales, creo.
+No sé si qué, qué tanto es aplicable lo que se hizo en ese otro proyecto, en este.
+No sé si es...
+Con el Prot...
+El Client terminan siendo clases.
+Entonces, tiene que haber una manera de moquearlo.
+Lo que sí, se puede ir a la mierda, puede ser complejo.
+Eso no lo dudo.
+Pero tiene que haber alguna manera de...
+Como nosotros terminamos haciendo como el SNS y esas cosas,
+entiendo que en este caso es más complejo,
+pero tiene que, al final del día, tiene que haber una manera de moquearse con el Prototest.
+O sea, el problema es que el Client tiene adentro otra property,
+bueno, eso es lo que puede complejizar un poco las cosas.
+Pero yo, lo que digo es que puede ser más complejo
+y capaz hay que cambiar el enfoque en que lo atacamos.
+Pero lo que está pasando acá es que nosotros, al hacer esto, rompemos todo, o sea,
+tarde o temprano, randómicamente, van a, van a fallar cosas
+y nosotros no nos vamos, como nos pasó ahora.
+O sea, yo estuve rato y no me daba cuenta hasta que en un momento encontré esto.
+Y dije, ah, claro, no puede ser que yo corra los test.
+O sea, hice todo para...
+Ahora vamos con el tema Actions.
+Hice todo para simular las Actions y no, este...
+O sea, hice todo el código para simular las Actions
+y no puede ser que de la nada, algunas veces ande y otras falle.
+O sea, las Actions de Martina, unas andaban y otras no.
+Entonces, eso no, no puede pasar porque es un problema.
+Y después está, después al final no andaba nada.
+Nosotros acá podemos hacer dos enfoques.
+Primero que nada está, bueno, entendemos el problema de esto del container
+y el moqueo del repositorio.
+O sea, de todas maneras, nosotros acá, si nosotros quisiéramos moquear el repositorio,
+tendríamos que hacerlo bajo el enfoque de acá arriba.
+Donde, por ejemplo, nosotros tendríamos que agarrar el repositorio
+y moquear la función create.
+No es así.
+Por favor, no modificando el container.
+O sea, si nosotros quisiéramos, ahora vamos a hablar de eso,
+pero si nosotros quisiéramos no darle bola y decir, bueno, ¿sabes qué?
+¿Cómo decís?
+Es muy complejo, no le estoy contrando la vuelta para hacerlo a full.
+Vamos a hacerlo a la mitad.
+Vamos a hacerlo un 50%.
+¿Está?
+Bueno, está bien.
+Esta no es la forma.
+Tendríamos que ir por una forma más así.
+Donde acá iría el repositorio, ¿está?
+Y vos sacamos que es la función del repositorio.
+Porque acá, al envolverlo en el sandbox, vos no estás...
+Con el container vos estás...
+El container se utiliza para todos los tests.
+Entonces, ¿qué es lo que sucede?
+Cuando el stab hace el reset, la función esta queda nul.
+Y vos acá también hay algunos que modifican...
+Yo no sé si este es el caso.
+Pero habían algunos que modificaban cosas de cognito.
+Entonces quedaban vacíos.
+O reseteabas cosas cognito.
+Entonces, te saltaba fallos por todos lados.
+¿Sí?
+Entonces, acá tenemos...
+Primero está ese tema.
+Yo sé que esto nos viene...
+O sea, esto en otras palabras es otra manera.
+Pero que corrompe más de lo que habíamos hecho antes de moquear el repositorio.
+Pero yo creo que esto viene llevando mucho tiempo.
+Y tenemos que avanzar en algo también en esto.
+Entonces, ¿esto te queda claro?
+El error que conlleva, ¿no?
+O si querés podemos hacer algún diagramita para verlo.
+Sí, sí.
+El error es claro.
+El tema de la función.
+Yo lo que haría, en base a lo que vos me decís,
+es, bueno, hagamos un breakpoint.
+Un breakpoint que pueda salir a producción.
+Porque no podemos tener ya toda esta parte de pagos
+sin nada de test.
+Entonces, vamos a pasar esto a una modalidad para acá arriba.
+¿Sí?
+Rompiendo, poniendo to-do
+y rompiendo un poco este esquema.
+O sea, nosotros acá vamos a moquear la función en el repositorio.
+¿Sí?
+Pero para tener los test a la mitad.
+Pero de la forma que nosotros venimos trabajando.
+Que nosotros nos quedamos tranquilos.
+Que de esta forma nosotros garantizamos la independencia de los test.
+¿Está?
+Y que no va a romper otros test.
+¿Te parece ese enfoque?
+Y después, hoy o mañana, lo retomamos.
+Pero acá pasa dos cosas.
+Primero, nada.
+Ya le hemos dedicado mucho tiempo.
+Entonces, me parece una cagada no tener nada en producción con esto.
+¿Está?
+Y bueno, ¿está?
+Y entiendo que es difícil lo que vos me decís.
+¿Está?
+Yo sinceramente, hoy en día además de que me tuve que poner a ver esto.
+Tuve que ponerme a ver otra cantidad de cosas.
+¿Está?
+Y tengo a Guillermo que me está comiendo la oreja por una cantidad de cosas.
+Entonces, no tengo tiempo para de repente lo que pasó con esto.
+O sea, lo hablamos con Martina.
+Nosotros veníamos viendo y se nos pasó.
+¿Está?
+Y es algo que es una cagada que se pase.
+¿Se entiende?
+Literal es una cagada.
+Porque ahora lo que yo hice, en vez de ponerme a comentar todo el archivo,
+dije, ¿está?
+Porque si lo ponemos en develop, te pasa un zip y después vos lo volvés a poner.
+¿Está?
+Este, porque no vamos a dejar 500 archivos comentados que salgan en producción.
+No tiene sentido.
+Este, pero mi idea es esa.
+O sea, yo creo que en base a lo que vos me decís.
+Que vos me decís, bueno, mirá Santi, yo he probado esto y ahora no me está saliendo.
+Nosotros estamos con la parte de regression.
+Entonces, bueno, ¿qué te parece si volvemos al enfoque que habíamos hecho en un principio?
+¿Cómo ha funcionado eso?
+El tema que yo te había dicho, no, mirá, hay que testear lo recto.
+Y esto estamos hablando de cuando arrancamos esto hace seis, ocho meses.
+¿Qué te parece si nosotros pasamos al enfoque este y lo hacemos con repositorio?
+Entonces ahí volvemos a enviar estos de a uno con este enfoque sin usar el container.
+No tendríamos que tener import del container.
+¿Cómo la ves eso?
+Sí, bien.
+Se puede hacer.
+Sí.
+Está.
+Y ahí evitamos todo este problema.
+Y claro, yo entiendo que vos acá entre darle vueltas de tuerca y no reutilizar esto,
+que yo ya te había hablado, buscaste este mecanismo y sinceramente a nosotros no pasó.
+¿Está?
+Está genial que lo encontramos ahora.
+¿Está?
+Otra cosa, igual mañana lo vamos a charlar, pero el tema es ese.
+Con los unistes, a veces que en la APR, a ver si me salta alguna APR activa, en la APR está bueno,
+o traer, antes de mergear, o traer develop o recorrer los tests.
+Porque pasa mucho con los unistes.
+O sea, no es la primera vez que nos pasa.
+A mí también me ha pasado con cosas.
+Pero viste que vos acá siempre tenés la opción de que vas aquí.
+Creo que acá tenés.
+No.
+En detalle, que vos te traes develop, se corre solo.
+Pero si no, esto siempre se corre contra la última.
+¿Cómo funciona la action?
+Es una de las preguntas que me hiciste hoy.
+Esta action lo que hace es...
+Y vos no tenés conflicto.
+Y si te dicen que está todo bien y no hay conflictos acá,
+agarra, hace como un merge simbólico de lo que vos tenés en develop, ¿sí?
+Y corre la action.
+Porque si no, no te serviría de nada.
+Porque si no corres lo que vos tenés acá, y puede ser que en develop haya otra cosa,
+pues tú estás desactualizado.
+¿Se entiende?
+Claro.
+Entonces, por ejemplo, la APR de Martina.
+Martina no tenía el payment intent que vos mergeaste cuando yo te fui aprobando la APR.
+Pero le fallaba lo del payment intent.
+¿Por qué?
+Porque la action lo que hace es mergearlo de Martina contra develop y corre ahí.
+Entonces, vos siempre, antes de mergear, para quedarte tranquilo y para...
+Porque si no, después...
+¿Qué pasa?
+Como la GitHub action se corrió hace dos semanas, mirá.
+Hace dos semanas se corrió.
+No tenemos constancia de si fue contra lo último de develop o no.
+Entonces, venís acá, le das rerun, le decís recorrente y se arranca a correr de nuevo y ya está.
+Te fijás que todo esté rulado.
+Y se terminó.
+Hacés con esto el build y nos quedamos tranquilos.
+Eso con la action.
+Otra cosa que es importante de la action, que a veces pasa que es difícil recrear las cosas que suceden en la action.
+Yo ya lo hablaba con Martina y lo comento con vos.
+La action, vos pensá que es...
+Lo que está bueno de la action es que es un ambiente limpio, igual que lo que es en deploy.
+O sea, no está sesgado por, por ejemplo, el workspace que tiene el Visual Studio Code.
+¿Me entendés?
+Que viste que vos tenés un caché con los .em y una cantidad de mierda.
+Entonces, siempre la action lo que hace es hace un npm install y levanta todo.
+¿Cómo podemos simular eso a nivel local?
+Bueno, mi recomendación es eliminamos la carpeta no-module.
+Podemos vaciar el .em.
+Copiatelo si no lo vas a perder.
+Pero lo podemos vaciar o le podés cambiar el nombre al .em.
+Y después tenés que ir al proceso del Visual Studio Code de user y borrar el workspace.
+Porque a veces vaciando el .em no es suficiente.
+¿Te acordás de ese proceso que hacíamos, más o menos?
+Sí.
+Está, es eso, es eso.
+Entonces vos recién ahí, cuando lo...
+Primero vaciás el .em y le cambiás de nombre.
+Segundo, borrás la carpeta no-module.
+Cosa de borrar todas las instalaciones que tenés.
+¿Está?
+Porque puede ser que alguna librería haya actualizado hace un poquito y eso es lo que está ocasionando que se rompa.
+A mí me ha pasado, al ver algo de este proyecto diez mil veces, que en la misma versión de Node y todo,
+hacía un 5.0.del 1 al 2 y ya hace que se rompa algo.
+¿Entendés?
+Que eso está bueno en los tests, porque a veces lo atajan.
+Entonces, ahí lo que hago es, borramos la carpeta no-module, cambiás el .em, borrás el workspace, volvés a abrir el Visual Studio.
+Y ahí hacés np-install, corrés los tests y ahí tenés, te podés garantizar que tenés la misma versión.
+¿Está?
+Entiendo.
+Otra cosa que es sumamente importante.
+Es que hay que cuidar con nvm que vos tengas la última versión de Node 22.
+Porque la Git, ya Node 22 no se actualiza más.
+Entonces, no creo que, puede salir algún bug, fix o alguna cosa, pero no se actualiza más.
+Entonces, la GitHub Action siempre descarga o reutiliza la imagen del último Node 22.
+Estable.
+Entonces, si vos tenés la misma versión, por ejemplo con Node, vas a estar igual.
+¿Sí?
+Bien.
+Entonces, bueno, está.
+Todo eso con respecto a la GitHub Action.
+Entonces, ahí yo lo que te digo es, de todas maneras, ahora los tests no serían prioridad.
+O sea, tenemos la parte de automation y tenemos la tarea esa que va a aportar mucho más valor.
+Pero sí me gustaría que vos de repente intentes sacar el payment intent de nuevo en uno de estos momentos esta semana o la que viene.
+Porque lo que hablamos en la daily fue, bueno, intentar no, tenemos cosas como para no volver a tocar test unitarios.
+¿Sí?
+Entonces, este, o sea, mientras vos movés de automation, te movés para las cosas que hay que tocar de código.
+Y cuando salís de código, volvés para automation.
+No es mi idea que vuelvas a test unitarios.
+Es más, ahora te dije de volver a revisarla.
+Que te crees una tarea o que en esta semana deberíamos actualizar el cronshot.
+Entonces, porque deberíamos correrlo esta semana o la que viene.
+Entonces, es como que los test unitarios no pasan ni un segundo ni un tercer lugar.
+Pasan un cuarto nivel de prioridad.
+Pero estaría bueno si tenés algún tiempito de poder validar eso del payment intent.
+¿Tá?
+Capaz que uno o dos test, no todos los test, pero de repente volver a mandar una PR con uno o dos test.
+Cosa de volver a validar eso y moqueando el repositorio.
+Y tá, y así dejamos ya evidencia de cómo encararlo.
+¿Qué te parece?
+Sí, bien. Genial.
+Tá, eso nomás.
+Este, bueno, eso.
+Entonces, yo mañana lo que hacemos es chequeate las tareas, create todo tranquilo la mañana.
+Yo lo que hago es después vemos ahí cómo cierra el sprint y más o menos a ver si le damos 13 o 21 puntos a la tarea de avances en estos test.
+Pero va a ser eso.
+No hay muchas más cosas para hablar.
+Y bueno, tá, y vayamos por ese mecanismo de moquear los repositorios.
+Sé que no es lo que más me gusta.
+Yo sé que había vueltas de tuerca y esas cosas.
+Sinceramente, yo ahora no tengo el tiempo de sentarme a ver, como en su momento hicimos con Cognito, de buscarle con el prototipo.
+Yo sé que esto va a ser más complejo porque tenés dos niveles de property dentro del client.
+Entonces, vas a tener que moquear objetos.
+Hay que sentarse a verlo.
+Capaz que hay que hacer hasta una función auxiliar.
+Podemos crear una función auxiliar que moquee cosas.
+Flochi, silencio.
+Entonces, bueno, eso.
+Pero ahora no es prioridad.
+Tenemos 10.000 cosas mucho más prioritarias.
+Pero también es algo que se le ha dedicado tiempo.
+Entonces, me parece que está bueno dejarte de eso.
+Aunque sea en un 50% de cobertud.
+¿Tá?
+Bien.
+No sé qué me ibas a decir que pareció que se te cortó.
+No, que justo ahí que pusiste mi tabla de Jira, me di cuenta que quedó en logres la tarea de Cypress.
+Pero yo ya mandé ahí los comentarios de vuelta.
+Eso ahí, si lo querés bichar.
+Y si...
+Sí, le pedí a Martina si podía pegarle una bichada antes de mirarlo yo.
+Le pedí si podía pegarle una bichada.
+Porque como le dije que no mirara los tesunitarios, pasáramos que se centraba en esas y las sacamos.
+Bien.
+Sí.
+Si no sé si va a estar bien, ya tengo para subir, digamos, la próxima.
+Que son los de autenticación que vos habías dicho también que era importante.
+Los de Cypress de autenticación.
+O sea, login, logout, password recovery.
+Eso ya también.
+Yo lo que te digo es, en sí no hay urgencia de nada.
+Por ahora.
+¿Sí?
+Por ahora no hay urgencia de nada.
+Entonces, yo lo que diría es...
+Diría, bueno, ataca una cosa y después ataques otra.
+No intentemos sobrecargar los de Cypress.
+Ni mandar dos cosas, ni subir a...
+O sea, vos me decís...
+Como vos me dijiste...
+Yo estoy pensando en eso y no lo hablamos.
+De decir, vos, mirá acá.
+¿Puedo subir a Emma PR o puedo mandar dos cosas en paralelo?
+Capaz que sí.
+Si vos me decís, ¿puedo reutilizar algo de esta PR que tenés acá?
+Yo te diría que...
+Te diría que agarres y, bueno, esperemos a tener...
+¿Cómo se llama?
+Esperemos a tener mergisteado esto de Cypress y, por lo tanto, seguir en el BBO.
+Si ya avanzaste con lo de login y todo eso, genial.
+Porque es algo que está bueno para ganarlos a los más ustedes.
+Es algo que yo te pedí.
+Pero...
+Pero, tal, es como que...
+Lo de Cypress no tiene urgencia.
+Tampoco las otras tareas.
+Entonces, en este momento...
+Yo prefiero que vos vayamos pisando con cuidado y nos hagamos...
+Vamos a hablar en crioso.
+No trabajemos al pedo.
+¿Está?
+Que vayamos con cuidado.
+Que revisemos con cuidado y saquemos...
+Entonces, hacemos mucho trabajo de calidad bien.
+Por suerte, tenemos varios frentes para atacar.
+Que, probablemente, eso ya la semana que viene cambia.
+Entonces, aprovechemos también eso para...
+Porque, probablemente, la semana que viene, si nosotros empezamos otras acciones,
+la otra, yo ya te voy a empezar a joder con la factura.
+¿Viste que eso?
+Es como que todo esto pasa a segunda prioridad.
+Entonces, prefiero dejar todo lo que avancemos que sea estable, que esté bueno, que esté bien.
+Porque, si no, pasa como nos pasó varias veces.
+Que quedan PR gigantes.
+Que nosotros estamos hasta las bolas de prioridad y no lo podemos atacar.
+Y que, cuando queremos ver, se despreca en una banda.
+Y es una cagada.
+Y eso no está bueno.
+Fuera de eso, me parecía bueno juntarnos.
+Porque vos me decís que arrancás de mañana.
+Perdón que te jodí, pero me parecía bueno juntarnos.
+Porque, como vos me dijiste que arrancás de mañana, prefiero juntarme ahora y que vos tengas para mañana para trabajar en estas cosas tranquilos y con todo claro.
+Sí, genial.
+Bueno, vayas a lavar el orto.
+Se me fue.
+Ahora se terminó la chacha.
+Cuídese.

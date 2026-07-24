@@ -1,0 +1,73 @@
+La siguiente es una guía de cómo realizar testeos en tareas que involucren correos electrónicos de la plataforma,
+particularmente cómo acercarse lo más posible a un flujo end-to-end,
+porque el camino más fácil para realizar testeos en estos casos es generar un ejemplo local,
+un renderizado local de cómo se vería ese correo que nosotros estamos trabajando,
+pero el problema que tiene eso es que en realidad los servicios más usados como Gmail y Outlook
+tienen particularidades que presentan problemas y son problemas imposibles de predecir.
+El único camino es efectivamente enviando un mail a Gmail y efectivamente visualizándolo en Gmail o Outlook,
+porque un correo puede verse bien.
+En Outlook y verse mal en Gmail y viceversa.
+Por más que un correo se vea bien, el template HTML se vea bien en un renderizado local,
+ciertas particularidades que tiene Outlook, reglas y restricciones,
+puede provocar errores de visualización en Outlook o en Gmail.
+Entonces, cómo podemos enviar efectivamente un correo de prueba a Gmail o Outlook,
+o quizás a otra plataforma.
+otra plataforma o servicio bueno podemos empezar levantando el worker localmente sí que para eso
+como prerequisito tenemos tenerle activada la vpn en este caso estamos trabajando en el ambiente de
+develop así que todo va a ser develop tener en este caso activada la vpn de develop estamos en
+el worker por supuesto y tener actualizadas las credenciales de aws que lo podemos hacer corriendo
+este script sí y primero que nada hay que tener en cuenta que todo lo que ocurre en el worker con
+respecto a correos electrónicos utiliza lo que está en ese 3 es decir los templates de correos
+electrónicos actualmente están almacenados en ese 3 qué problema presenta eso que si nosotros
+estamos trabajando en una modificación de un correo existente sí o no
+si estamos directamente implementando un correo nuevo esos cambios o ese correo nuevo no va a
+estar en s3 la lógica va a intentar leerlo de s3 y no lo va a encontrar para eso necesitamos que
+la lógica utilice nuestros cambios locales nuestros archivos locales para eso nos tenemos que ir a
+se repository y nos vamos a la línea actualmente la línea 128 que es básicamente lo que dice es
+leer los archivos locales en vez de los archivos de s3 si acá nos va a pedir dos dependencias que
+están normalmente comentadas sí y una vez que tengamos ese cambio de hecho es un cambio
+temporal cuando terminemos la prueba lo podemos revertir ahí podemos realizar las pruebas cómo
+funciona cuál es la idea de fondo la inmensa mayoría de los correos de la plataforma los
+envía el worker y los envía a partir de un mensaje sí con un evento que le llega al
+worker que normalmente ese mensaje lo envía el site quizás en algún caso muy puntual lo puede
+enviar el back office pero estamos frente a un mensaje si sns con un evento sí que le manda el
+site al worker y el worker con su lógica ejecuta el envío de determinado correo a determinados
+usuarios
+nosotros no necesitamos utilizar el site para la prueba lo que podemos hacer es directamente enviar
+ese mensaje que le llega al worker con una herramienta como postman si en el caso que
+se ve en pantalla es un caso sencillo si cada caso cada evento requiere distinta data si
+supongamos el caso de el correo electrónico que se envía cuando
+Cuando un usuario es agregado como teammate por otro usuario, allí estaríamos frente a la necesidad de, bueno, el correo electrónico del usuario que está siendo agregado como teammate y el correo electrónico de la persona que está agregando a esa otra persona como teammate.
+Por ejemplo, así cada caso va a requerir diferente data. En este caso en particular, como es sencillo, solo necesitamos el correo electrónico del usuario que está solicitando recuperación de contraseña.
+En este caso en particular necesitamos un correo que pertenezca a un usuario efectivamente registrado en la plataforma.
+Podemos usar una herramienta como PGAdmin4.
+Para ir a la base de datos, de nuevo en este caso es de Verop y podemos irnos a lo que es esquemas, tables, usuarios y en la tabla de usuarios podemos fijarnos en la columna de email y podemos usar el correo electrónico de uno de los usuarios.
+Yo en este caso ya para la prueba tengo dos usuarios elegidos, uno de Outlook y uno de Gmail.
+Y básicamente lo que podemos hacer es enviar con Postman ese mensaje que normalmente lo envía el site, pero nosotros lo podemos enviar con Postman al worker.
+Si le damos enviar, bueno, como requisito el body tiene que ser raw JSON.
+Yo uso particularmente 3001, pero eso no es necesario.
+Y el Postman le envía.
+Ese mensaje al worker y acá como vemos en la terminal se envió el correo que nos llega efectivamente a Outlook.
+Una cuestión respecto al idioma es que actualmente el idioma se determina por el idioma del usuario.
+Si nosotros volvemos a la tabla de usuarios, de users, vemos que los usuarios tienen una propiedad que se llama language.
+La misma puede ser español, inglés o portugués.
+Si nosotros cambiamos el idioma del usuario y volvemos a enviar el evento, el mensaje, el mail termina llegando en inglés.
+Eso es para el idioma.
+Hay otras cuestiones a verificar, como por ejemplo el redimensionado, la vista mobile y esta función de cambiar los colores.
+Que aparece tanto en Gmail como en Outlook.
+Modo claro o modo oscuro.
+Esto es importante porque a veces ciertos iconos o ciertas imágenes son oscuras o son claras y puede dar problemas el fondo blanco o oscuro.
+Y lo mismo aplica para Gmail.
+Si nosotros enviamos en el mensaje un correo de Gmail, evidentemente también va.
+Y bueno, esa es la forma principal de realizar un testeo que es casi en Twent, no es exactamente en Twent porque nosotros estamos sustituyendo al site todo lo que ocurre en el site con este simple mensaje enviado a través de Postman.
+Pero con esto nos garantizamos que los correos efectivamente se ven bien en los servicios que más se usan como Gmail y Outlook.
+Una nota muy importante es que el remitente es el remitente oficial de Dashbank, es el que se usa en producción.
+Y hay ciertas medidas de seguridad que tienen estos servicios en cuanto a lo que es la cantidad de envíos de correos.
+Si nosotros enviamos muchos correos en poco tiempo, es posible que se activen ciertas medidas de seguridad en contra de este remitente.
+Por lo tanto es muy importante.
+Ser responsable con el uso de esta lógica y prevenir que no se envíen muchos correos en poco tiempo.
+Esto aplica tanto para Gmail como para Outlook y es fundamental tener mucho cuidado al momento de editar, elegir un usuario de prueba o editar la lógica.
+Para no hacer que se dispare un envío de correo.
+De repente a, por ejemplo, todos los usuarios de la plataforma de Develop.
+Ese tipo de cuestiones tienen que ser cuidadas porque el remitente es nuestro remitente oficial.
+Y es importante que no se activen medidas de prevención de spam contra este usuario porque es el que se usa en producción.

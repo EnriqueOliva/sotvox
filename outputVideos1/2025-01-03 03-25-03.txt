@@ -1,0 +1,51 @@
+orden de prioridad, terminar los test de regresión
+más allá de que estos comentarios
+es algo que se tiene que terminar este print
+terminar los test de regresión es lo más importante
+ahora
+cobrar todos los test de regresión
+ya está todo master los test de regresión que hicimos
+entonces terminar los test de regresión sería lo más
+importante ahora
+además de esos test de regresión
+en esos test de regresión
+necesito que juegue un poco con el blog
+no sé si lo había hecho
+lo hizo
+te voy a poner en la tarea
+quiero correr los test de regresión en producción
+antes de salir a producción
+y
+ahí te puse
+y hacer smoke testing sobre la creación
+del blog, o sea es un poco
+medio, no va a dar para que vos
+termines los test de regresión
+¿sí? otra cosa que le quería
+decir es lo siguiente, relacionado a lo que
+hablábamos, si este fin de semana iba a poder tomarse el libro
+no, si prefiere
+trabajar el sábado
+y tener libre el viernes que viene
+nos vendría muy bien
+dado como está el panorama
+ahora que me estoy dando cuenta
+¿sí? de repente
+analícelo, pero realmente nos vendría
+bastante bien, porque el sábado, o sea
+el rato del sábado capaz que te da para
+liquidar la PR y eso
+si no lo terminas mañana
+eso lo analizás vos y me lo decís
+y lo ven, pero la prioridad sería
+hacer esos test de regresión y un poco de smoking test
+de blog, o sea es como que bueno
+entro y investigo y veo si
+a huevo si encuentro algún fallo
+¿sí?
+nosotros no lo hemos hecho
+pero la mayoría de CUA cuando vos sacás
+una tarea es tipo bueno
+no tenés un test de regresión escrito, vos
+en tu mente te haces un test de regresión
+y lo seguís

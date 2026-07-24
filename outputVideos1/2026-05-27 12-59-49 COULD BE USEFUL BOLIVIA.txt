@@ -1,0 +1,880 @@
+Se sale un poco del scope
+Y ta
+Para doble chequear si queremos
+O no aplicarlos
+Bien
+Ahora lo chequeamos como postgram
+Este ta
+Eso
+Si, ahí Marti vamos a estar con bastantes PRs
+Así que todo lo que puedas
+Adelantar de ese lado
+Del lado de
+Mejor porque cuando lleguen las PRs
+Vamos a tener que priorizar
+Bien
+Chupa mirá
+Estoy terminando de resolver
+Los comentarios que dejó Marti en la PR
+En la 408
+Quedaron solo algunos malos comentarios
+Que incluían alguna pregunta para Santi
+Bien
+Me pongo con eso
+Bien de bien
+Este y
+Nah we
+Ta todo en PRs o esta faltando algo
+Ta todo en PRs
+Lo del site también
+Que yo no había
+Trabajado
+Lo de mostrar la información
+No falta eso de Jonah
+Ah ta
+Ta
+Eh
+Eso ya lo podes encarar o
+Si si ya lo puedo encarar
+Ta
+Este osea que
+Digo porque
+Literal esta todo
+Esta la migración
+Y otra cosa que no veo
+No se esta viendo lo del worker
+Porque todavía no lo mandaste no
+En las variables de entorno
+Bien bien
+Cierto hay una
+Hay una migración
+Al site que incluye
+Específicamente la migración
+Que lo del worker
+Ahí estas haciendo un find all
+Contra la base de datos
+No
+Creo que si
+El funcionamiento por las dudas
+Para doble chequearlo
+Vos cuando vas a la parte de configuración
+Si
+Solo admin podría ver todo
+Ta
+Y el marketing líder
+Tendría que ver solo
+La que ve hoy en día
+Y no toda la
+El resto de tabs
+Si vos sos admin
+Ves todo el resto de cosas
+Y todas
+Y todas las configuraciones
+Que haya
+Osea como admin
+Podés cambiar lo que se tenga
+Antes del culo
+En otras palabras
+Si vos sos admin
+Ves todo el resto de cosas
+Y todas
+Y todas las configuraciones
+Que se tengan antes del culo
+En otras palabras
+Ta
+Si
+Como marketing líder
+Vos
+Solo podés cambiar
+La primera
+Que habla de AI
+Ta
+Y solo se te muestra
+Esa configuración
+Osea no te pregunta
+Tampoco podés cambiar tema
+Y nada
+Es como que bueno
+Solo
+Osea es el funcionamiento actual
+Si
+Ahí va
+Y lo otro es
+Vos ya refactorizaste
+Para sacar la variable
+De entorno
+No
+La que queda
+Para
+Del channel
+Si no me equivoco
+La pusiste ahí
+Es importante
+Porque tenemos que hacer
+Acuerdos
+De sacar esa variable
+De entorno
+Para que no quede
+Eh
+Pues yo la
+Literal
+La vamos a sacar
+Ta
+Y tiene que quedar
+Ahí este
+En esa configuración
+Esa PR del site
+Con la migración
+Ya la enviaste
+Si
+La migración esta
+Si ya esta enviada
+Ta
+Perfecto
+Entonces que
+Este
+Chequeate lo de Yona
+Y en teoría
+Estaría todo
+No
+Osea
+Porque hoy día
+Creo que
+Solo le muestra
+La tab de
+File settings
+No se si le muestra
+Por ejemplo
+Si le oculta lo de
+Los temas
+Voy a fijarme
+Que le oculte lo de
+Los temas
+Que solo le muestre lo
+Este lo que estaba mostrando
+Hasta ahora
+Que era lo de WhatsApp
+Y creo que lo de
+Y ahí también
+Claro
+Entonces ahí vos tendrías
+Que poner un if
+Si es marketing leader
+No te muestra
+Ni te deja elegir los temas
+Y tampoco te deja elegir
+El archivo de configuración
+Ta
+Claro
+Bien
+Un poco
+Un poco eso
+Ta
+Este
+Bien de bien
+Y ta
+Y después faltaría
+Lo de Yona
+Que es agregarlo
+Bueno
+En este mismo panel
+Bueno
+El que estuvimos
+Mirá
+Ahí hace detalle
+Si si
+Por eso
+También justo estaba hablando
+Fijate que acá
+Por ejemplo
+Acá está medio vacío
+Porque es Crypto Cross Border
+Agreguémoslo acá
+Ta
+Bien
+Este
+Si
+Este
+Un poco eso
+En teoría
+Para doble chequear
+Todo
+Cuando nosotros
+Cuando nosotros
+Yo cualquier persona
+Puede auto asignar
+A quien sea
+Como
+Ejecutivo
+De cuentas
+Si
+Si
+Exacto
+Pero
+De una compañía
+Pero
+Solo el admin
+Puede modificarlo
+O sea cuando hay
+Esa modificación
+Solo puede hacer el admin
+Y eso se chequea
+En backend y frontend
+No
+Claro
+Cuando es una reasignación
+Se chequea
+La asignación
+Cuando se realiza
+O por primera vez
+Por quien sea
+Ta
+Este
+Se le
+Como
+Se notifica
+Por Slack
+En el canal
+¿No?
+¿Qué canal era que utilizaba?
+El canal
+Por Slack
+Lo tenemos que definir
+Me parece
+Bien
+Entonces
+Vamos a crearlo ya
+Eh
+¿Dónde están los canales?
+Ya lo crees
+Le puse
+Asignación
+Ejecutivo de cuenta
+Y para qué
+Te voy a agregar a vos
+La de así
+Ya le copió el ID
+Bien
+Ahí ya
+Ya tenés el ID
+Entonces ya
+Literal estaría todo
+Eh
+Tenemos también los datos
+Pero lo dijimos
+Es que lo vamos a cargar manual
+¿Correcto?
+Hermoso
+Este
+Lo de los datos
+O sea
+Lo vamos a
+Los datos
+Los datos
+No vamos a correr ninguna migración
+Sino que
+Con este nuevo CRUD
+Que tenemos
+Podemos cargarlos manual
+O sea podemos ahí cargar
+Su número de teléfono
+Y todas estas cosas
+¿No?
+Sí
+O sea
+La migración
+Mandé una migración
+Específicamente para eso
+Ah
+Está perfecto
+Mejor
+Más sencillo
+Me simplificás la vida
+Y ahí lo que te iba a decir
+O sea
+Si ya lo tenés en una migración
+Mejor
+Lo mandamos en una migración
+Este
+Lo otro que te iba a decir
+Pero igual de todas maneras
+Se puede cambiar manual
+¿No?
+Claro
+Porque podés editar
+Podés editar el número de teléfono
+Y otro rechequeo
+Es que cuando asignás
+Un ejecutivo de cuenta
+No lo permitís asignar
+Si es
+Este
+Uno en concreto
+Si no tenés
+El
+El
+Si no tenés un número de teléfono
+Y un Slack
+Activado
+¿No?
+Claro
+Perfecto
+Bien de bien
+Todo llegó a ser control
+Chau Nauge
+Santi
+Buenas
+Como
+Este
+Bueno
+Por mi parte
+Ayer le mandé a Gastón
+Para
+Para que revisara
+Los avances de
+De la parte del chatbot
+Eh
+Ya estuve
+Este
+Mejorando algunas cosas
+Este
+Me quedan otras
+Por
+Por mejorar todavía
+Si quieren
+Igual ahora
+Como Oscar
+Me reuní con Lorena
+Ayer
+Y me pidió
+Un millón de cosas
+Que querían ahí
+Con el
+Con Carlos
+Me hablaron
+De que
+Querían que mejoráramos
+Un kit de confianza
+Que ellos le pasan
+A los clientes
+Que básicamente
+Una especie de
+Mini presentación
+Donde muestran
+Los diferentes
+Eh
+Documentos
+Que
+Tipo
+Los comprobantes
+Y todo eso
+Eh
+Cuál es
+El formato
+Que utilizamos
+Eh
+Era un PDF
+Si
+Puede ser un PPT
+Perfectamente igual
+Eh
+Después
+Me
+Me dijo que
+Eh
+Al
+La solicitud de transferencia
+Y a esto
+Que estaba
+Trabajando Enrique
+Que recién me pasó la PR
+Que la estaba bichando ahora
+Eh
+Me dijo que
+Algo importante
+Es que
+Los clientes
+Estaban quejando
+De que le falta
+Un título a eso
+Eh
+Y nada
+Eh
+Este
+Que voy a tener que trabajar
+Pero que le está faltando
+Un título a
+A
+A la factura
+Que estamos mandando
+Eh
+Para
+Para Bolivia
+Ya la habían aprobado
+Eh
+De hecho la aprobó
+Carlos también
+Ahora nos dicen
+Que le está faltando
+Un título a esa factura
+Eh
+Ellos la llaman
+Solicitud de transferencia
+Después
+Eh
+Que
+Me dijeron
+Que hay que mejorar
+El
+Que hay que
+Retrabajar el diseño
+De
+El comprobante
+De compra
+De
+VST
+Y VCC
+Después
+Eh
+Me dijeron
+De
+Que
+Que les gustaría
+Que fuera posible
+Descargar
+El recibo
+De cada
+De cada transacción
+En la web
+Desde
+Desde la pantalla
+De banking
+Me dijeron
+Eh
+Que nosotros tenemos
+En la tabla
+Si vos vas a banking
+Eh
+Tenemos una parte
+Que dice recibo
+Y no se está pudiendo
+Descargar desde ahí
+Eh
+Los distintos recibos
+Eh
+Que está
+Que eso para los clientes
+Que eso para los clientes
+Fue una de las cosas
+Que nos pidieron
+Y
+Bueno
+Recibos
+Pedíselos
+Preguntáselos
+Porque no me queda
+Una mierda
+Claro
+Y que te manden video
+¿Está?
+O sea
+Mandáselo
+Y decirle que te manden video
+O sea
+Que todo no quede en el aire
+Que te manden video
+Fotos
+O vos sacá video
+Fotos
+De que es lo que
+Están pidiendo
+Eh
+Yo
+Yo
+Me
+Me quedaron de pasar
+La presentación
+Que creo que ya me la mandaron
+Al mail
+Este
+De
+De todo ahí
+Lo que estaban necesitando
+Eh
+Y
+Y tal
+Yo me fui anotando ahí
+Los
+Los datos
+Eh
+Después me pidieron
+Que esto capaz que esta tarea
+Se la
+Se la pasó Gastón
+Porque fue una presentación
+Que trabajó Gastón
+Para la FIP
+Me dijeron que ellos
+Estaban utilizando
+Esa
+Esa presentación
+Para
+Para mandárselas
+A los clientes
+Pero
+Eh
+Mandaban solamente
+Cierta información
+O sea
+Toda la información
+Que era
+Para la FIP
+La sacaban
+Y se quedaban
+Con algunas diapositivas
+Eh
+Nada
+Y era algo que había hecho
+Eh
+Carlos
+Pero no quedó
+Con el diseño
+Eh
+Que tenía la
+La presentación
+Y nada
+Esa
+Esa tarea
+Dice
+Voy a ver si
+Si se la ha pasado Gastón
+Y yo me concentro más
+En trabajar en los
+Eh
+En los
+Eh
+Recibos
+Este
+Y
+Y los distintos comprobantes
+Que tenemos
+Bien
+Ta
+Genial
+Entonces así
+Cambios grandes
+A eso de descargar recibo
+Que no sé que mierda
+Carajo
+Se
+Se
+O sea
+Eso de descargar
+Porque en sí ya
+Ya tienen para descargar
+Las cosas
+Si querés
+Lo vemos ahora
+Como
+Como postgram
+Pero es básicamente
+En la pantalla de Banky
+Nosotros tenemos una tabla
+Abajo
+Y esa tiene un
+Un campo de recibo
+Y ella me mostraba
+Como que
+No
+No podían descargarlo
+Desde ahí
+Como que no salía nada
+Para descargar
+No sé que
+Yo
+Pero en el diseño
+Está también
+Para
+Para descargar
+Yo me
+Yo me juego
+La pilota
+Que es un tema
+De motricidad
+De ellos
+¿Va?
+Y hay que entender
+Que hay transacciones
+Que no tienen recibo
+Las transacciones
+Por ejemplo
+Las que hacemos
+Eso
+Eso debe ser para mí
+Que hay transacciones
+Que no tienen recibo
+Que ellos deben querer
+Tener un comprobante
+De esas transacciones
+Lo otro de Mariano
+También
+Es que
+Para
+Para las cosas
+Que tenemos
+Un tipo de cambio
+Asignado
+Que se muestre
+El tipo de cambio
+Que tenemos
+Que acordamos
+Con los clientes
+Marro
+En otras palabras
+Rompar las pilotas
+Por todos lados
+Si
+Un millón
+De tareas nuevas
+Pero por ejemplo
+Mirá
+Viste
+Ahí va
+Eso
+Acá tenemos recibo
+Le doy ver
+Y acá me lo descarga
+Exactamente
+Eso es lo que estaban pidiendo
+Y yo dije
+Me parece raro
+Porque eso ya debería estar
+Ah yo no
+Yo creo que
+No
+Ah si está acá
+Si si si
+Si esta no sé
+Cual es
+Está igual
+Esto ya lo arreglamos
+¿No?
+¿Qué es esta alineación?
+Es
+En lo que mandó Enrique
+Ya estaba arreglado
+Si
+Perfecto
+No a ver
+Está
+Esto está
+Eso para mí
+Lo que debe estar pasando
+Es que
+Todavía no está
+La funcionalidad de Enrique
+Entonces
+Las transacciones
+Que están haciendo de compra
+Aún no tienen el recibo
+Hay que marcarlo
+Y se terminó
+O sea
+No tiene mucha vuelta
+Pero viste que no todas
+Tienen recibo
+Claro
+Yo creo que todas tienen
+Claro
+Que todas tengan
+Eso no
+Hay que preguntarle
+Qué tipo de transacciones
+O sea ahí
+Vos decíle
+Si es eso
+Decíle qué tipo de transacciones
+Porque por ahora
+Solo estamos haciendo
+Recibo
+A directiva de Guillermo
+Tenemos una
+O lo que tiene que ser
+Decirle ahí Santi
+Tenemos especificación
+De recibo
+Únicamente
+Para retiros
+En dólares
+O en euros
+En este caso
+Con Guamoni
+Solo está funcionando
+Los dólares
+Entonces solo hacemos
+Para retiros en dólares
+Si vos haces retiro
+En cripto
+Retiro en cualquier mierda
+No hacemos recibo
+Entonces
+Y eso fue una directiva
+Que nos dio Guillermo
+Entonces ahí tendríamos que ver
+Qué recibos quieren agregar
+Y definir
+Qué información
+Quieren mostrar
+En esos recibos
+Eso es importante
+Por ejemplo
+Nosotros no hacemos
+Recibo de la comisión
+Solo hacemos
+Recibo de la comisión
+De cuánto retiraste
+Entonces vos acá
+Si ves este
+Vamos a verlo de nuevo
+Lo descargué
+Vos mostrás
+Que sacaste
+Veinte mil
+Ciento sesenta y nueve
+Con ochenta y uno
+Está veinte mil
+Ciento sesenta y nueve
+Con ochenta y uno
+No te hacemos una factura
+O sea
+Si te marcamos
+Internamente a vos
+Que te sacamos
+Diez dólares
+Más de la comisión
+Pero a pedido
+De Guillermo
+En el recibo
+Se pone exactamente
+Lo que le va a llegar
+Al
+O sea
+Es un recibo
+Lo que le va a llegar
+Al cliente
+Al beneficiario
+A este fue el que
+Me pidieron
+Que le agregamos
+Un título
+Está
+O sea
+Si eso
+Eso
+Todas esas cosas
+Está
+Hay que pedirle bien
+Que se especificen
+Y de nuevo
+Solo hacemos recibo
+Para esto
+Y ahora lo que vamos a hacer
+Es el recibo especial
+Que cuando vos haces
+Un retiro
+A bolivianos
+Si
+Es solo para
+Para el flujo de
+Venta
+Corregime Enrique
+Pero es solo para
+El flujo de venta
+Está
+En el flujo de venta
+Cuando
+Cuando
+Este
+En el back office
+Cuando se le da a aprobar
+Si
+Este
+Como se llama
+Cuando
+Cuando
+Se le da a aprobar
+Si
+Nosotros ahí lo que hacemos
+Es este
+En ese approve
+Le damos
+Este
+Como se llama
+Generamos ese recibo
+Para que esas transacciones
+De retiro
+Parezcan con recibo
+Entonces
+Lo que tenemos hoy en día
+De nuevo Santi
+Para recapitular
+Retiros
+En dólares
+Cualquier otra moneda
+Y si tuviéramos euros
+También lo tenemos programado
+Para euros
+Pero por ahora
+Solo retiros en dólares
+No retiros en cripto
+Si
+Eso nomás
+Bien
+Vamos a
+Y vamos a hacer
+El recibo que está trabajando Enrique
+Es para la venta
+El retiro en bolivianos
+Si quieren alguno más
+Hay que especificarlo
+Y trabajarlo
+No es tipo
+Sacamos un recibo así nomás
+Porque el recibo es algo delicado
+Que también presentan
+Frente a autoridades
+Entonces
+Nosotros no podemos andar generando
+Un recibo así nomás
+Porque
+Porque a Lorena
+Le picó
+No
+Justamente ellos me hablan
+Como que era el pedido
+De los clientes
+Por justamente
+Nos tenían que presentar
+Claro
+Pero tiene que ser
+Pero por eso te digo
+Y más con lo que me estás diciendo
+Que tienen que presentarlo
+Nosotros no lo podemos agarrar
+Y
+Porque si sacamos
+¿Se entiende?
+Entonces
+Hay que
+Hay que michar
+¿Está?
+Dicen nomás
+Los dejo
+A los que se tengan que ir
+Y el resto
+Se tiene que quedar como post-cram
+Cagaron
+Se tienen que quedar
+Vamos a reír
+Buen provecho
+Buen provecho

@@ -1,0 +1,296 @@
+¿Cómo se llama?
+¿Un script para recorrer?
+El PDF.
+Con la librería.
+Porque tenés que identificar
+los checkboxes.
+O sea, ya hay un script
+pero para los otros formularios, ¿verdad?
+Porque todo esto ya se hace.
+Nada más como que...
+Esto es lo que vamos a hacer es lo siguiente.
+Vamos a crear dos eventos.
+Nuevos.
+Uno que va a generar esto
+y otro que va a generar otro.
+Luego vamos a modificar
+la tabla de company
+para poner estas nuevas dos properties
+autogeneradas.
+Los documentos
+de la compañía son properties.
+Que si están null no están
+y si están vacíos están.
+Fue lo que le decía a Guille.
+Yo te lo subo como lo ponía en la Greenman.
+Cuando subas uno más se publica.
+Y ya está. Y no tenemos que hacer más nada.
+Pero hoy quiere la funcionalidad vieja.
+Ya vamos a estar.
+¿Qué vamos a hacer?
+¿Quiere la funcionalidad vieja?
+¿Cuál es la funcionalidad vieja?
+Igual es sencillo.
+Es agregarle dos properties más
+al modelo de company.
+¿Verdad?
+Dos properties más.
+Que van a ser
+internal, o pre-agreement,
+autogenerate, autogenerate,
+SS4.
+Cuando se crea
+la compañía.
+Probablemente tendrías que enlazar algo
+que genere esos PDF.
+¿Va?
+Déjame pensar.
+Porque la creación de la compañía la hace el worker.
+Sí.
+¿En qué repositorio?
+Te iba a preguntar.
+No.
+Va a ser el worker que va a llamar.
+Va a ser el primer worker que va a llamar al mismo worker.
+El worker es el que crea la company.
+¿Sí?
+Ajá.
+Entonces lo que vas a hacer es el mismo worker va a ejecutar un evento de worker.
+Vas a llamar a dos eventos.
+Va a ser uno.
+Generame un PDF.
+Un documento.
+Y el otro otro.
+Ahí los documentos hay que...
+¿Por qué le dije que los separara?
+¿Por qué le dije que los separara?
+Porque, ¿qué pasa?
+Nosotros podemos tener hasta 20 partners.
+¿Sí?
+Sí.
+Entonces, ¿qué es lo que pasa?
+O hacemos todo el documento.
+Hay que ver dos alternativas de acá.
+O hacemos todo el documento nosotros.
+El de operating agreement.
+O lo rellenamos.
+O le agregamos páginas al documento.
+A un documento existente.
+¿Se entiende?
+Y pomergeamos páginas.
+Hay que ver qué es lo más útil.
+Claro.
+Yo sinceramente creo que lo mejor es generar todo el documento nosotros.
+Sí.
+Coincide.
+¿Está?
+Porque al ser un documento que vos tenés un valor variable, que podés tener X cantidad,
+¿sí?
+Ya no es posible...
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+O sea, a no ser que Guille genere una tabla donde pones toda la información de los
+Premier Agreements y te queda un lugar...
+Como no sabés cuántos vas a tener, lo más sano es generar todo el documento de cero a
+nosotros.
+Los textos que pone, los puntos...
+Es bastante simple el PDF que hago.
+Ahí lo tenemos en una constante.
+Y bueno, title, tanto.
+Tenés una función auxiliar que agarra, crea en el PDF.
+Title, tanto.
+¿No?
+Eso creo que es lo más sencillo.
+Yo ya lo hago mucho más simple,
+pero lo hago, por ejemplo, con
+el documento de las transacciones,
+donde agarro y pongo un título, un subtítulo
+y meto las transacciones. Esto es un poco
+más complejo porque tenés algún texto
+ahí y tiene que quedar más lindo
+el formato, pero nada, es otro mundo.
+Pero eso hay que ver.
+Igual yo iría
+y después tenés la parte del SS4
+que en realidad es sencillo porque
+lo que hay que subir es a PDF, lo cortás,
+lo cortás a la mitad
+el que te pase guille lo cortás
+a la mitad, pero lo que
+vas a tener que iterar
+es el descubrir y alinear
+hacer un map
+entre lo que son
+los checkbox y las opciones.
+Eso es la parte
+compleja.
+Las opciones que marca el usuario y los checkboxes
+que se marcan en el PDF.
+En el PDF todo tiene
+como una especie de referencia culo
+que es horrible y es fea como la mierda.
+O sea, es una mierda, es un socotroco
+de mierda.
+Entonces, tal vez es eso.
+Igual, yo defiendo 10.000
+cosas, o sea, voy a
+detestar esto de no tener versionado
+porque yo ya veo a Ramirito
+ya, el tema
+me lo ponía a discutir con Guille, pero
+lo mismo me pasaba con esto.
+Subo una versión,
+Guille, mirá, avancé hasta acá el documento
+después no sé qué más llenar.
+El día que presentamos la declaración
+si no hubiéramos tenido el versionado, yo creo que Guille
+me echaba la mierda.
+Porque estaba tan estresado que creo que mandaba toda la mierda.
+Porque, ¿qué hacían?
+Los tipos no sabían, llenaban hasta donde sabían
+subían la versión y después Guille
+bajaba esa versión
+y tenía lo que podía bajarse
+la versión que había generado, la otra comparaba
+que habían puesto esos imbéciles
+y ahí hacía las cosas bien.
+Tenías un historial
+que Ramirito y toda esa cosa
+no sé si te acordás ese día
+lo que fue de tarde
+era una especie de bombardeo.
+Pero bueno, está.
+Y bueno, y meter de canuto una especie de funcionalidad
+ahí que te permita recuperar.
+No, no, no, es este caso.
+Nada más copiando.
+No porque hoy en día
+se sube el documento de una.
+Yo te lo autogénero y no te lo permito modificar.
+Solo te permito ver el autogenerado.
+¿Entendés? Y ya está.
+Voy a hacerlo así.
+Es más cerrado.
+Yo autogénero
+porque si esa funcionalidad es de versionado
+y eso también en un momento va a desaparecer.
+Pero yo me atajé el culo
+con esa funcionalidad de versionado.
+Obviamente que siempre validándolo con él.
+Pero no, vamos a hacer eso.
+Es lo que dice.
+Un botón
+descargar versión autogenerada.
+Ya está.
+Y actualmente la versión de documentos anda bien
+porque si vos subís un documento,
+le notifica al cliente, el cliente lo ve y ya está.
+Y el SS4 lo quería guardar internamente.
+Claro, pero el SS4, la versión final
+lo ponemos como internamente
+pero en el frontend.
+En el frontend del site, no lo mapeamos.
+Porque yo en sí agarro
+las constantes de las variables
+para levantar los documentos.
+Entonces al no mapearlo no se va a mostrar un choto.
+Ya está. No sé si me comprendiste.
+Sí.
+O sea, nosotros, lo que voy a revisar
+en el site es...
+Lo único que no entendí es
+pero los administrativos tienen que poder
+descargar ese
+autogenerado
+para poder editarlo, ¿verdad?
+Ellos mismos.
+Ellos lo van a descargar.
+No vamos a permitir
+modificarlo.
+Claro, ellos lo pueden descargar
+modificar por su cuenta
+pero no utilizando
+el backoffice.
+Claro.
+Ellos lo van a descargar.
+Lo que van a hacer es subir una versión final
+que no se le notifica al cliente.
+Ya veo yo teniendo que poner
+esto no notifica al cliente.
+Mirá, ¿cuánto se cerraron?
+Locura.
+1, 2, 3, 4, 5, 6, 7, 8.
+8 compañías hoy.
+¿Cuántas vamos, no sabés, en el mes?
+Ya te digo.
+50.
+Buen número.
+Este mes es de 30.
+Teóricamente
+las 100 están a la vista
+pero bueno.
+Sí.
+No podés basarte en días que hiciste 8.
+No, pero si es 15.
+O sea, literalmente mitad de mes.
+El récord ahora es raro porque en marzo migramos.
+Entonces en marzo aparecen 126.
+Sí, sí.
+No, pero en puro, claro.
+¿Vos tenés su backoffice para ver eso?
+Quizás.
+O sea, tengo el tuyo.
+No. Yo te creé uno tuyo.
+No.
+Y además usted limpió todo el carajo, ¿o no?
+Usted está drogado, ¿no?
+Sí. Correcto.
+Yo venía usando el Santi. Santi Arrabadao.
+Pero en producción, digo.
+Ah, no. En producción, no. Jamás entré.
+¿Cómo que jamás entró?
+¿En Alba Coffee?
+Sí. ¿Cómo que no entró?
+Yo lo tengo que rematar.
+¿Dónde está?
+¿Dónde? Como que su usuario está.
+Si yo te lo di el lunes que yo tuve...
+El lunes 7.
+Lo voy a buscar en la casa.
+Yo te lo creé porque el lunes 7
+cuando iba a hablar en código por si pasaba algo...
+Acá.
+Un drogadicto de mierda.
+Que parece que me habló un pelotudo.
+¿Se anima a confirmarme que puede entrar
+el BBO en prod con este correo de Power?
+Hijo de puto.
+No, te pasa el link al BBO.
+Lo tengo acá.
+Vos ya podés ver todas las gráficas, todo.
+A mí prefiero no tocar mucho.
+Apa. Apa.
+Graphs and Tables.
+A ver. Companies per month.
+Eh. A ver.
+157.

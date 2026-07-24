@@ -1,0 +1,189 @@
+Buenas, ¿cómo va?
+Buenas
+Bueno, en sí
+las tareas
+¿dónde estarían
+las tareas en sí
+para crear?
+¿Arrobame?
+¿Cómo se ve? Quiero analizar los tips y fallas
+No, estas son las de los test
+Sí, las dos de abajo son las de
+una backend y otra de frontend
+¿Quieren atacarlas todas
+en una sola tarea?
+¿Me parece bien?
+Pregunta
+Estábamos viendo
+que hay que hacerla de
+la de backend
+¿Quieren atacarlas todas las de backend y frontend
+en una sola tarea?
+La de backend en una sola tarea y frontend en una sola tarea
+Ah, era la idea
+No sé
+¿Qué decís?
+Lo que sí les pido es que
+si lo vamos a hacer así, necesito que me pasen
+la descripción de las últimas dos
+Nosotros con Martina les creamos esas tareas
+Ahí Enrique
+se va a dedicar del back
+¿Sí?
+¿Correcto?
+Está perfecto
+La del back es la más importante
+y la que tiene que salir más rápido
+porque es el bloqueo real
+que vamos a sacar de una
+Y después el bloqueo de front
+es un bloqueo que
+que se tendría que probar sin el back
+¿Está?
+O de una
+no hacer request
+¿Sí?
+Necesito, lo único que
+estoy alineado con eso
+las tareas están claras, lo que te diría es que
+el roadmap a atacar
+en el caso es
+vos que tratá todo
+pásenme las descripciones de las tareas
+bueno, pásame las descripciones de todas las tareas
+porque en realidad están muy genéricas
+en sí, está bien
+pero lo que te diría es que capaz que mandale
+a cada una de las tareas en este chat
+como un comentario y en el hilo
+me mandás la descripción de cada una
+¿Te parece? Ahí Enrique yo te aviso
+cuando creas pero vos ya empezá a atacar la de
+la del backend
+que sería poder bloquear
+todo lo que serían los accesos
+para esos tres roles
+administrar, únicamente permitirlo
+para esos tres roles, admin, cripto manager
+y lo otro, te vas a fijar que
+en backend ya están esos permisos
+en muchas acciones
+entonces es solamente validado
+¿Está?
+Hay un método has, permisa
+si te fijás en la B2 de triangulaciones
+en todas se utiliza el mecanismo
+para saber el backup user que roles tiene
+ok
+Santiago
+¿Bien? ¿Alguna duda más?
+Si, no
+no están bien estas descripciones
+que te pasé
+No sé Tato, te estoy pidiendo
+que las agrupe porque estaba suelto por todos lados
+en un chat contigo, en un chat contigo
+y Enrique, entonces
+estaban bien creo yo, pero
+te pido que las agrupes y también
+que seas claro
+en cuanto a que ahora estamos atacando
+backend y frontend, entonces
+está bueno que la descripción de Enrique
+por eso, para poder
+revisarlas bien y que quede más en concreto
+te pido ahí, por favor, que cada una
+de las tareas me las mandes
+en un mensaje por separado y en cada uno
+de los mensajes, en el hilo
+pongas la descripción, y yo personalmente
+me encargo de crearlas luego de revisarlas
+entonces ahí nos quedamos tranquilos
+Martín y yo, que ustedes tienen todo alineado
+¿Está?
+Si, las de
+frontend, como son imágenes
+las pasé en mensajes separados
+porque tipo era
+texto, imagen
+Está bien, podes mandarlo en el mismo
+hilo con mensajes separados, está bien
+yo lo que hago es, yo me encargo
+de apuntar la descripción, o directamente
+les pongo en el hilo de cada tarea, les digo
+creé la tarea
+se la asigné a Greg de la descripción
+por favor, lo importante
+es que podamos separar cada una de las
+tareas y yo validar con Martina
+también que la descripción estén bien
+eso nomás
+¿No?
+El roadmap ahí, o sea
+el objetivo a atacar es, Enrique
+de una a lo que es backend, porque así ya
+bloqueamos eso
+Tato iría primero por los tres unitarios
+y después por la de frontend, ¿está?
+Ok, igual
+es que hay algo
+que no entiendo, porque acá
+acá, o sea, en el hilo
+este, están las dos tareas
+separadas, la de frontend y la de backend
+Está Tato, pero envíalas de nuevo, o sea
+yo sé que están, están sueltas en varios hilos
+están las de tareas por otro lado... No, no es un hilo
+Te estoy pidiendo si podés
+agruparlo de nuevo, podés agruparlo
+de nuevo, es lo único que te estoy pidiendo
+Dale, tengo que seguir con otra cosa
+O sea, yo sé que están, es más
+si está bien para vos es copiar y pegar
+es para que sea más sencillo verlo
+nosotros que estamos con otras prioridades
+y necesito poder verlo concreto
+y que sea sencillo, no tener que estar buscando
+en hilos, de hilos, de hilos, de hilos
+de discusión, es eso nomás, que quede concreto
+lo creamos y
+esta tarea es mucho
+reutilizar lógica de cosas que ya está
+en Backend y Frontend
+esta lógica de bloquear permisos
+de todo ya se hace con
+Backend y Frontend, entonces quiero que
+las pasen a
+APRs internas, que las revisen
+a Abuelo Jonathan, que ya trabajaron con esto
+¿está? Así a nosotros no nos llegan
+esos señores, ¿bien?
+OK
+Y que una vez que, lo que sí que pido a vos
+es, vos vas a tener
+esto de Backend y que nos digas ahí
+con Martina y Janet que tenemos
+en qué orden de prioridad
+en qué orden tenemos que mergear las APRs
+o revisar las APRs que mandaste de los documentos
+para que a vos te sea más fácil
+probarlo y así
+¿si? OK
+Después de esto, no me acuerdo
+que teníamos pendiente de tu lado
+Kike o Tatato, Tatato
+tenés esto de los test y Frontend que te va a llevar
+un tiempito, pero Enrique teníamos
+algo de tu lado, además de los
+Cypress, que yo recuerde no
+de estos nada, entonces ahí Kike
+yo lo que te diría es, llegamos con Cypress
+y después seguimos con esto de Backend
+y yo veo ahí
+si tenés algo, pasamelo
+si no tenés nada, yo tengo
+cosas para asignarte
+así que nada
+vamos arriba
+Martina te aviso
+en un ratito ahora para juntarnos

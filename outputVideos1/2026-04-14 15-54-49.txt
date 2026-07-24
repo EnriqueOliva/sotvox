@@ -1,0 +1,211 @@
+Por las dudas, eso que mandaste, Nahuel dijo que lo atacaba.
+¿Se me escucha? Ok.
+Sí, necesito que se sume, Nahuel.
+Nahuel, ¿vos estás corrigiendo eso?
+Sí, o sea, ya lo corregí.
+Básicamente pasó lo mismo que pasó con el error, ¿cómo es?
+Que justificaron la PR, que rompía con el tema de que calculaba, ¿cómo es?
+Los accesos por fuera, el Synthetic Access.
+Bien, lo que necesito, ¿ahí ya lo comiteaste o...?
+Lo voy a comitear, pasaba tanto en el empo de Get Initials y el de Get Company.
+¿Get Company sencillo también?
+Sí, porque tiene también lo de Synthetic Access.
+Nahuel, yo necesito que...
+La palanca es en Enrique y Fernando, no hay prioridad más grande que esto ahora.
+No hay nada, o sea, importa todos tres carajos, esto es lo único que tengo que priorizar.
+Entonces, yo no lo tuve que mover para otra cosa porque hay un ajuste que tiene que salir en Front Tempo
+y los usuarios me están volviendo loco, entonces lo estoy trabajando directamente con él.
+Necesito que entre los tres, ¿cómo se llama?
+Necesito que entre los tres ahí...
+Logremos, ah, o sea, prueben bien esto, o sea, hagan 10.000 pruebas, todas las pruebas que puedan necesito.
+Entonces ahí, este, Enrique, yo si quieren mergear esto, yo ya, a ver, si ya subcomiteaste los cambios, ya lo mergeamos
+y lo último hacemos otra PR que haya que ajustar por si quieren probar en Dev, me parece que puede estar bueno.
+Dale, ya comité eso entonces, me parece que tenemos los tres en Dev.
+Sí, así ya...
+Yo ya lo apruebo, o sea, sí, sí, me parece que está todo bien.
+Ya apruebo y ya lo...
+Porque quiero que, o sea, literal, no pueda haber margen de error ya, o sea...
+Por eso dije, vamos a Dev, probemos 10 veces y salgamos bien.
+No podemos hacer 10 Hotspics a la próxima.
+¿Está?
+Este, así que eso.
+Ahí, mientras les voy comentando.
+Uno de los grandes problemas que pasaron acá, Enrique y Fernando, fueron que...
+Que nosotros ya dejamos todo lo aquén preparado para cuando saquemos la funcionalidad de accesos por compañía.
+Entonces hicimos una lógica súper avanzada.
+Adelantamos mucho tiempo, pero también...
+Está, era obvio que estos issues podían llegar a pasar, ¿sí?
+Así que nada, no hay nada del otro, nada por qué asustar.
+Eh...
+Ahí lo puse.
+Sí, yo no veo nada, nada malo en esta PR.
+A ver, voy a mirar los cambios.
+¿Qué le había pedido a Jonah?
+Lo voy a probar y vamos a margearlo contra Dev, así ya empezamos a...
+A ver, está buildeando.
+Eh, ¿qué cosas hay que probar, sí?
+Técnicamente, Enrique y Fernando, hay...
+Y hay Nahue también para saberlo.
+O sea, de nuestro lado, lo único que podemos probar es darle acceso a todas las compañías.
+Eso, en backend, lo que hace es...
+Ya no tiene la relación TeamMate y CompanyAccess.
+Eso quiere decir que el...
+El TeamMate tiene un booleano nomás que dice que todas las compañías están aprobadas.
+¿Sí?
+Eso...
+¿Cuál es la cagada de eso?
+Y bueno, la cagada de eso es que nosotros lo que hacemos es moqueamos una...
+Cuando vos me pedís el acceso a una compañía, yo te lo moqueo y te lo doy como que está.
+Entonces, el flujo...
+Uno de los flujos que ustedes tienen que probar es darle acceso a todas las compañías, ¿está?
+Y probar los permisos.
+Luego tienen que darle acceso...
+O sea, ahí...
+Cuando le dan acceso a una compañía, tienen dos flujos a testear.
+Acceso a todas las compañías.
+Flujo en que le doy acceso total.
+Hay un switch que dice acceso total.
+Literal, hay un switch.
+Entonces, le das ese switch y automáticamente tienen que probar flujos.
+¿Qué tienen que probar?
+Subir transacciones.
+Poder entrar a mis compañías.
+¿Sí?
+Poder loguearse a banking.
+No quiere decir que tengan que hacer nada.
+Es solo loguearse en banking.
+¿Está?
+Bien.
+Luego...
+Darle acceso a todas las compañías, pero hacer permisos personalizados.
+Volver a hacer lo mismo.
+Y luego, dar acceso por compañía y darle permiso total y personalizado.
+Esos son los cuatro flujos que tienen que configurar de los teammates.
+Permiso total a todas las compañías con permiso...
+Con full access o permiso personalizado.
+Y permisos a X cantidad de compañías de forma manual.
+No a todas, sino a X.
+Con permiso total, full access y permiso personalizado.
+Vamos a esos cuatro casos.
+Ahí lo que tienen que entrar es entrar a accounting, mis compañías.
+Lo que tiene bloqueo.
+¿Qué cosas tiene bloqueos?
+En accounting, tiene...
+Las transacciones no pueden subirlas.
+¿Sí?
+No pueden enviar la declaración.
+En mis compañías...
+¿Está?
+Este...
+¿Cómo se llama?
+En mis compañías deberían poder entrar a subir documentos y todas esas cosas.
+¿Está?
+O sea, en mi compañía creo que lo único que se bloquea es subir documentos.
+Si no, quiero subir el pasaporte y eso.
+Tengan en cuenta que el pasaporte solo se puede cambiar y el documento si el estado de la compañía está iniciado.
+Y si es una LLC o CoCorps.
+¿Sí?
+Yo voy a encargarme de la parte de banca.
+¿Está?
+Este...
+Así que eso.
+¿Sí?
+Vale.
+Nahue.
+Si vos...
+Si esto está pronto.
+Si esto está pronto y ellos no encuentran ningún error.
+Fijate si vos podés actualizar tu funcionalidad de ver permisos y eliminar teammates.
+¿Está?
+¿Sí?
+Porque eso realmente nos hubiera facilitado un montón porque la gente se podría eliminar de teammates o podría ver qué permisos tiene o lo que sea.
+¿Está?
+Que eso vos ya lo tenías.
+Sería solo ese switch y ese endpoint para ver permisos y eliminarse.
+¿Está?
+Recordá que cuando te elimineás de teammates.
+Existe una opción donde si a vos te agregaron solo como teammate.
+Puta madre.
+Fallaron los tests.
+Me cago en la con...
+Bueno.
+No importa.
+Sigo hablando.
+Enrique y Fernando.
+Ahora pasó a estar de su lado.
+Se la sacamos a Nahue.
+Pasó a estar de su lado.
+Arreglen la APR esta.
+Los tests.
+Suben.
+Me avisan.
+Y yo la apruebo.
+¿Está?
+¿Sí?
+Si querés encargate vos Enrique.
+Y Fernando vas corriendo.
+Haciendo pruebas locales.
+¿Está?
+Con la rama hasta que se marche.
+¿Sí?
+Ok.
+Como prefieres.
+Nahue.
+Sí.
+Así.
+¿Está?
+Nahue lo que te decía.
+En tu caso.
+Cuando borrás un teammate que solo fue enviado como teammate.
+Y no tiene compañías owner ni teammates de nadie más.
+Tipo tendría que desloguearte y eliminar el usuario.
+Porque elimina el usuario comunito y todo.
+¿Sí?
+Entonces como que te desloguea.
+¿Está?
+Bien.
+Esa es una funcionalidad que tenemos que tener en cuenta.
+Bueno.
+Todos tienen tareitas con eso.
+Fijémonos hasta dónde podemos llegar.
+Esto.
+Tenemos que salir a producción con esto.
+Así que nada.
+Eso.
+Vamos arriba.
+Ok.
+Bien.
+Fernando y Enrique.
+Prueben lo del QR.
+A ver si están dando bien.
+Ya que están con teammates.
+La parte de banca lo único que pueden probar es el QR.
+Entonces ahí se fijan de que puedan entrar en QR y esas cosas.
+¿Está?
+Ok.
+Bien.
+Entonces ustedes unitarios y yo ya lo marché.
+¿Dale?
+O sea si seguramente es una pelotudez.
+Estoy seguro que es una pelota.
+Dale.
+Vamos arriba.
+Ok.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Ok.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.
+Chau.

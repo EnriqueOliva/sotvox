@@ -1,0 +1,508 @@
+La cosa es así. Esto hay que cambiarle muchas cosas, pero en un principio tiene toda la configuración de TypeScript, un README con mucha buena onda, tiene la licencia que nosotros tenemos para que sea un proyecto de Dashbank.
+Acá la idea es que usted cree un base URL, que yo ahora lo puse con la versión en español, pero lo ideal es que usted ponga la versión sin nada, y en realidad usted cree los mismos tests que crea en inglés y lo crea en español. Entonces se corre para ambos.
+No, no, no. Es importante, hay cosas que hay que trabajar. Por ejemplo, esto le da Cypress Open, Cypress Run, y corre todo. Es una moledora. Corre todo.
+Y el problema de que corra todo es que vos tenés que aprender cómo correr.
+Por parte. ¿Por qué? Porque cosas que nosotros tenemos que tener acá. Ya que vamos a hacerlo, vamos a hacerlo bien. Entonces, anotate dos puntos y me los pasás por Slack.
+Pero punto número uno. Nosotros tenemos que tener priorizados los tests. Cosa que si vos le decís, corréme los tests de regresión de alta prioridad, se los corre.
+Primero, test de prioridad.
+Segundo, deberíamos poder correr.
+Los tests específicos de alta prioridad. De una prioridad en específico. O sea, quiere decir que, ¿a qué voy con esto?
+Que yo, como nosotros tenemos el comando de test unitario que te corre todos los tests así, o te corre tal cosa, yo necesito que vos investigues cómo podemos hacer para correr.
+O sea, que dentro acá de login vos tendrías que tener, por ejemplo, high, medium, low.
+¿Sí? Entonces, si yo te digo, correte test.
+Todos los tests de alta prioridad va a correr todos los high.
+Dentro de, viste que acá tenés login y vos acá en el site tenés login.
+¿Sí?
+Entonces, la idea es que nosotros tengamos prioridades para poder correr.
+¿Sí?
+Eso es importante que lo hagamos antes de arrancar con Cypress.
+O sea, tenemos que poder configurar eso para, o sea, una vez que vos entiendas más o menos cómo funciona Cypress, el segundo paso importante es el poder correr.
+Entonces, tenemos que poder correr los tests por prioridad y también uno por prioridad.
+Porque capaz que yo te digo, córreme, por ejemplo, como está acá, Pay New Company, pero sólo córreme Pay New Company o córreme Pay New Company de baja prioridad, de alta o de media, o de alta y de media.
+¿Sí?
+Entonces, tenemos que poder correr lo que nosotros queramos o un solo test en particular.
+Pero las categorías a nosotros correr, y pienso que con eso vamos a estar bien, tendría que ser.
+Poder correr todos los, primero, poder correr los tests o del site o del back office.
+¿Sí?
+¿Está?
+Eso, primera ramificación.
+Segunda ramificación, poder correr los tests de ciertas prioridades.
+¿Está?
+Alta, media, baja.
+¿Sí?
+Y la otra ramificación es, que es como media paralela a esta ramificación, no es como una ramificación más interna, es.
+Poder correr.
+Poder correr.
+Poder correr todos los tests de un determinado, por ejemplo, de login.
+¿Está?
+Y a la vez, poder correr todos los tests de login de alta prioridad.
+Esto lo está grabando, pero de todas maneras, tenemos que tener todas esas opciones.
+Me encantaría que después me las pase, pues así yo lo valido.
+Por eso, todo esto hay que bajarlo a tareas.
+¿Está?
+¿Por qué digo que es importante hacerlo ahora?
+Porque hay que encontrar la mejor forma de hacerlo, así ya después lo haces y listo.
+O sea, no es tan lineal.
+O sea, no es tan lineal.
+¿Y por qué vos me dirás, por qué tenemos que hacer esto?
+Si esto se corre automático, ¿por qué no corremos todos y ya está?
+Bueno, acá va la razón por la cual no corremos todos.
+Solo hay dos tests.
+Solo hay dos, ¿eh?
+Uno que lo único que hace es iniciar sesión, que ahora lo voy a mostrar cómo anda.
+Y el otro, mirá, ahora está corriendo el de iniciar sesión.
+16 segundos demoró en correr dos boludeces.
+El siguiente desafío sería agregarle una supervivencia.
+El siguiente desafío sería agregarle una subcategoría de los tests que sean smoke.
+Que es una subcategoría de los tests de alta prioridad.
+¿Está?
+O sea, todos los tests de...
+Todos los smoke tests son de alta prioridad.
+Pero no todos los de alta prioridad son smoke tests.
+Entonces tenemos alta, media, baja y después tenemos smoke test.
+¿Está?
+Entonces hay que ver cómo mierda podemos hacer porque ¿qué pasa?
+Esto demora.
+Por más que lo automatizamos y no, y te va a salvar...
+Te va a permitir que mientras que vos estás corriendo, de repente esto en la laptop,
+seguís trabajando en la computadora o viceversa, ¿sí?
+¿Está?
+Porque esto te va a trancar vos todo.
+No podemos...
+Primero, con esto vemos la...
+No podemos saber cuánto va a demorar.
+¿Por qué? ¿Qué pasa?
+Cuando empiecen a pasar muchos tests, esto va a aumentar los tiempos.
+¿Está?
+Porque esto lo que hace es renderizar el frontend y hace un plug.
+¿Sí?
+Esto está salado.
+O sea, yo creo que esto le va a gustar.
+Porque además le va a dar mucho ownership.
+Y ya está viendo que le va a dar mucho ownership.
+Pero, ¿qué pasa?
+Muchas veces, antes de salir a producción,
+nosotros vamos a tener los timings de cuánto demora cada cosa.
+Y te voy a decir, ¿cuánto...?
+Te voy a decir, Kike,
+¿en cuánto está demorando correr todos los tests?
+Tanto, no nos da.
+¿Cuánto está demorando correr los de alta?
+Tanto, no nos da.
+Vamos a correr solo los de mock.
+Demoran, yo qué sé, 30, 40 minutos.
+¿Sí?
+O sea, no es un proceso para correr con la GitHub Action.
+Y para tener 6 CDs.
+Y nada de esas cosas.
+No.
+Pero, obviamente, que le va a dar años de vida a usted.
+Y va a poder hacer que nosotros, todo esto que construyamos,
+vamos a poder empezar a dividir ese famoso trabajo de tratado.
+¿No?
+Entonces, mi plan, acá, Kike, esto.
+¿Sí?
+Que yo ahora subo esta PR.
+Y vos, el fin de semana, no te dediques a hacer más tests unitarios.
+O sea, intentes liquidar con lo que puedas hoy y mañana.
+Pero, el fin de semana,
+que ya te metas con Cypress.
+O sea, jugar con esto.
+Por ejemplo, mirá.
+Acá yo tengo el caso del login.
+El login es bastante...
+Hay que pasarlo todo a inglés.
+Todo a inglés.
+O sea, todo a inglés.
+Lo único que no está en inglés es esto.
+Pero, por ejemplo, yo acá lo que hago es login.
+Lo que hago es, hago un login con Santi, arroba Dasvan, con este test.
+Me fijo, una vez que hago el login.
+Y el login, ¿cómo lo hago?
+Mirá lo huevo que es esto.
+Tengo que capturar.
+Tengo que capturar en el HTML los parámetros.
+Esto acá se está corriendo por consola.
+Y es la manera que usted lo va a correr.
+Pero, si usted quiere correr de a uno y ver qué mierda hace esto.
+Hay un comando que se llama Cypress Open.
+Te va a abrir esta cosa hermosa.
+Vos abrís acá.
+Yo le doy Chrome.
+¿En qué?
+Y acá lo que hace, por ejemplo, ¿viste?
+Te escribe el login, te hace el login, te hace el login.
+Pa, pa, pa.
+Y acá pasó.
+¿Viste que te hizo todo automático?
+Entonces, lo mismo.
+Pone el de Chrome.
+El de Chrome lo que hace es cargar la página inicial.
+Espera que cargue y se fija que tenga el título.
+A ver dónde está.
+A banca.
+Unos segundos y se fija que esté el título acá.
+Que yo le puse crear empresa.
+Ta, ta, ta.
+Expect a title to contain.
+Crea tu empresa.
+A banca, a alguien.
+¿Eh?
+Ah, esto va a ser un huevo.
+Pero, lo lindo de esto es que a medida que vos lo vayas matando.
+No deberían surgir más.
+O sea, ya.
+Después va a ser.
+Va a ser mucho más sano.
+Esto, calculo que yo le he pasado memes que el programador automatiza cosas que de repente
+te llevaban cinco minutos y pierde diez horas automatizando para después demorar tres segundos
+en hacerlo.
+Este.
+Pero la realidad es que esto no es así.
+La realidad es que los test de regresión, como vi en la mano, yo estaba mirando.
+O sea, vos viste todo lo que tenemos.
+Imposible directamente poder hacer esto.
+Esto, quieras o no, vos podés seguir con test unitario, backend o lo que sea y corriéndolos
+aparte.
+Me ibas pasando.
+Otra dificultad que vas a tener es que yo, por ejemplo, acá estoy usando para login
+un usuario que existe.
+Vos no sabés si ese usuario va a existir o no.
+Entonces, también tenés que tener cierto orden.
+O sea, esto es un desafío.
+Es un desafío de código y es un lindo desafío.
+La pregunta es si usted va a estar a la altura de este desafío.
+Lo bueno es que si vos te especializás en esto y en backend, o sea, primero, si vos te
+especializás en Cypress y después te especializás en backend, primero, como tester unitario
+de automation, podés postularte a cosas que ganan mucha plata.
+Pero también podés postularte como un backend que sabe hacer tesis y es tipo end to end.
+Entonces, a lo que voy es que va a estar muy salado.
+Pero te tienen que dar el coeficiente para...
+¿Por qué?
+¿Qué pasa?
+Porque si yo corro un test de alta prioridad de login, no tenga ciertas cosas, ¿entendés?
+No puede ser que un test dependa de otro, ¿está?
+No es tan sencillo.
+¿Y qué meta le pienso?
+Por ejemplo, si yo te digo correrme los test de login de alta prioridad y vos me decís
+no me anda ninguno.
+¿Por qué?
+Porque los pensé como que todos se corrían después de crear cuenta.
+¿Entendés?
+No sé si me expliqué.
+Claro.
+Capaz que para que login...
+Vos tenés que pensar que login tiene que ser independiente.
+¿Por qué?
+Porque es independiente.
+Entonces, lo que estaría bueno es que vos para el login te crees una cuenta y que de
+repente no sea lo que estés testeando, pero copies y pegues y tengas una función auxiliar
+que sea crear cuentas, que agarre y te hace todo el flujo.
+Porque...
+¿Estás viendo?
+¿Estás viendo mi pantalla?
+Creo que sí.
+Pero acá, por ejemplo, yo el método de login lo creé como una función auxiliar.
+Usted se puede hacer toda una súper función auxiliar que cree cuentas.
+Entonces, después...
+Cada método que necesita crear cuentas, crea una cuenta para los logins y hace las pruebas
+del login.
+Pero vos al login no lo podés usar sin crear cuentas.
+Vos no podés hacer refresh password si no creaste una cuenta.
+Obviamente que estos correos, estos test de regresión, lo vamos a hacer únicamente
+en stage y stage va a cenar de basura y vamos a hacer limpieza bastante rápido.
+¿Está?
+Vamos a hacerlo de velo.
+Porque también su computadora va a empezar a trabajar con esto.
+O sea...
+Mi recomendación es que lo hagas en la laptop.
+O sea, que sigas trabajando.
+Literal.
+O sea, va a haber un momento que te va a decir, está, correo en la laptop.
+Es lo ideal.
+Y vos seguís trabajando.
+Por eso.
+Por eso hay que hacer...
+A ver.
+Necesito que se base en mí para...
+En todo el apoyo que necesite.
+Porque esto tenemos que construirlo bien.
+O sea, vos vas a construir algo que después nos va a servir un montón.
+¿Está?
+O sea, realmente nos va a servir un montón.
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+Porque vamos a eliminar todos los otros test.
+O sea, realmente nos va a dar una mano enorme.
+Entonces acá lo importante es que esto, como te digo.
+No puede ser que yo te diga corréme los...
+Que gastemos pilas de tiempo y yo te diga córremelo a ustedes de Logis, de alta prioridad.
+Y vos me digas no porque antes...
+¿Qué pasa?
+Yo pensé que vos corrías el flujo completo.
+Digo, ah, bueno, corrés del flujo completo.
+¿Cuánto demora?
+No, eso le suma 3 horas más.
+No.
+No podemos hacer eso.
+O sea, cada flujo tiene que ser independiente.
+Capaz que vos me decís, para correr todos los test de regresión
+tengo que estar...
+Y sí, capaz que te hay que dejar la laptop prendida 5 horas.
+Pero no te rompe las bolas.
+Pero la dejas acá y trabaja y tal.
+Terminó.
+También otra cosa que hay que...
+A ver, tiene que suceder es que no...
+Es como los test. Vos viste que un test falla uno
+y te deja correr el otro.
+No puede ser que se explote toda la mierda.
+¿Sí?
+A ver, Cypress va a ser un desafío
+precioso
+y va a hacer que usted
+desarrolle como...
+O sea, vas a desarrollar...
+Vas a picar coding.
+Vas a picar coding.
+Y estaría bueno que empieces a crear funciones auxiliares,
+el proyecto con buenas prácticas
+y eso. Para eso voy a estar yo para intentar
+darte una mano.
+Pero la idea es que sea todo un archivo.
+O sea, yo después de que comí
+probablemente no entré más acá.
+O sea, que quiere decir que
+pensá que esto va a tardar más.
+Porque hoy o mañana yo voy a estar corriendo...
+Hoy o mañana Ige se estabiliza y vos sos el que corre estos test.
+¿Y tu trabajo qué es?
+Es una laptop. Te das play.
+Y mientras tanto...
+Y actualizarte es.
+Y cobras más plata porque el guillo no va a seguir dando aumento.
+¿Entendés?
+¿Entendés? Mens.
+Y capaz que cuando saquemos
+un SDK, lo que hacemos
+es cada versión...
+Bueno, te pido que crees
+un clon de este repositorio
+y veas los pequeños ajustes
+que tuvieron para cada versión.
+Supongamos que sacamos... En vez de DasBank,
+sacamos ChasBank.
+Y usamos toda la misma base.
+Y bueno, te digo, Kike, correle los test de regresión a ChasBank
+y fíjate qué hay que ajustarles
+para ver si...
+Para alinearlo a los flujos
+que van a ser los mismos, pero para alinearlo
+a los pequeños cambios que hicieron ellos
+y para garantizar que esté todo bien, a ver si encontrás algo.
+Y ya la tenés así.
+Esto va a ser un complemento de los test unitarios.
+Pero, para mí,
+esto nos tiene mucha más importancia
+que los test unitarios. Porque es end-to-end.
+¿Qué quiere decir end-to-end?
+Vos estás probando backend y frontend.
+El tema es que yo quiero tener un backend seguro.
+Entonces, los test unitarios lo vamos a seguir haciendo.
+Pues yo pienso que si hoy o mañana
+nosotros tenemos una app
+una app mobile,
+vamos a sacar el...
+Nosotros trabajamos con HTTP.
+Entonces, tenemos nuestra base de datos,
+tenemos nuestra API
+y en el mismo proyecto, pero por API,
+se comunica con nuestro frontend en React.
+¿Sí? Eso lo entiendo.
+Nosotros lo tenemos todo junto,
+pero se comunican, por ejemplo,
+HTTP. O sea, una vez que carga la web,
+vos haces consultas por HTTP.
+Vos pensá que hoy o mañana nosotros sacamos
+a React, sacamos
+a la web que vos entrás por el Chrome
+y ponemos
+una aplicación mobile.
+Que como hace Postman, ¿viste que Postman vos le podés
+pegar a los endpoints que nosotros tenemos?
+Bueno, hace lo mismo la app mobile.
+Si nosotros hicimos un backend
+que no es seguro,
+y la app mobile le mandamos a dos o tres
+carolos que la construyan, porque nosotros estamos
+sobrados en plata en las Maldivas,
+¿está? Tenemos que estar
+tranquilos de que ese backend es súper seguro y los
+carolos no van a poder mandar mierda
+por más que ellos no hagan buena validación.
+¿Entendés?
+Por eso va a ser, o sea, probablemente
+a usted ahora se le diga que casi al 100%
+a Cypress y a TESUnital.
+Tá, tá, tá, tá, tá.
+Y cada tanto le mando algún endpoint,
+algún bug, alguna cosa.
+Pero esa es mi idea. Que hagamos dos o tres meses
+como hicimos con los T de regresión y T unitario,
+dos o tres meses con Cypress.
+O sea, de decir, bueno, estamos
+tranquilos, tenemos esto
+zarpado, se corre solo,
+y ahí sí empezamos a hacer cosas, pero
+vos agarrás todo ese ombligo.
+Y obviamente que te voy a ir jodiendo
+cada tanto, che, como el endpoint de Get,
+che, Kike, surgió este bug, entretenete,
+che, Kike, surgió otra cosa.
+Lo bueno es que me parece que esto es mucho más interesante
+que los T de regresión.
+No sé qué piensa de todo esto.
+¿Se ve capaz?
+Es un desafío enorme.
+Es un desafío enorme.
+Pero lo que va a estar
+de más es eso.
+El planeo es que para agosto y esto,
+o tenemos mucho más trabajo, y eso garantiza una subida
+de sueldo, o si Guille se estabiliza,
+vos estás tranquilo,
+ganando esta plata, y podés estudiar
+tranquilo, hasta la facultad,
+llegás, estás ahí,
+che, Kike, hay que actualizar esta cosa.
+Hay dos posibles...
+Esto es como el multiverso, lo saben ellos.
+Yo creo que cualquiera es hermoso.
+Si vos me decís,
+yo trabajo una o dos horas
+y me pagan lo que a vos te pagan,
+yo te cierro así.
+Pero el tema es que tenemos que llegar a eso.
+Y si no,
+y si Guille quiere seguir sacando chiche,
+van a seguir habiendo aumentos, ajustes,
+y eso es lo lindo.
+Ahí es donde se viene la buena vida.
+Bueno.
+Es un desafío bastante grande.
+Y también creo que va a estar
+a la par de las ocho horas y todos los chiches.
+El aguro.
+No es rascarse, el aguro.
+Pero el aguro,
+creo que esto es lo que vos querías.
+Bien.
+A ver, Cypress lo que tiene,
+es que es código.
+O sea,
+quienes hacen test automation,
+lo pueden buscar,
+no lo hace un tester normal.
+Porque vos,
+todo el código que vas a meter,
+las validaciones que van a meter y todo,
+no las puede hacer un tester normal.
+No, no.
+Es algo que se ve literal,
+o sea,
+podés verlo en el plano de ingeniería
+cuando vayamos a votar.
+Se ve en ingeniería de software Agilod 2,
+que es una materia del séptimo semestre
+de ingeniería de sistemas.
+Está recién ahí, lo ven,
+y es algo que a la gente le cuesta un montón.
+Los puestos de coautomation
+ganan igual que a la gente.
+O sea,
+los puestos de coautomation ganan igual que a la gente.
+Porque no es tan común.
+O sea,
+también está bueno.
+Y lo bueno es que vos vas a aprender
+a desarrollar como puto.
+Entonces,
+tipo,
+te vas a sentar con esto
+y también
+no sigue,
+o sea,
+mi idea es que vos,
+construyendo todo esto
+y teniendo todo bien,
+me das una mano
+y después vemos.
+Vamos a hacer el análisis
+y qué vamos a hacer.
+¿Querés seguir siendo con esto
+o querés pasarte más a aquel?
+Y bueno,
+ahí veremos de sumar a alguien
+que empieza a darte una mano
+y vos te pasás más para el otro lado.
+Porque capaz que me decís,
+no,
+mirá esto,
+porque la verdad,
+me encanta.
+Estoy metiendo cosas,
+tengo todo el ownership,
+hago todos los chiches.
+¿Está?
+Igual,
+estamos años,
+Lu,
+hay que hacer funcionar
+a este hijo de puta.
+O sea,
+yo creo que está salado.
+Yo,
+sinceramente,
+hoy en día,
+si vos me dijeras
+dejar de hacer
+lo que estoy haciendo
+en código
+y pasar a hacer
+co-automation,
+me copa mucho más.
+Porque en realidad
+vos vas a crear todo de cero.
+O sea,
+no es que,
+tipo,
+tenés que arreglar cosas.
+Y todo lo...
+Es como tocar tu proyecto.
+Después vas a hacer un crack en esto.
+¿Entendés?
+Y también vas a seguir manejando
+los test unitarios de lo aquel.
+O sea,
+vas a estar salado.
+Pero bueno,
+tiene que estar a la altura.
+Voy a hacer caca.
+Si quiere,
+querés en el Zoom
+y seguimos charlando.
+Si no,
+nos vemos.
+¿Se baja?
+Bueno,
+caca rápido,
+caca rápido.

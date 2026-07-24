@@ -1,0 +1,305 @@
+hoy en particular
+fue un día de reuniones
+no tengo mucho avance en la parte de código
+más allá de
+revisiones
+mi foco ahora estaba en más que nada
+las PRs de Nahue
+que fue el que le dejé más comentarios
+porque son las más complejas también
+y las que seguramente
+tenían más iteraciones
+y ya venían teniendo en realidad
+bastantes iteraciones, así ya las podemos cerrar
+también estoy hablando de Kike
+de lo de Bolivia
+que esa en realidad
+son los comentarios boludos ahí
+pero ya estaría casi cerrada
+o sea, ya estaría casi pronta
+y
+después
+mi idea era seguir con las que están ahí
+sé que Jona
+también había mandado la de la navegación
+lo del drover
+eso también
+lo estaba viendo
+y después
+ahí si podés responder la pregunta
+el enfoque que yo había
+que Nahue preguntó
+yo le dije mi idea
+porque por el tema de la asignación de ejecutivos
+creo que no estaría bueno
+borrarlo así nomás
+no sé dónde está eso
+está en el
+chat
+pasamelo por privado porque no lo tengo
+básicamente era una pregunta
+de doble chequeo en realidad
+bueno
+es que a mí me gusta mucho
+y
+después
+de respecto a lo
+a mi sprint en realidad
+como estuve con 45 mil cosas
+que me llovían por todos lados
+no lo pude actualizar
+pero en realidad
+creo que más que nada
+el code review
+lo voy a tener que aumentar
+y después
+el tema de
+extracto bancario
+en mi caso estaba
+la PR estaba pronta
+Lo único que faltaba era, creo que Gastón me había dejado un comentario por un tema de diseño de un botón, tendría que subir ese cambio y después ya se los puedo volver a mandar y una vez que esté, por lo menos la parte de lo que era el site estaba cubierta y después, ahí no recuerdo bien en qué quedamos con Shona, creo que la parte de él del worker, por el tema del endpoint.
+De la parte de conectar toda la parte de OneMoney y Rail, creo que eso lo habíamos querido hacer yo, pero una vez que estuviera todo esto confirmado para ya tener la APR ahí.
+Exactamente.
+Bien.
+Del lado mío queda nomás actualizar, porque no sé hace cuánto, seguramente hay algunas cosas nuevas en Dev, es actualizar eso y creo que está pronta para corregir.
+Exacto.
+Voy a actualizar la contra Dev nomás y ya quedaría. Después está todo lo de los decimales y todo eso ya lo había dejado actualizado.
+Ok.
+Tendría que volver a chequearlo por las dudas, pero creo que ya estaría para corregir de nuevo.
+Les pido aquí a ambos, por favor, liquidemos lo del extracto, o sea, ustedes ya tienen todo literal para hacer. No hay ninguna limitante.
+La única pausa que estábamos teniendo con respecto al extracto.
+Había cosas alcodeadas, puede ser, para Rail.
+Claro.
+Sí, del lado de Jonah, pero digo, o sea, ya está, tienen todo para hacerlo.
+No, no, no, pero no vamos a necesitar, creo que es el routing number para Rail. Hay algo que con Rail no tenemos, puede ser.
+Bueno, eso es lo que hay que probar en Dev.
+Ok.
+Entonces ahí lo que les pido es, ustedes ya tienen todo. Necesitamos generarlo, nada más. Necesitamos sacarlo a Dev y empezar a probar con los usuarios.
+Sí.
+O ver cómo sacarlo a producción y probarlo en producción. Necesitamos sacarlo.
+Capaz podemos agarrar y sacarlo para producción, no sé, inventar algo, que de repente con una flag, que si hay una flag muestra los extractos y los podemos testear, no sé, analicen, júntense, analícenlo y hagamos una propuesta.
+Creo que Dev está bastante corrupto, así que tenemos que probarlo en producción, ¿está? Pero este, nada, liquidémoslo y fíjense que falta, vamos a ver, o sea, del lado tuyo, Marti, además de seguir.
+Vamos a seguir dándole la mano a usar PDRs. La prioridad es eso, sacar el extracto, ¿está? O sea, no hay nada del lado más prioritario que eso.
+Lo tenemos que terminar, ¿está bien?
+Sí.
+Eso nomás. O sea, ahí Jonah, chequeá lo que está faltando. Creo que, mirá, ya les voy diciendo que para JP Morgan, para Rail, vamos a tener que hardcodear lo que es la parte de JP Morgan, el routing number, ¿está?
+Así que, este.
+A ver.
+Eh, así que, este, nada, eso. Este, no, no, por favor, métanlo a eso, ¿bien?
+Bien.
+Y, está, eso nomás. De tu lado, Jonah, nada más eso. Eh, ahora, o sea, que está librado, para pasarme la propuesta para el...
+Muy bien. Ya la terminó, escribí, te la paso.
+Dale, genial, nos vemos.
+Nos vemos.
+Enrique.
+Sí.
+Eh, ¿cómo está el estatus de lo de la factura de Bolivia?
+Eh, está súper interesante.
+Está muy acelerado, digo, está ahí, al terminarse, básicamente. Este, creo que lo que quedan serán detalles, o sea, obviamente Martina ya comentó que había dejado unos comentarios chicos, digo, está, está próximo a cerrarse, digamos.
+Está. Eh, ¿qué repositorios toca esa fe?
+Eh, Backoffice y Worker.
+Ah, ¿los datos en sí que tenés que usar, ya los tenés todos? ¿Sabés lo que te está faltando?
+No, entiendo que está, que está todo, sí. Básicamente.
+Bien, perfecto, está. Eh, Kike, ahí tenemos prioridad en eso, y después te voy a enviar un APR, porque lo que va a suceder es lo siguiente, viste que nosotros enviamos en las facturas un Transaction ID, está, está, para One Money vamos a tener, el Transaction ID fue algo genérico que nosotros hicimos, que ponemos el ID de la transacción, lo que vamos a tener que hacer es sustituirlo por el UTR o el IMAD, dependiendo de si la factura es Fedwire o SWIFT, pero ya hice todo.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+Bien.
+lo que es el análisis del patrón de todo el código y lo que tiene que hacer es probar a darte bomba
+contra datos de producción y ver que se esté generando bien así que ya está incluso están
+de éste si vos por ejemplo no no no no tengo que subir la rama yo lo voy a hacer es pasar
+la rama por privado está la rama que probar lo que sea por lo que tiene que hacer es generar
+facturas de acceso uno chip de esa mano vamos a yo lo que estuve probando es iterando literal
+con club este para llegar a los formatos todas esas cosas para la lógica que se aplique sólo
+para guamón y va vos tenés que fijarte la parte estética y que yo no le apreciaba más a la parte
+de textiles honesto grado no tengo que seguir con otra cosa esas son tus dos prioridades además de
+pinchar en agua y a jonathan para que las prs de texto lo que sea de fernando llegue a nuestras
+manos no solemos que los tres unitarios también está aplicando una visora entonces necesito que
+los pinches y lo mueva
+también te veas eso de fernando yo no sé que hay los repartos que ir a hacer o lo que sea pero no
+prioridad más que sumarte es ok hay tres que quiero sumar one money y en el site yo será un
+call unit test cypress y después rey entonces hasta que eso no esté pronto no podemos sumar
+más tareas está literal tenemos que sumar eso y si termina con una cosa se arranca con otra
+razón que es bastante grandes e independientes y
+tienen 10.000 flujos y me tienen que llenar para Aeroporto y se termina con eso tienen toda la parte
+tienen todos los tres unitarios de los apostiles cada hora que habíamos vivido de la parte de
+banking de bolsillo de waco p likes me es mi y es mi test unitario con respecto a eso
+tenemos una cantidad entonces necesito que se le metan a eso lo del rebank todo y todas
+la cosas me lo pueden plantear lo vemos de hacerlo lo hacemos en paralelo para que vaya
+Pero eso, juntate con él para ver
+Definímelo vos
+Si es necesario
+Capaz vos me decís, mira Santi, la verdad
+Que si no hacemos esto es un problema
+O es algo que está bueno hacerlo
+Pero no
+En mi cabeza no es prioridad
+Ahora, son ustedes
+Los que tienen que transmitirme a mí
+Y decirme, che, mira, el código se está
+Haciendo a la mierda, está acá
+Esto es inextensible
+No lo ataquemos
+Como prioridad, pero que Fernando lo vaya haciendo
+En background para algunas cosas
+Para ya fijar eso
+Genial
+Yo ya te aprobé lo del sprint
+Está, queda lo de la tarea
+Seguir con los test unitarios
+Y que más
+Nada, eso
+Bien
+Ah, mirá, pará
+En el site
+En el site tenemos
+Las rutas B2
+Y nosotros
+Tenemos
+Endpoint de OTC
+Transaction Malman
+Entonces
+En sí, a ver si lo voy a pasar
+Prioridades
+Unitarios
+Y lo voy a pasar
+Ah, lo puse como service
+Perdón
+Voy a copiar directamente los controles
+Los controllers
+Así les queda más
+Más armadito
+Ok
+Y me iré
+Controler
+Ah
+Ahí pasé en cua
+Literal
+Todos los test del site
+Ni tenemos que tocar el backoffice
+Todos los endpoints del site
+Que tienen que tener
+Tienen que estar cubiertos totalmente con test unitarios
+¿Va?
+¿Sí?
+Ves que hay una enormidad, ¿no?
+Hay una enormidad
+Tenemos
+Ray Controller
+One Money Controller
+One Money Transaction Controller
+OTC Transaction Manual Controller
+User Outcode
+Counterparty Crypto OTC Controller
+Counterparty Manual
+Counterparty Triangulation
+Counterparty Triangulation
+Y una vez que terminen con eso
+Tienen que seguir con los test I3
+Con el flujo variado de la parte de QR
+Smoke, alta, media y baja
+O sea, hay que hacer
+Hay que darle de fondo a la parte de QR
+Porque es algo muy delicado
+¿Sí?
+Entonces
+Pero es en este orden que se va a hacer
+Entonces
+Analizar los referentes de Fernando
+Porque eso puede ser algo que
+Que valga la pena meter para ello
+Pero literal
+Este es el core
+Que utiliza el usuario
+Y esto es lo que nos da más dinero hoy en día
+Que son las transferencias
+Todo esto tiene que tener test unitario
+¿Va?
+Y tiene que tener test unitario
+¿Qué?
+¿Qué?
+En profundidad
+¿Está bien?
+O sea, tiene que estar bien hecho
+¿Sí?
+Esos son los test que tenemos que hacer
+Entonces
+Además de volver a facturas
+Eso tienen para rato
+¿Sí?
+¿Va?
+Ok
+Y ya tienen para rato
+Necesitamos
+Necesitamos tener
+¿Va?
+Ok
+Bien
+Bueno, Kike, ¿quedas librado?
+Bueno, ya vuelvo del sprint entonces
+Dale, vamos Río
+Cuídense
+Chau

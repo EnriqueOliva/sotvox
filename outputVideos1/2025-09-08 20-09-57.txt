@@ -1,0 +1,157 @@
+Yo necesito que para mañana
+O sea
+Esperar en sí cuanto antes
+Para mañana
+Necesito armar un mail
+De bienvenida
+Viste que nosotros
+Enviamos dos mails
+Una factura, que la factura no va a pasar nada
+Porque va a tener la misma información
+Va a decir plan premium
+Pero ahora
+Es la nueva
+Es la nueva versión de Crypto Crossborder
+Entonces yo necesito
+Cuando la compañía
+Cuando la compañía
+Es de tipo
+O sea el company type
+De la compañía es Crypto Crossborder
+Necesito que pongamos eso
+O sea que armemos un mail
+Con ese contexto
+Eso lo vas a tener que validar con Santi
+No es mucha cosa
+Es nomás ponerle Crypto Crossborder y ya está
+En vez de tu compañía
+Proceso de migración
+No me acuerdo que poníamos
+Poner Crypto Crossborder y validarlo con Santi
+Y en la factura
+Que no hable de migración
+Ni de creación de compañía
+Sino que hable de eso
+Nosotros enviamos un mail
+Con todos los datos que puso de la compañía
+Y eso lo hiciste vos
+Trabajas con la información de los socios
+Y todas esas cosas
+Primero yo iría al mail de bienvenida
+A validar eso con Santi
+Y segundo ahí
+Marcarlo con el company type
+Que vos no te quedaste
+Vas a necesitar validar eso con ella
+Porque yo no sé si es necesario
+Crear un socio o no
+Creo que no es necesario que creemos socios
+Podemos dejarla sin socios
+No sé
+Por las dudas
+Por las dudas Martu
+Para evitar problemas
+Si podés crear un socio genérico
+Con los datos
+Para evitar problemas
+No vaya a ser que alguna parte del flujo
+Que no nos estemos dando cuenta se caiga
+O si querés probalo
+Creá una compañía draft
+Después hacé el pago
+Martu
+Y andate al BBO
+Y fíjate
+Si te deja editar los datos sin socios
+¿Te entiendes?
+El tema es que en el BBO
+Si yo le pongo algo va a aparecer
+Por eso
+Yo necesito que hagas esas pruebas
+Yo necesito que hagas esas pruebas
+Yo necesito que valides en el BBO
+Qué pasa si creás una compañía sin socios
+¿Te entiendes?
+Eso es lo que yo necesito que vos valides
+Y ahí con eso
+Porque nosotros en el mail de bienvenida
+No vas a tener socios
+Entonces no tendríamos que poner esa información
+Entonces yo necesito que ustedes
+Ahí que se junten
+Y vayan chequeando entre los dos
+Esa data
+Porque yo necesito que Enrique trabaje en el mail
+Y que vos Martu
+Trabajes en lo que es
+En lo que es el proceso de creación
+Y se vayan complementando
+Ahora Enrique
+Nos está dando una mano
+Y ahora va a enviar todos los price ID
+Y todas esas cosas
+Y vos ya deberías poder
+Completar todo el flujo
+Y pagar con esos planes
+Estás diciendo seleccionás un plan
+Esto solo tiene plan
+No hay otra forma de traer gente que no sea de con plan
+¿No?
+Ahí Enrique yo estoy 100% atento
+A tu PR
+En lo mismo Martu
+Y bueno
+Y mañana vamos chequeando
+A ver si mañana podríamos tener
+Si mañana podríamos tener
+Pseudo finalizado este flujo
+Sería
+Al final del día
+Sería un golazo
+¿Tá?
+Igual estamos atentos
+Estamos a la hora
+Bueno
+Eso nomás
+Yo voy a trabajar
+En lo que son los bloqueos internos
+De la web
+Y voy a intentar sacarlo de Whatsapp
+Que me están pinchando
+Por eso estamos dividiendo
+Primero son los bloqueos internos
+Y ahí vamos a ver
+Martu si nos da el miércoles
+Para sacar el módulo de suscripciones
+Ese lo trabajaremos juntos
+Ok
+O sea el módulo de suscripciones
+No debería ser tan complejo
+Porque el backend
+No hay que tocar nada
+Lo único que deberíamos darnos cuenta
+Que es este tipo de compañía
+Y cargar las cards distinto
+Porque los planes
+Lo vamos a enviar con una flag
+No debería ser eso
+Nosotros debe
+Yo lo que ahora estoy modificando
+Es que cuando carga el selector de compañías
+Te traiga
+Si es una compañía de tipo migración
+O cuál es el tipo
+¿Tá?
+Perdón
+Lo voy
+Bueno
+Bueno
+No lo jodo más
+Perdón Kike que te corté
+Estamos al habla
+No, por favor
+Dale
+Ya mando PR
+Procedo
+Ya stop
+No

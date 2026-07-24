@@ -1,0 +1,457 @@
+No sé qué le pasa a Santi
+Hace rato le escribí por privado
+Yo le escribí hace rato por privado
+Pero a mí no me ha contestado
+No sé
+No, yo en realidad no hablé con él hoy
+Pero nada, lo que vi fue que
+Mandó solicitud de tareas
+No tienen descripción
+No sé, me está faltando Jona
+Era cortito
+Pero era para ver cómo nos organizábamos
+Yo estoy acá, falta Nahue nomás
+Nahue, perdón
+Viste
+Ni era para pasar eso
+Es decir, hay que echar a Jona
+Y te van a rajar a vos
+No sé si le habrá pasado algo
+Ahora le voy a preguntar
+Ahí creo que reaccionó Nahue
+Está igual vos Gastón
+Estás un poco al tanto de eso
+¿De los teammates?
+No, no, no, la redimensión
+De los jugadores
+De los correos
+Creo que quiero hablar con todos
+Ah, sí, sí, sí
+Y vemos el estatus de cómo está
+Ahí entró Nahue
+No sé qué le habrá pasado
+Bien
+Marti, ¿estás?
+Gol
+Bueno, bien de bien
+Bueno, nosotros venimos haciendo
+Refactor de correos
+Y ahí creo que a todos les ha tocado alguno
+¿Sí?
+Algunos se han mergeado
+En la última salida
+Producción
+Y otros están en progreso
+O mismo por mergearse
+Linda tasa Nahue
+Entonces, este
+Lo que
+Lo que les iba a pedir ahí
+Es que coordinen con el equipo de diseño
+Porque vino un pedido de Guille
+También Matías lo había dicho
+También
+Y Beto también se venía quejando
+En un channel interno
+De que bueno, está
+Los mails tenían mucho scroll
+Bla, bla, bla
+Y todas esas cosas
+O sea, como que
+Con las imágenes estaban quedando muy amplias
+Entonces
+Lo que nosotros necesitamos
+Hacer ahora es
+No
+No hay
+No quiero dejar imágenes
+O assets duplicados
+¿Sí?
+Entonces tenemos que actualizar los assets
+¿Tá?
+Y tenemos que actualizar los correos
+Ahí, Gastón
+¿Cómo vienen con eso?
+Con los correos que
+Ya se mandaron a Ready for Dev
+¿Cómo vienen con la actualización?
+¿Tenés idea?
+¿Tenés idea?
+Yo probé a Santi
+Pero todavía no me ha contestado
+Sí, Santi era el que estaba más
+Más metido con eso
+Yo por mi lado
+Iba a empezar hoy con
+Con la
+Con los que están en Design Review
+De mi parte
+Pero nada, sí
+En realidad
+Santi era el que estaba trabajando más en eso
+Ahí
+Sí, te confirmo un poco
+Ahora lo voy a llamar
+Lo que sí te animás a compartir pantalla
+De alguno que haya
+Redimensionado
+Sí, me fijo
+Santi
+Te mandé el solicito
+Ahí va
+Sí
+Sí, Santi
+Yo hablé ayer con Santi Pantin
+Sí
+Él me dijo
+Mirá, estamos reajustando el tamaño de los mails
+Reduciendo los espacios
+Y los tamaños de las imágenes
+De momento tengo solo uno en Ready for Dev
+Que es el de cierre de sesiones
+Te comparto también
+La idea de tamaño
+En breve puede que queden listos dos mails más
+Que son los que me pasaste
+Ni bien me los apruebe Guille
+Te los comparto
+Este mail que estamos
+De actualización de cuenta
+Perdón, el que estoy viendo yo
+Este ya está achicado
+Es que en realidad
+Este yo lo mandé a
+Design Review
+Se lo puse en Design
+Todavía no estaba aprobado de su lado
+Pero yo ya aproveché a dejarlo
+Con el nuevo layout
+Pero esto está aprobado por Santi
+Sí, sí, por Santi, sí
+Es esto
+Acá se puede ver mejor
+Cambio, ¿no?
+Acá es donde estoy compartiendo yo
+Bien
+Yo lo que necesito
+Enrique, Jona y Nahuel
+Que ustedes
+Revisen con
+O sea, revisen las PRs mercheadas
+O las PRs que están en progres
+O sea, más que nada
+Las PRs que están mercheadas sin progres
+De los mails
+Que ustedes hayan trabajado
+O estén trabajando
+Si los están trabajando
+Ya los actualizan
+¿Sí?
+Y si lo
+Y si ya lo hicieron
+Hay que
+Hay que volver a enviarlo
+¿Está? O sea
+En los dos flujos hay que volver a enviarlo
+La diferencia es que en uno
+Vamos a tener que crear una nueva tarea
+Para actualizarlo
+¿Sí?
+Y en el otro
+Vamos a tener que
+O sea, usted
+Tapa que la PR ya la tienen en pull request
+Vuelve a Design
+¿Sí?
+Vuelve a Design
+Después Interno
+O sea, vuelve todo el flujo para atrás
+¿Está?
+Bueno, vamos a hacerle
+O sea, nos vamos a
+Después
+Ya estamos metidos en el baile
+De actualizar los mails
+Entonces actualicémoslo
+Ahí necesito que se vayan
+O sea, vayan haciendo un research
+Se van contactando con Santi y con Gastón
+Este
+Para ir viendo el estatus de esos mails
+Y vayan generando tareas para
+O actualizarlos
+O en el caso de que ya tengan una tarea en pull request
+Bueno, la vuelven a Interno
+¿Estamos?
+¿Sí?
+O sea, vuelven a Design e Interno
+Porque ya hay que hacer este achique
+¿Sí?
+Nada del otro mundo
+Como pueden ver
+O sea, lo que se hace en la mayoría de correos
+O sea, esta es la propuesta
+¿Sí?
+Lo que se hace en la mayoría de correos
+Es únicamente achicar un poco los pixeles
+O sea, lo que son los márgenes arriba
+¿Sí?
+O los paddens
+Dependiendo, no sé ahí qué serán
+Pero sí son los márgenes que están entre las cosas
+Toda la sección
+Y lo que se hace es achicar la imagen
+Obviamente que ustedes tienen que cargar
+La nueva imagen
+Y
+Y reducir esos tamaños
+¿Sí?
+Entonces ahí
+Cada mail que ustedes agarren ahora
+Esto que está mostrando Gastón está bueno
+Porque cada mail que agarren ahora
+Deberían tener ya esta reducción
+Que visualmente todos lo notamos
+O sea, ya notamos una imagen más chiquita
+El padding de Dash, banca arriba, es menor
+¿Sí?
+Y la separación entre los botones y todas las cosas
+Cambia un montón
+Entonces, si ustedes van a agarrar
+Un mail
+Y de repente
+Santiago Gastón
+Le dijeron que está pronto
+O mismo ya pasó por revisión
+Y no está achicado
+¿Está?
+Este
+Automáticamente lo arroban en el channel de design
+Y se lo piden a Santiago Gastón
+¿Está?
+Que hay que hacerle la actualización
+¿Bien?
+Y
+Si ustedes ya agarran el mail
+Y se dan cuenta que está achicado
+Está pronto
+¿Está?
+Pero necesito ahí que ustedes
+Se pongan en contacto
+Y trabajen en conjunto con diseño
+Para
+Además de ya esta dificultad
+Que estábamos teniendo de actualizarlo
+Actualizar los mails
+Bueno
+No agarrar mails nuevos
+¿Sí?
+Sino corregirlos que ya están
+¿Bien?
+En el caso de las PR ya mergeadas
+¿Sí?
+Ahí esto va para más para Yona y para Nahue
+Pueden coordinarse con Enrique
+Porque sé que ustedes están haciendo otras cosas
+Y justo ayer Enrique me pedía tareas para ti
+Y metí eso
+Si por ejemplo ustedes ya tienen
+Alguna tarea mergeada de counterparties
+O lo que sea
+Que ya está mergeado
+Y eso sería solo reducir los assets
+Y reducir estos tamaños
+Pueden pasarle esa tarea a Enrique
+Delegársela
+¿Está?
+Así Enrique les da una mano
+Y ustedes pueden seguir con lo que están
+Con lo que están
+En el caso tuyo Yona
+De
+Ah
+Del chatbot
+¿Sí?
+Y en el caso tuyo Nahue
+De team mate
+¿Bien?
+Entonces
+O sea son ustedes
+Yona y Nahue
+Responsables de chequear
+Que esté mergeado
+Y el cambio
+¿Sí?
+Pero una vez que tienen toda la info
+El trabajo lo pueden delegar a Kike
+¿Bien?
+¿Estamos todos?
+Alineados con esto
+Ahí Gastón lo que te pido es
+No sé yo le dije unos mensajes a Santi
+Ahora
+En un rato le escribo
+Bueno espera la daily
+Ya falta poco
+Igual no tenía mucho más para ver con él
+Pero te pido que vos también le escribas
+Y a ver si se pueden reunir
+Antes de la daily
+A ver si tenemos novedades de esto
+A ver cómo viene
+Y también les pido
+Lo mismo que le dije a Santi
+Creo que nos reunimos la otra vez con Marty
+Es bueno
+No trabajemos en mails nuevos
+Sino que
+Ajustemos los que están
+Y todos los que se hicieron
+¿Está?
+Ya tenemos la aprobación de esta reducción
+Así que estas reducciones
+A partir de que yo se las apruebo
+No es nada del otro mundo
+Lo único que estamos haciendo es
+Reducir los márgenes
+¿Está?
+Y reducir el tamaño de la imagen
+¿Sí?
+O sea esa es la reducción
+¿Correcto Gastón?
+Igual después doble chequea con Santi
+Doble chequea con Santi
+Entonces
+No necesitamos pasarlos a revisión
+De Guille
+¿Sí?
+Es solo
+O sea Guille ya aprobó la reducción genérica
+¿Está?
+Entonces pasemos a reducir todos
+Bajo este nuevo formato
+¿Estamos?
+Este
+Yo creo que esto va a estar bueno
+Porque mismo
+A mí me pasaba mucho el celular
+Que pegaba como el latigazo
+Por la primera imagen más grande
+Creo que ese efecto también va a ser más chiquito
+Entonces va a estar más bueno
+¿Bien?
+Eso nomás
+¿Alguien tiene algo que quiera charlar?
+Si no nos vemos en la daily
+Ahí algo rápido
+Porque dijiste eso de la tele
+El latigazo
+Para evitar eso
+Lo que se puede hacer
+Es reservar ese espacio
+En pantalla
+Si sabes el tamaño de los píxeles de la imagen
+En el HTML
+Reservás ese espacio
+Y así no tenés ese latigazo
+De que se te estira
+Me gusta la idea
+Gastón
+¿Podemos afirmar que todas las imágenes
+Que estén ahí van a tener el mismo tamaño?
+Por lo menos la de arriba del todo
+Que es la que aparece
+Sí
+Se puede ajustar todas
+Para que tengan
+Una altura por lo menos máxima
+O una altura máxima
+Una altura fija
+Lo que sí
+Capaz el ancho
+Pero lo que importa es la altura
+Sí, ahí va
+Bien ahí Nahue
+Me gusta la idea
+Gastón me lo confirman en la daily
+Así ya también
+Cuando Enrique, Jonah, Nahue
+Ya agarren esto
+Ya fijen ese ancho
+Esa altura
+Y eso corrige lo del latigazo
+Que es un problema que tenemos
+En otras secciones
+Mismo del site
+Yo creo que ahí
+Nahue, Jonah y Enrique
+También confirmen
+Para la daily
+Pero esa imagen
+Nosotros no estamos haciendo
+Un reside dinámico
+Sino que la estamos mostrando
+El tamaño que viene
+Y ya está
+¿Está?
+Creo que es así
+Las dudas doble chequenlo
+Pero de ser así
+Si podemos confirmar el alto
+Más allá que el correo sea más ancho
+Lo que sea
+Nosotros ahí por ejemplo
+Con Jonah
+Habíamos trabajado en su momento
+En la parte de KYB
+Que cuando achicábamos las imágenes
+Se veían todas
+O sea
+No era tan sencillo
+Definir un alto
+Porque
+Era dinámico
+La altura
+La dinámica de altura
+¿Ya?
+Pero si acá nosotros podemos definir
+Que la imagen la mostramos así
+Y mantenemos el alto
+Ahí Gastón
+Mantengamos un ancho
+Por lo menos para la de arriba
+Si después hay una imagen más abajo
+Está
+Esa
+No vamos a andar prediciendo
+El alto para todo
+¿No?
+Pero por lo menos
+La imagen de arriba
+Que es la primera impresión
+Que no tenga ese
+Ese efecto
+Me gusta el ED
+Bien
+Así que ahí Gastón
+Si podés juntarte con Santi
+Antes de la daily
+Chicos
+Confirmen eso
+Y bueno
+Váyanse coordinando
+Y bueno
+Entre ustedes tres
+Si aprovechen ahora
+Capaz que también
+Antes de la daily
+Cosa para ya tener
+Tareas definidas
+¿Bien?
+Dale
+Bueno
+Ahora sí
+Los dejo
+Marti si podés
+Quédate cinco
+Nos vemos

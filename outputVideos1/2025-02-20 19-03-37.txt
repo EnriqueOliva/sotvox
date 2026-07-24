@@ -1,0 +1,424 @@
+No, no, pará, el registro del endpoint.
+El registro del endpoint está bien.
+Nosotros,
+el equipo del endpoint está mal, porque
+el último, o sea, fíjate que siempre
+nosotros estábamos manteniendo
+el get
+final, el de hello
+from API v1, tiene que quedar
+siempre abajo del todo. Entonces,
+ahí es importante que eso, la parte
+de accounting, accounting code,
+lo subamos.
+De corazón, gracias, se me va a emocionar el punto.
+claro. O sea,
+lo que digo es, el último endpoint tiene
+que ser el de la línea.
+El de la línea 85. Así que vos lo que tenés
+que hacer es switchearlos.
+Si vos solo mañana
+hicieras un endpoint y ya hay,
+por ejemplo, si vos hicieras un endpoint de blogs,
+deberías agruparlos donde están los de blogs.
+Si hicieras un endpoint de notificaciones,
+de notificaciones. Como no hay ninguno de accounting,
+está bien que lo pongas solo al muchacho.
+Pero siempre,
+si vos creas
+uno nuevo, siempre lo
+ponés ahí, pero por
+arriba del básico
+del 85, de la línea 85.
+Está bien.
+¿Está? Es.
+Está. Bien.
+Aprovecha y dentar ahí,
+ya que estábamos, por las dudas.
+Tenés que aprenderte
+el comando, que lo reparió.
+Bueno, ahora vayamos
+al controlador. Bien.
+Lo del log está bien,
+lo de la línea 19,
+eh, ya,
+ya se hace, ya que no es necesario,
+porque lo hace, si volvemos para
+atrás, volvemos uno para atrás,
+al index, al index,
+un archivito, ahí va. Vayamos al,
+está, pará, pará, pará, porque ya estoy
+viendo otro problema. Fijate
+que todos tienen un
+get, get controlador.
+Vos tenés que definir arriba del todo
+un get controller para ese nuevo
+controlador. Vos lo estás
+haciendo obtener desde el container
+así nomás, pero deberías tener un método get.
+Fijate que, por ejemplo, si agarrás cualquier,
+tenés get file controller,
+get in my controller,
+entonces deberías registrar el tuyo ahí.
+Identity lo necesito.
+Claro que sí, mira.
+Venga de chupada. A ver.
+Bueno. Bien?
+Bien. O sea, pará.
+Borralo y volvá a importarlo.
+A veces se chotea, o sea, no sé.
+Best piece of it.
+What is the best piece of it?
+A todo libro.
+Contále un poco de tu historia a la gente, si te conocen.
+Y bueno, ¿qué te pareció la llamada?
+Bueno, te salí de la
+presentación y te paramos y hablamos.
+Dos. Feliz fecha.
+¿Cuál es el mejor
+piece of advice that you have ever received?
+Ahí está el problema.
+Usted le está errando a todo.
+¿Te imaginas? Es verdad.
+Ah, pará.
+¿Bajá? No.
+No sé, sinceramente no sé, pero usá el get ahí.
+En el async handler pasále el get
+de una. O sea, no lo pases
+como una London Fusion. Pasále async handler
+de una, pasále el get.
+Igual que los de arriba.
+Y ya te digo.
+Fijate.
+Ojo que es async coma
+tenés un paréntesis de más.
+No, ese está bien.
+En realidad es el otro.
+Async handler es un método que recibe el controlador
+y en string el
+nombre de la función que vos vas a llamar.
+Ahí vos solo le estás pasando
+el controlador a async handler.
+En la línea 89. Fijate que
+solo le estás pasando el controlador.
+Deberías pasar el controlador y el string.
+Ah, pará.
+Ahora vamos a hacer una cosa.
+Fijate que sea el mismo nombre
+del get commercial activity
+code controller que el que definiste
+arriba. Claro, fijate que
+en la línea 28 definiste
+commercial activity code controller como
+variable y vos lo estás intentando exportar.
+Siempre se puede.
+Está, ahora sí.
+Siempre se puede
+hacer las cosas un poco más.
+Bien, vamos arriba. Vayamos
+ahora al controlador.
+Venimos bien, venimos bien, venimos bien.
+Mierda.
+Ahora, qué cosas...
+Ah, perdón, habíamos ido para atrás y encontramos
+otras cosas. Volvamos para atrás un segundo.
+Si prestamos atención
+vamos al async handler.
+Alexa, silencio. Alexa, silencio.
+Fijate que ahí ya
+se llama log en la línea 9.
+¿Ves? Cada vez que se llama un método
+se llama un método
+pero se imprime el nombre del método
+con una barrita. ¿Se ve?
+O sea, entonces, ¿qué quiere decir eso?
+Que en realidad, nosotros ya
+lo hace automático. O sea, cuando vos llamás
+o cuando viene una request
+y fijate que justo usa el log
+del .log, no usa el log
+static. Entonces, cuando viene una request
+digamos, getCode, ya
+de pique te pone el UID
+y que te dice, llamaste a este
+método. O sea, estás haciendo una llamada,
+una request a este método.
+Entonces, en el controlador
+no necesitamos poner
+la línea 19. La línea 19
+cataplufo.
+Pues, nosotros lo que hacemos
+es desestructuración.
+Entonces, lo que es
+hay varias cosas ahí a chequear.
+Primero de nada, yo lo que te diría
+es lo siguiente. Todos
+esos valores, toda esa
+validación que vos estás haciendo,
+¿tá? Deberías
+recibir la query y pasársela
+al getCode.
+¿Por qué? Porque el getCode
+vos acá no deberías tener mucha
+lógica. Si, por ejemplo, vamos a
+CompanyController,
+a ver, andate a Correspondence
+Controller. Fijate
+GetCorrespondence.
+Yo agarro, recibo y te paso
+al servicio. Que una cosa que
+está faltando es la sanitización.
+Yo agarro,
+sanitizo y te lo paso al servicio. Yo
+acá no tengo lógica. Porque el
+controlador lo único que hace es maneja la data,
+sabe interpretar de cómo viene la data
+HTTP, se la pasa al
+servicio y después escupo
+lo que me diga el servicio.
+¿Tá?
+Entonces,
+vos deberías lograr algo como
+esto ahí. Donde
+sea mucho más sencillo y concreto.
+Y bueno, el estilo de
+primero, lo de la
+línea 14 es una
+desestructuración bastante limpia, porque
+no tenés que hacer como tres puntos.
+Es algo que se intenta evitar, más que
+nada en backend. Y después, fíjate
+que cada punto lo sanitizás
+y se lo pasás. Y ahí tenés un
+OR. Si no viene, le pasás un valor por
+defecto. ¿Entendés?
+O sea, eso para arrancar.
+Entonces, vos ahí estás haciendo mucha
+validación, debería ser algo más sencillo.
+Tipo, si no viene nada, pimba, paso arriba
+y además lo tengo que sanitizar.
+Vos ahí se estás haciendo if, lo que sea,
+eso no debería estar.
+Lo otro, como
+el code no debería venir con espacios,
+pero si llegase a venir
+el code con espacios, deberías
+sanitizar, o sea, deberías sacárselos
+adentro del getCode.
+Con el método que ya generamos
+de limpiar los trim y todas esas cosas.
+Entonces, en sí,
+y fíjate que otro detalle
+súper importante, es que la línea 17
+de logs no se usa, porque el getCode
+tuyo, internamente vos no pusiste
+ningún log. Entonces, no tendría sentido
+poner la línea 17
+para obtener el log.
+Eso te va a sacar import de arriba,
+probablemente. O sea que
+ahí, si querés, como vas, como para
+basarte, fíjate el de correspondencia
+como para trackear.
+Después, si vamos al servicio,
+si vamos al servicio,
+vos ahí tenés un findRandom,
+está bien,
+está bien, lo que está
+pasando, lo que está faltando ahí, es que
+vos no estás recibiendo el user.
+Fijémonos más,
+fijemos en el primer
+index que miramos. Nosotros
+le pusimos un cognito millware,
+o vos se lo pusiste en la línea
+88. ¿Qué quiere decir eso?
+Que vos estás validando que
+venga un token, o sea, que sea un usuario
+logueado en la plataforma.
+Para que nadie pueda, o sea,
+si no, cualquier persona pública podría acceder a
+estos tokens. Entonces,
+ahí, volvemos
+al caso de Correspondence
+Controller. ¿Qué hace
+Correspondence Controller?
+Recibe el usuario,
+que lo recibe de la request,
+y entremos a GetCorrespondence,
+al de servicio.
+No, pero podés entrar desde ahí,
+con el control y haciendo
+clic en GetCorrespondence.
+Bueno, baja un poquito.
+Viste, justo
+en realidad lo hace el de abajo.
+GetCorrespondence no lo hace.
+Solo llama a
+ValidateUser y se fija que, no sé,
+ValidateUser. Ah, lo hace ValidateUser.
+Mirá, ya que estás, vamos a hacer
+algo. En la línea 34
+pone una sink.
+Pone await.
+Ahí va. Y lo ponía en la línea
+35 también. Estaba faltando.
+A veces estaba llamando
+y estaba explotando, pero en un hilo aparte.
+Bajemos al ValidateUser.
+ValidateUser se fijaba
+que el usuario exista. O sea, que tiene
+que existir ese usuario registrado.
+Si no, te exploto.
+Ya validaste con Cognito que el token
+es válido y está asociado a un usuario
+Cognito. Lo que necesitas validar ahora es
+que el usuario
+existe como tal en nuestra base de datos.
+Entonces, eso está faltando.
+Porque ya vos le validaste que el token
+es válido. Lo estás haciendo con el Cognito Milway.
+Pero una segunda capa
+es que alguien no truchó ese token,
+sino que nosotros, en nuestra base de datos,
+también existe ese usuario. Como una segunda
+capa de validación.
+Eso es await, déjalo.
+Ahí porque ya es tan bueno.
+Fíjate que, por ejemplo, ahí
+se ve que el GetOwnerManagerCompany,
+cuando lo hizo Martu,
+en realidad
+hace lo mismo que el ValidateUser.
+Así que,
+podríamos borrar.
+Ya que estamos, vamos a optimizarlo. Subamos.
+Copiemos la línea 34
+y borremos
+desde la línea 55
+a la 58.
+Y suplantémoslo.
+Ahí.
+Suplantemos por eso.
+Ah, no. Dale control Z.
+No, porque Martu obtenía el usuario.
+Me cerró el ojete. Bien.
+¿Está?
+Pero lo importante es eso. Vos me decís,
+¿por qué el GetCorrespondent solo valida
+que el usuario exista y ya está? Y sí, está validando
+que el usuario existe. Nada más.
+O sea, nosotros en Cognito
+ya te validó que el usuario existe. Lo que está validando
+es que ese usuario que Cognito te devolvió,
+que tiene ese token, también existe.
+Porque, por ejemplo, si no yo podría usar...
+Si yo no hago esta validación,
+podría hacer transacciones
+a nombre de otro usuario.
+¿Está? ¿Sí?
+Ese pequeño detalle.
+¿Está? ¿Qué más? Ahí cuando llamás
+a GetCorrespondents, deberías validar
+también que la compañía
+tiene permisos del usuario, pero bueno.
+O sea, se podría hacer una validación
+si está mal. Se debería hacer.
+Pero está. No importa.
+Pero vos
+fijate que ahí, ya que estamos,
+analicémoslo. Vos cuando traes la correspondencia
+debería fijarte que esa
+compañía está cedida
+para que vos la administres
+o
+es tuya.
+Para poder ver su correspondencia.
+No importa. Está bien.
+¿Está? Bueno.
+Sigamos entonces. Prosigamos.
+Entonces, vayamos al servicio.
+En el servicio, entonces, está faltando esa validación
+porque está faltando recibir el usuario.
+¿Está?
+Está faltando todo lo que es la
+validación del code y del limit.
+Porque vos deberías validarlo acá adentro.
+El limit y el code. ¿Está?
+Validar lo que cumple. ¿Sí?
+Y después. Y otra cosa
+que está. O sea, que vos
+deberías tener. Claro, el tema
+que estás. Deberías tener un único return.
+Entonces, para poder tener un único.
+Vos ahí lo que estás haciendo, devolvés una promise
+y ya. Y zafás. ¿Está?
+Pero vos deberías, siempre que haces
+una llamada, deberías
+hacerlo a wait.
+En la línea 14 y 16, como vos devolvés
+una promise, la está agarrando el servicio.
+Pero si vos quisieras,
+obtener eso y analizarlo más abajo,
+lo más sano siempre es hacerle una wait.
+Entonces, si el método
+vos siempre
+basate en esta premisa.
+Si la función que vos llamás es async,
+tenés que hacerle una wait. Siempre.
+Si no, puede funcionar de culo.
+Porque ¿qué es lo que está pasando?
+El controlador recibe una promise
+y es express el que la está
+descomponiendo esa promise y está
+esperándola.
+Hasta el punto de que ahora que me pongo a analizar,
+si explota el findByPromise,
+puede ser que te diga que es un método del controlador
+que explotó. Sería interesante probarlo.
+Pero no importa. Vayamos a la premisa.
+Siempre que vos tenés una async, tenés que tener una wait.
+Entonces, si findByCode.startWith
+es async,
+tenés que tener una wait.
+O sea, debería ser return
+a wait.
+No, al revés.
+Pero acá, digamos, faltan varios
+pasos de validaciones. ¿Qué está faltando?
+Bueno, validar que el usuario viene bien.
+Probablemente, ahí
+es copiar y pegarlo de correspondencia.
+Después,
+sería bueno tener un único return.
+O sea, tener un resultado nulo
+y eso transformarlo en un único return.
+O devolver findByCode.startWith
+o devolver findRandom.
+Después, ¿qué más?
+Y obviamente,
+está la validación del code.
+Vayamos al repositorio, si no tenés
+más dudas de acá.
+Yo creo que el repositorio...
+Sí, lo de la línea 32 está original.
+No sería necesario, pero está original.
+Así que, me gusta.
+Dejémoslo.
+Y después, lo otro parece que está bastante bien.
+No encuentro fallas.
+O sea, que estos métodos están excelentes.
+A ver.
+O sea, vos tenés el len, le decís que el len
+en la columna code forma ascendente.
+Está bien.
+Y tiene que arrancar
+con ese code. Está perfecto.
+Yo lo que me pregunto ahí es
+si, no sé si vale
+la pena. No, no, está bien.
+Está bien, está bien.
+Está bien.
+Está. Serían esos ajustes.
+Si querés ponerle pausa a la grabación
+y después lo bichás.

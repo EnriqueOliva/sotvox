@@ -1,0 +1,553 @@
+La siguiente es una guía de cómo trabajar como veteos en...
+¿Y qué? ¿Qué estabas haciendo? ¿TikTok?
+Sí, viste que tengo que...
+Se mutía, se mutía porque claro...
+Sí, tengo que mantener presencia en redes sociales.
+Que vamos, manda del 50-50 como Orsi, ¿eh?
+Ah, que voy a hacer.
+Sí.
+Si no te da la plata hablamos con recursos humanos, no andes haciendo esas cosas.
+Escuchá.
+Bueno, mirá, trabajo, trabajo, trabajo, trabajo, viste, la vida es así.
+Más trabajo, te da trabajo, te quita trabajo, quitan trabajo, sacan trabajo.
+Horrible lo que hace la gente.
+¿Te animás a compartirme pantalla del back office en cualquier ambiente?
+Si es posible en dev, mejor.
+Dios mío, ¿qué voy a hacer?
+¿Qué quiero hacer?
+Procede a agarrarse la cabeza.
+Sí, pues ahí.
+Viste, te adelantaste, te adelantaste, te adelantaste, ya tenías compartido acá, viniste a bajar la mara del equipo.
+Y estás pagando cualquier cosa, BCU.
+Sí, va a ver tu plata, Enrique, el BCU va a ver tu movimiento.
+La puta que te parió.
+Entré en configuración.
+Martina, dejá de chusmear las cosas que tiene Enrique.
+Carajo.
+Martina.
+Martina, te pido por favor.
+Yo sé que te interesa ahí, enano, dos por dos, no sé cuánto, pero dejalo tranquilo, es su vida.
+Dale pandilla ahí, Kike, a WhatsApp.
+Bueno, la vida es cruel, ¿está?
+La vida es cruel, Kike.
+La vida es cruel.
+Vamos a tener que duplicar esto de WhatsApp, ¿está?
+Entonces te voy a pedir una manito a vos ahí.
+Necesito correr una migración.
+Que todo esto que está en WhatsApp, ¿está?
+Lo pase a dos constantes.
+Literal, lo duplique en dos constantes.
+Vamos a dejarlo en dos constantes literalmente igual, ¿está?
+¿Qué estás haciendo con la boca?
+Pero qué cosa desagradable.
+Martina, bájate, bájate.
+Bájate que voy a hablar con Enrique.
+No, pará.
+Lo que vamos a hacer es lo siguiente.
+Vamos a poner uno que sea user companies.
+Y otro.
+Vamos a poner uno que sea, ¿cómo se llama?
+A ver cómo lo estoy llamando.
+Vamos a llamarle a uno user companies, ¿está?
+Y el otro vamos a llamarle a OTC companies, ¿está?
+Y literal lo que vamos a hacer es mover eso para cada uno.
+Lo vas a duplicar.
+Matías después lo va a configurar, ¿sí?
+Ok.
+Como el primer approach, vamos a hacer eso.
+Y el segundo approach, lo que tenemos que hacer es correr una migración dentro de lo que es la tabla.
+Una migración a la tabla WhatsApp message history para marcar el type.
+Si es user companies o si es OTC.
+Entonces va a decir, ¿viste qué tiene?
+La tabla de WhatsApp tiene ID, contract, role, content, cast, calendar link, todas esas cosas.
+Tenemos que agregarle un tipo que sea, ¿cómo se llama?
+Vamos a un dicto.
+No cortes, por favor.
+Sí.
+Sí.
+Sí.
+Sí.
+No.
+Sí.
+No.
+Sí.
+No.
+Sí.
+No, no, no, no.
+Sí.
+No.
+Sí.
+No.
+No.
+No, no, no.
+No.
+Sí.
+Sí.
+Está bien.
+Vamos a esta tabla, vamos a agregar una columna type.
+¿Te parece bien type, Martí?
+Sí.
+O sea, para indicar si es tipo mensaje del WhatsApp de...
+Porque vamos a tener dos números de teléfono.
+Uno que va a ser orientado a LNC y otro que va a ser orientado a CryptoCrossboard.
+Pero hoy en día, ¿para qué tenemos hoy en día?
+¿Tenemos una tabla?
+¿Vamos a tener otra tabla?
+Exacto.
+Deberíamos renombrar la actual.
+O sea, la idea no es otra tabla, perdón.
+Es la misma tabla, pero van a entrar mensajes de uno o del otro.
+¿Y qué tenemos hoy para distinguirlo?
+Nada.
+O sea, vamos a crear una columna que se llama type.
+O sea, pero que sea tipo...
+Esto guarda los mensajes, ¿está?
+¿No, Kike?
+¿Está esto guarda los mensajes?
+Está, la idea es poder guardar los mensajes por un lado o por el otro.
+Digo, esto llega por un webhook.
+A nosotros un webhook nos agarra y nos pega y nos avisa.
+Nosotros nos fijamos cuál es.
+Sí, pero ¿cuál era la duda?
+¿Cómo distinguirlo?
+Claro, tenemos que categorizarlo.
+Si va a ser LNC, es LNC C-Core.
+O sea, no sé, C-Core es como muerto.
+Sí.
+Porque tenemos...
+Hoy en día creo que ya tenemos una tabla que hace distinción, que se llama cripto-usa, ¿no?
+Ajá.
+Podemos usar ese mismo, esas mismas variables.
+O sea, usa company y cripto-company, ¿sabes, Juan?
+No me equivoco.
+Ah, pero voy a ponerle...
+Creo que eran dos compañías.
+¿Eh?
+¿Dónde ponemos cripto-company?
+Cripto-company creo que es la tabla de compañías.
+No, no.
+Cripto-company.
+Ahí tenés, company-pipes.
+Cross-border-cripto.
+No, no era esto, entonces.
+En una tabla, creo que es company.
+En una tabla hay una columna que tiene valores tipo usa-company, cripto-company.
+Creo que hay en algún lado.
+Yo tengo un pedo de árbol en la joven cual era.
+Cripto-company, sí.
+Lo tenemos en el blog editor.
+Tenemos cripto-company.
+Sí.
+Está, pongamos cripto-company.
+No me gusta, bueno, me gusta empezar a manejar el término OTC, pero bueno, no importa.
+Cripto-company, ¿está?
+Ahí te lo actualicé, Kiketo.
+Ok.
+En Slack.
+Entonces, eso va a ser la nueva columna type.
+Pero pará, ¿va a ser el tipo que toma, el valor, los valores que toman?
+Si viene un mensaje que es del WhatsApp de cripto, va a poder ir con usa-company.
+Si viene un mensaje...
+Si viene un mensaje que viene de WhatsApp de LLC, va a tomar el otro type.
+Tenemos que separarlo.
+Pero ese no es el que tenemos hoy en día.
+El que tenemos hoy en día es con mayúscula y guión bajo, separado, y es singular, no plural.
+¿Te parece bien el nombre de la columna que sea type?
+Type of business.
+Me gusta type of business.
+Company type.
+Company type, me ganaste.
+Y ahora, Martu, te va a pasar esos dos tips.
+Tipos, Kiketo.
+¿Sí?
+Ok.
+Ahora, vamos al último punto.
+Martu te va a pasar esos dos tipos.
+Yo los voy a borrar.
+Y Martu te va a pasar esos dos tipos ahora.
+Así queda contenta.
+Lo otro que tenemos que hacer es agregar a la configuración.
+Yo voy a modificar tu PR.
+Pero para cada uno, para cada uno, vamos a tener que agregar estas variables.
+O sea, estas variables van a ser variables que van a tener un string y vas a tener el phone number ID, el meta API version y el token, ¿está?
+Pará, yo encontré lo que decía.
+Ahí les mando.
+Era otra cosa, me mareé, era con los planes.
+Eso es lo que yo decía.
+Tenemos esas dos variantes.
+No, no, no, entonces vamos a ponerle user, o sea, como le había puesto yo.
+User.
+O sea, compañía.
+Y vamos a poner listo.
+Hola, ¿qué tal?
+¿Qué tal?
+Hola.
+No hay problema.
+Es según el tipo.
+Vamos a ponerle singular.
+Pero es singular.
+¿Por qué le pones plural?
+Porque es la rama de negocio, tipo, la rama de negocio habla de compañía.
+Pero el tipo de compañía es usa o cripto.
+Pero es del negocio, Marti.
+Es del negocio, vamos a dejarlo plural.
+O sea, no sabemos el cliente si está hablando de uno o dos, o sea, cuando hablamos de eso,
+vamos a incluir todos los mensajes que hablan de eso.
+Decide dejarlo singular.
+Pero entonces no es compañía, Typo.
+Si vamos a tener otro tipo de objetivo, porque la consistencia hoy en día es tipo de compañía.
+Claro, pero el tema es que no es la misma consistencia.
+Es la compañía de Estados Unidos o cripto cross border.
+No perdamos tiempo.
+Dale.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+¿Por cuál te vas?
+I am muted.
+Rápido.
+No, para mí es mejor singular, porque no hay más.
+O cripto, sí.
+Soluciona.
+Let me check.
+Let me check.
+Just without name and number actions.
+What will I do with name and number actions?
+Let me check.
+That uniform.
+Can you ask for something?
+It's, it's, his one is not official.
+It's not.
+Voy a revisar ahí, a ver qué mierda le pasa al cliente.
+Ah, ojo, mirá, es cross-border cripto, ojo con eso.
+Ay, la constitución.
+¿Y qué, qué hace ese?
+Se fue tomando al perro.
+Oye, oye, perro.
+No sabemos quién está programando.
+Claro, ahora, ahora entendemos todo.
+Ahora todo tiene más sentido.
+Sí, ahí ya está.
+Escuchame, escuchame.
+Y lo otro que hay que hacer, Kike,
+es en esta IA, en esta IA.
+En esto hay que obtener esas variables según el...
+¿Y el logo?
+No.
+Entonces, nosotros ahí tenemos el controlador de meta,
+que lo que hace es toma esas variables de entorno.
+Como esas variables de entorno vos las vas a poner
+tanto para UsaCompany como para CryptoCrossBorder,
+¿sí?
+Vos las vas a poner para ambos, Kiketo.
+La que estoy mirando...
+A la concha, la loca.
+Hach, hach.
+Me llamó.
+Nosotros tenemos WhatsApp Webhook.
+Vos tenés acá el Verify.
+¿Qué pará?
+Retornas a Access y la verificación es Access.
+Una vez que verifica, recibe WhatsApp, papapá.
+Como mierda, nosotros nos vamos a dar cuenta que es de uno o de otro.
+Webhook recibe.
+Venga, ahora hay una información.
+Sí.
+Ahí en meta, la idea es que ya no tomemos más las variables de entorno, Kike,
+sino que tomemos de la configuración.
+¿Sí?
+O sea, que vamos a poner esas variables de entornos.
+Van a tener la misma variable de entorno para el EDC como para Crossboard.
+¿Va?
+Va a ser lo mismo.
+Y lo que vamos a tener que hacer...
+Y vos vas a tener que hardcodear para que esas variables de entorno
+se tomen por ahora de UsaCompany.
+O sea, vos tenés que...
+Vas a tener que configurar todo.
+Vas a dejar dos configuraciones.
+Una de UsaCompany.
+Vas a entrar a WhatsApp Config que vimos en el video.
+Y vas a ver UsaCompany.
+Y también vas a ver...
+¿Cómo se llama?
+Viste que vos ahí tenés todo lo que es WhatsApp Chat Config.
+Vos ahí vas a tener dos properties.
+Una que sea UsaCompany y otra que sea...
+¿Cómo se llama?
+Esa que te mandamos.
+Crypto Crossborder Crypto Company.
+Vos ahora el fix que tenés que hacer tiene dos patas.
+Uno que es la migración,
+donde también vas a agregar esas variables de entorno
+que hoy en día se están sacando del sistema.
+Y la otra pata es entrar a lo que es este webhook
+y configurarlo para que toda esa información la saque de migración.
+Y obviamente que los lugares donde se sacaba,
+por ejemplo, la configuración de chat GPT y toda la temperatura y todo eso,
+vas a hardcodear
+para que se use UsaCompany.
+¿Sí?
+Ok.
+¿Cuál es la idea, Kike?
+Que una vez que vos tengas todo esto pronto,
+salimos a producción.
+Entonces, nos quedó todo configurable,
+pero con UsaCompany.
+Y yo lo que voy a hacer,
+lo que me voy a encargar de hacer
+para antes de salir a producción,
+es de configurar,
+una vez que esté lo tuyo mergeado,
+para que tome...
+para configurarla,
+digamos, para que interprete cuando es de uno y de otro.
+Pero por ahora vos lo que vas a hacer
+es agregar un nivel más al nivel de configuración
+y vas a cambiar toda la lógica que está
+para que tanto esos niveles como configuraciones
+van a ir a tomar configuración
+y vas a hardcodear UsaCompany.
+¿Está?
+Es lo mismo que teníamos...
+El cambio radical acá es
+vos duplicás la configuración para los dos.
+¿Sí?
+Y a nivel de backoffice,
+porque estos cambios de backoffice
+vos vas a tener que configurar.
+Para que todo lo que sacaba antes directo ahí
+agregue hardcoded UsaCompany.
+¿Está?
+O sea, vos vas a hardcodearlo UsaCompany.
+¿Está? Como un nivel más.
+Nada más.
+No debería cambiar mucho más eso.
+Y después lo otro que vas a hacer
+es que esas variables de entorno
+donde se tomaban,
+vas a tener que ir a buscarlas
+al repositorio de configuración.
+¿Sí?
+Ok.
+¿Cuál es el plan de esto?
+Cuando vos envíes esta PR,
+esto va a quedar totalmente funcional
+y lo único que me va a quedar a mí es
+darme cuenta dinámicamente
+cuándo es CryptoCrossborda.
+Entonces voy a agregar
+todos los lugares donde vos hardcodeaste,
+dar lugar a buscar UsaCompany,
+yo lo voy a tener que hacer dinámico.
+Pero para mí va a ser mucho más sencillo
+porque está todo configurado.
+¿Se entiende?
+Ok.
+Entonces, la idea ahora es
+agregamos un nivel más
+y pasamos estas variables de entorno,
+las pasamos para esta configuración
+de WhatsApp.
+¿Está?
+¿Sí?
+Ok.
+Algo que también te voy a pedir
+es lo siguiente.
+¿Viste que esto dice Site?
+¿No?
+Y no me equivoco,
+esto ahí dice Site.
+Abriste los sitios ahí
+que tenés arriba del todo.
+Tenés un drop-down
+a la derecha que dice Site y Site.
+Dice Site, Site.
+Y está seleccionado Site.
+Un poquito más abajo.
+Mouse un poquito más abajo.
+Ahí.
+Un poquito más arriba.
+Un poquito más arriba.
+Un poquito, un poquito, un poquito.
+Ahí.
+¿Viste que vos tenés Site, SiteM,
+Site de semana, WorkerM?
+¿Sí?
+Sí.
+Quiero que este Site
+se reformule a BackOffice.
+O sea, que como vos bien sabrás,
+porque vos tocaste esto,
+todas estas variables se tocan
+únicamente y exclusivamente BackOffice.
+¿Está?
+Entonces, quiero que cambies esto
+para que diga, en vez de Site,
+en la migración BackOffice.
+Y lo importante es esto.
+El marketing líder, que es Matías,
+puede tocar solo Site.
+Si vos te cambiás tu rol a marketing líder,
+solo vas a poder modificar
+Site.
+Entonces, ahora deberías
+solo poder modificar BackOffice.
+Porque esto fue un renombre
+que hicimos incorrecto.
+¿Sí?
+Nosotros lo renombramos mal.
+Pusimos Site y, en realidad,
+debería ser BackOffice.
+Entonces, hagamos también ese cambio.
+¿Ah?
+OK.
+O sea, de nuevo.
+Vos lo que vas a hacer es
+armar toda la configuración
+para que quede funcional
+con lo que está,
+pero ya vas a dejar
+como que el campo preparado
+para que yo agregue
+lo que falte dinámico
+para que también
+lo que quede funcional
+con lo que está,
+pero ya vas a dejar
+como que el campo preparado
+para que yo agregue
+lo que falte dinámico
+para que también
+funcione con el otro.
+¿Sí?
+OK.
+Esa es un poco la idea.
+Esto, obviamente,
+nos tiene que quedar para hoy.
+Pero es una tarea
+que tenemos que sacar.
+¿Va?
+OK.
+Y con esto
+me das una manito.
+Genial.
+¿Bien?
+Bien.
+Este...
+Así damos también tiempo.
+Yo lo que diría
+es que el lunes,
+una vez que vos termines
+todo esto y esas cosas,
+Quique,
+vuelvas a reavivar
+los tests unitarios
+antes de seguir con correo.
+Porque están
+un poco confundidos
+con el tiempo
+que tenés.
+Están un poco quietos
+con Sandry.
+¿Va?
+Así les damos
+un poquito de más tiempo.
+¿Va?
+OK.
+Este...
+Tatato ya va a pasar
+varios genéricos.
+Eso le va a permitir
+a Naue y a Jonathan
+si están archivados,
+salir.
+Entonces,
+capaz que volvé
+a meterte con eso.
+Volvé a meterte
+con Cypress.
+Y después,
+cuando tengamos
+varios correos,
+ahí se los vamos pasando.
+Bueno, los correos
+realmente que
+le van a salir rápido a ustedes.
+Entonces, prefiero que
+una vez que tengamos cantidad.
+¿Sí?
+Está faltando eso.
+Genial.
+Bueno,
+liberado, Kike.
+¿Te puedo hacer
+una preguntita
+muy rápida?
+No.
+Dale, sí.
+Hasta luego, ¿no?
+Buen fin de semana.
+Buen fin de semana.
+No bajó
+ningún.
+Estaba por mandar,
+estaba armando el mensaje
+y eso,
+para mandar el tutorial
+de cómo hacer
+testeos
+con los correos.
+¿Te acordás
+que habíamos charlado?
+Ah, sí.
+Pero viste que,
+obviamente,
+en Slack,
+después de tres meses,
+el mensaje
+no lo podés pinguear.
+Y,
+haz una cosa,
+pinguealo
+y poné el video en Drive.
+Eso te iba a decir.
+En Drive,
+¿tenemos alguna restricción
+de tamaño o algo?
+¿Hay algún problema
+con subir los videos
+con, tipo,
+una carpetita tutoriales
+o algo así?
+¿Cuánto, cuánto,
+cuánto pesa ese bicho?
+Eh,
+poco.
+Menos de 100 megas,
+creo.
+Está, dale,
+subí.
+Sí, sí.
+O sea,
+pinguealo en Slack
+porque el ping de Slack
+sí queda,
+pero también
+deja tanto el mensaje,
+el instructivo
+como el video
+en Drive,
+cosa que Drive
+es lo que no se borra,
+¿verdad?
+Genial.
+¿Siguiente bien?
+OK.
+Bueno,
+bueno.
+Estamos.
+Liberado, Kiki.
+Buen fin de semana.
+Chau, chau.
+Buen fin de...

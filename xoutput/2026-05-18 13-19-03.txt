@@ -1,0 +1,233 @@
+Nos vemos.
+Tato y Enrique,
+medio rapidito, porque me tengo que ir.
+¿Qué les digo?
+Tenemos acá...
+La idea es la siguiente.
+La voy a hacer medio rápido y de última
+hacemos esto. Nosotros venimos
+sacando PR gigantes, chicos, ¿no?
+O sea, venimos... Habrán visto la de
+Nahuel, Jonathan, qué sé yo.
+Estamos con un problema con
+test unitario gravísimo.
+O sea, y tenemos un tema
+de CUA muy grave.
+¿Por qué salimos
+rápido? ¿Por qué no tenemos
+buenas prácticas? ¿Por qué estamos saliendo...?
+Sí, ya voy, Ana.
+Entonces, necesitamos
+cambiar el enfoque.
+Con Fernando el otro día justo estuvimos hablando
+de todas estas
+dificultades y la solución que...
+Una de las soluciones que encontramos,
+quería esperar lunes para charlar con
+todos ustedes, era decir,
+bueno, ¿qué es lo que pasa?
+No solo la idea, cuando arrancamos con
+Enrique, es que el test unitario fuera independiente
+y que no hubiera conflictos uno
+y otro. Entonces, se autointerpretaban,
+son independientes y no
+tenían ni que registrarse. Entonces, vos podés
+enviar 10 test unitarios
+que se estaban revisando a la vez
+y genial, ¿sí? Y eso
+por un tiempo funcionó bien.
+Lo logramos, lo hicimos todo, entonces
+cada test es independiente. Ahora
+empezamos a tener otro problema.
+Y es que al aumentar tanto
+el código, tenemos muchísimos códigos repetitivos.
+Repetido innecesario, ¿sí?
+Ese es el problema que tenemos.
+Mucho, mucho, mucho código repetido
+innecesario. Entonces,
+acá hay que tomar dos medidas.
+Una es, cuando se haga el deploy,
+ese código,
+Martina, decíle
+Pa, Ariel,
+¿cómo estás? Disculpa. Este tipo
+de problemas, pedilos en el canal
+y los resolvemos por ahí.
+No sé qué es lo que quiere.
+Sí, pero no importa.
+No importa, edúcalo.
+Decirle, mirá, si tenés algún problema o algo
+pedido en el canal, que vemos
+con los desarrolladores, quién es el que te puede
+dar una mano. ¿Está? Listo. Así, en seco.
+¿Está? Ni escupa.
+En seco. Entonces, así.
+Entera. No sé si quedó
+claro. ¿Está?
+Bien. Bueno. A Enrique
+le quedó claro. Bien. Bueno.
+Yo lo que iba a decir
+era, este...
+Entonces, ¿qué es lo que pasa?
+Al tener tanto código repetido, está
+bueno hacer utils, porque literal,
+hace que no tengamos todo
+ese código repetido, y estamos sacando
+muchas funcionalidades. Entonces,
+una solución que encontramos con
+Tatato, o sea, hay dos enfoques que tenemos que tomar.
+Uno, tenemos que sacar muchos test unitarios.
+Estamos en deuda. Entonces, en realidad, no es
+momento de hacer refactors, tristemente.
+Tendríamos que hacerlo, pero no es momento.
+Estamos al revés. Tenemos que sacar más.
+Entonces, lo que hay que hacer es,
+pónganse
+a hacer PRs
+de endpoint, pero en vez de mandarme uno o dos
+archivos, me mandan diez.
+Me mandan quince.
+¿Está? ¿Se entiende?
+Se arma una PR grande,
+donde en esa PR grande,
+como probablemente ataquen todo un
+recurso, ya detecten
+utils, y los manden esa PR
+y no haya conflicto. ¿Está?
+¿Qué es lo que va a pasar? Y bueno, puede ser
+que esas constantes se podían reutilizar
+en otro lado. Si ustedes ven,
+y bueno, en esa PR que ustedes mandan, ya mandan
+ajustes, y bueno, refactores y este es más.
+¿Está? Pero la idea
+es que ustedes manden las mismas PRs
+que está mandando Jonathan y Nahuel.
+Entonces, empezamos a meter muchos más
+test, ¿está?
+Y bueno, probar un poco cómo surge
+esa estrategia. Porque la realidad
+hoy en día es que el test sanitario,
+si pasa y está todo bien,
+lo más probable es que sume más de los que arresten.
+¿Está? Una de las cosas
+que nos puede pasar es que tenemos que
+cuidarnos. Por eso, esta semana
+la idea de Enrique es
+que tomes la aposta de lo de...
+O sea, que tomes la iniciativa de
+también a tu vuelta, de lo que es la parte,
+de...
+O sea, que te reúnas con los chicos
+y veas en qué está y retomes
+la parte, porque no lo pudimos tocar en toda la semana,
+de lo que son los
+skins, los agentes y todas esas cosas.
+Cosa de que
+la calidad de lo que generamos
+de test sanitario, por lo menos ya se
+empiece a utilizar eso y esté aprobado por nosotros.
+¿Sí? No sé, Martina,
+si tenés algo más para aclarar, pero
+yo creo que acá el enfoque es claro.
+Es, las PRs que antes enviábamos
+cinco, ahora es una.
+¿Tá? Si en esas PRs encuentran
+refactor, los hacen. Ya en esas PRs
+se encuentran útil, constantes,
+las ponen. ¿Tá?
+¿Sí? Para que no se repita, para que sea
+más óptimo.
+Este...
+Y después tendremos que ir viendo. O sea,
+entre ustedes, lo importante ahí, Enrique,
+principalmente liderándolo vos,
+es que vayas viendo con Fernando,
+donde empieces a ver que se armó una bola de mierda,
+que hay que hacer un refactor, le
+esticamos una tarea y hacemos una pausa
+y hacemos refactor de eso. Y en ese,
+en ese momento, esos dos días que estás
+haciendo refactor, un día que estés haciendo refactor,
+Fernando va a tocar Cypress.
+¿Se entiende? Entonces, eso es
+lo que tenemos que hacer. Pero literal, o sea,
+les digo, tenemos que sacar cosas.
+Ahí, yo, Enrique, tenés una PR de banking
+que necesitaría, ahora que
+la muevas y eso, de Ray,
+esa PR, que yo sé que habías
+mandado antes de irte. No sé qué pasó,
+pero creo que Tato no le dio para moverla.
+¿Tá? O no sé qué avanzó.
+Entonces, este...
+Necesitamos sacar eso, necesitamos sacarte
+desde OneMoney, ¿sí? Necesitamos
+muchos tests. Porque
+la realidad es que estamos cambiando
+cosas, necesitamos los
+tests de TeamMate, ahora va
+a salir todo... No sé si vieron,
+pero esas cuatro PRs va a ser que
+a partir de ahora, los montos
+delicados no los vamos a... Para tener
+precisión exacta, y dado que estamos
+yendo a una regularización en Bolivia,
+estamos... En vez de guardar
+un punto flotante, que hay problemas en lo que
+son sumas con decimales,
+todas esas cosas, vamos a pasar a usar
+decimal, que ocupa más espacio en la base
+de datos, y la cagada es que se obtiene
+como string. Entonces, se obtiene
+como string, y nosotros lo que hacemos es
+ya nos sumamos y restamos,
+no lo pasamos a number. Cuando necesitamos
+exactitud,
+lo que vamos a hacer es esos decimales
+sumarlos y restarlos con una
+librería que también se llama decimal.js,
+ya que JavaScript tiene el gran problema
+de lo que es la suma, que
+el number genérico de JavaScript
+es en puntos flotantes. Entonces, si
+nosotros no tenemos buenos tests que
+descubran los problemas que pueda
+mismo de esa PR, que descubran
+los problemas de puntos flotantes,
+que descubran todas esas cosas,
+que hablemos de exactitud,
+que le digamos que estamos yendo hacia un sistema
+que es como un banco,
+y que yo lo que quiero es que
+si yo cambio algo, por ejemplo, de OneMoney,
+porque me llega un requerimiento y tengo que hacer un
+cosa, me va a explotar todos los tests
+y voy a tener que sentarme a ver por qué está explotando
+para garantizar que por lo menos lo que estaba
+siga funcionando.
+Entonces,
+coordínense, vean esas cosas,
+y Enrique, principalmente la idea es
+que ataquen eso y sumemos
+muchos tests unitarios. O sea, yo lo que
+quiero es tener la parte de test unitario limpia
+y vamos a tener que volver a atacar
+Cypress. Tenemos que hacer
+Cypress con lo que es el código QR.
+O sea, que en el momento que se
+liberen, lo que
+hay que sumar es test de Cypress a
+troche y moche de todo el flujo de banking
+de código QR.
+Lo que te pido ahí
+es juntate con Tatato, revean las
+PRs que tengan y también
+creo que hay PRs pendientes que tenemos que ver
+y pásenme un estatus conjunto
+de qué es lo que tenemos que ver de ambos.
+Así con Martín hacemos una pausa y también
+los desbloqueamos.
+Bueno, los dejo
+que ya estoy tardísimo para la otra reunión.
+Martu, decime.
+Dale, nos vemos chicos.

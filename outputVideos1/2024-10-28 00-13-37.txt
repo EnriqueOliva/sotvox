@@ -1,0 +1,5 @@
+no tenemos CroshockManager, este CroshockController no es
+se agarra un pedo azul, vamos a abrir Worker
+un poquito es importante que quede claro
+tenemos CroshockController
+ah, CroshockController

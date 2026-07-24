@@ -1,0 +1,15 @@
+hay una cosita que vamos a agregar que creo que va a ser bastante útil quiero que pase los ajustes
+de frontend ahí vamos a hacer que fernando trabaje en una dado que forman como parte del equipo de
+cuba de una manera fernando después que termine con estos test o sea cuando quede sin tarea
+bizano porque me tengo que juntar contigo porque la idea es que ataques o sea creemos una x-action
+más que corrija los errores sencillos los errores de bm los errores constantes de los
+errores sencillos que compañeros no está tomando martina vamos a hacer una lista
+que después irá haciéndole más como si fuera un sonido algo por el estilo para que cumpla
+contigo de lo que sea salgamos a dar una lista pero creo que eso está bueno entonces ahí
+es como que está nosotros a nivel de desarrollo sería la última que nos está faltando es una
+instaba con que chequee la calidad del código tenemos la débil la de test o la de seguridad
+y eso va a provocar que tenemos a gastar más entonces lo que vamos a tener que hacer es sacar
+la instaba acción del play que nos vamos a pasar para doble ese que va a ser una de las tareas que
+voy a intentar atacar yo este sprint
+así que nada eso por ahora bien ahí enrique hablando que han liberado santis y creo que
+hemos repito lo de diseño

@@ -1,0 +1,582 @@
+si no, no voy a rapidez
+dale, muchas gracias
+vamos arriba
+chau, buen provecho
+bien
+bueno
+¿cuál migración de la de ustedes tres?
+porque la de Martina y de Calendi iba a quedar como último
+¿cuál encaramos primero?
+y que sí
+el tema con mi migración es que surgieron
+comentarios ahí
+ahora no estaría
+¿cuál era la de?
+yo no revisé las de Nahue y Jonathan
+tampoco
+vamos a hacerlo ahora
+o en qué orden tenemos
+yo creo que la de
+no sé cuál, la de Jonathan creo que era más sencilla
+¿no? era tipo
+booleana
+sí, allá dice el ajuste que pediste del booleano
+y que sea obligatorio
+compartamos pantalla y veamos a ver si podemos marchar la de Jonathan
+y la de Nahue, bien rapidito
+que ya de por sí
+matamos dos modelos
+y eso ya no
+o sea
+y después quedaría solo la de Enrique y la de Martina
+pero es lidiar con dos PR
+ya por lo menos
+el tema es que fíjense que ya son cuatro migraciones
+cinco en realidad
+porque Martina tiene dos
+son cinco migraciones que tenemos que correr
+es un caso muy puntual
+entonces cuanto antes lo matemos
+mejor porque ya podemos trabajar tranquilos
+yo no tenía los comentarios
+pero si querés los vemos ahora
+son preguntas más que nada
+dale, si querés compartite vos pantalla de Zona
+y lo vemos rapidito
+bien, ahí te mandé el solicitud
+la última migración del Site
+¿qué fecha tiene hoy en día?
+24 si no me equivoco
+y la tuya que fecha tiene
+26
+a ver si se está viendo ahí
+estaba bien
+o sea
+lo único que agregaba es East Zone Counterparty
+que yo creo que puse es
+eh
+no tendría que ponerse como opcional
+sí?
+O sea, que tiene que ser algo
+Que siempre tiene que definir el usuario
+Esto
+Es algo que por defecto
+Cuando crea el counterparty por ahora
+Baja un poquito el Jonah
+Ahí se crea el booleano
+Se pone como que es necesario
+Y no se permite
+Y ahí se está seteando
+Por default en false
+Claro, la idea es que
+Por defecto cuando se crea
+Nosotros lo seteamos en false
+Lo puse ahí porque hoy o mañana
+Puede ser que yo le diga a Guille que el cliente mismo
+Lo setee, pero por ahora lo vamos a setear
+Nosotros, de nuestro lado
+¿Está?
+¿Sí?
+¿Está? Sí
+O sea, puede ser que nosotros lo seteemos
+Ahí Jonah en el back office
+Que vos te das cuenta que la cuenta
+O sea, no dije nada
+Eso hizo un counterparty tipo su suite
+¿Qué es lo que pasa?
+Esto va a traer un recálculo de las decisiones
+¿Qué?
+Por la duda para que lo sepan
+Cuando un cliente
+Tiene dos empresas
+Por ejemplo, yo soy dueño de Asbank
+Y soy dueño de una empresa en Dubái
+Estoy transfiriendo dinero
+Cuando hace la triangulación
+Esto se lo explicaba Jonah
+Cuando hace la triangulación
+Lo que pasa es que el cliente se pone una comisión
+Más baja
+De recibir en boliviano
+Porque las dos cuentas son de él
+Donde va a recibir plata
+Porque la comisión
+Se calcula en boliviano
+No es un tema matemático
+¿Sí? Entonces
+Pensemos que la triangulación
+¿Cómo pasa?
+Yo quiero vender
+Mis dólares para comprar boliviano
+¿Está?
+Yo como exportador
+¿Sí?
+Quiero vender mis dólares
+Para comprar boliviano
+Y el importador
+Quiere comprar dólares
+¿Está?
+O sea, el exportador
+La persona que va a exportar
+Necesita bolivianos
+¿Está?
+Y el importador
+Necesita
+O sea, ese es el problema
+Del flujo de triangulación
+El importador
+Necesita los dólares
+¿Está?
+Para poder importar
+¿Está?
+Entonces es un poco
+Es un poco eso
+Y el exportador
+Que exportó
+Sus dólares
+Necesita transformarlo
+A bolivianos
+Para seguir moviéndose en el mercado
+Ese es el flujo
+¿Está?
+O sea, tenemos
+El que origina la triangulación
+Que es el exportador
+Que recibió dólares
+Y los quiere cambiar a bolivianos
+Para moverse en el mercado
+Y el importador
+Necesita
+Necesita dólares
+¿Está?
+Y tiene bolivianos
+Para poder traer cosas
+¿Está?
+O sea, ese es el flujo común
+Por ahora
+Que hemos tratado
+Y hemos movido dinero
+Entonces, ¿qué es lo que sucede?
+Cuando
+Es la misma empresa
+De la misma persona
+Se pone una comisión
+En bolivianos muy baja
+Se pone una tasa más baja
+En vez de cambiar
+Por ejemplo
+A 10
+Un dólar
+De bolivianos
+Se lo pone a 8
+Porque la comisión
+Es en base al porcentaje
+De lo que va a cambiar
+Entonces termina
+Cobrándole un poquito menos
+¿Está?
+De comisión
+Un cálculo
+¿Está?
+Al final del día
+Le vamos a depositar la plata
+Entonces ahí perdimos
+Perdíamos plata
+Entonces ahí la idea es
+Y ahora está haciendo
+La primera parte de esto
+Después va a tener otra parte
+Que va a ser un dolorcito de cabeza
+Pero la primera parte es
+Poder setear
+Si es el propio
+O sea, si es el mismo dueño
+De la empresa
+¿Está?
+O sea, si cuando yo seteo
+Una contraparte
+De triangulación
+¿Sí?
+Y ahora estoy viendo
+¿Está?
+Y está mal
+Mierda
+Dice
+Counterparting manual OTC
+Pero creo que
+Si no me equivoco es
+Counterparting triangulación
+Ahí está mal
+No es la contraparte manual
+Counterparting manual
+Son las cuentas de Bolivia
+Nosotros necesitamos
+Counterparting triangulación
+Bien
+Estaba todo bien
+Menos
+Eso
+O sea, es counterparting triangulación
+Está
+Bien
+Perfecto
+Ya subo
+Ya subo
+Ya subo ese cambio
+Está
+Fíjate si podés hacer una iteración rápida ahí
+Porque también es donde se genera el counterparting triangulación
+Cuando lo solicitás ponerlo en pod
+O sea, es counterparting triangulación
+Porque counterparting manual
+Es literal
+La cuenta de banco
+Manual de Bolivia
+Bien
+Nada, te toca compartir a vos
+Tomaste la
+Rebasaste en la carrera
+Rebasaste en la carrera
+Paso al consultorio entonces
+A ver, de nuevo acá
+Bien
+Me aviso, eh
+Si, vamos al
+PyChange
+Acá está la carita de Jonas
+Es cosa bárbara
+Qué ladrón vos
+Roba el trabajo y lo demás
+Bueno, a ver
+Eh
+Está, vos ahí lo que hacés es
+Lo que estamos haciendo acá
+Para todos es
+Agregando al Backoffice User
+El número de teléfono
+El Slack ID
+Que es un identificador de Slack
+Y después estamos agregando el
+Round Robin ID
+Que a la diferencia del UID
+Que ya es único
+Estamos agregando este identificador numérico
+Que es este
+Es comparable
+Y también podemos fijarnos
+Si uno es más grande que el otro
+Y los permite a nosotros hacer Round Robin
+En el sentido de
+Por ejemplo
+Si yo tengo como Backoffice User el ID 1
+Y Martina tiene el ID 2
+Si
+Este
+Yo voy a ir primero
+Después voy a guardar el último ID que corrí
+Y tengo que decir traeme el más grande
+Ah, esto es para la asignación de ejecutivos
+La idea es que cuando llega una compañía nueva
+Nosotros creemos estos famosos bombos
+Que vamos a hacer
+Que son grupos
+En los cuales
+Yo creo un grupo y digo bueno
+Para tales tipos de
+Para tales
+Este
+Company types
+O sea para tales tipos de compañías
+Para tales países
+Lo que tienes que hacer es auto asignarse
+Entonces vos guardás
+Por ejemplo el último que se asignó fue el Jonah
+El ID 1
+Entonces ahí busco quien es el ID siguiente más grande
+El de Nahuel, el 3
+Está perfecto
+Le asigno a la próxima compañía y lo guardo como 3
+Está
+Si
+Esto es para la asignación automática de ejecutivos
+No sé Martina si tenés alguna duda
+No, yo tenía una duda en esto
+Pero no en este archivo
+Más abajo
+A ver, subamos ahí Nahuel
+A ver como fue quedando
+Yo lo que te había dicho es que lo pongas como default value
+Perfecto, eso está bien
+Después crear la secuencia
+Increment by 1
+Está bien, bajemos
+In, está bien
+Unique, true
+Muy bien, hasta ahí estamos bien
+Después tenés ID
+Type
+Countries
+Company type
+Lo podemos asumir
+Podemos asumir que son UIDs
+No podemos asociarlos a la tabla
+Como hacemos, ponen un reference
+No, para eso tendremos que hacer otra tabla auxiliar
+Ya que hay otra tabla más
+Si queríamos hacer eso
+Está, no
+Bajemos
+Create that
+Hasta ahí estamos bien
+Después lo que hacemos es
+Ah, si
+Creamos los índices
+Está bien
+¿Qué es?
+Ah, esa era la duda mía
+Ya he visto
+Yo entiendo que es para optimizar ciertas queries
+Pero no sé si en nuestro caso
+Necesitamos eso
+Era para optimizar más que nada
+El tema de las búsquedas
+Por si había algún search
+Pero creo que no lo precisamos
+Para analizar eso
+Y bajamos un poquito más
+Para analizar el porqué de usarlo o no usarlo
+Acá creamos
+Vean que acá creamos el Company Executive
+Assignation
+Rule User
+Eso está bien
+Hace
+Referencia al modelo de
+Company Executive
+Rules
+Tiene un Backoffice User
+Ojo que el Backoffice User
+ID no es Primary Key
+Ojo con eso
+Que tiene que ser compuesto
+Porque si lo ponés así como Primary Key
+Creo que lo que te hace cada uno
+Es clave primaria
+Entonces ahí solo podés asignar uno
+Y un Backoffice User puede estar en varios bombos
+Lo mismo que la Rule puede tener varios Backoffice Users
+O sea que es una clave compuesta
+¿Ah?
+Ojo con eso
+No es tipo
+No es que en esa tabla Backoffice User
+Es único y el otro es único
+Bajemos un poco más
+Acá está faltando también
+Nahue
+Arriba, arriba
+Sí, ahí está
+Cuando vos definís las columnas
+En la KID, Phone Number
+O Round Robin ID
+En particular en la KID, Phone Number
+La idea no es que definás un
+Default Value
+La idea es que definás un Default Value
+Para poder llenar todas las columnas
+Que están vacías
+Y después la hagas no looneable
+La idea no es que
+¿Qué pasa? Yo quiero que cuando la gente
+Cree
+Este coso
+O sea, cuando vas a crear un Backoffice User
+Te falle si no le pasás
+El Phone Number o el Stack ID
+¿Qué pasa? Como es una columna nueva
+Que nosotros ponemos no nooneable
+Pero tenemos una cantidad
+O sea, para todos no está seteado
+Lo que tenemos que hacer es la estrategia de
+La definimos que sea, que pueda ser null
+Le seteamos
+Valores con una query
+¿Tá? Y luego lo que hacemos es
+La ponemos nooneable
+Porque todos los Backoffice Users
+Ya tienen un valor
+Entonces ahí por ejemplo para el número de teléfono
+Podés poner más 00
+¿Tá? Porque va a tener que tener
+El código del país
+Y para el Slack ID ponete algún string
+Como empty
+O sea, without Slack ID
+O algo por el estilo
+Y después la ponés la columna común
+La idea es que en el Backoffice User
+Después de este cambio
+Vos cuando pases el modelo para el Backoffice User
+Te explote el Create Backoffice User
+Va a agregarle estos dos campos obligatorios
+Bien
+¿Tá?
+Así que fueron bastantes comentarios
+Tampoco la podemos mergear
+Bien
+Malas
+Yo ya estaba revisando esta PR pero
+Si querés comentalos
+Yo los veo
+Pero creo que el orden de mergeo va a ser
+Primero la de Jona
+Segundo la de Nahue
+Tercero la de Kike
+¿Tá?
+Vamos a las tuyas
+Las últimas dos Martina
+¿Tá?
+Así que hagamos eso
+Organicemos las fechas
+Para que se mergeen de esta forma
+Jona, Nahue, Enrique y Martín
+¿Ti?
+Bien
+Chequeen eso
+Tiene que ser literal ese orden
+¿Tá?
+Por lo menos definimos un orden
+La de Jona creo que era más sencilla
+Después viene la de Nahue
+Cuando hagas estas iteraciones
+Luego la de Enrique
+Y después por último las últimas dos tuyas Martina
+Que son de la configuración
+De Calendly que lleva tiempo
+Y yo te diría que la misma PR de Calendly
+Ya meta la migración
+Del
+Crypto Global que voy a ir viendo
+¿Tá?
+Bien
+¿Querés que meta en la de Modal?
+¿Cómo perdón?
+Lo último que dijiste que...
+¿En la de migración en qué PR?
+En la misma migración
+Que estás haciendo lo de Calendly
+Tu malo de Crypto Global
+TYB que agrega Bridge
+Los tres campos para Bridge
+¿Ti?
+El Bridge, Customer ID y los otros
+¿Vale?
+Pero revise las fechas
+De nuevo Jona, Nahue, Enrique y Martín
+Ese es el orden
+Una cosa con esta PR que vos dijiste
+Lo de las claves
+En esta tabla queremos...
+O sea, no queremos la clave compuesta
+De...
+Google ID con Back Office User ID
+Si, es la clave compuesta
+O sea, la tabla
+Que tiene...
+No, pero lo que estás poniendo ahí es
+Back Office User ID es PRIMARY KEY
+¿Te ves?
+Estás poniendo que cada una es PRIMARY KEY por sí sola
+Vos para generar una clave compuesta
+Primero creás la tabla
+Y una vez creada la tabla
+Después corres un ajuste
+Que genera esa clave compuesta
+No sé, capaz que hay otra forma
+Ojo, no sé
+No recuerdo, creo que son las migraciones SQLite
+Ahí, fijate vos Nahue
+Lo importante es...
+Lo que se puede hacer
+En la misma migración
+Si se puede hacer genial
+No hay problema
+Lo importante es que la tabla de la asignación
+Tenga
+Ojo que tiene que tener un ID
+También tiene que tener un ID el...
+Todas las tablas tienen un identificador único
+Eso es importante
+Eso está faltando
+Y fue lo que yo decía
+Todas tienen que tenerlo
+No importa que sea tabla de arreglación
+Siempre generemos un ID único
+Después de mañana nos puede venir otro
+Pero además de ese ID único
+Que tiene que ser la única PRIMARY KEY
+Una clave compuesta entre ambos
+Cosa de que vos no podés tener un usuario con una regla
+Y un Back Office User si ya lo tenés
+Pero sí podés tener a un usuario
+Con otras reglas
+O a otras reglas con otros usuarios
+¿Sí?
+Eso está mal
+Igual ahí Nahue
+Me tiene una interacción a todos los comentarios
+De lo que te fue quedando
+Y nosotros lo volvemos a echar
+Jonathan cuando tengas eso
+Lo vamos mandando
+Y lo importante es eso
+Que queden sus PRs
+Jonathan ¿Qué fecha hiciste vos que tenías?
+26
+Para ponerlo en el channel de velo
+La última era 24 ¿no?
+Sí
+Ahí quedan las fechas
+Que tiene que tener la migración de cada uno
+Que justo Enrique había pasado arriba
+¿Tá?
+O sea que en sus PRs cuando ajusten
+Ajusten que quede esa fecha
+Así ya queda en orden y ya no tenemos problema
+¿Tá?
+La idea de hoy es poder mergear todas las migraciones
+Cosa de que yo hoy de noche agarre
+Y copie, yo me voy a encargar personalmente
+De copiar los modelos
+Ustedes pueden hacerlo en las PRs
+Que estén trabajando una vez que se mergee
+Para poder seguir trabajando
+¿Se entiende? ¿Tá?
+Pueden pasar sus modelos
+Pero yo me voy a encargar hoy de noche de agarrar esa carpeta model
+Y moverla para todos lados
+¿Sí? Así no hay problema
+¿Tá?
+Bien de bien
+Bueno, los dejo, tenemos el round up
+Por las dudas
+Que es a las 15
+La idea ahí pueden estar directamente con la cámara apagada
+Si pueden estar con la cámara prendida mejor
+Pero pueden estar con la cámara apagada
+Ni tienen por qué estar viendo
+O sea, hay digamos 10.000 prioridades
+Es el único hecho de participar
+Lo ideal es que estén todos con la cámara prendida
+Pero si ustedes están muy
+Este, con algo concentrados
+O necesitan concentración
+La Paz tiene mi autorización
+¿Tá? Eso lo maneja usted
+Lo ideal es que vean sus cargos
+¿Tá? Porque es una reunión cada tanto
+Y está, está bueno
+Comentálo
+Bien, vamos arriba
+Los dejo, buen provecho
+Chau chau

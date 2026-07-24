@@ -1,0 +1,211 @@
+porque necesitamos para los inmensos pero el banco le respondo con respecto al borrado de
+de review yo creo que primero que nada siempre esperar a que esté aprobado porque yo creo que
+pongamos un delay a y santi gastón de tipo bueno está una vez que está aprobado por
+que aguantamos una semanita unos días antes de borrar de review o las dudas
+que tengan que trabajarlo a ver o no o bueno está una vez que están ready for the borrar
+enseguida pero si pasa algún ajuste lo tiene que volver a pasar a hacer el review o sea no
+me gusta no me gusta el flujo que hemos hecho a veces de corregir sobre el rey por del rey
+por del que traigo más tipo ridón y no sé qué piensan ahí no me calienta que borren cosas de
+esa de design review mismo acá que por cosas de diseño
+review para que sea más fácil el trabajar y carguemos partidos pero lo que no quiero
+es que trabajen sobre el rey por de están habilitados a borrarlo lo que consideren de
+de diseño review obviamente que vayan doble chequeando con cautela que esté todo en rey
+por de borran después de recuperar pero bueno no sé qué piensan a mí me pasó con él en un caso
+puntual lo fue ayer
+actualizaba una cosa que me pediste la actualización en rey for the y después creo que fue yo no sé quién
+fue que estaba trabajando y estaba trabajando sobre design review entonces no estaba viendo
+esos cambios reflejados este y claro es tener dos veces la misma pantalla a los dos lados y
+lleva que a esa confusión y en realidad no es cada una no es que están las pantallas repetidas y bueno
+momento estás trabajando en una y en otra
+y capaz que no te das cuenta, por eso mismo
+yo sugería el hecho de eliminarlo
+yo concuerdo contigo de que no hay que eliminarlo
+de una, prefiero dejarlo una
+semanita para que si Ige lo quiere
+volver a ver, esas cosas que están en
+Design Review les pueda ver fácil desde el link
+que le mandamos siempre
+pero nada, fijaría un
+tiempo y después trataría de eliminar para que no quede
+eso repetido y si se ajusta
+lo pasamos de vuelta a Design Review
+eso no hay ningún problema
+no, o sea, no me calienta que se elimine
+no me calienta que se elimine el instante
+literal, lo que si
+me parece es que
+yo no quiero recibir para revisar cosas
+en Redfordel, si hay un ajuste de una
+letra, un coso, se hace
+en Redfordel
+te voy a decir algo Santi, eliminémoslo
+al instante, cosa de que
+no vuelva a pasar esa función
+lo que si no quiero es que
+¿cómo se llama?
+lo que no quiero es
+que queden
+la duda
+de que
+se trabaje en Redfordel
+Redfordel tendría que ser
+una especie de lectura
+de página de lectura
+es más, no sé si se puede
+llegar hasta a bloquear
+y que eso no pueden cambiar
+o que sea una página de lectura
+que no se pueda cambiar las cosas
+que se pueda copiar y quedar
+sinceramente me gustaría
+que sea una especie de PDF de Redfordel
+no sé
+puede tocar
+como palabras
+bien
+está perfecto
+y con respecto a lo explicado
+vayanlo borrando
+con cuidado
+fíjense que no nos estemos
+comentando
+nada
+no me borren las cosas viejas
+porque me traen lindos recuerdos
+los diseños viejos
+que eso mantengan algo mismo
+porque hoy o mañana podemos llegar
+a querer usar
+o
+lo mismo mostrar dentro de unos años
+como era el sitio un inicio
+y como fue variando
+no digo que mantengan todo
+pero
+mantengan ahí un pequeño historial
+que podamos reutilizar
+está limpio
+eso sigue estando
+está abajo del todo
+si, se fueron
+se fueron
+pero
+mirá Martina y Kike
+mirá lo que se está
+abajo del todo
+se vuelve todo
+si, yo cuando tuve la charla con Jona
+y con Nahue
+les mostré todo esto
+les mostré un poco el progreso que habíamos hecho
+y les conté ahí que habíamos arrancado en Wix
+claro, los cuadraditos arrancaron por él
+todos estos diseños los hacía un diseñador
+que no tenía ni idea de nada
+lo que sí hizo, que esto después capaz de Jona
+Santi y Gastón pudieron reutilizar
+toda la parte de Boyd
+que esto algún día vamos a tener que implementar
+no sé cuándo
+pero había hecho
+se había tomado el tiempo bastante
+de hacer toda la parte de Boyd Report
+pero lo de la API era complejo
+bueno
+terminado lo que
+ahí la noche de nostalgia
+vamos a
+bueno, se va a trancar
+se va a trancar
+bien, perfecto
+ta, eh
+ingreso de fondos fue cancelado
+ta
+en este caso está bien
+es ingreso de fondos
+acá mostramos el SARS
+está bien
+ta
+su retiro de fondos
+también mostramos el SARS
+su devolución fue realizada
+realizamos el SARS
+estamos en compra-venta por las dudas
+acá mostramos el SARS
+está bien
+su comprobante de envío
+monto debitado
+también mostramos el SARS
+fondo recibido correctamente
+es el monto debitado
+mostramos el SARS
+y en el único que
+dice compra
+compra
+compra
+en el único que mostramos a Enrique
+el destination
+en el flujo de compra y venta
+ta
+en los únicos emails
+que mostramos el destination
+o sea, lo que usamos el destination es
+cuando se finaliza
+ta
+ahí le mostramos lo que realmente le llegó
+si
+que dice acreditado
+ta
+estamos alineados aquí que
+ta
+es el único email
+es el único email
+donde nosotros mostramos
+el destino
+ta
+en el caso de la venta
+mostramos el destino que está en boliviano
+literal como viene
+acá no hay complicación
+y ponemos monto acreditado
+si
+en el caso de
+en el caso de este
+de la compra-venta
+tanto de lo que es este
+el acuse de recibo de fondos
+el
+a
+la devolución
+o la cancelación
+siempre se muestra el SARS
+y eso está bien en diseñar
+estamos perfectos
+ojo con los textos
+porque acá por ejemplo
+Kike
+claro
+no ha visto detalles
+pero creo que Santi los habrá visto
+es monto devuelto
+acá es debitado
+debitado
+y acá es acreditado
+si
+en este caso
+en el caso de compra y venta
+es un poquito más sencilla
+ahí
+Santi y Enrique
+alguna duda
+estamos todos en el mismo espacio
+ok
+y luego estamos acá
+perfecto
+pasemos a triangulación
+perdón se complica un poco la mano
+ok
+la triangulación fue creada con éxito
+si
+ojo que acá está mal
+monto a devolver

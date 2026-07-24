@@ -1,0 +1,161 @@
+y para poder correrla
+vamos a utilizar unos datos que nos pasó Guillermo
+y hay que crear, o sea, hay que traspasar toda la información
+a modelos de nuestro lado.
+Lo bueno de esto, Quique, es que vos ya tenés una migración
+de base que yo ya hice.
+Que es muy detallista, que anduvo muy bien,
+que no dio problema, que traspasa los documentos.
+Entonces, no deberíamos tener problemas.
+Pero, pero, pero, vamos a tener problemas.
+Entonces, se vienen sprints interesantes para vos.
+Lo importante acá es que también, a partir de ahora,
+la dificultad es que tenemos que hacer 30 puntos de tatato de tu lado.
+Y yo ahí lo que le meto es, bueno, algunos puntos de cosas
+y algunos puntos le paso a mis cosas y ya está.
+¿Te parece?
+Ahí las tasas de tatato tienen que ser bien pelotudas.
+En el sentido de que tienen que ser tes unitaria.
+Todo lo que sea, tipo, avanzar y mover la rueda.
+Es lo de este tatato, ¿sí?
+Ahora, este mes serían 150 dólares extra.
+Que bueno, que haría que sea un poquito más.
+Pero, y todavía estos días, como quien dice,
+no movimos nada de tatato.
+Así que, también como que tenemos ese plus.
+A partir del mes que viene serían 250.
+Por esas tareas de tatato.
+A cobrar ahora, en abril, serían 150.
+A partir del otro serían 250.
+¿Bien?
+¿Tá?
+Pero yo, a ver, no me voy a hacer el pelotudo.
+Y te lo quería asignar.
+Porque es algo que necesito que se mueva.
+¿Tá?
+Y tiene que moverse para vos como un extra.
+¿Tá?
+¿Sí?
+Esto es una prueba.
+Si vos no podés cumplir con esa ex extra.
+Voy a tener que buscar otra persona.
+¿Tá?
+Claro, que es lo que hablamos en un principio.
+¿Sí?
+Pero en teoría debería ser todo medio pelotudo.
+Porque sería bueno.
+¿Tá?
+Vos agarrás todo lo difícil.
+Y tatato lo que agarrás son test unitarios.
+Y sigue moviendo la rueda.
+O sea, en estos meses.
+Si vos entrás a ver.
+Nos hemos ido del carajo en endpoint.
+O sea, por ejemplo, ahora ya está.
+Ya lo agarraste vos.
+No puedo pasárselo a tatato.
+Pero, por ejemplo, la del UID y todas esas cosas de refactor.
+Se lo hubiera pasado a tatato.
+¿Se entiende?
+Le hace como tarea a tatato.
+Entonces, ahí en este caso.
+Que usted mueva la rueda por ese lado.
+Porque no puede ser que nos estemos quedando con los test de regresión.
+Y más que nada con los test unitarios.
+Si usted presta atención.
+Se han creado 10.000 endpoints.
+Que no tienen un endpoint chequeo.
+Entonces, es eso.
+Tenemos que seguir moviendo la rueda.
+Lo que sí le pido es total franqueza.
+Si por ahora viene bien, está bien.
+Si usted ve que esto ya no le está dando más para hacerlo.
+Que bueno.
+Lo ideal en algún momento.
+Es que tatato pase.
+No sé si al mismo sueldo que tenía.
+Que tenía.
+Que tiene usted.
+A ver si puedo hacerle un ajustecito más.
+A ver si puede ser un plus extra más lindo.
+Pero bueno.
+Es que se mueva la rueda.
+Yo lo que quiero es que de acá.
+Agosto.
+Estamos hablando de.
+Marzo, abril, mayo, junio, julio, agosto.
+Dentro de 6 meses.
+Los test unitarios estén muy bien.
+Porque se siguió moviendo la rueda.
+¿Entendés?
+No quiere decir que estén todos completos y todo bien.
+Pero es como que se siguió avanzando en eso.
+Y bueno, ahí cubrimos la parte de tatato.
+Y como quien dice eso.
+Hace que vos ya tengas un salario más polenta.
+Entonces está.
+Estás más tranquilo.
+¿Sí?
+Bien.
+Bueno.
+Váyase a laburar.
+Hágase el examen del pirulo.
+Además usted había tenido problemas con eso.
+¿No?
+Problemas originales.
+Bueno, no se sienta mal.
+No se sienta mal.
+¿Ya se lo dijo ella?
+Está.
+Yo lo que haría.
+No le diría nada.
+Primero.
+Ya.
+Primero hacete los exámenes y todas esas cosas.
+Y luego chequeate.
+Porque si es algo tuyo.
+Tenés que tomar alguna pastilla con una mierda vos.
+Y más seguramente si estás cogiéndose el forro.
+Un tarmo hijo de puto.
+Claro.
+Tené cuidado con eso.
+Después le encajas un bichito y vas a vivir a paja por tres meses.
+Tené cuidado.
+Bueno.
+Te lo dejo.
+¿Pero viene bien?
+¿Viene contento con lo que está haciendo?
+No.
+Va a ser un chapicón.
+Porque fíjate que ahora tenés que hacer endpoint.
+Tuviste que hacer traducciones.
+Tuviste que hacer migración.
+Ahora vas a tener que hacer cronjo.
+O sea.
+La idea es que vos te conviertas en un full stack de backend.
+Todo lo que este es unitario y todo lo que es eso.
+Que te va a dar una buena base.
+¿Está?
+No.
+Sí.
+Y además si Dios quiere.
+Si podemos liberar con los sueldos de tatato.
+Con aumentos suyos.
+Con aumentos que llegamos a ese sueldo.
+Y bueno.
+Cuando queramos acordar ya tenés un sueldo.
+Pobre.
+¿Entendés?
+Entonces.
+Si te das cuenta.
+Ya.
+Ya está.
+Ya está zarpado.
+Entonces está.
+Y lo bueno es que seguís trabajando en tu casa.
+Pero bueno.
+Bueno.
+Lo dejo aquí quieto.
+Vamos arriba.
+Un abrazo.
+Hasta luego.

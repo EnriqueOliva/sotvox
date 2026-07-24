@@ -1,0 +1,277 @@
+porque lo voy a necesitar
+la cosa es así
+acabo de mergear ajustes de Texas
+y todas esas cosas, sé que se tendría que haber ido
+y la idea es que
+cuál era que estábamos viendo
+Montana era
+estábamos dando problemas
+cuál de todas
+ah soy yo
+había una que me
+Texas no está apareciendo
+lo de no available
+actions
+después tenías Montana
+lo último que dije es California
+me pasaste dos
+Michigan
+Michigan se ocultó
+la gente que tenía
+con Michigan puede seguir accediendo al sitio
+pero a partir de ahora ya la gente no puede
+contratar Michigan
+¿está grabando?
+está bien, voy a intentar hacerlo más
+concreto y rápido posible
+Michigan lo que hizo
+fue se desapareció, ya no permite
+disolver ni renovar
+o sea que te tendría que aparecer que no hay acciones
+disponibles, punto final
+¿sí?
+eso en el caso de Michigan
+en el caso de Texas ahora debería estar
+en el caso de Texas ahora debería estar
+solucionado y te debería aparecer
+no actual
+con respecto a la compra con California ya compré
+una compañía con California y no me dio ningún
+problema
+viste que ahí a vos te tiró un log
+¿sí?
+te tiró un código de error
+¿sí?
+¿sá?
+vos lo que podés hacer con ese código
+de error
+que estaría bueno que
+capaz que posterior a todo esto
+pero para fijar a ver
+quién fue lo que pasó
+con ese código de error vos lo que podés hacer es a los logs
+de dev, en este caso es el site
+entonces sería en el site
+en el site fijarte
+en el site
+en el site fijarte
+en los logs del site
+para dev, el web
+out ese no sé cuánto pero
+el que dice site environment
+no sé cuánto dev
+buscas ese código
+y te tendría que saltar
+qué fue lo que sucedió
+ese código
+la idea es para que nosotros nos dé una mano
+cuando falla un pago y de parte de ventas nos pasan eso
+nosotros le pasamos
+nosotros con ese código podemos encontrar más rápido
+de dónde es que salió el error
+¿sá?
+vimos para encontrar la obra y qué fue lo que pasó
+bien
+¿sá?
+¿qué cosas se cambiaron?
+bueno se arregló lo de Texas
+se sacó definitivamente...
+este...
+Michigan
+era la que estaba dando error
+y algo interesante es que hay que probar
+es
+ya se corrigieron todas las fechas y todos los casos bordes
+esos errores por lo que vos me dijiste
+ya no están pasando
+eso que vimos el viernes de
+te permitía renovar 2025 y esas cosas
+sí
+eh...
+lo que sí está sucediendo
+lo que sí está sucediendo es que
+eh...
+o sea lo nuevo que hay ahora
+es que necesito probar es lo siguiente
+si vos comprás una compañía con dirección
+¿si?
+vos comprás una compañía con dirección a gente registrado
+tendría que ponerte así
+para que este la pashi
+cuando vos comprás una compañía con dirección a gente registrada
+ah
+tendría que auto asignarse en la descripción una dirección
+sí
+no comprás una compañía con dirección a agente
+registrado, no se te debería
+asignar la dirección
+¿estamos listos?
+Hello and address
+exacto
+y esta es nueva que es para Wyoming
+o sea que si vos comprás
+una compañía con dirección a agente registrado
+y sos cualquier estado que no sea Delaware
+ni Wyoming, te va a asignar
+la de Florida, si no
+te va a asignar la de Delaware
+o la de Wyoming
+ahora, ¿qué otro funcionamiento
+nuevo hay? bueno, si vos comprás
+una compañía sin dirección
+a agente registrado y luego
+contratás dirección a agente registrado
+deberías hacer el mismo
+proceso de
+sobreescribirte la dirección
+y ponerte la dirección automática de DASBANK
+¿se entiende?
+todas son de DASBANK ¿verdad?
+claro, todas son de DASBANK, el tema es que según el
+estado, ¿cuál pone?
+el genérico es Florida
+si vos tenés Delaware
+poné la de Delaware, si no poné la
+de Wyoming que es WI
+y si no, poné Florida
+o sea cualquier otro estado
+aplica para Florida
+la idea es probar, bueno
+la idea es probar, compro compañías
+con dirección a agente
+registrado, el servicio de 15 dólares
+asigna correctamente, compro compañías
+sin dirección a agente registrado
+y después compro dirección a agente registrado
+asigna posteriormente
+el correcto
+el correcto
+la correcta dirección
+con y sin no importa básicamente
+se asigna una dirección
+la diferencia está en que si vos
+lo que hay que probar
+es que si vos compras
+si vos no compras con dirección a agente registrado
+no se te va a setear
+la diferencia es el momento
+que es lo que hay que probar
+si vos compras la compañía con dirección a agente registrado
+cuando entres a los detalles de la compañía
+deberías ver la dirección correspondiente
+si vos compras la compañía
+sin dirección a agente registrado
+cuando vos vayas a los detalles de la compañía
+no vas a ver dirección a agente registrado
+porque no la compraste
+entonces no tenés dirección
+pero lo que hay que probar ahí
+es que si yo voy a suscripciones
+y contrato para esa compañía
+dirección a agente registrado
+se le tendría que sumar la dirección
+en otras palabras
+si yo compro la compañía
+con dirección a agente registrado
+tendría que verla
+si no compro la compañía con dirección a agente registrado
+no la veo
+Y la opción de que se auto-asigne es comprando la suscripción internamente.
+¿Un poco más claro ahora?
+Sí.
+Genial.
+Ahora, otra cosa que hay que probar son los pop-ups.
+Tenemos dos pop-ups.
+Uno enfocado a renovaciones y otro enfocado a declaraciones.
+¿Sí?
+Y el de declaraciones, lo que tenés que probar es lo sencillo.
+Bueno, tengo declaraciones pendientes de este 2024, de compañías que se crearon en 2024.
+Tiene que aparecer, tenés que tener dos versiones de pop-ups.
+Versión 1, que te muestra un texto de que tenés una compañía, o sea, tenés tal compañía vencida.
+¿Sí?
+¿Está?
+O sea, perdón, vencida no.
+Versión 1, que es la mayoría.
+La mayoría de usuarios que compran una empresa, te tendría que aparecer tu compañía, pa, pa, pa, falta la declaración.
+Ahora, si vos tenés múltiples compañías, ya sea por administración o porque sos propietario, debería aparecer, tenés tantas compañías pendientes de declaración para el 15 de abril.
+¿Se entiende?
+No hay manera de simular el caso del 15 de mayo, ¿está?
+Pero bueno, está.
+Eso es lo que tenés que testear.
+En teoría, todo eso que fue Armando Martínez es dinámico y también calcula.
+Para ver si, no sé si te acordás, pero la declaración en sí son el 15 de marzo o el 15 de abril.
+¿Pero qué pasa?
+Si cae fin de semana, se corre automáticamente para el lunes.
+Si cae sábado y el 15 pasa a ser el 17.
+Si cae domingo, el 15 pasa a ser el lunes que es 16.
+Todo eso es dinámico, no tenés manera de probarlo, pero te lo cuento para que lo sepas.
+¿Cómo es ese tipo de pop-up?
+El de declaración.
+¿De declaración es?
+Sí.
+De declaración es, tenés dos casos a probar.
+Primer caso, una sola compañía con declaración pendiente.
+Te debería aparecer el nombre en concreto de la compañía.
+O sea, el pop-up es súper informativo.
+Ahora, el caso en que tenés múltiples compañías, ya sea administradas o propias, con declaraciones pendientes,
+te van a aparecer un número.
+Tenés siete compañías con declaraciones pendientes.
+Ahora, el caso de renovación es más complejo.
+El caso de renovación es más complejo, porque el caso de renovación tiene varias aristas.
+Pongamos primero la renovación de una sola compañía.
+Tenés una sola compañía pendiente.
+Al igual que el caso de la declaración, te va a decir, tenés una renovación pendiente de tal compañía.
+Y te va a aparecer un botoncito de ver detalles.
+O sea, si tenés una sola compañía pendiente de renovación,
+te va a decir exacto el nombre y te va a decir, anda esa compañía.
+La ventaja de eso, o sea, la variante que tiene ahí, es que te va a decir si la renovación está pendiente,
+o sea, pero está a tiempo.
+O sea, tenés una renovación pendiente o tenés una renovación atrasada.
+O sea, que ya está fuera de tiempo.
+Ahora, el caso multicompañía, ya sea administradas o no,
+tiene tres variantes.
+Tres distintos sabores.
+Sabor número uno.
+Tengo una compañía.
+Tengo...
+Tengo compañías, hablemos en plural.
+Tengo compañías que tienen renovaciones pendientes vencidas.
+Y tengo compañías que tienen renovaciones pendientes que todavía estás a tiempo para hacerlo.
+O sea, ese es el string número uno.
+Ahí ya no te va a permitir ir a ver compañía porque son varias.
+Entonces, tenés OK y cancelar el pop-up, ¿sí?
+Pero...
+En sí lo que te dice es tener renovaciones pendientes y tener renovaciones vencidas.
+El otro caso, que son los dos casos que faltan, es bueno,
+solo tener renovaciones pendientes que están al día o solo tener renovaciones vencidas.
+¿Está?
+Entonces, las variantes son una sola compañía, es más detallosa,
+te permite ir a ver sus detalles en concreto y te dice la compañía y te dice si está vencida o todavía estás a tiempo de hacerlo.
+Después, el otro caso,
+ya no te permite ir a ver la compañía, sino que es OK porque vos podés tener varias,
+lo que divides en los tres posibles casos.
+Solo tenés renovaciones pendientes...
+Solo tenés compañías con renovaciones pendientes.
+Solo tenés compañías con renovaciones vencidas.
+Tenés compañías con renovaciones pendientes y vencidas.
+¿Sí?
+Ahí necesito que vos pruebes.
+Casos donde tengas compañías...
+Casos donde no tengas compañías, el pop-up no tiene que saltar al pedo.
+¿Ah?
+¿Sí?
+O sea, un error que yo acabo de solucionar es que el pop-up estaba saltando cuando no tenías declaraciones.
+O sea, un error que yo acabo de solucionar es que el pop-up estaba saltando cuando no tenías declaraciones.
+¿Ah?
+Entonces, hay que chequear todo eso.
+Dedicate todo el tiempo que necesites hoy para asegurar la calidad de eso.
+Dedicate todo el tiempo que necesites hoy para asegurar la calidad de eso.
+Dedicate todo el tiempo que necesites hoy para asegurar la calidad de eso.
+Entonces, es así.
+Tenés muchas vueltas.
+Yo no salí hoy.
+Capaz que me tiré con lo de la negra y sigo hasta la hora que sea.
+Cortá dos horas y después volvés.
+Cortá dos horas y después volvés.
+No sé, o sea, yo ahí no...
+A ver, yo no te administro...

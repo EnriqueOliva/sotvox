@@ -1,0 +1,663 @@
+En el log inicio de sesión
+es todo el flujo de inicio de sesión.
+Incluso de inicio de sesión
+y registro solo para
+el sitio, porque es ahí donde vos
+que es ese pequeño lapso
+donde vos compras por primera vez.
+Este flujo de
+registro
+de inicio de sesión correcto
+yo lo dejé acá
+pero es debatible, podemos
+meterlo en la parte de payment
+en la parte de pago.
+Pero para mí estaría
+bueno tener aunque sea un test
+o dos ahí exclusivo. Es un flujo
+bastante difícil de llegar porque vos tenés que crear
+toda la company draft y después tenés que pagar.
+Entonces tampoco te mates
+con muchos casos, pero sí
+hay que hacer enfoque ahí.
+Yo ahí lo que te digo es que capaz que podés
+mezclar este flujo de registro con la parte
+de payment.
+Y me decís, mirá acá lo que
+hice fue meter esta parte de registro
+dentro de payment. Eso, investigalo.
+Sin lugar a duda que cuando
+pase por Cypress va a ser un flujo totalmente
+independiente. Por eso
+te digo que para mí debería ser independiente.
+Pero ahora a la hora de correrlo
+podemos no darle tanta
+prioridad porque se ataca en el flujo de payment.
+¿Sí?
+¿Qué más? Después
+acá
+son dos operaciones que tenés
+que investigarlas bastante.
+Y tenés que poner, o sea,
+esta es como la parte donde tendríamos que
+dedicar un spike. Por eso es que yo puse
+un test de regresión bastante sencillo
+con 13 puntos. 13 puntos es
+dos días y
+algo. Tres. Porque
+en realidad, y a esta también
+le puse dos días y algo.
+Y a la otra le puse ocho.
+Porque la idea es que vos te pongas a investigar.
+Pongas a investigar, cheques el código.
+Los cronjo es algo bastante retorcido
+porque en realidad no es que vos
+tenés definido cuándo se corren.
+Vos tenés un
+un cronjo manager
+un controlador
+que se encarga de aplicarse la base de datos
+si tenemos que correr algún cronjo
+a qué horario y lo empieza a correr
+y si hay algún cambio detiene y corre uno nuevo.
+O sea,
+el cronjo es un
+tema delicado. Entonces ahí es donde
+necesitas
+ir como metiéndole día a día una
+investigación. Yo le fui
+asignando puntajes y este sería el objetivo
+del sprint.
+Pero, pero, pero
+eso lo vas chequeando vos.
+Si vos te parece
+teniendo en cuenta las cosas que son nuevas
+que hay cosas que se pueden pasar
+por ejemplo esta tarea del cronjo
+podemos pasarla para el siguiente sprint.
+Con esto tenés, si yo me paro
+solo en vos tenés 51 puntos.
+Lo que te pido es
+haz una investigación, lo mismo que todos los miércoles
+dedicar el miércoles también
+antes de seguir con tareas
+a una investigación, a ver, quieras o no
+también fuimos adelantando cosas
+en el siguiente sprint que yo lo que te dije
+bueno, aflojar un Eymarte
+porque venimos hace tiempo
+metiéndole, o sea, no había necesidad
+pero ahora sí, necesito
+que hagas el análisis del sprint y que me digas
+bueno, en cuanto a puntaje.
+¿Está?
+Bien.
+Y sabiendo que, bueno, que se vienen todas
+otras dificultades nuevas que son cosas que pueden variar.
+¿Sí?
+Bien.
+¿Está?
+Después, en el caso...
+Sí, perdón.
+¿Orden de prioridad tal cual como está?
+Es orden de prioridad tal cual como está, pero
+a ver, si vamos a lo concreto
+lo deseable
+es el orden de prioridad como está
+porque yo pienso que estas tareas salen bastante rápido.
+Estas que están acá arriba
+yo pienso que salen bastante rápido porque es un poco más de lo mismo.
+Y de acá para abajo los nuevos.
+Claro.
+Que esta también va a salir bastante rápido.
+Entonces, acá mi consejo...
+En sí este sprint tendría que quedar todo.
+¿Está?
+Lo que se puede pasar, esta se puede pasar
+y se puede pasar alguno de estos test.
+Si ves desde acá hasta acá se puede pasar.
+¿Está?
+Mi consejo es que vos vayas investigando la parte del worker
+despacito, no lo dejes todo por un día de investigar.
+Vaya investigándolo despacito.
+¿Está?
+Hacé un análisis del puntaje, de lo que se asignó, lo que sea.
+Y volvemos a charlar.
+En sí, para este sprint debería quedar todo.
+O sea, ni me preguntás prioridad, debería quedar todo.
+¿Qué se puede ir pasando?
+Y bueno, algunos de estos...
+Si me decís, bueno, capaz que...
+Es como siempre, los test de regresión se llevan paralelos con los unitarios.
+Entonces, se pueden ir pasando.
+Capaz que estos de resetear podríamos bajarlos más hacia abajo.
+¿Sí?
+¿Está?
+Entonces, estos dos en particular no tienen tanta prioridad.
+Digo lo mismo con estos.
+O sea, a ver.
+Lo que sí o sí tiene que salir para este sprint es la numeración.
+Que creo que ya está terminada.
+Pero sí o sí tiene que salir para la numeración.
+Tienen que quedar los test de regresión de inicio de registro.
+Porque son test de regresión sencillos.
+Deberían quedar.
+Y tienen que quedar claro cómo testear el worker.
+Porque yo necesito empezar a mergear cosas en el worker.
+Y que no me salte más errores.
+¿Ah?
+Bien.
+Este.
+Yo en particular.
+En este GetMyInfo fui poniendo todo.
+Porque yo me encargué particularmente yo de arreglar los test.
+Para que pasaran.
+Pero como incluí más cosas.
+Hay que hacer más test.
+Y hay que hacer un repienso.
+¿Ah?
+Entonces.
+Pero a ver.
+Si vamos a lo concreto.
+Las 225.
+Las 232.
+Y las 233.
+Tienen que quedar liquidadas.
+¿Está?
+Después el resto.
+Y bueno.
+Puedes priorizarlo como vos te parezca.
+¿Bien?
+¿Qué número de sprint es este?
+Perdón.
+Es el 9-10.
+Este va a ser el 10.
+Va a ser el 10.
+Tenemos que finalizar este.
+Pero este va a ser el 10.
+Ahí va.
+¿Tá?
+Arranca hoy.
+Y son 10 días hábiles.
+Hasta el lunes.
+O sea que va a ir.
+Va a ir desde hoy.
+Hasta el lunes 15.
+Hasta el lunes 14.
+Inclusive.
+Ahí va.
+Arranca el 2.
+Y son 10 días de corrido.
+Hasta ahí.
+¿Está bien?
+Bueno.
+Eso para el caso de Kike.
+Para el caso de Martina.
+Ya aprovecho que estamos todos acá.
+Y lo comento.
+Además de lo que pueda llegar a quedar.
+De chequear de lo que ya tenemos.
+Como ya vamos a subirle un poco los puntos.
+A la parte de PR.
+Porque necesito que chequees un poco los casos de regresión.
+Y eso que me des una mano.
+Y vamos a atacar algo nuevo.
+Que va a ser.
+Con esta subida de archivos.
+Que va a ser el tema de correspondencia.
+¿Está bien?
+El tema de correspondencia.
+La dificultad que va a traer ahí.
+Es que en realidad.
+Vas a tener que cargar los archivos a mano en ese 3.
+Porque la correspondencia funciona así.
+A alguien que.
+¿Cómo se llama?
+Los administradores.
+Que está en la parte de ventas.
+Y la parte de contabilidad.
+Que tiene Guille allá en Estados Unidos.
+Cuando llega información de una compañía.
+Por ejemplo yo que sé.
+Te llega una nota.
+A lo que sería acá en Uruguay.
+Una nota de DGI.
+O algo por el estilo.
+¿Está?
+Que lo van a poner en correspondencia.
+Y te adjuntan un archivo.
+Y una descripción.
+Y vos lo ves.
+¿Sí?
+Eso va a estar.
+Eso se va a hacer desde el back office.
+Y se va a ver desde el site.
+Como el back office.
+Todavía no lo tenemos hecho.
+Recién lo voy a encargar yo.
+Que ahora voy a eso.
+¿Está?
+La idea es que vos hagas todo eso.
+Simulando que ya tenés esa data.
+Pero en sí va a ser un get.
+Compaginado.
+Igual que lo que hiciste.
+Y mostrar archivo.
+Y además completar todo lo que busque.
+Dependiente de este print.
+Si nosotros lograríamos eso.
+Llegaríamos a estar bastante al día.
+Yo particularmente.
+El sprint que viene.
+Me voy a empezar a encargar.
+De todo lo que es el flujo de solicitudes.
+Desde el lado del back office.
+Tengo que darle inicio al back office.
+Pasarle toda la parte que tiene el back office.
+¿Sí?
+Toda la parte de lo que tiene el sitio del back office.
+¿Está?
+O sea que toda esa configuración del frontend.
+Y eso toca hacer.
+La parte de rutas.
+Redux.
+Todas esas cosas.
+Y toca hacer la pantalla.
+Donde las personas van a ver.
+Las solicitudes.
+¿Está?
+O sea.
+Que es más o menos.
+Reutilizar algunos componentes.
+Pero hay que hacer todo más o menos.
+De cero.
+Porque el back office.
+Quieras o no.
+Lo fuimos medio dejando estar.
+En algunas cosas.
+Y fui intentando actualizarlo.
+También el sprint que viene.
+Voy a seguir.
+Porque.
+No es que es algo que.
+Es algo que se solicite.
+Probablemente voy a seguir en disputa.
+Por lo del email.
+Y ya estuve hablando con Guille.
+Porque el sprint que viene.
+Va a surgir el ambiente stage.
+¿Está?
+O sea.
+Hoy en día.
+Tenemos nosotros dos ambientes.
+Que es develop y master.
+¿Sí?
+Va a surgir el ambiente de stage.
+Eso con el fin.
+De que nosotros.
+Podamos adelantar.
+Lo más posible.
+Problemas para diciembre.
+¿Está?
+Entonces.
+Ese es un tema de costo.
+Pero yo le dije.
+Que ya está bueno.
+Que como equipo.
+Nos pongamos los cerezos.
+Y me interesa.
+Porque también la idea.
+Es que Guille.
+Empiece a ver en producción.
+Lo que ya esté testeado por Kike.
+Entonces.
+Yo ahí a Kike.
+Le voy a dar acceso a stage.
+Kike va a testear en stage.
+Y una vez que Kike me da el ok.
+O hacemos algunos ajustes.
+Con cosas que me dijo Kike.
+Recién le vamos mostrando las cosas a producción.
+Eso va a estar mucho mejor.
+Que Kike pruebe las cosas directamente en producción.
+Y se llene de basura.
+Los datos de producción.
+Correos basura.
+Y todas esas cosas.
+¿Está?
+Entonces.
+En sí.
+En producción.
+Van a ser temas concretos.
+¿Bien?
+Pero bueno.
+Nada.
+Esas son las novedades que tenemos.
+Lo bueno es que.
+Bueno.
+Una vez que se termine la parte de archivos.
+Lo mismo que yo te decía Kike.
+Una vez que vos termines la parte del worker.
+Y el motor.
+Y el bloqueo del pago.
+Y el envío de correo electrónico.
+Va a ser.
+O sea.
+Vamos a empezar a tener un poco más de tranquilidad.
+Frente a la tormenta que se viene.
+Que es la salida de producción.
+¿Va?
+Este.
+Sigue faltando.
+O sea.
+Sigue habiendo pila de cosas para hacer.
+Pero bueno.
+¿Va?
+Y después.
+El otro sprint.
+Bueno.
+Kike va a seguir con test de regresión de otros sitios.
+Tenemos la parte de modificar pagos.
+Método de pago.
+Team.
+Ahí vas a tener una cantidad.
+En points.
+Hay una cantidad.
+Hay una cantidad.
+Para testear.
+O sea que.
+Es.
+O sea.
+Es.
+Es enorme la cantidad de.
+De test que se hay pasar.
+Y Martu.
+Vas a arrancar con las solicitudes incompletas.
+Yo voy a arrancar por la parte de edición de las solicitudes.
+Y cada vez estamos.
+O sea.
+Cada sprint que pasa.
+Estamos más cerca de lo que es el fin.
+Lo bueno de alguna manera.
+Es que yo planifique.
+También que la parte de worker.
+Iba a salir al final.
+Y ya la estoy liquidando ahora.
+Entonces.
+Hay muchas cosas positivas en eso.
+Quiero ver si por ejemplo.
+Ya.
+El otro sprint.
+Empiezo a tramitar el acceso.
+Tengo que comunicarme como empresa.
+Y empiezo a tratar el acceso de Google.
+Y quiero ver a ver si podemos.
+Salir a hacer una pequeña salida a producción.
+Con www.asban.com.
+Pero con una password.
+¿Te acordás como hacíamos en la tesis?
+Que teníamos con una password arriba cuando entrabas al sitio.
+Es como para bloqueárselo al usuario común.
+Hay mucha cosa para sacar.
+Lo bueno es que tenemos pila de cosas para.
+Para hacer.
+El backoffice va a ser sencillo.
+Y está ahí.
+Yo creo que.
+Una vez que liquidemos esto.
+Y sigamos avanzando.
+Yo creo que los mayores desafíos van a ser trámites.
+Que mi idea va a ser.
+Yo tengo una cantidad de tickets.
+Acá abajo.
+De cosas que se dicen para la producción de B1.
+Esto es la parte del correo.
+Esto es la parte de wow.
+Hay que chequear algunas cosas.
+Analizar librería.
+Cuenta con Google.
+Todas esas cosas que nosotros venimos pateando.
+Está.
+Y yo creo que lo más complicado va a ser la migración de Wordpress.
+Eso va a ser lo más jodido que.
+Que ahí nada ese mes probablemente ahí ustedes.
+Yo cuando hay ahí va a haber tareas para hacer.
+Pero yo cuando esté haciendo esa migración va a ser algo bastante jodido y que voy a tener que meterle bastante pienso.
+Entonces ahí voy a necesitar ahí que.
+Quemar tu medio que tome las riendas en el sentido de que vos dirijas aquí que esas cosas en las tareas.
+Que.
+Y le des apoyo porque yo voy a estar 100% con eso de la migración y como que me voy a desacoplar un poco.
+Está este.
+Bueno nada pero eso eso es como el panorama general.
+Siempre me gusta intentar hacerlo más transparente y comentarles.
+Todo lo que se viene sinceramente lo que me da más miedo ahora porque la parte de archivos creo que va a salir es la parte de enlazar el dominio de de DazBank.
+Y la parte de migrar el Wordpress que en realidad van a ser muchos scripts.
+Y capaz que ahí hasta le digo a Martu venite y vamos a crear cosas.
+Entonces bueno está en ese sentido es como la parte más jodida porque es migrar todos esos datos sensibles.
+Creo que el ambiente de stage nos va a dar una mano para eso muy grande.
+Este así que bueno nada es.
+A seguir metiéndole a seguir laburando es importante lo que todos estamos haciendo porque tanto lo que nosotros desarrollamos como lo que es Kike está testeando.
+Porque eso va a garantizar que.
+Que.
+Que.
+Que no nos caen en otra palabra.
+Que no nos rompan el culo.
+Ah este.
+Y bueno a meterlo.
+Yo creo que venimos bastante bien.
+Una vez que una vez que matemos.
+Yo creo que el dragón final de esta B1 es el Worker.
+Es el Wordpress.
+Que nosotros tenemos que bloquear lo que es inicio de sesión y eso por el Wordpress.
+Worker y que todo el mundo lo inicie de uno.
+Ah por ejemplo una de las cosas que vamos a tener que fichar es que cuando inicie sesión por primera vez.
+Vamos a tener que enviar.
+Enviarle un mail para que cambien la contraseña o que le vamos a asignar a todos contraseñas temporales y eso va a estar cuando tiene que generar scripts para eso y eso va a estar sinceramente va a estar jodido probablemente hasta creemos pero eso está de más porque tenemos el Worker ya vamos a crear un cron un cron show que a tal momento va a ser como la salida de producción y lo que va a hacer es va a ser toda esa migración del límite de sacar todo el Wordpress.
+El que va a hacer todo eso va a ser el Worker.
+Que va a estar de más porque lo que el Worker lo que va a hacer es copiar todos los datos meterlos a la nivel de base de datos y lo que va a hacer es enviarle a todos a decir esta es su contraseña a todas las personas que tienen la empresa decir nos migramos esta es tu contraseña temporal.
+Si y la y eso y también va a quedar lo que estás haciendo ahora mismo porque fíjate que todos los usuarios que antes estaban por Wordpress ahora van a entrar a nuestro sitio y la manera de entrar a su sitio le vamos a dar nosotros una contraseña temporal porque nosotros no podemos saber la contraseña que yo tengo.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no.
+Como la bola que cae, viste, cuando es fin de año, lo va a hacer literal lo mismo.
+En el momento que cae la bola y no sabe si la bola del 2000 no sabe si se terminó el mundo o salió todo bien.
+O sea, no vamos a ir.
+enterando en unos días
+como en los episodios
+de los dibujitos, pero nada, eso
+no lo quiero atomizar más
+yo con Marto
+estoy acá y cualquier duda que tenés
+pero Quique ya se depositó
+también el sueldo, eso
+se hizo correctamente, yo sigo guardándolo
+como usted dijo
+con el monto que
+ya acordamos y eso, o sea que
+está todo
+ahí, en el momento que usted lo
+requiera
+le digo, sí, como hablamos
+unos días para poder pedirle
+porque cada vez se va haciendo más plata
+y yo
+pero nada, pero esto es como
+es como cuando hace una inversión, te dice
+bueno, cinco días hábiles, no, por ahí el chiste
+cuando la necesites
+me avisás y yo ahí me muevo
+pero
+por ahora seguimos con el mismo
+protocolo, ¿bien?
+Genial, perfecto. Así que nada
+algo que comentar es que
+es
+es algo que venimos hablando
+que venimos hablando con Guille
+que más o menos lo hablé con cada uno
+pero es muy probable que en febrero
+haya, o sea
+no sean contratados directamente
+por Dashbank, sino que sean
+o sea, sigamos con la contratación
+que tenemos actualmente, eso con el fin
+de que si se suman nuevos desarrolladores
+o diseñadores o lo que sea
+tenemos luz verde de Guille
+para que si nosotros no tenemos tareas
+podemos agarrar
+y utilizar ese
+ese material de trabajo
+o sea, esas personas que vayan entrando
+a partir de ahora
+y más que nada, esto va a correr
+para desarrolladores, en el caso
+que no sea Tatato y diseñadores
+y las cosas que vayamos incorporando
+el año que viene, las cosas, cuando digo cosas
+son personas, para que nosotros
+podamos tanto ir atacando
+proyectos que vengan de Guille
+como proyectos internos, o sea, la idea
+es el fin
+lo que hablamos muchas veces es crear
+una compañía
+entonces nada, es eso
+o sea, van a seguir
+contratados por acá
+así que bueno
+nada, es como ya les dije
+a cada uno, y eso lo hablamos
+yo no tengo problema en hacerles
+o sea, ya está todo armado
+para que yo sigamos con los pagos como yo
+lo estoy haciendo, pero llegado a ese
+punto de febrero, yo no voy a tener problema
+de pasarlos formal
+el tema es que lo que yo les pago es plata
+en mano, si yo los tengo que pasar
+formal, los voy a pasar formalmente
+lo que tengo que hacer es formalizarlos
+y como ustedes van a ser empleados
+primero dependientes de romper el culo
+entonces van a trabajar con uno de mi personal
+y a eso habría que calcular, eso sería
+como el monto que yo les pago ahora, habría que
+sacarle el 22% de IVA
+sería algo que les queda en manos, porque tendrían que empezar
+a pagar la DGI, yo creo que no les conviene
+pero bueno, si ustedes quieren
+estar en regla y todas esas cosas
+yo asumo
+digamos ese riesgo, mientras lo que hablamos
+pero bueno, la idea es seguir
+así un tiempito, va a haber un momento
+en que vamos a tener que
+pasar como quien dice
+a regla, y la idea es que sea
+una especie de, ¿cómo se llama?
+ahí yo voy a hablar
+una especie de facturación directa
+de DGI, bueno, eso
+lo hablaremos, pero por ahora no es necesario
+¿bien?
+¿una consulta, duda?
+no, por ahora
+eso realmente es algo que
+yo fui hablando con Guille, lo fui hablando
+despacito, porque
+y en teoría no nos va
+a cambiar nada si Guille
+sigue todo bien, pero si Guille no sigue
+todo bien, nosotros podemos usar
+a Guille como plataforma
+como para vender software
+por otro lado, y eso está bueno
+porque además de tener el sueldo de Guille
+podemos nosotros vendernos
+como empresa, entonces
+ahí cambia un poco lo que es la pisada
+de todo, y está bueno
+ahí bueno
+cada quien se sumará, o cada quien
+hará las cosas, yo ahí
+sinceramente, en particular
+no tengo inconveniente
+¿bien? bueno
+pero más o menos es lo que hablábamos
+en un inicio, de que aprovechar
+esto para o
+sacarle jugo a Guille, o
+armar una empresa y utilizar
+digamos, además de la vista que vamos
+a seguir entrando de Guille, utilizar
+esto para poder vender productos y servicios
+que es ahí donde, en cualquiera
+de los dos futuros, es ahí donde
+se hace más vista
+y eso va a estar bueno
+además de que nosotros quieras o no, ya tenemos
+un dashboard, ya tenemos metodología
+tenemos una cantidad de cosas que
+quieras o no, eso es algo que
+ustedes lo han bebido, es algo que cuesta
+construirlo, organizarnos
+trabajar en equipo, y creo que es algo
+que cada vez venimos puliendo
+más, además somos personas
+que además de este trabajo, tenemos otro
+y creo que venimos saliendo bastante organizados
+los sprints, más allá de un atraso de uno o dos días
+lo venimos liquidando
+entonces bueno, nada, es
+cualquier consulta o duda
+pueden hacerla ahora, o después al privado
+me escriben y nos juntamos y charlamos
+¿bien?
+vamos River
+estamos a hablar
+y que cualquier cosa, vamos a estar con esto
+probablemente hoy o mañana te vamos a pedir
+el clásico approve, y tené en cuenta que
+este approve, se va a ir muchos test
+tuyos, así que necesito
+que vos des también ese approve
+o sea, ya no es simbólico
+como al principio, sino que ahora
+hay mucho código que se va a meter de tu lado
+es muy probable
+que las primeras, que las PR que hay pendientes
+las mandemos luego
+como te dije, tenemos que chequearla
+lo primordial ahora sería producción
+después esas PR las vamos mergeando
+pero tranqui
+igual agregan más test
+que está bueno, pero en realidad
+no, capaz que se va
+alguna, tenemos que ver a ver como estamos de tiempo
+si mandamos la PR a producción hoy
+y salimos mañana, porque en realidad
+la reunión con Nietzsche es el viernes
+capaz que es mañana, ya vamos mergeando cosas
+y las seguimos sumando a esa PR
+eso lo hago bien
+pero nada
+hay mucho
+ahora, como te digo, la prioridad es seguir con test de regresión
+y empezar a que el worker
+podamos nosotros mergear PR
+y algo que yo decía, puede parecer un bolazo
+pero ya le pasó a Martu y me pasó a mi
+el hecho de que
+vamos a mergear algo y fallan los test
+y vimos que cambiamos una funcionalidad
+que está alterando otra cosa, o sea
+cada vez los test unitarios
+empiezan a correr mucho más ese valor
+agregado que nos garantiza
+y es algo automático
+no tenés que estar chequeando nada
+así que nada, eso
+bueno, nada más de mi lado
+perdonen toda la chachara
+y bueno, estamos a la hora
+chao, hasta luego, quedo de las órdenes

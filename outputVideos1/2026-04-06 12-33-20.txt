@@ -1,0 +1,69 @@
+Estuve revisando las PRs ahí de Martina, estuve pegando interacciones en la PR de Nahuel y Jonathan, tengo que pegar una interacción más, este, ahí le, voy a preguntar ahí si vieron las PRs, esta que les mandé, porque ahí creo que voy a tener que mergearla para ver una cosita, y este, ¿qué más? ¿qué más? ¿qué más?
+Bueno, tengo que mergear esta PR de los QRs, a no ser que hayan visto algo, porque, este, nada, tuvimos que correr la migración, mergeé la PR del back office, que eso fue, este, eso fue importante, porque al mergear esa PR ya solucionamos todos los problemas, o sea, ya está el worker ajustado a One Money,
+y ahora lo que me queda es armar la PR una vez que se mergee la PR.
+Bueno, yo de mi lado, como ya saben, estuve ahí ausente dos días, ahora en lo que estoy es, bueno, justamente testeando esta PR de lo que es el dos QRs, no he visto nada por ahora, este, ahí le pedí a Santi y Pantin el tema de un refactorcito nuevo de lo que es el mail,
+de reseteo, de autenticación, este, ahí yo voy a estar atento a lo que Santi mande, y no se mergeó mi PR que ya actualizaba ese mail, así que capaz que lo mejor es una vez tenga el template nuevo, Santi, trabajar sobre esa PR que continúa abierta, así que nada, en términos de puntos, ahí viste que tengo ya 40 entre azul y verde, digo, ya, en teoría, si se llegaron a completar las que he hecho,
+que tengo allí en azul, digo, ya quedaría en 40 puntos que estaría bien, básicamente sería lo que corresponde.
+¿Cuál era? El mail de dos pasos, el ajuste de compañías que hay, este, no sé en qué están esas PRs.
+¿Cuál decís vos?
+Está, está, o sea que si cerramos, está, 22, no creo que cerremos todo.
+Capaz que, Quique, si podés arrancar con la de Prompting Genia, que también es clave.
+Ok.
+Este, bien.
+Si podés arrancar.
+Con eso, ahí también le voy diciendo a todos, este, así que bueno, eso nomás, bien de bien.
+Y está, y si podés pasame las PRs que tenga pendiente para revisar, porque así le pego una revisada, porque no, yo te dejé comentarios en algunas, pero actualizate a Develop ahí y me volvés a avisar.
+Este, así que bueno, eso, bien de bien, con eso, Quique.
+Ok.
+Yo te diría que tanto, ya, más de lo prioritario.
+Ahora, además de lo de Santi y revisar lo de los QR, este, sería, ¿cómo se llama?
+Sería, este, ah, sería lo de Prompting Genia por ahora, este, también pegarle una revisadita a eso.
+Eh, Fernando.
+Bien, eh, corregí algunos comentarios, eh, te mandé ahí la propuesta de ajuste de puntos, estuve con la tarea de Backoffice de agregar la nueva tab de KIB, eh, sobre Prompting Genia, Erini, estaba justo esperando a, a la vuelta de Enrique para, para pedirle un feedback, eh, y está, después, eh, estuvimos contigo ahí, y viendo, haciendo un testing de, del tema de los QR, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y, y,
+y, y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y, y,
+y, y, y, y, y,
+y, y, y, y, y, y, y,
+y, y, y, y, y, y, y, y,
+y, y, y, y, y, y, y, y,
+y, y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y, y,
+y, y, y, y, y,
+y, y, y, y, y,
+y, y, y, y, y,
+y, y, y, y, y,
+y, y, y, y, y,
+y lo del
+lo del drop down de como serían
+las opciones
+este, como sería el ajustecito
+de diseño que habría que hacer a eso
+después me creé una tarea
+también para trabajar los mails
+que pidió Enrique
+que serían, este, creo que sería
+hacer un mail más, que sería
+una variante en realidad del mail que ya creamos
+dos variantes, perdón
+y, y ta
+este, es un si
+sería lo siguiente y atacar
+una vez que termine eso creo que pasaría ya
+en la de notificaciones que lo vería con bastón
+probablemente ya en la de notificaciones
+tenemos design acá
+perfecto, bien de bien
+bueno, genial
+eh, ta, entonces estaríamos
+con eso, si no queda
+ninguna duda, quedan liberados
+Santi y Gastón quédense un segundito
+bueno, buen provecho
+bueno, aprovecho
+bueno, buen provecho

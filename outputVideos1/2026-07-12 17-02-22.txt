@@ -1,0 +1,654 @@
+Y yo tenía como un video que usé en la demo
+Pero no
+¿Cómo se dice?
+No lo
+Nada, pero vi que vos habías hecho otro
+¿Puede ser lo que vos estabas haciendo otro?
+Claro, como que estoy haciendo otro, sí
+En realidad
+Yo te consultaba si podíamos
+Como complementarlos, pero si vos me decís que es
+Uno u otro
+Nada, no sé, yo
+No, si querés usamos el video
+Ese, no hay problema
+Y como ves
+Y el informe igual, decimos que lo hicimos
+Todos, vos sabés que no hay problema
+Por ese lado
+Como ves, si querés
+Te muestro el informe
+¿Qué ibas a decir, perdón?
+Déjame pensar
+O sea, le faltaban
+Unas imágenes a Bill
+Que él quería poner, pero que no sé
+Qué imágenes eran, porque yo estuve poniendo algunas imágenes
+Pero así como de contenido
+No, no
+No
+No, o sea, obvio se puede expandir más cosas
+O sea, siempre se puede poner más
+Pero, pero así como le dije
+Si querés te lo muestro ahora y lo vemos por arriba
+Tipo, te comento qué es lo que tenemos
+Y si se te ocurre, si querés poner algo
+Todo bien
+Si no, igual posta no hay problema
+Yo, posta tengo cero problema
+En poner tu nombre
+La verdad que comparto
+Obvio, obvio, obvio
+Entiendo
+¿Dónde está eso?
+¿Dónde está eso?
+¿Dónde está eso?
+¿Dónde está eso?
+Vamos a ver ahí
+Esto igual me basé como
+El formato es medio raro, pero me basé en una cosa
+Que se llama documento 305
+Que tengo entendido que se usa para
+Documentos en la hora, yo a lo menos lo usé en otras materias
+Acá
+Ah, bueno, faltaba el índice
+Si querés podés hacer el índice
+Yo, porque lo dejé para el final
+Claro, como todavía me faltaban cosas de
+De
+Chequear con David, todavía no
+O sea, no hice el índice porque no estaba seguro de qué página
+Hacer la cosa
+Hay una cosa que se llama declaración de utilidad
+Que no sé muy bien cómo es el formato
+Pero está
+Eso igual le voy a preguntar al profe
+Lo que sí, vos imagino que
+Tenías como más o menos una idea
+¿O querés que te explique estas cosas?
+Nada, tranqui, tranqui
+Acá tipo
+Es un poco más de
+Es la información que usamos en la presentación
+Que esa es otra cosa que se tiene que entregar
+O sea, ya está, pero de cuando hicimos la presentación
+Y acá
+Expandimos un poco más, o sea, explicamos
+Que es FreePidex
+Que es Asterix y cómo funciona
+Que es PBX
+Y algunas funcionalidades básicas que tiene esto
+Que es tipo
+Agregar extensiones, configurar un
+IBR, que es tipo
+Un IBR es ese
+Como audio que suena
+Cuando llamás a la ORT
+Dice bienvenido a la universidad de ORT
+Eso, por ejemplo, y los ring groups
+Esto está desarrollado
+Que es tipo, son grupos
+Por ejemplo, cuando llamás a un área de un lugar
+Que te dicen, no, para llamar a la comercial
+El tal número, bueno, ese es un ring group
+Por ejemplo, y más o menos explicando
+Porque pedía que expliquemos algunas funcionalidades
+Después
+En capa de arquitectura
+Era como bastante simple, era decir
+Como que es una base de Linux
+Que la utiliza Asterix
+Que Asterix vendría a ser como el motor
+Que está por debajo de FreePidex
+Y FreePidex es como la parte visual
+Que permite configurar todo
+Después había que hacer
+Como una parte diciendo tipo
+¿Cómo se dice?
+Dando ventajas o por qué sí o por qué no
+Y acá me dio como que tal, le diera a venderlo
+Y lo vendí un poco
+Y había que poner una desventaja y puse esto
+Está bueno
+Y esto es, bueno, una cosita que le damos
+Bueno, si es open source y gratis, ¿cómo le sirve esta zangoma?
+Que acá iría una imagen
+Pero me olvidé de ponerla
+Y algunos ejemplos
+Este es un mini texto
+Que como junta FreePidex con Soyper
+Después
+En la parte de Soyper
+Nada, ¿qué es Soyper?
+Que es un softphone
+¿Cómo es?
+Está bueno
+Después explicamos un poco más
+Qué es VoIP, el Voice Over IP
+Y una mini explicación
+Esto igual se puede hacer súper complejo
+Yo, la verdad que, hablando con el profesor me dijo
+Bueno, no hace falta que lo hagan más complejo que esto
+Para lo que es el scope
+Del curso
+Después está lo mismo
+¿Por qué elegir Soyper?
+Y algunos ejemplos de uso
+Nada
+Y después esto es como
+Un manual paso a paso de los componentes
+Que es tipo, bueno, instalación FreePidex
+Y más o menos por arriba
+Cómo se instala, la explicación de por qué
+El adaptador cuenta y por qué
+La red para virtualizar
+Algunas cosas
+Ahí, esto igual, o sea, supongo que te apareció
+Cuando vos lo estabas instalando
+Esto, esto
+Está, el usuario administrador
+Pumba
+Y después como instalación de Soyper
+Capaz, si podés pasarme
+Esto, lo tengo que hacer
+Y me da paja
+Si podés pasarme
+Foto de la
+Podés descargar Soyper
+En tu computadora
+Y me lo, y le sacás captura
+Tipo, toda la parte de la descarga
+Porque yo puse la configuración, pero no puse tipo
+La descarga
+Porque me dio una paja enorme
+Y lo iba a hacer en otro momento
+La verdad que me dio una paja enorme
+Porque dije, pa, aparte de la descarga
+Es tipo, descargarlo y sacar
+Es como re bobo y tal
+Lo dije tal o después
+Y tal, si querés
+Esto igual te lo puedo anotar de cosas que estaría
+Bueno como para pasar
+Y después acá
+Una explicación muy breve
+De cómo es la configuración en uno
+Y en el otro
+Y tal, y esto había que meter una conclusión final
+Y yo medio como que lo chamuseé ahí
+Como que, ca, que aprendimos
+Que nos importó, etc
+Y acá una bibliografía
+Que está en formato APA
+Y tal, nada más
+Igual ponele
+Si querés, esas imágenes estarían buenas
+Porque sería una paja
+Tenía por acá una lista de cosas que me faltaban
+Sí, o sea, eso
+Ah, y también
+Si podés, porque así no
+Nada, si puedo darme una mano con eso
+Estaría bueno
+¿Vos sacás lo que es el secreto de la extensión?
+Claro, vos cuando
+Cuando entrás, a ver dónde está
+Vos cuando entrás acá
+Acá no, ah, más arriba
+Vos cuando configurás
+Una extensión
+Como en esta
+Ahí va
+Y vos hacés clic en una extensión
+Y te aparece como una lista
+De un montón de cosas
+Y una de esas es el secreto
+El secreto se usa para configurar el soyper
+Y yo tenía ganas de poner una foto de eso
+Porque estaría bueno
+Así que si podés hacer una foto de eso
+Estaría genial
+Me ayudás muchísimo con eso
+Pero porque me mata la paja
+O sea, me mata mal la paja
+Y eso sería
+Si querés, después te paso una lista de fotos
+De cosas como para sacarle foto
+Igual con eso
+Y la
+¿Cómo se dice?
+Y la
+Y el video para mí es re aporte
+Porque yo, tipo, el video no lo tenía hecho
+Porque, nada, porque yo vi que lo hacías vos
+Así que, re bien
+Y el índice, capaz todavía no
+Porque falta lo que me va a pasar
+¿Cómo se dice?
+David, que creo que a mí seguramente me lo pase mañana
+Porque él trabaja de noche también
+Entonces, no creo que
+O sea, yo no espero que me lo pase hasta mañana
+Igual sería una boludez
+Porque él ya lo tiene hecho
+Yo ya lo tengo hecho
+Sería como, nada, mezclar las cosas
+Que no tenemos
+Y quedarle esto de clase de autoría
+Le voy a preguntar al profe por Teams el formato
+Pero el profe me contó por encima
+Tipo, nada, es simplemente decir que lo hicieron ustedes
+Nada más
+Y ahí, ta, nada más
+Pero posta, no
+O sea, si es por eso, no te preocupes
+Si el profe se va a preguntar, no sé
+Si querés, podés decir que nos ayudaste
+Con tipo, como este
+Con este párrafo
+O sea, posta que
+Cero compromiso conmigo
+No pasa nada
+Con decir eso
+O con, nada
+Si tenemos que argumentar
+¿Qué?
+¿Qué hicimos?
+Podés decir que nos ayudaste con esto
+No pasa nada
+Aparte con David, tipo
+Nos juntamos muy poco
+A hacer las cosas en conjunto
+Me veo que le hacemos las cosas por separado
+Y, ta
+Básicamente eso, nada más
+Si se te ocurre algo más
+Como para agregar
+Genial
+Re bienvenido
+No pasa nada
+Y, ta
+El video lo tenés
+Teams de fotos
+Que estaría bueno tener
+Como para
+Para mandarte por las dudas
+Y, nada más
+Sí, obvio, obvio
+O si querés
+O si querés
+Pasame tu número
+Y me voy a mandar
+Me lo pasás por Whatsapp
+Como te quede mejor
+Porque
+Yo con David me suelo
+Me suelo organizar por Whatsapp
+Porque, ta
+Porque él tuvo no sé qué problema con Teams
+Ahora te escribo
+Te escribo y paso
+Te paso la lista esa
+Yo con David en general
+Nos organizamos por Whatsapp
+Porque él tuvo problema con el Teams
+Y hablamos por Discord a veces
+Así que
+Eso
+Entonces vos lo estabas haciendo
+O sea, ahora
+Te quedan unas cosas
+Genial
+Que
+Si
+Si querés la voz
+Si querés la voz
+Genial
+No, no sé
+O sea, si querés ponerle voz mejor
+No sé si es tipo 100% obligatorio
+Pero si querés ponerle
+Ponele, ponele
+O sea
+Posta, no, no hay problema
+Perfecto
+Sí
+Ahora me voy a fijar la fecha
+Creo que se entra en el jueves
+O en miércoles
+Pero
+Pero sí, sí, sí
+Bueno, mejor
+Yo lo que tenía en mente
+Era
+O sea
+Después decime como que
+Que habías hecho vos
+O que tenías en mente
+A mí me parecía
+Yo le pregunté al profesor
+Y me dijo que instalación no era
+Era tipo solo como mostrar la funcionalidad
+Y para mí estaría bueno capaz mostrar
+Cómo se levanta el proyecto
+Mira, ahora si querés por Whatsapp
+Te mando foto
+Te mando el video
+Que hice yo
+Para la presentación de
+De la
+O sea, la presentación que fue en persona
+Te mando eso
+Y
+Ahí lo que hicimos fue
+Abrir el Virtual Box
+¿Vos con qué EPM lo hiciste?
+O sea, ¿con qué?
+Ah, bien
+Entonces lo hicimos con el virtualbox
+Lo hicimos con Virtualbox
+Levantamos la página
+Era
+Nada
+Mostrar tipo el
+El hub de inicio
+Capaz
+Se estaría bueno
+Si vas a hacer una demo para esto
+Estaría bueno
+Arrancar con alguna extensión creada
+Y crear una en el momento
+Porque así es un poco más larga
+De la que hicimos
+La que hice yo
+Era un poco más corta
+Pero porque
+Estábamos apretados de tiempo
+Por la cosa
+Por la presentación
+El profesor dijo
+Que al menos estaría bueno
+Que dure, no sé
+Cinco minutos
+Un poco menos de cinco minutos
+Y capaz podés
+Eso
+Agregar una extensión
+Y llamar
+Tipo si
+Yo al menos lo que hice el mío
+Yo tenía el soyper
+Instalado en mi computadora
+Y creaba
+Era crear una extensión
+Y
+Loguearla en el soyper
+Y desde mi celular
+Yo llamaba al soyper
+Que tenía la computadora
+Y atendía la llamada
+¿Me explicó?
+Para mí
+Para mí haciendo eso
+Y comentado
+Y capaz ponerle
+Para mí cinco minutos
+Es un poco una exageración
+Pero tipo
+Tres
+Tres minutos
+Cuatro
+Para mí está excelente
+Y sí estaría bueno mostrar
+Porque yo en el mío
+Hice solo llamada
+Entonces no mostraba mucho
+De alguna funcionalidad
+De Freebiex
+Pero si agregás
+Una extensión
+Está bueno
+Eso me parece que está bueno
+Y está
+Un poco más
+Claro
+Pá, genial
+Sí, sí, sí
+Esto se entrega
+El 16
+Que es
+El jueves
+El 16
+A las nueve
+Pero está
+Igual para mí
+O sea
+Si vos entre hoy y mañana
+Tenés ese video
+Yo ahora armo un grupo
+WhatsApp con vos y David
+Así al menos estamos
+Tipo los tres alineados
+Porque en este
+O sea no hablo nunca
+De David por eso
+Porque creo que no puedo abrir Teams
+Y está como medio
+Estuneado con eso
+Así que
+Está, nada
+Y nos ponemos
+Medio alineados
+Y
+Y está
+Seguramente David
+Me manda eso mañana
+O sea si me lo llega a mandar hoy
+Mejor
+Yo me lo pongo a hacer hoy
+Pero
+Pero está
+Para mí
+Con el
+Te paso por
+Te paso por privado
+Esa lista de cosas
+Tipo
+Pá, estaría bueno
+Que saques foto de esto
+Porque digo
+Ahora que vas a abrir el proyecto
+Para hacer la demo
+Estaría notable
+Te paso también
+El video que hice yo
+No sé si te sirve de referencia
+Y nada
+Y armo el grupo
+Y de última
+Hablamos
+O sea
+Es para coordinar la entrega
+Nomás el grupo
+Y así al menos está
+No sé
+Hablás con David
+Cualquier cosa
+Pero
+Pero nada más
+Vos qué opinás
+Sí, sí
+O sea
+No, yo lo decía
+Por un tema
+De practicar
+De
+O sea
+Me lo pasaba a David
+Pasa que un índice
+Es algo que está
+Tomaba muy poco tiempo
+Pero digo
+Me lo pasaba a David
+Yo agregaba las cosas
+Que faltaban
+De lo que me pasaba a David
+Ah, si me agregas
+Si me pasas las imágenes
+También estaría bueno
+Porque
+O sea
+Como ocupan espacio
+Y vamos a modificar
+Qué va en cada parte
+Entonces si querés
+También
+Te paso para que vos
+Hagas el índice
+O sea
+Yo cuando lo termine
+De agregar todo
+Lo paso
+Así también lo dicho a David
+Y si es lo que hay
+Tipo
+Hacés vos el índice
+Eh
+Y
+Y aparte el lunes
+Ya le pregunto al profe
+Qué onda
+Lo de la escena de autoría
+O sea
+Es simplemente decir
+Que lo hicimos nosotros
+Pero ta
+Le voy a pasar un texto
+Ahí medio default
+A ver qué me dice
+Si está bien
+Y ta
+Poco más
+Pero
+Pero
+Igual que sea con las fotos
+Con ese video
+Y con hacer el índice
+Para mí es
+Me salvás
+Me salvás seguro
+Eh
+Y aparte ta
+También
+Te paso ahora también
+El informe así
+Última
+Lo lees
+Por si querés leerlo también
+Y por también
+Si vos decís
+Pa
+Me parece que esto hubiese estado bueno
+De esta manera
+O de esta otra forma
+Eh
+Comentalo
+Y ta
+Y lo modificamos
+Yo
+Yo conocía bastante el informe
+Así que
+Si vos me decís
+En tal parte
+Me parece que estaría bueno esto
+Yo me huí conseguida
+No
+Tranqui
+Tranqui
+Por favor
+Eh
+Dale
+Y ta
+Si te parece capaz
+Ah
+También como para
+Para delinearlos
+Eh
+Antes de capaz
+Como que te pongas a full grabar el video
+Si querés pasarnos una lista
+Al grupo whatsapp este
+Que voy a hacer ahora
+Tipo
+Che
+Tenía pensado
+Hacer esto
+Esto
+Esto
+Y esto
+Así como para comentar
+No
+No esperes a que nosotros te confirmemos
+O que te digamos el ok
+Vos si querés anda haciéndolo
+Así no
+No
+No te atrasás con eso
+O no estás tipo
+Esperándonos
+¿Me explico?
+Te
+Te parece bien esta dinámica
+Dale
+Obvio
+Dale
+Si si si
+Yo ahora
+Eso
+Ahora te agrego whatsapp
+Te mando la lista de fotos
+Que estaría bueno
+Que me pases
+Yo lo agrego
+Las fotos igual
+Si querés pasármelas
+Ah
+Pasalas al grupo
+Así de último
+Queda como
+Algún mensaje en el grupo
+Como que hablamos
+Eh
+Y
+Y
+Y te paso el video también
+Y nada
+Eh
+Coordinamos
+Dale
+Y también pongo al tanto a David
+Dale
+Un gusto
+Eh
+Vos
+Vas por
+A vos te gusta que te digan Enrique o Manuel
+Como para tener una idea nomás
+Ah
+No no
+Para saber como
+Como
+Si alguna vez hablaba con el profe
+Decía no
+A ver si decía Enrique o Manuel
+Dale
+Dale
+No
+Por favor
+Gracias a vos
+No pasa nada
+No pasa nada
+Que te diga
+Que te diga
+Que termino bien querido
+Chau chau

@@ -1,0 +1,358 @@
+Bueno, técnicamente, son 8 puntos por predicción exacta, ¿no? Entonces técnicamente está ahí, ¿no?
+O sea, está ahí, es un resultado exacto, ahí, no sé, el que está con la calculadora es Santi, yo ya no llego, Martín Amena, Enrique mucho menos, ¿no? Ya que estamos, este, pero...
+Ya, ya no hay esperanza, nunca la subo.
+No, pero mirá, son, tenés que encajar un resultado exacto, y la cagada es que si vos ya tiraste lo mismo, la diferencia de goles son 5.
+No sé.
+Yo hace rato que le estoy enviando mail a los de ovación, no hay caso.
+Te mando soporte, todo, no hay vuelta.
+Así que bueno, ta, hemos hecho todo de nuestro lado.
+Bien, habrán visto, habrán visto que las PRs tienen ahí un, o sea, estoy trabajando ahí con la parte de documentación, teníamos ahí un issue, unas cositas, o cosas que estamos cambiando, estoy agregando cosas a los security check,
+para acompañar.
+Para acompañarnos a la, a la reglamentación de ASFI, entre esas cosas, ahora agregué un load balancer en el work, en el back office, ¿sí?
+Así que, nada, por si ven, no, no mergemos nada, yo ahora les aviso cuando mergear, Martín, pero por eso no te contesté nada, para mergear algo de, o qué más, está como bloqueado, como que no se corrió.
+Muy probablemente necesiten hacer un commit más.
+Bueno, ta, nada, estoy intentando terminar con todo, voy a intentar a ver si hoy puedo terminar con todo lo que sean ajustes de AWS, así ya mañana me dedico a documentación solo, este, pero bueno, me está llevando un poquito de tiempo, voy a comitear unas cositas ahí, la idea es que a partir de ahora los security check se corran todos los lunes, ¿sí?
+Que eso era algo que teníamos pendiente, recuerdan que, ¿cómo se llama?
+Una de las cosas que nosotros teníamos.
+O sea, ahí como problema era que, este, cuando se corría un security check, o sea, se corría solo con las PR, entonces, si no se corre una PR, no nos damos cuenta que hay una libreza actualizada o lo que sea, este, y hay veces que no se mergean cosas, por X motivo.
+Entonces, la idea es que se empiecen a correr todos los lunes, ¿tá? Son pequeñas cositas que, nada, estamos haciendo como para cumplir con ciertos puntos de la, de la reglamentación.
+Mejoras, ¿sí? Por ejemplo, empezar a analizar si se publican variables de entorno.
+En alguna PR o comite, ¿sí?
+Este, así que con eso venimos por ahora.
+Bien.
+Así que eso de mi lado.
+Gastón.
+Buenas.
+Bueno, yo por mi parte estuve terminando la skill de ilustraciones, que yo la tengo para subir al repositorio.
+O sea, ahí.
+Que subas al repositorio, y una vez que está en el repositorio, o sea, una vez que terminen de subir al repositorio, el repositorio, la idea sería transferirlo a la organización.
+Bien.
+O sea, enteramente al repositorio ese, porque, y ustedes fueron haciendo varios commit, calculo, ¿no?
+Sí, sí, sí, sí.
+No les quiero romper las bolas con orden y esas cosas, probablemente eso lo hagamos después.
+La idea ahora es transferirlo tal cual con todo lo que han hecho, para que mantengamos el historial.
+Bien.
+Entonces, ahí.
+Entonces, ahí cuando comiten a la forma que vengan a, como lo venís haciendo, como lo vienen haciendo, y después lo que hacemos es, cuando esté pronto, me decís, a ver si podés, capaz que lo que te conviene ahí, Gastón, es transferírmelo a mí, ¿está?
+No sé, fíjate, si te deja transferirlo a la organización, si no, si podés transferírmelo a mí, ¿está?
+Y yo lo transfiero a la organización, ¿está?
+Aprovisamos.
+Bueno.
+Bien.
+Después también estuve...
+Formalizando una skill que, bueno, que habíamos hecho para las traducciones de todos los frames, de todos los flujos que venimos trabajando.
+Y eso, también había creado un archivo en Figma, que está, esto lo estuve hablando con Santi, y bueno, me pareció como una buena idea para no sobrecargar el Figma que venimos usando.
+De crear un nuevo archivo.
+Que tenga solo las traducciones.
+Y dentro de lo que es Ready for Dev, ponemos un link que redirija a cada sección, pero dentro de este otro archivo.
+Eso, sí.
+Está bueno.
+O sea, todas las optimizaciones están buenas.
+No quiero echarle la culpa a que Martina siempre se queja de que le demora a encargar, pero a mí también, también me pasa.
+No, más allá del chiste.
+Sí.
+O sea, me encanta trabajar en optimizaciones, pero que tenemos tareas.
+Sí.
+Que he registrado todo.
+Sí, más que nada, porque ya estamos, en realidad, estamos triplicando los archivos, o sea, si tenemos traducción para inglés y para portugués, cada, o sea, cada mail, no pesa tanto, pero cada web sí, o sea, cada landing, bueno, cada página.
+Entonces, nada.
+Me pareció como una manera más, o sea, más optimizada de trabajar y, bueno, eso después me dicen ustedes, bueno, los desarrolladores y eso se les queda cómodo, que era algo que también habíamos hablado con Santi, que, bueno, no lo van a tener tan a la vista, pero está a un clic de distancia.
+Capaz que, o sea, haganlo y después capaz que para mañana la daily tomamos un pequeño post-cram y muestran bien cómo quedó.
+Todo así, todo nos queda claro.
+Perfecto.
+Bien, bien.
+Después estoy a punto de ya terminar un posteo ahí que tenía pendiente de marketing, que se lo estoy por mandar a Santi.
+Y, bueno, después, ¿qué otra cosa?
+Ah, sí, estuve haciendo unos ajustes del mail de Payment Failed, el que rechaza el pago.
+Ahí Santi lo dejó en design, Martina ya lo probó.
+Cuando puedas revisarlo y así ya lo eliminamos.
+Y nada, eso por menos.
+Genial.
+Viene bien, Joana.
+Bien, yo estuve corrigiendo ahí comentarios que me había dejado Marti.
+Ya quedó todo enviado.
+Y estuve actualizando ahí todo el tema de los emails, de la personalización.
+La R que ya tenía abierta, la de cerrar sesiones, que ya se la dejé a Santi.
+Y ahora estoy, o sea, ya hice los cambios para la de los códigos para el cambio de email.
+Que ahí tengo bastante, que es primero para el request y después para el success.
+Que ya lo tengo todo hecho.
+Lo único que estoy haciendo ahora es volver a probar ahí generando los emails y eso para ver que esté todo ok.
+Así ya la vuelvo a reenviar a diseño.
+Le puse prioridades, así que le puse un poquito de pausa.
+Ahí a lo del chatbot.
+Pero también ya lo tengo casi finalizado.
+¿Pensás que para el fin del día o para mañana podamos tener PRs del chatbot?
+Sí, sí, sí.
+Para hoy, hoy al final del día seguro.
+Solo me falta un ajuste de diseño más que nada.
+Que fui encontrando ahí a medida que iba haciendo cositas.
+Viene bien.
+¿Pudiste crear la tarea de post-review, Joana?
+No lo vi.
+Ah, no, no, no, no.
+Me olvidé.
+Ya lo hago así, no me olvido.
+Dale, genial.
+Bueno.
+¿Estás ahí?
+Sí.
+Sin cámara porque algún...
+¿Cómo?
+Ah, no, que no se te veía.
+No, no, algún gracioso pensó que era buena idea pasar a cobre los cables de fibra óptica.
+Estoy con los datos.
+Sacando eso.
+Ya corregí todos los comentarios que había dejado Martín.
+Las PRs de notificaciones, del site del worker.
+También en la PR de, ¿cómo es?
+De las skills.
+Fuera de eso.
+Ahora estoy terminando de armar la PR para el tema de...
+Desajuste de teammates, que ayer probando en diferentes pantallas, en MOBA y en tablet, había algunos bugs visuales, pero estas ya quedaron corregidos.
+Bien de bien.
+Perfecto.
+Vamos a tener un post-cram ahí.
+Así que quédense Jonathan, Enrique, Martina y Nahuel.
+Y Santi.
+A Gastón lo liberamos.
+Ya que estamos, Santi.
+Bueno, por mi parte...
+Bueno, estuve trabajando...
+Bueno, ahora estoy bichando la PR ahí que pasó Jona.
+Después estuve avanzando con la parte del Drawer.
+Voy a armar dos versiones.
+Una un poco más, como una de uno, un poco más orientada a lo que me dijiste el otro día en la daily.
+Que fuera como más similar a lo que tenemos.
+Y otra ajustando un par de cosas para que quede más optimizado.
+Después, estoy trabajando en el rediseño del mail de cuando realizamos una compra que se nos envía el invoice, que fue en las correcciones que me hiciste, Santi, que tenía varias versiones que me las pasó Enrique.
+Estoy haciendo esos ajustes, así ya liquido ese mail que me estaba quedando.
+Y nada, una vez liquido eso del mail, ya continúo de vuelta con lo del Drawer.
+Y lo detenemos.
+Muy bien, muy bien.
+Ahora, Jona.
+Tato.
+Bien, buenas, buenas.
+Estuve con lo de los test.
+Creé la tarea con respecto a la cobertura.
+Estuve investigando ahí y haciendo análisis.
+Me gustaría hacer una especie de primera versión.
+En el...
+En el site.
+A ver.
+Cómo pasa.
+Recién empezaría a funcionar después del primer merge.
+A develop.
+Ahí después la primer pull request.
+Ahí empezaría a funcionar.
+Requeriría...
+Viste que en Github podés poner variables de entorno.
+Requeriría dos variables de entorno.
+¿Para qué?
+Para el porcentaje de...
+De código que...
+Que debe estar cubierto.
+Y para...
+Básicamente algo muy similar.
+Pero...
+Tipo genérico.
+O sea, se compara...
+¿Qué pasa?
+Son dos análisis.
+Uno primero que analiza...
+La cobertura...
+Del código que estás vos subiendo.
+Pero...
+Si vos eliminaste test...
+Disminuiste la cobertura.
+Entonces también tiene que estar...
+Eh...
+Un análisis genérico.
+Que no debe disminuir la cobertura.
+Cierto porcentaje.
+Y ese segundo análisis...
+Cubre lo que el primero no cubre.
+Que es si eliminaste test.
+Porque si eliminaste test...
+Eh...
+No se va a dar cuenta el primer análisis.
+Bien.
+Empocamos las hardcodes.
+No creemos variables de entorno.
+Ok.
+Yo para que se puedan cambiar sin hacer un APR.
+Es más sencillo hacer un comito.
+Un APR que...
+Que este... ¿Cómo se llama?
+Que pone una variable...
+Que pone una variable de entorno mismo.
+Porque si no tendría que poner la variable de entorno por ambiente.
+Mientras que vamos saliendo.
+Si hacemos algún cambio.
+Entonces este...
+Por ahora pongamos una hardcoder.
+No me parece mal la idea de tenerlas como variables del ambiente.
+GitHub.
+O de sacar variables y tal.
+Perfecto.
+Si, es una opción completamente varia.
+Que de hecho es lo que iba a hacer en un principio.
+Bien.
+Bien de bien.
+No se si quedó...
+No tenemos la de...
+No dije nada.
+Fue una respuesta positiva pero...
+No se si...
+Si quedó aceptada al final la tarea.
+Con la descripción.
+Capaz que...
+Si te animas a aceptar.
+A aceptar la tarea.
+Tiene una cobertura a partir de la senpai.
+Igual que yo.
+Si, pero falta...
+Claro, pero falta una descripción.
+De como va a ser en cada sitio.
+¿Hago una tarea para cada sitio?
+Si.
+Ok, ok.
+Por eso el mensaje que mandé a...
+Al que está...
+Enrique, Martina y vos.
+Mandé tipo todo como...
+Si, ojo que solo me arrobaste.
+No.
+Perdón.
+Que como lo mandé a las 9.
+O sea, lo hice como a las 2 ayer.
+Ah, siempre arrobás porque si no...
+Si no no me salta.
+O sea, si no no me salta como prioritario.
+Igual era para comentártelo.
+Tipo, hoy que lo vieras hoy tampoco era...
+Tampoco tan...
+Tan prioritario.
+Bien de bien.
+Yo ahora leo todo este mensaje ahora y te contesto.
+Dale.
+Mirá que lo escribí a mano.
+Copiado y pegado literalmente es lo de...
+Exclude y lo que...
+Dice umbral de...
+Eso es lo único.
+Copiado y pegado de la investigación pero hasta ahí.
+Bien de bien. Ahora lo revisamos con Marti.
+Bien de bien.
+¿Quique?
+Bueno, yo ya lo he comentado un poco.
+Yo estoy trabajando con lo que es...
+La redimensionada de los correos.
+Ahí.
+Similar a yo, no estoy haciendo pruebas y demás.
+Este...
+También al mismo tiempo con la...
+Ya con lo que es Ipress de Teammates.
+Que ahí, bueno.
+Ya quedó pronta una primera tarea.
+Una primera tanda de test.
+Que como vos dijiste ayer, Santi.
+Me puse en contacto con la Valve.
+A ver si le podía pegar una bichada.
+A ver que le parece.
+Así que nada, la idea es continuar con...
+Con eso y más lo que esté abierto.
+Este...
+Básicamente seguir con esas dos cosas.
+Bien de bien, Quique.
+Bien de bien.
+Bien.
+Por un lado estoy revisando PRs.
+No, ahora la...
+La de configuración en particular.
+La había pedido a Yona.
+En los últimos cambios chiquitos.
+Pero...
+Estaba viendo una cosa capaz que ahí...
+Les pido post-scrum para doblechequear.
+Un detalle.
+Quiero ver una cosa que está en el flujo.
+Pero tal vez mínima.
+Y después...
+Estaba revisando las que mandó Nahue.
+Estaba por la del Wordpress.
+pero también vi que mandó la otra
+así que voy a revisar
+esas a ver si ya se pueden
+ir cerrando
+pero si está bloqueado
+dev
+la dejo
+como en hold
+ya se debería de bloquear en unos minutos
+pero necesito terminar con esto
+bien
+estemos atentos a ver si reportan algo del backoffice
+por las dudas
+bien de bien
+respecto a las PRs de los prompts
+ya dejé aprobadas las dos
+la de los tests
+y la de
+el frontend de
+lo que es los
+RAIDX
+y lo de las migraciones
+esas dos PRs ya quedaron aprobadas
+te las pasé para que
+supieras por si las querías quitar
+y después
+creo que había dejado comentarios
+en la de las skills
+pero
+y después
+respecto al VAD
+que reportó Alberto
+eso se debería solucionar
+con pago interno
+así que
+no perdamos
+o sea yo te lo iba a comentar
+pero se me pasó
+te pido disculpas
+no perdamos tiempo con eso
+eso lo tenemos que solucionar con pago interno
+el tiempo que podemos invertir
+solucionarse VAD
+creo que lo invertamos
+chequeando que con pago interno
+ya no funciona
+bien
+o sea
+te paso ahí
+iba a comentar que encontré
+que hay un bug
+visual de las traducciones
+en español dice agregar
+compañía, pero en inglés
+y portugués dice agregar cuenta
+ahí tendría que cambiarlo
+eso sí, si podés reportarlo
+en front y a ver si lo puedo agarrar
+a Enrique o Fernando, es un typo
+bien sencillito
+bien, perfecto
+sí, Tato, sí
+hagamos tarea
+perdón que justo estaba viendo eso, hagamos tarea
+para, una tarea
+para el back office y el site y otra
+para el worker
+sobre esto, bien
+bueno, algo más
+nada más
+bueno
+se quedan los que dije
+Gastón, Ladrón y inglés
+y algo, y está, estamos prontos
+nos vemos, aprovecho
+nos vemos, aprovecho

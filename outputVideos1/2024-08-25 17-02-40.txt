@@ -1,0 +1,1037 @@
+Ah, fin de semana que viene, viene un loco, le voy a instalar 64 de RAM y 4 teras más a la torre, con un Windows aparte, el tipo que me armó todo me lo va a...
+Sí, pues ya está, no te trancas más. Igual ya no se tranca nunca, pero soy codicioso.
+Bueno, vamos a dar login. No, el tema es que después me muevo a Montevideo y el loco ya no puede venir, entonces dije, ah, sí lo voy a hacer.
+Bueno, bajamos abajo del todo y te dice que hay un conflicto. Nunca los conflictos se resuelven desde acá. Nunca, nunca, nunca, nunca, nunca.
+Entonces, la rama que estamos queriendo margear es de velo, entonces lo que tenemos que hacer es traernos lo de velo.
+Entonces, vayamos al Visual Studio Code, abrimos terminal, git checkout de velo.
+¿Estás cagando?
+No.
+¿Estás cansado?
+Bueno.
+Entonces, hacete un git pull origin de velo, por las dudas. Procedimiento es parte de lo que es la parte de automatizar.
+Mirá, viste que te dijo que estaba todo bien y mirá todo lo que te trajo, ¿no?
+Sí.
+Entonces, parte de automatizar. Siempre que te pasás a de velo, te traes todo, ¿está?
+Importa poco lo que haya o no haya.
+Te dice, git status, git status es tipo, si vos acá arriba...
+Recuerde, remote control, aceptame, aceptame que es remote control.
+Vas a hackear.
+Acá, si vos acá, ¿sí?
+Tenés algo, no en esto que ves acá.
+Esto es la parte de ramificación.
+Pero si vos tenés algún archivo, mirá, por ejemplo, voy a cambiar esto.
+Ahora este archivo va a saltar acá, ¿ves?
+El git status, lo importante es si vos tenés algún cambio sin azar.
+¿Ah?
+Entonces.
+Lo importante es que siempre te parás en la rama de velo, que tengas todo comiteado, ¿está?
+No en de velo, no me comiteas en de velo porque te mando en cana.
+En de velo nunca comitear.
+Pero vos no tendrías que tener nada ahí.
+Si tenés algún cambio, lo que tenés que hacer es, como hice yo, descartarlo.
+¿Está? Lo que acabo de hacer, descartarlo.
+Ahí te haces el pull y después...
+Está, ahora te cedo el control.
+Pasate de nuevo a tu rama.
+Hay varias estrategias de resolver conflictos.
+Yo te voy a enseñar una.
+Y vamos a trabajar en una.
+Porque así yo me queda, para mí es la mejor.
+Hay una que es complicada, que es git reverse.
+Pero no es que solo que es complicada.
+Sino que para mí es una chanchada.
+Porque cuando vos resolvés conflictos, nosotros no tenemos ningún ente, ninguna organización.
+Ni trabajamos para un cliente de Estados Unidos que nos complique la vida que vos resolviste conflictos.
+Me parece que es lo más sano del mundo.
+Resolver conflictos.
+Entonces, no sé por qué te bajaste de terminar.
+Ahorita no lo voy a terminar.
+¿Qué es lo que hicimos?
+¿Qué es lo que hicimos hasta ahora?
+Nos pasamos a develop.
+Siempre git pull, origin develop.
+Fijarnos que no haya nada.
+O sea, cuando nos vamos a pasar a develop, nuestra rama tiene que estar todo comiteada.
+¿Sí?
+Hacemos git pull, origin develop.
+Volvemos a nuestra rama.
+¿Está?
+Y recién ahí hacemos git merge, origin develop.
+¿Está?
+Hasta ahora, eso es lo que nosotros hacíamos para actualizarnos.
+¿No?
+¿Sí?
+Sí.
+Que yo creo que en la PR anterior, o no hubo un pull, o lo que sea.
+Porque hubo una masacre.
+Entonces, no sé qué fue lo que pasó.
+Pero algo de...
+Sí.
+Sí.
+Este procedimiento falló.
+¿Qué vamos a hacer ahora?
+¿Qué pasa si vos haces...
+Este sería lo que tenemos que hacer.
+Está, pará.
+¿Qué es lo que pasaba?
+Hasta ahora, todo era mundo feliz.
+Vos hacías esto, y después pulleabas.
+Y ya está.
+Y te mergeabas todo automático.
+¿No?
+Este era el procedimiento que nosotros vimos para actualizar develop.
+Sí.
+¿Qué pasa si en vez de esto, sin querer, haces esto?
+¿Qué pasa si en vez de esto, sin querer, haces esto?
+¿Qué pasa si en vez de esto, sin querer, haces esto?
+Bien.
+¿Por qué siempre hacer origin?
+¿Está?
+Primero que nada, no importa...
+El origin hace referencia a la rama remota.
+Pero va a tener los cambios locales.
+¿Sí?
+Si vos haces eso, estás haciendo...
+Si vos haces ese detalle, estás haciendo un merge de la rama local.
+No del origin.
+¿Está?
+En teoría debería ser lo mismo.
+Pero lo importante es que quede registro que la misma rama remota.
+El git merge no trae los cambios develop.
+Va a tomar los cambios locales.
+Pero lo que le estás diciendo es mergeate los cambios locales
+que tienen concordancia con los cambios remotos.
+¿Está?
+Por eso la importancia de agregarle el origin.
+Porque el origin quiere decir que vos estás tomando los cambios que tenés en develop.
+Obviamente que eso lo podés cagar.
+Porque si vos haces eso y no tenés los cambios locales,
+te va a quedar todo corrupto.
+¿Sí?
+Entonces voy a...
+Bueno, nada, eso.
+O sea, la importancia de poner el origin es para ir teniendo concordancia con lo que siga en la nube.
+Yo ahí sinceramente creo que el git merge origin develop no te hace un pull.
+¿Está?
+Capaz que sí te hace un pull de develop y te lo mete en la rama.
+Hay muchos cambios...
+Hay muchos comandos que hacen otros.
+Ahí sinceramente me falla un poco el conocimiento.
+Creo, lo tengo entendido que no.
+En el caso que te haga un pull, el procedimiento que hicimos es el correcto.
+Porque vos tenés que tener develop siempre actualizado.
+Siempre al día.
+Cuando crees una rama de develop, para evitar conflictos, simplificarte la vida,
+siempre develop tiene que estar al día.
+Entonces es una buena práctica que cada vez que te actualices develop,
+tenerla siempre lo más al día posible.
+Porque tenés que desconfiar de vos mismo.
+Es decir, yo la voy a cagar.
+Entonces siempre develop actualizada.
+Porque ahora son cambios pelotudos.
+Pero hoy y mañana vos te haces toda una feature y salís de develop desactualizada,
+los cambios son un huevo a resolver.
+O sea, mirá que yo estoy llevado a tener que resolver cambios de hasta 120, 150 archivos,
+que es un cáncer.
+Por una estupidez.
+Por una estupidez no me ha tenido actualizado.
+Entonces, es importante que desde que vos arranques a desarrollar,
+empieces a agarrar buenas prácticas que te eviten toda esa mala sangre que es al pedo.
+No ganás nada.
+Porque corregir cambios así es al pedo.
+Es hasta riesgoso.
+Porque arriesgás el trabajo.
+Comprometes el trabajo tuyo y el de los demás.
+Entonces, bueno, eso.
+O sea, es lo que...
+O sea...
+Vos podés directamente, por ejemplo, hacerte git pull a tu rama de develop.
+Pero eso sería una cagada porque nunca actualizás tu develop local.
+Entonces, de nuevo, para mí...
+Para mí no.
+Lo que te exijo a vos que hagas, porque si no lo haces así,
+y te doy la explicación 10 veces, si querés,
+de las malas consecuencias que puede tener,
+pero lo correcto es, me paso a develop, traigo develop,
+vuelvo a mi rama y hago git merge origin develop.
+Otra cosa que es importante es,
+es importante que todos tengamos develop
+y las ramas principales lo más actualizadas posible.
+¿Qué pasa si hoy o mañana git car se cae?
+¿Qué pasa si hoy o mañana nos hackean?
+Tenemos que tener todo el código fuente para poder volver a levantarlo.
+Eso es clave.
+Entonces, es importante que todos...
+O si hoy o mañana te mandas una cagada
+y tenemos que tener la última versión consistente de develop.
+Son todas cosas importantes que siempre todos tenemos que tener
+y son buenas prácticas.
+Si hoy o mañana vas a otro trabajo,
+está bueno que tengas estas buenas prácticas
+porque te van a salvar la vida de 500 chotadas.
+Que a mi trabajo le pasan a 500 desarrolladores
+y se hacen los cracks
+y después te vienen y te dicen
+pa, mirá, tengo una cantidad de conflictos,
+y yo le digo, ¿por qué hiciste eso?
+Y nada, entonces...
+Ah, no, ¿por qué yo hago esto?
+¿Por qué es más fácil?
+Es más fácil y ahora hace una hora que estás reaccionando a conflictos
+y tenés que romperme la bola a mí para que yo te lo solucione.
+Porque muchas veces los conflictos
+son cosas de cosas que agregó otra persona
+que no tenés ni idea.
+¿Entendés? Entonces está eso.
+Bueno.
+¿Qué piensa que va a suceder ahora?
+Antes de hacer el comando.
+¿Qué pienso?
+Es lo que no sabemos.
+¿Qué va a traer? O sea,
+los cambios de develop
+que no tengan conflicto con esto
+los va a traer a esta rama.
+Lo que va a hacer
+esta estrategia de mergeo
+Bienvenido
+al Whiteboard de Santiago.
+Lo que va a hacer esta estrategia de mergeo
+es que usted viene trabajando acá
+en su circulito.
+Esta es su rama con todos los commits.
+¿Sí?
+Y acá salió develop, ¿no?
+Usted acá salió de este commit de develop.
+O sea, cuando usted creó su ramita.
+La ramita del Kike.
+¿Sí?
+Estos eran todos los cambios.
+¿Qué pasa?
+Gente maliciosa.
+Supongamos el caso feliz.
+Este es el caso feliz.
+El caso feliz es, yo hice mis cambiesitos.
+Nadie actualizó nada.
+¿Sí?
+Entonces yo acá lo que, me traigo la rama de develop.
+Y el mergeOrigin
+mergeOriginDevelop
+lo que va a hacer es crear un commit nuevo.
+Con los cambios de develop.
+Que se llama mergeCommit.
+mergeCommit
+Este es el caso feliz.
+Caso lindo.
+Caso complejo.
+Es el caso de que usted tiene sus cambiositos.
+Para interpretar
+que mi parte artística no es la fuerte.
+Y usted
+cuando salió, esta es su rama.
+La rama Kika.
+Y usted cuando salió de develop.
+Una cantidad de gente con malas intenciones.
+Fue mergeando.
+Trabajo.
+Y haciendo lo que le correspondía.
+Y no te esperó a que vos mergees a develop.
+Entonces fue agregando todas estas cosas.
+Cuando vos mergeas.
+¿Sí?
+Cuando vos te traigas develop y hagas un mergeOriginDevelop.
+No solo se va a crear un commit.
+Si no que este commit.
+Va a traer todos.
+Estos cambios que hizo la gente mala.
+Gente mala.
+Va a meterlos acá.
+¿Sí?
+Vas a sincronizarlo con lo tuyo.
+Y vos acá vas a tener una batalla.
+Emocional.
+Donde vos vas a tener que resolver todos esos conflictos.
+Los casos lindos.
+Acá hay un caso.
+Esto se divide en un caso lindo también.
+Y en el caso feo real.
+Este es el caso que nunca pasa acá.
+Hay veces que vos haces esto.
+Y en realidad como te pasó.
+Te dice no hay conflictos.
+Vos ahí tenés que fijarte.
+Que lo que trajeron los otros.
+Por más que no tenga conflicto.
+Que tocamos los mismos archivos.
+O los mismos datos.
+Que si ellos agregaron nuevos datos.
+No me corrompen.
+Por más que no haya conflictos.
+Este es el caso lindo.
+Que no me hayan corrompido nada.
+Capaz que agregó un archivo.
+Y ese archivo ahora.
+Por alguna razón.
+Me está haciendo que se me caiga todo el culo.
+¿Entendés?
+Y la otra.
+Que bueno.
+Que acá esta gente maliciosa.
+Tocó los mismos archivos que vos.
+Acá vas a tener que resolver los conflictos.
+Siempre es importante que vos hagas esto.
+Porque es importante que vos traigas.
+Todos los cambios de develop.
+Y hay veces que va a pasar.
+Que en realidad.
+De repente vos acá tocaste el archivo K.
+¿Si?
+Y acá en estos PR.
+Tocaron el archivo F.
+Entonces.
+Si vos no hacés este merge.
+Te traes develop.
+Para darle doble check.
+La persona que tocó el archivo F.
+Lo cambió.
+Vos lo cambiaste.
+Y no pasa nada.
+Caso feliz.
+¿Se entiende?
+Si.
+Caso triste es.
+No pasó nada.
+Vos tocás el archivo K.
+Cambió los métodos públicos.
+Pero el hijo de puta de los archivos F.
+Cambió el behavior.
+Cambió el comportamiento de los métodos F.
+Y vos en tu archivo K.
+Utilizás los archivos F.
+Utilizás los métodos.
+¿Qué pasa?
+A nivel de dependencia K.
+Va a seguir andando.
+Pero por ejemplo tu test.
+Validaba cierta cosa.
+Que el tipo.
+Cuando cambió adentro del método F.
+El logout.
+Ahora logout llama cognito.
+Acá no hay conflicto.
+Porque yo en realidad.
+El método sigue siendo el mismo.
+Vos llamás al mismo endpoint.
+No pasa nada.
+Pero yo le cambié el behavior interno.
+Si vos no te traes develop.
+Y hacés todo este procedimiento que hicimos ahora.
+Pasarte a develop.
+Git pull origin develop.
+Pasarte a tu rama.
+Y hacer este merge.
+Y probar.
+Si no te traes develop.
+No anda.
+La importancia de siempre.
+Antes de enviar un APR o lo que sea.
+Traerse develop con la versión más actualizada.
+Más allá de que hayan conflictos o no.
+Es una manera de asegurarnos.
+De que no tenemos nada.
+¿Se entendió?
+Este es el caso.
+A mi lo que me pasó.
+Fue el caso negativo.
+Porque.
+Yo hice la rama 79.
+Login.
+Que estaba mal.
+Y quedó ahí sin mergear.
+Pasó el tiempo.
+Y nosotros ahora.
+Ayer o antes de ayer.
+Hicimos el refactor de todos los tests.
+Incluido la estructura del test de login.
+Entonces yo cuando ahora.
+Retomé mi rama de login.
+Que estaba desactualizada.
+Y me quiero traer develop.
+Develop me está.
+Incluyendo ese refactor que hice.
+Del test de login.
+Y de todos los otros.
+Haciendo conflicto.
+Con los que yo había implementado.
+Originalmente en esa otra rama.
+Hay conflicto ahí.
+Llamémosle que es el caso.
+El caso 3 en realidad.
+Porque hay conflicto a nivel de archivos.
+Entonces el primer caso es feliz.
+Porque usted mergea.
+Y nadie tocó nada.
+El caso 1 es el que menos pasa.
+El caso 2.
+Llamémosle que usted.
+Hay gente que hizo cosas.
+Lo importante de este caso.
+Es que vos pruebes realmente.
+Que todo lo que vos hiciste.
+Se sigue funcionando igual.
+Y esto es super tedioso.
+Pero hay que hacerlo.
+Es parte del procedimiento.
+Porque de nuevo.
+Si yo hago un cambio en un método.
+Y vos haces un merge commit.
+Y sale todo bien.
+Puede ser que yo haya cambiado el comportamiento interno.
+Y en realidad falle cuando corran los tests.
+Entonces ahí es la importancia.
+Que es igual que este.
+Solo que acá hay que resolver esos conflictos.
+Compartimos de nuevo pantalla.
+Y vamos a ver como resolver esos conflictos.
+Y si no lo podemos resolver.
+Dale en.
+Bien.
+Perfecto.
+Acá es importantísimo.
+Que nos vamos a basar 100%.
+En las ayudas.
+Que tiene el Visual Studio Code.
+Creo que es la mejor.
+Primero que nada.
+Porque el Visual Studio Code.
+Tiene los conflictos por consola.
+Ni yo resuelvo los conflictos.
+Que no sean por consola.
+Más allá que lo sé hacer.
+Pero lo importante acá.
+Es que cuando resolvamos los conflictos.
+Entender como es el procedimiento.
+Visualmente tenemos que ver.
+Que sigue andando todo bien.
+Entonces si vamos abajo de la lupa.
+Y le damos clic.
+Donde dice 69.
+Vamos a ver que en realidad.
+El conflicto tan grande.
+Es solo con.
+Archivo Login Test.
+La pregunta es.
+Como hizo este tipo Kike.
+Para borrar otros archivos.
+Cuando en realidad.
+El conflicto era con un solo archivo.
+Cuando yo vi eso dije.
+Es inimaginable la creatividad.
+El conflicto está en un solo archivo.
+Los otros archivos.
+Es lo que yo te decía.
+La mayoría de archivos.
+Coinciden en el caso 2.
+Son cosas que otra gente maliciosa.
+Las agregó.
+Y no afectan en nada.
+Lo único que tengo que hacer.
+Es que cuando termine el commit.
+Validar que ande todo bien.
+El tema que tenemos conflictos ahí.
+Si vos haces clic en ese archivo.
+Haces clic en ese archivo.
+Ahí te pueden salir varios.
+Pero vos haces clic.
+Ahí te va a aparecer un texto.
+Y te va a decir en dos colores.
+En violeta y en verde.
+Y en celeste.
+Que es lo que tenía el archivo.
+Y que es lo que vos agregaste.
+Entonces ahí por ejemplo.
+Te está diciendo.
+El current change.
+La rama login.
+Actualmente.
+Tiene cognitorepositor.
+Perdón.
+La rama actual de login.
+Tiene cognitorepositor.
+Y vos nunca la actualizaste.
+Tiene cognitorepositor.
+Y en realidad las ramas.
+Son diferentes.
+Y lo que te está diciendo es que.
+En la rama de velo.
+Incoming change.
+O sea lo que vos estás queriendo traer a tu rama.
+Tiene esos archivos.
+Entonces arriba te da tres opciones.
+Importantes.
+Centrarnos en esas.
+Aceptar el current change.
+O sea quedarnos con lo que tenemos actualmente.
+Aceptar el incoming change.
+O aceptar ambos.
+Hay veces.
+Que no basta con esto.
+Si no que nosotros por ejemplo.
+Tenemos que aceptar ambos.
+Y tenemos que hacer algún cambio.
+A nivel manual.
+Alguna cosita agregarla a nivel manual.
+Si vos le des a cualquiera de esos tres.
+Lo que va a hacer es.
+Dejar el código en celeste.
+Y va a sacar todos esos comentarios.
+Esa línea de la rama de la línea 16.
+Y la línea 9 y la línea 21.
+Las va a eliminar.
+Te va a dejar ese código en concreto.
+Te pregunto a vos.
+Que es lo que deberías hacer.
+Para este caso.
+Accept incoming.
+Y aceptar incoming.
+Entonces le das click y aceptas incoming.
+Puede ser que hay veces que le tengas que aceptar los dos.
+Y tener que hacer algún cambisito manual.
+O sea agregar alguna línea.
+Por ejemplo los dos están mal.
+O para conectar estas dos cosas.
+Toca agregar algo en el medio.
+Entonces le decís aceptar los dos.
+Y después lo modificas a mal.
+Pero por ahora solo aceptando incoming. Ya va a andar.
+Yo tengo cognitorepository en este archivo.
+En esta rama.
+En login test.
+En el backoffice vos nunca lo actualizaste.
+Backoffice nunca lo actualizaste.
+Entonces quiere decir que vos.
+Actualmente este archivo.
+Quedó con el enfoque anterior que usaba cognitorepository.
+Yo anoche mande PR.
+Para el site entonces solamente.
+Ahí está.
+Ok.
+Ahora si.
+Está bien.
+Entonces bajemos a la segunda parte.
+Porque ahí te está pintando lo que hay.
+Te está diciendo que antes tenías todo eso.
+Y ahora tenés.
+Esto otro.
+Yo ahí lo que te diría es.
+Cerrá los ojos.
+Como campeón.
+Y dale a incoming.
+Porque en realidad incoming tiene la metodología nueva.
+Lo mismo abajo.
+Mirá hasta tenías console load.
+Que hijo de puta.
+Bueno.
+Y a ver que más abajo pasa.
+¿Por qué?
+Bajamos al tercer cambio.
+Y ahora después arreglamos todo.
+Bueno pasaba todo este test.
+Agregaste todos esos test.
+Y ahora está.
+Solo ese test de login access.
+Ese test de login access.
+En teoría es correcto.
+Entonces dejémoslo.
+Y borremos los anteriores.
+Ahora que pasó.
+Arreglamos todos los cambios.
+Pero se corrompió todo.
+Entonces ahora viene un poco la parte manual.
+Entonces.
+Acá hay que hacer cambios manuales.
+Para que esto ande.
+Yo lo que te diría es.
+Para facilitarte la vida.
+Comentá todos los cambios.
+Todos los test.
+Porque después los vas a arreglar en otra rama.
+La idea es que vos soluciones los conflictos.
+Y después puedas seguir.
+Vos podrías ponerte ahora a arreglar todo.
+Pero quiero que te quede como solucionar los conflictos.
+Entonces comentemos todos los test.
+Y solo dejemos el de success.
+Comentémoslo.
+Después lo arreglás en otro commit.
+Pero ahora quiero que terminen andando.
+Que liquidemos la parte del APR.
+Todos los test.
+Todos los test menos el último.
+Porque el último.
+Después vos analizás como los tenés que refactorizar.
+Y eso ahí.
+No me acuerdo como era para comentar.
+Control.
+Control y el de comentar.
+No me acuerdo.
+Control y al lado del shift.
+No tenés una tecla que es tipo barra.
+La barra inclinada.
+Si.
+Que combinación es.
+Control.
+Con control y apretar la barra inclinada.
+Que yo en mi teclado.
+Lo tengo a la izquierda del shift.
+Que está abajo del enter.
+Ah no. Tenemos distinto.
+Ay.
+Si tiene un teclado en español.
+Lo mato.
+Es un teclado en español.
+Si.
+Salud payus.
+Si.
+El teclado en español.
+Como no vas a comprar un teclado en español.
+Estás jodiendo.
+No.
+Bueno.
+No se lo diga a las demás personas.
+Mantengámoslo un secreto entre nosotros dos.
+Comentá con asterisco.
+Poné asterisco barra.
+Y barra asterisco.
+Y comentá todo ese bloque gigante.
+Después ves como hacerlo.
+Dale porque tengo que seguir con otra cosa.
+Claro pero como escribo en todas las líneas.
+No no no.
+Abajo en la línea 60 pones asterisco barra.
+Y en la otra pones barra asterisco.
+Ahí comentás todo el bloque.
+Pero desde acá.
+En realidad no.
+Barra asterisco.
+En la doble barra y abajo.
+Donde tenía que terminar.
+Ponés asterisco barra.
+La doble barra comenta solamente la línea.
+Ahora subamos más arriba.
+Vamos a analizar el test.
+Todo eso se utiliza.
+Se utiliza.
+Claro que se utiliza.
+El console log es cancerígeno.
+Vamos a sacarlo.
+Y ahora.
+En teoría.
+Si querés dale un check de nuevo.
+Para fijarte que está todo bien.
+Pero más o menos creo que está todo bien.
+Viendo por arriba.
+Si.
+Yo lo veo bien.
+Pruebe el test.
+Lo más importante ahora es que pruebe los test.
+Que los test que estaban antes andan.
+Que los test nuevos andan.
+Que este test de login te anda.
+Están funcionando todos.
+Si.
+A ver si encontrás en la consola.
+El de cognito.
+El de login success.
+Login successful.
+Si.
+Obviamente que usted podría haberse puesto.
+A solucionar todos sus comentarios.
+Y dejar los test bien.
+Yo lo que recomiendo es que cuando solucione conflictos.
+Comente estas cosas que no ande.
+Solucione conflictos.
+Y después siga.
+Ahora con el proceso.
+Vos te trajiste todos los cambios.
+Arreglaste este archivo que tenía conflictos.
+Hiciste.
+Primer paso.
+Hacer los arreglos sencillos.
+Segundo fue hacer los arreglos complejos.
+Que manualmente tuviste que ajustar alguna cosa.
+Si.
+Y tercer paso.
+Volver a correr.
+En este caso solo son test.
+Si vos hubieras hecho arreglos a nivel funcional.
+Yo te diría.
+Corregí los arreglos a nivel funcional también.
+Si.
+Una vez que tenés todo solucionado.
+Ya no te aparece ningún comentario violeta.
+Y anda todo.
+Le das más.
+Ahí abajo del Merge Change.
+En la esquina superior izquierda.
+De la pantalla.
+Le das ahí más arriba.
+Merge Change.
+Le das más.
+Esto vos tendrías que ir solucionándolo por archivo.
+Este caso es sencillo.
+Tuviste un solo archivo.
+Y ahí están todos los cambios en stage.
+Ahí lo único que tenés que hacer es.
+Darle commit.
+Y ahora le das Publish Branch.
+Como vos le pusiste contraseña de mierda.
+Vas a tener que hacerlo por consola.
+Le das git push origin no se cuanto.
+Te la pide ahí.
+¿Y esto?
+Que periódicamente te traiga cambios.
+Git fetch.
+Tiene otra funcionalidad.
+Ahora si volvés a la PR.
+La PR es un culo.
+Porque sigue sin funcionar.
+Una mierda.
+Pero ya te dice que no tiene conflictos.
+Te aparece tu commit.
+Merge branch develop.
+Remote tracking branch origin.
+Esa es la importancia.
+Hace trackeo con el develop de origin.
+Por eso la importancia de git merge origin.
+Y la mergean develop.
+Entonces como vos hiciste.
+Merge origin entre varias cosas.
+Y vos estás mergeando a nivel remoto.
+Fijate que ahora.
+Ya no te tira que hay cambios.
+No te tira que hay conflictos.
+Ya los conflictos se solucionaron.
+Y ahora va a correr la git have action.
+Obviamente que este test.
+Tenés que seguir trabajando en este test.
+Pero si vos vas a los cambios que hiciste.
+Andate a los cambios tuyos.
+Andate a los cambios ahí.
+No, no, no.
+En la PR.
+Una cosa que tenés que chequear también.
+Para no quedar como un vejiga.
+Vas arriba del todo.
+A los archivos cambiados.
+Dale para atrás.
+En la PR.
+File changer.
+Y te fijás más o menos.
+Que no hayas.
+Como en el otro caso.
+Que no te aparezca.
+Como que de la nada estás metiendo 500 archivos.
+O 500 cosas.
+En este caso te aparece que.
+Autocaster login user.
+Después de resolver los conflictos.
+Te sigue diciendo que solo estás agregando esto.
+O sea que tiene concordancia esto.
+Por ejemplo.
+Si vos ahora mirás la otra PR.
+Ve que la otra PR te dice que eliminás.
+5 archivos de test.
+Por falopi.
+Bien.
+Obviamente que esto le vas a ir agarrando la práctica.
+Y podemos ir haciendo.
+Algunos más juntos.
+Yo estoy a la orden.
+Va a haber un refactor que le voy a pedir que haga después.
+No solo en cuanto a los orden de los test.
+Cuando termines.
+Todos los test que tenés asignado.
+Y vayas a arrancar con docker.
+Va a haber un refactor que te voy a pedir.
+Este.
+Que le agreguemos un tag.
+Y la descripción del test.
+Si.
+Ahí le vamos a poner.
+Si tira un 200.
+No me interesa que.
+201.
+Si tira un 300.
+Si tira un 400.
+O si tira un 500.
+Le vamos a poner un tag específico.
+Que yo te lo voy a pasar.
+Te lo voy a crear una PR para que hagas un refactor.
+Que es sinceramente entrar y agregárselo a todos.
+Para que sean más lindos.
+Más allá de que vos ponés una descripción.
+Que es clave.
+Y que tiene que tener concordancia.
+Con lo que realmente pasa.
+Que es lo que hablábamos hoy.
+Yo.
+Las.
+Desbank.
+Quiero que.
+Adelanten el tag.
+Cuando corremos los test rápidos.
+Te aparezca.
+Este test prueba un caso 200.
+Este test prueba un caso 500.
+Me parece súper importante.
+Que eso lo tengamos visual.
+Pero tranquilo.
+Ahora vos seguí como está.
+Hacete un paneo.
+En base a todo lo que venimos hablando.
+Y eso de las tareas.
+De las estimaciones.
+Y si podés hoy.
+Antes de liquidar el día formal.
+Me digas.
+Estas tareas.
+Les voy a cambiar la puntuación.
+Estas les voy a ajustar.
+Y bueno.
+Estas tareas van hacia abajo.
+Todas pasan para el siguiente sprint.
+Porque no me va a dar para atacarlas.
+Quiero que a conciencia.
+Hagamos eso.
+Para ajustar.
+Bien.
+Confío en usted.
+Que va a tomar la mejor decisión.
+Estoy a las horas en el país de cosas.
+Y si llega a tener otro tema de estos.
+Nos juntamos y lo charlamos.
+Creo que los test.
+Los test de login.
+Es como yo digo.
+Un tiempo más.
+Los test de login es entrar.
+Debaguear.
+Entrar en un logout.
+Poner un login.
+Y fijarte que el test ahí está tirando un error.
+Más allá de que a nivel de test.
+Te llegue un validation error.
+Que en realidad internamente.
+Tiene un error de tal cosa.
+Está fallando por tal cosa.
+Ahí es donde confío.
+Si haríamos test unitarios.
+Esto no pasaría.
+En tu end.
+Requiere un pienso más.
+Ahí con respecto a los test.
+Entonces tipo.
+No es un.
+Y qué pasa.
+Los test de login me parecen esenciales.
+Muy buenos.
+Porque en el login.
+Lo único que estás chequeando es el password.
+Estamos alineados.
+Y el correo electrónico.
+Más allá de que tenía alguna cosita más.
+La parte de inyección de dependencia.
+Lo que sea. Es eso.
+Imagínense en el.
+Crear company draft.
+Donde claro.
+Hay 500 casos.
+Caso que es chiquito.
+Caso que es grande.
+Caso que esto es válido.
+Caso que no.
+Caso que me puso.
+Una cantidad de casos.
+Ahí necesito que de nuevo.
+Que haga una reestimación.
+Y que usted entienda realmente.
+El flujo que está pasando.
+Que vos pruebes.
+Acá se tranca el hijo de puta.
+Acá se tranca el hijo de puta.
+Que vos realmente.
+Entiendas cómo está pasando el flujo.
+Porque de nuevo.
+Parte de estos test de cosas.
+No sólo es que vos hagas test unitarios.
+Sino que vos me detectes ello.
+Mirá que vos acá pusiste tal cosa.
+Y acá no lo estoy agarrando.
+Hay que hacer un arreglo.
+Hay que cambiar tal cosa.
+Para que arregle. Está perfecto.
+Detectamos un bug.
+¿Entendés?
+Yo creo que.
+Que con esos cuidados.
+Esos detalles.
+No sólo necesito yo la lista.
+Porque la necesito.
+De todos estos comentarios que yo le he hecho.
+Necesito que usted me pase un coso.
+Primero para fijarme que estemos alineados.
+Y segundo porque necesito documentación.
+Yo no puedo ponerme a hacer todo eso.
+Necesito que me ayude en ese sentido.
+Sino que también.
+Le va a servir a usted.
+Necesito que usted empiece a automatizar.
+Ciertas cosas.
+Va a ser como caminar.
+Que lo hemos hablado diez veces.
+Va a ser como caminar.
+Y hoy o mañana.
+Yo necesito que usted agarre el conocimiento del backend.
+Porque yo.
+Más allá de test unitario.
+Yo quiero que después me ayudes a arreglar bugs.
+Para meter código.
+Que haya un problema en el backend.
+Y yo sé que Kike como hizo los test.
+Se puede dar maña.
+Le llevará un poquito más que a mí.
+Pero se puede dar maña y solucionarlo.
+Si sabe los flujos y los conoce.
+Todo esto recordate que también la parte de test.
+Es un reentrenamiento para que después vos.
+Cuando tengas que analizar bugs y cosas.
+O tengas que agregar alguna feature.
+¿Tá?
+Sea lo que sea.
+Vos más o menos sabés la estructura del proyecto.
+Nada de eso.
+Algo más que se le ocurra.
+Una pregunta rápida.
+En la RT.
+¿Qué pasa cuando no te conectás?
+¿Hay faltas?
+¿Qué pasa si no te conectás?
+Ni siquiera.
+A nivel posgrado.
+Ni una ingeniería.
+A nivel posgrado nada.
+Podés faltar a todas las clases y no pasa nada.
+Es nomás para hacer un seguimiento personal.
+Es nomás para hacer un seguimiento personal.
+O sea.
+Mientras que vos no tengas evaluaciones.
+¿Te perjudicás o vos?
+En estos días que usted no fue.
+No pasa nada.
+Lo mismo pasa con ingeniería de sistemas.
+Si usted no va no pasa nada.
+No es asistencia ordinatoria.
+Está.
+En la carrera de grado tampoco.
+Está.
+Lo dejo entonces.
+Bueno.
+Espero que esto le haya servido.
+Que tenga una claridad más clara de esto.
+Y realmente.
+Le vuelvo a destacar.
+Que de mi lado.
+Está todo lo que pueda charlar.
+O lo que sea.
+A ver si le puedo dar una mano.
+Y lo segundo es.
+Que pueda automatizar.
+O lo que sea.
+Que ayude a combatir un poco.
+La parte del cansancio.
+Porque más allá de que deje de ser podrado.
+Yo creo que va a seguir cierta parte.
+De enojo, cansancio, frustración.
+Por la parte.
+Que eso no es una cagada.
+Porque lo mejor sería.
+De mi punto de vista.
+Dejar la embajada y hacer podrado.
+Y esto.
+No hacer embajada.
+La parte de ese enojo va a seguir.
+Hagas una cosa u otra o no.
+Por eso yo te digo que para mi está bueno.
+Que capaz que si podes hacer al menos una o dos materias.
+Ya es un golazo.
+Si te las revalidan.
+Porque quieras o no vas a estar con nosotros.
+Te sacamos una cantidad de cosas.
+Lo que sea.
+Más que nada por el tema tiempo.
+Que yo siempre le digo que para mi.
+Yo le hice hincapié desde el principio.
+Que el tema tiempo lo más clave es lo suyo.
+Pero también.
+Obviamente.
+Desde el principio cuando estábamos en el Basile.
+Tenés que meterte cuanto antes.
+En la industria.
+Hoy en día gracias a los asteriscos.
+Y las estrellas.
+La situación es distinta.
+Ustedes de alguna manera están en la industria.
+Está ahí.
+Está estabillando.
+Haciendo test.
+Haciendo equilibrio.
+Pero está.
+Entonces claro.
+La situación es la misma.
+Era impensable.
+Lo que sea.
+Hágalo.
+Y si ve que necesita un tiempo.
+Para hacerse esas cosas.
+Lo podemos contemplar.
+Dentro de lo que es la tarea.
+Dentro de lo que es documentación.
+Yo hágalo.
+Y le vamos para adelante.
+De todas maneras.
+Recuerde que además de todo lo que haga el sprint.
+Si o si voy a necesitar.
+Ese inicio de la documentación.
+Para el final del sprint.
+Al lunes que viene.
+Pero lo voy a necesitar.
+Así que nada.
+Que este inicio.
+Que arranque.
+Más allá de que le estoy diciendo ahora.
+Que le pueda servir a usted.
+También le pongo la parte de obligatoriedad.
+Necesito que arranque eso.
+Pero de nuevo.
+Es un proceso.
+Es un proceso.
+Tenemos esas dos patas.
+Tenemos la pata que hay un tipo americano.
+Que pone plata.
+Y tenemos que rendirle.
+Juego yo.
+Para que vos llegara a ese Kike.
+Que yo realmente necesito.
+Llegar a la versión de Kike.
+Que yo realmente necesito.
+Que me saca test.
+Me saca cosas.
+Le mando query.
+Tiene defectos.
+Pero son menores.
+Nada más.
+Te dejo ir a hacer caca.
+Porque debe estar muriéndose.
+Espero que esto le haya servido.
+Hasta luego.

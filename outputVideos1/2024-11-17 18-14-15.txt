@@ -1,0 +1,32 @@
+Yo ya les pude dar, que ustedes puedan correr el repositorio, entonces van a ver que por ejemplo
+está muy salado cuando lo corren local, porque te empieza a tirar
+que se actualizan todas las suscripciones, yo pongo todos esos logs, porque esos logs
+van a ser los que hoy o mañana nos van a permitir recrear casos de falla que ocurran
+en producción, porque cuando esto ocurre en producción, tenés que ir a mirar los logs
+y ver que mierda pasó. Entonces,
+para redondear, a ver que te parece Enrique, chequear esos 4 casos
+y para esos 4 casos está todo, tenés que chequear, de cambiar el método
+de pago, solo cambiárselo, ahí prueba con 2 métodos de pago válidos
+no pruebes con 2, 400, 4, 2, 4, 2, sino prueba otro y fíjate que
+te lo cambia, que vos podés cambiar el método de pago, que vos podés
+al comprar una suscripción, cambiar el método de pago, comprar una suscripción
+comprar un servicio adicional de un pago
+y subir y visualizar documentos, además
+de eso, tendrías que tener un test que te permita ver todas las compañías
+y otro que te permita ver su información adicional, son 6 cositas
+6 cositas por cada uno de ellos, por cada uno de ellos, ahí lo que vas a ir trabajando
+que Enrique te va a ir ayudando, es a darle prioridad, si has mirado
+el Excel, que creo que Enrique te lo compartió, hay casos que tienen prioridad
+entonces, la idea es que vos
+crees una nueva pestaña que sea TeamMate, vamos a pensar en todos los casos
+es que va a extraer a lo probable algo de un 3.000 pacientes de nutricionista
+poca esperanza los que esténbamos pagando muy poco es
+la que nos va a llevar a tener esta nueva work with
+es que es mucho más poco tiempo de tiempo.
+es que tenemos que dejar ver cuáles son las condiciones Maci cuando
+la compra, se les puede quejar que alguien haya cogido uno que la enmienda
+va a pasar.
+y eso es lo mejor.
+en que la versión b2 tenga cypress con al menos 50 por ciento de los casos de
+prioridad alta más jodidos ese es mi objetivo a plantear
+y que hay una cosita para contar bien

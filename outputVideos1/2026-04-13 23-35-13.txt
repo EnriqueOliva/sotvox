@@ -1,0 +1,371 @@
+hola, hola que tal, ah mierda, ahora lo escucho, yo te quería escucharme, si, por supuesto que si, imagino, felicidades, escuchame, mentirosos, arreglamos, mentirosos, bueno escuchá, te iba a decir, estoy con un dilema,
+bueno, viste que está lo del código QR para resetearlo, o sea, ya tendría que estar lo del email, tenemos un tema con el backupit, me doy cuenta que lo que hizo Tato es muy custom, primero que tiene una cantidad de issues, porque nosotros tenemos que pensar que ese JSON puede ser bastante complejito,
+entonces, tipo, tenemos que soportar más cosas, y, este,
+y también quedó muy custom, o sea, vos fijate que, por ejemplo, ayer lo de cojar codea, cuando en realidad lo único que tendría que cambiar entre array, dicoso, es tipo el custom y el application, pero el status y el report, tendría que, tipo, fijarse todas las properties que sea así, tipo, sea más dinámico,
+o sea, la idea es que vos lo que tenés que pensar es que hoy o mañana viene un nuevo proveedor, nosotros no podemos jarcodear 10.000 cosas por un proveedor, sino tiene que ser mucho más dinámico, eso,
+no podemos jarcodear 10.000 cosas por un proveedor, sino tiene que ser mucho más dinámico, eso,
+cosas que para mí ya están, y después también, como te digo, jarcodea mucha cosita que para mí habría que sacar por el carajo.
+Entonces, yo te propongo lo siguiente, o sea, fijate si podés darles una interacción ahí y poner un objeto muy difícil,
+ta, a ver si, porque estaría genial que mañana cuando se empiecen a enviar los keywibis,
+ta, y yo ya les puedo decir a Guillermo, mirá, Guillermo, este se pone...
+a ver si se pone, mirá, Guillermo, este se pone...
+Vos acá entrás y ves el status, ¿entendés?
+Esto estaría buenísimo.
+Ajá.
+Este...
+Lo que iba a proponer era...
+O sea, yo ya estoy sacando lo del botoncito y una PDR más.
+Probáte lo del código y fijate si podés iterarlo un poco en eso.
+No sé si encontraste algo más al TeamMate.
+TeamMate, hay un tema con el usuario parcial.
+Estoy intentando corroborar que hay un error y que no es error mío.
+Yo, a pena juega, te digo.
+¿Cómo? ¿Usuario parcial cómo?
+Usuario parcial, cuando tenés permiso parcial.
+Cuando no tenés permiso, no sé, de banking, por ejemplo.
+Estoy viendo banking.
+¿Qué es lo que le está pasando?
+No se ve las otras compañías.
+Estoy confirmando eso.
+A ver, si vos tenés un permiso parcial...
+Si vos, por ejemplo, no tenés permiso de banking, la compañía no se te carga.
+Ahora, si tampoco...
+Hay dos opciones que la compañía necesita.
+O no tenés permiso de banking, porque el permiso de banking automáticamente te da permiso de vivo.
+Es como un estándar automático.
+O no tenés permiso de...
+O no tenés permiso de banking, o no tenés permiso de...
+No tenés permiso de banking, o no tenés permiso de...
+No sabe la palabra, la he escuchado.
+Me la guié.
+O no tenés permiso de banking, o no tenés directamente la compañía.
+Entonces, no importa si tenés banking o no, la compañía Excel no está.
+Entonces ahí...
+Eso es un poco lo que hay que chequear.
+Yo lo que te diría es...
+O sea, capaz que metámosle una...
+O sea, igual...
+No creo que no ande, pero...
+Testéalo.
+Testéate lo del QR, lo del code...
+¡Ahhh!
+Testéate lo del email...
+De...
+Del outcode.
+Tipo, que te llegue el email a vos como usuario y que puedas resetear el código en ese email.
+Y también que te llegue el email que vos creaste como teammate.
+O sea, que un...
+Un teammate quiere rellenar algo.
+¿Está?
+O sea, si un teammate quiere cambiar su QR...
+Le tiene que llegar el mismo mail con el código y resetear su QR.
+¿Está?
+O sea, vamos a escribir un orden.
+Testéate lo del user. Testéate...
+Para un teammate y para un owner.
+El reset del código QR.
+Y fíjate si podés...
+Hacer una interacción...
+Ahí, mientras que yo voy probando algunas cosas.
+Si paralizamos un poco.
+Me iba a poner yo a arreglarlo, pero es que no.
+Fíjate si podemos hacer una interacción ahí.
+Intentar hacerlo un poco más dinámico.
+Eh...
+Esto de...
+La PR de Tatato.
+Tampoco está mal. O sea, no es que tipo sea una mierda. O sea...
+Que tipo diga...
+Pa, la concha la madre.
+No se puede mergear esto, ¿se entiende?
+O sea, está bien.
+Admin, Bank Assistant, Crypto Assistant.
+Crypto Manager, Crypto Stain.
+Sí.
+Está.
+Eh...
+Sí.
+O sea, la idea es un poco eso. O sea...
+Fíjate si podemos atacar esas tres cosas.
+Yo voy a intentar sacar una PR...
+Con lo del botón y otras cositas más que estoy testeando.
+Y bueno.
+Intentemos a ver si podemos salir con eso.
+¿Está?
+Este...
+A ver qué sale.
+Si la PR de Tatato queda alguna cosa que me siga...
+Pienso que hay una cosa mejor.
+Capacitivo.
+Pon un todo.
+¿Va?
+Nahuel y Jonathan ya testearon bastante lo del team mate.
+Y si vos me decís que solo estás encontrando un caso retorcido y venía bastante bien.
+¿No?
+Sí.
+Está.
+Entonces...
+Está genial el caso retorcido.
+Porque los casos retorcidos son los que después corrompen las cosas y nos dan dolor de cabeza.
+Entonces, me alegro que lo hayas encontrado.
+Es más.
+Yo me alegro más que encuentres cosas malas de que no encuentres nada.
+Siempre.
+O sea.
+Que lo tengas en cuenta nomás.
+Este.
+Por más que decimos.
+Decís.
+Bah.
+La conchada madre.
+Está bueno.
+Pues me digo.
+Bah.
+Está.
+Encontró algo.
+Quedamos a mejorar.
+Eh...
+Lo que te propongo es eso.
+O sea.
+Hagamos esas tres cositas.
+Y bueno.
+O sea.
+Liquidemos.
+O sea.
+Hagamos la producción.
+Yo mientras.
+Yo estoy trabajando en el site.
+Y después me voy a quedar en la noche a hacer la salida de producción.
+Y migrar.
+Migrar esos servicios que vos me pasaste ahí.
+Ah.
+Eso se lo voy a tener que hacer yo.
+Igual.
+Lo bueno es que la API está respondiendo bien.
+O sea.
+Eso me tiene contento.
+Ahí.
+Después lo de One Money.
+Después.
+Vos podés creer lo que pasó.
+Esto es chupadarga.
+Que.
+Tuvimos una semana esperando que nos agreguen algo a la API.
+No.
+Como si fuera un parámetro nuevo.
+Ta.
+Nos lo agregaron.
+Cuando envío.
+Digo.
+Que no tienen permiso.
+Mando.
+Que yo.
+Que no tendríamos que mandarlo.
+Cuando pongo.
+Cuando no lo mando.
+Digo.
+Che.
+Me está requiriendo el otro parámetro.
+Que ustedes me.
+Que la idea era que ese parámetro.
+No lo pidiera.
+Porque.
+Nos complejiza el fútbol.
+O no sé cuánto.
+Me dice.
+Pa.
+No.
+Deberías enviar eso.
+Llamo a Guille.
+Me dice.
+Pa.
+Deberíamos hacer el link.
+Y le digo.
+Guille.
+No rompas las pelotas.
+El tipo no sabe.
+El CTO.
+Nos avisó hace unos días.
+Que nos sacó esta funcionalidad.
+Exclusivamente.
+Porque nosotros se la pedimos.
+La funcionalidad.
+Que mierda estamos haciendo.
+Y ahí.
+Bueno.
+Y ahora.
+Lo que pasa.
+Es que.
+Este.
+Vino el CTO.
+Y me dijo.
+Ta.
+Si.
+Ya te lo hice andar.
+Envío todo.
+El QYB.
+Que es lo que pasa.
+Adiviná.
+O sea.
+Parece.
+Parece.
+Mierda.
+Falla.
+El tipo.
+Yo no puedo recolectar el identificador.
+De la creación.
+Es como que no pudiera.
+Recolectar el.
+Justo.
+El Company ID.
+Ta.
+Y ya no me dice.
+Anduvo.
+Genial.
+Re bien.
+Le digo.
+No.
+Genial.
+Re bien.
+Nada.
+Le digo.
+No puede ser.
+Que yo envíe el API.
+Me devuelva un 500 error.
+Y la verdad.
+Ellos.
+Reintenten.
+A bajo nivel.
+Y cree los puntos malos.
+Le digo.
+Por eso no es automático.
+Le digo.
+Que tenemos que ingresar las cosas malas.
+Ahí le envié.
+Le envié un socotropo de mensaje.
+Así.
+Un desarrollador.
+Dijo.
+Que lo estaban viendo.
+Volvió a poner.
+No funcionaba.
+Recién ahora probé.
+Y estaba.
+No estaba.
+O sea.
+La verdad es.
+Son una verga.
+Por eso es que.
+Genial.
+Por eso es que te insisto tanto con esto.
+Por eso es que te insisto con la PR de IvaCopy.
+Por eso es que rompo las pelotas.
+Quiero que esto quede dinámico.
+Ta.
+De corazón.
+Quiero que quede dinámico.
+O sea.
+No.
+Quiero que hoy y mañana agregar un proveedor sea lo más rápido posible.
+Ta.
+No.
+Volver a agregar.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+Ese es como.
+аетurity.
+careful.
+Porque esa es como.
+Cuando pueden llegar otros gamers.
+Quiero que sea más rápido.
+Cada vez tenemos que hacerlo más rápido.
+Porque ya vemos que.
+O sea.
+Estoy viendo ya.
+Cosa.
+Que con la experiencia.
+Ta.
+Digo.
+Estos tipos.
+Es más.
+Voy y ya me está diciendo que tienen problemas.
+Tienen algunos problemas con este.
+Y os va.
+Venimos trabajando hace semanas con esto.
+Estoy intentando sacarlo.
+Entonces estoy intentando hacer todo lo más abstracto y deck.
+Publicado posible para que si.
+Otra vez vienen y dicen nos cambiamos está.
+De.
+Bien.
+Si nosotros lo tenemos.
+Bueno te dejo.
+a ver hasta dónde puedes avanzar
+de última me quedo yo
+recap entonces, tres prioridades que me dijiste
+o cosas hasta acá
+teammate, el bug que vos me dijiste
+sí
+probar el código de reseteo
+que te llegue el mail, tanto para un
+owner como para un teammate
+sin compañías propias
+perfecto
+y después
+mientras que haces todo eso
+yo te dejé comentarios
+estaría bueno que mandes a Clau
+a iterar, a ver si puede
+abstraer un poco más
+el problema en sí es, si hoy mañana
+viene otro teammate, yo en esta
+tab que creo está tanto, tengo que tocar
+10 cosas, tanto es que sea
+el menor impacto posible
+pensemos, bueno hoy mañana viene otro
+proveedor, va a tener un customer ID
+ponele que el proveedor se llama Kaka, entonces va a tener
+Kaka status, Kaka
+result y
+Kaka customer ID o Kaka application
+ID, entonces
+intentemos que sea lo más dinámico posible
+es más, yo a las properties dentro del QIBI
+le puse literal el OTC provider
+entonces el mismo
+entonces puede ser dinámico, si te fijás
+¿está?
+y de nuevo
+nosotros no sabemos que mierda va a haber dentro de ese JSON
+un JSON puede tener 10 niveles
+entonces tenemos que hacer algo que lo muestre bien
+o sea que lo muestre
+yo puse ahí
+10 niveles como para que sea algo extremo
+cosa que una vez que lo hacemos bien ya está
+después, no nos tenemos que preocupar
+es algo meramente
+informativo, porque el result
+en sí, nosotros lo
+o sea, lo va a ver
+nos da información, pero la realidad
+es que ese result se va a ir sobre escribiendo
+entonces este
+ok
+lo que va a pasar es que cuando vayan viniendo eventos
+nos van a llegar eventos que van a sobre escribir
+ese result, entonces ahí
+vamos a tener que ir viendo
+bueno, te mando un abrazo enorme, un saludo
+de
+bueno, cuídese
+un abrazo, hasta luego
+adiós

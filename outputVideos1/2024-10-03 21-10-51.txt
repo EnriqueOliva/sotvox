@@ -1,0 +1,364 @@
+Eso quiere decir que cuando se cancela un pago, por ejemplo, yo qué sé, nos llega que Carlitos
+enseguida, enseguida reina, o que era lo que quería Guille, y eso me tiene contento porque anda
+o sea, ya lo probé, esperé que se venciera todo y anduvo súper bien
+enseguida que a Carlitos le falla la tarjetita, primero intenta con otra, eso está de más
+primero empieza a intentar con otra, que eso lo hace Stripe solo, o sea, literal agarra así
+tiene otra, va, va, va, empieza a probar, pero si no, lo que hace es tipo, le bloquea la cuenta
+y lo que está de más es que le bloqueas la cuenta a los teammates, o sea, esa fue la funcionalidad nueva
+entonces cuando vos entrás como teammate, si vos tenés tu cuenta bloqueada, te aparece que tenés que actualizar
+el método de pago, y te redirige al método de pago, sin embargo, si vos sos un teammate, o sea, te agregaron
+desde otra organización, te bloquea la cuenta, pero te lleva a suscripciones porque vos tenés que buscar
+la suscripción, y te dice, la cuenta de fulanito está bloqueada, pero la cagada es que a vos no te deja
+¿cómo se llama? si te deja modificar tus pagos, pero no te deja ver tus compañías, o sea, si vos
+a vos te agregaron como teammate y vos tenías tu compañía, no te deja ver tus compañías tampoco
+y tampoco te deja ver la información, o sea, esa es la idea de teammate, que hoy o mañana
+vos sí podés, o sea, sí podés seguir comprando cosas y actualizando cosas, pero por ejemplo
+no podés entrar a ver la información de tu compañía para destacar tus documentos
+la información de tus socios, cómo va el progreso, hoy o mañana vamos a bloquear, por ejemplo, la parte
+de correspondencia, o sea, tampoco vas a poder entrar a ver tus correspondencias, si te llevo
+correos, los correos que te llegaron, no vas a poder acceder a Void Report, no vas a poder acceder, bueno
+la idea es ir bloqueándole todas esas cosas, así que bueno, nada, eso, nada, un poco de eso nomás
+dicho todo esto, la idea ahora es, literal, voy a ver hasta dónde llego porque tengo que cerrar el
+sprint, pero tengo que, me falta terminar de mostrar unos detalles de la información y ya se va, y con
+eso cerraríamos el sprint, que ahí yo les voy a avisar y vamos a hacer una salita de producción, van a salir
+las PR clásicas y nada, eso, pero hoy se va todo, nada, Kike, adelante. Tengo pronto, para mostrarle a Guille, si querés, los tests, el excel, el
+todo NT y sin comentarios, sin nada, o sea, todo limpio, virgen, digamos.
+Genial, yo mañana, mañana se lo, me había olvidado de eso, bien ahí, mañana se lo, yo voy a estar en el horno, si no, mañana se lo voy a mostrar, tranqui, mañana me tengo que juntar con él, yo se lo muestro.
+Ok, y algo que estaba pensando es, obviamente estuve trabajando en estas tareas siguientes y estoy en condición de hacer PR, pero
+me parece bueno consultar, ahora que Martina menciona estos cambios, así que, que surgen, yo, por ejemplo, en la PR, en la tarea de agregar la enumeración a GetMyInf, a todos los tests de usuario y demás, ahora no tenemos los cambios de Martina, o sea, que va a haber conflicto, ¿puede ser? Si yo quisiera hacer PR y mergear, ¿puede ser?
+Sí, o sea, sí, ahora, como, no, estaba de forma informal,
+o sea, estaba de forma informal, pero está bloqueado de, o sea, si vos hubieras mandado una PR, yo hubiera esperado a que saliéramos a producción, porque tengo que salir a producción, así que, sí, vas a tener algún que otro conflicto y vas a tener una que otra cosa, de todas maneras, no debería ser la gran cosa, como te dije, yo te dije, vos,
+te vas a estar avanzando en el back office y esas cosas, porque dónde menos vas a tener problemas, pero sí, van a, prepárate, van a haber conflictos, está, tenemos que salir a producción y,
+y acá se va toda la parte de archivo, si esto que, la parte de archivo, después hay que meterle un repienso ahí, Martu, también, ya que, porque está, está quedando muy condensado en el lugar, después, después lo charlamos, pero bueno, está, perdón, Kike, que me expliqué el tema, pero sí, va a haber, va a haber, va a haber, va a haber conflicto, sí, va a haber, es inevitable, lo bueno, o sea, sí, y desde que arrancamos TeamMate, sabíamos que en el momento que estuviera,
+O sea, el tema es que a partir de ahora
+TeamMate va a ser algo
+que va a seguir metiéndose
+porque a medida que vayamos sacando funcionalidades
+como que tenemos que seguir teniéndolos
+en cuenta. Entonces es como
+es como algo que
+probablemente se vaya, la idea es que se vaya
+enganchando y ya lo empezamos a tener
+como parte del flujo común
+pero ta, era obvio que
+que quiera Soró cuando surgiera
+iba a ser un parche. Agradezcamos
+que salió ahora. Algo que
+después probablemente también nos complique un poco la vida
+sea que DJ quiere meter temas de roles
+y quiere meter más cosas, ta
+eso tendremos que ir
+atacándolo y viéndolo
+la mejor manera
+de solucionarlo a medida que vayamos
+viendo. Pero ta, eso.
+Bueno, yo vengo bien, vengo
+avanzando con las tareas
+y me parece correcto, o sea
+alcanzable el planteo del
+sprint, que ahora es backlog, pero el sprint
+está, o sea,
+bueno, hay que tener en cuenta que está esa investigación
+ahí, ¿no? del worker, medio
+incógnito, pero sí, pero
+ta, bien
+lo que yo te decía
+o sea, el worker es como de las 6 horas
+de los días, por más que no estés trabajando, es
+media horita, una horita
+ya de darle. Mirá, justo
+Marto estaba viendo que le llegó la
+le llegó la factura
+porque ahora cuando compras un servicio adicional o cuando
+compras la company draft, te llega la factura
+además de
+te llega
+o sea, que está
+pero eso en realidad es lo que yo estoy diciendo
+o sea, hoy en día es un culo porque para ver
+esas funcionalidades
+tenemos que fijarnos todos con el
+arroba das banco, es lo que estoy peleando
+a ver si podemos conseguir que
+nos llegue a todos los correos
+ta, pues es un culo que
+lo tengamos en los arrobas
+y ta, es
+algo que para testear y eso
+va a ser un desastre. Después
+vamos a tener que ahí trabajar un algo
+kike ahí de
+tenemos que meterle un pienso ahí como meter
+este, subdominios
+una cuenta o alias
+una cuenta para que vos puedas tener varios alias de das
+bank de todas maneras porque
+ta, o sea, está bueno eso
+pero
+por si querés ir investigándolo
+digo, porque yo necesito que empecemos a chequear los correos
+los correos electrónicos que ya son bastantes
+ya tenemos como seis, siete
+si, bueno, ahora se viene todo el flujo de team mates
+que por ejemplo el crear y agregar
+ya te envía correo, te envía una password temporal que tenés que agregar, etc.
+hay pila de cosas que fueron saliendo que son un
+son un montón, también
+yo creo que ahora cuando entren
+o sea, después que salgamos a producción eso, cuando entren
+van a ver que creció un montón adentro del sitio
+o sea, porque ahora ya tenemos suscripciones, tenemos
+compañías que adentro tienen información
+y tenemos, vamos a tener team mates
+lo que se viene después es la parte de correspondencia que es mailing
+que es lo último que se
+que se ataca
+pero bueno, nada de eso
+genial
+bien, bueno, seguimos metiéndole
+te mantenemos al tanto
+quedate medio
+medio atento porque hoy se va todo
+o sea, hoy se
+tenemos que mandar todo eso y ahí después te actualizás
+develop, ten en cuenta que a partir de la semana que viene
+yo voy a arrancar a sacar stage
+o sea que
+ahí vamos a hacer
+un ambiente estable y probablemente voy a estar
+trabajando un poquito también ahí contigo
+Kike para la parte de test
+pero bueno
+venimos bastante bien
+yo creo que venimos bastante bien
+estaba mirando la planificación y
+seguimos atrasados una sola semana
+por más que tenemos problemas
+yo había estimado que íbamos a sacar el worker
+lo del email, lo del stage
+todo pasado diciembre
+y eso lo vamos a encarar ahora
+o sea que
+yo creo que venimos bastante bien
+hasta el punto de que podríamos
+o sea
+si seguimos a este ritmo
+lo que está bueno es que yo siento que vamos
+en cualquier momento estabilizamos
+y empezamos a hacer como desarrollos más
+más tranqui, este...
+ahora
+yo sigo con desafíos
+ahí lo que sea pero
+yo creo que diciembre va a haber
+un lapso que ustedes van a estabilizar
+y van a hacer más tareas
+de cosas, de buscar cosas y eso
+pero bueno yo en ese sentido
+vengo súper contento y creo que Guille también
+porque está
+porque lo que planificamos
+o sea lo que planificamos junto con Guille
+más o menos que sabíamos que se iba
+a correr, se agregaron cosas
+nuevas y no generó un impacto
+grande en el resultado final
+por ahora
+es lo que les hablé el otro día, yo creo que lo más
+jodido que se viene ahora ya que
+ya ahora sí puedo afirmar que está toda la parte
+de manejo
+de archivos, lo más jodido
+es ahora
+el manejo de archivos
+no solo la parte, hoy lo hablábamos
+con Marto, no solo la parte del manejo de archivos
+sino también
+manejarlos de manera segura
+o sea que no veas vos
+que no pueda cualquier persona
+saber dónde está la información
+mandar cierta
+inspiración en la información que compartimos
+a los documentos, todas esas cosas yo creo que
+está bastante bueno
+pero bueno, hay que seguir metiéndole
+y yo creo que va a ir saliendo
+pero después yo creo que la complicación
+más grande que se viene ahora que ya
+más o menos está lo de archivos y estas cosas
+es bueno, ahora pasar todo a lo a coffee
+porque hay que copiar y pegar
+funcionalidades a lo a coffee, no debería ser nada del otro mundo
+pero lo más
+el desafío más grande ahora por lo menos que yo
+veo así que realmente
+es el titán
+que tenemos que matar, es el work
+que quiero ver si una vez pasado este
+sprint que sacamos a stage, lo empiezo a
+apuntalar de a pasito
+o sea ya empiezo a
+investigarlo y eso, pero no puedo dejar eso para último momento
+así que, pero eso para
+que estemos todos alineados, lo venimos
+venimos súper bien y creo que
+creo que a este ritmo vamos a poder
+seguir sacando esto tranquilo
+y lo bueno es que es eso
+que creo que después de este sprint
+que también que era sonó, nosotros
+le metimos un poco más pero también
+tuvimos unos días de estudio, lo que sea
+pero creo que cada vez estamos como
+respetando más los tiempos
+la idea es empezar a respetar los lunes y martes
+bueno, la semana pasada lo habíamos respetado bastante
+bien, o sea empezar
+a respetar lo que son los
+los días que no se trabaja y eso
+que está, que ahí
+yo les transmito el
+agradecimiento de Enrique
+de Enrique, de Enrique, gracias Enrique
+no, le transmito el agradecimiento
+de Guille, de bueno, la onda
+y la voluntad de sacar las cosas
+que está, que yo
+se los vendo, yo se los levanto
+mucho más, pero
+pero está, pero eso también
+este, nada
+decirle que está súper contento
+con todo eso y que
+que nada, yo creo que no
+es lo que decimos, o sea
+cuando salgamos a producción ya está, estamos
+adentro, como quien dice, ya está, toda la
+plataforma va a ser un switch
+y de momento que él empieza a depender de
+nosotros, si las facturas empiezan a entrar por
+nosotros, ya es otro
+otro partido, vamos
+van a venir dificultades nuevas
+pero bueno, nada, ahora
+mentalizado y si se pueden apensar ya
+pasaron dos meses, o sea es una locura
+pero ya pasaron, ya se
+liquidaron dos meses, yo hace
+cuatro meses
+cuatro meses y medio vengo trabajando con Enrique
+con Guille
+este, y ahora
+ustedes ya hace dos meses, o sea ya
+estamos hace algunos
+tiempos, o sea que ya
+cada vez va siendo más estable, esa
+inestabilidad de la que hablábamos, lo que sea
+también se va
+yendo un poco, yo creo que si en realidad
+esto Guille lo transmitió
+también, que diciembre es el mes difícil
+pero a partir del año que viene si tenemos
+suscripciones ya no va a seguir pasando eso, porque
+es un poco la idea de estos negocios
+yo creo que si pasamos diciembre y seguimos
+yo creo que ya podemos decir que esto es algo
+estable, o sea que es algo que
+porque si después de diciembre, enero, febrero
+arrancando en marzo, nosotros
+Guille ya le subió a ustedes, le sigue pagando
+y todo, y ya pasó como el momento
+que el loco estuvo más mal, yo creo que
+podemos decir que es algo estable, que tenemos un cliente
+estable, que eso está
+súper genial, no es tipo una ganancia
+extra a lo que tiene que trabajar, sino
+ya es algo que vale la pena mantener
+más por ese lado
+bueno, no le rompo las bolas más
+que con Martus
+sacando esto y bueno
+a seguir metiéndole, no me rompa
+los auriculares, porque cumpleaños
+dentro de un año, ¿entendés?
+no me rompa los auriculares
+fue el día del programador hace tiempo
+así que, y fue
+algo que no le dijimos a Kike
+no le dijimos nada
+a Kike
+fue su primer día de programador
+trabajando oficial, digamos
+como programador, entonces
+nada, el tema que
+fue mucho que joder
+un regalito, te conseguí
+un auricular y voy a lavar tu
+cosa, así que, pero bueno
+vamos a ver si eso es algo que
+también vas a empezar a agarrar
+cultura que yo quiero hacer
+Kike me dice que para Navidad
+envía cosas y eso
+o sea, también en ese sentido
+es una cultura, el loco
+a ver, ya se vio para el cumpleaños
+le regaló un regalo
+que me había regalado yo, o sea
+o mejor, entonces
+en ese sentido ya se ve
+digamos que el tipo
+quiere generar una cultura de trabajo, a mí siempre me lo dicen
+quiero generar una cultura
+de trabajo, o sea, que tengamos
+un equipo, o sea, que nosotros
+podamos tener esto, además de lo que
+tenemos, y además que esto tenga cultura
+o sea, que nosotros podamos tener beneficios y lo que
+sea, parece que está bien
+bueno, no hablo de alto piso más, voy a seguir
+metiéndole a esto, cualquier
+cosa aquí que estamos por el chat, y va a haber
+un momento que, nada, se va a actualizar
+todo, arranca todo, lo que sí te iba a decir
+es
+capaz que
+te aumento alguna tarea yo
+y te cambio
+alguna cosa relacionada a lo que dijo Martu
+que me quedé pensando
+yo prefiero de repente dejarte
+inflado un poquito y que nosotros
+sepamos que, o sea, que tengamos
+más margen para salvar el worker
+que es lo que me tiene, o sea
+esto tiene que quedar en este sprint para que deje
+de explotar, o sea, quiero
+por ejemplo, eso que dijo Martu hoy fue genial
+o sea, a mí nosotros estábamos sacando cosas
+y Martu me dijo, va, explotaron los tests
+y eso está de más, porque
+quieras o no, más allá de que te obliga
+no solo te obliga a actualizarlos, que bueno,
+capaz que en este caso, en estos casos
+nosotros los actualizamos un poco, emparchamos
+y después dejamos para que se
+se pulan, pero
+también es como que, che, y esto está
+funcionando bien, o sea, y se mantiene
+la funcionalidad que estaba, entonces
+es algo que realmente aporta
+mucho valor, y también la hit-hub
+action en este sentido, creo que
+ahí Martu lo puede confirmar, pero
+está además el hecho de que uno de repente está
+apurado, lo que sea, quiere enviar la PR
+y la hit-hub action nos
+cubre, diciendo, che, esto compiló
+y no solo compila
+sino que pasa los tests
+no demoro
+más, porque tenemos bastante cosas a hacer
+nos vemos, cuídense
+quedan las órdenes

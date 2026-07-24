@@ -1,0 +1,230 @@
+La invitación, hay que buscar una forma para, como vos decías, de poner un mundo genérico.
+Ajá, o sea que te desbloqueé mail o alguno, pero es...
+Ah, no me investigaron nada de esa aterrante mierda, no me investigaron nada.
+Pensé que era... yo te lo hablo porque pensé que era la tarea que le habías puesto a Kike, que hablaron de correo.
+No, tenías que investigarme algo.
+Eso fue mi interrupción en la daily.
+Es importante, claro, sí, sí, eso es importante.
+Tá, fíjense si ahora después de esto se pueden juntar 5 o hacer una investigación a 5 y buscar alguna herramienta.
+Por ejemplo, déjeme...
+¿Estás Kike ahora?
+Sí.
+¿Estás Kike ahora o te llamo dentro de un rato?
+¿Sí?
+Sí.
+O sea, igual de... a ver, pueden hacerlo a 5.
+No importa, déjala.
+Ah, no, como quiera.
+Pero, ¿verdad?
+Puedo venir.
+Ah, pero mejor lo hacemos juntos, de repente vamos buscando y cuando uno encuentra algo, compartimos pantalla con él.
+Yo prefiero así, creo, es mejor, me siento más rápido.
+Ah, pasa que yo siento que me voy a rascar un poco el juego, pero pasa que tipo, me pongo con otras cosas y me olvido.
+A ver, hagan una cosa, setéense para reunir mañana y ya está listo.
+Y busquen ahora, total, creo que no es algo urgente.
+Igual eso...
+Por eso, organizenlo ustedes.
+Pero, además, también la idea es que no se junten, o sea, la idea es que hagan una investigación y después se junten, no que se junten a investigar los dos, porque, no sé, pienso yo que no es lo mejor.
+O sea, yo decía, podemos investigar cada uno por su lado, ¿está?
+Pero en llamada, ¿se entiende?
+No sé, era lo que yo decía.
+Bueno, eso no sé.
+Ese tipo, cuando algo dice, oh, mirá, encontré tal cosa.
+De nuevo.
+Bueno, pará, pará, igual, algo muy informal.
+Dos segundos, que, viste lo de Horacio, yo sigo respondiendo dudas, igual le pedí ayuda a Joaquín Viña y me está ayudando, pero como la semana que viene es la entrega, estoy full con dudas.
+Te digo eso porque capaz que vas a ver que mi rendimiento no es a full.
+Ah, bueno, eso está todo, por ahora no pasa nada, después este está.
+No, ya sé, ya sé, pero está.
+Después de distinto, ahora, por ahora no pasa nada.
+Pará.
+Pará, quería hacer una prueba, denme un segundo, no corten.
+Pero, esperen que les comparto pantalla, no sé.
+Ven acá, esto yo lo que hice fue creé testatato.
+Esto es lo que nos compartiste la otra vez.
+Sí, yo acá creé testatato.
+Entonces, acá lo que yo quiero que, esta es una herramienta, Mailinator, hay otras, ¿está?
+Pero, le dan go, y por ejemplo acá, yo envío un mail, voy a enviar otro.
+Partirle a la mitad de repente la pantalla, ah, igual vos no compartiste.
+No, no, no, pero voy a enviar otro, voy a enviar otro, y ahí, en teoría deberían estar llegando, si no, bueno, viste.
+Ajá.
+Acá, por ejemplo, llego, ¿ah?
+Sí, entonces, este, tienen ahí, y acá pueden.
+Pero eso ni siquiera tiene formato de test.
+¿Cómo?
+Yo lo que puse, yo estaba.
+¿De qué estás hablando?
+De testatato, no es testatato.gmail.com.
+¿De testatato?
+De testatato, arroba, arroba, Mailinator.
+¿Sí?
+¿Estás seguro?
+Acá, claro.
+Vos lo escribís, cuando lo escribís, para mandarlo, lo escribís así.
+Sí, sí, sí, es, es, arroba, Mailinator, es este, mirá.
+A ver, no me deja, o sea, el, el mail, no te lo pone acá, no te lo pone.
+Tatata, yo entendí, yo entendí.
+Pero es, es este, mirá, lo voy a escribir acá.
+Este, o sea, a todo lo que vos ponés go, acá, te crea un dominio Mailinator.
+Entonces, acá la idea.
+O sea, primero que nada, es, es, fíjense que esto es free.
+O sea, y esto les va poniendo todos los tests que crean.
+Entonces, ustedes pueden crear una cuenta de Das Bank acá, por ejemplo, con estos mails,
+y ustedes no se llenan sus mails de basura.
+Tatata, para mí ya no tenemos más investigación que hacer con esto.
+No, a ver, a bueno que fíjense si hay una herramienta mejor que Mailinator.
+Vieron que esto, como es para, Mailinator, como es para test,
+se pone en varios formatos el, el correo recibido.
+¿Ven?
+¿Tenés HTML?
+¿Querés que busque, Santiago, de hacer, capaz que me estoy copando demasiado,
+de a ver si puedo hacer un test unitario con esto?
+No, no, no.
+No, no, no.
+Está, está, otra cosa, otra cosa.
+Yo estaba creando un test, ¿qué es lo que envía el correo?
+¿Cómo se envía el correo?
+Porque vos mandás el mail.
+Envía con AWS, igual, igual, eso, eso, a ver,
+lo que estamos, o sea, lo envía AWS, lo envía el Worker, ¿está?
+Este, y él, él hace que se caiga.
+Lo que puse yo, tipo, según lo que leí, yo no tengo mucha idea de lo que es Cognito,
+pero según lo que leí, según notebook.lm, ¿está?
+De, de la reunión del otro día, está, como que se mandaba el mail a través de Cognito,
+pero ignorando eso, que supongo que está mal.
+No, no, no.
+Lo que, lo que te.
+Envía a través.
+Está, lo que te decía es que.
+Igual, tanto eso no, no cambia.
+Sí, sí.
+No, no, pero, por un test de regresión.
+Pero, escuchá, escuchá, por un test de regresión.
+Que, si el correo está mal, en teoría, no se debería ni enviar a través de, que, que AWS no debería intentar mandar un correo a pedro.com, por ejemplo, como te mostré el otro día.
+No sé si te parece poner ese test de regresión.
+A mí, en realidad, está bueno.
+Y, en realidad, nosotros.
+Hacemos, o sea.
+Un filtro.
+Claro, pero eso lo hace SNS, o sea.
+Igual nosotros, para que yo estoy viendo.
+No me acuerdo cuando desarrollamos esto, eso a qué nivel deteníamos.
+Estoy entrando a bichar eso mismo.
+Igual, no, no, no importa.
+Realmente no, no, no, no importa.
+O sea, realmente no importa porque la idea del test de regresión no es tener estos analizadores.
+Es analizarlos una vez el test de regresión terminado.
+Entonces.
+Está, no, no.
+Te lo, te lo hacía tipo de consulta.
+No, pará, lo que estoy mirando.
+Algo que estoy mirando.
+Yo empecé a poner, puse ese test de regresión y digo, está.
+Según lo que me tiró, no tuvo que leerme, se tira por cognito.
+Está, nada que ver.
+Pero, pero está.
+No.
+Yo digo, para ir saliendo las dudas.
+No, no, validamos el correo.
+O sea, validamos, hacemos una validación que el correo está válido.
+Pero, está, sí.
+Si Carlitos pone un correo.
+Con un dominio que no es válido, está, eh, ya está.
+Borda tres carajas.
+O sea, no, eh, no le va a llegar nunca el correo y ya está.
+No, no es problema nuestro.
+Es más, algo que estaba pensando es, si deberíamos banear que un tipo envíe email, envíe teammates a un correo, eh, inválido.
+A un correo, no, a un correo baneado.
+De los que tenemos baneados por, por Calendly.
+Pero, sí, si lo quiere enviarme.
+Sí, me importa tres carajas.
+Que lo envíe.
+No, pero.
+Igual, a nivel de esta regresión, eso no, no interesa.
+Ya no, no, no, no es algo.
+Bueno, pequeña, pequeña pregunta.
+Eso que vos decís, de, eh, de que se banee al que pida como teammate a un, a un, eh, a un correo baneado.
+Decís eso.
+O sea, no está medio raro.
+Sí, sí, sí, sí, no.
+Sí, eh, me importa tres carajas.
+No lo vamos a.
+Lo baneás de una.
+No, no, o sea.
+Envíe, te, te, te dejo enviarle mail.
+Total, vos creaste una cuenta y la compartiste.
+Si vos te banearon, vos querés enviarle.
+No puedo entrar.
+Si vos querés enviarle, vos, voluntariamente, querés enviarle un, a un correo baneado, la invitación a teammates, perfectamente lo podés hacer.
+Me importa tres carajas.
+O sea, no, no.
+Ah, pero puede entrar el correo baneado, no.
+Sí, puede entrar.
+Lo que no puedo hacer es crear cuenta.
+Cuando vos creás cuenta.
+O sea, que.
+O sea, no podés comprar compañías.
+Si nosotros te baneamos, no podés comprar compañías.
+Pero sí.
+Pero sí.
+Pero sí podés usarlas externas, digamos, las de otro.
+Sí, porque esos serían casos que podría llegar a pasar que nosotros sin querer baneemos a alguien.
+O alguien que rompió las pelotas, quiere comprar una compañía e invitarse para entrar a DasBank.
+Pagaste mil dólares.
+Me importa tres carajos.
+O sea.
+Está, está bien.
+O sea, para, para jodernos, pagaste mil dólares para crear una compañía.
+O sea, bienvenido.
+Sí, sí, sí.
+Rompé, no las pelotas.
+No las pelotas.
+Jodernos.
+Exacto, claro.
+A ver, a nivel de regresión, no importa.
+Está bueno que sí sepan la lógica interna de lo que pasa, pero es más, es más, necesito que no se centren en esa lógica interna.
+Que ustedes vean desde una perspectiva externa.
+Si no, no me sirve.
+Si ustedes, o sea, que piensen que son personas de afuera que están intentando pensar casos, o sea, con un, con un backup técnico.
+No, o sea, esta discusión es por fuera de regresión.
+Eso.
+Yo lo que digo es, lo importante acá.
+¿Qué es lo que quiero compartirles?
+Esto me parece el mejor mecanismo para que ustedes hagan los test de regresión y no se llenen sus correos de basura, de creer 500 cuentas.
+Y mismo tengan cuentas que queden obsoletas y después cuando hago limpieza.
+O sea, esto creo que es una buena opción.
+Hay otros como Mailinator, los pueden buscar.
+Lo que está bueno de esto es que por eso yo, ustedes ponen un correo acá, le dan go y automáticamente te ponen.
+Lo que sí necesito es que ustedes se junten.
+Investigan, no es algo mucho tiempo.
+Y después me propongan un formato para estos mails.
+Porque yo lo que pensaba es, no los voy a banear si el correo es, por ejemplo, si es, si tiene alguna, algún carácter especial, arroba Mailinator.
+A lo que voy, por ejemplo, si ustedes, por ejemplo, ponen tatato, tatato, guión test, guión, yo qué sé.
+Podemos poner algo.
+De última, si no.
+Hacemos como.
+Dashbank, Dashbank, Dashbank, Dev.
+Arroba, ahí está, Dashbank Dev.
+Y esto automáticamente te crea un mail que sea tatato test.
+Tatato test, Dashbank Dev.
+Arroba Mailinator.
+Arroba Mailinator.
+Esto, esto que pongo acá, es como si fuera algo.
+Claro, o sea, esto es lo que yo voy a detectar.
+Si el mail es, si el mail, el final del mail, incluye test Dashbank Dev, arroba Mailinator en Dev, no te lo voy a bloquear.
+Dale.
+Es una prueba.
+Che, igual, pará.
+Podemos hacer algo más cortito, también, ¿no?
+Me gustaría que sea lo más largo y más concreto posible para, porque estamos baneando muchos mails.
+Entonces, me gustaría que sea.
+Pero, a ver, no es algo para discutir ahora.
+No es algo para discutir ahora.
+Es algo para que ustedes lo chequeen, busquen las herramientas y me vengan con una propuesta.
+Ya está, es eso.
+Concreto.
+Dale.
+No es algo para discutir ahora, porque si no, al final no, no tiene gracia.
+Yo les propongo esto, porque hoy en día yo estoy baneando varias aplicaciones.
+Hay otra mail, no sé cuánto, que también la baneo.
+Entonces, tendría que como poner un, un if, diciendo, bueno, si.

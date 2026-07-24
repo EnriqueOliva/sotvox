@@ -1,0 +1,1428 @@
+Hola, hola, ¿cómo va, querido?
+¿Qué andamos?
+Ahí está, nos falta Tato nomás
+Voy a ir compartiendo pantallas, ¿me traes seguro, Tato?
+Dale
+En algunos lugares te están diciendo
+Que capaz que hoy
+Lanzan el Mythos
+No sé si lo viste, ¿no?
+Sí, algo había visto
+No sé
+A ver qué tal
+Buenas, buenas
+Buenas, buenas, ¿cómo estás?
+¿Qué más me dices?
+A ver
+Un poco, ahora sí
+Bien, hola
+Para comentarles un poco
+Para arriba lo que había que testear
+Es acá en Configuration
+Va a estar casi todo
+Estoy pensando
+Sí, van a haber dos lugares afuera que chequear
+Pero eso lo voy comentando a medida
+Primero lo primero
+La segunda tab de asignación de ejecutivos
+Que fue lo primero que se trabajó
+Lo que se va a hacer más énfasis
+Porque es lo que afecta directamente al negocio
+Este
+Que la asignación de ejecutivos
+En esta tab lo único que van a crear
+Van a ser reglas básicamente
+Este
+Van a crear conjuntos donde
+Este es el nombre de la regla
+Para qué países se aplicaría la regla
+Este
+Qué tipos de compañías
+Van a quedar englobados
+Y este
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Habría que seleccionar
+Los ejecutivos
+Este que acá no aparece ninguno
+Ahora después explico por qué
+Y ya vamos haciendo alguna prueba
+Pero acá tendremos que seleccionar
+Los usuarios asignados a
+Este
+Esa regla
+Y después lo que va a pasar
+Que se supone que
+Hay un shop que va a correr
+Este es una vez al día
+Y en esa corrida
+Le tendría que asignar a las empresas
+Que no tengan ejecutivo de cuentas
+El campo de la base de cuentas
+La base de datos se llama
+SalesExec
+Para qué
+Lo miramos a ver
+Para hacer los pasos igual
+Creo que estoy compartiendo
+Solo el navegador
+O la pantalla completa
+Ah, hola
+Está lo vemos ahora
+La compañía creo que es plural
+No creo que esto
+Para cancelar
+Este es el campo
+Que se va a rellenar
+Con el ID
+Del ejecutivo
+AsignSalesExec
+AsignSalesExec
+Al ejecutivo
+Y después de
+De una compañía creada
+Este
+Hace más de 48 horas
+Esto lo meto por ahí
+Hace más de 48 horas
+Para una compañía que haya sido creada
+Hace más de 48 horas
+Este
+Si cae
+Este
+En estos filtros de acá
+De que es de Estados Unidos
+De que es un tipo de crossword de cripto
+Se le debería asignar
+Este
+Un ejecutivo
+De este bombo
+Ahora
+Si el
+Pasa la siguiente corrida
+O sea el día de mañana
+O hay más compañías
+Este
+Y en el
+Digamos
+En el set de usuarios
+Que tengo acá
+Tengo más de uno
+Lo que debería pasar
+Es que para la siguiente iteración
+O la
+La siguiente
+Compañía que se le vaya a asignar
+Un ejecutivo de cuentas
+No se tiene que asignar
+El mismo
+Tiene que asignarse
+El que es
+Otro diferente
+De ese mismo
+De ese mismo
+Set
+Este
+Eso porque
+Por cada ejecución
+Se va a manejar
+Como un ID incremental
+Este
+Para no repetir
+Este
+El mismo usuario
+Para
+Varias compañías
+En la
+O en la misma corrida
+O en la corrida subsecuente
+O sea
+Que si tengo
+Cinco compañías
+Y tengo cinco ejecutivos de cuenta
+Este
+Y en la misma corrida
+O en
+Corridas
+Corridas pueden ser diferentes
+Pero
+Si tengo
+A fin de cuentas
+Si le voy a aplicar
+Solo a esas cinco compañías
+Tendrían que ser
+Este
+Un ejecutivo
+Por compañía
+Este
+Para que sean todos diferentes
+Se puede repetir
+Por ejemplo
+Si tengo
+Seis compañías
+Y cinco ejecutivos
+Bueno
+El primero que asigne
+Este
+A esas compañías
+Vendría a ser
+Este
+El
+El que le asignaría
+A la última compañía
+O sea
+La compañía número seis
+Se respeta
+Y lo que pasa es que
+Es el
+El round robin
+Que ahí
+Bueno
+Este
+A ver si me deja copiar
+Esa por ahí
+Que ahí
+Lo que va a manejar
+Esa lógica
+Porque también
+En algún momento
+Les van a
+Ya seguramente
+Les pida que actualicen
+Los tests
+Porque tienen unos tests
+Muy pobres
+Pero algo se avanzó
+Es que
+Acá va
+Bien
+Acá va a estar
+Company security
+Assignment rules
+Y aquí va a estar
+Que esto va a ser
+Como es
+Cada record acá
+Es una representación
+De esta tabla
+En esta tabla
+Si vemos
+Uno más
+Esta es el nombre
+De la tabla
+En este caso
+El default
+Home type
+Default
+Es
+Esto de acá
+Que ya lo explico rápido
+Acá lo que pasa
+Es que si
+La compañía
+No va a ser
+No aplica
+A ningún país
+Y a ningún type
+Va a quedar
+En este default
+Que se supone
+Que acá vamos a tener
+Que tener seleccionados
+Algún set de usuarios
+En caso de que no haya
+Ningún set de usuarios
+Seleccionado
+No le va a aplicar
+Este
+El default este
+Este
+Así que básicamente
+Correl shop
+Se fija
+Si para estas
+Si para las compañías
+Que
+Pueden crear
+Hace más de 48 horas
+Que no tienen
+Ejecutivo de cuentas
+Y que no tienen
+Este
+Si no matchea
+Ninguna de estas reglas
+Va a ir al
+Al fallback
+Como es
+Este fallback
+Y si tiene usuario
+Se lo va a asignar
+Este
+Con la misma metodología
+De
+Este no repetir
+El mismo usuario
+A la compañía subsecuente
+Si tengo más de un usuario
+En este bombo
+Ahora
+Fuera de eso
+Voy a bajarle un limit 2
+Porque
+De type default
+Solo tendría que haber uno
+El siguiente
+Ya es specific
+Que por algo acá
+Hice reglas específicas
+Haciendo alusión
+A ese type de acá
+Entonces cada regla
+Que vayan a crear acá
+Va a tener ese type
+Acá le puse en 5
+Acá hay
+Creo que esta está con softdate
+Puede ser
+Si
+Ahora si
+Acá solo me van a aparecer
+Las que tenemos seleccionadas
+Prueba 12
+8
+AAA
+Ahí va
+Está solo para los record
+De las
+Reglas
+Como es
+Para estos record de acá
+Después está la otra tabla
+Esta de acá
+Esta va a tener
+La asociación de usuarios
+Este a esa regla
+Acá viene el que está
+Rule ID
+Backoffice User ID
+De ese ejecutivo
+Por las dudas
+Ya lo deben saber
+Pero son usuarios
+De backoffice nomás
+Este
+Y eso más que nada
+Para
+Que sepan en qué tabla
+Se guarda
+Esa
+Eso para
+Bueno
+Tengo que revisar
+Acá un punto
+Los test
+Y eso
+Este
+Fuera de eso
+Eso sigue a poco
+La lógica de asignación
+Automática
+De ejecutivos
+Bien
+Me queda algo
+Para mencionar
+Que es lo siguiente
+A ver si
+Bueno
+Vamos a traer a cualquiera
+Pero la idea
+Es que
+Este
+Acá pueden pasar
+Dos cosas
+Tengo el
+Assign
+Sales
+Executive
+El ejecutivo
+De cuenta
+Si no tiene
+Ningún ejecutivo
+Asignado
+Acá
+Cualquier rol
+Puede venir
+Obviamente que tenga
+Acceso a esto
+Pero cualquier rol
+Puede venir
+Y asignarlo
+Un ejecutivo
+Pero en caso
+Que ya tenga
+Un ejecutivo
+Previamente asignado
+Este
+El único
+Que puede venir
+Y reasignar
+El ejecutivo
+Es un usuario
+Con rol
+Administrador
+También
+Puede
+Re
+Asignar
+Ejecutivo
+Este
+En caso
+Que no sea
+Un rol
+Administrador
+No va a poder
+Si intentas
+El
+Te va a tirar
+Algún error
+Y
+Fuera de eso
+Tanto la
+Asignación manual
+Este
+Como la reasignación
+Y el cronjo
+A la hora
+Este
+Se asigne
+Un ejecutivo
+Lo que va a pasar
+Es que si o si
+Se tiene que mandar
+Una
+La notificación
+Este
+Son dos notificaciones
+Una es
+Al slack
+Este
+Que sería
+A ver acá
+Y vamos acá
+Por querer
+Vamos a tener
+Pura variables
+Slack Channels
+Que sería
+A este canal de acá
+Que ya
+Ahora los agrego
+O le pido a Santi
+Que los agregue al canal
+Porque está en el otro
+Dashbank
+Que básicamente
+Va a mandar
+Una notificación
+Hacia Slack
+Arrobando
+Al
+Ejecutivo
+De cuentas
+Este
+Que para
+Que eso
+Funcione
+Para que se mande
+Ese mensaje
+A Slack
+El ejecutivo
+De cuentas
+Lo que va a hacer es mandar
+Una notificación
+Que tiene que tener
+Este
+Ya voy a traer ese detalle
+Es acá
+Backoffice
+Users
+Por ejemplo
+Tiene que tener
+Asignado
+Su número
+De teléfono
+Y el
+ID
+De Slack
+Por ejemplo
+Acá
+De última
+Para hacer
+Las pruebas
+Podemos
+Vamos a hacer
+Las pruebas
+De aquí
+A ver
+Acá
+Se me deja copiar
+Y lo copiamos
+Más
+Mi
+Display
+No
+Acá
+Copy Member ID
+Ahí va
+Si voy
+Ahora
+Vale
+Me actualizo
+Ahora
+Una
+Cuestión
+Creo que sí
+Ahora sí
+Ahora
+Pasa lo siguiente
+Ahora aparece
+Mi nombre
+Y en realidad
+Este parada
+De
+Como
+Todavía no
+Ningún usuario
+Tiene
+Asignado
+Un número
+De teléfono
+Que
+Quedan
+Excluidos
+De
+El array
+De
+Ejecutivos
+Mira
+Aprovecharles
+Para comentar
+Eso
+Este
+Y acá
+Ah
+Tanto
+La asignación
+La asignación
+Manual
+Mi
+Asignación
+De
+El
+Photoshop
+Under
+Email
+Para
+Los
+Varios
+Del
+Tener
+Asignado
+Un número
+De teléfono
+Válido
+El número
+Si o si
+Tiene que incluir
+El prefijo
+Pero si igual
+Si lo editan
+Desde
+Acá
+Este ya le va
+A quedar
+Con el prefijo
+Válido
+Y
+Un
+Es
+Válido
+En realidad
+Por las dudas
+La validación
+Del
+Identificador
+De Slack
+Lo único
+Que se fija
+Es que no sea
+Por defecto
+Que es este
+Slack
+Identifier
+Y que no sea
+Vacío
+Este es lo único
+Que se fija
+No valía
+Nada más
+Bien
+Fuera de eso
+Este
+Ya hablamos
+Del email
+De más
+Bien
+Este
+Me voy a
+Fijar en
+Develop
+Porque una vez
+Que tengan asignado
+Un ejecutivo
+De cuentas
+Lo que hay que fijarse
+Es que le va
+A aparecer
+En el detalle
+De la compañía
+Como asignado
+Ahí va
+Acá
+Haciendo pruebas
+Le asigné nomás
+A Fernando
+Como ejecutivo
+De cuentas
+Y aparece
+Este
+Acá van a notar
+Que
+Está seleccionado
+Como ejecutivo
+De cuentas
+Pero el form
+Este
+No es uno válido
+Eso porque lo asigné
+Manualmente
+A la base de datos
+Este
+Antes de dejar
+La validación
+Pronta
+Por eso
+Que acá aparece
+Este
+Pero fuera
+Lo único
+Que tendría
+Que darse
+O sea
+Si tiene ejecutivo
+Se agregan
+Estos tres campos
+Si no tiene ejecutivo
+No se agregan
+Básicamente
+No dice
+Y no dice nada
+Simplemente
+No se agregan
+Bien
+Eso
+Con respecto
+A la asignación
+De ejecutivos
+Este
+Creo que
+El shock
+Todavía
+No fue registrado
+Así que
+Cuando lo
+Lo querramos
+Probar
+Hay que registrar
+No está registrado
+Este
+Bien
+Eso por ese lado
+Está
+Lo otro
+Que hay que probar
+Fuera de eso
+Es la asignación
+De
+De pronunciarse
+El club
+De back office
+User
+Que vamos
+A poder agregar
+Un back office
+User
+Desde acá
+Este
+Después de eso
+Creo que
+Cada campo
+Casi editable
+Si
+Hasta el correo
+Este
+Le pregunté
+Hace antes
+En el rol
+De otro admin
+O algún dato
+De otro admin
+Me dijo que
+Validación de roles
+No hay ninguna
+O sea solo
+La la
+Solo
+Eh
+Sacando
+Esta tab
+De acá
+Las tab
+De ejecutivos
+Eh
+La de back office
+User
+Y la de
+Change
+Eh
+User
+Imen
+Solo
+Un usuario
+Administrador
+Puede hacer algo
+Este
+Eso está
+Está contemplado
+O sea ya
+Fue hablado con Santi
+Y quedó así
+No
+No hay ninguna
+Ninguna salida
+Con eso
+La única salida
+Que hay
+Es que si soy usuario
+Logueado
+Este
+Está
+Acá si el usuario
+Tiene
+Eh
+Compañías asignadas
+Te va a decir
+Como que che
+Tenés compañías
+Eh
+A la que fuiste asignado
+Como ejecutivo
+De cuentas
+Porque te dice
+Back office user
+Este
+Está
+Vas a ser limpiado
+De todas esas cuentas
+Y que
+Los ejecutivos
+Deben ser asignados
+De forma anual
+Ahora
+Si soy el usuario
+Que está logueado
+Me va a saltar
+Ese error
+De que no puedo eliminarme
+De este
+Pero fuera de eso
+Si voy
+A ver si
+Hay algún otro usuario
+Vamos a crear
+Uno rápido
+Y lo podemos crear
+Acá
+Ya
+Con cualquier rol
+Ya
+Vamos a sacar
+Administrador
+No más
+A ver
+Es esta
+El email
+Es este
+Ahora si yo voy
+A crear
+Ah
+Es que
+No me deja ponerle
+Por defecto
+Vamos a ponerle
+Cualquier cosa
+Bien
+Ahora
+Tendría que
+Poderme loguear
+En el back office
+Con ese
+Usuario
+Ahí está
+Ahí me pude loguear
+¿Vos sabés que
+Cuando lo creaste
+Pusiste
+El identifier
+Y pusiste
+Crear
+Por un segundo
+Tipo se vio
+El
+Número de teléfono
+558
+Y
+N
+Silvera
+Sin el
+XD
+Como
+Comentario
+No más
+Si
+A ver
+Si ahora
+Por ejemplo
+Le pones
+El ID
+Que le pusiste
+El de
+Tu cuenta
+Y le pones
+Save
+Me pareció
+Ver que
+Se cambiaba
+Ese
+Tipo
+Automáticamente
+No
+No sé
+Vamos a probar
+Crear otro
+Por las dudas
+Vete la grabación
+A ver
+Total
+Esto lo podemos borrar
+Cuando queramos
+Vamos a encajarlo
+Así ahí
+Tenerla acá
+No
+Ahora vamos a probar
+Eliminar uno más
+Ah
+Debo
+Debo haber visto eso
+Que estaba
+Buscado
+Por el
+Por el
+Correo
+Ah
+Puede ser
+Esto parecía
+Normal
+Capaz me confundí
+Con eso
+Bien
+Voy a aprovechar
+No sé
+Si hubiese cambiado
+Ahí va
+Hace lo que pasa
+Si selecciono
+Acá
+El browser
+Se lo pega
+Ahí directamente
+También
+Capaz que no está
+Diferenciado
+El ID
+De
+Del input
+Este
+Con el
+El input
+Este de email
+Vamos a poner
+Ahí va
+El rol
+De marketing
+Líder
+A ver
+Qué es lo que ve
+Porque el rol
+De marketing
+Líder
+El Slack ID
+El otro
+No te lo
+Rellena
+Digamos
+Sólo
+El Slack ID
+Pero
+O sea
+El posta
+Digo
+No el
+Tipo
+El número
+Y el email
+No te lo
+Rellena
+No
+No
+No
+Porque
+En realidad
+No es que está
+Conectado
+A
+Ninguna API
+Slack
+Simplemente
+Valida
+Un usuario
+La base de datos
+Y no le asignas
+El Slack ID
+Se te va a borrar
+Con esto
+Ok
+Ok
+Bien
+Acá me pasó
+Lo mismo
+Este
+X
+X
+Ahora sí
+Me lo veo
+Con ese usuario
+Y voy
+A configuración
+Bien
+Acá
+Puedo ver
+Los ejecutivos
+De cuenta
+Pero no puedo
+Hacer nada
+Y acá
+Bien
+El rol
+De marketing
+Líder
+Lo único
+Que puede
+Ver
+Es lo que
+Ya podía
+Ver
+El día
+Hasta el día
+Hasta el día
+De ayer
+En la tabla
+De configuración
+Que era
+Este
+Acá
+El sistema
+Variables
+Para el
+Site
+Name
+Site
+Que es
+Por las dudas
+Es en esta
+Tabla
+De acá
+De configurations
+Es este
+Tap
+No sé
+Si esto
+De acá
+Del audio
+Interpreter
+Config
+Pero sé
+Es lo que
+Se mantiene
+No más
+Este
+Ahora
+Si yo
+Me salgo
+De acá
+Vamos
+A probar
+Cambiarle
+Lo que
+Vendría
+A ser
+El rol
+Hacia usuario
+Logueado
+Yo estaba
+Respondiendo
+Algo a
+Sandy
+Para intentar
+Logarme
+Con ese
+Usuario
+No veo
+La tab
+De configuración
+Bien
+Este
+Esto
+Sería
+Bien
+Eso
+Por
+Ahí
+Este
+También
+Si
+Quieren
+Corroborar
+Que
+Se
+Eliminó
+El usuario
+O
+Se
+Le
+Cambió
+El
+Como
+Es
+Incógnito
+Mira
+Bien
+Está
+Eso
+Por
+Ahí
+Esto
+Es
+Luego
+Y
+Después
+Está
+El
+Cambio
+Del
+E-mail
+Que
+Esto
+Ya
+Es
+El
+E-mail
+Del
+Usuario
+Del
+Sistema
+Para Todas
+Las
+Compañías
+Que
+Tenga
+Su
+Usuario
+A
+Todos
+Los
+Registros
+De
+Teammate
+Que
+Este
+Asociados
+Usuario
+Por
+Ese
+Correo
+Este
+Se
+Tiene
+Que
+Ajustar
+Se
+Tiene
+Que
+Ajustar
+Si
+Faltan
+Esos
+Dos
+Este
+En
+Caso
+De
+Que
+El
+ritual
+Basel
+Simplemente
+Se
+Genera
+La
+Orden
+Loc
+De
+Qué
+Falló
+Eso
+Este
+Y
+Abordar
+El
+Porqué
+Fallosa
+La
+Piedad
+Lápiz
+en caso de que falle se hace rollback
+en caso de que no falle se cambia
+efectivamente a nuestra base de datos
+si falla a nuestra base de datos
+va a volver a intentar hacer rollback
+este
+y la idea es que quede todo lo que he dado
+este
+fuera de eso
+pero yo probando no llegué a encontrar ningún
+problema con
+este algo concógnito
+este
+así que ta
+y después lo otro que en realidad es esto acá
+lo último de file settings
+que esta en realidad son
+puedes cambiar variables
+de sistema que es
+system variables
+hace referencia
+a la tabla de configurations
+si así es
+no te esperamos
+este
+y acá themes
+hace referencia a la
+de themes
+estoy por
+esto
+ahí va
+bien lo que les decía
+este
+vamos a tener en este drop down
+system variables hace referencia a la tabla
+configurations
+y themes hace referencia a la
+a la tabla de
+app themes
+básicamente en esta hostal se guarda
+en jsonbis
+básicamente
+este
+donde por ejemplo acá para
+lo que les comentaba el site este
+este
+este
+este título hace referencia al atributo
+site name
+en la tabla configurations
+donde se van a abordar obviamente
+este
+estos levels acá están mapeados al valor actual de la
+de la base de datos
+por ejemplo worker m
+o side otc manual
+si yo voy acá van a ver que están mapeados porque
+worker m está escrito así
+está todo junto y en mayúscula solamente
+side otc manual también
+este entonces en el código están
+están mapeados
+si el día de mañana precisamos agregar otro valor
+hay que hacer
+ese cambio en el back office
+en realidad el dosis
+en todos los repos
+ese mapeo y agregar una migración o agregarlo
+si agregar una migración para que soporte esto
+pero fuera de eso
+este acá la idea es que
+se pueda editar todo
+este
+ahí santi mandó un mensaje que si modifica
+en algo de la actual
+este
+después lo van a dejar como estaba
+yo le diría
+inicia acá le pones 25
+le das a abordar veas que se va a 25
+después lo
+perdón que sea el valor que le pusiste que después
+lo vuelvan a abordar rápido a 25
+por más que sea de
+este y luego el tema de preferencia
+capaz no tocar nada de bridge o de rail
+porque en realidad
+lo que precisamos es ver que ese cambio por ejemplo
+esto acá de calenly
+lo podemos editar en develop
+y después evaluarlo
+al valor actual cosa de no tocar nada crítico
+mejor
+pero en resumen es
+este
+ahora
+esto ya lo había mencionado pero
+el role admin puede ver
+ambas entidades
+la de system var a ver si la de teams
+y ver todas las configuraciones
+si voy a teams por ejemplo
+me va a traer solo side back office
+y si hay dropy que tiene sentido
+porque son cosas del frontend
+y por ahora lo único configurado
+son los colores
+este
+entonces si cambian un color y lo quieren ver
+después reflejado en el site
+pues cambiar el color
+ir a ver que está reflejado
+y después volverlo rápido como estaba
+este
+ok
+en realidad sería solo eso
+por este lado
+alguna duda que tengan
+es
+si en principio
+si no podés pasar
+si allí veo que estás poniendo cosas en el chat
+si es posible pasar el listado de pr
+por las dudas
+las que están involucradas en esto
+bien paso pr
+aquí ya las voy buscando
+iba a pedir lo mismo
+porque la verdad que
+fueron bastantes pr
+creo que
+no tengo el link
+capaz en este mismo sentido
+yo también te consulto
+eh
+están todas
+en el back office
+si verdad no
+no hay
+hay algún cambio de modelo
+o migración o algo
+si hay cambio de modelo
+hay migraciones
+no solo toca back office
+hay prs al worker
+por el tema de cron shop
+hay prs al
+al site
+mismo migraciones
+este
+una migración en el site
+para obviamente agregar
+estas tablas de acá
+de las mns
+de ejecutivos
+ejecutivos mns
+después
+para esto de file settings
+hay una migración
+que agrega
+este
+acá en system variables
+las cosas de worker m
+hay también
+assets de
+del correo
+este
+para cuando se le notifica a un usuario
+que
+se le asignó un ejecutivo de cuentas nuevo
+que al usuario
+al owner de la compañía
+solo al owner
+le llega ese correo
+este
+y a los ejecutivos
+ejecutivos de das avance
+se les comunica por slack
+sacando eso
+no puedes
+bien
+voy a decir
+sacando eso
+se toca todo
+y bueno
+también
+va a haber una perra
+este capaz que
+ni se las paso
+que es la de dropi
+para actualizar el
+el modelo
+para actualizar el modelo
+eh
+sabrías decirme
+capaz que no
+pero así tipo
+de memoria
+sabrías decirme
+si el worker está involucrado
+en alguna
+en algo de esto
+más allá del cron show
+más allá del cron show
+hay algo que
+haga el worker
+creo que no verdad
+más allá del modelo
+también
+de la actualización de modelos
+digo
+el worker
+hace algún tipo de operación
+en todo esto que probamos
+más allá del cron show
+tenés idea
+eh
+sí
+el envío de
+bueno es
+tiene
+hay un evento
+para que se triggere
+este
+la notificación
+eh
+porque
+desde el back office
+al poder
+reasignar el ejecutivo
+de cuentas
+este
+va también
+reutilizar
+este
+no sólo
+en
+este
+reasignar el ejecutivo
+si se le asigna
+el ejecutivo
+a una compañía
+desde el back office
+va a disparar
+el email también
+este
+la notificación
+tanto es el usuario
+como por slack
+ah
+está
+porque estoy pensando
+estaba pensando
+en
+en intentar
+levantar
+base de datos local
+pero
+si el worker
+hace algo
+menos
+eso
+en que el worker
+no lo podemos
+usar
+local
+o sea
+con base de datos local
+creer
+eh
+ok
+ok
+es que
+en realidad
+podés probar
+tener todo
+levantado
+este
+y apuntar
+a
+pasa
+que
+el tema
+es
+son los eventos
+de cns
+sí
+eso mismo
+este
+no pasa
+que ya es demasiado
+vuelta porque
+si no podés
+configurarte
+como para tener
+ese local
+sí
+pero
+yo le estuve
+buscando
+ahí se escapa bastante
+le estuve dando
+bastante vuelta
+y se complejiza
+sí sí sí
+será cuestión
+de probar
+creo que
+la forma más

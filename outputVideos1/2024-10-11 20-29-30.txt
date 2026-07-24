@@ -1,0 +1,552 @@
+Tiene conflicto.
+No, la 2, la 2.
+La 153 tiene conflicto.
+Claro.
+Ahora vamos con la...
+Hay 2.
+La 152.
+Marto, ¿te animás a probar de nuevo la 152?
+La 153 no la tiene que mollar porque tiene conflicto.
+Claro.
+Pero usted entiende por qué.
+Sí, el archivo ese de mierda.
+Ahí está.
+Bueno, le doy merge.
+Acá, squash.
+Sí.
+Y cuando le da merge, se fija que de velo anda, ¿no?
+Digo, porque hace un rato, no sé, ¿usted dio algún merge?
+¿Puede ser?
+No.
+Entonces, ¿desde el merge de ayer que...?
+Ah, porque yo la probé y ya la habilité.
+Está ahí, no pasa nada.
+Igual ya la habías aprobado.
+Sí.
+O sea, es un reaprove.
+Escuchame.
+Escuchame eso también.
+Quiero decir que desde ayer, de velo estaba caído por un merge.
+Y el único que mergeó fue usted.
+Por favor, estén más atentos.
+Atentos al...
+No solo a GitHub, sino entrar al link y que de velo te deja loguearte y eso.
+El único que es complicado de probar es el work.
+Pero ojo, porque yo ahora justo estaba desplegando todo el site,
+voy a ver de velo que estaba caído.
+Está, es un error que no queda otra que haga yo, Marto, velo.
+Es reintento en AWS.
+Pero necesito que estés más atento a esos casos.
+Porque en producción normalmente tenemos todo un flujo para evitar estas cosas.
+Pero no está bueno que quede de velo caído todo un día.
+¿Sí?
+Así que cuando mergeé, chequé, o sea, es entrar al link.
+Por las dudas, refresque el sitio, entrar al link.
+Por lo menos loguee ese.
+Si se loguea y anda bien, está eso.
+Este.
+¿Qué más?
+Bueno, coménteme.
+Las dudas del worker.
+Sí.
+Vamos a hacer lo mismo ahí con esas dos.
+Yo en realidad, claro, acá estoy.
+Obviamente que está mal el stabbing.
+Pero si habláramos de...
+Por lo menos el título o los casos de prueba del controller.
+Cron Show Controller.
+Ya sé que está, pero...
+¿Te ve bien ahí?
+Sí, sí, sí, me ve bien.
+El concepto de los tests, ¿no?
+El stabbing o el moqueo.
+No, está bien, está bien.
+Lo único que decía es que sea genérico.
+Que no pruebe el Delete Company Draft on Pay.
+Sino que moquee y pruebe una función cualquiera.
+Ahí está.
+Ok.
+Entonces, estos no.
+Exacto.
+Sí, exacto.
+Sí, exacto.
+Bueno.
+Pero, está.
+Pero en principio tener así, o sea...
+Ah, bueno, y dividir.
+Una de las cosas que usted me marcó, dividir el otro, el manager, porque estaba muy grande.
+¿Por qué moqueas el load?
+Para saber que te tira.
+Sí.
+Está bien.
+No dije nada.
+Está bien.
+Y...
+Se echó el mouse.
+Dame un segundito.
+No, a ver, el concepto está bien.
+Lo que yo le decía es lo que hablábamos hoy.
+El Cron Shop Manager tiene que probar funciones genéricas.
+¿Sí?
+O sea, vos ahí deberías moquear.
+Entrá al Cron Shop.
+Vos deberías moquear el Cron Shop Controller.
+Bueno, ahora ya estoy en el Cron Shop Controller.
+Ahí va.
+Bueno, está.
+Bueno.
+Ese, el Cron Shop Manager, o sea, el que maneja los Cron.
+Ahora sí veo bien.
+Baja un poquito.
+Ese no debería tener absolutamente nada de Company Draft.
+Ni de ninguna función del Cron Shop Controller.
+¿Está?
+O sea, vos deberías generar un mock que simule funciones.
+O sea, que simule que eso tiene funciones random.
+Ah.
+¿Por cuá?
+Porque en realidad el Cron Shop Manager es...
+O sea, no tiene ni idea de ningún tipo de controller.
+O sea, la idea es que sean...
+Vos los métodos...
+Vos los tomás de la base de datos.
+Es más, después tenemos que mejorar un poco más.
+Porque la idea es que...
+O sea, la dependencia del Cron Shop Controller sea lo más dinámica posible.
+¿Está?
+O sea, como que no tenés ni idea de que existe el Cron Shop Controller.
+O sea, lo único que tendrías que hacer es moquearlo y simular que tiene funciones.
+Porque yo hoy o mañana saco una de esas funciones y los test del Cron Shop Manager fallan.
+El Cron Shop Manager es el que se encarga de levantar y bajar Cron.
+No importa la función.
+Entonces tendríamos que generar funciones...
+O sea, simular que el Cron Shop Manager tiene una función.
+Por ejemplo, yo qué sé.
+Obtener papa frita.
+O...
+Example method...
+Example Cron method.
+¿Sí?
+Y...
+Está.
+Y se ejecuta.
+Pero no es la idea del Cron Shop...
+O sea...
+No es la idea que vos en Cron Shop Manager pruebes una función en particular.
+Sino que...
+Sea genérico.
+O sea, o levantás una...
+O sea...
+O sea...
+O sea, la idea es que vos simules que el Cron Shop Controller tiene funciones y se te hace esas.
+Vos le asignás al Cron Shop Controller funciones moqueadas y le asignás esas.
+Esa es un poco la idea del Cron Shop Manager.
+Mira...
+De los test del Cron Shop Manager.
+Después del Cron Shop Controller, ahí sí, la idea es que pruebe...
+Que es más, ahí no es prueba...
+Mirá, entremos al Cron Shop Controller en concreto.
+Voy.
+En realidad, yo no quiero que cree funciones del Cron...
+Cron Shop Controller.
+Yo quiero que cree funciones por cada método.
+Esto es el equivalente a un endpoint.
+O sea, que de alguna manera, usted tiene que simular un test por cada...
+O sea, ahí yo en test debería ver una carpeta que sea Cron Shop Controller y adentro un archivo que sea Delete Company Drive Home Pay.
+Y ahí chequeás todos los flujos de...
+Es como si fuera un método.
+Ay la pucha.
+Porque son totalmente distintos.
+¿Se escuchó eso?
+Sí.
+¿Qué cosa?
+Ahí.
+Lo de que son todos distintos.
+Sí.
+O sea, la idea acá...
+¿Y qué?
+¿Y qué?
+Sí.
+Estoy.
+Yo lo escucho.
+La idea acá es que usted no dependa...
+O sea, no dependa de la implementación...
+O sea, que separe lo que es...
+Piense que para los Cron's, cada método que está en Cron Shop Controller es el equivalente a un endpoint.
+Entonces, cada endpoint...
+Acordate que tenía un test...
+Es por separado.
+¿Sí?
+Sí.
+Ah.
+Y después, el Cron Shop Manager...
+Yo lo que quiero es que vos hagas un test del Cron Shop Manager y simules y moquees el Cron Shop Controller para inventar que existe una función.
+O sea, vos ahí le inventás que tiene una función.
+No la tiene.
+La inventás.
+Bien.
+Ah, entonces...
+Importante.
+No es un test de Cron Shop Controller, sino que es un test por cada método.
+Y después, el Cron Shop Manager es una clase que lo que hace es...
+Manejar los Cron's.
+Los activa, los actualiza, los ejecuta.
+Yo quiero que todo ese manejo de los Cron's funcione como es esperado.
+¿Con qué función?
+¿Qué función levanta?
+Y bueno, una moqueada.
+Porque si yo mañana te saco esas dos funciones...
+Delete y Send Purchase Reminder...
+Importa tres carajos.
+Tendría que seguir funcionando el otro.
+¿Sí?
+Me encantó.
+Me encantó.
+Me aclaró sumamente el panorama.
+Ahora, ¿qué pasa?
+Yo lo que le decía era...
+Bueno...
+Cron...
+Cron Shop Manager tiene test.
+Que son exclusivos del manejador.
+Nosotros queremos funcionar que el Cron Shop Manager anda bien.
+Cron Shop Controller tiene los métodos...
+Los Cron's exclusivos.
+Y queremos funcionar como si cada uno fuera un endpoint.
+Ahora...
+Vamos a tener que...
+Una vez que tengas estos dos armados...
+¿Sí?
+O sea, una tarea es hacer test del Cron Shop Manager.
+Otra tarea es hacer test del Cron Shop Controller.
+¿Sí?
+Pero en realidad no es hacer test del Cron Shop Controller.
+Sino es hacer test directamente del Delete Company Draft Unpaid.
+¿Está?
+Y el Send Purchase Reminder.
+Eso en realidad...
+Hasta el Delete llega la tarea.
+Después hay otra que sería lo del Send.
+¿Sí?
+Entonces...
+Otra...
+Y después...
+Que probablemente creemos otra tarea para eso.
+Yo quiero que ahí sí...
+Crear un test unitario.
+Que sea de integración.
+De fijarse que bueno...
+Que cuando vos...
+Vos realmente registrás un Cron en el Cron Shop Manager.
+Que exista.
+Que el Cron Shop Manager acceda a ese método.
+Y ejecute el Delete Company Unpaid.
+¿Sí?
+Bien.
+Que eso todavía estoy en duda si agregarlo o no.
+Pero sería un test de integración.
+Porque nosotros con el Cron Shop Manager probamos el Cron Shop Manager.
+Con los métodos exclusivos vamos a probar cada método.
+Pero no tenemos un test que pruebe la integración.
+Bien.
+¿Se entiende?
+Sí.
+Por ahora...
+La tarea que involucra...
+Por eso yo le dije que es de 13 puntos.
+Que la dividan en dos tareas.
+La tarea involucra...
+Uno.
+Hacer test del Cron Shop Manager.
+Dos.
+Arrancar con los tests.
+O sea...
+Es más.
+Le diría...
+No es hacer test del Delete Company Draft.
+Es arrancar.
+Hacer un test, dos tests.
+Y después hacer test más profundos.
+¿Se entiende?
+Y capaz que después creamos otra tarea.
+Porque la idea ahora es como que armar...
+O sea...
+Armar algo que digas...
+Bueno.
+Exacto.
+O sea...
+Validamos el POC.
+Validamos la estructura.
+Genial.
+Sigamos.
+¿Sí?
+O sea que yo...
+Como te digo esto.
+Con test del Cron Shop Manager.
+Y un solo test del Delete Company Draft.
+Un P.
+Capaz dos.
+¿Está?
+Dos tests.
+Por las dudas.
+Dos tests.
+Ya está.
+Después creamos otra tarea para completar los tests del Delete.
+¿Se entiende?
+Pero necesitamos concretar la tarea.
+¿Está?
+Es más.
+Cuando tenga eso...
+Probablemente le diga...
+Perfecto.
+Siga con las otras tareas de regresión y eso.
+Que están en el debe.
+Y no es tan pronto.
+¿Sí?
+Y después volvemos acá.
+Porque ahora lo que necesitamos es...
+Primero.
+Terminar la parte de los tests del Cron Shop Manager.
+Y armar la estructura de cómo van a ser los otros tests.
+Ya una vez que tengamos eso.
+Bueno.
+Perfecto.
+Está.
+Seguimos con otro.
+Porque tenemos que terminar los tests de regresión.
+¿Sí?
+Y después volvemos a esto más tarde.
+¿Está?
+Bien.
+Porque tenemos que llegar...
+O sea.
+El sprint se completa haciendo esto y completando las otras tareas que faltan.
+¿Bien?
+Bien.
+O sea.
+Esto es un POC.
+No es completar el delete.
+Es como...
+Bueno.
+Es armar la estructura de cómo son los tests.
+Después.
+Una vez que tengas la estructura.
+Ya después es bueno.
+Replicar.
+Entenderlo.
+Analizarlo.
+Bla, bla, bla.
+¿Bien?
+Bien.
+Perfecto.
+Entonces ahí lo que le digo es...
+Siga por ese camino del bien.
+Y me avisa huecos.
+Muy rápidamente.
+El stabbing estaba bien.
+El moqueo en este.
+Ahora.
+O sea.
+Usted me dice que bueno.
+Tiene que ser genérico.
+Pero...
+No había...
+Nada grueso en sí.
+Hay que sacar todo esto.
+Pero...
+Claro.
+El tema es que hay que sacar mucha cosa.
+Entonces.
+Cuando saque toda esa cosa.
+Lo voy a volver a analizar.
+No te voy a mentir.
+Ok.
+Hay que ir mucha cosa para sacar.
+Ok.
+Cuando saque...
+¿Por qué te pasa?
+Ahí estamos mezclando dos cosas distintas.
+Y lo que estoy...
+Es lo que yo te decía hoy.
+Si vos...
+Fijate que nosotros...
+Hacemos todo eso.
+Pero quedó mucho más corto desde el app.
+Fijate que si vos me decís que...
+Para cada test.
+Para poder probar.
+El delete.
+Y el otro.
+Y el send.
+Y bueno.
+Y los otros que se vayan agregando.
+Tenés que hacer toda esta intro.
+Es un problema.
+Porque no es...
+No es escalable en el tiempo.
+Vos los test.
+Hoy en día.
+Si yo te digo.
+Hacé test de los endpoints.
+Los sacás más rápido.
+Porque ya sabés la estructura.
+Por la duda.
+Estamos hablando de...
+Cronjovemanager.spec.ts
+Exacto.
+Exacto.
+En este.
+En ese.
+Vos no...
+Quedó muy...
+Muy larga.
+Las inicializaciones.
+Para poder también incluir.
+Los...
+Las pruebas.
+Del delete.
+¿Entendés?
+Y no es escalable esto.
+¿Va?
+O por lo menos yo no lo veo escalable.
+Ahora.
+Entonces lo que yo digo es bueno.
+Es distinto.
+Porque si yo te digo.
+Probó un endpoint.
+Vos ya sabés cómo probó un endpoint.
+Porque ya tenemos una estructura.
+Más o menos sabés lo que es moquear.
+Está medio ordenadito.
+¿Sí?
+O sea.
+Más o menos.
+Siempre es la misma estructura.
+En cambio.
+Esto.
+Son muchas cosas.
+Que es muy.
+Muy acoplado a.
+Al delete.
+¿Sí?
+Este.
+Y no lo veo tan genérico.
+Por eso digo.
+Bueno.
+Cronjo Manager.
+Que pruebe Cronjo Manager.
+Pues imaginate que solo estás probando el Cronjo Manager.
+¿Va?
+Las dependencias externas al Cronjo Manager.
+En este caso.
+El Cronjo Controller.
+Deberías moquearlo.
+¿Sí?
+Moquearlo.
+Y simulás que tiene una función.
+Por eso yo te digo.
+Si yo voy al Cronjo Controller.
+Y le saco una función.
+Los tests de Cronjo Manager.
+Deberían seguir andando.
+¿Sí?
+Bien.
+Y después.
+Hacer test del Cronjo Controller.
+¿Está?
+Con eso.
+Bueno.
+Vamos a tener de alguna manera.
+¿Está?
+La garantía de que.
+Bueno.
+Que está registrando bien los Cronjos.
+Que funciona todo bien.
+El manejo de registro de los Cronjos.
+Y asimismo.
+También.
+Que bueno.
+Que los.
+Y después.
+Podemos tener una estructura.
+Para probar los métodos del Cronjo Controller.
+Es lo que busco.
+Y la verdad es que no.
+Me va a quedar un debe ahí.
+De hacer todo de integración.
+Pero por ahora.
+Creo que.
+Y dado el tiempo.
+Que estamos a viernes.
+Y el sprint se termina el lunes.
+Y todavía falta.
+T de regresión.
+Y todas esas cosas.
+Completemos esto.
+Que creo que nos va a ayudar un montón.
+Y va a ser un cambio.
+Y después.
+Bueno.
+Después.
+Más adelante.
+Seguiremos investigando.
+Cómo hacer un improve de esto.
+¿Bien?
+Perfecto.
+Buenísimo.
+Me ayudó un montón.
+¿Está?
+Entonces.
+De nuevo.
+Un archivo del Cronjo Manager.
+Y dentro del test.
+Una carpeta.
+Que diga.
+Cronjo Controller.
+Metodos.
+Lo que sea.
+O Cronjo Controller.
+Y ahí creas.
+Un test para el delete.
+Con uno o dos casos.
+Uno o dos tests.
+De nuevo.
+La idea acá.
+Es.
+No es.
+No es terminar todo perfecto.
+Sino poder armar algo.
+Para que sirva.
+Y esté bien.
+Y esté prolijo.
+Y listo.
+Después seguimos agregando.
+Pero tenemos otras tareas.
+Que tienen prioridad.
+Que tenemos que liquidar.
+¿Está?
+Este.
+Entonces eso.
+O sea.
+También.
+No te pases de rosca.
+En intentar.
+Que terminar todo.
+Y que siga todo.
+Sino.
+Llegar hasta.
+Ahí.
+A ver si podemos liquidar eso.
+Y después ya podés liquidar.
+Con las otras tareas.
+Para.
+Para completar bien.
+En sprint.
+¿Bien?
+Buenísimo.
+Perfecto.
+Bien.
+Bueno.
+Me pega el grito.
+Vaya cosa.
+Sigo con.

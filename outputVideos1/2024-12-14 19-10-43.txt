@@ -1,0 +1,191 @@
+Cada uno de estos endpoints, que si ven, el async handler lo que hace es
+obtiene el controlador y llama al endpoint con este string.
+Esto es, digamos que llama al método en concreto.
+En este caso, para el controller, tenemos todos los métodos acá.
+Siempre cuando se llama al endpoint, están estos logs arriba del todo.
+Este log debe estar en los specs.
+Ahora que estamos chequeando los specs, estos logs que tiene cada uno de los endpoints
+tienen que estar en los specs.
+O sea que todo endpoint siempre falla en la entrada acá.
+Entonces siempre tiene que estar en los specs.
+Además de ese comentario...
+A ver...
+Pero, mirá, yo intenté ponerlo en los specs eso, pero me fallaba, vos sabés.
+Siempre debería estar en los specs y no debería fallar porque se está llamando a ver el log.
+¿Es lo primero que pongo en los specs?
+No importa el orden.
+Entonces, después de que vos llamás al método, esto se llama.
+Además, si no moqueás el log, se imprimen.
+Pueden chequearlo porque se imprime.
+Entonces, esto capaz que le está cerrando al string.
+Pero siempre se llama en el spec.
+Todos los endpoints lo tienen, que es un log que me permite a mí en AWS saber que se llamó a tal endpoint.
+Literal, lo que hago, si se fijan, es copiar literal el nombre del método y lo pongo acá.
+No es la ruta real, sino es el nombre del método.
+Es un tema de práctica.
+El otro comentario es que hay otro log que está escondido.
+¿Qué pasa si explota esto acá?
+Por ejemplo, si explota esto acá.
+¿Quién lo ataja?
+Bueno, quien lo ataja es este middleware.
+Está acá.
+¿Sí?
+Ven que acá se usan las rutas de B1.
+Y a todas las rutas de la B1 se le aplica este out middleware.
+Y después se aplica a nivel generar el error handler.
+¿Sí?
+Ajá.
+Hay varios millwares, capas de millwares que tenemos cuando hacen lento.
+Este out middleware no pasa nada, son los IP, no hay ningún problema.
+Este error handler, eso quiere decir que cuando ustedes explotan los errores, se va a llamar a este log y a este.
+Siempre se llaman estos dos.
+O solo se llama este.
+Si no es base error, se llama solo este.
+¿Está?
+Digo, porque vi que hay varios tests que no lo tenían.
+¿Está?
+Y la cagada es que ustedes cuando moquean el log error, no pueden trackear esto.
+Porque ya no se imprime por consola, entonces no les aparece más.
+¿Sí?
+Entonces es importante que, si quieren, pueden poner un console log acá común.
+Para fijarse si lo están atrapando o no.
+O para detectarlo.
+Porque esto, cuando ustedes lo moquean, moquean que el error tire, cuando se llama el error, llame al método del stack.
+¿Estamos alineados?
+¿Cómo, cómo?
+Cuando ustedes hacen el stack de este error.
+¿Sí?
+Ustedes no llaman al console log real.
+Llaman al stack.
+O ustedes quieren hacer esto y lo chequean.
+¿Sí?
+O sea, ustedes están simulando que llamás al log punto de error, pero en realidad llamás al stack tuyo porque vos querés agarrar lo que realmente está viniendo.
+Y después te fijás.
+Che, esto es lo mismo que esto.
+Lo que querías imprimir es lo mismo que vas a imprimir.
+Lo que digo es, este error, este log está medio camuflado.
+Porque no es visible.
+Ustedes miran acá.
+No hay try and catch visible.
+Y tampoco para el servicio.
+Ok.
+No hay try and catch visible.
+Pero hay un try and catch genérico.
+Que de nuevo está acá.
+¿Sí?
+Y esto es igual para el site.
+Es literalmente la misma estructura para el site.
+Para nosotros, como máximo, tenemos tres capas de midware.
+Lo primero, el error handler, que es una capa al final.
+O sea, que engloba el error handler.
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+¿Verdad?
+Esa es la capa final.
+O sea, que engloba...
+Se hace al principio, pero engloba todo.
+Luego tenemos esta capa, que nosotros miramos que el host de la consulta sea válida.
+Que la IP sea válida.
+Que el dominio que me haga la cosa sea válido.
+Hacemos todo un chequeo para fijarse que no cualquier carlito nos haga cosa.
+¿Verdad?
+¿Sí?
+Tiene varios chequeros.
+¿Verdad?
+Y después, adentro del AV1, a algunos le agregamos el cognito midware para fijarse
+que esté autorizado para uso.
+usuario o no.
+Yo lo que les digo
+es que en los logs que ustedes agarren
+muchas veces
+está faltando este. ¿Cómo pueden chequearlo?
+Bueno, ustedes pueden agarrar
+console.log
+y acá
+se va a imprimir. ¿Y cuál es la diferencia de esto y esto?
+Esto ustedes lo moquean.
+Pero te hacen
+un stab. A ver si puedo agarrar. ¿Hay algún
+test que tenga stab de los logs?
+Creo que
+acá no está.
+Pero si me muestran cualquier test
+ustedes moquean el error
+y moquean el info.
+Que son los dos métodos que se utilizan.
+Le hacen un stab a esto.
+Siempre cuando
+explota, muchas veces está faltando
+atrapar a este tipo.
+Que acá es donde
+llega el error real.
+Porque si se fijan,
+acá se imprime el mensaje real.
+¿Lo ven?
+¿Lo ven?
+Esto ya
+lo tenían en cuenta.
+¿Lo habían visto? ¿No lo habían visto?
+¿Estaba bueno?
+Perfecto.
+Si vos querés, podés salir a producción
+y cuando yo tenga el tiempo esta semana
+de setear las APIs, ustedes van a poder
+empezar a correr el proyecto. Y eso va a estar bueno.
+¿Está?
+Para que ustedes puedan ver más estas cosas.
+Pero igual, este sería el único
+detalle que les estaría faltando.
+O sea, cuando ustedes
+hacen acá en el test, por ejemplo
+agarra cualquier. Y ustedes
+hacen la request a la app
+post endpoint.
+Falla. Se está llamando a ese log.
+¿Sí?
+Si yo corro los tests.
+Ahora explotaban todos los tests.
+¿Dónde caía todo?
+Madre mía. ¿Qué pasa?
+¿Se pudrió?
+Mirá. ¿Ven? ¿Ven acá?
+Database error.
+Vacío.
+Mensage log. Database error.
+Tal cosa. ¿Sí?
+Error. Service error.
+The email address not valid.
+Todo esto.
+¿Ah?
+Los errores, que son así, se están imprimiendo acá.
+En este middleware que vimos.
+¿Sí?
+Pueden debaguearlo y mirarlo.
+Pero es importante. Acá es donde, en este
+message log, porque el message log
+es lo que, recuerden, lo que realmente
+pasó. No es el validation error
+genérico. Sino lo que realmente
+pasó. ¿Sí?
+O sea, hay que probar
+lo que realmente pasó. No hay que poner
+el error. Fíjate que a vos siempre te
+tira un error genérico. Validation error.
+Un expected error.
+Pero el message log te dice, falló en tal
+cosa. Falló, por ejemplo, en
+el nombre del cliente es
+larga. ¿Sí?
+Esperen que Santi, otra vez, está
+tan temporal ahí.
+Lo voy a...
+Seguimos. Denme un segundito.
+Chequeo con Santi
+el sprint.

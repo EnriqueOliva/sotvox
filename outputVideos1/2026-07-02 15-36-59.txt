@@ -1,0 +1,2448 @@
+el del backoffice no, el del site
+el del backoffice
+yo entendí que le ibas a comentar a vos por eso
+andáselo en un chat conmigo a Fernando
+por favor
+así podemos bajarlo pronto
+bueno, todo a tuya Marti
+adelante
+la idea de esta reunión
+en realidad era para
+ver a ver si tenían algún feedback
+o algún comentario respecto
+al uso de los prompts
+como venían con eso
+capaz que no
+hoy en día están en todos los repos
+así que en realidad
+ahí siento ser libre de usarlos
+pero nada, es más que nada escucharlos
+a ver si tenían algo para traer
+porque la idea es ir iterando sobre eso
+no sé si alguno por ejemplo
+el tema de
+el
+cosen y el reviewer
+como fue con eso
+si se encontraban algo
+que capaz que no
+les convence
+o si les pareció que pude bastante
+sí
+y bueno
+visto que estuve haciendo bastante
+co-review
+estuve testeando bastante
+ese
+el agente reviewer
+y
+y también estuve usando
+una skill de Claude
+que
+se llama creo que co-review
+una cosa así
+y
+la cosa
+la cuestión es que creo que estuvo bastante
+bastante bastante útil
+ha encontrado muchas cosas
+sí que algunas cosas no son muy importantes
+pero sí que ha encontrado
+no digo todo
+pero ha encontrado
+muchas cosas muy buenas
+o sea me he centrado
+digamos en
+en verificarlo
+me he puesto un poco
+un poco más serio
+como nunca lo hice
+en verificarlo
+en cuanto al co-review
+y
+y creo que está muy bueno
+lo que sí
+iría tipo bichando
+de hacer una especie de
+versión 2
+segunda versión
+v2
+o algo por el estilo
+porque vi que
+aún después de mis comentarios
+les hice seguimiento a las PRs
+y vi que
+seguían surgiendo comentarios
+bastante típicos
+por así decirlo de ustedes
+y yo creo que es muy bueno
+y
+y
+y ta
+si la cosa es que queremos evitar
+que
+que
+que ustedes
+tipo
+que
+tipo de evitarles trabajo a ustedes
+y
+y que la correa
+la pasada por nosotros
+sea mejor
+eh
+ta eso
+tal vez que una buena v2
+por fuera de eso
+el
+el
+el coso para
+este como es
+el para desarrollar código
+no para
+el
+el
+el
+el
+y lo más típico
+el que
+no lo Poet
+de esta forma
+que una cosa
+si es que
+al momento
+yo no digo
+que no ¿no?
+que es como lo que
+cuando decís a veos
+es porque sentiste
+el reviver
+vuelve a repetir comentarios
+o porque entre ahí
+porque qué es lo que
+es que le falta
+no lo contario
+o sea
+como que
+sigue pasando que veo
+tendría que haberme
+anotado quizás
+pero
+comentar y ustedes que de repente
+se repiten
+qué
+es como antes pasaba lo de
+lo típico de
+si se te escapa un repositorio
+en los tests o antes lo del tenemos la constante de empty string y siempre nos la comíamos tipo
+ese tipo de cosas que ahora pasaron tipo dos o tres veces nomás pero tal al estarle haciendo
+seguimiento vi que que tienen las mismas características de error tipo o pasó por
+ejemplo con lo de custom button que está como que no utiliza mucho de repente algunas cosas
+que ya están o algo de eso que ya estoy hilando muy fino pero puede haber pasado o sea yo de mi
+lado por lo menos en las últimas veces
+que revisé no noté ese tipo de comentarios pero también puede haber pasado que esas
+personas fueran más viejas y no se hubieran hecho con los prompts porque en realidad son
+relativamente nuevos y en realidad lo que es la generación en sí capaz que es mucho se ve
+mucho más útil en funcionalidades más complejas son más grandes que ahí pueden haber más más
+chance de que pase el tema de comerse alguna variable de cargoletar texto bla bla bla
+pero acá la idea de los prompts era que primero facilitar también de su lado de que pudieran llegar
+con una perra más pulida y no tener que comerse todo el choclo de que nosotros unida y vuelta con
+comentarios pelotudos que ya de una la gente a ella ayude porque está difícil o sea de memoria
+nadie se sabe todas las constantes que tenemos o definidas y demás pero está bueno que él ya
+hace trabajo y lo revise y también tener en cuenta otros aspectos de no sé de perros que no se han
+conseguido y Hokkaido pero en el caso de la movilidad del chat es algo que creo que es
+muy importante por ejemplo muchas de las cosas de los adelante que si usted no sabe nada más
+así bien es decir a las preguntas de las que le dice en la mano de la gente que sabe nada más
+entonces en este momento yo no sé de qué sea lo que le va a pasar así que tenemos que ver
+mucho más y también se nos puede dar la oportunidad de que usted se quede en contacto con otras personas
+pero para que la gente ya se ase them con las personas que presenten que ha terminado este EP
+la revisión, mi idea fue que cubriera
+todos los puntos posibles
+pero también hay que tener en cuenta que
+la idea era testear a ver si no se estaba
+sobrecargando, si no llevaba a un punto de
+tirar cualquier golazo, porque era
+demasiado lo que tenía que
+analizar y capaz que no se te tira
+cualquier boludez que no es importante
+o que directamente no corresponde
+pero por lo menos
+de mi lado, con las últimas
+PR, si es que estaban usando los prompts
+no noté tanta
+o sea, por lo menos no noté tanto comentario
+boludo, entre comillas
+que ta
+creo que eso es la idea, que facilite
+que más que nada en PR
+también que son muy grandes
+que son funcionalidades más complejas
+por lo menos esa era la idea
+¿sí? ¿comentario?
+y dos cosas, primero
+o sea, sobre los comentarios
+medios así boludos, tipo
+por mi parte
+uno me lo
+hizo notar Kike, por ejemplo
+que había
+tipo, que el reviewer había
+pedido un
+un unitest, tipo que
+nada que ver
+y otro
+no sé, capaz que se
+tipo, se vio muy
+como que
+en nuestro
+¿cómo nosotros llamamos a los test de integración?
+unitest, no sé, capaz que
+por ahí se confundió, no sé
+pero está
+y después otros más que intentó
+sacar, pero
+pero que los caché ahí
+fueron también de
+sobre cobertura
+algunos también sobre
+PRs que corrigen
+tests, porque
+a cambiar de código
+se rompe algún test o algo
+bueno, justamente
+eso
+que funciona un poco raro
+no sé si ahí terminan de entender
+bien
+el tema de los tests
+no sé si es la idea, por ejemplo
+si se hace una PR
+y nosotros tenemos, no sé, lo último
+de los tests de OTCR
+que desde mi punto de vista
+son como que
+super, que abarcan absolutamente
+todos los casos y todo
+tienen tipo una cobertura tremenda
+llegando a tener, creo que
+un método tiene hasta 70
+casos diferentes
+así por ejemplo
+quizás
+creo que es un método que se puede hacer
+o sea, creo que un comentario fue
+dirigido justamente a eso
+que, o sea, le respondí
+también a ese comentario
+sobre
+mantenemos
+justo sobre OTCR
+o algo, si hacemos
+una funcionalidad
+que toca algo de un test
+o toca sobre cierta área
+y esto sugiere
+como fue el caso de crear un nuevo caso
+de test
+de revisar
+a ver si los otros tests también deberían
+verificar esto
+tipo con un
+con una aserción más o lo que sea
+no sé, tipo, qué piensan
+con respecto a eso
+eso fue otra cosa
+que pasó
+esto para mí es clave
+hay dos cosas
+uno, o sea, voy a separar dos cosas distintas
+uno es
+los comentarios de las PRs
+sean de quien sea, se tienen que comentar
+o reaccionar
+sí, porque cuando llegan a Martina y a mí
+nosotros no podemos ver PRs
+o sea, sin comentar
+o con comentarios tipo, yo qué sé
+Jonathan, Fernando, Enrique o quien sea
+dejó comentarios
+y no le di pelota, igual mandé
+a no ser que sea algo que yo estoy diciendo
+les escriban por privado, por favor, pasan la pull request
+o vamos a mercear esto
+o sea, no puede ser que hayan comentarios sin reaccionar
+porque si estamos desprestigiando
+el trabajo que se tomó el otro
+al, bueno, sentarse a comentar
+o mismo mandarle a Cloud
+a que le comente, sí
+ya de ahí a si tenemos 10.000 comentarios
+si cierta persona X empieza a hacer 10.000 comentarios
+pues son cosas con la IA puede pasar
+empieza a hacer 10.000 comentarios pelotudos
+bueno, está, ahí
+lo pueden charlar con la persona
+o directamente elevarlo por nosotros
+o sea, sientan la confianza de charlar ese tipo de cosas
+porque, está, al final del día esto es trabajo
+entonces no quiero que perdamos el tiempo
+y si alguien hace
+sobreuso incorrecto de la IA
+o sea, tenemos que corregirlo
+lo puede hacer sin querer
+o queriendo, lo que sea
+pero es algo que no se puede dejar pasar
+porque al final del día
+este
+es su trabajo
+y tampoco van a estar contestando 10.000 boludeces
+porque alguien manda a la IA
+a comentar una PR y no contesta
+pero lo que, este
+y no se toma el tiempo de ni verla
+pero sí
+este
+el hecho de que si hay comentarios en contextos normales
+tienen que todos tener respuesta
+¿está?
+y lo primero que
+yo ya se lo indiqué a Martina
+pero también los
+quiero que lo tengan en claro
+es que si nosotros vamos a revisar una PR
+y tiene, por ejemplo, yo que sé
+voy a poner un ejemplo, no más, ¿no?
+tiene comentarios de Enrique
+o de Yona
+o quien sea
+y no les contestaron nada
+y subieron el comité así nomás
+yo la voy a volver a intern
+¿está?
+y Martina tiene la misma directiva
+¿sí?
+vuelve al proceso de intern
+¿está?
+o sea, literal el comentario va a ser
+que vuelva al proceso de intern
+hasta que comente las cosas
+¿está?
+y la idea es evitar ese tipo de comentarios
+yo sé que la IA nos facilita un montón
+y todo eso
+y todo lo que es
+y todo lo que es la inteligencia artificial
+nos ayuda un montón
+y hace que podamos desarrollar más rápido
+pero nuestros flujos tienen que ser prolijos
+y ahí es donde
+es la diferencia que hacemos nosotros
+porque si no al final del día
+voy a hablar totalmente criollo
+los rasgo a todos
+y laburo yo
+y para alguna cosa laburo a Martina
+y sacamos todo con IA
+¿está?
+o sea, la idea no es esa
+¿sí?
+el valor que ustedes aportan
+más que nada hoy en día
+es la calidad
+como expertos en desarrollo
+¿sí?
+a validar todo lo que sacan
+¿está?
+yo cuando me llega una PR de Enrique
+me llega una PR de Yonah
+me llega una PR de Fernando
+me llega una PR de Nahue
+siento tranquilidad
+que el código que está ahí
+no es que una IA salió
+y sinceramente hay ciertas cosas
+que hasta reviso más por arriba
+porque tengo tranquilidad
+de que hoy un desarrollador
+que se tomó el tiempo
+a chequear esto
+sumado a las herramientas
+ese es el diferencial que aportan ustedes
+¿sí?
+y ahí es donde ustedes tienen valor
+y eso es lo que me gusta
+eso es lo que yo vendo
+y mismo es lo que
+para ser totalmente honesto
+cuando hablo con Guillermo
+es lo mismo que les digo a diseño
+hubo 10.000 intentos desde arriba
+vamos a automatizar el equipo de desarrollo
+vamos a automatizar el equipo de diseño
+no
+porque necesitamos un diseñador
+que esas cosas las chequee
+que se aprueben
+que sigan cierto flujo
+lo mismo pasa con desarrollo
+¿está?
+tenemos 10.000 puntos
+¿está?
+entonces
+por más que saquemos
+seamos sinceros
+si ustedes le tiran 10 PR
+funcionalmente puede andar
+pero se puede sacar 10 PR
+se puede estar comiendo
+una cantidad de casos bordes
+no es mantenible
+¿está?
+entonces ahí es donde ustedes
+aportan la diferencia
+frente a la IA
+¿sí?
+y eso es lo que tenemos que valer
+entonces
+para eso tenemos que respetar
+los procesos
+tenemos que hacer
+valer los procesos
+y también el trabajo de los demás
+yo ahí con respecto
+a lo que vos decías Fernando
+eso por un lado
+y por el otro
+el prompt
+debería
+automáticamente
+recomendarle a ustedes
+que cuando agregan
+código fuente
+y este
+y detecta
+que falta algún caso
+en el test
+automáticamente hacerlo
+Nahuel y Jonathan
+lo han hecho varias veces
+¿está?
+y yo también
+pero lo han hecho varias veces
+este
+y lo mismo
+digo Enrique o Fernando
+si ustedes
+el prompt
+en cualquier repo
+debería automáticamente detectar
+che mirá
+acá cambié el flujo del test
+voy a agregar test
+porque si no
+eso queda colgado
+y ahí Enrique
+creo que lo ha sufrido
+más que vos Fernando
+el hecho de
+tener que hacer
+toda una planilla
+y reanalizar
+y todas esas cosas
+que es un trabajo chino
+este
+la idea es que
+generemos más test unitarios
+para todas las funcionalidades
+que vienen saliendo
+pero las funcionalidades
+que ya tienen test
+los complementemos
+¿sí?
+entonces
+eso
+los test
+los
+sin lugar a dudas
+que sacamos una funcionalidad de cero
+no es la idea
+que se pongan a hacer test unitarios
+porque si no
+al final del día
+por ahora
+no es la idea
+¿está?
+por ahora no es la idea
+¿sí?
+capaz que más adelante
+si
+pero por ahora
+no es la idea
+¿está?
+entonces
+por ahora
+la idea sigue siendo
+que
+separemos un poco
+la parte de QA
+de la parte de desarrollo
+con respecto a los test unitarios
+¿no?
+¿está?
+no les digo
+que de acá
+dos o tres meses
+si esto del PROM
+viene funcionando bien
+yo puede ser
+que yo agarre de una
+y diga
+bueno Jonah
+vos te toca hacer el chatbot
+vos del chatbot
+vas a hacer test unitario
+y vas a hacer Cypress
+¿sí?
+y a partir de ahora
+las funcionalidades
+se tomen así
+¿bien?
+entonces
+eso
+por ahora
+nosotros estamos trabajando
+en dos grupos distintos
+¿sí?
+este
+pero
+este
+pero
+a ver
+no quiere decir
+que a futuro
+no lo
+no lo cambiemos
+¿está?
+yo por ahora
+lo estoy separando
+porque venimos
+laburando bien
+de esa forma
+pero puede ser
+que a futuro
+lo cambiemos
+la idea es
+pero lo que sí
+sí o sea
+más allá de todo esto
+lo que sí quiero
+que ustedes tengan
+súper en cuenta
+es que estos son herramientas
+para que ustedes
+las usen
+y trabajen más tranquilos
+puedan sacar una funcionalidad
+más tranquilos
+estén más tranquilos
+a ver
+yo como desarrollador
+me rompe las bolas
+que salga algo
+y un bug
+de lo que yo hice
+a mí me toca el orgullo
+me rompe el forro de las bolas
+y a la puta madre
+yo diez veces
+entré a este flujo
+y ahora cambio
+esta puta línea de código
+y se rompe todo
+y no me di cuenta
+porque salió esto rápido
+la idea es que
+con las herramientas
+que nosotros tenemos
+podamos evitar esas cosas
+que ustedes trabajen
+más tranquilos
+que tengan más calidad
+lo que saquen
+y a ver
+que puedan sacar
+la funcionalidad
+y pasar el día más tranqui
+tampoco
+seamos sinceros
+ustedes ya entraron acá
+con la AI
+entonces se le pide
+cierto ritmo de trabajo
+que de repente capaz
+que Enrique y Fernando
+no lo conocen tanto
+pero Martina, Jonathan y Nahue
+saben que el ritmo de trabajo
+no es el mismo de repente
+capaz que en un proyecto
+en un proyecto de antes
+o sea ya hay features
+que les digo
+tienen dos semanas
+capaz que es un mes
+todo un equipo
+trabajando
+iterando
+y probando
+y entonces
+eso es un poco
+por ese lado
+entonces
+yo creo que hay
+como primer action item
+de esta reunión
+lo que podemos sacar
+y me gustaría
+que lo lideres vos
+Fernando
+con la ayuda de Enrique
+pero ya que lo planteaste vos
+el hecho de sacar
+una mejora
+para validar
+esto de los test unitarios
+como primer indicio
+esta parte
+de los test unitarios
+¿sí?
+o sea
+ese sería como
+que sería
+el primer indicio
+y que conlleva
+bueno
+si yo estoy tocando algo
+que ya tiene test
+no es solo arreglarlo
+y parchearlo
+sino también
+es mejorarlo
+¿sí?
+que automáticamente
+tanto el code generator
+como el reviewer
+se dé cuenta de eso
+y lo ataque
+¿sí?
+eso
+no sé si
+estaría bueno
+y ya
+lo puedo empezar
+a plantear quizás
+estandarizar
+el uso
+de una
+y otra
+guía en concreto
+que yo
+claramente
+propondría
+Claude
+por ahora no
+ok
+que tiene tipo
+muchas
+pero sí
+sí podemos
+trabajar
+sí podemos
+trabajar
+en
+skills
+para ciertas
+ideas
+o herramientas
+para ciertas ideas
+entonces ahí
+cada desarrollador
+toma el criterio
+de si lo quiere agarrar
+o no
+¿se entiende?
+no sé qué piensa
+yo creo
+que es como
+es como
+una mejora
+es decir
+bueno
+si vos querés
+por ejemplo
+pasaba mucho
+cuando vos desarrollás
+con Windows
+o con Mac
+entonces tipo
+bueno
+si querés
+las usás
+si no
+no
+¿está?
+pero eso capaz
+que
+ahí como
+siguiente punto
+lo podemos plantear
+¿sí?
+bueno
+sobre eso
+que para mí
+toca
+el tema
+cobertura
+quizás
+estaría
+estaría bueno
+meterlo
+quizás en el pipeline
+de ahora tenemos
+no sé
+ponerle un
+20% de cobertura
+estoy tirando algo
+súper bajo
+¿no?
+que a partir de ahora
+tipo salte
+en un pre-commit
+que
+si no se cumple
+que tenemos
+o sea
+si nosotros
+desarrollamos algo
+y
+y la cobertura
+baja un 19%
+con la cantidad
+de código
+que tenemos
+creo que no sería
+algo
+algo raro
+capaz
+tipo
+muy feo
+meter un test
+porque son test
+de integración
+entonces tipo
+cubre muchísimo
+si vos
+metiste código
+como para bajar
+un 1%
+o algo por el estilo
+el porcentaje
+total de cobertura
+de los test
+quizás ahí
+habría que levantar
+una alarma
+no sé
+¿qué opinás?
+no tengo cuenta
+ahí eso
+igual me parece
+que
+se puede
+medio bloqueante
+no me parece buena idea
+porque
+no sé
+me imagino el caso
+que tenemos que sacar
+algo medio rápido
+una funcionalidad
+que por algún motivo
+baja mucho
+la cobertura
+o sea
+si está bueno
+tenerla en cuenta
+pero no creo que
+deberíamos bloquear
+el flujo
+por ejemplo
+si me parece
+más prioritario
+bloquear un commit
+si hay fallos de build
+por ejemplo
+eso sí
+o si fallan
+los test directamente
+esas cosas
+me parecen
+como más prioritaria
+decir
+ta
+esto no se sube
+no se sube
+porque directamente
+está fallando
+pero capaz
+que eso
+de la cobertura
+se podría agregar
+para que lo deje
+en la PR
+registrado
+en la descripción
+por ejemplo
+como diciendo
+che
+mirá que acá
+la cobertura bajó
+no es bloqueante
+pero
+tipo
+levantamos
+como ese warning
+ta
+para justamente
+atacarlo después
+ponele
+eso creo que
+por lo menos
+para mí
+es más
+eficiente
+a nivel de equipo
+digo
+para que no estemos
+bloqueando
+porque capaz
+que justo
+no sé
+se te rompe
+toda la mierda
+y eso te está bloqueando
+y es tipo
+ta
+eso bloquea
+directamente
+la funcionalidad
+no voy a mentir
+capaz que
+sí
+no
+iba a decir
+capaz que
+más que
+tener algo
+dentro de los agentes
+sobre eso
+capaz que
+mucho mejor
+sea tener
+algún reporte
+automatizado
+que corra
+todos los días
+y no se avise
+che
+este flujo
+tiene
+tanto
+de O2DX
+y de Coverage
+y levanta una alarma
+y no nos bloquee
+para no caer
+en esos casos
+que menciona Marty
+no sé
+si el resto
+tiene opiniones
+de algo
+o algo en particular
+pará Fernando
+quiero darle un poco
+la palabra
+al resto
+ahora
+ya se pasó
+media hora
+de la reunión
+no sé si
+Jonah
+Enrique
+o Nahue
+querían charlar
+otra cosa
+en puntual
+sí
+yo ahora
+con todo esto
+de configuración
+lo estoy usando
+bastante
+lo del reviewer
+y la verdad
+que
+me ha encontrado
+un montón
+de cosas
+lo que sí noté
+por ejemplo
+con las migraciones
+no hay nada
+en específico
+que le diga
+como
+tipo
+seguir un patrón
+si los up y down
+son obligatorios
+etcétera
+capaz que ahí
+podríamos agregar
+alguna
+alguna que otra regla
+más que nada
+más exclusivo
+para lo que son
+las migraciones
+y después
+también
+con el tema
+de Redux
+y los Slice
+y eso
+como que tampoco
+hay nada
+como en específico
+que le diga
+che tenés que seguir
+este patrón
+o sea
+tranquilamente
+se podría
+crear un Slice
+en otro archivo
+aparte
+y no dentro
+del archivo
+ahí del Store
+donde tenemos
+todos los Slice
+y como que eso
+no lo corregiría
+tampoco
+más que nada
+como para una
+segunda
+iteración
+digámosle
+bien
+Enrique
+Nahue
+Martín
+a mí
+de mi lado
+yo
+antes de que
+comenzáramos
+con esto
+de los
+de los
+PROMS
+Fernando y yo
+ya veníamos
+discutiendo
+y charlando
+justamente
+ideas de cómo
+hacer que la IA
+se comporte
+bajo ciertas reglas
+justamente
+recopilar
+y documentar
+nuestras convenciones
+nuestras
+prácticas comunes
+entonces bueno
+porque yo ya tenía
+en sí
+todo un setup
+este
+y ahora
+que estoy usando
+los PROMS
+entonces
+como que está
+seguramente ayuda
+pero de pronto
+no
+es
+al menos en mi caso
+particular
+no es tan fácil
+ver la diferencia
+de antes y después
+porque está
+justamente yo
+de alguna manera
+u otra ya tenía
+mucha de las
+de las
+adiciones
+que tiene estos PROMS
+yo ya las tenía
+en mi sistema
+digamos
+entonces está
+pero sí
+ahí con lo del
+lo del alerta
+capaz que coincide
+un poco más con Martín
+capaz que es mejor
+que no bloquee
+lo que dice Fernando
+sino que está
+implementarlo como alerta
+no sé
+bien
+bueno
+a ver
+en realidad
+más o menos
+lo que comentaban
+este principalmente
+lo que ha comentado
+Marti
+que a veces
+dependiendo
+este
+del PROM que dirés
+se te puede quedar
+o se te puede ir
+un poco del contexto
+y te pueden quedar
+por ejemplo
+constantes
+que ya tenemos definidas
+este que no las utiliza
+o ese tipo de cosas
+o
+este
+si te das mucho
+este también puede
+perder un poco
+el contexto
+y dejarte el código muerto
+que tal
+que ahí lo vuelves
+a iterar
+o se lo pedís
+explícitamente
+este que te identifique
+donde pueda haber código
+que haya quedado muerto
+o cosas por el estilo
+y ya te lo arregla
+pero está principalmente
+esas cosas
+que encontré yo iterando
+con el CodeGuy
+y el Reviewer
+Marti
+no
+o sea
+me lo hago más o menos
+lo que dije
+yo he notado
+por lo menos
+en las últimas páginas
+que calculo
+que tenían
+ya la aplicación
+de los PROMs
+noté una mejora
+en cuanto a
+a no tener
+tanto
+digamos
+a tanto código
+como
+sin usar
+o
+el tema
+del reuso
+de constantes
+igual
+de mi lado
+o sea
+más que nada
+creo que
+yo también
+ya venía como
+aplicando bastante
+el tema
+de revisarme
+la PR
+antes de mandarla
+entonces
+en sí
+por lo general
+siempre me aseguro
+de que
+más que nada
+que ande
+obviamente
+pero también
+de que
+sea mantenible
+porque está
+también otra cosa
+a tener en cuenta
+que capaz
+que es un poco
+difícil
+con los PROMs
+es que
+si bien ellos
+capaz que se centran
+en una solución
+funcional
+que dentro de todo
+respete
+las reglas
+que tenemos definidas
+capaz que
+no lo dejan
+tan mantenible
+o no lo dejan
+tan extensible
+porque nosotros
+por ejemplo
+no sé
+hay cosas que no podemos
+definir antemano
+se me ocurre
+el tema
+de los proveedores
+hoy en día
+tenemos dos
+pero mañana
+podemos tener
+tres, cuatro
+se puede ir uno
+entonces no
+no podemos estar
+diciéndole
+todo el tiempo
+a los PROMs
+hacer algo fijo
+de que vamos a tener
+este y este proveedor
+entonces también
+ahí
+para mí
+más que nada
+el comentario
+importante
+es que si bien
+está bueno
+el uso de los PROMs
+siempre
+hay que seguir
+teniendo en cuenta
+el
+revisar
+los outputs
+porque en realidad
+muchas cosas
+pueden pasar
+como
+lo que ya venimos comentando
+puede ser que tiren
+cosas que
+no aplican
+puede ser que
+capaz que hay un comentario
+que es medio
+a discusión
+abierto a la discusión
+más que nada
+o sea
+no ciegamente
+confiar
+en lo que tira el PROM
+y también
+tener en cuenta
+que nosotros
+apuntamos
+a que el código
+que es
+extensible
+el futuro
+y que no sea
+que mañana
+tenemos que agregar algo
+y sea un dolor de cabeza
+todo el tema
+del reuso
+de componentes
+eso también
+por eso
+darle
+foco a eso
+y creo que
+está
+lo que han comentado
+es útil
+y creo que deberíamos
+irnos
+iterar
+ir viendo
+ya ahí me anoté
+lo de
+lo de Jona
+también
+lo de los test
+creo que es importante
+también
+tenerlo en cuenta
+y
+ir probando
+o sea
+básicamente
+pero
+en sí
+yo lo veo como una mejora
+hasta ahora
+lo veo como una mejora
+y
+pero
+siéntanse libres
+de traer en cualquier momento
+cualquier cosa
+que noten también
+porque la idea acá
+es que
+facilite el trabajo
+pero también
+si notan alguna inconsistencia
+o no
+si notan que
+muchas veces
+les está tirando cosas
+cerradurías
+o lo que sea
+también traerlo
+porque
+no es la idea
+andar corrigiendo
+ustedes los prompts
+y que se deje pasar
+sino que tipo
+si ven algo
+que capaz que se repite
+muchas veces
+traerlo
+porque capaz que hay algo
+que hay que cambiar
+porque es eso
+o sea eso fue la base
+que puede ir cambiando
+por equis
+razón
+según lo que venga
+las prioridades
+según
+muchas cosas
+entonces está
+eso inevitablemente
+lo vamos a tener que ir
+alpernillando
+pero está
+eso de mi lado
+bien
+Hernando
+¿qué querías aclarar?
+capaz que medio disruptivo
+pero sobre los warnings
+eso capaz
+que capaz
+que capaz
+que se podría crear
+una pestaña
+en el video
+que
+que tipo
+tenga un poco
+de
+del análisis
+de la calidad
+del código
+tipo cobertura
+porcentaje de código
+repetido
+alguna boludez
+algún chichón
+yo la tiro
+la tiro
+bien
+medio disruptivo
+ah
+y un ejemplo
+de lo que había dicho
+tipo
+cloud por ejemplo
+tiene rules
+que
+si entras a un archivo
+con extensión
+punto
+scss
+por ejemplo
+que si o si
+tenga que
+que
+cumplir con
+vm strict
+por ejemplo
+esa es una rule
+que tengo hace mucho tiempo
+pendiente
+de
+, de
+hacer
+hacer para mí
+¿no?
+pero es un ejemplo
+de
+de algo que
+que es de
+de cloud
+específico
+que tipo
+nomás se entra
+o se va a modificar
+un archivo de eso
+tipo
+se ingresa eso
+como contexto
+entonces
+como que uno se asegura
+de que
+de que se cumple
+sí o sí
+comentarios
+muy bien
+si ahí creo que igual
+es difícil
+la realidad es que es difícil
+o sea
+creo que no todos
+nosotros usamos
+la misma idea
+entonces a veces
+es difícil
+decir
+usen solo el prompt
+y
+ciérrense con eso
+o sea
+son libres también
+de
+de alguna forma
+de
+modificar
+cómo lo
+cómo lo usan
+en el sentido
+de tipo
+eso que decían
+por ejemplo
+si le dan muchas iteraciones
+porque ven que
+que patine un poco
+eso también
+es medio predecible
+porque
+no esperamos
+que de primera
+ya la diáloga
+todo
+perfecto
+o sea
+se le pueden comer cosas
+pero
+estaría bueno
+capaz que
+eso que habíamos comentado
+de
+ver
+si vale la pena
+capaz que
+dedicarle como ciertas
+secciones
+al
+dependiendo de la idea
+que cada uno tenga
+como para que también
+las use
+y que de alguna forma
+se alineen
+porque también
+calculo que
+que trabajan distinto
+o pueden tener
+algunos detallecitos
+de capaz que
+hay que indicárselos
+más explícito
+digamos
+pero está
+bien
+bien
+bueno
+vamos a indicar
+ciertas cosas
+y vamos a asignar
+responsables
+cual me gusta
+migraciones y ruidos
+si
+jona
+lo mencionaste vos
+lo atacas vos
+está
+si ves algo más
+me parece súper clave
+que las migraciones
+también
+sigan el formato
+algo que es clave
+que las migraciones
+no pueden tener import
+para que todos
+lo tengan en claro
+todos tenemos
+en la misma página
+las migraciones
+no pueden tener import
+este
+la migración
+no pueden tener import
+al código
+si
+tienen que ser
+todo independiente
+pese a que hoy o mañana
+esas migraciones
+van a pasar
+a un repositorio nuevo
+literal
+va a ser todo un repos
+nuevo
+si
+nosotros vamos a agarrar
+copiar ese
+eso de migraciones
+la realidad
+es que nos acoplamos
+la idea
+es que nos acoplamos
+a un repositorio
+mucho nosotros
+a github
+ahora con los más
+ahora terminamos
+aplicando
+open id connect
+que es lo que comentaba
+si alguien no conoce
+la tecnología
+le busca
+pero es un tema
+de seguridad
+entonces
+y ya pagamos
+por github
+por tema de organización
+entonces
+y nos dan github
+action gratis
+entonces no tiene sentido
+perder tiempo
+con toda la parte
+de code pipeline
+y code deploy
+por ahora
+si
+por ahora
+no tiene sentido
+la github action
+andan bien
+cubren todo bien
+y nos permiten
+tenerlo bien
+es más
+ahora
+enrique martina
+se acuerdan
+que cuando salían
+los deploy a producción
+a veces no salían
+pero postraban en verdecito
+recuerdan esos casos
+viejos
+que por ejemplo
+vos veías en verde
+el tick
+cuando veías el commit
+pero en realidad
+el deploy no se había conseguido
+pero en develop si
+bueno eso pasaba
+porque el
+el while true
+estaba mal
+yo ahora lo corregí
+y en teoría lo testee
+y está bien
+¿está?
+que era lo que sucedía
+para ponerme más
+técnico
+nosotros tenemos
+una estrategia
+a blue green
+entonces levanto
+una instancia
+y si no funciona
+el deploy
+vuelve a la versión anterior
+garantizamos disponibilidad
+de casi el 100%
+de esta forma
+porque
+en ningún momento
+no se le responden
+requests al cliente
+solo que en algún momento
+una request va a responder
+con el servidor nuevo
+nada más
+y se apaga el otro
+lo que pasaba
+era que nunca dejaba
+de estar funcional
+entonces
+de esta forma
+nosotros no garantizamos
+de esta forma
+github siempre
+por más
+que fallaba
+github entendía
+que andaba
+porque nunca dejaba
+nunca se apagaba
+el servicio
+como si pasa
+a develop
+si falla un build
+ven que se rompe todo
+y eso es lo más sano
+del mundo
+porque ahí nos prende
+todas las alarmas
+yo también
+estoy al tanto
+de eso
+lo tienen en resumen
+dentro del bbo
+en producción
+pero también
+van a poder mirar
+en github
+y confiar un poquito
+más en eso
+entonces hablando
+un poco de eso
+jona para la parte
+de migraciones
+y redax
+cambio de opinión
+enrique vas a trabajar
+con la parte
+de test unitario
+si
+o sea la idea
+es que
+modifiques
+a ambos agentes
+para que
+puedan
+darse cuenta
+si el cambio
+impacta
+en los test unitarios
+si
+y este
+y ese cambio
+que impacta
+en los test unitarios
+este
+conlleva
+que tengas que agregar
+más casos
+ya que el reviewer
+lo detecta
+y diga vos
+tenés que agregar
+más casos
+y los agregue
+o sea se ponga
+a desarrollar
+esos casos
+y atacarlos
+y los justifique
+bien
+tenemos eso
+migraciones
+redax
+fernando
+vas a
+vas a atacar
+lo que es
+las skills
+opcionales
+si
+o sea la idea
+es que trabajes
+con las skills
+opcionales
+y te vas a dar
+una manito
+con náhuatl
+que lo que van a andar
+haciendo es
+skill distintas
+dependiendo
+de la idea
+que usen
+y pueden ser
+que tengan que romper
+las pelotas
+pero la idea
+es que tengan
+como un manual
+de skills
+bien
+y martu
+si
+skills
+o sea
+suelen ser
+tipo
+prompts
+o sea
+en
+claro
+pero son
+skills
+que vos tengas
+en la librería
+por ejemplo
+yo acá en cloud
+podés buscar
+ciertas skills
+que ya existen
+y sumarlas
+a las skills
+de los prompts
+que ya tenés
+¿se entiende?
+o prompts
+que ya existen
+por algún lado
+lo que sea
+entonces ahí
+bueno
+analizar esos prompts
+que esos prompts
+sean seguros
+de dónde vienen
+esos prompts
+¿sí?
+y ver si vale la pena
+porque también
+hay que tener cuidado
+con esos prompts
+este
+primero también
+en cómo aplicarlos
+a las distintas ciudades
+o sea
+cómo impactan
+y después también
+hay que mirar
+la seguridad
+de los prompts
+algo que está pasando
+mucho en la industria
+es que los
+bicoders
+agarran y descargan
+10 prompts
+que te hacen todo lindo
+y hay prompts
+que literal te dicen
+che
+compartime toda la base de datos
+a un tipo en Rusia
+y está súper camuflado
+y ni se dan cuenta
+¿está?
+entonces
+hay que tener cuidado
+con eso
+¿sí?
+entonces veanlo ahí
+con AWS
+o sea la idea es
+revisar skills
+que complementen
+¿está?
+este
+que complementen
+y estén buenas
+pero obviamente
+que tienen que pasar
+por la parte de seguridad
+¿está?
+que mierda
+está mandando Matías
+¿dónde manda esto Matías?
+bus administrativos
+van a romper las pelotas
+creo que es el de ella misma
+calculo
+eh
+Tato
+Matías
+no te contestó nada
+del correo
+ni nada de esas cosas
+¿quién está esta semana
+a cargo?
+vos
+yo ya te lo dije ya
+¿no te lo respondí?
+no
+no no
+verifico y te
+está
+porfa
+porfa
+y si no hacele follow up
+acuérdate que necesitábamos
+el correo
+y el número de teléfono
+y el número de teléfono
+y aclararle
+que le va a cambiar
+el inicio de sesión
+del backoffice
+¿sí?
+sí sí sí
+yo se lo mandé
+de hecho ya me respondió
+está
+no me lo
+no te
+por favor
+esas cosas
+pásamelas enseguida
+¿está?
+vale
+y Marti
+vos lo
+no sé
+no lo tengo
+revisá
+eh
+y Marti
+vos lo que vas a trabajar
+es un nuevo agente
+¿está?
+calculo que todos
+los están usando
+pero si no
+lo pueden usar
+ustedes pueden integrar
+con la IA
+normalmente
+pueden integrar
+la parte de GitHub
+¿sí?
+y eso lo que hace
+es responde
+y crea la PR
+¿está?
+yo lo que quiero es
+que ahí Marti
+trabajes un nuevo agente
+que cree las pull requests
+las cree bien
+por favor
+¿está?
+o sea
+ustedes le pasen las tareas
+y esto
+y cree las pull requests
+y se base
+o sea
+ya de una
+ponga cosas
+como el reviewer
+se base en todo
+lo que ustedes vienen trabajando
+¿está?
+o sea
+es una
+es un nuevo agente
+que lo que te hace
+es te crea la PR
+¿está?
+y si no
+lo que te hace
+es te crea el template
+si vos no lo querés conectar
+con GitHub
+¿está?
+si por ejemplo
+alguien usa una IA
+que no se conecta
+que no tiene
+un MSP
+que conecte con GitHub
+bueno
+¿está?
+lo que hacen es
+directamente
+este
+pero la puta
+¿está?
+lo que hacen es
+que te cree el template
+te lo rellena
+y te crea el markdown
+y lo único que tienen que hacer
+ustedes es copiar y pegar
+¿sí?
+¿está?
+pero quiero estandarizar
+eso
+¿está?
+¿bien?
+ahí
+el tema es que nosotros
+hoy en día
+ya tenemos el template
+de la PR
+ya tenemos el template
+pero
+pero quiero que
+estandaricemos
+la creación
+el rellenado
+de ese template
+entonces
+ya está
+no hay más errores
+¿se entiende?
+ojo
+y ahí nosotros
+nos vamos a dar cuenta
+quien agarra
+copia y pega
+lo que rellena de eso
+y lo tira
+por una pull request
+y quien la agarra
+y le pega
+una iteración manual
+porque obviamente
+no es la idea
+que me genera
+ese template
+y no lo leo
+no tengo ni puta idea
+de lo que hace
+no
+la idea es que le pegue
+una leída
+entonces ahí
+va a ir su areteada
+para el que agarre
+y copie y pegue
+pero la idea
+o sea
+todo el mundo
+lo está usando
+o sea
+se nota
+se nota en la red
+o sea
+y es algo que yo
+este
+motivé
+a que en las PR
+para que tengan
+más documentación
+y más cosas
+se sienten
+a describirlas
+y todo el mundo
+está usando
+y ya
+alguien que no lo está usando
+vaya con él
+pero yo no creo
+que ninguno de ustedes
+esté sentando
+a poner las descripciones
+larguísimas
+que me están poniendo
+en las PR
+con la mano
+en el corazón
+entonces
+lo que quiero es
+que lo estandaricemos
+ya detectamos
+el problema
+vimos que funciona
+todo el mundo
+lo está haciendo
+a su medida
+bueno
+vamos a generar
+un stand
+para como
+restringir
+esa PR
+lo que me parece
+más capaz
+por lo menos
+más útil
+es que
+creé
+que lo
+que lo
+que lo generen
+un markdown
+en el
+en la terminal
+o donde sea
+que lo esté usando
+en chat
+pero no que cree
+la PR
+porque ahí
+no sé
+lo puedo dejar abierto
+pero me parece
+que es
+yo lo dejaría abierto
+yo por ejemplo
+le pido que cree
+todo
+pero tengo que
+pero después me pasa
+que tengo que sentarme
+a modificar
+500 cosas
+entonces por eso
+como todo lo está
+calculo que todo el mundo
+lo está haciendo
+en el aire
+me gustaría dejar
+un stand
+entonces a partir de ahora
+todas las PR
+empiezan a subir
+la calidad
+¿sí?
+de nuevo
+de que tire
+tipo una pregunta
+y tipo
+¿querés que te cree
+la PR?
+pero que no sea invasivo
+claro
+y también
+algo que está bueno
+es que te pregunte
+todas las tareas
+que están relacionadas
+¿sí?
+para que ya te las ponga
+te las lista lindo
+ya no
+estoy podrido
+de agarrar y decirle
+che
+póngame punteado
+pongan esto
+pongan otro
+ya está
+ya detectamos el problema
+lo podemos automatizar
+y solucionar
+vayamos por el camino fácil
+¿sí?
+este
+hay una cantidad
+o sea
+hay una cantidad
+de cosas
+que tenemos que trabajar
+en automatizar
+y dedicar
+los esfuerzos humanos
+en otros sectores
+por ejemplo
+la parte de validación manual
+la parte de validación
+del código
+la parte de chequeos
+la parte de fijarnos
+de que realmente
+esté óptimo
+¿sí?
+de que sea
+la mejor solución
+que las migraciones
+funcionen
+hay una cantidad
+de cosas
+que quiero destinar
+más el esfuerzo
+que a tener que andar
+comentando
+falta el título
+de la PR
+las tareas de Jira
+están mal
+los links están mal
+¿sí?
+todo ese tipo de cosas
+ya no quiero perder más el tiempo
+¿está?
+entonces
+quedó en claro
+ahí cada uno
+en qué va a estar asignado
+precioso
+Marti
+la tarea la creas vos
+la tuya
+pero después el resto
+dejen las solicitudes de tareas
+y las van atacando
+a medida que se van liberando
+¿sí?
+recuerden que en los tres repos
+tenemos
+los agentes
+entonces
+¿cómo vamos a trabajar?
+vamos a enviar
+todo al site
+y una vez que está aprobado
+replicamos al resto
+¿bien?
+calculo que
+probablemente
+en un mes
+o algo así
+o dependiendo
+de cómo vengamos la mano
+vamos a volver a hacer
+una iteración de esto
+con los resultados
+¿está?
+porque esto calculo
+que después de un mes
+deberían
+todos deberían poder liquidar esto
+que no hay nada
+del otro mundo
+de trabajar acá ¿no?
+entonces
+sería hacerse un ratito
+para poder
+ir liquidando esto
+¿está?
+estos son como PRs normales
+así que pasa por el flujo
+de una PR normal
+¿está?
+pull request intern
+lo revisa uno de los dos
+¿está?
+y después
+el channel de pull request
+que lo revisa
+Martina y yo
+una vez que se aprueba el site
+se envían las réplicas
+para el worker
+y el back office
+¿sí Fernando?
+entiendo que por ejemplo
+la gente
+o lo que sea
+para las descripciones
+por ejemplo
+sea
+genérico
+para todos los repos
+pero
+por ejemplo
+para
+las skills
+¿ahí cómo se comportaría
+con respecto
+a los repositorios?
+tipo
+son recomendaciones
+son recomendaciones
+son recomendaciones
+de skills
+que ustedes pueden hacer
+y lo que estaría bueno
+ahí es que
+por ejemplo
+tanto Copilot
+como Cloud
+en sí hay veces
+que te pregunta
+entonces lo que ustedes
+podrían programar a la gente
+es
+si detecta
+que tiene que usar
+una skill externa
+que no lo haga de una
+sino que pregunte
+che mira
+creo que para este caso
+corresponde una skill
+este
+o podríamos utilizar
+tal cosa
+¿lo hacemos?
+y ahí ustedes le dicen
+si no
+¿está?
+o sea que tengo
+una intervención
+manual
+yo creo que siempre
+es importante eso
+o sea que nunca
+mandemos cambios
+que sean
+¿cómo es?
+que la gente le demos
+tipo bueno
+dale hace lo que quieras
+básicamente
+porque
+siempre hay que doble
+chequear
+más que nada
+cuando va a introducir
+cosas externas
+que no
+que está
+que realmente
+le queramos dar permiso
+si bien hoy en día
+ya tenemos un poco
+el tema de la seguridad
+que no debería estar
+leyendo credenciales
+por ejemplo
+nunca
+pero digo
+siempre que haremos
+algo nuevo
+que la gente
+nos pregunte
+antes
+o sea que no sea nada
+se me fue la palabra
+pero bueno
+me entienden
+o sea que no sea nada
+que
+automatizado
+que tenga
+que tenga control
+¿está?
+sobre eso
+otra cosa que está
+terminantemente prohibido
+y me voy a enojar
+mucho si lo veo
+pero muchísimo
+si lo veo
+y se nos puede pasar
+ahí hacen un push force
+y me lo solucionan
+me interesa
+tres cosas
+¿qué carajo
+lo que hacen
+pero lo solucionan?
+no quiero ver
+un commit de una IA
+uno solo
+y esto acá
+me pongo súper tajante
+con esto
+no quiero ver
+un commit de una IA
+¿está?
+no quiero ver
+un commit
+o coautor de cloud
+o no sé qué
+¿sí?
+o sea
+es obvio que lo usamos
+ya
+pero ya dejar
+todos los commits
+con cloud
+y eso es una vergüenza
+¿está?
+y de nuevo
+no enaltece
+el trabajo
+que nosotros venimos haciendo
+entonces no quiero ver
+uno solo
+me voy a molestar
+enormemente
+si veo alguno
+¿está?
+o sea
+si puede ser
+que lo corrijan
+ahí lo que hacen es
+todos a esta altura del partido
+saben usar git
+entonces ahí hacen un git
+un rebate
+lo que sea
+hasta en
+no sé
+lo solucionan
+¿está?
+o me escriben
+che Santi la cagué
+subí uno
+¿qué hacemos?
+reabrimos la PR
+no quiero
+por eso
+estoy podrido
+de salir a producción
+y ver ahí
+que me aparece
+entre los coautores
+me sale
+cloud
+3, 4, 5
+no
+no lo quiero ver más
+¿está?
+¿está?
+¿sí?
+yo creo que si hoy o mañana
+nos ven
+nos vienen a revisar el código
+ven que ustedes
+laburaron un montón
+y que está todo
+laburo hecho por ustedes
+y que tenemos
+una base de prompt
+pero que tenemos
+un orden de la puta madre
+y estamos orgullosos
+de eso
+¿sí?
+no quiero ver
+uno solo
+¿estamos?
+¿estamos todos alineados
+con eso?
+¿Marto algo más?
+bueno
+eh
+no
+está bien
+lo mismo digo
+con respecto al partido
+de Portugal
+que votan contra
+el partido de Portugal
+también
+¿está?
+¿está?
+acá somos todos
+fan de Cristiano Ronaldo
+¿está?
+y el que le gusta a Messi
+perfectamente puede ir
+a trabajar a Globo
+a alguna de esas otras
+empresas
+¿bien?
+¿está?
+este
+acá no
+no hay un tema
+¿está?
+es lo mismo que el que habla
+bien de Bielsa
+¿está?
+¿sí?
+va para
+va para otra empresa
+¿está?
+nada mentira
+Bielsa lo podemos aguantar
+un ratito más
+ah no ya se fue
+entonces no lo aguantamos
+bueno
+este
+ah uno más
+un comentario ahí
+mandé mensaje
+al chat
+eh
+así que reaccionen
+con un visto
+para saber
+que lo vieron
+bueno
+lo dejo
+lo dejo que sigan
+disfrutando su tarde
+ahí con su tecito
+¿está?
+ya se pueden sacar el buzo
+y volver a la cama
+este
+cuídense
+estamos a la hora
+le mando un abrazo
+ahí
+¿qué es eso?
+le estás levantando la mano
+un saludo a Ario
+la puta de la pareja
+¿qué me estás haciendo?
+es un mix de los dos
+es un mix de los dos
+se dice en pedo
+de ayer
+vamos
+tres cervezas
+tomate
+hijo de puta
+perdón
+perdón
+no
+quería hacerte una pregunta
+vos Santi
+un segundo
+literal un segundo
+una pregunta
+de sí o no
+sí sí sí
+decime
+o si no
+no no
+esos cambios
+que dijiste del backoff
+y de la configuración
+de whatsapp
+si es tarea aparte
+y esperamos a que
+mergé
+a que desembergé
+no
+es la misma tarea
+pero en la PR
+o sea
+perdón
+voy de nuevo
+me expliqué
+me expliqué mal
+es una tarea aparte
+pero va en la misma PR
+porque no podemos
+mergear
+si no está eso
+entonces
+generamos una tarea aparte
+¿sí?
+para hacerlo más atómico
+como siempre
+¿está?
+pero
+lo mandamos en la misma PR
+porque
+hasta que no esté todo
+no puede estar mergeado
+esto se tiene que ir
+como un paquetito
+lo de whatsapp
+se tiene que ir
+como un paquetito
+¿está bien?
+gracias
+como cuando estábamos
+en la edición militar
+que nos hacían ir paquetito
+¿está?
+dale
+no, no, no, gracias
+bueno, cuídense
+hasta luego
+hasta luego
+hasta luego
+hasta luego
+hasta luego

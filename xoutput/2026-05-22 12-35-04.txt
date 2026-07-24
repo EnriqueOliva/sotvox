@@ -1,0 +1,873 @@
+Bueno, vamos a compartir el tablerito. Antes que nada, hay una PR de Cypress pendiente, ¿no? La 62, ¿no, Kike?
+Sí, me recuerdo el número. Sí, 62. Correcto. Es chica. Es un caso de ínoma.
+Está. La voy a probar y la voy a marchar, ¿está?
+Ok.
+Vos sabés que la probé... Marto, ¿estás ahí?
+Sí.
+La pasé por privado. Marché a la TANIMAS, a no ser que veas algo raro, pero...
+Marché a la, pues son tres casos que avisale en el grupo que tenemos con Kike que se marchó para que empiece a correr Cypress, ¿está?
+Qué paja es conectar un iPhone nuevo, ¿no? La puta que lo parió. Hace días que estoy intentando sincronizar todo desde el celular.
+¿Me tienen las pelotas?
+En el piso.
+Ay, Dios mío.
+Eso me pasa por haber bloqueado el otro. No, no, sí, ya sé, estoy hablando en voz alta.
+Bien, está. Se marchó la PR de los decimales, ¿está? ¿Qué quiere decir eso? Kike, necesitamos correr Cypress, por eso el apuro, por eso necesitamos correr Cypress para fijarnos que está todo ok.
+Ok.
+Bien.
+Necesitamos marchar la PR.
+La PR de Yonah y Nahue, que ahí yo ya las estoy mirando, les dejé un comentario, estoy haciendo las últimas iteraciones, ¿está? Y ahí Yonah y Nahue, cuando se marcheen, necesito que hagan pruebas que involucran al equipo de QA, ¿está? Que le muestren, o sea, que se junten, enseguida que se marcheen, capaz que después del almuerzo se juntan y me mandan un mensaje en QA, o sea, ahí esa es responsabilidad tuya, Kike.
+Yonah y Nahue te van a contactar cuando estén las dos marcheadas, ¿sí? Y la idea es que se junten, ¿está?
+Y Kike me digas que está todo ok, ¿está? O sea, que sigue, no solo que Cypress siga andando bien, ¿está? Sino que, este, lo que ellos implementaron está ok, ¿está? O sea, necesitamos, hagámosle QA a eso.
+¿Qué es lo que hicieron? En resumen, es para, nada más para tener trazabilidad en las transacciones, ¿sí? O sea, la idea es que a partir de ahora, cuando se compre una compañía nueva o lo que sea, se guardan.
+Vamos a, para que vos puedas probar, vamos a tener que probar.
+Vamos a tener que hacer una salida a Stage, ¿sí? Que esa es la, esa es una parte, no vamos a probar en Dev, ya que cuando todo esto esté pronto, vamos a crear la versión 22.4.1 y vamos a hacer una salida únicamente a Stage, ¿está? Con la versión 22.4.1 de todos los repos, ¿está? ¿sí? Sin incluir Dropy, obviamente.
+Ok.
+Yo en INAWE los escucho con qué es lo que, lo que siguen o lo que tienen y vamos asignando. Esperen que, habiendo hablado de eso, vamos a empezar con la Daily Formal.
+No, para, para, para, para.
+Vas a cobrar el pago único. Va a constar en dos partes. Una es el fix para que cuando haga el método de pago se le cobre todo lo pendiente y se le muestre lo pendiente, ¿sí? Y lo otro es el fix para, este, y lo otro es el fix para, este, poder, cuando tenga un método de pago, que se le cobre lo, este, que se le cobre lo pendiente.
+Y asimismo que, este, va, que se le cobre lo pendiente y que, este, estoy, estoy congelado mentalmente, lo juro. Puedes reunirme con Carlos, con los dos Carlos una hora, es como que me friten, me fritan el cerebro.
+Y para que cobren los pagos pendientes, para que el back office se pueda ver y ejecutar esa deuda, ¿sí? De forma manual, ¿está?
+O sea, el cliente, nosotros podemos ver un consolidado, porque lo que se muestra no es claro. Entonces, se puede decir, el cliente tiene una deuda de tantas cosas y se descomponga con más, más linda esa información a nivel administrativo.
+Entonces, así también el feedback que le puedan dar al cliente sea más exacto. Che, tenés tanta guita que estás debiendo y que se pueda ejecutar. Eso con respecto a la parte de pagos.
+Obviamente que la migración que va a hacer Martina junto con, con lo que está haciendo Joni Nahue, no, me van a dar una mano terrible, ¿sí?
+Y después de eso voy a trabajar en sincronizar las transacciones. En otras palabras, es todos los catch que hablamos para que, para que de OneMoney tengamos todas las sincronizaciones, todas las transacciones sincronizadas.
+Quique, dale vos.
+Bueno, ahí justamente como surgió esto de los decimales, estuvimos, o estuve yo actualizando lo que son las, las perdas que habían abiertas, por ejemplo, de test unitarios.
+Justamente la mía toca OneMoney. Así que bueno, estuve.
+Haciendo algunos cambios allí. Ya estamos en un ida y vuelta con Fernando en comentarios y demás. Eso ya está moviéndose en Inter.
+Y por otro lado, bueno, empecé a avanzar con lo que es la tarea que charlamos ayer, el tema de los retiros de Bolivia, los comprobantes.
+Y bueno, la idea sería seguir con eso y obviamente apenas salga esto que comentabas recién de Joni Nahue, bueno, atacarlo con Cypress y bueno, y hacerle cua.
+Supongo que voy a estar con eso básicamente.
+Bien, perfecto.
+Genial.
+Fernando.
+Bueno, buen día.
+Básicamente, bueno, está un poco lo que dijo Quique.
+Y estuve, estuve reviendo, sigo reviendo a la PR de UserAuth.
+Después esta PR de OTCR que calculo que hoy me da para mandar.
+Pensaba mandar.
+Dos versiones, porque hay un test, hay un refactor que es como un poco más, o sea, más polenta que otro.
+Entonces, no sé si, para que se vea y se compare nomás.
+Y también he estado descubriendo que estamos como medio flojos en cuanto a los expects.
+Entonces, está eso.
+Estuve, estuve bichando esas cosas.
+Y sigo trabajando en los test.
+Sí, los expects, ahí siempre lo clave es que validen los logs.
+O la medida de lo posible de los logs.
+Más que nada los errors.
+Que realmente lo que nos permite saber, bueno, esto explotó por tal cosa, ¿no?
+O sea, los logs, porque nosotros, nuestro flujo es end-to-end.
+Así que en realidad nosotros lo que tenemos es un código 404 de validation error.
+Si nosotros no tenemos buenos expects con los logs error,
+al final del día, nuestros tests no sirven.
+Entonces, ahí es responsabilidad.
+O sea, ese problema ya lo tuvimos hace tiempo con Kike y creo que lo venimos atacando bien.
+Cuando empezamos a moquear los logs para poder, los log error en particular, corregirme Kike,
+para poder atrapar los mensajes de esos log error, cuando iban sucediendo.
+Entonces, eso siempre es clave que esté cuando nosotros hacemos caso de fallo,
+porque es lo que nos permite identificar que un validation error es por el largo de tal cosa,
+y no es por otra cosa.
+¿Sí?
+Sí, sí, sí.
+No, no los he ignorado de mala manera.
+He visto los mensajes y les agradezco.
+Hoy vuelvan a enviarlos al final del día, por favor, porque voy a intentar con Martina hacer eso el fin de semana.
+O sea, ponernos al día con todo eso.
+Si puedo hacerlo antes, mejor.
+Ah, vale.
+Pero intenten consolidar todo en buenas PRs, y que lleguen a full return.
+Ah, vale.
+Pero intenten consolidar todo en buenas PRs, y que lleguen a full return.
+Cualquiera está en cuanto antes, solitarios.
+Cualquiera está en cuanto antes, solitarios.
+Sí.
+Y sobre el tablero de Jira, ya estuvimos conversando ahí con Kike.
+Más o menos, si hay algún ajuste para asarle.
+Bien, espectacular.
+Ojo, Kike ya se mergedo esto.
+Así que, quedo pronto.
+Gastón, ¿cómo ando?
+Bueno, yo estuve
+Seguí trabajando en los posteos
+De marketing que me quedaban
+Ya quedó terminado el de los planes
+Que estaba trabajando ayer
+Y ahora estoy con
+El de los pasos para crear un LTC
+Que ya tengo bastante avanzado
+Y ya con eso
+Terminaría por ahora con lo de marketing
+Para después reenganchar
+Con lo que me había quedado
+De los flujos de configuración
+Y de notificaciones
+Gol, bien de bien
+Joan
+Bien, yo estuve actualizando ahí
+Todas las PRs
+Me surgió un problemita
+Con la de los extractos
+Con esto de los decimales
+De que, ta, modifiqué, hice todo
+Pero claro, ahora cuando empecé a probar
+Los PDFs
+O sea, hacer los PDFs
+Testeando
+Se me solapan todas las columnas de saldo
+Crédito, débito
+Por el tema de la cantidad de decimales
+Que mostramos
+Entonces, ahí está
+Después, capaz que no sé si
+Te querían ver como postcrán
+O lo dejamos medio en pausa eso
+Y después vemos a ver qué decisión tomar
+En cuanto al diseño del PDF en sí
+Vamos como postcrán
+Y después estuve avanzando
+Con lo del Cybar
+Que ya casi lo tengo
+Ya estoy grabando ahí
+Los videos para mandarle a diseño
+Primero
+Bien de bien
+Marti
+Yo, yo más que nada
+Estuve con las PRs
+Y después
+Surgieron otras cosas
+Y
+Avancé también con lo del
+Cronshot
+Voy a ver si puedo dejar esa PR
+Pronta hoy
+Pero ahora estaba con las nuevas PRs
+Las últimas PRs que han mandado
+Y ya
+Básicamente eso
+Bien de bien
+Ah, bueno
+Bien, yo hoy aprovecho para actualizar todas las PRs
+Con el tema de los decimales
+Fuera de eso
+Avancé con lo que es la tarea
+Para cambiar el tema de las variables
+El tema de los temas
+Ahí si querés lo vemos en postcrán rapidito
+Eso
+Para variar que esté alineado
+Y también
+Diseño llamando el email a validar
+Cuando lo puedan validar
+Santi y Marti
+Así ya lo agrego a la tarea del Cronshot
+Bien de bien
+El diseño
+Hola, mira
+Diseño envió el correo
+Está en el channel de design
+El último mensaje de Santi
+Ya lo abrí
+Genial, perfecto
+Santi
+Bueno, estaba un poco eso de lo que comentaba Nahue
+Ayer estuve con
+Con el diseño del
+Del mail
+Este ya quedó hecho, ya cambiado
+También estuve trabajando en la nueva versión
+Del chatbot
+Estuve a armar un nuevo diseño paralelo
+Porque no estaba muy convencido con el otro que tenía
+La idea sería mostrarle este nuevo diseño a Mati
+Y ver cuál se alinea un poco mejor
+Con lo que él tenía en mente
+Esta segunda versión
+Es un poco más pro que la anterior
+Y nada
+Vamos a ver
+Qué piensa Mati
+De esto que estoy armando
+¿Me escuchan bien? Estoy como medio cortado
+Creo que tengo
+Mejor que yo
+¿Estás bien?
+Estamos todos tristes
+Por la eliminación de ayer, Santi
+Pero mal que no leí
+La remera del pie
+No, no
+Ni chiste no podemos hacer
+El uruguayo
+Yo ayer cuando vi que metí el segundo gol
+El gol de Coríndez
+La concha
+Que Maxi Oliveira
+Ya ha metido el gol
+Es una
+Es una
+Es una falla en el sistema
+Es un chiste de la vida
+Pero bueno
+Bien
+Bien de bien
+Te estoy dejando comentarios
+Falta el número de teléfono
+Y decirlo que vamos
+Y que lo podés ver en la descripción
+Claro
+Claro me sugería poner como la
+En vez de la legislación
+Algo que sea algo más tipo
+La foto de la persona
+O algo así
+No, no
+Son todos feos
+Yo preferí dejar la legislación
+Nada más
+Nada más
+Desde el momento que
+Desde el momento que decidimos
+Hacer negocio en Bolivia
+Como que empezamos a descartar
+Ese tipo de cosas
+Pero este
+No, no
+No sean racistas
+No se rían
+Porque peores es que se ríen
+De las cosas
+Bueno
+El email
+El nombre
+Y el teléfono
+Eso los podemos
+Seguir a los tres datos
+Podemos mostrar
+Sí, sí
+Capaz que yo
+Voy a poner el Tinder
+¿Qué más querés poner?
+La puta que lo parió
+Bueno, escuchame
+Te digo que
+No, no, en serio
+Lo que te digo es
+Este
+Vamos a ver si podemos usar un logo
+Así nos seguimos cargando el site
+Tenemos 500
+Íconos ahí
+O sea
+Guille rompió con ese
+Pero
+Fíjate si el logo de arriba
+Podemos
+Podemos usar
+Algunos de los que ya tenemos
+¿Tá?
+O sea
+Para que salga más rápido
+Así
+No tenemos que mandar migración
+Sé que queda más lindo ese
+Queda más lindo ese
+Pero usemos algo otro
+Si no
+Mandamos
+O sea
+Esa decisión siempre la toman ustedes
+Lo te digo
+Fíjate si hay alguno
+De los que ya tenemos
+Que se pueda adecuar
+Un poquito a eso
+Si no
+Sacamos ese
+¿Tá?
+O sea
+Si vos me decís
+No, mirá Santi
+Lo agraveo
+Que esto queda lindo
+Mandemos ese
+Y lo que está faltando
+Este
+Luego
+Y está faltando el botón
+El call to action
+Para la información de la compañía
+Que lo único que hace
+Es te lleva a la descripción
+De la compañía
+¿Tá?
+O sea
+Te lleva a la descripción
+De la compañía
+Y vos ahí
+A partir de ahora
+Abajo del tono
+La descripción de la compañía
+Vamos a poder
+Tener
+La información
+Del ejecutivo
+¿Tá?
+Bien
+Perfecto
+Yo te dejé esos comentarios
+Bien
+¿Alguien me faltó?
+No
+Hace por todo
+El lineal
+¿Marty?
+¿Marty ya fue?
+¿Viste vos Martu?
+Sí
+Hablaste
+Yo estoy quedando loco
+Sí, yo también
+Ah, no
+Uy, soy yo loco entonces
+No, vos sos loco entonces
+Está bien
+Nos vamos a quedar
+Todos cinco
+Como post-cram
+Tenemos una nueva
+Tasca
+Ahí
+, que van a estar
+Atacando a Nau y Jonathan
+Frente a las prioridades
+De asignación de ejecutivos
+Y esto
+Capaz que solo
+La puede atacar uno
+Pero vean
+Si vale la pena
+Dividirlo
+Y lo involucra
+A Diseño
+Y a Santi
+Y obviamente
+Va a involucrar a Cuba
+Entonces lo voy a comentar
+Nosotros hoy en día
+Solo podemos hacer
+Upgrade de planes
+¿Sí?
+¿Tá?
+Entonces este
+Solo podés subir el plan
+No bajar
+¿Cuáles son los mecanismos?
+O sea, ¿Cuáles son los mecanismos
+Para subir que tenés?
+Nosotros lo que hacemos
+Este, cobramos un
+Un extra
+O sea, por ejemplo
+Si vos querés cambiar
+De un plan mensual
+A otro mensual
+Lo que hacemos es
+Te hacemos un refund
+De lo que falta
+Pero cobramos
+Una
+Hay una variable de entorno
+Que recobra una pequeña
+Comisión
+De esa devolución
+¿Les cuento?
+¿Por qué?
+Porque si vos querés hacer
+Un cambio de plan
+Nosotros Stripe
+Para cancelar una suscripción
+Nos cobra
+¿Por qué?
+¿Sí?
+O sea, para hacer un refund
+En realidad nos cobra
+Entonces nosotros le cobramos
+Al cliente un poquito más
+Como para salvar ese refund
+¿Se entiende la lógica?
+O sea, vos tenés
+Este mes tenés
+10 dólares
+Tenés 30 dólares
+Para hacerlo redondo
+¿Sí?
+Querés cancelar
+De mitad de mes
+Te tendrías que devolverle 15
+Bueno, nosotros de esos 15
+Stripe
+Para devolverle 15
+Nos cobra un pedacito
+Entonces ese pedacito
+Se lo descontamos al cliente
+Entonces no lo vamos a devolver 15
+Le devolvemos 13 con el
+¿Tá?
+¿Sí?
+Y eso está contemplado
+En los correos
+Y todas esas cosas
+¿Tá?
+Nosotros tenemos
+Distintos cambios
+Por ejemplo
+Vos podés contratar
+Si tenés servicios manuales
+Que contrataste
+Por ejemplo
+Solo con la creación
+De la LSI
+Vos podés cambiar un plan
+¿Tá?
+Entonces cambias a plan
+Cuando cambias a plan
+Se te hace ese refund
+De los servicios adicionales
+Que eso también chequéenlo
+Que esté todo ok
+Pero ha venido funcionando bien
+Se te hace ese pequeño refund
+Con ese cálculo
+¿Tá?
+Y contratás un plan
+El que quieras
+¿Sí?
+O sea
+Este
+La lógica siempre es la siguiente
+Primero contratar
+Y después sacar
+Nunca la inversa
+Eso grábenselo a fuego
+¿Tá?
+O sea
+Tanto para la parte de jugar
+Como para la parte
+De
+Que lo va a desarrollar
+Primero se quita
+Y después
+Primero se quita
+Primero se
+Se cobra
+Una vez que aseguramos el tanto
+Ahí le sacamos lo de otro momento
+Porque si nosotros le sacamos
+Y no le podemos cobrar
+Al final
+Perdimos y perdimos
+¿Tá?
+Entonces primero se cobra el plan nuevo
+Y después se le hace refund
+De lo anterior
+¿Tá?
+Siempre
+Nosotros ahora la funcionalidad
+Que tenemos que ofrecer
+Solo podés subir
+Entonces vos podés subir
+De la siguiente forma
+Si tenés planes contratados
+De forma manual
+Podés cambiar un plan
+Mensual podés subir a uno más alto
+Y de mensual a anual
+Podés cambiar al que quieras
+¿Tá?
+Este
+Es más
+Y es el único
+Downgrade
+Que tenemos simbólicamente
+Porque ahí podemos cambiar
+A uno mensual más bajito
+¿Se entiende?
+O sea
+Y eso
+Por eso es que
+Lo tenemos ese downgrade
+¿Tá?
+Y después
+Y ya cuando pasas a anual
+No podés volver a mensual
+¿Tá?
+¿Sí?
+O sea ya cuando pasas a anual
+No podés volver a mensual
+¿Tá?
+Eh
+Nosotros lo que vamos a hacer ahora
+Es
+La bajada
+Pero va a ser
+En los casos
+Más sencillos
+¿Tá?
+Primero que nada
+Que quieras cancelar el servicio
+Un servicio adicional
+Por ejemplo
+Tenés dirección
+Agente registrado
+Lo que sea
+Entonces
+Lo que tenemos que hacer es
+Le vamos a quitar el servicio
+¿Sí?
+¿Tá?
+O sea el servicio se quita al instante
+Estoy pensando
+O sea tenemos
+El servicio se quita al instante
+¿Sí?
+O sea se va a quitar
+Tenemos que tener algún mecanismo
+Que cuando quitamos ese servicio
+Que pueda ser
+Reactivar
+¿Tá?
+Entonces nosotros lo vamos a quitar
+¿Vos querés sacar dirección
+Al instante registrado?
+Se va a quitar
+Y te vamos a decir
+Eh
+Esta
+Esta
+Una vez que se concrete el mes
+¿Tá?
+Este ya no se te va a cobrar más
+Pero no le vamos a devolver un peso
+¿Tá?
+Quiere decir que vos
+Estás transcurriendo este mes
+Lo que va
+Tenemos que enviar la Stripe
+Es
+No le cobres
+La siguiente factura
+¿Sí?
+Para poder quitar un servicio
+Tiene que estar al día
+Eso es lo que es importante
+O sea
+No podemos sacar
+Una suscripción
+Que no esté paga
+¿Tá?
+El problema ahí
+Son las suscripciones compuestas
+Navo y Jonathan
+La manera de generar
+Una suscripción compuesta
+Es
+Van a crear una LNC
+Y seleccionan
+Dos servicios de suscripción
+Para que se genere compuesta
+¿Tá?
+Por ejemplo
+Seleccionan dirección
+Y agente registral
+Es ahí
+Esas suscripciones compuestas
+Ustedes tienen que agarrar
+Y solo
+Decir que a partir del mes
+Que viene
+Se ajuste
+Y solo cubre
+Cubre una de las dos
+¿Tá?
+Bien
+Entonces ahí es un poco
+La parte compuesta
+Compleja
+Pero vamos a permitir
+Que vos puedas cancelar
+El servicio
+También tiene que estar
+La opción de reactivar
+Que lo único que hace
+Es reactivar la suscripción
+Y le vuelve a dar el servicio
+¿Tá?
+Entonces nosotros tendríamos
+Que tener algún mecanismo
+Para darnos cuenta
+Che esta suscripción
+Está en el plazo
+De reactivación
+Y lo puede hacer
+Esto aplica
+Para planes
+Para todo
+O sea
+La idea es que ahora
+Ellos pueden cancelar todo
+¿Tá?
+Si contrataste
+Una suscripción anual
+Perfecto
+Te clavaste un año
+No se va a renovar
+Y te sacamos
+Todos los derechos
+¿Tá?
+O sea
+Te sacamos todo
+En el caso del plan
+Es más complejo
+Porque te hay que sacarle
+Todos los servicios adicionales
+Solo vas a dejar
+La relación con el plan
+En sí
+Apagada
+Como diciendo
+Che mirá
+Que la tenés activa
+Hasta tal fecha
+O sea
+Que probablemente
+Vamos a tener que agregar
+Más campos
+A lo que tenemos
+¿Tá?
+¿Sí?
+Y por ahora
+Vamos a encarar
+Esa funcionalidad
+De poder quitar
+¿Tá?
+Después en cuanto a planes
+Nosotros tenemos que agregar
+La funcionalidad de bajar
+Pero la bajada
+Tiene que ser
+Lineal
+¿Sí?
+Primero tiene que ser
+Un plan
+De
+Del mismo recurrencia
+¿Tá?
+Entonces si vos pasás
+De un plan mensual
+A anual
+No podés hacerlo
+¿Tá?
+Entonces vos solo vas a poder pasar
+De un anual
+A un anual más bajo
+¿Sí?
+Si el usuario
+Quiere contratar
+Un anual
+Y un mensual
+¿Tá?
+Se va a tener que
+Si quiere
+Si por ejemplo
+Tiene un anual
+Y quiere pasar
+A un mensual
+De tanto
+Perfecto
+Pues cancelar
+La sucursal
+La suscripción
+Se te va a cancelar
+A fin de año
+Y ya podés
+Y la recomendación
+Va a ser
+Bueno
+Cuando estés a fin de año
+Contratá la mensual
+¿Tá?
+Nosotros ahí de repente
+Podemos hacer algún descuento
+Pero
+En sí
+La bajada
+Tiene que ser lineal
+Por ejemplo
+De un plan mensual
+A uno mensual
+Más bajo
+¿Tá?
+Entonces lo que vamos a hacer
+Por ahora
+No es la mejor solución
+La mejor solución
+Sería dejarle
+Como hacen los servicios
+Te lo dejo
+Hasta que se termine
+El periodo
+Y todas esas cosas
+Pero eso nos va a causar
+Dolor de huevo
+Por los webs
+Juquificar si se apagó
+Y si no apagó
+Y todas esas cosas
+Entonces lo que vamos a hacer
+Es
+Le sacamos
+Si vos querés bajar
+De una
+Suscripción a otra
+Lo que vamos a hacer
+Por ejemplo
+Vos querés pasar
+De un anual
+A un anual más baja
+Lo podés hacer
+Que ahora eso se bloqueaba
+Lo podés hacer
+Pero lo que vas a tener que hacer
+Es
+Seleccionar
+O sea
+Vas a programar
+Para que al fin del periodo
+Se empiece a cobrar la otra
+Y
+Es más
+Vamos a hacer una cosita
+Anual no se puede tocar
+Para pensarlo
+Solo se puede dar de baja anual
+No se puede tocar
+O sea
+De baja todo
+La idea es que a partir de ahora
+El cliente pueda dar de baja todo
+Y se le cobra al fin del periodo
+Pero le sacamos todos los servicios
+Y va a tener la opción de reactivar
+Tengan en cuenta
+Que nunca puede tener
+Dos opciones activas
+Entonces
+Si compró otra suscripción
+Esa reactivar
+Murió
+Y
+Entonces también es eso
+Si vos tenés un plan
+Y contratás otro plan
+La opción de reactivar
+Murió
+¿Tá?
+Y
+Solo vamos a permitir
+Bajar de mensual
+Que es lo controlado
+¿Tá?
+Es un periodo chiquito
+O sea vos tenés una mensual
+Y querés bajar una mensual
+Más baja
+¿Tá?
+Lo que vos vas a
+Lo que tenemos que hacer ahí
+Nau y Jonathan
+Es
+Le vas a dar los servicios
+Vas a
+Normalmente vas a sacar
+De los servicios
+Que no tiene la otra
+¿Sí?
+Y vas a programar
+Para que
+La suscripción activa
+Se le termine de cobrar
+¿Tá?
+A fin de mes
+Pero ya le vas a cobrar
+Por la nueva
+¿Tá?
+¿Sí?
+A ver si es la mejor forma
+No
+En la mensual
+Lo que vamos a hacer
+Es vamos a darle un refund
+Sí
+Mierda
+Vamos a hacer un refund
+De lo que falte
+Y ya le contratás
+O sea primero
+Le contratás la nueva
+Y le hacés un refund
+De lo que pagó
+¿Tá?
+Con el
+Con el 5%
+Entonces si vos querés
+Bajar
+Bajar
+Perfecto
+A ver si es la mejor forma
+Saben que estoy pensando
+Stripe
+¿Cómo funciona?
+No
+No
+Vos no tenés que jugar
+Con los webhooks
+Vos no tenés que jugar
+Con los webhooks
+Tristemente
+Kike
+Tato
+Gastón
+Y Santi
+Liberados
+Lo discutimos
+Discutiendo con Gastón
+Y con los chicos
+Y una vez que lo tengamos
+Se lo bajamos a tierra
+Pero sepan que
+Kike y Tato
+Esto va a requerir
+Si hay precio
+Va a requerir
+Si es unitario
+Entonces
+Vamos a tener que
+Trabajarlo
+Y Santi y Gastón
+Vamos a tener que
+Trabajar en los correos
+De facturas
+Para estos cambios de plan
+¿Sí?
+Bien, bien
+Perfecto
+Lo libero
+Vamos arriba
+Bueno, nos hablamos
+Un brocho
+Un brocho
+Por si no nos vemos
+Ah, bueno
+En fin
+Dale

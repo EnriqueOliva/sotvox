@@ -1,0 +1,32 @@
+Calendly, si te fijás, no tiene
+rutas. Directamente definí las rutas
+en el app. Nosotros en el
+servidor, en el site,
+lo que hacemos es definimos las rutas
+fuera del app.
+O sea, entonces
+las abstraemos.
+¿Por qué eso?
+Porque como maneja server-side rendering
+nosotros en el index tenemos
+mucha parte que es backend,
+de exponer una API, y mucha parte
+que es de server-side rendering.
+Entonces lo extrajimos a rutas.
+Acá, como tenemos un solo
+endpoint, no creé rutas
+para un solo endpoint. Entonces quedó con eso.
+¿Sí?
+Eso nada más.
+Entonces yo creo que es una mezcla
+de Calendly y las buenas prácticas
+del otro lado.
+¿Sí? Bueno,
+vamos arriba, confío en usted, no sé,
+pero vamos arriba.
+Ah, vaya,
+va Salito,
+que puede ser lo peor que pase.
+Nunca quiero que se...
+No, lo que te iba a decir es
+creo que venimos bien.

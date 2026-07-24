@@ -1,0 +1,825 @@
+Bueno, bien de bien. Ahí cerramos el sprint ahí con Marti. Hubo algunas vueltitas de tuerca, pero ya quedó. Así que nada, eso quedó pronto.
+Lo que... Revisen las tareas, revisen que tenga todo en orden, ¿tá? Revisen si les falta crear tareas, solicitar tareas, ¿sí? Si algo no se cerró bien.
+Creen todas las tareas, cada uno tiene que crear la tarea de code review, ¿tá? Esa no la tienen que mandar a solicitud, es la única que no mandan a solicitud de tarea.
+Crean la de code review y la asignan a la épica. En el caso de Santi y Gastón, ustedes tienen que crear las otras dos.
+De mi lado, ahí estoy...
+Ahí... Hay PRs para revisar, ¿está bien?
+Vamos a ver si puedo liquidar con lo del chatbot, ¿está? Para ya dejarle todo el backend a Yona, ¿sí?
+Con eso debería quedar todo pronto. Ya subí las variables de entorno y todo, o sea que en realidad la conexión debería estar totalmente habilitada.
+Lo único que debería faltar es, bueno, el front y conectarlo con el back una vez que se marche.
+Después voy a seguir con la documentación de ASFI y, asimismo, tengo que... Tenemos que ahí ver... Tengo que ver dos tareas que surgieron ahora.
+Una tarea con respecto a la subida de documentos, ¿sí? Y otra con respecto a los fees de OneMoney.
+Entonces voy a... Tengo que bajarlos a tierras con Guille y voy a estar trabajando en eso, de mi lado.
+¿Yona?
+Bien, yo estuve corrigiendo comentarios...
+Tenía unos comentarios ahí en las PR que tenía unos comentarios de Marty y después de Fer y Nahue, ya quedó todo de vuelta del lado de donde corresponde.
+Y estoy metiéndole full a lo del chatbot, así que voy a seguir con eso y mientras sigan surgiendo comentarios ir resolviéndolos.
+También estuve corrigiendo ahí ya la PR de notificaciones de Nahue, que estaba bastante bien y bastante grande, así que ya quedó probada de mi lado.
+Así que nada, voy a seguir con eso del chat.
+Bien de bien. Recuerden que cada uno tiene ciertas PRs, ciertas tareas del chatbot del reviewer.
+Recuerden que las tareas del reviewer, o sea, en tu caso, Yona, si la tenés por acá, o te asignamos a vos.
+No sé a qué te referís.
+La del prompt.
+No, creo que no. O por lo menos no tengo ninguna del prompt.
+A ver, pará.
+Ah, de lo que habíamos hablado, no. Todavía no tengo ninguna creada de eso. De si me tenía que hacer cargo de algo. Eso todavía no tengo ninguna creada.
+¿Están en developer, Marty? Vos mandaste un resumen.
+Sí, pero creo que lo tengo en el chat.
+Está en el chat donde estamos todos, sí. Que yo tenía lo de las migraciones y lo de Redux.
+Ahí sí podés dejar la creada y cuando puedas, estemos a... O sea, esas tareas para todos. O sea, tómense así.
+Ajá, no intento dar... Lo mismo que le digo a Santi.
+Lo mismo que le digo a Santi con los correos. Estos se toman un ratito y las van mandando.
+Está, sí, perfecto.
+Bien. Es más, yo en muchas PRs les voy a ir comentando cosas y digo, che, esto se lo puedo dar conmigo al reviewer.
+O el code generator. Ahí lo que les voy a pedir es que vayan generando tareas, ¿sí?
+No nos dejemos estar con eso. Porque así lo vamos mejorando.
+O sea, primero, enseguida que las notemos, tomémonos cinco segundos para registrarlas.
+¿Está?
+Lo mismo para Enrique, Nahue, Martina, y este, mandenlas y después este, vayamos, ¿cómo se llama?
+Este, vayamos atacándolas a medida de lo posible. Recuerden que tocan los tres repositorios, ¿sí?
+O sea, las tareas tocan los tres repos. Naturalmente, primero enviamos el site, es como si fuera una migración.
+Y una vez aprobado en el site, hay que hacer la réplica en el worker y en el backoffice, ¿bien?
+Estamos ahí prontos.
+Eh, Nahue.
+Bien, yo por mi parte, estoy más que nada corrigiendo comentarios de las PRs, comentarios que ya dejaste vos, o que dejaron en Inter.
+Este, creo que solo me falta, eh, uno por el tema del correo, este, la aprobación de contraparte que ya dejó Kike.
+Así ya dejo todo pronto.
+Este, y también le hice follow up a los chicos para que, para sacar las PRs de los bugs que habíamos encontrado ayer por el tema del MTS.
+Y por lo que habías comentado, de los backoffice users.
+A ver si ya quedan tus requests.
+Bien, bien, perfecto.
+Eh, sí, lo del M303 vamos a cambiarle la épica, vamos a ponerle One Money.
+Bien.
+Y esto, por favor, o sea, ¿ya está en Inter?
+Sí.
+Tá, movámoslo, ¿sí? O sea, este, no sé qué tan grande es el cambio, pero movámoslo.
+Movámoslo, ¿está?
+Dale.
+Después, les pregunto a todos, no sé qué quedó la PR de Enrique, si pudieron debatir un poco ahí la solución y eso,
+o que eso tiene que salir hoy, porque ya nos estamos, o sea, se siguen migrando compañías y siguen acarreando ese problema.
+No sé si todos pudieron verlo, si no.
+Sí, yo ayer le dejé ahí un comment, y no sé, creo que fuimos como por esa solución ahí, Martí sugirió ahí un nombre un poquito más explícito.
+Y creo que quedó en eso, no sé si, no sé bien, Enrique, ahí en qué quedó, pero creo que era, esa la solución.
+Sí, bueno, creo que quedó en eso.
+Bien de bien.
+Bien.
+Nada, Weta, después tenemos lo de Timme, o sea, a medida que te vayas liberando con esto, vamos creando las otras, pero intentemos antes de nada, antes de atacar lo de Timme y cerrar todo lo que esté abierto, comentarios, lo que sea.
+Bien.
+Santi, yo ayer te fui respondiendo a varios emails, igual que con...
+Bueno, por mi parte, te contesté creo que todos los emails.
+Me faltaba uno, me faltaba una confirmación ahí por parte de Enrique y Fernando, que me dejaron hoy la confirmación que el mail de KYC sería para lo de, como se llama, para lo de Bridge.
+Se dispara solo para Bridge, ese mail, y era la única confirmación ahí que me estaba quedando pendiente.
+El resto ya quedaron ahí ajustados para que los revises.
+Y que algunos ya comentaste igualmente.
+Después, por otro lado...
+Ahora en Design, a ver si hay los que vayan faltando.
+Y después teníamos uno que faltaban, o sea, hay algunos que faltan del...
+Algunas variantes.
+Hay variantes ahí, Enrique y Fernando, dale una mano.
+Ya me les pasó las variantes ahí que faltaban.
+Así que eso es otra cosa que hoy le estaban atacando hoy.
+Después, por otro lado, Fernando me dijo que necesitaban un ajustecito en la parte de solicitudes.
+Y justo lo que estoy trabajando con lo de Timmates, estoy en proyección para hacer ese ajuste.
+Que sería agregar algo de copy o algo que informe al usuario.
+El funcionamiento del filtro que tenemos en esa parte de solicitudes.
+Ojo que no, no es lo que pedí.
+La idea ahí es únicamente, o sea, por eso, es como una inyección.
+Lo que está pasando es que eso es una funcionalidad para aplicar por batch.
+Lo seleccionás por batch y podés cambiarlo.
+O sea, lo único que quiero es un subtitulito o algo bien sencillo.
+Sí, sí, sí.
+O sea, no tiene nada que ver con los filtros.
+O sea, los filtros abren un modal o tocan algo distinto.
+No, no estoy en eso.
+O sea, hagamos la idea, por eso se lo pasé a Fernando.
+La idea es un titulito o cambiar el playholder para que sea más claro.
+Y esto aplica a solicitudes.
+Solicitudes sin pagar, renovaciones y disoluciones.
+O sea, porque esta acción por batch y servicios adicionales.
+O sea, es una aplicación por batches, de cambio de estado por batches, que aplica para todos esos.
+Y en todo esto no tenemos problema.
+O sea, los usuarios viejos sí entienden, pero si no, no tenés ni idea qué es.
+La idea es agregar un titulito, se lo agregamos a todos y ya está.
+O sea, más allá de que después estés trabajando en otra cosa, Santi, de mejor.
+Bien.
+No, era más que nada por la parte de teammates que habíamos quedado y que revisara toda esta parte de solicitudes
+para ver cómo meter toda la parte de teammates.
+Justo estaba renovando la pantalla de solicitudes.
+Igual lo de teammates, ojo que lo de teammates es algo interno.
+O sea, es algo interno.
+La parte de solicitudes por ahora no me interesa cambiarlo.
+O sea, es algo que funciona.
+Más allá de que tiene sus temas de diseño, lo que sea, es algo que funciona.
+No recibimos quejas.
+Sí.
+Es más, antes que eso, creo que todos están teniendo el problema luego que empezamos a usar el site con esto de que sea chica,
+de que el Drawer quedó muy ancho.
+Entonces, antes de eso, capaz que incluso trabajar en el Drawer.
+Sí.
+Lo de teammates es algo interno.
+Una vez entrando a la solicitud en las tabs.
+Ahí sí está bien.
+Si te referías a eso, está bien.
+Pero la pestaña de solicitudes que te la lista a todas, esto lo único que es, es un label chiquitito.
+Porque es algo interno.
+Es algo que quedó súper colgado, que era intuitivo para la gente que venía de la plataforma anterior del Corponet.
+Hoy en día quedó...
+Está perfecto.
+Bueno, voy a estar trabajando en ese ajuste.
+Sigo con la parte de teammates.
+Y estoy con el mail de nueva correspondencia añadida.
+Y nada, ese mail dentro de un rato debería quedar pronto.
+Bien.
+Eso nomás.
+Viende bien.
+Las tomo.
+Buenas.
+Bueno, yo por mi lado estuve revisando la APR de Enrique, el mail de bienvenida.
+Le dejé comentarios.
+También estuve revisando el mail de una que me mandó Santiago para que revise.
+Y después estuve haciendo tres overlays para las historias del evento de hoy, de MasterMe.
+Y eso quedó aprobado.
+Ya lo he entregado.
+Y después, por otro lado, estuve haciendo ajustes en la landing.
+Y bueno, ahora estoy adaptando todo a la tablet y mobile.
+Que bueno, ya con eso terminaría.
+Y nada, eso quedaría para hoy.
+Y ya después pasaría a trabajar en correos.
+Bien, perfecto.
+Fernando.
+Muy bien.
+¿Todo revío?
+¿Todo como refactor, Tato?
+Bueno, ahí se fue a renombrar.
+Ah, si reiniciás la página igual sigue como refactor.
+Pero si reiniciás la página igual...
+No importa.
+Acá quedó worker, worker también.
+Está por todo.
+Quedó worker, work.
+Ah, ok.
+Lo arreglo.
+Dale.
+Y arreglo los refactos.
+Bien.
+Estuve haciendo ahí bastante coreview.
+Así que, está eso, aplicando los cambios del sprint, me llevo cinco minutos.
+Menos.
+Eh, quedó por fin toda arreglada la PR de los cuatro primeros correos, ya la volví a
+mandar a intern y quedaron, está con el footer actual y ya metí la evidencia end-to-end.
+Así que, está, y estoy con el que queda terminándolo, el de banking cripto.
+Bien.
+El de, creo que la transferencia actualizada o algo así.
+Y ahí está.
+Eso, y después pensaba hacer una propuesta para agarrar ya test del back-office.
+No sé, ¿qué te parece?
+Bien, perfecto.
+Enrique.
+Están prontas las tareas de lo que es configuración de WhatsApp y demás.
+Están allí en revisión de ustedes y también la PR del worker de lo que es ese back, ahí
+como comentábamos al principio, está para que lo bichen.
+Y, eh, bueno, estuve trabajando con lo que es correos, que ahí hay varios diseños aprobados.
+Ahí ya le comento a Fernando, capaz que nos podemos repartir correos, tal, eso lo vemos
+entre nosotros.
+Eh, pero estuve con el de correo de bienvenida, el de cuenta bloqueada y, bueno, la idea es
+seguir agarrando los que estén, este, aprobados.
+Y también estuve viendo, tratando de mover en, en lo que es intern las, las PRs de Cypress,
+que hay algunas PRs abiertas de Cypress, porque, bueno, si ya dentro de poco vamos a empezar
+a, a trabajar fuerte con todo lo que es esas, esos tests que se vienen, capaz que está
+bueno ya tener todo en regla, tener todo mergeado.
+Así que nada, le, le voy a estar prestando un poco más de atención a eso.
+Y nada, la idea es seguir con, obviamente con prioridad las PRs que están abiertas y
+en la medida que se vayan cerrando, seguir con correos y demás.
+Gracias.
+Básicamente.
+Bien, perfecto.
+Yaste bien Gastón, Fernando, Martina.
+Bien, eh, de mí la otra estuve con reviews de PRs y después estuve viendo, terminando
+lo que era el testing de, de aprobación, eso ya lo terminé también, ya pude testear
+con el flujo de One Money con el flujo de Manual de Bolivia.
+Y después estaba.
+con los bugs
+que había dicho que estaban en teammates
+eso también ya lo tengo, estaba creando las PR
+y grabando los videos
+eso ya quedó pronto
+tengo que crear las dos tareas igual
+pero
+eso ya estaba
+y después
+voy a mandar una PR
+para hacer la
+sincronización del backoffice
+con el site
+con lo último que había modificado
+ahí con unas variables
+de los estilos
+para que quede nomás
+al día
+y después voy a
+seguramente siga con
+lo que me quedaba de pagos internos
+si no surge nada
+y está básicamente
+eso de mi lado
+bien, perfecto
+Marti, ahí lo que tenemos
+que enviar hoy, o sea, además de esa
+sincronización sería lo de teammates y después
+seguir con lo de pagos internos
+los ajustecitos
+¿Tenés tarea para eso de teammates?
+No, las tengo que crear
+lo que dije es que las tengo que crear
+los dos bugs
+Tenía una
+una
+pregunta con respecto a lo que
+habíamos hablado de la guía de
+de lo de diseño
+si pudieron verlo del alto
+para el mobile
+lo que habíamos quedado, a ver si podíamos
+subirlo un poquito
+para que no quedara tan
+Yo hice por mi
+la consulta a Carlos
+que había quedado
+y no tenía ni idea
+mi hijo no tenía ni idea que celulares usaban los clientes
+mi hijo hay de todo
+así que nada
+eso fue el comentario que me hizo
+pero
+podemos verlo y
+hacer un ajuste al tamaño
+capaz que por lo menos
+cien píxeles
+o cincuenta píxeles
+un poquito más
+a mi lo que me preocupa es que
+por el lado de Bolivia
+que tipo de celular se utilizará
+allá
+y nada
+eso, por eso siempre trabajé en el
+como en el tamaño más pequeño
+pero sí, capaz que ya a esta altura quedó bastante
+No, a ver
+pero capaz que podemos pasar
+por ejemplo algún J6, alguno de esos
+Android también nos avala
+lo que decía yo
+el iPhone SE es viejísimo
+entonces capaz que podemos pasar también
+a una equivalencia de Android más nueva yo que sé de eso
+de 2015
+o nada hace 11 años
+sí, sí, están viejos todos ustedes
+11 años
+este
+capaz que ahí tenemos un poco más
+más alto
+entonces este
+ahí si pueden Santi y Gastón hagan un research
+porque está
+creo que podría estar bueno
+dedicarle más énfasis a
+a otros
+a los otros puntos
+bien
+¿Qué más querés compartir vos?
+sí
+bien
+la idea de esto es
+empezar a tener
+en
+tres excels distintos
+el tema de
+el seguimiento para lo que es
+la asignación de
+las PRs, que en ese caso
+sería
+las PRs que se
+le asignan a diseño y las de
+intern
+acá la idea de este primer excel es
+que cada uno
+acá cada uno tiene su tab
+que cada uno pegue el link de la PR
+que ponga se aplica
+a quien de diseño
+se le asigna
+y lo mismo para intern
+que en el caso de
+de Enrique y Fernando
+son Nao y Jona
+y en el caso de Nao y Jona son
+Enrique y Fernando
+esta columna eso
+es opcional pero está ahí por si quieren
+no sé
+no creo que la vayan a usar pero bueno por las dudas
+y la idea es que acá
+básicamente
+poder tener un seguimiento también ustedes de
+por ejemplo
+si tienen varias PRs
+que puedan más o menos
+distribuir la carga
+para que no siempre le estén asignando al mismo
+las reviews
+y también para poder tener un seguimiento más claro
+porque a veces en Slack se vuelve un poco
+tedioso saber quién la está mirando
+así que no
+eso primero por este excel
+ahora
+hacer una pausa
+ahora que Marti lo dijo políticamente correcto
+ahora yo lo voy a decir en criollo
+hay gente que se está rascando el orto y no está revisando
+una mierda de PR
+no quiero señalar a nadie
+entonces nos sentamos con Marti para buscar un mecanismo
+porque ya me tiene podrido eso
+bien
+quiero que cada uno en su hoja
+cuando pone el link ahí de la PR
+pon una PR
+la pone ahí
+en el caso de Enrique y de Fernando
+no tienen que aclarar
+que se la envían al otro
+porque es de QA
+entonces es lo que dice Marti
+pero si tienen que aclarar
+si va a Jonah o a Nahue
+lo mismo
+ahí si andan un segundito
+en el caso de Jonah o Nahue
+lo mismo ahí
+en el caso de QA
+ponen Nahue
+ponen Fernando o Enrique
+la política de arrobar a todos
+y buscar
+la buena voluntad
+de quien va a revisar la PR
+es algo que no está funcionando
+y hay gente que se está sobrecargando
+hay PRs atrasadas
+hubo bastantes problemas con eso
+entonces
+nada
+quiero que cada quien se empiece a ser responsable
+y también del lado de Martín y yo
+vamos a ser incisivos
+si una PR está asignada a alguien
+no se toman el tiempo de revisarlo
+no puede ser
+que pase una semana
+y nadie tome la iniciativa
+de revisar una PR
+estamos todos claros con eso
+este excel
+es una masa
+pero surge como un mecanismo
+para que ustedes puedan
+primero hacer el round robin manual
+si después de mañana buscan una manera
+más linda de hacerlo mejor
+lo debatimos
+señal
+pero la idea es que
+se pueda dividir las cosas
+si
+entonces
+generemos este mecanismo
+y veamos si con esto se soluciona un poco
+pero no puede ser
+y lo digo para que lo sepan
+no puede ser que haya PRs de una semana
+o dos semanas asignadas
+y no se tomen el tiempo de revisarlo
+entonces a partir de ahora
+va a haber responsables por PR
+enseguida quien sea que vea una PR
+va a tener los responsables
+acá
+acá va a haber evidencia de que la asignación
+fue aleatoria
+o sea fue aleatoria
+o sea arrancan con Jonah y después Nahue
+en el caso de Santi y Gastón no tienen ese problema
+si
+pero nosotros como en diseño y QA
+somos varios
+bueno está listo
+probamos asignarlo así nomás
+queda injusto siempre alguien termina agarrando más PRs
+entonces dividámoslo
+la pregunta que puede surgir acá es
+que pasa si yo envío
+una PR que
+está relacionada por ejemplo envío
+una migración de modelo que es BackOffice
+y Site
+y Worker bueno lo ideal sería
+que se lo asigne al mismo
+entonces después ven como reparten
+la carga pero lo ideal sería
+que se lo asigne al mismo porque si no por ejemplo
+si yo le asigno a Jonathan
+y le asigno a Nahue dos cosas distintas
+como que tienen que andar mirando las dos
+PRs entonces lo mejor es que ya que
+Jonah se va a sentar que lo mire Jonah
+que lo mire Nahue
+equivalencia lo mismo para Enrique y Fernando
+lo mismo va a ser acá con el responsable
+de diseño si ustedes
+acá vienen lo van poniendo
+y la idea es que arrancan con Santi
+y luego Gastón luego Santi y luego Gastón
+es equitativo para ambos
+y nos quedamos todos tranquilos de que
+es lo más parejo para todos
+estamos alineados con esto
+perfecto
+adelante Vanti
+bien
+el primero es el segundo
+tiene que ver con lo que es el
+channel de issues reports
+que ahí la idea es
+creo que estuvo medio muerto
+últimamente la idea es poder
+asignar a alguien por semana
+y básicamente lo mismo
+tener acá
+plasmado en que
+está eso
+acá si no me equivoco
+queremos mantener la idea del reporte
+semanal o sea una vez por semana
+no es tipo diario
+pero tal la idea es como para tener más orden
+de que sea algo similar
+a lo que se tiene hoy
+para lo que es los VAGS
+si podemos Marti copiemos
+la lógica de semana
+y asignaciones ya dejémoslo
+ya dejémoslo armado
+igual que el otro que vas a mostrar de los
+channel así ya queda un responsable
+Enrique y Fernando
+Enrique fue el que arrancó haciendo esto en su momento
+después se lo pasamos 100% a Fernando
+porque Enrique estaba sobrecargado
+hoy en día todos
+pueden hacerlo
+y esto surge también porque están aumentando
+el número de llamadas
+entonces al estar aumentando
+el número de llamadas nosotros tenemos un servicio
+que se encarga única
+y exclusivamente
+de bloquear llamadas
+VAGS o lo que sean
+o cosas raras
+entonces ahí lo que les voy a pedir es
+una vez por semana
+va a ser lo mismo que el channel de
+que el channel de responsable
+hay que pasar al channel de issue report
+ese reporte
+donde ustedes tienen que validar
+como se llama
+tienen que validar que las llamadas que se
+cancelaron tengan coherencia
+si
+por ejemplo si el usuario puso
+que no usa el correo electrónico
+se bloqueó correctamente porque
+como vamos a poder contactarlo si puso un correo
+electrónico inválido
+ahora si el usuario puso todos los datos
+bien y nosotros bloqueamos la llamada
+quiere decir que algo está mal en el script
+entonces tenemos que
+iterarlo
+esto hay que estarlo pendiente
+porque Matías
+Guillermo y todo esto no sólo cambian
+las preguntas a veces
+sino que también
+puede ser que en algunos casos nosotros estemos
+bloqueando mal entonces es entrar al link
+y este
+y nada hacer el reporte
+ahí pueden ver los últimos reportes que hizo
+Fernando es algo muy sencillo
+no hay un día en particular en la
+semana que hay que hacerlo
+pueden hacerlo cuando quieran
+lo ideal es que lo hagan lo más espaciado
+posible la última vez pero no hay
+un día en la semana que pueden hacerlo
+si uno lo hace el viernes y otro lo
+hace el lunes y bueno va a estar cagando
+al que tiene que hacer la semana que viene
+porque va a tener muchos más
+eso lo van manejando entre ustedes
+a mí no me interesa
+no es que lo tienen que enviar los miércoles o los jueves
+en la semana en algún
+momento tiene que aparecer ese mensaje
+si bien
+y vienen hasta esta tabla y lo
+marca
+ahí yo a Nata y Nahue si tienen
+duda piden una call a
+Enrique y a Fernando para poder verlo
+y sacarse las dudas
+perdón Marta
+no sé si esta semana ya la contamos
+la descartamos
+o la dejo
+no esta semana no hubo
+nada así que asignémosela
+a Fernando y arranquemos por
+Fernando
+yo la actualizo ahora
+bueno
+acá nomás el estado es
+para que sepan si está o no
+reportado y después
+esto lo voy a llenar yo para que quede
+observaciones
+igual que en la asignación de PR
+no tiene tanto sentido
+pero acá las observaciones
+por ejemplo si Fernando está de licencia o lo que sea
+la idea es que los cubran
+y ustedes marquen a la vuelta
+que acá se va a encargar otra persona
+si?
+es interno para nosotros
+hasta ahora estos dos son internos
+no es lo más sano
+deberíamos ver algún mecanismo
+de asignación automática
+no es lo más sano pero
+por ahora somos un equipo chico
+vamos a manejarlo así
+bien
+y después por último
+el tercer excel
+sería este
+que acá la idea es básicamente
+reflejar
+la asignación que hoy está
+en los channels de bugs
+que reportan
+y está
+dejarla registrada
+esto ya está hecho hasta
+lo que queda este año
+así que
+en realidad no debería modificarse
+pero acá la idea
+este excel en particular
+va a ser compartido con el resto
+con los admins y demás para que sepan
+a quién tiene que dirigirse
+según la semana
+y está básicamente
+eso
+tiene mucha ciencia
+no sé si querés agregar algo
+no, este ya está hecho
+lo importante acá es que ustedes se tomen el tiempo
+si? de que si hay alguna
+semana en particular que van a estar de licencia
+o por alguna razón no van a estar
+lo pongan en observación
+y también marquen como lo van
+a cubrir
+en el otro lado
+si? estamos hasta ahí?
+yo tengo una
+consulta
+que tengo una consulta
+en primer excel
+que mostrará
+si, adelante
+acá ustedes
+van a elegir, o sea el dev
+va a elegir al responsable de diseño
+o lo va a poner en base
+a quien responde primero
+porque con Santi tenemos
+o sea como que
+nos dividimos las PDRs
+en base a si el diseño lo hicimos
+o sea
+en base a quien lo hizo el diseño
+entienden mejor las cosas que hizo él
+y yo entiendo mejor las cosas que hizo él
+claro, pero está bien
+pero lo que está pasando
+y eso lo charlamos con Martina
+es que vos estás haciendo más cosas de marketing
+y Santi está haciendo más cosas de diseño
+si? entonces lo que está pasando es
+que vos cada vez quieras o no
+naturalmente te estás alejando un poco más
+de la parte tecnológica
+porque es algo natural que está sucediendo
+entonces si yo sigo
+ese patrón o dejo que solo Santi
+corrija las cosas que hizo, cada vez vos te alejas
+más, entonces la idea es que acá
+los desarrolladores, por ejemplo ahí
+Enrique creó una PDR y se la asigna a Santi
+cuando va a crear otra PDR que esté involucrada
+en el diseño va a ver la última que asignó
+y se la asigna a Gastón
+yo sé que puede generar un retrabajo pero también
+hace que vos te sientes a pensar con Santi
+o a rever que mierda estamos haciendo de nuestro lado
+porque si no al final Gastón
+vos ponete a pensar que
+todo lo que nosotros peleamos para que
+nosotros hagamos chequeos
+o lo que sea, si los haces vos y vos te alejas
+de la parte de tecnología
+al final del día
+podemos tender a tener lo mismo
+que teníamos con Samuel
+entonces no es ley
+y también la idea es que si hoy o mañana Santi
+se va de licencia
+vos estás perdido
+lo mismo con Santi
+cuando revisa su diseño
+ustedes en este caso son dos
+entonces no tenemos que hacer todo esto
+pero si me sigue interesando que los dos revisen
+la full request
+y que los dos se vayan peleando
+yo sé que es totalmente positivo
+el hecho de que vos tengas que agarrar, parar y decir
+che que mierda pasó acá
+que está pasando
+porque si no te me vas aislando
+y cuando quiero ver son más del equipo
+de marketing que de tecnología
+¿bien?
+los dos primeros excel
+son privados, son para nosotros
+obviamente que después podemos
+veamos cómo funcionan
+nosotros con Martina venimos iterando
+en soluciones a cosas
+cuando vemos ciertos cuellos de botella
+como funciona
+yo para mí siempre es mucho más sencillo
+que haya un responsable
+porque al final del día está todo muy lindo
+pero tiene que haber alguien que se encargue
+de las cosas
+para mí es mucho más sencillo
+que haya un responsable
+y poder hacer seguimiento de ese responsable
+si no hay nadie responsable
+atendemos a la buena voluntad
+y no es que yo no estoy mal
+porque no trabaje
+yo sé que muchas veces no revisan PR
+porque tienen diez mil tareas o lo que sea
+¿se entiende?
+entonces si yo no tengo quién es el encargado
+a quién voy y le digo
+yo puedo ir por ejemplo y decirle
+tendrías que haber revisado vos Jona o vos Nahue
+o vos Enrique o vos Fernando
+y me dice pa pero estaba con diez mil tareas
+y Fernando no
+y es todo relativo
+yo acá no puedo como líder del equipo
+no puedo manejarme por relatividades
+tiene que ser concreta ciertas cosas
+¿bien?
+igual esto como digo la idea
+nosotros probablemente después de este sprint
+ya que lo tenemos hace bastante tiempo
+vamos a tener una retro
+entonces analicemos cómo va funcionando esto
+y también piensen alternativas
+¿bien?
+algún comentario, alguna duda
+esto empieza a regir a partir de hoy
+así que Marty va a pasar los links
+y todas las PR que ustedes empiecen a mandar
+mándelas así
+la idea es que ese, o sea
+si yo veo esto en el caso de Enrique por ejemplo
+lo que voy a ver es Jona Nahue, Jona Nahue
+Jona Nahue, Jona Nahue
+y Enrique va a ir haciendo el run run
+en el caso de Jona
+que va a decir Enrique Fernando, Enrique Fernando
+¿bien?
+obviamente que si acá hay algún cambio
+por ejemplo Nahue se fue
+o lo que sea y hay que sacar algo
+ponemos observación y vienen ustedes
+y lo cambian
+por ejemplo observación
+esto lo agarra Nahue que sabía más
+entonces ahí lo cambian
+ese tipo de cosas
+la idea es que lo vayamos actualizando
+después podemos pensar algún
+mecanismo o algo que
+haga un trigger
+o algo por el estilo
+pero
+somos un equipo muy chico
+estos son 5 segundos, publican la PR ahí
+vienen y la publican acá
+ya asigna el responsable y ya está listo
+no es nada que debería
+llevar muchísimo tiempo
+y la revisión semanal
+es únicamente para verlo
+tengan en cuenta que los responsables
+del channel lo va a ver todo el mundo
+nosotros lo vamos a publicar en el general de dashboard
+eso quiere decir que
+el general de dashboard va a poder ver esto
+y es responsabilidad de ustedes
+si se van de licencia o lo que sea
+marcar que no van a estar y quién se va a encargar
+y cuándo deberían cubrir
+a esa persona
+esto lo que va a prevenir es que si el chat de Mati
+anda mal o asigna mal
+ellos van a tener como este excel
+para poder venir y mirar
+y decir ah mirá acá no
+ahí estaba asignado otro
+bien
+una consulta más, algo más
+ahí Marti si podés te vas a dejar
+piñados esos
+excel en cada uno de los canales
+sí
+obviamente
+gracias
+bien
+eso creo que era todo
+de todo esto
+ahí también de nuevo
+lo mismo que se aplica
+con los prompts
+si ven que hay algo que no sé
+no les parece que esté funcionando
+o alguna cosa con estos excel
+algún comentario o lo que sea
+también lo pueden traer
+pero está
+básicamente la idea es a ver si esto
+ayuda un poco más
+a ordenar ahí
+y nada yo de mi lado
+tengo pendiente revisar lo de por las dudas
+lo de Jira
+de la automatización
+de la asignación que no funcionó
+pero está
+por ahora
+esa parte por lo menos desde el
+traspaso de Santi a
+lo que era el reporter
+lo van a tener que seguir haciendo manual
+pero voy a ver si puedo ver qué onda
+porque está
+Jira es medio
+mierda para eso
+pero está
+si hoy tuvimos un problema con el don
+con continuation y eso
+nadie cerró ninguna tarea hoy ¿no?
+está genial perfecto
+y ahora ya debería haber quedado bien también eso
+para el cierre del sprint
+así que bueno yo cerré sí
+pero igual los aparecen en este sprint
+ah ta ta
+entonces está bien
+bueno entonces buen provecho
+cuídense nos vemos

@@ -1,0 +1,2 @@
+capaz que esto hacerlo en una función auxiliar es exclusivo
+para el mismo no sea igual o sea porque para que quede súper claro

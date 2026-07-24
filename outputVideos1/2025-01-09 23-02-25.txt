@@ -1,0 +1,30 @@
+para mí para validar
+y creo que acá con esto ya haces hasta
+para los partners, porque creo que este
+getValueByPath se usa para los partners
+también, pero ya lo
+pero ya lo haríamos
+si lo atacamos acá ya matamos
+dos pájaros de un tiro, más allá
+de que después tendrías que hacer los tests de partner
+¿sí? vos si lo
+atacás acá ya funcionalmente
+va a estar para partner, mirá
+mirá los 5 segundos
+poné el método del repositorio
+baja un poquito
+baja un poquito
+getPartnerData
+¿dónde se crea el partner?
+baja, ah no, no se hace
+para partner, para partner vas a
+pasarla más mal
+no, no, se hace acá
+ahí se hace el create, pero para partner
+va a ser más difícil
+bueno
+quería milonga, dale milonga
+va a estar más complicado
+acá va a estar más complicado
+vos tenés que agarrar y fijarte
+el caso para pausar

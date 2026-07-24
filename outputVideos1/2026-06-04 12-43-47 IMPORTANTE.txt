@@ -1,0 +1,1619 @@
+que tenemos, pero además de eso
+no estamos estimando bien los story points
+nosotros tenemos
+hacemos una estimación
+después la cambiamos y no hay
+como reglas
+entonces a partir de ahora
+va a cambiar el flujo
+para todos los
+ambientes, para lo que es diseño
+para lo que es desarrollo
+todo, primero
+en cuanto a la creación de las tareas
+toda tarea que creen
+toda tarea que creen
+tiene que estar enviada
+en este nuevo channel
+ahí no sé si todos lo pudieron ver
+que es solicitud de tareas
+¿ustedes ya vieron?
+¿no? ¿alguien no está en el channel?
+creo que estoy solo yo
+a ver
+ahí lo salió
+la idea es bien sencilla
+el problema de lo que está pasando hoy en día
+es que nosotros enviamos una tarea
+la tarea se envía a un channel
+¿sí?
+de ese channel se envía a otro
+se envía a otro
+entonces después el three point
+no nos permite reflejar nada
+¿sá? entiendo que hemos estado como locos
+pero eso se terminó
+y lo mismo pasa a nivel diseño
+¿sá? la tarea pasa por un lado
+¿sá? entonces a mí no me permite
+tener trazabilidad de los tiempos que están llevando
+las cosas y cuánto realmente
+o sea cuánto realmente llevó
+algo, entonces al final es medio que
+todo, todo el boleo
+¿sí? y esto no está mal
+¿sí?
+siempre y cuando nosotros estemos rindiendo
+¿sá? que es un poco lo que
+viene pasando hasta ahora, por ahora venimos rindiendo
+y venimos afán
+¿sí? pero es momento de darle orden
+entonces lo que va a cambiar es
+todas las tareas
+hay a partir de ahora
+Santi, las tareas
+vos que tengas con Gastón
+lo mismo Enrique con Fernando
+las charlan entre ustedes pero las tiene que enviar Fernando
+o las envía Gastón
+cada quien es owner de sus tareas
+¿sí? lo importante es que en esa tarea
+se describa
+el nombre con el formato que tenemos
+y los history points
+hasta enviarlo al primer canal
+en este caso, en el caso de desarrollo
+va a ser
+¿cómo se llama?
+en el caso de desarrollo va a ser hasta pull request in time
+como vienen haciéndolo hasta ahora
+¿sí? y en el caso de diseño va a ser hasta
+la aprobación de Gastón
+¿está? hasta ahí venimos bien
+la idea es que todas las tareas a partir de ahora
+todas y cada una de las tareas
+tienen que tener descripción
+¿sí?
+una tarea que no tenga descripción
+aunque sea una oración interna
+¿sí?
+entonces la idea es que ustedes escriban la tarea
+y vean la descripción
+entonces ahí así nosotros siempre estamos alineados
+de lo que se está haciendo
+en el caso de diseño también
+pueden repetir lo que es el texto
+no me interesa
+pero siempre tiene que haber una descripción
+como para poder aclarar algo más humano
+más allá del formato de la user
+la cosa va a ser la siguiente
+nosotros habíamos establecido
+que a partir de una tarea pasadón
+se pueden cambiar los history points
+¿recordamos eso?
+¿sí? bien
+eso va a mantenerse
+va a mantenerse igual
+lo que va a cambiar
+o sea ustedes no
+pero lo que va a cambiar
+es lo siguiente
+vamos a establecer breakpoints
+que van a ser responsabilidad del diseñador
+o del desarrollador
+¿sí?
+para que ustedes vayan llevando
+entonces lo que vamos a hacer es
+cuando una tarea pasa a pull request intern
+¿sí?
+si ustedes le estimaron
+por ejemplo
+o en el caso de diseño
+pasa
+se le envía a este Santi a Gastón
+Gastón a Santi
+en el momento en que pase ahí
+¿está?
+si ustedes estimaron ciertos puntos
+y hay que hacer una reestimación
+lo tienen que hacer automático
+¿está?
+o sea pasa a ser responsabilidad de ustedes
+¿qué quiere decir eso?
+si yo le puse 8 puntos
+y lo terminé en 5
+automáticamente voy a la tarea
+voy, pongo un comentario
+y pongo
+se pasó al channel de pull request intern
+en 5
+¿está?
+¿sí?
+y lo cambié
+nosotros tenemos que
+o sea ya somos un equipo bastante grande
+entonces tenemos que tener esa trazabilidad
+por ahora no le estaba dedicando importancia a esto
+pero necesito empezar a mostrar métricas de rendimiento
+entonces
+vamos a
+tengo que empezar a tener trazabilidad de esas cosas
+y
+y lo vamos a necesitar también
+para los pasos que vienen
+para lo que es
+con la parte del fondo de inversión
+y bueno la regulación de la API
+como son procesos internos
+bla bla bla
+entonces
+, necesitamos establecer ciertos órdenes de trabajo
+que ponen un poco más de burocracia
+pero también nos van a permitir a nosotros
+estar más tranquilos
+entonces ahí la idea es como que el primer paso pasó a pull request intern
+la cambié de 8 a 5 puntos
+cuando sale de pull request intern
+que es lo que está pasando hasta ahora
+por ejemplo ustedes se tuvieron una tarea de 3 puntos
+pero en realidad esa tarea de 3 puntos
+llevó mucho más que 3 puntos
+obviamente que si se demoró 3 días
+no me van a poner 3 días
+no me van a decir pasarla a 21 puntos
+porque estamos de acuerdo que no tiene lógica
+lo que pasó es que fueron respondiendo comentarios despacito
+entonces ahí
+cuando pasa a pull request
+ustedes tienen la responsabilidad
+van a tener la responsabilidad
+de volver a ajustar esos puntos
+¿está?
+o sea, tienen que hacer un prorrateo y decir bueno
+yo le estimé 8
+me llevó 5 hasta pull request intern
+en pull request tuvo mucho comentario
+entonces en global
+por más que demoró 3 días
+en global me llevó 3 puntitos más
+¿está?
+y lo mismo cuando es aprobada final
+en el caso de diseño es cuando ya está aprobada final
+en el caso de diseño es cuando ya está aprobada final
+cuando llega a design review
+¿si?
+y en el caso de desarrollo
+cuando se termina aprobando en pull request
+y se me oye
+¿ah?
+esto quiere decir que en el momento que ustedes pasan las tareas a DOM
+ya fueron pasando por varios procesos de actualización de los history points
+¿si?
+esto va a ser responsabilidad de cada desarrollador llevar en día
+¿estamos?
+¿se entendió la idea?
+entonces esto nos va a permitir
+de lograr de esta forma que cuando una tarea pasa a DOM
+ustedes ya
+ese proceso que yo les digo
+bueno antes les decía bueno háganlo y cuando se termina ¿verdad?
+bueno fuimos llegando a una estimación más real
+¿si? porque
+a nivel diseño fue pasando por su
+su canal después pasó por design overview
+entonces ahí ustedes ya cuando terminan todo el flujo
+fueron ajustando, ajustando, ajustando hasta que en un momento llegó a ajustarse
+si nosotros hacemos eso bien
+y si cada uno hace eso bien
+y va a ser responsabilidad mía y estás chacándolo
+no deberíamos nunca tener
+que ajustar o muy pocas veces
+ajustar porque deberíamos llegar al fin
+y lo que nos permitiría ver es
+realmente empezar a ver la estimación final
+¿está?
+que es lo que nos está pasando ahora
+bueno hay que ajustar a último momento diez tareas tanto history point
+eso no puede pasar más
+¿bien?
+es responsabilidad de cada uno ajustarlo
+pero esto va a ser o sea y
+y yo veo una tarea que de repente pasaron diez días
+y ustedes la dejaron en los mismos history point
+y ahora la pregunta va a ser
+¿por qué no actualicemosla?
+sino ¿por qué no lo hicieron antes?
+¿se entiende?
+¿está? entonces son ustedes pasan a ser ustedes
+ownership de sus propios sprint
+en ese sentido ¿está?
+y la idea es que cuando ya vayamos llegando al sprint
+como ustedes vamos midiendo eso
+ya lo vamos viendo
+entonces por ejemplo si nosotros fuimos
+¿qué nos va a ayudar a asistir esto también?
+un problema grande que nosotros estamos siguiendo es que cerramos el sprint con perras abiertas
+tiene toda la vida que pasar
+porque el sprint es
+no estamos usando el sprint para hacer salida de esa producción
+sino lo estamos usando como punto de corte
+entonces lo que nos pasa también últimamente que es
+continuaciones
+tenemos una continuación de esto una continuación de otro
+entonces dejaste una tarea de ocho puntos acá
+y generaste una de tres del otro lado
+¿tiene sentido?
+creo que nos está pasando un todo
+entonces la idea de este proceso de nuevo flujo
+es que a partir de ahora
+ustedes van a
+cuando si tenemos que hacer una continuación
+en la tarea anterior ya dejaron registrado la tarea anterior
+en la tarea anterior ya dejaron registrado la tarea anterior
+en la tarea anterior ya dejaron registrado la tarea anterior
+todo lo que fueron esos cambios por lo menos hasta el punto de cierre
+y entonces fueron actualizando los puntos al día
+supongamos que una tarea quedó en pull request
+ya pasó por intern
+ya pasó por design
+entonces fueron ajustando esos procesos
+¿bien?
+¿sí?
+algo que también es sumamente importante
+y también va a actualizar los flujos
+es que a partir de ahora las tareas de design
+se la van a asignar a Santiago Gastón
+y Gira también
+eso puede llegar a complicar un poquito el cierre del sprint
+tenemos que ver cómo hacerlo
+pero también me va a permitir a mí entrar a Gira
+y poder ver también tener el tablero
+y utilizar qué está al lado de design
+sé que no son muchas cosas
+pero es como que nosotros no solo vamos a pasar la PR
+sino que vamos a pasarla al lado de design
+¿bien?
+¿sí?
+como tenemos varios revisores
+no podemos hacer eso con los revisores
+pero sí podemos hacerlo con la parte de design
+y si una tarea
+y lo que va a pasar ahí es que si una tarea está en design
+y tenemos que cerrar el sprint
+probablemente lo que hagamos sea
+asignarla de nuevo hacia atrás
+¿sí?
+por ejemplo supongamos que Enrique tiene una tarea
+se la pasó a Santiago
+Santiago ahora tiene el sprint reinflado de tareas
+tenemos que cerrar
+entonces lo que hacemos es
+la volvemos a pasar a Enrique
+¿sí?
+el proceso es automático
+la volvemos a pasar a Enrique
+cerramos, creamos una continuación
+y esa continuación se la asignas a Santiago
+igual gasto
+¿bien?
+entonces eso me va a permitir a mí también saber
+del lado de diseño qué pasó
+y lo bueno es que vamos a usar de una vez
+por toda el flujo de design review
+¿sí?
+ahí tengo una pregunta
+¿hacer eso no va a hacer que
+se arme un quilombo en temas de quién
+de quién es cada tarea?
+no porque en realidad te queda en el historial
+te queda en el historial quién la tenía
+porque también tenemos el estado de design review
+si no, ¿cómo está?
+claro, sí, sí, sí
+la idea es que la tarea pase a design review
+¿sá?
+es decir, que empecemos a usar ese estado de design review
+¿sá?
+la idea es que empecemos a apalancarnos mucho en el GIF
+o sea, ese es el cambio brusco que estamos haciendo
+igual todo esto lo vamos a dejar registrado
+ahora me voy a tomar un tiempito para dejarlo todo documentado y registrado
+¿sá?
+pero lo importante es que empecemos a iterar en el software
+así mismo otro cambio que va a haber es
+¿en qué momento se pasa?
+¿en qué momento se pasa a dev review una tarea en GIF?
+por cincuenta créditos ahí
+cincuenta pagos ahí en el format
+¿cuándo se pasa a dev review?
+lo único que teníamos
+a ver, Tato
+¿y qué?
+cuando pasa al channel del pull request
+cuando pasa al channel del pull request
+bueno, eso es lo que va a cambiar a partir de ahora
+¿sá?
+ya no va a ser cuando pasa al channel del pull request
+sino en el dev review
+ya vamos al desarrollo
+o sea, no es
+antes eso funcionaba
+pero hoy en día
+el pull request interno está llevando mucho tiempo a veces
+también, más allá del pull request
+y también la parte del pull request cuá
+entonces, en el momento en que pasa un channel del pull request
+ya está en proceso de review
+el desarrollador se tomó todo su tiempo inicial
+y ya empezó en revisión
+y eso lo que me va a permitir a mí
+es empezar a sacar métricas
+de cuánto tiempo nos lleva
+y empezar a analizar
+el proceso de review de las palabras
+¿sá?
+lo mismo, por eso también la idea de
+del design review
+¿sá?
+yo ahí voy a poder hacer análisis
+en cuanto a lo que son las brechas de tiempo
+y poder ver cuánto tiempo
+nosotros estamos
+se está llevando
+en mergear un APR
+desde que un desarrollador dijo que está listo
+¿sá?
+y lo bueno es que cuando, por ejemplo
+saquemos la parte de prompt engineer
+a mí me va a poder permitir sacar métricas
+y decir si realmente tuvimos una mejora con eso o no
+¿sá?
+que es un poco la idea
+bien
+pero tengo que pensar
+pero muy
+sí
+o sea, por ejemplo, si llega a
+a pull request intern
+ahí ya está en dev review decís vos
+sí
+ok
+eh
+sí
+pará, dame un segundito porque
+lo tengo que pensar
+no, no lo creé
+a ver cómo miércoles se hace
+yo no hice el curso de PM
+quiero decirlo nomás, ¿no?
+ahí me empaltó con Andrés
+tendría que haber
+tendría que haber hecho amigos
+no
+vamos a compartir el sprint
+para mostrarle algo
+Martu, ¿cómo agrego un nuevo estado?
+¿está de verdad?
+al flujo de Jira?
+sí
+tenés que ir a las configuraciones
+¿está con un setting?
+eh, no, al board
+board settings
+es en los tres puntitos
+ahí a la derecha
+acá
+space setting
+eh, no
+no, no
+ahora no
+en el board
+tenés tres puntitos a la derecha
+ah, acá
+no
+ahí
+no, pero no
+ahí
+no, pero no
+en el board
+tenés tres puntitos a la derecha
+ah, acá
+no
+ahí
+no, pero no
+ahí
+no
+tranquilo
+sé que hay un lugar donde es
+eh, board settings
+a ver, pero
+view settings
+backend settings
+more
+tenés tres puntitos por todos lados
+eh
+en la parte de distro
+tenés otros ahí
+sí, sí
+a ver, sumar
+y también
+acá en el enda
+ah, eh
+andate a board
+en la tab board
+al lado de backlog
+ahora sí
+los tres puntitos
+me bañaron
+me bañaron
+y me
+acá
+ahí
+manage work
+eh
+no, nunca lo ajustamos
+eh
+tenemos de review
+design review
+home hall
+status category
+eh
+hermoso
+mirá que lindo
+esto es lo que
+esto es lo que
+ni
+¿por qué tengo dos de review?
+ahí está
+mirá
+era design review el otro
+el que borraste
+ah
+que cagado
+bien ahí
+voy a volver y continuar
+guía todo
+eh
+tu tu
+pa pa pa
+bien pobre
+ahí está
+hermoso
+bien de dios
+¿cómo?
+no, lo de asignar el flujo
+en el
+¿en dónde?
+eh
+ah, acá
+sí, es
+es una
+una
+pero no me permite poner any
+como las otras
+eh
+creo que
+capaz que puedo solucionar todas
+¿no?
+no, en realidad vos acá
+tendrías que solo poder pasar
+desde
+o sea
+desde review intern
+en
+en
+en
+en
+en
+en
+en
+en
+en
+no, primero
+del de la izquierda
+from
+pero no me permite poner any
+eh
+sí sí sí sí sí
+tenés que
+eh
+eh
+poner ahí
+en transitions
+eh
+el signo de
+de más
+lo estoy
+lo estoy viendo
+no, a la izquierda
+from statuses
+y ahí
+poner
+ahí va
+lo estaba buscando
+no sé
+yo lo tengo en español
+me queda
+un poco
+ahí va
+precioso
+quedó igual
+Y está listo, ahora sí, vamos a salvarlo
+Hermoso, mirá que lindo
+Nos quedó el tablero
+Lo que va a cambiar también es lo siguiente
+Con respecto al tema de métricas
+Vamos a agregar este nuevo estado
+Que nos venía haciendo falta
+Ah, vamos a ver el bot
+Qué lindo
+Bueno, vamos a tener este dev review interno
+Entonces de nuevo
+Todo esto
+Que en realidad creo que design review viene
+Lo venimos haciendo antes, ¿no?
+Del dev review interno
+Sí
+Perfecto
+Entonces, un poco eso
+La idea es empezar a tener
+Trazabilidad de todos los estados
+Primero en story point
+O sea, que los story point empiecen a tener sentido
+Entonces la idea es que a medida que van
+Ustedes estiman un story point
+Le estimaron 8
+Después la pasan a design review
+Me llevó tanto, ya lo ajustan
+La pasan a dev review interno
+Me llevó tanto, la ajustan, la pasan a dev review
+También la ajustan
+En el caso de ustedes
+No quiero agregar más columnas
+¿Cómo se llama?
+Santi Gastón
+Por ahora trabajemos con dev review interno
+Que es la review entre ustedes
+¿Está?
+Y después de la review interno
+Pasemos a dev review
+Donde por ahora mergemos todo lo que es
+El proceso de revisión de nuestro lado
+Y de Iverno
+A ver, no, vamos a hacerlo así
+Más sencillo, porque así no se puede hacer nada más
+Así no se puede hacer nada más
+No quiero agregar más columnas
+Design, en el caso de ustedes, Santi Gastón
+Design review es la review entre
+Bueno
+Dev review interno es la review entre ustedes
+Porque es algo interno entre ustedes
+Sino el mismo flujo
+Design review es tipo la review
+Conmigo
+O dev review es la review
+Conmigo y dev review
+Para ustedes, Santi Gastón
+Es la review con Guillermo si se considera
+¿Estamos?
+Igual todo esto va a quedar anotado
+¿Lo entendieron?
+Perfecto
+Y dev es entre ustedes dos
+Dev review es Martín y yo
+Design review para ustedes
+Es con Guillermo
+Entonces, la idea de esto, de nuevo
+Es que también ustedes ahí, Santi Gastón
+Vayan poniendo los puntos
+Porque algo que nos va a permitir esto
+También es de su lado
+Por ejemplo, lo que realmente necesitamos
+Es marcar, bueno, entre Guillermo
+O sea, en el momento en que nosotros
+Los diseños los estamos sacando rápido
+¿Sí?
+Pero fíjate que estuvieron tres días
+Para probarlo
+Ellos, ¿entiendes?
+Tiene sentido
+Algo que es obvio
+Pero vamos a remarcarlo
+Cuando una PR pasa hacia atrás
+¿Sí?
+Cuando una PR pasa hacia atrás
+Tiene que volver hacia atrás en el estado
+Puede ser que no requiera cambio de story point
+Pero tienen que volver atrás en el estado
+¿Ves?
+Si una PR en pull request pasa
+Pull request intern
+O vuelve a design
+Gira, tiene que reflejar
+¿Ah?
+Todo esto yo me voy a atrever a decir que no es así
+Yo me voy a atrever a decir que no es así
+Yo me voy a atrever a decir que no es así
+Lo vamos a poner con Martu
+Y lo vamos a dejar para el lunes
+Pero es importante que quede claro
+Hablado
+¿Sí?
+El objetivo acá es
+Empecemos a usar gira fuerte
+Y empecemos a estimar
+Para que realmente nos sirva
+¿Sí?
+¿Bien?
+Entonces ahí nosotros cuando marcamos una tarea
+O sea, también, por ejemplo, yo voy a poder
+Marcar métricas del estilo
+Bueno, nos está pasando que cuando cerramos el sprint
+Tenemos muchas tareas que pasan de
+Pull request intern
+Acá
+O muchas tareas que pasan de
+Depth review
+Y las cerramos
+Pero en realidad, tipo, generamos una continuación
+Entonces el tipo de análisis
+Yo voy a poder hacer
+Y poder sacar métricas
+De que podemos mejorar
+¿Bien?
+¿Estamos?
+¿Alguna duda de esto?
+Negativo
+¿No?
+Perfecto
+Bien
+Recuerden
+¿Ah?
+Que todas las tareas que creen
+O que vayan a crear
+Siempre las tiene que pasar el owner
+¿Ah?
+Para el que más le cambia esto
+O sea, para todos le cambia esto
+Porque en el caso de
+Enrique, por ejemplo, y Fernando
+A partir de ahora
+Ustedes las pueden charlar
+Pero las tienen que enviar al channel ahí
+Nosotros se las tenemos que aprobar
+En el caso de Santi también
+O sea, a partir de ahora las envía a Gastón
+Y cambia para todos
+Porque todos van a poder empezar a crear tareas
+¿Sí?
+O sea, todos van a ser los que van a crear tareas
+Ya no es Martina
+Me creás esta tarea o lo que sea
+La pasamos
+Te ponemos un check
+La agregás y ponés la descripción
+¿Bien?
+Genial
+Entonces arranquemos un poco con el sprint
+Eh
+Yo estoy trabajando en el canal de YouTube
+Estoy trabajando en algo
+Que estoy intentando tenerlo para el viernes
+Pero
+Como mañana voy a tener un día complicado
+Muy probable lo termine liquidando para el lunes
+Eso
+Yona nos va a cambiar un poco la lógica del update
+Que es la parte de bajar de permisos
+De planes
+Porque cambia un poco el patrón
+Nosotros estábamos
+Yo, por ejemplo, estábamos trabajando en
+Que cada compañía tenga sus inscripciones
+El problema que tenemos con eso es que
+Un customer tiene relaciones
+Relacionados a los métodos de pago
+Si nosotros empezamos a hacer customer por compañía
+Tendríamos que migrar las tarjetas de crédito hacia cada customer
+Y eso sería un dolor de huevos enorme
+¿Tá?
+La verdad es que es algo enorme
+También a nosotros nos sirve que el usuario tenga una facturación
+¿Tá?
+Si nosotros hubiéramos hecho lo de
+Lo de un método de pago por compañía es más sensible
+Pero también tiene otro
+O sea, se presentó un problema que fue cuando
+O sea, íbamos a ir por ese camino
+Enviaron una solicitud
+Estaba armando una solicitud para enviar strike
+De que a varios gustó
+Asignar a los métodos de pago
+Que eso es muy riesgoso
+Porque hoy en día ya tenemos todas las suscripciones
+Es como pedirle a todo el mundo
+Che, volvá a regresar la tarjeta y a registrar algo
+Capaz que lo haces reanalizar
+Che, estoy pagando esto, lo que sea
+Y estás un dolor de huevos
+Y el otro problema es que el cliente
+Martina tiene una funcionalidad
+Que eso fue el talón de Aquiles
+El cliente ya tiene
+Una funcionalidad que es
+¿Cómo se llama?
+O sea, si el cliente compra una compañía
+Se le vuelve a asignar a él
+Y Martina estaba trabajando en un flujo de compra interno
+¿Sí?
+Entonces en ese flujo de compra interno
+Si nosotros lo hacemos por compañía
+En realidad tenemos que volver a pedirle siempre
+El método de pagos y es un dolor de huevos
+Que es lo que principalmente queremos evitar
+Que el cliente, vos puedas agregar compañía
+Como estás comprando en tu carrito
+Que en inglés sea
+Que esté online
+Y ustedes hacen las compras presenciales
+Entonces es un poco eso
+Entonces el
+Ahí estuvimos analizando
+Estuvimos viendo y la solución
+Que encontramos fue la siguiente
+Stripe permite
+En una suscripción
+Como ya lo estamos haciendo yo en Inowell
+Ustedes ya lo saben, Enrique capaz que lo han visto también
+Nosotros consolidamos una suscripción
+A veces varios precios
+Por ejemplo una suscripción
+Cuando vos comprabas
+Antes viejo en la plataforma
+Si vos comprabas contabilidad y dirección a gente registrada
+Vos tenías una sola suscripción
+Pero tenías los dos ítems
+Entonces lo que nosotros vamos a hacer
+Es jugar con eso
+Stripe nos permite
+Que es lo que estoy trabajando
+Y vamos a tener que testear mucho
+Pero Stripe nos permite
+Fácilmente agarrar
+Y
+Stripe nos permite
+Agarrar y decir bueno
+Vamos a
+Bueno
+Felicitaciones Martina
+Por cumplir un año en Dajo
+Gracias
+Sigamos
+Stripe nos permite agregar una sola suscripción
+Agregarle ítems y cantidad
+Entonces nosotros ahí por ejemplo
+Una suscripción única que tiene el cliente
+Un cliente contrata varios planes
+Le vas a agregar el mismo
+Que es el mismo plan
+Lo que vas a hacer es agregarle
+Varias cantidades de ese ítems
+Y si tiene distintos planes
+Vos vas a agregarle
+Dentro de la suscripción tenés el plan mensual
+Standard
+Tenés un plan mensual
+Anual
+Tenés un plan mensual de Enterprise
+Y de esos manejas cantidades
+De ese plan estándar mensual
+Tenés 10
+Pero es una sola suscripción
+Eso es hermoso
+¿Por qué es hermoso?
+Porque es una sola factura que se cobra
+Gigante ¿no?
+Para una empresa que tiene 50 compañías es gigante
+Pero es una única factura
+Y eso nos permite a nosotros
+Trabajar más tranquilos porque ya no es
+Te falló un método de pago el martes
+Pero te funcionó el miércoles
+¿Se entiende?
+Realmente como que nos facilita la vida
+Entonces estoy trabajando en ese refactor
+Y también vamos a asignar la ética acá
+Por las dudas
+Ya cuando pase vayan todos creándose
+A partir de ahora cada uno se puede crear
+La tarea de CodeReview
+Las limitaciones han ascendido a rango
+Cancho 2
+Entonces todos se pueden crear
+Su tarea de CodeReview
+Menos antes
+Después vamos a tener que hablar
+Este
+Dos días
+¿Qué es lo que está pasando en tu juego?
+Bueno está eso
+Entonces
+Este
+Eso es lo más grande con lo que vemos trabajando
+Y probablemente Jona va a impactar un poco en eso
+Pero está
+Por eso es lo que te decía
+Concentrate en la parte de
+De este
+Concentrate en la parte de lo que es la factura
+Que si tiene que salir el viernes
+Está toda la parte de diseño y todas esas cosas
+Concéntrense en eso
+Después también le envié una tarea aquí que
+Eh
+Que está
+Eh
+Un puntito
+Ya que estamos periquemos con el ejemplo
+Eh
+Envío una tarea que ahora pasó a estar en manos de Enrique
+Así que yo lo único que voy a hacer es cerrarla
+Y que ahí vos create una tarea para con
+Para seguir con esto
+Pero la idea es que
+One Money tenemos en la descripción en la transacción
+El UTR y el UETR no sé cuánto
+Y el IMAD
+Tenemos que sacarlo
+¿Sí?
+Eh
+Después Nahue
+Con respecto a tus PRs
+Es sumamente importante
+Sumamente importante
+Eh
+Cuando se mergee esto
+Tanto la parte de Backoffice como todo
+Tengas una reunión
+O si querés ya podés ir adelantándolo
+¿Tá?
+Pero tengan una reunión con Enrique
+O con Fernando ahí
+Que se organicen entre ellos
+Y hagamos un testeo a fondo
+De que todo esté ok
+¿Tá?
+Que solo el admin pueda ver las configuraciones
+Que solo el admin las pueda cambiar
+El tema del asignamiento
+El tema de la asignación automática
+Que puedas cambiar
+Viste que yo ahí te puse que es
+La compañía tiene assigner 2
+Que eso es como genérico
+Y después tenemos el ejecutivo
+En particular dentro de la compañía
+Es ese
+¿Tá?
+Entonces cuando hacés la asignación
+Que lo tengas
+Que el croncho esté andando bien
+Eh
+Necesito que
+O sea que les expliques cómo funciona
+Todo a Enrique y a Fernando
+Y que Enrique y Fernando
+Vean todas las posibilidades
+De que esa asignación
+Automática esté andando mal
+Que esté faltando o algo
+¿Bien?
+Bien
+Este
+Entonces ahí necesito que nos
+Que nos apoyemos mucho en el equipo de QA
+Porque una vez que empecemos a asignar eso
+Y a enviar correos
+Va a ser un despelote
+¿Tá?
+Así que un poquito
+Dale
+Bien
+Este
+Bueno
+Nada más de mi lado
+Ike
+Por las dudas
+Tómense un tiempito
+Todos
+Este
+No es por cortar a Enrique
+No es que disfrute de cortar a Enrique
+Si no
+Tómense un tiempito todos
+Y analicen su experiencia
+Y analicen su sprint
+En base a lo nuevo que hablamos
+¿Tá?
+A las tareas sin progresa
+Yo lo voy a escribir todo el fin de semana
+Vamos a arrancar tranqui
+O sea con estos nuevos cambios
+Pero cada día que pase
+Voy a ser más insistente con esto
+Hasta que lo hagan automático
+¿Sí?
+Entonces
+Tómense un tiempito
+Para ver todas esas cosas
+Y mantenerlo al día
+Fernando
+Dale
+Sí
+Parión
+Te invito a
+Parión
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Que
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+Qué
+bicharan un poco, por lo menos Fernando, los primeros
+y ya están enviadas al channel principal
+digamos lo que son los tests de OneMoney, de UserAuth
+y la de OTCR, ya está a punto de
+mandarse, la estoy por aprobar, estaba bichando
+mínimos detalles y eso ya llega al principal, así que bueno, en vista de que
+esos tests que eran los prioritarios ya se están por mandar al principal
+en paralelo, ahora vamos a seguir sumando tests
+la idea es básicamente seguir con eso, que bueno, vos ya sabés Santiago
+que hay un montón para hacer en tema testing
+y bueno, ya empecé obviamente con lo que me mandaste hace un rato
+la PR tuya, eso ya estoy en manos a la obra
+para mí esa es la prioridad, Kiko
+y mandar al channel esa PR
+que salga la factura porque tenemos que sacarla ya
+entonces la que yo aprobé, volvemos a mandársela a Martu
+para así, ya lo mandamos, vamos a tener que hacer una
+probablemente tengamos que hacer una salida con eso y cuando esté lo tuyo
+¿bien? ¿bien de bien? Fernando
+bien, sigo con, como voy a seguir
+ya actualicé, estuve rápido ahí
+metí todos los de OTCOM
+que es del
+de lo de One Money
+en específico del controller
+y ta, sigo con eso
+estoy hace un día
+un día y poco
+y voy a seguir con eso
+también estuve resolviendo comentarios
+y ta, estuve ahí un rato
+hoy en específico
+viendo ahí el tema
+de cómo
+cerrar el sprint y eso
+así que quedó
+y creo que en parte
+por eso al final
+por errores míos al final todos nos comimos ahí
+no, tranqui
+tranqui, no pasa nada, eso se ve a fin de mes
+lo ajustamos a fin de mes
+ta
+¿bien de bien?
+otra vez
+bueno
+no pasa nada
+y voy a seguir con los test de OTCM
+y resolví todos los comentarios así que
+si pueden bichar y eso
+ta, si, lo que les pido es
+no hoy
+pero el viernes
+enrique y fernando
+pásenme, hoy no los voy a mirar
+pero el viernes pásenme porfa
+una lista de todas las PRs que están de mi lado o el de Martina
+ta, para que las podamos mirar
+el viernes
+o sea todas las que estén de mi lado o de Martina
+intenten seguir trabajando en test unitarios que sean independientes
+juntar varios y que sea lo más independiente
+cosa de que el fin de semana nos podamos poner el día
+y a ver si la semana que viene podamos empezar a normalizar esas cosas
+¿bien?
+pero déjenme como un mensajecito bien concreto a ambos
+si ya lo hicieron es solo replicarlo o actualizarlo
+pero es este
+tenemos estas PRs que están en público escuadra
+para revisar, ya las revisamos entre nosotros
+recuerden también que todas las PRs
+tienen que meter a Yona Wanahue en la parte interna
+si, toda la parte de público es interna
+ta
+este, eso también
+entiende
+Gastón
+noticias de
+¿cómo venís?
+buenas
+eh, bueno yo tuve así el día de ayer, ¿no?
+bueno yo tuve así el día de ayer, ¿no?
+estuve haciendo varias cosas para marketing
+estuve con un posteo por el feriado que hubo en Bolivia
+para LinkedIn e Instagram
+y después otro roundup
+que me habían pedido
+el lunes
+después estuve trabajando en varios ajustes que me había dejado Santiago
+en los flujos de configuración y de notificaciones
+que eso ya quedó todo ajustado
+y se los mandé de nuevo para
+para que lo revise
+así que ni bien
+ni bien lo pruebe el de su lado
+lo mando a Design, así lo pueden ver ustedes
+eh
+y nada, y ahora voy a seguir con unas cosas
+que también tenían pendientes de marketing
+que era unos ads de LLC
+para la cuenta nueva de Dashboard Basic
+bien
+bien, perfecto
+eh
+¿Yona?
+bien
+estuve corrigiendo ahí
+unas PRs de Nahue que estaban ahí en interno
+estuve avanzando con todo esto de los planes ahí que te había dejado una pregunta
+y ahora de mañana me puse con lo de los extractos que ya lo tengo
+ya tengo todos los ajustes que me dejó ahí Santi
+voy a generar de nuevo los PDF con los ajustes
+y actualizar ahí la descripción
+así ya se la vuelvo a mandar y ya queda
+queda listo eso
+precios
+Martu
+eh bien, de mirar ayer eh...
+más allá de la revisión de PRs estuve con... atacando cosas de admin
+y surgió un bug ahí en Prod que también te saque un hotfix
+y después eh...
+estaba revisando mi PR del extracto
+que en realidad lo que había quedado pendiente era lo que había comentado del detalle de diseño
+así ya puedo subir eso también
+y después eh...
+eh, respecto a las PRs
+en patricular la de Kike que era el tema del comprobante de bolivia
+yo había dejado un comentario
+con un par de cosas donde te arrobé
+pero creo que no lo respondiste
+vi que aprobaste pero no respondiste comentario, no se si llegaste a verlo
+lo que me parece es el D говор六
+está, eso por mi lado
+entiende bien
+hay que hacerle unas iteraciones más a las PR
+de Yona y de Nahue en particular
+para ver si hoy podemos
+encaminarnos para anunciarla
+¿bien?
+Nahue
+y Martín, perdón
+Martín, hoy tenemos que
+cerrar todo lo que sea extracto bancario
+el objetivo más allá de las PR de Nahue
+y revisarla, tenemos que cerrar
+todo lo que sea extracto bancario
+vamos, al final del día con Yona
+coordínense para enviar todo y ahí tienen
+a Santiago a disposición para poder
+liquidar todo lo que necesiten
+el tema con eso es que en realidad lo que está faltando es
+no sé si pasaste el routing number
+de Rail para dejar codiarlo
+y segundo, falta toda la conexión con
+con los proveedores
+que eso lo tengo que hacer una vez que esté lo de Yona
+porque en realidad si no nos van a pisar
+sí, o sea, coordínense
+para hacerlo, pero hacerlo ya
+si querés acá, podés crear una PR
+contra una rama contra lo de Yona
+y aplicarlo, pero háganlo hoy
+o sea, no puede llevar más tiempo
+de eso
+y lo de routing number
+de ejemplo, que todavía no lo conseguí
+cuando lo consiga, pero que sea
+la idea es que el viernes
+o lo que sea, sea sólo agregar el routing number
+si eso debería ser
+lo único pendiente
+y de tu lado, como dije
+la PR de Enrique y Fernando, démosle una pausa
+si tenemos la PR de Enrique
+que es prioridad
+esa que, bueno, mirá como
+postgram, pero lo que es guay
+eso démosle una pausa
+yo le he dado una iteración
+lo liquidamos, bien
+Santi
+ah, perdón
+bueno, ahora va Santi
+ya te puedo donar, bueno, te puedo hacer
+bien, te iba a comentar que
+no sé por qué mi tarea de code review
+no quedó cerrada, Santi, del experimento anterior
+que era arriba del todo
+bien, entonces lo que vamos a hacer es
+lo que vamos a hacer es algo bien sencillo
+para no complicarnos
+vamos a cerrarla
+y vas a crear una igual
+y agregale un comentario
+de que por algún arce que se
+me la guió Shira
+cuando la fui a cerrar
+agregale un comentario de que
+tu sprint va a quedar con 13 puntos más
+eso quiere decir que tu sprint
+tiene que cerrar con 63
+que este sprint en particular
+tiene que cerrar con un poquito más
+o bueno, tampoco, eso
+bueno
+taller, estuve revisando
+varias tareas que me pasaron a Stone
+también estuve revisando la PR que me pasó Jona
+después estuve
+trabajando en el mail
+que ya te estuve mostrando hoy
+y voy a tener que hacer
+varios ajustes para el mail
+ese que había solicitado en la web
+que era de la cancelación de los servicios
+y de los planes
+después estuve
+trabajando en el menú de navegación
+si querés ahora podemos ver
+este
+las pantallas esas que te pasé
+al chat Santi
+te muestro los flujos como los tenía pensados
+y
+terminé de ajustarlo
+y comprobaba antepago
+que eso ya se los tengo para enviarlos
+bien
+bien, perfecto
+ahora sí
+no se olviden de crear después las tareas de CoreView
+todos
+la tarea de CoreView es la única tarea
+que no me tienen que solicitar nada
+la crean y
+¿sabes?
+bueno
+sí
+bien
+ahora sí
+estamos visualizando cómo te falló
+el fondo de Zoom
+qué pasó
+ah, tuviste una visita ahí atrás
+ah, sí, sí, sí
+mirá, si les muestro dónde estoy
+estoy, en este momento estoy en Mendoza
+que lindo
+y acá tengo, a ver si, espere que les voy a mostrar
+vamos a hacer, vamos a hacer algo humano
+no sé si se ve ahí
+eso es la cordillera
+ya me voy mañana
+Ahí va
+Pensé que se iba a hacer algún viñedo ahí
+No
+Se terminó, claro
+No, no, se terminó
+Por lo menos por un ratito
+Ahí va
+Para, para que ahora
+Ahí va, ahora sí
+Ahora sí, en este momento sería
+Estaba yo enfocado en corregir los comentarios
+Que dejaste en las PRs
+Corregí a la 403 para que las puedas revisar
+Este
+Ahora eso, cuando terminemos con esto
+La idea es retomar lo de cancelaciones
+Con Jonah, si hacemos una prueba
+Con lo de él y lo mío
+Porque los flujos están acordes a lo que esperamos
+Y ya estaría faltando nomás
+Agregar el diseño final
+Del correo
+Al worker y agregar
+Un evento para que el front
+Cuando Jonah cancele, o sea cuando el usuario cancele
+Se dispare también el correo
+Que le avise al usuario que
+Canceló la suscripción o el plan
+Bien
+Perfecto
+Me faltó alguien más
+Lo dejo ir a comer
+Enrique, Martina y Santiago
+Se pueden quedar
+No sé si alguien tiene algo más
+Un buen provecho
+Un provechito
+Bueno, un color rápido
+Lo de Enrique
+No, mi comentario
+No, este comentario
+Este comentario nomás
+Porque vi que, ¿qué pasa?
+Habíamos hecho el path
+Para que fuera este
+Pero esto haría que estuvieran
+Todos los recibos
+Tanto manuales como los comunes
+Digamos
+Dentro del folder
+Yo pregunto esto
+No, y que ahí el path
+Viene ahí, viene ese cacho
+El path tiene que ser el mismo
+Que el de una
+Que el de un withdraw
+Debe ser el mismo
+Tiene compañía
+Pero dice ahí
+Ah
+Lo único que estaba poniendo esto
+Nosotros ahí también
+En la otra poníamos
+OTC Transaction
+¿Y qué?
+¿Cómo?
+Se te escucha un poquito
+Nosotros ahí estábamos poniendo
+El OTC Transaction
+Manual ID
+O que estábamos poniendo
+En los recipientes
+En el caso de Withdrawal
+¿Cómo es el path del Withdrawal?
+¿Cómo?
+Poníamos el ID
+De la transacción
+Del recibo
+Te tendría que confirmar
+No recuerdo
+De retiro, no me acuerdo
+Creo que de la transacción
+Pero no me acuerdo
+Y es el de la OTC Transaction
+O lo que
+Creo que es el ID
+De la OTC Transaction
+A ver quién gana
+Que si lo hacés vos antes
+Por un viaje
+Por un viaje a
+Ah no, vos ya fuiste
+A ver
+Otra vez
+Marto, vos también
+Estás en el juego
+O si lo querés encontrar
+No sé, en el worker
+¿Dónde se guarda?
+Creo que en el ID también
+Creo que el de la compañía
+No sé
+Creo que el path es el mismo
+Si le agregamos el ID
+Sí, Transaction ID
+Y le agrega la extensión
+O sea, Transaction ID
+Pero Transaction ID
+¿Qué es?
+Transaction ID
+¿Qué es el provider Transaction ID?
+Creo que es el ID
+De la OTC Transaction
+Es el data.transactionID
+Es el ID, pelado
+Claro, pero es el ID
+De la OTC Transaction
+Ahí va
+Es el ID de la OTC Transaction
+Y que hagamos lo mismo para esta
+¿Está?
+O sea,
+Literal
+La lógica de almacenado
+O sea, el path
+Es igual
+No le pongamos
+Manual, withdrawal, receipt, etc.
+Ni cuando pongamos
+Transaction ID
+¿Está?
+O sea, igual que el otro
+¿Sí?
+Y va a quedar con la OTC Transaction
+Porque ahí vos lo estás enlazando
+A la OTC Transaction Manual
+Y no
+Porque esto
+Lo que vamos a hacer
+Es guardarlo
+Contra la transacción de One Money
+La OTC Transaction Manual
+Es un registro
+Que nosotros tenemos interno
+Para el flujo interno
+Del Wacoffee
+¿Verdad?
+Pero nosotros acá
+Lo que necesitamos es
+Lo que ve el cliente
+¿Qué es lo que ve el cliente?
+Una OTC Transaction
+De
+Hiciste una venta
+Te sacamos 100.000 dólares
+¿Está?
+Y ahí ves la factura
+Entonces en esa factura
+Pongamos
+Lo mismo que hacemos
+Para la venta
+¿Bien?
+Ok
+Entonces ahí, Quique
+Si podés
+Hacete una iteración cita con eso
+¿Está?
+Cambiando eso
+Actualizate la descripción
+Y nos la volvés a mandar
+¿Está?
+La idea, Quique
+Literal
+O sea, hoy
+Dependemos
+Hay una salida de producción
+Que depende
+Exclusivamente
+De estas dos PR
+En el momento que tengamos
+Estas dos PR
+¿Sí?
+Creo que Wacoffee
+Está mergeada ya, ¿no?
+Solo esta
+Sí, sí, sí
+Creo que ya la mergeé
+Igual lo he chequeado
+Pero ya debería estar mergeada
+Por si querés hacer
+Alguna prueba o algo
+¿Está?
+Ok
+¿Vale?
+Vamos
+Después
+Otro comentario chico
+Pero capaz que no es para acá
+Pero es para tener en cuenta
+Que estamos usando
+Lo que es
+Invoice
+Y Receipt
+En varios lados
+De forma incorrecta
+Porque en realidad
+Esto, por ejemplo
+Hay muchos
+Métodos
+Que dicen
+Generate invoice
+Y en realidad
+Esto es un receipt
+No es un invoice
+Porque el invoice
+Debería ser
+Algo que se emite antes
+Y el receipt
+Es algo que se emite después
+Entonces
+Estaría bueno
+En algún momento
+Ver eso
+Porque no es solo acá
+O sea
+Ya estaba de antes
+Que se usa mal
+En realidad
+Y eso
+A la larga
+Puede generarnos
+Medio que
+Confusiones
+Y que
+Y que ahí fíjate
+En esta PR
+Por ejemplo
+Tenemos
+Tenemos
+El cron shop
+Que genera
+Todos estos recibos
+¿Está?
+Y tenemos
+Este nuevo flujo
+Fíjate
+De que
+Quede receipt
+¿Está?
+Y también
+En el work
+En el back office
+Que quede receipt
+Si podés enviarte
+Una PR chiquita
+Eh
+No lo haría en esta PR
+No
+En lo del worker
+Enrique
+Que lo haga en esta PR
+Y lo de los cofistas
+Sí
+Pero
+Pero lo del
+Para, para
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Martín
+Está, pero vamos a hacerlo
+Eh
+En lo del worker
+Hacelo acá
+Y en el back office
+Si podés
+Fíjate
+En qué lugares
+Queda confuso
+Y lo cambiamos
+Solo de este flujo nuevo
+¿Está?
+Así que
+O sea, solo de este flujo
+Lo mismo en el back office
+Solo de este flujo
+Porque si hacés
+Con el evento
+No te vas a ver
+El back office
+Por eso, por eso
+O sea
+Tiene que quedar claro
+Porque si no
+Esto ya
+Estamos saliendo a producción
+Con algo
+Entonces no cuesta nada
+en el back office a hacer una iteración del código
+nuevo
+y acá en el worker ya tenemos la
+PR abierta, Kike, iterémoslo y
+cambiemos el evento para que quede claro, porque eso que
+dice Martina es súper importante
+fíjate que nosotros cuando lo hacemos
+en el back office, por algo lo hacemos
+recién al final del flujo
+¿está? porque realmente es un
+comprobante de che ya se terminó todo
+murió todo, ¿bien?
+entonces es importante que también nosotros a nivel
+lógico y tecnológico lo tengamos alineado
+liberado, Kike
+vaya a comer y dependemos de usted
+no nos abandone
+hasta luego
+capaz que, ¿sabes qué, Kike?
+podrías instruir a Tato
+para que te vaya dando una mano
+vamos a hacer una salita de producción
+que ya te aseguro que va a ser la
+ya te digo cuál es
+esta es la de
+el último Hotfix
+fue el 23.8
+podrías pedirle una mano
+a Fernando a que te cree
+las PRs con el
+23.9
+que sea salida de producción 23.9
+del Spring 43
+si querés
+coordinate con Fernando
+23.9
+del Spring 43, habla con
+Tato para que
+para que cree las PRs, ya deja todos
+acuérdate que primero que envíe las de
+las de Stage
+y después las de Product
+en las de Product sumas las de Hotfix
+puede ser que no haya cambio, no sé
+no sé, no recuerdo
+¿está?
+el 23.9 entonces
+sí
+ahí le podés pedir una manito a Tato
+porque ahora me recuerdo que me pediste
+para salir un poquito antes también
+como para que te puedas concentrar con eso
+y él te pueda ayudar en lo que se pueda
+¿bien?
+ok, muchas gracias
+dale, vamos arriba, liberado Kike
+un abrazo, hasta luego
+hasta luego

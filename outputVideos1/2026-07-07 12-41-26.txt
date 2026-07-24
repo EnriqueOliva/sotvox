@@ -1,0 +1,728 @@
+Bueno, de mi lado lo que me falta probar, pero los retiros en reales con PIX ya estarían prontos, ya estaría pronta la funcionalidad de QR, también falta terminar de probar la parte hoy, como se llama, hoy de CES, dar los repositorios, más que nada por eso.
+Bueno, avisarles nomás que vamos a deshabilitar DROPI, ¿sí? O sea, ya lo vamos a descargar de mantenimiento, así que a partir de ahora, no, o sea, todas las PRs que tengan para DROPI, todo lo que vengan trabajando en eso, lo descartan, ¿sá?
+Esto me voy a encargar hoy de darle baja, pero ya no nos tomemos el tiempo, no perdamos el tiempo de ir actualizándolo.
+Esto es importante que tengamos en cuenta porque nosotros, el back-office,
+el site siempre lo mantenemos como que, bueno, la DROPI forzaba más esa actualización, ¿sá?
+Entonces, ahora lo que les pido es, bueno, sigamos intentando actualizar, son dos repos, es más sencillo aún, sigamos intentando actualizar con Frontend o la TENI Frontend.
+Después de mi lado sigo con lo de AFI, ahora tenemos una reunión con Guillermo y Gabriel de tarde y, ¿qué más?
+No, creo que no se queda nada más.
+Ah, tengo que armar todo el backend, que tenemos un problema porque las variables privadas,
+¿viste? Me están hackeando.
+Las variables privadas, las variables de entorno, o sea, nosotros ya tomamos la estrategia de guardar en configuración de la base de datos la variable de entorno pública,
+pero igual hay variables de entorno que vamos a tener que trabajar ahí, entonces estoy viendo de integrar,
+que es algo de AWS, hay otro servicio también, y es más, lo estoy viendo a nivel de seguridad, de poder jugar con rotaciones con landas,
+cosa de poder optimizar eso, pero tal, eso muy a futuro, pero estaría bueno tenerlo para las APIs y mismo para lo que es la base de datos.
+Pero por ahora eso nomás.
+Deme un segundito, un segundo, debo cortar, pero un segundito.
+Disculpen.
+Seguimos.
+¿Sanrique?
+Bueno.
+Yo tenía como prioridad ayer, este, dejarlo que todo lo relacionaba a la tarea de configuración de WhatsApp,
+que ahí ya logré el approve de Jona y ya está todo enviado ahí al lado de ustedes, Santi, que son varias PRs.
+También había surgido comentarios tuyos en una PR del worker, ahí ese bug relacionado a Stripe,
+eso también ahí ya taqué los comments.
+Tengo otras cosas también ahí que están pendientes.
+Estuve trabajando en correos.
+Ahora la idea es ya también empezar a trabajar en el de bienvenida, que ya como está aprobado el diseño estaría bueno, supongo yo, que eso ya quede, porque es un correo bastante importante.
+Ahí, Santi, vos recién mencionabas que estás trabajando en una funcionalidad que involucra QR.
+Yo tengo una PR abierta de lo que es Cypress, de todo lo que involucra el QR.
+Capaz que la puedo dejar en stand-by hasta que esa funcionalidad...
+No, no, no, porque...
+No, no, no.
+No, no, es algo dentro de banking, así que tranquilo, no pasa nada.
+Ah, ok, ok.
+Y otra consulta, capaz que ya me surge, estaría bueno aclararlo.
+Nosotros tenemos cierta lógica que funciona considerando Dropy, no sé, ciertas funcionalidades que, bueno, distinguen compañías de si son Dropy o si son Dashbank.
+Eso en realidad no lo vamos a refactorizar por ahora, eso tiene que quedar, ¿verdad?
+¿Por qué va a quedar? Excelente pregunta.
+Va a quedar porque la idea es que eso se mantenga, la idea es que nosotros mantengamos eso para si de mañana tenemos que agregar uno más.
+Pero no vamos a seguir actualizando el repositorio ni gastando en tener en producción otras instancias, ¿sí?
+Pero sí vamos a seguir dejándolo y la idea es mantener esa lógica de, bueno, no tanto si es Dropy, sino si es alguno de los otros.
+Apreciamos que de mañana viene algo, tenemos que seguir con esa lógica de los tenants en cuanto a los emails.
+O sea, que sigamos pensando en nuestra cabeza que, bueno, que Dropy puede seguir existiendo para las funcionalidades que estaban, ¿no?
+Ok.
+La realidad es que si viene uno nuevo, vamos a tener que trabajarlo en base a los requerimientos que tenga, porque ya no podemos asumir que van a ser los mismos de Dropy, ¿bien?
+Ahí va, está perfecto.
+Nada, tengo varias cosas para seguir trabajando y ahí de punto creo que estoy bien.
+Cuando ustedes me digan, puedo empezar a pasar tareas de continuación y de cierre, si vamos a cerrar el sprint.
+Bien, pero tendríamos las de Whatsapp, ¿dónde están?
+Sí, están allí abajo, creo.
+Si nosotros mergeamos todo eso, podríamos cerrar bastante hoy, ¿no?
+Ah, sí, es verdad.
+Vamos a intentar ver hasta dónde llegamos hoy.
+Tiende bien, Kik. Vamos arriba.
+Fernando.
+Bueno, bueno.
+Bueno, estuve poniéndome un poco al día.
+Y, ¿está?
+Estuve...
+Bichando ahí un par de perras que estuvieran muy fáciles para hacer review y las aprobé ahí.
+Después, estuve poniéndome al tanto ahí.
+Kike me puso al tanto con las prioridades.
+Ya estoy atacando los comentarios de las de Wacoffice.
+Y cuando termine con eso, que ahora tengo que...
+Bueno, estoy con la de...
+Audit Logs, la de Copi.
+Audit Logs.
+Esas están bastante sencillas.
+Intentemos cerrarlas tanto, porque la verdad, se hizo una abuela de Newy con algo que tendría que haber salido en un día.
+Entonces, por favor, o sea, resolvamos los comentarios y cerrémoslas hoy.
+Fueran dos features que quería sumar y la verdad, se trazó una semana.
+Yo sé que hubo ciertos días que uno estuviste también, pero ya como que tomó mucha escala.
+Y era algo que tenía que ser bien sencillo.
+Literal, un arreglo de unas horas.
+Intentemos cerrarlo, ¿sí?
+Sí.
+Después, no sé si...
+Después también vayan organizándose.
+Nosotros tenemos que coordinar con Marti.
+Probablemente mañana leemos directivas de cómo trabajar con los emails.
+Cómo trabajar con la parte de Pull Request.
+Lo que sí, todos estos emails están en una sola PR.
+Esto que dice Debra y Wintang.
+Sí.
+Yo quiero decir que si los marchamos, podemos cerrar todas las tareas.
+Sí.
+¿Y en qué estatus están en cuanto a revisión?
+¿Qué es lo que pasó?
+¿Por qué está trancado?
+Estoy corrigiendo el comentario.
+Pasa que surgieron ahora que esto es prioritario.
+Pero ojo, Tato, porque estamos...
+Yo sé que hubo días que no estuviste, pero estás como que acumulando cosas simples.
+Y no sé qué...
+O sea, no veo avances.
+Así que fijate si podés ponerte un poco en eso.
+Porque si no...
+Si necesitas una mano, levantá.
+O sea, avisa.
+Pero ojo, porque son todo cosas que se vienen acumulando.
+Y no sé qué pasa.
+Pero al final no sacamos nada.
+¿Sí?
+Si necesitas una mano o lo que sea, nos escribís a mí, a Martín, y luchamos.
+Dale, dale.
+Perfecto.
+La idea, el objetivo de hoy sería poder cerrar...
+No hay nada que tenga prioridad urgente en sí.
+Lo ideal sería poder cerrar las tareas del Back Office.
+Y lo de Mail para poder cerrar el Sprint tranquilo.
+¿Está bien?
+Aquí está la tarea del filtro.
+No sé si lo mencionaron o no.
+El Back que pasé en Front End.
+Sí.
+Que había una que te había robado.
+Que era para ver lo del filtro que no estaba funcionando en el Back Office.
+Un bicho.
+Y...
+Te confirmo.
+Ok.
+Mirá, esos arreglos son arreglos bien chiquitos, Tato.
+O sea, vos pensás que las cosas que yo te estoy asignando en Front, o que Marti te asigna,
+normalmente son cosas que no deberían llevar mucho tiempo.
+Entonces, yo siento que últimamente le estás dando mucha vuelta de tuerca a cosas
+que son tipo, literal, agrego esto y sale.
+Te digo para que veas ese enfoque.
+Porque si no, al final...
+O sea, la idea es que vos ataques esas cosas, pero también que salga más rápido.
+Bien.
+Intentemos ver cómo finaliza el día y antes de finalizar el día, si no está mergeado,
+lo mismo vos, Enrique.
+O sea, antes de finalizar el día, si no está mergeado todo, ya pasemos la propuesta...
+O sea, asumamos que no se va a mergear y pasemos la propuesta de continuación.
+Bien.
+Pasen las solicitudes de tarea a continuación.
+Todo esto al final del día para poder intentar jugar con el margen más que en Front.
+Ok.
+Es lo más posible.
+Bien.
+Gastón.
+Buenas.
+Bueno, yo por mi lado estuve haciendo un posteo y una story para el evento de Mastermeet
+de Bolivia que me pidió Marketing.
+Eso ya quedó aprobado y se lo entregué hoy al canal de Marketing.
+Después, por otro lado, estuve viendo la PR de Enrique por el mail de bloqueo y le dejé
+comentarios.
+Y, por otro lado, quedó aprobada la PR de Nahuel de la parte de notificaciones.
+Y, como única cosa también, estuve viendo un mail que me pidió Santiago que revise.
+Ya quedó aprobado.
+Y ahora estoy trabajando en otro posteo para este evento de Mastermeet.
+Que quieren hacer una vuelta regresiva para anunciar que va a estar ahí presente.
+Genial.
+Perfecto.
+Viene bien.
+Gastón, con respecto a los puntos.
+Lo mismo que el resto.
+O sea, si vos ves que no se cierra o lo que sea, al final del día ya pasan solicitudes
+porque tenemos que estar en 75.
+Bien.
+Dale.
+Perfecto.
+Tengo una solo como continuación que sería la landing que en realidad está en Design
+Review.
+Que te voy a dejar unos comentarios.
+Y después los otros diez puntos quedarían entre el Design Review y el Core Review.
+Que tengo cinco.
+Excelente.
+Excelente.
+Fíjate bien.
+¿Jona?
+Jona no estaba hoy.
+Tenés razón.
+Hay que armarle un mensaje.
+O sea, creo que no mandó la...
+Bueno, de mañana no iba a estar, ¿no?
+Ah, mandó la daily por el chat.
+Mandó la...
+Por ejemplo, un comentario de Marti Laferre.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+De hecho, vos tenés un comentario de diseño.
+Vamos a generar la reunión con Guillermo
+A ustedes también
+¿De qué es la reunión esa que tenemos con Guillermo?
+Ahora lo charlamos como podcast
+¿A qué hora es nuestra reunión?
+¿A qué hora es Marti la reunión?
+No sé qué hora quedaste
+12 y media habías quedado, creo que es 1 y media
+1 y media de
+Si no me equivoco
+Tengo una pregunta
+Maggie nos dijo que deberíamos continuar
+A dar glicopan a veganos
+No sé si en inglés o en español
+¿Cómo se firma en inglés?
+¿Es seguro?
+¿O se puede decir algo sobre esto?
+Santi gastó
+Es como para tener una idea
+Pero después siguen
+Después van a tener que juntarse con ellos
+Igual ahora lo charlamos
+Marti, ¿alguna me confirma que llegó?
+Sí
+Está bien, ¿te animás a...?
+Ahí yo le aviso
+Le aviso a ella
+Perfecto
+Y vamos
+Vamos a verlo
+Vamos a verlo
+Marti, dale vos
+Bien
+De mi lado
+Estuve
+Seguir avisando PRs
+Y después estuve
+Estaba probando el tema del flujo de
+De aprobaciones
+Para volver a llegar que de eso estuviera todo bien
+Que es la parte de
+Permiso, límites y demás
+Y
+Nada, después
+Mi idea es
+Poder
+Poder
+Cerrar lo de
+Pago interno
+Si es que no surge nada más en el medio
+Y
+Si no hay ninguna otra prioridad antes que eso
+Marti, después lo que estoy a necesitar
+Es que me pasen los casos que estés probando
+El flujo de aprobación
+¿Sí?
+Bien, bien
+Tenemos algunas PRs
+Me interesaría mercearlo de tickets
+Entre todas
+Una de las que me interesa
+¿De qué?
+Lo de WhatsApp
+O sea, si podés darle una interacción a esas
+Creo que parece
+¿Cómo?
+Son las más nuevas
+Creo que sí, no sé, Enrique
+Si quedó alguna vieja colgada
+Creo que las borraste, ¿no?
+Correcto, están todas reenviadas
+Si quieren les paso un listado
+Dale, si podés
+Así es más claro
+A ver si lo
+Porque eso
+Después de que salga
+Esto lo iba a tener que pegar una interacción más
+Para poder integrar el nuevo WhatsApp
+Te agradezco ahí
+Santi, aplicando lo que dijiste recién
+Cancelo el flujo de aprobación
+La celula de Dropi
+Pero justamente WhatsApp tiene una PR de Dropi
+O sea que acá la ignoramos
+Sí, sí, borrala, carajo
+Ok
+Vamos arriba
+Bien, bien
+Lo mismo que todos, Marti
+Al final del día
+Con lo que hayas cerrado o lo que sea
+Planifiquemos cerrar el sprint
+¿Sí?
+Bien, bien
+¿Nah, we?
+Bien, por mi parte
+Como comentó Gastón
+La PR que incluía el frontend de Notifications
+Ya que aprobaba el diseño
+Quedó en internet ahora
+Este
+Bueno
+Después de eso también pasé a Intor
+El tema del back
+Este
+Con la tab switch
+En pantallas este
+Con bastante ancho
+Las widescreen
+Básicamente
+Este
+Y ahora estaba mirando
+Qué era lo que teníamos de
+Qué era lo que habíamos
+Como he dicho
+Analizado de
+De Teammates con Jonah
+En su momento
+Para ya empezar a pasar las tareas
+Este, así ya arranco con eso
+Este
+Y seguramente para cerrar el sprint
+Te paso una propuesta de dos tareas de continuación
+De una con todo lo de Notifications
+Y otra para lo de los backs
+Para continuar
+Porque seguramente para
+Decime
+¿Pasamos algún correo al nuevo formato?
+Sí, pasamos
+Por ahora incluí solo
+Designación de ejecutivos
+Que fue el último
+No sé si querés pasar otro
+Lo mismo
+O sea, ¿están todas en purricuela de Notificaciones?
+¿O hay alguna en Internet?
+De Notificaciones
+El frontend está en Internet
+El Google está en Internet
+El Worker, que incluye
+Este
+Ese nuevo pasaje
+Incluye también
+Este
+El script
+El proceso de startup
+Que va a levantar los HTML
+Y lo va a parciar para la base de datos
+Quitándole el footer
+Y los action buttons
+También lo incluye
+Eso ya está en pull request
+Ah, a esa del Worker
+¿Te acordás que yo te había agregado hace tiempo?
+Te había dicho que si
+Cuando nosotros subimos los HTML a S3
+Sí
+Deberíamos
+Deberíamos hacer
+¿Viste qué?
+El HTML de S3
+Se ejecuta
+Previo
+¿Está?
+A lo que es
+La ejecución del
+¿Cómo se llama?
+Se ejecuta
+Previo a
+Este
+A que se ejecute la instancia de Node
+¿Sí?
+Sí
+¿Está?
+Lo que está faltando en ese sync
+Es el borrado
+Ah, listo, lo veo
+Que eso hay que meterlo en bash
+Es nomás darle una iteración en bash
+¿Te animás a pasar una tareita por eso?
+Y ya sumarlo ahí al Worker
+Así ya nos queda todo pronto
+Porque Enrique estuvo haciendo limpieza
+Entonces, es una
+Coordinate con Enrique ahí
+Porque Enrique estuvo haciendo limpieza
+De algunos HTML
+Entonces, cuando se marche eso a develop
+Habría que chequear
+Ya podemos chequear que
+Que funcione bien
+Ya no nos tenemos que preocupar más
+Cuando sacamos un HTML
+Eso sería genial
+O cualquier archivo
+En realidad esto tiene que funcionar
+Para cualquier archivo
+Dentro de lo que son templates
+¿Bien?
+Bien
+¿Algún criterio en especial para eliminar?
+¿Simplemente eliminar que si no está en la carpeta de generics
+Se elimina?
+O...
+O sea
+Vos lo que tenés que hacer es un sync
+De ambos lados
+O sea, si se agrega
+Se agrega
+Si se mantiene
+Se mantiene
+Si se elimina
+Se tiene que quitar de ese 3
+¿Está?
+O sea, vos deberías tener un
+Literarlo
+Si yo me paro en la rama develop
+Lo mismo que está en develop
+Debería estar en ese 3
+En la carpeta de template
+Entonces se quita
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+Por ejemplo
+Por ejemplo, Enrique creo que eliminó
+Un CSV o un Excel
+Algo por el estilo
+Bueno, se debería borrar de ese 3 también
+¿Está?
+¿Bien?
+Hola
+Vamos arriba
+Lo mismo con los puntos, Naube
+Al final del día
+Si no estamos quedando
+Ya los autos
+Lo ajustás
+Dale, perfecto
+Bien
+Santi
+Buenas
+¿Cómo va?
+Bueno
+Por mi lado
+En cuanto al sprint
+Cerrando
+Creo que voy a necesitar
+Dos tareas de continuación
+Una de seguimiento
+Para los mails
+Este
+Que ayer
+Se los pasé a vos
+Y a Martín
+A los que estaban ahí
+En Design Review
+Y otra para
+Lo de Teammates
+Que también lo vimos ayer
+Nada
+Con eso ya
+Ya tendría
+Ya tendría los puntos
+Ahí como para
+Para poder cerrar el sprint
+Después
+Estuve trabajando
+En el
+En el email
+De
+De la factura
+Que enviamos
+Cuando compramos compañías
+Oye, lo tengo prácticamente terminado
+Y estuve trabajando
+En la parte de Teammates
+Este
+Ahora estoy
+Bichando un poco
+Cómo funciona
+Este
+Recorriendo un poco
+El video
+Para ver
+Cómo podemos
+Implementarlo
+En la parte
+De solicitudes
+Que creo que es
+Donde más
+Este
+Podría llegar a
+A
+A machear
+Con lo que
+Estoy armando
+Y
+Y tal
+Estoy haciendo
+Esos ajustes
+Después
+El nivel termina
+Con el email
+Este
+De la factura
+Voy a arrancar
+Con el
+Con el email
+De
+Creo que yo me creé
+La tarea ahí abajo
+Pero
+Que es
+De
+Yo te digo exactamente
+El nombre
+Es el de
+Tax
+No sé qué
+New tax
+From document
+Complete
+Que número
+Básicamente
+Es un mail
+Que enviamos
+Cuando
+Está listo
+Un formulario
+Te manda los detalles
+Del formulario
+Que ya llenaste
+Que número
+Que número
+Santi
+Número de tarea
+Yo te digo
+Que número
+Es la
+Treinta y cuatro
+Cuarenta y uno
+No sé si la tendrás
+O tenés que
+Hacer
+Ah no sé
+La marca
+Ahí va
+Es esa
+Perfecto
+Bien de bien
+Eso nomás
+¿Alguien tiene algún
+Postcard?
+Ah
+Tengo una consulta
+Tengo dos tareas
+En
+Design Review
+Que
+No sé
+Si ya las tengo que pasar
+Si alguno
+Las reconoce
+Como suyas
+En teoría
+Los desarrolladores
+Con el nuevo flujo
+Que Marti subió
+Que está en el
+Drive de Developer
+¿No Marti?
+Sí
+Igual tengo un comentario
+Que iba a hacer
+Respecto a
+Dale
+Acabo de poner
+Un flujo automático
+Capaz que no se
+Aplica para las tareas
+Actuales
+Que lo que tendría
+Que hacer
+Es que
+A partir de ahora
+Si ustedes
+Lo pasan a
+Design Review
+Si asignando
+A Santi
+Pero eso lo que tendría
+Que hacer
+Es automáticamente
+Asignar un campo
+Que se llama
+Responsable original
+Y que se llama
+A ustedes
+O sea
+Los que
+Están asignados
+Y después
+Cuando Santi la pase
+A ya sea
+Dev
+Review
+O
+Otro estado
+Se debería volver
+Sola
+Al original
+Pero no sé
+Si va a funcionar
+Así que ahí
+Cuando lo prueben
+Con las nuevas tareas
+Me avisan
+O sea
+No tienen que hacer nada
+Simplemente
+Muevan las estados
+No tienen que asignar
+Ese campo
+Ustedes
+Pero
+Ahí Santi Gastón
+Lo estamos
+Trabajando
+Lo vamos a demostrar
+Mañana
+Pero va para todos
+Estamos trabajando
+En un flujo
+Para que
+Para que las asignaciones
+De pull request
+Sean aleatorias
+Este
+Entonces ahí
+Se te van
+Se te pueden asignar
+A vos Santi
+Pero
+Va Gastón
+Y te la saca
+O sea
+Si la tiene asignada
+Es eso
+Bien
+Porque creo que Marti
+Ahí no podemos hacer
+Ningún round
+Con eso
+¿No?
+O sea
+Se puede hacer en Shira
+Pero no
+No se puede
+En Slack
+No
+Entonces no
+Viene bien
+Bueno
+¿Algo?
+¿Está ahí Tato?
+Las dudas
+Que cuando
+Se hace la actualización
+De estado
+Hacer
+F5
+O actualizar
+La página
+Para
+Para que
+Se
+Perdón
+Se efectúe
+El cambio
+Automático
+Porque
+Pasaba que
+Hacía
+O sea
+Cambiaba el estado
+Pero no se hacía
+Tipo
+Instantáneamente
+Tenía que
+Que hacernos
+Refresh
+Eso nomás
+Bueno
+Nahue
+Enrique
+Y Fernando
+Buen provecho
+Nahue
+Que disfruten
+El partido de Argentina
+Muchas gracias
+Provechito
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau

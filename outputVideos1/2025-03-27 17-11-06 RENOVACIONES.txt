@@ -1,0 +1,1037 @@
+que hagas es que funciona de la siguiente forma. Viste que nosotros tenemos lógicas de renovaciones,
+¿no? Entonces, hay estados que tienen renovaciones cada 12 meses, cada 24 meses, como Florida. Hay
+varios de esos estados. Entonces, vos tenés una lista de estados. Si vos estás en 2025,
+por ejemplo, te voy a explicar el caso de Florida, que es un poco complejo. Florida renueva siempre
+el primero de mayo. Ahora, si el tipo abrió la compañía el 24, ¿tá? En el año 2024, el primer
+año no se lo contás, ¿tá? Entonces, si está en el primer año, vos no le hacés renovar. ¿Cómo vos podés
+jugar con eso? De una manera muy sencilla. Vos vas a entrar a la definición de la compañía y vas a
+poner el Constitution Day, ¿tá? La fecha de consolidación, ¿tá? Esa fecha de consolidación,
+vos, en Florida, si vos ponés 2024, te va a poner que todavía
+está en el año 2024. Si vos ponés 2024, te va a poner que todavía está en el año 2024.
+Estás a tiempo de renovar la compañía, porque es hasta el primero de mayo. Si vos ponés que la
+compañía se consolidó en 2023, vos no vas a estar a tiempo, ¿tá? Sí, tenemos que poner algo para
+poder cambiar rápido de años para atrás, pero bueno, ¿tá? Eso es problema para desarrolladores
+de futuro. En teoría, vos no deberías poner una fecha hace mil años, ¿tá? Entonces, ¿qué necesito
+que juegues? Necesito que juegues con eso.
+Porque las compañías de hace 12 meses no corre eso. Si vos creaste en 2024, es la fecha de aniversario.
+Entonces, si vos creaste en 2024, en 2025, la fecha de aniversario, tenés que renovar. Si ya pasaron 12
+meses desde que creaste, tendría que ponerte renovación tardía, ¿tá? ¿Cómo sabés cuáles
+empresas es cuál porque yo te lo voy
+a pasar right now
+yo ahora
+a vos te voy a pasar
+yo ahora te voy a pasar
+esto, ahí lo que dice es por ejemplo
+Florida es primero de mayo, ¿qué quiere decir?
+2024 estás dentro del periodo
+por ahora, no hay ninguna
+que sea en marzo
+entonces no corre por ahora esa lógica
+porque si fuera en marzo
+sí, ya está atrasado
+así de 2024 estás atrasado
+¿entiendes el por qué?
+porque en realidad
+vos tendrías que haber renovado antes
+entonces estás atrasado, ahora
+como es el primero de mayo y el 2024
+no contó, estás bien
+ya si son de 2023 te tendría
+que aparecer que la renovación está atrasada
+y te va a saltar un mensajito
+que te dice, el costo te tendría
+que saltar distinto y te tendría que llegar
+una factura por un costo distinto
+¿está? ya vos te tendría
+que llegar una factura por más plata
+o por menos plata, ¿sí?
+por ejemplo en el caso de Florida te tendría
+que llegar 200 y si vos renovás
+por una vez fecha son 650 dólares
+¿está?
+entonces
+juegue con eso
+siempre tiene que ser un costo distinto
+los de 12 meses es más sencillo
+porque directamente ese es, bueno
+si la compañía se creó, si ya pasaron
+12 meses y no renovaste, estás
+excedido y si no, estás a tiempo
+de renovar, ¿se entiende?
+y ahí vos tenés que jugar, si vos vas
+al, ¿cómo renovás?
+vos vas a editar la fecha del
+B.O. y después ¿cómo renovás?
+vos vas al site y en el site lo que
+hacés es tenés dos tipos de renovaciones
+de tus empresas, tenés una
+renovación que es tipo
+pago por renovar
+que le pagás a Dasbank por renovar
+yo no sé si vas a tener alguna
+que tenga renovación, pero le pagamos a
+Chasbank para que vos renueves
+¿está?
+la otra renovación
+¿sí? la otra renovación
+la otra opción de renovación
+es
+¿dónde está en el site?
+ahí entra los detalles
+entra tu compañía
+vos a partir de ahora vas a ver un cosito
+abajo del todo
+subí arriba del todo, ves que por ejemplo esa compañía
+tiene un consolidation date
+el constitution date
+que es 23 de marzo, como es 23
+de marzo, vos no tenés que renovar
+hay
+tres opciones que te aparezca
+hay cuatro opciones que te aparezca de la renovación
+che negro, tenés que
+renovar
+che negro
+ya renovaste
+está perfecto, si ya renovaste
+no pasa nada
+¿está?
+pone que ya renovaste
+y ya está
+o sea
+che, vamos por el primero
+no tenés que renovar
+yo creo una compañía en 2025
+no tengo que renovar un choto
+entonces no te voy a decir que tenés acciones para hacer
+¿está?
+ese es el primer punto
+después tenés las opciones de renovación
+que el primero es
+bueno, yo ya renové
+entonces decís
+che, ya renovaste para este periodo
+no tenés que hacer nada
+pero le avisás ahí en la acción
+que ya renovaste
+después tenés una opción
+que es
+bueno, estás en periodo de renovación
+negrito, tenés que renovar
+¿si?
+y después
+y cuando vos tenés la opción de renovación
+tenés dos opciones
+te aviso
+che, estás en periodo
+o
+es la misma opción
+pero está vencido
+y ahí te van a aparecer dos opciones
+una para comprar la renovación
+y otra para hacer una renovación externa
+¿qué es la renovación externa?
+bueno, yo tengo mi propio contador
+y yo presenté la declaración y ya renové
+¿entendés?
+ajá
+entonces ahí es donde aparece como autorrenovación
+¿está?
+en el video
+ok
+entonces
+vamos a hacer una cosa
+sony 17
+estamos muy cortos de tiempo
+entonces vamos a darnos
+15 minutos para hacer todas las pruebas que puedo hacer
+literal
+¿está?
+¿si?
+¿cuánto tiempo?
+15 minutos
+15 minutos
+no más ni menos
+porque el merche a producción demora
+entonces te voy a dar 15 minutos para que te pongas a hacer las pruebas
+¿está?
+en 15 minutos nos llevamos stage
+¿estamos?
+ok
+es como correr contra un reloj
+también es importante que vos renueves una compañía vencida, una compañía no vencida
+y te llegue el mail correcto
+te llegue el precio correcto
+¿si?
+súper importante eso
+ok
+acá te cambié el constitution date a febrero 2
+constitution date febrero 2 de 2024
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+A ver, cambialo a Delaware.
+Update fixase.
+Company fixase.
+Que estén moviendo la misma compañía.
+A ver, entra.
+Ajá.
+A ver, abrí.
+¿Qué cosa?
+A ver, subí, subí, subí un poquito.
+Tenés Constitution Data.
+A ver, abrite el...
+¿Qué te está retornando el...
+el...
+Recargá.
+Network.
+Renewal status.
+Ajá.
+A ver, arriba.
+No, Renewal Recargá.
+¿Por qué mierda devuelves?
+Tá.
+Eh, tá.
+Pásame Delaware.
+Decí Delaware no me están dando y sigamos con otro.
+Dale.
+Yo chequeo Delaware.
+Ok.
+Alexa, apagá el recuerto.
+Muy bien.
+Y es de Delaware también.
+Entiendo por qué te dice que no tenés que renovar.
+Tiene que haber algo más alto nivel.
+No, tá, pero no importa.
+Siga con otro estado.
+Siga con otro estado.
+Siga con Florida.
+Siga con...
+Con Wyoming.
+Siga con otro estado.
+Con New York.
+Con New York podés ver a ver si cumple la lógica de New York.
+¿Esa cuál es?
+Florida.
+No, Florida está dando bien.
+No sé, no sé ahí qué...
+February 13.
+Se puede...
+Si le doy Renew Now, ¿qué pasa?
+Claro, eso es lo que tiene que hacer.
+Renovar ahora.
+Probar renovar ahora.
+Que le llegue un mail.
+200 dólares.
+¿De vos estás loco?
+Exitosa.
+En español.
+Me apareció en español.
+¿Te das cuenta?
+Está raro eso.
+Continue.
+Está una puta madre.
+Se ve así.
+No.
+Ahora intenta renovar una vieja.
+Después es lo mismo.
+Andá probando con los estados.
+Probá a disolver.
+No.
+Expiró.
+3DS expiró.
+Esto es muy crítico.
+Fragment undefined.
+3DS.
+¿Esa qué compañía es?
+3DS.
+¿Cuándo la creaste?
+Una buena pregunta.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+No sé.
+Pues no sé.
+Ah, no, no.
+Fíjate que crea una nueva y usa otra.
+Para saber lo que le pasó.
+Son cosas normales que pasan en el dev.
+Se corrompe todo por el carajo.
+Ok.
+¿Qué pasó?
+Sí.
+¿Qué método de pago es?
+¿Es válido ese método de pago?
+¿Esa es 42, 42...?
+No, no tengo constitution date.
+Eso está bien.
+Ahí si vos no tenés constitution date, no podés renovar.
+Porque todavía la compañía no se constituyó.
+Lo que sí podés solicitar es la desolación.
+En cierto punto la disolución es como una cancelación
+Nuevo México
+Nuevo México
+Nuevo México está dentro de los estados
+Que no aceptamos renovación
+Hay cuatro estados que no aceptamos
+Renovaciones
+Que son Hawaii, Wisconsin, New Mexico
+Y Washington D.C.
+Justito, acá, quema la liga
+Y te cambia el estado, cuál es el problema
+Te cambia Montana
+Toma, te caí
+Ahora me tenés que aceptar la renovación
+Montana
+Está en fecha o está fuera de fecha
+Octubre 13, 2023
+¿Qué dice
+Lo que me mandé por Slack?
+Abril 15, anual
+Entonces quiere decir, cuando dice anual es cada 12 meses
+Anual es lo mismo que cada 12 meses
+Sí, así que
+Está bien que ponga
+Renew now
+O sea, ¿pasaron 12 meses o sí?
+Sí, bastante más
+No, no
+Te está diciendo que está
+No, te está diciendo
+Company
+No, está bien, o sea, está vencida
+Está fuera de fecha
+Está bien
+Ahí va
+Genial
+Ah, ahí llegó
+Apá
+150
+120
+Ah, porque está mal
+Tengo que enviar un fix
+Tranquilo
+Ya, no se lo dije
+Te está mostrando mal el precio
+Es de Florida
+Otro caso con Florida, probar
+No, seguir con
+O sea, es un caso de Florida
+O sea, es un caso de Florida
+Una renovación en fecha
+Ok
+O sea, por ejemplo, puede ser una fecha
+Acá, el primero de mayo
+Company renewable
+Renovación en fecha
+Renew your company before the deadline
+To maintain a good standing
+Bien
+Pelotudo, está bien
+Si es del primero de enero
+Delaware
+¿De cuánto es?
+Vamos a Delaware
+No, no, no, en el documento que te pasé
+¿Qué decía Delaware?
+En junio, ¿no?
+Junio 1, anual
+Claro, faltan más de
+Faltan más de 60 días para renovar
+Está bien
+Está dentro del periodo, es raro
+No, a ver
+No, te tiene que permitir renovar
+Sí
+No te tiene que penalizar
+¿Verdad?
+Te tiene que permitir renovar
+No, pero el tema que
+Hay una pequeña precondición que no te dije
+Son 60 días antes que te permito renovar
+O sea, antes no te muestras
+O sea, no te pongo la renovación
+Ahora
+Ahora, vos habías puesto 2023
+Para FIX
+No
+Tiene
+Constitution date
+Febrero 2
+Ah, están dando bien
+Están dando bien, Delaware
+Están dando bien
+Están dando bien
+Si querés lo vemos
+Lo vemos y te lo explico
+Me parece un caso súper interesante
+Delaware
+Pusiste 2 de febrero de 2024
+¿Está?
+¿Qué es lo que pasa?
+La compañía se registró en 2024
+¿Por qué?
+¿Sí?
+¿Esto quiere decir que Delaware renueva en junio?
+Junio, ¿no?
+Sí, uno, anual
+Ah, perfecto
+60 días antes
+¿Cuánto es?
+Es mayo, abril
+Primero de abril
+Sí
+¿Qué es lo que pasa?
+Si no es pasa
+O sea, vos en 2004 no tenés que renovar
+¿No?
+Y 2025 todavía
+Yo te voy a permitir renovar 60 días antes
+A partir de los 60 días
+¿Entendés?
+Sí
+Si vos
+Le cambiás de febrero a 2023
+Ya no corre
+Por eso quiero decir
+Vos, negro
+Vos creaste la compañía en 2023
+¿Está?
+Tendrías que renovado
+El 6 de junio de 2024
+No renovaste
+Están dando bien
+Desconfiás
+Desconfiás de la gente
+Desconfiás de la gente bien
+Desconfiás de la gente que te apoya
+¿Está?
+Hijo de puta
+Requema
+Hijo de puta mal cogido
+Ah, loco
+Te metés
+Te metés con la gente buena
+La gente que está en la buena y en la mala
+Yo ahora voy a tener que salir corriendo
+¿Y quién?
+¿Quién sale corriendo?
+¿Quién sale corriendo?
+¿Quién sale corriendo?
+La gente para
+Entonces
+Si nosotros
+Ponele cualquier
+Ponele diciembre de 2023
+Porque como
+Es una lógica retorcida
+Pero la idea es
+Vos en el año no renovás
+Ya el año siguiente sí renovás
+Por eso te digo
+Y depende del estado
+O sea, por eso te digo
+Es una lógica re retorcida
+15 de diciembre de 2023
+Claro
+Ahí te tendría que aparecer
+Como vencida
+Eso tenemos que perseguir
+Tomá
+Para vos
+Que no confiaba en la gente
+A ver, intentá renovar
+Y mostrame
+Y está pasada
+Mostrame el idioma
+¿El idioma?
+¿A qué te referís?
+Dale de renovar
+Confirm a renewable payment
+Ahí te tendría que llegar
+Mucho más caro
+Debe ser como 800
+850
+Debe llegar por mes
+Pero vos ahí tenés
+Tenés en inglés
+Y ahora el pop-up
+Renovación de empresa exitosa
+Acá tenemos un problema
+La pipsa
+Las pipsas
+Me hicieron porque creen
+Que ustedes conozcan
+Las mismas enfermedades
+Que yo
+Me preocupa
+Me preocupa
+Mucho
+Mucho
+Mucho
+Mucho
+800
+¿Me querés cobrar 800 dólares?
+Yo te tengo que matar
+Ya te caí
+Así cagamos la gente
+Así cagamos la gente
+¿Te pagás 400?
+Te impago 800
+Mirá que te cobré 800
+¿Qué te pensás?
+¿Cómo te pensás que hacemos negocio, Kike?
+¿Eh?
+Ahora, no sé qué mierda está pasando con la traducción acá, che
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+¿Qué te pasa?
+Dejala estar con 2021
+Que las cosas vengan
+Que las cosas caigan
+Que las cosas vengan
+Que las cosas servan
+No importa de qué año sea
+De cuánto sea la compañía
+¿Verdad?
+O sea, yo le cambio la fecha de constitución y listo
+Cualquiera
+O no
+Si, claro
+O sea, porque en realidad la fecha que importa es la fecha de constitución
+Porque la fecha es solicitud
+Es tipo
+Che, negro
+Pagué
+Pero no funciona así la vida
+Y tampoco
+Capaz que la compañía se abre
+Dentro de un mes
+Y capaz que se abre en 3 días
+Yo no voy en cana
+Mi amiga, lo voy a matar
+Lo voy a matar
+New York, 24 meses
+¿Qué otro caso quieres probar?
+Bien, yo
+Debería estar solucionando bastantes cosas ahora con esto
+Ohio
+Ohio gratis, que no le cobren
+Ohio gratis está fallando
+Ya te mando el fix de Ohio
+Así podés probar
+Ya voy a mandar, voy a mergear
+Directo a develop
+Está faltando un temita de una traducción
+Pero así podés ir probando
+Y algo más que deba estar andando
+New York, 24 meses
+New York, claro
+New York es un caso
+New York es un caso bastante jodido
+24 meses
+O sea que si yo la pongo de 2024
+Mirá si la va a poner
+2024
+Tiene razón
+No debería aparecer
+Nada
+Porque no pasaron dos años
+Si vos la ponés
+Desde
+Claro, pero tiene que ser
+Te va a aparecer 60 días antes de la renovación
+Jugá con eso
+Por eso, o sea, no debería aparecer nada
+Porque aparte es cada 24 meses, ¿o no?
+Claro, sí, pero poné una fecha para que te aparezca
+A ver si aparece, o sea, hace un cálculo ahí
+Que me parió
+Ohio es gratis, dijimos, ¿no?
+Sí
+Es entretenido
+Es más entretenido esto que
+Yo estaba en un proyecto
+Esto es como la charla de viejos
+Yo cuando, ¿viste?
+Muy bien, 10 veces
+California y Texas
+Lo único que te deja es renovación manual
+Que tipo, deberían dar
+O directamente
+Lo que te deja California y Texas
+Es contactar a Ramiro
+Esos tipos
+Recuerdo los 10 huevos
+Ya sé que a Texas
+No voy a ir
+Lo siento mucho
+Pobre Ramiro
+Voy a atender a Ramiro
+Le doy acá, mirá
+Yo escucho la voz de Ramiro y vengo acá, mirá
+Dissolve Company
+Lo primero que hago
+Hijo de puta
+Pobre Ramiro
+Pobre Ramiro
+Qué tan lindo es
+Ya se dio cuenta que no escuché nada
+Tan bonito
+Tan bonito que es Ramiro
+Ojo, el tipo es bien, vos sabés, es correcto y todo
+Vos vos que tenés un tema de discriminación con los autistas
+Vos vos que siempre fuiste de chiquito
+Me fuiste de chiquito
+Eh que me van a joder al discapacitado
+Yo me acuerdo
+Me va a joder al discapacitado
+Yo me acuerdo, vos tenés un tema ahí con eso
+Está bien, está bien, me va a hacer el pelotudo
+Dicen no que yo discrimino
+Yo soy combustamante y todo
+Y yo me acuerdo
+Qué hacés tenés vos
+Increíble, increíble como el Segovia le decía a Nigra de mierda boliviana
+Y se terminó cogiendo dos veces
+Volvió con Roland
+Esas son cosas que...
+que la vida misma no nos va a poder
+explicar nunca
+me rehúso a creer que eso es verdad
+y si yo le pongo 8 de junio
+de 2022, me voy al carajo
+con la fecha, New York
+y tendría que aparecerte vencida, estás re vencido
+negro, ¿qué es lo que va a pasar ahí?
+vos vas, te va a aparecer
+en el BBO y el tipo, Ramiro
+se va a contactar
+vos vas a pagar, Ramiro se va a contactar
+y le va a decir, che mirá, el estado de tu compañía es este
+porque ¿qué pasa? una de las cosas
+que pasa a veces es que
+los tipos se dejan estar
+y se disuelve la compañía
+o sea, si vos te repajeriaste
+y bueno
+¿cómo probamos eso de los 60 días?
+me explico, que no me deje
+no me aparezca por estar
+más allá de los 60 días
+no, pero vos lo que tenés que pensar es que tenés que
+vos tenés que pensar en un plazo de tiempo
+que falten 60 días
+para que se venza el plazo
+eso es lo que tenés que pensar
+si hoy estamos
+a 27 de marzo
+vos tenés que pensar, por ejemplo, bueno
+la empresa se consolidó
+hace dos años
+y un mes, entonces todavía estás dentro
+de los 60 días para renovar
+antes de que se hagan dos años
+¿se entiende?
+hoy es 27 de marzo de 2025
+la empresa se creó
+el primero de
+el primero de febrero
+¿sí? de 2023
+todavía
+ya estás dentro de ese plazo de 60 días
+donde negro, renova porque
+se te vence la empresa
+¿entendés?
+¿se entendió más o menos o no?
+¿hay algún caso en el que no me aparezca
+esta cosa?
+¿cuál?
+uno, nosotros no manejamos renovaciones
+porque son una masa
+dos
+no estás dentro del periodo de 60 días
+o sea
+si vos no estás dentro del periodo de 60 días
+yo no voy a gastarme en renovar
+ejemplo, en este caso
+en este caso, por ejemplo
+en este caso, por ejemplo, vos pusiste 2022
+estás recontravencido
+pero si vos hubieras puesto que la compañía se creó en 2024
+todavía no estás en los 60 días
+entonces te voy a decir
+todavía no necesitas renovar
+porque no es que en todo momento puedas renovar
+solo 60 días antes
+les avisamos
+no es que en todo momento vamos a estar rompiendo las pelotas
+solo 60 días antes del periodo
+eso es una de las tantos chiches que me tiró Guille
+ante allá
+¿sí?
+mirá que, 60 días
+60 días surgió ayer de tarde en un chat
+no, el
+sí, el miércoles de mañana en un chat
+che, mirá que, yo le digo
+che, mirá que estoy avisándole a todas
+y me dice, no, no, 60 días
+¡ah!
+¡ah!
+matalo, matalo, matalo
+matalo, mirá
+matalo
+me voy a llamar a Martu
+tengo que hacer algo antes
+tranquilo Santiago, tranquilo
+tranquilo, diga una cosa, diga una cosa
+¿qué tenía que hacer Santiago?
+¿qué tenías que hacer?
+esto, esto es lo que tenía que hacer
+¿viste que vos sabés lo que tenías que hacer?
+concha de la madre, Enrique, la puta que los panes
+terminó de volver loco
+no terminó, no, ya
+decís que hoy voy a coger un desenfrenado
+si no, si no yo no puedo, ¿viste?
+yo, si no llevo un estilo de vida así, no puedo
+es trabajo, trabajo, trabajo, me gasto 7 preservativos
+la otra vez se me acabaron los 5 preservativos
+terminé cogiendo a pelea y acabando afuera
+o sea,
+ya no
+no puedo vivir así
+vos me entendés que no puedo vivir así
+parte de todo esto es tu culpa, ¿no?
+parte de todo esto es tu
+está bien conté lo que usted me dijo
+¿y está andando bien?
+sí, sí, está andando bien
+estoy jugando con los 60 días
+Nueva York
+no importa, fíjese que le salta bien
+muévalo, pásese de los 60 días
+fíjese que le aparezca vencido
+renueve con una de las dos y ya está
+pero no le quiero dar
+ya sabemos que lo otro funciona
+vamos a, o sea, a seguir cambiando
+¿disolvió también compañía?
+¿solicitó, solicite disolución?
+no, pero no quiero disolver
+solicite disolución a ver que anda todo bien
+¿200 dólares?
+a la mierda
+yo te dijo disolver
+pero te cobro 200 dólares, ¿no?
+eh, pero, ¿cómo te pensás que...?
+my e-shop
+este funciona bien
+te calculo
+claro, ese lot...
+ojo, a ver
+los dos está funcionando bien
+lo que se está mostrando mal es
+nada más
+ahí
+el coso
+para que...
+puta madre
+arroz con leche me quiero casar
+con una señorita de San Nicolás
+ese es pa' coger
+¿a qué...?
+yo puedo solicitar disolver y después solicitar renovar
+sí, es como que
+hay una ley
+que dice
+si vos querés disolicitar cosas
+que nos den plata
+vamos arriba
+no te voy a venir a...
+o sea, si vos estás como loquita
+y querés solicitar cosas que nos den plata
+la última es plata a devolver
+¿te entiendes?
+en tantos días nosotros podemos retirar ese efectivo
+mi chido
+es como me dice Guille
+acá no hacemos caridad, no hacemos nada
+acá queremos plata
+hay que pagar sueldo, hay que pagar todo
+500 dólares, imaginate que te llegan ocho...
+150 dólares
+los tenés durante un mes
+y al otro mes te los sacan
+tuviste un mes donde
+tuviste un préstamo gratis de 800 dólares
+ya estamos llegando en cualquier momento
+a los 10.000 dólares de suscripciones mensuales
+eso
+es un gol
+eso para mí es uno de los goles más grandes que vamos a meter
+10.000 dólares de suscripción mensual
+es el gol
+si no es el más grande
+es uno de los goles más grandes que vamos a hacer
+pasar de 2.900 este mes
+con compañía
+a tener casi 7.000 dólares y algo
+es una locura
+o sea
+es una locura
+la verdad
+es una locura
+y me pone contento porque ver que Guille
+o sea porque
+ta
+yo todavía no tengo un porcentaje ¿no?
+y no creo sacar hasta el año que viene
+pero ver que la empresa viene bien me pone contento
+porque me da tranquilidad de decir
+loco tenemos para rato
+podemos concentrarnos
+podemos estudiar
+podemos tener otra cosa
+o sea me pone contento
+¿no le agarraste como un cariño?
+también
+ya como que es algo que estamos haciendo nosotros
+es como que nuestro cuadro ¿no?
+ya como
+para mí
+para mí Código del Sur me chupa un huevo
+o sea si yo por ejemplo ahora estoy
+tendría que haber mandado un mensaje hace rato
+y eso me chupa todo un huevo
+es que es
+es nuestro
+es nuestro esfuerzo
+ya está
+o sea
+es algo que hicimos nosotros
+yo partí
+o sea si vos lo sentís así
+imaginate como lo siento yo que lo creé todo
+o sea
+a mí
+a mí
+es
+sí
+o sea le tengo un cariño súper especial
+súper especial
+creo que es la esencia de la carrera
+programar y armar cosas
+y después ver que funcionan
+y que anda todo
+tal cual
+tal cual
+o sea es tal cual
+es tal cual
+y todo momento en constante estrés
+porque
+o sea fijate que nosotros no hubo momento
+no hubo momento que digamos
+estamos tranquilos
+estamos bien
+las pelotas
+siempre sentado en la pila
+pero
+pero
+o sea
+yo te voy a decir algo
+nunca sentí una sensación como la que estoy sintiendo ahora
+200 compañías Kike
+estamos hablando de más de 170 mil dólares
+en estos meses que estamos en producción
+estamos hablando de que por mes entran
+me entran como 50 mil
+30 mil personas al sitio
+o sea
+yo sinceramente he trabajado cuatro años en proyectos
+y este es el primer año
+en este proyecto
+y este es el proyecto más gratificante que he hecho
+obviamente que no se lo puedo
+se lo transmito a Guille
+pero tampoco puedo decirle
+mira que sin vos me muero
+o que
+que es como que lo que siempre hay que tirar
+y más en mi rol
+es eso
+pues yo
+yo mi rol también es pelear con ustedes
+pues para Guille ustedes son empleados
+para mí
+somos como un equipo acá
+entendés
+que somos algo que estamos trabajando acá
+y mi idea es
+es ver
+o sea armar un equipo fuerte
+porque si esto no sale
+sale otra cosa
+¿está?
+si esto sale
+viene bien
+porque si hoy o mañana
+o el año que viene
+podés estar ganando 2k
+¿está?
+o puedo regularizarte
+que eso sería una de las cosas más lindas
+o podés directamente facturar a Guillermo
+lo que sea que pase
+¿está?
+y podemos estar tranquilos
+y que vos puedas estar estudiando
+y yo pueda estar trabajando para esto
+y estar bien
+o que vos puedas decir
+no mirá ¿sabés qué?
+no quiero hacer facultad
+quiero hacer otra cosa
+nos da una tranquilidad hermosa
+o sea
+es eso
+además la experiencia que estás agarrando acá
+¿está?
+para mí no tiene
+o sea para mí no tiene
+o sea yo sinceramente no
+en ese sentido
+o sea te lo digo por vos
+y lo digo por mí
+la experiencia que yo estoy agarrando acá
+teniendo que llevar cosas
+¿está?
+y la experiencia que debes estar agarrando vos también
+la experiencia que está agarrando Martina
+no la agarramos a ningún lado
+porque la realidad es que
+Guille nos confió una cantidad de cosas
+y nosotros accedimos a cobrar poco
+durante cierto tiempo
+ese fue el negocio
+ese es el negocio
+no tiene más ciencia
+Schedule a Renewal Consultation de Texas
+este es el botón de Ramiro
+el botón de la muerte
+dale click, dale click
+dale click, dale click
+tiene que funcionar
+no, tiene que funcionar
+dale click
+dale que estoy subiendo cosas a
+Ay por Dios
+bueno
+ahora tenía que agendar una reunión
+mirá que Ramiro es el vendedor más solicitado
+qué mal que estamos
+a ver esto es como una película
+pará anotate esto
+anotate esto
+porque tengo
+a ver tengo que hacer otras cosas
+porque si no, no paralizamos
+acabo de mergear el site
+entonces tendríamos que poder tener todo pronto
+¿está?
+¿qué es lo que acaba de mandarse?
+primero que nada
+las traducciones
+¿si?
+deberían estar las traducciones en inglés
+y en portugués
+del pop-up
+que confirma el renewal
+el resto sí están
+sí
+¿si?
+después ¿qué más?
+debería cambiar el título
+¿está?
+debería haber cambiado el título
+¿por qué?
+porque ahora el título
+si es una compañía vencida
+te dice renovación de compañía disponible
+o te dice renovación de compañía vencida
+¿está?
+después debería aparecerte el precio correcto
+¿está?
+si es una late renewal
+o si es una compañía creada en este mes
+debería aparecerte el precio correcto
+en la pestaña de suscripción
+¿está?
+¿y qué más?
+y después lo que hicimos es
+permitimos renovar ohio
+que antes no se estaba permitiendo
+ya sé
+el site en dev se debe mergear casi enseguida
+así que
+nada
+es probar esas cosas y salimos a probar
+voy a
+voy a mirar las prs antes de
+porque tengo que
+si no no
+¿a qué título se refiere?
+viste que te aparece ahí
+te aparecen acciones de la compañía
+y te aparece renovación de compañía
+company renewal
+viste que te aparece el company renewal
+ese título ahora es personalizado
+si está vencido te aparece una cosa
+si está
+es personalizado

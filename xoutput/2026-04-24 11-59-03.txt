@@ -1,0 +1,324 @@
+¡Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Hola, hola!
+¿Cómo andan?
+Buen día, buen día.
+Buenos días, buenos días.
+¿Cómo andan?
+poner a cargar a la nena
+cuando tuve que adelantar la daily
+porque tenemos la charla de IT
+tristemente la única
+que me va a acompañar ahí va a ser Martina
+así que nada, el resto se
+pierde ahí esa charla
+no le va a quedar otra que poder
+irse a comer o lo que tenga que hacer
+así que nada, lamento mucho
+la pérdida de esa charla
+lo que sí, al final
+cuando viene la sesión de preguntas
+ahí Kike te llamo
+para que vos le contestes a Rami
+porque si no ya
+vos entrás y le contestás
+todas las dudas que tengas
+bien
+para que Santi se me...
+la cámara
+bueno, arrancando
+ayer
+salimos a producción
+teníamos que salir a producción
+entonces arrancamos la salida a producción
+sí
+este
+no, bueno, o sea, tiene que salir hoy
+pero, o sea, trabajémoslo en el día
+pero tiene que mergearse hoy
+para que lo podamos sacar a pronto
+cosa de que tengamos el fin de semana
+para ver alguna cosita, alguna cosa
+como dije, vos habrás visto
+se mergearon muchas cosas de TeamMate
+ajustes y arreglos
+nada, vamos a tener que mejorar
+ahí la parte
+mejorar y seguir trabajando la parte de QA
+que es clave
+para todo este módulo de TeamMate
+y también eso involucra meter todo lo que es banca
+entonces, bueno, vayamos
+vamos viendo
+por ahora la idea es que cada uno siga con lo que tiene
+nada bueno, no me acuerdo
+ahora voy a escuchar que tenía la url
+vamos viendo
+pero aparecieron nuevas prioridades
+sí
+así que
+nada, en cuanto a eso
+vamos viendo cómo vamos distribuyendo al equipo
+la salida a producción ayer
+también fue muy bien
+porque teníamos que sacar términos y condiciones
+que hizo el queridísimo Jona
+y alguna cosita más ahí
+y todo esto de TeamMate
+para poder tener ajustes y esas cosas
+qué más, qué más, qué más
+bueno
+tenemos pendiente lo de PrompIngenier por las dudas
+que eso la idea de nuevo era que
+Martín hoy en día todavía se sigue poniendo al día
+ahí alguien puede mandar el sticker mío
+pero Martín todavía sigue poniéndose al día
+este, laburando...
+con eso y tenemos otras prioridades
+como lo que es el KYB
+o sea la validación del KYB
+que las empresas que están entrando
+que se le está enviando el documento en blanco
+porque nosotros no estamos validando eso ahí Martu
+entonces necesito que lo
+necesito que eso sea la prioridad
+o sea, necesito poder sacar eso hoy
+lo más posible que es replicar lo que ya hace el worker
+a nivel genérico
+qué más, qué más, qué más
+bueno, hoy tenemos una reunión
+una reunión de QA
+donde el señor Oliva va a presentar este
+hay dos cosas que estuvimos hablando
+se te cortó ahí el santi
+dame de mierda vos, la concha
+era la puta más
+ahora pará, denme un segundito
+vos sos vos
+Giselle, Giselle
+no pasa
+Giselle
+a ver ahora se me escucha, ahí bien
+corte y claro
+todo se escucha
+la puta madre
+que espectacular esta computadora
+este, bien
+ehm
+nada, lo que les iba a decir ahí
+tenemos la reunión de QA que va a presentar Oliva
+eh
+a ver, ayer pasó
+y la idea es que SciPress lo pueda correr cualquier persona
+asimismo
+queremos aumentar lo que son las revisiones
+tanto de QA hacia lo que es desarrollo
+como de lo que es desarrollo
+o sea, lo que es desarrollo puede aportar
+a lo que es la validación que hace QA
+con SciPress y test unitarios
+sí
+entonces eso lo vamos a hablar un poquito en la reunión
+pero, este
+y también la idea es que todos puedan ver
+cómo correr SciPress
+yo de mi lado estoy trabajando en dos cosas
+además de verlo de factura y delegarlo
+este
+estoy guardando las cuentas
+tenemos que guardar las cuentas ahí
+y probablemente esté trabajando también
+eh
+o delegando la parte de la UI de la factura cuando salga
+ta
+después de eso
+eh, que otra cosita tengo para ver más
+ta, nada
+iré viendo las PRs y ahora tengo
+tengo varias reuniones, tengo la reunión de IT
+tenemos la reunión de QA
+y después tengo la reunión continua de TARL
+ta, o sea que, y a las 8 me tengo que cortar el pelo
+si no me equivoco
+así que eso, nada
+y, y pronto
+eh, Quique
+eh, yo sigo trabajando con
+tengo dos, dos frentes vamos a decir por ahora
+además de, además de los test unitarios
+la PR que, en la que agrego estos dos campos de búsqueda
+en, en la página de Audit Logs
+que ahí Santi Pantin
+me dejó varios comentarios que estoy atacando ya
+que son de, de
+de variada índole
+eh, y también estoy con
+en paralelo, eh
+la tarea también de Audit Logs de lo que es
+eh, implementar la IA para que explique
+los Audit Logs, que por lo que veo está funcionando
+bastante bien, está respondiendo bastante bien
+solamente estoy corrigiendo
+detalles menores, así que eso debería estar
+dos cosas deberían quedar prontas para hoy
+es básicamente, mi idea sería seguir con eso
+bien, eh
+recordemos que
+la respuesta de la IA va a depender del idioma
+del usuario, si
+ta, eso es importante
+punto número uno
+eh, y después el otro punto
+es, ehm
+ta, yo lo vi medio de costado
+pero ojo que a la IA no podemos, o sea
+nosotros, en teoría
+en teoría, el Audit Log
+de, o sea
+cuando se crea el log
+se deberían estar ofuscando lo que son
+token, API key, todas esas cosas
+o sea, no debería
+haber problema
+digo, lo vi por algún lado, pero
+te lo digo por las dudas, pero cuando se genera
+un log, no se tendría que estar loggeando
+nada, eso quiere decir que eso podríamos pasárselo
+literal a la IA, si nosotros
+encontramos que
+algún Audit Log
+no se está ofuscando correctamente
+el problema no es la IA
+no es ofuscarlo para mandárselo
+a la IA, sino el problema está en una
+capa más atrás que tenemos que
+que ofuscar
+¿se entiende?
+o sea, eso es súper importante, más allá que podemos
+aplicar una segunda capa de seguridad como
+para la IA no pasarle ninguna clave
+pero si llegás a encontrar algo, Kike
+o sea, o más
+la ofuscación debería ser casi
+la misma que ya se corre
+para lo
+o sea, ese método que ofusca
+o quita las claves o lo que sea
+debería ser el mismo que ya se usa en el
+Audit Log
+para tener consistencia
+eso es importante
+lo vi en algún comentario, pero
+es súper importante que si vos encontrás que hay
+alguna clave o algo raro que se esté
+pasando, hay que agregarlo al
+Audit Log para que
+a los filtros, la sanitización
+del Audit Log para que no pase
+claro
+bien, ahí Santi y Gastón
+para darle un poco más de contexto
+esto como el Backoffice, yo lo único que les pedí
+lo único que les pido a ustedes es
+más o menos que se fijen que en Pre-K
+use el Input, por ejemplo
+el Input y los botones más o menos como están
+los estándares
+y que tenga un poco
+de orden a nivel Mobile
+a nivel Responsive
+ya en el Backoffice está todo
+el componente genérico para lo que es
+ingreso de texto y hacer clic en los
+botones, entonces
+no debería, o sea
+mientras que coincida con el diseño, ya estaría
+no hay que crear, con las dudas Kiki
+no hay que crear ningún Input, ni Chatbox
+ni nada
+y los íconos los sacás de
+o sea, a no ser que Santi te pase
+algo, sino los sacás de React
+así de simple, React Icon
+Justamente tomando esta PR
+como ejemplo, en donde bueno, estoy agregando
+un botón y demás, hay cosas de frontend
+capaz que lo vamos a charlar entonces
+pero no sabría donde enviarlo
+o sea, primero a DesignIntern
+para que la vichen Santiago y Gastón
+y después a dónde
+Sí, o sea, las PRs de código
+las PRs de código que hagan ustedes
+o sea, tanto vos como Tatato
+siempre tienen que pasar por Intern
+y arrobar a Yona o a Nao
+o sea
+y si requiere, y si tiene frontend
+tiene que pasar por Design
+o sea, si tiene modificaciones en el frontend
+por ejemplo la PR de Tatato era modificaciones
+lógicas, entonces no incluía Design
+era solo pasar en Intern
+a Yona y a Nao y a vos
+¿Sí?
+En este caso, como requiere cambios
+en lo que es la UI
+también pasa a Santi
+¿Está?
+Perfecto
+Una cosa
+un desafío que tenemos ahí
+Kike, digo para que ya
+lo vayas viendo, es que pensemos
+qué pasa, o sea, que intentemos que quede
+lo más abstracto posible la llamada
+Repositorio
+es complicado, pero
+o que siga el patrón de ChatGPT
+porque
+pensemos que hoy mañana tenemos que usar Gemini
+o por ejemplo Cloud
+para esto
+o sea, la idea es que siga respetando
+como un patrón genérico
+no tipo que vos le pases el modelo
+y nada de esas cosas, sino que lo que le pasás al Repositorio
+es la data
+y al Repositorio es el que se encarga
+de acoplar qué modelo uso
+o lo que sea
+o sea, las cosas constantes de usar el modelo
+utilizamos el modelo 5
+si no me equivoco
+y las tenés de configuración
+o sea, se obtienen de configuración esas cosas
+la configuración de WhatsApp
+así que
+eso es importante
+¿por qué te digo que es importante?
+puede ser que
+las configuraciones de
+producción
+sean distintas a las de Dev
+¿está?
+entonces de última entrás a la base de datos de Prod
+mirás cómo está la configuración
+y las clonás a la de Dev
+¿sí?
+eso nomás
+¿algo más?
+ok, genial
+¿no? genial
+vamos con Johanna

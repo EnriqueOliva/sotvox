@@ -1,0 +1,626 @@
+Así que no puede ni Nahue ni Jona.
+Qué cosita, qué pocas ganas de laburar, eh.
+Vos, Jona, tenés... ¿Qué tenés? ¿Torre?
+Sí.
+Sí, no, la laptop hace mil años que no la usaba.
+Sí, ahí estaría bueno si pueden chequear ahí,
+podemos ir a alguna laptop o algo,
+estaría bueno para poder juntar.
+Sí, sí.
+No, es como te puse en comentarios,
+para mañana, no, pero después ya para las próximas
+sí, seguro ya.
+Esta semana no hacemos nada,
+pero ahí les voy diciendo,
+porque la idea es que vayamos buscando algún co-work o algo.
+Yo ahora iba a poner mi apartamento
+como para las primeras,
+pero la idea es que ya dentro de una semana,
+o sea, por lo menos una vez a la semana
+o algo de eso,
+o cada dos semanas nos estemos juntando,
+estaría bueno.
+Igual, no sé, capaz que lo hacemos igual.
+¿Vos, Kike, podés?
+¿Marty?
+Está, Kike puede.
+¿Tanto?
+No sé, cancelamos, vamos a pasarlo para...
+Pasamos para otro día.
+Vamos a cancelar, pasamos para otro día.
+¿Marty, vos podés?
+Sí, pero tiene que ser mañana,
+puede ser miércoles, si podés.
+No, porque la gente que podía era el miércoles.
+Era mañana.
+Era Jonathan, Martina, Santiago, Bastón.
+Es a las diez, vos, diez y media, vénganse.
+No para las bolas.
+Igual me sirve,
+porque Gastón y Jonathan y Nau
+están con funcionalidades jodidas,
+así que mientras que sigan laburándome,
+eso sí,
+las perra enseguida.
+No, pero vos, Marti, podés?
+Tipo, a eso de las diez, once, llegar.
+¿Cuál sería la idea?
+Nada, trabajar, comer y...
+Claro, va, no todos los horarios.
+Tienen que ir antes.
+Trabajar y comer y esas cosas.
+Hacer un poco de co-working
+y esas cosas.
+¿No?
+Las cosas que hacen las empresas copadas.
+Bueno, bien.
+Todo suyo, Nahuel.
+Bien, no nos falta...
+Ah, está todo ya corto el horario.
+Claro, por eso.
+Le había hecho cinco y media, pero...
+Ahí.
+Para compartir pantalla.
+Ahí se ve.
+Bueno, haciendo un poquito de recap.
+Una de las cosas que había salido
+era estandarizar
+cómo íbamos a hacer
+acudiar
+los templates de los e-mails,
+donde íbamos a establecer
+que cómo el footer se comparte.
+Básicamente, lo separamos.
+Le dejamos un footer genérico.
+Y cómo va a ser algo que vamos a tener siempre fijo.
+Va a ser el logo de DashBank,
+con el action y la frase esta,
+de gracias por confiar en DashBank.
+Ahí, básicamente, lo que hice fue armar
+dos estructuras.
+Una que va a ser, básicamente, como un shell,
+que va a contener toda la estructura de DashBank.
+De cómo va a estar formado el HTML.
+Donde ya predefine
+el logo de DashBank.
+Dinamiza si va a tener un action.
+Dinamiza si va a tener esta frase también.
+Y también encaja
+el footer.
+Que es, viéndolo
+un poco más en código.
+Lo que tenemos acá, por ejemplo,
+van a ser dos carpetas nuevas
+sin templates HTML.
+El layout.
+Acá un poquito de lo que les hablaba de
+shell.
+Donde, básicamente,
+vamos a pasar por variable el título
+del correo.
+Le vamos a inyectar
+el HTML.
+O sea, a partir de ahora, como
+este había planeado Santi.
+Solo vamos a codear debajo
+del logo de DashBank.
+Hasta que llegamos
+al action button.
+Que es opcional, repito.
+Eso es lo que vamos a codear ahora en cada template.
+Este que está acá.
+Acá, como vieron, queda opcional.
+El action URL.
+También el closing text si lo recibe.
+Y el footer sí que lo va a inyectar.
+El footer queda acá como
+dentro de la carpeta
+partials. Acá está todo lo que
+se ve. Ya el footer que sólo
+recibe, hasta como hoy día,
+las variables de las redes sociales
+y los logos.
+Sacando eso,
+a modo de ejemplo,
+el primer email que se mudó
+fue el de CompanyExecutive.
+Acá quedó ya con el prefijo de la
+versión 1 para que ya
+que en la base de datos
+van a ver que sólo tiene acá
+los styles y el contenido puro
+del correo.
+¿Qué pasa si lo abro
+con Chrome eso?
+Y en mi
+título, en este caso,
+faltarían las variables.
+Ah, pero se ve.
+O sea, ¿del Chrome te lo abre?
+¿O otro navegador?
+Sí, porque esto va directamente
+a lo que está acá.
+Si aplicamos algún estilo directo
+lo va a interpretar rápido.
+Bien.
+Bien, hasta ahí. ¿Alguna pregunta
+John, Enrique? Si no, sigo.
+Bien.
+Y ahora, para comentarles
+más o menos rápido,
+por un lado, cómo se van a disparar
+estos emails. Ahora ya no se
+va a buscar a IC3, sino que
+se va a buscar directamente a la base de datos.
+Así que si queremos que se manden los emails
+ya tienen que estar migrados a la base de datos
+para que se manden.
+Por ejemplo, mismo el de ejecutivos.
+Vamos a revisar acá esto.
+No es necesario verlo, pero acá
+ya se construyen
+las variables que van a ser para el email.
+Las variables que van a abordarse en la notificación.
+Estas de acá,
+las de email notification,
+ya se van a imprimir en el correo
+que es el que se va a enviar.
+Y las notification variables
+son las que se van a abordar ya en la base de datos.
+Acá se construyen estas variables.
+Así ya quedan
+persistidas.
+Para no estar reconstruyendo estas variables
+cada vez que el usuario va a ver las notificaciones
+ya que en la base de datos.
+Sacando eso,
+acá, por ejemplo,
+la notificación de
+la asignación de un ejecutivo
+tiene el mensaje de Slack,
+pero a su vez manda el correo.
+Este sería
+el lookup que va a
+buscar el template a la base de datos.
+Va a buscar la última versión, si me recuerdo.
+Si fanbylate es template key.
+Y acá recibe el
+company secretive assignment.
+Que esto quizás se puede dinamizar
+un poco más
+para los siguientes templates.
+Pero sabiendo un toque de eso,
+si venimos acá,
+se manda el correo
+y también
+en paralelo se intenta ya
+persistir la notificación.
+O sea que cada vez que
+queramos que se persista
+la notificación en el sistema
+tenemos que ir ahora
+cuando modifiquemos los correos
+a ese correo en concreto
+agregarle esto para que ya quede
+la notificación guardada
+y se muestre
+en el centro de notificaciones.
+Hasta ahí, ¿alguna pregunta?
+Si nadie tiene una pregunta
+yo voy a aclarar algo.
+Esto de la
+lctd es clave, no el
+promise.org
+porque si no envía uno,
+loguea, pero en sí
+la acción se concretó.
+Entonces, por ejemplo, yo que sé, no anduvo
+lo de Slack, pero sí anduvo
+la notificación o lo que sea.
+Nosotros eso lo vamos a ver en algún log
+o algo por el estilo.
+Al cliente no le llegó,
+pero sí permitimos las otras.
+Me gustaría seguir este patrón
+sin la parte de Slack en la mayoría de correos
+y este patrón no es necesario
+en tu caso, Jonah, por ejemplo,
+cuando nosotros sólo enviamos
+los casos que nosotros enviamos código
+y queremos garantizar
+que el usuario sea
+el dueño de ese correo electrónico
+o que tenga acceso a ese correo electrónico.
+Por ejemplo, cuando reseteamos la contraseña
+en el caso de resetear
+el código QR
+cuando se envía ese mail
+que
+reseteamos o también
+cuando solicitas
+cerrar sesión
+o cambio de correo,
+nosotros no vamos a notificar eso.
+No va a haber una notificación
+visual porque si no
+supongamos que el mismo
+hacker o la misma persona
+que entró ahí adentro
+va a la notificación y copia y pega el correo,
+el código.
+Entonces no es la idea.
+Es un poco eso.
+Nahue, también te consulto.
+Con esto
+se corrió todo bien el arranque
+y asimismo ya
+registró el record en el template, ¿bien?
+Sí.
+Perfecto.
+Eso ya está.
+Bien, a ver si hay algo más que comentar.
+Antes de pasar a comentar lo del
+sync. Ah, no, esto ya va
+persiste en la base de datos.
+Acá ya no hay más nada
+que comentar. Está ahí lo otro.
+Este, como parte
+del sync acá a modo de comentar
+ahora cuando lo esté migrando
+en este caso para que
+sea tomado por el proceso que
+¿cómo es? De sincronización
+que ahora inicia, cada vez que se inicia
+el worker, que esto lo puede ser
+contradevelo, puede ser local,
+no sé si corre en el worker,
+ya cuando le agreguen el prefijo
+de la versión, o sea la B1
+o la B2, lo que va a hacer
+es ya analizar ese HTML
+e intentar guardarlo en la
+base de datos. O sea, cuando
+ya lo
+tengan en el HTML
+con el formato que se
+necesita que va a ser solamente contenido
+acá tiene que venir
+ponerle B1
+y ya en la siguiente corrida
+que lo intenten levantar local
+si va contra
+una base de datos local lo va a guardar
+en esa base de datos, si tiene un dep lo va a intentar
+guardar en dep, o si no
+ya cuando se haga el deploy
+de eso o de B1.
+En teoría, si cambiamos de versión
+sería solo cambiar la versión y cambiar
+las traducciones y eso.
+Se elimina la versión
+anterior, ¿correcto?
+La B1 se elimina, o sea
+dejamos solo la B2 y todo para la B2.
+¿Qué es lo que va a suceder?
+Nosotros lo que tenemos es
+en la base de datos
+corregime de nada wey, pero en la base de datos
+lo que nosotros vamos a tener
+es
+el template, o sea todo el contenido
+de esa B1 lo vamos a tener en base de datos
+en el notification template.
+Entonces cuando llegue una notificación
+lo que vamos a poder hacer es renderizar
+notificaciones anteriores.
+Es un poco la idea.
+Así que es un poquito eso nomás.
+Pero en sí
+a nivel de código, cuando ustedes
+eliminan la B1 y pasan a tener la B2
+acá no hay registro alguno de
+B1 y B2. Y el único lugar
+corregime Nahue, pero
+después de las iteraciones, el único lugar
+donde se indica en código
+qué versión es, es acá
+en el archivo que dice B1.
+O sea, no hay ningún lugar
+en el código, ningún lugar
+donde se ponga company
+executive assignment B1. Es más, el lugar
+donde se pone company executive assignment
+no se pone la versión.
+¿Tá? No se indica la versión.
+Entonces con este nuevo
+mecanismo, el único
+lugar que va a quedar la versión va a ser acá.
+Porque después el código lo que va a tener es
+de esa versión, el mapeo
+de la versión y se terminó.
+¿Tá? Y nosotros
+guardamos en el notification template
+todas las versiones con el único
+propósito de poder
+renderizar notificaciones viejas.
+Si nosotros en algún momento
+borráramos esas notification template
+tendríamos que dejar, o dejaríamos
+de renderizar esas versiones viejas.
+¿Sí?
+Ahí va. ¿Alguna duda, John, aquí qué?
+Estás notific...
+No, acá la duda es
+si para lo que es todo lo que es
+cambio de email, cambio de contraseña,
+cerrar sesiones, no vamos
+a enviar notificaciones.
+De todas maneras hay que hacer todo esto igual
+para que quede en la base de datos.
+Lo único que no se hace es enviar la notificación.
+Exacto.
+Perfecto.
+O que si por alguna razón nosotros hoy mañana enviaríamos
+una notificación, ya lo tenemos.
+La idea es
+que cuando terminemos de pasar
+todos los correos,
+vamos a deprecar toda la lógica anterior.
+Ah, ok.
+Bien. Perfecto.
+Entonces, mi idea es que quede
+todos los notification template
+en base de datos.
+Y bueno, no va a haber notificación,
+pero son casos puntuales los tuyos.
+Pero como la idea es deprecar toda la lógica
+anterior y que se base
+en una lógica.
+Hay que hacerlo igual.
+Yo creo que
+la única razón por la que nosotros dejamos
+los HTML
+me parecía un buen punto para tener la versión
+y creo que para ustedes les hace más útil
+para poder tener una visual
+un poco mejor.
+Como una primera visual.
+Es más, ustedes pueden
+cuando crean el HTML
+pueden crearlo con todo el
+borde que hacen AWE y después solo ponen
+el contenido del medio y prueban el correo.
+Porque ahí hay todo.
+Ustedes tienen el layout
+por ejemplo, que no está incluido
+en la parte de generic.
+Entonces ustedes pueden
+generarlo todo con el layout y el footer
+y después lo que hacen es cortan
+eso y lo pegan en generic.
+Y ahí prueban el correo
+que esté todo bien.
+A partir de ahora algo muy importante
+es que ustedes
+ya estamos con la PR del site
+bastante avanzados.
+Creo que AWE ya ha corregido todos los comentarios.
+Te dejo algunos.
+Vamos a ver si nos da hora para marcharla en lo que queda.
+No creo, pero vamos a ver.
+Y la idea sería
+que todos los mails que están
+y todos los mails que pasemos
+ustedes tienen que subir captura de los mails
+y así mismo tienen que probarlos
+en el site.
+Y es tedioso, pero vamos a tener que hacerlo.
+¿En el site qué quiero probar?
+Bueno, que la notificación se ve bien.
+Que la notificación se ve bien para el idioma español,
+inglés y portugués.
+Si yo cambio lo mismo que hacemos con el correo
+vamos a tener que hacerlo en el sitio.
+Entran, generan la notificación
+y ponen una captura.
+Así se ve la notificación en español,
+inglés y portugués.
+Porque cuando se genera la notificación
+se tendría que guardar en los idiomas
+y así mismo
+un agregado que va a tener ahora
+es que ustedes van a tener que poner el título.
+Que el título debería ser lo mismo
+que lo que te llega cuando te llega por correo.
+Porque vos lo que ves de la notificación
+es una especie de
+tu depósito se registró.
+Eso es lo que ves en el Zapchat.
+Bueno, esto va a ser lo mismo.
+La realidad al final del día
+creo yo, esto nos agrega un poco más
+de complejidad a nosotros, pero
+con el objetivo de, bueno, lo prueban
+una vez y no hay que tocar nada
+en el site, es solo generar la notificación.
+O sea, ustedes van y generan
+la notificación en el site para sacar captura.
+Pero creo que con
+el pienso cuando le metimos
+a esto acá, era que ustedes
+envían, quieren agregar un nuevo mail
+lo agregan solo acá.
+Después el evento se triggería
+vaya a saber donde o como sea.
+Pero si yo quiero agregar un nuevo
+mail con un nuevo evento
+solo con agregarlo acá, listo, murió.
+No tengo que andar tocando el site
+o no tenemos que, lo más importante
+que es algo que peleamos un montón
+no tengo que andar agarrando este HTML
+y también clonándolo en el site para que
+sepa renderizarlo.
+Creo que eso ahí es un logro que
+estuvo bastante bueno.
+Nah wey, te dejo.
+Si no tienen más preguntas
+es eso.
+Estaría bueno que pinguemos esta PR
+en el channel de
+developer, para que
+los chicos la tengan como referencia.
+Y automáticamente, ahora que está
+mergeado esto, me dijiste Nah wey
+que te fijaste
+en phadmin y registró bien el template.
+Si.
+Está perfecto, entonces la idea sería
+a partir de ahora
+tienen que chequear eso
+como se llama, también cuando se mergea
+posterior, se tiene que registrar
+el notification template y todas esas cosas.
+¿Está?
+Eso.
+Lo otro que te iba a consultar Nah wey es
+el deploy lo actualizaste, ¿eliminó los
+templates viejos?
+Buena pregunta.
+Está, chequealo y me confirma.
+Me apuro.
+Con el sync y eso.
+Bien.
+Lo otro que te iba a decir, bueno, está.
+Eso nomás, entonces ahí tenemos los avances
+para lo que serían las PRs
+de correos.
+Ahora, Marti,
+¿en qué status está lo de notificaciones?
+¿Está de mi lado?
+¿O está del lado de Nah wey?
+Yo estaba revisando el app, pero quería ver
+unas cosas contigo porque
+son bastante grandes, o sea,
+hay varias cosas.
+Para no dejar comentarios al pedo.
+A ver si lo podemos sacar ahora.
+No sé si queremos mergear directo
+la PR y tal.
+Bien. Sí, porque sería clave para que los chicos
+empiecen a probarlo. Si querés nos quedamos
+cinco y lo vamos viendo. Y Nah wey me confirmás
+por chat. Dale.
+Dale, vamos arriba.
+Quique, sí, decime. Pregunta rapidito nomás.
+Esto, Santi, bueno, vos ya sabés que hay
+correos en curso que estoy por mandar.
+Son
+redimensionados, básicamente.
+Tareas de redimensionado. ¿Esto afecta de alguna
+manera? ¿Hay que implementarlo
+en estas PRs abiertas también?
+Y ya estaría bueno.
+Si son muchos redimensionados, si son
+redimensionados y de repente vos lo que me decís es que
+esto estaría bueno atacarlo más atómicamente,
+liquidemos el redimensionado.
+Si sólo es redimensionado.
+O sea,
+porque capaz que si te pones a hacer
+todo refactor de notificaciones y cosas,
+si son diez correos que salen redimensionados,
+un montón. Entonces sí, liquidémoslo
+y ya está.
+También calculo. Tienen
+redimensiones en el site, ¿correcto? O sea,
+deberían mandar PRs para el site con esto.
+Eh, no.
+Por ahora no.
+Yo el redimensionado de la imagen
+lo hice con CSS nomás y se ve impecable.
+Sí.
+No hubo que volver a enviar al site
+los assets más chicos ni nada.
+Correcto.
+O sea, ya los que estaban en el site
+los redimensionamos con CSS
+fijo y se ven impecables.
+Pero lo que digo es,
+tenemos que hacer la optimización
+porque son imágenes que están pesando la mitad del tamaño.
+¿No?
+Sí, habría que chequear ahí
+a ver qué tanto hay.
+De diferencia en el peso.
+Porque nos quedamos con imágenes gigantes
+y estamos cargando en un
+mail intentando que sea más rápido.
+Si son
+20kb y lo reducimos a 10
+vale la pena.
+Sería sólo actualizar las imágenes.
+Es una PR bastante rápida.
+¿Se animan a chequearlo y me lo dicen?
+Sí.
+Porque ya que está, o sea, aparte también de esa
+optimización de achicarlo, también lo que
+busca es ese efecto, ¿no? De que cargo el mail
+y me demora 10 horas en cargar todo el contenido.
+A mí me pasa pila de celular
+y tengo bastantes quejas con eso.
+Entonces, si podemos reducir,
+no sólo, no está mal el ajuste
+de tamaño, pero si podemos reducir
+las imágenes también y reducir
+a la mitad la imagen que se carga,
+tengan en cuenta que las imágenes
+de los correos se cargan
+o carga diferida cada una.
+Todo lo que podamos optimizarlo es mejor.
+¿Tá? Así que si pueden
+bichenlo y ya si me dicen
+vos, mirá, reducimos la mitad o
+reducimos un 30%, lo que sea,
+ya empecemos a atacarla
+también. O sea, ahí Kike sí,
+capaz que ahí justifica más, Kike,
+que de repente hagamos 10 reoptimizaciones.
+Ahí vayamos cambiando
+los icos.
+Bien. Ahí
+otra cosita nomás.
+Yo dejé ya la PR de migración,
+ya pasó por interno, quedo al lado de ustedes ahora.
+Migración.
+Por lo que decía Marti del
+índice único hoy, que
+te había dejado vos una pregunta y eso para
+la PR de cerrar
+sesiones. Así ya ahora
+que se mergeó lo de Nahue, ya actualizo
+todo y ya me queda también la migración hecha.
+¿Qué es la que número
+tiene? La migración
+es la última que mandé, es
+la 936.
+Ya con eso y lo de Nahue ya se me quedaría
+habilitada hacia allá.
+Bien. ¿En fecha
+está bien?
+Sí, si no me equivoco fue lo último eso.
+No tengo el site
+ahora a mano.
+Yo la dejo aprobada de mi lado Marti,
+pero si podés rechequeate vos
+que sea la última.
+Bien.
+Y Nahue, me confirmás
+eso. Bueno, quedate Marti un
+segundito, vemos esas cositas y otras
+consultas que tenés. Si podés
+Joana, confirmá en el hilo por las dudas que sea la última
+si ya la agilizá. Sí, ya
+chequeo y ya me fijo, ya mando eso.
+Dale, nos vemos.
+Nos vemos. Chau.

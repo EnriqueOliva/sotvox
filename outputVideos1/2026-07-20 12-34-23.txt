@@ -1,0 +1,357 @@
+Bueno, bueno. Marti, ¿quién me está faltando? Nadie, ¿no? Marti, ¿no? No es. Escuchaba a gente ahí. No es. Bueno, bien de bien. Bueno, ahí a pesar de que estuvimos viendo ahí hasta último momento, tarde del viernes, los esfuerzos para intentar mitigar la situación, no fue posible, así que pedirle disculpas a todos.
+Según, bueno, nada, la jueza al final determinó que no hubo ningún ilícito, así que más allá de todos los esfuerzos ahí, agradezco a Enrique y toda la cooperación y bueno, extender también toda la ayuda que tuvimos de Interpol ahí para intentar cazar a este grupo de criminales, pero bueno, a veces que nada, que las cosas quedan así.
+Más allá de los buenos actores.
+Entonces, la justicia es la que decide y bueno, no podemos hacer mucho más, así que nada, tenemos un ganador, así que bueno, felicitaciones Nahuel por ganar la penca.
+Bueno, bien ahí Gastón, después te invito a que se lo pidas a Ige eso, porque yo no te voy a pagar un peso, hijo de puta.
+No, no, no, bueno, bien de bien, ahí este, nada, eso.
+Después, después arreglamos ahí Gastón.
+Y lo otro que iba a decir era, yo había puesto para juntarnos el martes, hoy ya no es, hoy no llegamos al quórum, no sé si mañana están, si podrían juntarse, si no lo removemos.
+La idea sería, no sé si todos tienen laptop, pero la idea sería ir en 18, no sé si tienen, o sea, no es para juntarse.
+Si es como para trabajar, no sé quiénes no podrían.
+Yo el laptop no, no tengo. O sea, tengo, pero tendría que hacerle toda la configuración para ver si sirve para llevarlo.
+Más o menos a lo de llorar.
+¿Cómo? No entendí.
+O sea, tengo el laptop, pero no la tengo configurada con ningún repo ni nada, o sea, tendría que probar a ver si puedo.
+¿Y vos Nahuel?
+Claro, vivo que llora. Tengo un laptop, pero no está haciendo nada.
+Bueno, me confirman ahí, voy a, o sea, tengo que acomodar todo, pero me confirman ahí, a ver si pueden, capaz que más al final del día.
+Si pueden, sería genial para juntarnos a, juntarnos a trabajar un ratito, creo que podría estar bueno.
+Por lo menos medio día y ya almorzamos y después siguen de largo.
+Bueno, bien, creo ahí, el resto si podía, Gastón, Martina, Santi, Enrique.
+¿Fernando?
+Sí, yo me he mirado, sí.
+Está, perfecto.
+En el aplicado no habría problema tampoco.
+Tendría que configurar un poco la otra compu, pero no habría problema.
+Está, pique si se puede.
+Ahí John y Nahuel si pueden chequearlo y si no, no está.
+Quedará para la otra semana, porque después el resto de días ya había menos participación.
+Bien de bien.
+Bueno, bueno.
+Nada.
+Cifrando ahí, haciendo algunos ajustes de seguridad.
+Ahí tuve que emigrar, aproveché todo el fin de semana para emigrar toda la base de datos de Prod.
+Este, y cifrarla.
+Este, entre otros ajustes.
+Está, agregué logs y una cantidad de cosas.
+Eh, Marti, ¿no te llegaron 10.000 correos?
+¿De qué?
+No sé, fijate que no tenga, con los correos de Abang, tipo llenos de una cantidad de correos.
+Este, ahí estoy haciendo algunas pruebas, algunas cositas.
+Eh, voy a seguir con eso, y hoy voy a estar terminando la documentación.
+Además, el fin de semana me lo tomé hoy para comentar de las PR de Jonathan y Nahuel.
+Mandé un mensaje genérico para todos.
+Este, con respecto a lo que sería la parte de notificaciones y configuración.
+Así que eso está algo que tenemos que tener en cuenta.
+Eh, está, no sé ahí quién se va a encargar del cron shop.
+Y también algo que está faltando es las configuraciones de las notificaciones, que eso no sé si lo vas a agarrar vos, Nahuel.
+Y también algo que está faltando es las configuraciones de las notificaciones, que eso no sé si lo vas a agarrar vos, Nahuel.
+Y también algo que está faltando es las configuraciones de las notificaciones, que eso no sé si lo vas a agarrar vos, Nahuel.
+O Jonah.
+No sé cómo lo vienen organizando.
+Porque en sí, o sea, cuando se me lleguen configuraciones, eso lo vas a seguir.
+Sí, ahí tenemos que organizarnos, a ver.
+Pues lo único que está hoy es el, es lo del idioma.
+Después faltaría, sí, hacer el resto.
+Ah, bien.
+Organícense, y también está el cron shop.
+Este, creo que es lo que, lo que estuve comentando.
+Eh, después, tengan en cuenta que estamos cerrando sprint.
+Sí.
+O sea, hoy se cierra el sprint.
+Así que, este, lo que les pido es que ya antes del final del día vayan pasando la propuesta.
+Vamos viendo cómo se va licuando todo, pero vamos pasando propuesta para liquidar.
+Bien.
+Este, la idea sería, en los casos, cerrarlo mañana, pero no extenderlo más de mañana.
+Enrique.
+Bueno, de mi lado estuve con, trabajando principalmente con correos.
+Eh, quedó enviada la PR, ya llegó a PubRequest.
+Eh, la PR con la migración de las compañías, con eso del Excel que había pedido Mati el otro día.
+Este, después, bueno, también, ah, también llegó a PubRequest QA, eh, la PR con DesignPress, de TeamMates.
+Eh, y lo que yo les comentaba el otro día en cuanto a correos, es que, bueno, yo, como son, no son cambios chicos, pero sí son pocos archivos, son dos archivos por correo, más o menos.
+Entonces, yo estaba juntando correos en una misma PR, entonces, bueno, capaz que ya, ya tengo como cuatro en una, en una sola PR.
+Entonces, capaz que ya, eso ya lo puedo ir mandando para que lo revisen, por ejemplo, los, los chicos de diseño.
+Y tengo, tenemos con, conmigo, con Jonas, seguro que también tiene, eh, correos para trabajar con el tema del redimensionamiento y eso.
+Así que la, la idea en principio sería seguir con eso siempre y cuando no surjan comentarios de, de algunas cosas que estén, que estén abiertas.
+Así que, bueno, ya estuve bichando.
+Mi sprint y ya en términos de puntos estoy, estoy bien.
+Obviamente, lo que faltaría sería capaz pasarles propuestas de continuación o cierre.
+Así que puedo estar haciendo eso.
+Lo preciso.
+Y veamos, veamos lo que podés intentar cerrar.
+Y que, dale, eh, eh, pinchar ahí a los reviewers o a las personas que estén asociadas para ver todo lo que podamos cerrar.
+A ver si podemos cerrar la parte de TeamMates que tiene bastantes puntos y lo de correos ya moverlo interno y, bueno, vamos viendo al final del día cómo se mueve.
+Entonces, pronto podemos cerrar.
+Ok.
+Bien, bien.
+Fernando.
+Oh.
+Bien, buenas, buenas.
+Eh, un poquito de co-review, como siempre.
+Eh, estuve actualizando también algunas cuantas PRs.
+Eh, quedó pronta la tarea de la PR de test.
+Que es como medio pionera en, en el back office.
+Eh, si la pueden.
+Ahora acabo de ver un, un nuevo.
+Un nuevo, un nuevo, no sé si es de esa PR, pero si se puede aprobar cuanto antes yo les hago, les hago follow up eh, porque va a servir para las próximas también tareas de test.
+Santo, no tenemos nada terminado de sprint.
+Eh, no, están las PRs esas, o sea, y después, eh, del worker eh.
+Pero qué pasa con esto, porque esto es, esto es todo el trabajo del sprint.
+Así que.
+¿Qué pasó?
+Eh, esas me olvidé de pasarlas a intern, perdón, igual van, van a pasar ahora a normal.
+Está, por favor.
+Para peor las manejé en el Excel, pero no hay eh.
+Porfa, pasemos la intern, intentemos, o sea, que esto no vuelva a suceder, de no reflejarlo, porque esto refleja como que, como que en realidad se está terminando el sprint y todavía no terminaste nada.
+O no hay nada ahí.
+O sea, solo tengo esta.
+Tengo.
+Seis puntos en review.
+Si podés ya actualizarlo.
+Dale.
+Eh, quedó también la PR del coverage en el pipeline.
+Que, que está, era lo que, lo que habías pedido.
+Y está, si después la pueden bichar.
+Vi que tienen la PR de Enrique, falta el de nada bueno más.
+Eh, que está, estaría bueno poder, eh, me echarla ahí cuanto antes.
+Así que.
+Ahí está.
+Eso nomás.
+Bien, bien, bien.
+Eh, actualizamos el sprint y lo mismo que todos al final del día, fíjate, pero vamos a intentar actualizarlo y, y si podés, si ya llegan a que estén con Martina y conmigo, pinchanos así, a ver si podemos marcharlo antes que finalice el día.
+Está eh, Gastón.
+Buenas.
+Eh, por mi lado estoy eh, trabajando en la encuesta de satisfacción en el flujo eh, que me pidió marketing de, de la encuesta.
+Eh, tuvimos hoy la reunión con eh, con Matías de marketing y nada, estuvimos eh, viendo que las, las tareas que se completaron y estuvimos también eh, organizando lo de la semana, eh, lo que sí me pidió fue que primero me, me, me preguntó cómo veníamos con, con el tema de landing, si lo habíamos empezado a desarrollar.
+Eh, no sé si.
+Ahora escuchamos nuestro.
+Bien.
+Creo que no, creo que todavía no.
+No.
+No.
+Nada.
+Eh, y después eh, nos dijo que el tema de, del CRM que habíamos hablado en su momento, eh, me dijo que lo estuvo hablando vos y que, que bueno, que iba, o sea, que iba a necesitar que saliera más, más pronto de lo, lo que habíamos estimado al principio.
+Eh, por un tema de que se nos vence la supervivencia.
+Sí, es muy importante la suscripción eh, en, en septiembre creo.
+Entonces, nada, eh, que vamos a necesitar antes.
+Eh, y tal por otro lado, estuve trabajando en un posteo y historias eh, para, para las ads de, de Dasban Basic, eso ya lo tengo casi terminado, se lo estaba por pasar a Santiago ahora, para que lo revise.
+Sí.
+Vale.
+actualizando la skill
+de traducción que
+bueno, el salón
+me dijo que había tenido
+algunos errores, más que nada de formato
+y que he cambiado
+algún texto de vez en cuando
+que no debía
+cambiarse
+entonces la estuve utilizando para corregir
+esos errores y nada, ahora
+la iba a probar
+con un par de cosas
+que tenía
+ahí la idea del CRM es que se
+maneje contigo
+tanto CRM como landing
+esas cosas son cosas
+que Mati quiere para la parte operativa
+para la parte interna
+la idea es que no paremos a las cosas
+que está trabajando Santiago para los desarrollos
+o sea, no quiere decir que no sea
+desarrollo, pero es desarrollo interno
+entonces ahí la idea es que se administre contigo
+no sé quién
+había avanzado con eso
+pero bueno
+retomarlo
+y charlarlo, también si tenían algo
+ahí no sé si Santi había hecho algo
+también retomarlo
+viene bien
+Jona
+bien, bueno, estuve trabajando
+ahí en los comentarios
+tanto en la PR del worker
+que todavía ahí ya
+mandé la tarea de la migración que dije ya Martín me la aprobó
+así que voy a estar
+haciendo eso
+ya hice todos los comentarios
+que me dejaste también en la de configuración
+ahí
+iba a preguntar por el tema de
+que quedó bloqueada por la PR de Nahue
+lo del worker por el tema de los
+emails
+la de configuración entonces
+hasta que no se mergee todo eso del worker
+también quedaría medio bloqueada
+porque si no para poder testear
+tipo end to end
+hasta que no se mergeen todos los
+eventos del worker
+y eso quedaría como medio
+bien
+y nada después arranqué todo con
+lo de la landing que ya la tengo
+bastante avanzada así que capaz que para hoy
+ya dejo también la PR de la landing
+bien de bien, genial
+el chatbot en que anda?
+el chatbot
+me queda corregir ahí unas cositas que me dejó Gastón
+y después yo te dejé
+hoy ahí en el chat
+unas preguntitas
+que me habías preguntado que era lo de
+lo de editar y borrar
+que ahí te dejo en el chat
+ahí te dejé a ver que que hacíamos con eso
+si eso lo dejamos para una iteración más
+adelante o qué
+dale perfecto también en el chatbot estuve sacando el fin de semana
+la parte multi idioma entrenando a la gente
+o sea que va a tener un pequeño cambio en el endpoint de start
+porque va a tener el idioma
+yo eso te lo paro
+bien
+este y bien
+está perfecto
+está eso
+bien de bien
+Martina
+de mi lado
+estuve revisando las PR
+estoy revisando las PR
+en particular la de Nau
+que mandó de nuevo el worker
+con tus últimos comentarios
+y después también ayer estuve revisando
+los de
+la PR de notificaciones
+que ahí vi que me robaste
+por temas de
+cosas que al parecer no estaría atrapando el prompt
+y mandé una PR con una actualización
+y mandé una PR con una actualización
+que en realidad lo que tiene es
+justamente todos los ajustes
+que aplican a las reglas
+y también le agregué un paso de autoverificación
+para que antes de
+una vez que aplique los
+los cambios
+también haga como una verificación
+de todo el checklist
+y ver que se cumplen los puntos
+pero igualmente encontré que había inconsistencias
+así que eso estaría arreglando esos problemas
+y básicamente esa PR tiene eso
+y después también estuve analizando
+el tema de los endpoints
+que ahí encontré varias cosas
+y no es tan trivial
+así que ahí me gustaría verlo
+porque en realidad
+si queremos aplicar
+los ajustes también a los prompts
+para que siga alguna convención
+ya sería un poco más complicado
+habría que alinear un poco mejor
+porque hay varios endpoints que...
+no están siguiendo REST
+directamente
+hay muchos endpoints que se pueden reducir
+de nivel
+y ahí habría que ver si queremos
+también ya de paso
+hacer un refactor
+o cómo queremos atacar esos
+en particular, así que nada
+después te pido unos minutos
+para ver eso
+y mientras tanto voy a seguir
+con las PRs
+que vayan mandando
+y también voy a intentar mandar la PR
+a ver si ya puedo cerrar eso también
+Viene bien
+Dale, ahora vemos
+lo de los endpoints
+Naue?
+Yo por un parte me tomé la bañera para terminar
+Te he puesto en los comentarios que habías dejado
+de las PRs del work que vi en el site
+ya que ayer ya las volví a enviar
+y ahora está terminando con lo de
+con lo de Tealpates
+Sería eso por mi lado
+Santi?
+Bueno, el viernes envié a revisar
+a IGN
+los mails que estaban quedando
+ya están todos
+en review por el lado de él
+creo que están todos aprobados por Alberto
+pero aún no tenemos el approve de IGN
+y continué trabajando
+lo que es el team mate y el draft work
+en cuanto al draft work
+tengo
+avances para mostrarles
+me queda ahí
+iterar un poco con Claude
+y ver cuál de las versiones que armé
+continuó
+trabajando
+si lo podemos ver ahora, genial
+y ya ahí
+una vez que me digan eso
+lo termino de liquidar
+y después con lo del team mate
+bueno, estuve haciendo
+los ajustes que habíamos hablado la vez pasada
+y también le envié
+a Carlos las dudas que tenía
+recién me contestó
+y ahora estoy haciendo esos ajustecitos
+Muy bien, muy bien
+y ahí la consulta
+es
+si pudimos ver algo de
+ay no me sale
+si tenemos
+algo de la parte de
+directorio y chat
+le consulté a Guille
+y me dijo que sí, que estaría bueno
+una vez que liquidemos esto que estamos atacando
+pasar a
+trabajar en eso
+pero no me comentó más nada
+que eso
+fíjate si podés programar alguna reunión
+o algo por el estilo
+bien, perfecto, está así
+bien de bien
+¿Quieres estar en esa reunión o...?
+ehm, sí
+como la primera instancia de lo que busco
+está perfecto, bien de bien
+bueno, genial
+estamos prontos, ¿quiénes tenían postcramp
+para ver?
+yo ese, eso que querías mostrarnos ahí
+bien, bueno, el resto buen provecho
+tengan en cuenta que cierra el sprint
+así que este, nada
+vayan haciendo seguimiento, intenten pinchar a los reviewers
+para que se vayan moviendo lo más que se puedan
+sus PRs, ta
+si no al final del día creemos ya tarea a continuación
+bien
+ya manden la solicitud, la propuesta y la solicitud
+bien
+vamos arriba, nos vemos

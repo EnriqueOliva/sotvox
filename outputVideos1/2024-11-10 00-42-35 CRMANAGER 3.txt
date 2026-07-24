@@ -1,0 +1,903 @@
+Porque usted capaz que me va a pegar algún rezongo o algo, entonces ya lo dejo grabado para la próxima vez.
+La puta que lo fue.
+Bueno, a ver, le explico.
+Te comento un poco.
+Usted, una de las cosas que me había marcado es empezar los casos de Derinit.
+Me había comentado que estaban muy complicados los casos.
+Hacerlo un poco más sencillo.
+Y estuve sacando unas cosas en común acá, el before each, para que queden más lindos los casos.
+Mire, el act, el arrange directamente no hay en este.
+Están como más sencillos.
+Estoy usando solamente una tarea, una función, el delete company draft.
+No estoy probando 15 trabajos y no sé qué.
+Está mucho más sencillo.
+Lo simplifique.
+Le voy a mostrar.
+Ahora le voy a explicar línea por línea.
+¿Por qué sigue con esta terminal?
+¿Eh?
+¿Por qué usa esta terminal?
+Bash.
+Yo soy Bash.
+Yo...
+No, no funciona otra cosa.
+Es Bash.
+Ah.
+Quiero...
+Quiero que...
+Mostrarle la lista de casos.
+En vez de estar scrolleando para arriba y para abajo, quiero que acá me figure la lista de casos.
+Por eso estoy...
+Ahí está.
+¿Puede descargar esta terminal que es la que tiene el equipo?
+No.
+No.
+La descargas con...
+Es para PowerShell.
+Nada de eso.
+Después te digo...
+Ese literal...
+Ese es el estilo que tenemos nosotros.
+Está bueno porque lo que te dice es...
+Te dice la carpeta exacto y te dice la RAM.
+Este...
+Nada.
+Y también guarda ciertos comandos que vos vas a tirar.
+Nada.
+Ok.
+Además podés ponerle inteligencia artificial para que...
+Yo le instalé una cosa de inteligencia artificial.
+No, no.
+Una cosa de inteligencia artificial que te predice los...
+Te guarda los commits y esas cosas.
+O sea, te tira algunas ayuditas.
+Está bueno.
+Ok.
+Lo dejo acá.
+Mirá.
+Acá tiene los...
+¿Ves mi pantalla?
+¿Se ve bien?
+Sí.
+15 porque...
+En realidad, acá corrí los casos en el control...
+El otro.
+El control...
+No.
+El 10 es...
+Son estos.
+Yo primero...
+A ver.
+Casos de éxito.
+Usted va a notar que son estos primeros cuatro.
+Sí.
+Los primeros cuatro casos bien sencillos, que son como los flujos principales, todos
+comenzando desde el init.
+Uno sencillo es el execute show, cuando se actualiza un show, remover un show y ejecutar
+un show después de actualizarlo.
+Porque no es lo mismo que solo actualizar un show.
+En uno pruebo que se actualice un...
+Un pendiente.
+Acá.
+Sí.
+Porque este es el bug que usted me había dicho.
+¿Se acuerda?
+Habíamos charlado de que si hay...
+Si se ejecuta un show y después se vuelve a ejecutar el mismo show y el otro está corriendo,
+no hay nada que prevenga el segundo.
+¿Se acuerda de eso?
+No tenemos una lógica que impida una segunda ejecución de un show que se está corriendo.
+¿Se acuerda?
+No tenemos una lógica que...
+Ah.
+Sí.
+Sí.
+Sí.
+¿Y eso no lo arreglamos?
+Casi seguro no.
+Quiere mirar el manager.
+A ver.
+Cuidate.
+Es...
+Es...
+Es...
+Esto lo ane...
+Porque usted me dijo que, bueno, ya dejé pronto alguna cosita como para romperlo, lo
+agregué...
+Esto no va...
+Es para solamente para demostrar...
+¿Esto solamente lo comentaste en los bugs?
+Qué raro.
+¿No lo arreglé?
+Eh...
+No.
+Los bugs son de...
+De...
+De regresión solamente.
+Son de regresión.
+Acá nosotros tenemos...
+No.
+No.
+No tenemos nada.
+Está.
+Comentame ese.
+Agregame eso en QA.
+Está.
+Ok.
+Porque estaría bueno ya...
+Ok.
+Para arreglarlo.
+Es un bolazo.
+Ya lo hago yo.
+Pan.
+Ok.
+Bien.
+Decime entonces.
+Bueno.
+Caso sencillito.
+De éxito.
+Execute show.
+Actualizar un show.
+Remover un show.
+Y actuar...
+Ejecutar un show que fue actualizado.
+Que se le actualizó el schedule.
+Todos desde el init.
+Y después los casos de fallo.
+Cuando nosotros hacemos una llamada a la base de datos.
+Bueno.
+O simulamos.
+Este...
+Que hacemos un cron.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Un cron show.
+Que es un...
+Que todas las veces nos Alberte lima 2 semanas 40 segundos.
+Así.
+Dehhh experiência es uno
+cuerpo no se le abre en 2 meses que se cambia cosas en 2 meses.
+Claro, claro.
+Esta...
+en un refresh, lo que se está ejecutando no se puede caer lo que ya tenemos. Debería
+fallar solamente ese refresh. Por eso son dos casos distintos. Bueno, ta. Después si
+falla o si tenemos un crontiming válido, un patrón de cron en el init, uno en el refresh,
+y después estos casos. Cuando queremos parar un jog cuando tiene la flag running como true,
+lo que usted me había comentado, agregar un caso donde, bueno, por más que la flag
+de running esté en false y se intenta detener el jog y ocurre un error. ¿Qué pasa? Usted
+me había comentado agregar ese caso. Detener un jog que, bueno, tiene la flag en false
+y falla igual. ¿Qué pasa ahí? Ahí lo agregué. Después, prevenir, o sea, ahí está. Intentar
+actualizar un jog que en realidad se está corriendo, no se debería poder actualizar.
+Bueno, el controller tiene un error. ¿Qué pasa ahí? Tiene un error el control. O no
+existe. Este caso yo lo dejé implementado.
+Pero omitido para cuando ya arreglemos el bug ahí. ¿Por qué se está imprimiendo? Ah,
+por ahora. Sabe que, no sé si usted conoce, imagino, o sea, no lo quiero insultar su inteligencia,
+pero usted conoce esto, el skip, ¿no? Ah, es para skippearlo. Sí. No, no lo sabía
+en este lenguaje. Sí, lo sé, sí, sharp. Está, sí, está bien. ¿Y queda acá pronto?
+Nunca lo tuve que trabajar. No, no lo tuve que trabajar. Nunca lo tuve que trabajar. Nunca
+lo tuve que trabajar. Nunca lo tuve que trabajar. Nunca lo tuve que trabajar. Nunca lo tuve
+que trabajar. Nunca lo tuve que trabajar. Nunca lo tuve que trabajar. Nunca lo tuve que trabajar.
+Igual está muy bien con el skip, pero poné un fix me. Ah, claro. Acá. Está bien el
+skip, pero pongamos un fix me. O sea, es más, yo fix me y ponelo arriba del test, literal.
+Como dice usted, por ejemplo, así o como. Claro, sí, ahí va. Fix me, no sé qué,
+no sé. Remove, skip, skippear.
+Ja, claro.
+keep property
+when
+this case is
+contemplado, no sé
+ok, when this
+o así, simplemente
+así, ok
+ok, ta, bueno
+esto es lo que ya decíamos recién
+prevenir que un trabajo, que es
+se ejecute un show
+cuando ya hay uno igual ejecutándose
+ta, y después
+cuando hay un error acá, un error
+crítico al principio, que
+el schedule tira error, ahora lo vemos
+bien, déjenme, permítame
+explicarle, porque esto no es nada, obviamente
+usted lo que quiere ver es como funciona
+cada caso, como es que
+a ver si efectivamente
+que estamos haciendo, no, en cada
+caso, vamos al primero
+a ver
+acá, este sencillo
+no tenemos
+no tenemos, ve bien ahí
+si, no tenemos
+a range, porque yo saqué como muchas
+cosas en común que se repetían
+acá para el before each
+ta, por ejemplo
+la llamada a la base de datos
+la primera
+on call 0, siempre
+en realidad por lo general
+nos devuelve initial job
+o sea, nosotros le consultamos
+simuladamente a la base de datos
+que jobs hay para hacer
+y nos tira, la primera
+vez nos tira este, el initial job
+ta, por ejemplo
+por poner un ejemplo
+luego la segunda vez nos tira
+el refresh task, ta, bueno, ta
+en el primer
+caso de prueba
+debería ejecutar un job
+exitosamente, desde el init
+entonces, ¿qué hacemos en este caso?
+es bastante sencillo
+en el act, ¿qué hacemos? bueno
+llamamos al init
+¿verdad? nosotros
+llamamos al init, entonces
+yo sé que esto usted lo sabe, obviamente
+porque lo hizo usted, pero bueno, a modo de
+demostración, de que yo lo entendí
+le comento
+nos vamos al init, entonces, ¿qué hace el init?
+el init hace primero
+hace start jobs, así que
+nos venimos a start jobs
+bueno, ¿qué hace start jobs?
+start jobs hace
+primero una llamada
+o, no, hace una llamada
+a la base de datos, le pregunta
+¿qué trabajos, qué jobs hay en la base
+de datos? hace un find all, ¿verdad?
+entonces, acá ya tenemos
+quizás la primera validación para hacer
+si nosotros vamos a los hacer
+lo primero que busco
+o sea, chequeo que el find all
+se haya llamado una vez
+pará, damos un hit
+init, ¿qué está simulando la base de datos
+que hay en un inicio?
+sí, esto no está en el caso, lo saqué
+en el before each
+acá, cron show find all
+la primera vez
+resuelve esto, initial show
+que es esto que está acá, tenemos un show
+con este cron time, 30 minutos
+y la función a ejecutar
+la tarea misma es esta
+delete company draft and tell
+un poquito, subí
+subí
+subí más, subí más
+subí más
+primero que nada
+las constantes al estilo
+objetos, no las definas en el
+before, ni en el before each
+definí las de una
+definí las de una en la línea
+en las líneas de arriba que corresponden
+o sea, son
+constantes
+no, más arriba
+ahí donde dice initial show
+en la línea 30, 31
+ya definila, ¿por qué?
+porque es como que vos pongas un string
+database error
+siempre va a ser lo mismo, es una constante
+es un objeto constante que vos estás usando para validar
+entonces, no tiene sentido
+que vos lo hagas en el before each
+sin embargo
+a ver, vamos a ver caso a caso
+es ponerle const
+y eliminarla
+los objetos abajo
+le ponen const
+digo, porque no tiene sentido
+que las refresquemos
+que nosotros necesitamos refrescar
+comportamiento, pero esas variables siempre son las mismas
+entonces, no
+es como te digo, es como tener un string
+hola, siempre se usa hola, está perfecto
+pará, después, bajemos
+un poco, mientras
+bajemos un poco
+baja, baja, está bien
+ahí tenemos un caso, inicial task
+estado
+refresh
+box
+eso es estado
+siempre se inicializa
+a ver, create schedule task
+estado, a ver, mostrame eso
+¿dónde está usted?
+esto es con el schedule estado
+sí
+no, create, bajá un poquito
+subí
+para que no lo vea
+en la línea 88, 83, 84, esa función
+esa función, ¿dónde está?
+ajá
+está así
+y ¿por qué?
+¿por qué no...?
+estos son Stabs creados con el sandbox, entonces cuando vos
+les haces
+razonemos eso
+cuando vos les haces el reset
+¿sí?
+se van a reiniciar
+si bajás un poquito
+vos ahí tenés un reset
+el reset reinicia tanto el historial
+como con los comportamientos fijados
+sí
+¿está? o sea
+claro, pero no reinicia el Stab
+vos crees, vos haces una instancia a un Stab
+cuando haces
+por ejemplo, cuando haces sandbox.stab
+generas un Stab
+y lo metes adentro de ese sandbox
+es como que tiene una especie de array de sandbox
+sí
+cuando haces reset, lo que estás haciendo es limpiar
+el contexto de llamadas
+y limpiar todos los retornos
+todos los retornos que le hiciste a ese Stab, los estás borrando
+sí
+¿está?
+vos ahí en particular
+solo haces un retorn a ese objeto
+que es el de la línea 62
+¿está?
+sí
+sí
+ese en particular es el único que vos deberías
+a poner en el BeforeEach y volver a poner un Resolve
+¿se entiende o no se entiende?
+que estos son innecesarios
+o sea, el 82, 83, 84 deberían ser fijos
+el 62 debería fijar un Stab
+que vos tenés en una variable
+y lo que hacés es lo reiniciás
+¿está?
+como vos
+acá hay un concepto que es el puntero
+¿sí?
+es difícil de explicar con Javascript
+pero es lo siguiente
+cuando vos recibís un parámetro en una función
+o lo que sea
+se pasa por copia
+pero si vos modificás alguna property
+de ese objeto
+estás modificando el objeto original
+vos muchas veces ahí lo que hacés
+por ejemplo vos tenés el initial, refresh, Stab y Update
+¿no?
+vos lo pasás a Resolve
+esos
+esos del 88, 83, 84
+vamos a hacer una cosa
+así lo hacemos juntos
+deberían hacerse en el BeforeEach
+una sola vez
+y ahora vamos a ver cómo solucionamos el otro problema
+¿está?
+ahora
+vos tenés otro problema
+que es el Returns
+porque vos
+necesitas al GetStatus
+fijarle un retorno porque si no, si vos hacés eso
+cada vez que llames a
+cada vez que se haga un AfterEach
+vas a resetear todos
+¿tiene sentido?
+¿tiene sentido?
+¿pero es malo?
+es que vos ahí estás seteando que el GetStatus te devuelva un Scheduler
+que seguramente lo que te está diciendo es
+vos estás simulando el comportamiento de que
+el estado actual
+a nivel de lo que es EventEmitter
+de lo que es el Cron
+está Scheduleado
+está como
+está en el proceso, vos estás simulando
+los comportamientos y la mierda que hace el EventEmitter
+si
+entonces...
+lo que hay que pensar
+y yo creo que es lo que tendríamos que hacer
+es que vos tendrías que pasarle por parámetro el Stab
+al CreateScheduleTaskStab
+o sea
+y setearle un Returns por fuera
+no es tan sencillo
+no es tan sencillo
+pero no podemos crear un Stab 500 veces
+el Stab ya está creado
+ahora el Return
+estoy pensando cómo hacerlo
+estoy pensando cómo hacerlo
+no, vas a tener que crear
+guardar el GetStatus
+ves el GetStatus de la línea 62
+vas a tener que recibir por parámetro
+cada uno
+para el Initial, para Refresh, el Update
+y en el BeforeEach
+setearle un resultado Scheduler
+no te va a quedar otro
+pero eso va a permitir no sólo ahorrar memoria sino que no definís 500 Stabs
+y los borrás en cada test
+¿se entiende?
+vos en cada test lo que estás haciendo es creando...
+ojo, esto no quiere decir que el test esté mal
+estoy diciendo que no deberíamos crear 500 Mox
+o sea
+eso así está bien
+el tema es que vos deberías crear un
+InitialTaskStabGetStatus
+RefreshTaskStabGetNextDate
+¿sí?
+y vos al CreateScheduleTaskStab de la línea 57
+recibís por función ese Stab
+que lo declarás como un Stab
+como una Property a nivel global
+la inicializás cada uno de esos en el Before
+se los pasás al CreateScheduleTaskStab
+y vos lo que haces en el BeforeEach
+es definirle un Return siempre
+en cada función
+definirle el Return Schedule
+más o menos
+¿esto es algo medio de principiante o es algo que usted considera...?
+no, no
+son cosas para ir
+optimizando los tests
+hay que ir haciendo las cosas bien
+yo soy fanático de hacer las cosas bien
+a ver, el código funciona
+es como lo que yo le digo a mis estudiantes
+el código funciona en un principio
+y está bien
+y eso no te lo quita nadie
+yo creo que el código funcional hoy en día vos podés hacer
+el tema es hacer un código prolijo y eficiente
+que se entienda, que siga algunos principios
+si vos vas a generar un nuevo estado
+en todos lados
+son optimizaciones
+no cambia nada
+pero son maneras de asegurarse que hacemos las cosas bien
+si vos estás creando properties
+y sacando abstracciones
+bueno, está bueno que estos no lo...
+porque son siempre iguales
+siempre es Schedule
+entonces está bueno que lo hagas así
+¿entiendes?
+¿quiere que le haga uno?
+¿me da el control de la pantalla y quiere que le haga uno?
+¿y usted sigue con el resto?
+a ver... sí...
+si yo supiera cómo dar control
+me doy, sin problema
+ahí te lo solicité
+no me abran los videos
+los videos que estoy viendo yo
+ya no puedo creer donde está Martina
+claro, estos por ejemplo
+pasan todos a...
+¿qué cada vez dicen?
+me rompió todo
+pasan todos a const
+¿y dónde se reinician?
+está bien, porque son const y se inician con const
+¿se inicializan acá?
+deberían ser const
+no importa
+deberían ser const porque se inicializa una sola vez
+capaz que no lo toma como que el before es una sola vez
+pero lo que digo es
+let
+initial
+status
+ahí ya se lo completa
+sí, pero pará
+getStatus
+parece que me lee la mente
+vos acá haces el getStatus
+ambos status
+¿sí?
+dentro de la función
+que vaya a saber quién la tiene
+es más que me toma
+las configuraciones que tengo en mi mouse
+ehm
+getStatus
+getStatusStab
+no es opcional
+es fijo
+hay de a poquito para que... tranquilo
+y acá
+escucha la sirena
+no... bueno
+eso, ¿se entendió?
+y acá... ah, me faltó esto
+¿se entendió la idea?
+sí
+o sea, es eso nomás
+vos lo que estás haciendo ahí es
+inicializando un status una sola vez
+¿para qué vas a crear?
+porque vos ya lo hacés, el create lo hacés una sola vez
+si querés hacerlo rápido
+y lo probamos a ver si funciona para el resto
+yo voy a estar media hora con el control remoto
+pero, ¿quiere que le explique?
+pero hagamos
+hagamos los refactor
+ya quedamos que funciona
+y ya vamos a la explicación funcional con todo
+así ya queda
+así ya mergeamos, o dejamos casi esto para mergear
+tengo que ver si voy a arreglar eso
+capaz que estaría bueno antes de mergear esto
+ya arreglar eso
+ese pequeño ajustecito
+y después ya lo mergeamos más tranquilo
+ok
+pero pruebe si arregla esto
+si ahora me muestra a ustedes, arregla esto
+o esto no funciona, tenemos que
+volver a lo anterior
+le seguí el control por los dos
+¿quiere que lo haga ahora?
+son 5 segundos, vamos
+te lo autocompleta, echá GPT
+bueno, pero no quiero usar el console
+pero son 5 segundos
+completarlo
+es crear uno para refresh
+otro para el update y pasarlo por parámetros, nada más
+en la línea 48
+dale, dale, tu puedes
+tu puedes, vamos Kike
+dale Kiketo
+pero es todo con el getStatus entonces
+claro, si, si, si, es nomás
+pero ¿por qué hacemos esto?
+porque es el único que tenés que setearle un resolve
+y el reset lo regenera
+entonces vos tenés que tener una variable para poder setearlo
+es por eso, nada más
+es para inicializarlo una sola vez
+pensá que es un bolazo
+¿no?
+pero también hay que ser eficientes en cuanto al uso de memoria
+porque esto es un bolazo
+pero hoy o mañana
+nosotros tenemos un millón de request
+esto es test
+estos test se corren
+y hoy o mañana nos van a cobrar plata
+por cuánto se demoran estos test
+no sabemos cuántos vamos a agregar
+entonces tenemos que tener
+una base de test sólida y eficiente
+porque hoy en día se corren bastante rápido
+pero si nosotros la cagamos
+la gif of action empieza a ser cagada
+y yo por ahora
+pongo instancias de linux súper boludas
+con esto
+ahora, en el backend es mucho más importante
+vos me decís, esto es una estupidez
+estoy inicializando una property diez veces
+o treinta veces en un test
+y yo te digo
+ta, está bien
+pero después
+si vos empezás a
+a tener fallas así
+acá, allá, acá y allá
+cuando tenés un millón de request
+usuarios que interactúan con la plataforma
+después decís
+puta, ¿por qué el sitio anda lento?
+y porque tenés pila de veces este error
+por todos lados, ¿entiendes?
+o sea, son bolazos
+pero hay que aprender a hacer las cosas bien
+porque después no está bueno tener que ir
+a mierda
+¿qué pongo?
+si hacemos las cosas bien de una
+ya estamos tranquilos de que el sitio es eficiente
+que hacen las cosas bien
+cualquier programador que te hizo algún curso de estas cosas
+te hubiera dicho, está perfecto, dale Kike
+pero
+en sí la idea es
+prevenir todos estos casos
+perfecto
+son segundos, son cosas
+pero la idea, no te olvides que la idea de esto
+es entrenarte para que vos puedas
+trabajar en el backend
+bueno, a ver, muéstreme ahí un caso que saca
+algo, pero más concreto
+ya lo estuve viendo en la APR
+muéstreme un caso que saca algo
+algo clave
+bueno, a ver, supóngase
+que nosotros no tenemos, en el Starjobs
+agregamos una llamada más
+¿tá?
+al find all
+y se nos va a romper
+por ejemplo
+se nos va a romper, si usted se fija
+se va a romper
+todo de carajo
+no sé por qué están
+pasando ocho, pero bueno, está
+mire a ver los que, porque
+son estos, estos son del Chrome
+no tienen nada que ver, del Chrome Show Controller
+y estos, este, mire el find all
+during the init
+ah claro, falla el primero
+debería prevenir
+si, vamos a hacer una cosa
+vamos al
+Chrome Show Manager
+baja un poquito
+déjeme sacar lo que acabo de agregar
+porque se me sale todo el carajo
+si
+vamos al Chrome Show Manager
+comentar la línea 43
+que te des prueba de eso
+el execute
+si
+estamos dentro del refresh, no
+el Starjobs
+y hace, y por ejemplo el primero
+hace un Starjobs o no
+ya, a ver que falla
+si
+que quiere
+no, no, está bien, está bien, dígame
+por ejemplo, no sé, el segundo
+no falla, porque lo que hacemos, hacemos
+yo ejecuto manualmente
+el refresh, no ejecuto
+un show, ejecuto el refresh
+jobs, entonces por eso
+no, por decir algo
+bien, bien genial
+bajamos a, vayamos al Chrome Show Manager
+les comento esa línea
+y andale
+execute show
+en la línea, abajo de la línea
+115 pone throw
+new error, no
+como te lo tirabas ya GPT
+new porque tenés que hacer una instancia
+a un nuevo error, acuérdate que los
+errores siempre tenés que tener una instancia
+acá, y después el
+throw es tirar esa instancia, podrías
+agarrar ese error, ponerlo
+en una variable, porque estás haciendo
+una instancia de algo, entonces podrías agarrar ese error
+hacerlo en una variable y después tirar
+como comentario
+en Javascript, antes de las clases
+se hacía new a la función
+algo de eso escuché, creo
+bueno, a ver ahora, me encantó, perfecto
+bien
+le muestro, no sé, le muestro yo uno
+quiero participar
+dale
+a ver, ay, si nosotros
+comentamos del init
+comentamos la parte
+de la llamada, el Chrome Schedule
+al refresh jobs
+por ejemplo
+también se nos caen bastantes cosas
+nos cae
+todo el carajo
+andate Chrome Show Manager
+andate al refresh
+comentar la línea 83
+tan tan
+tan tan
+tan tan
+bien, volvamos a Chrome Show Manager
+entrar a esta show, no, pará
+comentar la línea 87
+bye, bien
+que hace, que hace
+este muchacho
+el caso
+ahí nos hace falta un caso
+donde vos estás
+que pasa cuando
+vos el show no existe
+entonces
+el refresh show lo que hace es que agrega un show que no está
+vos ahí solo estás teniendo en cuenta
+los casos de actualización
+si, no existe el show
+ah, intenta hacer un
+start show de un show que no está
+en la lista que nosotros tenemos de shows
+a ver, pensemos lo siguiente
+en un inicio ningún
+show está, creo que voy a hacer
+dinámicamente un show y los voy a cambiar
+después eso se va a poder cambiar dinámicamente
+el backoffice como vos le cambiás una compañía al nombre
+se voy a apoderar, vos pensás
+que el refresh lo que hace
+es chequear los shows que están
+pero si yo agarro y apago uno
+y después lo vuelvo a agregar
+no va a estar en la lista de shows
+bueno, para ponerte un ejemplo
+yo voy a tener un show ahora que estuvimos
+hablando justo hoy con Martina
+que lo que va a hacer es la migración
+perdón, el de la migración
+probablemente también se ejecuta una vez
+pero va a ser el de eliminar toda la base de datos
+este lo voy a ejecutar una sola vez
+yo voy a ir, lo voy a agregar en la base de datos
+se refresca, se ejecuta
+limpia la base de datos
+y después lo apago
+o sea, de alguna manera va a ser una única
+ejecución
+ahí está
+es súper común
+es más, si es más común de lo que
+pensábamos, porque si por ejemplo Guillem me manda
+hoy en día y me dice, che las compañías
+por ahora no las elimines y después
+vamos a ver cuando eliminarlas
+quiero ver ahí, quiero que se guarden un poco
+para poder sacar data
+lo saco y después lo agrego
+eso por un lado
+después de la línea 81
+y con esto estamos por ahí
+para, para, y pone
+ese stop en la línea 82
+pone true
+o si querés comenta el if y ya está
+ok, así
+el if completo no
+comenta la línea 82 y 84
+recordemos esto
+antes de correr los tests
+que estamos haciendo acá
+en donde acá
+porque comentaría algo así
+y iría a ver los tests
+que fallen
+estamos
+probando que efectivamente
+se utilice esta lógica
+exacto, o sea de alguna manera
+recordemos que hay dos enfoques de
+testear
+opars de alguna manera
+codiar y después hacer test unitario
+BDD o BDD
+y después hago el código
+test driven
+development
+ahí
+o BDD que es behavior
+development
+que creo que se asocia mucho más a lo que estamos haciendo
+aunque usamos
+librerías de TDD
+son genéricas en realidad pero es más
+creo que tenemos más BDD
+que TDD
+nosotros definimos un comportamiento en realidad
+como que estamos yendo a un comportamiento
+no estamos yendo tanto al test unitario
+pero bueno
+vos cuando hacés el test deberías tener un caso
+donde vos decís
+el flujo correcto es este
+si nosotros volvemos al inicio
+cuando yo te dije que vamos a hacer test unitario
+yo lo que te dije es
+y que agarramos y
+definamos test
+y vos
+no sólo
+hagas el test en base al código que está
+sino que haces el test también pensando
+en el que sería el flujo correcto
+claro
+en realidad más allá que se hace
+con el código existente
+la idea tuya también es que vos
+no te sesgues con el código que está
+porque si no me vas a hacer test que se alinea
+y estás arrastrando el bug
+entonces vos deberías ver un test
+de prueba de que se
+topee más allá de que no esté
+como pasó con el caso del
+reloj que nos dimos cuenta cuando
+estábamos chiqueando, correlo ahora
+entiendo, no está perfecto
+va a salir bueno
+va a salir bueno
+bien, perfecto
+recuerde que acá están los casos de
+control que no tienen nada que ver
+escuchame, hacemos una cosa
+reportame ese bug, agregamos un test
+un caso más para esto
+y voy a ver si mañana ya lo puedo mandar
+ah?
+estaba bien metido de esto, no vale la pena mirarlo más
+yo ya lo estuve mirando yo
+por eso no quiero robar más tiempo
+está entretenido, está muy bueno
+es test pero
+es código, es código lindo
+o sea, más allá de ser test
+y si, lo tiene podrido
+este de regresión
+lo que si, ahora
+TATATO está bastante motivado
+como para meterse, si TATATO se mete
+y arranca
+lo que estaría bueno es que en diciembre
+empecemos a estudiar, o sea ya
+se hagan entre los dos unos videos
+y se recomienden cosas de
+de Cypress
+bien, entonces voy a hacer una documentación
+ya van y lo hacen en Cypress
+ah? bien, buena idea
+o sea, creo que al tener a TATATO
+acá podemos ganar ese tiempo
+bien? ok
+bueno, de mi lado es todo
+teníamos algo más para charlar, no?
+de verdad

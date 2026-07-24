@@ -1,0 +1,100 @@
+me gustaría que la generación
+del PDF en sí
+sea como un repositorio
+es raro
+o sea, lo que voy a decir, vos descargás
+nosotros vamos a tener un template
+para el SD4 vamos a tener un template
+para el otro creo que no
+¿te entendió que no?
+como para este vamos a tener un template
+a mí lo que me gustaría
+es que
+lo que hagas vos sea
+tener un repositorio
+que vos le pasás la información
+viste que vos tenés
+un pedacito donde lo que hacés es
+descargás el template
+después hacés un rellenado
+armás toda la data, hacés un rellenado
+y después eso
+te devuelve algo que vos lo subís a ese 3
+¿correcto?
+que es
+un buffer de byte
+que representa el PDF
+en ese interin
+yo necesito que
+que eso se haga en un repositorio
+en un repositorio
+nuevo que sea
+yo que sé
+document repository o algo así
+porque me gustaría
+que vos a eso le pasés
+el template y la información genérica
+que quieras rellenar
+así ya nos queda algo genérico
+para rellenar PDF ¿se entiende?
+si
+es eso nomás, en vez de hacerlo
+ahí en el servicio
+pasarlo a algo genérico
+que en realidad sería
+como
+un método ¿viste que lo que hace es
+reemplace no sé cuánto?
+o tenés un método en accounting service
+bueno la idea es que ese método
+ese método sea el método que tendría que estar en
+document repository
+o algo así
+¿se entiende?
+la idea es que
+ese reemplazado de todas esas cosas
+se haga en document repository
+es muy parecido
+pero...
+espere que le muestro
+¿todo esto perdón en site dijiste?
+no no no no esto es en el
+en el worker
+porque en sí no hay tarea del site
+o sea la mayoría de tareas son en el worker
+ah porque esta dice site
+a ver pará voy a ver el orden de esto
+voy a configurar el sistema de necesidad para generar
+ah esto está bien
+porque esta
+lo que hace es señalar el contacto
+ah está bien no hay que nada
+entonces en realidad sería para
+la 11
+la 1118
+no va para esta
+va para la 1118
+porque estoy hablando de worker
+dame un segundito
+dame un segundito que le muestro lo que pasa por nivel
+no
+yo quiero algo parecido
+eh y después de esta me faltó la de los tests
+bien
+y acá
+a ver si...
+si está perfecto
+el ojo que
+cuando vos mandaste ese diagrama de flujo sería solo para el ss4
+sería el copiar y pegar para el operatmen agreement
+el diagrama de flujo
+si
+el diagrama de flujo que mandaste en el channel de backend
+si
+sería copiar y pegar para el operatmen agreement
+o sea literal
+como llamás a envío de mail y después llamás a sns con esto
+sería copiar y pegado
+si
+pará que te voy a mostrar...
+el worker

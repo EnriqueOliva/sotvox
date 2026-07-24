@@ -1,0 +1,1079 @@
+Buenas, buenas. Bueno, genial. Les voy a compartir acá en el channel de... No sé si tenemos un grupo todo, pero voy a compartir acá en el channel de developers.
+Así ya queda el flujo de triangulación. Creo que está ahí. No me llevo el flujo. Acá. Bueno, flujos. Que todos deberían poder llegar a este punto.
+Esperen que les voy a compartir pantallas y todos estamos en el mismo lugar. Pero me pueden seguir en Figma y vamos a llegar al mismo punto. ¿Sí? ¿Están ahí?
+Voy a intentar mostrar todo el flujo. Así que si es necesario hagan zoom. O pueden seguirlo ustedes también.
+Bueno, hay un tema acá. A diferencia del flujo de compra y venta, nosotros podemos cancelar la operación.
+Recién. ¿Cómo se llama? Nosotros podemos realizar la triangulación. O sea, podemos cancelar la triangulación recién a partir de acá.
+Operador de cancelar la operación y acá. Cuando está de este lado. Creo que también cuando está de este lado nosotros podemos cancelarla.
+O sea, que acá se puede cancelar. Pero la mayoría de estos flujos, a ver si puedo ir rayándolos de alguna manera.
+A ver si me deja. Son media mierda estas cruzitas.
+Cositas. Estos son corazoncitos. ¿Qué son estos?
+Hay como... Antes me dejaba hacer como... Ah, acá. Esto. Ahí va. Bien.
+Acá nosotros tenemos un flujo que se compara... Voy a poner en azul lo que es site y en rojo lo que es VBO.
+Acá nosotros tenemos un flujo compartido entre el site y el VBO. ¿Sí? Que es la parte de la contraparte.
+¿Ah? El site solicita la contraparte.
+¿Sí? Y después lo que pasa es el VBO la aprueba o la desaprueba. ¿Tá?
+Yo no me acuerdo qué mails tenemos de la aprobación o desaprobación de la contraparte.
+No, no lo recuerdo. ¿Ustedes se acuerdan? Yo no me acuerdo ahí qué mails enviamos de la contraparte.
+Creo que...
+¿Estás seguro que enviamos de lo que es contraparte y son...?
+Sí. O sea, vos tenés lo que es la contraparte de la triangulación.
+Que sería este flujo acá.
+Ah. En el VBO. Dame un segundito.
+Nosotros acá dentro de triangulaciones tenemos contrapartes.
+Y acá nos aparecen las solicitudes que nosotros podemos aprobarlas o desaprobarlas.
+¿Sí? Yo me acuerdo cuando se aprobaba o desaprobaba que mails se le enviaba al cliente.
+Si se le enviaba aprobación o desaprobación. O ambos.
+Pero acá nosotros el primer flujo que tenemos es la aprobación o desaprobación de contraparte.
+¿Quién es esta persona?
+La triangulación consta de tres partes.
+¿Está?
+Vamos a usar de nuevo el singuli...
+Ah.
+No hay un triangulita.
+Bueno. Voy a hacerlo yo. Voy a hacerlo con línea.
+La triangulación consta de tres partes.
+Una parte es Das Bank.
+¿Sí?
+Otra parte es el...
+Export...
+Una parte es el...
+Ahí va.
+Exportador o importador.
+Importador.
+Y la otra parte es el exportador.
+O podemos decir vendedor y comprador. Es lo mismo.
+Ahí va.
+Por eso es triangulación. Porque son tres los involucrados.
+A ver si es correcto.
+El importador lo que tiene...
+O sea, quiere importar...
+Ahí va, ¿no?
+Es para este lado. Vamos a cambiarlo por acá.
+Ahí, Santi. El email se manda en los dos casos.
+Si se aprueba o se rechaza.
+Está. Bien.
+Entonces.
+Importador y...
+La cosa es así.
+Nosotros tenemos un exportador.
+¿Está?
+Que quiere exportar cosas.
+Y después tenemos un importador.
+El exportador lo que quiere es...
+Comprar eso. A ver.
+O sea, tiene dólares.
+¿Está?
+Y lo que quiere son bolivianos.
+A ver si era así.
+Porque necesita a los bolivianos.
+Claro. Ahí va.
+El exportador, que es la persona que exporta.
+¿Sí?
+Lo que tiene son los dólares.
+¿Está?
+¿Sí?
+O el tipo exporta cosas y le pagan con dólares.
+Y quiere transformarlos a bolivianos.
+¿Está?
+Y el importador es alguien que tiene bolivianos.
+Y quiere transformarlos a dólares.
+¿Por qué pasa esto?
+El que origina la triangulación normalmente es el exportador.
+¿Sí?
+Esto es el caso más común.
+Pero puede darse en otros casos.
+Pero la cosa es...
+Yo, por ejemplo, exporto mis productos de Bolivia.
+La gente me paga en dólares.
+Y yo necesito transformar esos dólares a pesos bolivianos.
+¿Sí?
+Para poder usarlos en el mercado.
+¿Está?
+Como ustedes cuando cobran necesitan transformarlos a pesos uruguayos.
+¿Sí?
+Es la misma equivalencia.
+El importador es una persona que va a importar cosas.
+Para su empresa o lo que sea.
+Para vender en Bolivia.
+Entonces tiene pesos bolivianos.
+Y necesita dólares para poder pagarle a los proveedores que están afuera.
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+¿Sí?
+Es un caso.
+Entonces.
+¿Quién origina la transacción?
+Origina.
+Nosotros no tenemos cuenta de.
+Este.
+¿Cómo se llama?
+No tenemos cuenta de.
+De.
+De pesos.
+De pesos bolivianos.
+¿Sí?
+Entonces nosotros sí tenemos cuentas de dólares.
+One Money tiene cuenta de dólares.
+Entonces son las que nosotros vamos a tener.
+¿Bien?
+Entonces el quiero higiena.
+Y el único momento donde nosotros sacamos plata de verdad.
+Es cuando arranca la triangulación que la toca el exportador.
+¿Sí?
+¿Sí?
+Ah escóndete.
+¿Cómo se escondía esto?
+La puta madre.
+¿Y ahora cómo lo escondo?
+Tiene que haber alguna cosita.
+Y si yo lo.
+Ay qué cagada.
+No.
+Qué cagada.
+Bueno.
+Esto pasa por no saber.
+¿Quién sabe cómo se esconde esta mierda?
+Pero el control y la tecla que está abajo del escape.
+No.
+Ahí va.
+Listo.
+Gracias.
+¿Bien?
+Entonces.
+Nosotros acá lo que tenemos es.
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+Es que nosotros.
+Todo lo que sabemos es el primer flujo, que es la contraparte ¿está?
+Que ¿quién es?
+Un exportador que quiere registrar un importador.
+¿Sí?
+Esa es la contraparte triangulation.
+Si van a la base de datos tienen un contraparte triangulaiton.
+Bueno.
+Entonces.
+Ahí Martina.
+Lo que deberías hacer.
+Es vos.
+Cuando vas a originar la triangulación.
+Tenés que decir.
+Bueno, yo soy un exportador.
+¿Está?
+O, yo soy un vendedor.
+¿Está?
+Quiero vender mis dólares y comprar pesos bolivianos.
+A todo se origina a partir del dólar.
+Eso es algo que se lo pueden anotar.
+Todo se origina a partir del dólar.
+¿Sí?
+Entonces, una vez que yo arranco, digo, bueno, perfecto, quiero registrar a mi importador.
+Mi importador tiene que estar en el sistema.
+Y esta es un poco la parte complicada que tiene la triangulación.
+Porque en teoría nosotros lo que vamos a hacer es al importador, al exportador le vamos a sacar sus dólares.
+Y esos dólares van a ir a la cuenta de Dasbank.
+Por eso es triangulación, somos tres.
+Entonces, al exportador le sacamos de la cuenta de OneMoney, que es el único momento en que realmente trabajamos nosotros a nivel tecnología con plata de verdad.
+Al exportador le sacamos la plata y la ponemos en la cuenta de Dasbank.
+Y después, por ahora, de forma manual, le vamos a depositar esos dólares al importador.
+¿Sí?
+¿Y dónde se lo vamos a depositar?
+En la cuenta que es de OneMoney.
+Entonces, el importador tiene que estar registrado en el sistema.
+¿Bien?
+Entonces, cuando nosotros registramos la contraparte, que esto lo hace Martina, nosotros hacemos una solicitud y decimos, por ejemplo,
+la empresa de Enrique, que es un exportador, quiere registrar a la empresa de Enahuel.
+¿Está?
+Entonces, ¿qué es lo que pasa en la vida real?
+La empresa de Enahuel no tiene, ¿cómo se llama?
+La empresa de Enahuel no tiene cuenta en Dasbank.
+¿Sí?
+Entonces, ahí, alguien de Bolivia se controla.
+Contacta, registran la contraparte, registran el KYB, pasan ahí, como ven, Verónica o Mónica, dicen, bueno, hicimos el análisis, esto hay que asociarlo a la cuenta.
+Y a partir, recién a partir de ahí, tenemos al importador con su cuenta de Dasbank de OneMoney.
+¿Está?
+¿Sí?
+¿Hasta ahí venimos bien?
+Cuando lo tenemos, el exportador va a entrar a la plataforma y va a decir, quiero registrar una contraparte.
+O ya hizo la solicitud.
+La contraparte.
+La contraparte se va a llamar el nombre de la empresa de Enrique.
+¿Está?
+Entonces, Enahuel registró a Enrique y somos nosotros, y eso Jonah lo tiene más familiarizado, donde desde los contrapartes aceptamos o no.
+Y dentro acá de contrapartes, cuando llega la solicitud, vieron que tenemos contraparte solicitada.
+¿Está?
+Y después lo que tenemos es contraparte onboardeado.
+A nosotros lo que nos va a llegar de Enahuel es una contraparte solicitada.
+Dice, empresa de Enrique.
+Nosotros, acá hubo una comunicación previa, no es que esto se hace solo automático.
+Venimos acá y buscamos la empresa de Enrique en el sistema.
+Literal, buscamos una empresa que tenga una cuenta de OneMoney aprobada.
+¿Sí?
+¿Hasta ahí me viene siguiendo?
+Está.
+Cuando ahí se aprueba, si se desaprueba, obviamente que no lo podemos usar.
+Pero si se aprueba, nos debería llegar un mail donde recién ahí podemos arrancar la triangulación.
+Entonces, ahí Martina, lo que vos deberías...
+Lo que vos deberías hacer es asignar esa contraparte.
+Como exportador, vos deberías tener una cuenta de Bolivia donde te van a depositar los bolivianos del importador.
+Porque, de nuevo, vos sos exportador.
+A vos te llegan muchos dólares.
+Vos lo que necesitas son pesos bolivianos para poder moverte en el mercado.
+¿Sí?
+Y el importador tiene pesos bolivianos porque su negocio es en el mercado local.
+Pero lo que sucede es que necesita dólares para pagar...
+Para pagarle a sus proveedores.
+¿Está?
+Capaz que ustedes ya lo hacen, este mecanismo, sin un intermediario.
+Y lo que hacen es, directamente con sus familiares o algo, hacer cambio de dólares a pesos.
+¿No?
+Capaz que alguno tiene algún conocido que cobra en pesos.
+¿Está?
+Y en vez de pagarle directamente en...
+O sea, en vez de hacer el cambio, por ejemplo, en Santander o Itaú.
+¿Qué es lo que hacen?
+Dicen, no, mirá, vamos a hacer el cambio entre nosotros y tenemos el interbancario.
+¿Sí?
+¿Alguno lo ha hecho eso?
+¿Con los dólares?
+Está.
+Bueno.
+Es algo bastante común.
+Tenés un conocido que cobra en pesos, quiere comprar dólares para ahorrar.
+¿Sí?
+Entonces le decís, che, mirá, en vez de cambiar esos dólares en...
+¿Cómo se llama?
+En Santander, Itaú, lo que sea.
+Lo que hago es que los cambio a vos y no tengo la comisión que me da el banco.
+¿Sí?
+Y si alguien no lo ha hecho, tengo un negocio para hacer con ustedes.
+Pero digo, este...
+Es muy común.
+Se da.
+Este, por ejemplo, ahí con Enrique creo que lo hemos hecho.
+Y con Marti lo hicimos una cantidad de años cuando trabajaba en Qualabs.
+Este, lo hacíamos una cantidad de tiempo.
+Yo necesitaba pesos, ella necesitaba...
+Este, ella quería ahorrar en dólares y cambiábamos.
+Con Enrique también.
+Cuando cobraba en dólares y necesitabas pesos.
+Entonces, este, bueno, está, yo cambiaba.
+¿Está?
+Este...
+Iti, y ganás unos pesos, ¿no?
+Esto es lo mismo.
+Y además hay otro tema.
+Los bancos de Bolivia...
+Cuando vos necesitas hacer estos cambios, ¿sí?
+Los bancos de Bolivia no te permiten...
+Este...
+¿Cómo se llama?
+Los bancos de Bolivia no te permiten...
+O sea, no tienen una solidez como para hacerte estos cambios si te cobran una comisión.
+Entonces, de repente, entre ustedes pueden arreglar una comisión o un tipo de cambio mejor.
+¿Cuál es la idea de Dasbank?
+Bueno, funcionar en...
+Porque no estamos hablando de dos amigos.
+Como pasaba en el caso de pesos uruguayos a dólares.
+Estamos hablando de empresas grandes.
+Entonces, la idea de Dasbank es funcionar como un intermediario confiable para que se puedan dar esos cambios.
+¿Sí?
+¿Qué es lo que tendría que suceder con un banco si las instituciones en Bolivia fueran más sólidas?
+¿Está?
+Pero no sucede.
+¿Sí?
+Por eso nos alegramos como equipo cuando no clasificaron al mundial.
+¿Bien?
+Entonces...
+Este...
+Lo que buscamos es eso.
+Funcionar como intermediarios.
+¿Sí?
+Es una persona.
+Es una persona que...
+El resumen de todo.
+Es una persona que tiene dólares y quiere cambiar a pesos bolivianos.
+Hay otra persona que tiene pesos bolivianos y quiere comprar dólares.
+¿Sí?
+Entonces, como tenemos exportador e importador, también podemos tener lo que es vendedor.
+¿Está?
+Si queremos ponerlo con algún nombre.
+Y comprador.
+¿Por qué?
+Porque nosotros siempre nos basamos en el dólar.
+Entonces, ¿qué es lo que está haciendo el exportador?
+Está vendiendo.
+Está vendiendo dólares.
+¿Qué es lo que está haciendo el importador?
+Está comprando dólares.
+¿Sí?
+Nosotros, la mayoría de estos casos, nos basamos en la operación.
+Contra el dólar.
+Por ejemplo, cuando nosotros tenemos el flujo de depósito de bolivianos,
+Marti y Jonah, la demo que hicieron pasada,
+la compra, la persona está comprando dólares.
+¿Sí?
+Por eso es compra.
+Y la venta, que es asociada al retiro,
+la persona, ¿sí?
+Está vendiendo dólares.
+¿Está?
+Entonces, si nosotros queremos categorizarlo,
+y nosotros no nos ponemos del lado de lo que está haciendo Duff,
+sino lo que está haciendo ellos,
+¿sí?
+Ellos, acá, el exportador está vendiendo dólares.
+¿Está?
+Obviamente, también está comprando bolivianos,
+pero lo ponemos como vendedor,
+porque la moneda predominante es el dólar.
+Y el importador, la moneda predominante es el dólar,
+está comprando dólares.
+¿Sí?
+Lo mismo pasa con el flujo de depósito y retiro,
+que es como su cuenta en Santander o Itaú.
+La diferencia, cuando nosotros el depósito,
+para nosotros es un flujo de compra.
+Ahí, Enrique, cuando te llegan las OTC Transaction Manual,
+que son de compra, son de buy,
+es porque nosotros lo miramos del lado de ellos
+y ellos están comprando dólares.
+Nos agarra y nos dice,
+depositaron tantos bolivianos
+y a la cuenta de One Money,
+porque nosotros no manejamos,
+contamos cuentas de bolivianos.
+Entonces, a la cuenta de One Money,
+te estoy cargando los dólares.
+Y yo me garantizo que vos me transferiste los bolivianos.
+¿Sí?
+Lo mismo con el flujo de retiro.
+¿Está?
+Es una venta,
+porque ellos nos están vendiendo dólares.
+Por eso es OTC Transaction Manual Cell.
+Y por eso es que al Cell,
+nosotros, Enrique,
+y el resto sí lo ha visto,
+le agregamos un recibo.
+Nosotros, en realidad,
+la persona que está haciendo.
+Está agregando,
+le está, está depositando en una cuenta.
+¿Sí?
+¿Qué es lo que pasa?
+A nosotros,
+¿Qué es lo que está sucediendo ahí en el proceso de Cell?
+Ellos no depositan en nuestra cuenta
+y nosotros, por detrás,
+hacemos alguna artimaña
+y le depositamos en su cuenta boliviana.
+Entonces,
+¿Qué es lo que hacemos nosotros?
+Les generamos una factura,
+como diciendo, no, mirá,
+vos transferiste de tu cuenta de One Money
+directo a lo de Bolivia.
+La realidad es que hubo un flujo ahí.
+Y eso lo hacen muchos bancos.
+¿Está?
+Este,
+muy probablemente,
+cuando ustedes le pasaron las cuentas a Guillermo,
+pasaron una institución SWIFT.
+¿Sí?
+Uruguay, por ejemplo,
+cuando ustedes hacen la,
+la transferencia,
+ya, hasta acá,
+no tenemos bancos que reciban directo.
+Probable,
+eh, la mayoría,
+este,
+pasan por Brasil.
+¿Está?
+Por, por, por si les interesa.
+Creo que es Itaú, Santander y Brouw,
+la mayoría pasan por Brasil.
+¿Está?
+Bueno.
+Anecdótico.
+Entonces, nosotros acá tenemos primero que registrar,
+como exportador, tenemos que registrar al importador.
+Ese es el counterpart, famoso counterparty triangulation.
+Eso es una parte del flujo que,
+tiene que tener una parte de site,
+y otra parte de BBO.
+¿Sí?
+Es la primera división que podemos hacer.
+¿Está?
+Y para esto, lo único que necesitamos, Marty,
+es los usuarios creados.
+¿Sí?
+Entonces, ahí, de nuevo, ¿qué es lo que pasa?
+¿Qué pasa?
+Nahuel, como, como exportador, quiere transferirle a Enrique.
+Nahuel está en DASBAN.
+Lo que pasa normalmente es que Enrique no.
+Entonces, cuando Nahuel solicita transferirle a Enrique,
+¿está?
+Un vendedor se tiene que comunicar con Enrique
+para crearle su cuenta en DASBAN.
+Recién cuando la cuenta en DASBAN está aprobada,
+ahí es cuando, este, vamos a poder crear la triangulación.
+Luego Martina lo que va a indicar acá como exportador, ¿qué es?
+¿Qué es lo que nosotros vamos a tener acá?
+Cuando se llega a este punto de validando.
+Que este punto es únicamente del site.
+¿Sí?
+O sea, este estado validando.
+Nosotros vamos a tener que indicar, primero que nada,
+el monto que queremos cambiar en dólares.
+¿Sí?
+El tipo de cambio acordado entre exportador e importador.
+¿Sí?
+Y, además, vamos a tener que indicar al importador,
+que tiene que estar previamente aprobado y asociado a una cuenta existente en DASBAN,
+lo bueno del flujo, lo copado del flujo del flujo, ¿sí?
+Lo copado del flujo de triangulación es que la primera interacción entre dos clientes que existe.
+¿Va?
+Eso es lo copado que hay en el flujo.
+Son dos personas que se loguearon en DASBAN y están interactuando entre sí.
+Es el primer flujo que tenemos así.
+¿Va?
+Ese es como el hito.
+Y, además, Martina, ¿qué va a tener que indicar en el site?
+Va a tener que indicar, y ahí Marti vos tendrías que tenerla precreada,
+la cuenta de bolivianos a la que te vamos a transferir,
+cuando el importador deposite su dinero.
+¿Bien?
+Entonces acá deberíamos indicar eso.
+¿Qué es algo que me salté, que es importante, que esto lo hizo Jonah?
+¿Sí?
+Es que ustedes sacan la contraparte, cuando aprueban la contraparte,
+hay unos pequeños casos donde el mismo dueño es propietario del exportador y del importador.
+¿Sí?
+O sea, entre dos empresas mías,
+y literal ha pasado en triangulaciones,
+es dueño de ambas empresas.
+Entonces, ¿qué es lo que sucede en esos casos?
+Nosotros nos enteramos que es dueño de ambas empresas.
+¿Y qué es lo que hace la persona?
+Baja la comisión o baja el tipo de cambio.
+Porque nosotros la comisión la cobramos frente al peso boliviano.
+¿Sí?
+Y recuerden esto porque lo podemos ver, es matemático.
+Pero recuerden esto.
+Hasta acá el flujo del site.
+Ahora, esta parte del flujo que viene acá,
+también es del site.
+¿Sí?
+Todo lo que es esta partecita acá.
+¿Sí?
+Donde en realidad lo que sucede es, bueno, como importador,
+a vos te llega la solicitud.
+Perdón.
+Perdón, voy para acá.
+Voy a ver si me...
+Acá tenemos un pequeño flujo del backoffice.
+Tenemos un pequeño flujo del backoffice.
+Donde nosotros,
+nosotros aceptamos la triangulación.
+¿Sí?
+Llegan a solicitud de triangulación y nosotros la aceptamos o no.
+¿Está?
+Esto tiene un happy pad y después la cancelación.
+Vamos a concentrarnos en el happy pad.
+Después volvemos a todo un flujo del site.
+Si nosotros, si el negociador acepta la triangulación.
+¿Sí?
+Nosotros lo que venimos es, bueno,
+como importador, ¿está?
+Podemos aceptar o rechazar la triangulación.
+Y si la aceptamos, tenemos que subir los documentos.
+¿Está?
+Si la aceptamos, tenemos que subir los documentos
+de que le depositamos,
+le depositamos la plata en los bancos de Dashband.
+De nuevo,
+cuando el exportador generó la triangulación,
+le sacamos la platita y la transferimos a Dashband.
+Acá en este flujo, en el último celeste,
+cuando el importador aceptó,
+la triangulación,
+nosotros le mostramos las cuentas de banco nuestra.
+¿Sí?
+Y ellos no transfirieron la plata a nosotros.
+¿Está?
+Entonces, cuando sucede esto,
+una vez que ellos suben los comprobantes
+de que nos pusieron nuestra cuenta de boliviano,
+nosotros tenemos,
+en nuestra cuenta de Dashband,
+de One Money los dólares,
+porque se los sacamos,
+y después en nuestras cuentas de banco de bolivianos,
+tenemos los bolivianos que incorporó.
+¿Sí?
+Entonces, tenemos la plata de los dos.
+¿Está?
+Y después viene el último punto,
+que es la parte de liquidar.
+¡Opa!
+Cualquier cagada dice.
+La parte de liquidar.
+¿Sí?
+La parte de liquidar es completamente del BBO,
+y nosotros tenemos que subir los comprobantes
+de que al exportador le subimos en la cuenta que indicó
+cuando validó los bolivianos,
+y al importador lo que tenemos que hacer es cargarle los dólares
+en la cuenta del de Dashband.
+Porque también obligamos a que el importador,
+como lo hicimos meterse en nuestra plataforma,
+a que te vamos a depositar los dólares ahí,
+y después vas a tener que hacer un retiro o alguna maniobra
+para poder sacar esos dólares.
+Entonces, ahí ya también ganamos otra comisión,
+porque obligamos al importador a usar nuestra plataforma.
+¿Sí?
+No es que te lo depositamos en la cuenta de dólares que quieras.
+No, te lo depositamos en nuestra cuenta.
+¿Se entiende un poco hasta ahí el happy pad?
+Yo para mí,
+el happy pad,
+Marty, ahí vos tomás la decisión que vos quieras,
+o sea, lo ordenás como vos quieras,
+pero para mí,
+deberíamos moquear dos cuentas,
+y todo este happy pad,
+incluyendo la contraparte,
+tendrías que mostrarlo o con Enrique o con Nahuel.
+Y después,
+únicamente,
+vos deberías mostrar los flujos de error,
+de estos,
+estas cancelaciones que existen,
+vos deberías mostrar,
+en particular en el SAI,
+decir, bueno,
+retomo acá,
+acá se puede cancelar,
+retomo acá,
+se puede cancelar,
+y la otra persona,
+debería mostrar los flujos de cancelación en el BBO.
+O sea, primero dejar bien en claro a todo el equipo,
+yo lo encararía así,
+dejar bien en claro a todo el equipo de Bolivia lo que es el happy pad,
+¿Sí?
+Capaz que podés ir comentando los flujos de cancelación,
+¿Tá?
+Y después lo que podemos hacer es que ustedes
+recreen cada uno de los flujos de cancelación
+y que llegan cada caso.
+Es decir, bueno,
+¿Qué hubiera pasado si cuando el negociador apruebe,
+o sea, cuando nosotros creamos la triangulación,
+nosotros la cancelamos?
+Bueno, pasa acá.
+¿Qué hubiera pasado si la contraparte,
+cuando nosotros aprobamos el contrato,
+la contraparte dice,
+no, esta triangulación es cualquier cosa,
+la cancelo.
+Llegamos acá.
+¿Qué hubiera pasado acá si cuando estamos esperando pago,
+nosotros cancelamos la operación?
+¿Tá?
+Llega acá.
+Y algo que es importante,
+que hay que tener en cuenta,
+es que cuando llegamos a,
+en este estado,
+¿Sí?
+Acá,
+cuando nosotros cancelamos,
+solo le notificamos al exportador.
+Acá también solo se le notifica al vendedor o exportador.
+¿Tá?
+Acá,
+si nosotros la cancelamos,
+también solo se le notifica
+al vendedor.
+¿Tá?
+Si nosotros la cancelamos.
+Este flujito acá.
+¿Sí?
+Sin embargo,
+una vez que llegamos al estado enviando fondos,
+y esto es importante que lo tengamos en cuenta,
+a partir del estado enviando fondos,
+cuando cancelamos la operación,
+le tenemos que avisar a los dos.
+Y también,
+y esto Nahue y Jonathan,
+seguramente lo trabajaron un montón,
+cuando nosotros cancelamos el flujo,
+acá,
+cuando lo cancelamos acá,
+cuando lo cancelamos acá,
+o cuando lo cancelamos acá,
+cuando hacemos la devolución,
+lo único que tenemos que subir
+es comprobantes contra el vendedor.
+¿Sí?
+¿Por qué solo subimos comprobantes contra el vendedor?
+Porque solo le sacamos la plata al vendedor.
+Todavía el comprador
+no transfirió
+su dinero.
+¿Tá?
+El importador o comprador
+no subió los comprobantes que transfirió a nuestra cuenta.
+Entonces,
+a nivel sistema,
+si nosotros cancelamos el flujo ahí,
+si,
+y es lo que debería suceder,
+solo deberíamos subir comprobantes,
+¿tá?,
+de que le devolvimos la plata al vendedor.
+A partir de este punto,
+que llegamos a enviando fondos,
+cuando cancelamos la operación,
+tenemos que subir los comprobantes a los dos
+y se le notifica a los dos.
+Porque ya tenemos la plata de ambas partes.
+Entonces, si se cancela,
+hay que subir un comprobante
+o algún recibo.
+Y eso es importante
+por temas de auditoría,
+y hay que marcarlo,
+de que se le subió,
+o que se le tiene que subir a los dos.
+¿Tá?
+Por eso es que yo digo que,
+Marti, vos tendrías que encargarte
+del flujo del site,
+Happy Path,
+Nahuel o Jonathan,
+capaz que Nahuel,
+encargarse del flujo,
+de los flujos del BBO,
+ir mostrando los mails,
+que van llegando, eso es clave.
+¿Tá?
+Se pueden poner como teammates,
+eso es importante.
+Pueden jugar con la estrategia de teammates.
+Porque, ¿qué es lo que va a pasar?
+Naturalmente, van a crear cuentas
+que no van a tener todos
+accesos a esos Gmail.
+Y si lo muestran con Mailinator,
+se va a ver horrible el mail.
+¿Sí?
+Entonces, lo más sano es que ustedes
+se agreguen entre todas las cuentas
+como teammates
+para que les lleguen los correos.
+Pero eso lo ven ustedes.
+¿Tá?
+O sea, no queda otra que probarlo
+y chequearlo.
+Pero si no, van a mostrar los mails horribles.
+Y después, lo que haría,
+como una segunda iteración,
+vamos a ponerla en otro color,
+es mostrar estos flujos.
+Este.
+Mostrar este.
+Mostrar este.
+Y mostrar este.
+Cada uno, obviamente, desde el site.
+Y ahí hacer énfasis en cómo
+en cada uno de esos flujos funciona esto.
+¿Tá?
+Yo lo organizaría así.
+Primero un happy path,
+donde muestro todo lindo, todo divino.
+¿Tá?
+Muestro cómo puedo cancelar ahí la contraparte.
+Que le va a llegar un mail.
+Crean dos contrapartes.
+Una la crean, una la aprueban y otra la desaprueban.
+Que les lleguen los dos mails.
+Muestran el happy path.
+Y después, uno de ustedes,
+que lo bueno de la parte verde
+es que ustedes ya pueden dejar operaciones hechas.
+¿Tá?
+Para solo cancelarlas.
+¿Sí?
+Entonces, ya pueden dejar operaciones hechas
+para cancelarlas.
+Incluso ahí, Marti, vos podés dejar una operación
+para este flujo.
+Enrique puede, perdón.
+Enrique puede dejar para el flujo este que está acá.
+No.
+Vos, Marti, dejás para este flujo una operación.
+¿Tá?
+Y después Enrique deja para otra.
+Entonces, cada quien muestra los distintos flujos.
+Y bueno, che.
+Miren que si se cancela acá.
+¿Tá?
+O sea, si cuando pasa tal cosa,
+nosotros queremos cancelarlo,
+hay que hacer acá.
+Y como podemos ver,
+se pide,
+se pide solo documentos de un lado.
+Eso es lo importante a destacar.
+Se pide documentos del lado o del otro.
+¿Tá?
+Pero no sé ahí.
+O sea, primero que nada,
+preguntarle si a alguien le queda alguna duda del flujo.
+Esto está re chequeado.
+O sea, lo chequeamos diez veces
+con Nahue, Jonathan, Martina en su momento.
+O sea, fue un dolor de huevo.
+¿Tá?
+Pero hay que probarlo.
+Marti, Enrique, Nahue, Jonathan.
+No sé si tienen alguna duda del flujo en particular.
+O algo que quieran aportar.
+Bien.
+Por mi parte, no.
+¿Tá?
+No sé.
+Y vos, Marti,
+¿cómo quieren encararlo esto?
+Capaz que tenés otras perspectivas.
+Eh...
+No.
+A ver, es un flujo bastante complejo.
+Pero, ¿tá?
+Lo podemos vivir así.
+Yo ahí lo que creo,
+¿tá?
+Y dado también la participación que tuvo Enrique en esto,
+¿tá?
+Es que lo que pueden hacer es preparar el flujo
+con Nahue,
+¿sí?
+Para que sea más rápido.
+¿Tá?
+Porque ahí Nahue estuvo más metido con esto.
+Y después pueden, digamos, delegarle la parte de devoluciones a Enrique.
+Que sería algo más concreto.
+Creo que eso sería lo más rápido.
+¿Tá?
+Pero...
+O sea, yo iría por ese camino.
+Que lo armen en happy pad con Nahue.
+Dejen todo probado y armado.
+Y después, con Enrique, únicamente vemos los flujos de reembolso.
+Entonces, ahí creo que es algo más concreto.
+Y más metido.
+No sé, yo iría por ese camino.
+¿Tá?
+Además, Nahue también ha testeado mucho lo que son los mugs desde el site.
+Entonces, quiera o no, también ha visto de costado alguna cosa.
+Este...
+Pero no sé vos, Marti, ¿qué pensás?
+Que te ve la mitad de la noche.
+Eh...
+No sé.
+Así en el aire, no sé.
+O sea, mi idea era tener algo punteado.
+Pero, ¿tá?
+Eh...
+Podemos hacer yo lo primero del site.
+Y después repartimos video.
+Y mail, sí.
+¿Queda en claro un concepto del exportador y el comprador?
+Porque, sinceramente, yo hasta que no lo vi.
+O sea, hasta que no lo vi funcional.
+Tampoco lo había entendido.
+¿Tá?
+Yo voy a pasarles la captura.
+O sea, sinceramente, hasta que yo no lo vi funcionando este flujo literal.
+Y es más, yo lo vi con el caso excepcional que después tuvimos que agregar con Yona.
+¿Tá?
+Algo que me faltó que es muy importante.
+Algo que me faltó que es muy importante es que...
+Vieron que nosotros tenemos una aprobación acá, ¿no?
+En este punto.
+¿Sí?
+O sea, el comprador genera la triangulación...
+El vendedor genera la triangulación.
+Y nosotros tenemos que aprobarlas o no.
+No sé si...
+Esperen que voy a cerrar esto.
+Creo que no tenemos ninguna triangulación por aprobar.
+Vieron que tenemos enviando fondos.
+Está alguna que quedó trancada.
+Quedó trancada.
+A ver si alguna quedó por aprobarnos.
+¿Tá?
+Vieron que acá tienen falta aprobación.
+¿Sí?
+O sea, tenemos varios movimientos reales.
+Creo que en dev tenemos más cositas.
+Pero algo que no se está viendo acá y que es muy importante es la parte del spread.
+¿Sí?
+Nosotros...
+¿Dónde ganamos acá?
+¿Dónde se piensa que nosotros podemos ganar acá como Dazban?
+¿En qué?
+Ahí en el spread.
+Ahí en la comisión esa que se le asigna.
+¿Pero de qué lado?
+¿No le sacamos dólares o le sacamos pesos bolivianos?
+No, dólares, ¿no?
+O los pesos bolivianos.
+Pesos bolivianos, ¿no?
+Nos sacamos pesos bolivianos.
+¿Sí?
+El flujo es el siguiente.
+Y lo que tienen que tener.
+¿Tá?
+Al exportador...
+¿Qué pasa?
+Hace el dibujo acá.
+El exportador transfiere 100 dólares.
+¿Sí?
+¿Tá?
+Vamos a poner el caso concreto.
+Exportador transfiere 10 dólares.
+Es 100 dólares.
+¿Tá?
+El tipo de cambio es 10.
+Acuerdan entre los dos un tipo de cambio de 10.
+¿Sí?
+Entonces ahí...
+¿Cuántos pesos bolivianos tenemos que transferirle?
+El tipo de cambio...
+¿Tá?
+Es...
+Este...
+¿Cómo se llama?
+Se multiplica por los dólares.
+Obviamente que...
+El tipo de cambio lo que referencia es cuántos pesos bolivianos es un dólar.
+Siempre basado en el dólar.
+Todo basado en el dólar.
+¿Tá?
+Entonces el TC...
+El tipo de cambio que se establece...
+Que establece la triangulación es basado en el dólar.
+Entonces si yo digo...
+Voy a sacar 100 dólares y el tipo de cambio es 10.
+Quiere decir que le voy a transferir...
+¿Cuántos bolivianos?
+1000 bolivianos.
+1000 bolivianos.
+¿Tá?
+¿Sí?
+¿Qué es lo que pasa?
+El tipo va a fijar en la triangulación.
+Fija.
+Bueno.
+Perfecto.
+Yo voy a poner 10 dólares a una tasa de 10.
+Entonces yo lo que hago es...
+Directamente es perfecto.
+Le agarro y le saco 10 bolivianos.
+¿Tá?
+Le voy a transferir 1000 bolivianos.
+Entonces el exportador al final del proceso va a haber perdido 100 dólares.
+O va a haber vendido 100 dólares.
+Y va a haber comprado 1000 bolivianos.
+¿Sí?
+Ahora cuando nosotros aprobamos acá.
+En este flujo.
+Cuando nosotros aprobamos acá.
+Nosotros fijamos el spread.
+Y el spread aplica al importador.
+Eso quiere decir que si nosotros fijamos el spread de 1%.
+¿Tá?
+O de 2%.
+Eso quiere decir que nosotros vamos a tener que.
+Si miramos acá.
+Tenemos algunos spread fijados.
+¿Tá?
+Nosotros le vamos a tener que.
+Vamos a esperar.
+Que el.
+¿Cómo se llama?
+Que del monto ese.
+Bolivianos.
+O sea.
+Le ganemos un 1%.
+¿Sí?
+Eso quiere decir que si es.
+Si el tipo nos tiene que transferir.
+1000 bolivianos.
+Entonces nosotros vamos a tener que.
+¿Cómo se llama?
+Que del monto ese.
+Bolivianos.
+Le.
+O sea.
+Le ganemos un 1%.
+¿Sí?
+Eso quiere decir que si es.
+Si el tipo nos tiene que transferir.
+1000 bolivianos.
+Entonces.
+¿Cuándo que le vamos a ganar nosotros?
+Le vamos a decir.
+No.
+No.
+No.
+Nos tenés que transferir.
+110.
+¿Tá?
+Y eso es algo que.
+Nau y Jonathan.
+Testearon mucho.
+O sea.
+Rompí.
+Yo hinché bastante la bola.
+Con eso.
+En el site.
+Marti.
+Cuando vos le pongas acá.
+Al importador.
+No le vas a decir.
+Tenés que transferir.
+1000.
+A ver si tenés que transferir.
+10.
+Bolivianos.
+¿Tá?
+Y vos.
+Al vendedor.
+Le vas a decir.
+Te voy a transferir.
+1000.
+Entonces.
+La ganancia nuestra.
+¿Dónde está?
+En la.
+En lo que nos paga.
+El importador.
+¿Sí?
+El importador.
+Va a transferir.
+Unos bolivianos.
+De más.
+Y ahí.
+Donde se fija.
+El esprit.
+Entonces.
+El importador.
+Transfiere.
+1010.
+Y listo.
+Se terminó.
+Y eso es algo.
+Que técnicamente.
+Ustedes.
+Lo tienen que mostrar.
+Oigan.
+Por eso.
+Yo.
+Estoy aquí.
+Ellos.
+Me van a manifestar.
+Por eso.
+A mí.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+Yo.
+estamos quedando con que mil dólares si estamos quedando con una comisión de mil dólares por cada
+transferencia que hacemos eso es un 1% y esa es la idea un caso excepcional que hay que tener en
+cuenta acá es que nosotros y esto lo hizo jonah permitimos la comisión de sprint 0 la comisión
+casi siempre es de 1% pero permitimos la comisión de 0 en qué caso en que la empresa es propia
+y por qué porque lo que hacen cuando la empresa es propia expone como como ellos saben que la cosa
+como la comisión va a ser contra los bolivianos ponen que los bolivianos a recibir son menos
+entonces nosotros le cobramos menos comisión entonces cuando la empresa es propia lo que
+hacemos es ponemos sprint 0 eso es una estrategia que tenemos y la comisión se la cobramos en los
+dólares entonces agarramos y está le transferimos
+como en realidad es una transferencia el mismo si vos tenías mil dólares te vamos a transferir
+este no a tu otra cuenta como también es tuya te vamos a transferir 999 trate que nos quedamos
+nosotros con 1% porque una porque si vos pones una comisión baja en boliviano estamos vamos a
+quedar con menos bolivianos entonces si nosotros detectamos que la empresa es propia que eso es
+una funcionalidad que tenemos nosotros activamos con jonah
+la comisión en cero y le cobramos el 1 por ciento frente a los dólares los tipos tenemos un caso en
+particular que hace eso se hace transferencias compraventa entre ellos mismos entonces agarra
+y pone un poquito o sea no lo hizo pero lo podía hacer ponía un poquito menos de tipo de cambio de
+bolivianos y la comisión en boliviano iba a ser más chico está total a la otra cuenta te van a
+llegar los dobles sí pero es un caso muy puntual
+está solo mencionar que está esa funcionalidad bien yo lo que les propongo y viéndola ahora
+también porque creo que enrique se tiene que ir yo lo que propongo es capaz que martí hace un
+punteado de esto júntense más una vez que vos tengas el punteado júntense mañana con agua
+armen esto y después pasen la aquí que la parte de él está con los usuarios ya creados y todo
+así tampoco demoramos tanto a enrique y la parte de enrique es la más concreta
+si algo que es importante igual que en la reunión pasada mart que estuvieron martillona yo voy a
+participar obviamente de este flujo la idea es que usted demuestre pero ante cualquier duda yo
+voy a estar para asistir entonces este es un flujo complicado y más que nada esta gente de bolivia
+puede salir con diez mil preguntas raras que se me estén escapando como pasó la vez pasada entonces
+ahí la idea es que si si ustedes se ven aprietos yo los puedo hacer y si no se ven aprietos yo los
+puedo hacer y si no se ven aprietos yo los puedo hacer y si no se ven aprietos yo los puedo hacer
+dar una mano bien pero a la medida de lo posible que puedan demostrar lo más que se pueda de este
+flujo que en particular lo desarrollaron ustedes martí desde el site y ahí nada yo natalia enrique
+con los mails hay una mano no sé martí si querías aclarar algo más o querías bueno yo diría y martí
+jonathan agua juntos a martí a organizar un poco este punteado y júntense mañana para poder bichar
+jonathan estuvo bueno que estés acá y estaría bueno que te sumes también a la reunión de haití para este
+de costado en background para también no perderte este flujo es un flujo bastante delicado la que
+nos sumamos a enrique ya y en agua en el flujo de compra y venta pero bueno está lo he hecho está
+este tipo de cosas está bueno que tengamos el knowledge todo como and bueno si no tienen más
+nada los libros
+en mi lado estaría pronto todo listo entonces bien genial bueno vamos arriba nos vemos

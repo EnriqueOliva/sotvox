@@ -1,0 +1,800 @@
+Usted se dio cuenta que es un ser feo, ¿no?
+O sea, más allá del cariño que le tiene la gente allegada, estas cosas
+Perdón, perdón
+No me pida disculpas, no me pida disculpas
+Bueno, escúchame, estoy un poco contra las cuerdas y necesito que me des una manito
+Claro
+Por eso te dije, o sea, no, porque quiero tener esta llamada
+Porque no me acuerdo si tenés placer o no, ya, realmente no me está dando
+Pero más allá de eso necesito que así, que estés un poco metiéndole, que es lo que pasa
+No hay problema
+Porque no tenemos a Martino todavía también, ¿no?
+Ya tiene dos semanas, puede ser
+Sí, también, eso sí, es eso
+Lo que voy a necesitar es lo siguiente, ¿tá?
+Tengo tiempo
+¿Te animás a compartir mi pantalla corriendo lo que subió Tatato a ver cuál es el estatus de eso?
+¿Lo qué corrió Tatato?
+La PR de Tatato
+Tatato del, del que voy a vivir
+Ok
+No sé si, no sé si, el otro día le hablaba con Tatato justo y le dije
+Tenés que tener dos, tenés que tener dos o tres repositorios descargados
+Yo tengo dos, tengo un clon de todo
+Pero ya no me dio y tengo tres ahora
+Tengo tres versiones
+A ver, grítame ahí
+Bueno, para ahí tenía, estoy haciendo lo del, la query, el Excel
+Sí
+Sí, igual ahora
+Vamos a, vamos a ordenar un poco la cancha, pues
+Se me fueron las manos
+¿Qué es lo que pasa?
+Lo que pasó es lo siguiente
+Guillermo empezó a presionar por qué no sacábamos esto
+Y la verdad teníamos todo lo de una brillona tan al mitad
+Entonces el fin de semana
+¿Qué es el fin de semana?
+El viernes
+Y después parte del domingo
+O sea, o lo hice casi nada de esto
+El viernes y parte del domingo lo que hice fue
+Este, meterle a
+Meterle a todo esto de
+O sea, de Jonathan y Nahuel
+Entonces tipo
+Adelanté como una semana de trabajo
+Que me lo ha llevado de ellos
+Lo hice todo en un fin de semana
+Vamos a, metí como cinco mil líneas de código
+Generé como diez markdown
+El análisis que hice con Clau
+Está genial
+O sea, digo, la verdad, genial
+A veces me pongo a pensar
+Y digo, si yo no tendría vida
+Podría cobrar perfectamente el sueldo de una abuelilla natal
+Pero basta
+No me, no me sirve
+No me sirve por ningún lado
+Es lo que hablábamos el otro día
+Pero la verdad, o sea
+Tampoco me dio
+O sea, tampoco es que lo terminé, ¿no?
+Creo que el diseño
+Y el ajuste del pixel
+Y el detalle
+Es algo que está bueno a tenerlo, ¿sabés?
+Este
+Empezamos un dito
+Ah, claro, pará
+No va a funcionar nunca
+No debería
+Si usted me dice que no va a funcionar nunca
+Sé, como te dije
+O sea, ¿cómo quiere
+¿Cómo quiere que yo trabaje con una persona así?
+Totalmente desagradable
+Con el cine humano, ¿no?
+Pido, pido disculpas
+Por eso no falta, no basta con pido disculpas
+No, no todo se arregla
+Ahí lo dejé pronto, pará
+Ahí está cargándole
+Ah, entonces
+Tuve que meterle para que saliera todo
+Pará, ese es el Excel
+¿Sí?
+Y no sé qué datos querías
+No, está perfecto, sí
+Pasámelo por Slack y ya está
+La porquería
+Pasámelo por
+El problema es que
+De CSV a Excel
+Se corrompen los
+Los datos de la página web
+Los tildes, creo
+Tengo que
+Habría que prestar atención a eso
+Pero capaz que no importa
+No, no importa, no importa
+La realidad es que me chupaba
+Sí, en la historia de huevos
+Mis huevos y los de Floyd me chupan
+En este momento
+Escuchame
+Vos tendrías que haber hecho HIFU
+Estás desagradable
+¿Hay qué?
+Escuchame, necesito
+Necesito lo
+Pero pará, ¿me corriste la funcionalidad
+De la data?
+¿Está cargando?
+¿Está cargando?
+¿Está cargando?
+¿Está?
+Siempre una excusa
+Siempre una excusa
+Siempre una excusa
+Porque demora, viste
+Siempre una excusa
+Se me había corrompido al carajo
+¿Qué?
+¿Entendiste?
+Necesitamos marchar
+Yo ya marché la de Tartarto
+Ya
+Lo de UserLit no me da la vida
+Para discutírselo
+Entonces lo marché
+Igual no va a romper nada
+Pero
+En sí vos lo que haces
+O sea, mañana les voy a decir
+Me voy a tomar el tiempo
+La de HIFU
+Y se lo voy a explicar
+Y le voy a decir que lo arregle
+Yo literal estoy tomándome trabajo
+Para arreglar todos los test solitarios
+O sea, me puse a hacer su trabajo
+Eso es una cagada
+Obviamente
+Por propia razón
+Quiere decir que hay muchas cosas
+Que estoy
+O sea, estoy perdiendo pila de tiempo en eso
+Pero porque tiene que compilar
+Y yo necesitaba que ustedes estén en otra cosa
+Entonces eso
+Obviamente
+Es un trabajo que no se puede hacer
+Que va a generar un glitch
+Yo creo que ahora
+Va a empezar a estar todo más estable
+Porque yo ya modelé todo
+Hicimos lo que hacían
+Pues todo
+O sea, la realidad es que
+A partir de mañana
+Va a estar todo más estable
+Entonces lo que voy a necesitar
+Es que mañana
+Hoy no
+Obviamente
+Pero después de que salgamos a producción
+Mañana que chequemos al press
+¿Sí?
+Sí
+Y lo que voy a necesitar
+Lo único que quiero que trabajen ustedes dos
+O sea, literal
+Lo único que quiero que trabajen ustedes dos
+Es en test unitario
+¿No?
+Lo único
+Ok
+O sea, en test unitario
+Sí, en Cypress
+Lo único
+No los voy a sacar de ahí por ningún rato
+¿Está?
+Por lo menos por toda la semana
+¿Sí?
+Ok
+O sea, tenemos que estabilizar
+Y fijarnos
+O sea
+Entonces la tarea
+Cuando arranca el día de mañana
+Es fijarse el estatus de Cypress
+Hacer una lista de todos los samples que faltan
+Y después necesitarme
+Necesito que a la vez
+Corran un script
+Tipo que se fije
+Que no lo van a hacer manual ustedes
+De los tests que hay
+Si faltarían a entregar casos
+¿Va?
+Porque yo hay muchos tests
+Que creé yo
+E hice una análisis de barrio
+Y le dije que hiciera una mejora u otra
+Pero tampoco lo puse
+A mirar
+Por ejemplo, lo hice mejor
+A configurar los blogs
+Y lo hablé
+¿Está?
+Ok
+Pero necesito
+Que se fijen que esté todo
+Todo claro
+¿Está?
+Principalmente en el Cypress
+Necesitamos estabilizar el Cypress
+¿No?
+Es más
+Yo te diría
+Que antes de Cypress
+Hagas el relevamiento de tests unitarios
+¿Sí?
+Ok
+Primero la idea
+O sea
+El relevamiento de tests unitarios
+O sea
+Las tareas que tienes
+Con Fernando
+¿Qué tareas quedan en frente de Precasa?
+¿Qué hay que pasar a reemprasar?
+¿Qué tareas se utilizan?
+¿Sí?
+Este
+Tiempo se está faltando
+A partir de mañana
+¿Sí?
+A partir de mañana
+Literal
+A partir de mañana
+Es muy difícil
+Que surjan nuevos
+Employs en el site
+A partir de mañana
+¿Anda?
+¿No?
+O sea
+Por un tiempito
+¿Puedo decir?
+Corto
+¿Habrá entrado
+El keyword de status?
+Sí
+Estoy buscando
+Una compañía
+Que tenga
+Algo que esta no tiene
+No sé cuál uso de él
+¿Status ponía
+Un usuario?
+Sí
+Sí, sí
+Estaba pensando en eso
+Usuario 2
+Que creo que es mía
+No sé
+Pero
+Pero el video
+Que subí
+Al hijo de puta
+No, o sea
+No me está
+A ver, subí
+Poní Nancy Cohen
+¿Nancy Cohen?
+No tiene
+¿Qué?
+Sí
+Tiene que estar por ahí
+¿En Dev?
+Sí
+A ver, fíjate
+Tiene varias compañías
+Esta loca
+Si querés
+Podés ir abriendo
+Nuevas tabs
+Pará
+Entrate al Icar
+Al Icar
+Este
+Al Icar
+Sí
+A ver, fíjate
+Ese
+¿Qué?
+Bueno, se está mostrando
+Bastante bien, ¿no?
+Sí
+Está
+Yo necesito
+Pero la reputa
+Hay un gran problema
+Que tiene Tatato
+Que hizo
+Necesito solucionar
+Esto no es escalable
+Yo necesito
+Que en vez
+O sea
+Viste que esto
+Te está devolviendo
+O está bien así
+La verdad
+Quedó bastante prolijo
+El tema es que no es escalable
+Porque te está trayendo
+Todos
+Imaginá
+¿Cómo te lo explico?
+No
+El modelo
+En sí
+Guarda varios
+Meta-tallers
+Que nosotros
+No los traemos
+¿Está?
+Sí
+No los traemos
+Estos
+¿Qué es lo que está haciendo
+Quique?
+¿Qué es lo que está haciendo
+Quique?
+¿Qué es lo que está haciendo
+Tatato?
+Yo no sé
+Ahí
+Se ve que si pone
+La cosa error
+Te pone
+Ahora baja un poquito
+Hagamos una cosa
+Pero en celular
+A ver cómo se ve esto
+¿No tiene scroll
+A la izquierda
+A la derecha
+O sí?
+No
+No
+No
+No hay scroll
+Ahora baja un poquito
+Ajá
+A ver
+Sí
+Ah, esto
+Ah, sí
+Esto
+¿Qué es lo que pasa?
+Yo necesito
+Que vos
+Esto lo transformes
+En un drop-down
+¿Está?
+Tatato lo que está yendo
+Se está trayendo
+Todo el record
+¿Sí?
+Y si nosotros
+Hoy o mañana
+Tenemos varios proveedores
+Eso es un problema
+Igual estoy pensando
+Vamos a hacer lo siguiente
+Va a ser lo más sencillo
+Vamos a hacer lo siguiente
+No, no va a quedar otro
+Vamos a hacer lo siguiente
+No, no va a quedar otro
+Vamos a
+Fíjate si podés arreglar
+Únicamente este scroll
+Y lo que te pido es
+Que cargues un
+Voy a mirar la PR de Tatato
+¿Tá?
+Fíjate si podés arreglar
+Apenas este scroll
+Y cargate un objeto JSON
+Con más niveles
+Viste que esto tiene
+Esto es lo que está haciendo
+Mostrar un JSON
+¿Sí?
+Cargá
+Viste que ahí tienen
+Tenés el JSON
+Tenés un nivel
+Una property
+Que adentro puede tener un objeto
+Que adentro puede tener un objeto
+Que adentro puede tener un objeto
+¿Sí?
+Ajá
+¿Tá?
+Necesito que cargues
+Uno con más niveles
+¿Sí?
+Ok
+Tu PR en CDWorker
+Está pronta, ¿no?
+Teoría
+Sí
+Ya la corregí
+¿Tá?
+Bien
+Ahora voy a mirar tu PR
+¿Tá?
+Hagamos eso nomás
+O sea
+¿Listo?
+Estaría bueno
+Que en el componente
+Donde pones esto
+¿Tá?
+Bien
+Después
+BancaSystems
+No lo pusí
+¿Tá?
+Yo eso me voy a encargar
+Lo que necesito es
+Arreglate esto
+¿Tá?
+Y te voy a comprar
+Los productos
+Las pelotas más tarde
+Cuando me llegue
+Todo lo que yo gané en la web
+Para que me des una mano
+En un testero
+Y mientras que yo voy
+Voy actualizando otras cosas
+¿Tá?
+Ok
+O las dudas
+Porque así no tenemos
+Que andar haciendo
+Una llamada
+En sí sería
+Intentar arreglar
+Un poco esto
+Probarte
+Subir algunas capturas
+A la PR
+Con algún objeto
+Un poquito más complejo
+¿Sí?
+De repente
+Con más niveles
+Que tenga
+Una property
+Otra property
+Otra property
+Ver qué está haciendo
+Ver si hay algo
+Que TATATO
+No puso genérico
+Se puede hacer
+Más genérico
+¿Sí?
+Y bueno
+Esto vamos a margear
+Si vamos a margearlo
+Después lo arreglamos
+¿Tá?
+O sea
+Tampoco vamos a
+Matar
+Lo que yo necesito
+Es eso
+Voy a ver
+Las de worker
+Ahora a ver
+Si las puedo margear
+Y
+Y de tu lado
+No estaría quedando nada
+O sea
+Ya está todo testeado
+Y esas cosas
+Lo que va a pasar
+Es lo siguiente
+Mi abuelo y Jonathan
+Cambiaron mis compañías
+Y cambiaron
+El selector
+De mi empresa
+Y cambiaron
+Dentro de team mate
+Ahora vos tenés
+Un múltiple selector
+¿Tá?
+¿Sí?
+Ajá
+Entonces yo necesito
+Yo ya lo puse
+En ellos
+Que sea el QA
+Necesito que con tu
+Función del QA
+Intentes
+Generar bastantes
+Lógicas
+Porque ahora por ejemplo
+El múltiple selector
+Si vos seleccionás
+Todas las compañías
+¿Sí?
+¿Tá?
+Si vos tenés
+Todas las compañías
+Te las
+Pero no tenés
+La relación
+Compañial
+Entonces
+Te las tiene que seguir
+Mostrando
+Entonces fijarse
+En base de datos
+Por ejemplo
+Que cuando creás
+Un team mate
+Y le das
+Todas las compañías
+Que están seleccionadas
+¿Sí?
+No se creen
+Los company access
+¿Se entiende?
+O sea que no se creen
+Fijarte
+A nivel base de datos
+También
+Hacer un QA
+A nivel base de datos
+Por ejemplo
+Yo te genero
+Diez team mates
+Te pongo
+Te genero un team mate
+Y te digo
+Tenés acceso
+A todas las compañías
+No tengo
+Y tenés acceso total
+No tengo que generar
+Todos los company access
+¿Sí?
+Ah, no son necesarios
+Ajá
+¿Sí?
+Ok
+No, no es
+Es eso
+Necesito que chequees
+Esa cosa
+Que chequees los accesos
+Si yo por ejemplo
+No te doy acceso a banca
+Cuando voy a banca
+No me tiene que aparecer
+En el drop
+Yo te voy a avisar
+Cuando esa PDR esté
+Y eso es lo que yo
+Necesito probar
+¿Ah?
+Lo otro es
+Necesito que me dejes
+Una salida
+De producción
+Con PRs
+De Devastage
+¿Tá?
+De los tres sitios
+La salida de producción
+Es bien
+Sencilla
+Porque creo que la última
+Es la 20
+Es una 21
+O sea
+Es un salto
+De versión grande
+¿Tá?
+Bien
+¿Sí?
+Bien
+Y este
+Solo las dejas
+Yo de noche
+Me voy a encargar
+De las de producción
+Este testeo
+Que vos describiste
+Es el que yo voy a tener
+Que hacer en un rato
+¿O no?
+O es mañana
+Sí, es el que vas a tener
+Que hacer en un rato
+Yo te aviso
+O sea
+Te aviso
+Para que me des una mano
+Yo voy a tener que llevar
+A Lucía al trabajo
+A las 9
+Entonces voy a intentar
+Dejar esto antes
+Cosa corta
+Este es
+Te dediques una horita
+Y ta
+Y ahí termina
+Tu
+Tu encrucijada
+Yo ahora voy a intentar
+Mergear
+Tu PR de worker
+Y voy a estar atento
+Hasta el QYB
+¿Tá?
+Y te aviso
+Cuando quede en dev
+Eso que vas a testear
+La idea de mañana
+Es eso
+Que hagamos un relevo
+Amigos
+O sea
+Necesito que vos
+Antes de la daily
+Te centres con Fernando
+¿Ah?
+Y me digas
+Mirá
+Faltan todos estos tests
+Faltan todos estos
+Estos tests
+Ya
+Ya le pusimos las tareas
+A relevo
+Ya le pusimos las tareas
+Ya estamos atacando
+De esto
+¿Tá?
+Este
+Hay que testear todo
+¿Sí?
+O sea que
+Ya está
+Todo el site
+Tiene que tener test unitario
+¿Sí?
+O sea
+Esa es la norma
+No hay game point
+A no testear
+¿Bien?
+Hay que llegar
+A todos los tests
+Entonces
+No importa
+Olvídate de los office
+Todas las tareas
+Que son de los office
+Se murieron
+A partir de mañana
+Todo el site
+Tiene que tener test unitario
+¿Ah?
+Entonces lo que necesito
+Es que vos hagas
+Un relevamiento
+A lo que están
+La calidad
+Primero
+Mejorar
+Mejorar la calidad
+De los tests unitarios
+Que ya están
+Validar si hay algo
+Que se pueda mejorar
+Si están pasando casos
+Y segundo
+Agregar test unitario
+Para todos los apps
+Que están
+Y empezar a atacarlo
+Más a lo
+¿Ah?
+Se terminó
+O sea
+Yo lo que vi
+Es que
+Se pueden sacar
+Muchos tests unitarios
+Y yo prefiero
+Obtener cobertura
+Este
+Y con los tests unitarios
+Ya estoy prefiriendo
+Cantidad
+Ante calidad
+Pero igual
+Está
+O sea
+Y con
+Con cloud
+Es muy difícil
+Mantener calidad
+¿Verdad?
+Sí
+Entonces está
+Es eso
+Exacto
+Este
+Ustedes hacen las cosas bien
+Y quizás vuelvan pronto
+Es muy difícil
+Entonces
+Mi meta sería
+A ver si podemos liquidar
+Todos los tests unitarios
+Del site
+Y después
+Bueno
+Le haremos alguna iteración
+Más o no sé
+¿Verdad?
+Me llama
+La regla
+No sé por qué
+¿Está?
+La idea es
+La idea es que se metan
+Con Tatato
+A full con eso
+¿Sí?
+O sea
+Literal
+La que
+Solo trabajen
+Con tests unitarios
+Ok
+Bueno
+Pero
+Vaya
+Vaya
+Vaya
+Sí
+Yo sé que está bien
+Ah bueno
+¿Estoy liberado?
+Sí
+Sí
+Está liberado
+Está liberado
+Oso
+Buah
+Osobuca
+Sí
+Porque le dice
+Osobusco
+Al osobuco
+No quiero saber
+Las cosas que haces
+Con tu novia
+Me chupa un huevo
+Enrique
+No tengo que generar
+La pista contigo
+Dios mío
+La puta que te parió
+Dios mío
+Bueno
+Vamos arriba
+Con eso
+Hasta luego
+Chau chau
+Bye bye
+Chau

@@ -1,0 +1,287 @@
+un par de bandas y los compartido pantalla y lo logue a ti con una empresa que tenga
+ti 22 pues corriste la rama de este muchacho no hay que pase por slack
+la rama te estoy diciendo para que te anote si quieres compartir pantalla de
+dev y vamos viendo cada una de las pestañas y que tenemos que ver es que me es una mano
+o sea entrate ahí al dashboard a mis compañías esto es todo lo que sacó Nahuel ahora
+que viste que complejiza un poco todo esto de mis compañías quiero vamos a charlar caso a caso
+si de las tabs que están a la izquierda banca cripto cuando te pares el refactor que hizo
+jonathan ese necesario
+selector de múltiples compañías entonces entrate a banca en cripto 5 fíjate que a vos te salta un
+selector porque tenés más de una compañía entonces el primer check que vos tenés que hacer es si
+tiene una sola compañía ya este selector no salta o sea eso tiene que eso para todas las páginas
+la manera que vos tenés que comprobar esto es sirviendo con dev porque debe funcionar bien
+en ese sentido
+ese alivio que está corriendo ahora pues vos ahora vas a probar la funcionalidad de jonathan en localhost
+entonces la idea es esto puedes vivirlo con tatato o lo que quieras eso lo manejas vos yo lo que tengo
+acá si querés hasta puedo extraerlo para explicarle lo mismo no sé con quién lo que te quiera más práctico
+bueno lo puedo extraer si arrojátelo ahí que se suma el zoom esto como es bien
+tato hicimos un refactor con respecto al modal de múltiples selector sí entonces la pr de nabuel
+tiene la pr de jonathan sí que ahora enrique corrió local tiene ya todo ese ajuste sí yo necesito que
+ustedes hagan un cual manual o sea después de todo no tiene que pasarlo siempre pero el cual manual
+va a ser más rápido y se los puedo delegar a ustedes para que yo me pueda sentar con el one money
+entonces estoy viendo las botas que está ahí bien entonces ahora lo que nosotros tenemos es el modal
+de múltiples selector aparece en banca con sí en mailing en suscripciones en el accounting y hasta
+iba a sentirme no aparece modal de su placer de múltiples selector bien yo necesito que si
+no tiene o sea en todas esas
+páginas si vamos a la banca con usted lo puede lo pueden chequear
+lo actualizaste a mí me atuvo y en la perla
+ahora ahora yo ahora yo lo mando
+este modal múltiple selector la idea es que cumple la funcionalidad que antes tenía tipo el
+tronco si cuál es el cambio real acá nosotros lo que estamos haciendo es mostrando a ver posate
+sobre los nombres que posaste sobre el otro está lo que nosotros estamos haciendo ahora es mostrando
+el seleccionar compañía y lo estamos haciendo de forma pagina
+porque como puede tener muchas compañías si las cojo a seleccionar la por ejemplo si hace clic en una
+se explique en una es lo mismo que antes cambiar el trono fíjate que se cambia la misma y cuál es el
+problema de esto el drop down antes en gestores estaba cargando 80 compañías todas hacer una
+carrera arriba y se entiende porque este mal y ahora sólo estamos yendo por el control de la
+plantilla y para lo que estamos haciendo ahora ya nos va a dar un arco a este problema es que
+se está cargando 80 compañías entonces quiero a hacer una cagada de arriba si lo entiendes porque en
+realidad nosotros estamos llegando a un estado de calabozo que estamos llamando por el control de la
+llegando a los x que son los x un cliente puede tener x compañías un
+cliente puede tener x team mate un cliente puede tener x team mate que
+tengan x compañía entonces nosotros no podemos hacer esa carga brutal contra la
+base de datos si nosotros lo que queremos es poder reducir es acá nada
+más que nada para tratar todo el problema
+y entonces lo que nosotros tenemos que
+trabajar ahora es lo siguiente en esta funcionalidad se tiene que seguir
+cumpliendo los empty state y se tiene que seguir cumpliendo lo que sería que
+el selector no aparezca si tiene una sola compañía entonces es dentro de
+banca en cripto tiene dos anti state si el primer y el test state es cuando el
+tipo no tiene compañías que cuando puede pasar esto como la manera de recrear
+esto yo te envío team mate pero no te doy acceso
+a
+yo te invito como team mate a vos como usuario vos no tenés ninguna cuenta pero
+no te doy acceso a banca con entonces yo cuando me logue a esa cuenta de team
+mate no voy a tener compañías a seleccionar porque no me va a cargar la
+compañía porque no me diste acceso tiene sentido para ustedes
+banca en cripto entonces ahí va entonces eso lo que va a hacer es te va a trancar
+te va a decir no tenés compañías es un empty state que no tenés compañía
+¿está?
+ese tiene que seguir funcionando de nuevo esos empty state de no tenés
+compañías funcionan sólo en el caso para la mayoría de casos cuando te invito como
+team mate pero no te doy el permiso porque es este entonces está es eso el
+otro empty state que tiene que aparecer es que cuando vos no tenés comprado
+bridge puede ser del team mate o tuyo no tenés bridge entonces te dice que tenés
+que comprarlo y usted tiene que probar que haces clic y puedes ir a comprar la suscripción
+son son esos dos empty state y de esta autenticación que siempre aparece pero los
+dos principales es quiero fijarme que siga apareciendo en los empty states de que no
+tenés ninguna compañía y esto pasa mucho por ejemplo cuando yo le doy a un gestor
+acceso a todo menos a banca entonces tiene que cargar ese estado vacío
+y te tiene que llevar creo que te lleva a crear compañías fíjense en develop porque ya esta creo
+quedate ahí ya estáに
+que te lleva a crear compañía este dice no tenés compañías créate una y te lleva al estar nada
+también es un tema lógico decir bueno está yo te invité como team y no tenía acceso a banca
+te muestro el test y state pero nosotros el team y también siempre le damos la posibilidad de decir
+vuelta si querés comprar una compañía en banca encriptó tenemos esos dos centros 30 después
+vamos a mailing en mailing tenemos dos entidades 1 el no tenés compañía tenemos 32 volvemos hoy
+tenemos una vez de no tenés compañía y el otro si es una compañía cripto que es el que se está
+saliendo hoy en día y lo estamos viendo bien si es una compañía cripto cross border te dice que
+el mailing es sólo para compañías de data que si querés puedes ir a crear y al parecer se está
+funcionando bien sí
+entonces puede ser uno que yo no te di acceso a compañías o no tenés compañías creo que está
+ese si no sólo está este ente a este ente state bien suscripciones creo que siempre aparece no
+se me ocurre el caso de que te aparezca un ente state en suscripción ya sólo fijarte que tanto
+en mailing como suscripción en fijarse únicamente si tienes una compañía no tiene que aparecer el
+selector pero es importante eso
+corre para todos todos los lugares donde desaparece este selector si no tenés compañía no tiene que
+aparecer es dicho selector
+bien hoy report no tiene a contenido y si tenemos ahí los casos muy parecidos lo de mailing a
+continuidad las tres de continuidad corre la misma promise en sí entonces tenemos primero
+que nada bueno este que ya lo estamos viendo que es el hecho de si no tenés compañías
+si la compañía es de cripto cross border no tenés acceso a la contabilidad de las compañías sólo lo
+hacemos de eeuu si tenés más de una compañía si tenés una compañía sólo no se muestra si no tenés
+compañías de nuevo no te dieron acceso a coaching tienen que salir del ente state a creo que acá
+un tienes el más complejo porque acá un ti tiene tienen que chequear que tenga más de
+una si tienen que chequear si escrito cross border no tenés contabilidad porque nosotros
+no hacemos contabilidad de compañías que no esté en eeuu porque si no tenés contratado
+contabilidad te tiene que llevar a contratarlo y es lo mismo que bridge o sea si no tenés
+contratado bridge puedes contratarlo y también tiene el ente state de bueno yo te agregué como
+team mate y no tenía coaching entonces te digo que no tenés compañía
+si yo no te doy permiso a coaching directamente por ejemplo si vos yo te doy permiso a dos
+compañías si yo a una te doy a coaching y el otro no directamente te va a cargar una sola nunca vas
+a poder ver la otra eso es importante el selector múltiple nunca debería mostrarte el selector
+múltiple ahí que te pone por ejemplo si yo no le doy acceso a banca o a coaching no debería
+permitirme seleccionar a coaching o banca eso es muy muy importante
+y también ya que estamos vamos a hacer ese chequeo en mis compañías en mis
+compañías entremos acá vieron que vos tenés bueno te está diciendo que no tenés accesos
+creo que eso está funcionando bien porque vos de alguna manera no le diste permiso a
+mis compañías a ese team mate le diste acceso a banca y a coaching increíblemente o este
+usuario no tiene team mate qué quiere decir eso fíjense que en team mate ahí tenés un
+uno fíjate más abajo Kike Tromp vos tenés tres cosas que podés darle al team mate
+bank account companies y accounting eso quiere decir que si vos no le das uno de esos permisos
+no te tendría que cargar en el selector todo esto se tiene que mantener y los empty state
+son un poco trillados de decir bueno está si yo no si vos no contrataste el permiso si vos tenés
+una compañía que no se acople a este permiso
+entonces no importa si lo contrataste o no no tenés el permiso
+y otra cosa que necesito que prueben que esto es otro mundo aparte a todo esto es este selectorcito
+que ven ahí ese selector de compañía hace clic vos acá esto cambia la lógica totalmente
+ahora vos tenés la idea de seleccionar mira selecciona todo podés seleccionar todo y
+seleccionas todo y lo que te va a pasar es que te va a pasar que te va a pasar que te va a pasar que te va a pasar que te va a pasar que te va a pasar que te va a pasar que te va a pasar
+seleccionar todo a ver que te pone ahí entonces fueron dos seleccionadas
+fijate abrite la necesito un segundito ojo que la tenés en 3G por eso te está dando un poquito lento
+ponés solo fetch y state el filtro limpiate todo andate al selector
+ponés select all wat está haciendo este hijo de puta a ver fijate hace click en esa request
+previo a la ripon no para para que ponerme para ver eliminada y el dar una mano tanto
+para que tenga la vista completa no la de celular voy a llamar a yo no arriba a la
+izquierda de la parte de fe no sé qué más quería
+a darle limpiar selección liberar selección
+seleccionado el de nuevo yo te quiero buscar a la cárcel para comparte
+si bien te animas a agrandar un poco borra toda la frecuencia para para segundo achica
+agranda qué cosa esto agranda lo más que puedas lo más que puedas contra la derecha
+agranda
+la mierda para borrar eso a checarlo a chica de la hora de hacer más chiquito
+yo nada acá estoy viendo algo que me va a dar un micro infarto primero estamos trayendo company
+limit 100 no sé dónde se está haciendo eso yo estoy poniendo aquí que a tato hasta la
+parte de cuba de toda la funcionalidad que hicimos
+y vimos este detalle citó la compañía está poniendo limites 100 no
+limitadas es más el estilo que quedó
+eso ha quedado siendo ya y team mate reducir los de 10 a 6 y también está trayendo 10 si
+querés sacarle captura eso otra la chicago reducir es algo que no podemos imitarlo pero no me puedes
+inicial css si capaz que me quedo algún tipo ahí chequeo o si quieres o sea está bien porque eso
+en agua y me había dicho que cuando que utiliza el renderizado no tenía pasión la librería re
+interesante que supuestamente la mejora el mejor a cómo poner los componentes no para no tener que
+hacer cálculos con el navegador pero la programa la tenemos pero ahí este team main tiene que ser
+6 y company limit tiene que ser 6 también o 3 peso por ti lado eso creo que se está recalculando
+con el tema de las cartas que están arriba no claro sí sí sí eso no pasa nada pero está pero
+pero lo que no puede pasar es que te traiga una cantidad si hagamos que el team main te muestre
+3 y company también te traiga tipo 3 si el usuario quiere poner más pero por default mostramos 3
+vamos a traer
+bien bajemos un poco quito y vamos a mostrarle el chicharron acá encontramos otra cosa cuando
+vamos a company para tratar de editar vos acá ya hiciste el get entonces ese que te dijo te trajo
+el count y te dijo cuántas compañías tenés en total 6 y entonces se supone que vos acá te
+dijo tenías 20 compañías por ejemplo no todos los cinco páginas de a 3 porque lo que deberíamos estar
+es vídeo muy grande este modo o sea que como muy espaciados en water y no sé qué te dijo santi con
+esto pero no del tamaño del modal en sí no me dijo nada tenía comentarios de tipo del select y eso
+pero de la modal en sí no había que reducirlo un poquito ponerlo un poco no se está como que creo
+que quedó muy blanco ahí ya se puede reducir un poquito de esa nota este también para el otro del
+selector ahora lo echamos pero ahí el problema que tenemos es que cuando vos haces el listo o
+es que eso debería ser 100% lógico a nivel de vaquen porque va a nivel de fronteras porque
+vos ahí lo que deberías hacer es ya sabes que son 20 entonces lo único que hiciste fue el selector
+y 20 y ya está o sea es como que todas y es tipo un booleano vos tendrías que enviarle lo que son
+todas o sea y voy a saber que son las 20 porque voy a tener el costo pero mira hace clic en cuando
+si hay en el selector cuando se explica en el selector lo que está pasando es que se está
+cargando se está llamando a 100 caro vuelve a pedir todo vuelve a pedir todo y no debería
+ser necesario debería ser algo totalmente lógico lo mismo para el editar porque en realidad uno
+necesita volver a pedir eso lo que es más en el editar pasamos a
+editar a ver qué es lo que sucede es editar el time que ya tenés que ir
+y el espaciado el espaciado blanco queda bastante ancho
+más que nada por en el alto digamos que vayamos al editar agarrate un time y de arriba aquí que
+quita te lo trae papá vamos a editarlo no no sólo las compañías perdona
+sí
+vamos a ver seleccionada hace views select a ver si pasa está bien ahí tenemos el mismo
+y no se va para ver las seleccionadas es como que está cargando está eso puede ser que el
+tema que para verla seleccionadas sí o sí tenemos que que mandarle alba que
+capaz que no con el límite 100 que se ve que tal es el tipo que ya quedó pero ahí
+tendríamos que sí o sí porque tendríamos que comparar lo que ya tiene el usuario precargado
+viene con ciertas compañías y mandarle porque vos acá podés capaz que quitar cosas que ya tiene o
+agregarle nuevas y no tenemos ahí tipo como toda la data de las compañías porque al estar paginado
+si seleccionó una de la página 6 si no tendríamos que guardar en memoria lo que va seleccionando de
+la página 6 7 8 tipo toda la data de las compañías para cuando yo haga view selected mostrarle el
+tipo de compañía el nombre etcétera por eso habíamos dicho de hacer un ento y nuevo que
+es el select es que está ahí abajo que es el que hace como el update con la diferencia de ti que es
+el nuevo caso si yo selecciono una nueva se guarda en memoria no sí exacto una nueva que no está
+precargada en el back en sí o sea la carga la precargada de lo que en sí la guardas está exacto
+entonces ahí en views select
+y volvió a aprenderlo
+no es decir de no enviar select es está llamando a company de novia select
+esto aquí que para que lo entiendan contato tiene el editar tiene la complejidad de que
+vos pensemos lo siguiente un team mate tiene cinco compañías seleccionadas de esas cinco
+compañías seleccionadas ya están guardadas en base de datos o lo que quieres hacer es
+vinizar este disabled con los tenemos para darle al team en 10 entonces esas cinco quiere sacarle 2
+y agregarle 3 y entonces qué es lo que hacemos jonathan nos trae del back-end las que tiene
+seleccionada y nosotros lo que vamos a hacer es guardar en memoria que es a 5 ya sacaste 2 y
+agregaste 3 que estaban afuera vamos a que no estaban seleccionado todos los lo que vas a guardar
+en memoria lo que le vas a enviar a jonathan es decir bueno también a que agregaste 3 sí y saca
+y sacaste dos de las que ya tenía seleccionada no es que le vuelves a enviar todas de nuevo las que
+tiene que setear se entiende eso voy con un ejemplo más cortito pongamos que el 20 o sea
+vos tenés cinco compañías y queremos modificar de las compañías hasta tanto le diste la compañía 1
+y 2 está lo que vos querés hacer es sacarle la compañía 2 y agregarle la compañía 3 bueno le vas
+a enviar de nuevo la compañía 1 no le vas a enviar de no la compañía 1 la compañía 1 ya está
+seleccionada por lo que lo vas a decir es te envió la 2 y la 3 te envío saque la 2 y te envío agregué
+la 3 ok entonces de esa forma nosotros lo que hacemos es solo enviamos la enviamos lo que
+remueve es y
+lo que agregas no antes lo que hacíamos en el point anterior lo que hacía es si vos sacabas
+algunas y agregadas algunas te volvía a agregar las que no se modificaban te volvía enviar todas
+de nuevo en este caso teníamos la 1 y la 2 saque la 2 agregué la 3 te enviaba de nuevo la 1 y la 3
+ahora lo que hacemos es sólo te enviamos sacamos la 2 y te enviamos agregamos la 3 para la 1 no se
+modifica y este evitamos eso
+ese problema ahí también zona el selector debería hacer mucho más sencillo porque el selector lo que
+debería hacer es tipo enviar un buleananche son todas y no enviar la red completo de todos los
+hay diz no sé cómo está funcionando bien chequeo creo que envía envía creo que funciona así como
+está no es un 0 pero que envía todo es lo que lo que tengo claro porque supongamos que koshen
+y dice lo que está enviado porque el tipo sí claro el tipo si selecciona todas me da a tales
+seleccionar todas aquí que bien y dale select a la selecta y abajo en todo el botón verde select
+está darle guardar bajo el todo a ver fíjate que envió en esa query por las dudas ahorita
+la previó la responde es perdón el pelo de hilo viste te dijo agrega una para este caso que son
+dos no pasará se entiende chicos pero si fueran mil estaríamos agregue mandando mil side y eso es
+un peligro la idea es que seleccionas toda te envió un juliano y el procesamiento pesado no
+lo haces en el celular o navegador de clientes y no lo haces en el este en el servidor bien
+bien hago esa modificación 3 zona fíjate esas cosas y esas cargas de 100 obviamente
+hace
+y dijimos no era sí y 23 y compañías traigamos traigamos 3 y 3 está por default traigamos 3 y
+achiquemos para que 3 no se muestre más ventas de lo mismo con los tímetros a los tímetros traigamos
+3 o sea va a dejarlo como está el team a los tímetros de arriba del todo está lo consta bien
+y lo vamos bien si éste creo que está trayendo 6 por fin ahí dice página 26
+esos teammates hagamos que traiga 3 creo que yo ya está trabajando eso sigue en contactarte con
+él y decirle que la idea de team 8 es que cargue 3 y si el tipo quiere página además de página
+perfecta trabaja en esas cosas y que fernando necesito que
+igual de todas maneras estos son cositas del selector que yo no hagerás liberado
+el selector es el selector que leh
+es que lo haga quemando un booleano lo que es y que lo que nada él sí sí sí sí no más bien que
+pasa después nos va a ser útil para para la otra parte porque también si nosotros hacemos selector
+así de lo que tiene seleccionado lo que sea tenemos que facilitar esa búsqueda o sea si
+lo que hablábamos y el tipo selecciona 999 de forma manual está bueno está ahí no nos queda
+otra y bueno y recemos reza malena para que funcione pero digo este si es el caso es el
+menor de los casos si el tipo quiere aplicar cosas de abache es grande o sea y hay cosas que
+nosotros no podemos el tipo tiene 900 compañías si quieres seleccionar 300 a mano y bueno va a
+tener que enviar 300 allí si no hay otra y ahí no tenemos manera pero que le limitemos cuánto
+puede estar por bache pero un caso más
+correctos es el tipo tiene que hoy en día lo tenemos el tipo tiene 80 compañías selecciona
+selector no vamos a enviar los 80 y vamos a enviarle un booleano que diga aplicar esto
+para todos y listo bien perfecta también eso es el cambio de modelo que te dije que si el
+tipo tiene permisos globales y bueno ya es un truco ni se ni ni creamos las tablas del
+otro el tipo que confía bien perfecto liberado son muy bien nos vemos
+bueno esto esto es un poco lo que yo les decía el otro día y que tenemos que ir trabajando en
+optimizar las cosas porque realmente estamos creciendo entonces nosotros necesitamos poder
+soportar estas cuentas sino lo que pasa es que nosotros creemos crecemos en clientes sí y como
+no optimizamos las cosas o la estructura a nivel de base de datos el sitio empieza andar lento y
+la solución empieza a acercarse a gastar más el servicio cuando en realidad es que nosotros no
+tenemos la solución para las cosas esto es lo que pasaba en empresas grandes que empezaron a trabajar con microservicios
+con Netflix, AMS, lo que sea y después el mismo Twitter y después empezaron a dar cuenta que era una facilidad
+porque no tenían desarrolladores que optimizaran los desarrollos sino que la solución siempre era
+sumar gente y hacer todo y separar y delegar en servicios más chiquitos entonces al final era un
+problema ustedes encárguense de los electores y de los empty state
+si esto de teammates ya tienen un poco la idea o sea pueden ser críticos ahí pero necesito que me digan el
+estatus de los electores y los empty state que hagan pruebas y eso esto de teammates dejémoslo
+a que Jona trabaje y lo trabaje un poquito más ok la idea es que ustedes pueden ahí fernando lo que yo les decía es que pueden probar
+contra develop y ir chequeando contra develop viendo los empty state que pueden hacer
+la idea de esto es paginar pensemos que tenemos muchos clientes hay clientes que lo que hacen es
+dejar el sitio abierto por ejemplo otro día tuvimos un bug increíble que le pasaba a un cliente que
+tenemos en dev era que el tipo deja toda la computadora 24 horas prendida entonces está en el sitio
+y me decía lo de QR no me están dando yo entraba a dev y me andaba lo nuevo claro el tipo no recargaba la página
+algo tan sencillo como eso no recargaba la página y literal habían consultas por ejemplo de la parte de
+banking que se hacen tipo pooling porque todavía no hemos optimizado eso entonces piensen que tenemos gente que
+gasta nuestros recursos al pedo como eso podemos tener una cantidad además de ramiro
+de los inventos que debe hacer entonces nada ahí lo importante es poder optimizar todo lo que podamos hacer
+y por eso vienen todos estos refactores y de su lado pónganse 100% críticos o sea abren la network este tipo de issues que yo encontré
+si mirá acá está haciendo un paginado a la concha de la madre esto no, esto no va
+nosotros tenemos que limitar un poco esas locuritas para evitar problemas de sobrecarga de base de datos
+ok bueno eso no más las pr del email y la pr de
+permisos? ¿En qué están Kike y Tatto? La de mi mail, creo que te la envía vos si no me equivoco,
+si no le erre al channel. ¿Y Tatto la de permisos está enviada por PQES? Está bloqueada por el tema
+de seguridad. ¿Trajiste de velo y no te anduvo? No, de hecho saqué captura de que se trajo
+efectivamente el bien de velo. ¿Y volviste a correr? Ya, ahora lo he dicho y te digo.
+Y con la otra de Kive, no, sí, la de Tatto de Kive pasa lo mismo. Algo que estaba comentándole
+a Kike hace un rato es que tengo dos PRs de los test, ¿qué hago? Porque calculo que las voy a
+tener para eso de las 5 por ahí, las dos PRs de los test.
+Y entre eso y las interacciones con Copilot, 5 y media tendría las dos PRs de los test. Son como
+7 Airways que se testean de la PR que hiciste vos. ¿De cuál? La de los QRs. ¿Te acordás, Santi?
+La PR que introduce todos los QRs. Bueno, está, a ver, intentá adelantarle el mayor trabajo que
+puedas a Kike y lo continúa Kike. Está, no tenemos mucha, no tenemos otra opción.
+Entonces, por ahora, este testeo manual queda a manos de Kike, entonces, ¿o...?
+Sí, hagamos eso, o sea, si vos los tenés tan liquidados, hagamos eso. ¿Les parece?
+Queda crear la descripción y eso. Está, o sea, si podés darle una mano en el testeo manual, eso se organiza en ustedes.
+Lo libero para que se organice. Yo voy a verlo de bloqueo.
+Ok.
+Bueno, Río.
+Bueno, hasta luego, entonces.

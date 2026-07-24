@@ -1,0 +1,248 @@
+te dejo grabar. Vos configurás
+SSH, no me acuerdo cómo hacerlo,
+¿tá? Y vos configurás
+que SSH, cuando
+vos clonás los repositorios de GitHub,
+los clonás con un subdominio.
+Por ejemplo, Tatato, literal, podés poner Tatato,
+lo que sea. En vez, o sea, le das
+clic clon, copiás el link,
+para ese link le ponés como un subdominio.
+¿Tá? O sea, un dominio adelante,
+que es con un punto, ¿tá?
+No me acuerdo cómo es. Yo, por ejemplo, le ponía
+work. Entonces, cada vez que clonaba
+un repositorio con work,
+cuando hacía los commits,
+me los tomaba como que eran de Tatato.
+¿Tá? O sea, como que eran
+del usuario del trabajo.
+Sacando esos commits, me los ponía como que eran de esto.
+Yo lo que necesito es que usted
+tenga, más o menos, como un set de Visual
+Studio, de todos los otros, de todos
+los proyectos del site y esas cosas,
+¿tá? Este,
+de Tatato. Y ahí
+manda las PR, ¿sí?
+Eso es lo que necesito. O sea, que vos te clonás los repositorios
+de Tatato, vos mandás las PR y movemos
+Tatato. ¿Tá?
+¿Qué te pareció el cronograma de tareas que te creé?
+O sea, me parece que es
+un poco mejor. Porque primero, agrandamos
+los puntos, agrandamos
+los puntos, ¿tá? Y segundo,
+vos podés decir, bueno, hoy profundizo,
+hoy hago unas poquitas,
+¿sí? Porque la idea
+es eso. O sea, yo prefiero 10.000 veces
+dejar registro de los profundizos,
+¿tá? Y agarrar
+más los poquitos. Porque nosotros lo que tenemos que
+hacer hoy en día es como que
+estar en todos lados, ¿viste? Tener base en todos lados.
+Y después lo que vamos a hacer es que esas bases crezcan.
+¿Tá? Y así lo veo yo.
+Y eso con respecto a los test unitarios.
+Entonces, por eso te digo, yo prefiero que vos
+agarres un 70, 80 de esos puchitos,
+¿tá? Y después los profundizos
+los dejamos porque va a haber tiempo pasarlo.
+Y esa cosa, Guillermo,
+no es la diferencia. Pero nosotros
+estamos tranquilos con los puchitos,
+¿tá? Y después los profundizos
+es, bueno, si sobra tiempo, agarrás profundizo.
+Mejor, si tenés que hacer todo un sprint
+de test de profundizo de Tatato, lo sacás
+tranquilo, te lleva
+a los 30 puntos de TOC.
+¿Tá?
+¿Tá?
+A mí no me calienta
+que me envíes lo de Tatato en cualquier
+momento. O sea, lo de Tatato yo no te voy a hacer
+seguimiento. Necesito que lo envíes. O sea, que
+lo liquides. Si vos lo querés liquidar un fin de semana,
+si vos le decís, bueno, está un fin de semana, le dedico
+5 horas y mato todo esto.
+¿Tá?
+Mi consejo
+es que las cosas complicadas
+no las agarres de Tatato.
+¿Tá? ¿A qué voy con
+esto? O sea, las investigaciones
+y esas cosas, no. Porque yo quiero,
+a Tatato, darle tareas para
+el rol que está teniendo, que es tipo soporte.
+¿Entendés? Y tampoco quiero
+que todo el esfuerzo que vos realmente
+haces en descubrir algo parezca que es algo de Tatato.
+¿Tá?
+Sí, porque yo lo que le brindo a Guillermo
+de Tatato es, Tatato, me pasa
+reporte a mí informal y
+ayuda a ser parte de CUA
+y test unitarios. ¿Tá?
+Nada más. ¿Sí?
+Es eso. Exacto.
+¿Tá? Yo lo que necesito
+también es que vos me seas sincero.
+Si algún es primo, me decís, che, no, me estás llegando.
+Lo que sea, yo tengo que ver.
+¿Tá? Cómo vamos a hacer. ¿Tá?
+O sea, si pasan dos sprints que no llegamos,
+yo tengo que buscar a otra persona.
+Pero si podemos remarlo, mejor.
+¿Tá? De nuevo, la idea
+de las tareas de Tatato, que sean las tareas
+pelotudas, las tareas que realmente vos las sacás
+con Chaje PT en un rato. ¿Tá?
+Este...
+Y es eso. Y también le damos una
+infladita, como hicimos ahí. Le damos una infladita
+y, bueno, peloteamos un poco.
+¿Tá? Es eso. Y obviamente,
+tenés que decirme enseguida si hay algo que cambia
+o se complejiza. Pero bueno.
+Eso de mi lado.
+¿Tá? Avísenme si tiene algún problema
+con esto. Yo tengo que cerrar el sprint.
+Me voy a bañar, porque hace dos días que no me baño.
+¿Tá?
+La verdad,
+estoy asqueroso.
+No.
+No, no.
+Es una migración del site.
+Pará, pará, pará, pará, pará.
+Lo de Cronjo
+del site.
+Bien, bien aclarado.
+La tarea es en el worker.
+¿Sí? La migración
+se hace desde el site. Pero yo te recomiendo
+que no hagas una migración desde el site.
+Lo que vos tenés que hacer es correr el worker.
+Le das npm run dev al worker.
+Y si vos te fijás
+en el repositorio del worker,
+hay un script para insertar Cronjo.
+¿Tá?
+Si vos vas al worker, hay un SQL
+para insertar Cronjo.
+Que literal son el nombre del método.
+Ahí en SQL,
+ser new Cronjo.
+¿Tá? Ahí, por ejemplo, lo que estás diciendo es que
+se corre cada cinco minutos.
+¿Sí? Porque Cronjo tiene esa nomenclatura.
+Vos decís la frecuencia
+y después tenés el nombre del método.
+¿Tá? En tu caso sería
+Stripe no sé cuánto.
+Recomiendo que pongas que se corra
+una sola vez, para que no se corra
+varias veces y no pueda hacer cualquier cosa en de velo.
+¿Tá?
+Y si querés, para hacer pruebas, lo que vos me podés decir,
+cuando lo tengas armado, me podés decir
+Santi, eliminate un usuario de Stripe,
+¿sá? De una compañía que
+exista,
+o eliminate dos o tres,
+o creás tres compañías y yo lo que hago
+es les elimino el usuario de Stripe. ¿Sí?
+Eso lo hago yo.
+Es decir, para el correo tanto, tanto, tanto,
+eliminá el usuario de Stripe en de velo.
+Y después corrés el Cronjo y nos fijamos
+si los creó. Exacto.
+No porque en realidad nosotros
+tenemos una arquitectura
+de lasaña,
+que es una arquitectura de capas, en cada
+uno de los tres servicios. ¿Qué es lo que
+corresponde hacer en todos los servicios?
+¿Tá? Usamos un patrón
+arquitectónico, Layers, que se llama,
+que si te fijás,
+en realidad, cuando llega una request,
+un Cronjo, lo que sea, pasa por
+un controlador, ¿tá?
+El controlador lo que hace es recibir el input
+o la información y ordenarla
+para pasarla al lenguaje del
+la función del controlador es como recibir
+el input, ordenarla, hacer
+validaciones de lo que es
+el input, ¿tá? O sea,
+la conexión que recibe,
+¿tá? Y luego para poder dejarla limpia
+para que se pueda pasar internamente.
+¿Tá? O sea, lo que hace es eso. Fíjate que vos,
+por ejemplo, en los controllers vos recibís
+un body, recibís parámetros, yo ordeno
+todo eso, ¿tá?
+¿Sí? Y lo paso
+de cierta forma, ¿tá?
+Si te fijás en Cronjo Controller,
+literal lo que hace es, bueno, recibe
+información básica y la llama al método.
+¿Quién es el método que tiene
+la lógica en sí, la validación,
+la capa intermedia,
+que se llama
+capa de servicios o capa de
+business logic, lógica de negocio?
+¿Tá?
+Esa capa es la que tiene validaciones lógicas.
+Recibe la información,
+¿tá?
+Recibe la información
+y después lo que hace
+es, cuando necesita
+información de lo que salvamos,
+¿tá?
+Cuando agarra esa información que
+salvamos, nosotros, fíjate que
+el servicio no es el que se contacta,
+con lo que serían los backing services.
+¿Qué son los backing services?
+API, Stripe,
+Postgres, Dynamo.
+¿Quién es el que tiene la conexión
+y el código para contactarse con eso?
+Los repositorios.
+¿Sí? Entonces nosotros tenemos,
+todos los repos siguen esa capa
+de lasaña, ¿tá?
+Donde vos tenés una especie de controlador,
+el controlador es eso, es como que
+recibo la información de afuera, la limpio
+para que la podamos trabajar. El servicio
+hace los chequeos de esa información,
+y consulta a los registros,
+¿tá? Del repositorio,
+sin saber cómo están implementados, consulta
+y dice, che, mirá, ¿y esto qué tenés acá? ¿Qué hace?
+Traeme tal cosa, o envíame
+mail, o lo que sea. Y ahí es donde los repositorios,
+¿tá?
+Se encargan de trabajar.
+¿Sí? No, no, no,
+no, cada uno es único de cada
+repositorio, según las necesidades
+y cosas que surjan
+cada repositorio. No se repite.
+O sea, eso es importante.
+Disculpe.
+Cada uno es único y cada uno tiene sus cosas.
+Pero bueno, vamos arriba
+entonces.
+Tenemos eso. Fijate
+dejar configurado lo de Tato, a ver si necesitas
+alguna manito más, y quedo a la orden.
+Me hace grito.
+Vamos arriba, chiquiquito.

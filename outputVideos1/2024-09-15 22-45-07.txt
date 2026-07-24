@@ -1,0 +1,597 @@
+Yo te doy clases gratis a vos
+O sea, te doy años de clases
+Después la vendés, hijo de puta
+Entonces, lo que vamos a hacer ahora es lo siguiente
+La metodología anterior, en el after lo que hacíamos era un restore
+En el asterisk lo que hacíamos era un reset de cada uno
+Ahora volvemos al Sambo Reset
+Que era la idea original que habíamos pensado con Martu
+Y para los casos que tengas Cognito
+El stab de Cognito
+Cuando vos haces sandbox.stab
+Lo que estás haciendo es crear un stab dentro del sandbox
+Para que quede ahí adentro
+Entonces cuando vos mandás Sambo Reset
+Lo hace para todos los stabs que vos creaste
+Lo que vamos a hacer con el Cognito Milware Stab
+Es crear un stab fuera del sandbox
+Y de esta forma lo que estamos haciendo es
+Que cuando hacemos ese reset
+Del asterisk
+No resetemos ese Milware
+Que es súper tedioso
+Porque fíjate que nosotros creamos ese stab
+De Cognito Milware
+Y después tenemos que hacer todos esos proxy require
+Para modificarlo
+Fue la manera que encontramos en su momento
+Que te digo más
+Te digo más como súper agregado
+Con el prototype que hicimos de Cognito
+Capaz que podríamos hacerlo mejor
+Pero por ahora
+No es el core de lo que tenemos que hacer
+Y tenemos mucho tiempo
+Mucha más cosas para solucionar
+Y esto anda así que
+Pero bueno
+Pero a lo que voy es que siempre
+Se puede ir mejorando
+Y cada vez logrando mejor las cosas
+Entonces vamos a hacer lo siguiente
+Todos los asterisk
+Que tengas ahora
+En las dos PRs que vos tenés de create
+¿Sí?
+Ya dejalos con este formato
+En las PRs de create
+¿Sí?
+Los casos que tengan Cognito
+Le cambiás sandbox por Sinon
+Como hicimos ahí en la línea 30
+Y le agregás
+El asterisk
+Lo dejás con una sola línea
+Va a ser más sencillo ahora
+Porque va a ser más copiar y pegar
+La única diferencia
+Que los aster
+Que usen Cognito Milware
+Después que haces un restore
+Deberías hacer ese reset
+¿Tá?
+Esa es la única diferencia
+¿Bien?
+En el reforma
+Cambia de nada más que
+Sinon
+Exacto
+O sea que si vos en el asterisk
+Tenías 500 cosas
+Ahora va a quedar más sencillo
+Y eso va a facilitar
+La creación de nuevos tests
+¿Tá?
+Creo yo que vas
+Vas a facilitar
+Porque
+También vos
+Vas a estar más tranquilo
+De que
+Nosotros también
+De que
+Todos los tests
+Todos los
+Todos los comportamientos
+Que vos seteaste
+Esa test
+Se están reiniciando
+Y no se duplican
+¿Tá?
+Y graba y no escucha
+¿No?
+Está cansado
+Yo te dije
+Claro
+Te dije
+Te dije que en realidad
+Esto
+Es la idea
+Para cumplir
+Con first
+De la independencia
+La I
+Te va a encajar un tiro
+Es como el alumno
+Que
+Que
+, que está
+Al final de la clase
+Te dice
+Ay, esto
+Bueno, está
+Bien
+Entonces
+El procedimiento
+Ahora va a ser el siguiente
+Corrija lo del create
+En bien
+En las PRs
+Enseguida
+¿Tá?
+Así ya la probamos
+Y eso
+Y cuando mergemos
+Lo del create
+Vamos a volver a correr
+Los
+Las GitHub Action
+Para que garanticen
+Que con los cambios
+En las nuevas PRs
+Anden todo
+¿Se entiende?
+En teoría
+Si vos arreglas
+El create
+Te va a quedar
+Ya quedarían andando
+El backoffice
+Y el site
+Entonces las nuevas PRs
+Ya yo me quedo tranquilo
+Que andan
+¿Sí?
+Y si no
+Ya lo corregimos
+¿Bien?
+Entonces
+Procedimiento
+Corregir el create
+Y después lo otro
+¿Tá?
+Este
+Y avíseme después
+También
+Si tiene algún cambio
+A nivel documentación
+Yo
+Ah, aguante un segundito
+Un corte
+Guía
+Guía usuario
+Salía mucho
+Hace noche
+De prensa
+Estuvieron
+Únicamente
+Las funciones
+¿No?
+Claro
+¿Viste?
+Acá tenés que
+Estaría bueno
+Que agregues
+Esto de
+¿Viste?
+Acá
+Esto que acabamos de hacer
+Que lo modifiques
+En el
+En la guía test
+Esto
+Todo esto que acabamos de hablar
+Que lo modifiques
+Que comentes
+El after each
+Como es
+¿Tá?
+Este
+Eso
+Bien
+Bueno
+¿Tá?
+El validation error
+Hay una variable genérica
+Que dice validation error
+Está bueno
+Que utilicemos esa constante
+Porque
+¿Sabés por qué?
+También
+Está bueno
+Que utilicemos esa constante
+Porque si yo ahora
+En vez de validation error
+Te devuelvo
+Papas y goñatos
+¿Tá?
+Vos como usás la constante
+Se actualiza automático
+En test
+¿Se entiende?
+Entonces está bueno
+Ya hay una constante
+Ya hay una constante
+Para validation error
+Status
+No
+De response
+No, no
+Bajá
+Estás bien
+Response
+Dentro de const
+Responses
+Arriba
+Arriba
+Arriba
+Ahí
+Source
+Subí
+Validation error
+Línea 5
+Después hasta tenemos
+Que investigar
+Pero esto va a ser
+Después que salga la B1
+Si podemos detectar
+Los casos en particular
+Porque
+Fíjate
+Todos
+Bajá
+Todos esos son errores
+Particulares
+Que nosotros tiramos
+Mirá el credit draft
+Tira todos esos errores
+Pero son errores internos
+Eso después tendríamos que verlo
+Si podemos
+Pero bueno
+¿Tá?
+Este
+Hay muchas
+Hay tantas cosas
+Cada vez que
+Y cada vez que abrimos algo
+Se estafa
+Una
+Vos fijate que
+También es lo que te decía
+Hace dos sprints
+Que estamos con los test unitarios
+De credit draft
+Por eso también
+La importancia
+De los test de regresión
+Ahora vamos a poder
+Los test de regresión
+Nos van a dar cierta tranquilidad
+Para poder ir más tranquilos
+Con los test unitarios
+Este
+Que eso va a estar bueno
+Porque los test de regresión
+Quieras o no
+Bueno
+Chequean
+Más en tu end
+Todavía
+¿Sí?
+Las pruebas unitarias
+Bueno
+Chequean todas esas validaciones
+Que hablamos
+Que
+Que tendrían que chequearse
+En el backend
+Entonces
+Yo creo que cuando sacamos la V1
+Va a quedar algo pendiente
+Pero después
+Fijate que vamos a tener
+Una V1
+Con un backend
+Repo lenta
+Super testeado
+Entonces
+Todo esto nos va a dar tranquilidad
+O sea
+La importancia
+De todos estos mecanismos
+Es que nosotros
+Cuando tengamos la V1
+No tengamos que estar
+A las 5 de la mañana
+Que nos esté llamando
+Y
+O sea
+Que tenemos la tranquilidad
+Y que cierta calidad
+Estamos entregando
+El código
+Entonces
+Y con
+Y con lo
+Y nos salvamos
+De hacer pruebas
+De gest
+De frontend
+Y eso
+Con las pruebas de regresión
+Después
+Después vamos
+Después te tengo que seguir puliendo
+Ya para el siguiente sprint
+Te tengo que seguir puliendo
+Ahí con temas de
+Ya tenés casi
+El sprint armado
+¿Vos?
+Porque ya moví
+Todas las tareas
+Este
+Y actualicé
+Puntajes
+Este
+Pero te tengo que seguir puliendo
+Ahí
+Porque tenemos que ver
+Temas de diseño
+Y esas cosas
+Este
+Sí
+Cuando se sume
+El diseño
+Ahora vas a
+Todos vamos a tener contacto
+Con ese
+Ese hijo de puta
+Que lo vamos a laburar
+Como negro
+Pero
+Pero todo
+Pero vos también vas a tener
+Por la parte de test
+Para validar cosas
+A ver si están mal
+Entonces
+Está bueno
+No
+Además por ejemplo
+Algo que yo te decía
+¿No?
+Está ahora
+Porque estamos hasta las bolas
+Con toda regresión
+Y esas cosas
+Pero vos me detectaste
+Por ejemplo
+El error de los socios
+Eso estaría bueno
+Que yo te diga
+Está aquí
+Que dale
+Arreglalo
+Está mal
+Estamos con otras prioridades
+Hasta las pelotas
+Que tenemos que taponear
+Pero a lo que yo te digo
+Es que ya empiezan a aflorar
+Una cantidad de cositas
+Que
+O sea
+O sea
+Vos ves lo que es este proyecto
+¿No?
+Estás viendo solo el server ahí
+Tenés abierto solo el server
+Únicamente el server
+Falta abrir todo el client
+Y eso que todavía
+Apenas vamos a arrancar
+Con el backoffice
+Que vamos a duplicar
+Y crear 500 cosas más
+Este
+Nada
+Hay mucha cosa para hacer
+Y eso está bueno
+Y nos da
+Nos da tranquilidad
+O sea
+Y hay muchas maneras
+De mejorar
+Y automatizar
+Y todo eso
+Qué lindo que anda
+Ese sitio la puta
+Bueno
+Vos sabés que
+Vos podés generar
+Un
+Subí arriba de todo
+Podés generar uno
+Que ponés el
+First name
+Y ya te
+A mí
+Yo completo el first name
+Y ya me autocompleta
+Todo el
+Piorinfo
+Qué demás que les carga
+La banderita de Uruguay
+Y todo
+A ver
+Volvé para atrás
+¿Qué?
+A ver
+Poné
+Poné
+Poné uno más largo
+No
+Valida
+Valida
+A ver
+Crima
+Pero no entiendo
+Por qué con un solo
+Dígito
+A ver poné un solo dígito
+Dos
+Está raro ese flujo
+Porque
+Son cosas a veces
+De programación
+Que pasan
+¿No?
+El frontend
+Es lo que yo te digo
+O sea
+Si vos te complicás
+Con el backend
+El frontend
+Es otro mundo
+Sí, sí
+Hay que chequear eso
+Está raro
+No sé por qué
+Dos dígitos
+Y si cambiás
+De país
+Está raro
+Che
+Pero si ponés
+Otros números
+Te quedan rojo
+Es raro
+Que con dos dígitos
+Ande
+Pero te deja pasar igual
+A ver
+Qué raro eso
+Eso es lo del partner
+Sí
+El número de teléfono
+Es delicado
+Yo le pego una bichadita
+A ver
+Está bien
+Sí
+El número
+El número de teléfono
+Es de media delicado
+Puede ser que no esté
+Actualizando el error
+Porque tuvo bastantes cambios
+Eso
+Puede ser que haya quedado
+Corrupto
+Porque es raro
+Porque ponés cualquier
+Número de teléfono inválido
+Por más que te pongan rojo
+O sea
+No está validando un choto
+Solo está validando
+Dos caracteres
+No, no está validando nada
+Está
+El error es más sencillo
+Todavía
+No está validando un choto
+Está
+Vio que yo le puse ahí
+Una cantidad de comentarios
+Que faltaban validaciones
+Y eso
+Está
+Sí, tranqui
+Este
+Yo mañana voy a estar para
+Intentemos a ver
+Si estas dos PRs
+Las podemos matar hoy
+O sea
+Las PRs de código
+Qué está quedando
+Sin contar eso
+Las PRs de código
+Después
+Después de las de código
+Creo
+Queda solo la de
+Company Draft
+Y
+Y la documentación
+Está
+Intentemos hoy
+Hoy que está Martu
+También eso
+Va, mañana también
+Va a estar Martu
+Pero
+A ver si podemos yo
+Matar esas dos de código
+Y ya matamos
+Ponemos en done
+Dos
+Dos más
+Este
+Y después
+Tranqui
+Mañana seguís con la documentación
+Con los ajustes
+Yo estoy todo el día
+Así que
+Me vas mandando
+Y está
+Yo mañana voy a chequear
+También
+Cuando
+Si vos me decís
+Que quede pronto
+Yo chequeo lo que es
+Los test de regresión
+Y eso
+Dale
+Te culpáis
+Con el tema
+De las plantaciones
+Uno había contado
+Muy por arriba
+Que tenías
+Una especie de archivo
+Que moquea todo
+Super salado
+O no
+Una plantita
+Que no tenía nada
+Por ahí
+No me acuerdo
+No
+No
+No
+Lo que te dije
+Es que vos tenés
+Que capaz que podés
+Moquear el init
+Directamente
+Tenés que ver
+Cómo moquearlo
+Pero vos fíjate
+Que donde se hace
+El new de
+Securalize
+Capaz que podés
+Moquear eso
+Eso es lo que te había comentado
+Dale
+Vamos arriba
+Quieto
+Estamos al habla
+Hasta luego

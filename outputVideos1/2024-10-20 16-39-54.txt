@@ -1,0 +1,498 @@
+Ah, claro, si no nos olvidamos
+Primero, nombres
+Segundo, eliminar registro de backoffice
+Bien, así ya me queda
+Primero, claro, o sea
+Registro de backoffice porque no está
+Y segundo, los nombres del site
+De los archivos
+Chequear que sean estandarizados
+Es un bolazo, pero
+Que sean los mismos
+Ahí si vos entras al login
+Tenés un caso que es con minúscula y después otro con mayúscula
+Es el primero
+Sí, pero
+Yo voy
+Nada, yo lo quiero, o sea, sí
+Eso sí, no hay problema
+No estamos siguiendo igual
+Lo seguimos haciendo así
+Tenemos una falla
+En realidad no es en mayúscula, es todos en minúscula
+Sí
+Sí, en realidad deberían ser todos en minúscula
+Bueno, ahí está
+Bueno, está
+Eso, son bolazos
+Pero está bueno ya
+Si lo seguimos dejando pendiente
+No lo arreglamos más
+Ahí te podés hacer un script
+Que cambie
+Que cambie los nombres a minúscula
+Y los copia y los pede
+Un script con javascript
+O podés hacerlo manual
+Como quieras
+Sí
+Igual con los commits te salta
+Que cambiaste todo a minúscula y mayúscula
+Pero está, pero
+Y los de payment, pay new company
+¿Cómo lo estamos haciendo?
+No, no, en la otra que estabas en master
+Ah, eso es un software
+Se imagina en un momento de la noche
+Y te había cagado Santiago
+Sí, estos están bien
+Bueno, ayer me quedé hasta las 5
+Haciéndolos de regresión
+No, está bien, está bien, no tengo nada
+Esta hora que bueno
+Sí, sí, se terminó rápido
+Pero por eso, viste
+Todos estos mecanismos
+Son mecanismos que nos permiten, digamos
+Atrapar estas cosas, ¿no?
+O sea, que vos le metés, yo te curo
+Yo te meté, yo te curo
+Lo que sí también te digo es
+Es lo que ya hablamos
+O sea, yo, no me calienta
+Que vos me demores un poco más la PR
+Si necesitas un poco revisar
+Está bien que vos me digas
+Che, me fui a dormir
+En vez, hoy te levantás
+La revisás y lo chequeás
+No sé si lo hiciste, no
+Pero está, lo vuelvo a recalcar
+Que ese tipo de cosas está bueno
+O sea, nada, bolazo
+Pero el resto estaba todo bien, no veo
+Me parece que los casos son también
+O sea, que en esto sería
+Los ajustes serían
+Cambiar los nombres a minúscula
+¿Sí?
+Después
+Borrar los casos de registro
+¿Sí?
+Y también
+Borrarlos en el Excel
+Bien
+Y con esto está
+¿Sí?
+La otra creo que ya la probé
+La otra, la de Payment
+Que era uno solo
+Ya la probé y la marché
+Sí
+¿Está?
+Está
+Bien
+Está, lo de flujo de suscripciones
+A ver cómo lo hiciste
+Vamos ya a entrar ahí
+Está, bueno
+Ya tenemos el mismo comentario
+Por cierto, capaz que si te haces
+De un script es más rápido
+Sí
+File changer
+Bueno
+Ojo que hay unos que no tienen ni exitoso
+Ah, estos
+Estos dos
+Acá, acá
+Vais a saber qué se te pasó con la cabeza
+Con el inicio de sesión
+Pero está bien
+Está, eso
+Sí, ajustar esas cosas
+Y después creo que están bien
+Tengo, esto tengo que chequearlos un poco más
+Pero
+Pero están bien
+No me acuerdo del Excel
+El Excel ya lo vemos juntos
+Vamos a una revichadita
+Pero
+¿Cuál?
+Payment
+Sí
+O sea, en el de Backoffice
+En el de Backoffice
+Sí, Payment
+Es más o menos
+Más o menos lo mismo que el otro
+Exitoso
+A ver, pará
+Sí, está bien
+Está, ojo que
+También
+¿Dónde agregaste los casos en que utilizo una tarjeta existente?
+Acá
+Está
+Y tenés casos que uso una tarjeta existente
+Que
+Uso una tarjeta existente
+Que
+Eh
+, uso una tarjeta existente
+Que está registrada
+Pero falla
+Porque no tiene
+No, ¿por qué podría fallar por esto?
+Tipo vencida, capaz
+O una de estas razones
+Claro, exacto
+Pero es una tarjeta que ya está registrada
+Ponele que vos tenés tu tarjeta de crédito
+Que registraste para la suscripción
+Quieres agregar una nueva suscripción
+Pero a vos te bloquearon la tarjeta de crédito
+Porque sos un moroso hijo de puta
+Entonces
+O sea, y lo que haces es que
+Cuando vas a pagar y seleccionás esa tarjeta
+Te falla
+¿Cómo simulás eso?
+¿Cómo simulás eso?
+¿Cómo simular eso?
+Tenés que ir a cambiar tarjeta
+Tenés que ir a cambiar tarjeta
+Cambiar una tarjeta que no tenga pago
+Te va a dejar porque lo único que estás haciendo
+Es cambiar una tarjeta válida
+¿Sí?
+Pero cuando vayas a hacer un pago te falla
+¿Se entiende?
+Ok, luego
+Después hay que agregar
+Hay que agregar un pago simbólico
+Ah, claro
+Eso es lo que tenemos que hacer
+Un pago simbólico
+Eso tendríamos que agregarlo
+Cuando vos cambiás la tarjeta
+Deberíamos hacer como un pago simbólico
+Por eso prefiero agregarlo después
+Prefiero jugar con esa pérdida
+Y después agregarlo
+Después cambiarlo
+Pero cuando vos cambiás tarjeta
+Me gustaría hacer un pago simbólico
+Igual vos chequeás que la tarjeta sea válida
+O sea, en producción, ¿no?
+Pero está
+Pero está
+Ok, hay que agregar
+Ese caso o esos casos
+No, no, no
+Está igual
+Sí
+¿Y después qué más?
+Eso iría a suscripciones
+Sí
+Sí, a suscripciones
+Porque es dentro del flujo de suscripciones
+Vos dentro de una suscripción
+Podés usar una tarjeta que no tiene fondo
+¿Qué pasa cuando usás una tarjeta que no tiene fondo?
+Es un caso normal
+O sea, vos querés pagar una suscripción
+Con la tarjeta que tenés y
+Claro
+Y tenés un mango
+Ah
+Es más, ahí lo que yo
+Nosotros creo que lo que te sucede
+Es que te bloqueó la cuenta
+¿Qué pasa?
+Va
+Creo que te bloqueó la cuenta
+O sea
+Si vos cambiás
+Mirá, podemos
+Andate al test card number
+La tab esa
+¿Eh?
+A la tab de navegador
+Test
+A la que dice test card number
+Ahí va, bajá
+Bajá
+Aquel hijo de puta tiene el HDR para bajar
+Bajá
+Bajá
+Para bajar
+Los callos de locas
+Sí, los pagos rechazados
+Pará
+Bajá
+Bajá
+Bajá
+Es
+Rechazo después de la asociación
+Ahí va
+Vamos a hacer una cosa
+Seleccionala
+Andate a
+A tu compañía
+¿Qué querés que haga?
+Ahí
+Suscripciones
+¿Por qué no está lento?
+Capaz que tengo que refrescar la página
+A ver, refresca
+Tenemos que
+Ya sé, perdiste el token
+¿Hace cuánto que no lo refrescas?
+Hace bastante rato
+Ah, por eso
+Ahí está
+Tenemos que agregar algo
+de eso que cuando refrescás
+cuando haces una solicitud y no tenés
+algo, te saque para afuera del sitio
+eso es algo que tenemos que hacer
+anda a editar y
+pone agregar new card
+y agrega eso
+bueno, está
+ojo que todo eso lo ve guille
+bueno
+todos los name on card
+los ve directo guille, ojo
+pone nom, yo pondría
+kike test y un número
+como para ir guardándolo
+enrique test
+ojo porque todos esos nombres que pusiste
+los ve guille
+porque guille no sé por qué entra a mirar la consola
+de desarrollo en stripe
+en realidad guille entra a mirar
+como se llama
+entra a mirar
+el
+está ahí polenta
+y hace click a veces en el desarrollo
+para romperme la bola
+y lo cómico es que todos los mails
+de fallo y eso le llegan a él
+entonces está
+no pasa nada pero digo
+cuidado con las boludeces que ponen
+dale update payment method
+ahora para
+teniendo suscripción
+hijo de puto
+hoy vamos a hacer
+un curso de
+un curso de antiverga
+andate al
+a
+a pejeadmin
+pejeadmin?
+no, no lo tengo
+me cago en la puta madre
+bueno ta pero ese es el flujo
+que tendrías que hacer
+no es que nada, no, no, cerrá pejeadmin
+ese es el flujo que tendrías que hacer
+ta
+eso
+vos haces ese flujo
+y ahí me va a dar error
+anda
+vos las cuentas que creas las te estás anotando
+como lo manejas eso
+no, no realmente
+ta estaría bueno que las anoteas
+porque yo cada tanto te las puedo reiniciar
+vos me podés ir
+la idea es que eso también lo podás hacer vos a futuro
+pero vos me podés ir
+Santi, borrarle todas las compañías adicionales
+que tenga esta cuenta
+para que yo las pueda crear de nuevo
+entonces ahí vos te manejas con cierto
+con cierto grupo de cuentas
+cuando se hace testing
+yo eso no te lo comenté
+cuando se hace testing se suele utilizar
+tipo correos
+vos podés usar Melinator o eso
+puedo habilitarlo únicamente para
+para el ambiente de desarrollo
+si
+que vos podás usar un Melinator o lo que sea
+que te abre como una cuenta de test donde te llegan las cosas
+entiendes
+si
+entonces ahí vos lo que hacés es
+registrás y como que tenés un orden
+por ejemplo siempre es
+kike1234 arroba Melinator
+o algo por el estilo
+ta
+mmm bien
+yo esos correos los bloqueo en producción
+vos no podés usar correos en producción
+pero puedo habilitarlos para test
+cosa de que vos hagas pruebas
+y chequees esas cosas
+entonces ahí vos cada tanto me decís
+che mirá de esta lista borrame tales cosas
+yo cada tanto hago limpieza de la base de datos
+o sea de dev y stage hago limpieza
+borro
+tiro el aviso
+o sea tendría que tirar el aviso
+otra vez no lo hice pero digo
+agarrar y borro todo
+y es más Martina está creando el script para hacer limpieza
+obviamente eliminás todo lo que
+todo lo que es ingresado por el usuario ¿no?
+claro
+claro
+bien
+bueno
+ta pero es eso
+y otra cosa es
+usted probó
+probó el flujo de suscripciones por un teammate
+bueno eso es lo que yo quiero
+por las dudas
+¿cómo lo hacemos eso?
+yo estaba acá ¿verdad?
+yo puedo
+¿cómo el teammate compra una?
+el mismo
+el entras te registras como teammate y te aparece
+mirá entras como ese usuario
+si pero no tengo contraseña
+no tengo contraseña
+o no
+¿no te envió un mail a ese correo?
+si
+si
+no
+ahhh
+pera puta que la p...
+ah
+Martina se miró pa
+no igual la resetie la resetie
+la resetie
+la resetie
+la resetie
+entonces
+a ver
+pero vos entras con esa cuenta y te aparece en la suscripción esta aparece de las compañías que lo manejás
+puta madre
+ponés forgot password ya probás que ando
+si pero no me llegó un mail
+puta completa pero
+no si pero está completando
+no me llega
+pam
+ya es raro
+no me llega
+ya es raro
+lo voy a chequear eso
+lo doy doble cheque después
+debería llegar
+capaz que sabés lo que vamos a hacer que
+ese mail
+para con el código y eso lo empecemos a enviar nosotros
+me pasó hace un rato lo mismo
+o sea se ve que llegó correctamente el de la contraseña temporal pero no si vos tenés la contraseña temporal
+pero no si vos querés resetear la no te llega un carajo
+no llega a ver que no esté llegando
+al usuario principal
+tampoco
+no
+eso les tendría que llegar únicamente
+porque eso te tendría que llegar únicamente
+únicamente a tu cuenta
+que tenés una laptop
+la laptop del trabajo
+laptop del trabajo
+es una mac bola macbook
+esta m1
+está vos tenés torre no pero
+si no te tuviera yo para trabajar en esto te hubiera o sea
+guille la idea era comprarles mac a todos
+creo que podemos invertir en otra cosa o sea futuro digo
+pero
+este
+es lo más práctico que hay
+claro nada que ver a lo que es una torre con todos los chichis y todo pero
+es lo más cubo que hay
+y es en cualquier lado
+trabajas y andan volando en las macs
+para desarrollo y eso es lo mejor que hay
+para
+dame un segundito estoy viendo los servicios
+a ver si puedo hacer alguna configuración rápida no corte por favor
+estamos procesando solicitud
+usted es enrique no
+enrique me puede decir su apellido
+pelo tu
+proba ahora
+que querés que haga
+recuperar la password o no
+nada mierda
+y te llevo
+no
+olvidarse tu contraseña
+ay
+qué es eso no pero dónde estás estás en das back posta
+estás en la
+por pre
+raja ahí te van a pegar un tiro
+cerrá eso
+cerrá eso
+hijo de puta
+no va a ser que nos echen a todos
+a ver se
+deslogeate
+ahí
+a ver si
+no pará
+te llevo un mensaje?
+si
+no
+no
+si te
+olvidaste el inbox
+qué cosa
+ahí recargando no te llega nada
+no
+esto es debo o es page?
+esto es debo
+vamos a ir dando
+esta configuración de doble
+ay que toqué
+no sé que toqué
+bueno está no sé vamos a tener que realizar eso vamos a tener que pasar esos mails de recuperaste la contraseña y eso
+a nuestro lado
+cuando cree las tareas voy a voy a
+crear una de esas porque
+está
+pero es eso
+sí
+este después lo intento arreglarlo con la cuenta arroba das bank si debe poder recuperar el correo
+no sé por qué cognito se pone choto
+pero
+ya lo voy a cancelar para o sea voy a poner una tarea para que
+ningún todos los mails lo enviemos por el mismo lado ya sea recuperar contraseña generar droga lo que mía la sea lo voy a enviar a nuestro lado
+ok
+nada por cognito ni nada
+está cagando
+está cagado
+comunista
+comunistas

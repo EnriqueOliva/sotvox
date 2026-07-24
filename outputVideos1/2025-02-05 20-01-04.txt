@@ -1,0 +1,13 @@
+hay algún test unitario
+que tenga un test o dos
+cosas que sean fáciles de cambiarlo
+algún test unitario que sea
+bien chiquito
+moví todos los tests de Company Graph
+porque no estaban siguiendo con el nuevo formato
+en el site
+vos tenías
+todos los tests de Company Graph
+y tenías junto el GET
+no sé qué pasó ahí
+estás en el site

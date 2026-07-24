@@ -1,0 +1,44 @@
+de mi vida contato yo le mandé hasta tanto una división de tareas que él estuvo trabajando que
+nos fue pasando un chat necesito que te vida contato esos son bloqueos los bloqueos está
+ahí está con los mandos detallados pero los mandos lo que hay que hacer
+la idea es que lo hagan con un contenido a que lo hagan primero para que manden todo
+en back-end y después van a fronteras y que se dividan a mitad cada uno coordinado voz y
+las tareas pero lo que yo le pongo las tareas es también lo importante que yo le decía es como son
+bloqueos de acción yo quiero que primero las hagan en back-end en una rama y después las hacen en
+front-end en otra rama entonces ahí validan que en front-end están viendo bloqueos y que en back-end
+están viendo bloqueos porque si ustedes hacen back-end y mergean o hacen front-end y mergean
+nunca testean back-end
+igual es para que lo revise mañana pero son todos este acciones que tienen que bloquear
+los usuarios y que les pase a datos pero te lo digo los únicos usuarios que pueden hacer esas
+acciones para que encuentro el hilo con datos los únicos usuarios que pueden hacer estas acciones
+son admin son los tres yo se lo expliqué a tratar pero la idea es ustedes mandan
+algunos bloqueos de back-end mandás vos y otros bloqueos de back-end você manda a TATO
+después en otra PR por separadas manda los bloqueos de las acciones en front-end y TATO también
+quiero que sean dos PR separadas para que ustedes hagan como decía para que hagan las pruebas entonces el backing queda seguro y el front-end queda seguro no tenemos problemas
+¿si?
+Después de eso tenemos que ver con que seguimos
+no se si teníamos algo en el backlog
+yo tengo estoy listo y...
+en clase, Santi, y eso podemos hacer, capaz que, no sé, ahí buscar una manera de...
+Ah, porque, y que acordate que vos tu horario es hasta las 8, yo pensé que vos te sumabas
+solo, pero, está.
+El tema es que cuando nosotros controlamos tan rígidamente el horario, creo que...
+No, yo no te rompo las bolas, pero digo, está, pensé que, como hoy, pensé que estaba...
+No, pues, no, estoy haciendo las dos cosas, pero capaz que una ayudita, no sé, te pido
+ahí si se puede...
+No, no, no, sí, sí, sí, tranqui, tranqui, yo te lo digo para que mañana, porque mañana
+no quiero que estés en la mañana en el PED, por eso te pasaba cosas, pero chequeate, está
+todo escrito ahí, está, si querés, mañana lo volvemos a ver, en la daily y eso, pero
+para que lo vayas viviendo con Tato, porque creo que no quedaba, no me acuerdo si quedaba
+algo importante en el backlog después de lo de Conti, que tenga más importancia que
+eso de Tato, como vos estabas con eso, no te lo había dicho, era eso nada más.
+Ok.
+¿No?
+Este...
+Después algo te...
+Tengo, tengo cosas, algo te voy a inventar, probablemente vos te vas a empezar a trabajar
+con el módulo de notificaciones, a nivel detalle, eso nomás.
+Ok.
+Y bravo.
+Vamos arriba.
+Hasta luego.

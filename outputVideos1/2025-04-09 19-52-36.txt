@@ -1,0 +1,144 @@
+Ahí, está ahí, baja un poquito, venía 51, si tiene pattern se valía, yo lo que decía era eso nada más, no me acuerdo dónde es que vos hacías esto, pero en sí, yo lo que te dije, el comentario iba relacionado a, se supone que este problema de la decodificación es un problema particular que nosotros tenemos por el serializador,
+entonces ahí la idea sería que nosotros no, o sea, que nosotros no cambiemos, hagamos un pattern en particular para el serializador, porque tenemos un tema de que el serializador lo está cambiando, nosotros el pattern debería ser el mismo que el frontend.
+Serializador, vos decís el sanitize.
+Sí, el sanitize, ahí va, porque de alguna manera lo que está haciendo es también le agrega como una serie, le agrega una cosita.
+Entonces, esa cagada que está haciendo el sanitize, es algo externo, entonces ahí yo lo que digo es, bueno, está, pará, antes de llamar al chequeo del pattern, en el caso que tengas, vos deberías hacer ese decode, yo no sé cómo antes se hacía eso del pattern, cómo se hacía.
+De muchas maneras, ¿no?
+Se hacía ahí antes.
+Mi pregunta es, ¿puedo decir que esta función tiene que ser idéntica a la del site?
+Tiene que ser un código.
+Sí, no habría justificación para hacer la distinción, no encuentro justificación para hacer la distinción, porque en sí debería ser el mismo util, ¿por qué debería ser igual cuando lo único que debería hacer es sacar el ampersand, el apm?
+Ok.
+No, no, pero te pregunto, ¿por qué decís que debería ser distinto?
+Capaz que vos me decís, no, mirá, necesito una función que lo que haga es me diga si tiene un ampersand.
+Pues ahí es, es otra cosa.
+Pero si es una función que lo que hace es lo saca, debería ser la misma.
+Ahora, si vos me decís, no, es una función que, no que lo saca, sino que es una función que si está lo, que si está devuelve true y si no está devuelve false, es otra cosa.
+Estamos hablando de la función de code ampersand que está en el headpress.
+Exacto.
+Yo ahí lo que le digo es, pará.
+¿Cómo estaba el código?
+Mostrame el código antes, mostrame el código antes, ¿qué se hacía?
+Ahí abajo de la lupa.
+Abajo de la lupa.
+Ahí va, entrada update validation esquema.
+Creo que es este, no, no, helpers, helpers.
+Hacé clic en helpers.
+Ahí va.
+Está.
+Esto no sobrescribe el valor.
+Lo único que hace es devuelve si está mal o no, ¿correcto?
+Esto no sobrescribe valor, lo único que hace es se fija si es correcto, ¿sí?
+Sí.
+Si es correcto o no, porque si el esquema es inválido, tira un error, ¿me entiendes?
+O sea, a lo que voy es, donde usted ya había sacado el ampersand, está bien.
+Eso para mí no hay que sacarlo.
+Yo lo que puse es, vos no deberías, o sea, vos lo que, si vos en otro lado sacabas el ampersand, está perfecto, o sea, está bien.
+Yo lo que te digo es, porque esto es solo un validador, esto lo que hace es chequear que los parámetros sean válidos en base al esquema.
+Entonces acá, vos lo que tendrías que hacer es decir, vos, pará.
+Si a este parámetro le pusieron un ampersand, ¿sí?
+Te lo saco del carajo, ¿sabes?
+Para validar el pattern.
+Es eso nada más.
+No sé si me expliqué.
+A ver, vamos de nuevo, vámonos.
+Esta función validateTubedateCompanyData, lo único que hace es validar que la información que llega es válida, ¿sí?
+No sobrescribe la data, o no debería sobrescribir la data.
+Es una validación estática del esquema.
+Lo que usted está haciendo está bien, hay que arreglarlo un poquito, pero lo que usted está haciendo está bien.
+Porque lo único que vos tenés que hacer es, si es este caso en particular, ¿sí?
+Le saco el ampersand.
+Pero yo redoblo la apuesta.
+Te digo, hagamos una cosa, como este es un validador genérico, o por lo menos lo que busca es ser un validador genérico,
+hagamos un chequeo de que si tiene ese ampersand, lo reemplace para validar el pattern.
+Solo para validar el pattern.
+¿No?
+Lo reemplazamos genérico, ¿se entiende?
+Pero entonces esta función hace una modificación.
+Yo lo que te digo es, no, no hace una modificación.
+Yo lo que te digo es, anteriormente si miramos la parte en rojo, vos hacías un test sobre el value, ¿correcto?
+Sí.
+En teoría el decodeAmpersand, si no tiene decodeAmpersand, no hace nada.
+Y si lo tiene, lo reemplaza.
+¿Tiene sentido lo que estoy diciendo?
+Sí.
+Ahora, el decodeAmpersand no tira error.
+Sí.
+Entonces, es más, hagámoslo más sencillo todavía.
+Adentro del test, antes de pasarle, en vez de pasarle value al test, creás un value, una constante, valueWithoutAmpersand,
+porque la idea de esto es hacerlo genérico, no que tengamos ciertos pads, porque esto es un validador genérico.
+Decimos, o sea, literal, arriba de ese if, del if de la línea 50, estamos mirando a la derecha.
+Creamos una constante y para todo le sacamos el ampersand, porque esto es genérico.
+O sea, en teoría...
+En teoría, a ver, dejáme pensar.
+No, no, teoría de las pelotas.
+Teoría de mis pelotas.
+Teoría de mis pelotas.
+Dejémoslo así como está, cambiamos el nombre a la variable valueToTest,
+to, este, sanitizeValue o algo así.
+Y ya está, y está perfecto como lo hiciste.
+Puta que te mato.
+Lo que sí estaría bueno, en vez de valueToTest podemos value...
+Bueno, sí, valueToTest.
+No sé, me gustaría...
+¿Qué sé?
+Sí, valueToTest, está bien, porque en realidad vos estás haciendo un testeo.
+O, yo pondría, no quiero poner algo como decir que el value está sanitizado o sin excepciones, no sé, ¿qué se te ocurre?
+Y lo que sí me gustaría, porque, ¿qué pasa?
+Con esto, vos deberías, en donde vas a guardar estos valores, sacar el sanitize.
+O sea, vos esto del currentPath lo deberías tener en otro lugar, ¿no?
+Porque hay un lugar donde vos, que vos lo estabas sacando, que estaba bien.
+Creo que era el Company Repository.
+Está, ahí va, eso.
+Ahí.
+¿Veníamos a mostrarme cómo estaba antes?
+Sí, sí, sí, está bien, está bien.
+Está.
+Yo lo que te decía, es que dentro de ese else if de la línea, miremos en la izquierda, 395, vos agregues un if interno.
+A pensar, ahí va.
+Vos ahí tenés value.
+O sea...
+En realidad, vos vas a entrar al caso del if, del else if de un define.
+Yo lo que quiero es que dentro de la línea, el de la derecha, 401, vos contemples este caso y cambies lo que tengas que cambiar.
+¿Se entiende?
+Que no sea un else if aparte, sino que esto ocurra acá adentro.
+Exacto.
+O sea que, y lo que quiero realmente, una vez que hagas eso, es que esas constantes de Company Primary Name, Secondary Name y Final Name,
+tanto acá como en el otro lado,
+salgan de una lista que deberíamos tener en las constantes, en las constantes del servicio.
+Cosa de que hoy o mañana queremos agregar una excepción más que no tenga ampersand, y vamos y agregamos en esa lista y se modifican los dos lados.
+¿Se entiende?
+Hasta no tener duplicado acá.
+Vos habías hecho algo que quedó muy bueno, que es eso con include, que te fijabas si estaba incluido en alguno de la lista.
+Eso me gustó.
+Lo que quiero es que esa lista, como ahora se va a utilizar en dos lados, lo tengamos en una constante.
+Está pishi.
+¿Y cómo se llamaría la constante, más o menos?
+Este, yo qué sé, le podemos poner allow with ampersand search path, o algo así.
+Qué enfermo, estaba pensando en lo mismo.
+Ah, una boludez de esas.
+Y con eso, ya dejamos esto más prolijo, y lo seguimos manteniendo genérico.
+Y hoy o mañana, y es como que bueno, las excepciones están controladas, pero no alteran el flujo normal,
+y el validador sigue controlando.
+No estoy hablando de las excepciones, pero no alteran el flujo normal.
+Está bueno intentar mantener esa paridad en la actualización y validaciones y estructura del frontend y el backend.
+Pero ayúdeme, ¿por qué esto no funciona?
+A ver cómo me estoy comiendo.
+Les muestro los casos, si quieren.
+Pero pará, pará, hagámoslo, hagámoslo, no sé por qué no funciona.
+Pero hagamos los ajustes, y después miramos por qué no funciona sobre lo que ajustamos.
+Porque si no, por no ver, se va a debuggear algo, que después va a cambiar.
+Pero hagámoslo, hagámoslo, no sé por qué no funciona.
+Pero hagámoslo, hagámoslo, hagámoslo, no sé por qué no funciona.
+Pero hagámoslo, hagámoslo, hagámoslo, no sé por qué no funciona.
+Pero hagámoslo, hagámoslo, hagámoslo, no sé por qué no funciona.
+En teoría deberían dar todo, pero pará, vamos a hacer los ajustes y después perdemos tiempo en los tests.
+Porque en teoría está bien, está bien lo que vos estás haciendo en los tests.
+Entonces hagamos los ajustes, y vamos a ver si persisten con esos ajustes, y es eso.
+Ahí va, lo estoy mirando, póngase a hacer los ajustes.
+Vamos a helper, lo hacemos juntos.
+Vamos a marcar y le doy 5 minutos para que lo haga con la cámara apagada.
+Vamos a marcar y le doy 5 minutos para que lo haga con la cámara apagada.
+Vamos a marcar y le doy 5 minutos para que lo haga con la cámara apagada.
+Primer punto.
+Primer punto.

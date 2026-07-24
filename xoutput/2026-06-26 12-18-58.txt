@@ -1,0 +1,444 @@
+cuando el cliente
+si la contraparte
+rechaza la triangulación
+la de contraparte está
+se le notifica al vendedor
+y no a la contraparte o se le notifica a los dos
+la contraparte
+rechazó la operación y acá
+por lo que veo le llega a
+el vendedor solamente
+perfecto
+entonces este está
+después el cliente paga
+y agrega comprobante, le llega a los dos
+enviando fondos
+le llega a los dos
+enviando fondos
+empleado
+y vendedor, si a los dos
+y si vos rechazás, cuando estás enviando
+fondos, si cancelás la operación
+le llega a los dos
+no, estos son los que yo
+te digo que son iguales y se mezclan los flujos
+pero en ninguno
+está llegando a los dos, así que
+o sea que
+estos mails clave
+ninguno está funcionando
+bien
+estos de acá, ninguno está funcionando
+y la cancelación tampoco
+bien
+bien de bien
+te animás a mostrarme
+compartime pantalla porfa
+y agregame como teammate
+así a mí también me llegan los correos
+te animás
+y vamos a hacer la demo ahora
+y vamos a ir probando cada mail
+que nos esté llegando
+dale
+vale, sin vuelta
+y ya está
+si, dejame actualizar el guión
+con los últimos cambios
+y ahora si podés darnos una mano con eso
+y Kike, si podés bichar lo de
+lo del otro así vamos paralizando
+el tema es que acá necesito saber
+qué correo
+si podés compartirme pantalla
+con los dos usuarios que tenés creados, Mart
+bien, ahí tenés uno
+y el otro, ¿dónde lo tenés?
+está ahí, perfecto, bien
+entonces agregame como teammate
+dame un segundito
+el correo
+agregame como teammate
+acá
+me te pasé uno
+y ahora agregame como teammate este
+eh, contraporte sí
+el mismo, pero
+es más, está pending approval
+pero, ¿cuál, cuál, importa cuál vendedor
+y cuál es su provecho?
+agregá
+sí, es más, vamos a lo mejor
+mejor, vamos a lo mejor
+sí
+ahí está, vamos a lo mejor
+vamos a lo mejor
+este va a agregarlo al vendedor
+así me queda
+y el otro agregálo al comprador
+eh, contraporte
+¿se sale?
+bien
+eh, contraporte sí
+el de
+Nahue, ¿te animás a tener media activa
+la base de datos?
+¿tenés postgres activo?
+sí
+está, tené, tené en dev
+si podés fijate los counterparties
+triangulation de dev
+¿está?
+así probamos el flujo media rapidito
+ahí debería haberte llevado, hola
+los correos de los teammates
+perfecto, sí
+me llevó todo
+genial
+entonces, procedamos a crear un counterparty
+eh, creo personas, voy a ir
+sí
+mirá el solicitud
+está bien
+ah, te olvidó
+así no voló
+yo, eh, Nahue, miráte este counterparty que se creó
+el status
+si podés hacer una, una, un select
+busca, seleccionale la, la otra counterparty
+mando
+acordate la consistencia de los nombres
+sí
+está, pero yo ya los voy a tener creados
+no los voy a crear en vivo
+los quiero usar
+está, pero hay que crearlos en vivo para la demo
+en la demo hay que mostrar
+no porque es un quilombo
+ya están creados para la demo
+Marti, en la demo hay que mostrar
+yo sé los nombres
+en la demo hay que mostrarles
+cómo crear en vivo
+si es necesario eliminamos todas las
+no, sí, sí, pero el que voy a usar para el flujo
+ya está creado
+está, pero hay que mostrar
+no voy a usar el que voy a crear
+sí
+pero le voy a poner el nombre a cualquiera
+está
+Igual acá le puedo poner a cualquiera
+Sí, sí, cualquiera
+Necesitamos
+Aprobalo
+Perfecto
+Y si yo voy acá
+Bueno, llevo una mierda
+¿Te llegó?
+¿No está como a ti, May?
+A ver, ¿a quién le envió?
+¿A quién le envió?
+Este no es el correo que acabo de hacer
+Le manda a
+El vendedor
+El vendedor
+Igual lo está enviando
+Llegó porque estás en la lista
+Sí, sí, sí, es Melineto
+Pero lo está poniendo bien
+Está genial
+Ahora, Nahue, ¿te animás a ponerlo pendiente de nuevo?
+Bien
+Así lo cancelamos
+¿La triangulación, decís?
+El
+Contraparte y triangulación, sí
+Contraparte y triangulación
+Sería este último
+A ver, fíjate, recargado
+¿No?
+A ver si te aparece como pendiente
+¿Has enviado, Marty?
+Manda contraparte
+Está, rechazale
+¿Y a ti te llegó mail?
+No, el otro fue más rápido
+Estoy seguro que este lo hicimos
+No, pues
+O sea, está acá
+A ver, Nahue, rechazala
+Poné pendiente de nuevo
+Daré
+¿Tanto?
+Marty, solo anda para atrás y para adelante
+No necesitas recargar
+Pará
+Ahí sí, recházala
+Está mal
+Puede ser que
+Ese mail de rechazo
+Solo lo reciba el Source
+No el Destination
+Pero, Marty, vos ahí tenés los dos teammates, ¿no?
+No está llegando para ninguno, entonces
+Sigamos
+Por favor, Marty
+Creá una triangulación
+Montos fáciles
+100 y 10
+Por favor, no pongas eso
+Hay varios
+Bueno, hay 400 mil
+Entonces pone 500 y pone 1
+¿Por qué?
+Pone 500 y pone 1
+Ah, bien, ya, hay 500
+Pero si pongo 10 va a ser el número por 10
+Sí
+No va a ser
+No, perdón
+Acá me estoy salteando varios pasos, ¿no?
+O sea, esto no es la...
+Sí, sí, sí
+Sí, sí, sí
+Estamos viendo los emails
+¿Por qué 520?
+Pará, pará, pará, pará
+¿Por qué puse 520?
+Ah, pues está
+Pensé que había puesto 500
+No, estoy pidiendo números random
+Okidoki
+A mí no me llega una mierda
+Medinator
+Pero decime que a vos te llega
+A ver, mostrame
+¿El correo?
+No, pero hay que probarla
+No le va a llevar nada
+No, no, no, el correo, Marty
+El correo
+Bien
+Está
+Es
+Ahí va
+Mail de triangulación
+Creá
+Estado validando
+Anda
+Bien, está
+Sigamos para atrás
+¿Qué mail te llegó ahí?
+Tu operación fue completada
+Es por...
+Por las dudas probé trivedear
+Desde el worker manual
+Localhost
+Y si esa se manda
+Si le llega al worker se manda
+El email
+Eso de cuando finaliza una operación
+Está genial
+Bien
+Pará
+Bueno
+Marty, rechacémosla
+Naues, si podés
+Buscate la OTC Transaction Manual
+Esta de 500
+La de 500, bien
+Marti del VBO
+Marti, si podés del VBO rechazala
+¿La que acabo de crear?
+Sí, sí, se rechazó
+Llega algún mail
+Mail
+No, este es el que
+El que entiendo que no se está mandando
+¿Te animás a volverla para atrás, Nau?
+Voy a ponerla validando
+Gracias
+Ahí tendría que quedar
+A ver, Marti, de nuevo
+Aprobenla
+¿Aproba?
+Maravilloso
+Perdón, aprobala, aprobala
+A ver, mail ahora
+¿Tengo un mail?
+No
+No, esta es la otra que decía que no está
+No está, no
+No
+Bien, sigamos
+Aprobala
+Anda a compra
+Desde el otro lado y aprobala
+Este flujo es el único que no notifica
+No notifica, vos aprobas
+Y no notifica
+Está bien
+Ahora seleccionala de nuevo
+Ahí sí, acá ahora sí
+Debería notificar a ambos
+Ah, en este punto no
+Pará
+Hagamos una cosa
+Esa cancelemos la del BBO, Marti
+Para ver, validar
+Por las dos
+Porque también ahí se puede cancelar
+La triangulación
+Sí, dale, basurita
+Sí
+Ningún mail, ¿no?
+No está esperando fondos del
+Comprador
+No
+Nau, ¿te animás a volverla hacia atrás?
+A esperando fondos
+No, no, no
+Dale, a waiting funds
+Ahí tendría que estar en a waiting funds
+Andate al
+Al vendedor, Marti
+Al comprador de nuevo, Marti
+Pero acá no llegó mail porque no traería nada
+Pero apagá, pusiste a waiting fund
+Tiene que estar
+A waiting payment
+A waiting payment
+Es Nau, creo
+Ahí sale Nau, ok
+Nau, ¿pudiste?
+O, qué sé, complicó
+Nau
+No te habías entendido
+Hay que poner la triangulación en
+¿En pending?
+En pending approval
+O a waiting payment
+A waiting payment
+Ah, a waiting payment
+Ah, qué justo
+No estaba viendo si por alguna razón
+Desde el back office no se había mandado al evento
+Ah, y a waiting payment
+A ver, Marti, recarga
+Anda para adelante
+Cambia entre 20 y compra y debería estar
+Ah, ok
+Ahí está, listo
+Subí comprobantes
+Por favor
+A ver, dale, que he entendido
+Recibiste dos
+No, ahora bajó, ha vuelto
+El fondo ha recibido correctamente
+No, hace una hora, dice
+Hace una hora, baja, baja
+Hace cero minutos
+La contaparte aprobó la triangulación
+Los fondos ya fueron recibidos correctamente
+Está bien
+¿Y después cuál más?
+Tiene que haber uno más
+Otro para la
+No, no, no, dentro de ese, Marti
+Subí, baja
+Subí despacito, despacito, por favor
+Viste que te llegaron dos
+La transferencia correspondiente a la banca fue recibida correctamente
+Lo fondo se encuentra bajo resguardo
+Viste, ahí está uno al comprador
+Y la operación continuada de su proceso de compra
+No es necesario que realicen una acción adicional
+Esto es para el comprador
+Y bajamos un poquito, despacio
+Y esto es para el comprador
+La contraparte aprobó la triangulación
+Y los fondos ya fueron recibidos por Dasbank
+Está, genial
+Ahora vamos a liquidarla
+Perdón, vamos a refoundearla
+Y después vamos a liquidarla
+Desde el video
+Dale la papelerita
+A ver, pícate los mails
+Pedile a Nahue que la vuelva de nuevo
+Esperando fondos
+Voy
+Ahí el mail que le debería llegar es de
+La contraparte rechazó la operación
+Ahí el mail que debería llegar es
+Cuando apretó la papelera
+Cuando apretó la papelera es
+La operación fue cancelada
+La operación fue cancelada
+Dice, la operación fue cancelada
+Y se le envía la papelera a Dasbank
+Y se le envía a ambos
+Según el caso se le envía a ambos o no
+Dependiendo del estado anterior
+No sé cómo
+Estaba mirando cómo lo determinaba eso
+Sí, se miraba el estado anterior
+O sea, pero ahí Enrique no tenía el estado anterior
+Porque el estado ya cambió
+Entonces, para determinarlo
+Enrique miraba el estatus
+Y miraba si tenía
+Si el destinatario tenía recibos
+Ahí sabía
+Sabía si lo estaba llegando o no
+Marti, recarguemos
+Y nos vemos en el próximo video
+Y liquidemos la operación, porfa
+Liquidemos ya aún
+A mí me llegó el mail
+O sea, lo estoy probando directo en Postman
+Ese mail
+Con el evento y me llega
+Así que el código en el worker está bien
+Tiene que ser algo que está fallando
+Entre medio, capaz
+Ahí la liquidaste, Marti
+Quedó finalizada
+Nahue, ¿te animás a ponerla de nuevo enviando fondos?
+Que sería
+O sea, la lógica del worker
+Parece estar bien
+El tema es el Wacoffice
+Mejoras, pelota
+No voy a engordar
+No, awaiting funds
+Awaiting funds
+Pronto
+Ahí, Marti, ¿te animás a refoundear?
+Vamos a completar
+O sea, cancelala
+Y refoundear
+Y ahora ahí realiza la devolución
+Awaiting payments
+A ver, ¿qué dice ahí?
+Envía dos, ¿no?
+O sea, el problema que estamos teniendo
+Los graves problemas que estamos teniendo
+Es que por alguna razón
+Cuando liquidamos la operación no llega
+Cuando cancelamos la operación no llega
+O sea, no están llegando a los finales
+Pero están llegando a los intermedios
+Bien
+O sea, si no podemos arreglar esto
+Es una cagada, la verdad
+Es una re lenda verga
+No tengo otras palabras para decirlo
+O sea, mínimo
+La liquidación
+Si no, la liquidación
+No funciona
+Esto es una mierda
+No tenemos
+No tenemos sustento

@@ -1,0 +1,501 @@
+venido hablando con bastantes personas de la industria con respecto al tema de cómo
+encarar con el equipo la inteligencia artificial, porque lo que pasa es que nosotros a nivel
+de código tenemos 10.000 estándares, 10.000 cosas, usabis el estudio COD, lo que sea,
+pero cada quien utiliza la inteligencia artificial y uno de los mayores problemas que estamos
+teniendo es que el código que cada uno genera con la IA lo hace en base al conocimiento
+que tiene cada uno y puede ser que nos siga los lineamientos que nosotros tenemos a nivel
+de mi parte o de Martín. Entonces ese es el mayor problema que tenemos. Entonces, ¿qué
+es lo que puede hacer cada uno? Cada uno puede crear sus propios lineamientos, sus propias
+strong bases, como puedo decirlo, o su contexto para que...
+Tenga idea, por ejemplo, cómo crear test unitarios, cómo generar un componente en
+front y las buenas prácticas. Pero son los lineamientos que hacen ustedes, no están
+aprobados por nosotros. Entonces puede ser que hasta esos lineamientos bases estén mal.
+Es un muy buen punto.
+No sé, ¿y vos cuántas front manejás de contexto? ¿Cuántos contextos manejás base?
+En realidad uno solo, refactor, y tengo uno que...
+Hace tiempo que no tengo tareas así de frontend, pero tengo uno para frontend también con
+lineamientos específicos de frontend que no sé si... Sí, es más o menos lo que yo
+rescaté que probablemente no esté bien. Pero es muy buena idea.
+Vos estás usando Cloud, ¿no? Cloud Code, sí.
+Y lo tenés enlazado a la terminal, pero lo usás como si fuera Copilot, o sea, es casi
+lo mismo, ¿no? Como si fuera Copilot, pero no uso Copilot.
+Sí, claro, exactamente.
+¿Cuál es la diferencia de usar Copilot frente a Cloud Code? Para vos.
+Porque Copilot es su propio algoritmo, digamos. Tiene su propia forma de trabajar con lo que
+es el repositorio, según entiendo. Y no es tan óptimo como lo es Cloud Code. Cloud Code
+usa los modelos de Cloud, entonces es una cosa hecha para la otra. Sin embargo, no es
+como Copilot, es una mezcla. O sea, Copilot usa el modelo de Cloud, o sea, no es tan óptimo.
+Por eso todo el mundo habla de Cloud Code, Cloud Code, Cloud Code. Creo que lo más...
+Tengo entendido que lo más popular a día de hoy, por lo menos, es Cloud Code directamente.
+Ya sea la extensión de Visual Studio o usarlo en la terminal de Visual Studio. Cloud Code
+pelado, digamos.
+Porque yo estuve viendo que vos a Copilot podés aplicarle los mismos contextos que
+a Cloud Code y, según un análisis, obtener los mismos resultados que usando Cloud Code
+en cuanto a optimización. Por eso te preguntaba si en términos de uso vos habías notado alguna
+diferencia. Porque en sí, por ejemplo, vos a Copilot podés indicarle los contextos de
+PROM o lo que quieras, o sea, tenés todo eso y tenés los agentes. Entonces, lo que
+pasa con Copilot, igual que pasa con Cursor, es que por más que vos estés utilizando Cloud
+Code a un...
+A un...
+A un...
+A un...
+A un...
+A un nivel de abstracción, podés seleccionar cualquier otro modelo y tenés más tokens.
+O sea, con Copilot tenés mucho más tokens para utilizar que lo que tenés con Cloud Code
+directo. No sé, ¿y vos cómo te estás manejando con los tokens con Cloud Code?
+Mirá, yo de Cloud Code tengo la suscripción de 100 dólares. Y vos sabés que seguramente
+quizás sea por bruto. Por alguna razón yo nunca me llevé bien con Copilot.
+Intenté usarlo y vos sabés que no me ha dado mucho resultado. No lo he probado últimamente.
+Capaz que ahora funcione impecable, no lo sé. De lo que esto...
+¿Pero vos llegaste a probarlo con agentes?
+Creo que no. He estado intentando leer, viste, por fuera, así, cuál es la mejor herramienta.
+Eso que se dice, por ejemplo, en RAIL, que hay subforos específicos, viste, hay un subforo
+de Cloud Code y demás. Parece que lo... O sea, yo veo que todo el mundo habla de Cloud Code específicamente.
+¿Viste? Hay un subforo de Cloud Code y demás. Parece que lo... O sea, yo veo que todo el mundo habla de Cloud Code específicamente.
+No veo que lo usen con Copilot o incluso veo algunos comentarios no muy favorables
+a Copilot. O sea, veo que todo el mundo dice Cloud Code, Cloud Code.
+Mismo ayer el lunes, creo que fue en la ORT, que yo estaba en clase y un gurí dijo que
+trabaja en una empresa, que no sé qué, que la empresa ahora le dio Cloud Code a todos
+y los están obligando a usar Cloud Code y no sé cuánta cosa más. Pero me llama la
+atención que lo que tomó más tracción es eso, Cloud Code específicamente. Y como
+Copilot no... Yo no sé, esto es un tema medio complejo, capaz que hablamos de la ignorancia,
+pero tiene que haber una razón técnica para que de alguna manera Cloud Code funcione mejor
+que Copilot. A eso me juego yo.
+No, puede ser que con los 100 créditos tengas más tokens o lo que sea. Porque yo lo que
+estuve viendo es que literal utiliza la misma API que utiliza Cloud Code. O sea, entonces
+como que no... Es más, yo tengo la suscripción de Copilot con 50 dólares.
+Ajá.
+Entonces, yo lo que quiero hacer, porque vos con Copilot vos podés elegir el modelo
+que quieras.
+Sí.
+Entonces, si vos no te... Si vos... Algo que nos puede pasar es que esto está variando
+día a día, mes a mes.
+Sí.
+Entonces, hoy es Cloud Code, en su momento era GPT, en su momento era no sé quién.
+También lo que me gusta de Copilot es que vos podés seleccionar el modelo que quieras.
+Entonces, hoy o mañana sale el último de no sé quién, vos te pasaste para el último
+de no sé quién.
+Está ahí.
+Por más que lo uses bajo nivel de abstracción, lo utilizás.
+Algo que también está bueno es que vos lo tenés a nivel terminal, vos le hacés consultas
+al costado tenés como un chat, ¿no?
+Sí, en realidad es terminal, terminal. Literalmente, escribo Cloud en la terminal y se abre en
+el repositorio. Literalmente.
+Claro, pero... A ver, te animo a mostrármelo a ver si estamos...
+Exacto.
+Si yo... No, lo tengo corriendo al Wordpress.
+Claro.
+Ahí me llegó al límite, pero no. Ponele que ahí estaba viendo lo de los... Somovai.
+¿Te das cuenta?
+Claro, bueno, escribís en la terminal, terminal. Claro, es menos amigable también.
+O sea, también está la extensión.
+¿Y dónde tenés los agentes, por ejemplo? ¿Dónde lo configurás? O sea, o los prom base,
+contexto...
+Los prom base... Por ejemplo, esto. Este es el mío.
+Ah.
+¿Dónde los creaste?
+Los refactores...
+¿Dónde los creaste?
+En la instalación de Cloud. Son archivos Markdown.
+Ah, sí. Porque, ¿qué pasa?
+Pero lo que estuve viendo es que vos ahí, por ejemplo, trata Copilot un segundito.
+A ver si te...
+Creo que lo oculté, a ver. ¿Dónde lo tenés vos normalmente, Copilot?
+No, te abre Copilot. O sea, abrís Control-G Fit, o qué.
+Ahí.
+Viste que abrís el poquito más.
+¿Esto? ¿Dónde se pone? A ver. ¿Esto?
+Sí. A ver, ahí en más, ¿qué te pone?
+¿Esto?
+Sí, no, ahí tenés... Y después en Agent, en Auto, a ver, en vez de Auto, ¿qué te pone?
+¿Dónde?
+No, no, abajo, abajo. Te pone Agente, no sabés, Other Model. No sé por qué no te está poniendo los de Cloud.
+Ah.
+Habría que ver, ahí sí los tenés.
+Ahora lo... Puede ser que tenga desactualizado el Visual Studio. Porque ahí tenías los de Cloud.
+Ah.
+¿Y qué pasa? Y vos en Copilot, si vas a la esquina superior derecha, viste que tenés la ruedita, la torquita, vos podés tener los Prom File, podés Instruction Role, podés agregarle Skills, podés agregarle plugins.
+Yo hago lo mismo, claro, a mano, o incluso le pedís a Cloud mismo, que es un poco tipo Inception, a Cloud mismo le pedís Armasta Skills, Armasta...
+Claro.
+Armasta Skills, Armasta, lo que sea, y lo hace. Es bastante loco. Prom File.
+Claro, sí, sí, no, no, no. Está, y ahí lo que tenés es tipo para... Vos ahí, ¿cómo es el uso que tenés con Cloud Code con los 100 dólares?
+No, no, súper bien. Ahora, porque me fui un poco de Mambo, pero sí, sí, yo nunca alcanzo el límite, en realidad.
+¿Pero es el límite mensual o es el... cómo funciona ese límite?
+No, no, es ahora, justo alcancé uno, que se resetea literal ahora a las 2 de la tarde, o sea, es un ratito nomás, que es... pero no hay problema, es... es más, hace un...
+Mostrame los Markdowns. Mostrame los Markdowns, un segundo, cualquiera de ellos.
+Vale, sí, tengo que cerrar algunas cosas, creo.
+Creo que son exactos de todo.
+Le podés poner Arguments, que acá le podés escribir, amigo, ¿no?
+Sí, creo que es lo mismo, vos sabés que es lo mismo. Entrate a Copilot, y un segundito, entráte a la tuerquita, dale Promfile, arriba de ahí, New Promfile, ponele cualquier nombre, sí, ponele ahí, después lo borrás.
+No te olvides borrarlo, no te lo sumas a la pedra.
+Sí, lo mismo.
+Sí, tiene sentido. Y también sumarlo.
+Está.
+No, a ver, yo estaba usando Copilot y el MOBA.
+Copilot tiene una gran ventaja y desventaja, ¿tá?
+Te permite usar los modelos que quieras, ¿tá?
+Y nunca se te tranca.
+Viste que vos me decís que Cloud en un momento como que se te tranca, ¿no?
+Que se pausa, que llega a un límite.
+Claro. Copilot nunca se tranca. Nunca.
+Pero tenés un límite mensual.
+Entonces vos...
+O sea, yo... pero yo...
+Desde que he trabajado y lo he usado para todo, nunca llegué a un límite mensual.
+Es más, vos pensás que lo estoy usando para todo lo que son las reviews a las PR.
+Lo uso para las reviews a las PR de todos y lo uso para todo el código que yo manejo.
+¿Puedes preguntar en el chat sobre el código?
+Sí, sí, sí.
+¿Pero lo usaste?
+Sí, pero no mucho, porque...
+Eso es todo.
+¿Estás en tu casa o en la mía?
+No, estoy acá en mi casa.
+Estoy en la mía.
+¿Qué te iba a decir?
+Ahí lo que tenemos, Kike, es...
+O sea, es una ventaja y una desventaja.
+Porque el PRO...
+Yo, por ejemplo, estoy pagando el de 50 dólares.
+Entonces, con ese, lo que tenés después de usar cualquier modelo, tenés los agentes, lo tenés el chat integrado.
+El tipo te va generando todo el código.
+Y, por ahora, a mí me ha resultado bastante bien.
+Es más, yo estuve usando el Octopus 4.6 también.
+Sí, yo también.
+O sea, porque vos tenés el Sonet, el 4.6 normal y tenés el Octopus.
+Lo que yo quiero hacer es...
+O sea, me gustaría estandarizar la línea al trabajar.
+Entonces, capaz que lo que te pido...
+Vos tenés el PRO ahí.
+El PRO tenés menos tokens, pero podés usar el Octopus.
+¿Sí?
+El GitHub Copilot PRO.
+Ajá.
+Y, de nuevo, lo tenés en modo agente y no se te tranca.
+Podés pasarle imágenes y algo que está bueno, que a mí me encanta, que yo uso mucho, que le podés hablar.
+Entonces, vos le hablás y te usa.
+Y también se basa un poco en que...
+O sea, tenés el modo agente, tenés el modo consulta, podés usar el modelo que quieras, le podés hablar.
+Nunca tenés límite de token porque es mensual.
+Entonces, nunca tenés ese problema de que tenés que esperar a las dos que se reinicien.
+¿Está?
+Y, de nuevo, con 1500 tokens, para lo que nosotros hacemos, yo nunca tuve problema.
+Entonces, mi idea es que ustedes tengan el PRO, que creo que les da 100, 200 tokens.
+¿Está?
+No sé cómo es.
+Vamos un segundito, que voy a apuntar la GPT.
+Pobre contadera.
+Pero...
+Copilot...
+Claro.
+O sea, vos tenés como request premium.
+O sea, vos tenés request simple con Copilot y request premium.
+Pero nunca se te tranca.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+Pero nunca se te tranca.
+Entonces, con el PRO vos tenés 300 request premium, con tu usuario que vos sacaste de
+ORD, y después tenés 300...
+Y después con esto del PRO, te tenés 1500 request premium.
+Yo no he llegado a todavía las 1500...
+Porque tampoco siempre aplica la request premium.
+Pero yo no he llegado a la request premium.
+Al tope de 1500 request premium.
+Nunca.
+pero por mes o por día por cuanto es por mes por mes nunca ha llegado son 1500 veces escribirle
+por mes y esas 1500 no aplican todas las consultas y no aplican alguna porque si es algo sencillo no
+te da cuenta por mes no ha llegado a las 1500 vamos pensar que tenés que escribir de 1500
+veces por mes no sé ahí cuántos cuántas veces le escribís en un día a 1500 porque quiere decir
+que vos todos los tipos no trabaja todos los días técnicamente pero si vos 1500 vídeos 30
+sería que haces escribir tenés un chat de 50 mensajes por día si nosotros tenemos los días
+laborales sería 20 si quiere decir que serían chat de 75 mensajes por día y de nuevo esto
+nunca ha llegado nunca ha llegado nunca ha llegado nunca ha llegado nunca ha llegado nunca ha llegado
+se te tranca o sea te puede pedir continuar manual pero nunca se te tranca nunca se te va
+a trancar y lo bueno que tiene es que si sale un nuevo modelo siempre lo tenés está por ahora no
+frente a casarte con uno lo que te iba a decir es ahí no sé por qué no te está saliendo si es que
+falta falta bien darle una vuelta de tuerca hasta habilitar lo que yo lo que te diría es
+lo siguiente veo que el propio ingeniería es el mismo no importa si es copilot o cloud
+entonces una de las cosas que yo quiero empezar a trabajar despacito es empezar a subir a los repos
+los prompichen y vamos a todo lo que es el contexto entonces lo que nos está pasando con martina que
+perdemos mucho tiempo revisando prs de cosas que son iguales y todos están generando todo con copilot
+o chp teo curso lo que se está al final del día domingo entonces algo que acabo de ver ahora es
+necesario tipo estándar
+lo que es importante es que los propios ingenieros que utilicemos sean todos los mismos a la base sea
+lo mismo si yo que esté ahora todos vamos a seguir haciendo las mismas tareas y vamos a tener que vos
+y tener algo lo que te genera sí pero yo quiero que por ejemplo cuando generas un botón con algo
+de front end el propio ingeniería está aprobado por nosotros entonces en el contexto de utilizar
+a variar de ese todo todo de todos
+me parece que es algo clave y es lo que están haciendo empresas grandes empezamos a subir
+en la ingeniería de progreso después cada uno utiliza lo que quiere pero yo no quiero que
+yo no quiero que tenés justo un botón tenés input no me puedes definir un botón yo me sé el estándar
+de no me saques el coso de react en los tres unitarios
+no puede definir constantes hay constante revisar siempre si la constante no está definida a nivel
+de server y cosas los tres unitarios tienen que tener la triple a los tres unitarios tienen que
+variar los logos todas esas cosas es lo que yo quiero trabajar con el equipo o sea quiero empezar
+a decir bueno quiero que sea yo quiero que está tanto que genera tds hay tres va a tener que
+interactuar va a tener que hacerlo pero la base de ese propio ingeniero
+que se haga está hecha se entiende o sea necesito necesitamos llegar a ese punto porque
+o sea necesitamos como que actualizar lo que quería era decir bueno está todo el mundo
+usado para ellos y usamos los de copa y los veo que cloud code tiene los mismos propio
+ingeniería que tiene este mismo formato de ingeniería y tiene sentido por el copa del
+alto nivel utiliza esto
+Como te digo, yo lo utilizo bastante. Me parece mucho más agradable escribir ahí a la derecha
+que escribir en la terminal. Vos lo escribís ahí, le pegás imágenes. No sé cómo vos
+hacés para pegarle una imagen, por ejemplo.
+Sí, sí, es igual. Con Alt-B o le pasás la imagen. Sí, sí, funciona todo igual también.
+Pero en la terminal no la podés ver. Acá te quedás con un historial como si fuera
+una charla de WhatsApp. Ah, claro. No, solo el nombre de la imagen.
+Claro, yo lo que te diría es probate un poco. O sea, yo por vos también, ¿no? Porque si
+vos podés tener Copilot Pro, ¿para qué? O sea, si yo te pudiera pagar a toda la empresa
+Copilot Pro y obligar a todos que utilicen Copilot Pro con el Visual Studio, con las
+Pros Pro.
+Claro, claro, claro.
+No sé qué sentido tendría seguir vos pagando Cloud, te ahorrás 100 dólares, tenés 1.500
+del Cued, no sé, y estandarizamos. O sea, y bajamos, y bajamos, bajamos tablas y decimos
+vamos a copiar. Si vos me decís, no, mirá, noto diferencias o no me adapto, ta, y vos
+cada uno sigue con lo suyo. O sea, Nahuel usa Cursor, ta, que es más o menos lo mismo
+que Copilot.
+Entonces ahí el cambio no es tan duro. Utiliza mira Cursor. Este, Jonah usa Copilot. Yo es
+más, yo pagué con mi cuenta de Org que tengo Pro Copilot. O sea, no hice el truco de decir,
+bueno, utilizo el GitHub Pro con la cuenta de Org y contrato otra cuenta con Copilot
+Plus. Entonces ahí tengo las 1.500 para las 300 de Pro que tengo en Org gratis. ¿Entiendes?
+Sí.
+Nunca tuve esa necesidad.
+Eh, eh, de nuevo, o sea, es una cantidad de respuestas, es una cantidad de consultas
+que tenés que hacer por mes, ¿va?
+Eh, ¿viste, viste lo que dicen de que si algo es demasiado bueno para ser verdad es
+porque, es porque lo es? Yo, yo, yo, para mí tiene olor a que hay una razón para esto,
+¿viste? Esto de Copilot.
+Yo creo que en Org te estoy consultando a todo el mundo y están tirando, están, o sea,
+el tema, el único tema de Copilot son los toqueteros.
+El mensual.
+Ok.
+O sea, los 1.500 toques.
+Porque en sí la única razón es la de Copilot.
+Mmm.
+No tiene mucha ciencia. O sea, por lo menos yo lo que he escuchado es por ese lado.
+Eh, o sea, si te pones a razonar, vos estás pagando 1.500, Copilot Pro lo que tiene es
+que el Octopus te lo cobra por 3, ¿sí? Entonces es por, te consume por 3 la request, ¿está?
+Mmm.
+Y vos con Copilot lo que haces es le pegás a la cuenta de Org.
+Le pegás al Octopus y lo que está pasando es, vos con Cloud le pegás al Octopus y lo
+que pasa es que cada tantas horas se te tranca. Pero tenés ilimitado, ¿entendés? Ahí está
+la diferencia. Pero hasta ahora no ha sido así. Creo que, o sea, más allá de las features
+y cosas. Y yo lo que creo es que como nosotros tenemos todo el proyecto muy orientado a Visual
+Studio o Pilot, funciona muy bien con eso.
+Mmm.
+Pero la limitante es esa. O sea, vos...
+O sea, la única limitante que yo vi entre usar Octopus directamente de Cloud y ahí,
+por mi uso, es, vos acá tenés una terminal más linda, pero claro, Copilot te consume
+el Octopus por 3. Entonces de esas 1.500 es dividido 3, ¿está? Te gasta más.
+Mmm.
+Y Copilot después tiene un pay per use. O sea, una vez que te pasás de eso, te empiezas
+a cobrar por request, premio.
+Ajá.
+Ajá.
+Que... No, qué sé. Yo creo que si usamos la estrategia de decir, bueno, ta, tenemos,
+sacás con el usuario de Dappam la cuenta de Copilot, y además irá a control de Copilot,
+tenés la cuenta de Copilot, tenés 1.800 requests. Por más que pegues al Octopus por
+3, nunca deberías tener problemas. Y la realidad es que podés usar el Sonet 4.6 y también
+anda divino que te pega por 1. O sea, yo sinceramente para las tareas que tengo, no tengo problema.
+O sea, yo sinceramente para las tareas que nosotros hacemos, que no requieren a veces
+tanto pienso, no he visto grandes cambios. Pero lo que te diría es actualizátelo, fijátelo
+y comentá. Me gustaría... Me falta... O sea, ya lo estoy comentando con cada uno.
+Ya lo hablé con Jonathan, ya lo hablé con Martina. Además, a Martina la puse con el
+Pro, este, a probar con el Pro más. Lo estaba usando.
+Codex, Martina. Igual está re bueno Codex, tiene una cantidad de cosas. Pero, este, igual
+estaba usando Copilot Pro con Cloud. Estaba masheando los dos. Me puse y dije, empezamos
+a probar el Pro, así estamos todos alineados. Te digo lo mismo a vos. O sea, empecemos a
+probar el Pro y me decís. Si no, si me decís, no, mirá, noto una diferencia, me rompe la
+cuerda o lo que sea, está perfecto. No, por ahora no hay ningún problema.
+Nosotros nos alineamos a nivel Dashband, Layout y tal. Yo lo que a mí no me gustó
+nunca de Cloud y me rompía las pelotas y GPT me rompía las pelotas, era eso de que
+cada tantas horas se te apaga. O sea, yo puedo decir, me bloquea. Yo estoy sacando algo y
+esperá hasta las 2 para poder volver a hacer Recuerdos. Nunca me pasó con Copilot.
+En realidad, a mí lo que me pasó fue que yo, en todos estos meses que he estado
+usando Cloud, nunca me pasó. Extrañamente me pasó hoy contigo ahora por el hecho de
+que yo estaba, en estos días me hice aplicaciones para transcribir las clases de la ORT porque
+viste que lo suben a Vimeo y Vimeo tiene contraseña y todo y no podés descargar con un descargador
+normal. Entonces me hice una app para descargar. Y por eso fue que me comió todos los tokens
+porque estaba trabajando mucho eso. O sea, lo dejé de fondo corriendo y se consumió
+todo.
+O sea, es uso de Dashbank. También Cloud es bastante potable. O sea, a mí nunca me
+llegó al límite. Es más, ahora hace unos días, viste, no sé si ves mi pantalla. Dice
+One Million que intuplicaron la ventana de contexto. Hasta ahora, hasta hace poco eran
+200 mil tokens y ahora tiene una ventana de contexto de un millón. O sea, están como
+subiendo, viste, los locos suben los límites, vamos a decir, a medida que crecen, me imagino.
+Sí, yo creo que tenés contexto. Creo que, como te decía antes, es una ventana de contexto.
+¿Cuántos puso ahí?
+Un millón de tokens. ¿Cuántos puso?
+Sí, puede ser que sea. No sé, a ver, fíjate, yo en particular, con Copilot nunca he tenido
+problema y claro, nos pagó los 100 dólares. Estamos pagando 50. Entonces, sin lugar a
+dudas que algo mejor tendrás. Pero la pregunta es, ¿vale la pena tener ese algo mejor para
+lo que nosotros usamos?
+Es una buena pregunta, sí.
+O sea...
+Lo voy a dejar ahí.
+No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,
+no, no, no, no. Lo voy a estar investigando extraoficialmente, pero me gusta igual. Todo esto
+me gusta, o sea, está bueno. Es un buen plan en esto.
+Porque, yo, por ejemplo, no escribo, yo le hablo.
+¿Por qué?
+Yo le hablo.
+Sí, sí. Tipo dictado.
+Yo le dicto, le pego imágenes.
+Claro.
+Capaz que sí. Yo creo que la diferencia está en esa, ¿no?
+En que una usa una cosa y otra.
+Yo creo que la diferencia radica en...
+Copilot te consume mucho más y la ventana de contexto es más chica.
+Yo creo que es 100.000 o...
+Creo que es 200.000 la ventana de contexto.
+Pero la pregunta es, ¿es necesario?
+Sí. A ver, nosotros lo estamos.
+Porque entiendo que en Copilot...
+Que Cloud te da más contexto, te aguanta más contexto y lo que sea.
+Pero para las pictures que nosotros hacemos,
+teniendo ya un proyecto creado y si trabajamos en los propios ingenieros,
+¿es necesario realmente tener tanto?
+¿O podemos estandarizar y todos usar Copilot?
+No sé.
+O quizás no necesariamente, me gustó lo que vos decís,
+quizás no necesariamente.
+No necesariamente forzar Copilot o Codex o...
+Si no, lo que vos decís, los prompts.
+No, los prompts es un hecho.
+O sea, los prompts es un hecho.
+Yo lo que quiero ver es si vale la pena estandarizar.
+Porque, ¿qué pasa?
+Nosotros hoy en día te estamos pagando, o sea, pagamos a todos la IA de 20 dólares.
+Yo creo que no sé si a vos te pagamos un Cloud de 20, ¿cómo era?
+Sí, actualmente sí, un Cloud de 20 dólares, sí.
+Correcto.
+Si no lo estás usando, avísame por eso.
+Bueno, hoy lo usé, por ejemplo, justamente por el límite.
+Estaba para ver esto de los mails, pero sí, sí, lo podemos...
+Si vos me decís, yo lo mismo le dije, o sea, Tata te iba a contratar,
+le digo, vos, pero ya tenés Cloud por ciento del stand,
+nosotros vamos a pagar por la hora 100 dólares por la hora.
+Pero 50 dólares es un número más racional.
+Ajá.
+Entonces, entonces, o sea, tendría que plantear,
+no, pero igual el propio ingeniero es un hecho.
+O sea, ahora, viendo esto tampoco me preocupa obligar.
+Sí, no, es como vos decís, o sea, ¿qué tanta diferencia, qué tanto vale la pena,
+qué tanta diferencia hay entre uno y otro si ya las capacidades son tan altas?
+No, no, si ya, es que, es que Copilot en realidad no es un modelo de IA, utiliza a otros.
+Claro.
+Entonces ahí...
+Sí, y andan tan bien Copilot, este Cloud Code,
+tan bien que, digo, ¿cuál es, a fin de cuentas, cuál es la diferencia entre ellos?
+Si teniendo los prompts bien...
+Sí, sí, tal cual, o sea, yo creo que con los prompts...
+Está, si después, yo qué sé, yo, por ejemplo, si entro a tener problemas de contexto,
+voy a agarrar y voy a...
+Yo, por ejemplo, tengo el básico de Cloud, el básico de GPT, Premium,
+y a la vez tengo Copilot Pro.
+Y la verdad, utilizo Copilot Pro y nunca me llevo a trancar en el contexto.
+Y nunca me llevo a eso.
+No, y nunca llego a las, más de mil quinientas.
+Es más, usé Octopus por tres.
+Estamos de acuerdo de escribirle setenta y cinco veces, es un montón, ¿no?
+Mmm.
+O sea, tener un chat de setenta y cinco mensajes por día, escritos manuales, es un montón.
+Pero...
+Vos sabés que yo no sé, realmente, cuánto le escribo yo, por ejemplo...
+¿Qué también?
+Si vos le pedís a Copilot...
+Creame un archivo nuevo de texto o cosas así, eso lo haces y...
+Me lo crean.
+Me lo hacen todo.
+Mmm.
+Es más, te corre comando, Copilot, te hace todo.
+Pensá que...
+Es más, hasta tiene integraciones con Visual Studio Code para crear GPRs y eso.
+Que no tiene...
+Que no sé si las tiene Cloud.
+Pero pega directo con el Visual Studio Code.
+No sé si lo tiene.
+Igual, calculo en Cloud también.
+Pero digo...
+Este...
+No, nada.
+Pensálo.
+Ok.
+O sea, creo que el prompt engineer es un hecho.
+O sea, viendo esto, es más...
+Después fíjate si...
+Si querés...
+Si estés pagando Cloud de cien dólares, capaz que...
+No sé si te conviene más que te sigamos pagando Cloud o paguemos un GPT.
+Para que vos siempre tengas otra cosa.
+Te iba a decir eso.
+No tengas todo.
+Nunca quise...
+No quise joderlo, sí.
+En realidad, siempre...
+Hace tiempo pensé en...
+En que estaría bueno tener un...
+Los veinte dólares para tener un...
+Un...
+Los veinte dólares para GPT.
+Pero no los quise andar jodiendo.
+Digo, está...
+Tampoco es...
+Debido a muerte.
+Pero sí estaría bueno cambiar ese Cloud de veinte a GPT de veinte.
+Sí, lo sé.
+Ok.
+Este...
+Vamos a sacar perfectamente.
+Así que bueno.
+Este...
+¿Estás bien?
+No, me parece buena idea.
+Sí.
+Yo estaba intentando mitigar lo que vos decís.
+Yo estoy al tanto de lo que vos decís.
+De que estos comentarios que se repiten y eso...
+¿Estás bien?
+No, me parece buena idea.
+Sí.
+Yo estaba intentando mitigar lo que vos decís.
+Yo estoy al tanto de lo que vos decís.
+De que estos comentarios que se repiten y eso...
+A ver.
+Vamos.
+A ver.
+Sí.
+Digo...
+¿Qué?
+¿Dónde estás?
+De verdad.
+No.
+Vale.
+Quizás...
+Ah, no.
+No.
+Bueno, bueno.
+No.
+¿Qué pasa?
+Mira, mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.
+Mira.

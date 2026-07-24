@@ -1,0 +1,280 @@
+Nosotros ahí tenemos el método que esto se orquesta todo, más allá de que tenemos los
+repositorios, lo que son las clases que contienen los back office, los back in services, perdón,
+que serían servicios externos, los que hacen las comunicaciones con servicios externos, como es el
+Company Repository, que hace la comunicación con la base de datos, como lo es SS, que hace la
+comunicación con el servicio de AWS. Nosotros ahí lo que tenemos es, primero, hacemos una especie de
+paginado. O sea, el Get Company Days Created 3 or 7 Days Ago, fíjate cuál le pasa a la página que
+el eje te trae. Por defecto ese método, si no me equivoco, trae de a 20 a 50. Pero eso es para no
+traer todas de una y, ¿qué pasa? Cuando nosotros hacemos esto, estos son métodos, los métodos de
+back office del worker son métodos que toman su tiempo. Entonces, cuando vos traes todas esas
+compañías, las guardas, ¿en lo que pasa? Entonces, cuando vos traes todas esas compañías, las guardas,
+¿en lo que pasa? Entonces, cuando vos traes todas esas compañías, las guardas, las guardas,
+en lo que pasa? Entonces, cuando vos traes todas esas compañías, las guardas, las guardas, en lo que pasa?
+Esto es lo que se llama la memoria dinámica, ¿sí? Es una memoria que se designa en tiempo de ejecución.
+Vos no podés traerte un millón de Company Drags y guardarlas en tiempo de ejecución, te traes de una
+foquita. Si fueras a retornarla enseguida no pasa nada, porque son segundos, vos agarrás, almacenás
+eso y lo retornás, ¿sí? Pero como nosotros esto va a demorar, porque vos vas a agarrar a cada una, vas a enviar
+mail, el proceso de mail puede llevar unos segundos, de colar y todas esas cosas, ¿va? ¿A qué te fuiste?
+Sí, porque
+¿Dónde estaba? Estaba en algún lado, ¿no?
+Lo habíamos visto, la cantidad del paginado
+Andate de nuevo
+Andate de nuevo al
+Payment, al
+Company Service
+El paginado está ahí, ahí va
+Ahí tenés
+Index
+Index
+Que son 50, están errados
+No estaban
+Cada vez me voy olvidando más las cosas que hago en el código
+Esto es porque vos
+No es la idea, lo mismo hacemos con las
+Company Drafts, si te fijás el método de
+Delete Company Draft, subí arriba del todo
+Creo que también
+Si vas a Get Company Draft Without Payment
+Hacé lo mismo, creo que ponés
+50, y es por el mismo tema
+Porque vos vas a borrarla
+Si el proceso es borrado, no puede ser que demore
+Entonces, vos no podés guardar
+En la memoria, mientras que a la vez
+Este endpoint puede estar
+Reaccionando a otros procesos
+No podés comerte toda la memoria
+Capo, vos acordate que tenés dos cosas
+Tenés procesador y tenés memoria
+Yo le voy a poner 70
+Me acuerdo que le había hecho 70
+En los test de
+Para superar el paginado
+Tal cual
+Esto es lo mismo, vos me decís, ¿por qué no traigo dos de una?
+Y bueno, porque todo eso es un arreglo
+Que vos tenés en memoria
+Que está aguantando ahí
+Entonces hay que ser conservador
+Y protegernos el culo
+Hay muchas personas que podrían decir
+Está siendo excesivo
+Yo soy precavido, porque después tenés esos errores
+Tiran errores rarísimos
+Que son indescriptibles
+Y no te das cuenta
+Entonces uno tiene que siempre hacer las cosas
+De la mejor manera y pensando siempre en los peores casos
+Y lo que hacés es por cada company draft
+Si te fijás
+Es lo mismo, pero baja un poquito
+Vos lo que hacés es traer las que sean de 7
+O 3 días
+O sea, solo traes esas
+Las que estén en ese periodo de tiempo
+Y esa lo que hacés es
+Que eso funciona
+Yo lo que hago es que
+Yo lo había probado y funciona
+Y lo que hacés es
+Creás un template
+Y lo enviás al main
+Prestemos atención a dos cosas
+Una
+¿Qué pasa si falla
+El método de la línea 82?
+Bueno, si falla el método de la línea 82
+Lo que sucede ahí
+Es que se carga un retry
+Y tira un error
+Pero el while sigue funcionando
+¿Qué quiere decir eso?
+Que si yo quiero traer una página
+Ponele que la página
+Tres me está fallando
+Me va a fallar hasta tres veces
+¿Sí?
+Va a fallar tres veces
+Pero se ve eso, ¿no?
+Falla tres veces
+¿Por qué?
+Está arriba de todo
+Perdón
+Perdón
+Sí, claro
+Siempre es un estándar más o menos
+Pero que está ahí
+No intento más
+Como la tercera es la vencida
+¿Ah?
+Este no tiene
+Ahí lo que se podría agregar
+Es una wait
+Que no lo hice
+Pero se podría agregar una wait
+Se podría mejorar
+Como te digo
+Cuando ves el código decís
+Pucha, podría agregar una wait
+Podría agregar más cosas
+Lo mismo en el método de arriba
+Vos podrías agregar en la línea 187
+Una wait
+Como diciendo
+Bueno, falló
+Espero unos minutos
+No debería cambiar nada
+Pero está
+Se suele hacer ese tipo de cosas
+Es más, no está mal
+Que pongas
+Si querés después ponelo
+Y lo
+Si querés después ponelo
+Y ponelo también en el delete company
+Si tenés ganas de modificar código
+Anotátelo ahí
+Anotátenlo en la libretita que tenés
+Ponelo
+Ponelo en la libretita que tenés
+No, pero está bueno
+Así vas metiendo un poco
+Ya encontramos back
+Pimba
+Lo solucionás
+Y ya lo testeás
+Sería en el cache
+De la línea 107
+Lo mismo para el de arriba
+Para evitar
+Lo mismo para delete
+Ahí fíjate
+Si seguramente hay alguna constante
+Por defecto
+Por defecto de await
+Fíjate de usar
+No bajar code
+Creo que también
+Ya está el método
+De la línea 107
+Y ya está el método
+De la línea 107
+Sleep está el método
+Ahí lo estoy viendo
+Dentro de utils
+Está sleep
+Así que está
+Bien
+Y fíjate que si falla
+Falla tres veces
+Pero qué pasa
+Cuando vos obtenés la página
+Ponete que vos obtenés la página 5
+El retry se genera cero
+¿Por qué?
+Porque capaz que era un problema
+De esa página
+Pero yo no
+¿Qué es lo que pasa?
+Ponete que falló dos veces
+¿No?
+¿Sí?
+Falló dos
+Falló dos
+Se cargó a la segunda
+Voy a cargar la página 2
+Voy a cargar la próxima
+Y falla
+No le estoy dando tres reintentos
+A la próxima página
+Solo le estoy dando uno
+Entonces está
+Es eso
+Es por eso nada más
+Es ese el sencillo
+Y después fíjate que si falla un mail
+Lo único que pasa es que se agrega
+Se tira un log error
+Que falló el envío de ese mail
+Ya está
+No se reintenta
+De nuevo
+Por lo que te expliqué de la cola
+No se reintenta
+Porque
+Eso es algo que tenemos que ver
+Que decir
+Pucha mirá Santi
+Cuando falla
+Quiero que
+Hay veces que vale la pena reintentar
+Y hay veces que no
+¿Está?
+Yo en el caso de los mails
+Normalmente soy pensador de que
+Prefiero no enviarte un mail dos veces
+Porque queda como una compañía pocaseria
+Prefiero decir
+Ah no llegó
+Y decir
+Ah apago el spam
+¿Se entiende?
+Pero bueno está
+Este
+Antes de que le envíes dos veces el mail
+Que queda como que somos unos imbéciles
+Ah no sé
+¿Te llegó?
+¿Te llegó?
+Mirá que te llegó
+Es que te mandé
+Claro
+Por eso
+Pero no se va a fallar
+Pareces un autista de mierda
+Entonces
+Y esas cosas no te das cuenta
+Porque son cosas que vos
+No las sabés
+Las sabés solo el cliente
+¿Entendés?
+Entonces
+Porque vos no te vas a dar cuenta
+Me llevo
+Le envié dos mails a Carlitos
+No vamos a ir a hacer trazabilidad de eso
+Por lo menos no ahora
+Ah o sea
+Este
+Va a ser un huevo
+Mirá mirá los logs
+Después tenemos que trabajar en eso
+Mi idea es agregar en producción
+Algo que se llama Datadog
+Que nos permite ver
+Los endpoints
+Cuando fallan
+Cuando no fallan
+Cuando salen
+Entonces envío un mail
+Mi idea es que ustedes
+Trabajen en un panel administrativo
+Con Datadog
+Agregando gráficas
+En diciembre ya tengo tareas
+Para que ustedes agreguen gráficas
+Y
+De información en el backoffice
+¿Tá?
+Y también para que tengan
+Necesito trabajar en un panel administrativo
+Para cuando fallan los cronjo
+Decir bueno
+¿Cuándo es la próxima vez
+Que se tenía que ejecutar?
+¿Se ejecutó?
+¿No se ejecutó?
+Necesito tener algo
+Algo que me diga
+Esa información
+¿Tá?

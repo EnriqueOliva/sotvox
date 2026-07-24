@@ -1,0 +1,690 @@
+Buenas, bueno, vamos medio rapidito. Ayer terminé de sincronizar tarde en la madrugada, pero terminé de hacer el rollback y salir con todo lo de pagos a producción y consolidar todos los clientes.
+También me falta crear una tarea con respecto a lo de counterparties, porque saqué toda la eliminación de counterparties e hice un rollback a las cuentas de Hong Kong, porque las habíamos registrado en OneMoney y había que borrarlas todas.
+¿Qué más? Bueno, hoy estamos coordinando lo de los archivos y los documentos y a ver hasta dónde podemos avanzar con eso.
+Y que me...
+Y tenemos lo que sería... Tenemos todo esto de documentos y todas esas cosas y, asimismo, tengo que sacar una actualización para que a partir de ahora también los depósitos SWIFT se carguen en los withdrawal y en las transfer.
+Así que voy a estar un poquito con eso para poder liberarlos. Hoy no vamos a RailSpring, probablemente lo cierre mañana. Enrique, cuénteme cómo viene.
+Bueno, full prioridad.
+En el tema factura, como habíamos charlado, Santi, entiendo que la tarea original de la que es el refactor, el comprobante y el tema de la lógica de idioma, eso, la PR del worker, ahí ya corregí los comentarios que había mandado Martina por último.
+La del coffee quedó mercheada.
+Así que ahora estoy... Ah, el worker me olvidé de sacar el dry run. Perdón ahí a Fernando y...
+Perdón a Fernando y...
+Perdón a Fernando y...
+Perdón a Fernando y...
+Perdón a Fernando y...
+Perdón a Fernando y...
+Perdón a Fernando y...
+Que la miraron, capaz que agrego un commit más sacando la lógica del dry run de la PR del cronjob. Y bueno, y ahora estoy metiendo...
+De la factura nueva, ¿qué está faltando? El cronjob, ¿no?
+Ahí va, de lo que era la primera tarea de factura, sí, creo que es el cronjob y bueno, y nada, que se apruebe la PR del worker.
+Y ahora estoy con, obviamente, lo que habías mandado, el caso excepcional de Hong Kong, China y eso.
+Básicamente eso.
+Hay otras cosas en camino, obviamente, pero está, ya no son prioridades por ahora.
+Está, sí.
+Al final no encontramos otra más que jarcodearlo.
+¿Cómo funciona en el site?
+Eso lo tengo que ver bien.
+En realidad no estoy del todo seguro.
+Lo estoy trabajando, pero no estoy seguro todavía.
+Así que está.
+Sí, tengo ahí algunas cosas, algunos detalles a final ahí todavía.
+Por eso no mando nada.
+Está.
+Eh.
+habría que poner el botón
+para, recordemos que
+tiene, tú le vas a hacer el botón en el
+backoffice para generar el evento
+¿sí? o sea
+para poder generar este
+este documento
+este recibo
+¿sí?
+sí
+bien
+entonces este
+nada, eso, o sea tenemos que
+poner el botón para
+poder este, generar
+este, capaz que ahí podemos
+pedirle una mano a Fernando
+no sé, ahí fíjate vos, si lo tenés vos pronto
+si no podés pedirle
+una mano a Fernando como para acelerarlo un poquito
+Kike
+eso fíjate
+o sea
+la idea sería que
+este evento en sí
+o sea, generar facturas
+para estas
+transferencias opcionales, use
+literal todo este flujo
+¿está? obvio, sí, sí
+bien
+entonces es un poco eso
+la idea sería que
+use literal todo ese flujo
+y este
+o sea, y además de generar
+todo ese flujo
+uff
+está, o sea
+que se pueda generar por el botón
+es eso nomás
+algo que necesito que le pases a Nahue en particular
+y a Jonathan
+principalmente a Nahue en el evento
+Nahue, vos vas a
+recibir una OTC transaction
+¿estás ahí?
+sí
+vos vas a recibir una OTC transaction
+deberías también
+con esta
+con esta
+transfer excepcional
+porque yo te dije solo
+a vos y a Jonah le dije solo withdrawal
+¿está?
+a esta transfer excepcional también deberías
+poder generar un documento con esta
+transfer excepcional
+porque es una transfer que en realidad por detrás
+es un
+es un retiro swift
+o sea, ¿qué hacemos con otra plataforma?
+¿ah?
+te digo porque capaz que ya te sirve
+o sea, cuando hagamos el mapeo
+debería, o sea
+probablemente tengamos que hacerlo compatible
+capaz que no sale hoy, capaz que esto sale mañana
+pero ya te lo voy diciendo, o sea
+nosotros lo que estamos haciendo es
+que para estas transfers excepcionales
+cuando nosotros por mediante
+otra plataforma, nosotros lo que hacemos es
+en vez de hacer un withdrawal, que es un retiro
+como
+como hacer un retiro, que es un retiro
+en cualquier banco
+¿está?
+otra
+o un retiro swift
+lo que va a suceder es que
+vos haces una transfer a nuestra cuenta
+y nosotros usamos otra plataforma para transferir ahí
+¿está?
+¿sí?
+bien
+entonces nosotros usamos otra plataforma para transferir ahí
+¿está?
+entonces, como usas otra plataforma para transferir ahí
+hasta que no se haga eso, que es en otra plataforma
+nosotros no podemos generar recibo
+entonces yo lo que hablamos con Enrique
+y Martina
+es que en el Backoffice cuando hacemos esa transfer
+apretamos un botón
+¿está?
+que Enrique va a poner
+y va a generar esta factura
+¿sí?
+o sea, en vez de hacer todo el proceso automático
+de generar la factura
+lo hace cuando apretas ese botón
+la idea aquí que
+es que el documento que va a generar Nahuel y Jonathan
+cuando vos apretás ese botón
+también se genere
+o sea, también se tendría que enviar ese evento
+¿está?
+esto es un dato importante
+Nahuel y Jonathan
+o sea, que es como que
+yo ahí voy a
+te va a llegar una TC Transaction
+pero va a ser de tipo Transfer
+y va a ser medio excepcional
+porque va a ser hasta que
+¿qué es lo que pasa?
+nuestro proveedor no nos permite sacar dinero directamente a China
+¿sí?
+entonces nosotros hacemos una transferencia interna
+y esa transferencia interna usando otro proveedor
+transferimos a
+hacemos el retiro Swift
+en la Transfer
+vamos a tener toda la información
+para rellenarla
+pero yo necesito que ustedes la
+que tu evento Nahuel
+si Enrique hoy o mañana agrega eso
+también pueda generar el recibo a partir de ahí
+igual
+te digo para que lo vayas teniendo en cuenta
+porque capaz que
+cuando probablemente Martina te pase el mapeo
+¿sí?
+que va a tener de dónde sale toda la información
+puede ser también que le tengamos que pedir a Enrique
+alguna Transfer
+que tengamos hecho
+¿está?
+este
+es un caso muy difícil
+es un caso medio puntual
+o sea no no se triggerea ahí todo automático
+sino que es algo que se va a triggerear medio manual
+¿está?
+eso nomás
+para que lo tengan en cuenta
+bien
+Kike
+Martu
+¿pudiste ver la PR del Worker?
+no, los últimos cambios no
+si podés fichate la PR del Worker a Enrique a ver si podemos mergearla
+porque ya dejó los últimos cambiecitos
+¿está?
+eh
+fíjate esa que falta toda
+a ver si podemos mergearla
+así ya solo faltaría el croncho
+¿sí?
+para todo el equipo
+hoy son
+todo lo que sea recibos y croncho de recibo y todo
+hoy es la prioridad
+¿está?
+¿sí?
+para que todos estemos alineados con eso
+eh Kike ¿algo más?
+no
+si ya están con el sprint ajustado
+no cierren tareas más de los puntos
+Fernando
+bien
+por fin pude subir los test de OTC y OVM
+lo que sí cada vez que mergeo salen nuevos errores
+eh así que se ve que
+hay justo cosas que se están tocando
+ahora mismo estoy corrigiendo unos que
+o sea ya corregí, subí, mergeé
+y volvieron a surgir errores
+así que está
+cuando el pipeline de SI
+esté todo bien
+todo verde
+ahí la mando a Intel
+y bien
+y estoy haciendo core review también
+algo importante Tato
+es lo siguiente
+más allá del core review y todas esas cosas
+la idea es
+yo le dije a Kike
+pero la idea es que vos te pongas a pasar
+al formato genérico las facturas
+¿te acordás de lo que hablamos ayer?
+sí
+está
+si eso ya podés ir atacándolos
+ir pasando tareas por eso y o lo que sea
+este
+identificando ya una o dos facturas
+y empezar a trabajarlo
+también está bueno
+otra cosa
+sí
+decime vos
+quedan tres tests
+tres endpoints a testear
+o sea contando el tuyo nuevo
+no sé si ya lo subiste
+sí ya quedó en dev todo
+es un nuevo endpoint de delete
+fíjate que se agregaron
+se agregaron nuevos endpoints en el rollback
+¿quieres que teste eso?
+sí
+yo lo que te diría es
+antes de arrancar con la factura
+agarrá con esos nuevos endpoints
+esos endpoints son
+se agregaron varios
+pero se agregaron para eliminar
+el counterparty manual
+si querés anotátelo
+pero se agregaron para eliminar
+el counterparty manual
+¿dónde estás?
+creo que es este grupo
+se agregaron para eliminar el counterparty manual
+el triangulation
+el crypto
+y el fiat
+se agregaron para poder eliminar
+todos los tipos de counterparty
+se agregó una lógica para poder eliminar
+esos counterparty
+esos fueron los endpoints que se agregó
+igual te diría que
+te fijes en los últimos cambios
+que salieron a producción
+y sumes esos tests
+a la parte de OTC
+o a lo que esté faltando a Enrique
+o sea que se eliminó más de un tipo
+más de un endpoint
+perdón
+se agregó más de un endpoint
+para eliminar counterparty
+si
+ok
+o sea revísalo
+puede ser que hayan tareas que tenga Enrique
+podés sumarle eso
+para darle una mano
+podés sumarle también esos endpoints
+¿está?
+vale
+o mismo bloquearlas
+claro
+o mismo bloquear la PR de Enrique
+si es algo que tiene Enrique asociado
+bloquear la PR de Enrique y decirle
+te está faltando
+actualizar este endpoint
+que Santiago agregó
+¿está?
+porque así ya dejamos completo el paquetito
+de test unitarios
+¿bien?
+dale ok perfecto
+y la vuelvo a mandar a Intem
+claro si si
+o sea las PR de Enrique
+si hay uno de estos counterparty
+que está asociado a una PR de Enrique
+bloquea la PR de Enrique
+¿está?
+y le pones
+che te faltó testear este endpoint
+que Santi lo agregó
+¿está?
+o sea dale una mano a Enrique con eso
+¿bien?
+ok
+y después con respecto a tu PR
+fíjate los endpoints
+que se agregó
+y agregalos como parte de la tarea
+podés poner una descripción
+o un comentario
+o crear una nueva tarea
+y después lo
+¿de Crypto.com se agregó un nuevo endpoint?
+creo que sí
+¿te animás a revisarlo?
+revisalo vos
+yo lo reviso yo lo reviso
+revisalo vos
+y me decís
+estoy casi seguro que sí
+o sea ya ni me acuerdo
+los endpoints que saqué ayer
+pero creo que se agregaron
+si no me equivoco se agregaron tres
+si no me equivoco se agregaron tres
+no quiero sacar mucho tiempo
+de la daily pero
+dale tranqui
+no no no yo lo he dicho
+yo lo he dicho
+yo lo he dicho
+tranqui tranqui
+son dos segundos
+yo lo he dicho
+mirá Counterparty Manual
+yo lo he dicho
+yo lo he dicho
+yo lo he dicho
+tranqui
+sí
+Counterparty Manual se agregó uno
+Counterparty Crypto
+creo que no se
+creo que se agregó
+durante el flujo de OTC
+hay que verlo ahí
+creo que se agregó
+creo que la eliminación
+se agregó
+el flujo de OTC
+sí
+Delay
+se agregó
+dentro de One Money
+la eliminación
+se agregó
+dentro de One Money
+la eliminación
+y después
+en Counterparty Triangulation
+y después
+en Counterparty Triangulation
+también se agregó
+o sea son tres samples
+deberían ser tres samples
+bueno
+capaz que alguno de esos
+capaz que alguno de esos
+no te involucran a vos
+no te involucran a vos
+directamente
+tenemos que trabajarlo
+con otro
+bien
+ok
+ok
+entonces ahí
+sería ubicar la PR
+sería ubicar la PR
+de Enrique
+y comentárselo
+para que sepa
+por las dudas
+todo lo que tengan
+PRs abiertas
+todos
+por las dudas
+o sea
+ahí ya Enrique
+si mandaste Worker
+o lo que sea
+porfa actualicen
+contra Develop
+para evitar
+cualquier conflicto
+porque ayer
+ayer terminé
+haciendo el rollback
+y
+por primera vez
+no bloqueamos
+para que
+se pueda seguir
+mergeando
+y trabajando
+y probando
+entonces
+como que se merge
+se me echó
+mucha cosa
+Gastón
+buenas
+bueno
+yo estuve
+trabajando
+en un posteo
+para marketing
+ahora ya lo terminé
+lo estoy
+se lo pasé
+para revisar
+a Claude
+mientras estaba
+haciendo un video
+que también
+me habían pedido
+y ahora nada
+estaba esperando
+a que Santiago
+termine de iterar
+el comprobante
+para revisarlo
+y más tarde
+pensaba
+ya arrancar
+con todo
+el tema
+de mails
+y
+más tarde
+pensaba
+ya arrancar
+con todo
+el tema
+de mails
+eso
+por mi lado
+bien
+perfecto
+vamos arriba
+ahí
+cualquier cosa
+que necesites
+Santi
+ahí también
+necesito
+que lo asista
+Jona
+ya te aprobé
+las tareas
+bien
+si ya estoy
+ya enseguida
+estoy mandando
+el link
+ya para el site
+con la migración
+y la actualización
+y ya tengo
+todo pronto
+para los otros repos
+así que ya enseguida
+ya mando todo
+vamos a hacer
+un pequeño cambio
+Nahue y Jonathan
+si
+las PRs ahora
+de ustedes
+de recibos
+arroban
+a los que
+tienen que hacer
+intern
+ta
+si
+pero también
+pero también
+nos arroban
+a nosotros
+y las ponen directo
+en public web
+ok
+los mismos
+que tienen intern
+por ejemplo
+Fernando
+o Enrique
+y yo lo que sea
+pero también
+la manda del otro lado
+Nahue
+si no tengas
+el diseño
+lo mandas
+para que Santi
+lo revise
+y todas esas cosas
+por más que todavía
+no tengamos
+los campos dinámicos
+si
+eso es
+para ir adelantando
+tiempo
+o sea acá
+tenemos que ganar
+tiempo
+perdón
+Jona
+te corté
+no
+no era mucho más
+que eso
+estuve con lo del Drawer
+corrigiendo comentarios
+y
+y nada
+después ahí haciendo
+esa actualización
+con lo del user
+está ahí que está
+que todavía no
+no la probaron
+para actualizar ahí
+algunas tareas
+pero después
+ya estaría todo
+y ya estoy a full
+con lo de
+lo de los recibos
+bien
+genial
+perfecto
+bien de bien
+eh
+genial
+eh
+Marti
+bien
+eh
+de mi lado
+ayer estuve con
+lo que
+bueno
+lo que eran las PR
+más que nada
+el Drawer
+y después
+seguí avanzando
+un poco en lo de
+el documento
+y todo
+y hoy básicamente
+fueron
+las reuniones
+con Carlos
+eh
+para ver esto
+del documento
+y
+básicamente
+ahí el
+el Niers
+eh
+seguramente
+cambie un poco
+para ponerme
+también a trabajar
+con eso
+y todo
+eso de mi lado
+bien
+igual
+eh
+Nahue
+bien
+yo este temprano
+antes de que nos juntáramos
+estaba revisando
+dejé un par de comentarios
+después nos juntábamos
+cambiando
+las prioridades
+este
+ahí vi que en Figma
+todavía se sigue modificando
+lo que es el documento
+eh
+los PDFs
+así que
+tendría que esperar
+a que esté pronto eso
+¿no?
+eh
+el documento de la derecha
+ya está
+capaz que si querés
+ir cargando los inputs
+los textos
+y todas esas cosas
+este
+y Santi te va avisando
+el tema es que tenemos
+que ganar tiempo
+o sea
+está dale
+voy adelantando
+lo que puedas adelantar
+está
+bolazo
+acá está genial
+entonces
+lo acabo de pasar a Stone
+así que en breve
+ya debería
+quedarlo
+está dale
+genial
+este así que nada
+me voy a enfocar en eso
+y también ya me había juntado
+con Jona
+por el tema de
+este acuerdo a las validaciones
+que vamos a tener que seguir
+y eso
+así que ya
+ya le puedo meter derechito
+está
+eh
+Marti si podés
+ya probá esta PR
+no estoy viendo nada vale
+ya probá esta PR de Jona
+porque así se va
+para todos los repos
+porque
+mejor trabajaron
+un
+carajo
+creo que está todo ok
+¿no?
+sí
+claro es básico
+está yo ya le
+ya le dejé mi approve
+si podés
+Marti cuando ya pruebes
+ya mergeamos
+está
+bien
+eh
+genial
+Santi
+eh
+Kike bajate
+eh
+porque así
+no tenés problemas
+con el tema de tiempo
+muchas gracias
+hasta luego
+hasta luego
+eh

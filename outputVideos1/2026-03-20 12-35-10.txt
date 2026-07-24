@@ -1,0 +1,728 @@
+Me falta crear las tareas para Nahue
+Nahue, ¿estás ahí?
+Sí, estoy acá
+Perfecto
+Bueno, no se veía la cámara
+Después tenemos
+Me falta crear las tareas para Nahue
+Ya le comenté a Santi los diseños
+Ahí una vez que estén
+Los mandamos al channel de design
+Después una vez que estén
+Los mandamos al channel de design
+Pero Santi vamos a empezar
+A atacarlos
+Para que Nahue
+Pueda empezar a laburarlo
+Y tenemos la PR
+Y zona de todo lo que es
+Los ajustes que estuve trabajando
+Yo te dije que los ajustes que estuvieran relacionados a eso
+Los mandaras ahí
+Para que ya fueras testeando
+Todo lo que fui sacando
+Ahí se hicieron varios ajustes
+Entre ellos tema de responsive
+El tema de verlos comprobados
+Antes ahí Nahue
+Para que estés al tanto
+Si son el selector
+Eran tres comprobantes
+En el caso de triangulación
+El modal no estaba mostrando eso
+Entonces ahí lo que hice fue
+Para el caso de tres
+Los cambié a un drop down
+Cuando se achica el mobile
+Entonces tipo no, si se achicaba
+Los cambié a un drop down
+Para que estemos en drop down
+Que sea precioso
+No cambié a eso
+Y más
+Bueno, ahí estuvimos
+Corrigiendo también el tema del documento
+Nos dimos cuenta de dónde estaba el problema
+Y vamos a llegar a la PR de Martina
+Cuando se suma eso
+Y bueno, mucho más
+Ahora la idea de hoy es intentar
+Meterle para poder terminar de alinear
+Todo eso
+Y dejar
+Y ahí arrancar con las nuevas tareas
+Así que eso es mi idea
+Fernando
+Bien
+Están las PRs de test
+Interadas con Compilot
+También están
+Una de ellas es la que tiene el README actualizado
+Verifiqué si se había roto el comando
+Para correr un archivo test individual
+En los demás recursos
+Y si están
+En la regla están todos
+Ya están en un request
+Después estuvimos contigo
+Ahí viendo la notaría
+Y he estado
+He estado haciendo las dos descripciones
+Y
+Ayer está
+Pinchando un poco eso del error
+Que hay varios test
+Que no se
+O sea que
+Son fallidos
+Y se corren
+Igualmente
+Bien, perfecto
+Cuando me pase
+Cuando me pase esa descripción
+Ya creamos todas las
+Las tareas
+Está todo
+Si
+Bien, bien
+Bastón
+Olegan
+Eh
+Bueno yo estuve
+Haciendo unos ajustes
+Que me pidió Enrique
+Para crear el PDF
+Que se mostró mal la fecha
+Ya quedó arreglado eso
+Eh
+Eh
+Y
+Y como es
+Si lo subí optimizados
+A
+Al drive
+Entonces
+Nada ya pasé los links
+De
+Drive a cada uno de los PDF
+Y
+Y yo
+Eh
+Nada como para que se suba eso directamente
+A
+Eh
+A la aplicación
+Para que
+No, no se tenga que descargar
+Eh
+Entonces eso ya quedó pronto
+Eh
+Falta que me lo confirmen
+A ver si está todo bien
+Eh
+Después estuve haciendo
+La parte de permisos personalizados
+De
+De
+De
+En la parte de invitar teammates
+Eh
+Que
+Nada
+Eso ya
+Eh
+Ya quedó terminado
+Por mi lado
+Se lo pasé a Santiago
+Me pidió unos ajustes
+Que ya los hice
+Y después capaz que te pedía
+Eh
+De bicharlos bien en la
+En la
+Posca
+Eh
+Para
+Para ver si estaba
+Si estábamos alineados
+Y
+Mientras tanto pasé a hacer la parte de
+De
+De los permisos en editar teammates
+Eh
+Que tal
+Ya la
+La tengo bastante avanzada
+Bien
+Perfecto
+Genial
+Vamos arriba entonces
+Santi
+Ah
+Este
+Bueno ayer estuve trabajando en
+En los ajustes que
+Que me habías pedido de
+De
+De la parte de
+Compañías
+Y de seleccionar
+Eh
+Empresa
+Continuó trabajando
+Con eso
+Ya que tal
+Estoy
+Haciendo los ajustes
+De
+Que
+Que me dejaste ahora
+Como comentarios
+Y
+Y nada
+Este
+Voy a estar con eso
+Y una vez que termine con eso
+Continúo con
+Con los teammates
+Bien
+Perfecto
+Ahí este
+Santi
+Una cosa
+Importante a tener en cuenta
+Es
+Este
+Eh
+El jugador
+El jugador de la cárcel
+Si si si
+Ya
+Ya estoy con eso
+Estoy con eso
+Y haciendo todos los ajustes
+Este
+De
+De nombres
+Y textos
+Y esas cosas también
+Si estaría bueno que
+Siento como que también
+Lo que tenías antes
+Como que pinturraqueaba
+Todas las compañías
+Tenía cierto
+Color
+Este
+Osea capaz que ahí
+Con los hovers
+Podemos darle un poco
+Ese
+Eso que está faltando
+Como que
+Tenemos los iconos
+De
+Dashband
+Como que tiene
+Muchos colores
+Capaz que con el hover
+Podemos como que hacer que
+Que cada hover
+Sea un color
+Relacionado al icono
+De
+Dashband
+Entiendes como
+Para darle como
+Una
+Un poco más de
+De alegría
+A la cosa
+Bien
+Si
+Según
+Según el color
+Del fondo
+Según el color
+Del fondo
+Que le diga al icono
+De
+Dashband
+O al icono
+De
+Inmate
+También se lo das
+Al
+Al hover
+De seleccionar
+Este
+O algo así
+Ahí como para
+Para que sea un poco
+Moderno
+Ahí después
+Veanlo
+Sé que
+La idea es como sacarlo
+Pero también
+Ya que lo vamos a hacer
+Saquémoslo
+Eso es una parte linda
+Que teníamos
+O que intentamos hacer
+Entonces busquémosle
+También esa
+Vuelta de tuerca
+Eh
+Nahue
+Bien
+Este
+Yo había liquidado
+Un poco los endpoints
+Este
+Que habíamos hablado
+Hoy
+Cuando pasaste el audio
+Ajusté ahí
+Un poco los filtros
+No más
+Este
+Así ya dejo
+La
+Eh
+Le iba a comentar
+A
+A Santi Pantin
+Cómo veía el front
+Para
+Así yo podía ir
+Recuerdo hacer algo
+Al menos
+Este
+La parte de traerme
+De compañías
+La parte del filtrado
+Bien
+Ahí Nahue
+Una dificultad
+Que tiene Mowlo
+De compañía
+Es que
+Tiene server side rendering
+El único Mowlo
+Del dashboard
+Que tiene server side rendering
+Eh
+Bien
+No es la idea
+Que siga teniendo
+No es la idea
+Que siga teniéndolo
+Ahí donde va
+El shape
+Entonces vas a tener
+Que reestructurar
+La ruta
+Tal vez
+¿Sabes qué pasa?
+Como ahora
+Justo Jonas
+Está trabajando
+Con
+Con el módulo
+De
+Este
+Como estamos
+En particular
+Justo Jonas
+Está trabajando
+Con el módulo
+De
+O sea
+La página inicial
+De Banca Count
+Ahí que
+Tiene una
+Tiene una tarea
+En su momento
+No me acuerdo
+Que quedó
+Pero una tarea
+Para que te saltara
+El QR
+Y todo eso
+Y ahora por defecto
+Te va a Banca Count
+Este módulo
+De mis compañías
+Quedó
+No tiene sentido
+Que estar
+Con server side rendering
+Entonces
+Hay que sacar
+O sea
+Se pone la ruta
+Con suspense
+Como tal
+Y se saca
+Todo lo que es
+Capaz que sí
+Estaría bueno
+Que cuando pones
+Mis compañías
+Te pongan
+Mis compañías
+Pero
+Bien chequeo
+No no
+Así que si querés
+Ya ir
+Eliminándolo
+Bien igual
+Bien
+Martina
+Bien
+Bueno
+De mi lado
+Ayer
+Estuvimos revisando
+Los flujos
+Y también
+Encontramos
+Algunos detalles
+Tanto en el video
+Como en el site
+Así que
+Ahora estoy arreglando
+Lo del site
+Y
+Que básicamente
+Es
+También está
+Lo de
+Ver comprobantes
+Y está
+Que ahí
+También
+Por lo menos
+En Figma
+Después capaz
+Tantito
+Y te dejo
+Un mensaje
+Nomás para actualizarlo
+Que faltó agregar
+El botón
+De ver comprobantes
+En
+En dos flujos
+De compra
+Están los de historial
+Pero faltan los de compra
+Para los estados
+De
+Esperando pago
+Y enviando fondos
+Que tal
+Es simplemente
+Agregar el botón
+Ahí
+Y está
+Eso
+No
+Creo que es
+Refunding
+Y awaiting
+Pago
+Y enviando fondos
+No, no
+Ojo que
+Esperando pago
+Es cuando vos subís
+Los comprobantes
+Ah
+No
+Esa
+Es awaiting
+Pound
+Y refund
+O sea
+Devolviendo
+Y
+O sea
+El azul
+Y el gris
+No lo sé
+Mi amor
+Bien
+Vamos arriba
+Este
+Si después
+Nos está faltando
+Ahí revisar
+Sería
+Este
+Vamos a comprar
+Y ver
+El historial
+Ahí
+Porque es un poquito
+El orden del historial
+También que diseña
+Este
+Entiende bien
+Eh
+Jona
+Bien
+Ayer
+Nos juntamos
+Con
+Con Enrique
+Para probar ahí
+Todo el tema
+De los mails
+Eh
+Creo que
+Dentro de todo
+Pudimos
+Probar todos
+A mi también
+Me llegaron
+Algunos mails
+Eh
+Todo
+Me puse ahí
+Un mensajito
+Hay
+Un flujo en particular
+Que
+Que
+Se necesita
+Que el usuario
+También ponga
+Comprobante
+Desde el site
+Para que a nosotros
+Nos habilite
+En el BBO
+Tipo
+Confirma y liquidar
+Que claro
+Nosotros subimos
+Comprobante
+Y no se habilita
+El botón
+Hasta que
+Este el comprobante
+Del site
+Pero no hay nada
+Que te diga
+Que está faltando
+Ese comprobante
+Creo que es un
+Que era de compra o venta
+Pero este era
+En triangulaciones
+Si
+Son aquellos casos
+Que se precisa
+Un comprobante
+También del site
+O sea son dos
+Dos documentos
+Que se tienen que subir
+Y bueno
+No
+Eh
+Si uno sube
+Un solo documento
+No
+Como que no hay nada
+Que indique
+Que falta otro
+Digamos
+Es decir
+El botón queda deshabilitado
+Y tal
+Como capaz
+Que la persona
+Ahora lo vemos
+Como post-cran
+Porque
+Entonces lo vemos
+Como post-cran
+Bien
+Después estuve
+Atacando ahora de mañana
+Todos los
+Los detalles
+Que
+Que vos mencionaste
+Y estuve agregando
+También alguna
+Otra cosita
+Eh
+Que vi ahí
+Que
+Que pusiste
+Que tal
+Lo que faltara ahí
+En la PR
+Que vos subiste
+Que también
+Lo vayamos
+Haciendo
+Eh
+Así que nada
+Estuve con eso
+Y después lo otro
+Que mencionaste recién
+Con lo de
+Lo tengo hecho
+Eh
+Me falta nomás
+Testear ahí
+El componente de NoServe
+Y ya le hice todo el refactor
+Para dejarlo genérico
+Y saqué ahí
+Lo de
+Las autenticaciones
+Que
+Aparecían a cada rato
+Eh
+Falta testearlo nomás
+Y subir la PR
+De eso
+Bien
+Bien
+Intentemos enfocarnos
+En esas dos cositas
+Este
+Hoy
+Y después seguir
+Con lo de
+Con lo de
+Los códigos
+En realidad
+Después
+Tener lo del autocomplete
+Y los códigos
+De los blogs
+O sea
+Que eso
+Hay que seguir
+O sea
+Ya que lo tenemos
+Vamos a trabajar
+Después de eso
+Vemos
+Vemos si trabajás
+En algún tipo
+De selector
+O pasas
+Para la team
+Está
+Perfecto
+Pero por ahora
+Vamos a intentar
+Enfocarnos
+En terminar
+Las tareas
+Que tenemos
+En progreso
+Bien
+Ahí
+Está
+Todo lo quede
+Bien
+Bueno
+Está
+Está todo
+En las tareas
+Que las creo
+Y que ahí
+Este
+Lo único que tenemos
+Que ver es
+Cómo vamos a
+A subir
+Los documentos
+Este
+Nada
+Eso
+Esos documentos
+Deberíamos
+Tener los medios
+O sea
+Deberíamos poder
+Este
+Descargarlo
+Como descargamos
+Un template
+¿Está?
+Ahí eso es
+Este
+Lo echamos
+Es que el extracte
+Como postcard
+Ni lo
+Con
+Con yo
+El resto
+Que
+Que no tenga cosas
+Para ver el postcard
+Está librado
+Nada
+Voy ahora
+Si creo las tareas
+Te aviso
+Dale golazo
+Vamos arriba
+Arrancamos
+Eh yo
+Tenía unas dudas
+No sé si me quedo
+O me llaman después
+Eh
+Te llamamos después
+No
+A ver
+Nos vemos
+No
+No
+Bien
+¿Qué era lo
+Lo que querían ver
+De diseño
+No
+No
+Sí
+Yo tengo unas cosas
+Para mostrar
+Eh
+No sé si vos tenías algo
+Sandy
+No no no
+Si no comparto yo
+Compartí vos nomás
+Eh
+Me
+No
+No me está dejando
+No me está dejando
+Probablemente en el cabine
+Dale
+Sandy
+Yo te hice los comentarios
+Más acá
+Eso está
+Está bien
+Ahí está viendo
+¿No?
+Si
+Bueno
+Eh
+Bien

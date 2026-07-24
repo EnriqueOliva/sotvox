@@ -1,0 +1,693 @@
+Yo llegué a dar clase, ya nos reunimos Martínez, llegué a dar clase, iba a estar, todo normal, me levanto para la daily, duermo una horita, yo me acosté tardísimo, me levanto para la daily, me levanto y veo el mensaje de Ana.
+Mirá, mirá, ahí viene, ahí viene, ahí viene, vamos para la telepantalla.
+Bueno, disculpe la demora.
+La demora es lo que te tenemos que disculpar. Bien, bueno, nada, nada, lo que sea que estés tramando, Gastón.
+No, yo estoy orando.
+Ta, ta, ta, ta, ta, ta, ta, ta.
+No, no, no, no quiero saberlo, no quiero saberlo, te juro.
+No, no, no quiero saberlo, no quiero saberlo, no quiero saberlo, no vale fotos con IAE, pasen todo.
+¿Estaba Ramiro en esa reunión?
+Sí, sí.
+Bien, bueno, ¿cómo seguir el día, no?
+Bien, marchamos los decimales ahí, Marto estuvo trabajando en sincronizarlo.
+En continuar el trabajo de Kike, ahí después no llegamos.
+Yo mandé las PRs de lo que es el sync de transacciones y Yona también mandé lo que sería,
+que a partir de ahora las transacciones va a tener la fecha posted, ese registro, ese timestamp, cuando esté posted la transacción.
+Bien, perfecto.
+Entonces, eso va a ser clave, porque a partir de ahora, no sé.
+Deberíamos tener eso para poder manejarlo.
+¿Qué más, qué más, qué más?
+Bueno, ahora en sí tengo varias cosas para hacer.
+Pero lo principal es, tengo que hacer la actualización de los cobros, ¿tá?
+Tengo que arreglar las PRs también para que empiece a usar esa fecha posted.
+Y algunas cositas más, ahora que me estoy dando cuenta.
+Ah, no lo tenía marcado.
+Y después tengo que ponerme con lo que es la actualización para poder tener el módulo de LLC y de CryptoCrossBorder que funcionen juntos.
+Así que voy a estar con ellos y también trabajando con Martu para ir mergeando todas esas cositas.
+Kike.
+Bueno, yo el viernes empecé a trabajar justamente con esto que comentaba Santiago de los decimales.
+Allí quedó quizás un poco con un testeo débil, vamos a decir.
+Y mismo surgieron comentarios de Martina que ya los estuve atacando ahora de mañana.
+Ya cubrí lo que es el site, ahí les mandé de vuelta por lo menos la que es el site.
+Y voy a seguir con las demás, creo que no había mucho ajuste más.
+Pero voy a aprovechar y hacer un buen testeo de lo que son todas las cuatro PRs.
+Y subir, adjuntar capturas correctas, digamos, de todos los lugares donde se ven los números.
+Nada, me falta poco para eso.
+Y bueno, ahí después estuve, había estado trabajando con lo que son las PRs de los retiros de Bolivia.
+Eso viene bien también.
+Y mi PR, lo que es test unitarios, ya quedó la que yo estaba haciendo de OneMoney.
+Y voy a seguir, estaba haciendo co-review con Fernando y voy a seguir revisando sus PRs.
+Creo que es eso básicamente.
+Ahí como puso Martu, de las PRs de Martu.
+¿Y qué está...?
+Básicamente, bueno, la del site es la principal, ahí ya la mandé con capturas y eso ya, creo que ya.
+¿Y las otras falta revisión o...?
+Por las dudas, sí, un testeo más y ya de paso voy a adjuntar más capturas, básicamente.
+No importa que estén, volví a mandar todas, Kiketo.
+Ok.
+¿Está bien?
+Ok.
+Bien, de bien.
+¿Tato?
+Bueno, buen día.
+Quiero decir que surgieron un tipo de nuevos casos.
+Seguí analizando, ya subí un draft que, como digo...
+¿Se me escucha bien?
+Se me tranca, ¿no?
+¿Un poco?
+¿Puede ser?
+Sí, yo te escucho.
+Lo cortaba.
+¿Debes apagar la cámara para probar?
+Ah.
+Hola, hola.
+A ver ahí.
+Yo te escucho.
+¿Qué te dice?
+Bueno...
+Como decía, subí un draft de los test de OTC que lo voy a validar ahora con Kike y básicamente eso.
+También estoy haciendo una especie de, en otra rama, una especie de segunda versión
+de esos mismos test planteando otra, tipo una alternativa.
+¿Qué tal?
+Bueno.
+sea más enfocada justamente a
+lo que habíamos hablado
+de centrarse más en los casos
+y que tenga
+que hacerse la menor cantidad
+de código que se pueda
+pero eso lo estoy planteando como
+el tan nativo
+y eso básicamente
+y estuvimos haciendo testing manual un poco
+el viernes
+bien
+bien de bien, ¿gastón?
+no se olviden Enrique y Fernando más allá
+de todas las cosas Enrique que te fuimos cambiando
+al final del día vuelvan a enviar
+el follow up
+debería ser un copy paste
+del anterior, siempre
+es como un copy paste nuevo
+vuelven a enviarnos el mensaje
+en el canal que tenemos con Martina
+nos dicen, che todo esto está pendiente para mirar
+en teoría hoy si deberíamos
+liberar para poder mirarlo, o por lo menos yo
+a ver si podemos marchar
+¿gastón?
+bueno, buenas
+yo estuve el viernes trabajando
+en el último carrusel que me faltaba
+para marketing
+eso ya quedó
+no, no, no, si vas a mentir que estuviste trabajando
+yo así ya no arranco
+yo así ya no arranco
+entonces, vos perdoná
+vamos a pasar con otro
+vale, perdón
+estuve
+en la reunión del RAPTAP hoy
+recién terminé
+y también estuve
+con
+el logo de
+DazBank Basic, ajustando las cosas
+y haciendo el avatar
+para Instagram
+eso está bueno
+eso está bueno porque está relacionado
+con una tarea que yo tengo que hacer
+que es separar
+todas las cosas, así que
+después ahí Gastón y
+Santi, una vez que saquemos
+tenemos que salir primero, entonces yo
+lo que voy a hacer es dividirlo
+pero después probablemente
+tengamos que ver eso
+que el logo sea tipo mínimos cambios
+porque
+no sé qué directivas te dieron
+pero piensen que el dashboard interno va a ser el mismo
+para los dos, entonces ojo con eso
+sí, son mínimos
+o sea, es prácticamente igual
+solo que nada, le aclaramos
+que es
+una submarca dentro de
+perfecto, bien de bien
+pero sí, o sea, se mantiene
+la identidad se mantiene
+hermoso
+bien de bien
+¿Algún feedback de
+Samuel o Matías?
+Hoy tuvimos la reunión de marketing
+y les mostramos
+todos los posteos
+y eso que en realidad
+Mati me había dicho que era todo
+para hoy
+así que nada, yo la semana pasada
+estuve haciendo todo
+y analizándolo bien con Santiago
+como para hoy ya
+dejarles todo pronto
+y me pidieron
+unos ajustes mínimos
+pero la verdad quedaron bastante conformes
+con los cuatro
+y nada, o sea, quedó bien eso
+y lo único que me pidieron ahora es
+seguir trabajando en un posteo
+que habíamos quedado
+para el Instagram principal
+que era lo de
+Reales
+que vamos a presentar
+algo
+como una asociación
+con PIX
+algo así
+como poner
+como que estamos trabajando con PIX
+como para dar un poco más de confianza
+a los brasileños
+que es como lo que más usamos
+pero nada
+quedaron conformes
+y nada, era lo que necesitaba
+no me pidieron más nada
+Dale, genial, perfecto
+¿Qué te iba a decir?
+¿Sabes?
+Cualquier novedad
+pero que sí, todo lo que puedas dejar registrado
+en el chat
+del trabajo
+o lo que sea
+más que no sean reuniones
+que yo no esté o no tenga
+está bueno, ¿viste?
+porque si después vienen a decirnos algo
+o lo que sea
+tenemos Slack ahí
+o sea
+siempre los trabajos
+o las cosas
+está bueno que te agradezcan ahí
+porque al final del día
+o que forcemos eso
+¿se entiende?
+que forcemos que de repente
+vos el trabajo final
+lo envíes por Slack
+y ellos te pongan gracias
+espectacular
+o lo que sea
+como para
+tener un poco de confianza
+tener evidencia
+de que está todo ok
+¿está?
+que no rompan la pelota
+¿bien?
+entonces ahí
+es el hecho de darlo con Santi
+lo está bueno
+miente bien
+¿Jona?
+bien
+bueno, el viernes
+estuvimos trabajando ahí
+con el tema de
+de lo de Stripe
+y los planes
+que ya eso ya
+quedó mergeado ahí
+a última hora
+hoy de mañana
+ahí estuvimos
+testeando
+con Agüe
+todo lo del worker
+y eso
+y parece
+al menos no encontramos
+ninguna falla
+así que parece haber quedado
+todo
+todo bien
+por ese lado
+después
+me quedó
+la PR
+de
+de los switch
+de TeamMate
+que la volví a enviar
+el viernes
+con los comentarios
+que había dejado Marty
+está eso
+nomás para corregir
+del lado mío
+del site
+y hoy
+estuve avanzando
+en
+lo que es el rediseño
+de la sidebar
+que dejé una pregunta
+ahí en el canal de diseño
+que Santi
+los arrobó
+a vos
+y a Marty
+para ver
+qué hacer
+con el tema
+que tenemos
+cuando volvemos
+cuando apretamos
+volver al sitio
+que se renderizan
+las dos
+la sidebar
+y la navegación
+de arriba
+o sea
+queda como
+desfasado el color
+con el diseño nuevo
+entonces a ver
+qué hacemos ahí
+eso sería como
+una pregunta
+para poder terminar
+de cerrar
+ese rediseño
+no tengo
+no tengo la arroba
+sí
+está en el hilo
+ahí está en un hilo
+ahí
+tengo un par
+de consultas
+no
+ahí
+ahí te arrobo
+Santi
+de vuelta
+si quieres
+en eso
+lo podemos ver
+como postgram
+pero yo creo
+que lo mejor
+es
+si estamos en el site
+mostrar solo
+el menú del site
+y si estamos
+en la plataforma
+solo el menú
+de la plataforma
+y si ya ingresé
+sesión
+en el site
+no tiene sentido
+mostrarle
+iniciar sesión
+sino que ahí
+podemos mostrar
+volver a la plataforma
+o acceder a la plataforma
+o algo así
+lo vemos como postgram
+Joana
+prepárate para
+bien
+después
+ahí estuve
+también actualizando
+ya
+todo lo que es
+backoffice
+y droppy
+usando todos
+los componentes
+o sea pasando
+todas las variables
+a los componentes
+y eso
+ahora estoy terminando
+de
+de testear
+que no se
+rompiera nada
+y también
+nos juntamos con
+Nahue
+por lo que hablamos
+el lunes
+de
+de empezar
+ahí a planificar
+todo lo que es
+la cancelación
+y bajar de planes
+etcétera
+que hablamos ahí
+el viernes
+que mandamos
+ya hay algunas tareas
+y tenemos algo
+para
+para conversar
+ahora como postgram
+también
+bien
+perfecto
+genial
+apuremos entonces
+Martu
+bien
+me he mirado
+me había quedado
+lo del
+cron show
+y después
+estuve
+haciendo unos
+pequeños ajustes
+nomás
+en alguna
+de las PRs
+de Kike
+y
+ahora lo que estaba
+en realidad
+es
+con tema
+de reviews
+y en realidad
+creo que voy a estar
+todo el día con eso
+porque
+a ver si podemos
+ya irme
+llegando
+las que estén prontas
+o por lo menos
+aprobando de mi lado
+así que voy a estar
+básicamente con eso
+en particular
+estaba con las que
+habías mandado
+pero después
+voy a seguir
+con
+también las de Kike
+y bueno
+el resto del equipo
+que hayan quedado pendientes
+y
+básicamente eso
+si
+si podés
+bloquearme esta
+la 3183
+sería un golazo
+esa
+es la más
+prioritaria
+me libera
+o sea
+después
+después las otras
+que mandé
+pero esa me libera
+bastante
+bien
+ya sacando lo que comentó
+Jonah
+ahora estaba
+actualizando la migración
+con los
+Slack ID
+para ya dejártela pronta
+por el tema
+de los Backoffice Users
+y después tendremos
+para ver eso
+que dijo Jonah
+de Postgram
+bien
+para dejar con
+los Backoffice Users
+está así
+¿qué te está faltando?
+o sea
+¿qué tenemos pronto?
+de eso están pronto
+los
+o sea
+en titulado
+sí
+yo para
+esta review también
+habría que agregar
+ya le sumo
+ya había quedado aprobado
+el mail ¿no?
+este
+creo que sí
+el diseño del mail
+no
+creo que
+no sé si
+Santi lo
+no lo volvimos a ver
+el diseño del mail
+no lo volvimos a ver
+lo vemos ahora como Postgram
+pero igual vos lo sacaste
+sí
+y o sea
+de lo que es
+de lo que es asignación
+de ejecutivos
+¿qué estaría faltando?
+por ejemplo
+tenemos el worker
+el worker ya lo tenemos
+falta que se agregue
+la notificación nomás
+de hecho
+ya está la PR enviada
+al worker para revisar
+y tenemos
+tenemos que si yo cambio
+de ejecutivo
+si yo asigno un ejecutivo
+después
+solo un admin
+lo puede cambiar
+en los detalles de la compañía
+no, falta esa PR también
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+bueno
+es verdad
+que eran dos
+ahí la mando
+también con esto
+pero digamos
+en código
+¿qué te falta
+de las asignaciones de ejecutivo?
+el site
+por ejemplo
+la información que muestra el site
+sí
+eso está pronto
+falta eso
+eso sí
+mal recuerdo
+yo lo había dejado
+adelantado nomás
+sí
+yo se la puedo pasar
+si ya no
+ya lo tengo
+prácticamente pronto
+es conectar con la data real
+nomás
+lo que es importante
+chicos
+ahí
+en el cron shop
+Nahuel
+que si la compañía
+es de Dropi
+no hacemos
+no enviamos notificación
+¿está?
+enviamos notificación
+al cliente
+si la compañía
+es de Dropi
+no enviamos
+o sea
+nosotros podemos
+asignar ejecutivo
+pero si la compañía
+es de Dropi
+no se le envía notificación
+al cliente
+¿estamos?
+claro
+eso es importante
+y después
+fíjate todo el flujo
+este
+todos esos flujos
+y eso
+veo más al final del día
+Nahuel
+o bueno
+durante el día
+si querés
+este
+no decís
+qué es lo que tenemos
+que revisar
+para ir desbloqueándote
+pero estaría bueno
+más tardar mañana
+poder matarlo
+también está
+el crud de usuarios
+que eso está pronto
+y el cambio de mail
+también ¿no?
+si
+vos ahí
+en el crud de usuarios
+¿le permitís
+a un backoffice user
+cambiar de correo?
+a un backoffice user
+cambiar de correo
+este
+no
+ah no está bien
+está bien
+está bien
+está bien
+pero si permitís borrar
+y cuando agregaste
+fijás que no exista ya
+ese correo
+ah ya
+si
+con el tema
+de los roles
+con el tema
+de los roles
+permitís
+hace dos años
+porque es un array
+si
+ahí capaz
+que habría que definir
+quién puede cambiar
+este
+roles
+porque
+está el tema
+de que
+vos sos admin
+yo soy admin
+por ejemplo
+¿te puedo cambiar los roles?
+si
+por ahora dejamos
+lo que sea
+bien
+vamos a definir
+una cosa
+una única regla
+pero ahora
+la verdad
+vemos como postgra
+¿no?
+dale
+perfecto
+entiende bien
+Santi
+creo que es lo que
+le está quedando
+buenas
+¿cómo va?
+bueno
+estuve trabajando
+el viernes
+con el tema del mail
+ya quedó enviado
+para que lo revisen
+nuevamente
+ya quedó con los ajustes
+ahí Santi
+que me habías pedido
+después
+hoy tuvimos la reunión
+de marketing
+este
+y lo otro
+que estuve bichando
+fue
+lo que pasó
+Jona
+que ahora
+lo vemos como
+postgram
+y bueno
+ya tengo casi pronto
+la segunda versión
+la segunda opción
+que armé
+para lo del chatbot
+que la idea sería
+hoy ya
+mandársela de nuevo
+a Mati
+para que
+para que la revise
+perfecto
+bien
+muy bueno
+creo que no faltó nadie
+¿no?
+¿no me hayan?
+¿no?
+está
+fíjense lo que tienen
+postgram
+el resto
+buen provecho
+vamos arriba

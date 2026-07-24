@@ -1,0 +1,1213 @@
+Bueno, bien, arranquemos. Arranquemos, arranquemos, arranquemos, porque si no, no terminamos más.
+Bueno, saqué lo de pagos, estamos teniendo un problema, o sea, están dando bastante bien, increíblemente.
+Está consolidando todo, pero ya le voy a ir diciendo a Fernando y a Enrique, se quedan como post-cram.
+Pero, ¿cómo se llama? Pero nada, falta terminar de ajustarlo un poquito, que estoy en eso, así que voy a estar viendo.
+Y, ¿qué más? ¿Qué más? ¿Qué más?
+Nada, después que termine con esto, tendríamos que salir a Prod y correr ese cronjob de consolidar todas las suscripciones en una sola,
+que eso va a ser un poco lo heavy metal, pero bueno, va a ser mucho más sano.
+Y, ¿qué más? Y bueno, nada, después voy a seguir con lo de counterparties.
+Tenemos varios frentes que atacar. También ya salió el Draugr de Jona, que por cierto, que es muy bonita.
+Y ahí, bueno, vamos viendo con cada uno cómo viene saliendo cosas.
+Bueno, de mi lado, ahí vi que se emergió la PR que arreglaba el tema, el fix del plan Enterprise.
+Vi también que Fernando ya mandó a Revisión Interna lo que habíamos charlado, el tema del canal de support.
+Y yo ya mandé también a Revisión Interna lo que es la PR del worker de mi tarea relacionada a lo que es el comprobante de pago.
+Solo me falta grabar, estaba grabando el video para lo que es la PR del back office.
+Ah, ok, ¿qué? Carajo.
+¿Cómo ves? Bueno, voy a estar con la segunda parte.
+La segunda parte de lo que es la tarea, que es lo del croncho, para modificar los registros en la base de datos y en S3 de lo que es el nombre de los PDFs.
+Y bueno, y si llegara a terminar, supongo que vos, Santi, ya nos indicarás más testing por hacer, o no sé, ya habrá alguna...
+No, lo que vamos a hacer es lo siguiente. Lo que vamos a hacer con testing es lo siguiente. Voy a terminar de escuchar esto.
+Ayer, a pedido de Nahuel, ¿no? O sea, no le quiero echar la culpa.
+No le quiero echar la culpa a nadie. Pero, nada, ahí, con Nahuel y Jonathan nos juntamos, estuvimos viendo todo el tema de notificaciones y estuvimos viendo cómo encargar esos cambios y, en otras palabras, entre ellos dos, buscando cómo hacer la vida más imposible a ustedes, ¿no? A ustedes dos.
+Entonces, nada, a lo que llegamos, la conclusión es que los mails se tienen que guardar en base de datos para el tema de notificaciones.
+No vamos a dejar de tenerlos en HTML. Ojo al pío.
+Pero sí vamos a empezar a guardarlos en base de datos. Porque así nosotros manejamos en base de datos versiones de los mails y podemos regenerarlos también en la web de forma más sencilla.
+¿Está? Es un poco la idea.
+Entonces, muy parecido a lo que ya hacemos con los blogs, Kike y Fernando. Oye, ustedes ya lo han tratado eso.
+Entonces, no van a dejar de estar en HTML por un tema práctico, ¿sí?
+Pero la idea es...
+Y no van a dejar de estar en S3.
+Pero la idea es que nosotros podamos mantener versiones. Entonces, si yo mañana cambio un mail, por ejemplo, cambia el mail de pago, pero la notificación está con el mail anterior, regenera con el mail anterior.
+Y así nosotros podemos mostrar la notificación con cualquier idioma.
+¿Sí? Que eso también es clave.
+Recordemos que la idea es...
+O sea, el objetivo acá, ¿cuál es?
+Yo saco un mail, le ajusto la notificación y automáticamente se ve pechocho en el site sin tocar nada.
+¿Sí?
+O sea, es un poco el objetivo.
+Entonces, la tarea tuya y de Fernando a partir de ahora va a ser la siguiente.
+Yo vi que agregamos muchos test unitarios que están muy buenos, ¿sá?
+No sé cuántas tareas quedan pendientes ahí, Fernando.
+Ya los mezclo en la daily.
+De test unitarios.
+¿Cuántos test unitarios quedan tipo in progress?
+O sea, que ya se arrancaron.
+Ahora mismo, in progress. O sea, no sé si ya quedaron todos los de Kike de OTC manual.
+Y también que tenía counterparties y todo un montón de endpoints que estaban como, por así decirlo, dispersos.
+No sé bien si eso ya quedó margeado.
+¿Qué?
+No.
+No, no, está ahí alto.
+O sea, tenemos lo de counterparties y manual in progress.
+O sea, que en PURGY WESTERN, o lo que sea.
+Sí.
+Y después, la de OTCOM, que está hoy ya la estoy retomando.
+Que fue lo primero que hice nomás.
+Está.
+Estoy literalmente en eso.
+Que espero que si todo sale bien y no surge nada hoy, puede ser entregada el día de hoy.
+Fernando y Enrique, ¿te acordás la priorización de lo que yo te mandé sin tocar Bacopi?
+Porque no lo encuentro el mensaje.
+Entro al chat y veo puro mensaje que me mandás vos de mujeres desnudas y esas cosas.
+Entonces, lo que te iba a preguntar es...
+No, no pasa nada, no pasa nada.
+Peor es Nahuel con los enanos, pero bueno, está, tema aparte.
+Lo que te iba a consultar es, del site de lo que tenemos marcado, ¿está todo...
+Ahí va, es, es, a mí.
+Nosotros, de eso, ¿qué estaría faltando de lo del test unitario?
+O ya está todo in progress, está todo cocinándose.
+Entiendo que está todo, ya está todo cocinándose.
+No sé si vos, Fernando.
+Fernando, ya perdí un poco.
+Sí, sí, ya Fernando tiene todo lo que está en in progress.
+Y lo que es de mi lado, de One Money, está...
+Solo faltaba la Prue de Martín, ahora estaba viendo.
+Pero ya hasta vos le diste a Prue.
+Así que eso ya debería irse.
+O sea que todos estos test unitarios deberían estar en el site cubriéndonos el culo.
+Correcto, de una manera u otra, en in progress o...
+Está, perfecto.
+Entonces, terminemos esto, ¿sí?
+Este paquetito incluido.
+Vamos a agregar flujos más variados de QR, ¿sá?
+¿Sí?
+O sea, terminemos este paquetito que, en teoría,
+¿qué piensan que para mañana puede estar todo en, por lo menos en Intam?
+¿A qué te referís con los flujos más variados de QR?
+Yo, yo, yo, lo estoy atacando.
+Sí, sí.
+O sea, porque ahí el flujo que mergeamos, Kike, es tipo nomás registrarlo.
+Sería el de salir, volver, borrar los cookies y eso.
+Claro, ya tengo otra, en realidad, que ya está casi por enviar con los demás.
+Sí.
+Que no te escuche tu novia que tenés otra, porque estamos en problemas.
+Pero bueno, sí, sigan.
+Lo que te digo es, ataquemos esto, ¿sí?
+Liquidemos esto.
+Y enseguida que liquidemos esto, no vamos a atacar más tests unitarios por...
+Vamos a hacer una pausa.
+Y la idea es que vos y Fernando se dediquen a inflarle las bolas a Santi y a Gastón.
+¿Está?
+O sea, es más, ya háganlo desde ahora.
+¿Sí?
+Necesitamos actualizarlo.
+Actualizar absolutamente todos los correos a Generic.
+Todos.
+Todos los correos a Generic.
+La idea acá, Santi y Gastón, no es que los correos cambien el contenido.
+Solo el formato.
+¿Está?
+¿Sí?
+O sea, Enrique y Fernando no van a tener la capacidad para poder cambiar lo que son las variables dinámicas.
+Solo pueden cambiar texto, ¿sí?
+O alguna cosita ahí.
+Pero menos...
+Nahue empezó a vomitar, no sé, se empezó a agarrar la risa.
+Se olvidan que yo ahora tengo un monitor y los veo a todos.
+Culpa de llorar.
+No sabés qué está pasando, sé ordinario.
+Pero bueno.
+No, pero hablando en serio.
+Necesito que trabajemos en eso.
+¿Sí?
+O sea, todos los correos, Quique y Fernando, tienen que eliminarse del idioma en concreto
+y pasar a Generic y tener un solo correo.
+¿Sí?
+¿Sí?
+¿Está?
+O sea, que sería todo, literal, todos los correos.
+No tiene que quedar un solo correo.
+¿Sí?
+Por cuál arrancan o cómo lo hacen, no interesa.
+Tiene que quedar todos los que están pasados a Generic.
+¿Sí?
+Literal, creo que todos se están usando.
+Mi recomendación es que, por último, es más, o directamente pueden quedar sin actualizar.
+Hay migraciones.
+Por ejemplo, el mensaje de fin de año, actualícenlo porque probablemente lo enviemos este año.
+¿Está?
+Este, no sé si me están alabando de tantas manos.
+Pero digo, este, todos los mensajes, ¿sí?
+Todos, intenten pensar los correos, atacar primordialmente los correos activos.
+¿Está?
+O sea, los correos que son notificaciones activas.
+Y después van, o por último, atacan los de Mantain.
+Pero literalmente todos.
+O sea, no puede quedar, al final del día no puede quedar ninguno, ninguno sin el formato nuevo.
+¿Sí?
+O sea, ninguno.
+¿Está?
+La idea es eso.
+Al final del día es un decir, ¿no?
+Decime, por favor, ¿qué es un decir?
+Al final del día es un decir.
+Sí.
+Es para mañana.
+¿Está?
+Entonces, este, no, pero digo, ¿qué te iba a decir?
+La idea es que se pongan con eso.
+Porque mientras que Nau y Jonathan van a estar trabajando en todo el sistema de notificaciones,
+ustedes van matando todos esos correos y después para ellos va a ser más sencillo migrarlos.
+¿Bien?
+¿Está?
+¿Está?
+O sea, si están en Generic.
+Si están de ese formato, va a ser mucho más fácil meterlos.
+Entonces, ese tiene que ser el objetivo de ustedes.
+Liquidemos estos test.
+Yo vi, ahora, ayer me puse reorgulloso.
+Quiero felicitarlos a ambos porque vi 2.000 y algo de test unitarios en el site y casi me pongo a llorar de la emoción.
+¿Está?
+Eso quiere decir que, o sea, literal, es más, fui a cambiar a Google One Money y se me rompió todo.
+Y eso era lo que quería.
+Entonces, este, les agradezco ahí.
+A ambos.
+Nos falta el back office.
+Nos falta el back office.
+Se está moviendo mucha cosa por el back office como para no tener test.
+Y también otra cosa que destacar, Marti, para que lo pongas en el Prompting Genian.
+Me gustó mucho.
+Vi una PR de Tatato que puso warning, ¿está?
+De cosas que encontró mal en los test unitarios.
+¿Está?
+No sé si había alguna más tuya aquí, pero me gustó mucho eso.
+¿Está?
+Literal, tipo, hasta por niveles.
+Alto, medio, bajo.
+Ya los dejo hablar.
+Pongan loca.
+Pero, este, pero literal me gustó mucho eso.
+Entonces, ahí estaría bueno, Martu, que en el caso de los test unitarios pongas eso también, ese análisis de desventaja a su problema.
+Más allá que algunas las descarté, me parece que está muy bueno.
+Ahora sí.
+Les cedo la palabra.
+Sí, ahí hay mucho mérito de Fernando.
+La verdad que es un gran trabajo de también mucha iniciativa.
+Lo que quería preguntar muy rápido.
+No quiero sacar más tiempo de la daily.
+Simplemente recordemos.
+Si no querés sacar más tiempo, no pregunto.
+Si no vas a sacar tiempo, igual.
+Ah, me muto, me muto, me muto, perdón.
+No, no, simplemente.
+Te traigo recursos humanos acá.
+Te traigo recursos humanos.
+Simplemente mencionar que tenemos también que hacer el cambio al diseño nuevo.
+¿Te acordás, Santi, que muchos correos están en blanco y verde, el antiguo diseño?
+Involucra eso también, ¿no?
+Pasarlo al diseño.
+En realidad el objetivo es ese.
+Que pasen a tener todos el footer y pasen todos a tener el diseño nuevo, ¿tá?
+No necesitamos diseño de Santi y Pantin, entonces.
+O sea, como que ya lo implementamos.
+No, no, no.
+En realidad sí necesitan diseño de Santi y Pantin y de Gastón.
+Porque la idea es que ya que lo vamos a refactorizar,
+lo que debería cambiar es el formato y capaz que la forma en que nos expresamos.
+Porque fue algo que hicimos nosotros.
+Entonces tiene que todos los correos, por ejemplo, el correo de bienvenida, la factura,
+todas esas cosas tienen que estar chequeadas por Santi o Gastón, ¿tá?
+Y que transmitan la esencia de Asban, más cordial.
+No sea algo que nosotros sacamos con chat GPT-4 hace dos años.
+¿Se entiende?
+Es un poco ese objetivo.
+¿Tá?
+Este.
+Ok.
+O sea, la idea es, o sea, literal, lo ideal saben que sería que conformen todos los correos,
+¿sí?
+O sea, literal, agarren todos los correos y se los pasen a Santiago y Santiago y Gastón
+de a poquito se los vayan pasando.
+¿Tá?
+Ok.
+Este.
+Ustedes pueden ir trabajando.
+Pero pasen, o sea, tómense, más allá de que ahora están con estas cosas,
+les voy a sumar otras cosas, tómense un ratito como para ya dejarle toda esa tarea a Santiago
+o a Gastón.
+Así es, Santiago o Gastón, cuando van teniendo un tiempo, pueden ir sacando el correo.
+Y ahí Santi y Gastón, la idea no es, de nuevo, la idea no es agregar más información
+en cuanto a la información dinámica.
+Si la idea es que ustedes agarren y pongan, por ejemplo, yo qué sé, ¿no?
+Este, mejoren los textos, mejoren la forma, mejoren el orden, obviamente que tiene que
+seguir el formato nuevo, los colores.
+¿Cuál es la idea de esto?
+La idea es que todos van a compartir el mismo footer abajo.
+Entonces, después ahí, cuando Jonah y Gastón terminen, Jonah y Nahuel terminen con la configuración,
+¿te acordás, Enrique y Fernando, que yo siempre les digo que saquen la configuración
+de suscripciones?
+¿De qué tipo te vas a dar de baja?
+¿De qué tipo te vas a dar de baja?
+Bueno.
+Nosotros.
+Modificando.
+Modificando un único footer, que eso va a ser tarea de los chicos, modificando un único
+footer, ¿está?
+Vamos a poder agregar eso, ¿sí?
+Y a partir de ahora va a ser configurable.
+Entonces van a quedar, vamos a, es como el super zarpado de los correos.
+Pero para eso tenemos que estar todos alineados y reducir la carga de ese 3, ¿sí?
+Ok.
+Una tarea que ya, anótense, vamos a tener que agregar un cron shop para que cuando se
+emercen todos los correos, bueno, o algún.
+Alguna advertencia o algo, pues lo puedo, lo puedo hacer yo manual, lo tenemos que eliminar.
+Recordemos que el script no borra de ese 3, ¿está?
+O sea, si, si nosotros subimos más correos y deprecamos alguno, los deprecados van a
+seguir ocupando espacio.
+Entonces, este, habría que eliminar los, los viejos, ¿está?
+Ok.
+Bien.
+Bueno, eso nomás, Kiketo, o sea, liquidemos los test unitarios que tenemos, pero ya tómense
+un tiempo.
+Igual ahora vamos a tener un postcraft.
+¿Se fue, Santi?
+Estuvo a favor en la casa, me dijo recién.
+Pero yo le comento esto que me ha dicho.
+Ahí volvió.
+Qué cosa barra, ¿no?
+Bueno, así que vamos a disolver el equipo de diseño y bueno, está, va a quedar a cargo
+Fernando de todo lo que es Figma y esas cosas.
+Bien.
+Este, entonces, bueno, para poner un poco de onda de juego, vayas a cagar.
+Dale.
+Fernando, dale vos.
+Bueno, estuve en la casa.
+Estuve en la casa.
+Estuve en la casa.
+Estuve metiendo con mucho cariño al documento y quedó precioso el documento.
+Ah, ese documento ahí, Jonathan y, bueno, para todos.
+A partir de ahora, Fernando pasa a estar también en la división semanal, ¿está?
+¿Sí?
+O sea, que va a contestar en los canales.
+Mejor para ustedes porque una semana menos, aplazan una semana más estar asignado.
+Y también le asigné a Fernando que creara un documento con todos los
+posibles problemas y cosas que pasaron y eso.
+Si pueden, péguenle un ojo.
+Nosotros con Martu también le vamos a pegar un ojo para que ustedes tengan como una guía
+de cómo responder.
+La idea, también ya hablamos con Matías para que a partir de ahora va a empezar a
+robarlos a ustedes directamente.
+¿Está?
+La idea de esto, de ese trabajo, ¿sí?
+Y de las cosas que estamos sacando es que a partir de ahora ya no, primero, de su lado
+ustedes puedan dar respuestas más gratis.
+O sea, puedan darme mejores respuestas, más que lo vemos, ¿sí?
+O sea, me gustaría que por lo menos puedan hacer una iteración ustedes.
+Ya les pedí, le pedí, le pidió Fernando, perdón que te voy a robar toda la info, Tato,
+pero ya le pidió que agregue el cliente, ¿está?
+O sea, que agregue información del cliente, que era algo que siempre nos faltaba mucho.
+Pero la idea también es que cuando nos llega el reporte a nosotros, ustedes tengan más información.
+¿Está?
+Entonces, le pedí a Fernando que recolectara todas las respuestas.
+¿Está?
+Entonces, le pedí a Fernando que recolectara todas las respuestas.
+Entonces, le pedí a Fernando que recolectara todas las respuestas.
+Que yo he dado, que he dado Martina, que hemos ido atacando, para que ustedes tengan más información.
+Entonces, también cuando lo reportan en DS Back Discussion, ahí lo agarran y que nos tiren más info.
+Bueno, miren que el cliente está, o sea, yo no quiero tener que ir a un link y no sé dónde va.
+Yo quiero, el objetivo que tenemos con Martina es que yo entro a DS Discussion,
+les respondo a ustedes cómo atacar en la mayoría de casos, y ustedes son los que lo atacan.
+En el caso de que haya alguna confirmación o asistencia.
+O sea, no es la idea que nosotros con Martina, o en la mayoría de casos, vayamos y respondamos.
+¿Sí?
+Si no, la idea a partir de ahora es que ustedes puedan agarrar y tomar esa, o sea, preguntarnos las cosas que necesiten, lo que sea,
+y responder ustedes, por lo menos en la mayoría de casos.
+¿Bien?
+Mismo hasta, la idea es que la discusión se dé interna.
+O sea, si tenemos participación con Martina, que se dé interna y que sean ustedes los que responden.
+Che, mirá, pasó esto.
+Se resolvió acá y allá.
+Pero nosotros con Martina, ya no participar tanto en los canales de Vax.
+¿Sí?
+Eso es un poco el objetivo.
+Te dejo, Fernando.
+Adelante.
+Bueno, sí, eso.
+Y pedirles porque yo no he estado, o sea, recién ahora voy a meterme en eso de ver los Vax y eso.
+Pedirles, porfa, si tipo la bichada.
+Ya está, ha subido en Intam.
+Si le pueden pegar una buena bichada ahí, si quieren agregarle algo.
+Lo que sí.
+Mantener más o menos el formato, lo hice bien prolijito, como si fuera un trabajo para la facu.
+Mantener los encabezados, actualizar el índice, etcétera, etcétera.
+Así, tal, lo mantenemos prolijo el documento.
+Y, tal, básicamente eso.
+Le estuve metiendo, metiendo, metiendo, quedó prolijito, quedó precioso.
+Y ahora, tal, hoy he estado siguiendo con lo de OTCOM.
+¿Qué?
+Que, como dije, a menos que surja algo loco hoy, ya lo estaría terminando, espero.
+Y tal, y eso que decía Santiago, que también le mandé un mensaje a Mati,
+comentándole, pidiéndole que actualizara su bendito script y eso.
+Bien.
+Sí, ahí está toda la idea, es céntrense en liquidar los test unitarios, que lleguen cosas,
+y ya empecemos a atacar correos.
+Este, hay correos que van a ser más difíciles de testear que otros, ¿sí?
+Este, pero bueno, tal.
+Ahí, por ejemplo, ya, Enrique, ya te voy diciendo, pero una de las cosas que quiero cambiar es
+en los de Bridge, las notificaciones de Bridge.
+O sea, el tema es, nosotros no vamos a poder agregar más de la información que mostramos,
+pero, por ejemplo, los números con coma y eso, más lindos, sí lo vamos a hacer.
+O sea, no podemos, no vamos a trabajar, y esto ahora que está Santi también,
+no vamos a trabajar en...
+En actual, en agregar información dinámica, ¿sí?
+Va a ser solo un restyling.
+Pensemos que Bridge en algún momento va a pasar para el formato de lo nuevo.
+Entonces, este, no tenemos que complicar una vida.
+Sí, Tato.
+No, perdón, que sí, que ahora después terminaré hablando con Kike para ver bien
+cómo atacamos lo de los correos y eso.
+Nada más.
+Eso es.
+Lo importante ahí es que le pasen...
+Cuanto antes, toda la data a Gastón y a Santi, para que ellos, a medida que se vayan liberando,
+vayan sacando los correos en los tres idiomas.
+¿Está?
+Santi y Gastón, estos correos que vamos a ir actualizando, ¿sí?
+La idea también es que los vayan validando con Guillermo y todo eso.
+Entonces, este, o sea, los van tirando, ¿está?
+No hay mucha vuelta, ¿sí?
+O sea, nosotros, tristemente, tenemos que validar todo con ellos para quedarnos tranquilos.
+Este...
+No vaya a ser nada raro.
+Entonces, decirle, bueno, antes teníamos este correo, ahora teníamos este.
+Y también explicar...
+Yo le voy a explicar a Guillermo que, bueno, está, que esto es parte de las notificaciones
+que vamos a ir actualizando, ¿no?
+Pero no es la idea ahí, Santi y Gastón, que cuando se lo tiren a Guillermo sea tipo,
+sacamos este nuevo correo.
+Si no es, teníamos esta mierda, estamos haciendo esto y lo mejoramos así,
+después vamos a ver cómo mejorarlo más a futuro.
+Se entiende lo que voy, ¿no?
+No es este...
+Porque si no, si se lo venden así, Guillermo va a decir, ah, agregá esto,
+no, no, no, esta es la B1, después vamos a...
+Todos véndanselos, después vamos a trabajar con una B2.
+Porque la idea es, si no, al final se van a hacer ciclos eternos
+y no nos van a aprobar nada.
+Igual yo voy a hablar con Guillermo de eso.
+Gastón.
+Buenas.
+Bueno, yo estuve trabajando en el brochure que había pedido Matías.
+Ya había quedado terminado y hoy Matías me pidió un nuevo slide.
+Y además, también, por otro lado, estuve optimizando...
+el archivo, que siempre teníamos ese problema de que los PDF tenían mucho peso.
+Entonces, encontré la manera de bajarlo sin perder calidad ni nada
+y lo bajé como de 200 MB a 3.
+Por otro lado, estuve trabajando en un carrusel de 6 slides
+que había pedido Samuel para Dazmos Basic.
+Se lo había pasado a Santiago.
+También estuve ajustando los comentarios que me dejó y quedó aprobado.
+Y, por último, estuve actualizando el botón de notificaciones personales
+en el pop-up de Filtrar Origen.
+Dentro del flujo de notificaciones que había pedido Martina y Tererramos.
+Y ahora estoy con un carrusel nuevo que pidió Samuel.
+Y voy a seguir trabajando en eso.
+Y, bueno, ahí tengo una tarea más de marketing que me queda.
+Bien de bien.
+Ahí la idea sería, de tu lado, cuando te vayas desbloqueando,
+que vayas dándole una mano también a los chicos con los correos.
+Creo que eso está bueno porque Santi va a estar atacando el grueso.
+Entonces vos podés ir como matando...
+Son como tareas más atómicas en sí los correos, creo, Gastón.
+Eso, chárlelo con Santi.
+Pero capaz que está bueno que...
+Que Santi siga con las cosas grandes y vos podés seguir con los correos
+y sacando correitos y que eso podés ir haciéndolos más entre tiempo
+con lo de marketing.
+Porque tenemos, creo que son como 30 correos.
+No sé cuántos tenemos desactualizados.
+Ahí hay que ver.
+Bien de bien.
+Sería eso.
+Bien de bien.
+Joana.
+Bien.
+Bueno, ayer arranqué con todo el rediseño ahora del Drawer.
+Estuve moviendo todo lo de mis compañías.
+Adentro ya lo tengo bastante, bastante avanzado.
+Mi idea es hoy ya dejarlo para que lo corrijan los chicos de diseño.
+Y ya ponerme con lo de notificaciones.
+Hoy de mañana ya estuvimos ahí con Nahue.
+Nos reunimos de nuevo para actualizar ahí las tareas con lo que hablamos ayer.
+Ya dejamos todo bajado a tareas con descripción y todo.
+Que después ya te íbamos a preguntar ahí si pasábamos todas las tareas de una
+o vamos pasando a medida que vayamos haciendo.
+Más que nada por el canal de Slack.
+O como querías hacer ahí.
+Pues son, hay bastantes tareas.
+Ármenlas en un documento prolijito.
+Denle cariño al documento, por favor.
+Un poquito de amor.
+Si no, pueden armar un PDF igual.
+Yo qué sé, pero darle un poco de cariño.
+Creo que Santi nos está faltando el tema de configuración.
+O sea, notificaciones ya está aprobado de mi lado.
+Ahí Gastón, si querés, ya aprovecha este tiempito para enviárselo a Guille.
+Sí.
+Notificaciones está todo aprobado.
+No sé si quedó algún comentario de Nahue ahí colgado.
+Este, porque había visto que tenía comentarios de Nahue.
+Eh, y creo que solo está faltando configuraciones que tenemos a Santi ahí.
+Con eso.
+Este, pero, pero está ahí si quieren.
+O sea, teniendo en cuenta que notificación está todo aprobado y con el cambio que hicimos ayer,
+podemos planificar todas las tareas.
+Configuraciones ahí, yo a Nahue diría que todavía no lo toquen hasta que
+Santi no lo mande a diseño, no lo planifiquemos hasta que Santi mande a diseño.
+Tenemos para planificar todo el flujo de team mates, de múltiples compañías.
+Eso ya lo tenemos para planificar.
+Tenemos para planificar todo el flujo de notificaciones.
+Sí, este, notificaciones puede salir con un solo correo.
+Eso es importante.
+O sea, que lo tengan en cuenta ambos.
+Puede salir con un solo correo, o sea, que agarren un correo que ya está funcional, este, que hayan
+pasado y lo cambien, lo cambien a nuevo formato y después de a poquito los vamos, lo vamos matando.
+Lo importante es que salga todo el core de notificación y también las landing, que creo que eso ya lo están atacando.
+Lo otro vos estás atacando también a esto acá, que te iba a consultar cómo venía.
+Sí, eso mismo que te dije al principio, ya lo tengo avanzado.
+La idea mía es hoy ya mandarlo a diseño para que lo revise, tipo ahí en interno, pero ya está bastante, bastante avanzado.
+Tengo que ajustar el CCE.
+Tengo que ajustar el CCE, se los responsive y eso, pero está bastante, bastante avanzado ya.
+Está bien.
+Yo lo que te diría es, si querés, metele un poco más esto.
+Dejemos un tiempo más a que Santi va a ver si puede avanzar con configuraciones y vemos en qué anda.
+Y metanle, metanle más a esto y vos nowhere a landing.
+A ver si podemos sacar cosas.
+O sea, y después seguimos.
+Capaz que de repente si nosotros podemos sacar todas estas cosas y ya que se empiecen a mover.
+Mientras que se empiecen a mover.
+En vez de agarrar más cosas, se ponen a planificar.
+Sí, como para que tengan esas dos cosas en paralelo.
+O sea, PR es moviéndose y eso.
+Algo que es importante para los dos.
+En mis PR termine actualizando todos los modelos.
+Pero ahí creo que está.
+O sea, solo actualicé los modelos.
+Nahue.
+Ahí ya pasó para vos y se pasó para tu sprint.
+Pero creo que me está faltando.
+O sea, está faltando actualizar los custom button y todas esas cosas.
+Dale vos.
+Ahí va.
+Sí, está faltando eso.
+Ya.
+Ya te paso tarea ahora para eso.
+Y saliendo de eso, de qué tal nos acostamos con Johanna para ya definir también la descripción de cada una de las tareas.
+Así ya ahora las mandamos.
+Ya definimos incluso lo de team mates.
+Ya tenemos ahí planificado.
+Es mandarlo nomás.
+Estoy apenas ahí empezando a arrancar con las landings.
+Que también dejé las tareas, al menos esas dos, en el canal de solicitud de tareas.
+Creo que ya las aprobó Marti hoy.
+Sí.
+Marti ahí.
+O sea, pasame lo de los botones porque no quiero que eso se aplace porque si no vamos a tener un dolor de huevo impresionante.
+Yo ya te hice el trabajo ahí de los modelos.
+Pero lo de los botones y eso tenés que verlo vos.
+Los modelos ya quedaron actualizados en todos los repos.
+Bien.
+Dale.
+Entonces ahí lo que te pido es si podés concentrarse en eso.
+Y bueno, tal.
+Pueden mandar por bloque de repente.
+Decir, bueno, la estimación de team mates es esto.
+La estimación de notificaciones es esto.
+Estaría faltando configuración nomás.
+¿Tá?
+No tengamos en cuenta para esta planificación lo que es landings que están sacando y lo que es el Drawer.
+Solo pensemos en team mates, notificación y configuración.
+Son esas tres épicas.
+Es más, vamos a crear tres épicas para eso.
+¿Sí?
+Con respecto a las landings, creo que hay una épica de landings.
+Fijate ahí si tenés alguna.
+Si mal no recuerdo, creo que existe, sí.
+Cuando yo hice las otras.
+Está.
+Fijate ahí, de última veanlo entre ustedes y lo...
+Bien.
+Bien.
+Perfecto.
+Santi.
+Buenas noticias.
+Bueno.
+Dejé enviado la parte de las landings.
+Ahí tenía una consulta, Santi.
+¿Qué es?
+La parte de DasBank Banking.
+Eso.
+Eso ya no maneja más Play, ¿verdad?
+Eso está con Bridge ahora, ¿verdad?
+DasBank...
+¿Cómo, perdón?
+Nadie, ¿no?
+DasBank Banking.
+No, pero DasBank Banking es tipo como la banca digital para abrirse una cuenta de banco, ¿no?
+No es para...
+Exacto.
+¿Qué banco estamos manejando?
+Bueno, ahí podés...
+Podés hablar en marketing y diseño arrobando a Matías y a...
+Y a Guille.
+Bueno, yo los textos que tenía armado ahí eran de cuando teníamos Play.
+No, pero Play es para...
+Y eso ya quedó...
+Play es para contabilidad.
+O sea, está Play para contabilidad y...
+Entonces...
+Y en banca no sé qué tenemos.
+O sea, si yo voy a contabilidad, nosotros podemos vender que estamos usando Play.
+¿Está?
+Eso...
+Perfecto.
+Eso, si querés, doblechequealo con ellos, pero en teoría ellos aprobaron los diseños.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+Bueno.
+cosas y claro te sigo y me decido están las grandes y si me estoy siguiendo
+rapidito que contabilidad y tatata no habla nada de play entonces play lo puse y esto está mal
+no dice banking no tiene que ser acá acá con play crear conectar con tu cuenta sobre un play
+esto estaría bien y por acá dice usar la baja claro que podemos agregar santi como comentario
+es algún icono de play como el estilo este que tiene un icono play bien pero lo tengo
+mal así que no puedo usar porque yo ajuste un poco los textos
+con cloud para que tenga un poco más de coherencia lo que venimos hablando pero
+dejé el mismo contenido aunque en la cuenta pero esto de activar contabilidad y hay este
+es ese botón si complica lo podemos dejar en activar en activarlo en tu cuenta o comenzar
+ahora directamente y ponemos comenzar ahora bueno tiene mucho sentido activar contabilidad
+esto esto está está honrado los textos por eso yo te había comentado que está deslanzando la parte
+de contabilidad contín está bien la parte de contín está bien visualiza ingresos egresos
+generar reportes contables en segundos llena tu declaración fiscal y sin esfuerzo esto de
+contabilidad start ok ahora pondría que un icono de play hay una cosa pero la parte de dafam basic
+y yo los arroba vamos a ver si me dan pelo
+bien éste está por otro lado lo otro que estoy trabajando es la parte de configuración este que
+bueno en mi intención es eso que quede pronto para para hoy tratar de lidiarlo hoy nada así que voy
+a estar con eso después comentar ahí que mati ya me estuvo pasando lo que quiere ajustar de la parte
+en elasan moral quiénes son los textos donde llegas t guessed a lo mismo por ejemplo en elkan
+o debió ser lo mismo con el tipo Albами al estar INTELI"?
+Bueno es un nuevo…
+vale el molar está uno en esta parte de 열 Sensohte Matthew Tarpanis
+entonces la parte de importar el número tiene que estar en ressres tung y la parte de
+ponerte en que sea por sabes dónde podium en 줄 e si es en toooo o la Magia del Nick
+que tenemos abriendo y así por lo que bolt es el carácter que queremos hacer con esto
+con esa guida único algo que es como que que necesito siete signos en el cling y nadie me voyage no me baet mal
+y cada vez que pongo el acto cualquiera pongo el fro sorry…
+para CoCorp y decirle, bueno, mirá
+lo que tenemos hoy en día es esto
+¿dónde va esa landa?
+¿van servicios, recursos?
+¿vamos a crear una nueva sección?
+No, él me dijo que era
+una home nueva
+una home nueva y que no iba
+ni en recursos ni en nada, iba
+solamente para
+personas que entraran desde
+desde ciertos links
+Entonces
+confirmarle cómo quiere que sea ese link
+si también quiere que sea disponible
+para fanbase
+o sea, valida
+de nuevo, entonces nadie puede
+llegar a esa home, solo es para conversión
+o sea, rechequea eso porque
+Eso seguro porque me lo comentó
+hoy. Entonces, doble
+chequealo y que quede escrito
+porque después cuando lo saquemos
+esa home solo va a llegar Mati
+¿entendés? Entonces
+no me gusta mucho
+decirle, es más, si querés
+decirlo de mi parte, a Santi le hacía un poco de ruido
+que sea una home que nadie
+pueda llegar, pero está, no hay problema
+se lo sacamos
+¿sí?
+Pero doble chequealo bien porque si no
+estamos en el on
+El último mensaje que me puso Mati
+me puso, es una landing 100%
+de conversión paradas, no debe quedar
+a la vista en AdWord ni en la home
+¿Eso te lo puso por privado?
+Sí
+Mándalo, cuando lo mandes
+a Design Overview, mándalo
+con ese texto
+cuando lo mandes y lo pruebes
+Mándalo, como hablé con Matías
+esta es una landing que no va a quedar
+todo eso
+o sea, ahora no lo vamos a forzar
+a que lo mande por el canal privado
+¿sí? Pero es importante
+acordate y ponete un
+reminder o algo que cuando lo mandes a
+Design Overview, mandes todo ese detalle
+¿está? Bien, perfecto
+Porque si no había más
+lo mismo que digo con los correos y todo
+si ellos revisan más o menos
+no es nuestra culpa, ¿está? O sea
+si ellos le dan más pelota o no
+no es nuestra culpa, ¿sí?
+Pero está, no podemos
+hacer mucho
+Lo otro, le consulté
+yo ya te digo, o sea, ni siquiera leen
+los mensajes que le mando, porque el otro día
+le consulté a Guille si la página
+esta de servicios
+quería que estuviera dentro de servicios
+o que agregáramos algo adicional, no, no me contestó
+nada, pero está
+yo le hice esa consulta que era
+lo que vos me habías dicho
+Después
+vamos a ponernos al servicio
+consultarte
+¿Cómo?
+Sí, sí, lo ponemos adentro de servicios
+Este, creo que va a ser lo mejor
+Consultarte el tema
+prioridades
+teniendo en cuenta
+está hora de ver si sale algún ajuste de esto
+de la landing
+y supongo que eso sería la prioridad
+si no continúo trabajando la configuración
+que es la idea que quede para hoy
+Después, tengo lo del video
+de teammates, ¿en qué lugar estaría
+lo de los mails estos que
+estás pidiendo Santi?
+¿En qué lugar entraría la home esta que pide Matías?
+La idea de, o sea, la home que pide Matías
+conjunto con los mails, a ver, los mails son algo chiquito que se pueden ir, o sea,
+pueden decir, bueno, por día saco un mail
+Perfecto
+Eso es lo que, me gustaría que vos y Gastón
+se concentren en proponerse
+como viste sacan un anuncio, bueno, por día saco un mail
+¿Está?
+O sea, porque si no, o sea, necesito que los chicos también se pongan a desarrollar
+y es solo actualizarlos, porque no es que estén mal los correos, es solo actualizarlos
+a nuevos formatos
+Entonces, propónganse, por un día saco un mail
+¿Está?
+Cada uno, entonces, de acá a dos semanas deberíamos tener todos los mails pronto
+¿Se entiende?
+Ese es un poco el target
+¿Está?
+Además de las tareas que tiene, por día un mail
+¿Está?
+Que es literal agarrarlo y darle un poco de estilo, diseño, nada más, ¿no?
+No quiero mucha vuelta
+¿Sí?
+Rever los textos, que quede un poco más claro
+¿Está?
+Este...
+Pero si ustedes, por día, van sacando un mail, piensen que cada día yo tengo un mail
+nuevo para pasarle a Fernando y a Enrique
+¿Sí?
+Ese es el objetivo
+¿Está?
+Entonces, así vamos avanzando
+Entonces, además de sus tareas, por día tiene un mail
+Y después lo de home
+Y bueno, ahí la idea es que vayan paralizando, a medida que van soltándose
+Pero creo que lo más sano es eso
+O sea, pensando en los mails, no sé cuánto tiempo les llevo a ustedes a actuar
+Porque en sí el contenido ya está, es solamente actualizar el texto y pasarlo al formato
+Eso lo transmiten ustedes
+Pero la idea sería eso
+Otro caso ahí que puede ser que tengamos que trabajar de los mails
+Es la ilustración, no sé si te acordás que Ige había pedido cambiar las ilustraciones
+Que eso sí puede llevar un poquito más de tiempo
+Pero la parte de los textos no creo que sea mucho
+O sea, podemos agarrar perfectamente uno por día
+Eso no, no hay problema
+Ah, quedémonos como post-cram y debatimos un poquito
+Así nos seguimos arreglando para esto
+¿Alguien más tenía algo para charlar?
+Yo no, fue...
+Te había dicho de quedarnos con Kike post-cram, ¿puede ser?
+Ah, sí, mierda
+Sí
+Bien, sí
+Santi, te llamo ahora en unos minutitos, ¿está?
+Nos quedamos con Enrique y Fernando
+Bueno, yo no, ¿eh? Nadie le...
+Ah, Marti
+Pero la puta madre, siempre te dejo para lo último y te estoy...
+Estaría bueno capaz que sigas el orden así, no te olvida
+No, el tema es que siempre intento variar porque si no se...
+Si no se acostumbra y no escuchan a los demás
+Manga sinvergüenza
+Dale vos, perdón
+Ok
+Ian de mi lado...
+Está, básicamente estuve con las PRs
+Y también chequeando en particular la del prompt.ai
+Esto ya estaría pronto de mi lado para...
+Todo lo que es site...
+Todo lo que es frontend, backend y tests y lo de sitepress
+Y después también...
+Bueno, ya está, me he rechazado en...
+En Devlog que es quitar la opción para contratar el servicio express para los nuevos
+Y después, está
+Iba a ponerme a investigar el tema de los pagos internos
+No sé si hay alguna otra prioridad antes
+Pero de mi lado...
+Eso sería lo siguiente que tengo
+Y...
+Está
+No mucho más
+Bien
+Bueno y estuve ahí atacando algunas pedidos de...
+De la parte de...
+Ojo que estamos...
+Ojo Marti que...
+Cerra el sprint el lunes que viene
+Ojo con las tareas
+Está
+Para revétenlo un poquito
+Tiende bien
+Genial
+Bueno, ahora sí
+Fernando y Enrique quédense
+El resto...
+El resto...
+Buen provecho
+Santi y Gastón
+Nos juntamos ahora un ratito para...
+Para rever esas cositas
+Eh...
+Yo ya les arrobé ahí
+Ahora voy a pegarle un telefonazo a Matt
+En particular
+Vale, impecable
+Bueno, nos hablamos
+Buen provecho
+Bueno, lo he dicho
+Chau chau
+Chau chau
+Chau chau
+Eh...
+Bien
+Eh...
+Chicos
+Chicos, chicos, chicos, chicos
+Eh...
+Estoy sacando...
+Espérenme un segundo
+Hicimos un cambio en el sistema de pagos
+¿Tá?
+Espérenme...
+Déjenme volar porque esto es importante
+Nosotros antes cada vez que se compraba una suscripción nueva
+Se creaba una suscripción relacionada a un customer
+¿Sí?
+¿Tá?
+O sea que, por ejemplo, si un customer tenía cinco compañías
+Tenía cinco suscripciones activas
+Que se co...
+Tenía cinco...
+Una puta...
+Tenía cinco suscripciones activas
+Que se cobraban en distintos puntos del mes
+Entonces
+Entonces, imagínense que
+Si tenemos un usuario con cien compañías
+Tenemos cien puntos en el mes donde se les cobraba
+Era un dolor de huevos, ¿no?
+Entonces lo que pasamos a hacer ahora es que a partir de ahora tenemos un usuario
+Y lo que hacemos es
+A partir de ahora
+Ese usuario tiene...
+Jugamos con una sola suscripción anual y una mensual
+De esas suscripciones anuales vamos poniendo los precios
+Y vamos jugando con las cantidades
+¿Tá?
+Por ejemplo, de este plan anual tenés diez compañías
+De este plan anual tenés veinte
+¿Tá?
+O sea, no hay límite en las quantity
+¿Sí?
+Entonces vos podés tener las que vos quieras
+Y lo que hacemos cuando se co...
+Se cambia de plan
+Le cobramos un prorrateo
+¿Sí?
+Primero le devolvemos la plata del plan
+O sea, la plata de lo que ya tiene
+Te...
+Y después de eso lo que hacemos es le sumamos un poquito más
+¿Tá?
+¿Se entiende?
+Entonces, por ejemplo, si vos tenías...
+Si vos contrataste contabilidad que son cuarenta dólares
+Pasaron unos días
+Y vos decís quiero cambiarme un plan
+Yo lo que te voy...
+Lo que sucede en la base de datos es
+Le vamos a devolver un prorrateo de esos cuarenta dólares
+¿Tá?
+Sacándole una comisión
+Porque nosotros nos quedamos con el cinco por ciento de comisión
+¿Sí?
+Entonces no le vamos a devolver cuarenta dólares
+Vamos a...
+Porque es lo que nos cobra Stripe
+Entonces como vos adquiriste ese servicio
+Yo te lo...
+No es...
+O sea, está genial que te quieras pasar
+Pero yo...
+Esa comisión de Stripe que me cobró por darte el servicio
+Yo también te la voy a cobrar
+Para no perder plata
+Y ahí te hago un refund
+Y de ese refund
+Yo lo que te hago es
+Te agrego a la suscripción
+Pero no te voy a cobrar los cincuenta dólares del plan estándar
+Te voy a cobrar únicamente veinticinco
+Porque supongamos estamos a mitad de mes
+Entonces te voy a cobrar veinticinco
+Y en la próxima factura
+Te voy a cobrar los cincuenta
+¿Tá?
+Pero es una sola suscripción
+Que tiene todo eso
+¿Sí?
+Eh...
+Tenemos un gran problema
+¿Tá?
+El gran problema cuál es
+Eh...
+Nosotros en Stripe no tenemos los mismos precios que tenemos en Dev
+Y esto Kike vos lo tenés bastante claro
+Por el hecho de que no hemos actualizado los Price ID
+De Dev
+Siempre actualizamos los de producción
+Y en Dev lo que tenemos son precios volados
+¿Tá?
+Entonces
+Yo les voy a avisar
+Ahora vayan a comer
+Y les voy a avisar
+Porque estoy sacando unos ajustecitos más
+Que estoy probando
+Pero
+Yo lo que necesito es que
+Yo lo que necesito es que
+Ustedes agarren y hagan pruebas
+Va a ser muy delicado esto
+¿Sí?
+Entonces
+Necesito que se tomen el tiempo de verlo
+Ustedes en la parte de monitoreo
+Pueden entrar a cualquier cuenta de Stripe
+Y ver cómo están las suscripciones
+Cómo estar compuestas
+Todo
+¿Sí?
+Eh...
+Esto es muy delicado
+O sea es como que
+Esto es como
+Ustedes vienen trabajando en todo lo que yo les dije en la Daily
+Y es como una pausa
+Una pausa a meter esto
+¿Tá?
+La idea es que
+Ustedes analicen
+Con la información que tienen
+Ustedes tienen
+Las credenciales de Stripe de Dev
+Entonces literal pueden obtener
+Cualquier Price ID
+O lo que ustedes quieran
+Para saber
+Cuanto es real lo que se cobra
+¿Tá?
+O sea eso lo pueden hacer
+Más allá que en monitoreo
+Tienen toda la información
+Miren
+Les voy a compartir pantalla
+Para que vean
+Que literal en monitoreo
+Tienen toda la data
+Que ustedes necesitan
+Como para poder hacer este análisis
+Entonces
+Si entran a
+Si
+Si entran a monitoreo
+Si estoy en Dev
+Voy a ir a Stripe
+Voy a buscar un usuario
+Que vengo trabajando
+Hace
+Ahora
+Y
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Si
+Voy a agregar para que ustedes puedan ver acá en la suscripción y lo tengan claro. Pero ustedes si se fijan, vas a tener varios cambios de planes. Entonces yo, este mismo usuario, fue haciendo cambios de planes, contratando distintas compañías, pero ya tiene una sola suscripción.
+Un solo, con determinados ítems.
+Entonces, cambió de una suscripción de 25 a 40. Entonces, de la de 25 se le reembolsó. Ahora, si voy a mirar la de 200, por ejemplo, acá se contrató una versión de 200, pero se le reembolsó 38 con 28.
+¿Ven qué? De los 40, nosotros le sacamos un 5%. ¿Se ve? Y acá, por ejemplo, acá se ve que compró otra compañía.
+Vamos a ver qué compró. Acá compró contaduría, dirección a gente registrada, Bridge, Florida, banca para tu compañía, WeReport. Compró todo esto.
+En este caso, no se le reembolsó una mierda, pero cuando vamos acá, yo cambié para un plan. Cambió para un plan mensual. Cambió para un plan mensual.
+Esto es un bug que estoy trabajando ahora. Solo le reembolsó.
+Reembolsó contabilidad, que eran 40 dólares. No le reembolsó las otras dos.
+Pero se puede... A lo que voy es, se ve cuál es la metodología.
+En todos estos cambios, el cliente ahora tiene dos compañías, pero tiene una sola suscripción que le cobra por las dos compañías.
+¿Cuánto es? 200 dólares. 200 dólares por una.
+Y 50. No sé por qué está mostrando 49, pero 50.
+Por la otra suscripción.
+Cuando inicialmente el cliente arrancó con una cantidad de suscripciones y con otra.
+Pero es una sola suscripción.
+Si ustedes se fijan, mismo tienen acceso a producción, van a ver que clientes que tienen múltiples compañías, tienen muchas suscripciones.
+Una suscripción por compañía.
+Y eso pueden mirarlo en el site.
+Entonces, la idea después del almuerzo, ¿qué es?
+Que ustedes jugando, creen usuarios, analicen los Price ID.
+Pueden crear un script rápidamente que le pegue contra la base de datos de Stripe en Dev, contra las claves de Stripe en Dev.
+Y ahí lo que preguntan es, bueno, esto es Price ID como para tener una referencia.
+Pueden crearse una tablita.
+Eso, Cloud se los hace en cinco minutos.
+Le dicen, bueno, mirá, quiero que me digas cuáles son los precios reales de los planes.
+Por ejemplo, agarran y le dicen, chequeate en la base de datos de planes los Price ID que tenés en Dev y los Price ID que nosotros tenemos visuales.
+Por ejemplo, si vos agarrás el plan estándar.
+El plan estándar, nosotros estamos diciendo ahora que cobramos 50.
+La página Price ID dice 20.
+Como para que ustedes puedan hacer los cálculos reales.
+Porque al final del día lo que se cobra es lo que dice Stripe.
+En producción eso está alineado, pero en Dev no.
+Entonces hay que tener cuidado.
+Lo importante acá que es, o sea, ¿qué es lo que ustedes tienen que chequear?
+Bueno, agarro un usuario, le agrego 10 compañías, ¿qué es lo que tendría que pasar?
+Bueno.
+Tiene que haber una sola suscripción.
+Va a haber una sola factura que va a ir acumulando todo, ¿sí?
+Es una sola factura que va acumulando toda la guita, ¿está?
+Si vos tenés 10 compañías con suscripciones cada una de 50 dólares, ¿qué deberíamos cobrarle una vez al mes?
+¿Me vas a repetir si una compañía tiene cuántas?
+Si un usuario compra 10 compañías con suscripciones de 50 dólares, ¿cuántas veces deberíamos cobrarle al mes?
+¿Y cuánto?
+Una sola vez.
+Una sola vez y deberíamos cobrarle 500 dólares, ¿está?
+Ese es el objetivo que nosotros tenemos que lograr.
+Una única factura al mes por todas las compañías, ¿está?
+Entonces las pruebas que yo necesito que ustedes hagan sea esa.
+Y también jugar con los cambios de planes, encontrar los reembolsos, ¿sí?
+Esto, venimos atacando varias cosas y está todo bien.
+Pero esto es una prueba.
+Es una pausa que yo necesito que se centren a chequearlo con cuidado.
+Yo ya lo estuve haciendo.
+Martín ahora también me va a dar una mano con esto, ¿está?
+Pero necesito tenerlos a ustedes dos también.
+Cosa que cualquier bug, cualquier irregularidad, cualquier cosa.
+Piense que esto es plata que podemos ganar o que podemos tener problemas con un cliente, ¿sí?
+O sea, esto es como venimos trabajando con todo, tenemos todo planificado.
+Pausa, es como que se hace una pausa.
+Nos centramos 100% en esto.
+Y ustedes acá tienen toda la información.
+Yo voy a crear acá un panel ahora que lo voy a sacar en este ratito para que ustedes puedan tener el ver más acá y poder descomprimir una suscripción y ver una suscripción que es cada cosa, ¿está?
+Ven que acá, por ejemplo, ven que acá, por ejemplo, cuando agarramos esto así, nosotros ya podemos ver todo lo que es toda la información, o sea, toda la información de todo lo que es la suscripción, todo.
+Además, hasta pueden abrir la factura, ¿sí?
+Sí, Quique.
+Santis, creo que tengo problemas de permisos, no sé si se te ocurre, yo te puedo mostrar o no puedo abrir ese panel básicamente en esencia.
+¿En Dev?
+Sí, en Dev.
+Si se te ocurre que puede ser, te puedo mostrar.
+Decime cuál es tu usuario.
+Es el de Rioto.
+¿Sos admin?
+Sí.
+A ver, con mostrame vos rapidito.
+Está bien.
+Vos sos Dev.
+Sí, me voy a los espacios de Zoom, ¿verdad? Es este, ¿verdad? Este panel, cualquiera de ellos.
+Ah, no, ¿qué es lo que pasa? Bueno, a ver, dale ese, dale ese, a ver.
+O cualquiera de ellos.
+¿Qué te tira en la network? ¿Abajo del todo no te aparece nada? A ver, a ver, scrollá hacia abajo.
+No sé si sos un bug.
+No, es que tiene que scrollear hasta abajo.
+Ah, claro. Qué raro, ¿no? Bueno, sí, está. Tiene que scrollear hacia abajo. Ahí está, ahí está el tema. Está mal diseñado.
+Ah, o sea que, claro. Ah, está bien.
+Aparece abajo, ahí está. Lo saqué rapidísimo esto, perdón, Kike. Mayó, mayó.
+No, no.
+Este...
+Creo que había probado uno que justo no tenía nada y por eso no...
+No, ¿qué pasa? Recordemos que los usuarios de banking, por ejemplo, tienen usuario de Stripe pero no tienen más nada.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+Ok. Ahí va. Está perfecto.
+base de datos, que son los que mostramos, hacemos
+factura y todas esas cosas,
+no son los mismos
+que los que tenemos en
+producción. Entonces,
+es importante que se fijen
+también, Quique, los
+correos. Cuando vos haces un cambio de plan,
+también te enviamos cuánto vamos a hacer
+de refund y una cantidad de cosas.
+Entonces, fijate que todo tenga sentido y a qué
+está alineado.
+Yo ahora, ustedes vayan a comer,
+hagan un corte y después organícense
+con Tato como para poder hacer estas
+pruebas. Creen compañías,
+con planes, lo que sea.
+O sea, metan compañías con muchas
+compañías. También algo
+importante que me digan es, vos, mirá, creé una
+compañía con 20 compañías
+y cada vez que iba a pagar se trancaba.
+Ese tipo de chotadas
+necesito.
+También tienen que jugar con el update payment
+method. Cambien el update payment
+method.
+Obviamente que después vamos a correr Cypress,
+pero hay cosas que no chequea Cypress,
+que es la parte de Stripe, que al final la
+plata se devuelva. Y eso es lo que necesito
+que ustedes se metan a fondo
+y encontremos algún hilo. Piensen
+que si nosotros acá la estamos pifiando
+estamos perdiendo plata y eso afecta a toda
+la empresa. Entonces yo estoy, realmente
+estoy metiéndole todo el esfuerzo a esto,
+pero también necesito tres ojos
+más para chequear que esté
+todo ok antes de salir a producción con esto.
+¿Sí? Yo creo que va a ser
+algo muy bueno porque, recordemos
+de nuevo el punto, ¿no? Un cliente
+que le fallan los pagos, tiene 100
+empresas, te fallan
+30 en distintos puntos del mes,
+es lo que se está volviendo imposible
+de trackear. Ahora un solo pago
+es sencillo. ¿Sí?
+Genial. Ese es el punto.
+¿No? Genial.
+Que vayanse a hacer comida.
+Hasta luego.
+Hasta luego.

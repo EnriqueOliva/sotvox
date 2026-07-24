@@ -1,0 +1,105 @@
+para mostrar los mails, ni mostraría ningún mail
+a ese punto
+son mails muy básicos
+pero si no están, no
+o sea, entiendo que no se está atreviendo
+o sea, no puede ser que no se atreviendo
+que no están dando el worker
+hay algo raro, algo muy raro
+porque la lógica no tiene mucha vuelta
+o sea, cuando haces el cambio
+de estatus, hay algo que
+es el backoffice, o sea, vayan
+todos al backoffice de cabeza
+es el backoffice, estoy seguro que hay
+algo en el backoffice que está haciendo que no se envíe
+la notificación
+no sé, no me cierra otra cosa
+hagamos una cosa
+dividamos al equipo
+Enrique vos no vas a participar en esta
+reunión, en esta demo, a no ser que
+corrijamos los emails
+yo mandé ahí
+los que me preocupan son
+los siguientes, con esos
+podemos incluir
+el mail
+al counterparty de triangulación aceptada
+¿no?
+de rechazada, ese no están dando
+¿está?
+ese es uno
+voy a ver si me deja editarlo
+voy a marcar los importantes
+o sea, lo pone con un igual
+no, no, un hashtag
+ahí va
+ese me parece importante
+la triangulación rechazada enseguida que crea
+esos ya están todos
+estos son todos los mismos
+o sea, seguramente es el mismo bug
+o sea, es muy literal
+la triangulación fue probada
+el vendedor
+y al comprador no
+este
+y después
+tenemos fondos
+se anda
+después
+este es lo mismo
+y se liquida fondos
+es lo mismo, o sea, no nos permite
+mostrar los happy pad
+de los correos, o sea, cuando se liquida
+la operación y ambos finalizan
+ese es el último, es el más importante
+¿está?
+Jonathan y Enrique, júntense
+o sea, el que más me interesa
+es el de la liquidación
+el resto podemos chamullado
+¿está?
+pero el que más me interesa es el de la liquidación
+no estamos liquidando
+por ahora, Enrique, no formás parte de la demo
+probablemente me encargue yo de eso
+si no está la parte de mails
+es un
+o sea, es hacer una demo para reconocer
+que está todo hecho mal
+¿está bien?
+Marti, si puede
+Jonathan y Enrique, súmense
+o sea, revisen ahora
+tenemos la demo en 30 minutos
+tendremos que encontrar el fix
+tendría que ser algo milagroso
+¿está?
+Sí, Kike
+No, perdón, quería poner
+mano para arriba
+dale, ya lo tocamos
+este
+está
+o sea, si quieren, quédense
+quédense, pero
+concentrense en eso
+o júntense entre ustedes
+lo que quieran
+¿está?
+pero necesito
+si podemos, o sea
+si podemos encontrar el mail
+de cuando se liquida la operación
+y vamos a finalizar
+¿qué carajo está pasando?
+sería lo clave
+el error para mí está en el back office
+está, o sea, hay un tema en el back office
+agarren cualquier transacción
+la cambian y la vuelven para atrás
+¿sí?
+Nahue y Marti

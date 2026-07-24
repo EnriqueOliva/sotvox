@@ -1,0 +1,31 @@
+Esta es una demostración de cómo trabajar con facturas, en este caso OTC Transactions, desde la parte de lo que es testing, ¿sí? Hay dos maneras. La primera es para cuando todavía no tenemos el producto final, digamos, cuando estamos iterando y haciendo varios cambios y queremos testear varias veces.
+Entonces, para mayor comodidad lo que podemos hacer es generar un script nosotros o ayudarnos con la IA para que nos genere un script que evite las operaciones en S3 y que localmente genere PDFs de ejemplo, porque eso lo hace muy rápido y permite testear la lógica de lo que es el armado del PDF, que es lo que queremos ver, cómo queda visualmente el PDF.
+Y una segunda forma de realizar tests es cuando finalmente tenemos la APR armada y queremos testear efectivamente todo el flujo real, la lógica real.
+Bueno, acá lo que podemos hacer es algo muy similar a lo que hacemos cuando trabajamos con emails. Tenemos que levantar, bueno, como ya se mencionaba en otra demostración, el worker localmente.
+Podemos usar Postman.
+Postman, ¿sí? Para enviar mensajes, para triggerear el evento, en este caso, Generate OTC Transaction Invoice, ¿sí? Tenemos que tener datos de prueba. Esto, en este caso, toca la tabla OTC Transactions.
+De nuevo, nos podemos ayudar de repente copiando transacciones que ya están, ¿sí? Creando registros de prueba, ¿sí?
+Y bueno, una vez que...
+Que mandamos el evento, lo que va a suceder, una pequeña consideración a tener en cuenta es que se genera este campo, se llena este campo, ¿sí?
+Y si nosotros queremos volver a usar este registro, vamos a tener que borrar el valor de este campo porque si no, la lógica básicamente nos dice, no voy a generar una factura que ya fue generada.
+Entonces, esto lo tenemos que resetear si queremos usar este registro una segunda vez.
+Es la única consideración, básicamente, ¿sí?
+Yo acá ya les dejé de ejemplo varios casos, ¿sí?
+Vamos a poner uno cualquiera.
+Una vez que mandamos el evento, lo que vamos a hacer es...
+Bueno, vamos a ver ya indicaciones de que está saliendo bien en la terminal, pero nos vamos a ir a S3, ¿sí?
+A lo que es el bucket de Dev.
+Y nos vamos a ir a lo que es...
+La ID.
+La ID de la compañía, ¿sí?
+En este caso, bueno, yo ya me lo anoté acá, ¿sí?
+Hay que buscarlo allí en la base de datos.
+En este caso, yo ya me lo anoté por acá.
+Buscamos acá en Companies Data, es la carpeta, ¿sí?
+Y vamos a tener esta carpeta de Rail Receipts.
+Yo generé uno hace unos minutos, como les decía.
+Y le podemos descargar y visualizar, ¿sí?
+De esta manera podemos hacer una verificación.
+De todo el flujo, ¿verdad?
+Desde cero hasta que tenemos el PDF final.
+Y ya tenemos el PDF final.

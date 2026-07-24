@@ -1,0 +1,332 @@
+buenas buenas, si creo que te escucho por ahora, bien por ahora viene tranquilo, estaba terminando ahí de grabar unos videos para una PR y ajustando, por ahora tranquilo hasta que Santi se enloquezca, si claro, si estaba como medio preocupado por eso de que yo me voy el viernes ya no estoy y bueno hay algunas cosas que,
+él me había encargado una tarea que es bastante grande, que es eso que él puso allí, esto de los extractos bancarios, que bueno, que funciona más que nada en el worker y nada, tiene una lógica bastante compleja, es denso, toca varias cosas y bueno, como yo voy a estar muy poco tiempo, yo ya empecé en realidad y estoy seguro que él no vio, no ha visto lo que yo he hecho hasta ahora,
+pero nada, vos lo dejaste que en una draft, si, ya lo dejé en una draft, que si querés te puedo pasar el link o te puedo compartir pantalla, no te quedes más cómodo, es esta, y ya básicamente hice la gran mayoría del trabajo, pero Santiago ya va anticipando que esto va a requerir iteraciones, seguramente hay cosas que hay que corregir, que ajustar,
+sobre todo hay cosas que están pendientes,
+en realidad, porque necesitamos cierta lógica en el site, que Santiago dijo que la iba a hacer él, entonces nada, eso va a requerir como un par de iteraciones de comentarios y eso que bueno, él supone que para antes del viernes seguramente no estaría pronto, entonces está, por lo que veo, ahí de mañana decido, digo, pasarte la papa caliente a vos y bueno,
+pero, pero como te dije,
+pasé, por ejemplo, el texto, que es,
+si, estaba leyéndolo ahí de a poco, como varias, varias partes tiene, ¿no?
+si, si, es como, si, como he tenido que tocar varias cosas, este, yo sé que es un poco denso, pero capaz que lo podemos bichar un poco juntos, que es lo que he hecho hasta ahora,
+bien,
+la idea es que bueno, desde el site, como te decía Santi, todavía no lo ha implementado, pero es que el site nos tire, nos manda un evento,
+si,
+la parte de frontend y eso creo que no está hecha tampoco, creo que es el botón y eso, la idea es que el usuario pueda darle, tengo una opción que sea generar, más o menos lo mismo que, que, que ofrecen los bancos, ¿no? Itaú y demás, que vos podés descargar de repente las transacciones del último mes o del, de determinado mes,
+que eso, eso se envíe, se envíe un evento del site y bueno, el worker lo recibe y ahí hace, bueno, ciertas validaciones que, que te las dejo allí,
+que, que de nuevo, está según lo que yo entendí de las reuniones con Santiago, este, de repente Santiago lo ve y dice, no, saquemos esto, veremos esto otro, y como te digo, Santiago, no lo han visto hasta ahora, hace como una semana ya o más que está en draft, pero estoy seguro que no, no lo han visto ellos, esto es lo que yo entendí,
+eh, bueno, se hacen esas validaciones, se crea un registro en pending, en una nueva tabla, que,
+eh, me parece que este, este nombre, al final le actualizamos el nombre, al final nosotros le, le cambiamos el nombre, me parece, eh, cripto, se llama Crypto Banking Statement, si no me equivoco,
+de todas maneras yo te dejé en la, en la, no sé si vos tenés abierta la PR, en la descripción yo referencio la, la, la PR del site donde, donde se mergea la migración de, de esta nueva tabla que, que va a usar esta lógica,
+ah, bien, que era la migración que vos tenías hace unos días,
+sí, que ya en el site quedó, eh, yo no mandé, lo que hice no, fue no mandar a todos los repos a la vez, cosa de que es, solo sea cuestión de, de, hacer todos los ajustes en una sola PR, en un solo repo, que fue lo que hicimos, se mergeó, entonces ahora es solo cuestión de, eh, hacer una nueva PR para los, los, los repos que quedan, pero ya sabemos que está todo bien, eh,
+eh, estoy hablando,
+estoy hablando del back office y el worker, eh, el back office y site dropy, porque en el, la del site, como dijimos, ya está, y en el worker ya lo, ya lo que es esta tabla, y eso ya lo estoy metiendo en esta PR grande, digamos, o sea, solo falta una PR para el back office y el site dropy, que, que agrega esa tabla, pero está, eso, eso, digo, no, no, está, a vos no te afecta, creo, eh, pero bueno, básicamente tenemos una nueva tabla, está, entera, que va a estar usando la, la lógica esta,
+y, bueno, acá es donde se complica un poco, el tema de, de la lógica del cálculo de saldos y demás, de nuevo, esto puede ser que Santiago tenga comentarios, seguramente, eh, nosotros trabajamos lo que sí te puedo decir con seguridad, vamos a estar, Santiago hizo mucho énfasis en trabajar con UTC0, al momento de, de calcular las fechas y demás, eh, bueno, y no, no sé si vos estás mirando el mensaje, yo dejé como varios,
+eh, puntos de cómo funciona acá esta, la parte de lo que es el cálculo y lo que es el, la información que se agrega en cada registro de la tabla, cómo se calcula y eso, eh, de nuevo, Santiago va, va a tener alguna indicación más o menos, seguramente, porque esto fue como que lo vimos un poco por arriba, y no, nunca, nunca lo discutimos en detalle, digamos, este, pero está, eh, digamos que tenemos,
+eh,
+el, el registro hecho, o el cálculo hecho, y ahí genera un PDF con una librería que es PDFlib, lo que hace es, básicamente, dibuja todo programáticamente, eh, en otros casos, en otros PDFs que yo he hecho, lo que hacemos es, eh, tenemos un template, una imagen de fondo en S3, con un diseño, digamos, de fondo, y la, la, la lógica dibuja arriba de ella, bueno, ciertos datos, eso es para otros PDFs, pero en este caso,
+no tenemos, no tenemos un template, no tenemos un, porque no tenemos diseño de fondo ni nada, simplemente tenemos datos que, que los generamos programáticamente con la lógica, y íconos, creo que tenemos íconos, sí, el ícono de DAW, de DAW, por ejemplo, son, son íconos que se, que los agrega esta librería, esta lógica los agrega, bien, se genera y se, eh, obviamente, bueno, está, como ya sabemos, en los tres idiomas, este, ahí, capaz que lo vas a, lo vas a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+a, a, a, a,
+a, a, a, a,
+a, a, a, a,
+yo lo he probado y funciona en los distintos casos, cuando es una página, cuando son varias páginas, o sea, eso creo que está andando bien, eh, perfecto, viste que allí, eh, capaz, si, si te fijás la, la perra en GitHub, yo, tiene screenshots de todos los casos y eso, viste, o sea, cómo se ve cada caso, eh, ni te, te, sí, además, vi que ya iteraste unas cuantas veces también con Copailo, todo, así que, sí, está, está bastante, todo, sí, como te digo, como te digo, esto que dice Santi surgió porque,
+bueno, él en realidad no tiene idea, el, el, el grado, de todo lo que hiciste, sí, no tiene idea, él como que, él simplemente se está anticipando a que, bueno, esto va a requerir comentarios, ajustes y que probablemente no dé para antes del viernes, entonces está, eh, pero en sí, como ya ves, sí, está todo en su gran mayoría hecho y lo que va a faltar es como ajuste, digamos, no, no, no hay, sí, ajuste y bueno, y después todas las oleadas de iteraciones de comentario, cambios de, de, de opinión,
+sobre la marcha, o sea, exacto, sí, en este, perfecto, en, en este sentido, justamente, de lo que, de lo que me faltó a mí o lo que queda pendiente, digamos, qué queda pendiente, de mi lado, no mucho, que se pueda hacer ahora, ya, ya, no mucho, eh, sí, acá por lo que vi son dos, dos puntos por lo que pusiste, sí, la granularidad del audit log y filtrar las transacciones por update dat, sí, sí, ahí está, yo no sé si está bien eso del update dat, creo que lo mencionó Santiago, me, me,
+me quedó como duda nomás, y también lo del, lo del audit log, que esto creo que funciona un poco de una manera distinta, el tema de los audit logs es un poco, un caso un poco particular, pero, eh, como ves ahí en el, en el mensaje de Slack o mismo en la PR, eh, quedan bastantes cosas del lado de, que bueno, lo comentábamos al principio, del lado de, del site, la lógica del site, lo que manda el site,
+sí, viste que hoy, Santi puso, como que después que me junte con,
+contigo, eh, de juntarnos con Martina, que parece que es la que va a estar atacando todo eso en el site, va, puso trabajando contigo en el site, así que capaz que voy a tener que tocar alguna cosa en el site también, para dar una mano, sí, sí, bueno, sí, yo puse, claro, yo lo siempre menciono que es algo que quedó del lado de Santiago, pero en realidad sí, o Martina, o, o, de repente es algo como que queda del, del lado del site, tanto lo que es, bueno, lo que decíamos al principio, la lógica de, bueno, del frontend, del botón y eso,
+claro,
+para que le mande todo al, al work,
+sí, pero también el tema, bueno, lo, el, lo que es el mapping, o sea, la información que nos llega de la API, eso creo que también lo, eso lo ve más que nada Santiago,
+eh,
+está bien, perfecto, perfecto, perfecto,
+¿qué más?
+eh,
+ah, bueno, sí, yo, mira, le pedí a, le pedí a, ¿cómo es? a Claude que me genere un script,
+para que genere automáticamente,
+ejemplo,
+ejemplo de PDF, viste, no para por testear la lógica, sino para, eh, corregir el diseño, eh, nada, porque, bueno, para corregir lo que es el, el, cómo se ve el PDF, no es necesario realmente testear la lógica, sino, en su, en su, en su totalidad, digo, sino, con, con ver más o menos cómo queda el PDF, o no sé, esa es la forma en la que yo lo ataqué, me creé un script, y, y nada, que me genera, digamos, todos los casos de una sola vez, con información,
+información jacodeada, digamos, y ahí lo fui corrigiendo.
+No sé si eso lo querés llevar a hacer vos también.
+Digo, es una idea nomás, solamente para...
+No, está bueno, está bueno, sí.
+Para ir corrigiendo lo que es la parte visual.
+El tema, bueno, técnicamente, ahí como menciono en el mensaje,
+esto envía un mail, una notificación, es otra cosa que dejamos pendiente,
+eso normalmente no lo hace Santiago, sino que lo hago yo,
+pero bueno, capaz que ustedes tendrían que ver, o tenemos que ver juntos
+cómo hacer los mails, porque es algo que normalmente hago yo,
+lo que es el template, ¿viste?
+El template de los mails, que en realidad...
+Ah, sí, sí, sí, sí.
+En primer lugar lo tiene que hacer Santi, o sea, Santi Pantin hace el diseño,
+y una vez está aprobado el diseño, bueno, yo hago la lógica, digamos,
+como con todo.
+Pero bueno, técnicamente eso es otra cosa que también está pendiente,
+que no sé si le irán a atacar mientras yo no esté, capaz que sí,
+pero bueno, creo que tenemos que ver, como dijo Santiago allí en Slack,
+tendríamos que ver todos cómo se mandan los...
+o cómo funcionan los mails.
+Nada, eso es algo que también está ahí como pendiente, digamos,
+esta lógica debería mandar un mail, que todavía no...
+Así que está, no sé.
+Está, está, buenas, buenas, buenas.
+Qué más, Yona.
+¿Cómo te sentís?
+¿Decís que estás muy en el aire, que esto está muy en el aire,
+o más o menos se entiende por dónde viene la mano?
+No, como entender se entiende, yo creo que ahora me puedo hacer ahí
+como un pequeño resumen, le puedo tirar ahí a Claud, tu PR,
+para que lea, viste, el div y el mensaje que vos mandaste,
+entonces ahí ya me...
+Sí, claro.
+Sí, claro.
+Sí, claro.
+Y genero ahí un resumen y todo, y como me voy a tener que juntar
+igual con Santi y Martina, seguro van a salir cosas ahí también.
+Exacto.
+De que yo le comente esto, che, mirá que Enrique ya tiene todo esto,
+fíjense para ver, y ahí de seguro va a decir,
+está, esto sí, esto no, esto sí, esto no, y tal, van a salir más cambios.
+Seguro, sin dudas estaría bueno una reunión con ellos del lado de ustedes
+para que justamente ellos expliquen capaz que un poco mejor
+qué es lo que está pasando.
+Qué es lo que falta del lado de ellos o del lado del site en general.
+Claro, más que nada del site, si hay que tocar algo,
+si yo voy a atacar algo ahí o centrarme solo en lo que queda acá del worker,
+viste, pero no, no, queda, está bastante claro,
+además con el mensaje que mandaste, todo más la PR ya y hecha,
+o sea, está, es cuestión de ver qué falta y ver qué comentarios hacen ellos,
+seguir ajustando en base a eso.
+Sí, yo traté de dejar todo ahí lo más...
+Lo más detallado posible en la PR, pero si cualquier cosa,
+obviamente, John, si tenés alguna duda o algo, decime.
+Sí, además vos estás hasta el viernes, dijiste, trabajás hasta el viernes.
+En realidad, o sea, antes, yo hasta el jueves, el viernes ya no estaría.
+Ah, hasta el jueves, está bien.
+Y pedí ahí un día, lamentablemente, yo viste que todavía estoy en facultad
+y tengo un parcial salado mañana, y le pedí a Santiago, le pedí que...
+Está...
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+¿Qué?
+No pasa nada.
+Está tranqui, tranqui.
+No, ahí, ahí, ahí.
+Tenemos días para tirarte alguna consulta, en caso de que tenga alguna duda o algo.
+Así que, está, estamos re bien.
+Ok.
+Y esto es lo que...
+Urgente, entiendo.
+Y...
+O sea, lo más rápido que se pueda.
+se pueda, o lo quiere
+porque vos te vas
+porque si no, no
+lo quiere porque
+ya anticipa que yo me voy
+y entonces
+por la duda que quede colgado
+que vos no llegues
+a poder terminarlo con el tema de las
+correcciones y todo eso y que quede ahí
+colgado
+claro, claro
+él no me ha mencionado
+esta semana tiene que salir sí o sí
+o algo por el estilo, no lo ha dicho
+todavía
+así que está, no sé
+está, buenas
+buenas
+una conciencia
+vos comentabas que de repente
+estaría bueno reunirnos con
+Nahue también
+te iba a decir exactamente lo mismo
+nos juntamos
+con Nahue el otro día
+nos dijeron ahí
+Marti y Santi nos hicieron ese comentario
+de esto del plan de Giniar
+como de tener
+uno base
+digamos
+que diga bueno dependiendo de la tarea
+que ya sepa dónde tiene que ir a buscar
+si es tarea de front, si es tarea de back-end
+si es tarea de test unitarios
+que ya diga bueno no sé
+mira necesito generar
+este componente no sé qué
+con este endpoint
+vas a ver que está
+tengo que tocar front-end porque es componente
+y como es back-end
+tengo que ir y generar un endpoint
+entonces ya sabe que tiene que ir a leer
+las carpetas de front-end
+de front-end y backend por ejemplo
+me gusta, así obvio
+eso sería como ese
+prompt base que es lo que nos está faltando
+porque como que los tres hicimos un prompt base para cada
+área digamos
+para cada área exacto
+y después la otro que tuvimos viendo con Nahue
+que estaría bueno tener como
+si fuera no sé un
+common
+una carpeta common o algo así
+de cosas
+que tengan
+el proyecto en común en todas las áreas
+o bueno
+No sé, manejar ifs largos, manejar esto, manejar lo otro, ¿viste?
+Cosas así que vos digas, no tiene sentido tener la misma regla.
+Seguro.
+Ya donde se cumpla en dos lados, ya es decir, no tiene sentido tenerla en dos lados distintos.
+Pongamos eso en un common, entonces las reglas generales del proyecto van ahí.
+Ok, sí, claro. Yo normalmente eso lo hago con el Cloud, con el MD a nivel usuario.
+Claro.
+O sea, por ejemplo, sí, yo qué sé, no incluir comentarios en el código, no sé, algo que aplica a todos los repos, digamos, ¿no?
+Pero sí, hoy estaría bueno tener un common o algo así.
+Sí, y eso es lo único que hablamos ahí con Nahue la otra vez, que está que nos faltaba, que yo ya tengo la tarea ahí.
+Entiendo que vas a atacar vos eso entonces, ¿no?
+Claro.
+Lo que dijo Santi.
+Por lo visto.
+Vamos a hacer como ese swap.
+Vos te encargarías de eso estos días y yo...
+A ver.
+Te voy a dar tu tarea.
+Dale.
+Ok.
+¿Decís de traer a Nahue a la llamada o capaz que no hace falta?
+Era esto básicamente.
+Creo que no podemos, porque como es Slack gratis, creo que no se puede más de dos, a no ser que vos ya hayas tenido experiencia con más de dos, pero creo que no.
+No, tenés razón.
+Sí, ni idea.
+Creo que una vez quisimos y no pudimos y tuvimos que ir a un Google Meet.
+Ah, mirá.
+Sí, estoy fijándome y no...
+Sí, viste, te dice como que tenés que tener el pro.
+Ok.
+Pero sí, no, básicamente lo que hablamos fue eso.
+O sea, capaz que él te puede dar algún detalle más, pero la idea general fue como esa, tener ahí como ese pro en base, que está dependiendo la tarea que vos le pases, o sea, o lo que le digas que vas a trabajar, que ya sepa a dónde tiene que ir.
+Bien.
+Entonces, y como que cada cosito entiendo...
+Lo tendríamos que modularizar.
+Yo lo hice en el mío, por ejemplo, en el del frontend.
+Capaz que yo puedo ir a tu PR, no sé.
+¿Ya se marchó lo tuyo o no?
+No, no, todavía no, mirá, te la paso acá en el chat nuestro.
+Dale.
+A ver cómo quedan, claro, docs.
+Yo lo metí dentro de docs, dentro de frontend, y dentro de frontend tengo como muchos MD.
+Que hay uno que es el index, que ese index es como que le dice, bueno...
+¿Qué estás haciendo?
+O sea, es como que el pro en base tendría que ir al index, o sea, no sé, ah, tengo una tarea de frontend.
+Bueno, voy a la carpeta frontend, pero leo el index, porque tampoco tiene sentido de que se lea todos los MD para saber qué necesita agarrar.
+Seguro.
+Entonces va al index y le dice, bueno, ¿qué estoy haciendo?
+¿Creando o modificando un componente?
+Bueno, sé que tengo que leer exclusivamente el component MD.
+Entonces no gastamos tanto tokens en leer, capaz que, no sé.
+Un coso de CSS, si no tocas CSS.
+Lógico.
+Por lo general acá en frontend va a tocar varias cosas siempre, porque está, al crear un componente, obligatoriamente tenés CSS.
+Capaz que tenés hooks, capaz que tenés constantes, entonces, por lo general va a leer bastantes archivos, pero como que la idea general sería eso.
+Que tener un index y que solo vaya a ver qué módulo tiene que cargar para hacer la tarea.
+Ahí está.
+Y la estructura cómo quedaría, entonces, yo no sé si vos, si agregamos un, o sea, sería una carpeta docs.
+Sí, capaz que en esa carpeta docs tendría que estar el prompt base.
+Claro, ahí va.
+Y después por separado cada carpeta, frontend, backend, test unitarios.
+Ahí va, ahí va.
+Sí, coincide.
+Entonces, una vez que tengamos ese prompt base, no sé, lo podés agarrar por lo que hablamos con Nahue, capaz que es mejor incluirlo en esta PR.
+Ok.
+Y después lo que hacemos es que revisen esta, si esta sí, esta estructura, esta cosa les parece bien, se mergea y tal, y las otras, las otras PR de los agentes lo que hacen es puliarse esa, entonces ya tienen ese prompt base y trabajar, y se puede trabajar en base a ese prompt base.
+Ok.
+O hacer ese prompt base, ya está.
+Pero yo para que...
+Capaz que a medida que estás haciendo la iteración con Cloud para hacer ese prompt base, de ya tener más o menos ese contexto de cómo están modularizados los archivos, o cuál sería como la idea con él.
+Entiendo.
+Ok.
+Y Nahue, ¿qué fue que hizo?
+¿Él hizo qué?
+¿Hizo backend, por ejemplo?
+Él hizo el de backend, sí.
+Creo que Eva sigue lo mismo, o sea, docs backend y es algo similar, seguramente.
+Exacto, exacto.
+¿Le falta alguna iteración más, creo?
+Porque no está tan modularizado.
+Ok.
+Por eso medio que como que dijimos lo de, tal, agarrar el front, que estaba como más, yo lo intenté hacerlo más, viste, en lo más partecita, lo más chicas posibles, y como que todo siguiera como esa estructura, digamos.
+Ok.
+Estaba genial, estaba genial, me queda...
+O sea, tal, después, después de no gustarles, pero tal, eso hasta no, que no subamos la PR no lo vamos a saber.
+Seguro.
+Está, bueno, dale, sí, creo que ya está, está bien, entonces, está claro, yo...
+Sí, yo lo que estuve haciendo, capaz que vos ya lo, ya lo hace vos, trabajás con Cloud mucho más que yo, pero yo lo que le hago, viste, a veces es, como para darle contexto, le digo, leete esta PR directamente, le paso, viste, el link de la PR.
+Entonces, capaz que lo que podés hacer es, si estás trabajando en la de front, le podés pasar la del backend y la de test unitario, como para que tenga el contexto de las tres, y de ahí generarte el prompt base.
+Eso lo puedo.
+Vos, o sea, le pasás el link, ¿qué estás usando vos, Jonas?
+Perdón, que ya te he preguntado, ¿como la extensión de Visual Studio?
+Claro.
+Por razones que escapan a mí, yo entiendo que la terminal es más potente, que tiene más, más opciones.
+De nuevo, esto es muy técnico y no estoy muy seguro cómo funca, pero creo que si vos le pedís, vos has probado en la terminal.
+Justamente pedirle a Claude que te pushe algo, te arme una, te publique un comentario en una PR, por ejemplo, ¿has hecho alguna vez algo así?
+Sí, sí, sí, sí.
+¿Y lo haces, decís vos?
+Sí, desde la extensión de Visual Studio, sí.
+Lo único que me tuve que loguear es con la CLI de GitHub.
+Sí, sí, sí.
+Con el GH, viste, y él ya solo en el contexto del chat, vos ya lo ves y está tirando los comandos ahí en el chat.
+Mira, sí.
+Ah, pensé que, no, pensé que eso no se podía hacer de la terminal, no sé por qué, pero, pero sí, yo también.
+Sí, no, yo le paso, viste, los links, le digo, toma este, toma este, y en base a estos prompts, fíjate a ver si lo que estoy subiendo, por ejemplo, ahora que estaba haciendo un video para la última PR esta, le dije, fíjate estas dos, a ver si sigo con las convenciones que dice cada PR, y le pasa, y él solo, viste, empieza a ejecutar comandos.
+Sí, tal cual.
+Incluso, incluso como es, a mí, cuando trabajo en la terminal, no soy la extensión, pero cuando estoy en una rama X, ya me figura el número de la PR, abajo, como footer, digamos, de lo que estoy escribiendo, como que ya identifica automáticamente la PR correspondiente a esa rama.
+Eso es otra cosa, además.
+Sí, sí, y además, lo que tiene de bueno es eso.
+Yo estaba, yo antes, como que agarraba y después...
+Lo pasaba, no sé, iba al GitHub, le pasaba el screenshot del comentario, viste.
+Sí, yo también, tal cual.
+Ahora directamente le paso el link de GitHub y le digo, fíjate lo que...
+Leé los comentarios, sí.
+Exacto.
+Y dame una sugerencia de si valen la pena arreglarlos o si no.
+Ahí va, tal cual, que discrimine, sí, ahí va, si hace falta, sí, sí, atacarlos o no.
+Viste que a veces Copilot, el reviewer, a veces te tira algunas cosas que no existan, ¿no?
+No aplica, lo hice así por gusto.
+Seguro, sí, sí, tal cual.
+Entonces, ahí te dice, y no sé, las descripciones de la PR, eso ahora las estoy haciendo con Cloud, te digo, tomá, en base a lo que hicimos, escribí una descripción de esto y...
+Sí, leé PR similares y sí, más o menos, seguí el estándar.
+Exacto, y seguí esta, seguí este template, chau.
+Sí, tal cual.
+¿Cómo es?
+Así que está, Jonah, creo que cumplimos las dos cosas, o sea, yo agarro la parte ahí de Prom Engineering y vos...
+Ahí ya, esa otra tarea de Worker, que, de nuevo, si vos tenés alguna consulta o algo, obviamente, no importa, mañana incluso, porque sé que es medio denso, entonces está, este, pueden surgir...
+Sí, calculo, yo ya me voy haciendo la idea que de seguro me voy a quedar después de Postgram, porque estaba ya ahora en la daily, voy a decir que ya hablamos contigo, así que de seguro me van a quedarme ahí de Postgram para charlar, y si de ahí me surge alguna otra duda de lo que me diga Santi o algo, cualquier cosa te comento ahí.
+Dale, ok.
+Para saber si vos ya lo hiciste así, si no, viste, si hay que, si hay que hacer algún cambio, etc.
+Dale, bueno, genial, Jonah, estamos, estamos librados, creo, este...
+Bueno, muy bien, señor, cualquier cosa, nos estamos hablando, ahí cualquier cosa, si tenés alguna duda o algo, tenemos el chat ahí con Nahue, nos preguntás y lo hablamos por ahí.
+Ok, bueno, muchas gracias, Jonah.
+Bueno, señor, estamos al hablar.
+Hasta luego, chao, chao.
+Nos vemos.
+Chao, chao.

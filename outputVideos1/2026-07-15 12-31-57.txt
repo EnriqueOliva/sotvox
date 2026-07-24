@@ -1,0 +1,352 @@
+A ver si...
+Ahí entra Jonathan y Fernando.
+Buenas, buenas.
+Está falto el mío.
+Ahí entró Ana.
+Buenas, Ana.
+Hola.
+Hola, hola a todos.
+Hola.
+Me está faltando Martina y Santi.
+Ahí entró Martina.
+Mi hijo estaba con problemas de luz, pero no me volvió a contestar más.
+Santi, ¿vos sabés algo, Gastón?
+Con Santi me reuní hace 20 minutos.
+Estuvimos hablando de los maestros.
+Ahí está.
+Ahí entró.
+Creo que estamos todos.
+Ahí entró Santi.
+Bueno, bien de bien.
+Bueno, de mi lado estuve mirando algunas pedarras, pero principalmente sigo con los de AFI.
+Ayer saqué, estuvimos viendo un hotfix también.
+Calculo que voy a estar con eso, así que le vengo pidiendo una mano a Marti.
+Con lo que son las reviews de las PRs y esas cosas.
+También nos juntamos ahí para ver lo de los correos.
+¿Qué más? ¿Qué más? ¿Qué más?
+Y bueno, está. Estoy asistiendo ahí a Beto y a Guille.
+Bueno, algunas asociaciones o algunos temitas particulares que van teniendo.
+Pero principalmente lo que es adecuar todo lo que son ambientes de AWS y todas estas cosas para AFI.
+Voy a ver si ya mañana puedo liquidar con esto.
+No creo que hoy, pero calculo que mañana voy a estar bastante avanzado.
+Además de, bueno, alguna PDA.
+Que vaya llegando para revisar de mi lado.
+Bien, lo mío es cortito.
+Estuve haciendo core review de PRs de Kike y Yona.
+También fuera de eso, ya me junté con Kike para pasarle los sims que estuve trabajando estos días.
+Que ya fueron mergeados a el de Worker para que ajuste el tamaño de los mismos.
+Y ahora estaba corrigiendo como es PRs, de los cuales Martina dejó comentarios.
+Y también me falta armar la PR con los cambios.
+De Teammates.
+Así ya lo dejo en Design y después para pasarlo a Aventar.
+Sería eso nomás.
+El primero que se libere ahí entre Yona y NowWeb.
+Tenemos la landing de Mati.
+Bien.
+La única dificultad que tiene es que tenemos que hacer el calendario de Calendly custom.
+Pero la idea es usar el mismo calendar que tenemos para Estados Unidos.
+Pero hay que hacerlo custom.
+Nada, eso.
+Ahí va.
+Entiende bien.
+Gastón.
+Buenas.
+Bueno, yo por mi parte estuve terminando el PDF que había arrancado ayer.
+Que era para compartirle a los clientes las diferentes opciones en cuanto a LLC, de estados y de precios.
+Eso ya quedó terminado a mi lado.
+Y estoy esperando ahí a que mantenga.
+A ti me pase una información que tenía pendiente, pero el diseño ya está.
+Por otro lado, quedó aprobada hoy la landing por Guillermo y por Matías.
+Así que ahora la voy a pasar a Ready4Dev.
+Es un ratito.
+Por otro lado, también estuve pasando unos prompts de la creación de las ilustraciones que había hecho.
+Para el proceso de compra.
+Y lo transformé en lo que viene siendo skills para Claude.
+Para que pueda usar Sandy también.
+Bueno, respondiéndote a lo que me habías comentado en la solicitud de la tarea.
+Eso sí lo tenemos en un repositorio privado.
+Lo que pasa es que antes no habíamos tenido acceso a la organización.
+¿Por qué?
+Porque no teníamos acceso a la organización.
+¿Por qué?
+Porque no teníamos acceso a la organización.
+Porque no teníamos acceso a la organización.
+Porque no teníamos acceso a la organización.
+Porque no teníamos acceso a la organización.
+Por lo que sí, hay que migrarlo para guías.
+Y nada, tenemos todos el acceso.
+Y por otro lado, estoy trabajando en un posteo que me había pedido marketing.
+Presentando lo de ejecutivo de cuentas.
+Bien.
+Ahí, avísame Gastón, ¿qué necesitas?
+O si querés dármelo a un arterepo y yo lo muevo.
+Para poder moverlo a la organización.
+Bien.
+Bien, perfecto.
+Bien, bien, bien.
+¿Romando?
+Bien, ahora acabo de ver que surgieron algunos conflictos nuevamente en la perra vieja de correos.
+Por fuera de eso, por suerte estuve un día bastante monótono.
+Me pude dedicar al 90 de los test.
+Después estuve corrigiendo en un comentario en los correos.
+Y tal, no tocó co-review.
+Así que eso, pude avanzar bastante con los test.
+Bien.
+Ahí Marti, ¿te habías mandado algo, María Fernando?
+¿Un ajuste con una tarea?
+¿Puede ser?
+Ayer le pregunté el tema de las tareas de...
+Las dos del site.
+Que las tareas de Jira decían worker.
+Y deberían también decir site porque...
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Ayer debería ir.
+Sí, fue lo primero que hice.
+¿Cuáles están?
+Están ahí.
+Son viejas de...
+Sí, tendrías que entrar desde GitHub.
+Ojo que acá, Tato, tenemos tareas sin progres en el backlog.
+Ah, son viejas.
+¿Les saco el inprogres?
+Claro, sí, no podemos tener esto.
+Está ok.
+Todo lo inprogres tiene que estar acá, ¿sí?
+Es más, también para todos.
+Lo on-haul también tiene que estar en el sprint, ¿está?
+Porque si no, lo dejamos colgado y nos olvidamos.
+¿Sí?
+Pues quiere decir que en algún momento se arrancó, pero está en progreso eso.
+Si nosotros no tocamos nada de una tarea, ¿sí?
+Lo que hacemos directamente es la pasamos a todo.
+Está en progres, la volvemos a todo porque no tocamos nada.
+Pero si se arrancó en algo y se pausa por X razón, por ejemplo, ahora lo vamos a ver con las de Kike.
+Ahí pasa no hold.
+Y tenemos que hacerle carry over siempre en el sprint para no perderlos.
+¿Bien?
+¿Algo más, Tato?
+Nada más.
+Bien.
+Ahí tenía, en tu caso, teníamos para ver el tema de...
+Creo que ya habían investigado con Enrique lo de la cobertura.
+Si podés pasarme una tarea como para ver la herramienta de cobertura e integrarla a la GitHub Action.
+A la GitHub Action de test.
+¿Puede ser?
+No, es perfecto.
+Genial.
+Kike.
+Bueno, más o menos lo que comentábamos ayer, digo, sin descuidar lo que está en curso, las páginas que están abiertas, que pueden subir comentarios.
+La idea ya es meterle directamente a lo que son desde Cypress de teammates.
+Ahí estuve haciendo un análisis y ya le pasé una de las tareas que tengo pensada atacar de lo que es Cypress.
+Ya estuve con eso.
+Y también con correos que, bueno, obviamente estábamos charlando esta mañana que surgió toda la cuestión del redimensionado.
+Ahí ya me puse en contacto con...
+Yona y con Nahue para ver de las PRs que ellos ya tienen mercheadas de correos, cuáles puedo ir atacando.
+Así que ya ahí ya creé las...
+Bueno, vos me aprobaste las tareas, ya las puse allí en Jira.
+La idea es ir agarrando esas tareas también, ir paralizando un poco entre Cypress y correos, ir avanzando con eso.
+Y bueno, seguramente pueda surgir algún otro comentario de las PRs que tengo abiertas.
+Que bueno, si llegan a quererles puedo pasar un listado o algo, si quieren corregir.
+Hay algunas que...
+Están de su lado.
+Así que si quieren ver eso, yo les puedo pasar una lista o algo.
+Así que nada, voy a estar con esas cosas, básicamente.
+Lo que te iba a consultar, Enrique, es con respecto al código QR.
+¿Nos quedó algo pendiente de Cypress?
+¿O nos quedó todo pendiente de Cypress? Ya me olvidé.
+Sí, hay una... Tengo una PR allí que está abierta de Cypress.
+Eso cubriría todos los casos, pero faltarían casos a probar después.
+Creo que cubriría lo que tenemos ahora, todo lo que tenemos ahora, si no me equivoco.
+Te confirmo, pero casi seguro que sí.
+Bien.
+Después, ¿ayona o anahue el plan de teammates, de los tests de teammates?
+Capaz que anahue.
+Cuando armes el plan de regresión de teammates, pasáselo para que lo recheque.
+Estaba para ver si hay algún caso que podría estar bueno agregar o lo que sea.
+Ya lo hago con ello.
+Ok.
+Ok.
+Ellos estuvieron bastante metidos con eso.
+Bien.
+Y después lo que iba a decir es, pasemos a un hold, ya que estábamos hablando de eso,
+las tareas de WhatsApp.
+¿Está?
+Porque hasta que yo no tenga tiempo de setear el número de teléfono, no las vamos a poder
+morder.
+Y ahí está.
+Y yo ahora estoy con esto, no creo que pueda tener tiempo.
+Probablemente lo haga y ahí las movamos y salga chatbot antes.
+Ok.
+Si no tenés nada más, pasamos a Jonas.
+Bien.
+Yo estuve corrigiendo unos comentarios que me dejó Marty.
+Ya quedó todo de su lado de nuevo, con la PR de configuraciones y la de los prompt.
+Estuve con lo del chatbot.
+Ya prácticamente lo tengo.
+Funcionalidad, está todo funcionando bien.
+O sea, ya puedo subir archivos, se crea el ticket en Jira con toda la descripción que te va pidiendo.
+¿Pero dónde están los tickets?
+No, los borré.
+Los fui creando y los fui borrando.
+Si querés te puedo crear uno y los dejo ahí como prueba.
+No, no.
+Pero...
+Tengo ahí la screenshot.
+Se crea todo con la descripción.
+Bien.
+¿Querés?
+Hagamos una cosa.
+Jonas.
+Dejemos varios como pruebas y cuando se corrija la PR podemos jugarlo.
+Bien.
+Perfecto.
+Perfecto.
+Porque si ahí hay que tirar algo de lo que trabajó el equipo de Dino, ya lo iteramos.
+Está.
+Bien.
+Bien, bien.
+Nada, funcionalidad lo tengo.
+Me falta ahí hacerle algunas cositas de diseño nomás como para tenerla.
+Así que hoy calculo que ya subo.
+Ya quedaría pronto.
+Ya quedaría pronto.
+Ya quedaría pronto.
+Ya quedaría pronto.
+Y después tengo una preguntita para hacerte.
+Más para post-cran de esto del chatbot.
+Para ver qué hacer ahí con el tema de los mensajes no leídos.
+Así que nada, eso de mi lado.
+Dale, lo dejamos como post-cran.
+Y lo otro que te iba a decir es, no lo vi en el resto, capaz que me lo salté, pero
+ojo que está faltando la tarea de correo.
+Sí, sí, no la creé todavía.
+Está.
+Bien de bien.
+Santi.
+Buenas.
+¿Cómo va?
+Bueno, tengo una pregunta.
+Bueno, tengo una pregunta.
+Bueno, tengo una pregunta.
+Novedades con respecto a los mails.
+Ya quedaron todos los mails liquidados.
+El único que está faltando es el de bienvenida, que estoy ajustando.
+Ya ajusté la ilustración, así que ya en dos minutos debería quedarme.
+Terminado todos los mails ajustados al nuevo tamaño.
+Así que ya están listos todos.
+Claro, los que estaban en progreso o los que estaban creados ya.
+Todos los que estaban en ready for dev y todos los que estaban en design review.
+En ready for dev creo que me queda alguno viejo para ajustar.
+Nada, que eso no he ajustado ni el diseño, pero por eso no los ataqué, pero después
+del resto están todos ajustados.
+Todos los nuevos que salieron desde el bienvenida, todo eso, quedan todos prontos.
+Bien, perfecto.
+Tanto terminados como en design review.
+Ahí, chicos, cualquier duda consultan con Santi o con, creo que Enrique los estaba atacando,
+pero consultan con Santi y los que están en progreso.
+Entonces, ahí sí, los ajustan ustedes, Nahue y Joana.
+¿Qué más?
+¿Qué más?
+¿Qué más?
+¿Qué más?
+Bueno, bien.
+¿Qué más?
+Dale, sí.
+Está, después me creé tareas para lo del Drawer y justamente estos ajustes de los mails,
+que fue lo que estuve trabajando ayer, que aproveché ya para liquidar todos,
+porque me daba miedo que ya Enrique terminara y se quedara sin tareas,
+así que aproveché a liquidar los mails.
+Y nada.
+Hoy voy a continuar.
+Voy a continuar ahí con lo del Drawer, que ya lo estuve mirando a ver de cómo hacer
+para unificar los íconos.
+Bien, perfecto.
+Lo del Drawer lo estamos hablando también.
+Estamos hablando del review, ¿no?
+Sí, sí, sí, sí.
+Está ahí.
+No perdamos, o sea, no le dediquemos mucho tiempo a cambio de íconos y eso,
+o sea, porque sigue siendo back office.
+Más que nada como el aplanado ese.
+Sí, el colapsado.
+Sí, sí.
+O sea, un poco definitivo.
+Tiene esa funcionalidad para ganar más espacio.
+Después vamos a tener una tarea que se la voy a tener que asignar a Jonathan.
+Calculo yo con respecto a migrar una parte ahí que tenemos en monitoreo,
+que está mal puesta en monitoreo y se va a tener que sacar.
+Pero bueno, eso lo bichamos después.
+Bien de bien.
+Y me está faltando, si no me equivoco, Marti.
+Bien.
+Bueno, de mi lado.
+Ahora estaba con el foco en las PRs, en realidad.
+Estuve viendo ya las de prompts y las de configuración y notificaciones.
+Y ahora voy a volver a revisar las que ya hayan mandado de nuevo.
+También estuve viendo un par de emails que habían mandado a Stone.
+Y básicamente voy a seguir enfocándome a ver si podemos...
+Quizás la de...
+Creo que la de notificaciones de Nahue, por lo menos la del Worker,
+ya estaba casi pronta de mi lado.
+Y después la parte de Jonah creo que también, si no me equivoco, no quedaba mucho.
+Ya la ven monitoreando bastante.
+Así que cuando quede de tu lado te aviso para que la revises.
+Y básicamente voy a seguir con el foco en eso.
+Bien, perfecto.
+Bien de bien.
+Bueno.
+No comía a nadie.
+Bueno.
+Postgram tenía Jonah y Ty Jonah nomás.
+Así que si no queda nada más...
+Llegamos por acá.
+No sé, Ana, si querías charlar algo.
+Sí.
+Santi, sí.
+Les quería decir algo y preguntar algo.
+Probablemente tú eres el que tienes toda la información, pero igual me gustaría que todos lo supieran.
+A nivel organizacional...
+Estamos empezando a trabajar con shared drives, pero como que las unidades compartidas.
+No sé si saben cómo se ve eso o qué es eso.
+Pero la idea es que cada departamento tenga como una unidad compartida
+y que los documentos no estén como en carpetas individuales, ni separados, etcétera, etcétera.
+No había hablado con ustedes.
+No había hablado contigo, Santi, pero sí me gustaría implementarlo.
+Yo sé que ustedes tienen demasiada organización y demasiadas carpetas y demasiadas cosas.
+Entonces, si te parece lo hablamos ahorita, también me quedo con Yona contigo y después me dices, pero sí quería que todos supieran que eso lo estamos haciendo a nivel organizacional y que probablemente me vaya a meter en eso y les pida cosas, entonces para que todos sepan que eso es algo que está pasando, ¿ok?
+Sí. Nosotros lo único que tenemos es una carpeta de developers, que ahí vamos poniendo todo y creo que después no sé si tenemos una carpeta de diseño, Santi y Gastón, pero lo tenemos en mi cuenta de Drive, o sea, si quieren moverlo para otra parte de Cana, no hay problema.
+Déjame les muestro un poquito, puedo mostrar mi pantalla acá, para que todos sepan, no sé cómo.
+Nosotros tenemos un Drive de diseño y después está el Figma y eso.
+Ah, claro. En archivos solo están, son dos carpetas nomás, una con todas las cosas de diseño y otra cosa con las cosas de desarrollo. Las dos soy propietario, creo.
+Santi, no me deja compartir, o sea, me dice que está...
+Ahora sí.
+Ok, wey.
+Ok, es distinto, o sea, porque lo mismo estaba pasando con todos los departamentos y es distinto una carpeta compartida que un shared Drive.
+O sea, por ejemplo, les muestro mi Drive, o sea, mi Drive nada más tiene una carpeta y todo lo demás lo tengo con Laura en la carpeta compartida y las dos compartimos toda la información.
+Entonces, lo que les estoy pidiendo por departamentos, ahorita les creo el de ustedes, ellos los han ido creando, por ejemplo, Matías con el de marketing, esto nada más lo tiene Matías, Recursos Humanos, y por ahora creo que Guillermo.
+Mi Ailel se va organizando y ya no tiene como que nada en su Drive individual.
+Lo mismo con administración.
+Y lo mismo con administración ilegal y ellas dos tienen todo en su shared Drive y lo mismo con el de Cross Border, o sea, por ejemplo, Cross Border está haciendo un tema porque ellos tenían puras carpetas compartidas que después se las compartían clientes, pero esa es una sola carpeta que tenían compartido entre ellos y cada quien es dueño, entonces es un tema.
+Pero bueno, el punto es que nos queremos organizar como empresa para que hayan esto, unidades, como que se llaman unidades compartidas o shared Drives.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.
+Unidades compartidas.

@@ -1,0 +1,1808 @@
+Buenos días, Kike. ¿Cómo estás?
+¿Todo bien?
+Todo bien.
+Este...
+Bueno...
+Nada.
+Estábamos hablando con Martina.
+Esto un poco...
+Bueno, de todo lo que...
+Ha sido tu trabajo.
+Y todas esas cosas.
+Y...
+Ese tranca.
+Concha la madre.
+Internet mía.
+Tenés que pagar un mejor crédito.
+¿Y ahora?
+Hola.
+Tengo que conectar el coso.
+Tengo la laptop.
+¿Me escuchan?
+Sí.
+Eso te pasa por tener Windows.
+Sí.
+El audio está bien.
+Creo.
+El audio está bien.
+Está...
+Bien.
+No sé qué mierda le pasa.
+Tengo que poner el cable directo.
+Bueno.
+Estábamos hablando con Martina, coso...
+Este...
+Analizando un poco todo lo que ha sido tu trabajo, QA y todas esas cosas.
+Y nada.
+Y queríamos pagarte un corte de pelo.
+¿Está?
+Es algo que lo hablamos con Guille.
+Lo hablamos con Guille también.
+Con Beto.
+Y...
+Creemos que también a nivel...
+Con Ana.
+Lo estuvimos hablando ahora de recursos humanos que es necesario.
+Está.
+Muchas gracias.
+Es necesario.
+Está.
+Así que nada.
+Ahora salís.
+Vas y el lugar que encuentres...
+No.
+Alance.
+Este...
+Acá falta...
+Falta nuestro querido Gastón que apaga la cámara.
+Este...
+Ya le estoy agarrando cariño.
+Este...
+Bueno.
+Vamos.
+¿Te escucha el audio?
+Sí.
+El audio bien.
+Bien.
+¿Te cuenta?
+A ver.
+Sí.
+Sí.
+Pero ahora bien.
+Creo que...
+Voy a hacer una prueba.
+No, escuchame.
+Este...
+Está lo de la factura.
+¿Está?
+Sí.
+La realidad es que Santi y Gastón, no sé, están entre los dos, están autopajeando
+y se ve que como no se gustan, demoran más.
+Por eso están demorando un montón.
+Estaba perdonando la expresión Martina, pero ya los puse a trabajar 15 más con eso
+y no pudieron sacarme dos cositas.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Este, necesito sacar, necesito que empiece a estelar una punta con eso, cálculo, va
+a tener ajustes mínimos, ¿está?
+Pero no...
+No sé.
+Ehh...
+Necesito empezar a trabajarlo ya.
+Esto va a tener una complicación de la con...
+Ya madre.
+¿Está?
+Eh...
+¿No te puedo compartir pantalla, vos estás andando como el orto esto.
+Voy a pasar al link a moonshine.
+render.
+¿Está?
+Santi igual te va a avisar cuando eso esté.
+Yo ya le pedí, por favor, que te avise cuando esté pronto, ¿está?
+si vos entras al Figma
+vas a ver los extractos bancarios
+siguen siendo en carta
+y vos vas a obtener
+lo de las transacciones
+vas a tener las transacciones
+hay que ver de donde obtenemos toda la información
+hay que ver de donde obtenemos la información
+cosas que son importantes
+esto va a venir acompañado
+de algo que probablemente va a agarrar Martina
+felicitaciones Martina
+los extractos
+no se van a poder generar
+si ya existe uno
+va a requerir una migración a nivel de base de datos
+donde vamos a tener que guardar extractos
+por proveedor
+mes y año
+es muy parecido
+es similar pero distinto
+es muy parecido a lo que es
+el
+como se llama
+a lo que es los tax form
+pensemos lo siguiente
+nosotros en base de datos vamos a tener
+la referencia cuando Enrique genere el extracto
+vamos a tener que decir para el proveedor
+One Money generamos el extracto tanto
+el 5 y este es el extracto que se generó
+o directamente usamos el ID
+hay que ver como lo guardamos
+tiene que estar dentro de la carpeta de compañías
+tiene que estar en base al proveedor
+la información que te tiene que llegar a vos Enrique
+no más es el proveedor
+y el mes y el año
+ok
+ok
+el proveedor el mes y el año
+el mes y el año
+como te va a llegar
+One Money marzo de 2023
+y vos en base a eso vas a tener
+los cálculos complejos
+ahora hablamos de eso
+y lo que vas a hacer es generar un record
+vas a generar un record
+cosa de que cuando la próxima vez
+no solo vas a generar un record
+sino que vamos a enviarle un mail
+de que el extracto está pronto
+entonces la próxima vez que el cliente vaya a ver el extracto
+ya lo va a poder descargar
+no se lo vamos a enviar por mail
+sino que va a ir a la plataforma
+va a seleccionar el mes
+y lo va a poder descargar
+bien
+esto es importante
+ahí a nivel de restricciones
+no se me ocurre
+las restricciones debería hacer desde que está operativo
+él podría generar extracto de cualquier momento
+pedir extracto de cualquier momento
+a partir de que
+está activo la cuenta de One Money
+no sé estoy pensando eso
+estoy pensando a ver si tiene
+estoy pensando
+estoy pensando
+o sea si el loco no tiene
+si el loco no tiene operaciones
+no se debería generar extracto
+o sea
+a ver si lo podemos solucionar ahora
+porque que pasa
+eso es un comprobante válido
+o sea es un comprobante válido que puede presentar
+en algún lado
+guille como estas
+escuchame
+escuchame
+escuchame
+yo debería generar extractos bancarios de meses
+que el cliente no tenga transacciones
+no no no no si por eso a mí no me
+o sea no me envía
+o sea si me envía la tarjeta de crédito
+pero no el tipo tarjeta de débito
+por eso te preguntaba
+ta
+claro por eso generar su extracto así
+ta
+y de los meses anteriores a su creación
+no debería poder crear extracto
+no no no si si si
+ta
+si estamos 100% alineados
+dale nos vemos
+bien perfecto
+la concha era más
+bien
+tenemos varios temas acá
+nosotros no podemos generar extractos
+o sea la idea es que vos generas un extracto
+y lo podes utilizar
+y no podes generar extractos
+de meses anteriores
+a lo que fue creado
+otras palabras
+vamos a tener que
+o sea vas a tener que
+vas a tener que poner una validación lógica
+ta
+este
+para darnos cuenta
+cuando fue creado el cliente
+o alguna cosa así
+estoy pensando que podemos hacer
+porque
+nosotros ahí Martina no guardamos
+la concha era más
+esperame
+me parece el problema
+como mierda hacemos para saber
+cuando se aprobó
+one money
+o el proveedor que sea
+el extracto
+el cliente
+para que?
+es necesario
+porque vos cuando solicitás el extracto
+te da tipo el estado de cuenta no?
+porque querrías saber cuando aprobó
+o sea por ejemplo para que yo no
+eh se te cortó
+no te escuchamos
+se murió
+no
+falleció
+ok
+tenía en rojo la conexión la señal
+donde aparece eso?
+a mí no me aparece
+en teoría abajo a la izquierda
+cuando
+la visualización completa de una cámara yo te voy a agregar esa lógica
+la cosa es así para que no podés bueno puede generar un extracto de meses
+anteriores es ese tema antes de que haya el cliente que solicitado la cuenta
+sólo puedes entrar a santander y solicitar un estado de 2000 en tu caso
+existe en el 96 no pueden estar en un estado del 90 y de 95 también asiste y
+que vas a generar un estado se entiende algo hoy o sea no puede generar un
+estado de cuenta de meses anteriores antes de que se te abría la cuenta si
+vos abriste la cuenta en 2020 nosotros tenemos que ver una validación porque
+pasa si el cliente no tiene transacciones vas a poner vas a enviar
+un estado vacío si sin transacción
+y ahí eso es algo que ya te pongo el bag para que se lo pongas a este
+porque ya está eso está o sea cuando el cliente no tiene ninguna transacción
+nosotros deberíamos agarrar y ponerle un fin de línea si es algo que ya santi lo
+está faltando ya pensemos que alguien con malas intenciones quiere adulterar
+el documento entonces nosotros ponerle al final de la última transacción
+tenemos que poner como una línea o alguna cosita cosa que no
+pueda adulterar votados a que tenga cierta protección lo mismo que si no
+tiene ninguna transacción debería poner un texto que diga no puede no tiene
+transacciones para el mes solicitado para el mes y año solicitado
+este está pero hay varias cosas igual porque hoy en día una de las cosas que
+hace la guay es mostrarte por ejemplo los últimos seis meses en el doctor
+ella no sería estática sería una lógica dinámica según si tenés o no
+clasa nosotros vamos a tener que entender algún mecanismo si vamos a
+tener que tener algo una mierda porque pasa tenemos que tener algo para saber
+cuándo es que le aprobaron la cuenta de one money
+eso es un poco la dificultad eso lo que vamos a tener que hacer cuando carajo te
+aprobaron la cuenta de one money
+es un poco la complejidad porque también teniendo en cuenta las habilidades no sé
+qué tan bueno está
+que nosotros mostremos o no en el doctor yo dejaría fijo el doctor y si no tenés
+que mostrar le pondría un no hay transacciones o no existen porque no se
+dio yo me imagino el cliente le da lo mismo si no tiene transacciones o si no
+existía o no estuvo aprobado en ese tiempo sea para él lo mismo porque no va
+a tener esta cuenta para nosotros me parece que dentro de dos años
+nosotros no tendríamos que bloquear el cliente a que no pueda sacar un estado
+ya ser o sea claro que yo digo la lógica que vivís intendidas sino cambió el
+directo aún te deja seleccionar hasta seis meses para atrás o podés cambiar
+manualmente los años y o sea offline parece que hace algo nuevo de esto
+solamente tendremos a cambiar esa lógica entonces habría que mostrar un piquer no
+mostramos un laca que vendía más sulí piquen en si es seleccionar ni es el análisis de impedir al cliente el cliente de TekSpeaktu lo tendros a obtener también ese lecciones no es un pie te siendo un thấy que no es para que si desampubra el plan porque nos alejamos nuestros carros
+de pique hoy en día no es un day picker en si es seleccionar mes y al a partir de 2020 puede
+seleccionar año hasta el año tiene que ser algo y pensemos que como todo lo que hacemos nosotros y
+por lo que nos caracterizamos es porque este producto de mañana nosotros no tengamos que
+hacer la modificación no sirva para la cual es la habilidad hoy en día no está bien
+habría que hacerlo usable o sea que sea que no quede entreverado por el usuario
+tendría que dejar seleccionar el mes para la combinación mes y año para nunca dejar el mes
+actual no siempre es el mes anterior y este es más tipo si siempre es el mes anterior
+desde ahí es tipo bueno generas el mes anterior
+y ya está y a vos y que si te llega un mes luego tendría que preguntar y que es bueno si me llega
+un mes anterior o me llega un mes este posterior bueno vas a tener que agarrar y este bueno nada
+vas a tener que agarrar y este como llamó y ponerle a ese mes anterior y posterior vas a
+tener que agarrar y ponerle no sabe la palabra a ese mes anterior y posterior va a tener que
+poner una lógica y vas a
+enviar un correo porque qué pasa todos estos asíncrono si vencemos que vos solicitada si
+trabajarse un pop-up de te va a llegar un mail con el estado esté pronto para que puedas volver
+al sitio a ver si este entonces lo que nosotros necesitamos es sea el estado será por generar si
+no se va a poder generar siempre y cuando sea de un mes anterior y también un todo que vas a tener que poner un correo .
+es, yo no puedo generar un estado
+antes de haber solicitado la cuenta.
+Por ejemplo, si yo solicité la cuenta,
+se me aprobó la cuenta hoy marzo tanto,
+¿está?
+Yo no puedo...
+¿Se escucha ahí?
+Sí.
+Yo no puedo agarrar y solicitar
+un estado antes de esa apertura de la cuenta.
+En el momento que me abre la cuenta de OneMoney,
+a partir de ahí lo puedo usar.
+Eso es importante.
+Ese momento va a...
+Vos pensálo, Kike, va a tener fecha y hora.
+O sea que, en realidad,
+si por ejemplo a mí me abre la cuenta a partir de marzo,
+me va a tomar el estado a partir de marzo,
+mediados de marzo.
+¿Está?
+Ok.
+¿Sí?
+Entonces,
+vos vas a tener que hacer esa validación.
+O sea, si...
+Si el loco está solicitando...
+Vos ponésle que vos vas a tener esa fecha,
+vas a tener esa fecha concreta para validarlo.
+Por ahora, jarcodialo y validalo.
+¿Está?
+Pero vos tenés que expresar eso
+y después lo que vas a tener que hacer es,
+en UTC,
+o sea, la fecha de...
+Vas a tener que ir validando
+lo que es la transacción.
+Solo vas a mostrar transacción...
+O sea, esto lo vamos a ver después,
+pero solo vas a mostrar...
+¿Se está escuchando?
+Sí, genial.
+Sí.
+Solo vas a tener que...
+Pará que...
+A ver si puedo hacer que esto ande más rápido.
+Solo vas a tener que mostrar transacción...
+Transacción aprobada, ¿sí?
+O sea, posten.
+¿Está?
+Y la fecha va a salir del update dat.
+Por si te interesa.
+Entonces, vos lo que vas a recibir...
+Voy de nuevo.
+Vos lo que vas a recibir es
+el proveedor, el mes y el año.
+¿Está?
+De alguna manera,
+que todavía no importa cómo,
+pero vos la vas a obtener.
+Vos vas a poder sacar de esa fecha,
+vos vas a poder saber
+cuándo es que el tipo creó la cuenta.
+Entonces, ahí esa es la primera validación.
+¿Está?
+Y si vos generás el mes
+de que se creó esa cuenta,
+vos vas a ver que
+el estado de cuenta tiene un inicio y fin.
+Entonces, si el loco...
+Suponéle que estamos en abril
+y el loco generó el 15 de abril,
+va a ser el único caso
+que vos no le vas a poner
+primero de abril
+al 3 de abril.
+Vas a poner toda la...
+Le vas a poner todo el fijo.
+¿Cómo decirlo?
+De alguna manera vos pensá que
+si vos solicitaste el 15 de abril,
+te va a poner
+estado de cuenta
+del 15 de abril.
+De abril a tal hora
+a 6 de abril
+a tal hora.
+Eso es importante.
+Vamos a trabajar
+con una zona horaria estándar
+que es UTC 0.
+Entonces vamos a hacer registros a UTC 0.
+Eso también
+anotátelo.
+No importa, creo que por defecto
+es como funciona la base de datos,
+porque ahí lo hemos trabajado con los crunch.
+Pero por las dudas es importante validarlo.
+¿Sí?
+Bien.
+Fíjate que los récords en base de datos
+que dicen
+lo tienen en 0, 0.
+¿Sí?
+Ok.
+Entonces es eso. Por ahora vamos a trabajar en 0, 0.
+Y eso es importante que se
+ponga
+que el UTC es 0.
+O sea que la franja horaria
+es dentro del documento a presentar.
+¿Está?
+Sí, porque vamos a trabajar con horas.
+Entonces, eso es algo importante.
+Si vos vas a tener que guardar
+en base de datos y vas a tener dos tipos de documentos.
+Si ves, antes hizo dos.
+Uno que es tipo genérico, todas las transacciones,
+todos los movimientos del mes.
+¿Está?
+Y otro que es por cuenta.
+¿No?
+O sea, son las transacciones del mes
+que involucran una sola cuenta.
+Estoy viendo acá
+la tabla de base de datos de transacciones.
+A ver si...
+Vos vas a tener los que involucran
+solo una cuenta.
+Entonces, la manera que vas a tener
+de ver eso
+tristemente.
+Estoy chequeando.
+La manera que vas a tener
+de chequear eso por ahora
+va a ser la currency.
+¿Sí?
+O sea, vas a tener que chequear la currency.
+Entonces, si yo te digo
+solo de la cuenta dólares, vos vas a mirar todas las transacciones
+que tengan involucrado
+tanto de destino como fin
+dólares. ¿Está?
+¿Sí?
+No importa si es destino o fin.
+O puede ser ambos.
+¿Está?
+Pero lo importante, que todas las transacciones
+que tengan dólares, van.
+Entonces, ¿eso qué quiere decir?
+Que en realidad en la notificación
+también deberías tener como una flag
+de... es el estado de cuenta
+de una cuenta particular.
+¿Por qué es esto?
+Los clientes tienen...
+Como vos tenés una cuenta de pesos y una cuenta de dólares,
+los clientes tienen una cuenta de dólares,
+una cuenta de USDC y una cuenta de USDT.
+¿Sí?
+Entonces, si yo te pido un estado general,
+me va a mostrar todas las transacciones del mes.
+¿Sí?
+Si yo te pido un estado
+por cuenta, me va a mostrar
+únicamente las transacciones
+de esa cuenta.
+¿Sí?
+Para esto, yo te diría
+que vos te bases en...
+¿Cómo se llama?
+Para esto, yo te diría que vos te bases en
+los récords de base de datos que están
+en producción.
+¿Sí?
+Vamos a hacer esto enfocado a OneMoney.
+Por más que va a funcionar para RAIL,
+o tiene que funcionar también
+para RAIL, vamos a mirarlo de OneMoney.
+OneMoney actualmente tiene
+48 transacciones
+que están bien registradas.
+Entonces, te diría que
+las mires.
+¿Sí?
+Pero también tiene que funcionar para RAIL.
+O sea, tiene que generar algo estable
+para RAIL.
+¿Qué quiere decir? Que vos, según el proveedor,
+va a ser...
+la currency que vos vas a mirar.
+¿Está?
+O sea, por ahora hagámoslo así.
+Según el proveedor, vos vas a ser la currency
+que vas a mirar.
+O sea, la moneda que vas a mirar.
+Tiene mucha vuelta esto.
+Y hay que ver de dónde sacamos toda la data.
+Cómo categorizamos.
+Bien.
+Porque no es tan sencillo.
+O sea, si vos te fijás, no tengo
+el documento abierto acá.
+Pero, por ejemplo, cuando vos empieces a ver,
+vas a ver un poco que hay transferencias
+o transacciones que tienen,
+un identificador del FII.
+¿Está?
+O sea, que te dicen
+WeDrawal FII.
+O, por ejemplo, ahora vas a ver Deposit FII.
+¿Está? Cuando saquemos unos ajustecitos.
+¿Está?
+Que quiere decir que es la misma transacción,
+pero es el FII.
+Es el costo de hacer la transacción.
+Entonces vos tendrías que darte cuenta
+de eso.
+Igual, esto es muy alto nivel.
+Otra dificultad que tiene esto acá,
+aquí, que...
+¿Está?
+O sea, hay varias dificultades que tiene.
+Una dificultad que vos vas a tener que generar
+alguna especie de mecanismo
+para darte cuenta si es Raylo o OneMoney.
+¿Está?
+O sea, porque pensemos que hoy o mañana
+puede venir otro proveedor.
+Entonces, vos lo que vas a tener
+que hacer es analizar
+cómo es el formato de las transacciones de Ray
+y de OneMoney. ¿Está?
+Cómo son las cuentas.
+Para que funcione para ambos,
+pero que la lógica principal vos llames
+a... le pases el proveedor y llames
+a una función auxiliar que te resuelva la solución.
+¿Sí?
+Ajá.
+Ahí es un poco donde está el dilema.
+O sea, que cuando vos vas a mapear
+las transacciones para listarlas
+en el PDF, vos tenés que pasarle
+el proveedor y cada proveedor
+tiene que tener su clase mapeadora.
+Pensemos que hoy o mañana
+tenemos 10 proveedores.
+No pueden estar en el mismo archivo cada mapper.
+Tienen que tener un mapper
+en particular.
+¿Sí?
+Yo voy a ir al Worker un segundito
+para fijarme cómo quedó eso
+con OneMoneyRay.
+Dame un segundito.
+Un segundo nomás.
+Voy a ponerlo en mayúscula.
+Voy a ponerlo en punto.
+Invoice constant.
+Invoice mapper.
+Claro, vos tenés acá un switch.
+Fijate, a ver si
+te puedo compartir pantalla.
+Está bueno que veas esta lógica
+porque es lo mismo que...
+venimos trabajando con Martín.
+Mirá, ¿ves acá?
+Sí.
+Yo busco el provider OneMoney.
+Esto te lo cambié yo en tu...
+Voy a buscar Transaction.
+Esto no, esto no va.
+Esto es con cripto.
+Proceso de cripto
+with OneMoney.
+Esto no.
+Esto es todo OneMoneyService.
+Acá.
+Fijate que yo la carpeta
+donde guardo los recibos
+la utilizo según el proveedor.
+Entonces, yo le paso...
+Le paso acá Output Folder.
+Le paso al proveedor
+y sé dónde guardar la carpeta.
+O sea, que esto yo puedo agregar 20 acá
+y estaría bien.
+Lo mismo...
+Yo tengo acá un switch
+cuando tengo NormalizeAdditionalInfo.
+No me acuerdo para qué carajo es.
+Pero NormalizeAdditionalInfo.
+¿Sí?
+No me acuerdo que se usa.
+Pero también tengo un switch.
+Acá tengo otro, es...
+Si el Provider Fee es elegible.
+¿Tá?
+No me acuerdo tampoco para qué se usa.
+Pero también tengo el switch.
+Lo mismo para este...
+Para lo que es este ResolveTransferTypeCode.
+Acá todas estas cositas,
+si no me equivoco...
+Mirá, vamos a mirar dónde se usa esto.
+Fijate acá.
+En el InvoiceMapper.
+¿Ah?
+Y si vos vas a estos,
+son archivos distintos.
+Fijate que es...
+Rail tiene uno.
+Y OneMoney tiene uno.
+Ajá.
+¿Tá?
+Entonces, ¿cuál es la idea de esto?
+Vos pensá que hoy o mañana
+nosotros seguimos agregando carpetas acá.
+Yo lo que no quiero es...
+No está mal el switch.
+¿Tá?
+Yo lo que quiero es...
+El genérico no interesa al proveedor.
+¿Tá?
+Cuando vos vas a generar la factura,
+vos le decís, bueno,
+según el proveedor, vos...
+El mapper adentro va a tener un switch
+y va a llamar a la implementación en concreta.
+¿Tá?
+No podemos tener las funciones.
+Por ejemplo, acá la de Rail.
+Yo qué sé, no sé cuál estábamos buscando.
+No podemos tener la de Rail acá en el mismo Resolve.
+O sea, este Resolve lo que te dice es
+a cuál proveedor llamar.
+Pero el Resolve concreto está en un archivo de Rail.
+¿Tá?
+Esto es importante.
+Esto es importante que nosotros lo veamos así,
+lo entendamos,
+porque la idea es que hoy o mañana,
+si viene un nuevo proveedor,
+probablemente toda nuestra lógica de generación de factura
+va a tener que agarrar y decir,
+bueno, si el proveedor es Bridge,
+ahora generar factura sí.
+¿Entendés?
+Si el proveedor es tal,
+ahora generar la factura sí.
+Y es totalmente extensible.
+Va creciendo el switch,
+que no queda otra,
+porque tenés que ir registrándolos,
+pero va creciendo el switch.
+Podés tener un millón de proveedores,
+o 50 proveedores,
+pero la lógica de cómo descompone
+y utiliza la información cada proveedor
+la tenés desacoplada.
+La tenés en un archivo aparte.
+Vos con la generación de factura
+deberías tener lo mismo.
+Vos ya tenés,
+si no me equivoco,
+en B2,
+o sea, tenés un generador de documentos,
+ya tenés el de Invoice.
+Pero también tenés OTC Transaction Service.
+Fijate dónde...
+Ah, no, en el Worker no lo tenés.
+Creo que tenés el Document Service,
+¿no?
+Sí.
+Está.
+Entonces acá en Document Service
+vos deberías generar algún método
+que sea medio genérico,
+¿sí?
+Y vos deberías tener
+las facturas,
+¿sí?
+O sea, vos deberías tener
+dentro de la carpeta de la compañía
+en S3,
+facturas,
+o sea, estado de cuenta.
+Dentro de los estados de cuenta
+vos deberías tenerlos por proveedor.
+Y dentro del proveedor
+vos deberías tener
+por cuenta particular,
+¿sí?
+Una carpetita por cuenta particular
+o genérico.
+¿Ah?
+¿Sí?
+Ok.
+Y ahí es donde vos vas a guardar.
+Esto es sumamente importante
+porque cuando mergemos Bridge para este lado
+vamos a arrancar con este desafío
+de que realmente toda esta lógica multiproveedor
+empiece a funcionar realmente bien.
+Entonces,
+es desafiante esto.
+O sea, la verdad no es algo
+para nada sencillo.
+¿Está?
+Está bueno.
+Está lindo.
+Entonces,
+primero yo lo que haría,
+si fuera vos,
+es empezar a trabajar en la factura en sí.
+Sí.
+¿Está?
+O sea,
+empezar a trabajar en el diseño
+de la factura en sí.
+Santi, ¿cómo estás?
+¿Para qué?
+Santi, ¿te animás a compartir
+lo de la factura un segundito?
+Que hay unos ajustecitos que tenemos que...
+Ahí te mandé eso.
+¿Vos no estabas hablando con Kike esto?
+Ya estoy descargando los aces y todo eso, sí.
+Sí.
+Que de hecho me perdí, a ver.
+Este...
+Me faltaba ajustar ahí en portugués,
+pero ya quedó hecho el ajuste ahí que pidió.
+Está.
+Tenemos los siguientes temitas.
+Los siguientes temitas.
+O sea,
+las siguientes cosas a ajustar de tu lado,
+Santi.
+Bien.
+Primer cosa.
+En la segunda página,
+o cuando finaliza...
+Sí.
+Pensemos que alguien,
+que este es un documento formal.
+Entonces,
+yo puedo venir acá...
+Alexa, silencio.
+Yo puedo venir acá y cargar algo acá.
+Entonces,
+podría poner algo acá.
+Claro.
+Entonces,
+acá hay que poner como una especie de final de link,
+o alguna cosa así,
+como para que no puedan poner,
+poder cargar más.
+O sea,
+yo no pueda,
+con algún truco raro,
+porque estamos hablando de movimientos de millones de dólares.
+Está.
+O sea,
+literal.
+Son facturas de clientes muy grandes.
+Nosotros tenemos que,
+o sea,
+o movemos eso para arriba.
+Eso puede ser una opción.
+Lo dejamos abajo,
+o ponemos un final de línea.
+Como que te quede cómodo.
+Lo que tenés que pensar es,
+no tiene que haber la posi...
+O sea,
+vos,
+si querés copiar y pegar otro récord,
+no podés.
+No podés.
+No podés.
+No podés.
+No podés.
+No podés.
+No podés.
+No podés.
+O sea,
+literal.
+Si vos querés copiar y...
+O sea,
+tiene que quedar tan pegado.
+Tenemos,
+tenemos que generar una factura que,
+que nos sirva a lo largo del tiempo.
+Entonces,
+si vos querés copiar y pegar.
+Eso,
+si yo quiero agarrar y copiar otra row,
+no entra.
+O sea,
+no entra.
+No,
+no es como,
+no,
+no puedo ponerla.
+Está.
+O sea,
+eso es lo que tenés que pensar,
+santo.
+Yo no puedo pegar otra row abajo.
+Está.
+O sea,
+tiene que,
+tiene que estar tan pegado,
+Nos falta generar el caso vacío
+¿Sí?
+¿Caso vacío? ¿Cómo?
+El caso vacío sería el caso
+Que, este
+¿Cómo se llama?
+O sea, el caso de qué pasa si no tiene transacciones
+En el mes, ¿tá?
+Que ahí también lo mismo, no debería poder
+Modificar el documento para agregar transacciones
+Nosotros deberíamos dejarlo fijo
+Bien, perfecto
+Entonces, ahí eso es importante
+Esas dos cositas
+O sea
+Nosotros tendríamos que poner
+La parte de abajo tan pegada que no podamos poner
+Un
+O sea, no podamos poner otra row
+No puede venir alguien a imprimir otra row
+¿Tá? Arriba de ese documento
+De lo que nada que presente
+Y lo mismo para el caso vacío
+En el caso vacío tenemos que poner, yo pondría un string o algo
+Que no tiene transacción
+¿Tá?
+Bien
+La idea de esto es
+O sea, Santi igual te va a avisar
+Cuando esto esté en ready for dev
+Por ahora
+Está en dev review
+Pero la idea es que vos ya te pongas a
+A trabajar en toda esta lógica
+Como ves son dos facturas
+O sea, una va a llevar su tiempo
+Porque es el diseño
+Lo bueno que es un tamaño fijo
+Y también el tema de paginado
+¿Tá?
+Otra cosa que está faltando ahí
+En el periodo de solicitud
+Santi
+Viste que te dice el primero de marzo
+Y 31 de marzo
+¿Tá?
+Nosotros tenemos que ponerla
+Ahora en concreto
+Porque como a Carlos se le cantó a la gente
+De ponerla ahora
+Vamos a tener que ponerla ahora
+Entonces tenemos que ponerla ahora con franja horaria
+Y vamos a usar UTC
+O sea, UTC 0
+¿Tá?
+O sea, que tenemos que ponerle
+El primero de marzo UTC 0
+Al 31 de marzo
+UTC 0
+¿Tá?
+No sé cómo se escribe
+Y deberíamos aclarar
+En el label o en algún lugar
+Que la hora es UTC 0
+¿Tá?
+Porque eso es delicado
+Porque es en base a qué hora nos manejamos
+¿Tá?
+¿Sí?
+O sea, nosotros como compañía
+Tenemos que tomar un estándar
+Entonces vamos a tomar ese estándar
+¿Tá?
+¿Les parece bien?
+Para que quede un poco mejor
+Le pongo solo inicio y finalización
+Ya que aclaramos arriba que es periodo
+¿Sí?
+¿Tá?
+Así que hago más espacio
+Ahora chequeo que se escriba bien así
+El UTC 0
+Pero
+Y después fíjate que la hora
+La hora en sí
+Enrique no va a redondear
+Va a ser un trim
+¿No?
+O sea, si dice tantos segundos
+No lo va a mostrar
+Para eso no se redondea
+Se trimea
+Eso quiere decir que si dice
+Son las 23.59
+Con 9.99.99
+Se va a quedar
+Va a quedar dentro del día que está
+¿Tá?
+Bien
+Ahí no sé qué mandó
+Quique
+Más o menos
+Cero, cero, cero
+Ahí
+Estudiátelo ahí
+No sé
+Y térenlo
+¿Tá?
+Lo que es importante también es que
+En algún lugar
+No lo vas a poner en toda la columna
+Pero que en algún lugar
+Establezca eso
+Pensálo, Santi
+Que la hora que manejamos es cero, cero
+¿Tá?
+Perfecto
+Porque ahí nosotros vamos a hacer
+Y si Guille dice de cambiarlo
+Ya es más sencillo
+Vamos y lo cambiamos
+¿Tá?
+Pero como nosotros estamos trabajando
+Con proveedores de todo el mundo
+Es importante que se pongan en cuenta que no es así
+¿Tá?
+Es importante que nosotros digamos
+Bueno, la franja horaria que nosotros trabajamos
+Es esta
+Si hoy en día Guille dice de configurarlo
+También es más sencillo
+¿Tá?
+Porque nosotros ya lo tenemos en el documento
+Entonces podemos hacerlo personalizado según el cliente
+¿Tá?
+Este
+¿Sí?
+Yo no lo pondría en todas las columnas
+Porque ya es bastante largo
+Yo lo único que haría es
+Lo pondría, o sea, en algún lugar como nota
+¿Tá?
+Como asterisco, nota
+Pero después eso fíjate
+¿Tá?
+Para, ¿lo de VTC0 me decís?
+Sí, o sea que la hora
+La franja, la hora que estás mostrando
+Capaz que lo podés poner en la columna donde dice hora
+Abajo ponés que la franja horaria es VTC0
+O sea que la hora que estás tomando es VTC0
+O algo así
+Bien
+Lo vamos a agregar así
+O entre paréntesis
+Claro, ahí ya no me entra
+Lo voy a poner
+Eso le dejo una nota abajo
+Capaz que acá al final del todo
+¿Tá?
+Sí
+Quique, la idea es que vos trabajes en esto
+Y empecemos a, o sea, empecemos a ver
+O sea, empecemos a trabajar la lógica
+Y ver los estados
+Esto tiene que funcionar para RAIL y para OneMoney
+¿Tá?
+Bien
+Lo interesante acá es que
+Para RAIL y OneMoney funciona distinto
+OneMoney es bien sencillo
+Las cuentas son todas dólares
+O sea, es toda la currency
+¿Tá? Entonces no tenés problema
+Ah, es sencillito
+Ok
+RAIL, en cambio
+Para las cripto
+Vos depende de la red
+Tenés cuentas por red
+Entonces, por ejemplo, tenés USDT, Ethereum, USDT, Tron
+¿Tá?
+¿Sí?
+Sí
+Entonces, complejiza un poquito más
+Porque RAIL vos tenés que fijarte
+Si es USDT1 o si es el USDT del otro
+¿Entendés?
+Lo que está bueno de hacer esa lógica
+Es que ya nos va a dejar
+Por si hoy o mañana viene un proveedor que funciona igual que RAIL
+Vos ya lo vas a tener
+Por más que RAIL, vamos a ser sinceros
+Hoy o el día casi no se está usando y se va a dejar de usar
+Pero es lo mismo que hablamos con Martín
+Hacer toda esta lógica y aprovechar que tenemos otro proveedor
+Y poner eso, ¿sí?
+Va a hacer que hoy o mañana cuando sumemos otro sea más sencillo
+Y cuanto más casos de uso tengamos
+Mejor
+Porque cuanto más casos de uso que nosotros tenemos
+Nosotros lo que hacemos ahí es poder soportar
+O sea, que si hoy o mañana tenemos que integrar uno
+Es más fácil porque ya mismo la IA
+O lo que sea, toma de los ejemplos
+¿Sí?
+Que es lo que nosotros queremos trabajar
+Si tenemos todos los casos
+Viene otro, bueno, está
+Este funciona muy parecido a One Money
+Este funciona parecido a RAIL
+Perfecto, y lo incorporamos y se terminó
+Cada vez es un proceso más rápido y automático
+¿Sí?
+Bien
+Entonces, eso es súper importante
+Acá vamos a
+Vos vas a tener que tener una función
+Que yo te voy a brindar
+¿Tá, Kike?
+Que es para saber
+¿Tá?
+¿Cuándo se creó el custom
+¿Tá?
+Esa función yo la voy a hacer
+Y bueno, probablemente vos la tengas que mosquear o algo
+Pero voy a hacer
+Te voy a dar la llamada
+Para que vos puedas obtener eso
+¿Sí?
+Y vas a tener que hacerlo según el proveedor
+O sea, según RAIL
+Lo tenés de tal lado
+Según One Money lo tenés de tal lado
+¿Tá?
+¿Tá?
+Este
+¿Qué?
+Tengo que pensar un poco ahí
+Cómo hacerlo
+Pero
+La idea es eso
+Que la persona pueda generar estados de cuenta
+A partir de que sea prueba
+¿Tá?
+Vamos a tener que cambiar ahí Martín
+Esto va probablemente a generar un refactor
+En la estructura de todo
+Y todo el estado de cuenta
+Va a generar un refactor bastante grande
+Porque nosotros tendríamos que empezar a
+Separar del KYB global
+¿Sí?
+Lo que es el identificador
+De cada proveedor
+Este
+Eso vamos a tener que empezar a hacerlo
+Este
+Ok
+Hoy en día lo tenemos todo
+La tabla KYB
+O sea, tenemos tipo
+Toda la información del proveedor
+Vamos a tener que separarlo
+Igualtá
+No es algo para
+Y ahí lo que voy a hacer es guardar la fecha
+Que se aprobó el custom
+Entonces se terminó listo
+No hay que hacer llamadas a API
+Bien
+Pero bueno, por ahora dejémoslo así
+¿Qué es lo que va a suceder con esto?
+¿Qué es lo que va a suceder con esto?
+O sea, ¿qué es lo que va a pasar?
+Hay algo más complicado
+Aunque es el saldo
+¿Sí?
+Que esa es un poco la parte compleja
+Que vos vas a tener que manejar
+¿Viste que hay?
+Mostrame el de la derecha, Santi, un segundito
+O cualquiera de los que sean de una cuenta
+De una cuenta de
+De una cuenta en específico
+Claro, ese es el que
+No es el S, ahí va
+¿Viste que ahí tiene?
+¿Qué es lo que va a suceder con esto?
+¿Qué es lo que va a suceder con esto?
+¿Qué es lo que va a suceder con esto?
+A Carlitos
+Que ya lo tenga la Gloria
+Se le ocurrió poner saldo inicial, total de ingresos, total de egresos, saldo final
+¿Está?
+Una cuenta
+¿Sí?
+Nosotros nunca podemos poner saldo final negativo
+¿Está?
+¿Sí?
+Pero lo que vamos a tener que hacer
+Es un precálculo
+Entonces, ¿cuál es la estrategia que vamos a tener acá?
+Porque no hay otra estrategia
+Lo que vas a tener que hacer es que
+¿Qué es lo que va a suceder?
+¿Qué es lo que va a suceder?
+hacer es llamar a la base de datos cuando sea de una cuenta en particular restar los egresos e
+ingresos y vos vas a tener el saldo y vas a tener que poner el saldo inicial y el saldo final o sea
+que por algo es que es asíncrono esto porque lleva su tiempo vamos a tener que hacer una
+query complejita va a tener que agarrar y fijarte todas las transacciones desde el inicio está ahí
+generaste el saldo inicial después calculas el total de ingresos y egresos de ese mes y después
+del salto final pues va a ser un dolor de huevos hermoso nosotros vamos a intentar optimizarlo
+sí entonces como lo vamos a intentar optimizar bueno yo te dije que nosotros vamos a guardar una
+vez que vos crees el pdf vamos a guardar un récord que va a decir la cuenta el proveedor el mes el
+año está
+perdón va a decir va a tener una referencia al que guay y global va a tener el proveedor va a
+decir el mes el año va a decir si es de una cuenta en específico o si es de o si es genérico y lo que
+vos vas a guardar van a ser los datos importantes que es el saldo inicial sí o sea de dónde partís
+total de ingresos y egresos y el saldo final la realidad podría
+es guardar ingresos e ingresos y saldo final porque el saldo inicial nunca te sirve por una
+en la foto la sal inicial entonces vos lo que vas a hacer ahí es como bueno empezar a
+generar récords base para que la query sea más eficiente a qué me refiero con esto supongamos
+que vos tenés una cuenta de 2022 si entonces vos cuando generas el estado de cuenta 2023 hiciste el
+cálculo súper pesado saldo inicial
+total de ingresos egresos y saldo final
+pues cuando vayas a generar una de 2025 vas a utilizar la información que tuviste la base de
+datos de la de 2023 en vez de decirle que vaya a buscar de la de 2024 tiene sentido eso para vos
+ya la idea que lo que se intenta evitar acá lo que se intenta evitar es calcular de acá a diez
+años tener que calcular todo de nuevo vamos a calcular todo es un proceso asíncrono pero vas a
+a calcular según lo que guarda ok igual esta tabla la va a generar probable voy a ver si la
+genera martina o vos pero vas a hacer todos esos cálculos complejos si lo otro que es importante
+es vos tenés que poner el nombre de la empresa está ahí en empresa vos tenés que poner el nombre
+de la empresa está nada del otro tenemos que ver cómo generar y también los datos de la cuenta
+o sito hay datos que el nombre de la empresa y lo tanto de la cuenta de depósito yo te lo voy a dar
+a te voy a dar un mecanismo que te lo voy a dar si a vos que quede tranquilo con eso lo vas a tener
+bien solo por porque llegamos el nombre
+de empresa cual cual tomamos de los que tenemos sea primario secundario final normalmente si está
+el final final y si no el primario sino el secundario no te los voy a dar porque qué
+pasa qué pasa tiene que ser el nombre que está registrado en el proveedor no pues porque hay
+gente que se registra por ejemplo víctor hugo está ya crea su pone su empresa víctor hugo
+está pone nombre de empresa víctor hugo y de repente ahí adentro se pone
+empieza a poner su empresa víctor hugo y después cuando envía toda la información nosotros nos
+damos cuenta que está mal y al proveedor le envía no yo no soy víctor hugo mi empresa es
+que tiene inglés se entiende entonces que esa información yo te la voy a tener que dar por api
+yo voy yo voy a hacer esa lógica de decirte a partir de qué fecha está creado
+el fulano está eso te lo voy a dar yo y así mismo te voy a dar te voy a brindar el mecanismo para que
+este busques el cómo llama o sea te voy a brindar para que vos hagas eso del tipo y te voy a decir
+a partir de qué fecha el tipo puede solicitar o sea que a partir de tal fecha vos vas a poder
+solicitar información del tiempo todo eso probablemente yo haga probablemente
+yo voy a hacer toda la lógica por api va a ser todo por api entonces bueno ahí no vas a poder no vas
+a interceder mucho va a ser como todo literal va a ser todo para ti entonces este lo único que
+tenés que simular es que esa información tiene que dejarme como la especie de lógica como que
+se llama es una función con el proveedor y te devuelve esa información a eso lo que tiene que
+hacerlo sí
+llamás a una función con el proveedor y te soluciona el problema yo no sé a futuro o sea todo esto
+estamos iterando la idea es que la idea es que hoy o mañana si no sé cuántos proveedores vamos a tener
+vivos o lo que sea pero tenemos que pensar que si hoy o mañana llegamos a tener 10 20 proveedores
+capaz que tenemos activos 5 pero todos los que fuimos creando y trabajando nos permiten ya que
+el desarrollo sea más sencillo vamos a que sacarlo sea más sencillo porque ya tenemos todos los putos casos pensados y más o menos
+algo que hemos podemos afirmar con martina es que cada vez que los proveedores funcionan muy parecido
+la realidad es que one money bridge y rail son como casos borde dentro de cada uno entonces si nosotros
+integramos los tres con estos flujos lo bueno es que vamos a tener implementaciones para cada uno
+de esos casos entonces el próximo que venga va a ser decir bueno cuál se acopla con la generación
+de facturas se acopla más a este con este se acopla a este
+por supuesto éste
+desvanecer
+la gente
+yo estaba trabajando en entender que tuviera no dónde ir una tarea obligada
+iberal
+bueno
+dios
+persa
+de los extractos debería quedar para dentro de 15 minutos está genial porque en sí lo que
+lo único me pidió fue agregar esto de saldo inicial es el único cambio no creo que haya
+que reenviarlo a carlos creo que con eso ya porque hicimos la modificación de la fecha y
+hora también vamos a modificar vamos a modificar que vamos a subir el que era hacia abajo para no
+poder agregar transacciones o lo que sea está bien entonces reviviendo lo que lo apruebe y
+trabajemos sobre algo pero que no sabemos si se va a probar o no porque sí perfecto
+entonces si reenviamos el ojo está aquí que ponete a trabajar con esto y a medida que vayas
+avanzando o sea esto en paralelo al estado de cuenta es tipo lo va a generar
+y en paralelo lo que vas haciendo es cosas como
+en las revisiones de las redes y tenéis las otras tareas la idea aquí que es que vos no tomes más
+tareas si ya no si tenías algo más que ibas a seguir ahora no claro no entonces la idea es que
+vos sigas con las perlas que quedaron abiertas atacando esto pero no tomes ninguna tarea más
+que no sea esto del extracto claro a medida que con martina no va a llegar
+estamos liberando vamos viendo si te damos tareas a vos ahora hacemos nosotros pero lo
+importante es que vos no tomes nada que no sea extra bien este bien es lo importante lo que a
+mí me interesa es que te bases en las transacciones de producción si en producción tenés transacciones
+reales que están bien guardadas y bien almacenadas por ejemplo ahí santi hace un segundo si por ejemplo
+mostramos un depósito ahorita está lista y ahí va tenemos depósito tenemos contraparte tenemos
+exchange tenemos retiro transferencia interna está este y hay algo que está faltando y es que tanto
+tanto lo que es el tanto lo que es el depósito como como el es como el retiro santi si hay que
+agregar un poco más de información porque si no hay que agregar un poquito más de información porque
+el fondo vas a tener un caso donde es el fin que pasa cuando calculo que a todos ustedes pasa usted
+les llega el importe de das man sí y cantidad de dólares y después te llega otra transacción que
+te dice te sacamos tanto de que volvamos tanto comisión no trocarse a todos le llegan su estado
+de cuenta nosotros yo lo desarrollé para que sea igual o sea literal a vos te llega una transacción
+y se depositamos mil dólares y después te llega esa es positiva
+Y después te va a llegar un depósito negativo que dice que te sacaron eso.
+Cuando vos haces un retiro, el retiro te llega, sacaste tanto de retiro y te puede llegar el fin.
+Entonces, pensemos en un caso, o sea, agreguemos a esos ejemplos que pusiste ahí,
+porque después con Kiki vamos a tener que interpretarlos, esa es la parte compleja.
+¿Verdad? Agreguemos un caso de depósito y retiro negativo donde es comisión de depósito y comisión de retiro.
+Lo que va a ir pasando con esto, que es muy importante, es lo siguiente.
+Nosotros vamos a ir iterando y cuando vayan surgiendo proveedores vamos a ir viendo
+y probablemente, capaz que Enrique en algún momento, como hemos hecho mil veces,
+vamos a tener que correr un cronjob de actualización para ponernos al día.
+O sea, nada.
+Nada del otro mundo.
+¿Sí?
+Bien.
+Bien.
+Así que, de tu lado, Kiki, esto, o sea, a no ser que surjan comentarios de las tareas existentes
+y, bueno, seguir viendo el review de TATATO, esta es tu prioridad.
+La idea es que vos, a partir de ahora, solo te dedicas a esto, no tomás más tareas, más que review y PRs existentes.
+A medida que se van cerrando las PRs, solo queda esto.
+¿Sí?
+Ok.
+¿Está?
+Este.
+Yo no...
+No quiero decir que esto del extracto va a salir esta semana.
+¿Está?
+O sea, no voy a poner fecha porque realmente es complejo y también requiere mi iteración.
+Ah, interacción y la de Martínez.
+Pero, ¿está?
+Eso de nuestro lado.
+¿Está?
+Yo no sé si la migración para el nuevo modelo la vas a hacer vos o la va a hacer quién,
+pero la idea de ese nuevo modelo es que vos puedas obtener una referencia para no calcular todo.
+¿Sí?
+Ok.
+¿Está?
+Bien.
+Lo que sí no vas a desarrollar vos es el site, lo que es la solicitud del evento.
+O vas a recibir un evento y vas a preguntar, ¿ya existe?
+¿No existe?
+Y lo que tenés que pasarle a Santiago es los correos de notificación.
+¿Está?
+O sea, ya se los digo a ambos.
+Pero vas a tener un correo de notificación de la cuenta no existía, ¿está?
+O se le solicitó un extracto para cuando la cuenta no existe.
+Nunca debería enviarse ese correo.
+¿Está?
+Pero deberíamos tenerlo.
+Si alguien solicitó un extracto para antes de que su cuenta fuera aprobada, ¿sí?
+Deberíamos tenerlo.
+Es más, no, ni generemos ese correo.
+Solo generemos un solo correo.
+¿Está?
+En los otros casos, Kike, tenemos que trabajar con...
+Tendríamos que auditarlo en los audit logs y que salga el error de que tipo no se generó.
+¿Está?
+Anotátelo.
+O sea, solo tiene que salir el audit log de...
+¿Por qué? ¿Qué pasa?
+Nosotros tenemos el audit log del worker genérico.
+Tenemos que...
+Sería el primer caso donde vamos a aplicar un audit log adentro de un evento.
+Vas a devolver un 200 porque está bien, pero tenés que generar un audit log que diga
+no se procesó por...
+Y en el caso este puede ser porque la cuenta no existía o porque él...
+O porque se intentaron procesar un caso que ya existía el archivo.
+Entonces no lo vamos a regenerar.
+¿Está?
+A ver.
+Sí.
+Sí, para que no se generen duplicados no lo vamos a regenerar.
+O sea, vos chequeás que esté el récord.
+Si el récord está, listo.
+Es la verdad.
+Ya está.
+Porque si llega duplicado, no se regenera.
+El único mail que tenemos que mandarlo es...
+Se generó para el proveedor tanto.
+¿Está?
+Se generó su estado de cuenta.
+¿Está?
+¿Está?
+X.
+¿Sí?
+Eh...
+Se generó su estado de cuenta de...
+Y ahí vas a tener que poner el banco sponsor.
+¿Está?
+Para hacértelo más sencillo.
+O sea, vas a tener...
+Se generó el estado de cuenta de JP Morgan.
+¿Está?
+Sí.
+Se generó el estado de cuenta de HSBC.
+El banco sponsor, yo también te lo voy a dar.
+Toda la información del banco sponsor y de la empresa, vos ahora suponela que tenés un...
+Un mapper que te la da.
+¿Está?
+Pero el correo que te tiene que generar Santi o Gastón es...
+Se generó su estado de cuenta del banco tanto, del mes tanto y año...
+Tanto.
+Para verla, vaya a ver...
+Vaya a solicitar.
+¿Sí?
+Y ahí Santi, lo que tiene que quedar claro es...
+Va a haber una funcionalidad adentro de la cuenta.
+Donde yo voy a poder seleccionar...
+Pensemos en lo siguiente, Santi.
+Yo voy a poder seleccionar por mes.
+¿Sí?
+Y año.
+Una vez de que seleccione el mes y el año, voy a poner generar.
+¿Está?
+Bien.
+Si ya existe, me lo va a abrir.
+¿Ya?
+Me lo va a abrir.
+¿Y eso te va a generar el extracto este?
+En Riken, en Background, lo que va a hacer es empezar a hacer todos los cálculos.
+Pla, pla, pla, pla, pla, pla.
+Y genera el extracto.
+¿Está?
+Ok.
+¿Sí?
+Por ahora vamos a hacer esa lógica.
+Puede ser que en un momento crezcamos tanto que nos sirva generar extractos para todos.
+Como hace Santander, que nosotros vamos a generar extractos y te los carga enseguida.
+¿Sí?
+Ahí va.
+Yo estaba pensando ahí en eso.
+En el que vos puedas acceder en alguna forma a descargarlo.
+Pero, nada, estuve haciendo ahí una versión, pero no llegué a terminar.
+Después cuando me dijiste que era PDF, lo dejé.
+Tenemos las transacciones abajo.
+Y sinceramente ponerle hora a las transacciones abajo hace que el cliente se ponga nervioso.
+¿Está?
+Y que quede registro de que las cosas demoraron mucho.
+Entonces, pongámosle fecha y ya está.
+O sea, como está hoy en día funcionando, está funcionando divino.
+Mantengámoslo así.
+¿Está?
+Lo único que tenemos que agregar es un botoncito.
+En el estado.
+En el estado de cuenta.
+O sea, donde están todos los cositos para que diga generar.
+Pensemos que hace la siguiente funcionalidad.
+El generar es tipo generar o abrir si ya existe.
+¿Está?
+O sea, que quede claro de eso.
+No sé, ahí fíjate con la terminología a utilizar.
+¿Está?
+En el caso de que sea generar, lo que va a hacer es enviar el evento y te va a salir un pop-up de
+te va a llegar un mail cuando el estado está generado.
+En el caso de que no exista.
+¿Está?
+En el caso de que ya exista, lo que te va a hacer es.
+Te lo va a abrir.
+Te va a poner un y te va a abrir una nueva tab en el estado de cuenta.
+¿Está?
+¿Sería este botón que ya tenemos acá?
+Sí.
+Pero tiene que tener, o sea, el botón ese tiene que tener algo capaz que un pop-up o
+algo por el estilo que te permita seleccionar mes y año y de nuevo, la funcionalidad es,
+tiene que quedar en claro para el cliente la parte UX UI, que es que si yo aprieto el
+mes y el año, cuando yo le doy generar o cuando le doy abrir, ¿está?
+Me va a decir generar.
+¿Está?
+Me va a decir generar.
+¿Está?
+Me va a decir el estado se está generando.
+¿Está?
+Y si ya existe, me lo va a abrir.
+¿Está?
+Esa es la diferencia.
+Si el estado no existe, lo va a generar.
+Si ya existe.
+Si el estado no existe, lo va a generar.
+Si ya existe, lo va a abrir.
+¿Está?
+Y eso tiene que quedarle en claro al cliente.
+De nuevo, nosotros por ahora no vamos a ir por la metodología que tienen los bancos
+grandes de generar estados de cuenta hacia Lopampa.
+¿Está?
+Y mismo porque la realidad es que el mapeo de transacciones, ¿está?
+Se ve, ¿está?
+Se ve, ¿está?
+Se ve, ¿está?
+Se ve, ¿está?
+Se ve, ¿está?
+Es bastante jodido.
+Si, o sea, el mapeo de transacciones lleva su tiempo.
+Entonces, yo prefiero poder soportar esas actualizaciones, porque lo que puede pasar,
+¿saben qué es?
+Que nosotros ellos nos notifican por webhook de la transacción.
+Entonces, si hay alguna transacción mal o lo que sea, el estado va a quedar corrupto.
+Y Enrique después va a usar esa referencia para crear nuevos estados.
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+a usar esa referencia para crear nuevos estados
+en cuanto al saldo del depósito
+y todas esas cosas, por ahora
+únicamente tenemos 3000 transacciones
+pero al ritmo que venimos yo calculo que esto
+va a ser exponencial
+la realidad es que
+no tenemos clientes chicos
+como para decir, movemos 20, movemos pocas
+transacciones por mes de grandes volúmenes
+que eso está bueno porque hace que la base de datos
+no crezca tanto, pero la realidad
+es que está creciendo a nivel exponencial porque cuanto más
+clientes, más transacciones
+y está, sucesivamente
+entonces bueno, eso
+Kike de tu lado
+ponete a trabajar en lo que es
+generar el extracto, o sea
+poder cargar los datos y después
+yo entraría, si fuera vos, a trabajar
+con los mappers
+mapper de rail, mapper de...
+hasta que en un momento digas, mira Santi, ya está
+ya no necesito que
+carguemos más data o necesito
+que simulemos estos casos para poder
+probarlo bien
+va a haber un momento que vas a necesitar la migración
+entonces ahí vemos
+si Martina o yo, este, te la hacemos
+¿ah?
+bien
+y es eso
+¿sí?
+eh, Santi
+o sea que lo que sea modificación a la base de datos
+entonces por ahora por lo menos queda de lado
+ustedes, yo no, no hago eso de momento
+claro, sí, o sea, vas a
+por ahora vas a tener el caso en que siempre generás todo
+ok
+pero sí lo que tenés que guardar
+o sea, tenés que ir pensando que vas a tener que ir haciendo esos cálculos de débito y crédito y todas esas cosas
+por eso que tenés que guardar, o sea, tenés que ir pensando que vas a tener que ir haciendo esos cálculos de débito y crédito y todas esas cosas
+lo que es un proceso asíncrono este
+¿tá?
+bien
+y también hay algo que hay que tener en cuenta
+eh
+es un proceso asíncrono
+y hay que hacerlo de forma paginada, o sea, no puede trancar a otros procesos
+recordemos eso
+Quique, no es que tipo, traeme todas las transacciones del mes
+o sea, ya te lo voy diciendo
+no es tipo, traeme todas las transacciones del mes
+es tipo
+si querés hacés el cálculo de saldo inicial
+después le decís, traeme las transacciones del mes de forma paginada
+porque nosotros, recordá, no sabemos cuántas va a haber
+entonces las traes de forma paginada y ordenada por fecha de actualización
+¿por qué por fecha de actualización?
+porque vos pensás que una transacción puede ser creada hoy y aprobada mañana
+entonces en realidad, recién mañana se hace efectivo
+entonces la fecha que importa es el updatedat, no el createdat
+mira
+¿si?
+o sea, eso es sumamente importante
+por ejemplo, si yo hago una transacción que requiere...
+de un banco
+la hago un fin de semana
+recién se va a ejecutar
+en los libros
+el lunes
+entonces ahí es donde nosotros tenemos que usar el updatedat
+no el createdat
+¿si?
+tiene sentido
+la idea de esto, Quique, es
+vos pensá que
+que tiene que poder
+como venimos trabajando hasta ahora
+o sea, no podés agarrar y cargar un millón de transacciones
+tipo, vas paginando a cinco
+vas cargando, vas calculando
+obviamente que si el tipo tiene en un mes un millón de transacciones
+y bueno, es un proceso que va a demorar
+¿si?
+asimismo, lo que tenemos que pensar
+y con esto te lo dejo, porque probablemente sea parte de la migración
+que nosotros hagamos
+pero es muy parecido a las transacciones por batches que tenemos en accounting
+o sea, que vos tenés como un status
+entonces
+algo que va a pasar es que si vos
+arrancaste a procesar por un estado
+no deberías... vos ya deberías generar el récord
+en base de datos
+y debería quedar como pending
+¿está?
+si querés
+¿sabés qué? si querés hacete vos la migración
+contra el site de la tabla
+y nosotros te la ajustamos, va a ser más sencillo
+¿está?
+o sea, si querés generar la tabla, la tabla tiene que tener
+va a tener un identificador único
+como siempre, un KYB
+¿está?
+y un proveedor
+un año y un mes, eso es lo que lo hace único
+¿está? todo ese conjunto de claves
+el KYB
+¿está? el proveedor
+el año y el mes
+¿ah? y también
+tiene que tener otro dato, que es el Company ID
+que eso también, la combinación
+Company ID
+proveedor
+año y mes, y tenemos que tener la combinación
+Crypto Global KYB
+proveedor
+año y mes
+¿está? o sea, ambas combinaciones
+tienen que ser unique
+podés tener, el Crypto Global KYB
+siempre va a una compañía
+por ahora
+¿si? entonces
+vamos a poner ambas combinaciones
+que tienen que ser unique
+pero por separado
+igual es válido, porque si vos tenés varios
+Crypto Global KYB
+vos no estás fijándote que el Crypto Global KYB
+y el ID no se repiten
+así que está, no pasa nada
+lo que vas a tener que guardar es
+ingresos y egresos
+¿está?
+¿no te puede ser útil?
+ah, creo que no te son útiles para una mierda
+¿no? o para recalcular
+Martín ahí no sirve tampoco, ¿no?
+o sea, vos para calcular
+solo necesitas el saldo final
+para calcular otra factura, ¿no?
+para no tener que hacer todo el cálculo
+del mes anterior
+en el saldo final estás
+o sea, el saldo final
+pero el saldo final siempre
+nosotros siempre hacemos el estado de cuenta completo
+si, ¿no?
+si, o sea, hacemos del mes
+por eso
+ingresos y egresos
+¿sabés qué, Kike?
+guardemos ingresos y egresos
+por si de mañana queremos sacar algún dato
+¿está? guardemos saldo inicial, egresos
+y egresos, guardemos los cuatro camps
+¿está? cuando hagamos el
+por las dudas
+por si de mañana
+queremos reutilizar esto
+una consulta
+cuando
+la persona no tiene ninguna transacción
+igualmente le podemos
+generar el extracto
+creo en la pantalla de vacío
+o se puede poner algo de
+de que no se genere
+eso es justo lo que hablábamos, ¿qué pasa?
+ellos pueden usar esto como comprobante
+de que tienen la cuenta aprobada
+está genial
+entonces, sí, hay que generar el estado vacío
+como yo te dije ahí, Santi
+que no podamos meter otra roadmap
+también
+tenemos que generar este estado vacío
+bien, perfecto
+y también, yo no podría venir
+a imprimirle algo rápido arriba
+o sea, tiene que ser algo que sea un dolor de huevo
+¿está?
+pero
+yo le puse la marca de agua
+abajo y eso, pero
+dejamos algo ahí que
+a ver, siempre van a poder hacer alguna
+chanchada o algo
+que sea difícil
+siempre vas a poder
+deserializar un pdf y
+yo no sé ahí en cuál término de seguridad
+de los pdf que se puede agregar
+pero siempre vas a poder entrar un pdf y editarlo
+no recuerdo ahí
+Martina, nosotros trabajamos en la facultad
+con eso, o sea, creo que sí
+siempre podés deserializar un pdf, por más que esté encriptado
+o lo que sea
+no sé si ahí, Kike, para las facturas usamos algo
+pero, a ver
+no me complicaría
+de mi lado, se me ocurre que si yo esto
+lo paso a líneas
+suerte en pila para editar
+no sé cómo se irá a pasar a
+a líneas
+no, yo qué sé, yo he agarrado
+pdf y lo he transformado en Word
+editado, o sea, si alguien se toma el tiempo
+de hacer esto, nosotros al final del día
+somos la fuente de la verdad, mientras que no modifiquen
+eso en nuestra base de datos
+y si modifican eso en la base de datos
+creo que el problema lo tenemos más nosotros
+que otra cosa
+sí, si modifican eso en la base de datos
+creo que el problema no está en el generador de pdf
+creo que está en otro lado
+genial
+entonces Kike, creá
+nos pasás las tareas que creés para la migración
+y para empezar a trabajar esto
+¿está?
+sé todos los breakpoints que creás necesario
+y de nuevo
+si querés ir validando
+cosas, nos las vas pasando
+ah, o sea, es mucha info
+sé que es mucha info para la red
+este, así que
+nada, pensálo
+fijate todo bien, pensá que vos
+nosotros vamos a guardar
+o sea, vos deberías
+lo único que deberías guardar como siempre
+es el nombre del archivo, con toda la información
+en el record, o la información que
+recibís en el evento, vos deberías poder generar
+toda la ruta
+bien
+eso pronto
+o sea, Kike está liberado
+y
+quedamos atentos a la migración
+si querés mandarla
+así ya la vamos a
+por lo menos que hoy salga la migración estaría genial
+dale
+Santi, quedate un segundito, vamos viendo otra cosa
+y atentos ahí en los comentarios que vaya poniendo Santi
+o este
+ah, también me faltó la migración
+que hay que crear del site
+ojo con eso, de lo que sería
+la parte de chat GPT
+esto de IAI
+sí, había que actualizar la config
+o sea, mantener lo que está
+o agarrar y volver a setear
+todo lo que está en base a lo que tiene Mati
+en producción, fijate eso ahí
+vos tenés acceso a todo
+sí
+estaba ahí mandado
+al intern, perdón
+porque no tiene frontend
+lo mandé al intern
+básicamente
+que es la 790
+eh
+sí
+pinchate a Jonathan
+ahí como está el intern no me arrobes a mí
+sacá el arroba mío
+y de Martina que pueda hacer que Jonathan se confunda
+ah
+este, sí
+ahí estaba mirando
+lo que hiciste rapidito
+o sea lo que hace es agrega
+el config, mueve
+mueve lo de Whatsapp que existe
+al Whatsapp config
+y crea el audit log
+y el config, el chat config
+lo mueve para
+claro, o sea
+el chat config lo
+lo estás clonando
+lo usás en Whatsapp config
+chat config y lo usás en audit log
+interpreter config
+ah está bien
+viste que Mati separa el
+system prompt con el
+dashband knowledge
+vos ponés un solo prompt
+no te consulto
+no sería bueno
+tener un prompt de conocimiento
+un prompt tipo base
+que diga la instrucción
+y otro prompt de conocimiento que hoy o mañana podamos darle
+eh
+yo qué sé
+especificarle los audit log o alguna cosa
+ah no sé
+fíjatelo
+ok
+a hacer una cosa
+cambiá el arroba
+dejemos solo a Jonah
+y poné a Fernando
+por las dudas para estar alineados
+las PRs que son
+todas las PRs que creen ustedes
+tienen que
+tanto vos como Fernando
+tienen que tener el arroba al otro
+por la idea es que trabajen en conjunto como equipo
+y sumar a Jonathan o a Nahue
+bien
+es eso
+y ya pinchálos
+ambos por privado
+yo te pedí que los pinches
+dale
+que esté en un grupo ahí
+también que esté yo o Martínez
+pero pinchémoslo
+ah si eso sale
+y explícale lo mismo a Fernando
+que arroba a Jonathan y a Nahuel
+no sé si este era el del prompt engineer
+creo que no
+no
+ah capaz que yo le dije que agregara a Jonathan
+a Nahuel
+pero por las dudas che cuando te juntes con Fernando
+si lo hablás alinea eso
+siempre a ustedes dos y eligen uno random entre ellos
+ok dale le digo
+bien
+lo adecuado capaz que debemos de aplicarlo
+una vez que vos vuelvas de la licencia
+porque si ahora vamos a sobrecargar bastante a Fernando
+y mi prioridad ahora
+es empezar a bajar todas esas PRs que están abiertas
+o sea
+en la medida de lo posible no es la idea
+de que Fernando agarre más tareas
+sino poder desbloquearlo
+cuanto antes podamos desbloquearlo mejor
+estamos siguiendo muchas cosas
+y me da miedo
+te digo también para que te vayas organizando con eso
+chau Kike
+un saludo a todos

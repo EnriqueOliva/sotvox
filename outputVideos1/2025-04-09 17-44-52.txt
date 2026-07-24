@@ -1,0 +1,24 @@
+¿Te acordás a qué te referías con esto? Porque yo tengo ya algo configurable para
+hacer una Company Graph, llega al paso antes de pagar. ¿Vos te referís a expandirlo a
+pagar y todo o qué? ¿No te acordás?
+Para crear una compañía, claro. Es todo. Todo el flujo de crear una compañía. O sea,
+ahí es por eso también tienes que ejecutar. La idea acá era de que vos hagas un configurable,
+en el sentido de que la idea es que vos encapsules y abstraigas cada paso en particular de la
+mejor manera posible, cosa de que esto lo podamos reutilizar.
+¿Pero vos viste lo que yo tengo ya, sí?
+Llega hasta, perdón, lo que vos tenés llega hasta, perdón, lo que vos tenés llega
+hasta, perdón, lo que vos tenés llega hasta, perdón, lo que vos tenés llega hasta, perdón,
+la visualización interna de Dayo?
+No, llega hasta antes de pagar. A eso te referí vos. Esa parte extra.
+Claro, esto no era crear Company Graph. Eso sí me acuerdo vos lo enviaste en la PDF.
+No me acuerdo, sé que me lo mostraste en una demo pero no me acuerdo hasta dónde było.
+La idea es que quede hasta el Dayo. O sea la entrada...
+Sí.
+Lo que vos deberías variar en sí es que aparece la card con el nombre de la compañía, o que bueno, que te logueas en el dashboard correctamente, y que aparece la card con el nombre de la compañía, sí, es eso, es eso nada más, pero obviamente cada paso hay que axularlo para que quede súper configurable y lo que tiene que parecer, cosa que el test en sí, como si fuera el test unitario, pasa a ser una serie de llamadas a funciones auxiliares, nada más, ¿se entiende?
+Sí.
+Es un poco de, o sea, el test en sí en concreto cuando vos querés probar en un caso en particular sería un bolazo, o en sí lo único que vas a hacer es llamar a la property con lo que vos querés pasarle, es eso.
+Bien.
+O por lo menos intentar.
+Sí, así es como, sí, como funciona el company draft está hecho así.
+Igual estaría bueno que ahora te centres en lo de email y dejar algo, viste, como por ejemplo yo he comentado de, si hay comentario,
+comentás acá, lees el local, bueno, lo mismo, lo mismo quiero, pero para, para, para lograr enviar.

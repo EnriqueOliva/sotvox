@@ -1,0 +1,596 @@
+Bueno, tenemos que liquidar el sprint. Primero tengo que ordenar mi sprint, así que voy a ordenarlo y ahora cuando vaya pasando cada uno me va diciendo cómo va haciendo.
+Por lo tanto, para que estemos todos al tanto, vamos a estar integrando una nueva plataforma como RAIL.
+Entonces hoy día tenemos sprint y aquí tenemos RAIL. Vamos a estar integrando una más.
+Y por ahora Martín y Iker vamos a estar encarando eso y después vamos a ver cómo vamos sumándolos.
+Por ahora vamos a estar encarándolos nosotros dos.
+Tienen un sandbox, así que capaz que intentamos hacer las cosas un poco bien,
+pero como necesitamos sacarlo con urgencia y por ahora en sí hay tareas para hacer,
+lo vamos a estar encarando solo nosotros dos y después probablemente hagamos el proceso que hicimos con RAIL de acoplar.
+Ya que tenemos, como hay que sacarlo un poquito más rápido y tenemos autorización para probar directamente contra producción o sin contra eso.
+Asimismo yo estuve trabajando, voy a ver si puedo ya mandar PR, porque eso está bueno que nos estemos a testear en Dev,
+un cambio que va a ser relacionado a lo que es el company.
+¿Cómo?
+El company auto, el código QR. Estos anti no cambian nada la funcionalidad de lo que serían las preguntas por ahora.
+Pero lo que llevaría es que a partir de ahora el company auto va a ser contra el usuario owner o el teammate owner.
+Y no va a ser contra la compañía.
+Va a ser referencia al teammate owner o al usuario owner.
+Y eso hace que cambie un poco todo, porque ahí Fernando ya estaba trabajando en los test
+y hace que cuando vos registrás un QR para una de tus compañías, ya no tenés que utilizarlo.
+Nosotros lo habíamos hecho por compañías, porque era un tema de que un usuario podía tener múltiples compañías
+y como el teammate no podía acceder, tenía sentido de que fueran todos distintos.
+Ya que antes había gestores que eran dueños de muchas compañías.
+Ahora como está cambiando la modalidad y existe la funcionalidad de teammates,
+la idea es que vos haces un solo QR y con ese QR vos podés iniciarte a cualquiera de tus compañías,
+que es como lo vi, y para cada teammate tenés que darle un QR.
+Algo que es importante de esto es que este cambio viene dado por una vulnerabilidad o algo que queremos mejorar en cuanto a seguridad.
+Y es que el módulo de teammates, si te fijás, hoy en día vos te podés usar el teammate requiere QR,
+vos tenés que darle el QR.
+Pero en sí, el acceso para poder habilitar teammates es solo loggeándose.
+Entonces vos te loggeás con usuario, con correo electrónico y contraseña, y ya podés agregar teammates.
+Entonces la idea va a ser ahí, y esto va más que nada para que probablemente lo implementen ustedes, Nahue o Jonathan,
+es que cuando editás o borrás un teammate tengamos que pedir usar el módulo de QR.
+¿Está?
+O sea que ahí la idea es que, como ahora va a ser por usuario ese QR, solo lo uner va a poder modificarlo.
+Entonces cada cambio en teammate, además de que te hayas loggeado con contraseña, vamos a pedir el código QR.
+Ah, y eso lo que va a validar es que, bueno, ya no solo teniendo la contraseña, sino que tenés que tener el tool factor para habilitar a un teammate,
+para que hagas opciones delicadas como retiros.
+Así que eso.
+A medida que vaya pasando por cada uno,
+la idea es hoy cerrar el sprint, ahora funcionará la daily, mientras que vemos algún post-cram, me van diciendo cómo vienen y si hay alguna tarea que podemos cerrar.
+Fernando, yo te diría que te concentres, ahora si querés lo vemos como post-cram, en lo que serían los tests que no sean descompañados,
+que no toquen nada descompañado, ¿sí?
+Dado que no sé qué test o qué tareas se están quedando, te pido si podés ahora después que diga la daily o durante la daily no las pases a mía Martina para que las revisemos,
+Dado que no sé qué test o qué tareas se están quedando, te pido si podés ahora después que diga la daily o durante la daily no las pases a mía Martina para que las revisemos,
+Dado que no sé qué test o qué tareas se están quedando, te pido si podés ahora después que diga la daily o durante la daily no las pases a mía Martina para que las revisemos,
+las que están de nuestro lado, sé que lo enviaste pero que lo envíes nuevo, y las descompañados dejémoslas a un hold, ¿está?
+Así podés en Giga, marquémoslas a un hold, así, o sea, por más que esté en progreso o lo que sea, marquémoslas a un hold hasta que yo termine con esta funcionalidad, ¿bien?
+Posteriormente a eso voy a seguir con lo que es la conexión de los endpoints, que es lo que estamos trabajando, es que sea lo más parecido a RAID posible,
+cosa que podamos reutilizar todos, es más, esta nueva plataforma ofrece dos flujos,
+uno más parecido a ARI y otro parecido a RAID, vamos a ir por el de RAID, así que eso, ¿y qué?
+Bueno, varias, estuvimos trabajando en varias cosas, ya quedó pronto el ajuste ahí de los mails de la parte de mobile, de lo que es toda la parte de Bolivia,
+ahí también quedó en revisión, no llegó para salir a PRO, pero quedó ahora en revisión el tema del botón de, en lo que es la parte de accounting para descargar los PDFs instructivos,
+¿no?
+Y bueno, ya esta mañana estuve trabajando ahí en el mensaje de la salida PRO, que ahí lo voy a estar corrigiendo y agregando las cosas que faltan,
+y estuve corriendo Cypress, que bueno, necesita, hay algunas cosas, hay varias cosas que se rompieron, pero ya las estuve ajustando ahí,
+y no hay ningún bug de lo que es nuestro código, lo que es la plataforma no tiene bugs, o sea, todo lo que se rompió en Cypress es de Cypress,
+así que eso son buenas noticias, y estuve viendo contratato ahí las tareas, él tenía unas tareas para plantear, y teníamos la idea de que yo agarre la parte de backend,
+de la tarea que tiene él, yo agarrar capaz la parte de backend, capaz que te cuente algo más ahora él, pero sería esa la idea básicamente.
+En términos de puntos, ahí como ves, creo que estamos bien, digo 48, capaz que va a ser una tarea de, para cerrar las que están en the review,
+o no sé, pero creo que...
+No, cerrando code review, estamos bien.
+Claro.
+Ok.
+Y el de bien.
+Ok.
+¿Fernando?
+Bueno, estuve analizando los tests que dan error al ejecutarse individualmente, corregí primero los de Companions,
+estuve viendo los demás que están ahora, hoy, están todos corregidos, incluyendo los de Backoffice, y la vacina no está correcta.
+Tengo dos comentarios, hay dos comentarios, o sea, dos para recomendar, y ya paso a...
+Acá están todas in progress, están en the review, eso quiere decir que están en intern.
+Sí.
+O sea, hay que estas de Banking Crypto, si podemos darle una iteración, por lo menos para que se muevan a the review, o bueno, las que no, sé que hemos estado con otra cosa,
+pero ahí si podés darle un poquito de prioridad a eso, así, desbloquear.
+Ok.
+Desbloqueamos, podés ir viendo que son muchas.
+Sí.
+Es por una acumulación.
+Ok.
+Bien de bien.
+Tato, al final del día necesito una propuesta que vamos a hacer con esto.
+Y, esta, esta, esta, ahora nos pasa la que está de nuestro lado, pero por lo que veo de nuestro lado, solo es poca.
+Sí.
+Da, pasanos la que está de nuestro lado, y la dichamos, pero ta, veo que tenemos solo 7 puntos, vamos a tener que ver con todas estas que hacemos, ta.
+Son muchas.
+Bien.
+Entonces, ahí capaz que Kike dedique un rato ahora para poder, este, por lo menos sacar, este, o dejarle comentarios, o pasarlas a nuestro lado, estas.
+Y Tato, al final del día, avísame que hacemos, porque, ta, tenemos que, que hacer con este sprint.
+Podemos, tenemos dos opciones.
+O le hacemos carry over a todas estas tareas, y generamos una, una nueva que marque todo lo que se, el avance de esto, ta.
+Este.
+Porque calculo que los comentarios van a llevar mucho tiempo, y son todas tareas de muy poquitos puntos.
+O las cerramos todas, y creamos una consolidada.
+Pero viendo que son muchas, este, capaz que iría por el primer punto de hacerles carry over.
+¿No?
+Y generamos una para nivelar el sprint.
+¿Bien?
+Bien de bien.
+Este, ahí coordinate eso con, con Kike.
+Gastón.
+Hola, ¿cómo están?
+Bueno, yo estuve, eh, ayer trabajando, terminando de trabajar el roundup.
+Eh, ya quedé con Kike.
+Eh, ya quedó terminado.
+Eh, después estuve trabajando también en el, en el nuevo flujo de team mail.
+Eh, para editar permisos por, eh, por compañía en cada team mail.
+Eso ya está, está prácticamente también terminado.
+Eh, después capaz lo quería ver con vos, si podés, en, en el postgram.
+Eh, para ver, más que nada, si, si, si vengo bien, o si hay que, que cambiar algo.
+Para, para no seguir avanzando mucho.
+Eh, y después, por último, eh, ayer me pidió Santiago un, eh, una tarea media prioritaria
+de, de editar, eh, un switch, eh, de la entidad y crear un select.
+Ah, yo no te respondí.
+Yo no te lo puse.
+Ah, mirá, la cosa es así.
+Sí.
+Va a quedar, eh, va a quedar persona, empresa, legacy y empresa.
+Sí.
+Y después el switch de abajo, cuando estás en, en empresa.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Si te pones a ver la empresa, que empresa es el que antes era GP Morgan Switch.
+Sí.
+Pasas poner, eh, para que tengo que ir al,
+Al comentario de Guille.
+O sea, no sé si viste el de hoy porque quedó actualizado.
+Eh, lo estábamos corrigiendo con Santiago, eh, pero nada, si querés lo vemos en la postgram.
+Porque yo lo hice, eh, con lo que me pasó Guille.
+Eh, el comentario es...
+Claro, o sea...
+Guille...
+Guille...
+persona en la empresa que está hoy en día el del medio va a ser empresa de gas y como hablamos
+después de que mandó esto nos reunimos con martín entonces vamos a poner persona empresa
+legacy y dónde está jimmy morgan soy vas a hacer empresa y os hará la propuesta el signo
+de pregunta que le mandaste para hacer y el switch sería jimmy morgan y hsbc
+perfecto y estaba por último después en cuanto a los puntos que me quedó una tarea medio terminar
+que fue la de la review de las landing que era un par de días y me iba a hacer porque
+salieron nuevas prioridades pero bueno estamos viendo el punto
+estamos viendo puntos y lo medio hacer capaz que lo que hacemos es le pongo 58 ahora veo que le
+pongo un correo no tenemos nada entonces este espíritu y que tuve una pero fue una cosita
+le ponemos el apenas a esta pedida santi que le pase a poner improver es mucho olvides ahí gastón
+siempre que aunque se des una ya le ponen sin progres y acá lo que necesita
+vamos a hacer pasemos está antes de cerrarla pongamos un comentario de que se hizo a la mitad
+hacemos está cinco puntos vamos a ver los cinco puntos me parece que está acorde
+y generemos una continuación de pesas anti que te genera una continuación una vez que
+no acepte a martín
+estábamos hablando la de martina y no está
+ahí volvió la madre pero de aceptar a todos y arranque porque estaba tarde
+le di a aceptar a todos y arranque porque estaba tarde está mayo mayo mayor bien
+hacemos un recado rapidito de mi lado además de todo lo que estamos trabajando y trabajando en él
+es lo que sería
+antes el
+UR era por
+compañía, ahora el UR va a ser
+por usuario
+o sea que ya no es único para
+cada compañía, sino que por usuario
+va a ser único, por team mate
+va a ser único dentro de ese usuario
+eso nos permite que
+nosotros podamos poner
+cuando vos
+modificás un team
+que antes lo podías modificar tipo por usuario
+y contraseña, y ya podías agregar
+y crear team mate, ahora vas a necesitar
+poner el UR de la persona a uno
+para poder agregar team mate y lo modificar
+esa es un poco la idea
+de por qué este cambio
+entonces ahí estoy haciendo una migración
+lo que es company out
+va a pasar a ser user out
+eso por un lado, después lo otro
+lo que venimos trabajando con producto
+Enrique va a trabajar ahí con los bloqueos
+además de correos iPress
+nos comentó que solo tenía errores
+de su lado, así que ahora lo que presta es
+crear una tarea para actualizar
+Cypress
+y aquí que no te olvides
+de actualizar el mensaje con los requerimientos
+que puse, capaz que ya lo hiciste
+y del otro lado
+lo que va a hacer es dividir con Fernando
+lo que son los bloqueos del backoffice
+para que los usuarios de Bolivia y eso
+no puedan modificar
+la información de una compañía
+que solo las personas de administración
+puedan modificar
+la información de compañía
+y empezar a separar más los roles
+era lo único que nos faltaba bloquear
+entonces eso lo va a hacer Fernando
+con Enrique
+ahora vamos a ver lo que van a hacer
+Gastón
+venía trabajando en lo que es
+Roundup
+teníamos Roundup
+teníamos ahí los diseños
+del nuevo flujo
+de diseñar permisos custom por compañía
+en vez de permisos genéricos
+y
+ahora estábamos discutiendo el swing
+que le estaba comentando
+del
+que no había ido
+pero lo estaba comentando
+que va a quedar JP Morgan
+que este va a ser el swing quinta
+para que te arrobo Gastón
+así que dije
+bien perfecto
+¿te da algo más Gastón?
+no, no, es por
+todo por mi lado
+capaz que te pedías
+que te pudieras quedar
+a la época
+dale, sí
+lo vemos rapidito
+si podés
+no, no, no
+ahora no podés
+ahora no podés
+no vamos a reír
+Stan
+¿qué tenemos?
+¿qué tiene para vos, Stan?
+¿qué tenemos?
+¿qué tiene para vos, Stan?
+¿qué tenemos?
+¿qué tenemos?
+¿qué tenemos?
+¿qué tenemos?
+¿qué tenemos?
+cómo va
+ayer me quedé hasta la tarde
+estuve trabajando en la parte del flujo de autenticación
+y
+en la parte de borrarme como teammate
+y
+y where mis permisos
+tengo ya la versión desktop de todos eso
+si querés ahora nos quedamos como y
+les muestro ahí todos los avances
+para chequear que esté todo de ok
+y si esta todo de ok
+ya la paso al
+a
+a
+a trabajar todo eso
+en
+lo que es mobile y tablet bien en cuanto al sprint
+lo que dejé ahí como más de lado es la parte de los estados de cuenta que es la
+primera de las tareas que tengo en design review que está si bien fue
+aprobado a medias la cosa es que habría que hacer esos ajustes que había
+pedido carlos pero lo fuimos dejando para atrás por cosas con mayor prioridad
+después necesito de la prueba de martina para las tareas del selector de cuenta
+mis compañías y el otro selector múltiple que me había pedido un ajuste
+que ya lo hice
+y nada y esas tres cosas ya se podrían ir hoy ni bien tenga ese aprob
+hay martina si podemos desbloquear eso para también que se lo pueda mandar a
+guillermo eso de este a guille y a beto esos selectores ahí yo lo que le dijo
+diciendo a santi es el flujo siempre mantener en dice y previo y esperar a
+que se mande los ajustes fue pensando sobre eso mandemos anti para
+no perder tiempo no los mandes a radio total por ahora
+anahuel y jonathan están trabajando sobre eso tiene que pasar también cuando
+cuando sigamos el flujo normal lo que sí te digo es que cuando guillermo los
+apruebe
+en el chanel de design que si quedó todo en radio y por debes pero a robar los
+años 2 también porque van a estar trabajando en eso perfecta bien bien
+bien bueno al final del día fíjate cómo termina con estas tareas cerradas y ahora
+vemos lo otro a ver cómo hacemos para cerrar el bien de vida
+nada esto acabó
+ya pasó un poco lo que era el tema de el trabajo de rediseña de compañía para
+este atajar el el va que estaba pasando con los comprobantes al cancelado
+operar una operación una tribulación y un ajustecito en el modal de
+confirmación de cuando se aprueba una contraparte eso quedó ya mismo
+fuera de eso me junté temprano con mi zona donde estuvimos viendo un poquito
+este la parte hizo hay que componentes que utilizaríamos este con la parte de
+mis compañías este
+los filtros ahí definimos componentes este para son los medios genéricos entre
+los dos así estamos repetir este de lógica
+también le dije como draft la pd
+con los centros para que la pueda luchar tanto zona y si necesita
+ramificar de ahí y eso bien perfecto
+y ahí vayas de coordinando porque son tareas que probablemente recurso a los
+mismos centros
+o intentemos que requieran los mismos endpoints.
+Hay una de las cosas que yo estaba pensando en Agüey Jonathan,
+es que si el endpoint de Agüey da más información que el de Jonah,
+podemos perfectamente poner alguna flag para reducir esa información,
+para reutilizar ese endpoint, no andar copiando y pegando todas a los otros.
+Vamos a hacer, como ambos van a hacer, la mayoría van a hacer get,
+van a hacer get de estos de get y multi-selector,
+piensen ahí poner alguna flag para que retorne menos información.
+Bueno, algo que también es importante es que no están los endpoints actuales,
+que no deberían devolver toda la información de la compañía,
+sino solo la que se usa.
+Entonces lo que queremos hacer es que estos endpoints,
+cuando los pongamos en el client Agüey, los tipemos.
+Es algo que nosotros venimos haciendo, pero esos endpoints legacy
+no tenían tipado.
+Entonces necesitamos tipar eso para que así vemos errores
+que pueden estar pasando.
+Y ya tipemos entonces.
+Es sumamente importante eso.
+Entonces ahí con eso prevenimos una cantidad de detalles.
+Y también no es la idea que demos información de más.
+O sea, si la compañía es una tabla súper grande
+que tiene una cantidad de información,
+entre ellas, por ejemplo, tiene el ID interno del ejecutivo de cuenta asociado,
+o sea, mi idea es que a partir de ahora esa información no la demos innecesaria.
+Otra cosa que ya te voy a decir, para si requiere tarea o no,
+pero que lo revises, es nosotros necesitamos fijarnos
+si en algún lugar cuando obtenés el Get Company Info,
+cuando tenés la información de la compañía,
+estamos filtrando, ya que vos vas a estar con el backend de esto,
+y capaz que conviene.
+Consolídese el backend para que yo no pueda trabajar antes de seguir con el frontend.
+No sé si eso lo organizan ustedes.
+Algo que me interesa ver es, en algún lugar nosotros estamos,
+cuando retornamos la información de la compañía,
+estamos retornando al frontend información como el Backoffice User asignado,
+o esas cosas.
+O sea, te lo digo solo para los e-points nuevos,
+pero después tenemos un e-point para obtener la información de la compañía en particular.
+Me gustaría que esa información no se filtre.
+Entonces,
+como parte de este reparto,
+también empezar a ver esos lugares donde realmente estamos retornando al frontend
+información de la compañía que no tendríamos.
+De nuevo, como información del Backoffice User asignado,
+lo que sea,
+que son cosas que capaz que después está bueno brindarle en los detalles de la compañía,
+que es algo que toca hablar con Matías,
+quién es el ejecutivo de cuenta asignado a vos.
+Entonces, eso está bueno.
+Porque así se puede,
+lo pueden contactar.
+Pero por ahora no.
+Entonces,
+nada,
+tener cuidado con eso.
+Y es más,
+si se comparte el ejecutivo de venta asignado,
+tendría que compartir el ejecutivo de venta asignado,
+el,
+¿cómo se llama?
+El nombre,
+no el ID del Backoffice User.
+¿Sí?
+Sí.
+Así que después nos avisás ahí si necesitas alguna tarjeta para eso.
+Vale.
+Mismo para hacer research y ajustes.
+No debería ser algo complicado.
+Todo lo que,
+ahí no voy yo a nada.
+El flujo que ustedes van a tocar,
+la idea es que todo sea en base a los nuevos estándares.
+O sea,
+yo no sé cómo lo hicieron,
+pero estaría bueno que todo sea en B2.
+¿Está?
+Sí.
+Que todos los espacios nuevos sean en B2.
+Y,
+y sea todo tipado en cuanto a lo que está,
+entonces así vamos mejorando.
+No vamos a actualizar lo que tenemos,
+pero sí lo viejo.
+Sí.
+No vamos a actualizar lo viejo,
+pero sí lo nuevo.
+¿Está?
+Y ya que tocamos esas áreas,
+bueno,
+chequear en los detalles de compañía cuando se explique.
+A ver si estamos,
+si estamos brindando alguna información o no.
+Bien.
+Checamos.
+Después con el print,
+vos estás,
+está bien,
+Nahue,
+así que no hay problema.
+Eh,
+Jonah.
+Bien.
+Bueno,
+ayer quedaron marcheados
+lo del refactor del componente de no service
+con el empty state.
+Lo estuve chequeando ahí un poquito en dev también
+y eso estaba todo,
+todo bien.
+Después,
+mandé el APR del autocomplete.
+Ahora estaba corrigiendo ahí unos comments que dejó Martina.
+Y nada,
+como dijo Nahue,
+eso,
+nos juntamos a ver un poco el diseño para ver que que podíamos paralelizar para no estar dependiendo uno del otro y ahí nos vamos a encargar cada uno de un componente y después cosa de poder avanzar y sin trancar el uno al otro.
+Así que estamos con eso.
+Estamos bien ahí.
+Es particular.
+Vamos a reír ahí.
+Sigan,
+sigan usando los diseños que tienes antes que están en el design review,
+que están los listos y a medida que vayamos seguiendo ajuste,
+vamos bien.
+Sí.
+Siguiente bien.
+Martina.
+Bien,
+de mi lado estoy dando algunos APRs.
+Saqué un hot fit,
+un master que Guille reportó una cosa chica de diseño y después estaba trabajando en lo nuevo que volví para poder restringir la lista de países a la lista que me pasó Guille para sacar esos países y también poder agregar el,
+como ves,
+el filtro de los formatos para lo que es pasaporte y documentos para que sean solo JPEG en vez de permitir todos los que creo PDF y eso te permitimos hoy y tal.
+Básicamente estoy con eso.
+Ahí tenemos que actualizar,
+tenemos que actualizarte todo lo que sería las llamas de los puntos de las cosas,
+no?
+Marta.
+Sí,
+tengo pendiente.
+Pasaste.
+La.
+Tengo que.
+Sí.
+Que como es que no es.
+A ver.
+Corre vivo o tenés que ajustarlo.
+La verdad creció.
+Así que nada,
+una vez que termines con esto,
+lo vemos.
+Bien.
+Quiénes tenían postgram?
+Tenemos postgram con Enrique y Fernando.
+Tenemos postgram con Jonathan y tenemos postgram con diseño.
+Enrique y Fernando los llamo.
+Ya los llamo y les creamos las tareas.
+Así.
+Eso lo hago solo con ustedes.
+Nos quedamos con todos.
+Así los libero.
+Ahí tanto anda pasando en las tareas y mientras tanto actualizando.
+Este.
+Enrique,
+en cuanto a prioridades.
+Entonces fue.
+No,
+me estoy conectando en la compu porque estoy en celular.
+Así te comparto.
+Bien.
+Eh.
+Ya que estamos todos el lunes,
+el viernes.
+Voy a intentar cuadrar una reunión.
+Sí.
+Para.
+Yo me he reunido con cada sector y con cada uno de ustedes para hablar de lo que es el
+uso de la IA y cómo estandarizarlo a nivel de lo que es el equipo de tecnología.
+Sí.
+Este.
+Lo que sería el propio ingeniero.
+Estuve consultando ahí.
+Usa cada uno.
+Más o menos.
+Dispiando.
+Entonces la idea es medio que juntarnos todos y debatirlo un ratito.
+Bajar propuestas a tierra o lo que sea.
+Que cada uno traiga su modo de trabajo también o para poder alinearlo.
+Pero mi idea es en un principio que podamos empezar a generar un repositorio nuevo, el
+cual.
+No sé si el repositorio nuevo o por repositorio y después un repositorio genérico.
+Tenemos que ver cómo lo encaramos, pero mi idea es que podamos tener un algún lugar.
+Este.
+Donde podamos tener todo lo que sean las cron.
+Pero los contextos base para poder trabajar cada funcionalidad.
+Sí.
+O sea, tengamos un estado.
+Por ejemplo, a nivel fronter cuando generamos un componente nuevo.
+Este.
+A nivel fronter cuando detectamos un componente nuevo que la cron base le diga que existe
+justo un botón.
+Utilizar constante.
+Todas las cosas que estemos alineando.
+Está.
+Y este.
+Lo mismo para.
+Para diseño y para vaquete.
+Para test unitario.
+Para todo.
+Y que si mañana alguien tiene que tocar algo de eso.
+Ver.
+Todos tengamos las mismas probas.
+Y las copas estén aprobadas.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+Y.
+que el sacar las cosas
+más rápido conlleva que las cosas a veces
+se hacerme una bola de nieve de basura
+no vamos a hablar de
+un piollo, entonces
+nos está pasando que estamos revisando
+muchas PRs, muchas PRs
+con ajustes que se podrían chequear, entonces
+más que una lista back, más lo que sea
+lo que podemos atacar es
+cómo pulir esas herramientas
+también les digo, pero podemos esperar el viernes
+a lo que es la charla, a lo que le falta
+por ahora
+lo que todos deberían tener o los que no
+tienen, es porque no se han
+comunicado conmigo, no lo han coordinado
+pues yo he pinchado bastante, todos deberían
+tener una IA PRO
+base, o sea, GPT
+y Cloud
+así que
+nada, igual lo vemos el viernes
+a ver qué resolución tomamos
+después de la charla, porque capaz que cambia la opinión
+de cuál solicitar, pero estaría bueno
+que todos tengan una
+si usted me dice, utilizo Cloud Pro
+de 100 dólares, está bueno, perfecto
+o utilizo GitHub
+o Pilot Pro
+bueno, capaz que te sirve tener un
+chat GPT, como para poder usar
+o un Cloud base
+para poder usar cuando te quedas sin cosas
+así que vayan
+pensándolo y después del viernes
+mostraré tal vez
+bueno, yo les aviso cuando
+sea esa reunión, quedan liberados Enrique
+y Fernando, estén atentos cuando lo llamen
+ok, hasta luego

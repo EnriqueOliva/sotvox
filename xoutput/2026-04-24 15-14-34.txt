@@ -1,0 +1,1456 @@
+buenas tanto tiempo bueno bueno bueno ahí está compartiendo ahí se puede
+creo que estamos todos está jonas tan agua en un segundo ahora sí como bueno
+se demoró un poquito ahí este un boliviano un chino boliviano
+queriendo transferir un millón de dólares de sodimac este
+nada para el proceso de triangulación
+nada anécdota interesante bueno yo no hay nada bueno si está como yo con
+internet o no yo estoy de celular porque estoy con apagón
+jajaja por eso
+5 y los convoque hoy gasto gasto como no era
+que
+y que
+que
+que
+¿Qué hacés acá, Gatok?
+Me uní por la duda, no sabía si tenía que estar o no
+¿Y filtrado?
+Perdón, tenés razón, más yo, más yo
+No, está bien, está bien
+Me confundí y puse en develop, vamos a hablar de CUA
+Así que si querés quedarte podés quedarte y si no te podés ir
+No, porque tengo un montón de trabajo ahí
+Un montón de trabajo ahí
+Hablándole del canal a los dutys, dale
+Al modo viernes
+Otro modo viernes
+Dale, dale, tenés favor ahí
+Cerrá todas las pestañas ahí de cosas raras
+Bueno, está
+Bien
+Sacamos un degenerado, un degenerado menos
+Vamos a hablar
+Vamos a hablar un poco de CUA
+Vamos a poner orden acá
+Bueno, la idea un poco
+De esto es, acá que Kike
+Comparta lo de SciPress y también
+Tener esta reunión como para definir
+O sea, volver a
+Chequear qué es lo que nosotros hacemos con la parte
+O sea, para qué
+Nosotros hacemos test unitarios y toda la parte de automation
+¿Sí?
+Y mismo qué se busca la parte
+Del flujo manual, ¿sí?
+Entonces vamos primero por la parte de
+Los test unitarios
+Nosotros tenemos la estrategia de crear
+Los test unitarios luego que se crea el código
+¿Ah?
+Algo que pasa muchas veces es que cuando lo hacemos
+Que es algo que tiene que estar en la parte
+De promptingería
+Que cuando se creen los test unitarios o se vayan generando
+En sí el test unitario
+Tiene que cuestionar lo que es el código
+¿Sí?
+O sea, no es que el código está bien
+Sino que tiene que cuestionarlo
+Y fijarse si tiene algún issue
+Si está faltando alguna validación
+Si hay algo que está faltando mal
+¿Está?
+Si ustedes hacen test unitarios de API
+¿Sí?
+Tanto a nivel de promptinger como ustedes
+Por ejemplo, si están probando la API de Bridge
+Hacen test unitario y usan el API de Bridge
+Del repositorio o la API de OneMoney
+Del repositorio, lo que sea
+Algo que ustedes tienen que tener en cuenta
+Del lado del QA
+Y para todos es
+Bueno, che, estoy usando esto
+Tengo que testear esto
+Yo no puedo testearlo así nomás
+O sea, si usan la API de Stripe o lo que sea
+Es importante que puedan tener la documentación
+¿Sí?
+Entonces, ahí
+Cuando se encargan de esas tareas
+Es relevar la información
+De cómo proveen a la IA
+O si pueden, por ejemplo
+Si ven que están haciendo una llamada a Axios
+Por ejemplo, Bridge, Rail o OneMoney
+Hacen una llamada a Axios a un repositorio
+¿Sí?
+O sea, hay una especificación de la API en algún lado
+¿No?
+Entonces, fijarse que eso tenga sentido
+O sea, si es en el caso de Stripe
+Nosotros estamos usando una librería
+¿Sí?
+Pero si nosotros
+El Backing Serving que estamos usando
+Es OneMoney, Bridge o Rail
+O cualquier cosa
+O sea, ustedes abren el repositorio
+Y ven que hay una API
+Hay una especificación de esa API
+¿Sí?
+O sea, hay una documentación de esa API
+Entonces, eso es importantísimo
+Que ustedes
+Cuando entran en el repositorio
+Encarguen esos tests
+Mismo cuando lo revisen
+Digan, bueno, pará
+¿Se está siguiendo la buena comunicación con esta API?
+¿El estándar que tiene esta API está bien?
+¿Está?
+¿O estamos haciendo una llamada que la API no lo soporta?
+¿Está?
+O sea, lo mismo con cualquier cosa
+O sea, en el sentido de
+Detectan que hay una validación que está faltando
+Por ejemplo, está dejando
+Hacer operaciones sobre una compañía
+Sin fijarse que sea el owner
+Ese tipo de restricciones de negocio
+Que a esta altura del partido
+Podemos empezar a asumirlas, ¿no?
+Es decir, bueno
+Nosotros
+Desde el site
+Tengo que ser owner
+O, este
+O propietario
+O, este
+O tengo que tener el acceso correspondiente
+Y de lo acófito
+Tengo que tener el rol
+Entonces, si yo me fijo
+Que en algún momento
+Puedo tener un riesgo de seguridad
+Y también chequearlo, ¿no?
+Si hay alguna validación que está faltando
+Esa es un poco la idea de los tests unitarios
+Los tests unitarios se forman
+Siguiendo first
+La idea es que sean repetibles
+Individuales
+Una de las causas que nosotros tuvimos
+También hace poco
+Encontramos con Fernando
+Fue que los
+Los tests al correrlo de forma individual
+No andaban
+O sea, pero si andaban
+Cuando se corrían grupales
+Entonces eso es un problema
+¿Sí?
+Son ese tipo de cosas
+Que tenemos que empezar a atacar
+O tener en cuenta
+No vamos a meter a la Liga Baction
+Que se corra un test por un test
+De forma individual
+Sin lugar a que no
+Este
+Porque la idea es que
+Se sigan corriendo repetiblemente
+Y se puedan correr
+Pero hay que tener en cuenta
+Esos casos
+Eso quiere decir
+Que cuando se crea el test
+Se tiene que correr de forma individual
+Y, o sea, los tests
+Cuando ustedes crean tests unitarios
+Se corren tests de forma individual
+Y después se corre el test
+De forma global
+Todo lo que es el archivo de tests
+¿Está?
+Y después conjunto con todos los tests
+¿Qué más?
+¿Qué más?
+¿Qué más?
+Por las dudas
+Volví a recalcar
+Que no solo los tests que hacemos
+Son los test que se hacen en la Liga Baction
+No son de integración
+No son unitarios
+¿Sí?
+Este
+Eso por el hecho
+De que nosotros buscamos
+Probar toda la funcionalidad
+¿Sí?
+Por un tema de rapidez
+Y poder llegar a cubrir más casos
+Más casos genéricos
+¿Sí?
+No tanto casos puntuales
+Este
+Que los tests de integración
+Los tenemos pendientes
+Los tests unitarios
+Los tenemos pendientes
+¿Sí?
+Pero la realidad es que
+Siempre estamos corriendo
+Atrás de
+Atrás de tener tests de integración
+De todos los samples
+Entonces este
+Vamos a empezar
+Todos los casos
+Todos los if
+Y todo lo que sería
+La parte de cobertura
+La ramificación
+La cobertura por rama
+La cobertura por
+Por funcionalidad
+Lo que sea
+Pero si
+Nosotros lo que buscamos
+Es cobertura
+De todos los endpoints
+Y de tener buenos casos
+Testeados
+Vamos lejos
+De ponernos a decir
+Bueno tenemos un 80% de cobertura
+Acerquemos al 90%
+Sino que lo que tenemos que buscar ahora es
+Poder llegar a cubrir
+Todos los endpoints
+Que tenemos
+En caso de tests unitarios
+El site, backoffice
+Y todas esas cosas
+La estructura de los tests unitarios
+Es la triple A
+¿Sí?
+Y si por ahora
+Nosotros
+De nuevo
+Lo que hacemos
+Es hacer esta integración
+Lo único que moqueamos
+Es la llamada al backing service
+Eso es algo que hemos charlado bastante
+Nosotros no moqueamos
+Nunca moqueamos
+O hacemos un stab
+El stab es lo mismo que el mock
+Solo que es algo más primitivo
+En términos teóricos
+Si alguien quiere comentar algo más
+Pero el stab en sí lo que busca
+Es lo mismo que el mock
+Solo que antes se hacía con clases
+Librerías como Mocha
+No están de acuerdo
+Que el mock sea un nuevo tipo de test
+Porque el stab ya buscaba eso
+Que era simular comportamiento
+Después hay otros pensadores
+Que dicen sí
+Si separar el mock y el stab
+Por el hecho de que son distintos
+Porque el mock es dinámico
+Y el stab era algo que se hacía con clases
+O sea
+Se implementaba toda la clasificación
+Cada vez
+Y esto lo que hace es
+Únicamente implementa lo que moquea
+Y genera comportamientos
+Para funciones que ustedes necesitan
+De forma dinámica
+Acá con Javascript es mucho más sencillo
+Porque ustedes sobrarradean las funciones que quieren
+Pero el lenguaje es de repente
+De programación orientada a objetos
+Más estrictos
+Como si Sharp o Java
+Utilizan otros mecanismos
+Para poder hacer estos
+Estos mocks
+Sin tener que crear toda la clase
+O heredar de todas las clases
+O implementar toda la clase
+Pero de nuevo la idea es
+Nosotros nunca moqueamos un repositorio
+A no ser en el caso de Stripe
+Que nos generó bastantes problemas
+La idea es nunca
+Nunca simular todo el repo
+A nunca agarrar
+Y moquear todo el repo
+Hacemos un stab de todo
+Eso con respecto a tests unitarios
+Por ahora los tests unitarios
+Los están atacando Enrique y Fernando
+Pero tanto Nahuel, Jonah, Martina
+Y quien les habla
+Los arreglamos
+Porque la idea no es que
+Si ustedes agrega una funcionalidad
+La idea es que arreglen los tests
+Arreglen los tests que rompieron
+Y eso debería
+Lo que estamos diseñando también
+Y pensando ahí con Enrique
+Diseñar algún mecanismo
+Para que
+Que la parte de QA
+Cuando ustedes arreglan esos tests
+Que sea un trigger
+Para que bueno
+Del lado de Enrique o Fernando
+Tengan que revisar esos tests en algún momento
+Si
+No quiere decir que mañana Nahuel o Jonathan
+No tengan que ponerse a hacer estos test unitarios
+Pero por ahora es la división que tenemos actualmente
+Y como trabajamos
+Tampoco como Enrique y Fernando
+Han tocado tareas de desarrollo
+Es como más que nada
+Como se divide
+Con respecto a la parte de QA
+Nosotros tenemos
+Del QA
+Contra la UI tenemos la parte de Cypress
+Que eso es lo que va a mostrar un poco Enrique ahora
+Como está estructurado el proyecto
+Y todo lo que va a mostrar
+Donde deja las variables de entorno y esas cosas
+Porque la idea es que cualquiera pueda correr Cypress
+Si justo no está Enrique
+Y está Jonah, está Martina
+Está Nahuel, está quien sea
+Pueda poner en su máquina a correr Cypress
+Y validar que está todo bien
+Este
+Mismo ahora justo Enrique se va de licencia
+Part time
+Entonces
+Nosotros vamos a necesitar
+Poder que cualquiera pueda correr eso
+Y garantizar la salida de producción
+Si
+Ahí Enrique va a mostrar un poco eso
+Lo que es la estructura y todo lo que tenemos de Cypress
+Por ahora de Cypress
+Nosotros estamos intentando
+Enfocarnos en lo que sería el small test
+O sea más allá que hemos profundizado en algunos casos
+Lo que siempre intentamos
+Cuando atacamos una funcionalidad
+Es diseñar los casos de alta prioridad
+Si o sea es lo que estamos atacando
+Naturalmente
+Algunos casos hemos tocado
+De media y baja
+Pero cuando se generan casos de Cypress
+Siempre sale una nueva feature y decimos
+Perfecto vamos a hacerle Cypress
+Nos estamos tocando
+Nosotros manejamos 3 niveles
+De prioridad
+O de relevancia
+A la hora de correr un caso de uso
+Si
+El caso de uso puede ser de alta
+De baja o de media prioridad
+Dentro de los de alta están los que son small test
+Quiere decir que es como
+Esa prueba de humo para intentar
+Con una corrida rápida de Cypress
+Poder correr o abarcar
+La mayor cantidad de funcionalidades
+Para fijarnos que todo esté ok
+Entonces eso
+Con respecto a los test de Cypress
+Tienen un orden
+Intentamos que
+Frontend, Popup o lo que sea
+Siga lo más que se pueda
+Y lo que sería un proyecto React
+Tenemos estructuras
+Todo eso lo va a mostrar Enrique
+Y después la parte
+Del QA manual
+Que eso les ha tocado a todos
+Como desarrolladores
+Ingenieros lo que sea
+Siempre es importante
+Cuando se encuentran en una validación de QA
+Este
+Siempre es importante que cuando
+Se encuentren frente a validar
+Eso tengan en cuenta que ustedes tienen que
+Tener un poquito la idea del negocio
+De que es lo que está validando esa funcionalidad
+Y si no la idea es que ustedes
+Me consulten a mi, tanto a mi como a Martina
+Como pueden consultar en el Channel de Developer
+Como pueden consultar a Santiago
+Osea cuando realizan el QA
+Tanto que hicieron una tarea
+Como realizar una tarea que ya está hecha
+Lo importante es
+Decir bueno ta
+Entiendo que es lo que aporta esto
+Y entiendo un poco la idea base
+Porque
+Muchas veces ustedes quieran o no
+Están desacoplados de como el cliente usa esto
+O que es lo que se espera de esto
+Entonces ahí siempre es importante
+Cuando yo intento dar las tareas
+Intento comentar un poquito las cosas
+Como ustedes
+Pero puede ser que no se de esa instancia
+Entonces este
+Como puede ser que esa instancia no se de
+Lo que es importante
+Ahí es que ustedes
+Osea se tomen el tiempo
+Para revisar o consultar
+Che como funciona esto, cual es la idea de esto
+Y por el otro lado
+De la parte QA manual
+Lo que nosotros intuimos que es lo que tendría que suceder
+Que a veces puede estar bien o no
+Pero nosotros intuimos por ejemplo
+Que algo, que una validación
+De esta forma
+O intuimos que puede estar faltando una validación
+Osea su tarea siempre es
+Encontrar errores
+Yo el otro día lo charlaba con Enrique
+Y con Martina lo hemos hablado 10 veces
+Pero siempre
+Cuando nosotros creamos una tarea
+Nosotros tenemos una epica de refactor o bug
+La diferencia es que refactor es algo que encontramos nosotros
+Y el bug es algo que nos reporto el cliente
+No se si lo
+Creo que no lo venimos siguiendo del todo ultimamente
+Pero para mi cuando el cliente
+Encuentra una falla es un gol
+De alguna manera
+Y es algo que nosotros podríamos haber atajado
+Entonces tenemos que meter procesos
+Y cosas para poder prevenir esos hijos
+Y hay veces que
+Más allá de todo lo que podamos automatizar
+Y eso no queda otra que ustedes mismos
+Con la idea del negocio
+O de como tendría que funcionar algo
+Hacer pruebas y entenderlo
+Eso es un poco para estar alineados con todo
+El proceso a partir de ahora
+Con respecto a lo que son test unitarios
+Y la parte de Cypress
+Si
+Lo que quiero cambiar es que
+Hoy en día se lo enviaban entre Enrique y Fernando
+A pull request intern
+Hoy en día Enrique y Fernando
+Van a tener que agregar o a Yona o a Nahue
+La idea es que como ellos están trabajando
+Se sigan revisando entre ustedes
+Pero también Yona y Nahue
+Puedan estar al tanto de esto
+También porque ellos mismos
+Siempre amartinan
+Y a mi no llega al final del proceso
+Pero lo que es importante
+Es que muchas veces Yona o Nahue estuvieron involucrados
+En esos test, por ejemplo todo lo que es team make
+Yona o Nahue estuvieron trabajando en eso
+Entonces después hoy o mañana
+Cuando van tocando algo
+Van viendo algo pueden aportar su valor
+Asimismo si hoy o mañana les toca arreglar algo
+Ver algo tienen idea
+Como la estructura de Cypress
+Y la estructura de test unitario
+Entonces eso es lo que va a cambiar un poquito
+Con respecto a lo que es el flujo de pull request
+De repente unos años atrás
+O mismo capaz que en sus empresas
+Era como medio redundante
+Que tanta gente mirara PRs
+Yo todavía estaba pensando eso
+Como que con una proof ya bastaba
+No tenías que mirarlo todo el mundo
+Porque
+Era como que
+Todo cada quien estaba haciendo sus cosas
+La realidad es que hoy en día
+Las cosas salen mucho más rápido
+Con inteligencia artificial
+Sacamos funcionalidades mucho más rápido
+Estamos usando modelos
+Lo que sea
+Y la gente que ustedes quieran
+Y sale todo muchísimo más rápido
+Entonces
+No es que haya
+Alguien está haciendo una tarea
+Que no lo queremos demorar
+Porque lleva una semana haciéndola
+Sino que normalmente lleva dos, tres días
+Cuatro atacándola
+Mismo la estimación de puntos
+Es algo que hay que volver a ver
+Pero por ahora está siendo flexible
+Y no nos está rompiendo las bolas
+Venimos con un buen ritmo de trabajo
+Pero lo que yo sí creo
+Es que lo que falta hoy en día es
+De repente antes sacar una PR
+Con 3000 líneas de código
+¿Sí?
+O sea, de repente era un hito
+Dos, tres semanas sacás una PR
+De 2000 líneas de código
+Era un hito
+Y ahí sí todo el mundo lo ha revisado
+Lo que está pasando ahora es que sacar esas PRs grandes
+Es un flujo normal
+O tener 10 PRs para revisar
+Es un flujo normal
+Entonces yo no puedo
+Nosotros no podemos
+Disminuir el número de reviewers de la PR
+Porque estamos sacando cada vez más cosas
+Y muchas cosas se mandan
+A producción
+Fíjense la cantidad de ajustes
+Que nosotros sacamos
+Por PURRI pues que va a producción
+Se van 20.000 líneas, 30.000 líneas
+Es una cantidad de cosas
+Entonces yo lo que pienso
+Es que más allá de que sea
+Un poco tedioso
+Tenemos que poner la validación humana
+Por ahora
+Tenemos que seguir teniendo la
+La parte de validación humana de las PRs
+Creo que es el diferencial
+Es lo que nos diferencia un poco
+Eso por un lado
+Entonces
+Si nosotros no agarramos y
+Mandamos y solo lo revisa Martín
+Es como que la realidad es que son
+Muchas líneas de código
+Entonces no nos dan para revisar la mínima
+Entonces está bueno meter varios ojos
+Además de que estamos metiendo agentes
+¿Por qué? De nuevo por lo mismo
+Si ustedes piensan en los proyectos
+Que trabajaron antes
+La experiencia que tengan antes
+De repente antes se sacaba
+No salía tantas cosas a producción
+No se sacaban tanto código a producción
+Porque realmente se codificaba a mano
+Entonces era escribir todo eso a mano
+Validarlo, pensarlo, crearlo
+Hoy en día la mayoría lo crea la IA
+Y ustedes la van guiando y la van puliendo
+Con el conocimiento que tienen
+Entonces este
+Es más necesario aún fijarse
+Que todo eso que vaya creando
+Se siga cumpliendo los estándares
+Siga cumpliendo las versiones
+Y la realidad es que una PR de 3000 líneas de código
+Nos pasa
+Martín la revisa una vez, yo la reviso una vez
+Y de repente corrigen todo
+Y después la volvemos a leer y encontramos más cosas
+Entonces
+Y si eso se mergea se va haciendo un cúmulo de mierda
+En producción
+Se va haciendo una bola de nieve
+Entonces la única manera que tenemos
+Es poner más ojos
+Y poner más procesos
+Si hoy o mañana podemos automatizar más algún proceso
+Mejor
+Pero para mi sacar los ojos nuestros
+Es una cagada
+Es una cagada porque literal
+Conlleva a que
+A que bueno
+Dejamos al libre albedrío
+Una cantidad de cosas
+Que después se van haciendo una bola de nieve
+Eso por un lado
+Entonces ahí el proceso ahora
+En cuanto a revisiones va a cambiar
+A Inago y Jonathan les van a empezar a llegar
+Algunas PRs un poco más
+Pero también va a ser que ustedes estén más metidos
+En ese proceso y puedan aportar más valor
+A lo que es ese proceso también
+En cuanto a los comentarios de revision
+Y que si hoy o mañana
+Como Fernando no están
+Ustedes puedan cubrirlos en esos roles
+Y que tengan idea que es lo que hacen
+Si hay que hacer test unitarios
+Si hay que arreglar el Cypress o lo que sea
+No tiene que ser algo del otro mundo
+La realidad es que hoy en día
+Más allá de que algunos
+Los pongo para alguna cosa u otra
+Hoy en día ya no existe el desarrollador
+Yo soy desarrollador backend
+No, vos sos un pelotudo
+Tenés IA
+Tenés todo
+No me rompas la bola
+Vamos a hablar en criollo
+Acá falta Gastón que se empieza a cagar de risa
+Y apague la cámara
+Lo que yo digo
+Es un poco eso
+Nosotros
+Tenemos todas las herramientas
+Ya no corre eso
+Solo se acertan cosas
+Todos podemos atacar todo
+Más allá de que cada uno dentro de su área
+Va tocando más cosas
+Si hoy o mañana no está uno
+Cualquiera debería poder cubrir
+Y eso es lo que tenemos que apuntar
+En este equipo
+Entonces es un poco la idea de eso
+Asimismo también estamos pensando
+Que las PRs de desarrollo
+Cómo involucrar a QA
+Eso es algo que estamos viendo
+Cuál es la mejor forma
+De involucrar a QA
+La parte de los test unitarios
+Y esas cosas
+Porque lo que está pasando
+Por ejemplo, yo que sé
+Nowell ahora tiene una PR de TeamMate
+Esa PR toca Endpoint
+Hizo arreglos
+Y te puso a hacer los test unitarios
+Y los arregló un poco
+Pero quién se sentó a ver que todos los test unitarios
+Tienen buena cobertura
+Están teniendo todos los buenos casos
+Y esa no era la funcionalidad de Nowell
+Nowell lo que hizo fue tapar los test
+Para que pasaran o corregirlos
+Entonces hay que hacer un reanálisis
+A ver si hay casos que están faltando
+Ese trigger nunca está sucediendo
+Es algo que después cada tanto
+Me comunico yo con Enrique Fernández
+Que es un reanálisis
+De todos los Endpoints que tenemos
+Y eso es un problema que tenemos hoy en día
+Entonces tenemos que verlo
+Y después de que nos explique el presidente
+Acepto propuestas para ver eso
+De cómo podemos atacarlo
+Está bueno para discutir
+Por el otro lado
+Y con esto termino
+Porque si no es final se alarga mucho
+Los videos
+Estamos creando con Santi
+Que les habrá roto los huevos
+Con plataformas para hacer los videos
+Mi idea de los videos
+Es que se termine eso de regrabar los videos
+Veinte veces
+Que creo que a todos les rompe el porro de la abuela
+Entonces
+¿Cuál es la idea?
+El video se graba para diseño
+Si diseño se ajuste
+Tiene que volver a grabarlo
+Ahí si
+No queda otra
+Porque ustedes tienen que demostrarle la funcionalidad
+Entonces ahí bueno
+Lo que está bueno es que diseño
+Se ponga a mirar todos los detalles
+Normalmente las interacciones con diseño
+Son una o dos
+La idea es eso
+Lograr ese detalle
+O sea lograr ese video
+Si ustedes graban el video
+Y antes de
+Y no están seguros del resultado
+Una de las cosas que les propongo es
+Júntense, Santi y Gastón están
+O sea no graben de nuevo el video
+Si tienen dudas, si algo está bien
+No se tomen a grabar un video de dos minutos
+O tres minutos
+Le golpean la puerta
+A cualquiera de los dos
+Y lo llaman a la reunión
+Una vez que validan que está todo bien
+Ahí si hacen el video
+Se entiende lo que voy
+Para que no se sienten a tener que grabar todo de nuevo
+A mi es más práctico grabar la funcionalidad
+Y no me toca andar reuniendo con ellos
+¿Cuál es la idea de esto?
+Que una vez que pasa el diseño
+A no ser que desarrollo
+O sea que yo, Martina o el otro reviewer que sea
+Detecte y diga
+Voy a cambiar algo a nivel de UI
+Que necesito que cambies el video
+Si no, no tendrían que volver a grabar
+Con la validación de ustedes
+Que ya lo probaron
+No vale eso de subir código sin probar, por favor
+Básico
+Pero digo, con la validación de ustedes
+Que ya lo probaron, ya basta
+Tenemos que empezar a agilizar un poco también ese proceso
+Porque las PR la verdad están demorando
+A veces bastante tiempo
+Y están demorando bastante tiempo con razón
+Pero tenemos que intentar optimizar lo que se pueda
+¿Si?
+Creo que algunos ya lo estaban haciendo esto
+Pero es un poco para definir un estándar
+¿Si?
+O sea, con respecto a eso
+Y también
+Con respecto a la UI y a los tamaños
+Santi va a pasar una guía
+A partir de que esa guía de Santi se pase
+Y se apruebe, va a ser la biblia
+¿Si?
+Entonces, como habemus papa
+Si eso no cumple
+Naturalmente Santi va a ser el que lo va a filtrar
+O Gastón
+Y va a decir, esto no cumple, vuelvan a grabar el video
+¿Si?
+Dicho eso
+Estamos todo ok
+Te dejo Kike compartir
+Y mostrar lo de Cypress
+Si a nadie tiene ninguna duda de esto
+Dejamos a Kike
+¿Se me escucha bien ahí?
+Es como el orto, pero bueno, está acá
+Vamos a ver lo que hay
+Ahí mandé el solicito para compartir
+Ahí te denegué también
+Creo que quedó
+A ver
+Lo primero es
+Justamente como explicaba Santiago
+Que todos podamos utilizar Cypress
+Y poder por lo menos correrlo
+De pronto no tiene mucho misterio
+Es este
+En este caso tenemos una serie de comandos
+Que tenemos disponibles
+Primero que nada
+Algo que puede generar un poco de confusión
+Nosotros tenemos un repo en Github
+Que es Regression Test
+En realidad lo que es Cypress
+Funciona dentro de una carpeta
+Que es Automation Test
+Es importante que trabajemos desde ahí
+Porque si no, no nos va a andar
+Esto se debe a que bueno
+Originalmente ese repositorio de Regression Test
+Incluía otras cosas
+Antes de que estuviera Cypress
+Entonces bueno, por eso tenemos esta subdivisión
+Bueno, ni que hablar de hacer
+NPM Install
+Y el tema del
+Archivo de variables de entorno
+Que fue lo que nos dio un poquito de problemas
+Ayer o el otro día
+Eso yo lo dejé
+Ahí en el channel de QA
+Lo dejé pineado
+Yo me voy a estar encargando
+De que eso esté actualizado
+Cualquier cambio que surja
+Yo lo voy a estar avisando
+Y cambiando el archivo acá
+Así que bueno
+Eso obviamente solicitármelo a mi
+Si llega a haber cualquier problema
+Debería estar en el channel
+Yo me voy a estar encargando
+De que siempre esté actualizado
+En cuanto a lo que es la ejecución de los tests
+Santiago
+Si no me equivoco fue quien inicialmente
+Puso la idea de
+Implementar algún sistema
+De paralelización de los tests
+Porque bueno, inicialmente estaba
+Tomando mucho tiempo
+Por varias razones, pero bueno
+Una de ellas
+Una de las soluciones que encontramos fue
+Correr varios tests al mismo tiempo
+Entonces tenemos como un sistema un poco custom
+De correr tests
+En paralelo
+Y bueno
+Eso insumo un poco más de
+De cómputo digamos
+Entonces lo que dijimos
+Es no forzarlo
+Si no ofrecer opciones
+De correr un test a la vez
+O correr dos o correr cuatro
+Dependiendo de la máquina
+De cada uno
+En teoría yo
+Hice la prueba de correr
+La forma más pesada
+Digamos
+Que es cuatro tests a la vez
+En una laptop común y corriente
+Y me tomó el mismo tiempo
+Que en esta computadora que tengo
+Es bastante más potente
+Pero bueno, si alguien llegara a tener
+Problemas de lo que es
+Desempeño
+Está la opción de no usar el sistema paralelo
+O usar quizás menos tests a la vez
+Acá lo que están viendo
+Como están leyendo ahí
+Tenemos dos opciones
+Que es con navegador visible
+Y en segundo plano
+A los efectos de lo que se está testeando
+No hay diferencia
+Los tests son exactamente iguales
+Nada más que correr sin ventana
+Puede ser un poco más rápido
+De repente uno quiere ver específicamente
+Qué está sucediendo en algún flujo
+Por eso capaz que de repente
+Se puede elegir con navegador visible
+Pero en esencia
+No hay diferencia
+Entre navegador
+Y segundo plano
+Acá
+Lo que comentaba Santiago
+Es que nosotros tenemos un montón de tests
+Y tenemos un conjunto de ellos
+Que son los que consideramos prioritarios
+Los smoke tests
+Entonces nosotros podemos elegir
+Correr todos los tests
+O correr solamente el conjunto de smoke
+Si estamos enfrente de una salida de producción
+O lo que sea
+De repente podemos correr únicamente
+Los smoke tests
+Que para eso tenemos estos comandos
+Esto es para no complicarla mucho
+Y no alargarla mucho
+Esto es lo que usamos por lo general
+O por lo general lo uso yo
+Este para correr todos los tests
+Con navegador visible
+Y este para los smoke tests
+Estos se corren en español
+También los podemos correr en otros idiomas
+Si?
+Y después tenemos algunas otras opciones
+Por ejemplo ejecución
+Secuencial
+En el caso que no queramos usar
+Como les decía
+El sistema paralelo
+O con algunas otras etiquetas
+Que para correr casos más particulares
+Pero esto ya es un poco más avanzado
+No es del todo necesario
+Básicamente los tests principales
+O los comandos principales son estos
+Para correr los smoke
+Y para correr todos los tests
+Y lo que sucede una vez que uno corre los tests
+Y se terminan
+En todos los casos se genera un reporte
+Este
+Que bueno yo se los dejo
+Se los muestro acá
+Por ejemplo el que corrí hace un rato
+Con un test fallando
+Para que vean como se ve un test que falla
+Si?
+Todos los comandos que yo les mostré recién
+En todos los casos se genera este reporte
+Que indica los tests
+El tiempo total, el idioma
+La cantidad de tests que se corrieron
+Los que fallaron
+Siempre nos muestra los smoke tests
+Y en este caso a mi yo por ejemplo
+Esta es una corrida de todos los tests
+En portugués
+A mi me tomó 14 minutos
+O 15 prácticamente
+Tenemos un test que falla
+Que les quiero mostrar como
+Como uno entiende lo que falla
+Acá nos dice que bueno
+Se esperaba encontrar
+Eliminar conta
+Y en realidad es excluir conta
+Este
+Nos indica la prioridad
+La lista nos indica la prioridad de los tests
+Si, si es smoke o no
+Y bueno si falló la razón de por qué
+Este
+Y además bueno ya Cypress ofrece también
+Si uno quisiera debuguear
+O quisiera obtener más información
+Este Cypress genera screenshots
+Y demás
+Tiene varias herramientas ahí para
+Ver los errores
+El sistema en realidad genera todos esos archivos
+Por si alguien quisiera utilizar
+Otra forma de ver la información
+Creo que por ejemplo si uno quisiera usar IA
+La IA le sirve más
+Consumir un JSON si no me equivoco
+Este
+Pero bueno cada vez que se corre un test
+Se genera este reporte
+Y ahí ustedes pueden ver
+Que está fallando o no
+Estaba pensando Kike
+Ya que generamos todos esos casos
+Toons creo que es, como es?
+La nueva
+El competidor de JSON
+Para, ay no me sale la palabra
+No me acuerdo el que usan para los CLM
+Creo que es
+En vez de JSON
+Tson
+Si lo puedo bichar
+Puede ser buena idea
+Porque ahora que usamos
+Bastante eso
+Si creo que es
+Tson
+Stock en vez de
+Javascript es token
+Serialization option
+No, no se cuanto
+Este pero
+Osea puede estar bueno agregarlo
+Como tarea ahora que estoy viendo eso
+Porque si es como que
+Literal te busca por token
+Es más ahora estaba mirando un formateador
+De eso
+Yo lo he usado eso sabes para
+Cuando trabajo con los logs
+Para que lo tengan en cuenta también
+Por el tema del uso de los tokens
+Este
+Lo he usado por el hecho de que
+Cuando de repente hago los logs de CloudWatch
+Y tengo que investigarlos
+Tipo si pongo la IA con eso me gasta muchos tokens
+Entonces lo que agarro y lo convertí todos los JSON
+De
+Tson y directamente te ahorran
+Supuestamente te sale un poco más barato
+O te ahorra más token
+Entiendo
+Algo puede estar bueno
+Se puede implementar acá sin problema
+Puede ser una opción más a incorporar acá
+Este
+Bueno hablando un poco de lo que
+Que es
+La opción de correr los test manuales
+Porque hay algunos flujos
+Que a veces son un poco sensibles
+O dependen un poco de factores externos
+Piensen que
+Nosotros tenemos flujos
+Donde se utiliza Stripe
+Y actualmente tenemos automatizados
+Los flujos con Stripe
+Pero si hoy o mañana llega Stripe
+A cambiar algo
+Se puede romper ese flujo
+O sea el test puede llegar a fallar
+Así que en esos casos tenemos bueno
+Una contemplación de
+Con estas variables
+Poder hacer una corrida manual de los test
+Es decir que Cypress
+Haga un parate en esas instancias
+Y nos permita a nosotros ingresar
+Los datos que haya que ingresar
+Así que bueno
+Tenemos por ejemplo
+Todo lo que sea Stripe
+En el archivo variables de entorno
+Podemos cambiar esta variable
+A true
+Y podemos hacer
+Ejecutar o completar manualmente
+Los test que sean de Stripe
+Y lo mismo pasa con
+La password recovery
+Porque ahí también
+Se utilizan mails de prueba
+Que son de Mailinator
+A los cuales envía el código de recuperación
+Entonces si hoy o mañana cambia algo
+En Mailinator
+Podemos correrlo manualmente
+Y lo mismo con esto de Play
+Este test que básicamente
+Testea el flujo de conectar a una cuenta externa
+También si llega a cambiar algo
+Por fuera y llega a fallar el test
+Lo pueden correr manualmente
+De nuevo todo esto está en el archivo
+De variables de entorno
+Que yo me voy a encargar de tenerlo actualizado
+Otra consideración es
+Nosotros recientemente
+Para omitir justamente
+Este flujo de Stripe
+Que lleva un poquitito más de tiempo
+Apenas
+Implementamos
+Tests que básicamente utilizan
+El código de compra
+Para poder omitir lo que es el pago
+Si
+Vamos a comprar la compañía con un código
+Entonces el test termina siendo más corto
+Pero bueno
+Si hoy o mañana nosotros hacemos una limpieza
+De la base de datos de Stage
+Por ejemplo que es donde si no me equivoco
+Está el Purchase Code
+Obviamente los tests van a fallar
+Y va a haber que actualizar el código acá
+Hay algo que es importante
+Eso que decía Enrique
+Se usa el código de Stage
+Y en Stage en particular
+Tanto a nivel como
+Creo que si
+Te dice
+TokenOrientedObjectNotation
+Si yo no se si es
+Toon o
+Tson
+Si creo que es Toon
+Si es eso
+Si yo lo había visto en Linkedin
+Y lo estoy usando para
+Lo estoy usando para convertir
+Si si tal cual
+Volviendo al código
+Nosotros que pasa
+Para darle un poquito de
+De por qué salió esto
+Todas las compañías que entran
+Podían meter un método de pago
+O poner un código de descuento
+Lo que pasa es que nosotros
+Si ustedes empiezan a pensar
+Plataformas como Binance o algo por el estilo
+No te obligan si o si a poner
+Método de pago
+O plataformas
+De intercambio de criptomonedas
+O stablecoin
+No te obligan a eso
+Entonces
+Nosotros en un momento dijimos
+Bueno vamos a deshabilitar los pagos
+Para las cripto crossborder
+Pero la realidad es que
+Nosotros tampoco vamos a trabajar con
+La idea nuestra no es trabajar con un B2C
+Es trabajar con un B2B
+Entonces
+Como ya tenemos el flujo de LLC
+Que siempre ponen
+Que siempre ponían
+O ponen lo que sería el código
+O sea
+Siempre ponen el método de pago
+Y en el mejor de los casos le hacemos algún descuento
+Pero el método de pago en algún momento
+Le va a cobrar por el mecanismo de suscripción que tenemos
+En algún momento tenés que cobrarle
+Porque por más que le hagas un descuento del 100%
+De la suscripción al mes que viene
+O al año que viene te vamos a cobrar
+Entonces para
+Poder evitar ese problema
+Lo que dijimos es bueno
+En el flujo de compra
+Cuando es cripto crossborder
+Habilitamos un modal
+Que permite que puedas comprar con estos códigos
+Que como dice Kike
+Se generan con un script que hizo Martina
+Y se almacenan en la base de datos
+Estos códigos que se crean
+Y se almacenan
+Solo funcionan para cripto crossborder
+Y la API también a nivel de bucket
+Valida que la compañía sea solo
+De tipo cripto crossborder
+Ahora
+Eso que estoy comentando
+No es del todo bueno
+Porque el problema que tiene
+Es que
+La idea de esto era poder evitar
+Para algunos flujos
+Por ejemplo que necesitábamos
+Teammates
+Tener que volver a comprar la compañía
+Y volver a evitar el método del pago
+La verdad es que Stripe lleva su tiempo
+Porque quieras o no le pegamos a Stripe en stage
+Entonces ahí lo que hicimos
+Es habilitar una flag
+Que lo que hace es que puedan usar ese endpoint
+Para crear el payment intent
+Sin necesidad de contactarse con Stripe
+O sea que puedas comprar compañías
+Si esa flag está activada
+Vos puedas comprar compañías
+Directamente
+Si esa flag está activada y no estás en producción
+Puedas comprar compañías
+Sin tener
+Sin que sean solo de tipo cripto crossborder
+Y eso es lo que está marcando ahí Enrique
+Es una funcionalidad que tenemos que ver
+Hasta actualizar a más endpoint
+Si
+Para que sea más óptimo
+En otras palabras
+No tener
+El cuello de botella ahí
+Que sería Stripe cada vez que vamos a hacer un test
+De tener que volver a comprar una compañía
+Pegarle a su API de stage
+Y que nos demore
+Sí Kiki
+De hecho es una pequeña deuda técnica
+De nuestro lado
+Es algo que empezamos a implementar hace poco
+El uso del código
+Y hace falta en realidad expandirlo
+Ahora que sabemos que funciona bien
+Expandirlo a la mayor cantidad de test
+De Cypress posible
+Que es algo que todavía no hemos hecho
+Porque han surgido otras funcionalidades
+Que requerían Cypress
+Entonces le dimos prioridad a las funcionalidades
+Que iban saliendo
+Pero eso eventualmente va a quedar pronto también
+No les quiero sacar más tiempo
+A modo de redondeo
+Capaz
+No tiene mucho misterio
+Es básicamente asegurarse que estamos acá
+En el
+Repositorio correcto
+Recuerden que es automation test
+No regression test
+Eso puede causar problemas
+Recuerden hacer npm install obviamente
+Acuérdense de tener el archivo
+De lnb actualizado
+Para eso va a estar en el channel de QA
+O yo se los puedo pasar también
+En el punto de correr las pruebas
+Manéjense con esto lo que les sirva más
+Yo diría probar todos los test
+Con este o este
+O los smoke
+Son estos que están acá
+No tiene mucho misterio
+Se genera el reporte que les mostraba recién
+Si ven algo que falla
+Fijarse, bueno lo que les decía recién
+Del archivo variables de entorno
+Fijarse capaz que
+Si que tengan el archivo variables de entorno actualizado
+Y bueno
+No tiene mucha más
+Que eso
+Como les decía hay otros comandos
+Un poco más opcionales, más avanzados
+Pero en esencia es eso
+Con esto se pueden manejar
+Piensen que si tienen problemas de
+De repente errores de
+De carga, de que va muy lento
+De que no les corre
+Como por ejemplo le pasaba a Fernando
+Puede ser que el sistema paralelo es muy pesado
+Así que bueno
+Nada eso básicamente
+Creo que no me estoy perdiendo
+No me está faltando nada
+Yo capaz que ahora en un rato
+Les puedo pasar de repente por escrito
+Allí en QA o en algún channel
+Como los puntos principales
+De lo que charlamos de repente
+Para que les quede por escrito también
+Si algo que es importante Kike
+O sea que quede como correr
+O sea que comando se corre para la salida de producción
+Y donde se sube el resultado
+De dicha subida
+De dicha corrida de producción
+Si ese excel muchas veces
+Yo lo comparto a nivel
+Con Guillermo o con Beto
+Para mostrar también
+Que nosotros
+Para tener consistencia
+Y tener como referencia
+Que hicimos un análisis de calidad
+Más allá de lo que son los test unitarios
+Que se corren
+Es algo que yo comparto para decirle
+Mirá corrimos todas estas pruebas
+Y es un poco esa idea
+Mirá que todo esto se validó
+Más allá que muchas veces
+En la interna ni deambola
+Pero también es como un estándar
+Que venimos armando
+Nosotros salimos a producción
+Que dicho sea de paso
+No sé si Kike subiste el último para pasárselo
+No sé si quedó
+Que corrieron el otro día Jona y Tato
+Pero deberíamos pasárselo
+O sea debería quedar guardado
+Más allá que no haya salido a producción todavía
+Este
+Pero es como un estándar
+Son procesos que nosotros venimos armando
+También como para poder seguir
+Este
+Así que bueno eso
+¿Alguna duda más?
+¿Alguna consulta más?
+¿Alguna propuesta con respecto a cómo manejar
+El proceso de
+De QA o lo que sea
+De las tareas de desarrollo?
+No yo lo que iba a preguntar
+Más que nada es
+Qué tan bueno es usar la interfaz
+Que tiene SciPress para
+Para correr los test
+Por ejemplo yo ayer cuando estábamos viendo lo del Puches Code
+Viste que se te abre como una pestaña
+Del Chrome
+Y empezás a ver toda la plataforma cómo funciona
+Todos los test
+No sé qué tan funcional sea eso
+O correrlos en la terminal
+No sé qué sería mejor
+Creo que se reduce
+A una cuestión de quizás
+De cómputo
+Creo que es un poquito más liviano correrlos sin navegador
+O sea en background
+De repente si uno justamente está teniendo problemas
+De performance
+Capaz que es mejor correr sin ventana
+Es decir yo creo que la
+Ventaja de ver allí
+Si hay un test que está fallando
+O algo que uno quiere entender bien
+Más allá de lo que se guarde en logs
+Si uno quiere entender visualmente
+Qué es lo que está sucediendo
+Por ahí capaz que está bueno correrlo
+Con navegador pero
+Si no como les decía
+A efectos de lo que se testea es lo mismo
+La eficiencia es lo mismo
+Lo que se está probando es lo mismo
+Nada más que sin navegador
+Puede ser un poquito más rápido en teoría
+Y un poquito más liviano
+Dependiendo de la compu de cada uno
+Y capaz entender un poco más visualmente
+Qué es lo que sucede en el test
+Pero es eso básicamente
+Claro
+Y tema de
+¿Se puede correr módulos de test?
+O sea solo los test de
+Teammates por ejemplo
+Se debería ¿no?
+Sí porque están categorizados
+Yo no lo reconozco
+¿Podemos hacer un ejemplo
+En consola de cómo correr
+Teammates en un idioma en particular?
+Por ejemplo
+Es algo que no estuve testeando
+Últimamente
+No sé si que también puede llegar a funcionar
+Con todos los cambios que introducimos
+Pero
+La idea era originalmente
+Que bueno con categorías
+Con etiquetas
+Que se pudiera correr distintas combinaciones
+Que capaz que ahora
+Es más un work in progress
+Yo no estoy seguro si puede llegar a funcionar
+Porque bueno últimamente viste con las salidas a pro
+Y eso generalmente yo corro todos los test
+No estoy seguro
+Si puede llegar a funcionar así con
+Lo de categoría está funcionando
+Le tendría que bichar por las dudas y confirmarles
+Pero como les decía
+Esto queda como en un apartado más avanzado digamos
+Este
+Probémoslo a ver si en vivo
+De última nos damos cuenta
+De un fallo
+Así o sea como se agregaría en esa categoría
+El tema es que no estoy seguro
+De que esté funcionando
+Creo que no, o sea no
+Hay que darle un
+O sea
+Funciona el idioma y funciona el smoke
+O sea si querés que sea smoke o no
+Exacto
+Si no hay que
+Hay que crear los comandos y todo
+Pero cuando ustedes crean un test
+Un test Ipress nuevo tienen que correr todo
+Si por lo general si
+Ah cuando hacemos un test
+Puntual corremos ese test
+Puntual
+Yo por ejemplo y no les comenté
+Hasta ahora somos nosotros
+Los que hacemos los test
+Los test nuevos
+Pero tenemos esta otra opción
+Ahí va a dar error porque es Ipress
+En un momento
+Esta otra opción
+Que bueno permite
+Tener un listado de los test y correr
+El archivo que ustedes quieran
+Si quieren debutar un test en particular
+Cualquiera de ellos
+Este
+No estaría bueno habilitarlo de alta o baja
+O sea eso estaría bueno
+Habilitarlo
+Ok si
+Y creemos una tareita para eso
+Pasarla ahí con el channel por marcha
+Ok
+Este
+Entonces ahí ya por lo menos
+Los chicos tienen para poder
+Debaguear un test
+Eso está en la documentación de como
+Debaguear un test en particular
+En el readme capaz que vaya a actualizar el readme
+De repente para incluir eso si
+Ta veamos como correrlo
+Desde la terminal y como correrlo
+En la consola
+O sea queremos una tarea
+Eso es importante
+Que quede antes que te vaya Kike por las dudas
+Ah
+Ahí nos pasa la tarea para eso
+Igual ta
+Se
+Creo que es bastante sencillo
+Para poder abrir y correrlo
+Pero está bueno que quede
+Todo en el readme eso y que quede
+Funcional que en la PR que ya tenés abierta
+De QA que quede
+En esos ajustes de readme y que ya
+Que como no tiene apuro
+Eso que quede en esos ajustes de readme
+Y que ya quede lo que sería el
+O sea la palabra
+Que ya quede lo que sería el
+Este
+Cómo correr
+Cómo correr los tags esos de alta
+Y baja y eso
+Si lleva mucho tiempo lo debimos en otra tarea
+Me avisas
+Me avisas
+No sé si alguien tenía alguna consultita más o algo más
+No de mi lado
+Bueno bien
+Entonces entendido los flujos
+Están liberados
+Que estemos arriba
+Cuídense nos vemos chau chau

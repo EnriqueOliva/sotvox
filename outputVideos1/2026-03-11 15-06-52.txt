@@ -1,0 +1,385 @@
+vamos a generar un único html y que sea todo dinámico
+entonces así evitamos cargar 500 html en S3 y lo hacemos dinámico a través del código
+eso nomás
+es un caso que pasaba, normalmente lo más sencillo es siempre agregar un mail en español, inglés y portugués
+pero es un caso que cada variante en inglés, español y portugués
+si lo hacíamos así, quedaba genérico
+entonces ya en el momento que lo tenemos que hacer genérico
+ya también conviene, tenemos que generalizar el idioma
+entonces está, creo que no sé cuántos habíamos contado Enrique
+pero solo de compra-venta teníamos 4
+o sea teníamos 8 y los 3 idiomas, o sea teníamos 24 templates
+ahora va a ser uno solo
+si yo lo de compra-venta, faltaría toda otra acumulación que agarrara unos más
+que también
+van a seguir siendo ese mismo, el de triangulación
+entonces está, es un caso puntual
+donde podemos reutilizar
+podemos reutilizar bien, eso nomás, para estar alineados
+Fernando
+bueno, quedaron absolutamente corregidos todos los comentarios
+utilitariamente estuve haciendo eso
+vi que hay 5 PRs abiertas, ya las registré todas
+mapi, ketaria, aketaria...
+pertenecía a cada PR
+así que la de los sprints anteriores por aquellos que quedan un perpetuante del PR
+ya las puse ahí como descripción
+no sé si preferís que lo deje como descripción o como comentario
+tenián... no, no, está perfecto
+bueno, ya las voy a abrir
+ok, ya las vimos entonces
+ok, y hasta estoy con los tests de banking crypto
+esta, perfecto
+Bien, genial
+Estas son las dos tareas que quedaron pendientes
+Cerrar
+O sea, las que le creé en continuación
+Porque las otras tienen todavía las tareas abiertas
+Sí, sí, sí
+Estas tareas que están en progres acá
+Son las que vos decís de Banking Crypto que las estás bichando
+Sí, sí
+Son los cuatro
+Después, las primeras dos están
+Ya para
+Hacer la review
+Si bien en interno
+O en Cuba
+O en Puerto Rico
+Bien, perfecto
+Al final del día
+Hacemos follow up de las PR que tenemos que revisar
+Martina y yo
+O sea, al final del día antes de irte
+Decís
+Estas están pendientes de revisión de su lado
+Igual ahora bichamos
+Bien de bien
+Gastón
+Hola, buenas
+Bueno, yo estuve ayer trabajando
+En el PDF
+Para DROPI, para DAFAN
+En la parte de accounting
+Estaba que lo traducía en los tres idiomas
+Para cada uno
+Y lo mandé a corregir
+Vos me comentaste eso
+De agregar la parte
+De la screenshot
+Para que se viera bien como era
+El formato
+Y ya lo dejé hecho hoy
+Lo puse en el mismo hilo
+Por si después lo
+Quieren ver así
+Así ya terminamos eso
+Después lo otro
+Estuve trabajando con
+Santiago para la presentación
+De
+No me acuerdo el nombre
+De Brasilero
+Que nada, ya quedó terminada
+Terminamos ayer
+Y de noche creo que nos puso
+Un comentario y lo atargamos hoy
+Así que ya quedó terminada
+Estamos esperando que nos confirme
+A ver
+Y después lo que empecé
+Fue a ver
+A hacer una review
+De las landing
+Bien
+Bien de bien
+Te dejo la tarea por acá
+Pero la voy a dejar
+Con cero puntos
+Vamos viendo
+Si la ponés in progress
+Si empezás a revisar
+Por ahora la dejo en tu
+Bien
+Perfecto
+Si te toca revisar algo
+Bien
+Bien
+Más de una hora
+Ya he seguido
+Se me da una buena sentencia
+La situación
+Es muy difícil
+Yo creo que
+Para ser un poco
+Un poco
+Lo que yo creo
+Que la gente
+Que está
+En Pittsburgh
+Y en la ciudad
+De la ciudad
+De la ciudad
+¿De dónde está?
+Vamos a ver
+Vamos a ver
+Que la gente
+En Pittsburgh
+De la ciudad
+De la ciudad
+De la ciudad
+De la ciudad
+De la ciudad
+De la ciudad
+Ya que hablaste
+Yo no
+Te toca vos
+Ahí yo no
+Este
+Algo importante es
+No sé que quedó
+Esta refacto
+Creo que está de nuestro lado
+¿Puede ser?
+No, está en interno, que Nahue me había hecho unos comentarios, ya los corregí, quedó ahí en interno, como está, nos metimos con esto de triangulaciones, quedó medio colgado, no sé si lo dejamos en interno o si querés que lo pase directo a pull request
+No, no, no, yo el único comentario que te había hecho era que teníamos que, dos cosas, una la de los íconos, que teníamos que usar todos los genéricos, ahí algo que es importante es que todos entren en la carpeta de Banca en Crypto Actions
+Digo, por si alguno se estaba usando antes, por otro lado, otra cosa rara, tiene que ser acciones todo
+Si alguno estaba suelto, yo que sé, dentro de Banca en Crypto, por otro lado, lo mueves para adentro
+Lo otro que te iba a consultar es, vi que están mandando la PR interna, no sé si ahí vos ya empezaste también con lo que sería, no sé si vos empezaste ahí también con lo que sería el ajuste para Buy and Sell
+Que por defecto enviar a compra
+Sí, eso está, sí, eso es lo que te iba a decir ahora, o sea, ya tengo la PR interna de toda la tabla de triangulación, ya la mandé, estuve corrigiendo ahí, ya puse a Copay, le estuve corrigiendo algunas cositas que me sugirió
+Y en esa misma PR, como ya tenía que hacer la llamada de triangulaciones con el type de triangulation, ya hice lo de la compra-venta, o sea, está en esa misma PR
+La diferenciación entre la tabla de compra-venta, que solo manda compra-venta, y triangulaciones, que solo manda triangulaciones
+Perfecto, bien de bien, genial
+Tené en cuenta que ese endpoint después en el dashboard, o sea, está diseñado para que el dashboard también soporte las tres, para que lo traiga a las tres, ¿está?
+Porque así ya nos queda, entonces, digo por si, que el cambio es a nivel de frontend por ahora, ¿no?
+El backend para aceptar tipo Arrays, para mandar, como hacemos en los otros filtros de estado y eso, para mandar varios status a la vez, varios tipos a la vez, tipo compra-venta, etc
+Igual le chequeo ahí por las dudas en el dashboard, que no se haya roto nada, que siga soportando igual, pero creo que no, que no debería
+Bien, por las dudas para estar alineados, y ahora ya paso a vos, Nahue
+No sé si Santi volvió a entrar
+Martín, ¿estás bien?
+Me vas a escribirle a Santiago, en el chat que tenemos, vamos vos a ver si pasó algo
+Ahí, lo que yo le decía a Nahue, creo que lo hablé ayer, el cambiar el speed, el asignar un counterparty
+El asignar, sí, una cuenta al counterparty triangulation, y el aprobar o rechazar el counterparty que está haciendo el endpoint
+Yona a Nahue
+Eso ahí, no tiene, o sea, lo puede hacer cualquiera dentro de Banca en Cripto, o sea, tiene los mismos límites de page
+Ah, ok, cualquiera que pudo acceder en la page, lo puede hacer, digamos
+Sí, pero la parte de aprobar, la parte de liquidar la triangulación, eso solo lo puede hacer, la parte de aprobar la triangulación es lo mismo que aprobar el ticket
+El equivalente a aprobar el ticket, ahí parábamos, le digo
+Pues yo eso no, creo que eso nos está faltando
+En backend, trabaja, quiere crear una tarea y Nahue y Yona tenemos que controlarlo en front
+O sea, la parte de aprobar la triangulación es lo mismo que aprobar el ticket, solo lo puede hacer el admin o el crypto manager
+Bien
+Digo, porque nosotros hoy, ¿cómo se llama? Nahue
+Nosotros ahí, en el endpoint general
+En el endpoint genérico, directamente creo que nos fijamos que sea crypto manager, admin o el de liquidación
+Sí, exactamente
+Tendríamos que hacer para ese caso, si es triangulación y fijarte si lo que estás haciendo es tipo, o sea, si está en estado validation
+Creo que la lógica es así, si es triangulación y si está en estado validation
+O sea, después de que haces el chequeo de permiso
+O de liquidación
+Y obtenés el backoffice user, podés hacer otro chequeo a nivel lógico
+Vos ya obtuviste el backoffice user
+Puedes hacer un chequeo lógico
+Harías como un doble cheque ahí
+Si se cumple estas condiciones
+Y es esta
+Lo sacás
+No agreguemos
+Porque este
+¿Qué pasa? Nosotros no obtenemos la triangulación
+Primero chequeamos los permisos que tiene que tener
+Entonces творamos un chequeo de permisos
+Y después para ese caso virtual inmediatamente
+de que por ahora no pueda o hagamos un doble chequeo, no me calienta, lo que no puede pasar es que una persona de liquidación apruebe o rechace triangulación
+o sea, la persona de liquidación es de liquidación, en el caso de la triangulación, por lo tanto para estar todos alineados en la misma página
+podemos crear cualquiera dentro de lo que es los permisos de banca, de los que son todos los criptos, pueden hacer, y el admin obviamente
+pueden aprobar, cambiar el spread, asignar counterparty triangulation, crearlo, está todo muy lindo
+el cuello botella o el filtro en sí es el aprobar o rechazar la triangulación, que eso lo puede hacer el crypto manager o el admin
+entonces eso es importante que estemos todos alineados porque como en el caso de la triangulación es algo que crean entre los clientes
+ese es el punto donde chequeamos que bueno, que no haya un acuerdo raro, que no haya nada raro entre los clientes y algún vendedor o lo que sea
+si, o sea, es algo delicado entonces tenemos que tomarlo con esa delicadeza
+ahí te digo yo nada más que nada como para que te hagas en cuenta porque las acciones eran sencillos en el caso de compra
+y venta directamente decías, bueno, las acciones de refunding y darth solo las puede hacer estos
+acá tenés que agregar como un if de decir si es validating y es aprobando o rechazando
+tenés que atacarlo, tenés que solo permitir crypto manager y admin, bien?
+bien, si eso era algo que iba a preguntar ahí en el postgram, tema permiso, así que
+si necesitan crear tareas me avisan para eso
+y ya que estamos pasamos a Nau
+bien, yo estaba con la tarea para que la página de Reconciliation soportara el flujo de triangulación
+calculo que al final del día ya dejó una PR para eso
+y también ahora había pausado para corregir los comentarios que habías dejado, Santi
+el de la PR, el spread y la actualización del counterparty ya te lo dejé de nuevo
+y ahora estaba terminando con Nau
+es los comentarios en la PR del drop down del site
+así ya alineo los tres repos con eso
+y antes de ponerme de nuevo con la tarea que estaba voy a aprovechar para mirar la PR de Jonah
+si no queda trancada
+dale, perfecto
+cuando yo hice unos comentarios con la de los drop down
+cuando los revises, volvió a robarnos a los dos
+y ahí Martina viste que Nau envió la PR del drop down
+cuando yo lo hice, me dijo que no, me dijo que no, me dijo que no, me dijo que no
+yo lo, o sea, probablemente los comentarios eran yo todos o no tenía mucha vuelta
+voy a revisar pero yo probablemente la pruebe y te arroba a vos ahí
+entonces cuando te arroba a vos ahí Martina lo que necesito es que te pares en la rama y pruebes
+porque Nau hizo cambios en bridge
+si o sea hizo dos cambios en bridge en el flujo de KYB
+que ahí en el flujo de KYB, Nau yo te pedía si vos podías agregar vídeos o fotos ta?
+En el caso de Bridge, Nahue no puede probar. Yo ahora la voy a probar, a no ser que encuentre alguna cosita, cuando te arroben, si te animas a pararte en la rama local y probar que los drop-down de Bridge, más que nada los de selector y todo eso, estén todo bien.
+Bien. Este refactor hace que todo quede más lindo, la verdad me gustó mucho y me gusta pila que empecemos a usar ese drop-down y que lo podamos pasar después para el backoffice.
+Yo estoy mirando primero la de side por obvias razones, ¿no? O sea, vamos con una, una vez que despinamos el componente, que quede fijo, ya como Nahue lo pasó al backoffice y a drop-in, después es solamente replicarlo.
+Y bueno, calculo que...
+Que Nahue ya tuvo en cuenta hacia el backoffice, que es el distinto. Tenía algún caso en particular y ya lo agregó al side también.
+Sí, el caso, por ejemplo, viste en el chat de Whatsapp del backoffice, te muestra una opción de que lo hace compacto el drop-down, se ve todo más chico, básicamente. El de side no tenía eso y quedó unificado.
+Bien. Bien. Bien, perfecto. Bien, bien, bien. Está ahí, yo, Martina, te aviso y lo mandamos. Nahue nada más, ¿no?
+Negativo.
+No, pues ya está.
+Renombrado.
+En mi lado, en realidad, sigo con lo de triangulación.
+Está ahí.
+Tengo la primera parte, que es la venta.
+Y ahora me estaba testeando los endpoints.
+Y está ahí, básicamente, voy a seguir con...
+Una vez que tenga esto, sigo con compra.
+Ah, al final repactorizaste las tareas o... ¿Cómo quedó eso?
+No, lo puedo modificar.
+Bien, bien, bien.
+Está ahí, te dejé la detención.
+Te pongo review, yo te la pongo in progres.
+¿Santi?
+Buenas, ¿cómo va?
+Ahí ya estuve trabajando hoy en lo que pidió Jonah.
+Dejé cambiado el orden de las personas.
+Dejé los dólares en la izquierda y los bolivianos en la derecha.
+Ahora estoy cambiando el iconito de la flecha para que quede con doble sentido, como habías comentado vos, Santi.
+Ah, y ahí, ojo, Jonah, que eso te impacta a vos.
+O sea, estás atento a tanto de cómo terminen esos ajustes.
+Porque yo lo que decía es que para el flujo de triangulación no es una flecha hacia un lado o al otro,
+sino que es como que lo estás cambiando, dinero.
+Sí, perdón, Santi, sí.
+Eso, básicamente, que estaba reemplazando ahora esa flecha para que quede bien en todos lados.
+Y lo que sí mantuve...
+No voy a cambiar la flecha solo, pero en el único lugar donde mantuve la posición de las cosas es en el site.
+Ya que en el site te va a mostrar a la derecha o a la izquierda de acuerdo de si sos el comprador o el vendedor.
+O prefieren ahí mantener el mismo criterio para todo.
+No sé, vos decís a los pop-ups.
+No, no, no.
+En el site.
+En el site, si vos sos vendedor o comprador...
+Y vas a la parte de compra, te iría a mostrar ahí en qué estado están tus cosas.
+Está ahí, Martina, te digo a vos, fijate vos y me avisás.
+Es que es más sencillo que use el mismo criterio para todo, use el mismo criterio para todo, pero no.
+Ahí capaz que estaría bueno que cambiara.
+O sea, depende el tipo de vista vaya a un lado o al otro.
+Está ahí, Martina, lo fijás y cualquier cosa nos decís y lo ajustamos.
+¿Bien?
+Igual lo vendías.
+En mobile, sí.
+Claro, eso.
+Ahí te lo fijás y cualquier cosa nos va a hacer esto.
+Bien, bien.
+Otro comentario.
+Ayer estuve...
+Teníamos lo del correo.
+Yo creo que...
+Yo no sé si vos creaste nuevos correos.
+Creo que te preguntaba.
+Sí, ayer lo creé.
+Ayer creé el que vos me dijiste, creé uno extra.
+El otro ya estaba creado.
+Eso era lo que yo te había dicho.
+Claro, pero yo lo que estoy viendo acá...
+El correo es que no tiene nada que ver con lo que te había pedido.
+Porque yo te pedí, en el caso de...
+O sea, para revisarle que su contraparte fue aprobada o...
+O rechazado.
+Claro, en realidad no es contraparte.
+No sé cómo decirle, pero es...
+Es el counterparty.
+En sí, está ahí la traducción.
+Ah, es para la solicitud.
+O sea, los correos de triangulación no cambian.
+Ya quedaron, habían quedado...
+Si no me equivoco, habían quedado aprobados, ¿no?
+Sí.
+Ya sé que te refieres.
+Si hiciste algún cambio con los correos de triangulación o lo que sea,
+volvíos para atrás, por favor.
+Bien.
+O sea, ya los habíamos aprobado, eso.
+Este...
+Eso es para...
+Son dos mails nuevos, 100% nuevos,
+que es cuando vos solicitás una contraparte
+y nosotros la asignamos,
+acá que justo en agua está haciendo ese flujo ahora en el endpoint.
+Este...
+Es para nomás, para avisarle,
+che, mirá, mirá que...
+Se te creó, se te aprobó.
+Porque recordemos que cuando hacés la triangulación,
+si no tenés al comprador registrado, lo solicitás.
+Entonces, es una manera de avisarle que el comprador se te aprobó
+y ahora sí podés hacer la triangulación.
+Perfecto.
+Yo ahora vuelvo para atrás esos cambios.
+Lo otro que quería comentar es que yo ayer en la Ili
+había dicho que iba a estar trabajando en una presentación
+que nos pidió, ¿cómo se llama?
+Ricardo.
+Que estaba esa presentación,
+le tuve que pedir ayuda ahí a Gastón
+a que me ayude con eso.
+Estuvimos casi todo el día con la presentación esa,
+que ya quedó pronta, pero nada,
+que le tuve que pedir ayuda a Gastón con eso
+porque si no, no llegaba.
+Ahí nos comentó.
+Thanks. No pasa nada.
+Eso es.
+Lo importante, Santi, acá es,
+más allá de los ajustecitos,
+dejar triangulación como lo acordamos,
+porfa, después de toda la tía y vuelta,
+y...
+y crear esos dos correos que son dos correos nuevos.
+O sea, son dos correos totalmente nuevos
+que lo único que está avisándote es
+tal comprobado, tal contraparte fue aprobado.
+Bien, bien.
+Bien.
+Genial.
+Bueno.
+Santi, Gastón, Abuel, creo que estamos todos, ¿no?
+Perfecto.
+¿Quiénes tenían post-cram?
+Yo tengo una preguntita nomás de los pop-ups del diseño.
+Es una preguntita sencilla.
+Bien.
+Está bien de bien.
+Bueno, estamos entonces.
+El resto se puede bajar.
+Yo le iba a pedir a Nau, si se puede quedar,
+porque quería preguntarte algo.
+Y me parece que...
+Dale.
+Dale.
+Dale, genial.
+Ahí, Santi, esos correos serían como la tercera etapa
+de lo que atacaría Enrique.
+O sea, Enrique va a atacar primero esto,
+después va a ajustar triangulación,
+y eso sí, Enrique, esto que va a crear Santi,
+sí, probablemente no lo sacamos genérico.
+Pero, bueno, vamos a volver al mecanismo anterior.
+OK.
+Bien de bien.
+Bueno.
+Vamos arriba.
+Hasta luego.
+Hasta luego, Abuelo.
+Gracias.
+Nos vemos.
+Chau, chau.
+Sí.

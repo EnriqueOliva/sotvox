@@ -1,0 +1,35 @@
+Poner si es director o no.
+Nada más.
+¿Sí?
+O sea, es un booleano, porque es un checkbox.
+O sea, que no debería ser muy complejo.
+Y después, lo que yo te puse es que tenés que jugar un poco,
+agregar más casos de juego con lo que es los partners.
+Decir, bueno, ¿qué pasa si yo agrego 10, después lo saco y dejo 1?
+¿Está?
+Y después lo envío.
+¿Se envían correctamente?
+Yo lo que te puse ahí es que lo correcto sería entrar a la empresa,
+ver los partners y ver toda esa información, ver qué se registraron.
+Lo más sencillo es que vos, cuando vas al flujo de pago,
+tenés abierta la Developer Tools y te fijás que te llega una request con los partners.
+Si querés, eso lo podemos mirar juntos.
+Pero de alguna manera es fijarse, cuando vos entrás en el flujo de pago,
+lo que hacés es, esa company draft que se creó,
+la pedís para cargar todo el flujo de pago.
+¿Sí?
+Entonces.
+Entonces ahí te viene, dentro de esa información, que eso lo podemos ver juntos,
+los partners que se crearon.
+Yo lo que quiero ahí es que vos hagas un poquito de jueguito,
+agregues unos tests que son jueguito.
+¿Está?
+Después hay otro, en el caso de las suscripciones,
+nada, es mucho cambio de prioridad y bolazos del Excel.
+Son cosas que tienen que quedar prolijas porque eso yo se lo muestro a Guille, ¿viste?
+O sea, yo se lo voy a mostrar.
+Son bolazos, pero tienen que quedar.
+O sea, eso.
+De nuevo, para mí lo mejor es, vaya a votar, tranquilo, vuelva y se sienta y ahí le metes.
+Bueno, vamos arriba.
+Me avisa de cualquier cosa y tal.

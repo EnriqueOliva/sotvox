@@ -1,0 +1,141 @@
+A ver, tenemos todas las Ender Reviews. La de Crush on Manager son 13 puntos.
+Esta ya la saco para afuera para que me permita más visibilidad, porque esto se va a correr después.
+El tema que tenemos es el siguiente. Yo este sprint lo puse al principio del sprint, por eso intenté hacerlo ajustado.
+Ahí, la verdad, creo que se nos pasó. Lo fuimos obviando el tema de Crush.
+Hola, hola.
+Hola.
+Sí, yo lo que te decía es lo siguiente. Este sprint tenemos que cerrarlo.
+El martes es un día que tenemos de japa.
+Pero nada, yo te diría que el martes es un día que vamos a tener de japa informal.
+Pero es para cosas que podemos decir tal.
+Nos da para cerrarlo.
+Y el martes se envían y se cierran PR. ¿Se entiende lo que voy? O sea, cosas que son seguras.
+Por lo que usted me dice, el lunes y martes va a estar hasta las bolas. No va a poder meter nada.
+No, no, no. Olvídese.
+No, además está. Tiene reunión. Vamos a pensar lo siguiente.
+A ver, vamos a ver esto. A ver qué tan mal queda si yo muevo esto acá.
+El tema que está de la 302 es un huevo. Pokémon Gear Strike.
+¿Cómo se llama? Quiero completar. No. Esta la voy a dar como terminada, ¿tá?
+Voy a necesitar algo. Primero las que tenemos de Ryu que mueran. ¿Sí? Sí o sí.
+Las de regresión, todas. Todas las que tenemos. ¿Tá?
+Segundo, en esta yo necesito que acá me comente un poco la investigación que hizo.
+Y yo voy a decir que se va a completar en esta.
+A ver, vamos a poner orden. Esta se terminó.
+¿Tá? ¿Y esto? ¿Con esto?
+La realidad es que no están. Entonces, con todo tenemos 43 story points.
+Tenemos que terminar esto. O sea, lo ideal sería terminar esto y esta.
+Por lo menos definir un test y después el siguiente sprint.
+Ya vemos que el siguiente sprint tenemos para... O sea, vamos a tener bastante cosas para entretener.
+Tenemos que correr los test de regresión, pero tenemos que hacer los test de regresión para
+actualizar el flujo de pago.
+Y después se viene otro desafío.
+Que los test de regresión para actualizar, o sea, desde el back office una compañía.
+Que eso va a ser un huevo, ya te imaginás, ¿no?
+Porque es todo lo de crear company draft más actualizar cosas. ¿Se entiende?
+¿Se escucha?
+Ah, está.
+Y todavía no hicimos los test unitarios del flujo de pago.
+A ver.
+El siguiente sprint, dejame en el calendario, porque estoy perdiendo un poco el rumbo.
+El siguiente sprint arranca el miércoles 30 y termina el 12.
+Y el otro arranca el 14 y termina el 26.
+Está.
+Tenemos dos sprints.
+Tenemos dos sprints para...
+O sea, los dos sprints que vienen van a ser claves.
+¿Está?
+Porque ya vamos a estar ahí a las puertas de la salida de producción.
+Ya el tercer sprint es un sprint que va a ser muy movido y saliendo a producción.
+O sea, que no lo cuento.
+Nosotros tenemos que, dentro de todas las cosas que tenemos para pagar,
+prioridades serían liquidar el crowd shop manager.
+¿Sí?
+¿Está?
+Vamos a tener que enfocarnos 100% en el flujo de pago, el chequeo del flujo de pago,
+y después vamos a tener que hacer una especie de smoke test.
+O sea,
+hacer varios test de regresión, pero solo casos de prioridad alta.
+Que eso va a ser un gran desafío para el back office.
+¿Sí?
+Yo ya le hablé del concepto de smoke test,
+pero el smoke test es muy similar a correr test de regresión de prioridad alta.
+En otras palabras, son test muy básicos que prueban que las funcionalidades a grandes escalas anden.
+Smoke viene, no sé si ya le comenté,
+pero es por el concepto de que antes lo que se hacía es cuando se armaba hardware,
+se lo dejaba corriendo a ver si salía humo.
+Si salía humo, era que estaba algo...
+Estaba mal.
+Entonces, por eso también...
+Pero es como una prueba básica, ¿se entiende?
+Entonces, para que nosotros podamos estar bien de cara a las dos semanas,
+hoy deberíamos armar un test, por más que tenga la mejor voluntad del mundo,
+armar un test de la...
+Primero liquidar todas las otras para estar tranquilo de que las otras se me llenen hoy,
+y armar un test de la 302,
+cosa de que si usted me manda la PR y yo encuentro algo que es muy grave,
+¿está?
+¿Sí?
+No pasa nada, se cierra la tarea porque se armó la estructura.
+Pero si yo encuentro algo que es chiquito, lo puedo arreglar y ya se puede mergear,
+¿está?
+Y queda como deuda técnica, está bueno porque ya se mergea GitHub,
+queda registro de eso, de que se mergeó GitHub,
+y de última capaz que el lunes puede hacer algún retoque.
+¿Se entiende?
+O sea, si es algo muy puntual...
+Entonces, ¿está?
+¿Metamos ya esto?
+Yo creo que está.
+Que si cerramos...
+No puedo subirte más los puntos de las otras historias porque, de nuevo,
+esto es, más allá de que tenemos un tema a tiempo y yo sé que usted le viene metiendo,
+es un tema también de lo que es...
+Es un tema también de lo que es objetivo.
+O sea, nosotros no estamos llegando a tres objetivos que son importantes.
+Entonces, bueno, está.
+Yo meto un poco de humo con la 263,
+reconociendo que usted trabajó algo,
+corremos los test de regresión,
+¿está?
+Pero necesito sí o sí que haga...
+un test de la 302.
+O sea, y también tenemos que cerrar los test de regresión,
+porque el miércoles, cuando usted entre,
+lo primero que tenemos que hacer es correr los test de regresión.
+Porque estamos muy bordes si no corremos los test de regresión.
+Eso, no lo...
+Vamos a ver qué sale.
+Si los test de regresión son arreglados, son bolazos.
+El más complejo puede ser la parte de company draft.
+Que, en realidad...
+A ver.
+A ver.
+A ver.
+A ver.
+A ver.
+A ver.
+Hicimos un test para pasar a...
+Para pasarlos de war a coso.
+Entonces, ya tenemos que ajustarlos.
+Si generar otra tarea de company draft,
+puede levantar sospechas.
+¿Está?
+Entonces, tengo que aprovechar esa misma tarea para poner
+lo de director y para poner casos
+donde se juega en la UI.
+Lo que te puse en el comentario.
+Bueno.
+Si quiere, yo...
+Mi recomendación sería que vaya a votar
+y después se centre con esto.
+No sé.
+O sea, así está tranquilo y ya
+no está con los nervios de todo que salió a votar.
+O sea, si quiere...
+Para mí lo mejor es que salga a votar
+y después le meta esto hasta donde llegue.
+¿Bien?
+¿Cómo la ves con esto que nos estamos planteando?
+Debería ser bastante complicado porque se agregara algún caso...
+Mirá, te comento un poco.
+Lo de director es nomás cada vez que...

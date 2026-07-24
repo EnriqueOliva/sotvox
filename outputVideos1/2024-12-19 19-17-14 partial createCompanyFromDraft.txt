@@ -1,0 +1,285 @@
+Está. Esto es esto, mirá. Algo que va a estar bueno es que cuando reseteo backoffice, por defecto reseteo todo, pero por defecto resetea a mi usuario en el backoffice. O sea que por más que se borre todo, vamos a seguir entrando. Esto es esto. Un pay. Vos acá no podés entrar a verlas.
+Tenés. Para mí las cosas de alta prioridad es agarrar una, setearla. Por ejemplo, esta, viste, que acá está asignada a mí. Acá ya la podés asignar como cancel.
+Te queda cancelada. Podés asignar, vamos a poner 5 nomás. Vamos a pasar a la siguiente página. Por ejemplo, esta 5, acá la voy a poner asignada a mí.
+¿Viste? Anda, anda, anda, devuelven, eh. Y vamos a hacer plata con esto, la concha.
+Este, esto cambia a nígel.
+¿Viste? Acá tenés, por ejemplo, para los vendedores que les lleva WhatsApp directo.
+Y acá, por ejemplo, la idea es que un vendedor cuando se la asigna, le hace clic acá y le pasa el checkout.
+Opa, ¿qué pasó acá? Bueno, sé que está... Hay varias que se jodían.
+¿En qué se cargó? ¿Paid?
+¿No te...?
+Ah, este.
+Y dicen, a ver, está redireccionando por algo. Anda, sabá.
+Si viste este tipo de cosas, tal, después hay que ver qué es lo que pasa ahí.
+Porque muchas veces quedan incompletas.
+Estas fueron compañías que creó Tatato.
+Por eso siempre también es importante vaciar la base de datos.
+O sea, vaciar la base de datos y...
+Vaya a saber qué pasó con esta compañía.
+Pero por eso siempre está bueno vaciar la base de datos.
+No importa, pero esto te lleva al checkout.
+Si no, vos acá...
+Podés ir a ver los detalles de la compañía, a ver.
+Y bueno, eso.
+Si no tiene como la...
+Perdón.
+No es como esta.
+Es la de...
+No es request.
+Request se la asigna a usted.
+Es un paid.
+O sea, vos en un paid no podés ir a los detalles cuando haces clic.
+Acá en request, sí.
+Sí.
+Pero...
+Duplicar esto lo voy a asignar a usted así vemos lo que usted tiene.
+Acá, mirá.
+Vos tenés esta que en sí debería salir...
+Rápido.
+Lo único que es, es probar un poco esto.
+Poder ir a ver los detalles, el WhatsApp.
+Esto y que esto ordene, más o menos.
+Ah, tenés filtrado.
+Que hagas esto.
+Los filtros acá para aplicarle.
+Ahí hay que priorizar.
+Yo calculo que una cosa que toque cada cosa.
+Por ejemplo, quiero fijarme que ordene bien.
+Ah, ordena bien.
+Quiero fijarme que ordena bien por debate.
+Eso es alta prioridad.
+¿Viste?
+Va, en prioridad media es quiero mezclar cosas.
+¿Viste?
+Mezclar filtros y eso.
+Aparte estaría bueno que hagas un caso más polente.
+¿Está?
+En su caso, esta es más sencilla.
+Porque la de un paid...
+La de un paid no tiene clic.
+No lleva detalles.
+Sí podés ir a los detalles acá.
+Si está paga.
+Y si no te lleva al checkout.
+Va, no es más sencilla.
+Es distinta.
+Yo creo que podríamos separarla igual.
+O sea, la de Tatato.
+Podríamos decirle, bueno.
+Hacemos dos detalles.
+Tres.
+¿Le parece?
+Creo que...
+Porque es literar lo mismo.
+Solo que de repente no tiene para ir a ver los detalles.
+Pero sí tiene para el checkout.
+Entonces ahí...
+¿Cómo desarrollador?
+Quiero profundizar.
+¿Cómo era?
+Casos de test de regresión.
+¿Está bien así?
+¿Y dónde poníamos la prioridad?
+Ahí.
+De media y baja.
+Ahí está.
+¿Un solo punto?
+Sí, sí.
+Pero bueno, está.
+Es parte del sacrificio que estoy haciendo.
+O sea, el dividir va a ser que cuando agarres esta tarea vas a perder un poquito más de tiempo.
+Entonces me parece que está bien.
+O sea, tiene sentido lo que digo, ¿no?
+O sea, vos...
+Porque si la agarrás dentro de un mes no va a ser lo mismo que si la agarrás de continuación.
+Entonces, creo que es...
+Si da justo, da justo.
+Pero si podemos agarrarle holgura, le damos duda.
+Y esta le ponemos...
+Y esta le damos puesto.
+Quiero hacer...
+Test de regresión de alta prioridad para cuando...
+Está perfecto.
+¿Sí?
+Bien.
+Después capaz que podemos, a partir de esto, podemos crear cuá de alta prioridad y cuá de baja prioridad.
+Entonces ahí es más sencillo filtrar.
+Por ahora hagamos esto que va a ser más rápido.
+Pero capaz que para el siguiente sprint ya las catalogamos.
+O sea, empezamos a poner cuá de alta.
+O sea, es más, ponemos cuá...
+Baja prioridad.
+Pero bien.
+Bueno.
+Y con eso nos queda esta.
+Quiero desarrollar para el evento cuando se crea Add New Service.
+Creo que esta es lo que vos me decías.
+No tiene sentido dividirla.
+¿Está?
+Está.
+Y esta ya la está haciendo.
+Entonces, yo lo que voy a hacer es estas tres.
+Se las voy a asignar a vos.
+Y las otras tres.
+Nosotros salimos con estas dos.
+Se las voy a asignar a...
+A Tatat.
+Y vamos a ver a qué nos da Kiki.
+Cómo estamos ahí con tu sprint.
+O sea, tenemos veinte puntos.
+Veintidós puntos.
+Sí.
+Mañana no escatimes en lo que vas a pedir para comer.
+Porque después te lo voy a cobrar con trabajo.
+Pero vas a comer lindo.
+No, sale un huevo.
+Sale un huevo.
+O sea, literal, Guille nos dio para gastar cuarenta dólares por persona.
+Así que yo lo de Tatato si no va porque le voy a pasar una foto se lo voy a devolver.
+Pero...
+Pero la idea es...
+La idea es que vos te agarres y te pidas el plato que quieras.
+Un coso.
+Y después pidamos postre.
+O sea, cuarenta dólares hoy en día son casi mil setecientos pesos.
+Eso quiere decir que te pedís un baby chukichuki con papas fritas y cosos y tal.
+Más o menos ten en cuenta eso.
+Cuarenta dólares.
+Igual lo que sobre yo se lo voy a devolver a Guille.
+Le voy a pasar la factura y eso.
+Yo siempre en ese sentido soy súper prolijo.
+O intento usarlo.
+Además le voy a pagar con Santander.
+Quiero ver si le puedo hacer que le salga menos.
+Pero está.
+De todas maneras, si vos me decís...
+En vez de mil setecientos nos gastamos mil cuatrocientos pesos y nos partimos la boca,
+es lo mismo.
+Como que no.
+O sea, comiste como una bestia, tío.
+Claro.
+Mi idea es, apenas nos sentemos, pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, ahí cada uno va a pedir...
+O sea, comiste como una bestia, tío.
+Claro.
+Mi idea es, apenas nos sentemos, pedir...
+O sea, ahí cada uno va a ver si quiere tomar algún trago, si quiere tomar bebida.
+A ver si...
+Creo que no hay nada grande.
+Después picada, unos choricitos, picada, lo que sea.
+Después cada uno se pide el plato principal.
+Y después, bueno, vemos la cartilla de postre.
+Igual, de todas maneras, si no podemos ir a...
+Literal.
+La charla con Guille estuvo de más.
+Se me está yendo el tiempo.
+Bueno, creo que con esto quedó bastante bien.
+Y Tatato quedó con esas tareas.
+De todas maneras, le quedó bastante cargadito el sprint.
+O sea, en el caso que...
+Lo bueno es que en el caso que él retome, probablemente le voy a ir diciendo...
+Bueno, anda fijando las tareas esas de Kik.
+Otra cosa que es importante es, volvemos a la metodología anterior.
+O sea, ya mandale a PRs directo a mí.
+¿Ah?
+O sea, directo a mí y a Martín.
+¿Sí?
+No, por favor, dígame.
+Aprovechemos, aprovechemos, aprovechemos el interin de tres minutos.
+Sí, sí, a ver si...
+A ver con qué me va a venir.
+La gente me va a cagar.
+A ver con qué me va a cagar.
+Pará, ¿cuál es la...
+No me queda claro.
+Por ejemplo, muéstrame si explota.
+Subo un poquito.
+No, no, no, pero pará.
+Subo un poquito.
+Fine Company.
+Pará, subí un poquito más.
+Subí un poquito.
+Ahí va.
+Vos lo que hacés es Create Company From.
+Create Company From Draft.
+¿Ah?
+Ese utiliza transacciones arriba.
+Adentro.
+Entonces, si explota es porque se jodió pa' la mierda.
+Porque ese método es el más complejo.
+¿Sí?
+Entonces, si explota, si explota...
+La pregunta tuya es, si este explota, ¿quién lo agarra?
+A ver, mostrame, mostrame.
+Ya, bro, bajá un poquito, bajá.
+Santiago Pantin ya entró retorrando.
+Está.
+Viste que vos hacés un commit.
+Si falla, hace un rollback.
+Y tira el error.
+¿Quién agarra ese error?
+Lo agarra...
+O sea, esos dos errores.
+¿Quién los atrapa?
+O trabaja bien el Santi o alguien.
+La verdad, el Guille está súper contento.
+También tenía un desarrollo.
+A ver que no la pija, pero está súper contento.
+Eh...
+Pasate al...
+Lo voy a dejar entrar a Santi nomás.
+Y ahora entra Martina, pero seguimos.
+Eh...
+Andate al...
+Al...
+Al índice.
+Al índice.
+Abajo de Chrome Show Manager.
+Ahí es donde se atrapa el error.
+Fijate que vos tenés un evento Create Company en la línea 40.
+¿Sí?
+Si explota ese, lo debería...
+Debería atraparlo ahí y loguearse ahí en el error processing message.
+Que eso es lo que te debería saltar.
+Vos tenés que chequear que te imprima el error.
+Y después tendría que imprimir error processing message.
+Porque...
+Vos hacés container.resolve.
+Llamás al método.
+Y después, si explota...
+Porque vos acá no tenés...
+O sea, esto...
+No tengo un handler o un lo que sea.
+Lo puse en un try and catch.
+Y es más, si te fijás, si bajás un poco más abajo...
+Eh...
+Perdón, subí.
+O sea, vos tenés ahí un try con un switch.
+Y baja un poquito.
+Y después...
+Ah, y arriba del todo...
+Vos tenés otro try.
+Porque vos...
+Una cosa es que falle el error adentro de ese try and catch.
+Y otra cosa es que falle el error al procesar el mensaje.
+Porque cuando vos generás un evento, te llega un mensaje que te dice...
+Falló por tal cosa.
+O sea...
+Por ejemplo, para crear una compañía, el mensaje te dice de quién es la compañía.
+¿Tá?
+Entonces, son distintos try and catch.
+Pero, como quien dice...
+Es acá donde se juega todo.
+Fíjate que el worker es donde llegan todas esas acciones de evento.
+¿Sí?
+¿Tá?
+Igual lo vemos...
+Si queda alguna duda, lo vemos ahora después de la deal.
+Genial.
+Chicos, ¿cómo andan?

@@ -1,0 +1,1234 @@
+que hacemos cuando estás en español
+por ejemplo que hacemos con las transacciones
+el panel de accounting
+y todas esas cosas
+hagamos un research
+de eso y veamos que pasa
+creo que eso es lo más sano
+en teoría lo que deberíamos hacer
+con el tema de fecha es mostrarlo
+según el idioma, pero creo que lo que hacemos
+es lo mismo que los montos
+fijo siempre usamos el americano
+entonces
+lo más sano sería fijo dejar siempre
+el americano y nosotros manejarnos con un modelo americano
+y se terminó
+porque así no tenemos facturas distintas
+en cuanto a lo que son fechas
+y montos siempre mostramos lo mismo
+pero por las dudas ya que estamos
+y un poquito de Cuba, revisamos ahí
+todo como está
+Jona, Martina, Nahuel
+están despedidos
+no, mentira
+se creó una película de terror
+son todas esas cosas
+uno de repente
+de chico sueña cuando
+lidera un equipo
+para los torturadores
+medio raro tus sueños
+el Gastón
+el Gastón se ríe porque
+es más maquiavélico
+que nosotros
+ni quiero saber que va a pasar el viernes
+la verdad yo sinceramente
+despido antes de las fotos de bebé
+ahora se volvió algo obligatorio
+imagino que todos habrán enviado
+una foto de bebé
+no me hagan preguntar
+de gana quién no envió
+estoy buscando todavía
+no, buscando las bolas
+Jona hizo una con TGPT
+a enviar
+no, no, no
+las mías están en blanco y negro
+ya de esta altura
+bueno, sí, claro
+ahí, llamando por una caseta de Antel
+bueno, escuchame
+manden todas las fotos
+ahí está, manden todas las cosas
+igual, yo qué sé
+son boludes
+después se la agarran con Gastón
+yo ahí encontré una
+mandé una ahí
+está bastante tragicómica
+bueno
+arranquemos con la daily
+tengo lo de Daffy que me está
+colgando las bolas
+me tiene podrido
+que no me he podido reunir con Carlos
+se me archivó todo
+pero me faltan dos PRs
+que son, o sea
+dos PRs
+dos segmentos de PRs
+uno es lo del site
+sí
+va a ser bastante complejito
+lo del site
+que es todo lo de LDC
+y todo eso
+y toda esa parte de precios
+me tiene la verdad las bolas
+bastante por el piso
+y lo otro es
+lo de actualizar los pagos
+que eso es lo que nos está
+trancando en este momento
+la salida PRO
+va a cambiar bastante cosas
+sí
+así que nada
+después lo otro que estoy viendo
+con Guillermo
+y con Beto
+o sea, tenemos que liquidar
+en la parte
+literal, hoy tengo que liquidar
+hacer magia
+pero tenemos que liquidar
+toda esta parte
+entonces está ahí
+por eso también ayer Martu
+te dije
+mientras yo estaba trabajando con esto
+intentemos
+desbloquear todo lo que sean PRs
+en agua de Jonathan
+para intentar ir mandando
+porque
+hoy probablemente
+cuando empiecen a llegar
+esas PRs van a ser prioridad
+y se van a tener que ir
+Kike, hoy no está Fernando
+yo ayer me comí de ciego
+hoy mañana no va a estar Fernando
+calculo que igual
+capaz que lo hablo contigo
+pero
+pero mañana va a estar Fernando
+yo sé que hoy tenés clase
+hasta cinco y media
+hoy estás hasta las cinco
+porque es miércoles
+yo voy a necesitar ahí
+que en paralelo
+porque vamos a sacar
+todo esto de él en sí
+testearlo
+vamos a tener que tener
+una reunioncita para eso
+no va a requerir llamada
+ni nada
+es solamente que
+la idea de hoy
+va a ser salir a producción
+medio tarde noche
+porque esto no podemos
+sacarlo durante el día
+así
+entonces la idea va a ser
+probarlo en DebiStage
+yo voy a intentar mandarlo
+cuanto antes en la tarde
+a DebiStage
+pero en realidad
+lo que va a pasar
+un poco es que
+va a cambiar producción
+porque producción
+vamos a tener un host nuevo
+que es lc.dapham
+entonces ahí voy a necesitar
+tu ayuda
+para testearlo
+no nos tenemos que reunir
+ni nada
+lo puedes hacer
+te la estás en clase
+lo que quieras
+pero necesito ahí
+ya te voy avisando con tiempo
+que te voy a necesitar ahí
+una mano
+¿está?
+¿está?
+más que nada
+para chequear eso
+y vamos a cambiar los precios
+entonces bueno
+que en producción
+esté todo ok
+¿está?
+eso va a ser como
+lo más importante de tu lado
+¿qué más?
+¿qué más?
+¿qué más?
+bueno
+este
+ahí
+nada
+tenemos lo de Nahue
+que está trancando
+o sea
+está trancando no
+pero que es una funcionalidad
+bastante grande
+que estaría bueno
+que salga hoy
+pero vayamos viendo
+hasta dónde llegamos
+pero lo que podamos
+ir mergeando
+démosle paso
+¿sí?
+este
+así que Aymar
+tú te pido
+ahí una manito
+y después
+Santi
+y este
+y Yona
+tenemos un temita
+que es
+el
+el Drawer divino
+¿sí?
+el Drawer divino
+que nosotros tenemos
+este
+lo que pasa es que
+algo que me pidió DJ
+es que para Crypto Cross Border
+cambia un poquito
+¿sí?
+este
+o sea que ocultemos
+la parte de accounting
+y este
+que ocultemos
+la parte de accounting
+y todo lo que es correspondencia
+y todo lo que es relacionado
+a una LLC
+si el usuario
+solo tiene Crypto Cross Border
+el problema
+es que eso es un huevo
+o sea
+porque nosotros
+tendríamos que tener
+ahí Yona
+más técnicamente
+Nahue
+Marto
+Enrique
+esto viene más para ese lado
+tendríamos que tener
+como una variable
+en el usuario
+porque si no
+tendríamos que preguntar
+sobre tus compañías
+y sobre las compañías
+que son teammates
+si tenés alguna LLC
+para activarle o no
+esa opción
+que te acuerdas que yo Nahue
+te había puesto esa tarea
+¿está?
+¿sí?
+este
+creo que te la había puesto a vos
+lo que te voy a pedir a Nahue
+es esa tarea
+pasamela para mi lado
+por ahora
+y vemos
+y vemos
+este ya
+asignamela a mí
+pero lo que
+lo que estaba viendo con Guille
+era una solución
+más práctica
+que es
+nosotros hoy en día
+en mis compañías
+es en uno de los sectores
+que no hemos actualizado
+junto con el de
+correspondencia
+la parte de mis compañías
+ahí se hace
+la renovación
+y contratación
+del servicio
+de un solo pago
+¿está?
+por ejemplo
+podés contratar banca
+podés contratar
+hasta el servicio express
+entre otros
+entonces
+mi idea sería
+la propuesta
+viene porque
+lo voy a mostrar
+que va a ser más sencillo
+¿sí?
+y esto lo
+ya que estamos todos
+acá en la daily
+es un tema de todos
+entonces lo podemos charlar
+entre todos
+con una gran familia
+este
+era la
+ah
+ahí va
+un segundo
+perdón
+pero bueno
+por las dudas cambiaron
+cuando entren a su cuenta
+de AdBank
+puede ser que les pida
+que cambien la contraseña
+porque vamos a
+lo vamos a arrancar
+con una política
+con las cuentas de Google
+que tienen que cumplir
+cierta contraseña
+y cierta
+formato
+y bla bla bla
+yo lo que estoy
+lo que hablaba
+es
+fíjense que la parte
+o sea
+la parte de accounting
+ya
+ya
+, ¿sí?
+y
+todo esto
+mailing
+que haría solo suscripciones
+¿está?
+es como que está
+un poco
+está un poco no
+o sea
+no está relacionado a banca
+entonces
+yo lo que decía
+era la parte de accounting
+todo esto de accounting
+estas tres páginas
+y
+la parte de correspondencia
+que los usuarios
+que tengan LLC
+entren a su LLC
+y como acá van a ver
+se trancó
+a ver si
+tengo alguna compañía
+seria
+que sea una LLC
+como son todas
+Crypto Cross Border
+a ver esta
+bueno, acá
+acá en la información
+de la compañía
+si es LLC
+se muestra
+a ver si tengo
+a tener
+alguien
+esta
+ahí va
+si es LLC
+mirá todo lo que se muestra
+¿sí?
+se muestran los actas
+información de solicitud
+disolver compañía
+pa pa pa
+este
+todo lo que tenga que hacer
+acá también aparece
+la renovación
+¿sí?
+acá tenemos la parte
+de lo que son los estados
+pa pa pa
+todo esto
+pensaba agregarle
+la parte de
+capaz que refactorizarlo
+un poco
+y agregarle la parte
+de accounting
+y mailing
+¿está?
+entonces acá
+lo que hacemos es
+sacamos mailing
+voy report
+se va
+porque no lo vamos a implementar
+ahora
+entonces se va
+de una vez por todas
+sacamos bookkeeping
+declaración
+y accounting
+y esto
+Santi
+lo que yo pensaba
+era transformarlo
+en una especie de
+en una especie
+de barra de navegación
+que no
+y ahora me va a matar
+porque ya
+sinceramente estuve
+desarrollando esto
+pero no es tanto
+el cambio
+sino que
+darle más prioridad
+a la navegación
+dentro de banca
+y lo que hacemos nosotros
+es que cuando achica
+un poco la pantalla
+o por defecto
+tenga la opción
+de
+esos menús
+que como que se achican
+y te muestra
+solo los íconos
+¿está?
+¿por qué me parece
+buena idea esto?
+primero
+hacemos que
+la gente de Crypto Crossborder
+no ve cosas
+que no tiene ni puta idea
+que es
+¿está?
+sin tener que andar
+preguntando
+si tenés compañía
+de Crypto Crossborder
+o no
+para renderizar
+una navegación
+y segundo Santi
+¿está?
+de nuevo
+yo nada acá
+me va a matar
+pero
+para una B2
+y ahí no me
+te enojes tanto
+podemos trabajar
+con tres íconos
+uno que sea banca
+mis compañías
+y TeamMate
+¿está?
+entonces podemos trabajar
+con un botón
+navigation bar
+de tres íconos
+¿si?
+entonces ahí también
+tenemos tres cosas
+que vamos a tener
+ya que la parte de banca
+tiene toda una navegación interna
+entonces ahí
+priorizamos más
+la navegación interna
+debajo
+de la banca
+lo estoy tirando
+¿está?
+y lo podemos
+para que lo analicen
+y también
+para que
+para que todos
+lo tengan en cuenta
+y si querés
+lo debatimos
+como postgram
+¿está?
+pero es una solución
+también en cuanto a tecnología
+mucho más
+clave
+que tener que agarrar
+y andar preguntando
+si el usuario
+imagínense un usuario
+que tiene una compañía
+si además tiene
+X cantidad de TeamMate
+con X cantidad de compañías
+cada TeamMate
+tendríamos que preguntar
+por todas las compañías
+a ver si alguna es una LLC
+para saber si
+ocultarle o no
+a Counting AI
+¿se entiende?
+y la idea de Guillermo
+es que este Dashboard
+apunte más
+a la parte de
+o sea
+que la persona
+de Crypto Cross Border
+no se confunda
+¿si?
+cuando selecciona
+a Counting AI
+¿qué es lo que pasa hoy en día?
+por ejemplo
+cuando yo entro acá
+y selecciono
+por ejemplo
+vamos a ver
+me dice
+no tenemos contabilidad
+o sea
+te muestra esto
+y el tipo de Cross Border
+no tiene ni idea
+qué mierda es esto
+más allá que nosotros
+ponemos esto
+o sea
+la idea es sacarlo
+lo tiro
+para que lo piensen
+y los que quieran
+o los que piensan
+que puede estar bueno
+lo charlamos
+como post-cram
+pero creo que es un poco
+habría que hacer un mockup
+y verlo
+no es tanto
+el cambio de diseño
+frente a lo que ya
+veníamos hablando
+de la barra de navegación
+sino que es
+sacar cosas
+y ponerlo para acá
+y nos daría la oportunidad
+de poder refactorizar esto
+bueno
+se volvió a trancar
+vamos a ver
+por qué está fallando
+de poder refactorizar esto
+sí
+acá
+de poder refactorizar
+toda esta pantalla
+que fue saliendo al voleo
+y es lo único
+que vemos
+que siguen
+con las cards
+de diseños viejos
+sí
+este
+pero bueno
+eso nomás
+está
+tirado
+lo tiro
+y después
+y lo vemos
+como post-cram
+pero está bueno
+que todos
+estemos al tanto
+del problema
+está ahí
+lo tengamos en cuenta
+quique
+adelante
+bueno
+yo estuve
+con la parte
+de lo que es
+los comprobantes
+de retiro
+de bolivia
+ahí creo que ya
+ahí ya lo envié
+lo que es
+diseño
+para que lo vaya
+bichando
+capaz que es
+antipantino
+bastón
+también estuve
+con lo que es
+los textos unitarios
+del bueno
+del fernando
+estuve revisando
+que bueno
+sé que no va a estar
+pero ya lo estuve
+en excel
+ahí santi
+capaz que nos faltó
+eso de repente
+si querés decirme
+las columnas
+te acordás
+lo de ayer
+el cliente de dropi
+utilicé lo que me mandaste
+y ya sé
+ya creé el script
+y lo mandé
+en la madrugada
+o que me
+me hinchó
+tanto las bolas
+que después
+probablemente
+tengamos que tener
+una reunión
+porque está rompiendo
+bastante las pelotas
+y vamos a tener que sacarle
+algún chiche
+para de las cosas
+que jode
+para que las pueda hacer
+automática él
+ok
+muy prioridad
+o sea
+ya está
+está don
+con lo que hiciste
+está pronto
+ok
+en vista de lo que decías
+al principio
+capaz que conviene
+como yo decía
+estos días
+de repente prestar un poco
+de atención
+a cypress
+vos decís
+que vale la pena
+de repente
+hacer una corrida
+con lo que está en dev
+apuntando a la base
+de stage
+para anticiparnos
+a la salida pro
+y ver
+que está roto
+bien ahí
+o sea
+hagámoslo ya
+si si
+ya está
+mergeado
+todo está
+no hay
+no tenemos
+que hijo de puta
+no tenemos
+este
+no tenemos
+este
+no tenemos nada
+que mergear
+con respecto
+a regresión
+correcto
+está
+bien
+este
+mirá en qué
+se gastan
+los tokens
+de ii
+no claro
+para dasbank
+usa
+usa el modelo
+chat gpt
+3.0
+ah no pero para generar
+un botón
+4 7
+hijo de puta
+está
+este
+si
+ahí
+bien
+este
+hagámoslo
+bien
+es un catch
+perfecto
+este
+ya para avecinar
+nos a la salida
+de producción
+si hay algo
+que está mal
+lo otro que te iba
+a decir
+y porque se va a ir
+todo lo de los decimales
+o sea es muy delicado
+todo esto
+entonces
+aseguramos
+el tanto
+y fijémonos
+que
+vamos a tener que hacer
+una corrida
+si
+yo no hay agua
+y van a estar trabajando
+está
+en algún momento
+no sé si ya lo arrancaron
+hasta trabajando
+también la parte de
+el don gray
+de los planes
+si
+este
+hay
+tanto para yo
+no hay nada
+web
+como
+para enrique
+nosotros
+tenemos que testear
+que esto ande bien
+tenemos toda la parte
+de monitoreo
+para testear
+que las cosas se cobren
+todo lo que
+se puede
+hacer
+para que
+se pueda
+hacer
+operaciones
+en dev
+y chequearlas en dev
+o sea todo eso está ok
+si
+este
+si ahí yo no hay agua
+necesitan registrar
+un web
+que en el momento
+me avisan
+y ya lo registramos
+porque
+son segundos
+o sea así ya queda
+cosa de que ustedes
+pueden sacar la pr
+y ya probar
+entonces
+eso es importante
+también decírselos
+ya me dicen che mira
+estuvimos investigando
+el evento
+de
+de stripe
+si
+porque si ya
+ya está todo configurado
+el hueco contra
+debbie stage
+es solo agregar
+el evento
+este
+lo que te iba a decir
+ahí
+kike es
+bueno va para todos
+una cosa que nosotros
+tenemos que tener en claro
+en cuanto a los diseños
+y toda esta parte
+es
+es algo que tiene que salir
+es más necesidad
+que diseño
+por eso primero
+lo van a hacer
+funcional
+nago y jonathan
+y cuando lo hagas
+lo hagan también
+una de las cosas
+que tienen que mirar
+es
+tenemos que
+aclararle al cliente
+lo que
+lo que puede pasar
+está
+o sea cuando estamos
+actualizando
+y cuando estamos bajando
+si
+entonces
+de la parte de
+de diseño
+está bueno para también
+santi o gastón
+en la que lo revise
+tiene que estar quedando
+en claro
+qué es lo que va a pasar
+nosotros estamos actualizando
+un plan
+mira qué va a pasar
+o sea
+no tenemos que decirle montos
+puede ser escrito
+pero tiene que quedar
+captura
+de lo que está pasando
+por ejemplo
+cuando alguien hace
+un upgrade de plan
+si
+intenta hacer
+un upgrade de plan
+debería ponerte
+la restrict
+yo creo que
+tiene un texto ahí
+pueden chequearlo
+pero es que
+se te va a refoundear
+o sea medio genérico
+pero que exista algo
+se entiende
+entonces también
+cuando haces
+el bajado
+el bajado de plan
+no quiero especificarle
+con cuentas matemáticas
+cuánto te vamos a devolver
+cuánto no te vamos a devolver
+porque eso ya funciona
+este
+y ya funciona
+para la subida de plan
+lo que sí tiene que surgir
+es
+cuánto te vamos a
+este
+o sea
+hay cosas
+que tienen que mostrarse
+por ejemplo
+cuánto
+cuándo se te va a cancelar
+el plan
+cuando vos
+se te desactivas el plan
+te tiene que decir
+qué fecha
+se te va a desactivar
+y qué es lo que está pasando
+en desactivar
+a partir de tal fecha
+vas a perder acceso
+a esto
+y esas cosas
+este
+piénsenlo también
+del lado de
+porque también
+es algo que
+la idea que se genere
+el debate
+no sólo lo piense yo
+sino es
+si hay algo
+que no nos estamos comiendo
+nos convendría
+mostrar o advertirle
+al cliente
+para poder atajarlo
+por ejemplo
+algo que se me ocurre
+es bueno
+algo que yo decía
+es bueno
+mira que vas
+vas a perder los servicios
+sí
+este
+a las cosas
+pero
+por ejemplo
+podríamos decirle
+que
+está
+en el caso
+de tus cuentas bancarias
+por ejemplo
+en el caso
+de que tengas
+algo por el estilo
+eso no se va a perder
+inmediatamente
+está
+que en el caso
+que no puedas sacar el dinero
+antes de la fecha
+te comuniques con soporte
+está
+entonces
+ese tipo de cosas
+también santi
+o sea
+va para todos
+en realidad
+tengámoslos muy en cuenta
+porque tenemos que atajarnos
+pero no me interesa decirle
+che mira
+por ejemplo
+que en la parte de subida
+le digamos
+te vamos a devolver
+x plata
+sí
+que te vamos a hacer
+un refund
+no sé cuánto
+está
+pero lo digo más
+para cuando lo tengan en cuenta
+lo analicen
+lo vean desde esa perspectiva
+porque está
+yo lo estoy
+lo estamos imaginando
+y sacando rápido
+pero también
+como que necesito esa parte
+de no sólo
+de la parte de cuba
+sino de diseño
+que vean
+bueno está
+hay algo que
+que podríamos mejorar
+y analizarlo
+está
+este
+se escuchan propuestas
+psiqui
+en consulta
+todo este refactor
+digamos de cambios en planes
+el target
+es para esta salida
+pero es algo que va a quedar para
+no no no no no es algo que van a estar trabajando pero ya te lo comenté
+en el momento
+para que lo tengas en cuenta
+el target de esta salida
+product por ahora
+es el update payment
+método
+que es para
+primero sincronizar todo eso
+y después yo estoy sacando la parte update payment
+método
+que lo que va a hacer es
+cobra
+va a ser un mecanismo de cobro
+más agresivo
+sí
+eso es lo que estamos cambiando
+vamos a trabajar en un mecanismo de cobro
+muchísimo más agresivo
+para que
+no nos
+no nos caen
+ese es
+bien
+una mínima cosa más
+capaz que un frente
+bueno
+friendly reminder a todos
+que
+nos estamos acercando
+al final del sprint doble
+capaz que estaría bueno
+pegar una bichada
+el tema puntos
+y eso
+sí
+en tu caso
+estamos
+sí
+eso eso
+eso está bueno
+está bueno
+bicharlo
+yo sinceramente como he estado con tanta cosa
+ni le di prioridad al sprint
+pero
+todos deberíamos estar cerca
+a no ser que no hayan estado algún día
+de los
+este
+de los 100 puntos
+está
+sí
+así que vayan
+vayan bichándolos
+y este
+vayan haciendo una propuesta
+o ya haciendo ajustes
+si se
+si se cerró algo
+está
+en mi caso viste que falta
+no estuve seguía seguí por la licencia
+tendría que llegar a 70 puntos
+tengo más o menos bien de acá el lunes
+estoy estoy más o menos
+no no no no
+tengo que llegar a 100 puntos
+ah bueno
+si no estuviste no es mi culpa
+ah bueno
+ok ok
+pero tranqui tenés este fin de semana
+y los que viene para
+para recuperar
+sí
+tengo las noches también
+sí
+sí
+claro
+claro
+trabajar
+trabajar de noche
+este
+de madrugada
+yo estuve leyendo que con dos horas de sueño
+hay japoneses que
+que
+que llegan hasta los 35 años ahí
+ojo jona
+este
+yo ya estoy ahí
+estoy al límite
+por eso
+tenés que tener cuidado
+está
+este
+pero bueno está
+este
+pues
+siempre se los puede exprimir un poco más
+ah
+bueno
+vamos arriba
+este
+tatata no está
+gastón
+tiene que estar ahí
+sí
+estuve
+estuve metiéndole
+al round up
+que era
+ya entre hoy y mañana quedaría pronto
+eso
+y después estuve
+viendo
+el chat
+que
+que
+armó santiago
+estuve dejando varios comentarios ahí para
+para
+para
+iterar
+lo
+que
+supongo que
+que
+lo va a
+quedar
+en el chat
+que
+de
+que
+los
+más
+Vamos a ver después en
+En el postgram
+Que hay varias cosas ahí
+Que podíamos
+Podíamos mejorar
+Bien
+Eso por mi lado
+Bien
+Bien
+Genial, lo bichamos, Jonah
+Bien, yo ayer dejé
+Dejé ahí varias
+PR ya para corregir
+Que estaban en interno, que ya en la web las aprobó
+Así que ya quedaron ahí en
+En pull request y arranqué
+Con lo de
+Lo del refactor de los planes, del downgrade y eso
+Eso ya lo estoy
+Lo estoy implementando yo
+Así que después ahí nos vamos
+Seguramente nos juntemos ahí con Nahue como para
+Para bajar ahí un poquito más
+Los próximos pasos, a ver quién va a agarrar qué
+Para seguir con eso
+Y con lo que dijiste
+Del Drawer
+Porque ya está aprobado por diseño
+Falta nomás que
+No, o sea, si está ok
+No, no lo sé
+Si está ok
+Si Nahue lo revisa y está todo ok
+Lo podemos mergear
+Esto sería un refactor arriba del Nahue
+Porque lo que sería es del Drawer
+No refactor contra Nahue
+Refactor del Drawer
+Lo que necesitaríamos ahí es
+Sería ocultar cosas
+Sería sacar cosas y cambiar rutas
+Y poner todo para acá adentro
+Y bueno, está ahí
+Ver esto que se achique más
+Para darle más prioridad, por ejemplo, a la parte de banca
+Que acá no se ve
+Pero si la pantalla es más chica
+El Drawer está comiendo
+Vos la navegación de banca la tenés totalmente acá adentro
+Y todo esto está comiendo un ancho innecesario
+Eso es lo que yo decía
+Está bien
+Pero entonces eso se puede mergear y después cosas
+Le trabajamos encima
+Sí, sí, sí, porque tal cual es necesario
+Todo este refactor
+Así que está
+Lo que sí probablemente
+Tristemente voy a intentar sacar lo mío
+Antre Jonah y vos tengas que actualizarte
+Que es la parte del EZ
+Bien
+Bien, genial, perfecto
+Con puntos
+Ojo con eso
+Sí, tengo que echarle ahí una miradita
+Vamos a trabajar entre hoy y mañana
+Vamos trabajando
+¿Verdad?
+Sí
+Quique, me está llegando el
+Correo de
+Me está llegando el correo de
+Transaction Status Notification
+De
+De
+Bridge, que es re viejo
+Te quería consultar rapidito nomás
+Hoy en día los números me lo está mostrando
+A ver si se puede ver
+Difícil
+Difícil
+Perdón en el despelote
+A ver si se puede ver
+Ahí, ¿ves que los números se están mostrando sin coma?
+Más o menos
+Bueno, está, se está mostrando el número así
+Tipo, así nomás
+Ahí
+Ahí, está, bien
+Sí, sí, lo veo
+¿Te animás a confirmar?
+Si con el refactor de decimales eso ahora se muestra más lindo
+Ok
+Un bolazo, perdón porque justo
+Me llegó que movieron plata y
+Este
+¿Martu?
+Bien, de mi lado estuve revisando
+PRs y
+Ya le dije, más que nada
+Las de Nahue ya dejé comentarios
+Y ahora estaba

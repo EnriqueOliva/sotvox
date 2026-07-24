@@ -1,0 +1,1185 @@
+Hola, buenos días. Martina, ¿estás? Hola. Bueno, dos cosas. Una, Kike, con respecto a lo de los correos de ayer, nosotros tenemos, o sea, no sé hasta qué punto lo analizaste, pero nosotros tenemos dos tipos de correos, ¿sí?
+Tenemos tres tipos. Tenemos todos los correos que se hacen en los flujos de OTC manuales, ¿sí? Todos los flujos que se hacen en Bank Account de manual, que están involucrados a un OTC Transaction Manual, ¿sí?
+Esos de OTC Transaction Manual, solo el de Bolivia genera recibo, ¿sí? O sea, solo el de Bolivia. ¿Te acordás que lo hicimos? Que cuando vos en el back office completabas, liquidabas la operación.
+Generabas un recibo.
+¿Estás hablando de correos o de factura?
+Perdón, de correos no, de correos no, de recibo. Recibo, recibo, vamos a ver.
+De esos recibos, tenemos tres, ¿sí? Estoy hablando de lo que es la factura, la que tipo te dice todo lindo con el código de DASBANK, bla, bla, bla.
+Nosotros tenemos tres. Tenemos el que vos hiciste de Bolivia, ¿te acordás que cuando lo liquidabas se generaba recién ahí el recibo cuando era una venta?
+¿Estás? Esa es una.
+Perdón. Tenemos cuatro, la concha, la madre. Cuatro.
+Tenemos el S, que se hace ahí. Después tenemos el Generating Voice, que es el que venimos trabajando, que ahora actualizamos para que sea multidioma, ¿está?
+¿Sí? Que ese usamos una OTC Transaction que es de tipo Withdrawal, ¿está?
+Y después, yo no me acuerdo si reutilizaste o no, no me acuerdo cómo quedó eso, creo que lo reutilizaste.
+El evento, que también si es una OTC Transaction y viene una Transfer con ciertas precondiciones, vos podés generar manualmente del BBO ese recibo, ¿está?
+Para esos tres, nosotros deberíamos tener la información de la, para sacar el enmascarado, ¿está? O sea, deberíamos estar haciéndola voluntariamente y sacarlo y debería ser relativamente sencillo, ¿está?
+O sea, con esos tres debería ser sencillo.
+Entonces, la información de la cuenta, lo que es la cuenta de cripto y todas las cosas que estamos enmascarando en el recibo, deberíamos desenmascararlo, ¿está?
+Yo te diría que esos tres los saquemos en una PR, con esos tres, ¿está?
+O sea, que es el manual de Bolivia, el de OTC Transaction manual, el de OTC Transaction, tanto el Withdrawal como el Transfer.
+Esos saquémoslos en una PR sola, ¿sí?
+Es lo importante, es lo que se está quemando un poquito las papas y es el que tenemos que sacar ya, ¿está?
+Bien.
+Lo que está sucediendo es que nosotros estamos enmascarando esa información, entonces cuando el cliente va a presentar ese formulario, dice, che, bueno, ¿y estos asteriscos qué mierda son?
+O sea, ¿no? Es un recibo que en sí no tiene la información de la cuenta.
+Entonces, lo que me está reclamando Carlos es, tiene que tener la información de la cuenta, se lo había pedido a Santi y se camufló, ¿está?
+Eso debería ser relativamente fácil porque nosotros guardamos.
+La información de la cuenta, o sea, la tenemos.
+Entonces, no la enmascaramos, ¿está?
+Es más, nosotros sí la enmascaramos, ¿dónde?
+Cuando enviamos un mail.
+Pero el mail es algo más informal, entonces está bien enmascararlo, ¿está?
+Porque el mail es como es algo más informal, que le llega a vos, te llega a los teammates, ¿está?
+El recibo es un documento formal que tenés que presentar y tiene que tener información que permita verificar todo, ¿está?
+Entonces, eso por un lado.
+Además de las épocas de antaño, cuando arrancamos esto.
+Fue, ¿verdad?
+Sí.
+Una pregunta, ese es el caso que ayer creo que Kiki preguntó ahí, pero es para el caso de solamente estamos queriendo para el recibo de, ¿qué tipo?
+O sea, tenemos tres tipos de recibo.
+¿Qué caso es?
+Tenemos tres tipos de recibo.
+Sí, pero el que estamos, porque teníamos un problema de que el que teníamos ahora no, teníamos que persistirlo, ¿no?
+Por un tema de que hoy en día Bridge lo devolvía con cuatro.
+Pará, pará, pará, pará.
+Bridge es aparte, porque eso es lo que yo iba a ir.
+Bridge es aparte.
+O sea, nosotros, hoy en día el único proveedor que está activo, que está funcionando con estos tres recibos es OneMoney, ¿está?
+Y tenemos las transacciones manuales de Bolivia.
+Entonces, está bien, pero es ahí donde iba el punto y es un poco donde lo que seguramente confunde el mensaje de Enrique.
+Nosotros, para este flujo de OTC Transaction y OTC Transaction Manual, si te fijás.
+No hay un solo proveedor que sea de Bridge.
+Nosotros solo tenemos de OneMoney y antes teníamos de RAID, pero lo deshabilitamos.
+Ah, que es ahí donde, es lo que está queriendo decir Marty.
+Todo este flujo de esas tablas de counterpart y FIA, todo eso, no está implementado aún para Bridge.
+O sea, Bridge no está dentro de la compatibilidad.
+Entonces, ¿qué es lo que sucede?
+Al no estar, ¿está?
+Nosotros lo que tenemos es, ¿cómo se llama?
+Como no está, Bridge funciona con un flujo aparte.
+Entonces, por eso yo te digo, encapsulemos los refactor para los documentos,
+tanto el de la venta de Bolivia como los dos recibos en este bloque.
+Recordemos ahí que Bridge funciona con otras tablas.
+Bridge en particular.
+Las tablas que funcionan, ya te digo, es Banking Crypto Transaction, ¿está?
+O sea, no es OTC Transaction, funciona con un Banking Crypto Transaction, ¿está?
+Porque la realidad es que cuando nosotros sacamos Bridge, y vamos a hacer un poco de recap,
+cuando nosotros sacamos Bridge, no pensábamos que íbamos a tener 10 proveedores.
+Pensábamos que iba a ser Bridge y ya está, y nos acoplamos 100% a Bridge.
+No sabíamos cómo era.
+No hicimos que Bridge.
+No hicimos que YB.
+No hicimos nada.
+Hoy en día, nosotros tenemos la OTC Transaction, y gracias a la buena implementación que hicimos,
+y la que vamos a seguir trabajando, esta OTC Transaction tiene un proveedor,
+pero los campos intentamos que sean lo más genéricos posible, ¿está?
+Más allá de que hay aspectos técnicos, ahí Enrique, que vos lo has trabajado más en detalle que nosotros,
+donde hay información que para generar el recibo tenés que ir a la adicional info,
+porque tampoco vamos a llenar de 500 colores.
+Entonces, nosotros ponemos las columnas genéricas, pero en la adicional info ponemos la info extra.
+Entonces, ¿qué es lo que pasa acá?
+¿O qué es la parte importante acá que tenemos que tener en cuenta?
+Nosotros, Kike, necesitamos que ataquemos estos tres recibos, que son los importantes, son los de One Money,
+son los que vos has estado trabajando ahora últimamente, los dos que actualizaste,
+y el de Bolivia que sacaste hace poco con el Forerunner.
+El formato anterior, ¿sí?
+Una vez que tengamos eso, ahí lo que hay que hacer es, ¿cómo se llama?
+Ahí lo que tenemos que lograr y lo que tenemos que hacer es decir, bueno, perfecto,
+ahora vamos a mirar el de Bridge.
+El de Bridge es una cosa verde, es uno verde, feo, no sé si te acordás, Kike,
+pero es uno que quedó con un fondo verde.
+A ver si tengo...
+La espalda.
+Bueno, ayer salí a correr con lluvia a las 12 de la noche, precioso, la verdad.
+Me sentí un gurí.
+Hoy me duele toda la rodilla, ¿no?
+Pero me sentí...
+6 kilómetros, me metí.
+Vengo dos días de 6 kilómetros.
+Ahí por la bomba.
+Sí, sí, sí, por la rambla.
+Por la rambla, no, por el canterito.
+¿Y qué más?
+No, estuvo bueno.
+Bueno, la verdad, estuvo muy bueno.
+Estaba lloviendo y dije, no, a mí no me para nadie.
+A ver, acá, mirá.
+Acá, mirá.
+Ahora que tengo muchas cosas, tú, mirá.
+Acá.
+Enanos 2.0, listo.
+Pa, tenemos recibos.
+Los nuevos están más lindos.
+Sé que lo actualizamos en algún momento, no me acordaba que lo habíamos actualizado.
+Pero pará.
+Pero tenemos...
+A ver si tengo alguno viejo en verde.
+O este cliente es bastante viejo.
+A ver si tenemos alguno viejo en verde.
+¿Algún viejo verde?
+A ver este.
+No.
+Ven que son así.
+Estos son los de Bridge.
+Sí.
+¿Ya?
+Que corresponden a este flujo.
+Es una transaction.
+Miren los estados de cuenta.
+A ver cómo funcionan.
+Estos estados de cuenta hay que matarlos.
+Hay que alistar las transacciones, ¿no?
+No había quedado tan mal esto, ¿eh?
+Comparado con lo que sacamos ahora, una mierda, pero digo...
+Mirá.
+Mirá.
+Mirá los números.
+Mirá los números, cómo lo mostramos.
+La concha de la madre.
+O cómo...
+Está bueno porque vemos un progreso enorme, ¿no?
+Entre esto y después este módulo, ¿no?
+O sea, yo veo esto.
+Que no está mal, ¿eh?
+Ojo.
+No está mal, ¿eh?
+No lo tiremos abajo.
+Pero veo esto.
+Mirá.
+Extracto bancario.
+Mirá lo que es esto.
+Por cuenta.
+No sé si tiene alguno solicitado.
+Tiene dólares.
+Mirá, lo descargó al toque.
+Mirá lo que es esto.
+A ver qué dicen.
+Mirá.
+Mirá.
+Mirá.
+Mirá.
+Mirá.
+Mirá.
+Mirá, mirá.
+Adimex.
+No sé que esta tiene...
+Esta hija de puta no tiene Customer Bank.
+¿No tiene transacciones en dólares?
+Ah, no.
+Porque es el mes 6.
+En mayo sé que no tiene transacciones en...
+¿A ver, me va a dar un microinfarto?
+El 5 no tiene transacciones.
+No, no tiene.
+O sea, que si genero un extracto bancario de abril, ¿centa dólares?
+Ah, mirá.
+Mirá lo que es esto.
+Miren la diferencia, ¿no?
+Es un despelote
+Pinti miedo
+Un poco la dimensión que ha tomado
+Todo
+Ah da miedo
+Por eso somos un equipo tan grande
+Cada vez va a crecer más
+Y ahora Matías todavía
+Se nos fue dropi
+Pero Matías está viendo de meter varios dropi
+Imaginate mantener todo esto con 5 dropi
+O sea
+Pero bueno está
+Está lindo ver como crece esto
+La verdad está lindo
+Yo le mandé tareas de front a Tato
+También como para que haga un poco de tiempo
+La que le voy a decir justo eso
+Espera
+Podemos atacar esa consulta justamente
+Está perfecto
+Sí sí sí
+Lo primero era para aclarar
+Lo de los extractos
+Entonces enviemos en dos PRs
+Una cosa es el recibo de bridge
+Enviémoslo por un lado
+Y otra cosa es este recibo
+Separemos los en dos
+Y enviemos los por dos
+O sea
+Dos PRs
+Dos PRs distintas
+Y ataquémoslo como en dos casos distintos
+Pero recordá ahí
+Por eso yo me confundí
+Cuando vi ese mensaje dije
+Vamos a aclarar una reunión
+Porque capaz que no quedó claro
+Bridge funciona distinto
+Y no funciona bajo el esquema de OTC transaction
+No funciona bajo el esquema de OTC genérico
+Funciona bajo el específico
+Bridge va a seguir funcionando así para persona
+Pero nosotros
+La función de bridge de empresa
+Lo que tenemos que hacer es migrarla
+Para dentro de la empresa actual
+Entonces la idea es que
+Todos los usuarios que tenían
+La cuenta de bridge
+Pasen a tenerla adentro de empresa
+Sí
+O sea es un poco el objetivo
+Entonces vos
+Como seleccionás el banco
+iMart, HSBC, JP Morgan
+Vas a seleccionar
+Lead bank
+Que es el de bridge
+¿Está?
+Y vamos a sacar la opción
+Lead bank
+Entonces
+En nuestro módulo de empresa
+Vas a poder seleccionar el banco que quieras
+¿Sí?
+Que eso es un poco la
+La tarea después de lo que es
+Compra interna
+Pregunta
+Hoy en día en sí
+Las facturas estas de bridge
+Hasta que no tengamos la integración
+Como tercer proveedor en sí
+Solo las pueden generar desde
+Los que tengan
+Desde la tabla de
+Como teníamos ¿no?
+Como hoy en día tenemos
+O sea
+La factura de bridge
+Generar estado de cuenta
+No, la factura de bridge
+Se genera por su flujo de bridge aparte
+Mirá acá tenemos la factura de bridge
+Mirá acá tenemos la factura de bridge
+Mirá acá tenemos la factura de bridge
+Este cliente está muy bueno
+Para poder volver a Babu
+Para que quede claro
+O sea
+Vos acá tenés empresa
+Y tenés extracto bancario
+Y todo esto es un módulo genérico
+Fijate que vos acá también tenés
+JP Morgan
+O sea es como que cambias de banco
+Es como que tuvieras
+Pero esto es One Money Rail
+Exacto
+Bridge hoy en día funciona con su módulo
+Custom de bridge
+Que es de persona
+Y nosotros para bridge en su momento
+También teníamos el módulo de empresa
+¿Qué pasa?
+Nosotros bloqueamos las solicitudes de empresa
+Ya no podés solicitar
+Empresa como bridge
+La idea es que si vos querés venir como empresa
+Venís y trabajás con One Money
+Pero hay gente que sigue queriendo tener bridge
+Entonces la idea es tener bridge
+Dentro del módulo de empresa
+Porque bridge permite ciertas cosas
+Y seguimos moviendo plata
+Pero un usuario nuevo
+Nunca va a tener esta opción de lead bank empresa
+Porque la idea es que si vos querés
+Registrar tu empresa
+La registrás directamente en el módulo de empresa
+Y si vos querés registrar persona
+O sea si vos querés hacer movimientos
+Individuos
+Como persona
+Tenés también tu módulo de bridge
+Exclusivo acá
+Lo que va a pasar acá
+Para que vos lo tengas en claro
+Va a quedar persona
+Pero todos estos usuarios viejos
+Que tienen lead bank como empresa
+La idea es migrarlo para la parte de OTG
+Pero hoy en día desde el front
+No tenemos manera de generar
+Bueno en realidad para ninguno
+Bueno si no por eso
+No tenemos manera de generar
+Como tenemos hoy en día el extracto particular
+Hacemos estado
+Que si mal no recuerdo
+Te genera un estado genérico
+O sea el status de bridge
+Se genera 100% en front
+Es una reverenda mierda
+O sea literal agarra todas las transacciones
+Y lo genera 100% en front
+O sea este general está
+Eso es lo que queremos cambiar
+Para que muestre
+El número de cuenta completo
+O no
+Lo que queremos cambiar para que muestre
+El número de cuenta completo son las facturas
+Por ejemplo mira acá
+Este recibo
+Este recibo por ejemplo ves acá
+Que está mostrando los números de cuenta
+Ambos números de cuenta
+Lo está mostrando con asterisco
+Claro pero no tendrían que ser los tres
+Rail o money y bridge
+Que es lo que pasa
+Le dije a Enrique que lo tome como dos módulos aparte
+Estos estados de cuenta
+Si por ejemplo mirá vamos a ir a minera
+Corté esto rico
+A ver este
+Por ejemplo acá tiene el recibo
+Chanti
+Si
+Lo que sucede es
+Que en los tres casos esos de rail o money
+Nosotros tenemos el número de cuenta
+Pero espero lo buscamos
+Lo ocultamos
+El caso aparte que es bridge
+Hay un trabajo extra porque nosotros
+No estamos guardando el número de cuenta
+No lo tenemos
+Creo que en algún momento nos llega
+Pero no nunca lo guardamos
+Entonces ahí requeriría como un
+Paso adicional digamos
+Porque no es desenmascarar
+Es ahora
+Obtenerlo y mostrarlo
+Claro yo no sé si es que bridge
+Te lo dan mascarado o que nosotros lo mascaramos
+Pero por eso yo le decía a Enrique
+Marti que se centre en
+Estas facturas del módulo
+De empresa no del módulo
+De persona
+Sino del módulo de empresa
+Claro pero a lo que voy yo
+Es que hoy en módulo de empresa tenemos
+De bridge
+No Marti no
+De repetir la pregunta
+Entiendo la edición pero lo que voy
+A decir es
+Hoy en día el recibo de bridge
+Como lo obtenes desde el site
+Es posible
+El recibo de bridge entras al módulo de persona
+Que es todo esto viejo
+Y acá tenés en ver detalles
+Con el recibo
+Pero se genera con otro evento
+Se genera con un evento exclusivo de bridge
+O sea que no acepta genéricos
+No tiene adapter no tiene nada
+Es como exclusivo de bridge
+Solo para bridge
+Pero eso lo queremos cambiar cuando lo integremos
+Para lo
+Para
+Para
+Para
+, estamos tocando dos cosas distintas
+Estás mareando un poquito
+No quiero mezclar a Enrique
+Una cosa es
+Una cosa es
+Lo que tiene que hacer Enrique
+Enrique lo que tiene que hacer ahora es
+Atacar el módulo de empresa
+Con los eventos de las facturas que trabajó
+De sofuscar
+El número de cuenta
+Y después intentar hacer lo mismo
+Para el módulo específico de bridge
+Para el evento que genera de bridge
+Analizar si puede hacer lo mismo
+Y después
+O dónde es que nosotros lo estamos sofuscando
+Para que a partir de ahora
+Lo dejemos de ofuscar
+¿Está?
+Porque tampoco es algo que
+Eso sí
+Yo pensé que
+Estaba por eso
+Lo que tiene prioridad hoy en día
+Es lo de empresa
+Pará, escáme a terminar Marti
+Por favor
+Lo importante acá es
+Quique
+Que analicemos
+A ver si se está
+O sea una vez que vos
+Primero
+Concentrate en terminar el flujo de empresa
+Que es el que nos está pinchando el orto
+¿Está?
+¿Sí?
+Que eso sería desofuscar
+Y ya está
+Y salimos a producción
+¿Está?
+Esas facturas
+Las desofuscamos
+Y salimos a producción
+El segundo punto
+Esto
+Habría que ver
+Si lo está
+Dónde se está ofuscando
+O directamente
+Está llegando
+Porque
+El análisis que vos tenés que hacer es
+Hay un webhook
+Que recibe estas
+Bank crypto
+Transaction
+Que recibe esa cuenta
+Y yo espero
+Le rezo a Dios
+Que nosotros lo estemos ofuscando ahí
+Cuando lo guardamos
+En la base de datos
+¿Está?
+¿Sí?
+Pero habría que verlo
+Sí, Quique
+Creo que no lo
+No lo guardamos
+El número de cuenta
+En la base de datos
+No lo guardamos
+O sea, ¿y dónde lo
+¿Dónde lo obtenemos ofuscado así?
+Porque hay un lugar
+Donde lo tenemos
+O sea, hay un lugar
+Donde lo tenemos así
+Este es de Bridge
+Sé que lo agregue
+Ahí no lo estamos ofuscando
+Esos asteriscos
+Los agregamos
+Tipo
+Solo mostramos
+Los últimos cuatro
+Que es lo que tenemos
+El único que tenemos
+Si no me equivoco
+Ya
+Hagamos una cosa
+Déjame que yo me ponga
+Yo me encargo de eso
+Vos concentraste
+En los tres primeros
+Y yo me encargo
+De averiguarte eso
+A ver si lo estamos ofuscando
+¿No?
+¿Está?
+Y yo te digo
+Qué hacer con Bridge
+Igual Bridge
+No es prioritario
+¿Está?
+O sea, lo importante
+Son los primeros
+Sigue siendo
+Ya tengo en realidad
+La PR
+Que la mandé a Inter
+Con estos tres casos
+Me faltaría
+En realidad
+Grabar
+Vi que me faltó un video
+Grabar un video
+Pero
+No sé si la mando a Inter
+O si ustedes la quieren
+Dado la urgencia
+No, no, no
+Mandalo a Inter
+Que siga el flujo
+Que siga el flujo
+Obvio
+Que siga el flujo
+Ahora en la Daily
+Volví a pedir
+Que la revisen
+Pero que siga el flujo
+Y este caso de Bridge
+Lo metemos
+¿Está?
+Ok, queda aparte
+Bien
+Después
+¿Está?
+Ahora Marti
+Discutimos lo otro
+Porque
+Tampoco quiero marear a Kike
+La
+Yo me quedo acá
+El otro punto
+Es con respecto
+A lo que mandó en Kike
+De los emails
+El
+End to end
+A partir de ahora
+Con responsabilidad
+Lo pueden usar todos
+¿Está?
+Porque es la mejor
+Mejora
+Mejor manera
+De probar
+¿Sí?
+Al final del día
+¿Sí?
+Porque si no
+Nos pasa que nosotros
+Sacamos los correos
+Y cuando vamos a sacar
+Un correo
+Vemos que no tiene
+Nada que ver
+En el proveedor
+De Outlook
+Gmail
+O lo que sea
+¿Está?
+O sea
+O lo probamos
+Solo contra
+Mailinator
+Que era una mierda
+Entonces al final
+Nuestra calidad
+De correos
+Es una cagada
+Entonces ahí Enrique
+Que vos vas a estar
+Liderando toda esta parte
+Está bueno que tanto vos
+Como Tatato
+Como cualquiera
+Que toque un correo
+¿Está?
+O sea es importante esto
+Que utilicen
+Que utilicen el flujo
+O sea yo creo
+Que lo había dicho esto
+Pero por las dudas
+Le hago súper énfasis
+Usemos todos
+El flujo
+End-to-end
+El correo
+Que envíe el
+No-reply
+Y chequearlo
+Con varios proveedores
+O sea mínimamente
+Gmail Outlook
+¿Está?
+Mínimamente
+Pero hay que hacer
+Un cambio
+O poder
+O sea no hay ningún riesgo
+En cuanto a que lo usen
+Libremente
+El riesgo hay
+En que sean
+Unos pelotudos
+Ustedes
+¿Está?
+O sea con todo respeto
+El riesgo hay
+En que sean
+Unos idiotas
+Y envíe
+Y se pongan a enviar
+Diez mil correos
+Ahí me va a saltar
+Quien lo hizo
+Y le voy a pegar
+Una meada
+Cachina
+No pero
+Nosotros
+O sea si no me recuerdo
+Podés cambiar el correo
+En tu
+No porque usás
+El correo
+De ese
+Y está bien
+Que use
+O sea
+Lo más sano
+Es que pruebes
+El flujo
+Lo más
+Pero lo podés
+Jarcodear
+Y que te llegue
+El tuyo
+Ah no
+Si podés
+Jarcodear
+Que te llegue
+El tuyo
+Digo pero que
+Que use el correo
+El sender
+La persona
+El correo que envía
+Que use el de Dahan
+Si usan el flujo
+Lo más similar
+A producción
+¿Se entiende?
+Ah pero no le llega
+A nadie de producción
+¿No verdad?
+No no no no
+Lo que estamos
+Antes lo que hacíamos
+Con Enrique
+Es en vez de
+Utilizar
+A SS
+Que es el proveedor
+De Amazon
+Para enviar correos
+Lo que hacía Enrique
+Era generaba
+El HTML
+Este
+Regeneraba
+El HTML
+Obviamente que el problema
+Que teníamos con eso
+Era que el HTML
+Que generaba
+¿Está?
+No era
+Nada que ver
+A lo que
+Después se terminaba
+Plasmando en el proveedor
+Concreto
+En Gmail
+Outlook
+No se veía bien
+Entonces
+Con Enrique
+Encontramos una vuelta
+De tuerca
+En cuanto a permisos
+WS
+Hace un tiempo
+Para que Enrique
+O quien
+Cualquier desarrollador
+En dev
+Pueda agarrar
+Y enviar correos
+¿Está?
+Usando SS
+Entonces literal
+Lo que Enrique hace
+Cuando trabaja
+En el worker
+Y Fernando
+Y todos deberían hacer
+Es este
+Y es más
+Para especializarme
+Especificarlo
+Quique
+Vamos a enviar
+Te pido que si puedes
+Armarte una pequeña guía
+De cómo probarlo
+¿Está?
+Capaz que con algún videito
+Esto ya que
+Que hagas la parte
+De worker
+Subía developer
+Cómo
+Cómo enviar correos
+¿Está?
+O sea
+Probando con Outlook
+Y Gmail
+Eso estaría genial
+Porque así ya queda
+Un
+Queda una guía
+De cómo hacerlo
+Porque ahora
+Nahuel y Jonathan
+Van a tener que trabajar
+En unos correos
+En particular
+De configuración
+Mientras que ustedes
+Migran todos los otros
+Y estaría bueno
+Que trabajemos
+Todos
+Bajo la misma norma
+¿Cuál es la idea
+Y Marty?
+Que utilicen directamente
+El código que está
+Con la menor cantidad
+De cambios posibles
+Diferencia
+A lo que está en producción
+Para poder testear
+Directamente
+Si es posible
+Ningún cambio
+Sería lo ideal
+¿Está?
+Y que ahí prueben
+Con distintos proveedores
+Que es lo mismo
+Que va a ver el cliente
+Entonces ahí
+Vamos a tener
+En cuanto a diseño
+Lo mismo que ve el cliente
+¿Está?
+Y ese es el objetivo
+Entonces
+Obviamente
+Que aclarar
+Que hay
+Que si querés
+Fuera de almuerzo
+Armate
+Cuando ya hagas
+Esos videos
+¿Está?
+Para estos test
+Que vas a hacer
+Cuando hagas
+Estos videos
+Que ya vas a hacer
+Lo que te pido ahí
+Quique
+Es que ya te hagas
+Lo hagas como medio
+Video tutorial
+¿Está?
+Subí esos videos
+Mismos a la PR
+No pierdas tiempo
+Digo pero
+Hacelo corte
+Medio video tutorial
+Y en el texto
+Recalcá
+De la importancia
+De bueno
+¿Está?
+No se pasen con esto
+Por el tema de costos
+Que queda todo trackeado
+¿Está?
+Entonces no se pongan
+A enviar
+O sea que lo hagan
+Con responsabilidad
+Un uso con responsabilidad
+Es como la VPN
+Ah si no la estás usando
+La pagás
+¿Está?
+Sí
+Ok
+Bien
+Eh
+Bien
+¿Está?
+Marti
+Ahora
+Lo aclaro para los dos
+¿Está?
+O sea para que quede claro
+Nosotros antes
+Tapan empresa
+Nosotros antes teníamos
+Lead Bank y persona
+¿Sí?
+¿Está?
+O sea en realidad
+Antes teníamos
+Empresa
+Y persona
+Ambos
+Para hacer todo
+El know your business
+O sea dar el conocimiento
+Del negocio
+Se presentaban
+100%
+Con
+One more
+Con Bridge
+¿Está?
+Que es el proveedor
+Entonces se presentaban
+100% con Bridge
+Nosotros no teníamos
+Ninguna información
+Y Bridge
+Nos robaba
+Toda la información
+Tanto a nivel
+De la persona
+Pero mucho más importante
+Bridge tenía
+Toda la información
+De la empresa
+¿Se entiende?
+¿Se entiende?
+La gravedad
+De eso
+Nosotros no teníamos
+Ninguna información
+Frente a un ente legal
+De todo el conocimiento
+De una empresa
+Solo la confianza
+De Bridge
+Que nos decía
+Está todo ok
+¿Está?
+¿Se entiende
+La gravedad
+De eso?
+¿Está?
+O sea
+A nivel institucional
+Es una cagada
+Y también
+Hace que estemos
+Bridge nos tenía
+Agarrado de las dos bolas
+Y cuando venía
+Un cliente grande
+Una de las cosas
+Que podía pasar
+Era que Bridge
+Se contactara
+Con ese cliente grande
+¿Está?
+Y nosotros no teníamos
+Y nosotros
+Si quisiéramos pelear algo
+No sabíamos
+Ninguna información
+Del cliente
+¿Está?
+¿Se entiende el problema?
+O sea
+Y también frente a un ente legal
+Nosotros no teníamos
+Ningún control
+De ese flujo
+¿Sí?
+Para persona
+No nos rompe las bolas
+Porque la persona
+Puede mover muy poca plata
+Como podrán ver
+15 mil dólares
+Esto y lo otro
+Capaz que hay un caso puntual
+Donde se le habilitó
+Mover un poco más
+Pero
+No son movimientos
+O sea
+No es lo normal
+Que la gente
+Entre como persona
+Lo normal
+Es que la gente
+Entre como empresa
+¿Está?
+Entonces lo que nosotros
+Hicimos fue crear
+Con Rail
+Este módulo de empresa
+Donde cambió
+El formato
+Y también a nivel
+De base de datos
+Nosotros establecimos
+Todo un Know Your Business
+Propietario nuestro
+Donde nosotros
+Recabamos toda la información
+Y las transacciones
+Y las cuentas
+Intentamos guardarlas
+A nivel genérico
+¿Sí?
+O sea
+Si vos ves una OTC
+Transaction
+Vos a no ser
+Que filtres
+Por producto
+O la tengas muy clara
+No sabés
+Si es de Rail
+O One Money
+Tenés que ponerte a mirar
+Algunos campos
+Que son custom
+De cada uno
+Y ahí decís
+Ah mirá
+Esta es de Rail
+Y esta es de One Money
+Sería como
+Estas transacciones
+De Itaú
+O estas transacciones
+De Santander
+¿Sí?
+¿Hasta ahí venimos bien?
+Sí
+¿Está?
+La idea
+Es que a partir de ahora
+El cambio
+Que vos vas a hacer
+Marti
+Que es lo que
+Es la tarea siguiente
+Que tenés asignada
+Es que
+Es que Bridge
+Pase para dentro
+De este flujo
+Entonces
+Viste que vos acá
+Seleccionás banco
+General
+HSBC
+JP Morgan
+Lo que vos vas a trabajar
+Martu
+Es
+Que esto se pase
+Para acá adentro
+Entonces ahí nosotros
+Vamos a sumar
+Otro proveedor
+Entonces
+Vamos a desaparecer
+Esta opción
+De Lead Bank
+Acá
+Va a desaparecer
+De la faz de la tierra
+Y todos los clientes
+Lo primero que vamos a hacer
+Es que todos los clientes
+Viejos
+Empiecen a operar
+La sección
+De empresa
+De Bridge
+Dentro
+De empresa
+Entonces
+Ya no va a existir
+Esta opción
+De empresa
+Persona
+Y los viejos
+Lead Bank
+Que tiene
+Fíjate que Lead Bank
+Tiene esta
+Esta interfaz
+Que es distinta
+Sino que nosotros
+Vamos a migrar
+Todo para acá adentro
+¿Sí?
+Es un poco eso
+Ese es el cambio
+Radical
+Que nosotros vamos a hacer
+Vamos a meter
+Todo Lead Bank
+Para adentro
+Y a partir de ahora
+Todos los nuevos clientes
+Que entren de la parte
+De Bridge
+Lo van a hacer
+100% del flujo
+Con nosotros
+¿Está?
+Entonces
+Ya Bridge
+Lo único que hacemos
+Es enviar la información
+Después que nosotros validamos
+Que está todo ok
+Está todo bien
+Bla, bla, bla, bla, bla
+Este
+No hay ningún problema
+Y también
+Lo que nos permite
+A nosotros
+Es la masa
+De transacciones
+Tenerla en una sola tabla
+Que es OTC Transaction
+Hoy en día
+Nosotros
+Si vamos a las gráficas
+Tenemos las de
+Rayleigh One Money
+Que las tenemos catalogadas
+Pero Bridge
+Están en una gráfica aparte
+Porque es una tabla aparte
+Y Bridge
+Tiene sus flujos de mierda
+Aparte
+La idea es que a partir de ahora
+Eso se terminó
+Bridge
+Tiene todos los flujos
+Este
+Internos
+Hacia nosotros
+Obviamente
+Que es un desafío
+Agregar Bridge
+Para acá adentro
+Porque Bridge
+No funciona
+Con distintas cuentas
+Sino que Bridge
+Tiene un único balance
+Entonces
+Va a ser un desafío
+Y el otro problema
+Es que Bridge
+Agrega funcionalidades
+Por ejemplo
+Los tipos de cambio
+Bridge
+Los agrega
+Entonces cuando vos
+Seleccionás Bridge
+Tenemos que ver
+Cómo podemos
+Mostrar esos tipos
+De cambio
+Ahora probablemente
+Tengamos que agregar
+Una card más acá
+Para mostrar
+Los tipos de cambio
+Y también
+Y Bridge
+Tiene la opción
+De liquidation address
+Entonces
+Que es algo
+Igual eso
+Lo podemos ver después
+Si si
+No no no
+Es nomás
+Para que
+Primero para que
+También Kike
+Esté al tanto
+Ya que estamos
+Y seguramente
+Para que lo
+Para que lo
+Entiendamos
+Porque tenemos
+Que emigrar
+Bien
+Porque estos paneles
+Normalmente
+Ustedes no tienen
+Mucha
+Bueno más que nada
+Kike no tiene
+Tanta visibilidad
+Entonces está bueno
+Que los
+Que los vea
+¿No?
+Este
+Pero bien de bien
+Vamos a pasar a la daily
+Porque si no
+Se va a enojar
+La gente se va a enojar
+Vamos a pasar a la daily
+Aquí estamos
+Bueno agradezco
+De mi lado
+La información
+La verdad que esto
+Aclara bastante
+Bueno
+Mandale a verte
+El orto
+Entonces Kike
+Bueno
+Entonces te quedo pendiente
+De esas dos cositas
+¿Tá?
+O sea
+La PR de eso
+Yo miro lo de Bridge
+Y te digo cómo proceder
+Y después tenemos lo otro
+Ok
+Buenas

@@ -1,0 +1,145 @@
+Sin embargo, si vos pusiste un comentario,
+Enrique ya no puede mergear hasta que vos no lo apruebes,
+por más que yo lo apruebe.
+O sea, yo solo puedo mergear forzado,
+pero Enrique no puede mergear hasta que yo lo apruebe.
+Hasta que vos lo apruebes.
+O sea, en realidad, un momento...
+Y también hay un tema.
+Como en realidad yo lo aprobé,
+pero faltás vos.
+También hay otro tema.
+Ponele que vos no lo hubieras aprobado,
+pero también hay otro flujo,
+que es, por ejemplo, que si él actualiza de velo,
+ponele que los dos lo aprobamos,
+pero él actualiza de velo,
+necesita que al menos uno de los dos lo apruebe.
+En mi caso, yo...
+Pero está, o sea, que si vos, por ejemplo,
+algo que está bueno en ese flujo,
+es más, es todo programación defensiva
+o acciones defensivas, ¿no?
+Porque de alguna manera es, bueno,
+vos subís un commit nuevo,
+está, te bloqueo la perra.
+Entonces ahí no podés mergear nada
+hasta que me avise, che, mirá, solucioné los conflictos.
+Y eso hace también...
+O sea, por un lado es porque uno de repente a veces cansado
+puede mandarse un error.
+Y por otro lado, que garantizamos que siempre,
+sí o sí, estén los chequeos correspondientes
+a la hora de mergear.
+¿Está? O sea, de nuevo, todo lo que hablamos.
+O sea, todo este tipo de estrategias nos ayudan
+a que nosotros, por más que estemos cansados,
+por más que hagamos las cosas rápidas,
+por más que creemos una perra o lo que sea,
+tenemos ya las programaciones para que nos defiendan.
+Por eso también la importancia de que, bueno,
+que empiece a andar el worker, ¿sí?
+¿Sí?
+Es el único sitio, sin contar Calendly y Regresión,
+que en realidad no tienen test automáticos.
+Pero de los tres sitios, que son como los más
+que estamos trabajando,
+son los...
+O sea, los tres sitios tienen el mismo tema
+de que en realidad...
+¿Cómo se llama?
+No tiene el...
+Ah, no me sale la palabra.
+Los tres sitios en realidad tienen el...
+¿Cómo se llama?
+Tienen los test automáticos.
+Entonces en sí el worker es el único que está faltando.
+¿Va?
+Entonces también la importancia de, bueno,
+de armar un set de test válido para poder ejecutar.
+¿Sí?
+Así que Martu, cuando podés ir a...
+Y fíjate esas PRs,
+voy a dar una revisada ahí,
+si falta tu approve en alguna de esas PRs.
+Y también Quique fue mandando.
+Yo le fui dejando los approve en alguna.
+En esas de resolución de conflictos,
+si yo te dejo el approve
+y Martu ya te había dejado el approve,
+ya podés mergear.
+O sea, si...
+O sea, lo que voy es...
+Si Martu te dio el approve,
+pero vos solucionaste conflictos,
+te va a bloquear.
+Pero cuando yo te apruebo,
+ya basta.
+Ahí no esperes por Martu.
+Solo esperá por Martu en las PRs que te obligue.
+¿Está?
+Está todo programado para que automáticamente te obligue.
+Y yo, cuando apruebo...
+Si yo te apruebo la PR,
+quiere decir que podés mergear.
+En cambio, si yo...
+Lo que yo hago cuando no...
+Cuando quiero esperar por Martu,
+es pongo un comentario por Martu.
+Entonces ahí aprueba Martu,
+y después me avisan y apruebo yo.
+O sea, que de alguna manera,
+si vos tenés el derecho a mergear,
+y te aparece en verde a mergear,
+él quiere decir que podés mergear.
+¿Bien?
+Bien.
+Martu.
+Bien.
+Está.
+Bueno.
+Entonces,
+ahí nos vas avisando eso,
+y si querés,
+analizate un poquito lo de Worker,
+y si querés,
+en unos 30 minutos nos juntamos,
+Kike, o algo así.
+¿Te parece?
+Ok.
+O sea,
+intentá armar un poquito más lo de las PRs,
+a ver si podemos,
+si podemos liquidar alguna más,
+y...
+Este...
+Y también tomate unos minutos
+para bajar a tierra
+todo lo que tenés del Worker,
+lo que tenés,
+los comenta acá,
+y si tenés dudas,
+nos juntamos.
+¿Vale?
+Ok.
+Perfecto.
+Bien.
+Bueno.
+Este...
+Nada, nada.
+Van a haber deploys a...
+A producción y eso,
+pero no debería haber problema
+ni interferir con nada.
+¿Sí?
+Bien.
+Eso.
+Ok.
+Bueno.
+Estamos a la hora.
+Bueno.
+Estamos a la hora.
+Hasta luego.
+Hasta luego.
+Chau.
+Esto quedó bien.

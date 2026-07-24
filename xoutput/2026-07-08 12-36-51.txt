@@ -1,0 +1,1407 @@
+Tengo que cerrar el sprint
+Tengo que enviar la PR del chatbot
+Que es lo que me está quedando
+No sé, hay
+Hay varias PRs, pero
+No sé si hay algo bloqueante
+Que está a medias
+Ahora lo vamos viendo, porque deberíamos hacer una salita
+Suave a producción
+Para terminar de probar esto
+De lo IDC
+Y la parte de PIX
+Que ya está en PROD
+Y después bueno, sigo con lo de
+Lo de AFI
+Después hay
+Esta tareita, la idea era probarlo
+En PROD
+Pero ahí Marti
+Estuvo haciendo unos tests, así que dependiendo
+De lo que me diga, ya la cierro o no
+Enrique
+Bueno, yo estuve con toda la parte
+De correos
+Hay allí algunas
+Obviamente tareas importantes que están
+Allá surgió comentario, por ejemplo
+De Martín hace un rato, así que ahora voy a estar con eso
+Obviamente, pero bueno, mientras tanto
+Estaba con toda la parte de correos
+Que ya tenemos varios allí que están aprobados
+De lo que es la parte de diseño
+Que ya estamos empezando a implementar
+Lo que es el de cuenta bloqueada
+Ahora el de bienvenida, que ya lo estoy por mandar
+A diseño
+Así que bueno, estuve también
+Con CodeReview justamente
+De algunas tareas de correos
+Que allí yo les
+Indicaba a los muchachos el tema ahí
+Del footer
+Así que nada, la idea es seguir
+Obviamente ahora con lo que es prioritario
+Estas tareas que estaban por cerrarse
+De configuración de Whatsapp y demás
+Ya vi que están surgiendo comentarios
+Así que la idea sería seguir con eso
+Y después con correos
+Y al mismo tiempo tenemos ahí press
+Y tenemos un montón de cosas para trabajar
+Así que la idea es seguir con todo eso
+Básicamente
+Bien, bien
+Tato
+Primero te mando acá
+Porque
+¿Qué es lo que estás haciendo?
+Quedó una tarea que fue marcada
+Como mergeada
+Pero no fue mergeada
+Me cuenta cuando la fui a testear en
+¿Dónde mamá?
+Te mando en uno
+Ahí te llevo
+Está marcado
+El merge
+Pero está
+Eso nomás
+Después
+Estuve corrigiendo esas tres
+Del back office
+Ahí quedó mergeada
+Se va a la guiada
+Estuve
+Bueno, estuve un buen rato
+Analizando el falso error
+Que después no era
+No era error
+Pero
+Ah
+No, me olvidé de mandarle
+Mensaje que
+Pediste que le mandara
+A Santiago Pantin
+Así que ahora
+Ahora te mando un mensaje
+Ahora te mando un mensaje
+Ahora te mando un mensaje
+Y ahí está
+Estuve también
+Haciendo review de PR
+Para descongestionar un poco
+Intem
+Y estuve con las correcciones
+De los correos
+Y falta un poco de
+La evidencia de Intuen
+Y también estuve ya haciendo
+La
+¿Cómo es?
+La propuesta de puntos
+Que tengo que llegar a 65
+Por los dos días que no estuve
+Así que
+Es una más
+Bien, perfecto
+¿Están?
+Buenas
+Bueno, yo por mi lado estuve
+Haciendo un posteo de story
+Para el evento de Bolivia
+Y ahora estoy haciendo otro
+Después estuve
+Revisando
+Un diseño que me mandó
+Santiago
+De un mail
+Hoy estuve actualizando
+Todo lo que estaba haciendo
+Los footers
+De los mails
+Que hay en Figma
+Que ahí me avisó Enrique
+Y después estuve revisando
+También la PR de Enrique
+Que ya la dejé aprobada ayer
+Y nada
+Voy a seguir trabajando en esto
+En el posteo este que me pidió
+Marketing
+Y bueno
+Ya pasé también a
+La continuación de la landing
+La mandé a
+El canal de solicitudes
+Y ya la dejé ahí
+En Github
+Así que
+Eso por mi lado
+Bien, hoy vamos a cerrar el sprint
+Así que
+Yo los voy a estar contactando
+Ahora luego en el almuerzo
+Si hay algo que está faltando
+Lo que sea
+Pero ya fui aprobando
+Varias solicitudes
+No cierren tareas
+Que estén relacionadas al nuevo sprint
+A lo que sería el sprint
+En 45
+Bien
+Bueno, eso
+Jonah
+Bien
+Nada, yo hoy de mañana estuve ya
+Pasando todo a Don Continuation
+Relacionando ahí todas las tareas
+Creo que lo único que falta
+Es la de Core Review nomás
+Pasarla y ya quedaría en 75
+El sprint
+Ya quedó todo prolijito
+Y bueno, ayer empecé con todo lo del chatbot
+Ya estoy metiéndole a eso
+Y ya creé todas las tareas
+Lo único que me está faltando ahí
+Es tipo un parent
+Para lo del chatbot
+Que creo que no tenemos
+O sí
+No sé si
+Excelente pregunta
+Para ya agregarles
+Excelente pregunta
+Porque vi que había
+Pero chatbot design
+No sé si de
+Listo, ahí quedó
+Bien
+Y nada, después también ahí
+No sé, estuvimos ahí corrigiendo
+Entre todos ahí
+PRs internas
+Vi que tengo
+Algunos comentarios
+Que ya me dejaron ahí
+Los chicos
+Y nada, vi ahí también
+Tus comentarios
+En las PRs del worker
+Y eso ha sido
+Así que estoy
+Mientras voy haciéndolo
+Del chatbot
+Voy corrigiendo ahí
+Comentarios y eso
+Así que voy a estar con eso
+Mi consulta es
+La PR del
+Del iconito
+¿En cuál se va?
+Esa está
+En Inter
+Que tengo ahí
+Unos comments de Fernando
+Ya una vez pasa a Inter
+Ya pasaría a pull request
+Que tiene eso
+Tiene ahí unos ajustes
+De los errores
+De validaciones
+De teammates
+Y algunas otras cositas también
+Bien
+Yo decía en mobile
+Cuando se abre el data center
+Como que el espacio
+Que va a ocupar el Drawer
+Se muestra blanco
+Es raro
+Pero cuando estás en el dashboard
+Internamente
+Viste que se pone
+Como un fondo borroso
+En el mobile
+Ahora de última
+Lo podemos ver
+No estoy pidiendo loguearme
+Pero
+Cuando levantás el Drawer
+En el dashboard
+En mobile
+Ese pedazo del Drawer
+Se muestra abajo blanco
+Entonces te muestra
+Es como que raro
+No entiendo por qué no
+El fondo de abajo
+No ocupa todo
+Pero bueno
+Está bien
+Bien
+Si lo podemos mirar
+No lo pude
+No pude reproducir
+Eso
+Ahora
+Ahora sí
+Ya entendí lo que dijiste
+Es el dashboard
+Lo abrís
+Son segundos
+Son segundos
+Pero no entiendo por qué paso
+Si
+Ya lo vi
+Dale
+Si
+Ya lo puedo atacar
+En esa misma PR
+Mientras estoy corrigiendo
+Los comentarios
+Y ya lo mando en eso
+Dale
+Genial
+Vamos arriba
+Nahue
+Yo ya le hice el spray
+Con el tema
+De la propuesta
+Y ya lo hice
+Como es
+Ahora estaba
+Probando
+El tema
+De cambio de email
+Este
+Como es
+Todavía no logré
+Reproducir el issue
+Pero investigando
+O sea
+Te deja bloquearte
+Sin problema
+Si
+Este
+Incognito
+Aparecía el usuario
+Mati
+Como que había forzado
+El cambio de contraseña
+Y él decía
+Que no le llegaba
+El mail
+Pero a mí me llega
+El mail
+A mi cuenta de Dazban
+Me llegó un mail simple
+No es el mail
+Que te llega
+Que raro
+Me revisa
+Los logs de producción
+Para las dudas
+Si podés probarlo
+O sea
+Probalo en dev
+Cambiar un usuario
+Fijate
+Capaz que lo que podés hacer
+Es antes de cambiar el usuario
+Solicitar el cambio de contraseña
+Después cambiar el usuario
+Fijate en Cognito
+A ver cómo va
+Sí, voy a probar eso
+A ver si
+Con ese flujo no se rompe
+Bien
+Y bueno
+Eso nomás
+Después
+Con respecto a lo de notificaciones
+La parte de configuración
+Ahí
+Este
+Nada
+Viste que yo te puse unos comentarios
+Ahí en el work
+Y eso para ir atacando
+Sí
+Ahí
+Hay unas PRs
+Bastante viejas
+O sea
+Que quedaron
+Que quedaron sueltas
+Antes que se borren
+Un segundito
+Yo los estuve viendo
+Ahí lo hice comentando
+Creo que una es esta
+Y después las otras dos son estas
+Esta
+Creo que ahí
+Hay
+Yona te dejé unos comentarios
+Si tenía conflictos
+Sí, esa ya la estoy
+Ya la estoy atacando
+Está
+Y después
+Acá
+Nahue esta
+Sí
+Se las tengo para atacar también
+Está
+De repente
+Prioricen estas dos
+Estas
+Entre ambos
+Porque quedaron muy atrás
+Está
+Y ahora
+Con las nuevas
+Las nuevas sensibilidades
+Tenemos acá la vista
+Entonces prioricen esas dos
+A ver si las podemos cerrar hoy
+Bien
+Por lo menos
+Alguien
+Tu lado Nahue
+Estas dos
+Y Yona esta
+Así si las marchamos
+Es un gol
+Porque ya nos
+Nosotros sumamos mails
+Y todas esas cosas
+Sino que este
+¿Cómo se llama?
+No
+No queda
+Están quedando muy muy muy atrás
+En el
+En el channel de Pugre Quest
+Y si salimos a producción
+Literalmente se van a esconder
+¿Sabá?
+Entonces
+Bien
+Se entrenen en esfuerzo en eso
+Bien
+¿Algo más Nahue?
+No
+Santi
+Buenas
+¿Cómo va?
+Bueno
+Por mi parte
+Ya dejé pronto el sprint
+Quedaría cerrado solamente
+Las tareas de Design Review
+Y la Discord Review
+Después
+Les envié recién
+El mail
+Con el invoice
+Que enviamos
+Cuando creamos una compañía
+Y estoy trabajando
+Bueno
+Estar la parte del team
+Y continúo con eso
+Y comencé a trabajar
+En el mail
+De cuando tenemos un
+Formulario listo
+Que ya eso
+Lo tengo bastante encaminado
+Para que salga
+Dentro de un rato
+Así que
+Ni bien termina ese mail
+El próximo mail
+A trabajar
+Sería el de
+Literal lo acabo de leer
+Para acordarme
+De cuál era
+Cuando era solicito recién
+El de
+Cuando nos llega
+Una nueva correspondencia
+Ese sería el siguiente
+A tocar
+Y bueno
+Voy a estar con eso
+Espectacular
+Tenemos lo de
+Lo de teammate
+También
+Eso no sé
+Ahí con los ajustecitos
+Cómo venías avanzando
+Vengo bien
+Me queda para
+Para un rato todavía
+Y después
+¿Sabía algo más
+Que se había surgido?
+¿O no?
+No
+Lo que había surgido
+Era lo del
+Documento que habían pedido
+Que en realidad
+Se lo pasó a Martina
+Que era lo de las imágenes
+Ah sí
+Eso
+Al final
+Lo que hablaba
+Yo ayer también
+Estuve hablando
+En la noche
+Con Guille
+Y
+Este
+, está
+También estamos bajando
+Un poquito más a tierra
+Porque lo que está pasando
+A la gente de Compliance
+Este
+Y Carlos Cruz
+Está viniendo
+Como muy con mentalidad
+Banco
+Y nosotros tenemos
+Somos medio startup
+Entonces está
+Hay cosas que no queremos
+Para aún perder tiempo
+Entonces está bueno
+Quiera o no
+Nosotros nos vemos
+Involucrados en ese flujo
+Este
+Y está
+Se confunde un poco
+Cuál es la fuente
+De la verdad
+Pero
+Al final es más sencillo
+Así que
+Sigamos enfocándonos
+En los
+E-mails
+Aprovechemos el tiempo
+Para enfocarnos
+En los e-mails
+Y los teammates
+Lo otro que te iba a decir
+Santi
+Es las PR
+Que están llegando
+A design
+Cómo venís
+Con el formato
+Cómo vienen
+Con Gastón
+Con el formato
+De lo que son los videos
+Y todas esas cosas
+Si vienen bien
+Si estás mirando
+Mi sprint
+Te vas a
+A bajar
+Porque tengo dos tareas
+Que no sé
+Si están terminadas
+O
+En qué estado están
+Capaz que alguno
+Las pueda reconocer
+Son la de configuración
+Esas dos que están
+En design review
+Que no sé
+Si son tareas
+Que se crearon viejas
+Y yo no las pasé
+En algún momento
+O
+Ahí
+No sé si alguno sabe
+Si
+Sí
+La de desarrollar sesiones
+Ya me la
+Me la probaste
+Falta
+Habría que
+Perfecto
+Si ya te la
+Ya te la devuelvo
+Y la otra no, ¿no?
+Ahora
+Yo creo que
+Marti
+Si vos la pasás
+A dev review
+Pasa de nuevo a Joana
+Abrila
+Ahí
+A ver
+Anda por abajo
+Sí
+Pásala
+Tan tan tan tan tan tan
+Tan tan
+Recarga
+Tan tan tan tan tan
+Nananá
+Nananá
+¿Por qué cuando ahora
+Si no demuestra bien
+Es el asignado?
+¿Qué mierda?
+A ver, gira vos
+No, tenés compacto
+Ya a la derecha
+Hay una flechita
+Para ver
+Pero
+¿Qué cosa es compacto?
+No
+Recarga o no es asignado
+Tananá
+Nananá
+Ni de review editor
+Porque en realidad
+De
+De
+Dice
+Recarga
+Si no hay review
+Pasa Héctor
+Paramos a vos
+Capá que la acabé
+No, no, no
+Me sigue mostrando
+Al muchacho joven
+Acá
+Pará que
+Kike está haciendo
+Algunas básicas
+No sé qué pasó
+Quiere decir
+La teoría de abajo
+La 3412
+Es mía
+Y la probó Gastón
+Ayer
+Si querés probar
+Pasar a
+A dev review
+Interno
+A ver si funca o no
+No, no
+No quiero
+Muchas gracias Kike
+De verdad te agradezco
+Ah
+Bueno, bueno
+Vamos a probar
+A ver
+A ver si anda
+A ver si
+Si la de Kike anda.
+Es esta, ¿no?
+No, no.
+No, no, ahí no funciona la goma, Marti.
+No, sí.
+A ver, más allá de la funcionalidad
+o todo, esténse atentos ustedes
+de tener las tareas que tienen que tener, ¿no?
+Enseguida que Santi les aprueba el
+pull request, van y se fijan que la tarea
+esté, ¿no? O sea, responsabilidad suya.
+Y también la responsabilidad de Santi, mirá
+que la tarea la tenga él cuando la está atacando.
+¿Está?
+Igual hay un campo responsable
+original, lo agregué yo.
+Debería llenarse
+solo, pero de última
+lo pueden usar de referencia
+para indicar
+que cuando Santi la pase sepa
+a quién asignarle,
+pero igual voy a revisar porque debería
+estar funcionando eso.
+Yo siempre me fijo ahí en el reporter
+ahí que está ahí.
+Ahí, bueno.
+Claro.
+Bien, bien.
+Buenas.
+Bueno, sigamos.
+Por las dudas, ahora no está funcionando,
+así que vayan viéndolo.
+Marti, dale vos.
+De mi lado, más que nada,
+he estado con reviews.
+Estaba revisando las PRs de lo de WhatsApp.
+Tenía unas dudas que me gustaría verlas
+post-scram, porque estoy viendo inconsistencias
+entre las tres PRs, pero capaz que soy yo
+que me estoy comiendo algo y no me está cerrando.
+Y después,
+estuve testeando
+lo que es el flujo de aprobación.
+Ahí te pasé los casos.
+Probé bastantes casos
+y me
+hundieron.
+Lo que sí es, encontré dos bugs
+en la parte de editar teammates.
+No es la parte de aprobación.
+No sé si querés que los ataque.
+Parecerían ser
+dos bugs boludos, pero está.
+Ahora lo vemos post-scrum.
+Sí.
+Bien, bien.
+Y da eso.
+Bien.
+¿Alguien tiene algo más?
+Una mini pregunta nada más para el post-scrum,
+si querés.
+Si quieren los devs, quédense.
+El resto, un provecho.
+Bueno, nos hablamos.
+Que pasen bien.
+Bien.
+Estamos teniendo
+un gran problema.
+Esto que dice Martina.
+Con la parte de teammates,
+ahí vamos a tener que hacerle
+vamos a tener que hacerle
+la parte de Cypress a fondo, Enrique.
+¿Está?
+O sea, que enseguida que terminen los correos,
+la idea es que empecemos a darle de bomba
+a Cypress.
+Consulta, Kike.
+¿Dónde quedó la PR de sincronización del...?
+Ya se me vino a la cabeza
+de los...
+Lo tengo anotado acá.
+La de...
+sincronización del sitio.
+Del Stripe ID, esa que estaba funcionando mal.
+Esa de Worker.
+Sí.
+O sea, cuatro, cinco, cinco.
+Yo les pasé allí, pero...
+¿Sabe qué?
+A ver.
+Sé que está de lado, ustedes.
+Esta PR es muy retorcida,
+porque habla de que
+en determinados largos no están llegando
+ciertos atributos que tienen
+cuando vos traés
+relaciones de relaciones.
+Esta PR es la verdad bastante retorcida.
+Es un caso bastante especial.
+¿Quiénes fueron que vieron esta PR?
+Yo, Ana,
+creo que en el caso de...
+¿Quiénes fueron?
+Creo que la terminaban viendo yo, Ana y Nahue también.
+Y Enrique también.
+No, solo...
+O sea, no me gusta la solución que llegamos, igual.
+O sea, tristemente no me gusta, no me convence la solución que llegamos.
+Tengo que hacer otra query, como ya estamos haciendo una query para obtener la información.
+Lo voy a pasar en el channel de developer.
+O sea, la verdad no me...
+O sea, entiendo el problema, pero no me...
+Lo voy a pasar en el de developer.
+Pero no me termina de...
+Voy a compartir pantalla.
+Estamos hablando todo lo mismo.
+O sea, lo que pasa es que cuando nosotros traemos las relaciones,
+estos campos como que son muy largos y los corta.
+Estamos haciendo dos queries.
+O sea, no...
+Fíjense acá que tenemos que agregar otra query
+para obtener algo que ya obteníamos acá.
+Cuando traíamos la información del company draft,
+ya traíamos esa información.
+Es un tema de...
+¿Cómo se llama?
+De que los corta.
+¿Sabés lo que vamos a hacer, Enrique?
+Sí.
+Yo había visto una solución que acá le ponía...
+Le podías poner un alias a cada una.
+O sea, vos le podés poner un alias.
+Porque lo que pasa es que
+hay unos que cuando cortan quedan iguales.
+Creo que los de subscription quedan igual.
+Por ejemplo.
+Entonces no solo es cortar.
+Ok.
+Probemos.
+No me gusta...
+Ya estamos trayendo esa información.
+No me gusta volver a traerla, hacer toda otra request,
+otra conexión a otros datos con eso.
+Pero si...
+Yo lo tiré ahí en el channel de design.
+Si alguien ve una solución mejor,
+o algo,
+me avisa.
+Porque la verdad es una cagada de SQLite,
+pero no me...
+Pregunta, ¿qué es esta PR?
+Cuando creamos la compañía,
+en base a la company draft,
+¿sí?
+Es uno de los primeros eventos que nosotros sacamos en el Worker.
+Nosotros migramos el Stripe ID
+que está en la company draft,
+en el company additional coso.
+¿Y esto no pasa para el plan, Enrique?
+Porque el plan tiene los mismos ítems.
+Claro, porque cuando nosotros traemos el plan,
+y todas estas cosas,
+vos...
+A ver, vos creás la company draft,
+luego pagás en el checkout,
+ahí se le asocian los Stripe ID,
+y luego lo que haces es migrás esos Stripe ID,
+Subscription ID,
+y todas esas cosas,
+que esto había trabajado Naue y Jonathan,
+¿recuerdan?
+¿Está?
+Perfecto, los migrás...
+Sí.
+A...
+A...
+Los migrás al plan de la compañía real.
+¿Sí?
+Ahora, lo que Kike estaba diciendo,
+que encontró un bug,
+que estos se estaban poniendo vacíos,
+en la compañía.
+Está, pero lo que...
+Por lo que veo en la descripción,
+eso es un tema de largo,
+de las...
+De cómo está seteado.
+Esto fue un tema de migración.
+De cómo se seteó la migración.
+No, no.
+Es un tema de SQLite,
+según lo que...
+Sí, pero esos índices...
+Son índices, ¿no?
+¿Qué son?
+No, son...
+Son relaciones de relaciones.
+Son resultados de join, de join.
+O sea, estás trayendo información,
+y por alguna razón,
+lo que pone Enrique acá,
+y es válido,
+es que está cortando las columnas,
+porque son muy largas
+los nombres de las columnas.
+¿No es que alguien no se setea a mano
+en la migración?
+No, pero esto no es migración, Marti.
+Son relaciones.
+Yo siento que este problema
+me pasó en alguna PR
+y lo corregimos de raíz.
+Por eso pregunto.
+Bien.
+Este...
+Entonces,
+hagamos una...
+O sea,
+bichémoslo.
+O sea,
+péguenle una bichada,
+porque la verdad la solución no me gusta,
+y creo que esto
+puede ser un...
+O se puede armar
+un...
+una montaña de nieve de mierda,
+y si ya atacamos la solución acá,
+es lo que me parece clave.
+¿Está?
+OK.
+Entonces,
+ahí les pido a todos
+que hagan un pequeño research.
+Como hicimos con la parte de SNS,
+vieron que empezamos a analizar
+todas las alternativas
+y llegamos a la solución de que, bueno,
+si enviábamos el status,
+como que lo que hacíamos es
+corrompíamos eso de que
+no detectara como que el evento
+ya lo había enviado.
+¿Recuerda?
+Está.
+Sí.
+Volvamos a hacer lo mismo para esta,
+porque esto puede ser un problema
+que se va...
+Se puede...
+O sea,
+y otra cosa,
+Enrique y Fernando,
+testéenlo
+cuando hacen compras internas,
+cuando compran internamente un plan,
+cuando compran internamente
+un servicio adicional,
+que también se esté asignando bien.
+¿Sí?
+Bien.
+Esto es importante,
+porque si no,
+nosotros estamos perdiendo
+trazabilidad.
+Y yo ahora,
+enseguida que salga esto,
+voy a tener que chequear
+y decirle,
+che, mirá,
+me llegué esta PDR,
+¿está?
+Esta PDR es blocker
+para salida de producción.
+¿Sí?
+Porque es algo
+que tenemos que solucionar
+y están llegando compañías.
+Entonces,
+eso quiere decir
+que todas esas compañías
+en producción
+deberían tener eso vacío.
+¿Está?
+Acá,
+algo cortito
+que encontré.
+Se le puede poner
+un model name
+para el tema
+de cuando anida
+la query SQL
+y la tabla queda
+con el mismo nombre,
+pero le podemos poner
+tipo una sigla
+de la tabla
+como model name.
+¿Sí?
+Sí.
+Como model name.
+Entonces,
+achica el join
+y en vez de pasarse
+de caracteres,
+queda chico.
+Queda todo normal,
+pero no necesitas
+hacer la query.
+Es propio de SQL,
+ahí está el model name ese.
+Entonces,
+cuando hace todo el join,
+¿qué haría,
+tipo?
+¿Lo pones en el model
+o lo pones en...?
+Ahí mismo,
+viste,
+donde tenemos
+el paranoid true
+tipo en el modelo,
+le pones model name
+y le podés poner
+una sigla,
+no sé,
+eh,
+subscription
+más cortito
+o sub,
+personal service
+punto sub
+punto tanto
+y no se trunca
+de largo.
+Pero la tabla queda
+con el nombre original,
+o sea,
+no se tocaría nada.
+Es como si fuera
+un alias
+que le ponemos.
+Hagan una cosa,
+manden acá
+en la misma PDR
+una especie de
+comentario
+con su posible
+solución.
+Lo mismo ahí,
+Nahue y Fernando,
+Marti también,
+si ves algo,
+porque creo que esto
+puede ser
+un dolor de cabeza,
+puede ser
+un problema recurrente,
+no creo que sea
+la única columna
+que hay.
+Sí,
+bien.
+Después el otro problema
+que nosotros teníamos,
+más allá
+de que tenemos
+bastantes PDRs,
+tenemos el tema
+de team mate.
+La realidad es que siempre
+que surge un team mate
+tapamos en un lado
+y sale agua del otro.
+Entonces vamos a tener
+que terminar los correos
+y encajarnos de una aquí
+que para todo lo que es
+modificaciones de team mate
+y eso para la parte
+de Cypress
+y validar los test unitarios,
+¿tá?
+Porque yo siento
+que,
+siento que es algo
+que estamos haciendo agua
+y cada vez
+encontramos,
+arreglamos algo
+y destapa al otro lado.
+Y después hay
+Nahue y Jona.
+Necesito que se junten
+esta semana
+en algún momento.
+Pueden juntarse
+con Enrique y Fernando
+también.
+Nosotros tenemos
+un gran problema.
+Siempre dependemos
+de los sandbox,
+¿sí?
+Con respecto
+a One Money,
+RedAid,
+de qué tan completos
+están,
+de qué tan buenos
+están,
+¿sí?
+A mí me gustaría
+poder cambiar
+alguna variable
+en el sistema
+para poder
+cambiar
+alguna variable
+de entorno o algo.
+Que toda la lógica
+siga igual,
+porque si nosotros
+mockeamos
+One Money Repository
+después al final
+vamos a estar en problemas
+porque estamos simulando
+cosas que funcionan
+en real,
+¿no?
+¿Tá?
+Pero a mí me gustaría
+que nosotros podamos,
+por ejemplo,
+algo que se me ocurre
+¿saben qué es?
+Que nosotros agarremos
+y cambiemos
+este,
+únicamente
+la dirección.
+De repente con Docker
+Compose
+levantamos una API,
+¿tá?
+Que simule
+y devuelva
+y devuelva
+respuestas coherentes
+nada más,
+¿tá?
+Este,
+y ahí ya podamos usar
+toda la parte
+de banking,
+¿bien?
+Este,
+porque es algo
+que,
+o sea,
+me gustaría
+algo que sea,
+por ejemplo,
+yo cambio la variable
+de entorno,
+ahora apunta
+a una API
+de One Money local
+y bueno,
+y me replica
+o sea,
+valida lo que es
+la estructura
+y replica
+lo que es todo eso.
+Es una pérdida
+de ese sandbox,
+pero creo que
+si nosotros lo hacemos
+y lo tenemos en stage,
+va a valer oro
+porque vamos a poder
+automatizar todo,
+¿tá?
+O sea,
+ya toda la parte,
+si nos tomamos el tiempo
+y hoy en día
+no es algo que sale,
+mirá,
+voy a compartir pantalla
+para mostrarles
+a qué me refiero
+porque
+creo que está bueno.
+Si nosotros vamos a
+One Money,
+eh,
+la parte de Developer,
+¿sí?
+Nosotros,
+literal,
+acá en API Reference,
+por ejemplo,
+¿no?
+El Get.
+El Get.
+Ustedes copian acá
+la página entera
+y podrían pasarle a,
+podríamos,
+literal,
+crear como un repo
+o algo por el estilo,
+capaz que podemos
+generar un repo
+que sea tipo
+de proveedores
+de Mock
+o algo así
+porque hoy o mañana
+podemos tener,
+vamos a tener Bridge
+también con ese problema
+y Bridge tiene limitantes
+en el sandbox.
+Entonces,
+si nosotros no generamos
+algo como producción,
+estamos en problemas.
+Entonces,
+nosotros venimos acá,
+copiamos la página,
+¿sí?
+Cuando te llegue
+esta request,
+validá que tengas
+el signature tal,
+esto tal,
+lo otro tal,
+validá que tenga sentido,
+¿sí?
+Este,
+y una vez que tenga
+todo ese sentido,
+lo,
+devolvés
+X cosas,
+o sea,
+devolvés siempre
+el mismo resultado,
+tal o lo que sea,
+pero,
+pero algo,
+por lo menos que permita
+operar
+o que permita simular
+esa operación,
+¿sí?
+Es eso.
+Vamos a tener que,
+y algo que está bueno
+también ahí,
+eh,
+Fernando y Enrique,
+cuando se junten,
+a ver eso,
+vos,
+es algo que necesito
+que lo,
+le metamos cabeza.
+Yo en el,
+eh,
+creo que Marti
+también me dio una mano
+con eso,
+pero,
+nosotros tenemos
+la sincronización
+de transacciones
+que lo que hacemos
+es
+simulamos
+como que llega
+un evento
+de una transacción
+y lo enviamos
+al back office,
+¿está?
+Entonces,
+ahí nosotros
+hasta podríamos
+simular
+¿está?
+y simule
+que una transacción
+se completó,
+por ejemplo.
+Es algo que ustedes
+me dicen,
+pa,
+pero tenemos,
+o sea,
+ellos tienen un sandbox,
+sí,
+pero el sandbox es incompleto
+y hoy o mañana
+nos desintegramos
+de One Money
+y ya perdemos
+toda la funcionalidad
+de probar banking
+porque nos deshabilitan todo,
+lo mismo que nos pasó
+con Ray,
+todo ese trabajo
+que hicimos
+con el sandbox
+lo perdimos
+y la verdad
+es que es nuestra principal
+fuente de negocio
+¿está?
+a crear nosotros
+un sandbox
+de One Money
+que ya nos quede
+como referencia
+para probar toda esa parte
+de banking
+y mismo no va a servir
+porque supongamos
+que hoy mañana muere
+One Money
+y se cae el otro,
+bueno,
+pero tenemos una manera
+de poder entrar ahí mismo
+de hacer demos
+y es una pérdida
+de tiempo,
+o sea,
+es una inversión
+de tiempo para mí
+que vale mucho la pena.
+Imaginen,
+si nosotros
+seguiríamos teniendo
+el sandbox de Ray,
+ustedes podrían entrar
+a ver transacciones,
+¿está?
+Así que principalmente
+esto va a estar
+a cargo de Nahue
+y Jonah,
+¿sí?
+Ustedes hoy en día
+tienen varias cositas
+para atacar,
+pero me gustaría
+que ya lo vayan
+planificando
+y vamos viendo ahí
+cómo a medida
+que se vayan liberando,
+porque yo calculo
+que Jonah después
+le van a quedar
+una cosita de configuraciones,
+pero ya después
+del chatbot
+ya no hay más cosas
+y Nahue,
+vos terminamos
+lo de notificaciones,
+capaz que hay
+una landing más,
+pero después
+los migraciones
+de correo,
+probablemente
+se encarguen
+de Enrique y Fernando,
+¿sí?
+Está lo de team,
+entonces,
+bueno,
+mi idea es que también
+esto se esté moviendo
+y que no sé
+qué piensan ustedes,
+pero mi idea sería
+atacarlo algo
+que persista en el tiempo,
+algo que mañana
+se cae One Money,
+bueno,
+pero lo seguimos teniendo.
+Imagínense que si hoy en día
+tendríamos el sandbox de Ray,
+podemos probar
+todo el dashboard ese
+que es conjunto
+y más ahora
+que va a salir Bridge,
+entonces está bueno.
+Y una vez
+que nosotros
+hacemos esas integraciones
+y le agarramos
+en esos,
+podemos crear,
+reiterar un repositorio
+para hacer esas,
+esos proveedores
+de sandbox,
+¿está?
+Después hoy o mañana
+mismo le podemos pasar
+toda esta documentación
+y que lo haga,
+o sea,
+estaría genial
+que se haga
+casi rápido
+en teoría,
+¿está?
+Porque fíjense
+que vamos a tener Bridge
+y después probablemente
+se va a sumar otro
+en cualquier momento,
+o sea,
+le voy adelantando,
+¿está?
+Entonces,
+si nosotros eso
+lo tenemos todo
+con Cypress,
+cada vez podemos dormir
+bien,
+no sé si alguien
+tiene alguna duda,
+alguna cosa más.
+Yo tenía sí
+para ver unas cosas.
+Dale,
+entonces quedate vos,
+Marti,
+y el resto buen provecho.
+Yo ahí te autorizo rápido,
+probé lo de
+lo que me habías comentado
+de que era un usuario
+que me van a hacer
+la solicitud
+de que me dé contraseña
+y que me arde el email
+y lo vio igual,
+estoy revisando
+los logs ahora
+de producción.
+Es raro
+porque a Mati
+no lo está dejando,
+o sea,
+a mí como que me va
+para atrás,
+no me reconoce el usuario,
+si no vamos a tener
+alguna duda,
+carajo,
+puede pasar.
+Quedate sin
+nada.
+Dale.
+Bueno,
+buen provecho.
+Buen provecho.

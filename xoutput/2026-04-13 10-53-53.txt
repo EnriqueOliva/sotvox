@@ -1,0 +1,184 @@
+Escuchame
+Bueno, va a ser útil
+Sucedió lo siguiente
+Actualizamos
+Actualizamos el modelo de team
+Acabo de mergear
+Un ajustecito
+Si querés
+Compartime pantalla
+Tenés que autorizar
+Por los dos recibió el correo
+Hoy lo voy a intentar hablar en la leadership
+Ok, muchas gracias
+Probablemente te digan que no
+Primero vamos a ver lo que tenemos que hacer en el Worker
+En tu PDR
+Además de solucionar los cambios
+Vas a tener dos ajustes nuevos
+Andate al modelo de TeamMate
+El modelo de TeamMate
+Te agregó bastantes
+Agregó unas constantes
+Te trajiste lo último de develop
+Si
+Puede ser que no
+No
+Puede ser
+Un sucio de cochina
+Sin duda
+Si, porque hice un Push Force
+Porque estoy trabajando en algo
+No, pero ya, recién, recién
+Solo te estoy mostrando
+Ah, vos recién
+Recién, o sea hace 2 minutos
+Hace 11 minutos
+Subí esto
+Lo estoy viendo
+No sé que
+Hoy estoy
+No sé que hiciste Santi ahí con...
+la forma de borrar de ver lo que volvete a tratar de la de última
+puede ser esto
+la pelota podrido esto es loco de la app ya no sé
+el set de algo bueno
+a pocos usan hit match de vela yo siempre hago original por las dudas para
+que esté alineado con el origen pero me dijiste vos que que usen más de
+velo yo usaba git mejor y jimmy me cagaste a peor si no me equivoco
+yo toda la vida
+conflicto pero puede ser o sea él el guión más va contra lo local
+el hito origen lo que hace teoría contra los locales y no estaba contra
+remoto bueno
+si no fuiste si no son las soluciones después porque se termina se ve tan fea
+pero ahí en teoría quedó a ver andate al modelo de team 20
+bueno
+el punto es el siguiente nosotros habíamos puesto una constante de que si
+era drop y si no enviará los no enviará los correos
+bueno esa constante ya tenemos ese ese y que hemos puesto un tubo y no sé cuánto
+se tiene que ir a la mierda ahora pusimos ahora dentro lo pusimos varios
+bull ya no para optimizar esta búsqueda de ti me si vos arrancas ahí primero
+Primero, tenemos el booleano, subí arriba de todo, tenemos el booleano que dice que nosotros teníamos el, o sea, antes vos te ibas a fijar y decías, bueno, si tenías el team mate tenías que tener el company access, ¿sí?
+O sea, entonces, tipo, cuando vos ibas a enviar un mail, te fijabas que estuviera el team mate y te fijabas que tuviera el acceso a esa compañía de comprensión, ¿sí?
+¿Qué pasa? Eso para Dropi era un dolor de huevos, porque si el tipo de Dropi tenía 100 compañías, tenía que fijarse 100 veces el acceso, ¿está?
+Es un dolor de huevos, ¿está?
+Entonces, ¿qué es lo que vamos a hacer nosotros?
+Para simplificar la vida para Dropi, Dropi tiene este booleano, ¿está?
+Si vos andás del modelo de team mate, que se llama al selected companies, que es algo, o sea, mi idea es optimizar las queries, entonces evitar tener, si el tipo, si vos seleccionaste todas las compañías, las tenés ahí, ¿está?
+Entonces, subamos arriba del todo, tenés ese public bool, que se llama al selected companies.
+Ac, ac, select, ac.
+Al company access, al company access.
+Entonces, lo que vos tenés que refactorizar es eliminar los to do de Dropi, que se fijaba si era Dropi y no se fijaba en company access, ¿está?
+Cuando ibas a enviar un mail, viste cómo buscaba los mails y te fijaba los team mates que tuvieran acceso a eso.
+Ajá.
+Bueno, el tema es que ahora lo que hacemos, esto va a funcionar para Dropi y para nosotros también, ¿no?
+Entonces, si vos tenés el all set.
+Al company access, ya está.
+No tenés que ir a fijarte si está la relación company access, porque directamente quiere decir que tenés permiso global.
+Si no tenés esa relación, lo que tenés que hacer es ir a buscar el company access.
+¿Qué es lo que yo voy a hacer?
+Todos los team mates que se creen de Dropi, ¿sí?
+¿Está?
+Todos los team mates que se creen de Dropi, automáticamente van a tener este booleano setier.
+¿Sí?
+Ok.
+¿Sí?
+Entonces, ahora.
+Necesito tu poder, creaste una tarjetita más.
+Y necesito que eliminemos esa lógica y con el nuevo modelo de team mate, compa, de team mate, agreguemos esa lógica.
+Si está este booleano en Dropi, no vas a buscar el company access.
+Si no está este booleano, sí vas a buscar el company access a la hora de enviar un mail.
+¿Sí?
+Ok.
+Está.
+Eso por un lado.
+O sea, esa es una tarea que hay que atacar ahora.
+La siguiente tarea es.
+Acabo de hacer.
+De solucionar en Dropi, no solo deployé Dropi a Dev, que vamos a fijarnos si salió todo rolay, sino que lo que hice, cargame el nene, sino que lo que hice fue el módulo de team mate para Dropi, lo hice paginado en backend.
+¿Está?
+Sí.
+O sea, hice que realmente pagine en backend.
+Antes el módulo de Dropi lo que estaba trayendo, hacía un getall y paginaba en frontend.
+¿Sí?
+Eso fue la B1.
+Ahora hice que paginara en backend.
+¿Está?
+Necesito que lo pruebes y me digas que esté bien.
+Puedes mandárselo a tatato a hacer.
+Esas son las dos prioridades que sumo a lo que te mandé en el audio.
+¿Sí?
+Por ahora.
+¿Está?
+Ok.
+Entonces tenemos lo que teníamos antes más esto.
+¿Está?
+Estas dos cositas.
+¿Sí?
+Entonces, probar el módulo de team mate.
+¿Está?
+En Dropi.
+Fijate.
+Paginá, create 10 team mates, lo que sea.
+Fijate que se creen bien, que se eliminen bien y todas esas cosas.
+¿Está?
+Es el módulo viejo de team mate.
+Así que es sencillo.
+Lo único que haces es agregar por correo, borrás y paginás.
+Fijate por la network.
+O sea, si el paginado es de A5, create de repente 7 team mates.
+Después lo borrás.
+Pero create 7 team mates como el inator.
+Y fijate que te estén paginando esos team mates.
+¿Está?
+No te traigan los 7, sino que te traigas de A5.
+¿Está?
+¿Sí?
+Ok.
+Esas son las dos cosas que sumo a las tareas que ya tenemos.
+¿Está?
+No sé.
+Sé que Fernando está con test unitarios y que vos también.
+¿Qué es lo que sucedió ahora?
+Cambió muchísimo.
+No solo los endpoints de Nahuel y Jonathan.
+Cambiaron un montón.
+¿Está?
+O sea, literal cambiaron un montón.
+¿Sí?
+Entonces, enfoques.
+En eso.
+Y los vuelvo a llamar cuando tengamos los cambios margeados.
+¿Sí?
+Ok.
+Entonces, este...
+Eso.
+Bien.
+Esas dos cositas.
+Te libero porque me voy con los otros chicos.
+¿Ah?
+Muy bueno.
+El orden de prioridad de esas cosas, a gusto.
+Literal a gusto.
+Tienen que quedar hoy.
+¿Está?
+Esos detallecitos tienen que quedar hoy.
+¿Está?
+Usá tatato a gusto y pasále lo que te rompa más las pelotas.
+¿Está?
+Ok.
+O sea que, bueno, todo esto es el orden del día.
+No necesariamente antes de la daily, como decías hace un rato.
+O sea, por ahora es la prioridad.
+Esto tiene que quedar pronto hoy todo.
+Eso es lo que no te mandé.
+¿Está?
+Yo creo que no hay nada de lo...
+No hay nada de lo con esto.
+Porque es arreglar PR que ya están y eso.
+Tal.
+Vamos arriba.
+Bueno.
+Hasta luego.
+Gracias.
+Hasta luego.

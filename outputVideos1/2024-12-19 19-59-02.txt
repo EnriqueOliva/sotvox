@@ -1,0 +1,82 @@
+a ver a ver pero donde se utiliza eso o el error company not found buscablas
+de control selecciona eso y hace control shift
+mañana
+la farmacia o la atención del hospital
+si yo voy temprano a las 6 de la mañana podemos empezar o podemos hacer de 8
+en la mañana
+el 7
+si
+si la compañía es vacía bueno si está bien son dos errores distintos porque
+explícate la línea 207 o sea no entiendo que estamos haciendo como que está mal eso porque
+en realidad vos ahí decís si la compañía draft es vacía o sea no existe le decís error
+compañía
+y draft not found
+si
+y deberías borrar el error porque ya lo estás haciendo abajo
+borrar el error porque vos abajo ya estás haciendo eso o sea
+fíjate que abajo lo que decís es
+si la compañía ya tiene un company ID asignado o sea la compañía borrador tiene un company ID quiere decir que ya se le creó una compañía
+entonces por alguna razón esto se generó duplicado
+porque puede pasar tenemos que tener en cuenta los eventos que se generan duplicado
+entonces por ejemplo vos ya le asignaste a esa compañía una compañía
+entonces lo que haces ahí es
+tirás un error y decís esta compañía ya tiene registrada una compañía
+entonces ahí si querés ya sé lo borrá el error y ya está
+no es lo más práctico lo que estamos haciendo pero así ya lo arreglas y ya queda
+o sea borrá el error y ya queda cubierto con la línea 112
+porque si no hoy o mañana va a fallar
+y va a fallar con el company draft not found
+y debería fallar con el error company draft already
+has company
+o sea ya se creó una compañía a partir de esta compañía draft
+entonces borrá el error de la línea 207
+o sea eso exacto
+borrá el error y eso
+y todo el resto
+ahí está
+está duplicado
+no sé si era esa la duda
+hagamos algo hagamos algo
+juntémonos en una
+tiene una cantidad de cosas para ver
+baje esto a tierra
+y vamos a ver
+y después ármelo bien
+y me dice cuando esté
+y nos juntamos
+¿vale?
+¿te parece?
+así yo puedo seguir con la migración y eso
+y ya cuando nos juntamos lo vemos bien
+igual estos errores que corregimos en código
+Kike
+es súper importante que los detalles en la PR
+como warning
+ya se corrige un issue
+y por lo tanto no se reporta
+¿se entiende?
+o sea cuando
+yo te autorice
+esto es como una bendición del papa
+porque estamos apurados
+corregimos así rápido
+¿sabes?
+cuando es una línea
+un bolazo
+yo te autorizo
+tipo bendición del papa
+como estamos haciendo ahora
+y vos corregís rápido
+pero tenés que agregarlo como warning
+se corrige el issue de
+que no se estaba tirando el error correspondiente
+para este caso
+¿sabes?
+sino que se estaba pasando tal cosa
+por lo tanto no se hace
+este
+no se reporta el issue en el canal de issue report
+bueno ¿alguna duda más?
+¿alguna cosita más?
+dale
+está, perfecto

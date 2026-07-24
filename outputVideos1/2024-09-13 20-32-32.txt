@@ -1,0 +1,315 @@
+estas tres opciones de van la primera y la primera está esto debería estar y no está
+la segunda esto está pero no funciona bien la primera por ejemplo se tendría que validar que
+el nombre sea tal cosa y no se valía no se hace como vos sabes de código o de fecha quiera lo
+aquel de buscar rebuscar de un poquito en el front pero más allá de eso ir al baque y ver
+que si en el front a nivel visual no se hace y en el lo aquel tampoco está es un problema está
+o mismo está es algo que está en el lo aquel pero en el front se está permitiendo bueno capaz que
+debería chequearse
+estar en el front porque es algo que se puede hacer estático ah después la segunda esto está
+pero no se está haciendo bien y la última que es técnica 100% Esto se hace que es medio parecido
+lo que comentaba en la primera en realidad que es bueno esto se hace en el front end y no en
+el baque o esto se hace
+back-end y no en el front-end.
+Y se puede hacer en ambos.
+¿Tá?
+Sí. La primera es
+es algo que se tendría
+que validar y no encontrás nada
+relacionado. Exacto.
+La segunda es, vos encontrás
+eso, que está donde tiene que
+estar, ¿tá?
+Pero no está funcionando.
+Y la tercera es,
+y la tercera es, esto debería estar en
+los dos lados. Que la tercera
+es la más técnica, porque requiere entendimiento
+de ambos lados. Del front-end
+requiere un entendimiento sencillo
+por lo que tenés que mirar en código.
+¿Esto se valida estáticamente o no?
+¿Tá? Por ejemplo, un ejemplo
+de la tercera. Vamos por un ejemplo de cada uno.
+Un ejemplo de la primera
+puede ser que no se valide que
+el largo del string sea 5
+y no se valide ni en front-end ni en backend.
+¿Tá? Un ejemplo
+de la segunda
+es que, por ejemplo, se valide
+mal. O sea, vos decís, el largo es
+5, pero en realidad si te envío
+4, me lo
+permitís, entonces está mal.
+¿Sí? Y un ejemplo
+de la tercera
+es que se valida
+en el front-end, por ejemplo
+que el largo sea 5, pero en el backend
+no. O al revés.
+El caso del backend es más sencillo.
+Porque vos decís, bueno, el front-end
+está haciendo esta validación y el backend
+si yo le pego directamente, no la
+hace. ¿Tá?
+O sea, yo en front-end,
+¿y cómo te das cuenta si sucede
+o no? Bueno,
+vos
+acá, te voy a compartir de nuevo pantalla
+No, no, no, pero
+necesito que veas esto.
+Para la tercera,
+si vos vas a Dashbank,
+eh,
+si vos vas a Dashbank,
+vamos a crear cuenta,
+viste que se carga una cantidad de cosas
+que es re-mariador esto.
+Vas a seleccionar solo fecha.
+Y cuando estás acá en Dashbank,
+lo que vas a hacer es, una vez que cargue todo,
+borrás todo al carajo.
+¿Dónde tocaste?
+Este cosito. Limpió todo.
+Esto de B,
+te das cuenta que es el sitio de Stripe,
+no dale pelota.
+Lo importante acá es lo siguiente.
+Si yo relleno información,
+voy a poner arroba test
+test,
+porque esto debería ser algo.
+¿Sí?
+Le doy 100.
+Y voy a darle 100.
+¿Eso está funcionando?
+Hago un paréntesis.
+Creo que yo ponía 50, por ejemplo,
+y no...
+No, porque vos tenés que tener entre todos los socios
+100.
+Eso quiere decir que si vos acá ponés 50,
+tendría que haber otro socio que tenga 50.
+¿Y vos qué sos? ¿El Iorinfo?
+O sea, el usuario principal, digamos.
+Ah, pero esto es los socios de la compañía.
+O sea, vos acá te dice,
+el porcentaje de propiedad debe estar entre 0 y 100.
+Cada socio debe tener al menos 1% de las acciones
+y la suma total del porcentaje
+debe ser 100.
+Eso quiere decir que si vos sos una sola persona,
+vos acá tenés que registrar a todo.
+Vos podés crear compañía.
+Vos tenés que pensar que la...
+O sea, mi pregunta es, ¿qué es?
+O sea, ¿no se considera socio el Iorinfo?
+O sea, tu usuario...
+No, acá volvés a poner todos los socios.
+O sea, que si vos ponés tus datos,
+ponés todo.
+Vamos a darle siguiente a ver qué pasa.
+Y ves que falló.
+Lo sentimos, se ocurrió un error.
+Por favor, intentalo más tarde.
+Acá surgió un validation error.
+Si nos fijamos, todos los datos,
+está bien, volvemos para atrás
+y nos damos cuenta que el problema está en test.
+Pero viste que le pegó a draft.
+¿Sí?
+Más allá de que hizo otras requests raras,
+le pegó a draft.
+¿Sí?
+¿Lo viste?
+Este front.
+Claro.
+Entonces acá,
+está, esto está bien.
+O sea, en este caso, está bien.
+No pasó nada.
+Ahora, por ejemplo,
+porque en realidad el correo test
+es un correo inválido
+que tiene que ser
+que pegar en el backend recién.
+Y acá le está pegando en el backend.
+Si vos vas a payload,
+ves toda la información que se está enviando.
+¿Ves?
+Se envió toda la información,
+barra del tweet,
+Santiago,
+el porcentaje del 100%.
+Pues fíjate que si yo acá pongo 99,
+cuando le doy siguiente,
+bueno, acá me dejó el 99.
+Bueno, ahí te encontramos.
+Encontramos a Iván.
+Bueno, ¿viste?
+Acá pasó a Iván.
+Bueno, ¿viste?
+Esas son las cosas.
+En el 99, acá es siguiente,
+nos dejó enviarlo.
+Está raro.
+Si yo borro acá,
+falla.
+No falla por el 99.
+Es raro porque si yo le doy acá,
+vamos a recargar.
+A ver.
+Yo relleno los nombres,
+relleno acá,
+le doy acá,
+me lo rellena.
+Pero si yo pongo el 99,
+y relleno todo,
+acá lo habilita,
+y si lo des,
+lo,
+lo bajamos a 99.
+¿Viste? Acá hay otra bomba.
+Pero lo está detectando,
+lo está detectando.
+Fíjate que yo acá puse datos correctos.
+Si voy acá,
+es un correo correcto y todo correcto.
+¿Quién está detectando esa falla?
+El backend.
+¿Vos?
+¿Sí?
+¿A la derecha qué estás viendo?
+El backend, entonces.
+Claro, cuando le pega a Draft,
+si te fijás, acá lo dice.
+Fíjate que dice API B1 Company Draft.
+Está haciendo un post, está intentando crear.
+Entonces, esto es un bug,
+porque vos me decís,
+esta información es información estática
+que vos desde el frontend podés validar.
+Si el loco, si vos, o sea,
+vos podés validar que el tipo solo se está poniendo a él.
+¿Entendés? Vos tenés que pensar que el cliente es sorete.
+Y esto está bueno,
+porque esto quiere decir que estamos programando bien,
+porque en realidad,
+por más que falló el frontend,
+él lo ha quedado en dúo.
+Entonces, la doble validación
+de la que yo tanto rompo los huevos,
+está buena.
+Porque por más que el frontend
+la chispoteó,
+el backend no te la dejó pasar.
+Entonces, acá vemos con más razón
+la importancia de cubrirlo.
+Ahora, podría pasar el caso al revés.
+Puede pasar que vos a nivel análisis de código
+veas que hay algo que falta.
+Bueno, ahí es donde entra el test unitario.
+¿Entendés?
+Por eso, con los tests de regresión
+y con los tests unitarios,
+vamos a hacer código perfecto.
+¿Sí?
+Por ejemplo, no te salgo más tiempo.
+El caso 1,
+una cosa que no está en ningún lado,
+que no está en ningún lado,
+lo registro,
+o sea, ¿cómo lo...?
+Bueno, ahora la idea es que vos,
+o sea, por ahora la idea es que crees
+en tener regresión.
+¿Está?
+Eso va a pasar,
+o sea, si vos...
+O sea, lo de los bugs,
+que yo te decía,
+es algo que va a pasar,
+en realidad me adelanté,
+porque es algo que va a pasar
+cuando corras esto
+al fin del sprint.
+¿Se entiende?
+Ahí van a surgir bugs.
+Ahora,
+no.
+O sea, ahora es algo
+que vos tenés que fijarte
+y bueno,
+si vas encontrando bugs,
+ya te los anotás a un costadito
+como para tenerlo,
+para correrlo,
+literal,
+el miércoles.
+O sea, el miércoles probablemente
+yo te voy a chequear
+que corres de todo eso,
+lo estés de regresión
+y pasamos un reporte.
+Y ahí probablemente
+ya vos,
+este ya me lo pasas
+en el reporte.
+Si está.
+Antes de que te vayas,
+¿podemos probar una sola cosa?
+Yo la voy a probar ahora,
+pero ya lo hago contigo.
+Sí.
+Todos los datos correctos,
+pero que el email
+tenga un punto al final.
+Sí.
+¿Qué opinás de ese caso?
+Debería ser válido,
+creo.
+Al final,
+punto con punto capaz.
+Es fallo.
+Y no permite avanzar.
+No, no, no, está bien,
+está bien,
+tiene que ser inválido,
+porque es un correo inválido.
+No permite avanzar, ¿no?
+A ver,
+supongo es,
+está bien.
+No, y no permite avanzar,
+no.
+No, está bien.
+Claro, vos tenés que pensar
+casos bordes,
+la dificultad
+de esto es que vos tenés que pensar,
+no tenés que correr casos de más.
+O sea, tenés que,
+es como que, bueno,
+cubrir todos los casos
+sin repetirlos.
+Ahí es donde está el desafío
+de tu lado.
+¿Está?
+Obviamente que esto no va a dar,
+o sea, de forma natural,
+no te va a dar con esto
+y van a surgir errores igual
+en producción.
+¿Por qué?
+Porque es imposible
+ponerse en la cabeza
+de un mono
+que no sabe usar una computadora.
+¿Está?
+Entonces,
+es obvio que va a fallar.
+¿Sí?
+¿Estamos alineados en eso?
+O sea, es casi imposible
+predecir todos los casos.

@@ -1,0 +1,917 @@
+No, bro
+Pará
+Pero bien, bien metida
+¿Qué fue lo que sucedió ayer?
+Sacamos una cantidad de mierda
+Sacamos el MT-103
+Bien laburado con eso
+Había unos pequeños chillos ahí
+Con los eventos que se solucionaron
+Ayer nos dimos cuenta
+Que las tramas, ¿qué pasa?
+Reclamamos la cuenta de Duffman
+La semana pasada
+Reclamamos la cuenta de Duffman
+Dentro de la plataforma
+Entonces las tramas, cuando son internas
+Llegan por un solo ID
+Entonces, ¿qué pasaba?
+Cuando llegaban las tramas de entrada y salida
+Estaban cambiando
+Los clientes estaban pensando que no tenían ninguna
+No tenían ninguna trampa
+O sea que
+Cuando nosotros le depositábamos
+No nos estaba cargando
+Entre cuentas de Duffman
+Y eso era el primer problema
+Porque nosotros no teníamos la cuenta de Duffman
+Entonces, ¿qué pasaba?
+Pero al crear la cuenta de Duffman
+¿Qué estaba pasando?
+Se registraban todas las transacciones de la cuenta de Duffman
+No se registraba la contraparte de
+Te depositamos tanta plata
+Entonces eso es lo que estaba pasando un poquito
+Se solucionó
+También
+Se sincronizaron
+Y eso me permitió abrir el cronshot de SYNC Transaction
+Que no estaba funcionando de todo bien
+Entonces es que
+Ahí ya también lo puedo ajustar
+Eso es un punto bastante positivo
+Porque este cronshot de SYNC Transaction
+Hoy en día está andando bien
+¿Qué más?
+Bueno
+Además de eso
+Bueno, creo que no hay mucha cosita más
+O sea, ahora lo que
+Salió todo un poquito de producción
+También ayer le saqué
+De mi lado
+La actualización de precios
+Hubo una actualización de precios
+En lo que son las compañías
+Para que no todo salga tanto
+Tendríamos que hacer a Enrique en algún momento
+Solo que ahora
+Esto es para que lo puedan hacer con Fernando
+Actualizar todos los price ID
+Price ID de producción
+Así después es más sencillo
+Porque tengan en cuenta que los precios
+Que están en el de Velo
+Visualmente es una cosa
+Y lo que se está cobrando es otra
+Entonces no actualizamos los price ID
+Solo actualizamos lo de producción
+También había un problema
+Que los blogs no se estaban cargando para el SYNC
+Ya se están cargando
+¿Qué más?
+Cambiamos
+Cambiamos el servicio de banco
+Ahora es cuenta de banco digital
+Nomás para que sepan qué dice
+Y sacamos visualmente
+Visualmente direcciones interregísticas
+Fue algo que pidió Matías
+Asimismo también en las cards
+Sacamos una funcionalidad
+Que ahora cuando son las TLC
+No te dice el porcentaje
+Sino te dice cuántos meses te regalás
+Ah, entonces
+Si ves, regalamos hasta 3 meses
+Por ejemplo en el 3 de febrero anual
+La cosa cuando pasa el sábado a la noche
+Y ahora
+¿Qué es lo que tengo para hacer ahora?
+Vamos a hacer clic en ME
+Bueno, tengo que chequear que todo esté bien
+Hacer monitoreo de las transacciones
+Y me tengo que poner por la parte de API
+Que es la parte de reglamentación
+Así que bueno
+Voy a estar revisando
+Otro hito importante
+Lo menor
+Es que hoy temprano
+Llegamos a los despesos unitarios de Guamón
+Que son los de grande que teníamos
+Entonces es que hoy temprano
+Vamos a hacer un vuelo
+Un vuelazo ahí
+Lo mejor ya lo sabemos
+Todavía no salió en la producción
+Pero son una cantidad de despesos unitarios
+Quiero ver la cantidad de despesos
+Que nos cubren en los grupos más importantes
+Ahí Fernando te dejó un comentario con los warmings
+Que es bastante importante
+Para que lo tengas en cuenta
+¿Está?
+Eh
+2.600 y pico
+Un vuelo
+Ahora está bueno tener ese respaldo
+¿Qué es lo que tenemos que enfocarnos ahora?
+¿Está?
+Como para
+Como para presentar los objetivos de este PRI
+Para que claro
+La idea de Fernando y Enrique
+Además de seguir limpiando despesos unitarios
+Y todas esas cosas
+Ustedes tienen el objetivo de pasar todos los meses
+¿Está?
+Muy bien
+Muy bien
+No sé si está hablando
+Buenas tardes a todos
+No pasa nada
+No pasa nada
+Laura va a estar acompañando
+Algunas de las ladies
+Para ver un poco de la socialidad
+Y que no digan ninguna grosería
+Y nada raro
+¿Está?
+Después le podemos ver los postcards
+Nos va a venir acá
+A monitorear un poco
+Y a ver cómo nos manejamos
+Para ver cómo nos puede dar una mano
+Tanto ella como él
+Así que eso no tiene leyes ni nada con las dudas
+¿Cómo decíamos?
+Objetivo de este PRI por ahora
+Enrique y Fernando tienen que
+Tenemos que mirar todos los correos
+¿Sí?
+Y además hay Enrique
+Pero vos tenés pequeñas cositas
+Puede ir surgiendo algún backcito
+Alguna cosa
+Vos ahí tenés lo de Stripe
+Que quedó pendiente
+Después tenés
+Tienes una parte de Stripe
+Tenés una parte de
+Lo que sería
+Enviarle al mensaje
+Están los textos de Stripe
+También está el tantillar
+Unos usuarios que
+Fue el tantantantinar de redondear
+Así que bueno vos vas a hacer otra cosa
+Fernando la idea es que se metan 100%
+Con los emails y alguna cosita más
+¿Sí?
+Así que necesitamos ir avanzando en eso
+Justo ahora tenemos para delotear a Santi y a Tom
+Con unos mails nuevos
+Que enviaron
+De la parte de Naomi y Jonathan
+Está todo el grupo de computación
+Sí, de computación lo único que está faltando
+Por aquí en Santi son los mails
+Y capaz que es una versión más
+Sí, faltan los mails
+Pero el grupo de computación
+Ya lo había posteado
+¿Qué haces si lo guiaste a Design Overview?
+No
+Lo pasé a Design
+Me dijiste que cuando esté aprobado por Jonathan
+El día de hoy lo pasará
+Allá está el día de hoy
+Luego con eso
+Jonathan además por papel lo analiza
+Y lo mandamos a Design Overview
+Pero de un lado a otro
+La idea es que más allá del
+Baxito y todo eso
+Tendremos que aportar alguna cosita de eso
+Para que vayamos jugando
+Obviamente para todos puede surgir algo
+Tu objetivo de 100% por ahora es
+Configuración
+Y el de Naue son notificaciones
+También Naue ahí está
+Ya te puse ahí una APR
+Con la actualización de los términos de condición
+Y todas esas cosas
+Esa que se hace por Google Play y Instagram
+Por las dudas
+O sea que pasa por Google Play y Instagram
+Porque es importante
+O sea si ya pasa está bien
+Pero si no pasa por Google Play y Instagram
+La idea es no tener más firmas
+Y es importante que
+Adopunten los documentos oficiales
+Porque la traducción en inglés
+Español tiene que ser exacta
+Como está en el documento de los agregos
+No podemos tener
+No puede hablar diferente
+Además eso es por la idea
+Que se sigan las notificaciones
+Y a medida que vayan
+Liberando el primero que le libera
+Va a tocar el límite
+Que eso no es un subjuego
+Que no se lo van a estar defendiendo
+Martina
+El objetivo de este print
+Usará obviamente como siempre
+Para revisar todas las cosas
+Seguir con los apagos de alarma
+Y después el tema de pasar bridge
+Además de que vas a tener que dar más mano
+Con algunas cositas de la API
+Y bueno
+Y las variaciones de siempre
+La idea es que podamos pasar bridge
+Y podamos pasar esas cosas
+El objetivo mío de este print
+Además de poder alargar todas las cosas
+Es poder terminar toda la audición de API
+Asistirnos a ustedes
+De todo lo que sea necesario
+Y bueno
+Asistir a Martina en el mensaje de bridge
+Que no es menor
+Que eso es algo que va a estar jodido
+Entonces ahí voy a tener que volver a hablar
+Y además de eso
+Se deben sacar los documentos
+Independientes de cómo lo van a trabajar
+Lo que nosotros vamos a tratar es
+De los apagos de alarma
+En PTIX
+Acordaos que eso no lo promocionan todos
+Entonces tenemos que sacarlo
+Y ver si ya podemos iniciarlo
+Bueno además la cantidad de reuniones
+Y cosas actualizan bien
+Es probable que en IAW
+Que surjan en el LAN o algo
+Que tengamos que colocar un segundito con eso
+Y seguir bien
+De la parte de gasto
+La idea es seguir metiendo marketing
+Toda la existencia de marketing
+Yo ayer personalmente me metí con Matías
+Para que lo sepas
+Y le dije
+Un poco cómo estamos distribuyendo el equipo
+Entonces le dije
+Si quieres sacar algún LAN o algo
+Bueno puede
+¿Cómo se llama?
+Puede agarrar
+Y comentar
+Te puede redistribuir algo
+Si te puede ayudar a sacar algún LAN
+Y saca
+Y la idea es
+Además de los flujos que tenemos
+La idea es empezar a trabajar con todo
+En ti mismo
+Que eso es todo un mundo
+Necesita que ha quedado algo más
+Bueno los emails
+Creo que lo que hay en esos emails
+Es un poco eso
+Así que bueno
+Eso es un poco para que todos estén alineados
+Antes de recargarlo de forma normal
+Con lo que sería
+Con lo que sería los objetivos
+Bien
+Si tiene alguna duda después me lo
+Me lo pueden comentar
+Si?
+Está bien
+Bueno entonces arrancamos
+Vamos a venir un poquito
+Dale
+Bien yo por mi parte
+Ayer hemos finalizado lo de
+La generación de FL20103
+Yo me voy a quedar
+Arrancando con las clasificaciones
+Ahí si hay que pasar a la nueva tarea
+Ahora estoy controlando que haya quedado
+Algunos textos
+Agregados al TCC
+Y en un rato voy a contarles
+Lo que ya había hablado
+Dale
+Dale
+Perfecto
+Bien
+Bueno la siguiente es la clasificación
+Ah la clasificación
+Ah se va a probar con la clasificación
+Bien
+Bien
+Bueno como
+Hemos estado pensando ahí un poco
+En el sprint
+Estaba creando una otra tarea
+Que sería para el main de fundación
+Así que ya habrá
+Ya había creado
+Después
+Por otro lado estoy trabajando
+En unos ajustecitos chiquitos
+Que me quedaron de chatbot
+Que eso debería quedar pronto en breves
+Que un
+Bueno que me habló Mati
+Me dijo que quería trabajar
+Sobre la landing
+De la home
+Osea que quiere una
+Una landing de la home
+Que sea exclusivamente para fundación
+Que no esté dentro de los links que tenemos
+Y bueno
+Viendo eso que comentás ahí
+Santi
+Nada podemos decirle
+Hacer eso mismo
+Osea que si quieres sacar esa landing ya
+Que era un poco lo que venían comentando
+Este
+Le damos más prioridad
+A esa landing que sería
+De Mati y Tim
+Claro la idea es que redistribuyan ahí
+Osea que reintegra se lo hace la de Mati
+Y que redistribuya un poco
+Si Mati dice esa
+Entonces
+Nosotros tenemos
+Entonces
+Si Mati quiere venderse
+Y quiere sacar más cosas
+También más marketing
+Osea tomemos esa landing como más marketing
+Si
+Lo mismo
+Con respecto a los iconos
+Osea la realidad es que los iconos
+Están re viejos
+Osea quedaron re anticuados
+Respecto a lo que hoy en día
+Puede ser un motor de hoy en día
+Si los vayamos de cabeza
+A intentar actualizar algo
+Y es de ahí
+Este
+Creo que llevo un ratito
+Y puedo meter a la zona en la web
+Nosotros no queríamos intentar hacer la nave
+O los iconos
+Pero realmente estaría bueno
+Puede ser el cuerpo principal
+Es más si ya cuando vienes
+Es el cuerpo principal
+Si ves algo que tendríamos que cambiar
+Ya lo sabrán
+El que actualice esos iconos
+Es lo que se veía
+Recuerden que tenemos tres
+Tenemos el de Víctor Procorda
+Que es solo un paso
+El de Ingrarar
+Y después el de Crear compañía
+Son tres plusos
+Si tienen duda de como entrarlos
+Es más saben como se trata
+Kike te animas a pasarlo
+En cada uno de los plusos
+Creo que Crear y Ingrarar
+Si podes pasar
+Son estos
+Tranquilo
+No porque el tema que vamos a comenzar ahora
+Solo te lleva
+Solo te lleva a
+Hacernos un poco por borde acá
+Nosotros necesitamos
+Osea vos necesitás
+El de Ingrarar acá
+Para pasar después al borde
+Pero el de Crear acá es el de Crear
+Bien tal vez esas ilustraciones
+Que traen un poco más a la que tenemos
+En la página de la web
+Ah si esto es un momento en el que
+Era que nosotros
+Teníamos ocho
+No no
+No no
+No no
+Bueno
+Pero ahí estaría bueno
+Que eso también lo haga Tom
+Osea que vos
+Porque tenemos muchos mails pendientes
+Tenemos que atacar a Karkat
+Entonces estaría bueno
+Que eso lo haga Tom
+Y lo hagamos como también
+Empezando con Amatia
+Hay cosas que son de mala arte
+Que también tiene que hacer Tom
+Que no son realmente a vos
+Sino que son realmente al sitio
+Porque hacer una lala
+Es el sitio
+Perfecto
+Último comentario
+Ahora voy a estar
+Un año y diez con el chat
+Porque me queda poco
+Voy a estar trabajando
+En el mail que enviamos
+Es un mail que se envía
+Cuando
+Cuando vos
+Cambiamos con éxito una transacción
+Una vuelta
+Tengo que entender la configuración
+También
+Si querés
+Trabajar
+Bueno está
+No sé cómo así
+Bien bien
+Ahí te aprovechamos
+Tato
+La tarea
+Que pasaste
+Perdón que cambio
+La tarea que pasaste
+Se parará
+Todos los correos
+Por correo
+Podemos mandar
+Varios correos
+Lo mismo va para Booking
+O sea actualicemos
+Una tarea por correo
+Que sea Tom
+Pero podemos enviar
+En una web
+Varias tareas con Tom
+Exacto
+Sean
+Bien
+Bueno ya estuvimos ahí sacando
+Los pendientes
+Y haciendo ahí algunos
+Algunos ajustes
+Que quedó todo
+Y hoy de mañana ya
+Ataqué eso que habían dado esos últimos
+Lo de la página de preguntas frecuentes
+Y los ajustes
+Ya lo acabo de pasar a PubQuest
+Ya está todo
+Atacado eso
+Y nada
+Ahora estaba revisando lo de configuración
+En mi lado
+En torno a configuración
+Lo hacemos para recuperar correo
+Tenemos una variable para encriptar
+¿Está bien?
+Confirmamos sin poder
+Si cuando
+Si cuando retiramos
+El código o la revelación de contraseña
+Encriptamos una
+Una guía o dos
+Bien
+Porque
+Debería ser en una guía
+No es por por qué se enciende una cabeza
+Que lo hicimos en dos
+Bueno está bien
+Pero
+Porque
+Deberíamos de hablar las más claves
+O sea
+Para todo eso deberíamos hablar las más claves
+Y capaz que era algún
+Sal mamada
+O sea
+Habíamos hablado de las S-5
+Si, en realidad se refiere a las S-5
+Para mejorar la seguridad
+Algo respecto a eso
+Bien bien bien
+No
+Mientras no sube nada
+las tareas que tengo para configuración
+y voy a andar con eso
+esa fue la del
+cron show que al final no salió
+la cerramos
+en el comentario
+bajámosle los puntos
+pongámosle un punto
+pongámosle un punto
+y pongámosle un comentario
+que es que el equipo
+trabajó en el tiempo pasado
+pasó esto y esto
+bien, bien, perfecto
+gol
+bueno, de mi lado
+estábamos trabajando con lo que era
+las facturas
+las varias tareas
+de las facturas, que bueno, eso ya
+obviamente quedó pronto
+gracias a Yana Tantani que dio una mano
+muchas gracias también
+y bueno, ya empecé
+hoy estuve con justamente lo que ya
+un poco habías comentado
+estuve corriendo Cypress
+la buena noticia es que no hay ningún bug
+de la
+de la
+de la
+lo que es la plataforma en sí
+son cosas desactualizadas
+de los test nada más
+que ya estoy corrigiendo
+nada más, los estoy corrigiendo en este momento
+y también, bueno, obviamente
+el mensaje de salida pro
+que ahí yo les pasé recién
+si surge comentario lo ajusto
+y bueno, obviamente
+pero no sea repetitivo
+la idea es atacar
+de mi lado tengo, no sé si lo mencionaste
+pero de Cypress también tengo
+los test de QA
+que involucran
+los QR
+que este
+ahí vos tenés más bastantes
+tenés más bastantes
+se involucran más bastantes test
+o sea tenés
+o sea tenés
+tenés test de
+tenés los test pendientes
+los test de QA
+los test de
+los test de Cypress actualizados
+o sea
+dividanse con TATLO
+no te cargues con todo
+así vos también podés cargar con RedRed
+¿está?
+o sea
+organizáles con eso
+bien bien
+ok
+ajá
+ok
+bien
+vamos a abrir
+¿alguna cosa más gente?
+no, creo que no
+eh
+¿Fernando?
+bien
+eh
+estuve ahí
+en el proceso del latrín
+este
+acabo de pasar
+eh
+sobre la tarea
+que se dibujó
+eh
+para cambiar el nombre de eso
+porque
+la de
+la 3331
+quedó
+súper replicada
+eh
+no me esperaba
+la versión
+ya no había
+la versión
+antes
+eh
+y
+estuve
+estuve con eso
+y
+y ya había ido
+para el canal
+la de
+la de las emails
+la de los correos
+la de los correos
+que
+que ya se
+ya
+ya estoy
+preguntando
+a través
+de la
+la
+la
+esta
+3331
+no vamos a
+nombrar
+porque
+¿qué pasa?
+lo que hablamos con Martina
+lo que hablamos es un poco
+nosotros ya venimos revisando
+la rata que quedó
+y
+pero muchos se han ido de cuenta
+después de su sesión
+pero
+pongámosle la rata
+sí
+y ahora cuando salga cada uno
+de los emails
+lo vamos a paracentar
+a la rata
+y va a crear esas áreas
+¿está?
+hay también
+donde estaría
+el script
+que se
+está
+pero por ahora
+no es la idea
+no es la idea
+de eso
+saquemos
+no
+no no
+ojo ojo
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+i
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+y
+No, entiendo que no, por ahora he visto
+todo Santiago.
+Tenemos a Samuel Polo Pato,
+a Matías, pero preguntamos si eso está.
+Decirle que nosotros ya estamos
+suponiendo el grupo, pero que
+siguen agravando a Santiago.
+Si necesita una mano más en eso.
+El
+Marta, ahí llegó uno que nos ha robado
+a los dos, pero no sé.
+No, creo que lo que mandó a Matías
+ha robado a los dos, creo que lo que mandó a Matías.
+Entonces no está funcionando todavía.
+Bien.
+¿Y el de Gastón?
+Bueno, ¿cómo están?
+Bueno, yo estuve
+rediseñando
+lo que es el main de venida
+de Dalam.
+Eso lo inventé la semana santiago
+ya que lo
+probé dos veces y lo pasé a design.
+Después estuve
+haciendo
+unos slides que me pidió
+Lucía.
+El grupo número 8 que les había entregado
+también
+un mensaje de octavo año.
+Después estuve haciendo
+un posteo
+presentando a Banana
+que me pidió Marketing
+y que también pidió octavo año
+y me falta la
+la sorpresa científica de lo que hice.
+Y por último
+había empezado a iterar
+lo que es un
+un posteo de lanzamiento
+de chat que me habían pedido
+de Marketing.
+Lo hice iterando con Cloud.
+Pero si hay
+una prioridad tal vez
+en el tema de los iconos de la web.
+Sí, sí, sí.
+Lo sacamos con los iconos primero
+y después lo pondremos.
+Perfecto eso es.
+Tony y Santi, ¿saben algo
+que estamos haciendo mal?
+El tema de...
+¿Ustedes en la parte cuás
+no están registrando los videos de ustedes, no?
+No.
+Yo lo voy a tener en cuenta.
+No, no, no.
+Porque acá están esas maravillas
+entre vos y él de la tecnología.
+Nosotros aquí le ponemos
+a ver si...
+¿Qué?
+Cloud Reveal 1
+y le ponemos Cloud Reveal 2.
+Cloud Reveal 1 no creía que haría
+porque estuve desde el pasado.
+Pero desde este diseño.
+Claro, exacto.
+Desde este diseño se hace.
+Más estamos mostrando Cloud Reveal.
+Pero ¿cómo vamos a ponerle
+un puntaje más o menos?
+Vamos a verlo.
+Muy bien.
+Vamos a...
+Vamos a crear esta etiqueta.
+Ustedes tienen tareas.
+Sí.
+Tampoco quiero complicarle la vida con eso.
+Pero sí quiero dejar separado
+una cosa de otra, porque si no al final del día
+pierdo otra familia.
+Entonces ahí va a sacarse
+un design review.
+Y ahí en la descripción pone
+que está bien.
+O sea, estaría bueno que pongan
+capaz que los links.
+O sea, como lo hablamos hace un rato.
+Poner links a las cadarras.
+Que ustedes pongan links a Slack
+o algo así.
+Porque nosotros tenemos toda la...
+Sí, sí. Literal que pierda el link
+pero ustedes pueden darle nada más.
+Cosa de que hay una charla de actividad
+y después cada caso.
+Digo más de manera modulada.
+Porque si no...
+¡Ay! ¿Por qué no están tan rojos?
+El toque aún no.
+Ah, sí, por eso.
+Muy bueno.
+Bien.
+Veamos...
+Veamos ahí...
+Cómo vamos a poner esto
+y de dónde llegamos.
+La idea sería a partir de ahora poder
+tener trazabilidad de las cosas.
+Si no estamos...
+Y al final del día tenemos el mismo problema.
+O sea, gastando, te digo, una cantidad de tiempo.
+O sacando y cargando de tiempo.
+Y también tenemos que sobrebriclar lo que es la plataforma.
+De...
+Estamos engañando.
+Bien.
+Eh...
+Sí.
+Fíjense que es el grupo de Cobo.
+O sea, es donde estamos
+convenciendo al cliente de Cobo.
+En su momento era
+de dos.
+Bien.
+¿Algo más?
+No.
+Más.
+Bien. Ayer...
+Estaba trabajando en cuanto a lo que fue
+referente al flujo de la
+GT103.
+Después estaba en la instrucción de modelos de luz
+también.
+Y el soporte de la línea de Pro.
+Eh...
+En cuanto a lo que es
+el tema de la computadora.
+Me decidí con eso.
+En realidad tuve que interesarme las pausas
+por las prioridades que surgieron.
+Eh...
+Me decidí atacando eso.
+Y...
+En cuanto al review que surgió también
+voy a hablar de lo que va a pasar
+en la configuración para que eso no se quede.
+Y...
+Eh...
+O sea, eso es básicamente el final.
+Ojo, este comentario
+sobre los Chrome Browsers.
+Ah, también.
+Ya lo había dicho.
+Lo...
+Lo que necesitamos es...
+Lo que necesitamos es...
+Necesito obviamente el pelado
+y jugar el review
+de...
+Ah, pues...
+Eh...
+Otra cosa para hacer nomás.
+El documento que había leído Fernando
+no sé qué quedó.
+Ah, tal vez eso sí.
+Tal vez eso se revisó para que nos pasara
+a nosotros.
+Ah, eso sí, por tanto...
+O sea, por volver a insistir ahí en el chat
+para que lo hicís
+bien ahí.
+Sí, sí, sí.
+Bien, bien.
+Eh...
+No recuerdo bien
+si llegamos a
+mencionar el tema de la guía para el PRS.
+Si eso ya quedó,
+estaría bueno empezar a buscarlo
+para el PRS.
+Sí.
+Hagamos una cosa.
+Terminemos con la parte de Chrome Browsers
+y ya mandamos un mensaje consolidado
+de todo eso.
+Ah, sí.
+Cuando lo mandemos ya mandamos
+que hay que empezar a usar Chrome Browsers
+porque la parte dice
+hay buenas prácticas
+hay buenas prácticas
+para la pronunciación.
+Pero enviamos un mensaje único en el
+en el chat en general para que todos
+estemos a salvo.
+Eh...
+¿Algo más?
+No.
+¿Alguien quiere agregar el post para Chrome?
+¿Estamos todos bien?
+¿Podemos ir acá?
+Vamos a traer al aula más seguido.
+Bueno.
+Bueno.
+Bueno.
+Buen provecho.
+Chau.
+Chau.
+Chau.

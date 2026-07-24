@@ -1,0 +1,551 @@
+Martina estaba en llamada con
+¿Tío Jonah?
+O con Nahuel
+No se ve la cámara por los dos
+Buenas, ¿cómo va?
+Santi
+Martina, ¿estás?
+Buenas
+Bueno, bien de bien
+Este
+Arrancando
+Bueno, como
+No preparé la daily, no dije nada
+Vamos a escuchar ahí a Martina
+Que vas a poner sobre Corea y esas cosas
+A ver
+Ayer saqué dos hotfix
+A producción
+Del backoffice
+Y del site, porfa sincronícenlos
+En las PRs que tengan activas
+El site y el backoffice
+¿Sí?
+¿Qué más?
+Con respecto a Womoney
+También había un bug
+Que estaba pasando, reseté las cuentas
+De los correos, solucioné los problemas
+Que tenía Andrea
+Leonardo y Sergio
+¿Qué más?
+Bueno, ahí surgió un nuevo bug
+Con los links que está revisando Jonah
+Yo sigo pasando
+Arrancando a pasar Bridge como proveedor
+Monitoreando Womoney
+Ahí directamente con los clientes
+Y tenemos una API de Swift
+Que probablemente tengamos que
+Empezar a consultar
+Para rellenar
+Los campos
+Y bueno, eso de mi lado
+Y después, bueno, está
+Probablemente tengamos que hacer
+Sync ahí con Marto
+¿Quique?
+Bueno, yo desde la ley de ayer hasta ahora
+Estuve con lo que son las varias tareas
+De Audildogs
+Ahora vimos que hay que darle
+Una vuelta de tuerca más
+A lo que es la parte
+Prioritaria, eso de la sanitización
+Ya ahí te la mando
+Estaba haciendo pruebas
+Y a ver si grabo un video
+Para la PR
+Y ya te mando la del worker
+Porque viste que esa lógica
+Vive más en el worker
+Es más importante la del worker
+Así que tal, la idea sería
+Seguir con eso
+Y también obviamente la parte
+De back office también
+Y bueno, tengo que hacer
+Un poco de lo que es
+Code review
+Porque Fernando tiene varias abiertas
+Y entonces tal, la idea es
+Ayudarlo ahí a desbloquearlo
+Porque ya seguramente
+Como te va a decir
+Tiene varias allí abiertas
+Y tal, habría que
+Pasar algunas a
+Por request de juego
+Así que tal, voy a intentar
+Estar con esas dos cosas
+Básicamente
+Bien, perfecto
+Si, intentemos
+O sea, tal
+Tenemos varios frentes
+Yo creo que después
+Lo del audiolog
+El video de Cypress
+También que estaba
+Nada, también intentemos
+Disminuir la cantidad de PR
+Que tenga al lado de Tato
+O que no empiece a llegar
+Eso estaría genial
+Tato
+Bien, estuve metiendo ahí
+Bastante code review
+Terminé de corregir
+Las PR que tenía pendientes
+Aunque tal, ahora voy a actualizar
+Los contradeos
+Las activas
+Como acabas de pedir
+Bueno, ya me lo anoté
+Les hice follow up
+Para que porfa me creen
+Las dos tareas de seguimiento
+Después estoy resolviendo conflictos
+Y terminando con la tab
+De renovaciones de la compañía
+De Wacofit
+¿Cuáles tareas de seguimiento faltan?
+Ahí les hago
+Les hago follow up
+Montame ese info
+Faltan
+Que se puede cambiar
+Por esas dos
+Que esas dos quedaron decrecadas
+Porque eran de
+Company out
+Que después se cambió a
+User out
+Y justo después
+¿Por cuál se puede cambiar?
+Las que
+Están al final del backlog
+Al final, abajo de todo el backlog
+¿Estas dos?
+Esas dos, esas dos
+Puedes ajustar en la descripción
+Dale
+Dale, bien, bien
+Y pasalas para el sprint
+Bien, bien
+Dale
+Plata eso
+Y te voy a dejar
+Entendiendo esto
+Unitarios
+有更要研究
+Tenemos un pequeño bag
+En el search
+De Wacofit
+¿Sí?
+Que
+Es una boludez
+Pero no estamos haciendo trim
+Osea, si enviamos
+Por alguna razón
+Si enviamos un nombre
+Con un espacio al final
+O un correo con un espacio al final
+En el search del
+De solicitudes, sencillo
+O sea, si enviamos un nombre con un espacio al final O un correo con un espacio al final En el search del... De solicitudes, sencillo
+se está enviando, o sea, si yo pego un correo
+y le pongo un espacio, se está enviando
+el espacio
+más que en como frontend
+el search se debería trimear
+¿ok?
+¿cuántos search hay? ¿hay tipo muchos search?
+hacete un
+research
+de
+¿cómo se llama?
+de los search que hay en el backoffice
+y fíjate que
+esté sucediendo eso, que se estén trimeando
+¿sí?
+a ver
+pero el principal problema es
+en el de solicitudes
+¿qué es lo que pasa? el usuario
+pega hola
+con espacio y te dice
+que no existe, cuando lo borraste dice que existe
+o sea, o pegas
+a ti, arroba dasband.com
+o sea, el
+vendedor pone esto y pega un espacio
+por
+mera, ¿cómo se llama?
+o sea, automático
+por costumbre
+¿ok?
+por costumbre y te dice que no existe
+cuando lo borraste dice que existe
+entonces, se tendrían que trimear
+o sea, el primero es encontrar ahí
+en el search, tanto en backend
+como frontend se tiene que trimear
+este, y después
+o sea, el trim
+es el espacio al principio y al final
+no tiene lógica ni por todo valor
+¿está? y después también
+si hay otro search a lo largo de todo el backoffice
+fijarse que tenga
+el mismo comportamiento, tanto en frontend como backend
+que se trime, ¿sí?
+¿qué repositorio, site?
+backoffice
+¿solo backoffice?
+solo backoffice
+creo que no pasa
+fijate si querés en el buscador
+del site
+si querés hacete un, o sea, el problema
+lo encontré únicamente en el
+en el buscador de solicitudes
+pero hacete un poco de QI
+en el site también, a ver si
+ahora que tenemos mis compañías y eso
+a ver si pasa para alguno
+este
+y
+, la idea es corregir eso
+¿sí? en los search
+que se esté trimeando tanto en frontend como backend
+el único lugar
+donde lo encontré es en solicitudes
+que eso sí, tendríamos que solucionarlo
+este, porque está
+el usuario, o sea, todo el administrador
+está poniendo el correo, le da espacio
+y me manda captura y me dice, no encuentro la compañía
+y me tiene podridos
+entonces, este, para solucionarlo
+yo lo que te diría es, atacamos
+ataquemos en un APR
+lo de solicitudes
+y después hacete el research
+de todos los search que puedas encontrar
+tanto yo que sé
+en el backoffice, hay varios
+¿sí?
+en el site tenés los de blogs, tenés mis compañías
+tenés varios search, fíjate que se esté
+trimeando, ¿sí?
+dale, bien
+bien, genial
+Gastón
+buenas, bueno, yo estuve
+terminando la propuesta
+para la integración de días
+te la mandé y la despedí
+después estuve haciendo
+ajustes en la presentación
+para la AFI
+de la presentación de Bolivia
+que había pedido
+Guille y Carlos
+que me pidieron unos cambios
+y ya quedaron terminados
+y por último
+empecé a hacer el posteo
+para presentar lo de Bolivia en redes sociales
+era una cosa
+me había pedido marketing
+para presentar una nueva función
+de la aplicación
+está genial
+recordemos que si vamos terminando
+con las cosas
+no sé, ¿hay notificaciones en qué quedó
+con los comentarios que te hice, Gastón?
+bien, sí
+me tengo que crear una tarea
+me tengo que pedir a Santi
+que me crea una tarea para terminar eso
+porque
+yo estaba igual
+quería verlo bien con Santi
+él iba a hacer la parte
+de
+del Cyber
+entonces, bueno, a partir de eso quería ver
+cómo conectábamos las notificaciones
+de Mobile
+pero
+pero sí, me faltaba atacar eso
+dale, no nos olvidemos de eso
+que en sí es lo próximo que tenemos que pulir
+todavía contamos con tiempo, pero ta
+empieza a pasar
+el tiempo y
+ya también volvió Martina, entonces
+vamos a trabajar un poquitito más rápido
+entonces ahí, este
+nada
+estaría bueno tener esa fiction
+para poder desarrollarla
+que quede pronta para atacarla
+después, Santi, no sé
+si me has pasado, pero no me han llegado
+las tareas que venís creando para Gastón
+y eso, te pido si después
+podés actualizarme ahí
+bien, dale
+sí, porque he visto que has creado varias
+pero no me están llegando
+o sea, no me llegan los mensajes
+después chequeate ahí, actualizame
+cuáles fuiste creando y cuáles se le están
+y porfa eso, que sea tipo automático
+o sea, enseguida
+que creas una, actualizarnos a mí
+a Martín
+Jona
+bien, ayer, bueno, ayer se mergearon ahí
+algunas PRs
+ya mandé la de
+aproveché antes de que venga Martina
+porque si no, no me iba a dejar mergear nada
+viste, te pone comentarios
+no te atas
+sí, ya le dejé la de los
+vlogs ahí, para qué, para revisar
+no me digas, me tuve que ir a dormir
+me tuve que ir a dormir, juro que me tuve que ir a dormir
+si no te la he mergeado
+bien
+y bueno, y también nos juntamos con Nahue
+que te dejamos ahí toda la lista de tareas
+en el chat
+y dos preguntitas
+le di un recado a Nahue
+le di un regalito a Nahue que tiene que hacer una actualización
+de Bridge, hay unas cositas
+los nombres
+y esas cosas
+así que eso, gané un poquito de tiempo
+para crear las tareas
+te iba a preguntar
+en qué está lo de KYB
+que eso sí es
+eso
+sí, ahora te iba a decir
+si nos podíamos quedar dos minutos
+para preguntarte ahí unas cosas
+pero ya prácticamente lo tengo
+así que ya lo podríamos mandar
+a Develop
+lo hemos jugado post-cram
+lo hemos jugado post-cram
+bien de bien
+bueno, Santi
+bien, ahí dejé
+creada la tarea que necesitaba Stone
+ya ahora te paso ahí Santi
+el listado de tareas que he ido creando
+bien
+después
+, ya dejé enviado
+en el canal de diseño
+lo de la guía para los videos
+dentro de la guía
+en la segunda página tenés un link
+para acceder al video
+con una especie de tutorial
+que hice donde te muestro
+ahí un poco
+cómo configurar
+para realizar los videos
+y también
+muestro Loom
+que es la herramienta que recomendé
+para realizar videos
+como funciona
+y está
+bastante sencillo
+bueno ahora estoy
+continuo metido con la parte del
+del Drawer
+con la parte del
+un Mobile
+vengo bastante adelantado
+con eso
+y voy a continuar trabajando en eso
+Perfecto
+tenemos que juntarnos a la tarde
+para ver la explicación
+esta, la presentación más o menos me parece muy bien.
+estás vendiendo me está vendiendo todo esto pero está muy buena la verdad este dejemos que martín
+haga un poco de zinc yo ya mire el vídeo lo que no me cerró porque 1920 x 1100 el estándar debería
+ser por 1080 pero por temas de wii este para poder mostrar todo en gran mayoría de las pantallas
+usamos 1106 no es algo que sea un problema sino que es eso para poder visualizar correctamente
+tanto el el nadar superior como como el panel de abajo completo esa sería la media ideal para
+utilizar y el navega el usuario normal que entra del navegador una computadora normal de las nuevas
+que es que está
+resolución de esto que está teniendo necesidad y o sea o con eso lo estás cubriendo al genérico
+con eso ya estamos cubriendo o sea yo creo que la gran mayoría de los usuarios al menos hace unos
+años los pasos utilizaban era 1440 en lugar de 1920 pero pero es el 1920 x 1080 es el estándar
+16 9 entonces no está como tan tranquilo como el que se ve en verano entonces la gente no está así
+porque la gente no está en la forma como se ve en el próximo año y ya viste la gente está como tan
+es la misma proporción en sí no no debería haber problema con el tema de medidas en la
+medida estándar que utilizamos en código del sur para diseñar este un pequeño feedback caía
+el vídeo y estaría bueno que le agregues que los chicos ya lo hacen tipo el hecho de esto
+creo que por más que ningún cliente lo va a hacer pero que hagan una prueba rápida de
+esto si se pone que ya fue no arrancó desde el 1920 y voy haciendo responsiva así y que no se
+rompe nada está más o menos que se va a ser si es sólo por hecho pero si se podrá hacer una masa
+de nuevo fíjate cómo puedes agregarlo capaz que puedes agregar un vídeo complementario este pero
+estaría bueno que se agregue porque es algo que los dos ya hacen y
+bueno porque previene latigazos o alguna cosita así está entonces estaría bueno tenerlo en ese
+stand bien perfecto está otra cosa que él está y lo importante es ahí santi sé que es más técnico
+pero lo que estaría bueno es chequear también en la parte de desarrollo de rendering en ese
+vídeo está abajo que te puedes asistir con alguno de los chicos con jonah por ejemplo
+una web aquí que creo que ha hecho alguna como para validar que el cerro hasta que en el vídeo
+de cómo crear el vídeo de la pdr se chequee si la por ejemplo si la página tiene cerros
+hay rendering que se esté como te pueden dar una mano ahí para crearlo pero que se esté que
+la riqueza esté generando todos los gatitos se está encargando todos los datos sí
+o sea para poder evitar renderizados al pedo y bueno también que a recargar no haya fallas
+en consola o sea capaz que ahí esa parte puedes asistirte a ir por jonathan martina también si
+tienes algún comentario pero la idea sería como que también esté este no sólo lo ataquemos por
+el lado diseño sino que esto que una guía genérica y entonces por ejemplo que sea que se puedan ver
+los blogs para que se chequen los blogs para que no haya nada raro no haya ningún error de react
+mini mini ni metificación después éste está que si tienes errores al render y se está realizando
+bien recargar vas a tener los dos tipos de navegación en navegación interna y externa
+creo que sería esas tres cosas o sea esas cuatro cosas que estarían faltando ahí el achicar si éste
+de consola react mi identificación alguna cosa por el estilo que se revisen y si la página tiene
+reservas hay rendering los dos tipos de navegación es tanto de forma interna como recargando la página
+igual puedes chequearlo con los chicos para gustar anotando y lo que me está diciendo
+el server site rendering chequear responsive errores de consola y que sería el otro dentro
+del server site rendering tener los dos tipos de navegación bien de navegación
+interna y navegación recargando la páginahake acción interna por ejemplo acá mira si yo
+voy FIROS expressive con con stylus o vice quiere decir que estoy navegando internamente pues ya
+recargué la página se entiende bien recargar sería tipo darle revogoter einer
+es muy poco más maprovato que la otra y eso no tiene nada que ver ahí, y claro los tipos de navegación relacionados
+que es el recargar que no se rompe y después cuando navegas directamente internamente por
+ejemplo acá operadores logísticos si te fijas acá estoy recargando estoy navegando internamente
+vintage por ejemplo no se rompe no tira nada raro prueba en tiempo real y después cuando recargo
+también tiene ser vas a ir render y fíjate de toda la información se está cargando acá
+se está haciendo un render y se hace un render izado del html en el servidor después se le da
+el estilo en front y no hay ningún error de consola ningún error de react notificación o
+lo que sea que puede romper la capa que te puedes ahí este pasar con algunos de los chicos para
+testearlo este
+sí
+viene bien para eso después de la tarde nos juntamos ahí para verlo él para verlo de ya
+en agua
+แล이란나
+onions
+no
+fx
+?'s
+Eso nomás
+Y después de tu lado te queda algo
+No huevo, ya tendrías que arrancar con lo otro
+Con lo otro que sé que tiene más prioridad
+Porque después están
+Hay tareas como por ejemplo la de alinear los drops
+Damos al nuevo diseño que
+Hermosanti
+No, pero digo, hay una PR que esté activa
+Más allá de la de TeamMate
+La propia
+La de TeamMate, sí
+O sea que enseguida que termines con eso
+Lo que vas a tener que atacar
+Es las tareas nuevas que crearon con John
+¿Correcto?
+Claro
+Yo las vemos y las creamos
+Igual ya ponete a atacarlo
+Enseguida que termines con eso
+Y nos haces follow up si no las llegamos a haber creado
+Dale
+Perfecto
+Martina, adelante
+Bien, de mi lado en realidad
+Me tocó bien el día
+Estoy viendo un poco el tema de
+El update
+De la última
+Release
+Y como les había introducido
+Después estaba en realidad
+Chequeando un poco los mensajes
+Y las PRs
+Que estaban más prioritarias
+Digamos
+Así que básicamente estaba con eso
+Y el día
+Bueno, bien
+Si te parece
+Fernando, si tenías la mano levantada
+No, por lo menos
+Que cayó
+En tanto
+Pero bueno, o sea que
+Que vuelve a amar
+No es nada para
+Vistar el tema de
+De las carres de
+De Frontage aquí
+No más
+Para
+Perdón, Razzar
+No sé, es que se me está trancando a mí
+O sea
+Probablemente sí
+Pero está un cartelito
+Está
+¿Están viendo ahí?
+Bueno, a los dos les aparece que tienen mala conexión
+Así que capaz que podés crecer un
+A ver
+Lo dijo el presidente
+De que a Sator
+Eh, no, que
+Hay que estar conozcando que
+Martina para hacer
+el review
+de las PRs de Pronto Engineering
+eso no hace
+para hacer acuerdos
+ahora si se desbloqueó
+que ayer
+habías comentado que estabas
+esperando a que vuelva Martina
+para hacer la review de las PRs
+de Pronto Engineering
+ah si si si eso ya lo charlamos
+y el Gastón como tuvo que apagar
+la cámara pues se estaba cagando de la risa
+que hijo de puta
+hijo de puta
+no no fue
+no no
+mirá hace como Quique
+que Quique se burla de la gente y lo hace
+sin que nadie, sin apagar la cámara
+y nada, se burla así, discrimina
+y ya está, tenés que ser más como
+Quique
+o Nahuel que está flotando ahí
+bueno
+este nada
+nos quedamos con Jonathan
+y
+Martina
+el resto buen provecho
+bueno
+Santi y Gastón
+si son las 4 y no los contacté
+me hacen follow up
+por la casualidad
+buen provecho
+bueno nos hablamos que pasa
+chau chau

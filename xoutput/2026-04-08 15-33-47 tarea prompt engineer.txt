@@ -1,0 +1,731 @@
+unos problemitas chotos, así que nada, eso. Y después, ¿qué más? Bueno, nada, después
+sigo con lo de One Money, que ahí tengo una reunión con Guille porque todavía siguen
+con lo del Toast y los Fees, que no están prontos, así que nada, eso, de mi lado por
+ahora. Enrique. Yo de mi lado tenía varias PRs que estaban abiertas, muchas ya se me
+llegaron, surgió ahí un comentario de una que vos me marcaste ayer, que es allá, ahí
+ya la volví a mandar. Bueno, estuvimos obviamente con el testeo con la web y con Fernando del
+QR y también con el tema del PROM de Ingenier, ahí le mandé a Fernando para que biche primero
+lo que yo tengo y él me mandó también creo lo suyo. Así que nada, ahora pide tu mensaje,
+Santi, vos decís que hay que repetir esas pruebas del QR con, vos hiciste cambio, puede
+ser?
+Sí, sí, sí, había hecho algunos cambios, hay cosas que no puedo regenerar, entonces
+quería ver, este, quería ver eso, a ver si siguen dando problemas para ver qué ataca.
+Ok, vos le pusiste un comentario ahí a Fernando, ¿te acordás? Sobre el bug de los imports
+del client y del client server, eso es una nueva tarea, ¿te acordás? Así que como lo
+atacamos con una tarea aparte...
+No, no, no, que lo ataque ahí mismo, lo que hay que hacer es duplicar las constantes y
+pasarlas a algo.
+Al server. Yo lo que le dije es que lo haga Fernando, pero que vos lo controles que esté
+bien. Y va a tener que pasar de nuevo a pull request interno, esa PR de Datato.
+Ok, está bien.
+No, porque, ¿qué es lo que pasa? O sea, la está usando, el backend está usando constantes
+del front y el front ya tiene constantes, entonces lo que hay que hacer es pasar esas
+constantes al backend y bueno, está, volver a validar que todo quede en orden con esas
+nuevas constantes.
+Ok, dale, genial.
+Perfecto. Después, pues, en sí, una vez que termina lo del propio Ingenier y estos
+test de los QR, Kike, habría que empezar a hacer, este, tenemos toda la parte de SitePress
+con QR, ¿sabes? Que habría que empezar a trabajar, ¿sí?
+Sí.
+Este, eso sería una de las cosas claves y después del lado de Fernando, test unitarios
+de QR. Sé que habíamos hablado del backoffice, pero vamos a poner...
+Vamos a priorizar la integridad del QR, ¿bien?
+¿Ya están creadas las tareas?
+No, tienen que crearlas.
+Ok.
+Si quieren, pásenmelas. También, este, ahí yo te había hablado, Fernando, la de los
+test unitarios, que hay que regar las viejas porque habrá cambiado los endpoints, ¿sí?
+Hay que fijarse. Decime, Enrique.
+Un detalle, vos sabés que estaba convencido que tenía una tarea de QR review en la que
+incluso le había puesto varias tareas y eso en la descripción.
+Ok.
+Y vos sabés que ahí no figura. Yo no sé si qué pasó, si habrá sido el sprint pasado
+o qué, pero no sé si te parece, Santi, vos podés crear una nueva y yo le completo todas
+las... me fijo en los channels.
+Dale, perfecto.
+Y le pongo las pull requests, las PRs. Gracias.
+Ahí te la pondrá. Vos le asignas la época.
+Fernando.
+Bien, estuve corrigiendo comentarios. Después, Tatu, una reunión contigo. Después corregí
+también más comentarios.
+Vos decís que sobre los endpoints que hay que corregir en los test es sobre las tareas
+que, tipo, todas las tareas de los endpoints o es por...
+Acá hay una cantidad de tareas de company out. Yo hay test que eliminé. O sea, hay
+tareas porque veo... O sea, tenemos muchos endpoints, sí, acá. Estos. De estos, yo,
+yo lo que le dije a Fernando
+Enrique
+es que solo ataquemos los del back office
+¿sí?
+o sea, por ahora solo ataquemos los del back office
+porque en sí fue algo que se nos pasó a nosotros
+cuando creaste las tareas
+la idea era solo atacar los endpoints de los back office
+que son los que quedan un poco
+son los que van a estar bastante estables
+los que están cambiando
+bastante son los del site
+y no tiene sentido dedicarle tiempo a los del site
+por ejemplo
+y después lo otro que te decía Fernando
+es, faltaría
+faltaría crear los endpoints
+de
+de QR
+que cambiaron, se agregaron
+hay que volver a hacer
+test sobre los viejos, porque obviamente ahora tienen
+más casos pendientes
+entonces necesito que hagan una reestimación
+de eso y los vuelvan a crear
+y ahí, Enrique, tendríamos que hacer algunos flujos
+no sé
+Santi, ¿en qué viene con el email?
+pero ahora le preguntamos para que eso
+porque eso ya debería salir esta semana
+pero ahí vemos cómo viene Santi también con el email ahora
+este...
+no sé si lo pudo sacar o no
+pero ahora le comentamos
+porque eso también quedó súper colgado
+y está bueno tenerlo para la parte de automation
+entonces en sí, en el orden de prioridad
+primero sería el poder tener una B1 del prompt engineer
+¿sí?
+para ya enviar la PDR a pull request intern
+eso para ambos, para Fernando y para Enrique
+después cerrar las PDRs abiertas
+¿sí?
+o sea, eso es prioritario
+ahí si ven que algo está bloqueante
+si te recuerdan hacer follow up
+ya sea en diseño como en desarrollo
+y luego de eso, este...
+del lado de Enrique empezar a atacar
+lo que sería la parte de SciPress
+proyectar la parte de SciPress de QR
+y de parte de Fernando
+proyectar la parte de test unitario de QR
+¿está?
+para alinearnos
+o sea, una vez que está tipo lo de prompt engineer
+se suben dos PDRs aparte
+se ponen el archivo en...
+yo creo que lo mejor es subir dos PDRs separado
+para poder trabajarlas por separado
+o sea, creo que son dos agentes distintos
+que está bueno que tengan sus flujos de análisis distintos
+exclusivos cada uno
+entonces está
+está bueno trabajarlos por separado
+ok
+¿recomendás que sea un solo archivo?
+es algo que andábamos hablando con Enrique
+si era un solo archivo...
+eso es parte del debate que tiene que generarse cuando se genera
+pero
+o sea, si ustedes consideran que tiene que ser un solo archivo
+si ustedes...
+es una B1
+esto va para todos
+es una B1
+¿sí?
+entonces este...
+de esa B1 la idea es que
+que puedan este...
+este...
+¿cómo se llama?
+de esa B1 la idea es que puedan investigar y probar un poquito
+este...
+y ver qué...
+o sea
+ver qué es lo mejor
+porque probablemente lo que vamos a terminar teniendo es una estructura de carpeta
+no sé si los Markdown...
+los Markdown dentro de cada carpeta
+o...
+o en Dock vamos a tener una estructura de Markdown
+para cada carpeta
+por ejemplo, podemos tener un Markdown base
+y después tener...
+en cada proyecto...
+en cada carpeta
+tener como un readme
+este...
+que indique qué es lo que hay ahí
+este...
+creo que vos, Fernando, lo habías comentado
+hay varios approach y varias arquitecturas
+en esto de approach...
+de prompt engineer
+que se pueden tomar
+la idea es que con esta B1 vayamos probando y iterando
+si ustedes dicen
+mirá, yo probé y me sirve más tener...
+cuando vea esa carpeta
+tener todo ahí y poder mandarlo a investigar
+lo dejamos ahí
+y si no lo que hacemos es empezamos a armarlo en...
+en...
+en varias carpetitas
+eh...
+denme un segundo
+no, no hubiera nada que lo estaba compartiendo
+solo que el subdominio no se propagó todavía
+bien
+eh...
+no, no, dije que...
+o sea, que estabas compartiendo por las dudas
+que no se vaya a mostrar
+nada
+entonces, de nuevo
+para ustedes dos
+lo de prompt engineer
+la idea es que trabajemos en esta B1
+también empecemos a ver
+los resultados de aplicarla
+y distintas mejoras
+ustedes al usarlo
+algo que yo...
+creo que es muy importante
+es que...
+es muy importante
+que la gente sepa
+que la gente sepa
+que la gente sepa
+algo que yo...
+o sea
+algo que quiero es que vayan generando documentos
+o sea, que ese mismo prompt engineer
+ese mismo agente
+se vaya dando cuenta
+documentos
+o registros
+entonces ustedes
+a partir de ahí
+podemos
+yo qué sé
+yo cuando lo hago
+a mí me va generando documentos
+muchas veces
+o yo tengo algunos documentos
+que los voy dejando ahí
+en el workspace del repositorio
+entonces después los reutilizo
+entonces estaría bueno
+capaz que empezar a...
+a ver ese documento
+si vale
+y una duda que tengo
+es cuál
+qué es lo mejor
+si conviene tener
+esa estructura de documentos
+dentro de document
+o
+dentro de doc
+o
+en cada carpeta de
+de repositorio
+si por ejemplo
+en models
+en service
+hay que ver qué es más óptimo
+y qué ensucia menos el código
+este
+qué bueno es
+la idea
+o sea
+una de mis ideas
+es que
+a partir de esto
+el repositorio
+tipo
+a partir de esta B1
+va a ser
+una de mis ideas
+es que a partir de esto
+a partir de esta B1
+también hagamos
+que se vayan generando
+entonces en las PR
+que ustedes van trabajando
+si van generando alguno nuevo
+o van utilizando alguno nuevo
+lo vayan enviando
+sí
+y vayamos enriqueciendo
+este
+pero como digo
+es una primera iteración
+este
+para pensar usarlo
+lo hacemos en inglés
+no
+hagámoslo en español
+y después vemos
+parece que es lo más sano
+todo lo que es documentación
+está en español
+y por lo que he visto
+la eficiencia
+de B1
+no
+no
+no
+no
+la eficiencia
+es mínima
+frente español-inglés
+en
+ok
+eh
+usando los modelos
+capaz que antes
+sí había más efectividad
+pero hoy en día
+no tiene sentido
+no sé si alguien tiene
+un
+algún una idea
+porqué hacerlo en inglés
+lo que nosotros lo hacemos
+es el código
+y todo eso
+si lo comentamos
+todo en inglés
+pero si fijás los readme
+están todos en español
+entonces como esto sería
+en readme
+creo que es mucho más sencillo
+o nada más
+el lenguaje natural
+entonces
+hoy en día
+la guía
+Pero vamos bien, si vemos que consume, o encontramos una justificación, por ejemplo, que consume más tokens, o lo que sea, podemos pasar a inglés.
+Podemos tener una versión en español y otra en inglés.
+Lo que ustedes quieran.
+Bien.
+Gastón.
+Perdón, no terminé.
+Si puedo...
+Sí, ¿qué te faltó?
+Quedó la tarea del tab de K y B, del backoffice, ya en intro, ya quedó en subida.
+Ah, bien.
+Me queda la otra tarea del tab, el comentario de bloqueo, que lo tengo que...
+Lo hago y lo... O sea, lo corrijo y lo mando a Intem.
+Y actualizo los puntos, ¿verdad?
+Porque me quedé medio en blanco.
+Los actualizo yo con...
+No, no, no, aguantemos un poquito.
+Yo todavía estoy alargando este sprint, capaz que lo paso a un sprint y medio.
+Ok.
+Porque como vamos a hacer una salida de producción, todavía no tomé la decisión de lo que vamos a hacer.
+Ok.
+Bien.
+Ah, entonces.
+Por ahora lo vengo alargando un poquito.
+Eh, Gastón.
+Buenas.
+Si nosotros no estamos... Eso es para todo.
+No estamos poniendo objetivo al sprint, es solo para poder...
+O sea, el sprint no está sirviendo para planificar como si no sirvió antes.
+Sino lo que nos está obligando es como a cerrar un cierre, tener un cierre de tareas, nada más.
+Así es como... Es eso.
+La realidad es que no estamos pudiendo planificar a largo plazo por...
+Cómo se va variando y cómo se va moviendo todo.
+Entonces lo único que nos hace es cerrar un ciclo.
+Pero si ese ciclo puede alargarse, lo alargamos.
+O sea, no es la idea que...
+La metodología no tiene que complicar, tiene que facilitarnos la vida.
+Entonces, también nosotros no podemos tener un millón de puntos ahí y no cerramos.
+Entonces, por eso es que cerramos el sprint.
+Pero no tiene más que eso.
+Gastón, adelante.
+Bien.
+Yo estuve haciendo unos ajustes en la parte de editar permisos por empresa en TeamMate.
+Sí.
+Ayer hice los...
+Se los dejé actualizando.
+Se los dejé actualizados en el hilo de Slack para que lo revisen.
+Después estuve... Seguí trabajando en el sistema de notificaciones.
+Hice la parte del panel, digamos, del panel compacto de notificaciones rápidas.
+Eso ya lo vio Sandy y quedó aprobado de su lado.
+Y ahora había pasado a hacer la parte de ver más notificaciones.
+O sea, la pantalla exclusiva de notificaciones.
+Y eso tal, lo quería ver con vos, capaz, en la post-cram.
+Porque no sabía qué tan complejo querías que fuera.
+Si necesitaba tener mucha cosa o lo básico como para que salga rápido.
+Lo haremos.
+Dale.
+Entonces, nada.
+Mientras tanto, ¿qué tal?
+Estaba esperando tener la daily para comentarte eso.
+Estuve haciendo research de IA's para automatizar...
+¿Les habilité cloud a ustedes?
+¿Alguno de los dos?
+Yo no sé, ¿no me comentaron eso?
+Creo que solo le habilité a Jonah, ¿no?
+No me fijé, pero creo que no me llevó nada.
+No, hasta ahora lo hacemos en el post-cram para que lo tengan.
+Estuve viendo...
+Yo llevo lo que estuve viendo.
+Yo estuve jugando con otra IA de Google.
+Es un poco para hacer diseño, que al parecer está bastante bueno.
+Pero ahora lo he charlado.
+Decime vos, Gastón.
+Sí, yo lo que estuve viendo, más que nada, eran skills que sirven para diferentes IA's.
+Y encontré unas que están bastante buenas, que las reviso con Santiago y vemos ahí que sí sirven, ¿no?
+Pero me parece que están muy buenas.
+Y, por otro lado, estuve haciendo las tarjetas personales para...
+Para Guillermo y para Carlos.
+Para Bolivia, que me pidió Mati de forma urgente.
+Ah, bien, perfecto.
+¿Tiene bien?
+Buenas, por mi parte ya tengo terminados los mails.
+Si quieren ahora los podemos ver como post-cram, si no, yo se los envío a iSign.
+Están fuera los ajustes ahí de los textos, más que nada.
+Y crear el mail igual, pero para TeamMate.
+Después, la idea ahora es continuar con lo de...
+¿Cómo se llama?
+Con lo de la configuración de los videos, que tengo que investigar ahí un poquito más eso que me habías dicho de cuál sería lo mejor ahí para grabarlos y eso.
+Y después está la parte de notificaciones, la pasé a Gastón.
+Pero ahora vi que a Gastón le cayeron un montón de cosas.
+No sé...
+Este, capaz que lo mejor sería que yo retome esa tarea.
+O ver ahí como nos dividimos.
+Porque hay pedidos ahí de parte de Ana y de Marketing ahí que al parecer tienen bastante prioridad.
+Y nada, eso.
+En base a eso, una vez que termine con lo de la configuración de los videos, vea ahí qué tarea voy a agarrar.
+Claro, en sí.
+La prioridad en sí es...
+TeamMate me dijiste, Gastón, que ya existe una iteración más con respecto a lo que te había dicho Jonathan Hinaway, ¿correcto?
+Sí.
+Está, entonces ahí...
+Capaz que hacerle follow up a ello, no sé si lo vieron. Así yo después lo reviso.
+Para ver si está todo bien.
+Después lo otro que tiene prioridad por ahora son los correos en CSOs de Enrique.
+Que ahora los bichamos y están pronto.
+Y después, bueno.
+Lo que sí me gustaría es...
+Entiendo que tienen requerimientos ahí Santi con Ana y lo que sea.
+Hay dos cosas que quiero que se estén atacando.
+Además de todo lo que van pidiendo.
+Una es la parte de IA.
+Que ahora lo hablamos en el postgram.
+Y otro es la parte del módulo de notificaciones.
+Esas son las dos cosas que te quiero que se estén moviendo de su lado, además de lo que estén atacando ellos.
+Si eso lo están moviendo...
+No pasa nada.
+Pueden ir mechando entre una cosa y otra.
+Pero no quiero que estén pausadas.
+Quiero que se estén tocando, además de lo que va pidiendo Ana y Guillaume.
+Por ahora no hay urgencia de sacar cosas.
+Más allá de lo de teammates y lo de notificaciones.
+Así que yo diría que sigan trabajando en eso.
+O sea que pueden ir tomando esas cosas.
+Bien de bien.
+Bien.
+¿Algo más Santi?
+No, de mi parte nada más. Eso.
+¿Naube?
+No, de mi parte.
+Ayer había cerrado los últimos comentarios.
+No, de mi parte. Ayer había cerrado los últimos comentarios.
+No, de mi parte. Ayer había cerrado los últimos comentarios.
+No, de mi parte. Ayer había cerrado los últimos comentarios.
+Un último comentario que dejaste en la PR.
+Aproveché para cerrar la parte del verification modal.
+Que fue ahí que Kike te tiró la pregunta esa.
+Por el tema del largo de caracteres.
+Y lo único que en el red Z a la hora de mandarme el código por correo.
+Si bien el código no llegó.
+El evento por SNS se disparó.
+Imagino que no llegó el email porque es proe local.
+Y ahora está la parte del PROMEN GENIERING.
+Hay una cosa que yo le había dicho a Kike
+Del código de reseteo
+Es que él sí lo envía al site
+Entonces
+Ustedes lo que pueden hacer ahí es poner un console.log
+Imprimir ese código de reseteo
+Y probarlo, no sé si lo hicieron
+Sí, sí, por eso
+Para poder probarlo hice eso
+Sí, está
+Yo ahí Kike me recomendó
+Algunos refactors y ajustes
+Y le pedí que volviera a chequear
+Porque yo había sacado
+Unos ajustes ayer para toda la parte del QR
+Entonces una vez que me lo confirme
+Vuelvo a iterar
+Y capaz que les hago follow up
+Para que vuelvan a chequear esto
+Todos esos cambios
+O lo que sea que te permitió probarlo
+Dejátenlo medio a mano
+Así lo podemos iterar
+Una vez que garanticemos eso
+Vamos a atacar de una
+Todo lo que esté es unitario
+Yo ahora voy a revisar tu PR ya
+O sea, literal, termina la reunión
+Y va a ser lo primero que voy a hacer
+Antes que nada
+Así que eso nomás
+Para estar alineado
+Voy a intentar a ver si está todo ok
+Ya la mergeamos si Dios quiere
+Después Nahue te iba a preguntar
+¿Viene el site varias PRs draft?
+Ah, tenemos que eliminarlas
+Porque fueron las componentes que quedaron
+Te acordás que te habíamos comentado
+Una vuelta que yo las voy eliminando ahora
+Así ya no quedan
+Yo acababa tanto bicho ahí
+En cuál es el estatus como se está moviendo
+Y había varias drafts
+Quería consultarte ahí
+Porque como que para mí era como parte del trabajo que venías haciendo
+Pero bueno, vamos a ver si Dios quiere
+Podemos mergear este bichito
+Este que tenemos
+Después tenemos que hablarlo de ProMillionaire
+Ahí Nahue, si vos querés
+Cloud o algo para probar
+También lo mismo que yo le setea a Jonah
+O que le voy a setear a los chicos
+Me contactás por privado
+Y te pongo la cuenta ahí de 20 dólares
+Con la cuenta
+Lo único que tenés que hacer vos es crear la cuenta de Cloud
+De la IA que quieras
+Este
+Y después yo
+Con el usuario y contraseña
+Tengo que entrar
+Para poder agregarte a la tarjeta de crédito
+¿Sí?
+Dale
+Perfecto, bien de bien
+Está, Nahue de tu lado
+Seguimos con lo de ProMillionaire
+Lo tenés en progreso
+Seguimos atacando eso
+Y ahora vamos a ver si mergeamos lo otro
+Para ya poder habilitarlo
+Que era la parte de
+Eliminar teammate y todo eso
+Todo el refactor
+La reestructuración interna
+Todo eso que tenías pendiente, ¿no?
+Sí
+Voy a aprovechar la parte de ProMillionaire
+La parte del reviewer
+Para ahora que tengo que
+O sea, me quedaba pendiente armar la PR
+El video
+Y ya capaz que ahí lo mecho
+Y pruebo ProMillionaire ahí
+Con esta
+Genial, sí, sí
+Sí, sí
+Sí, ahí yo lo que una de las cosas que estuvimos hablando
+Que me había dicho Enrique
+Después también me volvió a asistir Fernando
+Por eso lo publiqué
+Que es
+El hecho de recolectar
+Digo, conectarlo contra GitHub
+Y recolectar todos los comentarios
+O todas las cosas que se puedan
+O sea, creo que esa es una de las bases
+De correcciones más grandes
+Los anti-string, lo de BEM
+Con ejemplos, todo, o sea
+Vamos a tener que ver la arquitectura
+Que va tomando eso, ¿no?
+Sí
+O sea, el primer desafío es armar el ProMillionaire
+Y después ver si con sus herramientas que tienen
+Están tomando bien ese ProMillionaire
+O hay que ver
+De darles un poquito más
+Sí
+Yo por ahora no quiero limitar
+Una IA a cada uno
+Entonces está
+Y tendría que charlarlo más arriba
+La reunión de liderazgo
+Una vez que tengamos resultados
+Ver de estandarizar
+Pero a mí me gustaría
+O sea, yo soy partidario
+De que todos usen la misma IA
+O sea, para trabajar para
+Entonces es un poco lo que quiero estandarizar
+La pregunta es
+¿Cuál y cómo?
+Sí, entonces
+O sea, por eso le estoy dedicando
+Jodiendo bastante con esto
+ProMillionaire
+Porque quiero ver
+Si podemos estandarizar con uno
+Eso nomás
+Bien
+Jor
+Ya te había seleccionado
+Bien
+Ya ayer me traje los
+Los últimos cambios que subió Nahue
+Para también ya ir adelantando
+El tema de los conflictos
+Ya los resolví
+Ya modifiqué la implementación
+Con el tema de bloquear los filtros
+Cuando apretamos lo de ver seleccionadas
+Creo que lo más fácil era
+Era eso
+Era eso
+Y que el filtro se haga antes
+Entonces ahora si vos
+Buscas por Company Type
+Y después ver seleccionadas
+Ahí sí, o sea, te trae las seleccionadas
+Que tengan ese Company Type
+Y no hacer el filtro después
+Todo eso ya quedó
+O sea, pará
+O sea, que bloqueamos los filtros
+No entendí
+Sí, sí, sí, sí
+O sea, cuando estamos en ver seleccionadas
+Quedaron deshabilitados
+El endpoint solo devuelve
+Las compañías de empaginado nomás
+Ah, o sea, devuelve y no acepta filtros
+Exacto
+Perfecto
+Yo ahora voy a intentar verla de nuevo
+A ver si la puedo mandar de una vez por todas
+Y después seguimos con la otra
+Bien
+A su vez también mandé ya
+Actualicé la del autocomplete
+Actualicé los videos ahí
+Que se rompía un poco ahí el tema del responsive
+Eso ya quedó
+Ya quedaron actualizados los videos
+Ya volví a mandar la PR
+Y nada, había arrancado de nuevo
+A revisar ahí un poco la de los blogs
+Para ir actualizándola con develop
+Que había quedado medio para atrás
+Y mientras hacía todas estas iteraciones
+También lo mismo
+Fui iterando un poco con lo del prompt engineer
+Y viendo ahí a ver que me fuera corrigiendo
+Y viendo ciertos patrones
+Y probando a ver cómo funcionaría eso
+Bien, perfecto
+De nuevo, cualquier pique o lo que tengan
+O dudas lo que tengan con eso
+Tienen el channel de developers en sí
+Para consultarse y pelearse entre ustedes
+Bien de bien
+Creo que estamos todos
+Estamos todos
+Bueno, genial
+Ahí teníamos post-cran con Santi, Enrique y Gastón
+Creo que el resto estaba liberado
+Nahue y Jonathan
+Les estoy avisando
+Y
+Fernando, voy a estar atento
+Ahí a la de los bloqueos
+Ahí va a andar la de nuevo intern
+Para que Nahue o Jonathan la revisen
+Así vemos qué pasa
+Dale, bien de bien
+Bueno
+Chau, nos vemos
+Chau
+Chau
+Bueno, Santi, compártanlo de los dos
+Ahí les comparto
+¿Me están viendo?
+Sí
+Bien de bien
+Bueno
+De acá es que en Design Review
+Quedaron tanto el mail de Loner como el del TeamMate
+Se mantiene el asunto igual para ambos
+El título también
+Los cambios estarían acá
+En el original, en el de Loner
+Le haríamos acá que es
+De tu cuenta
+Dejé acá abajo, igualmente, los cambios del TeamMate
+Y acá abajo, si no solicitaste el cambio, podés signar este mensaje
+Tu cuenta seguirá protegida
+Estos son los dos cambios que tiene la parte de Loner
+A ver, pará
+O sea, pará
+Soy tú, ¿no te decía?
+A ver, seguí, Santi
+Bien, en el siguiente mail tenemos la parte del TeamMate
+Que dejé acá abajo los cambios
+En este caso, en vez de decir de tu cuenta
+Dice de tu acceso como colaborador en DashBank
+Y después, en la parte de abajo
+Dice tu acceso seguirá protegido
+O sea, no te habla de tu cuenta, sino que te habla de tu acceso
+Lo que me interesa acá poner, Santi, es el nombre
+Es el nombre de Loner
+En una decir a tu cuenta
+A tu cuenta a nombre de Santiago Tonarelli
+Y la otra decir que te cedió Santiago Tonarelli
+Ok, está perfecto
+O sea, capaz que en la primera podemos poner
+Hola, solicitud de rastreo y vencimiento de la cuenta
+De la cuenta de Santiago Tonarelli, no sé cuánto
+Y la otra que haga de los permisos que te cedió Santiago Tonarelli
+Quiero que quede claro
+Porque como es algo indicado
+Lo que podemos usar ahí, Enrique
+Es el username
+Lo que podemos usar ahí, Enrique, es el usuario y la
+El primer nombre y el apellido de lo que es el Loner de la cuenta
+Ok
+Entonces ahí hagamos una pequeña iteración
+Y veamos
+Bien, está perfecto
+Ya le he usado estos ajustes y se los mando ahí acá en el eSync
+Está, de ese lado
+Ah, liberado
+Liberado, Enrique
+Este, ahí estate atento
+Santi lo robás a Enrique también cuando quede en esos comentarios
+Está
+Enrique vos ya podés ir viendo que vas a tener que obtener el nombre y el apellido
+Y ya podés ir trabajando la lógica de diferenciar eso
+Cosa que el cambio de Santi sea lo más rápido posible
+Está
+Ok
+Sí
+Pero si querés podés ir adelantando un poquito lo que es obtener esos datos
+Y fijarte cómo te los envío
+Viste que te envío el teammate ID
+Entonces ahí vos te fijás el teammate ID que tenga el user owner
+Está
+Y tenés que fijarse
+Se lo vas a enviar al teammate ID pero el user owner es el otro
+Está
+Eso nomás
+Ok
+Hasta luego
+Liberados, liberados, Kike

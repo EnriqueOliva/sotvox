@@ -1,0 +1,584 @@
+Escribiéndole a la gata ahí, la boriza para subir al BM.
+Ojo, qué falta me hace.
+896.
+Dios te oiga.
+A ver, pará.
+Vamos a arrancar con GetMyInfo, a ver qué pasa con GetMyInfo.
+¿Qué te puse?
+Los nombres no son claros y los casos tienen detalles.
+Avísame y lo vemos.
+Vamos a ver los archivos.
+A ver, vamos a ver los archivos.
+¿En dónde le queda cómodo acá?
+Baja un poquito.
+A ver, lo único...
+Primero que nada, los nombres, nosotros ahí seguimos con el formato de
+Shul, Wilby, toda esa mierda.
+Entonces, en sí, no poner ese guioncito.
+O sea, seguir respetando ese formato.
+O sea, vi que lo hiciste en varios porque quisiste hacer el iscribe
+y después los pasaste al it y como que los pasaste tal cual como estaban.
+Ahí yo necesito que volvamos, volvamos, volvamos a lo que teníamos antes.
+En ese sentido.
+Segundo, vamos a analizar cada uno.
+Porque acá lo único que pasó es que ahora te devuelve si tenés compañías o...
+O sea, si tenés compañías propias o no.
+¿Sí?
+¿Bien?
+Bien.
+Y te devuelve si vos tenés...
+O sea, si vos estás bloqueado, devuelves que estás bloqueado.
+O sea, si vos estás bloqueado, ya estás bloqueado.
+No te interesa si el team mate está bloqueado.
+Porque vos estás bloqueado.
+¿Entiendes?
+Ahora, ¿qué puede pasar?
+Si, por ejemplo, vamos a suponer el caso.
+Martina compra una compañía, compra una empresa.
+¿Sí?
+Martina me agrega a mí para que yo pueda administrar su empresa.
+Eso quiere decir que yo soy team mate de Martina.
+¿Sí?
+Martina es la dueña de la compañía.
+Si yo...
+Si Martina...
+Si Martina, por ejemplo, una de las suscripciones falla en el pago recurrente mensual,
+Martina va a bloquearse.
+Sí.
+¿Pero a quién le bloqueamos la cuenta?
+Únicamente a Martina.
+No bloqueamos todas las cuentas.
+Bloqueamos solamente la cuenta de Martina.
+Entonces, cuando vos vas a obtener mi información,
+como vos administrás la cuenta de Martina,
+yo tengo que ir a preguntar.
+¿Yo estoy bloqueado?
+Si yo no estoy bloqueado,
+¿Martina está bloqueada?
+Perfecto.
+Entonces, ahí hay un tema.
+Don Guillermo,
+que yo lo tenga la gloria,
+lo que dijo fue,
+bueno, me chupo un huevo
+si vos, Santiago, tenés tus compañías.
+Yo te voy a bloquear
+y para poder desbloquearte tenés que cambiar el método de pago de Martina.
+Si no, vos tampoco vas a poder acceder a tus compañías.
+Y eso está bueno porque de alguna manera hace que
+pinches también...
+Por ejemplo, vos me cedes mi compañía,
+pero yo tengo mi compañía,
+te digo, vos chupá pija pagada o eliminame de team mate,
+pero yo no puedo, estoy pudiendo acceder a mi información.
+Claro.
+¿Entendés?
+Y después,
+en el otro sentido...
+Sí.
+Y después en el otro sentido, ¿qué más tenés?
+Entonces, ahí por ejemplo,
+en ese caso, vos estabas,
+si vos vas a ese caso particular,
+analicemos caso por caso.
+Si querés arrancamos de arriba.
+Los casos que modificaste.
+Ahí va.
+Primero.
+Está, el caso de no team mate, no company.
+Está.
+Eso es toda una definición, pero está bien.
+¿Sí?
+Bajemos uno más.
+Bien, bien, bien.
+With team mate and company.
+Está.
+Eso está perfecto.
+De nuevo, cambiar el nombre para mantener el estándar,
+pero está perfecto.
+Ok.
+Está.
+Después, multiple team play son blocked.
+Ahí ya en el 4 arrancamos con problema.
+Bueno, en el 3 ya arrancamos con problema,
+porque en el 3 vos fijate que, ¿por qué?
+Porque dice, blocked by team mate.
+Y el team mate está bloqueado.
+El team mate es otro usuario, ¿sí?
+¿Pero qué pasa?
+Pero en la tabla team mate está que yo soy owner de una compañía
+y te cedí el control de todas mis compañías a vos.
+¿Entendés?
+Entonces, si te fijás ahí, ¿cuál es el problema?
+De estos test.
+Si yo me fijo, veo que yo estoy bloqueado,
+pero también la compañía está bloqueada.
+Entonces, dice, bloqueado por un team mate.
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+¿Por qué?
+Porque es un team mate.
+Y en realidad, vos deberías fijarte,
+si yo estoy bloqueado,
+no importa si el team mate está bloqueado.
+¿Está?
+Yo debería estar bloqueado.
+O sea, el resultado debería ser bloqueado.
+Y si yo no estoy bloqueado,
+puede ser que el resultado sí sea bloqueado
+por el team mate que está bloqueado.
+Ahora, lo que está pasando ahí es que vos estás bloqueado
+y el bloqueado es el team mate.
+Entonces, en realidad,
+es como que estás el doble bloqueado.
+Está bien, hay que tener en cuenta ese caso.
+Pero veo que se repite,
+o sea, vos tenés que decir, bueno,
+hay un caso en que solo estoy bloqueado yo.
+Otro caso en que solo está bloqueado el team mate.
+Y otro caso en que estoy bloqueado el team mate
+y estoy bloqueado yo.
+Si vos bajás al 4, pasa lo mismo, literal.
+Sí.
+El 4, estoy bloqueado yo,
+está bloqueado el team mate.
+Ay.
+¿Entendés?
+Soy una vieja.
+Bueno.
+O sea, pero ¿entendés un poco lo que es la lógica?
+O sea, vos pensá esto.
+¿Vos pensás esto?
+Vos estás bloqueado, perfecto.
+Ahora, si yo estoy bloqueado,
+nosotros lo que tenemos que testear
+es los casos bordes.
+Yo no estoy bloqueado, pero otro está bloqueado.
+Otro está bloqueado, pero yo no estoy bloqueado.
+Y así sucesivamente.
+O los dos estamos bloqueados.
+Son varios casos bordes.
+¿Sí?
+Sí, mirá.
+Entonces, ahí en el mock user,
+vos no podés ya devolver
+que el usuario está bloqueado.
+¿Está?
+Y asimismo,
+que este...
+Que el team mate está bloqueado.
+Después el house owned companies
+es una property
+que en realidad no debería
+retornar el find all.
+Fíjate dónde devolvés
+el house owned company.
+Si vos vas al código, el house
+owned companies
+es algo que se genera si vos tenés
+compañía. O sea, se autorrellena
+eso. Entonces vos no podés
+decir, en la tabla usuario,
+porque vos cuando moqueás el
+resolves, estás moqueando,
+que el usuario devuelve,
+tiene una property house owned
+company. Y también estás moqueando
+el buy. Yo creo que acá hay un
+tema conceptual.
+Una cosa es lo que vos tenés que
+moquear para que devuelva la tabla.
+Que debería seguir los lineamientos
+del modelo. O sea, quiere decir,
+si el modelo devuelve tal cosa,
+vos deberías devolver lo mismo.
+En este caso, la property buy
+de la línea 156
+y la property de la línea
+157, house owned company,
+esas dos properties, ninguna
+de las dos está en el modelo.
+Se autorrellenan después
+de que vos haces las llamadas. Entonces
+no deberías llenarlas.
+Cuando vos haces en la línea 160
+que devuelva, vos deberías devolver
+un usuario, si podés devolver que está bloqueado,
+pero deberías devolver un usuario básico.
+O sea, con los datos
+del usuario. Y si vos vas
+a la lógica del repositorio y eso, vos
+vas a ver que esos datos
+se agregan a lo que es
+el modelo.
+Y es el usuario que retorna.
+Si querés compartir el estudio,
+y andate al
+user service, ahí está.
+Baja, baja,
+ahí está bien, en la línea 36,
+baja, find my email
+with status. Baja un poquito
+más. Viste que ahí
+vos, el user que
+obtenés en la línea 38,
+no tiene la información y vos lo que hacés
+es cargársela. Fijate que ahí es donde
+está toda la lógica.
+Vos agarrás y preguntás, bueno, tenés teammates,
+si tus teammates están bloqueados,
+obtenés todos tus teammates
+y te fijás.
+Fijate el if de la línea
+50. Si el estado
+del usuario no es bloqueado,
+porque si es bloqueado, ya no me interesa.
+Es más, eso ahora que lo veo,
+podríamos chequear. Si el estado del usuario
+ya es bloqueo, ni pregunte por los teammates.
+Eso sería más óptimo.
+Eso es un...
+un to improve. Si querés,
+agreále un to do y ponele
+as ahí en la línea
+50.
+Ponele, agreále un to do
+y pone as we talk
+talked in
+in the meeting.
+We need to move this if
+above
+the logic
+above the
+line
+41.
+41.
+Porque en realidad, ¿qué pasa?
+A ver, ¿por qué obtenés los teammates?
+Porque vos querés saber... En realidad no estás
+obteniendo los teammates. Vos estás...
+Teammate es una tabla de relación
+que dice...
+Entonces vos lo que estás diciendo es, todas las
+tablas que a vos te cedieron
+el manejo de compañías.
+¿Sí? Y una vez que vos
+obtenés todos esos usuarios,
+¿sá? Porque vos fíjate que
+primero obtenés todas las relaciones.
+Y después de esas
+relaciones,
+te dice, bueno, mirá. Fíjate que
+te dice, Pepito
+te cedió la compañía tanto. Por eso
+vos agarrás el user ID de
+Teammate. ¿Ah?
+Y después vos te fijás, haces un
+find one diciendo, tráeme
+todos los dueños de esas compañías que te cedieron
+pero solo los que tengan
+el status bloqueado.
+¿Sí? Y ahí recién
+preguntás, que eso está mal,
+tendría que estar más arriba porque si vos ya
+estás... Lo único que a vos te interesa es si vos ya estás
+bloqueado. Ya está, está bloqueado, se terminó.
+Ahora, si vos no estás bloqueado,
+porque ponele que vos tenés tus suscripciones al día,
+pero a vos te cedieron, Martina a vos
+te cedió las organizaciones de ella y ella
+está sin pagar, yo te voy a bloquear a vos,
+Solete, y vos no vas a poder hacer nada
+hasta que Martina no se
+desbloquee. Viene por ahí
+el tema.
+Un poco le sale.
+Perfecto. Y después,
+¿qué pasa?
+Nosotros tenemos que saber si vos sos dueño
+de compañías. Porque como
+dijimos, a partir de lo de TeamMate
+se agregó la funcionalidad
+de que vos...
+Pará, primero vamos
+a seguir con lo de bloqueado.
+Entonces, ahí lo de bloqueado hay tres casos.
+Uno, el usuario está bloqueado, entonces si el usuario está
+bloqueado, me importan tres caras con los TeamMate.
+¿Sí? Importan tres chotos.
+¿Está? O sea,
+ya está, está bloqueado.
+Si el usuario no está bloqueado, entonces
+ahí sí, hay que chequear el caso en que uno
+de los TeamMate está bloqueado. O sea, uno
+de los dueños de una empresa que me
+cedió la información, está bloqueado.
+Entonces, yo estoy bloqueado también.
+Y es más,
+si te fijás,
+vos ahí, en la línea 52,
+agregás una property by.
+¿La ves? A la
+tabla user le agregás una property by
+que dice, si estoy bloqueado
+por otro, pongo por quién está bloqueado.
+Porque cuando vos entres,
+que vos tenés toda la regla,
+yo voy a usar esa property
+para mostrarte, vos estás bloqueado
+por Martina.
+Claro. Entonces, ahí
+vos ya sabés, porque si no, no tenés ni idea.
+Ponele que vos manejás cinco compañías.
+Vos tenés que saber quién es el que no te está
+dejando acceder a las otras. ¿Entendés?
+Entonces, viene por ese lado.
+Entonces, ahí tenés tres casos.
+Yo estoy bloqueado yo.
+Estoy bloqueado, yo no estoy
+bloqueado, pero estoy bloqueado por otra compañía.
+O sea, estoy bloqueado por otro
+dueño, que me cedió el control.
+O directamente
+no estoy bloqueado.
+Porque el caso en que los dos están bloqueados es,
+es el mismo que yo estoy bloqueado. ¿Entendés?
+Entonces, en realidad son tres casos.
+Yo estoy bloqueado, yo no estoy bloqueado, pero
+en realidad, una de las compañías que yo
+administro está bloqueada.
+Uno de los dueños, porque en realidad,
+vos no es que estás una de las compañías.
+Es el dueño de
+muchas compañías. Con que tenga uno
+bloqueado, ya se bloquea todo.
+¿Está? Por eso, en realidad,
+nosotros bloqueamos el usuario
+y no bloqueamos el...
+¿Cómo se llama?
+No bloqueamos las compañías.
+Bloqueamos el usuario.
+Ahí está el chiste.
+Y después,
+y después, bueno, el caso en que ninguno de los dos
+está bloqueado. Por último,
+la línea 55,
+nosotros necesitamos saber para ciertas
+operaciones, y ahí agregamos
+la property, si vos sos dueño
+de compañías o no. Como hay usuarios
+que se van a registrar al sistema,
+en realidad son administradores de otras compañías,
+no son dueños, nosotros tenemos
+que saber si vos tenés compañías o no
+para hacer ciertas
+operaciones o permitirte ciertos ingresos.
+Porque si vos no tenés compañías,
+en realidad, por ejemplo, lo de teammates
+no podés acceder.
+¿Entendés?
+Después otra cosa que no vas a poder acceder...
+Por ejemplo, hay cosas que no vas a poder
+manejar. Más a futuro
+va a haber más detalle.
+Pero en un principio, lo de teammates vos no podés
+acceder porque no sos dueño de compañía.
+¿Está?
+Si volvamos a los test,
+yo creo que hay un concepto
+que lo hemos hablado muy por arriba,
+vamos a concretarlo, y es
+vos tenés que hacer un modelo
+por ahora vos has
+utilizado el mismo. Porque si vos
+creás el mock user
+¿Sí? Y después
+decís, lo que me tiene que devolver es
+lo mismo que este mock user.
+En realidad, conceptualmente
+está mal. Porque
+por ahora te viene
+funcionando, pero en realidad vos deberías
+tener un expected user
+result
+¿Está? Que es el modelo que esperás
+devolver
+y deberías tener un mock user
+que es el que devolvés en user
+findOne que tiene
+otras properties.
+Son dos cosas distintas.
+Cuando vos llamás al findOne
+no te va a devolver un usuario con el
+buy y el hasOwnedCompany.
+¿No?
+Vos no estás llamando al
+método de repositorio findEmailWithStatus.
+Estás llamando al findOne
+y el findOne no te devuelve con buy
+y hasOwnedCompany. Eso se lo
+agregamos después.
+Entonces, ahí hay un concepto
+que es doble. Porque vos decís, bueno
+si yo te digo, no, vos en realidad
+el mock user no tendría que tener esas dos properties.
+Por ejemplo, decís, ah, está, pero eso me va a hacer
+que me falle en el expected de abajo. Mirá, bajó un poquito.
+El expected de abajo
+y en realidad está mal nombrado
+ese mock user. Porque
+ese mock user que se está usando en la línea
+180 debería ser expected
+user
+result. ¿Por qué?
+Porque es el resultado esperado
+de haber llamado al endpoint.
+Una cosa es lo que vos mockeás
+y lo que te devuelve la tabla de base
+de datos. Otra cosa
+es el objeto que nosotros armamos
+como respuesta que devuelve
+la app. Porque vos fíjate que la
+tabla te devuelve un usuario
+y nosotros le vamos agregando chiches.
+Entonces, por ahora
+vos viniste utilizando el mismo, pero en realidad
+son dos conceptos distintos. Uno,
+más allá de que está bien
+en algunos casos usar el mismo,
+es importante entender que dentro
+del Arrange, vos hay veces que creás
+datos nomás para chequear
+que son los mismos.
+Porque vos en el Arrange,
+vos está bien crear properties
+que sean los resultados
+esperados. Por ejemplo,
+yo qué sé, vamos a poner
+un test sencillo.
+Yo te digo, la suma
+de...
+Tengo una función que suma, ¿no?
+Entonces,
+en el Arrange, ¿qué es lo que crearía
+para probar la función suma?
+Bueno, crearía
+el parámetro de entrada 1,
+ponele que es 5, parámetro de entrada 2,
+ponele que es 6,
+y tendría que crear el SpectreResult,
+que es el 7.
+Perdón, 5, 6, 11.
+¿Está?
+Y después, en el Spectre de abajo del todo,
+tendríamos que usar esa variable.
+¿Por qué? Porque vos cuando creás
+un test unitario, el orden
+del Arrange, incluye que vos
+ya, en el Arrange, ya sabés
+lo que esperás antes de hacerlo.
+¿Por qué? Porque es la idea del test.
+Vos, vos,
+estás armando un test porque vos querés simular
+un comportamiento y querés que ese comportamiento
+te dé como vos querés.
+¿Sí? Entonces vos ahí ya decís,
+bueno, yo quiero que si yo uso 5
+y 6, me dé 11.
+Después hacés la llamada y chequeás que la función
+que programaste realmente
+dé 11. ¿Sí?
+Pero usás la property que definiste en el Arrange.
+Esto, si nosotros
+lo hacemos con TD,
+tiene, cobra muchísimo
+más sentido.
+¿Por qué?
+Porque en realidad vos con la técnica de TD
+que es Test Driven
+Design, ¿sí? Development.
+Lo que vos haces es, primero
+escribís un test. Entonces vos
+lo que haces es, primero escribís un test unitario.
+¿Qué pones en el test unitario? Bueno, en el caso
+de la suma decís, bueno,
+le voy a pasar el parámetro
+5, le voy a pasar el parámetro 6
+y el expected result es 11.
+Ahí hiciste el Arrange.
+¿Sí? Luego, en el
+en el assert, vos definís que
+vas a tener una función que todavía no existe
+esa función. ¿Sí?
+Pero decís, yo cuando ya me la función suma
+voy a hacer esto. ¿Tá?
+Y después en el assert, de abajo
+del todo, decís, si chequeo el resultado
+o sea, el resultado
+que yo agarré del act, ¿sí?
+Tiene que ser lo mismo que lo que yo
+espero. Luego, lo que vos
+haces es programás esa función para que
+pase el test. Eso es TD.
+Es súper
+tedioso. Es súper tedioso.
+¿Tá?
+Está bueno. Porque lo que te
+hace es, de alguna manera,
+cuando vos programás,
+vos primero decís
+cuál es el comportamiento
+de la función que vos querés desarrollar
+definido en un test
+y cuando vos programás tu código
+automáticamente ejecutás tu test
+y si pasa, quiere decir que
+hiciste la función de acuerdo a lo que vos
+el comportamiento
+que vos dijiste que ibas a tener
+esa función. ¿Tá?
+Entonces, en realidad acá
+es muy parecido. En realidad vos
+tenés que más o menos
+leer el código que está. Pero también
+que vos tengas un poco de autocrítica.
+Por eso, a mí
+me asusta bastante, no te lo voy
+a mentir, cuando te voy a usar mucho
+ya GPT y esas cosas. Porque yo creo que
+a esta altura, después de los meses
+que pasaron, me gustaría como que vos tengas más
+ownership de eso y como que
+te tires más al error
+a fallar y a
+desarrollar algo y errarle y después
+ir con ya GPT.
+¿Sabés cómo lo estás haciendo? Antes de
+tirar mucho con ya GPT.
+Por eso digo que Copilot
+en realidad como que te ayuda
+más a... Porque es práctica de todos los días, ¿no?
+Pero Copilot te ayuda más
+porque como que te va tirando pequeños piques
+pero no te va haciendo el todo.
+Acordate que estos meses son también, o sea,
+más allá que tenemos cosas para sacar,
+son meses más tranquilos porque no salimos
+a producción. Entonces tenemos oportunidad para
+errarle, fallar, lo que sea.
+Entonces también te lo hago saber
+porque yo prefiero que vos te atrases con una
+idea pero que realmente aprendas, le agarres
+más la mano, ¿sí?
+Yo lo que te dije
+es que yo no pienso en decir
+Kike me labura y le gano plata.
+Yo lo que necesito es un tipo que está a mi lado,
+que desarrolle, que yo le pueda encargar cosas
+y que tenga confianza, que le pueda tirar
+una mano. Entonces ahí si vos
+necesitas más práctica, lo que sea,
+sacale jugo.

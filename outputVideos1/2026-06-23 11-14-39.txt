@@ -1,0 +1,312 @@
+Y también se fue la configuración de idioma, de la información de contacto, ¿está?
+Entre otras cosas que fuimos mandando.
+Como, por ejemplo, los términos y condiciones y bueno, ¿está?
+Algo que es muy importante con esta configuración, ah, y la configuración de las cuentas.
+Algo que es muy importante que sepan a partir de ahora es que los correos son personalizados.
+Si nosotros nos encontramos dentro del área de LNC o CoCorps, tenemos que apuntar a lo que es info arroba gas banca, ¿sí?
+Y si nosotros nos encontramos en el área cripto, vamos a tener que apuntar a lo que es OTC arroba gas banca.
+Lo mismo con los números de teléfono, ¿está?
+Y a partir de ahora van a estar configurados como variables de entorno del site M, ¿está?
+Entonces, para que le interese verlo o lo que sea, hay que ver esa configuración.
+Santi, yo te dejé comentarios en los...
+Sí, a tanto cerrar los ojos, por favor, un poquito.
+Me das miedo.
+Ahí va, gracias.
+Lo que decía era, este, dejé comentarios en el site, perdón, Santi Pantin, dejé comentarios en los correos,
+porque la idea es que si el usuario no tiene múltiples compañías, cuando ponemos el correo de contacto en el mail de bienvenida,
+estaría bueno poner uno u otro, ¿está?
+Para hacer la experiencia más personalizada, ¿sí?
+Pero bueno, eso lo bichamos como integral, ¿está?
+¿Qué más? ¿Qué más? ¿Qué más?
+Bueno, mi idea para hoy es seguir con la documentación de ASFI, ¿está?
+Que ahí tengo que arrancar con eso.
+Tengo que sacar, para poder hacer retiros en Bridge, con Pix, que sería tipo los reales.
+Después, este...
+También voy a estar con la posibilidad de poder extrañar la wallet con QR, que eso ahí, este, ya tenemos una librería que lo hace.
+Tenemos que, tendríamos que sacarlo.
+Voy a ver qué me da para sacar hoy.
+Y, este, asimismo, para aquí me estoy comiendo, ah, y hay una actualización de Bridge para Europa que tengo que rellenar.
+Así que de mi lado voy a estar un poco con eso.
+Bien.
+Les doy la palabra a Kike.
+Bueno, yo los martes y miércoles arranco un poco más temprano, así que ya estuve trabajando con los test unitarios,
+que ahí logré recién mandarlos allá a interno de vuelta, a que lo reaprueben los chicos.
+Este, por otro lado, ahí corrí Cypress también, hace un rato.
+Ahí, Santi, como viste en el mensaje, ya está todo bien, por suerte no se rompió nada.
+Este, después sigo trabajando con lo que es, bueno, la parte de la...
+...configuración de WhatsApp.
+Este, ahí yo tenía una duda, Santi, y ya me la respondiste, así que voy a seguir trabajando con eso.
+En paralelo estoy también con la limpieza del worker.
+Eh, y, ta, y eso.
+Y te comento, Santi, que con estos test unitarios que van a salir, ya completamos todo el bloque que vos, este, habías mandado en QA.
+Salvo, solamente, por la parte de Cypress, que esos faltan un par de test de QR, básicamente.
+Estaría faltando, pero lo que es test unitarios en el site, ahí ya estaríamos con esto.
+Si se mergea mi PR en algún momento, ahí ya vamos a completar lo que vos habías pedido, así que, ta, es genial en ese sentido.
+Este, así que, nada, voy a estar con eso, lo de la configuración de WhatsApp y limpieza del worker.
+Y, bueno, y si me libero con los correos y si no con lo de Cypress también, digo, tengo para rato.
+Bien, perfecto. Genial, Kike.
+Sí, sí.
+Sí, ahí tenemos lo de la limpieza del worker.
+Creo que eso es clave, sacarlo.
+Tengo que trabajarlo.
+Ok.
+Bien.
+Pero, ta, o sea, tenés bastante cosas y la idea es ir avanzando con todas esas cosas.
+No hay, sinceramente, creo que lo más prioritario es lo de WhatsApp.
+Pero después de eso, no, el resto, como lo vayas atacando, capaz que sí preferiría, tipo, terminar de estabilizar los test unitarios.
+O sea, si tuviera que darte un orden a atacar, te diría que sea WhatsApp.
+Luego de WhatsApp, que sean los test unitarios.
+O sea, todo lo que es One Money, todo lo que está faltando, eso va a ser muy útil para, para cuando sumemos Bridge, que queden todas esas referencias y todo bien testeados.
+Y después, este, y después ahí seguir con lo de Cypress y correos, medio que en paralelo, ¿bien?
+Bien, genial.
+Marti.
+Bien.
+Ayer de mi lado estuve, bueno, viendo PRs.
+Ahí dando una mano con la salida de producción.
+Y después estuve haciendo unos pequeños cambios que habían quedado en la PR de los íconos.
+Eso ya quedó pronto también.
+Y después estuve dándole unos pequeños retoques a los prompts, que había encontrado unas inconsistencias.
+Eso también ya quedó.
+Y después, está, seguí con el flujo de compra interna y que se me pasó un poco.
+Y, está, un aviso nomás, ya ahora en unos minutos seguramente esté mandando el mensaje que va a mencionar el tema de los prompts y el documento, un documento nuevo que va a estar en Drive también para reflejar el nuevo flujo de Jira.
+Una cosa, intenté automatizar lo que habíamos dicho de que cuando lo pasen a Design Review automáticamente la tarea se lo asigne.
+No sé si estás funcionando, voy a doble chequear porque había probado y por algún motivo no me funcionó.
+Pero, en teoría, eso debería quedar automatizado.
+Pero, está, igualmente lo pueden chequear o de última lo hacen manual.
+Voy a intentar que quede automático.
+Y, está, eso básicamente en mi lado.
+Marti, en el mensaje tenemos que mandarte...
+Tres cosas. Lo de los prompts, el flujo de Jira y también la guía de las PRs de Santiago.
+Ahí es importante, primero, en cuanto a desarrolladores, que empecemos a usar los prompts
+y que se familiaricen con ellos y quiero, y literal, les voy a empezar a, o sea,
+la idea es que a fin del sprint o una vez por semana, o sea, obtengamos feedback
+de cómo vienen trabajando con eso, ¿sá? O sea, la idea es iterar lo de los prompts con todo.
+Entonces, por favor, utilícenlos. Ahí tiene una guía, Martina les va a pasar todo,
+pero tiene una guía donde pueden reemplazar eso y poner exacto cómo usarlo, ¿sá?
+Eso con respecto a los prompts. Con respecto al flujo de Santiago, ahí Santi y Gastón,
+es responsabilidad de ustedes, ¿sá? Chequear que los desarrolladores,
+los desarrolladores cumplan con el flujo de diseño, ¿sí? ¿Tá? O sea, todo lo que son los videos,
+las capturas y todas esas cosas. Hasta ahora, como veníamos con tantas cosas,
+yo no estuve pinchando con eso, pero a partir de ahora se tiene que cumplir, ¿sí?
+Así que Santi y Gastón, yo les toco volver a habilitar el acceso a GitHub,
+probablemente lo hagan entre hoy y mañana, si todo sale ok, pero lo que les pido, por favor,
+es empiecen a chequearlo. Ustedes no pueden ni...
+ninguno de vos aprobar una pull request si no tiene el formato establecido, ¿sí?
+No importa el apuro que tenga. O sea, si tiene apuro, de última nos consultan a mí y a Martina,
+che, mirá, nos están diciendo que esto tiene apuro, que tiene que salir, pero no tiene el formato.
+Ah, o sea, ustedes sin la validación nuestra no pueden aprobar algo que no cumpla con el formato
+que ustedes establecieron. Estamos todos... Y los desarrolladores tienen que seguirlo.
+Entonces, cualquier...
+Cualquier duda que tengan, también pueden aclararlo. ¿Estamos todos alineados con eso?
+También, también.
+Perfecto.
+Con el flujo de Jira también, ¿sá? O sea, a partir de hoy, o sea, ya lo habíamos charlado,
+toda esa cosa, ahora va a estar escrito, ¿sá? Entonces, hoy tienen todo el día para verlo,
+ya a partir de mañana, literal, cuando leamos la daily, voy a estar preguntando
+y voy a estar chequeando que todas las tareas estén en el estatus correcto, ¿sí?
+¿Sí?
+La idea es que normalicen.
+El cambiar el estatus de Jira y no que sea algo que llegue la daily y hagan el cambio, ¿sá?
+También con Martina vamos a estar controlando ese tipo de cosas.
+Entonces, intenten normalizarlo como parte del flujo.
+¿Sí? Mando una PR, voy y actualizo el estatus en Jira, ¿sá?
+Me aprueban una PR en un publico es interno, la voy y lo cambio, ¿sá?
+O sea, intentemos normalizar ese flujo.
+Y si alguien tiene algún feedback o alguna manera de mejorar ese flujo, que sea más rápido o lo que sea,
+bienvenido sea.
+Bien.
+Marti, después de esto tenés que seguir con pagos internos, ¿sí?
+¿Estamos?
+Así que, o sea, enfocada en eso.
+Y también está un poquito alineado con lo de Enrique,
+porque a Enrique la idea es que termine con los test unitarios de One Money
+para que podés integrar el bridge, o sea, un poquito más así.
+¿Bien?
+Bien.
+Con respecto a tareas, vieron que siempre surgen cosas, ¿no?
+Muy probablemente...
+Vamos a estar también atacando todo el flujo de KYB interno, ¿sá?
+Eso quiere decir que todo el formulario, Jonathan, Inawe, probablemente Enrique también esté involucrado,
+todo el formulario ese, no solo hay que agregarle testeo del lado del site,
+sino que vamos a pasarlo para el lado del Bacofes, ¿sí?
+Entonces, si pensaron que nos estábamos quedando sin tareas,
+tristemente no, ¿sá?
+O felizmente no, ¿sá?
+Este...
+Yo creo que más felizmente que tristemente.
+Así que tenemos para rato.
+¿Bien?
+Y después Santi y Gastón, no hoy, pero mañana vamos a tener que sentarnos a empezar a planificar eso,
+pero todavía tenemos lo de TeamMate pendiente.
+No más para comentar.
+Inawe.
+Bien.
+Yo había posado un poco las notificaciones para encarar el tema de utilizar las ilustraciones.
+Hay un comentario nomás que las ilustraciones, no sé si viste, Santi, son SVG animados,
+probamos que no rompiera el SSR ni nada de eso,
+y son re óptimos, de hecho.
+Lo que pasó, Gastón, es que pesan 22 kilobytes cada SVG, o sea, nada.
+No rompen server-side rendering y tienen animación.
+Son livianos.
+Y tienen animación, claro.
+O sea, está todo metido en la vectorización del SVG.
+Bueno, está bien, está bien.
+Gastón, menos 5 puntos, ¿sá?
+Hoy, menos 5 puntos.
+Mañana vemos cuánto restamos.
+Es para que todos estemos más o menos igual, porque si no, no tiene gracia.
+Ahí va.
+¿Está?
+Entiende bien.
+Bueno, me alegro de eso.
+Ahí, Nahue, a ver si podemos actualizar eso y que quede bien.
+Una de las cosas que hay que chequear, Nahue, es cuando la pantalla se achica el ancho.
+Perdón, el largo, no el ancho.
+Ahí va.
+El alto, sí.
+¿Sabés cuál es?
+Bien.
+Es una de las cosas que tenés que chequear bien.
+Y también del lado de diseño, Gastón, yo te robé ahí.
+Pero una vez que eso esté deployado, hay que rechequearlo bien.
+Creo que no hay manera mejor de probar esto que tenerlo en dev.
+Y ahí ya le hacemos un videíto a Guillermo o lo que sea y ya lo validamos con ello.
+¿Está?
+Entiende bien.
+Una de las cosas, Nahue, que le comenté a Jonathan en interno,
+es que muy probablemente Jonathan esté tocando blog y esté tocando otras cosas.
+Entonces,
+Bien.
+Este, vos metés,
+a notificaciones, porque es muy probable que, no sé si Jona va a atacar la configuración de los blogs,
+de las notificaciones, o la vas a terminar atacando vos y a Jona lo vamos a mover para otras cositas que tenemos.
+¿Está?
+Digo por las dudas para que estén, o sea, más allá de que estén tocando cada uno cosas distintas,
+es importante que estén en contacto.
+¿Está?
+Ahí va.
+Bien.
+Santi.
+Bueno, es por mi parte.
+Este, ando viendo comentarios que me dejó Gastón ayer, este, sobre la parte de configuración, que yo la mandé a AysenReview, que quedó, hace que pronto.
+Estoy ajustando ahí los comentarios que me dijo Gastón.
+También estoy viendo comentarios que me dejó Martín y que me dejaste vos en, en los otros mails que había enviado.
+Este, también estoy haciendo esos ajustes.
+La idea es que todo eso quede pronto hoy.
+Después, una vez liquide eso,
+ahí ya comienzo con, con lo de teammates del, del BBO, este, qué tal, eso sí me va a llevar más tiempo, pero bueno, ese es el, el plan para hoy.
+Bien, perfecto, Santi.
+Yo dejé comentarios en los mails, fijate si podés atacarlos, hay comentarios medio boludos, así ya empezamos a, a enviar mails a AysenReview, ¿está?
+Lo mismo para Gastón, o sea, son comentarios medio boludos que podemos sacar medio rapidito, ¿está?
+Este, bien de bien.
+Bien de bien.
+No, no me copie la frase.
+Cosa bárbara.
+Bueno, para Nahue ya fue Gastón, Martina, Jonathan.
+Bien.
+Adelante.
+Sacando de que creo que quedé último en la penca ya.
+Este, venías bien, ¿eh?
+Venías bien, venías bien.
+Venía bien, entré en debacle.
+No, sacando eso, estoy, bueno, ahora estoy viendo de separar lo que tenía de contraseña y eso como para mandarlo en un módulo aparte.
+Lo de los e-mails, que ahí ya te había preguntado, lo tengo bastante avanzado.
+Ayer ya mandé la migración en interno para lo que es la tabla de, para los e-mails de los códigos, me faltaría nomás atacar la parte del worker, del evento y los e-mails como para tener eso también.
+¿Preferís que lo termine?
+A ver, intentemos hacer paquetito.
+A lo que voy es, este, intentemos hacer paquetito para que eso quede.
+También me interesa que la tabla de notificaciones es solo el recuadro de idioma con un endpoint que cambia el idioma, o sea, no debería ser muy complicado, ¿está?
+Sí.
+Sí.
+Me interesa poder liquidar eso para pasarte a blog.
+Si vos creés que está avanzado, o sea, no hay problema si lo desblogs, si el chat se arranca mañana o pasado.
+Está, bien.
+Pero sí intentemos armar un paquetito con eso.
+Está, perfecto.
+Sí, pero lo de los idiomas ahí yo estuve comunicándome con Nahue y sí, tendríamos que mandar la migración de la tabla y eso para poder atacar eso en particular.
+No, pero lo de los idiomas ya está, es solo cambiar la configuración de la tabla user.
+Y eso ya tiene idioma.
+Pero no son, no eran distintos, no era un idioma para las notificaciones y otro para la página en sí.
+Nosotros usamos, claro, pero el idioma del user, para lo único que lo usamos es para la notificación.
+Entonces, por eso es una tarea que yo decía que es bastante sencilla.
+O sea, lo único que vamos a hacer es cambiar el idioma del user.
+Tipo, eso se toma por defecto cuando se crea el user por primera vez y queda seteado para siempre.
+La idea es que el usuario pueda cambiarlo.
+Por ahora ese...
+Ese idioma solo se toma para las notificaciones.
+Así que es solo nomás cambiar el idioma del user o una.
+Así, no tiene más vueltas.
+Muy bien, perfecto.
+Por eso yo decía que era algo sencillo y ya nos habilita dejar la tabla de notificaciones creada.
+¿Se entiende?
+Sí, perfecto.
+Vamos arriba.
+Ahí son las validaciones básicas de que vos seas propio propietario de la cuenta y cambiar el idioma, nada más.
+Que la persona que esté haciendo la interacción sea el propietario.
+Exacto.
+¿Ya?
+Excelente.
+Genial.
+Fernando.
+Bien.
+Como ayer podían ver en diseño, estuve ahí medio agarrado con la PR que subí para copiar.
+Pero ya la terminé.
+Y la otra también en un rato por ahí ya la estaré subiendo a ambas a diseño.
+La otra.
+¿La otra cuál es?
+La otra de los de registro de auditoría.
+Abajo del todo.
+Bien.
+Bien.
+¿Y los mails en qué quedaron?
+Eso lo están coordinando.
+Tenemos muchas tareas.
+Bueno, justamente quiero terminar eso hoy, ambas PRs.
+Las de copiar.
+Y ya nos dividimos con Enrique lo de los correos.
+Y está ahí hablábamos y eso, nos coordinamos.
+Bien.
+Bien de bien.
+Gastón.
+Buenas.
+Bueno.
+Yo estuve más que nada trabajando en las ilustraciones que me faltaban de ayer.
+Se las dejé pasadas a Nahuel ya y bueno, lo que me di cuenta es que viendo el proceso
+de compra bien, me faltaron dos.
+Que ya.
+Ya estoy terminando ahora porque había creado una una skill de Cloud para hacerlo más fácil.
+Así que ni bien tenga eso, ya se la mandó Nahuel para que para que la suba también.
+O perdón, la mando a primera, se la mandó a Santi para para que la revise.
+Y bueno, después a ustedes para que la prueben.
+Por otro lado, dejé también iterando el tema.
+Bueno.
+De la presentación del roundup que eso ya ya está bastante avanzada y que era lo otro.
+Y bueno, y después en el mail de bienvenida vi tu comentario.
+Pero justo en la parte que me pusiste que no iba, yo vi el mail actual y está el tipo
+de compañía.
+No sé qué decís ahí de si querés lo saco.
+Pero.
+Preguntale a Enrique.
+Que se completa ahí y que lo y que lo comenten en el hilo en el hilo arroba los y y que pongan
+ahí que se completa con eso.
+Bien, cuando es crossborder más que nada cuando es crossborder, porque la otra cuando
+es elegido por está más claro lo otro que te iba a decir era este nada es este y después
+de ronda.
+Yo no sé si tengo una sección para hablar y después hacerme follow up en la tarde.
+Este porque seguramente tenga que comentar algo.
+Está.
+Bueno, bien de bien.
+Bueno, bien de bien.
+En el comentario general para que queden para darles la noticia, este nacer charlé con Guille,
+también he charlado con Carlos, vienen muy contentos con los por las mejoras que venimos
+haciendo a nivel de plataforma.
+Ya este y también venimos obteniendo feedback muy bueno de lo que es el estado extracto
+bancario y todo lo que es la parte de navegación.
+Este.
+Además de una cantidad de chiches que hemos sacado, el equipo de Bolivia viene muy contento, el equipo del ESI viene muy contento y nada, quiero transmitirles eso, la verdad venimos bien a seguir con eso, a seguir metiéndole, pero la verdad eso creo que es muy bueno y es importante transmitirlo.
+O sea, y también denota que no solo es tipo ir a escuchar a Guillermo, Carlos, Beto, lo que sea con las nuevas funcionalidades, sino también vale la pena el hecho de sentarnos a ver cómo mejorar y cómo aplicar cosas a los flujos que tenemos.
+Entonces, seguirlos motivando a eso, si encuentran alguna mejora, si encuentran algo, si hay algo visual que no les cierra, lo que sea, siempre tírenlo porque se puede atacar bien.
+Les mando un abrazo.
+Un abrazo enorme, que tengan buen provecho y Marti nos reunimos ahora de tardecita en un ratito, ¿está? Vamos arriba.
+Chau, chau.
+Chau.

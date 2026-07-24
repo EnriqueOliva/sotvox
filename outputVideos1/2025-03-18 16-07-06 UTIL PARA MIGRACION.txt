@@ -1,0 +1,452 @@
+¿Qué tenemos, Kiketo?
+Fijate cómo se hacen las otras.
+Por ejemplo, mirá el normalize
+con grito y mails. A ver qué mierda hace.
+¿El de arriba? No, está justo arriba.
+Ahí va. Baja.
+Y dice...
+Ahí va. Viste que es un do while.
+Mirá.
+Estoy cagado, pero no tanto.
+¿Cuál es la diferencia de while y do while?
+El while, vos necesitás establecer primero
+una condición.
+Sí, el while.
+El while.
+El do while entra la primera vez
+y analiza la condición al final.
+Es como que...
+Ponele, ¿no?
+La diferencia radica en la siguiente.
+Si vos haces un for,
+si vos haces un while
+normal, va a cortar
+en una iteración y no va a ejecutar
+el último caso. Por ejemplo, si vos le decís
+arrancás con i igual a 0
+y decís hasta que i sea 2.
+El while va a correr
+el 0, va a correr el 1
+y ya no corre más.
+El do while
+hace lo mismo.
+Pero, ¿cuál es la diferencia?
+Entonces, hasta ahí dijimos que corren
+lo mismo. O sea, si vamos
+hasta el final, los dos recorren hasta el final igual.
+¿Cuál es la diferencia en sí? Bueno,
+si vos querés que se ejecute al menos una vez
+y este es el caso.
+Porque si vos decís, bueno,
+si a mí me trae la primera
+página ya,
+voy, traigo la primera página, ya me trae
+la primera página, con el while vas a decir
+¿te quedan más páginas? No, ya revisaste todas.
+Entonces, no entras ni a analizar.
+Sin embargo, con el do while, vos te trae la primera página,
+entras a analizar
+y si te fijás el do while es do
+y el while lo tiene abajo del todo. Entonces, cuando
+termina de ejecutar la primera entrada,
+ahí lo corre.
+Ahí radica la diferencia.
+En tu caso, y la mayoría de estos
+mecanismos de paginación,
+tendría que ser casi todos do while.
+Para igual,
+analizando eso el do while, quiero analizar
+que todo el resto esté bien.
+Porque si no, seguimos perdiendo tiempo.
+O,
+vos ahí lo que haces es traes el
+paginado. Tenemos un problema.
+En la línea 1008
+nosotros estamos llamando una función
+async, pero no estamos poniendo la wait.
+Siempre que llamamos una función
+async, como
+createStripeAccountForAllOwners,
+tenemos que poner la wait
+adelante.
+Eso es importante. Si querés ya dejálo.
+Pero eso es como
+un tick. Porque si no, vos le estás diciendo
+no esperes y te puede retornar una
+promise y podemos estar en problemas.
+¿Está bien? O sea, siempre que
+hagamos una llamada async,
+o sea, siempre que llamemos a una función
+que adelante diga public async
+o lo que mierda sea async,
+tenemos que poner una wait adelante.
+Hay algunos casos en que no, que tenemos que
+analizarlo porque no. Lo ideal,
+la mayoría de veces, siempre
+tenemos que poner una wait.
+Como por ejemplo sleep. Sleep es una
+función async, entonces nosotros le ponemos
+el await. Igual,
+eso me parece que está mal,
+porque vos ahí estás diciendo
+y atento al caso,
+claro, porque vos
+ahí le estás diciendo
+retomá desde tal página.
+¿Está? Pero vos lo único que
+tendrías que repetir,
+claro, el tema es que si vos
+eliminaras la consulta
+de la 994
+y la hicieras en la 1002,
+está bien que vos ahí hagas una
+recursión. ¿Por qué?
+Porque en realidad, la primer consulta
+se va a hacer en la
+1002. Y en la 1002
+page es dinámico.
+O sea, porque viene por parámetro.
+Después vos lo vas aumentando. En algún
+momento page lo vas aumentando.
+Pero es dinámico. Entonces está bien que
+vos hagas esa recursión.
+Igual yo, ahí,
+no utilizaría ese mecanismo, sino que
+en realidad lo que está fallando es el find company
+owner paginate. Entonces
+volvería a intentar tres veces el find
+company
+paginate. Entonces,
+en vez de hacer una recursión ahí, porque vos lo
+qué recursión, dentro
+de la misma función create stripe
+account for all owner, que definís en la línea
+983, vos
+en la línea 1008, estás volviendo
+a llamar a las mismas. Eso es recursión.
+¿Sí?
+Yo preferiría que vos uses iteración.
+Que ahí tengas un retry con
+un watch e intentás traer hasta
+tres veces el
+find company owner paginate.
+¿Sí? ¿Está?
+Y no usemos recursión. Sería
+lo ideal.
+¿Sabés si hay ejemplos de esto?
+¿Subamos? ¿Subamos?
+¿Subamos? Tiene que haber alguno.
+¿Subimos?
+A ver, pará.
+¿Subí? A ver, ¿bajá, bajá un poquito?
+¿Bajá, bajá?
+¿Por qué hay un while true ahí?
+Raro eso, che. ¿Ahora bajá?
+¿Sólo cuando subí?
+Esto está raro. ¿Funcionó?
+Funcionó. Está raro.
+¿Subimos? Subimos a ver si
+hay, si no. Reset, che. A ver,
+fíjate acá.
+¿Subamos? ¿Subamos? No.
+A ver, ¿con qué bichito?
+A ver, ahí. Baja, baja.
+Ahí tenemos un ejemplo.
+La línea 558.
+Donde nosotros creamos
+una manera de intentos.
+¿Sí? ¿Está? Tenemos hasta tres.
+Entonces, ¿cuándo se
+corta? Cuando hay un success email.
+Yo prefiero este tipo de reintentos
+con un while. Fijate
+que si todo sale bien,
+mira, baja un poquito dentro del try.
+Success se pone como
+true.
+Entonces, en la próxima iteración
+se termina. Si todo sale mal,
+lo que pasa es que
+va, se va
+intentando. Se va intentando hasta que
+en un momento falla. En tu caso,
+si falla más de tres veces,
+la diferencia es que tendrías que tirar una excepción.
+¿Sí? Pero
+si mirás esto,
+este
+monstruo es el monstruo que usted
+va a tener que basarse
+para, que va a tener que estudiar
+porque esta función hermosa
+que yo no la, que yo la hice
+así nomás, la hice así,
+esto es lo que migró las 523
+compañías con éxito.
+Migrate from WordPress
+to our system.
+Exacto. Este método va a ser
+su mejor, peor enemigo
+y mejor amigo en lo que
+queda del día,
+año, lo que sea.
+Sea malo.
+Sí, sí, es un bichito hermoso.
+Pero, este archivo
+en realidad lo único, este servicio,
+lo único que tenía es este método.
+Y después fui agregándole cosas.
+Después, como yo te dije, después vamos a tener que crear
+otro servicio que sea Migration2
+para que sea más limpio.
+¿Lo sí?
+Este es un método que se iba a correr una única vez.
+Entonces no tenía sentido
+refactorizarlo y hacerlo bonito
+o lo que sea. Era algo que funcionara,
+que fuera lineal,
+lindo y se entendiera.
+Y sinceramente me daba paja
+ir entrando a 500 funciones.
+En teoría deberíamos repetirlo,
+una vez más. Solo una vez más.
+Para las 200 compañías
+con otros principios.
+Es más fácil
+que tiene que hacer usted.
+Bueno, ok.
+No usar recursos.
+Volvamos al método.
+Una vez que obtenés
+todos los owners, vos lo que hacés es
+que es una variable que te está faltando
+que yo ya te lo dije, es
+vos tenés todos los que ya existen.
+Pero necesito saber, vos me ponés
+el total de owners, los creadores,
+los creados, pero necesito que me digas
+de esos creados, ¿cuántos no tienen
+Stripe account? ¿Se entiende?
+Porque puede ser...
+No, no.
+Nosotros acá tenemos owners
+que son los dueños de compañía.
+¿Está?
+Que vos a cada compañía traés los owners
+sin repetir. ¿Correcto?
+Sí.
+Después tenemos already exist, que quiere decir
+ya existe en Stripe.
+Y creados los que
+les creamos una cuenta de Stripe exitosamente.
+Sí.
+La variable que está faltando
+es la inversa de already exist.
+¿Entiendes?
+Es un bolazo, debería asignarla,
+pero es un bolazo.
+Porque también el número que me interesa es
+cuántas compañías...
+O sea, está bien el already exist,
+no lo saques porque aporta información, está bueno.
+Para mí lo que me interesa es el inverso.
+¿Cuántas compañías no tenían Stripe account
+y cuántas creamos?
+Esa es la métrica que yo voy a mirar.
+Yo le voy a decir a Guillermo, mirá,
+teníamos 47 compañías, no tenemos Stripe account
+y se registraron las 47.
+Eso es lo que tengo que decir.
+Es más, eso es lo más importante.
+Yo voy a ir a mirar total owners.
+Total owners es un número
+que es importante, ya que lo tenemos.
+Pero en realidad yo lo que
+tengo que mirar es, bueno,
+no existían 57 y se crearon 57.
+Perfecto.
+Por más que vos las estás poniendo en fallas.
+Estaría bueno
+tener el... O sea, que está de más
+tenerlo en fallas porque necesitamos tenerlo.
+Está el numerito nada más.
+Ese detalle.
+Después bajemos un poco.
+A ver, owner es lo que yo te decía.
+La línea 1121.
+Owner, en realidad,
+acordate que son
+datos que vienen de la base de datos.
+Entonces todos tenés que hacerle .datavalues.
+Cuando nosotros obtenemos
+datos de la base de datos y queremos trabajarlo
+en el frontend, para poder obtener esos datos
+a los modelos tenemos que siempre hacerle
+.datavalues.
+Entonces, owner.
+No, no. A esos no. En sí a owner.
+Sería
+owner. Lo hiciste más abajo, creo.
+O sea, sería owner.datavalues.
+En la línea ahí,
+1021. Al final,
+al final de ahí, owner.datavalues.
+Ahí va, eso.
+¿Y qué te dice? ¿De qué tipo es owner?
+A ver, parate en owner.
+A ver qué mierda te dice.
+A ver si lo vi.
+Owner batch. Ah, porque
+vos en realidad tenés que...
+Vos estás definiendo un tipado.
+Para eso es owner. Pero si vos
+entrás al findcompanyownerpaginate
+Entrate ahí.
+En realidad, a ver, bajá.
+Ah, ya estás haciendo el
+.datavalues. Ya lo estás
+haciendo. Ah, está.
+Está. Entonces no dije nada.
+No lo necesitamos. O sea, puede ser
+en un lugar o en otro.
+No pasa nada. Está bien.
+Lo que siempre hacemos es hacerlo
+en el lado del servidor.
+Pero en realidad lo correcto sería hacerlo
+en el lado del servidor. O sea, porque lo fijamos
+como estándar.
+Pero lo correcto sería
+hacerlo siempre
+en el repositorio y que el repositorio te dé todo bien.
+El tema es que yo lo hago en el servidor
+porque intento no hacer mapeos.
+Pero ya está. Déjalo así.
+Es una migración que se va a correr una sola vez.
+Necesitamos seguir. Bajemos.
+Ahí va. ¿Viste cómo ponés? Si ya existe,
+arrayexist, yo lo que necesito ahí es
+que pongas un contador.
+¿Está?
+Si no existe, lo creo.
+O sea, si no existe, que sumas.
+Tantos no existen. ¿Por qué?
+Y ahí también es algo que hay que trabajar.
+Porque en la línea
+128
+podés fallar.
+En la línea 128 podés fallar.
+Otro detalle
+es que el createCustomer
+tiene que tener un try and catch
+y un retry de 3.
+No. En la base
+de datos, no. No en la base de datos.
+Sino ahí. Porque ¿qué pasa?
+Si falla el createCustomer, tenemos que
+intentar 3 veces. Si falla
+más de 3 veces, no ponemos que se creó
+y ya está. Y seguimos intentando
+crear. No es que
+explotamos. El paginado de arriba,
+sí. Si falla más de 3 veces,
+explotamos y no continuamos más.
+¿Está? O sea, el retry
+del findCompanyPaginateToner,
+si falla más de 3 veces,
+explotamos. Porque quiere decir que hicimos mal el método,
+que algo está fallando, que el paginado está fallando.
+¿Sí? Sin embargo,
+este, no.
+Vos intentás crear hasta 3 veces
+el usuario, si no lo crea, decís,
+che, no. O sea, no sumás
+totalCredited más más. Y ahí es que
+nosotros vamos a poder ver. Ah, mirá.
+Habían 50, pero
+se crearon 48. ¿Por qué?
+Porque fallaron 2. Vamos a ver por qué fallaron.
+¿Está? Pero es como que son
+los números rápidos. Pero
+si falla crear un usuario, nosotros seguimos
+de largo. ¿Está?
+Bien. Después bajemos
+un poco. ¿Está?
+Si falla, claro, ahí está bien.
+Ese retry que vos
+sumás la cantidad, o sea, que lo agregás,
+como falla, ¿está?
+Este,
+está perfecto.
+Está perfecto. Lo que tendríamos que hacer
+es, lo agregás como falla
+después que falla 3 veces.
+Ese es el punto. O sea, ¿por qué pasa?
+Si cada vez que falla, si falla,
+Stripe te puede dar fallo y después a la siguiente
+te ande. ¿Está? Porque estamos
+mandándole una cantidad de balas.
+Entonces ahí la idea sería que, bueno,
+intentás 3 veces,
+si pasaron esas 3 veces, ¿ah?
+Ahí sí lo agregás
+en el catch.
+Es modificar un poco esto con un while
+y un catch
+con un if que vayas modificando el retry.
+¿Sí? Lo importante
+que te tiene que quedar es lo siguiente.
+Si falla más de
+3 veces, ahí lo que haces es
+no solo no se va a sumar,
+porque en sí el total created
+se hace más más.
+Solo, sí, solo sí.
+Completa exitosamente
+la línea 128, que es la de
+create customer. ¿Está?
+¿Está? Si explota,
+la línea 128 va directo al catch
+y nunca llega a sumar,
+porque es secuencial.
+Entonces en el catch vos tendrías que decir, bueno,
+si los reintentos todavía no son
+3, seguís, o sea, le doy
+reintentos más, más, y ya llegamos
+a los 3 reintentos, perfecto.
+Pongo, lo agrego a la lista de fallas
+y seguí de largo. ¿Sí?
+Después, sin contar
+estos ajustes, todo el resto parece
+que esté muy very good.
+¿Está? Si quiere ponga pausa
+acá, así ya le queda este video.
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?
+¿Está?

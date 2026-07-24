@@ -1,0 +1,684 @@
+igual acá le agregué lo que son los permisos
+puse por un lado globales y otro personalizado por empresa
+perdón, el tooltip lo estas poniendo
+si, si, esta bien
+como es esto, bueno esta es la parte de cuando vas a invitar a un team mate
+la parte del team mate, tenes el formulario ahí, cuando tenemos global
+es lo mismo o sea queda exactamente igual si no tiene habilitado el acceso
+completo para personalizarlo, esto es lo mismo que estaba antes, después
+este es el tooltip
+y acá si lo personalizamos por empresa nos sale el cartelito de este que habíamos
+hablado una vez enviada la invitación podrás personalizar los permisos de tu
+team mate por cada empresa desde editar team mate
+y acá ya tenía una duda porque Santi me puso un comentario
+si se podrían colocar los permisos ya directamente acá
+pero fue algo que hablamos ayer creo y habíamos quedado
+en que
+acá digamos le avisábamos al usuario que
+el tema es que vos tenes ahí, vos tenes, ponele que tenes 50 empresas seleccionadas
+entonces si el permiso no es global
+tipo, nada que después lo setee y no generaremos permiso para ninguno
+estas creando, estamos creando, entonces era para evitar esa confusión
+bien, entonces si seleccionamos permisos personalizados por empresa
+que nos salta un pop up que nos dice le enviamos una invitación
+todavía necesita configurar los permisos por empresa para que el usuario pueda operar
+entonces bueno, tenemos un link como que nos lleva directamente a editar team mate
+de ese mismo team mate
+eso no se como lo ven a nivel desarrollo si es tan posible o si
+que tal, a mi me parece que algo no tiene nada ahí
+o sea hacerlo más tarde es ahí y si no ya te llevás un gran frasco, si, vale
+es ahí, y si no ya te llegó
+si no parece clave
+volvamos para atrás
+yo tuve la consulta ahí Santi
+yo le decía a Aston
+en la parte de permisos
+para qué colocamos ese switch
+si la persona no va a poder hacerlo
+la gestión ahora en sí
+tipo
+el tema es que
+cuando pone personalizado por la empresa
+no sé si quieren que sea
+un switch o tipo
+más como una especie
+de, bueno
+no es switch, es como
+un prendido y apagado
+el prendido y apagado
+no me sale
+el tono
+el o no
+que sea tipo
+pero en sí
+necesitas indicarlo, porque si es global
+ahí sí podés configurar los permisos
+porque también lo tenemos para todos
+si no, vas a tener que hacerlo después
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+porque
+como funciona
+para editar
+eso
+bien
+necesitamos
+es decir
+la única dificultad que tenemos
+porque
+hacer permisos por cada uno
+es una cuaricia
+otra cosa que es importante
+que ahí pongan en las
+dev notes
+de Aston
+es que
+si pones permisos globales
+sea como sea
+que lo terminemos poniendo
+el rol configura
+una preselección de permisos
+o sea
+si yo selecciono
+Bueno, si yo selecciono permisos globales y el rol tiene, si yo selecciono admin, manager o viewer, ya me hace una preselección de los permisos, es como una pre-configuración.
+Claro, si, por ejemplo, si pones view, ya por ejemplo no te da permiso retiro, pero te da permiso para ver, ¿entendés?
+Que es algo que llegas ahora bien utilizando mucho, eso agregatelo por ahí en la dev tool.
+Dale, perfecto. Tenía una duda también con eso de los roles, de cómo funciona bien, ponele, si yo pongo un rol de viewer, pero lo personalizo después y le pongo...
+Podés personalizarlo, es como, o sea, lo único que hace es tipo, te carga la pre-configuración, pero vos podés hacerlo de este tanto.
+Y queda en el mismo rol que pusiste de viewer.
+Exacto. O sea, yo puedo poner viewer y darte todos los permisos de admin, te queda como viewer, pero cuando puse viewer, te carga la pre-configuración de viewer.
+Bien, bien, bien, joder.
+Ah, y lo otro era, la invitación sí tiene permisos globales, que, bueno, ahora mismo creo que es un toast que te sale por acá arriba, se ha invitado, no sé.
+Pero, bueno, para tener algo similar a lo otro, hice un pop-up, pero esto no sé cómo lo quieren resolver.
+No, está perfecto.
+Está bien.
+Después, lo otro era la parte de editar team-mate. Esto todavía no se lo había mandado a Sandy cuando estaba haciendo, pero nada, si ponemos...
+Perdón, esto está en global, tendría que ser personalizado por empresa.
+Nos saltarían todas las empresas acá y acá iríamos seleccionando cuál queremos editar en ese momento y la editaríamos acá.
+Y ojo que pensá que tenemos 50 empresas, o 60 empresas. Sobre todo ahí tenemos que hacer algo muy parecido a lo que yo le había dicho a Sandy, el seleccionar empresa ahí, Sandy.
+Este...
+Es el seleccionar empresa, que, por ejemplo, lo que hace hoy en día, fíjense el flujo en dev, que vos seleccionás más de dos, ya te ponés dos empresas.
+Tipo, no te ponés los nombres.
+Pero si seleccionás más, si seleccionás dos o más, ya te pone dos. Eso me encanta cómo está hecho y manténgamoslo.
+Lo otro es el seleccionar empresas anti lo que vos estás haciendo. O sea, ya es lo que está encargando Sandy.
+Este...
+Porque recordemos que ahora tenemos todo el tema del paginado y todas esas cosas. Creo que ahí Sandy, no sé si esto quedó claro. Estás muteado.
+Sí, el seleccionar empresa de esas llevaría a la modal esa que estoy creando yo.
+Son solo las empresas propias y son paginados. Entonces ahí gastón el acceso personalizado, que es casi un copy-paste de esto, donde vos lo que hacés es seleccionar la empresa.
+¿Qué estás haciendo vos?
+Es casi un copy-paste de eso. Porque en realidad vos seleccionás de forma paginada, supongamos que tenés 50 empresas para personalizar.
+Entonces vos ahí vas a seleccionar únicamente las empresas que te cedió control, pero de forma paginada, porque pueden ser una cantidad, y vas a seleccionar uno.
+Y a esa le vas a cambiar los permisos.
+Pero pensá que podés tener 100 empresas, entonces ahí es de las empresas que se pusiste en seleccionar empresas.
+Acá deberías tener un mismo selector con ese subconjunto, con ese conjunto que seleccionaste, y seleccionás una.
+Y de esa que seleccionás, le modificás los permisos.
+Ojo que ahí hay cosas importantes.
+Por ejemplo, cuando seleccionás a esa empresa, va a haber un loader, porque voy a ir a buscar los permisos que tiene.
+Y otra cosa sumamente importante que acá no estoy viendo, es que vos ya no tenés un guardar global.
+Pero yo creo que les decía a ustedes, chicos, es que esto, cuando vos seleccionás una empresa, lleve a otra página.
+Porque vos en realidad, la acción ya deja de ser una acción global, cuando modificás los permisos de una empresa, sino que pasa a ser una acción más atómica.
+El modificar los permisos para cada una, pasa a ser como en otra pantalla.
+Y más atómica.
+Sí.
+Santi, ahora sí.
+Bien.
+Yo lo que iba a comentar, es que para mí estaría bueno eso, la forma de resolverlo.
+Ahí te dejó tu criterio bastón, pero te tiró una idea.
+Es que, como comentaba Santi, tengas arriba, una vez que vos le das, que querés personalizar por empresa, se te generen directamente dos cards.
+¿Va?
+En la primera card, o una card solamente.
+O una sola.
+Poner que vos seleccionás una única empresa, ahí automáticamente se te crea una segunda card.
+Y en esa segunda card, estaría bueno dar la opción de seleccionar todo el resto de las otras empresas.
+Entonces, eso te permite darle una regla a una empresa en específica, y tener otra regla para el resto de las empresas.
+Y si vos querés, ahí tenés un botón de que tenés que crear una regla adicional.
+Si querés darle a cinco empresas, a cada una una regla específica, creo que eso estaría bueno.
+Y al resto de una general, podés hacerlo.
+No sé si me expliqué bien.
+Pero sería un sistema similar a lo que tenemos para crear socios.
+Viste que vos tenés, agregás un socio, después podés agregar otro socio, y así sucesivamente.
+Está bien, perfecto.
+Pero como...
+Bien.
+Así por si querés darle permisos especiales a cinco empresas, y después al resto global.
+Claro, exactamente.
+Entonces de esa forma lo podés hacer.
+Ponerle que selecciono, hago, creo las reglas para las cinco empresas.
+Y después creo una regla que pongo todo el resto, no sé, todo el resto de empresas en el selector.
+Y ya me queda la regla hecha.
+Lo importante acá, me parece, lo que parece posible,
+lo importante acá que tenemos que estar alineados,
+es que la acción, hoy en día la acción es guardar.
+La acción que se almacena es guardar.
+A partir de ahora, los permisos por empresa pasan a ser una acción atómica nueva.
+Y eso es importante que estemos alineando.
+Si estamos en la misma página con eso, no importa.
+Pero sí es importante eso.
+O sea, la acción de este guarda, de esta personalización por empresa,
+tiene que ser una nueva página.
+Ya no corre ponerla en el mismo lugar.
+Es una nueva página que, o sea, puede ser la misma página,
+o sea, podés hacer una misma página atóm, pero ya es otro botón.
+Es como que guardás eso.
+O al guardar se ejecuta.
+Y vos no podés estar modificando los permisos.
+Hay algo que es muy importante.
+Vos no podés estar modificando los permisos de dos empresas a la vez.
+O sea, yo no puedo estar personalizando el permiso de la empresa 1 y el permiso de la empresa 2.
+No, porque eso es un despelote en punta.
+Porque podés estar modificando X cantidad de permisos a la vez.
+Es un despelote.
+Es tipo, vos seleccionás la empresa que querés modificar y esa la modificás.
+Es una acción atómica.
+El guardar lo que hace, como dice Santi, es bueno.
+Te da email, roll.
+Ojo que creo que en GitHub no podés cambiar.
+Fijate cómo está la feature hoy en día.
+Creo que solo podés cambiar el primer nombre y el mail no se puede cambiar, se bloquea.
+Ojo con eso.
+Mantener, chequearte ahí la feature.
+Y eso que dice Santi no me parece mal.
+O sea, que tipo, podamos, si la persona quiere aplicar permisos globales
+para cinco empresas
+y para tres hacer custom, no me parece que esté mal.
+Lo que es importante es que para las tres que sea custom
+lo tiene que hacer manual y tiene que darle guardar.
+Y para las globales va a aplicar global.
+Otra cosa que estaría buena ahí Gastón
+es que vos, por ejemplo, tengas el selector de la empresa
+y ahí al costado viste el iconito este como para minimizar.
+Puedes pensar que ahí capaz que llegás a tener ese selector.
+Si tenés 60 empresas y tal, que por lo menos te quede con el nombre arriba
+y las puedas achicar para poder visualizar más.
+No, pero ojo que vos no deberías poder...
+¿Dónde tendrías 60 empresas?
+En los permisos.
+Tendrías permisos para cada empresa.
+No, no, no.
+Vos seleccionás una empresa.
+Es lo que estoy diciendo.
+Seleccionás una empresa solo.
+Exacto.
+O sea, vos acá tendrías otro selector.
+Acá tendrías otro selector que seleccionás una única empresa.
+Es lo que yo explicaba.
+Es un modal muy parecido al que tenés acá.
+Pero te selecciona uno.
+Vos nunca podés estar viendo dos configuraciones de permisos a la vez.
+Por eso yo decía, o lo hacen en otra página o lo dejan en el mismo.
+Claro, pero yo lo que estoy diciendo es, si vos...
+Esa persona tiene, no sé, 60 empresas como hablamos.
+Vos tenés dos permisos por cada empresa personalizados.
+¿No tendría como una configuración de permisos por cada empresa que él le quiera dar?
+Claro.
+Claro, eso es lo que estoy diciendo.
+Entonces, vas a tener 60 veces esta card de...
+No, no.
+Por los permisos.
+Para seleccionar el tipo de permisos que le des o no.
+No, vos vas a seleccionar...
+El selector.
+Vas a tener otro selector acá.
+Y cuando selecciones eso, te va a cargar los permisos configuraciones de esa empresa.
+Nunca vas a tener 60 a la vez.
+Ok, o sea que es el mismo que siempre se va modificando.
+Claro, exacto.
+O sea, por eso yo decía, eso pueden llevarlo...
+Fíjense, si no queda muy sobrecargada la página.
+Porque capaz que lo mejor es cuando vos le das permiso, vos venís acá.
+En vez de ponerte las tres, lo que hacés es seleccionás una empresa y te lleva a otra página para modificar sus permisos.
+¿Ah?
+No podemos estar cargando 60 acordeones de permisos por empresa.
+Selecciono uno y lo modifico.
+¿Tá?
+Por eso yo decía que es una réplica de este modal que vos estás haciendo.
+Acá va un modal que lo que hace es mostrar paginado las empresas que vos seleccionaste acá.
+Bien, ta.
+Y no se podría...
+Es más, algo que podemos hacer ahí, chicos.
+Que, en realidad, para modificar los accesos por empresa vos tenés que haber guardado las empresas seleccionadas.
+O sea, porque, ¿qué pasa?
+Yo puedo estar agregando 10 empresas ahí.
+¿Tá?
+En seleccionar empresas.
+Puedo estar agregando 10 empresas.
+¿Tá?
+Pero en el modal de abajo, Gastón, vos vas a consultarle a backend las empresas seleccionadas.
+Porque pueden ser que sean muchas.
+Tenemos que vos seleccionaste 50 empresas.
+No vas a tener en memoria, en frontend, las 50 empresas.
+Lo que tenés que hacer es cambiar accesos personalizados.
+¿Tá?
+Entonces, ya no te debería dejar editarlo de arriba.
+Sino que vos, de las empresas seleccionadas, cambiá los accesos personalizados.
+Porque si no...
+Pensemos acá.
+Yo tengo 50 empresas seleccionadas.
+Yo tengo que ir acá abajo.
+Salí un modal para seleccionar la empresa que quiero modificar.
+Pero como son muchas las empresas.
+Supongamos que son un millón.
+Ah.
+Ustedes al carajo.
+Son 100.
+Yo no voy a cargarlas todas de una.
+Y tampoco voy a fijarme cuáles cambiaste vos acá y mantenerlo actualizado.
+Entonces, tenemos que lograr desacoplar lo que es...
+¿Por qué no me borra?
+Los dibujos.
+Pero tenemos que lograr desacoplar lo que es...
+Todo el header de arriba de lo que son los permisos seleccionados.
+Son como dos cosas distintas.
+Ya no podemos hacer las dos cosas a la vez.
+Hay que tener mucho cuidado.
+Hay que pasarlo para otra página.
+O sea, que vos puedas agarrar...
+Ahí me gustó tu idea, Santi, de decir...
+Bueno, solo quiero personalizar 50 empresas.
+Después del resto quiero permisos globales.
+Pero lo que es importante es entender que...
+O sea, eso pueden verlo.
+Lo que es importante es entender que el acceso personalizado es por empresa
+y yo no puedo estar modificando la parte de las empresas seleccionadas.
+O sea, yo agarro y digo, bueno...
+Traeme ya las empresas seleccionadas que tenés y vamos a configurar.
+¿Está?
+¿Sí?
+Yo, sinceramente...
+Está lindo eso de los permisos global.
+Pero le daría un repienso.
+Porque tendrías que tener en cuenta cómo mierda tenés...
+Bueno, tendríamos que generarlo.
+Ya que lo vamos a hacer, vamos a hacerlo bien.
+Vamos a hacerlo con todos los...
+Lo vamos a refactorizar.
+Vamos a refactorizarlo con todos los chichos.
+Pero...
+Nada.
+O sea, es como que en el selector de abajo de acceso personalizado no te tendrías que cargar
+las empresas que tienen los permisos globales.
+Atento a ese detalle.
+Claro, sí.
+Se debería actualizar.
+Pero, de nuevo.
+O sea, cambiemos un poco el enfoque.
+El acceso personalizado es otra acción a todos.
+Vos tenés la acción de guardar las cosas arriba, permisos globales.
+Después tenés la otra acción que es cambiar los permisos personalizados.
+Vas a hacer algo totalmente distinto.
+Si no, es imposible de desarrollar.
+Y tengamos en cuenta que vamos a tener...
+Podemos tener varios modales.
+O sea, es más, ahí en permisos podríamos tener globales personalizados o...
+Y después...
+Tenemos que tener en cuenta eso.
+Nosotros...
+Es medio complejo eso.
+De los permisos por empresa.
+O sea, tenemos que meterle un pienso.
+Y vos tenés que pensar que si te eleccionás 100 empresas.
+¿Sí?
+Y querés hacer permisos globales para 97.
+Vos tendrías que primero guardar esas 100 empresas.
+Y después tendrías que poder aplicar los permisos globales.
+Porque si no se complica, complejiza mucho.
+No hay que bajarlo, o sea.
+Bien.
+O sea, después lo que no querés es tener ahí las 100 empresas metidas.
+Yo estaba pensando...
+Y si tenemos solo el nombre con un botón que te llega a otra página.
+Donde ahí ves todos los permisos por cada empresa.
+Como un...
+Para poder ver el nombre vas a tener.
+Claro, pero exacto.
+Es lo que podemos hacer.
+Pero para poder seleccionarlos.
+Vos tendrías que generar un modal.
+Que te carga esas 97 empresas seleccionadas.
+Y para eso no podés estar editándolas.
+En realidad es como que no las estás editando.
+Vos te estás cargando esas 97 empresas seleccionadas.
+Que pueden ser X.
+Entonces vos no podés estar modificando.
+Como estás haciendo hoy en día.
+Vos no podés estar seleccionando las empresas a la vez.
+O sea, modificando las empresas seleccionadas.
+Y a la vez viendo las empresas seleccionadas.
+Como dos acciones distintas.
+Entonces vos, en un lugar seleccionás las empresas.
+Y las modificás.
+Y las modificás.
+Y las modificás.
+Y en otro lado vos.
+Vas a seleccionar.
+En otro modal.
+De las empresas seleccionadas.
+Cual querés editar.
+Selecciono esta.
+Y las cargo paginadas.
+Y ahí voy y le doy todos los permisos.
+Tenemos que empezar a desacoplar.
+El selector.
+Y al lado un botón de editar.
+Entonces vos primero.
+Seleccionás la empresa que vos quieras.
+Después vas al botón de editar.
+Y se te carga el formulario este que tenemos.
+Vamos a decir.
+Con los botones estos.
+Retiro.
+Lo que quieras.
+Dar permiso.
+Ahí va.
+Y lo otro que es importante es.
+Guardás.
+Cuando te aparece ese selector.
+Ya la parte de arriba.
+De modificar email.
+Role.
+Seleccionar empresa.
+Ya no está.
+O sea.
+No te está permitiendo hacer como las dos acciones a la vez.
+De tipo una acción a otra.
+Hoy lo tenemos todo en la misma página.
+Desacomplemoslo.
+Ah.
+Es como que vos estás editando información general.
+No querés editar información específica.
+Sí.
+No podés estar editando una y vas a editar otra.
+Está.
+Tenemos que complejizar este modo.
+Porque si no en backend es imposible.
+Entonces como que bueno.
+Yo te permito editar la información general.
+Una vez que vos terminaste.
+De editar la información general.
+Divino.
+Ahora lo que vas a hacer es.
+Editar la información.
+Este.
+En esta información general.
+Yo puedo dar permisos globales selectivos.
+Está.
+Después podemos.
+Podemos dar.
+Ahí le doy permisos selectivos.
+Me gusta.
+Porque ya que lo vamos a refactorizar.
+Refactoricémoslo para que quede.
+Quede con todos los chiches.
+Está.
+Algo que está faltando también.
+En este acceso personalizado.
+Es que lo que.
+Unas cosas que dijimos.
+Es que el rol.
+También.
+Una.
+Para el acceso personalizado.
+Pasás a tener.
+La preconfiguración de rol.
+Supongamos que yo quiero modificar para DazBank.
+Sí.
+Entonces yo quiero modificar para DazBank.
+Puedo seleccionar directamente el rol.
+Que quiero para DazBank.
+Entonces no tengo que modificar para DazBank.
+No tengo que modificar para DazBank.
+No tengo que modificar para DazBank.
+Entonces yo quiero modificar para DazBank.
+Puedo seleccionar directamente el rol.
+Que quiero para DazBank.
+Entonces no tengo que andar haciendo clic en todos los cositos.
+Que lo que.
+Cómo funciona el rol.
+Lo como.
+Para DazBank.
+Pongo el rol viewer.
+Entonces.
+El rol.
+Sigue siendo algo global.
+Porque tenemos que mostrarlo.
+Porque no vamos a gastarnos en eso.
+Pero también vas a hacer algo atómico.
+En cuanto a empresa.
+Entonces vos tenés un rol para DazBank viewer.
+Para Dropis o Sunny.
+Para mi empresa.
+Porque no tengo que modificar para DazBank.
+Porque no tengo que modificar para Dropis.
+Porque no tengo que modificar para DazBank.
+Porque no tengo que modificar para Dropis.
+Entonces tenés un rol para DazBank viewer.
+Para Dropis o Sunny.
+Para mi empresa.
+Sos Manager.
+Y cuando hiciste eso.
+Ya te cargó la pre-configuración.
+Obviamente que al igual que lo tenemos.
+Esa pre-configuración.
+Se puede borrar.
+Si?
+Bien.
+Perfecto.
+Ahí el.
+El pienso que tenemos.
+Que hacer.
+Es bueno.
+Como hacemos.
+O sea.
+Yo lo veía sencillo.
+Pero lo que todavía no estoy viendo.
+Que por eso tenemos que bajar.
+Como más a tierra.
+Y desacoplar todo esto.
+Es como.
+Carajos.
+hacemos lo de los permisos
+globales parcial
+que decía Sam
+que eso me gustó, que es bueno
+para Dark Bank y Drop
+que aplicó global, para mi empresa
+es particular
+estaba bien, lo pienso
+ahí y lo discuto
+con Sam en tiempo, cuando tenga
+alguna idea de un consorcio
+sí, o sea, meterle un pienso
+ahí, igual ahora para
+tener el roadmap de cosas a sacar
+o sea, de cosas que van
+a estar, esto, esta página
+la opción
+de dar permisos
+justo, no sé cuándo
+se va a atacar, entonces tenemos tiempo
+como para pulirlo, repensarlo
+la prioridad está
+en mis compañías
+en el
+selector de múltiples compañías
+que te aparece en todas las páginas, de bancas
+lo que sea
+en este seleccionar
+empresa, que Santi ya
+hizo
+que es el seleccionar de las empresas
+propias varias, Santi ya hizo
+el paginado
+y en la opción de
+yo como team mate puedo ver
+a quienes me cedieron acceso
+puedo eliminarme de team mate
+y ver los permisos
+que me cedieron
+por último vamos a arrancar
+con todo esto de permisos
+justos, esta feature de permisos
+justos
+así que
+eso
+esto en diseño
+a que épica te están asignando
+Santi o Tom
+buena pregunta, creo que eso era lo de
+team mates
+B2, bueno si
+voy a crear ya mismo
+que sea team mate
+B3, tanto para
+design, porque esto es una
+o sea, lo que es
+para que
+voy a crear
+varias éticas
+Design
+mis
+mis compañías
+B2
+Design mis compañías
+B2, esto ya queda
+esto queda pronto
+y el selector de múltiples compañías
+vamos a ponerlo aquí, Design mis compañías
+B2 y vamos a crear
+Design
+Design team mate
+B3
+entonces creé Design mis compañías
+B2 para tus tareas
+y todo lo relacionado a TeamMate
+como el selector que ya hiciste Santi
+es Design TeamMate B3
+todas las tareas de Gastón también son Design TeamMate B3
+perfecto
+ahora cambio todo eso
+voy a crear TeamMate B3
+y mis compañías B2 para los desarrolladores
+ahí van a ver ya que
+bien
+vamos a ver que ahí te creé dos tareas
+dos épicas
+una es mis compañías B2
+ahí entra lo del múltiple selector
+lo del selector de compañía
+y el selector de múltiples compañías entra para ti
+enseguida que lo tengas Santi me decís y lo pichás
+bien
+los libero ahí Santi y B2
+me avisan hoy o dos
+bien
+recordemos el orden
+ahí una vez que liberemos lo de mis compañías
+y el selector de compañías
+ya podemos, o sea ya Nahuel se puede poner a trabajar con nosotros
+así que si tenés los ajustes
+los vas a dar a poco y si ya están un poquito pulidos ya los vas a hacer
+más allá que va a faltar el chequeo con Guije y Beto y todo eso
+ya puedo poner a Nahuel a trabajar en eso
+ya casi lo tengo terminado
+quiero pegarlo en la bichada antes de pasártelo por las dudas de que me haya comido alguna cosa pero
+ya casi que está pronto
+está bien
+o sea tendríamos tres cosas ahí atacadas
+tendríamos todo lo de mis compañías, compañías asociadas
+selector de compañías y el múltiple selector de teammates
+correcto
+esas tres cosas
+si, si el de teammates me falta un poquito más pero si
+o el de teammates, el múltiple selector es más sencillo
+así que este
+no tenés compañías asociadas
+entonces es más sencillo
+cuando tenés múltiple selector de compañías
+son solo compañías propias
+por ahora
+después Gastón va a tener que copiar ese diseño
+para seleccionar las compañías
+que ya seleccionaste
+pará
+recordemos que el teammates
+al revés no
+el múltiple selector es de teammates
+o sea que ahí si tengo las compañías asociadas
+no
+todos los tenés compañías tuyas
+puede ser más sencillo
+ok, está
+estaba haciéndolo al revés, me no me encabezaste
+o sea vos tenés el selector único
+el selector único tiene a ese tipo de selector
+que vos ponés en Bank and Crypt o lo que sea
+podés seleccionar la compañía que quieras
+el selector de teammates
+es que es el múltiple selector
+porque querés a todas las compañías que vas a dar permiso
+son solo las propias
+entonces por más que tenés seleccionar varias
+es más sencillo porque tenés toda la lógica de compañías asociadas
+que te carga el usuario y eso
+perfecto
+tal cual es cambiarle el nombre a estas
+Gastón lo que va a tener que hacer de ese múltiple selector es
+cargar el subconjunto
+que quiere
+y va a tener que hacer un único selector
+de esos que vos multiseleccionaste
+Gastón lo que va a tener que hacer es
+seleccionar una
+para modificar los permisos
+pero sigue siendo
+esa modal la vamos a tener reutilizado
+bien lo libero me voy con
+Enrique 5 que los tengo ahí trancados
+igual está bueno que Enrique y yo nada más esté con esto
+porque probablemente lo van a atacar
+y van a ser jugadores
+así que estemos de inicio
+bien
+bueno
+bueno
+bueno
+bueno
+bueno
+estamos
+bien
+ya
+ya
+vamos
+a
+bueno
+también
+vamos
+a
+ir
+a
+al
+sí
+allá
+dónde
+hola
+hola
+suti
+hola
+hola
+hola
+hola

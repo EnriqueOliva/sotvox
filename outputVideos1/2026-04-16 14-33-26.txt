@@ -1,0 +1,238 @@
+Y lo vemos juntos.
+Voy a grabar.
+Ahí, dejame, si querés, conectar.
+Compartir.
+Ah, tengo que actualizar esto.
+Ya lo actualizo.
+Aquí llegó la triple T.
+Tini, tini, tini.
+Na, na, na.
+¿No vas a cantar, Kike?
+No, no.
+Muchas gracias.
+Claro.
+Voy a cambiarlo ya.
+Voy a decir switch mode.
+Ah, pero no me dejas seleccionar el 4 o 6 por ahí.
+Igual están en un millón.
+Podés seleccionar effort o esfuerzo.
+Fijate en alguna opción.
+Ah, sí, sí, sí.
+Ayer le puse effort y sinking.
+Lo estoy usando al palo.
+Effort max.
+Viste, tenés la opción max.
+Sí, sí, sí.
+No, no.
+Está en max.
+Y también está en repensate todo, tipo, 10 veces.
+Sinceramente, no veo diferencia en cuanto a la calidad del contenido.
+Pero está.
+Pero sí, este, calculo.
+El hecho de tener más límites se termina.
+No, ya está.
+Dale un tiempito.
+O sea, capaz que sí.
+Capaz que con el contexto.
+El contexto lo vas a sentir, seguro.
+Seguro que sí.
+Ojo, yo estoy usando, tipo, literal.
+Ayer estaba usando como 5 a la vez, ¿no?
+Claro.
+Entonces, está.
+Sí.
+Porque estaba explotando bastantes cosas y necesitaba ponerlas a trabajar.
+Seguro.
+Bueno.
+Esto es pro.
+Está, andate a la tabla OTC Transaction y poné en el Word, poné, este, probabilidad
+de pago.
+Sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí, sí,
+sí, sí, sí, sí.
+Por lo que, me parece a veces, que te porque lo pongo en el Word, pero que, si, bien, ya
+está.
+No, no pongo en el Word, pongo en el OU.
+Me parece que.
+Sí, ojo.
+No.
+No, te pongo en el Word.
+Ah, bueno, ahí está.
+¿Qué es el Word.
+Todo de entrada.
+Sí.
+En el Word, poné, este, provider.
+Como te cargue el Word.
+Ah.
+Uh.
+Sí.
+Sí, ojo.
+Capaz que te conviene para el.
+Ah, bueno, está agitando.
+En el Word.
+Ay.
+No, el Word del pod...
+Pero el Word, poné este, provider, y poné UANDA.
+No, el order podes dejarlo, pero el word pone provider y pone one money, así en lower camel case.
+Ah mira, si esta el provider.
+Esto, a ver.
+Se alimenta, a ver.
+Ah no, claro, ahora si.
+Eh, tenes withdrawals, ves?
+Ahí tenes los withdrawals.
+Los tenes eh...
+En...
+Ahí tenes la 1, la 2 y la 8.
+Creo que...
+Tenes 2, tenes el 1 y el 5.
+Ta?
+Primero necesito que veas que llegó el evento y por alguna razón, date al final del todo, no se generó el recidocum.
+Ajá.
+O sea, hubo algo que pasó.
+O sea...
+Yo no sé si lo estamos...
+No, no, no, no.
+No sé si lo estamos agarrando con el audio.
+El...
+Mirá, mirá, justo me hiciste ver.
+Ahí, no sé que pasó.
+Pero, no sé si lo estamos agarrando con el audio y logique.
+Necesito que lo...
+Necesito que lo...
+Que lo investigues.
+Ta? O sea, que me digas que...
+Que carajo está pasando.
+Probablemente tengas que ir a mirar a...
+Al worker.
+A ver si llegó.
+Si?
+Ok.
+Pulpa de...
+De...
+Me escucha.
+Me estaba buscando.
+Puede estar buena.
+Bueno.
+Bueno, la maracuyá es la mejor.
+Es mi fruta favorita ahora.
+Es exquisita.
+Es riquísima.
+Es riquísima.
+Si, nosotros el otro día fuimos a comer sushi con Lucía y pedimos que nos mojemos
+maracuyá y es riquísima.
+Mirá.
+Nosotros pedimos limonada.
+Un litro de maracuyá, por lo general, donde haya limonada de maracuyá o licuado de maracuyá.
+Está de mano.
+No.
+Bueno.
+Ahí está...
+O sea, está fallando eso.
+No, no está.
+Fijate que no está en los Audi Log.
+Entonces capaz que es buen momento para agregarlo.
+No sé en el worker.
+Porque al parecer aún no está.
+O, si no se envió el evento, habría que fijarse por qué no se envió el evento.
+¿Está?
+Ok.
+O sea, es todo a investigar.
+¿Sí?
+Bien.
+Así que es eso.
+No hay mucho más para ofrecer por ahora.
+Menos ahora, entonces.
+Necesito que me digas qué puede haber pasado.
+O también hay que mirar en el worker, en el back office, cuando se triggerea el evento,
+por qué no se triggereó cuando se completó.
+Porque en algún momento llegó el evento del complete.
+Todo eso está en los logs.
+No.
+O sea, ahí necesito...
+Más allá de que está con los test unitarios y esto, ahora corremos un poquito los test
+unitarios y miramos esto que tiene súper mega prioridad.
+Le tiro un tip.
+No sé si lo sabía.
+Nunca había podido Claude usar comandos, no sé cómo es el nombre, PostgreSQL, operaciones
+por SQL.
+Ah, ayer lo hice con la terminal.
+Sí.
+Le da las credenciales y el loco hace operación.
+Para mí es seguro porque creo que usted no me dio permisos de escritura en producción,
+o sea que seguro que nunca voy a poder.
+Claro, sí.
+Sí, sí, sí.
+Entonces todo lo que es lectura le podés literal pedir a Claude, fijate en la base
+de datos, tal usuario, lo que sea y lo hace.
+Eso puede facilitar un montón la vida, creo.
+Está bueno.
+Sí, sí, sí.
+O mismo en mi caso que hago test y eso y tengo que crear usuarios o datos basura para
+pruebas, en dev se puede crear o en stage se pueden crear.
+También los creas, eso me viene bien.
+Bien, perfecto.
+Bueno, vamos a ver qué mierda está pasando con estos tipos.
+OK.
+Igual yo acá le puse, me dice...
+Es raro porque acá yo estoy usando el 4.6 con un millón de contexto y acá me dice
+0% de contexto pendiente hasta el próximo...
+Compact.
+Compact.
+Pero, Claude, ¿qué conversó?
+O sea, ¿le hiciste, le mandaste a hacer una investigación súper extensa o algo en ese
+chat?
+No sé.
+Después lo voy a reiniciar.
+Claro.
+Después lo voy a reiniciar.
+Capaz que pasé al modelo de un millón tarde.
+No, bueno, puede ser.
+Claro, puede ser.
+Está bueno hacer esto también, config y pegarle una bichada.
+Porque siempre están sacando cosas nuevas.
+Entonces, a ver qué ofrece, ¿viste?
+A ver si hay alguna funcionalidad nueva.
+¿En dónde?
+A ver, pará.
+Barra config escribir, como si fuera un prompt.
+Barra config.
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+¿En dónde?
+O mismo si se usa el chacra, que está tipo opciones o algo así.
+Settings, preferencias.
+O puede haber algo que te facilite la vida, ¿viste?
+¿Modelo por defecto, esfuerzo por defecto, no sé?
+Tipo cosas así.
+¿Qué era el rewind?
+Cuando vos podés volver atrás en la conversación y no sólo en la conversación, sino en el
+código que tenías en esa conversación.
+No sé si me explico.
+Ah, bien.
+Como un instrumento de un permiso.
+Kh immersa.
+Mi historial no solo de la conversación sino del código. Cuando volvés atrás revertís hasta ese punto, digamos.
+Tiene bien. No, no, sí, o sea, tiene sus chiches. Yo particularmente por ahora no he encontrado nada que no tenga el copa de Kilt, todos esos chiches, todo.
+Pero, pero ta, calculo que para uso grande ayer le di un pario impresionante y noté la diferencia.
+Sí. ¿Dónde está? Creo que ese es. Bueno, te dejo.
+Me avisás esto, Kike, a ver si podemos encontrar el issue porque después vamos a tener que correr el cronjob.
+También una de las cosas que necesito que te fijes es, hay un cronjob que yo intenté hacer genérico, para que también anduviera para OneMoney.
+Que lo que hace es para todas estas facturas que tendría que, para todas estas transacciones que debería haber generado factura, las vuelve a enviar para que genere.
+Ok.
+Ta. Entonces, una vez que encuentres el issue, lo que tenemos que hacer es todas las facturas viejas generadas, todas las transacciones viejas generadas, las facturas.
+Seguro.
+Ta.
+Ok.
+Dale. Dale, vamos arriba aquí. Abrazo.
+Un abrazo, hasta luego.

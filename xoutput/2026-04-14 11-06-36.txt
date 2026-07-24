@@ -1,0 +1,380 @@
+Sí, es por Slack, es por Slack, compartir, no sé qué estoy compartiendo, comparto nuevamente, ventana, compartir pantalla, va, a ver, les muestro
+Ok
+A ver, primero les muestro mi parte, ¿ya? Para que vean qué es lo que pasa acá
+En la parte de empresa, obviamente, yo tengo el JP Model, ¿ya? Pero como pueden observar, no me aparece absolutamente nada, los datos
+Bien
+Cuando pongo ingresar, obviamente no me aparece acá nada, euros tampoco, o sea, absolutamente nada, todo lo que pongo, ¿vale?
+Acá, digamos, esto es nada
+Por otro lado, yo tengo saldo en USDT Ethereum, no me aparece el saldo de USDT
+Creo que tengo USDT Ethereum, creo que tengo USDT Ethereum, ahorita, y no me está apareciendo el saldo
+Por otro lado, yo tengo este tema de teammates asignado, ¿ya? Uno de ellos es Luchito
+Sí
+¿Ya? Entonces, ahora les muestro, ahora, Luchito, no sé si, por favor, puedes compartir nuestra pantalla
+Claro
+Buenísimo
+Y, lo vemos
+Y, por el otro lado, tenemos, bueno, eso es la propia
+Sí, ponemos
+Ponemos la compartida
+Compartida, ahí aparezco yo, pero al aparecer ahí, se queda ahí, no hay nada
+Bien
+Ajá
+No, no puede ser absolutamente nada
+Y eso, directamente, ya no le deje entrar como a ver mi cuenta
+¿Esta cuenta, Carlos, entonces, es de quién es, perdón?
+La cuenta es mía, la tengo en el JP y la tengo, y lo tengo como teammates al Lucho
+Ahí está
+Ok, así que ahora, pero ahora mismo lo que estamos viendo es la cuenta de Luciano, ¿puede ser?
+Sí
+Sí
+Y, Luciano
+Esta es mi cuenta
+Buen día, Luciano
+Ajá
+Ese es su cuenta en el, en el lead bank, ¿no?
+Sí
+Pero, cuando he entrado a ver la parte empresa, andate a la parte empresa, Luchito
+Es que yo no tengo gestionado nada en la parte empresa, no vamos a ver nada
+¿Qué pasa?
+Ahí, ahí, ¿qué pasa?
+Quédate ahí, ahora andate al, dejalo en la empresa, y andate a abrir la mía, a ver, haz en el botoncito, ahí
+Y pon Carlos, a ver
+Si ves, no, no, no, no aparece nada
+Bien, perfecto
+Tengo un sombrero que tiene el papel
+Tranqui, tranqui, contéstalo, Luchito, no pasa nada
+Bien, Carlos, genial
+Ya no podemos ir manos a la obra, entonces, este, seguramente sea algo que, que se pueda atacar enseguida, ¿no?
+No va a haber problemas, Luchito
+No, no va a haber problemas
+Ya, eh
+Avísame, y yo estoy atento a ustedes, cuando quieran les comparto la pantalla, lo que ustedes digan, no hay problema
+Sí, sí, no, mantenemos en marcha
+Capaz que, que lo mejor va a ser pedirles ahora que abran la consola de desarrollador, así vemos, podemos ver que Arroyo está tirando la película, a menos en el caso de Carlos
+Genial
+Eh, Carlos, quizás vos podés compartir de repente tu pantalla de nuevo, un segundo
+Claro
+Un segundito
+Sí, no sé si
+Eh, la...
+¿Cómo, cómo hacemos para sacarlo a Lucho de... justo lo llamaron?
+Estaba pensando eso, sí
+Si yo comparto, ¿lo sacamos automáticamente?
+Hagamos el intento, a ver
+Hagamos
+Bueno, ya me ven a mí, pero a la vez lo ven a Lucho, ¿no?
+Sí, pero yo puedo, claro
+Lo podemos seleccionar
+Claro, exacto
+A ver, esa es mi cuenta
+Exacto, si podés, Carlos, no sé si sabes lo que dice la web, de hacer clic derecho en cualquier parte de la página
+¿De acuerdo?
+Un segundito, lo voy a ir a mutear a Lucho, justo lo va a llamar, ¿no?
+Ahora sí
+Genial
+Y ya, entonces, ¿dónde ingreso?
+En cualquier parte de la página, clic derecho
+Ya
+Inspeccionar, es la última opción
+Vale
+Y allí, Nahuel
+De repente vos me podés decir
+A ver, ¿qué te sirve más ver?
+¿Qué nos sirve más ver?
+Nos sirve más ver
+Ahora está en Elements
+Tendríamos que ver Network
+Creo que es
+El icono
+Como que hay Wi-Fi arriba
+A ver, ¿lo ves?
+No, un poquito abajo
+Sí, el de abajo
+Uno más abajo
+Uno más abajo
+Ese mismo
+A ver
+Genial
+Ahí va
+Apreta F5
+Intenta recargar la página
+A la chingada
+Supongo que es
+Pero sí, supongo
+Bueno, está
+Sí, mejor es
+Viste que Deposits
+Está en rojo
+Clickeate en Deposits
+Hace doble clic
+A ver
+Vuelve a la
+A la otra tab
+Tiene un interno
+En server error
+Esto tendríamos que revisarlo
+Ahora en los logs
+¿Y estos de acá?
+¿Estos rojos también
+No pasa nada?
+Este
+Los otros rojos
+No
+No influyen al flujo
+Pero justo este depósito
+Sí
+Es el problema
+Que nos está causando
+Que no podamos ver
+Por ejemplo
+El balance
+Ni nada de eso
+Ah, claro
+Entiendo
+Y el tema de
+De teammates
+Lo de Lucho
+Sí
+Y capaz que
+No sé si tienes
+El mismo problema
+Si no esperamos a Lucho
+Y le pedimos que
+Que nos comparta
+A ver
+No hay ningún problema
+Ustedes me avisan
+Lo llamo a Lucho nuevamente
+Dale
+Luchito
+¿Quieres que te puedo llamar?
+Lo llamo
+Lo llamo
+Lo llamo
+Yo te dejo de compartir
+Y lo uno a Lucho
+Con no sé
+Bueno, acá
+Luchiano
+Luchiano
+Luchiano
+Ah, no, no es así, ¿no?
+¿Era así?
+Ah, sí, estoy
+Ya
+Ah, ahí está
+Luchito, querido
+Una de las
+¿Qué bonas?
+Es tu
+Tu compu
+¿Cómo?
+Tenía volumen bajo
+Dime
+Una
+Una vez más
+¿Nos compartes tu compu?
+Sí
+Enseguida
+Gracias, Luchito
+Dios me encina
+Necesitan ver algo
+En especial
+Lo que ustedes digan, chicos
+Ayer le mostré
+Las dos opciones
+Tanto de mis compañías
+Que los compartidos
+A ver
+Sin poder acceder
+A ver
+Este
+En cualquier parte de la página
+Hacé clic derecho
+Ahora cuando ustedes
+Se
+Vamos
+Volvete nomás
+A mis compañías
+Va a ser mejor
+Sí
+A la parte de accesos compartidos
+Fíjate nomás
+En el usuario de Carlos
+Y ahí hace clic derecho
+No te trae nada
+Ah, es
+Lo que pasa es que
+Por alguna razón
+Cuando pone clic derecho
+Luchito
+No aparecen las opciones
+De clic derecho
+¿Tú dices?
+¿Tú dices cómo puedes
+Clic derecho?
+¿Para qué te aparece
+La ventanita de las opciones?
+¿No?
+Sí, obvio
+Pero aparece
+Aplicaciones
+Digamos
+Opciones clásicas
+De
+Ah, hay una abajo
+Una abajo al final
+Que dice
+Inspeccionar
+Ah, ok
+Sí
+, sí
+Lo que pasa es que
+Por alguna razón
+Ah
+Te cuento que
+A ver, yo
+Bueno, bien
+Está charlando
+Lo que pasa
+Aquí
+No lo viste
+El pelo solo está acá
+A ver, ¿dónde está
+Esta cosa?
+Hay que compartir
+Y ahora
+Esclavito de nuevo
+¿Y dónde está
+Esto compartido?
+¿Dónde está
+Por la llamada?
+Eh
+¿Tú?
+¿Tú?
+Ah, yo puse solamente
+La pestaña en la
+Sí
+Sí
+, sí
+Vamos a ver
+Y aquí ya
+¿Y lo ves?
+Sí
+Bien
+Ahí va
+Viste arriba
+Que tenés
+Una opción
+Que se llama
+Elements
+Arriba a la derecha
+Sí
+Clicate en la
+Tercera opción
+A la derecha
+Que aparece
+Un ícono
+Wi-Fi
+Ahí
+Ahora apretá
+F5
+A recargar la página
+Tenemos algún error
+Acá
+O sea, viste
+Que hay una
+De las opciones
+Que se llama
+Deploy status
+Clicate en la
+Arriba
+La que empieza
+Con 8, 3
+8, 5, 3
+Está en rojo
+Sí
+Abajo en el listado
+A ver
+Un poquito más
+Deplay status
+Un poquito más
+Arriba
+La que dice
+8, 5, 3
+Está
+De nuevo
+Está lanzando
+Error
+Si vas a
+Viste donde dice
+En las
+En las opciones
+Response
+A la derecha
+Sí
+Vamos a ver lo mismo
+Al menos de acá
+Sabemos que el error
+Lo podemos ver
+De nuestro lado
+Quique
+Sí
+Sí, sí
+Va a ser cuestión
+De investigar un poquito
+Sí, muchachos
+Hacemos un poquito
+De investigación
+De nuestro lado
+Y apenas podamos
+Les pegamos
+El grito de vuelta
+Si les parece bien
+Nos mantenemos
+En contacto
+Yo capaz que les pido
+Alguna que otra cosa más
+No hay problema
+Nos llaman
+Nada más
+Vamos a estar atentos
+Carlos
+En principio
+¿Han notado
+Algún otro
+Comportamiento extraño
+O en principio
+Son estas dos cuestiones
+En principio
+Estas dos cuestiones
+Seguramente
+Cuando ya tengamos
+Habilitada la cuenta
+Voy a ver otras cosas más
+Genial
+Entonces bueno
+Lo atacamos
+Lo antes posible
+Ya estamos en esto
+Y apenas tengamos
+La solución
+Este
+Les avisamos
+Si les parece bien
+No, está genial
+Ustedes nos avisan
+Quique
+Abuela
+Así que no pasa nada
+Me avisan
+Genial
+Buenísimo
+Genial
+Muchas gracias
+Carlos
+Y Luciano
+Estamos a disposición
+Un abrazo
+Chau chau
+Hasta luego

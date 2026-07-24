@@ -1,0 +1,119 @@
+Bueno, la idea es hacer un partido de padel. No, hablámosle. Terrible bala.
+No, vamos a... les puse ahí... no me dieron ni pelota. A ver, ¿quién me reaccionó? Martina, ahí va. Solo Martina me dio gol.
+Les puse ahí en el channel de developer que la idea es hacer una demo de triangulaciones.
+¿Está? ¿Sí? La demo pasada participó Martina y Jonathan frente al equipo de Bolivia. Hicieron todo el flujo de compra y venta y la verdad salió bastante bien y yo los fui apoyando.
+Me gustaría que se organicen. En particular, preferiría que esta vez liberara a Jonathan de eso. Martina tiene que estar porque los flujos son del site, entonces tiene que estar.
+Y me gustaría sumar a Enrique con la parte de validación de correos.
+¿Está? Que de repente pueda... que es lo que más ha estado trabajando.
+La idea es hacer una demo. Creo que no es la... ya les digo, denme un zundito el calendar. No sé si Ana ya la registró.
+Creo que es el 26 la demo de la IT. Creo que sería la semana que viene, fin de la semana que viene.
+La idea, de nuevo, es...
+Que presenten el flujo de triangulación con todas sus variantes, ¿está? Y que se organicen como para presentarlo. Tienen una semana para coordinarlo, ¿está?
+Simulen todo, prueben todo. No tiene mucha huella.
+Porque ahí tenemos site, BBO y tema mails.
+Exacto.
+La idea es que yo presente el flujo en el site.
+La idea es que vos presentes el flujo en el site, Nahue el flujo en el back office, ¿está?
+Y Enrique lo que se va a hacer.
+Que sean los correos, ¿está? O sea...
+O bueno, está, ahí pueden ver. Capaz que Enrique puede presentar algún flujo del back office y presenta algunos correos y otros lo presentan a Nahue.
+Eso véanlo.
+O sea, me gustaría involucrarlos a los tres que participen en eso.
+También para darle visibilidad al equipo de Bolivia de ustedes, ¿está?
+Como ya lo hicimos con Jonah.
+También darle... O sea, que los vean a ustedes como referentes en esos flujos.
+Entonces, Jonah ya lo vio.
+Está, Marti, no te puedo desinvolucrar.
+No te puedo desinvolucrar porque tenés en el site.
+Entonces, la idea sería meter también a Enrique en ese flujo, ¿está?
+Bien.
+El flujo es el siguiente.
+Es crear una triangulación.
+Enseguida que creas la triangulación, se le quita el dinero al cliente.
+Recordemos, ese es el único punto que hay que tener, que tenemos que tener todo en claro, ¿no?
+Cuando entras a OneMoney y creas la triangulación, es igual que la venta, Jonah y Nahue.
+Y Kike también.
+Pero ellos lo trabajaron más.
+Se le quita el dinero al cliente de la cuenta de OneMoney, ¿está?
+Nosotros cuando haces un depósito no le vas a sacar plata porque todavía no...
+O sea, si estás haciendo un depósito, pero cuando haces un retiro, ahí sí, le sacás enseguida la plata al cliente de los cuentas de dólares
+y se la pasás a la cuenta de bolivianos.
+O sea, eso ya es el proceso dentro del BBO, ¿está?
+Pero es el único punto donde realmente esto no es una plataforma burda.
+En el sentido de, más allá de los flujos, de que es algo que tiene...
+Es la única lógica delicada en sí, ¿no?
+Donde realmente, si el cliente puso que se le va...
+Que quiere hacer una triangulación por 10.000 dólares, se le está sacando esos 10.000 dólares.
+Después ahí, a partir de ahí, todo el flujo es una operación manual, ¿está?
+Entonces ahí tiene, bueno, la aprobación de un lado, la aprobación del otro, la subida de documento de un lado, del otro,
+pla, pla, pla, pla, pla, y todos los distintos tipos de correo que pueden llegar.
+¿Sí?
+¿Bien?
+Entonces...
+Esto sería...
+Local, ¿no?
+Pueden hacerlo local, pueden hacerlo en Dev, pueden hacerlo como el más les guste.
+O sea, eso no hay restricción.
+Lo importante es que lo hagan.
+O sea, no...
+No hay ninguna restricción con respecto a eso.
+O sea, ahí capaz que lo que se me ocurre para que sea más eficiente el tema de tiempo es...
+Yo me sincronizo con Kike y con Nahue en temas de hacer como una especie de guía del flujo y después...
+Incluso en el correo de la semana verlo, probarlo, o sea, hacer como una simulación.
+Lo importante es que lo aprueben conmigo para también evitar lo que pasó la otra vez de repente contigo y con Nahue,
+que yo tenga...
+Mi idea es que la participación mía sea casi cero, ¿está?
+Cosa que ustedes puedan exponer ustedes y también el equipo de Bolivia los vea más como referentes.
+Ah, no quiere decir que la otra vez no haya funcionado, pero quiero que...
+Ya que van a ser tres, ¿está?
+Hace un flujo un poquito más largo, pero en vez de ser dos flujos.
+Es uno solo, entonces está bueno que los vean también, o sea, que aprendan sujetas,
+que se graben esas caritas hermosas y que los vean como referentes, ¿está?
+A Carola pasa hablando de Jonathan, me pide fotos y todo, entonces, ¿está?
+La idea también es que...
+O con Kike en esa demo.
+Claro, por eso, el Kike está medio celoso, entonces, ¿está?
+Hay que arreglar ahí, hay que arreglar la cosa.
+Todo lo vimos.
+El mensaje, Enrique.
+Todo lo vimos.
+Todo lo vimos, ¿está?
+Ordinario.
+Ordinario.
+Ya voy a cuadrar una reunión con Ana contigo.
+Estas cosas en el ambiente laboral no se pueden hacer.
+Bueno, ¿está?
+No, pero hablando en serio, la idea es que vean, o sea, que tenga visibilidad de toda la gente que labura y esas cosas
+y que también ustedes puedan interactuar con el equipo, ¿está?
+O sea, creo que estas demos, por más que a veces son una pesadez y trancan todo,
+está bueno porque...
+Demuestran todo el trabajo que está haciendo y quién está detrás de todo esto.
+Entonces, para mí es importante.
+Por más que rompe las pelotas, preferirían estar haciendo otra cosa, ¿está?
+Así que, nada, es algo que me parece una linda oportunidad.
+Sí, normalmente estas cosas las hago solo yo, pero creo que esto de compra y venta y triangulación está bueno hacerlo.
+Después estaría bueno empezar a normalizar este tipo de cosas con, por ejemplo, el flujo de notificaciones, configuración
+y todas esas cosas para que a las charlas de E.T. directamente las puedan lidiar cada vez más ustedes.
+O sea, puedan ustedes mostrar más eso y también le den como esa sensación al equipo de, bueno,
+que es algo que yo quiero romper, ¿no?
+No es solo Santiago el que trabaja.
+Yo, la verdad, he trabajado mucho y estamos trabajando con Martí en...
+Bueno, hay todo un equipo detrás.
+La otra vez, o sea, cuando mandamos todos los anuncios, ¿vieron lo que fue la lista de cosas que mandamos que salimos?
+O sea, o sea...
+Denota que, bueno, no es...
+O sea, ya no es Santiago, Martina y Quique como cuando arrancamos.
+O sea, hay un equipo grande, hay un equipo de diseño grande, también hay una cantidad de cosas.
+Entonces, está bueno eso de demostrarlo, ¿sí?
+Así que está eso.
+Los dejo.
+Cuídense, buen provecho.
+Martí, no sé si tenés algo para chiquear.
+Sí, te pido dos minutos para grabar.
+A la puta madre.
+Váyanse a comer ustedes, váyanse a comer.
+Chao, chao, chao.
+No quiero ni nada.
+No quiero ni nada.
+Desamparece.
+Chao.

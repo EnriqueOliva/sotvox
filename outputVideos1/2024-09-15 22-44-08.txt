@@ -1,0 +1,16 @@
+Ahora sí.
+¿Puedo ponerle pausa?
+Nada, el bolazo es que en realidad es como que hay dos corrientes.
+Una que dice que mock es una cosa nueva.
+En realidad otro que dicen que el mock en realidad es stab.
+Entonces no.
+Es que en realidad es lo mismo, solo que unos dicen no.
+Pero si vos lo hacías de una forma y ahora lo hacés más dinámicamente, no es stab, es mock.
+Los puristas dicen no, pero en realidad la idea, el test double que estás haciendo es el mismo.
+Por ejemplo, Microsoft te pone mock, Sinón te pone stab.
+Bueno, no importa.
+Digo por si usted busca referencias entre stab y mock.
+Si pone mock, con Sinón le aparece stab.
+Pero si busca la esencia del mock y stab, es lo mismo.
+Ambos intentan setear comportamiento.
+Nada, es como.

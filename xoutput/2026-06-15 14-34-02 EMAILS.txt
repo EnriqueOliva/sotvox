@@ -1,0 +1,1147 @@
+Bueno, el viernes salimos con lo de agrupar suscripciones.
+Creo que están dando bastante bien, pero no estamos bloqueando bien cuando actualizamos el método de pago, o sea que estoy con eso.
+Además de eso estoy con unos temitas ahí con los counterparty que tengo que desasociarlos.
+Con Martu estuvimos trabajando en un byte de Infinite que ya lo sacamos del hotfix.
+Entonces ahora en mis próximas 24 lo que voy a intentar trabajar es, además de ver los sprints de todos y que esté todo ok,
+tengo que liquidar esta desasociación de los counterparty, poder permitir borrarlos, que más, y trabajar con esto de la actualización de pagos.
+Así que voy a estar con todas esas cositas liquidando.
+Enrique, por las dudas, mejor tarde que nunca, tiré ahí la penca donde pueden participar todos, menos Santiago Patín.
+Y Santiago, por las dudas, no lo pude configurar en la aplicación, pero si te sumás tenés menos 50 puntos.
+O sea que nada, eso, por un tema de cábala, porque si no va a pasar como en la cena.
+Si ya ganás este mundial.
+Ya se complica, después me vienen las quejas, que está todo arreglado.
+Entonces para que se quede todo más tranquilo.
+Vamos a seguir alimentándote.
+Setié los premios en ovación, por si quieren verlos.
+Nada, bueno, es un tema para poder equilibrar.
+El primer premio y el segundo y tercer puesto es un poco para poder subsanar los gastos del primer premio.
+¿Sí?
+Entonces, nada.
+Este, vaya jugando y el que gana, ahí después vemos qué iba a decir.
+Pero bueno, tan mejor tarde que nunca.
+Creo que Martus me había dicho, Carlos había tirado algo ahí, pero después medio que fue para atrás.
+Me parece genial porque la gente de Bolivia, no tener clasificada el mundial, lo mejor es tenerla trabajando.
+Y dicho sea, paso bien, trabajando muy bien, vienen sacando una cantidad de retiros.
+Así que lo mejor que podemos hacer es tenerlas concentradas.
+Ojalá que se concentren en otro deporte, capaz que algo más tranquilo y menos competitivo.
+Así que bueno, nada.
+Dicho los anuncios, boludo.
+Kiki.
+Bueno, yo abuso de mi clásica frase.
+Estoy atacando varios frentes.
+Estoy arreglando los TEDs de Cypress, por un lado.
+Que ya te confirmo, Santi, no hay ningún pack real de la plataforma.
+Son cosas de los TEDs de Cypress nomás.
+Estaba.
+Y estoy con el tema de lo que vimos el viernes, el tema del fix allí en el monitoreo, en el BBO, en lo que es Stripe.
+El tema de ver los refunds cuando es parcial, que se muestren parcial.
+Y los otros bugs, eso también ya lo estoy por mandar.
+Después, por otro lado, tengo ahí, bueno, seguimos con iteraciones de lo que es la factura, el refactor, la factura de comprobante de pago.
+Ahí ya vi que me dejaste comentarios.
+Bueno, después estuve también haciendo lo que es la propuesta.
+Ahí tengo, básicamente, la cuestión sería algunas tareas, crear tareas de cierre, otras de continuación.
+Tengo la propuesta acá.
+Yo no sé si pasarla por chat o el canal.
+Pasémosla por chat.
+Pasémosla por chat.
+O en tu caso está más para analizar y no va a llevar mucho tiempo.
+Va a llevar por chat.
+La pregunta es la PR del back office, que es la que me pone un poco nervioso.
+Porque veo la de worker, pero no la de back office.
+Esa también está robando.
+¿Está robando por ahí?
+De la factura, decís vos.
+Sí.
+Sí, yo te confirmo el estatus, pero yo no sé de quién falta la PR o si nada.
+Dentro de tus tareas, Quique, lo más importante es la factura.
+Ok.
+O sea, no hay nada que tenga más importancia que no tengas la factura.
+Ahí está.
+O sea, hoy deberíamos poder liquidar eso.
+También ahí para que...
+Muevas los hilos de las personas que sean necesarias.
+Tanto Cypress como...
+No sé cuántos test fallaron de Cypress.
+Tenés ahí medio...
+Cinco.
+No, cinco.
+Ah, entonces, sí.
+Yo vi algunos rojos nomás.
+Entonces, nomás para doble chequear.
+Tanto Cypress como lo del back office, puede esperar.
+¿Sí?
+Ok.
+Eso.
+O sea, y también lo de test unitarios que haya...
+Si tenés algo que está corriendo por ahí y tiene comentarios,
+todo puede esperar.
+¿Está?
+Lo importante acá, Quique, es la factura.
+¿Sí?
+La factura tiene que quedar hoy, o sea, cuanto antes.
+¿Está?
+Así que ahí movamos...
+O sea, si tenés tanto mis comentarios como los del resto,
+movámoslos y liquidámoslos.
+Y también la del back office.
+Ahí si tenés comentarios o tenés cosas,
+ataquémoslo como prioridad.
+El resto es segundo plan.
+¿Está?
+Porque mañana yo te tengo que asignar otra facturita que hay que sacar de...
+Que esa va a ser más...
+Es más sencilla porque es...
+O sea, es reutilizar la que ya está.
+Es reutilizar el flujo manual.
+¿Sí?
+Entonces capaz que hasta podemos reutilizarlo y no tenemos ni que hacer nada.
+Hay que verlo.
+Hay que verlo, no sé.
+Ahora ya te vas a quedar como post-cram para bicharlo.
+Pero nada.
+No, creo que casi lo podemos reutilizar.
+Casi, casi lo podemos reutilizar.
+Pero necesito que ataques esa y otra.
+Así que lo de back office y lo de Cypress pasa a segundo o tercer plano.
+Lo mismo con...
+O sea, lo mismo con las partes de...
+Si hay una PR de test unitarios.
+¿Sí?
+Claro.
+Bien.
+Y al final del día, terminando todo eso,
+esperemos la propuesta para ver si podemos...
+¿Qué podemos cerrar de la factura en este rato que tenemos?
+¿Está?
+Literal.
+Y también les digo para las personas que asignen a Enrique para esa review,
+lo de la factura es prioridad uno.
+¿Está?
+Entonces,
+tanto si llega a nivel de diseño algo de factura,
+como si llega a algún desarrollador,
+porfa, es literal, es prioridad uno.
+¿Sí?
+¿Bien?
+Estamos bien.
+Te salto, Quique, porque igual nos vamos a quedar como post-cram.
+Fernando.
+Como pudieron ver, estuve haciendo pila de code review.
+Si me ven raro es porque se me explotaron los vasitos sanguíneos
+para hacer mucha fuerza.
+No es que estoy por morirme ni nada.
+Así que, yo...
+ivedo.
+Agua.
+¿Está?
+Después estuve con el testing manual,
+que estuve intentando manchar en paralelo lo de OTCOM,
+que espero ya poder entregarlo si otra vez,
+al menos que otra vez surja algo inesperado,
+ya poder entregar lo de OTCOM.
+Pega.
+Y terminarlo, al menos, y subirlo a Intel.
+Pega.
+Y...
+Y...
+Estaba analizando los test de BBO
+para hacer una prueba.
+propuesta, no sé si lo había dicho
+la vuelta anterior
+pero está, seguí analizándolo un poquito más
+se les planteó
+cuando quede en intern la de
+OTCOM
+y voy a
+eso, seguir con OTCOM
+a menos que surja algo
+a último momento ahora o algo
+ahora, ahí Enrique
+donde mierda está
+el costo, la coña
+ahí va, de todos
+de las prioridades de test unitarios
+capaz que
+lo puede hacer Fernando, pero me gustaría
+que me pasen un estatus con la PRS
+hacelo vos Tato, te lo voy a pasar
+al chat, voy a pasar a QA
+y necesito
+que me pases
+estatus relevando con Enrique de esto
+se mergeó en esta PR
+esta PR está en intern, esta PR
+está en Curriculum QA
+esto no se atacó
+en cuanto a
+las prioridades de test que vos
+lo acabo de pasar en QA
+lo acabo de pasar en QA
+no los arrobé, pero lo acabo de pasar en QA
+entonces si podés responderme vos
+ahí a Yornate con Enrique
+a ver en qué quedó todo esto, porque
+quiero saber qué de eso quedó pendiente
+en teoría yo había entendido
+lo tengo anotado acá en la daily pasada
+que está todo, o sea, casi por
+mandarse o mandado
+pero si hay algo que no está
+necesito saberlo
+porque necesito que cuando vos termines con eso
+Tato
+¿sí?
+te pongas a pasar los mails
+los mails que son
+genéricos, que no son genéricos
+a genéricos, o sea, los mails
+que tienen, los mails
+nuevos, atentos ahí
+Kike, asesorate con Kike
+pero son los mails nuevos
+o sea, los que tienen el formato nuevo
+con el footer de abajo nuevo
+que están en español, inglés y portugués
+yo creo que eso ya se lo mandaron a Santi
+¿está? son mails que
+por ejemplo, creo que el de las transacciones
+o lo que sea, que no salieron con el
+footer nuevo
+o sea, que salieron con el footer nuevo pero pusimos un mail
+de español, inglés y portugués
+todos los mails a partir de ahora tienen que
+pasarse a genérico
+entonces tenemos
+ahí hay dos migraciones, uno
+los mails muy muy viejos
+que no tienen el restyling
+y están en inglés
+español y portugués
+y los mails que tienen el restyling
+pero están en
+inglés, español y portugués en vez de en
+genérico
+en vez de la carpetita genérico
+entonces, lo que necesito que empieces a hacer vos
+porque ahí no sé Santi y Gastón
+cómo vienen con los mails
+pero para ir adelantando una vez que termines con los
+tres unitarios, vemos que falta
+es que ya empieces a pasar esos mails
+que ya tienen restyling
+pero siguen en varias carpetas de idiomas
+a genérico
+sería solo pasar esas traducciones
+al archivo de constante
+¿sí?
+entonces eso, o sea, para mí eso es la prioridad
+no seguir atacándote
+unitarios
+pero quiero ver de estos que yo mandé acá en QA
+cuál es el estatus
+porque capaz que me decís
+me falta solo counterpart y triangulation
+antes del controller y digo, ta, ACTS
+y después seguir con los mails
+¿se entiende?
+o también ahí, por ejemplo
+faltan algunos flujos de
+Cypress de QR
+y capaz que ahí vemos, porque si eran medio complicados
+decimos, ta, podemos esperarlos un poco
+para que los retome Enrique
+si ya los tenía en progres, o sea, actualícenme en base a eso
+pero los retomen en base a eso
+pero el resultado final
+para que lo tengan en claro
+tanto Enrique como vos
+todos los mails tienen que quedar en la carpeta
+generic, nosotros deberíamos eliminar
+todas las carpetas de idiomas
+en los mails de template
+y todos los idiomas deberían quedar en constantes
+y todos los mails deberían quedar
+reestilizados por Santiago Gastón
+¿sá?
+mientras que no tenemos los restyling
+de los mails viejos
+lo que sí podemos hacer es
+los mails que sí tenemos restyling
+pero están en idiomas
+y vamos a empezar a pasarlos a genérico
+ta, todo el trabajo que podamos adelantar ahí en mails mejor
+porque cuanto más mails tengan en genérico
+Jonathan y Nahuel
+van a poder atacarlo mejor
+¿sí?
+ok
+perfecto
+tiende bien
+con respecto al sprint
+al final del día pasame una propuesta
+a Martín y a mí
+para poder analizarlo
+ta, no te vayas sin la propuesta
+probablemente la apliquemos mañana
+¿bien?
+Gastón
+buenas
+eh, bueno, yo estuve trabajando en un posteo
+eh, mostrando la cifra de mayo
+eh, también con un
+con otro posteo
+presentando lo que es el
+el selector múltiple que armamos para
+para mi compañía
+eh
+también otro posteo para las
+presentando las oficinas de Bolivia
+y haciendo unos ajustes en un carrusel que ya había mandado para la pandemia
+y haciendo unos ajustes en un carrusel que ya había mandado para la pandemia
+y haciendo unos ajustes en un carrusel que ya había mandado para la pandemia
+Para el marketing
+Por otro lado también estuve
+Revisando unos flujos que me mandó Santiago
+De configuración
+Y unos pop-ups
+De cerrar sesión
+Y bueno, y hoy tuvimos
+Reunión con Samuel
+Ya me
+Mandó las tareas de la semana
+Y ahora
+Bueno, estoy con una de esas
+Que es un posteo de LLC
+Para la cuenta de
+DamosBase
+Bien de bien
+Genial
+En cuanto a tareas de desarrollo
+¿Qué te queda pendiente de tu lado Gastón?
+No, de desarrollo no tengo nada
+O sea
+En realidad
+Lo próximo a lo prioritario
+Porque acá tenés el flujo de configuración
+Sí, eso fue una tarea
+Que
+Como Santiago fue el que
+Empezó a atacar lo de configuración
+Y
+Esa tarea me quedó
+Cuando terminamos el sprint
+Que dije que iba a armar una
+Para terminar
+Y al final lo tocó Santiago
+Entonces te iba a preguntar también eso
+Tenemos que pasársela a Santiago
+O sea, si vos no hiciste nada
+En el sprint de eso tenemos que pasársela a Santiago
+Dejá un comentario
+Yo me creé una
+Para mí, pensando que Gastón
+Creo que había hecho cosas de esa tarea en este sprint
+Por eso
+Ojo con ese tipo de cosas
+Si ustedes se cambian las cosas
+No podemos crear 10 tareas, chicos
+O sea, tengamos cuidado con eso
+Por eso yo cuando mandan las tareas
+Yo no lo sé
+Entonces ahí necesito que se coordinen entre ustedes
+¿Bien?
+Bien
+Lo más sano acá
+Sería que como esta trae toda la trazabilidad
+Quédate con esta Santi
+Y la otra déjala renombrar
+Y después la cambiamos
+Así queda como que esta tarea la pasaste vos
+¿Sí?
+Podés cambiarlos juntos igual
+¿Bien, Santi?
+Vamos, tío
+Bien, bien
+¿Cómo andan?
+Bueno, por lo menos por el sprint
+Estaba solo confirmando eso
+Como robot
+Pensé que ya arrancaba
+La lucha de la madre
+Todavía
+Claro, están terminando el partido de España
+Joder y mil
+Escuchame
+Para
+Gastón
+Gastón
+Gastón
+Gastón
+Gastón
+Necesito que igual te asignes alguna tarea de un mail
+Para ir atacando
+¿Está?
+Dale
+Y a mí le doy más prioridad
+No, no, no
+Obviamente a lo de marketing
+Pero quiero que muevas algún mail también
+¿Está?
+O sea, para el email
+¿Sí?
+O sea, estaría bueno que
+Pongámonos como target que esta semana
+Por lo menos vos saques dos o tres mails
+¿Está?
+Eso lo actualizamos
+¿Sí?
+Sí, sí, sí
+De repente, o sea, más allá de todo lo de marketing
+Que esta semana vos sacás un mail
+O sea, la idea sería que vos
+Puedas dar una mano en este proceso también
+¿Está?
+Entonces, además de lo de marketing
+Fíjate si podés sacar dos o tres mails
+Que, de nuevo, es
+De lo que pasaron Enrique y eso
+Es ir actualizándolo
+¿Está?
+¿Sí?
+Porque así
+Se muevan los mails
+También de tu lado
+Bien de bien
+Bien
+Eh, John
+Bien
+Bueno, el viernes terminé con todo lo del
+Lo del drawer
+Que ya quedó
+Quedó para corregir
+Y hoy de mañana vi que ya tenía un mail
+Ya tenía ahí unos
+Unos comentarios de Marty
+Que ya los
+Los ajusté
+Y ya los
+Ya lo volví a mandar la PR
+Y después estuve atacando los dos bugs
+Que estaban ahí en frontend
+Que mandé
+Mandé los tickets
+Ya los creé
+Y ya están también en
+En revisión interna
+Ah
+Genial, perfecto
+¿Vos ya nos pasaste la propuesta
+Para cerrar el sprint?
+Sí, serían esos dos ajustecitos nomás
+Y con eso quedaría
+Quedaría bien
+Acordate que estos dos bugs
+Tienen que pasar por design
+Recordate que estos dos bugs
+Que cuando los pasás por design
+Pasás la tarea de Shira a Santi o Gastón
+Ah, ok, sí, perdón
+¿Está?
+O sea
+Pasás la tarea de Shira
+O sea, pregunta
+Ahí tienen que ver eso
+Eso tenemos que verlo
+Como a quién de los dos asignar
+Por defecto así
+Podemos hacer
+No sé qué piensan Santi y Gastón
+Puedo asignárselo a Santi
+Y Santi de última lo dirío a Gastón
+Compañeros, en un ratito
+Volvemos con ustedes a Sudáfrica, ¿no?
+Dale
+Bien, perfecto
+Entonces podemos hacer eso
+Y, ah, Gastón
+Creo que vos no tenés coreview
+Ojo, rechequeate eso
+Recuerden que ahora
+La tarea de coreview
+La crean ustedes
+Aunque si hiciste
+Aún menos un correo
+Si no hiciste
+No tengo, pero
+No hice
+Por eso
+Por eso no me crean
+Listo
+Bien
+Ah, Jonah
+Cuando
+Ahí Martina tiene que revisar
+Tu tarea
+Después la reviso yo
+¿Está?
+Y cuando llegue a lo de pull request
+A ver si pueden salir
+Esos dos chotas
+También serían golazos
+Bien, perfecto
+Después te iba a preguntar ahí
+No sé si ya nos metemos con
+Me meto con lo de notificaciones
+De mientras
+¿Estás?
+¿Estás?
+¿Estás?
+¿Estás?
+¿Estás?
+¿Estás?
+¿Estás?
+Voy corrigiendo comentarios
+Y eso
+Para que
+Sí, darle una mano
+A Nahue
+Pero para acá vamos a ver
+Cómo viene
+Configuraciones
+Santi
+Bueno, a ver si
+Este
+Buenas
+¿Cómo va?
+Bueno, por mi parte
+Tengo terminada la parte
+De desktop
+De configuraciones
+Para que la biche
+Estoy trabajando
+En la parte
+De tablet
+Y ya
+Estoy terminando
+La parte
+De lo que es
+La parte de tablet
+Me quedaría mobile
+Después también estuve
+Trabajando en el documento
+MT-103
+Que ya tengo dos versiones
+De cómo podría llegar a ser
+Y nada
+Me queda ver ahí
+Que debería ver con Carlos
+Por qué camino sigo
+O contigo, Santi
+Igual ahora hablamos como
+No, no
+Velo con Carlos
+Verlo con Carlos
+Porque literal
+No tengo ni idea
+Que va a ir
+No
+Este
+Es como un documento
+Medio raro y tal
+No sé cómo se utiliza eso
+Por eso es como
+Que tengo varias dudas
+Entonces se va a generar
+Aparte de eso
+Aparte de la factura normal
+Eso sí
+O sea, va a ser como
+Un recibo 2
+¿Está?
+Va a ser un recibo 2
+Literal
+Sí
+Este
+Yo traté de priorizar
+De que tuviera
+Medianamente
+Un formato similar
+A lo que estamos utilizando
+Nada
+Pero yo tengo que saber
+Exactamente
+Qué uso le dan
+A los usuarios
+A este recibo
+Para
+Para ver
+Qué camino
+Qué opción seguimos
+Si es una opción más
+Siguiendo el formato
+Que ya tenemos
+Que ya se utiliza
+Y otro
+Como un poco más
+Más lindo visualmente
+¿Qué tal?
+La idea sería
+Hablarlo ahí con
+Con Carlos
+Para ver
+Por cuál seguimos
+Tan seguida que lo tengas
+Te comunicas con Carlos
+Para pedirle una reunión
+Para verlo
+Bien
+Bien
+Perfecto
+Y controlaciones
+¿Cómo lo tenemos?
+Fue lo que te comenté
+Que ya tengo desktop
+Terminado
+Lo vemos ahora si querés
+Dale
+Tablet
+Ya está al 90%
+Y
+Una vez me deselo
+Que ya está
+Ok
+Ya continúo con el mobile
+Y ya liquidamos todo eso
+Yona
+Quédate también ahí
+Para si lo echamos
+En cuanto al sprint
+Tengo tareas
+Que no sé si cerrarlas
+O no cerrarlas
+Porque
+Como que quedaron
+Medias a la nada
+Como por ejemplo
+El chatbot
+Y
+Están todas
+En dev review
+Me falta agregar
+Tareas
+Para la parte
+De
+Este comprobante
+Que estoy trabajando
+Y
+Y
+No sé
+Y ya
+Y ya más o menos
+Estaría todo
+Bien
+Genial
+Entonces vamos a hacer una cosa
+Chatbot está pronto
+¿O qué falta?
+¿Qué quedó?
+Vos me habías quedado
+Me mandaste
+Creo que
+Dejarle un mensaje
+Automático
+Para el miércoles
+Que viene
+Habías
+Tenido
+Creo que habías tenido
+Una reunión
+Y estábamos esperando
+Eso para ver
+Si estaba ok
+Todo lo que estábamos haciendo
+Pero quedó
+Como medio
+A la nada
+Todo eso
+Ahora si querés
+Lo vemos como post
+También
+Dale
+Y eso capaz
+Que nos ayuda
+A poder ordenar
+Igual al final del día
+Santi
+Sea el resultado que sea
+Planificate algo para
+Perfecto
+Este nada
+Son
+Cinco puntos
+Creo que lo que cambia
+Entonces
+Me falta agregar
+Esta otra tarea
+De comprobante
+Que van a ser
+Esos cinco puntos
+En caso de
+Creamos continuación
+Del chatbot
+Y cierro la otra
+Dale
+Genial
+Perfecto
+Vamos arriba
+Nahue
+Bueno
+Es este
+Yo por mi parte
+Pero ya tengo pendiente
+Pasar la propuesta
+Fuera de eso
+Me faltaría
+Que me crearan la tarea
+Para
+La migración
+De notifications
+Y notification templates
+Así ya
+Tienen comentarios
+En si
+No sé si están
+Todas
+Las de Marti
+No las veo resueltas
+O por lo menos
+No veo
+Un
+Los actualice
+O algo
+Yo te fui aprobando
+Algunas
+Pero hay algunas
+Que tenemos que tratar
+Si
+Con respecto
+A las tareas
+Lo que hace
+O sea
+Más allá
+De que falte
+Si querés
+Quiero crear las tablas
+De notification
+En soporte
+A
+Y más
+De todas las tablas
+Creamos con
+Camel case
+No guión bajo
+Ya están actualizadas
+Sí
+Entonces esta
+Esta ya te la dejo aprobada
+Después esta
+Que dice
+Como desarrollador
+Quiero implementar
+Un proceso de startup
+Que sincronice
+Los templates
+Y base
+Bueno
+Esa ya te la dejo
+Para
+Te cambios
+Hermoso
+Esa ya te la deje
+Como desarrollo
+Quiero mirar
+Los templates actualmente
+Definidos al worker
+Como notification
+Si hay otra tarea
+Capaz que esta
+La podemos renovar
+Solo para los
+Meis que hayan
+Migrado
+Tato y Enrique
+Yo creo que
+Esta tarea
+Esta tarea
+Es más una épica
+Y habría que ir
+O sea yo esta tarea
+Ay mire que lindo
+Esa es la primera tarea
+Que voy a negar
+Que lindo
+Vamos a
+Habría que crear
+Una épica
+Si
+O sea
+Si querés replicarnos
+Una épica
+O mandarnos
+Como una épica
+O
+Lo podemos hacer nosotros
+Porque esto
+Esto iría
+No tiene
+No tiene épica esto
+Tendría que ser
+No sé si tenemos algo
+De notificaciones
+Si no tenemos que crear
+A ver
+Creamos
+Si
+Y ya dejamos
+Configuración
+Que esto le va a venir bien
+A John
+¿Está?
+Entonces acá
+Yo no te dejé configuración
+Y acá
+Nahue te dejé notificaciones
+Y lo que
+Mirá Daniel
+Así acá
+La concha la madre
+Que mierda tiene así
+Nada
+No
+I think this is partially your fault
+Bueno
+Ya te dejé ahí creado
+Lo que deberíamos hacer
+Con cada uno de los templates
+Para migrarlos
+Es crear una tarea
+Nahue
+Aunque sea de un punto
+Migrar uno
+Migrar otro
+O sea
+Aunque sea de un punto
+Entonces vas a decir
+Quiero migrar el template
+Y tal
+De repente creas cinco tareas
+Que sean de migrar templates
+Porque son treinta
+Entonces van a terminar
+Haciendo tres tareas
+Y capaz que en una PR
+Envías cinco migraciones
+¿Sí?
+Pero hagámoslo
+Te voy a contestar acá
+Porque así queda
+Listo
+Hagámoslo
+Bueno
+O
+Ah
+El idioma español
+Se quedó
+Se quedó en el mundial pasado
+Hagámoslo
+Por
+Ahí
+Está listo
+Ya está
+Y después que tenemos acá
+Y después el resto
+Están todas aprobadas
+Dice como ya lo quiero actualizar
+El worker para obtener los templates
+De notification template
+Que te puse acá
+Esto es solo para los generos
+¿Verdad?
+Sí
+Perfecto
+Aprobada
+Ah mirá quedó todo aprobado
+¿No?
+¿Viste?
+No tenemos ni que reunir
+Maravilloso
+Bien
+Entonces ahí te quedó
+Todas las tareas aprobadas
+Crealas
+Asocialas a la ética
+Y cuando tengas cosas
+Mandal
+Dale
+Listo
+Dale bolazo
+Después con el sprint
+¿Cómo estamos de tu lado?
+Después con el sprint
+Creo que estoy con
+Sin actualizar
+Con veintinueve puntos
+¿Verdad?
+Como digo
+Ahí seguramente
+Te pase para
+Crear una tarea
+Más que nada
+Por el tiempo que pusimos
+Con Jonah
+¿Verdad?
+En el POC
+¿Y cómo es?
+El POC
+Meta las notificaciones
+Y ahí Jonah
+También vos
+Participaste en ese POC
+Entonces
+Dejenlo registrado
+En la épica de notificaciones
+Dale
+Ahora después cuando yo
+La propuesta
+Y fuera de eso
+No sé si se enteraron
+Que en el partido
+De Paraguay
+Estados Unidos
+Un tipazo
+Puso un millón y medio
+De dólares
+Que ganaba Paraguay
+¿Quién propuso?
+Un moato curioso
+No
+Mirá
+No
+No
+Y yo renuncio
+Manga de hijos de puta
+Pero no perdió
+Paraguay
+Perdió en Palo Verde
+Marchó
+Pero pará
+Entonces perdió
+Sí
+Ganó Estados Unidos
+Un 5-1
+¿No fue?
+4-1
+Creo que fue
+Yo le había apostado
+Que ganaba Estados Unidos
+4-1
+Y después me corregía
+Dos a uno
+Bueno pero no apostaste
+Tuviste miedo al éxito
+Ah pero no apostaste
+Un millón de dólares
+De Botata
+Te jugaste en la penca
+Antel
+Que es gratis
+No, no pagué pelota
+No, no pagué pelota
+No, no pagué pelota
+Escuchame
+La concha
+La madre
+Mirá que tiempo
+Bueno
+Está bien
+Está bien
+Tranqui
+Bueno
+Nahue
+Lo mismo que el resto
+Final del día
+Propuesta del sprint
+¿Estamos?
+Para poder cerrarlo
+Bien, bien
+Así me siento en la estufita
+Mirá el partido uruguayo
+Cerrar el sprint de todos
+Precioso
+Bien
+No me hagan que les escriban
+Mirá el partido
+Santi ya fue
+Martu
+Martu
+Martu
+Tiene el mismo problema que yo
+Tengo que actualizar esto
+Contanos Martu
+Sí, de mi lado
+Estuve viendo
+Atalaper
+El drawer de Jona
+Y ahí le había dejado unos comments
+Y ya lo estoy reviendo de nuevo
+Después estuve con algunos pedidos de admin
+Y te estoy dando una mano
+Ahí con el banco
+Con el tema del phone
+Para añadir cuenta bancaria
+Y mi idea era seguir con el
+Lo de
+El pago interno
+Que ahí se me fue cortando
+Por todas esas cosas en el medio
+Pero voy a seguir con eso
+Y con cualquier PR que surja
+Que esté para regresar
+Venga
+Perfecto
+Bueno
+Bien de bien
+Si ahí Martu
+Tenemos que juntarnos
+Para rechequear
+Todo lo que has trabajado
+De Jira
+Y los documentos
+Bla, bla, bla
+Aproximadamente
+Aprovecho para preguntar
+En qué quedó el documento tuyo
+Tato
+Que no está aprobado
+No aparecen los cositos de aprobado
+También movelo
+Volvé a hacer follow up
+Del documento
+A quién le toca esta semana
+En teoría no sabemos si era a mí
+O si Fernando
+Si es que empieza
+Si no es Fernando soy yo
+No sé
+Ahí averigüen con Mati
+Si ya aplicó
+Lo nuevo para que le aplique a Fernando
+Es Fernando
+Si no es a vos Kik
+Averigüenlo
+Averigüenlo
+Y porfa
+Si era por orden de apellido
+Este va último
+¿No?
+No, no lo hicimos
+Por orden de apellido nosotros
+Santiago
+Yo tenía miedo
+Que lo habían hecho
+Por orden de apellido
+Bueno, nada
+Chequeenlo con Mati ahí
+Y me avisan
+Yo creo que había quedado
+Yo le dije
+Que había dicho
+Que sea por orden de apellido
+Pero este
+Le pasé el orden
+A Mati
+Según lo que me dijo
+Santiago
+Si lo aplicamos así
+El apellido estaría bien
+Así ahora
+Enrique, Nahue, Yona
+Pero en realidad
+Y después de Yona
+¿Quién viene?
+Yona, Enrique, Nahue, yo
+Está
+O sea, dejémoslo por orden de apellido
+Porque también
+A nivel programático
+Es lo más sano
+Preguntale a Mati
+Si ya queda
+Y bueno, está
+Seguís vos, Enrique
+Después
+Lo retomamos
+¿Bien?
+Igual yo
+Lo de Andrea
+No le den pelota
+Porque tengo que confirmarlo yo
+¿Sí?
+O sea que
+Nada
+Si les arroba
+O lo que sea
+Pero confirme
+O sea
+Vamos de nuevo
+Si es
+Confirma con Mati
+Que esté
+¿Está?
+Y quedarías vos, Kike
+Esta semana
+Y ya arrancamos
+Con ese orden de apellidos
+Así ya queda
+Porque lo hicimos programático
+Para que cuando ya pongan
+En la aplicación
+Automáticamente
+Salte uno
+Y los arroben a ustedes
+¿Sí?
+Así no tienen que estar
+Al tanto del canal
+¿Bien?
+Y después
+Tato
+Además de eso
+Move el documento
+Y mañana
+Tráeme novedades
+¿Sí?
+A ver
+Porque no tiene ningún
+O sea
+Tiene solo las manitas
+Para arriba de
+En agua
+Pero no tiene
+Los zaprús
+¿Bien?
+Entonces ahí
+Movélo con
+Con los
+Con los tres mosqueteros
+Bien
+Bueno
+Estamos pronto entonces
+¿Quiénes tenían post-cram?
+Santi
+¿Qué más?
+Enrique
+Y
+¿Alguien más?
+Y John
+Perfecto
+Lo de

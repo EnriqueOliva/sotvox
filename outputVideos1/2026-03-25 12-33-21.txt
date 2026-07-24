@@ -1,0 +1,435 @@
+el QR vaya directo a lo que
+la persona
+estoy viendo que estaría bueno
+que ya salga con los ajustes que puso
+Santi de las preguntas
+así que voy a intentar meterle a eso
+tengo pendiente
+cerrar el sprint, me falta ahí
+ver si está armando el quehacer
+pero después de la reunión probablemente
+ya lo cierre, lo que quiero es
+que ya están bien con el
+no cierren tareas
+aún hasta que avise el cambio
+y después tengo que ver con Martín
+a la parte del quehacer
+así que es eso de mi lado
+bueno, ayer estuvimos
+trabajando en algunas cosas, por ejemplo
+en el mensaje de la salida pro
+en las
+un ajuste ahí de las tareas
+de lo que son
+el botón de accounting
+para descargar los documentos informativos
+y ahora de mañana
+también terminé lo que es
+esta nueva
+tarea que todavía no la tenemos
+registrada
+de lo que es la parte de backend
+de los permisos de backoffice
+restringir algunas acciones en el backoffice
+según los permisos
+eso ya lo tengo
+vos ayer habías comentado
+que vos creabas las tareas
+no sé si querés que las registré yo en el
+No, no, no, no las creo
+creo que te ha dado tu voz
+estaba con un problema de internet
+que me viene comentando de temprano
+por eso no pude hacer los ajustes
+pero ahora la interpreto y...
+ok
+acuérdate que esas pedarras tienen que ir a .info.es
+antes ahí
+a Nahuel o Jonathan
+ok
+para que las revisen
+además de Fernando
+ok
+estoy con eso y atento a seguramente
+ajustes que
+comentarios que surjan de esta tarea
+del botón de accounting y también está
+en revisión la de SciPress
+eso también está y un comentario ahí tenemos...
+un comentario ahí tenemos...
+un roundup también
+de todo el equipo
+ese se tiene que unir
+ese roundup siempre se tiene que unir
+ese roundup siempre se tiene que unir
+esta era como la de lanky
+así que esas tienen que estar
+los roundups son una vez al mes
+calculo y son del equipo así que
+esos tienen que estar
+a no ser que haya algo grave
+o lo que sea
+y háganse un tiempito para estar
+porque es importante
+por mi lado no hay problema
+no tengo problema horario
+yo lo que decía es que la última vez
+no sabíamos muy bien que hacer ahí con los muchachos
+con Nahuel y con Jonas
+ahí pueden entrar
+con la cámara apagada
+la idea es que estén
+si pueden estar con la cámara prendida mejor
+la idea es
+que todas las reuniones estén con la cámara prendida
+pero el ideal
+pueden estar con la cámara prendida
+haciendo totalmente otra cosa
+no es que van a tener que participar
+sino que solamente escuchar
+porque tenemos muchas cosas para sacar
+así que nada
+de poder entrar
+y literalmente ir a la reunión
+o escucharla de fondo
+que es lo ideal
+pero no más que eso
+no hay muchas cosas
+vamos con Jonas
+bien
+ayer estuve haciendo
+el componente genérico
+hasta que hoy les pasé ahí las tareas
+lo tengo ahí en draft
+para que lo revisaran a WM
+mientras y eso
+lo estoy haciendo ahí un par de iteraciones
+con Copilot
+y nada ahora ya estaba terminando de grabar
+de nuevo los videos del autocomplete
+que corregí ahí ya los comentarios
+que me hizo Marti
+así que una vez termine con los videos
+ya vuelvo a mandar esa PR
+y nada después ya continuar
+seguir continuando con esto de
+de la modal del multiselector y etc
+bien perfecto
+viste que acá hay una pequeña diferencia
+las dos tareas que te creó Martita
+pero una
+vos podés poner puntos
+y ponerlas sin progres o lo que sea
+pero una
+fijate que la del selector normal
+va a mis compañías
+a mis compañías
+la compañía B2
+pero la otra va a ir a TeamMate B3
+bien perfecto
+para estar ligados a las épicas
+lo de TeamMate va a ir
+a TeamMate B3 y esto de mis compañías
+y esto va genial
+nos vamos arriba
+Martina
+bien
+de mi lado
+nada estoy con temas del KYD
+ayer estuve ahí preguntando unas cosas
+a Guille
+ya tengo pronto lo que es
+lo que habíamos dicho del filtrado
+de los países
+para que solo se muestren los que
+para que no se muestren los que
+están escribidos en realidad
+después también tengo pronto lo del
+formato de
+para la parte de
+identidad
+solamente jpg jpg
+igualmente
+te iba a pedir postcraft para ver eso
+porque lo que vi es que la API
+en realidad permite en otros formatos
+entonces ahí me parece que capaz que no vale la pena eso
+y después estoy con
+la parte de validar el website
+para chequear
+que esté activo
+y después también ya hice
+lo de
+perdón y también estoy con la lista de actividades
+que ahí también Guille confirmó que
+tenemos que aplicar el filtro para no
+mostrar ciertas
+actividades que ponen ahí
+que no permiten seleccionar
+y básicamente estoy con eso
+¿cómo lo confirmó?
+puso un check
+en el tipo de mensaje
+pero ahora estoy viendo el mensaje
+no le pusiste lo que yo te puse
+no porque yo te respondí que
+le puedo preguntar pero si querés lo vemos por CRAM
+para mi es aplicable
+a los dos porque no tiene sentido mostrarlo en el
+uno y en el otro no
+porque en realidad
+le puedo preguntar
+preguntale
+preguntale porque
+es importante porque lo sacamos
+el uno y lo sacamos del otro y si hay algún caso
+que nosotros estemos
+permitiendo en uno y no en otro
+estaría bueno porque ahí
+no tenemos que
+eliminarlo directamente
+más allá de eso con el mensaje
+yo creo que no pero
+puede ser que por alguna razón
+hemos permitido alguna LSI
+alguna LSI
+que solo le permitamos
+hacer la declaración
+o pasar el apago
+puede ser perfectamente
+preguntale
+decirle si esto también lo sacamos
+para declaración eso es solo para el cuento
+y después lo otro que te iba a decir
+acá es si podés
+cerrar las tareas
+te pasé un mensaje no sé si lo viste
+con el nuevo
+ah los nuevos puntos
+ah no lo vi
+y las explicaciones
+dale lo he dicho
+si si ajustalo
+ajustalo y dejalo en los comentarios
+si no no es mucho
+este
+bien
+bien perfecto avísame cuando queden esos
+cambios de puntos así ya
+ya puedo liquidar esto
+nada bueno
+bien lo mío es similar a lo de Jona
+ya le dejé en draft este el APR
+donde habíamos hecho genérico
+ese componente de los filtros
+para que quede aplicado ya sea
+para mis compañías este
+para mis cuentas vinculadas o las
+compañías asociadas a una cuenta vinculada
+que él también lo va a usar ahí
+en el selector de compañías
+tanto el de una sola compañía como el múltiple
+este y ahora estaba
+empezando como es
+a rediseñar la página de mis compañías
+ya le saqué el tema del SCR
+a esa página
+este
+continuaría con eso a ver si puedo dejar algo
+lo más avanzado para hoy
+dale genial
+o sea vos ahí
+o sea lo más avanzado para hoy sería
+sería solo en
+compañías o ya estamos viendo las compañías
+asociadas
+la idea es ya poder tenerla a dos páginas
+porque
+ahí en compañías asociadas acordate que la idea es que
+la idea es que sea una nueva página
+y que sea una nueva página que vos puedas tener
+el ID del team
+entonces si yo cargo es el
+una de las cosas que me gustaría ver en el video es
+que si yo cargo el ID
+del link, el ID del team
+ya me trae las historias
+también si yo cargo
+algo que tenemos que hacer es proteger eso
+si yo cargo un ID válido
+directamente que flote
+un ID válido y otro chequeo
+sería que
+el ID válido vuelve a mi compañía
+claro
+y otro chequeo sería que ese ID que cargó
+si tiene que ser una cuenta vinculada del usuario
+claro
+perfecto
+bien
+perfecto
+buenas por mi parte
+estuve avanzando
+en la parte de
+autoindicación y en la parte
+de las cosas de
+teammates, ya dejé todo eso
+ajustado, lo dejé ajustado
+también para mobile y tablet
+tengo ahí, ahora se los comparto
+les comparto el link para que lo revisen pero eso ya
+quedó todo
+con los ajustes que habían pedido
+después, me habló
+Beito ayer
+y hoy también
+y me dijo que quiere volver a mostrar las partes
+que habíamos ocultado
+en el sitio relacionado a lo de LLC
+nada, que te lo voy a
+comentar para que
+veamos ahí
+no sé qué tan fácil o qué tan difícil es
+no sé a qué se refiere parte que hayamos ocultado
+la verdad es que
+en el sitio
+habíamos ocultado algunas partes
+que eran específicas
+algunas secciones que eran específicas
+de todo esto de crear empresa
+y migrar a empresa
+en la landing principal, acá tenemos
+crear cripto for border, después tenemos
+ya están
+ya estamos mostrando todo
+es lo mismo que le dije, por eso yo ayer
+les dije que esto deleguemos eso a Mati
+a Ramiro, o sea
+porque, si nosotros
+estamos sacando cosas ahí, si no estamos en deuda
+en marketing, nos están pidiendo habilitar cosas
+que nos digan qué quieren hacer
+lo que yo le dije, yo le hablé
+personalmente a Mati ayer y le dije
+revisate el sitio
+¿tá?
+revisate el sitio, revisate todas las páginas de introducción
+y decime exacto
+dónde querés cambiar las cosas
+yo sé que, por ejemplo, comenzar aquí en Instagram
+es ir al start now en vez de a cripto for border
+¿tá?
+también este comenzar, calculo que lo van a
+poner de nuevo al start now
+quiero que revise, porque vos
+nosotros estamos aplicando el mismo botón de calentis
+para todos
+les quiero que revisen si es algo que pueden
+cambiar ellos o lo pueden cambiar nosotros
+por ahí, si querés a Beto
+o sea, si te hablo por privado a Beto
+primero nada, ya saben
+el flujo, decirle
+che Beto, si podés esta solicitud
+mandala por el channel
+por más que sea Beto
+tiralo por ahí
+porque siempre nos servimos
+y también decirle esta de paso
+decirle que Mati
+Matías ya lo solicitó y Ramiro también
+y les dijimos que
+ellos de su lado investiguen
+dónde quieren los cambios, así nosotros lo hacemos
+porque si no, nosotros tenemos el doble trabajo
+investigar e interpretar
+dónde cambiamos las cosas
+entonces no, no tiene sentido
+y entonces
+ya quedó, para que lo tengas claro
+seguir con lo que tenía Santi
+responder eso a Beto
+quedó el lado de Matías y Ramiro
+pasando dónde tenemos que hacer los cuts
+iría a cambios de diseño
+solo ajustes de
+desarrollo, tipo redirección
+y cambios de calentamiento
+así que no te preocupes por eso
+bien de bien
+otro comentario
+Guille dejó comentarios en Figma
+sobre el flujo de KYC
+que quiere algunas modificaciones
+los arrobó ahí a Martina
+y a vos
+y después Beto también
+me volvió a escribir hoy de mañana
+y me dijo que
+en la parte del registro
+de KYC de Bridge
+deberíamos poner algo como
+no permitido desde Venezuela
+o algún texto que
+para que los clientes dejen de hacerlo
+desde Venezuela
+y me mandó
+una captura de pantalla ahí
+y si querés igual ahora te comparto esto
+deciles que
+deciles que KYC
+pero para Bridge
+si
+KYC de Bridge
+me dejó ese comentario
+si querés ahora después te comparto este mensaje
+pero
+y Guille dejó comentarios
+sobre el flujo de Figma
+arrobándolos a Martina
+y a vos
+así que nada
+bichen esos comentarios
+cuando puedan
+dale
+ahora los miramos
+con respecto a las preguntas
+las pudiste mandar a Guille
+no eso es lo único me estaría faltando
+voy a ver si ya se las mando
+que es lo único que me falta
+si podés mandar las preguntas
+y avisarme cuando quede el módulo
+la publicación
+después lo retrojo
+bueno
+yo estuve trabajando
+seguí trabajando en el flujo de TeamMates
+para asignar permiso
+me estaban llamando justo
+para asignar permiso
+por empresa
+eso se lo pasé a
+Santi hoy
+si quieren verlo como postgram también
+o preferí
+que lo trabaje primero con Santi
+y después
+lo echamos
+y lo otro estuve
+haciendo
+unos nuevos slides
+que me pidieron
+para el Roundup
+hablando un poco
+del rating
+de Google
+que publicó Samuel hoy
+en el canal de Black
+y alguna otra cosa más
+pero nada
+que tengan postgram
+la más sencilla
+el resto buen provecho
+nos vemos
+provechito

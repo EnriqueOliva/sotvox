@@ -1,0 +1,149 @@
+en batería celular repartió un día si cosas que pasan a más no entiendo no entiendo cuál es el
+problema y el banco está bloqueado hsvc está bloqueado ya estaba no entiendo por eso con
+ti me he llevado con guille con dame estatus de todo si hay no no con guille ahí metimos llamada
+con carlos velasco que bueno él está usando justamente oro todo eso de jp morgan y demás
+y de teammates y nada teammates capaz que yo no supe expresar bien que mi culpa lo que había
+encontrado anoche es más o menos eso son varias cosas que están ahí medio mal como para arreglar
+nada grave entiendo son simples cosas a ajustar y lo de jp morgan bueno eso viste entenderás que
+es medio complicado de nuestro lado probar vos llegaste a ver qué es ya llegaste a
+no pero qué pasa con ti me voy a la web hijos son varias cosas que pasan en realidad o sea tiene
+relación con eso que yo te decía que vos cuando sos un teammate de alguien no puedes ver las
+compañías del owner y eso está bien pero incluso si tenés acceso a compañías creo que es mejor
+pasarte lo por escrito pero ahí requiere un ajuste a ir de una vuelta de tuerca
+pero si vos tenés acceso si vos no tenés acceso a compañías no la ve la compañía
+si tenés acceso a compañía a la vez pero si no tenés acceso a mis compañías no a la vez es lo
+que pasa si vos tenés acceso a compañías no la ves igual ahí está el tema yo supongo que a mí me
+asusta un poco más el tema de jp morgan bueno vos sabrás más pero eso es una pelotudez eso es una
+pelotudez eso es una pelotudez eso es una pelotudez eso es una pelotudez eso es una pelotudez
+en realidad lo que encontré que el nuevo este modal para lo que es este traerse cosas de
+teammates no está mandando el producto por ejemplo para ver si tiene permiso de banking
+por ejemplo el usuario que me pasaste y que si la configuración del team mate sólo tiene permiso
+de view pero para accounting por eso cuando estábamos accediendo
+desde compañía desde banking en el modal no lo podíamos ver está perfecto y corrigiendo eso
+entiendo o sea que o sea que no pero no entiendo que están dando mal no para porque lo que reportó
+primero luciano es que él entraba en qué canal reportó luciano este lo reportó lo comentó
+guillermo mismo en el hilo del mensaje que mandó hoy tuvimos una llamada con carlos y con luciano
+entiendo entiendo ya están dando lo que no entiendo es los hilos que hay tienen compartirme
+pantalla muestra no sé ahora no tienen el hilo primero con esto comparto pantalla
+llegué llegué y estaba mirando ahí mensajes para mí fue luciano temprano
+tiró la bomba y se fue a hacer trámite
+para que buscó el usuario que no pasó pique
+igual con el mío
+claro
+igual
+lo tengo acá
+ok
+los team mates existen
+y dropi los team mates de dropi funcionan
+para qué
+en teoría no tienen tanta complejidad
+para que vayan otro primero al otro
+ahí va lo que estaba pasando esto es lo que le pasaba
+a
+por suerte
+a lucía no seas魚 sea de la conciliación de las puertas vinculadas
+después le petaron aาl traerse información de la compañía
+qué dolor éste para eso el업 a la línea
+esto nada de esto están en elник
+en el servicio, ahí va, en el servicio
+acá, cuando le pasaba al
+rows, le estaba pasando pelado
+y no sé por qué empezó
+a explotar, acá básicamente probé
+mapearle directamente
+los valores de data value
+en un arreglo de rows
+cuando le pasaba a rows pelado, ¿qué es lo que está pasando ahí?
+nunca ha habido problema eso
+o sea, si le pasas a rows pelado, ¿te llega vacío
+el front?
+no, si le paso a rows pelado
+en la respuesta
+explota
+la respuesta, o sea, que no lo perceba
+bien, porque en realidad esto
+lo único que hace es
+así como lo manda al servicio
+¿cómo?
+primera vez en la vida
+que tenemos que hacer eso
+acá hay olor a mierda
+a ver, entrate
+bajá
+bajá, un poquito
+bajá
+¿qué hacemos con ese
+result?
+estamos
+haciendo, seteando cosas
+¿es algo raro?
+sí, es el
+Synthetic Access
+que yo puse
+es el que lo está rompiendo
+sí
+claro, es porque, ¿qué pasa?
+si vos tenés el All Company Access
+que es el caso de varios
+ahí está el problema
+si vos tenés que crear un sintético
+una
+sintético, ¿qué pasa?
+si vos tenés que crear un sintético
+especie de team company access como que como que tienen permiso a todos es la
+solución que encontré cuando vos tenés un all company access porque no existe
+la relación recuerda está bien la concha de la madre
+ese hotfix es importantísimo mandado y eso ya está subido en esa rama que te
+ha pasado y este y lo otro ahora si existe
+el usuario solo tiene
+pero tenía como vez acceso a una más
+las cuentas vinculadas
+realidad
+nunca le estamos pasando como parámetro el product type y el
+permiso que buscamos en concreto y esta ya ha quedado jarcodeada a
+companies y permiso de view, que eso era lo que estaba ajustando
+Claro, pero eso es lo que hay que hacerlo con todo
+Claro, con todo, que la da counting, manda el documento para counting, tiene que mandar
+company y eso para el selector, claro, que eso es lo que le estaba pasando aquí
+que cuando probó hoy, y que por default sino que tome el de company, claro y
+porque justamente eso de que por default tome el de company es lo que se va a usar
+después en team mate, que tan lejos estabas de liquidarlo John, no, esto en
+realidad recién lo empecé a atacar, ponele que media hora o una hora más me va a
+llegar, si querés subíselo a la rama y que lo siga
+John
+Yonatan recién volvió, ah si vos podes salir a comer, te parece? porque tenemos que
+mandarlo ya, vale, es muy urgente, te parece Yonatan? si, si, si, está bien, Kike si podes
+estar atento para testear esto, si, vamos a hacer una cosa
+pasenme la rama, también, pasenla al grupo, está ahí Yonatan, es para seguir viéndole el tema de los
+permisos, este, Nahuel si podes dejar el cuidado o algo así
+claro, o sea que entonces no estamos cargando ningún teammate, o sea, no estamos
+validando bien en él, en el selector, ahi, claro, pasale los usuarios y podes a Yonatan y eso
+dale, a ver a Yonatan, si podes te llamo y te comento lo que tengo, dale, porque por las dudas volverás atrás de lo poco que había avanzado el front, te voy a dejar solo los ajustes en el endpoint, así pasa, recibe los permisos y solo haces el ajuste en el front, está perfecto, y hasta la próxima, adios!
+Ahí Kike, no sé si estabas trabajando en la misma rama para organizarnos a ver qué...
+No, por suerte no llega a comitear nada, está limpia en ese sentido, solo quedé en estampa ahí digamos.
+Vale, hagamos lo siguiente, queremos que Yona termine con ese ajuste, cuando Yona termine, por las dudas estallate lo tuyo, tráete lo de Yona y fíjate si con eso quedas solucionado el problema que estabas teniendo, para ver si se afamos de lo de la migración.
+Dale, ¿qué querían hacer con la migración?
+No, porque como es, si mal recuerdo a Kike...
+Había inspeccionado con Clau el tema de la migración y había quedado como que en algunos casos podía fallar y podían quedar usuarios sin permisos globales y sin...
+Como es, y haberse borrado después en la migración.
+No, o sea, hay algunos usuarios que se crearon bien y además quedaron con All Company Access.
+O sea, la migración anduvo bien, no tenemos que corromper, por lo que estoy viendo, estoy viendo la base de datos del producto, no tendríamos que corromper nada.
+Ok, ok, entonces.
+Bien.
+Bien.
+Bien, y hacemos eso.
+Vamos a hacer eso.
+Esperándose.
+Santi, decís que es necesario reportarle estatus, digamos, a Guillermo o a Carlos.
+Estoy hablando directamente con él, estoy hablando directamente.
+¿Con Guillermo?
+Sí.
+Ok.
+Yo capaz que le contesto ahí a Carlos.
+Armame un chat con él o no sé, dejámelo en algún lado porque...
+Ok, capaz que te puedo agregar, mira, incluso.
+A ver, a ver, tengo...
+Ahí está el...
+La aranciona.
+Bien.
+Usuario de producción.

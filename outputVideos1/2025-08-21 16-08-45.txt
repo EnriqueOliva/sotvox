@@ -1,0 +1,225 @@
+No entiendo esto que está sucediendo de tener dos Enriques, pero bueno, la cosa es así, con todo el muestreo y eso, esto se volvió un poco nada escalable, porque claro, nosotros hacemos como mucho select y para poder ver las compañías que vamos a borrar y todas esas cosas, entonces yo ahí te puse como una especie de guía,
+primero que nada, vamos a decir, bueno, pero si hacemos, si sacamos ciertos muestreos, ¿cómo vamos a probar?
+Bueno, bien, la cosa es así, estamos haciendo muchos muestreos y en realidad nosotros lo que deberíamos hacer es únicamente tener como pequeños, pequeños tipo inserciones en el delete all,
+¿tá?
+Y hacer pequeños,
+pequeños,
+pequeños cambios en ese, o sea, partiendo de ese como base, ¿a qué voy con pequeños cambios? Por ejemplo, las suscripciones, cuando tenés un customer, si tiene un email de un coso, lo esquipiás, pero ese debería ser el cambio, eso con respecto a Stripe, ¿tá?
+Porque Stripe, si no me equivoco, voy a doble chequearlo, pero por ejemplo, el caso de Stripe, dale, Stripe, claro, vos vas limitando, vos vas trayendo todos los,
+entonces Stripe es un select, entonces vos ahí, lo único que deberíamos agregar es ese, ese caso, al método original, que ya sabemos que anda bien, que lo hemos probado diez mil veces, entonces sería como ese esquipeo, imprimir ese esquipeo, después, en cuanto, hay varias cosas que quedarían igual, lo único que no se borran son las tablas que yo le pongo ahí, entonces creo que llegamos a una complejidad muy grande de esto, ¿tá?
+Por el tema de muestrear, para poder saber qué es lo que estamos borrando.
+Que hace el método ineficiente, hace que tenga un if, hace que quede muy largo, entonces lo que charlamos con Marti es, bueno, ¿cómo podemos hacer para, este, usted me va a decir, me va a querer matar, porque le voy a decir, como que resetear esto, arrancarlo más en base al primero y poner esos if pequeños, ¿tá?
+Pero para poder hacer eso necesitamos probarlo, porque no va a haber muestreo, ¿se entiende? Pues si no, no vamos, o sea, vamos a dedicarle pila de tiempo a eso.
+Pero el tema es que con muchos selects.
+Y muchas cosas, si nosotros creamos mil compañías o lo que sea, podemos trancar dev cuando corramos esto, y queda, este, queda bastante ineficiente, además creo que quedó muy largo para algo que no debería ser tan complejo.
+Entonces la, la idea que se nos ocurrió con Marti es, bueno, está, probar el stage, vayamos directamente a probar el stage, ¿tá?
+O sea, mergeemos esto, o sea, hagamos esto, simplifiquemos esto un montón, o sea, literal, mi idea sería, teniendo esto como base, que ya sabe que funciona, copiar.
+O sea, el método original, y ponerle esos if, ¿tá? Que si querés lo vemos juntos, pero sería, no, acá tengo la perla abierta acá, a ver te comparto cuántos, sería, o sea, sería, bueno, está, esto ya lo tenés medio que armado, pero una función que detecta los IDs protegidos, ¿tá? De los usuarios, los emails, y los company ID, ¿tá? Que eso ya lo tenés armado, pero tenerlo más en una función en concreta que te devuelva esa información.
+Eliminación protegida de base de datos, ¿tá?
+Porque si nosotros pudiéramos usar esa información, ya sabríamos que eliminó.
+Pero en sí son estas tablas que yo te marco acá, las únicas que no hay que borrar. Acá en el web tendrías que poner que los IDs no son esos, que los IDs no son de la company ID, y ahí yo te voy especificando, pero son algunas tablas. El resto de tablas, claro, y la de user.
+Porque, por ejemplo, backoffice, eso tendría que darse de bomba igual, ¿tá?
+Después, por ejemplo, cognito. Cognito también es otro form.
+Entonces, sería solamente ignorar esos usuarios, pero ¿cuál de los dos cognitos?
+El cognito del site.
+No el, si vos vas al método original, se borran dos cognitos.
+Un cognito del site y un cognito que dice backoffice.
+El cognito de backoffice debería ser el mismo método, porque los usuarios de backoffice deberían hacerse bolsa normal, porque no tiene nada que ver con las compañías creadas.
+Y también, con la eliminación de los folders, nosotros lo único que deberíamos hacer es, estos dos se tendrían que borrar igual.
+O sea, public data folder debería borrarse literalmente igual a como se está borrando hoy en día.
+Lo único que debería cambiar es este, que debería, si la carpeta que tiene ahí adentro tiene la ID de la compañía,
+yo iría por algo más sencillo.
+Porque puede ocasionar problemas, porque ¿qué pasa?
+Si nosotros no borramos la compañía, la compañía tiene una referencia a los documentos.
+Entonces, si yo subo documentos de un partner, la correspondencia no, porque la correspondencia es una tabla de base de datos tal cual.
+Entonces, si vos borrás la correspondencia, no pasa nada.
+Y en test nadie va a crear correspondencias a sus usuarios, no me caliento.
+Además, van a ser tres, cuatro usuarios locos, cuatro o tres compañías que van a quedar.
+O sea, diez, veinte o algo así.
+Yo lo que quiero es que acá, que cuando vos encuentres esos ID de esas compañías, no las borren.
+Y ya está, y no darle más vuelta a eso.
+Entonces, sé que vos me vas a decir, pa, le dedicamos pila de tiempo y eso.
+Pero creo que esto va a ser mucho más sencillo, va a quedar mucho más prolijo, va a quedar mucho más eficiente.
+Y lo más importante, no tenemos que dedicarnos al muestreo.
+Entonces, lo que vamos a hacer es, lo sacamos a Dev, lo pasamos a Stage.
+En Stage creamos todo, o sea, agarramos, creamos las compañías con correos protegidos, con supuestos correos protegidos y esas cosas.
+Creamos de repente dos compañías, le creamos los teammates, ahí creamos todo un contexto válido.
+Después, ¿qué más?
+Hay que hacer transacciones, todo.
+Para las transacciones, yo puedo hacer inserciones.
+Puedo hacer dos o tres inserciones.
+Puedo hacer dos o tres inserciones de transacciones nomás para validar que no las esté borrando.
+Pero solo sería, es más, no tienen por qué ser válidas.
+Es solo hacer insert de las que tenemos que crear son Virtual Account, Banking Crypto Transaction, Banking Crypto Account.
+Son esas tres que tendríamos que crear esto, porque después el resto lo podemos hacer por UI.
+Para hacer la prueba.
+O sea, sería hacer, creás tres compañías, cuatro de sus usuarios protegidos.
+Y lo que yo hago es.
+Vamos, vos me pasás tres insert y yo los hago directamente en la base de datos de Stage.
+Y después vos me vas a preguntar, bueno, pero ¿cómo validamos que no esté borrando los documentos de Transaction y eso?
+Bueno, ahí le subimos documentos.
+Entramos a S3 y simulamos, subimos facturas y esas cosas y simulamos que no la esté borrando.
+¿Es S3 de Stage?
+Exacto.
+¿Tenés permiso de eso?
+Si no tenés permiso, lo hago yo.
+¿Está?
+Pero me parece que de esta forma.
+¿De esta forma?
+De esta forma nos vamos a quedar mucho más tranquilos porque vamos a directamente, en vez de muestrear, vamos a poder probar esto.
+Entonces ahí nos quedamos tranquilos que esto anda.
+Le dimos de bomba y creamos todo un contexto de un supuesto usuario protegido que no lo borró.
+Hizo todo bien, validamos que está todo bien, que esos usuarios protegidos se mantuvo toda la data clave que teníamos que guardar.
+Que la compañía no se corrompió.
+Bla, bla, bla, bla, bla, bla.
+Este.
+Y ahí lo que hacemos es, lo sacamos para, lo usamos en dev.
+Es eso.
+Vos hablabas inicialmente de un primer paso de imprimir todo lo que se va a borrar y después un segundo paso donde se hace el borrado efectivo.
+Claro, sí, sí, eso es lo que te estoy diciendo.
+Eso es lo que te estoy diciendo que no vamos a hacer.
+El tema es que el muestreo complejiza mucho algo que debería ser mucho más rápido y concreto y le estás dando de bomba a Stripe y le estamos dando de bomba una cantidad de cosas.
+A la base de datos también de dev y no, no vamos a tener ese muestreo, el cambio de enfoque que el Jason ve que se va a generar en la tabla de crochet.
+No, no, no, o sea, solo me interesa saber si se ejecutó correctamente y no explotó, es más, si alguna, una de las cosas que quiero, mirá, vamos, vamos a ir al original y te voy a decir los cambios que sí me gustaría tener.
+Porque creo que eso es más rápido.
+Pero es un enfoque más, más práctico, porque si no vamos a, eso nos va a dar problemas y Guille sigue registrando usuarios, entonces yo no quiero tener que correr ese script súper complejo con su, no, tampoco me parece que mantenerlo después va a ser un problema, porque el delito al data, siempre mantenerlo ha sido súper sencillo.
+Entonces, este, quiero seguir por el mismo camino y creo que agarró mucha complejidad el código, o sea, sinceramente es mucha complejidad.
+Entonces, yo lo que te digo es, este es el original, ¿sí? ¿Está? Vos acá tenés el método, lo que sí me gustaría es saber, ¿se eliminó toda la data correctamente? ¿Se eliminó esto? ¿Se eliminó esto? ¿Se eliminó esto? ¿Se eliminó esto? ¿Se eliminó esto? ¿Se eliminó esto? Se esquipearon tales usuarios, ¿está? En los folders, acá en el delete folder, capaz que hacer uno, solo para este hacer el delete específico, es decir,
+tantos, ¿está? Es como una mínima mejora este. Sé que es un cambio de enfoque y es un, este, y de repente es tirar mucho del trabajo que se hizo, pero no me gusta para nada, o sea, por más que yo era partidario del muestreo y hacerlo con más cuidado, no se me ocurrió en su momento lo de stage, y creo que con lo de stage vamos a sacar un código más prolijo, más concreto y más seguro y ya está, y nos quedamos tranquilos de que anda, y después mantenerlo para agregar alguna cosa va a ser,
+menos código repetido, menos, menos tener que andar agregando logs, que esto, que muestría, que cuando no muestría, este, porque ese código lo vamos a tener que correr, vamos a seguir agregando tablas, ahora, por ejemplo, ya, para el siguiente sprint, este, vamos a estar agregando como 5 o 4 tablas más, capaz que Guille vuelve a hacer lo mismo en dev, entonces hay que volver a agregar esa validación y quiero que sea lo más sencillo posible, ¿está? Es eso.
+¿Qué se borra en S3?
+¿Cómo?
+En S3, yo ahí te dejé en la PR, pero mirá, para que te voy a compartir pantalla para que lo puedas ver, porque así estamos en la misma página, dame un segundito, esta es la PR, ¿está?
+¿Lo dejé? No lo dejé, ¿no lo dejé? ¿Vos acá tenés company datas? ¿Sí? O sea, vos borrás, estoy en producción, ¿no?
+Vos borrás, la carpeta Transaction Registrar.
+La borrás de toda, porque esto va con Accounting AI, ¿está? Entonces, en dev, en dev, todo lo que sea Accounting AI que subieron estos tipos, me interesa tres carajos, lo borramos, ¿está? ¿Sí?
+Después, templates. Templates no se borra, porque son todos los HTML y todas las cosas que nosotros subimos, que acá tenemos los PDF, los fondos, las imágenes, todas esas cosas.
+¿Está? Public Data corresponde a los blogs. Son las imágenes de los blogs que tienen tanto el background como las imágenes que puede contener el blog mismo. Esto se borra todo, ¿está? O sea, Transaction Recipe y Public Data se borra todo.
+Si mirás el algoritmo original, el código original, esas dos le da de bomba y borra todo, ¿está? La que vamos a tener que integrar es Company Datas, que lo que acá yo te propongo es una lógica mucho más sencilla.
+¿Está?
+En el sentido de hacer una especie de for por todas las compañías, y cuando encontrás una compañía con una ID de la lista de protegidas, sumás a una constante de protegida y no borrás la carpeta entera. ¿Está? ¿Sí? Es eso nomás.
+¿Qué variables de entorno, qué cosas tengo que ajustar para que todo apunte a stage?
+No, no, no, no, vos la prueba, claro, acá es donde viene un poco el problema.
+Yo prueba no puedo hacer nada.
+Claro.
+Claro. Exacto, vos pruebas no vas a poder hacer nada. Ese es un poco el tema. Entonces vos vas a tener que desarrollar esto, mandar una APR, yo voy a tener que intervenir y vamos a mandarlo derecho a stage. Y vamos a hacer pruebas en stage. Porque stage es un ambiente que podemos darle bomba. El problema es que yo no tengo configurado VPN para stage. Yo accedo por una VPN que tengo yo solo a stage y eso tengo que cambiarlo y lo voy a hacer. Probablemente ya lo deje solucionado mañana para agregar una VPN contra stage. ¿Está? Pero no la tenemos hoy en día.
+La toca agregar. Ya mañana la voy a configurar. Entonces, igual ya estamos al final del día. Entonces, yo mañana de mañana voy a configurar eso porque está. Para que puedas hacer pruebas directamente contra stage. Pero por ahora stage es un ambiente que solo puedo acceder literalmente, solo puedo acceder yo en cuanto a lo que es base de datos. Solo lo voy a cambiar mañana y ya está. Es tema que también impacta en costos, entonces lo voy a hablar con Guillermo, pero es necesario.
+Gracias.
+¿Qué es la idea aquí? ¿Qué es eso? Es, vos no vas a poder hacer pruebas, pero sí vas a tener que, pero sí vas a codificar lo que vas a hacer. Entonces, ahí la idea es, yo te dejé en la PR un comentario de más o menos lo que se busca. Es una función que detecta los IDs protegidos de los usuarios, los IDs protegidos, los teammates y los company ID protegidos. Y en base a eso vos vas eliminando ciertas cosas.
+El stripe creo que modificarlo es sencillo parcialmente porque en realidad...
+En realidad vos ahí, este, ¿qué iba a decir? No leí.
+El stripe es sencillo porque en realidad tiene la, entonces yo te diría usar el original y solo modificarle al original que vos puedas pasarle un ID de emails que ignore del customer. Esa sería como la idea.
+El tema de la base de datos hay algunas que son bastante sencillas teniendo la lista de email de ID de usuarios y de ID de las compañías. Hay unas que son un poco más complejas, pero la idea es no complejizarlas.
+No es complejizar con el muestreo. Es tipo voy, elimino y tal. Lo que sí me gustaría, viste que nosotros en el original usamos el destroy. Me gustaría que analices un poco, busques concha GPT, si secualáis, cuando hace el destroy te puede devolver un return con todo lo que borró.
+Cosa de que eso sí lo podamos muestrear.
+Después.
+Cognito también es un while, entonces así es.
+Evitar los emails.
+Evitar los emails, pero la idea es seguir casi a rajatabla lo que tenemos, ¿tá? Y este, seguir a rajatabla lo que tenemos y únicamente agregando esos pequeños if, ¿tá?
+Una pequeña, yo te, te acordás que te acabo de mostrar que el DSC3 me gustaría borrar las carpetas de, ah, me gustaría borrar la carpeta de, te dije no, no borrabas la carpeta de la compañía, ¿sí?
+Sí.
+¿Tá? Un pequeño, pequeño.
+Un pequeño cambio es, pero súper pequeño, tax for documents, un pequeño cambio es que sí me gustaría borrar si tiene, y si querés sacar captura, estas dos, estas dos carpetas, si las tiene ahí adentro, las quiero que las elimine.
+¿Por qué? ¿Qué pasa?
+Tax for documents es una base de datos que vos le vas a borrar toda.
+Entonces estos documentos van a quedar colgados.
+Y correspondencia también.
+No lo guardamos en la compañía.
+La referencia a los documentos.
+Los documentos no lo guardamos en la compañía.
+Los documentos que vos tenés acá, si vos vas al modelo de company, vos tenés una referencia a esos documentos.
+Entonces por eso, como, como, como algún pelotudo, mismo yo, puedo en mis compañías subir algún documento, ¿tá?
+No quiero que mi compañía quede con referencia a un documento y en realidad de fondo no tenga nada, ¿sí?
+Entonces es eso.
+Lo mismo con partner data.
+Nosotros los partners no los borramos, los socios no los borramos.
+Entonces, pues, no quiero que quede.
+No quiero que quede una referencia, un documento de un socio colgada.
+Pero correspondencia, nosotros eliminamos toda la tabla, todos los records de la tabla.
+Lo mismo con tax for document.
+Vamos a eliminar todos los records.
+Entonces, como eliminamos todos los records, si encontramos un ID de una compañía de no borrar,
+en vez de borrar directamente el folder, lo que vamos a hacer es buscar estas dos carpetas y borrarlas.
+¿Sí?
+Esto va a ser, de repente, el resultado no va a ser tan claro,
+pero nos va a permitir.
+Nos va a permitir probarlo mejor en stage, que quede un código más limpio, más concreto.
+Y si nosotros tenemos que seguir agregando tablas, tenemos que seguir agregando integraciones,
+no queda un código súper largo, ¿se entiende?
+Esa es mi idea.
+Yo, sinceramente, algo que charlábamos con Martina, porque lo hemos trabajado,
+es que cada vez que había que actualizar el delete all data, era un bolazo.
+Era ir a agregar un poco esto, fue ir y agregar una carpeta más de C3 a borrar.
+Nunca fue una complejidad muy grande.
+Entonces, mantenerlo no es difícil.
+Y como Guille creó estas compañías, que tenemos este problema,
+que vamos a tener que emigrar a producción en algún momento,
+¿tá?
+Este...
+¿Qué más? Cada vez tiene más el hijo de puta.
+Este...
+Cada vez crea más.
+Nosotros vamos a tener que actualizar este método.
+Entonces, quiero que el actualizarlo no sea tener que cortar lo que estás haciendo vos,
+lo que estoy haciendo yo para actualizarlo,
+sino que yo voy, pimba, y en dos segundos subo un commit y lo actualizo y podemos borrar tranquilo.
+¿Tá?
+Es eso.
+Por eso este cambio de enfoque.
+Lo bueno de esto es que nos va a forzar...
+O sea, lo malo es que se perdió una cantidad de tiempo, pero bueno, ¿tá?
+No importa, fue parte del trabajo.
+No es que el código quedara malo, pero veo mucho set, mucho select,
+mucho cosa para un muestreo,
+y en realidad es un código muy pesado que está yendo contra nuestra base de datos de Dev,
+está haciendo una cantidad de consultas, ¿tá?
+Y yo quiero que vaya y borre.
+O sea, tiene que ser más concreto.
+Pues un código...
+Es un código súper pesado, que va contra nuestras bases de datos y no quiero que las sature.
+Y quiero que sea lo más rap...
+Que el cronjob este se corra lo más rápido posible.
+Entonces, por eso el cambio de enfoque.
+Lo malo es que...
+El muestreo estaba quedando divino, lo malo es eso, entonces, ¡tá!
+Pero quedese tranquilo que las horas se le van a pagar igual.
+Es decir...
+Este... Pero bueno, ¡tá!
+Siempre en pro de hacer algo mejor.
+¿Alguna duda, alguna consulta?
+O sea, en sí es como que, bueno, ¡tá!
+Si quiere usted, puede, literal, dejar esta PR.
+Yo siempre tengo dos repositorios, de Backoff y de Insight y todo esto,
+porque hay veces que tengo que trabajar en una cosa y en otra.
+Entonces, una cosa que usted puede hacer es, de repente, crear una nueva rama,
+como que se va a arrancar de cero, copiando y pegando lo que necesita,
+¿tá?
+Y puede crear otra PR.
+Y hasta la cerramos, no sé cómo... Eso maneja... O puede refactorizar esta.
+Como a usted le quede mejor, ¿tá?
+Bien. ¿Sí?
+Este... Pero es un poco eso.
+¿Alguna consulta, duda, algo para...?
+Pregunté lo que se me ocurría.
+¡Tá! Me pongo con esto ahora, entonces.
+Si tenés alguna duda, vamos a requerir más charlas y esto.
+Capaz que también fue un poco eso, ¿no?
+O sea, que yo, este problema, al pensarlo de esa forma,
+cuando empiezo a ver las tablas, empiezo a ver el muestreo,
+me doy cuenta de que tenemos un problema distinto, lo tenemos que cambiar.
+¿Te reuniste con Daniela?
+Me olvidé de reunir ahora.
+Sí, un rato.
+¿Tá?
+Si se te complica, tiralo para mañana.
+No es prioritario.
+Si te complica esto, tiralo.
+Decíle, este...
+Si te lo tira muy tarde, te podés reunir mañana.
+¿Tá?
+Ok.
+Este...
+¿Qué te parece la nueva incorporación?
+¿Tá?
+Te cuento la... ¿Estás grabando con OBS?
+Cortá de grabar.

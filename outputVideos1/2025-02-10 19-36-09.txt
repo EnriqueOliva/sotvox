@@ -1,0 +1,39 @@
+pero eso, por ahora es eso, así que hay que crear tareas, tengo que liquidar eso y probablemente despida para reunirnos, y después todo en marcha, ya se mergeó lo de Cypress, así que lo puedo marcar como GON, y listo, bien, no sé si tiene alguna consulta, si no, seguimos para Santi.
+Bien, por mi parte, hoy me habló Guille, quedé juntarme el miércoles a las 4 pm de ellos, a las 6 de nosotros, estaba como comentario ahí, lo noté como muy entusiasmado, dijo que iba a contratar a unos vendedores más ahí, y que esperaba que para la próxima apuesta del mes llegáramos alrededor de las 150 empresas.
+Estamos lejos, estamos bastante lejos, la verdad no...
+O sea, se movió bastante hoy, pero justo hoy hablábamos eso, me comentó eso mismo, no sé por qué la gráfica se está mostrando acá con 2 y 15 igual, esto habría que verlo, qué mierda está pasando, porque debería mostrar un salto y la está mostrando igual, pero está igual, la está mostrando, pero lo importante es esto, llevamos 19.
+Claro, creo que dos vendedores más, por lo que me comentó, no sé si era uno o dos.
+Yo lo que entendí es un vendedor para Brasil, que le vengo rompiendo yo las pelotas bastante, ya con el hecho de que podemos pasarle la página portugués, y después necesitamos a alguien de Customer Support, no sé si es vendedor, no sé si va a contratar a un vendedor más o a alguien de Customer Support, porque qué pasa, el problema que estamos teniendo hoy en día es que el mail que lo administro yo también,
+no sé si es uno de los que lo admiro, obviamente no respeto.
+respondo, pero lo miro, nadie le está dando pelota al mail de consultas, cuando llega una
+consulta que se envía desde el sitio, desde acá, desde el contacto, a esto nadie, cuando llega acá
+no le están dando vuelo, pero bueno. Bien, para comentarles más, ahí se actualiza, ya actualicé
+el estado de las tareas, me queda cerrar lo de mailing, que eso es, en realidad lo quiero revisar
+nomás, lo dejé ahí en progress, porque lo único que me queda es revisar que esté todo ok, y estoy
+terminando el flujo de mobile, que ayer no lo pude cerrar, me faltaron las pantallas, pero en unos
+minutos, no sé cuánto me llevará, pero en unos ratitos ya debería estar este pronto.
+Ahí va, genial. Lo que sí necesito que me pase es por lo menos tres, cuatro tareas para poder crear
+con los puntajes. Debería estar todo el sprint, pero si no se puede todo el sprint, porque falta
+en cosas, definir con Guille, por lo menos los next steps de cosas que están fijando. Bien, es decir,
+las tareas que voy a tener son las que me puse para el design, pero ahora después te las paso
+a armaditas. Dale, y lo otro que te iba a decir era, sí, por lo menos hasta el miércoles que te
+junté con Guille, y lo otro que es importante es, no sé si arreglaste los comentarios de Martu, pero
+también creo que, no sé si Martu tenías algo más, o cómo viene eso, la contabilidad es prioridad uno.
+No sé, Martu, ahí capaz que querés acotar algo. Sí, no iba a decir en mi estatus, pero sí, le iba a pedir unos minutos.
+Y en realidad le iba a pedir unos minutos a los dos, porque tenía un par de consultas. Yo de los comentarios
+esos que me dejaste, ayer biché todos, y me saqué un par de dudas ahí que tenía con Guille y con Santi.
+Creo que eso te lo dejé todo comentado, en fin. Pero sí, ahora nos juntamos y vemos. Dale, genial. Santi, ¿hay algo más para decir?
+Nada más, eso nada más. Perfecto. Marti. Bien, ahí te animas a recargar, porque no quedó. Sí. Básicamente estoy con la del esqueleto, que quedaron unas cositas que tienen que ver con las dudas que tenía, pero ya básicamente avancé en eso, y tengo que fijarme si hay PRs para ver también.
+Mira. Bien, genial. Espectacular. Sí, ahí está la prioridad de declaraciones, pero estaría bueno cerrar las PRs de Kike, si podés tomarte cinco para probarlas, sería genial.
+Porque así podemos ir cerrando eso. Y por más que vos tenés tareas, la idea es crear tareas de accounting, de declaración.
+Espectacular. Kike, de ahí yo te creo, para que te creo dos, así ya te queda.
+La otra. Por lo menos te quedan dos, así. Voy a ir poniendo los mensajes. Recordemos que en cuanto a esto, Kike, la es prioridad número uno, sobre la de los test unitarios que vayan quedando.
+Sí. Ah, ya le pusiste comentario, ya pusimos una. Ojo acá, que estas no están asignadas a vos. Fíjate si podés asignar. Viste que le podés poner... Viste que tiene un puntaje muy chiquito.
+Fíjate si podés darle los puntajes a la subtarea y poner acá el puntaje relativo de la suma de estas.
+Avísame cuando tengas eso pronto. O sea, más o menos, primero asignarla, y segundo el estimativo de más o menos cuánto llega cada una.
+Después lo ponés en la padre, sumado a lo que ya le dedicaste a esta. Y ahí sí la paso. Así queda todo registrado en este sprint.
+Dale, genial, sí. Ahí lo que te digo, Kike, es...
+Está, pegame grito con eso y después probablemente te esté llamando cuando vaya organizando el sprint para ver cómo organizamos esto, porque acá hay que reflejar los test de regresión que fuiste corriendo.
+Bien. Bueno, ¿algo más? ¿Alguna consultita más? ¿Alguna cosita más? Si no, nos quedamos con Marti y Santi.
+Kike, avísame enseguida que tengas eso, así yo ya la paso, no me olvido, y vemos cómo ponerlo. Dale. Bueno, abrazo, vamos arriba.
+Chao, chao.

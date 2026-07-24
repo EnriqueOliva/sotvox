@@ -1,0 +1,37 @@
+bueno después de asignarte las a refactores
+pero principalmente esas dos el trim y esa o por lo menos que quede para mandarla a la
+base cuando y después esto de las transacciones es una cagada agregar la imagen acá porque no
+te está permitiendo seleccionar todas nos ha tipo después te puse esta la que más
+prioritaria es ésta si se puede atacar las dos genial pero la que más prioritaria es
+ésta seguramente sea un fix o algo pues ya estaba diseñado así es algo que no se está
+enviando lo que sea y lo del 30 bien es tipo agregar algún if que haga esas cosas con es
+con respecto a esta después vamos a tener que agregarle un filtro más por eso te la di a vos
+porque probablemente te pide agregar un filtro vas ahí está lo que dale a morir y qué
+bueno de mi lado estuve trabajando con tareas de lo que son los autos lo que era la sanitización
+allí de los algunos audi blogs que molestaban y también la tarea de agregar los buscadores
+allí en la página de audi blogs eso ya quedó como dijiste ayer mandaba y el design que es
+anti ahí parece que está bichando así que nada quedó a la espera de eso y mientras tanto sigo
+con la que sería la última tarea de esto de audi blogs que es bueno implementar esto de
+esta incorporación de gpt para que explique o alguna cosa más ahí abierta viste lo de lo
+de cypress y eso y alguna cosa que se te apagó la cámara y se cortó no sé hola y que no no
+quiero no te escuchamos se cortó apenas arrancaste se cortó a ver ahora ahora sí
+estoy con con lo de audi blogs y ayer estuve con lo que es la tarea de sanitización que eso parece
+que quedó marchado y ahora está abierta parece que la está bichando santi el tema de lo que son
+los los buscadores por por nombre del usuario y compañía y email así que está voy a estar
+haciendo eso en los comentarios que surjan
+y me quedan lo que voy a estar atacando es lo que sería la última parte que es incorporar esto de
+bueno la guía gpt para que haga más lindo los blogs digamos este voy a estar con eso básicamente
+hay alguna otra cosa abierta también hay algún texto unitario que está ahí en revisión o lo
+de cypress eso también está está ahí de lado tal si justo estaba abriendo eso porque se no este
+nos quedó para que estaba reaccionando al chiste en auto
+justo está estaba viendo eso te pido que al final del día nos envíes ahí un follow up había martina
+porque ahora que volvió martina estoy aprovechando para mirar ciertas cosas pegarle un ojito más
+entonces estamos medio ahí se está generando un cuellito de botella con las perras que está que la
+idea es salir cuanto antes de eso entonces al final del día esas perras que quedaron pendientes ahí de
+tu lado kike de test y
+y de regresión volver a hacernos acuerdos y la firma está
+no es algo clave que se tenga que marchar ya pero si entiendo que aporta vivo para correr los test de
+regresión vos estás corriendo sobre esa rama o lo vas a correr sobre esa rama que tiene todo solucionado
+no sé nada es bien de bien bueno estamos todos entonces este si puedes martín a quedarte 5
+bueno
+chau

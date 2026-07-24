@@ -1,0 +1,293 @@
+Bueno, bueno, eso es. Arranquemos con la daily y después andamos a esto.
+Bueno, bien de bien. De mi lado ayer saqué un hotfit chiquito, sigo con la parte de la documentación.
+Hoy voy a arrancar con todo lo que es sacar a producción toda la arquitectura de Dino,
+para ver si les confirmo que quedó todo pronto en traspasos.
+Y después voy a retomar la parte de retiros, así que eso de mi lado.
+Y tengo PRs para revisar.
+¿Jiquen?
+De mi lado, bueno, sigo con iteraciones de comentarios de varias cosas que están abiertas.
+Y quizás como punto nuevo, allí ya Santi me pasó, le pedí a Santi un correo que estuviera disponible
+para empezar a atacar, así que ya estoy atacando la implementación del nuevo diseño de uno de los correos,
+el de cuenta bloqueada.
+Así que la idea sería básicamente meterle.
+Con eso, y todo lo que está pendiente, básicamente.
+Bien, perfecto.
+Fernando.
+Bueno, buenas.
+Estuve haciendo una iteración de diseño con lo de los correos.
+Mucho code review y estaba poniéndome el guía y eso.
+Hablé con Matías porque estaba mal el maldito script ese que tiene.
+No me estaba arrobando bien.
+Porque se ve que alguien me cambió el nombre en Slack, pero ta, porque yo no lo cambié.
+Después, ta, eso, estuve analizando un poco el bug, aunque todavía no me dio para actuar.
+No sé si conviene, tipo, que le diga, ok, lo hinchamos o algo así.
+Veo que le suelen responder ustedes.
+Sí, sí.
+O sea, ahí sí, de última voy a hablarlo con los chicos, pero siempre la idea es que pongas ok, lo hinchamos,
+hagas una investigación.
+Y lo pongas en, y lo pongas en bug.
+Dale.
+Esta semana, al parecer, te toca a vos.
+Yo creo que ahí, Jonah te estuvo atendiendo porque vos ayer no estabas, pero.
+Bien.
+Ta, es decir, entonces, esta semana te toca a vos, pero también es importante que ahí se arreglen.
+Porque si Jonah te cubrió uno, la idea es que, que después vos se lo devuelvas a John.
+Ta.
+Dale.
+Entonces, no sé si sigue, o sea, la idea es que cubra el que sigue, en teoría.
+Entonces, si sigue.
+Si seguiría a Jonathan, la idea es que vos cubras hasta el lunes, y el lunes tenés que estar atento de más, por si surge algo, este, poder ayudarlo a John, ¿tá?
+Dale.
+Eh, después, ta, volví a hacer, bueno, volví a hacer, no, eh, no había hecho.
+Eh, hice follow up, eh, en cuanto a las PR que están en internet.
+O sea, las volví a mandar, pero, pero, ya no está privado.
+Ah, y por las dudas.
+Veamos cómo.
+Los puntos.
+Es porque están asignadas las de los correos a diseño, así que, ta, después tiene que cerrar en 45, por el día que no estuve.
+Y, ta, eso.
+Bien de bien.
+Gastón y Santi pudieron acceder a GitHub sin problema.
+Sí.
+¿O no?
+Sí, sin problema.
+Ah, genial, perfecto.
+Bien.
+Bien de bien.
+Gastón.
+Eh, Tato, por las dudas.
+A ver, finalizar el día.
+Eh, si.
+Y no ser, o sea, y esto va para todos.
+O sea, al finalizar el día, hoy sí tenemos que cerrar el sprint, así que lo que tengamos es, eh, este, ¿cómo se llama?
+El estado que tengamos, tenemos que, este, mandarlo y mandar las tareas de cierre, ¿ta?
+La propuesta de tareas de cierre, ¿bien?
+Este, no se manden a crear tareas de cierre sin antes enviar la propuesta, eso va para todos.
+Ahí.
+Por las dudas, ¿ta?
+Bien de bien.
+Este, tampoco se manden a crear tareas.
+Y eso, o sea, hasta que no, no más sea la propuesta formal y sea aprobada, no, no se pongan a crear las tareas.
+Y por las dudas, recuerden que las tareas que envían a solicitud de tareas, siempre, siempre tienen que tener descripción, ¿ta?
+Este, por las dudas.
+Bien.
+Entonces, la idea de hoy sería, bueno, intentemos ahí, vamos a ir avanzando con Marti ahí en, en todo lo que tengamos, pero si no, si no se cierra, bueno, deberíamos, este, deberían ustedes al final del día, para pasar la propuesta, para poder hacer la propuesta.
+Para poder ejecutarla el miércoles y cerrar el sprint.
+Bien.
+Gastón, vas vos, ahora sí.
+Buenas.
+Bueno, yo estuve haciendo dos posteos para marketing, que ya quedaron aprobados por Santiago.
+Se los pasé a, le pasé uno a Matías, el otro se lo estoy por pasar ahora, que hace un ratito me lo aprobó Santiago.
+Bueno, uno del Roundup para la cuenta oficial y el otro para, para el, el sí.
+Después estuve corrigiendo las PR de, de, como es de Jonathan y creo que de Fernando, no, solo de Jonathan.
+Y unos mails que me pidió Santiago que revise.
+Después le hice follow up a Guillermo.
+Alberto y, y a Matías y a Carlos por el tema del mail de bienvenida.
+Que, que bueno, estaba en Design Review, pero no, no me habían contestado.
+Y ahora estoy trabajando en la landing.
+Lo que te quería preguntar era si, si necesitaban sacar algún mail ahora, o sea, si estaban bloqueados.
+No, la idea, la idea es que sigan trabajando con los mails hasta que los terminen.
+O sea, la idea sería que por, o sea, no es que estemos bloqueados, pero la idea es que por semana mínimo,
+tienen que avanzar, o sea, tienen que avanzar cuatro mails o cinco.
+O sea, ese tiene que ser el objetivo que se tienen que plantear con Santi.
+No, yo, yo quería saber más que nada la, la prioridad con respecto a, a la landing.
+No, no, o sea, la landing tiene su prioridad, pero la idea es que en paralelo ahí Gastón, bueno,
+tal, lo dejas trabajando con Cloud, lo vas trabajando y por lo menos en la semana tienen que haber dos mails nuevos.
+O sea, ahí.
+Dale.
+¿En qué momento van encontrando huecos o cómo, o cómo se organizan?
+¿Cómo se organizan las pausas para hacerlo? Eso lo dejo a su criterio.
+Lo que si no puede pasar es que no hayan mails en la semana.
+O sea, si te dedicas una horita, dos por día al mail, eso, a sacar un mail y después seguís con las landing, eso no me, no me calienta.
+Lo que sí necesito es que se siga moviendo lo de mails porque si no voy a tener, voy a tener a Enrique y a Fernando parados, ¿sí?
+Y eso no, no puede suceder.
+Entonces, por semana por lo menos necesito que salgan dos más, ¿tá?
+Sí.
+Si pueden dejar varios trabajando en paralelo porque, de nuevo, o sea, la idea es ya aprovechar y actualizarlos, pero, tá, por ejemplo, los mails de los Chrome, yo vi esas cosas, este, de última pueden agarrar a alguno de esos ahí y que capaz que podés indicarle, pueden preguntarle a Enrique a alguno que medio sea viejo y que lo único que sea, sea estandarizarlo, ¿tá?
+Que no, que no, no, no aporte mucho valor, también pueden ir avanzando en eso, o sea, este, pues, o sea, es como que lo contrario de lo que les decía.
+Porque si vos, si ustedes me dicen, bueno, tal, hay alguno que sale medio automático, capaz pueden agarrar un Chrome, su viejo, y sacarlo también, este, eso nomás, vamos a morir.
+Pero vayan, vayan a organizar, lo mismo Santi con lo de TeamMate, o sea, la prioridad es lo de TeamMate, pero bueno, se hacen una horita, una horita, hacen una interacción, es actualizarlo un poco, ¿tá?
+Este, no, no, no vamos a, o sea, no vamos a sumar ítems ni contenido, es solo darle una lavada de cara.
+Que se muestra el formato, ¿sí? Lo mismo que le puse en transacciones, nosotros no podemos agarrar y mostrar más cosas, ¿tá? Por ahora no, no es la idea del análisis de lo que se está buscando, ¿bien?
+Bien, bien, bien.
+Perfecto.
+¿Jona?
+Bien, bueno, ayer dejé las dos PRs del worker en diseño, con todos los mails que vi ahí, que me dejaron ahí algunos comentarios para ajustar.
+Por eso, tal, no aparecen tampoco.
+Acá están, las tienen ellos.
+Y ahora estaba grabando el video para todo lo que es cambio de email y todo eso, todo lo que es la UI, y me fui encontrando ahí con algunos casos medio border, a medida que iba haciendo videos y que los voy, los estoy fixeando.
+La idea es ya ahora, después de comer y eso, ya dejar esa, esa PR lista también.
+Bien de bien.
+¿Marty?
+Bien, de mi lado, ayer revisé las PRs.
+Que estaban ahí las más recientes, me faltaron creo las últimas de Jona.
+Y después, eh, mandé dos PRs, una con, eh, arreglando el tema del spread, que, que se veía con muchos decimales.
+Y de paso ahí también hice el arreglo del tooltip, que entiendo que ni Nao ni yo no lo habían agarrado, por eso ya aproveché y lo hice.
+Eh, porque se veía mal en la tela.
+Y después, eh, mandé otra PR con el refactor de, de lo que había hecho Nao, el hotfix, que, básicamente era un poco de limpieza nada más, que había quedado un poco de lógica repetida.
+Eh, pero ta, es sumamente refactor, o sea, verifiqué que no afectara ni nada lo que es el flujo normal, así que no, es simplemente eso, o sea, eh, una pequeña limpieza.
+Y, ta, después, eh, me estoy con el flujo de compra interna para ver si ya puedo hoy terminarlo, o por lo menos mandar alguna PR, eh, con eso.
+Y, ta, en paralelo voy a estar con las PR que están pendientes, y, ta, básicamente eso.
+Bien de bien.
+Eh, te pasé creo que por privado un bug, ¿sí?
+Creo que te pasé.
+No.
+A ver ahí.
+Ta, te pasé por privado un bug que está sucediendo a Leonardo con el tema del pago interno.
+Por favor, eh, arroba a Fernando, pero no, pero se ve que no salió el arroba.
+¿Te animás a atacarlo vos?
+Eh, ok, Alberto me acaba de hablar por otro, también, otra cosa.
+Sí, me está llamando, decíle que estamos en Daily, que enseguida que terminemos, Santiago, te contacto.
+Respóndele eso.
+Decíle, estamos en Daily, eh, enseguida que terminemos.
+Santiago, te contacto.
+¿Está bien?
+Bien.
+Y, y, si podés, bichate vos ese bug, eh, o sea, respondele ahí, ahí, porque arrobó a Guillermo, y Fernando no respondió, porque no lo arrobó.
+Entonces ponele que lo estamos revisando y hacete, ¿cómo se llama?
+Hacete, este, hacete cargo de ese, si podés.
+O sea, reponele que lo estamos revisando.
+Bien.
+Ahí veo que, no, ahí veo que Fernando le puso.
+Le puso, ¿por qué le pusiste lo de la imagen?
+Porque después, al minuto, mandó una imagen, que supongo que va junta, o sea, que en vez de ponerla en el hilo, o junto al mensaje, la puso en un mensaje separado.
+Sí, sí, sí.
+Sí, sí, bien.
+Y estuve, estuve.
+Ahí, la información que tenga Fernando, pasásela a Martina, y Martina va a seguir con eso, ¿no?
+O sea, algo delicado.
+Sí, le va a tener que atacar Marto.
+Bien.
+Este, y Marto ahí, eso tiene que ver un tema con el refactor de pagos.
+Nosotros, en teoría, probamos iPress, e hicimos pagos de este estilo, y no tiró problema.
+Pero hay que ver qué carajo está pasando.
+En producción.
+¿Sí?
+Ajá.
+Bien, bien.
+Eh, Nahue.
+Bien, por mi parte, te dejé en review las cosas de notificaciones.
+Ya está bien, dice en review, por eso no aparece nada.
+Después me aparecen las cifradas.
+Este, fuera de eso, estaba por mandar también, este, lo que iban a ser dos tareas de, una PR con las dos tareas del worker,
+que una era el proceso de startup, y la otra era mapear, este, el tema de las notificaciones,
+que primero intente leerlas desde la base de datos, y si no están ahí cargadas, las vaya a buscar a S3.
+Este, estaba terminando de iterar con el agente de reviewer, nomás, así ya lo dejo en la PR en interno.
+Este, sacando eso, también tengo para iterar.
+Ya, el tema de los, de los bugs, este, y ya dejarlos prontos también en interno.
+Bien, bien.
+¿Gol?
+¿Alguna migración o algo que esté trancada de tu lado, de, o del, o del lado de Jonah, también?
+No, no, la única perro que tenía abierta ayer ya faltaba la PR de Marte, ya la probó, ya la apareció, que era la de las ilustraciones.
+Bien, bien.
+No, yo migración en nada, solo los, la actualización de los modelos.
+Bien, está ahora las, esas ya están en.
+Sí, ya están ahí enviadas.
+Vale, las revisamos.
+Eh, Santi.
+Sí, me dijo tú.
+Ahora sí.
+Bueno, es como, este, bueno, por mi parte, ayer estuve trabajando los mails, en los ajustes que me habías pedido, que te los volví a, a enviar.
+Eh, después, los que fueron aprobados, los envié a Iye, ella aprobó uno de ellos.
+Eh, después creé continuación para la tarea esta del, de teammates, que no me había pedido.
+Que no me había dado para cerrar este sprint, así que ya creé el accidente de continuación.
+Y, ahora estaba revisando las PR que pasó, eh, Tato, y, este, y también, este, unas, unas cosas ahí que me había pasado bastón para, para revisar, y estaba hechando eso.
+Eh, por otro lado, eh, ayer revisé una tarea que pasó Jona, y me di cuenta que, eh, nos faltó un mail a hacer el diseño, que era el de.
+De recuperar la contraseña.
+Debería ser el mismo, el mismo estilo de los otros mails, eh, Tato, así que estoy trabajando en eso para tratar de, de ya pasárselo.
+¿Qué, qué mail? Perdón, dale nuevo.
+El de recuperar contraseña.
+Que debería ser muy similar a los otros, viste, los de cambio de contraseña.
+Sí, porque el de recovery está distinto.
+El que, el que envía, tipo, el recovery code, quedó, quedó tipo con el diseño viejo, no con el nuevo.
+Debería ser el mismo formato, misma ilustración, este, solo cambiaría el texto, estoy tratando de pulir eso, así ya, ya saco eso en breves.
+Ahora que, acá lo, ya te comparto y te dejo el mensaje.
+O acá sería, si la pruebas, el vendedor podrá registrar el pago.
+Esto le llega a la, a la contraparte, ¿no?
+Sí, eso es otro mail.
+O sea, si la prueba tiene que llegar esto.
+Ah, entonces, en teoría es si la pruebas, ¿tá?
+Eh, tendrás que.
+Realizar el envío de fondos.
+Ah, o sea, el envío de fondos, o no sé cómo ponerlo.
+Porque en realidad, la siguiente acción, la siguiente acción, y podés chequearlo con una web, Jonah,
+la siguiente acción es de la contraparte, o sea, cuando estás esperando aprobación.
+O sea, después, una vez que esperás aprobación, nosotros tenemos awaiting payment,
+que es, que es la contraparte que sube los recibos en el site.
+Entonces, este, si querés fichate el flujo ahí, Santi, cualquier cosa, le podés preguntar a Jonah y a Nahuel, que estuvieron en la demo.
+Pero, la idea es que ahí, en sí, la siguiente acción no es el vendedor, sino es, este, en caso de aprobar, es el mismo, la misma contraparte que tiene que subir los depósitos de la transferencia.
+¿Tá? Eh, yo acá, acá ponemos monto a acreditar.
+¿Tá? Eh.
+Eh, y tipo de cambio, tanto. No sé si capaz que, sí, bueno, sí.
+No sé cómo, ¿qué le enviamos, qué le enviamos al vendedor cuando aprueba? ¿Lo tenés por ahí, no? ¿Como para que te siga?
+Eh, dame un segundo.
+Pásalo, vamos rapidito.
+Está en la parte de acá, en Libia.
+Eh, ahí me podés seguir, Santi.
+Eh, Santi.
+Eh, Santi.
+No, el otro, sí.
+Ahí.
+Monto a acreditar, ta, está bien.
+Ojo, que no sé por qué estamos mostrando tres ceros.
+Acá. No estamos mostrando tres ceros, ¿no?
+Estamos mostrando dos.
+Ese es el monto, o sea, la plata que envía, evitado.
+Claro, pero el punto, acordemos que es la coma en inglés.
+No estamos mostrando tres ceros, así. No, no.
+Claro, acá, acá, acá está bien.
+Ahí lo autorizo.
+Acá está bien.
+Acá está bien.
+O sea, debería ser una coma, justo.
+O sea, debería ser una coma, y es más, nosotros deberíamos mostrar punto cero cero.
+Enrique o John o Nahue, ¿se animan a confirmarme esto y mandármelo al channel de developer?
+¿Cómo ponemos los montos en estos recibos?
+Al parecer lo estamos enviando bien.
+O sea, acá tengo una aprobación.
+Pero creo que enviamos con coma y punto.
+O sea, siempre enviamos dos ceros después de la...
+O sea, dos decimales.
+Ahí, Santi.
+Si podés dejar...
+Bien.
+Dejá el update para que tenga consistencia.
+Lo mismo que hacemos para tipo de cambio, ¿viste?
+Que acá dejamos dos decimales, tipo diez punto cero cero, lo tenemos siempre acá.
+Entonces acá en este caso está bien, lo que falta es un punto cero cero.
+Sí.
+Y...
+Perfecto.
+Y está.
+O sea, el de...
+Ay, no sé el otro dónde estaba.
+Ah, mierda.
+El que enviaste de la contraparte.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Sí.
+Y el del de la contraparte.
+Dicen dónde.
+A ver si lo tengo por acá.
+¿Tá?
+¿Alguien tiene algún postgram o algo?
+No.
+No más un comentario ahí con ese email.
+Yo te...
+Yo te quería dar un comentario más.
+Si dejáramos.
+Los que tengan postgram se quedan, el resto buen provecho.
+Santi, quedate.
+Y Marti, quedate.
+Nos vemos.
+Nos vemos.

@@ -1,0 +1,271 @@
+a ver que voy a crear
+porque tenemos QA para cada cosa
+voy a dejar el QA genérico
+y después tenemos QA para code review
+QA para automation test
+y vamos a tener QA
+para un
+unit test
+vamos a hacer todas estas
+vamos a cambiar
+el parent
+QA para unit test
+ahí queda más, como desarrollador
+queda 3 puntos
+después me pasa
+como desarrollador
+transaction categories
+del site
+3 puntos
+y el más
+como desarrollador
+transaction categories
+esa está buena
+esa está buena
+¿le puedo hacer una pregunta?
+si, obvio
+tarea 802 de tatato backlog
+que la tenía yo
+como desarrollador quiero ajustar
+los test
+unitarios para create company draft
+con el nuevo sistema
+de traqueo
+usted sabe que yo nunca entendí
+¿a sacar carajo la cago de
+sobre escribir?
+ok, esa es la de UID
+yo la tengo que matar
+en su momento lo hicimos para uno
+hagamos hasta acá
+y después las profundizaciones
+las dejamos para el siguiente sprint
+¿le parece?
+me mola
+¿está mirando el backlog usted?
+si, estoy modificando
+estoy viendo lo que vos me mostraste
+y tengo el backlog mío al costado
+entonces ahí con eso
+tenemos 40 puntos
+eso quiere decir que si atacamos 30
+a este sprint de tatato
+estamos B
+¿te parece bien?
+bien
+las profundizaciones las creo después
+las profundizaciones
+lo que hacemos al final del sprint
+creamos las profundizaciones
+así van quedando
+porque si no se mezcla
+¿verdad?
+pero ya quedamos con ahí
+o sea, creamos las profundizaciones
+pero la idea es de nuevo
+profundizaciones voy a crear
+vamos, la idea es
+si vamos acumulando profundizaciones
+pero también quiero
+en point nuevo
+o sea, recordemos la idea
+ese 80-20
+80 de test cortos
+20 de profundizaciones
+entonces bueno, vayamos acumulando profundizaciones
+a partir del sprint que viene
+yo lo que agarro es agarro
+dos tareas de profundizaciones
+y las nuevo
+ataca un punto
+eso se agarra
+de vuelta
+¿está?
+bueno, tatato tenemos pronto
+vayamos a su sprint
+su sprint ahora tiene que permitir el carácter ampersand
+eso requiere backend y frontend
+¿está?
+eso vamos a subir los puntos a 8
+¿está?
+porque ya hay un avance
+pero va a ser difícil
+porque vos tenés que realmente probarlo
+y ver qué mierda recibe el backend
+vas a tener que correrlo
+fijarte qué mierda recibe el backend
+y cómo tenés que ajustarlo
+¿está?
+o sea vos
+el sanitize está bien
+lo que vos tenés que darte cuenta
+es che acá hubo un sanitize
+y para este caso en particular
+lo tengo que revertir
+porque es un parámetro habilitado
+¿sí?
+sí
+¿está?
+y también los comentarios que te fui haciendo
+como desarrollador quiero observar
+PR pendientes
+creo que no sé si hay
+esta es de un script
+le lea datos
+después es
+por ahora sigue esta
+del endpoint de usuario
+como desarrollador quiero corregir
+los test del worker
+no sé a qué se refiere
+esta de los test del worker
+ya estaba
+en un momento estaban fallando
+y quedó
+se acuerda que usted dijo
+no los quiero
+poner en
+esquipear
+usted hizo algo en el worker
+y empezaron a fallar
+y yo los corregí
+quedaron quedó bien
+o sea ergo tendría que estar don
+¿se acuerda?
+sí
+¿se acuerda?
+un choto
+sí
+no a ver
+le hicimos 500 ajustes
+pero tiene un punto
+de haber sido una pelotudez
+entonces cierra para este sprint
+después ¿qué más?
+¿qué cosas necesitamos?
+¿qué cosas sí necesitamos?
+o sea se está calmando un poco
+la bola con las
+tipo features
+o renovaciones
+o seguimos
+no que nosotros
+nos vamos a poner con bridge
+y vos te vas
+y Martina se va a poner
+con crear compañía
+entonces
+y vos vas a ponerte
+la semana que viene
+con automatización
+entonces estoy pensando
+qué podemos hacer
+ahora
+porque ahora tenemos
+siempre todos los usuarios
+dueños administradores
+sí
+estaba haciendo
+bien
+entonces lo que
+lo que tenemos que hacer
+es lo siguiente
+vamos a concentrarnos
+en estas dos tareas
+cuando se crea
+un blog
+regression test
+no esto no
+vamos a hacer una cosa
+vos
+¿qué test tenés
+o qué tenés
+de
+hoy en día
+de
+de la parte
+de
+de regression test
+¿qué tenés?
+nada
+ejemplos de login
+y uno de
+create company graph
+o algo así
+pero
+no
+no
+no
+sí
+sí
+si
+sí
+sí
+si
+sí
+si
+sí
+enrique
+lo que
+yo
+ah
+login
+y crear
+compañía
+te crea
+una compañía
+de
+si no estás
+logueado
+o sea
+asumiendo que no estás
+logueado
+en una compañía
+pero llega a pagar
+no
+o si
+entonces lo que vamos a hacer es
+test
+de regresión
+para crear
+un test de regresión
+para crear una compañía
+configurable
+me gusta un montón hacer scripts
+no sé por qué
+dato random
+nada
+respeto
+voy a poner
+8 puntos
+y hasta acá vamos a ir con su sprint
+por ahora tenemos
+23 puntos que sería
+que parte ya está hecho
+pero vamos a hacer esto
+quiero hacer test de regresión
+para crear una compañía configurable
+a qué me refiero a esto
+y más vamos a ponerle
+13 puntos
+quiero que hagas un test de regresión
+pero que sea
+reutilizando métodos que sea configurable
+cosa que después vos pasando parámetros
+puedas modificar ese test de regresión
+como vos hacías por ejemplo con el company draft
+que vos en el test
+unitario modificabas cosas
+si
+yo lo que quiero
+es una especie de función helper
+y que me ponga
+puta madre
+bueno
+y ese sería su sprint
+o sea es eso
+vos podés creer que
+WooCommerce no procesa las suscripciones
+esto es triste
+deja de grabar
+porque esto no aporta

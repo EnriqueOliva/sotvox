@@ -1,0 +1,527 @@
+No, SNS es por lo que sería Simple Notification Service.
+Ahí está.
+¿Pero qué crea?
+Bueno, SNS es el que se encarga de crear tópicos.
+Hay un patrón arquitectónico que se llama Publish Subscribe,
+que el fin mismo es que vos tenés tópicos.
+Yo qué sé, por ejemplo,
+un tópico podría ser cuentas creadas,
+otro podría ser pagos creados,
+otro podría ser partner creados.
+Son eventos que vos escuchás y ponele que vos tenés,
+esos son los publicadores,
+y vos tenés los suscriptores que escuchan eso.
+SNS lo que tiene es,
+y dame un segundito que lo voy a poner,
+SNS, como dice,
+List Subscrip,
+a ver, ahora, SNS, List Subscription,
+vos ahí, a ver, a ver, recarga.
+Entonces, vos eso lo ponés a colas de mensaje.
+Vos pensá que las colas de mensaje son tubos.
+No sé, no funciona un chot.
+Capaz que es SNS con minúscula.
+Ajá.
+Entonces vos tenés,
+sí que es un montón lo que estoy,
+pero es SNS, vos podés poner varios tópicos,
+vos tenés colas de mensaje que es como una cola de supermercado.
+Entonces, ¿para qué nosotros las usamos?
+Nosotros hoy en día tenemos un solo tópico,
+pero hoy en mañana podemos tener varios.
+Por ejemplo, podríamos manejar tópicos por,
+cada vez que se crea una compañía,
+un tópico cada vez que se,
+se genera un pago, ¿sí?
+Todo esto con el fin de abstraer los problemas.
+¿Bien?
+Está.
+Entonces,
+a ver si ahora quedó.
+A ver ahora.
+A ver, recargar.
+Voy a hablar, no hay madre.
+¿O qué me dicen?
+A ver si, capaz que lo escribí mal.
+List, sub, sub.
+Ah, claro, escribí luego.
+List.
+Hágame una cosa,
+páseme esos que dice,
+ese, list subscription,
+y el otro que dice list topics.
+Porque,
+nosotros hoy en día tenemos un solo tópico,
+pero yo ya lo hice con tópicos.
+Podría haber hecho directamente publicar en la cola de mensajes.
+Pero, ¿por qué utilizo un tópico?
+Porque hoy o mañana podemos nosotros abstraer.
+Como vos, por ejemplo,
+abstraes problemas, ¿sí?
+Para que se trabajen en varios procesos.
+Ponele que varias computadoras a la vez.
+Si vos envías muchos tópicos de una,
+¿está?
+Vos no estarías priorizando.
+Hoy en día nosotros no estamos priorizando un choto.
+O sea, ponele que vos,
+vos te llega una compra de una compañía,
+tiene la misma importancia que enviarle un mail a Carlitos.
+¿Entendés?
+O sea, la creación de una compañía tiene la misma importancia.
+Entonces,
+¿a qué voy con esto?
+Eso no está bueno.
+Vos hoy o mañana nosotros podemos decir,
+loco, se está saturando porque esto,
+estamos enviando mail.
+Perfecto, creemos un tópico,
+para tal cosa,
+este,
+y después lo que hagamos sea,
+abstraerlo.
+Entonces a ese tópico de repente le damos más recursos,
+que a otro.
+¿Sabés?
+Un poco,
+la idea.
+Porque ahora tenés que pensar lo siguiente,
+es un único tópico,
+como que si fuera yo que publicaciones,
+pensá que cada tópico puede ser publicaciones del diario,
+o distintas acciones que pasan.
+Entonces en sí hay una cola de mensaje,
+que va,
+en el momento que llega a eso,
+va, lo procesa y lo ejecuta.
+Y funciona como una cola,
+como una cola de supermercado.
+Ahora sí, ahí anduvo.
+Tenés tres suscripciones y tres tópicos.
+Exacto.
+SNS tiene que ver con el WordCamp.
+Ahora vamos a lo que es SQS.
+Estrellita.
+Vamos a la estrellita.
+A ver, vamos a ver qué.
+Seguramente te va a decir,
+ñapeo, ñapeo,
+andá a la barrita de hamburguesa.
+Es un,
+de Hamburger Bar.
+Qs.
+Escolta.
+Bueno, a ver qué te tira.
+Pasame ese SQS list Q.
+Bueno, voy a habilitarlo.
+Bueno, estas son las colas.
+O sea, vos pensá que hay varias colas
+que ejecutan,
+que escuchan estos tópicos.
+Entonces lo que hacen es,
+agarran, vos lo encolas,
+agarran, dicen, se ejecutó tal tópico.
+Agarra esos datos,
+los consume
+y se los pasa al WordCamp.
+¿Está?
+Es eso.
+Es difícil de entenderlo,
+pero pensá,
+para sacar el tópico de la Q,
+pensá que es lo mismo.
+Tanto SNS como SQS,
+es lo mismo.
+¿Sí?
+Lo que es,
+hace eso es,
+cuando vos le das,
+que vos lo has moqueado en test,
+le decís,
+enviate tal cosa a SNS.
+¿Está?
+¿Sí?
+Lo que estás haciendo es decir,
+bueno,
+ponerlo en una cola
+y esa cola lo que hace
+es lo procesa
+y se lo envía al worker.
+Lo que tiene de bueno eso,
+que es lo que está de más,
+que está zarpado el proceso,
+es que se hace en paralelo,
+se hace en background.
+Eso está de más.
+A ver, recarga ahora.
+Son muy sueltos,
+tratan muchas cosas.
+El tema es que,
+de Udemy decís vos,
+hay muchas,
+muchas cosas que tratan.
+Muchas cosas.
+Sinceramente,
+todo lo que vi acá,
+lo investigué.
+Muy poca cosa ves en los cursos.
+Porque los cursos,
+a ver,
+los cursos no te enseñan
+a hacer una compañía
+de puta madre.
+Ese es el tema.
+La mayoría de cursos
+no te enseñan a hacer
+una compañía
+al estilo marcado de libro,
+pero ya.
+Te enseñan a hacer una web app
+y desplegar una pija.
+O sea,
+cuando ya tenés que empezar
+a escalar
+y todas esas cosas,
+es como que necesitas
+conocimiento firme.
+¿Entendés?
+Este,
+yo eso se basa
+mucho en estudio.
+Yo para la tesis
+estudié mucho.
+Yo estuve un año entero
+estudiando arquitectura AWS
+y otra parte
+de cuatro años de trabajo
+con AWS.
+Entonces,
+estoy quedando gordo,
+pero esto es cerebro
+que no me entra acá arriba.
+¿Está?
+Pero,
+hay muchas alternativas.
+Y AWS sale cada vez más.
+Por ejemplo,
+nosotros ahora,
+yo la otra vez le contaba
+que íbamos a desplegar,
+o a Martina,
+ya no me acuerdo
+con quién hablé,
+pero íbamos a desplegar
+en M5
+y en M5
+y ahora salió
+como un ordenador nuevo.
+Pensá que nosotros,
+los Elastin Vistoc,
+que ahora los podés ver,
+¿está?
+Atrás de Elastin Vistoc
+hay una instancia
+de una máquina virtual
+como que supera,
+literal,
+una máquina virtual
+que tiene RAM,
+que tiene procesador,
+que tiene disco duro,
+que tiene todo,
+que está ejecutando
+en Oregon,
+literal.
+Entonces,
+nosotros carpamos por eso.
+¿Cómo los tipos
+lo distribuyen?
+Si es una máquina compartida,
+si es una máquina
+que tiene en realidad 74,
+¿no?
+No me interesa.
+Nosotros tenemos eso
+y además no me permiten
+un mecanismo de escalamiento,
+o sea,
+de que escale.
+Y está,
+este,
+es,
+pero bueno,
+está,
+o sea,
+está bastante,
+es bastante complejo
+porque hay muchas alternativas.
+Vos también tenés
+funciones Lambda.
+Lo que pasa con las funciones
+Lambda
+es que,
+que es lo que yo decía,
+son divinas para,
+de repente lo que estamos
+haciendo ahora,
+las funciones Lambda
+servían.
+Si en unos años,
+cuando sigamos teniendo
+muchos clientes
+y mucho flujo,
+después migrar todo eso,
+yo te lo regalo.
+Yo prefiero,
+de repente,
+lo que le decía a Guille.
+Aprovechemos que tenemos crédito,
+hagamos una estructura más robusta
+y vayamos por el pez gordo.
+Vayamos para pensar
+que nosotros vamos a una plataforma
+que la va a romper.
+No que vamos a una plataforma media
+que tenemos que andar pensando
+en ahorrar unos dólares.
+O sea,
+por lo menos eso es lo que yo,
+es como yo lo razono.
+Sin lugar a duda
+que esto no es algo
+que podés hacer.
+O sea,
+nosotros ahora,
+por ejemplo,
+vamos a gastar mil dólares.
+Hijo,
+podés perder ese dinero con esto.
+O sea,
+tenemos crédito,
+pero hay que conseguir más
+porque si no,
+es un problema.
+Es un costo fijo.
+Además de todos los costos fijos que hay.
+O sea,
+vos venete a pensar
+que a nosotros para la tesis
+eso que nos duró
+medio mes,
+nosotros lo usamos.
+Entonces,
+ahí,
+por ejemplo,
+nosotros,
+¿qué hicimos?
+Y bueno,
+usamos todo en andas,
+que son funciones
+que se pueden repetir dos veces,
+pero tienen menor costo.
+Entonces,
+para un principio,
+para arrancar es mejor.
+No hice una API,
+un frontend
+con server-side rendering
+súper zarpado.
+Hice un frontend
+con React,
+bien,
+bien sencillo,
+bien baratito.
+Que ande.
+Teníamos
+y teníamos
+Debi Master.
+Y ya está.
+Se terminó.
+Acá tenemos tres ambientes.
+Por eso digo,
+esto es un proyecto
+que se equivale al proyecto
+que yo tengo en el trabajo.
+Y estoy seguro.
+Yo lo he aprendido
+de todos los errores.
+Por ejemplo,
+para que tengas idea
+de todos los errores
+de que dar instancias sueltas,
+cosas sueltas,
+eso genera plata.
+Todo esto es plata.
+O sea,
+es plata que vos,
+no hay curso
+donde vos puedas replicar esto.
+Eso es lo que está de más.
+La experiencia que yo estoy agarrando
+acá está de más.
+Y es algo que también,
+como le digo a Tato,
+a vos y a Martina,
+es algo que
+tienen que aprovecharlo.
+Por la experiencia
+que ustedes van a poder aprender acá.
+No la agarrás en ningún lado.
+¿Dónde?
+¿Qué curso
+vos podés pagar
+que gasten
+mil dólares por mes?
+En cosas AWS
+para aprender
+y ver cómo funciona.
+No existe.
+Ajá.
+O sea,
+realmente estás al lado.
+O sea,
+si vos ahora,
+después tengo que ver,
+vamos viendo
+cómo te voy agarrando las cosas,
+pero vos vas a poder verlo,
+la facturación,
+y vas a ver cómo se va a la mierda.
+Vamos a sacar producción.
+Y esa plata,
+no hay curso AWS.
+Nadie te va a dar un curso
+de probar algo.
+Te va a mostrar los free tiers.
+Muchas veces
+los mismos que dan los cursos
+son súper teóricos
+y no tienen ni idea
+de cómo funciona
+en la vida real.
+¿Cómo mierda
+es una plataforma
+como Netflix
+para subsistir?
+¿Se entiende?
+O sea,
+el problema que tienen
+las landas,
+que yo ya lo sé,
+es que las landas
+se van al carajo.
+O sea,
+cuando vos empezás
+a tener muchas requests,
+el costo se pone
+diferencial
+frente a un elastinvicto
+que se mantiene
+y vos lo escalás.
+No son
+para consultas altas.
+Si vos querés eso,
+más querés
+Service Arranger,
+más querés esto,
+más querés tres portales,
+lo que sea,
+lo mejor es el elastinvicto.
+Con el elastinvicto
+fuerte,
+formido,
+que siempre rinde bien,
+como te digo,
+hay millones de cosas.
+También tiene la parte
+de IA.
+Por ejemplo,
+yo llegué a trabajar
+con procesamiento de video
+y reconocimiento de imagen.
+Te cobran un huevo.
+Te dicen,
+querés hacerlo
+a alto nivel,
+perfecto.
+Te cobran
+un huevo.
+También vos tenés,
+por ejemplo,
+hay un curso
+que se trata
+sobre Amplify.
+Y vos literal
+hacés un proyecto
+en React,
+pimba,
+lo deployás
+y es precioso.
+Te trae
+Continuous Integra...
+Todo lo que hice yo
+con la GitHub Action,
+te trae todo deployado,
+todo precioso.
+Ahora en cinco segundos
+te empezaron a tener clientes
+y ya
+se te fue al carajo.
+No solo no te rinde,
+sino te cobran un huevo.
+O sea,
+es como...
+Es complejo.
+Por eso,
+lo de AWS
+es algo que yo,
+en particular,
+para este proyecto,
+cuando la regalé a Guille,
+le dije,
+voy a estar un mes entero
+estudiándolo.
+Y estuve un mes entero
+estudiando.
+O sea,
+literal,
+estuve un mes entero
+y yo me acuerdo
+que me sentaba
+buscaba un chat GPT
+de documentación
+en base a todo lo que sabía.
+Si me preguntás
+hace un año
+lo hubiera hecho con Lambda,
+se hubiera hecho una cagada.
+Hubiera sido un problema
+y se hubiera caído el ruido.
+Y como te digo,
+también hay que estar
+continuamente actualizándonos.
+Porque yo ahora,
+por ejemplo,
+hice una request
+con chat GPT
+para preguntarle
+sobre las instancias,
+costos
+y volver a evaluar
+que la subida
+que vamos a hacer
+el 6 de enero
+y ya me dijo
+mirá,
+salieron estas instancias nuevas
+que salen más baratas
+y tienen un procesador
+más rápido
+entonces te las cobran menos
+y te andan mejor.
+Un golazo, bro.
+Hay millones de cosas.
+Bueno,
+no lo aburro más.
+Cognito.
+Busquemos cognito.

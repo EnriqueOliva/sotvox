@@ -1,0 +1,25 @@
+...casos de uso que se me ocurran así rápido, que el usuario existe, o sea, agregar un caso en que el usuario SteamMate es genérico, un usuario que vas a actualizar el usuario genérico y falla, no sé, por eso no hay mucha vuelta.
+Ví que se agregó mucha cosa, y es nomás agregarle esa variante, porque si ves en el código en el servicio, es un if cortito, que dice si el usuario existe, pero es genérico, lo actualiza, si no, sigue todos los flujos que estaban antes.
+¿Hago un archivo de pruebas específico para esto?
+No, deberías utilizar, es ampliar los tests en el que tenés de YourInfo, o bueno, no sé.
+¿En cuáles chequeabas este if else? Porque vos en algún momento chequeás, bueno, ¿el usuario existe o no existe?
+Si existe, asumo, o sea, tiene que haber un caso en que diga, bueno, creo una CompanyDraft con un usuario que existe, creo una CompanyDraft con un usuario que no existe.
+Eso ya está, o debería estar. En ese lugar, vos tenés que agregar un caso en, creo la CompanyDraft con un usuario que existe, creo la CompanyDraft con un usuario que existe, pero es un TeamMate,
+o creo...
+Creo una CompanyDraft con un usuario que no existía y le pongo todos los datos, ¿sabes? Antes eran dos casos, ahora son tres.
+Bien.
+¿Sí? O sea, está el if ahí, pero digo, deberías agregar esos casos. Obviamente que esto, nada, en el caso que no exista, no debería afectar, porque vos calculo que no ponías estos datos genéricos que Martina chequeaba,
+entonces no debería afectar al resto de test. Debe ser agregar dos casos más.
+Debe ser agregar dos o tres en el archivo que está.
+Bien.
+¿Sí?
+¿Esa lógica en qué service está en el archivo de servicio?
+Está en el archivo del CompanyService.
+CompanyService, sí, perfecto.
+Ahí, es más, vas a ver las constantes que se importan y se chequean.
+Perfecto.
+Después tengo que ver, hoy de noche, después que solucionemos esto y todo eso, voy a sentarme a ver las PRs. Igual mañana tenemos que coordinar Kike, porque tenemos que tener una daily, porque vos mañana vas a estar.
+Sí.
+Está.
+Así que está.
+Voy a ver si hoy de noche ya puedo revisar esas PRs, cosa que tengas mañana, si podés en el trabajo, y si no de noche, también para dar los últimos ajustes para ya cerrar todo mañana.

@@ -1,0 +1,2584 @@
+No, pero
+A ver, Gacetara
+Y descarga lento
+Ahí
+No me dice que descargó
+Descarga de vivo
+¿Qué es esto?
+¿Qué mierda es esto?
+Jeroglifo
+Incorponets.appspot
+Ojo con esto porque esto es la producción de Incorponet
+¿Sí?
+Vamos a ver, hay que tener cuidado
+Porfa
+Acá viene la parte tricky
+¿Sí?
+Necesito que anotes, no grabes
+O sea, si querés grabar, grabá, pero anota
+¿Viste que ahí tenemos
+Fijate el .json
+El .json
+De recién
+Sí, el que creamos junto
+Ojo, ese .json una vez que termines
+Todo eso lo eliminás a mierda
+Viste que tenés un customer, ¿no?
+Sí, customer ID
+Bueno, ¿qué pasa?
+Hoy en día nosotros tenemos
+A ver si
+Un segundito
+Inseguro esto
+Esta API que le hicieron
+No, esperense
+Entrame a la página
+O sea, vayamos al Excel
+Que yo te pasé
+Al de landing user
+Ahí tenemos todas las compañías que nosotros tenemos
+¿Sí?
+Ahí tenemos todas las compañías que nosotros tenemos
+Nosotros
+Manejamos mucha más información
+Que es
+Te animás a entrar al link
+Que yo te pasé
+Te pasé un link, un usuario y una contraseña
+Mirá la contraseña que le pusieron
+Además te podés registrar
+Ese portal y modificarle toda la página
+No hagamos cagadas
+Porque queda registro de todo
+La idea de esto es cerrarlo cuanto antes
+¿Va?
+Andate a
+Consultation
+Company request
+Arriba
+Mirá lo que era el BBO de Guille cuando arrancamos
+Company request
+Arriba de la Consultation request
+Ahí, esa
+Pone paid en payment status
+Y en archive status abajo
+Donde dice
+Not archived
+Archived status
+Ahí va, any
+Ahí está, bueno, esas son todas las compañías
+¿Está?
+Yo necesito que nosotros
+Y atento a lo que te voy a decir
+Creemos un nuevo script
+¿Está? Creemos un nuevo Excel
+¿Está?
+Excel
+¿Crear un nuevo Excel?
+Sí, creo que va a ser mejor Excel
+Y esto va a ser un
+Vamos a hacer
+Vamos a hacer JSON
+Rapidito para saber cuántas compañías teníamos que tener
+Ojo, esta compañía
+No, esto no es real
+Porque puede traer compañías que
+Puede traer compañías que no estén en este Excel
+Porque puede haber compañías que hayan comprado
+Hoy en día
+Que hayan comprado hasta con la plataforma nueva
+Y no hayan comprado ninguna suscripción
+¿Se entiende?
+Pero vamos a ver cuántas tiró
+Por ejemplo, selecciona email
+Y apretá control F
+Selecciona email y apretá control F
+527
+Está, no, imposible que tengamos que emigrar 527
+No, no, no, negativo, negativo
+Email
+312
+Está, imposible que tengamos que emigrar 312
+¿Está?
+Porque muchas son de WordPress
+Entonces, lo importante acá es que es lo siguiente
+Vos tenés que agarrar
+Y esto, ahí, yo te diría
+Es un medio de trabajo administrativo
+Pero, trabajémoslo con cuidado, esto
+Tenés que ir uno por uno en el Excel
+Que vas acá
+¿Sí?
+Y en este Excel, yo lo que necesito es que al final
+Agregues una columna de este Excel
+Al final de este Excel agregues una columna
+¿Está?
+Y la columna que le vas a poner es
+¿Tiene suscripciones activas o no?
+Sí, por un pulgar
+¿Sí?
+Entonces acá
+Lo que vos me vas a devolver es este mismo Excel
+Pero si tiene suscripciones activas
+¿Tiene suscripciones activas o no?
+¿Sí?
+Entonces, hay que ir uno por uno
+¿Usando qué?
+Usando el
+Strike Customer ID
+¿Sí?
+Y hay que fijarse
+Si el Strike Customer ID está en el JSON
+Lo vamos a crear en un nuevo Excel
+¿Sí?
+¿Está?
+Si no está en el JSON
+Si no está en el JSON
+No lo vamos a poner en el Excel
+¿Estamos?
+Y vamos a dejar el registro
+De que no
+Entonces, cuando vos termines esto
+Fijate cuántas compañías son
+Hacé un scroll hacia abajo
+¿Cuántas?
+Está
+No son tantas
+Está
+Yo pensé que eran 200 y algo
+De estas 108
+Hay que ver cuáles tienen suscripciones activas
+¿Sí?
+Que en teoría
+Nosotros acá
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+10 por 10
+Sí, después tenemos
+Sí, no sé
+En el sitio hay menos
+Pero bueno, está raro
+Raro
+En el sitio tenemos 105
+En el sitio
+Pero lo que hay que hacer es lo siguiente
+Este Excel vos tenés que rellenarlo con
+Sí o no, sí o no, sí o no, sí o no
+¿Está?
+¿Sí?
+Las que sean no
+Ya está, no las migrás
+¿Sí?
+Bien sencillito
+¿Por qué?
+¿Por qué?
+A ver
+¿Por qué?
+Dígamelo usted
+Si no tiene suscripciones activas
+No vale la pena migrarlo
+¿Está?
+No vale la pena que pierdas el
+Como tiene un proceso manual
+Solo vamos a migrar
+A las que nos están pagando actualmente
+Y nos interesa migrar
+¿Está?
+Porque el resto de compañías
+Si no nos están pagando nada, Enrique
+¿Está?
+Si no nos están pagando nada
+A esas compañías
+A nosotros no nos interesa migrarla
+¿Entendés?
+La idea es que este documento
+Que vos vas a crear
+Se lo vamos a pasar a la gente de marketing
+Y eso
+Y los va a romper las pelotas
+Che, mirá
+¿Qué querés que hagamos con tu compañía?
+¿Querés que la disolvamos?
+¿Querés que te la migremos?
+Porque vos creés que no es así
+¿Por qué?
+Porque te dejaste la compañía
+Y te fuiste
+Y no volviste a Davant nunca más
+¿Entiendes?
+Entonces
+Vos ahora tenés que agarrar ese Excel
+Y rellenar con sí o no
+Sí o no
+Si está en este JSON
+¿Está?
+¿Sí?
+Paso número uno es eso
+O sea
+Paso número uno de uno
+Y esto anotátelo
+Crear las subtasks
+O sea
+Poner el punto M
+Y crear las subtasks
+Paso número dos
+Hay que rellenar este Excel
+Que yo te pasé
+De Live Users
+¿Sí?
+¿Está?
+Con
+Primero estaría bueno
+Que le hagas un paso
+Filtrado
+Para que puedas ordenar
+Esas que sean sí
+Y que sean no
+¿Está?
+O sea que las podamos agrupar
+Las que son sí
+Y las que son no
+O sea que te queden
+Arriba del todo
+Las de sí y las de no
+Eso es algo de Excel
+¿Está?
+Y este así
+Creo que te va a ser más sencillo
+Porque así nosotros vamos a saber
+Cuántas realmente
+Que pasó manualmente o no
+¿Está?
+Y segundo que complete
+Z108
+Con si está o no está
+¿Está?
+¿Hasta ahí vamos bien?
+¿Son dos pasos distintos?
+¿Cómo?
+¿Cómo?
+¿A qué se refiere?
+¿Cuáles son los pasos?
+Sí
+O sea
+El paso uno
+Es rellenar el Excel
+Con si está
+Si está el Customer ID
+Si o no
+¿Está?
+Por ejemplo
+Busquemos uno
+Hagamos una
+O una junto
+Buscá
+Abrís el Excel
+Chequeá ahí
+El Customer ese
+¿Está?
+Ese está
+Importantísimo
+No hagas diferencia
+Entre mayúsculas y minúsculas
+¿Sí?
+No hay diferencia
+Entre mayúsculas y minúsculas
+¿Está?
+Así como está
+Está bien
+Exacto
+O sea
+Si ese está
+O sea
+Si ese está
+Perfecto
+Entonces hay que
+Enmarcarlo
+Como que sí está
+¿Sí?
+Quiere decir
+Que ese tipo
+Hoy en día
+Nos está pagando
+Y nos sigue pagando
+Entonces nosotros
+Tenemos que emigrarlo
+¿Está?
+¿Sí?
+Una vez que hagamos eso
+Hay que reordenarlo
+¿Está?
+O sea
+Ahí se tiene que poder
+Ordenar el Excel
+Porque hoy en día
+Si no te van a quedar
+Todos salteados
+¿Entendés?
+Y para pasarlo
+Va a ser un problema
+Entonces ahí es
+Apretar un filtro
+Y ordenado
+Para que te ordene
+Todas las que tengan
+Sí y las que tengan no
+¿Está?
+Eso es un lado
+Por el otro lado
+Una vez
+Que tenés este punto
+Para el subtask
+Y también está
+Lo del doten
+Porque capaz
+Que mergeamos esto
+Porque quedó bueno
+Así que si lo actualizás
+Al doten
+Lo
+Lo mergeamos
+¿Está?
+Después
+Una vez que tengamos esto
+Acá viene el trabajo
+Que es un poco
+Que quiero ver contigo
+A ver cómo lo
+A ver
+Si podés automatizar algo
+Conviene que lo hagas manual
+¿Está?
+Creo que estoy viendo
+Disculpa
+Porque estoy mirando
+A ver
+Vamos a ver varias cosas
+Esto no va a ser
+Esto no va a ser
+Esto no va a llevar tiempo
+Así que
+Hay que crear un Excel
+Donde tengamos
+El primer nombre
+Y el segundo nombre
+¿Sí?
+Hay que crear un Excel nuevo
+Donde tengas
+El primer nombre
+Y el segundo nombre
+O sea
+O sea
+Vamos a poner columnas
+O sea
+Poné
+Nuevo Excel con columnas
+Dos puntos
+Y vamos a listar columnas
+Ahí va
+Esto
+Esto
+Ojo que esto es
+Después de rellenar el Excel
+¿Ves?
+O sea
+Esto es después de rellenar
+El Excel con C o no
+Porque así también
+Ahí vos ya me decís
+Che Santi
+Mirá
+Tenemos que emigrar
+En cuenta compañía
+¿Se entiende?
+Primer nombre
+Segundo nombre
+O sea
+O sea
+Una columna que sea
+Primer nombre
+Otra columna que sea
+Segundo nombre
+Ahora que estoy viendo
+Qué servicios tiene
+Primer nombre
+Segundo nombre
+Después
+Industria
+La industria que tiene
+¿Está?
+Está
+Que acá hay que ver
+O sea
+Ahí es copiar
+Obviamente que todo este Excel
+Después lo vamos a
+Vamos a tener que leerlo
+Y aplicarle lógica
+A ver si
+Podemos acoplarlo a lo que tenemos
+O no
+Y le ponemos cualquier
+Cualquier mamarracho
+¿Está?
+¿Sí?
+Después
+Vamos a tener que ponerle
+Industria
+Vamos a tener que ponerle
+El email
+O sea el email
+Tenemos que tenerlo
+No sé qué servicios
+Ofrecía Guillermo acá
+Esperamos un segundito
+Que quiero ver
+A ver qué servicios
+Ofrecen a Guillermo
+En Incorponet
+LSI
+LSI más cuenta bancaria
+LSI más cuenta bancaria
+Crypto
+Virtual address
+LSI más
+Registration
+Ahí va
+Ahí va
+O sea tenemos
+LSI más
+Bank account
+Crypto
+No sé qué es eso que vendía
+Pero no tengo ni idea
+Virtual address
+Es dirección
+Y agente registrado
+Y accounting services
+Account
+¿Está?
+Entonces tenemos solo
+Esos tres servicios
+Que migrar
+¿Está?
+O sea el cliente
+Puede tener solo
+Esos tres servicios
+¿Estamos?
+Entonces vas a crear
+Una columna
+Boolean
+De
+Tiene LSI
+Y tiene LSI
+Creo que tenés
+Un solo LSI
+O sea si no
+Tiene LSI
+Con cuenta bancaria
+¿Está?
+O sea en realidad
+Tiene cuenta bancaria
+Y sería
+Si tiene LSI
+Tiene cuenta bancaria
+¿Está?
+O sea si querés poner
+Entre paréntesis
+Es para el caso
+Que dice LSI
+Más banca
+¿Está?
+Así que ¿Cómo es
+Esta columna?
+Esta columna es
+Cuenta bancaria
+Nuestro servicio
+¿Viste?
+Nosotros tenemos
+Un servicio de cuenta bancaria
+El equivalente
+De Nincorponet
+Era
+El LSI
+Más cuenta bancaria
+¿Sí?
+Luego
+Tenemos
+Lo que es
+O sea
+Esto es
+Equivalente
+A cuenta bancaria
+Esto
+Es equivalente
+A dirección
+Y agente registrado
+Le damos un segundito
+Que ya te paso
+Otro más
+Y esto
+Es el equivalente
+A contabilidad
+Entonces
+Cada una
+Es una columna
+Que si la tiene
+Tenemos que agregarle
+El servicio
+Y ya está
+¿Sí?
+Entonces en sí
+Son tres columnas
+Que lo que indican
+Es si tiene
+Los servicios adicional
+Ahora
+Viendo si en algún lugar
+Dice el estado
+Que tipadiona
+Crea una columna
+Que sea estado
+Y vamos a dejarla vacía
+Y eso se lo pasamos
+A los administrativos
+Que lo hagan
+¿Va?
+Crea una columna de estado
+Y decimos
+Mirá, no estoy pudiendo
+Sacar los estados
+A ver de dónde
+Los sacamos
+¿Va?
+¿Sí?
+Porque de última
+Lo que hacemos es
+Él me dijo
+Que tiene los documentos
+Entonces
+A ver, nosotros
+Cuando queremos las compañías
+Ellos van a tener
+Que subir documentos
+A mano
+No van a ser tantas
+Entonces que le suban
+Los documentos
+A los partners
+¿Sí?
+Y que
+Este
+Y que suban
+Los documentos
+Que tienen que subir
+Pero nosotros
+Vamos a necesitar
+Que nos rellene el estado
+Vamos a ver cuántas tenemos
+¿Va?
+Porque este
+Trabajo
+Es más administrativo
+Entonces yo quiero
+Que vos hagas
+La primera impronta
+Pero después
+Ya para adelante
+Que lo terminen
+De pulir ellos
+Después nosotros
+Necesitamos
+Vamos a asumir
+Que como máximo
+Hay cinco
+Hay
+Vamos a asumir
+Que como máximo
+Hay cuatro partners
+Entonces ahí es donde
+El Excel se va a volver
+Un poco larguito
+¿Va?
+Como máximo
+Hay cuatro partners
+Entonces para acá
+O sea vamos a generar
+Una cantidad de columnas
+Y va a quedar
+Una chanchada
+Pero bueno
+¿Va?
+Entonces
+Esperá
+Estamos un chanchito
+De blanquita
+Se está matando
+¿Va?
+Alexa
+Echar a Kike
+¿Va?
+Pará
+Ah
+Qué cagada Alexa
+Bueno
+Escuchame
+Para cada socio
+Vamos a necesitar
+¿Va?
+Pusimos estado
+¿No?
+Sí
+Número
+Número de teléfono
+Ah
+Faltó
+Más arriba
+Una columna
+Más arriba
+Donde pusimos
+Email
+Abajo pone
+Número de teléfono
+Estoy pensando
+Si se te ocurre
+Algún campo más
+Antes de llegar
+A los partners
+Pero no
+¿No?
+Tenemos
+Está
+Tenemos
+Este
+Tenemos todo
+¿No?
+No hay nada raro
+Bueno
+Para cada par
+A nombre final
+De la compañía
+Vamos a dejarlo en rojo
+Porque no sabemos
+Cuál de los dos es
+Entonces
+Creá una
+Creá una columna
+Eh
+Nombre final
+Y dejálo vacío
+Cosa que lo rellenen ellos
+¿Va?
+Ya bastante trabajo
+Lo vamos a hacer
+Que no rompa las pelotas
+Ah
+Porque yo necesito
+Que vos me desarrolles
+¿No?
+Que sea administrativo
+Entonces
+Esto es
+Esto va a ser
+Porque requiere
+Toda una parte técnica
+Y necesitamos
+Nosotros darle orden
+¿Tá?
+Para que ellos rellenen
+Pero después que rellenen ellos
+Después
+Eh
+Vamos a crear
+Por cada partner
+Vamos a poner
+Eh
+¿Qué información pedimos
+De cada partner nosotros?
+¿Tá?
+Pone
+Por cada partner
+Eh
+O sea
+Vas a tener
+Como máximo cuatro partners
+Lo vas a rellenar
+De izquierda a derecha
+Eso quiere decir
+Que vas a tener
+Por ejemplo
+Last name
+Partner 1
+Eh
+Primer nombre
+Partner 2
+Last name
+Partner 1
+Así
+Así sucesivamente
+¿Tá?
+¿Se entiende?
+No
+¿Cómo me dijo?
+O sea
+Vos
+Ponele que
+Cada partner guardamos
+Voy a hacer un ejemplo
+¿No?
+Guardamos el nombre y la edad
+Entonces
+Como nosotros
+En un Excel
+Tenemos que guardar
+Hasta cuatro partners
+Lo que vamos a hacer
+Es poner
+Nombre
+Partner 1
+Edad
+Partner 1
+O sea
+Ahí ya creamos dos columnas
+Después las columnas de la izquierda
+Es
+Nombre
+Partner 2
+Edad
+Partner 2
+Así hasta cuatro
+¿Tá?
+Con las columnas
+Que te voy a decir
+Sé que no es
+O sea
+Es un ejemplo
+Lo que vamos a hacer ahora es
+Poner las columnas
+Que tiene cada partner
+Y después vos construís
+El documento
+De cada partner
+Vamos a hacer lo siguiente
+Vamos a poner
+Eh
+Eh
+Primer nombre
+O sea
+El primer nombre
+El segundo nombre
+¿Tá?
+Segundo nombre
+Ahora que voy a entrar
+A Dashbank
+Porque no me acuerdo
+De memoria
+La información
+Y no quiero
+Valeo la pena
+Valeo la pena
+Y le preguntamos
+Un millón de cosas
+Edad
+Código postal
+¿Tá?
+¿Tá?
+Necesitamos tener un check
+Si es director o no
+¿Tá?
+Después necesitamos tener
+El SSN
+Que ponele que es opcional
+O sea puede ser vacío
+¿Cómo es en inglés?
+Tiene idea
+SSN
+Social Security Number
+Ah
+Después tenemos
+El Individual
+Taxpayer
+Identification
+Number
+Que es el ITIN
+Después
+Y también es opcional
+O sea
+Puede estar vacío
+Ah
+O sea
+Ambos pueden estar vacíos
+O sea
+Porque ¿Qué pasa?
+Son solos
+Y son residentes
+Para Estados Unidos
+De Estados Unidos
+Después tenemos
+Dirección
+Ah
+Dirección física
+Dirección física 1
+La dirección 2
+Si querés pone
+Pone para que
+Ya quede registro
+Pero la dirección 2
+Va a quedar vacío
+Para todo
+¿Tá?
+Vamos a poner
+La dirección de 1
+Ya
+¿Tá?
+Que van a romper las pelotas
+Santiago
+Por favor
+Malas palabras
+Ah
+Que tenía reunión de cátedra
+Eh
+Bueno después
+Este
+Después
+Eh
+¿Qué te iba a decir?
+Lo otro que tenemos es
+Eh
+Dirección
+En realidad
+Dirección línea 1
+Y dirección línea 2
+¿Tá?
+Sí
+Ahí
+Después tenemos ciudad
+Ciudad
+Ciudad
+País de
+De
+Tenemos ciudad
+Que la ciudad
+Es un string
+País de referencia
+Que el país de referencia
+Tiene que ser
+En mayúscula
+En la abreviación
+De dos dígitos
+¿Tá?
+En mayúscula
+La abreviación
+De dos dígitos
+O sea
+Por ejemplo
+Estados Unidos
+El US
+UAI
+Y UI
+¿Sí?
+Nosotros guardamos
+Los países así
+A ver si usted
+Con lo inteligente que es
+Sabe por qué
+Nosotros en la base de datos
+Almacenamos los países
+Con esa abreviación
+Y no
+Los guardamos
+Con su nombre completo
+Tiempo
+Yo qué sé
+Para cargarla menos
+Yo qué sé
+No
+¿Qué
+Clase de datos?
+Te voy a preguntar algo
+Y ya con esto te respondo
+¿Cómo
+Cómo se escribe
+Uruguay en portugués
+Y cómo se escribe
+Uruguay en español?
+Claro
+¿Cuál de todos guardamos?
+Y eso aprendelo
+Cuando vos
+Hacés algo multidioma
+Vos tenés que guardar
+Un valor genérico
+De referencia
+¿Va?
+El de la
+ID
+Ya
+No
+Sí, pero
+Sí, pero en cada
+No te olvides algo
+En cada ambiente
+El ID cambia
+Nosotros no podemos
+Harcodear ID
+Y yo de manera
+Si borras la base de datos
+Tenés un ID nuevo
+O sea
+Lo que nosotros tenemos es
+Para la traducción
+Tenés dos opciones
+Siempre para traducciones
+Tenés dos opciones
+O guardásla en inglés
+Y lo traducís a la que venga
+¿Está?
+¿Sí?
+O guardás el inglés
+Y lo traducís a la que venga
+O
+Lo guardás
+A la que venga
+En un concepto genérico
+¿Va?
+O sea
+Con algo genérico
+Y vos tenés un mapeo
+Del que corresponde
+Eso en genérico
+¿Sí?
+Alex
+Aprender los cuartos
+Pero son
+Son piques para
+A ver
+Yo te estoy intentando pulir
+Pero
+Son piques
+Son cosas que uno aprende
+Con
+Pongo la primera que decís
+Se viene
+Pone Uruguay
+Pongo Uruguay
+Se termina
+Ah
+Y después empezás a darle vuelta
+Y claro
+Ya vos te empiezan a pedir
+Cambio de idioma
+Lo que sea
+Y después
+Entonces tenés problemas
+Luego
+Pero lo
+Hoy
+O sea
+La otra vez hace tiempo
+Quedé recontento
+Cuando vi Globify
+Pues yo lo había visto
+Pero vi que ellos usan
+La misma nomenclatura de idiomas
+Que nosotros
+Usan lo mismo que nosotros
+Eso está de mal
+La única diferencia
+Que ellos tienen
+Es que hacen los blogs a mano
+O sea
+Y nosotros tenemos blogs dinámicos
+Eso está mejor
+Nosotros tenemos mejor ahí
+Soporte
+Un bolazo pero
+O sea
+Nosotros
+Tenemos un editor
+De texto
+De blog
+Y ellos para crear un blog
+Tienen que poner a un tipo
+A desarrollar
+Para mí es una diferencia sustancial
+Porque vos podés crear
+Blogs sin necesidad
+De tener que andar rompiendo
+Las bolas a un desarrollador
+O sea
+Mati por ejemplo
+Ya lleva más de 30 blogs creados
+Y a mí no
+Más que romperme las bolas
+Por algún detalle
+No ha pasado
+No es que tipo
+Che te paso el contenido
+Te animás a subirlo
+Fíjate como se identa
+Esa cosa no
+Vos tenés tu editor
+Vos lo editás
+Y se ve bien
+Le das espacio
+Si no
+Hacé lo que quieras
+Pero es un estilo
+Estándar
+En estas páginas
+En estas cosas
+Que vos tengas una sección
+De blogs
+Y novedades
+Del negocio tuyo
+Bolazo
+¿Qué más?
+¿Qué nos quedamos?
+País de referencia
+Y después nos falta
+Código postal
+Ahora vamos a ver
+Cómo obtener cada uno
+Me gustaría
+A ver si podemos
+Primero que nada
+O sea
+¿Cómo hacer esto?
+Y vos ves
+Si lo podés hacer dinámico o no
+Te voy a presentar
+Varias alternativas
+O es la más práctica
+¿Sí?
+¿Está?
+Primero
+Tenés que construir
+Este Excel
+¿Está?
+Eso obviamente
+Que ahí tenemos
+Por cada página
+Ah
+Y arriba
+Y una columna
+Importantísima
+Es el porcentaje de acción
+Ay qué asco
+Porcentaje de acción
+¿Ah?
+Eso ponételo
+¿Sí?
+Entonces
+Vamos a hacer lo siguiente
+Vos acá vas a tener
+Por cada
+O sea vas a tener
+Todas estas columnas
+Multiplicadas por cuatro
+¿Está mal lineado?
+Sí
+Va a quedar un culo esto
+Sí
+Y si
+Y si encontrás
+Algún caso
+Que sea cinco
+Vas a multiplicarlo por cinco
+¿Está?
+No es la idea
+Pero está
+¿Pero de qué depende
+Ese límite de partners?
+Yo creo que no hay más
+De tres, cuatro partners
+Pero
+Por ejemplo
+Nosotros soportamos veinte
+Sí
+¿Está?
+No he visto
+Empresas con más de cinco partners
+En toda la compañía
+¿Pero?
+Ok
+Es una duda
+O sea yo no he visto
+Pero
+Podríamos hacer una query
+Y ver
+No he visto
+Empresas con más de cinco partners
+Empresas con tres partners
+Es re común encontrar
+En producción
+Es más
+Cuando te da acceso al video
+Vos empiezas a mirar
+Todas esas cosas
+Y
+Y a estar como un enfermito
+Viendo cuántas compañías cerramos
+Y cuántas cosas
+Porque estoy seguro
+Que va a ser igual
+De enfermo
+Psicópata que yo
+Este
+Puto
+Balas
+Asqueroso
+Este
+Está
+Agregate dos columnas
+Más ahí
+Que vamos a dejarlas vacías
+Por ahora
+Y vemos después
+Como si las llenamos o no
+Pero
+Una que sea
+¿Vos sabés qué?
+Si
+A ver
+Mostrame el Excel
+De ellos
+¿Vos sabés qué?
+Espera
+Anda para la derecha del todo
+A la derecha del todo
+Copiate ese link
+By storage
+De passport
+Tenés solo el passport
+¿No?
+Es una pija eso
+No tenés muchos
+¿No?
+Pero tenés solo el passport
+O sea
+Solo tenés
+Pasaporte
+Y lo tenés en alguno
+A ver
+Copiatelo y pegate
+En el navegador
+A ver
+Con qué nos encontramos
+Ah
+Todavía
+No
+, los enviaron con los dos
+No
+¿Sabés lo que vas a hacer con esto?
+¿Qué?
+Los casos en particular
+Que aparezcan ahí
+Porque lo que estaban haciendo
+Se escaneaban
+Y nos pasaban los dos en uno
+Los casos en particular
+Se los vamos a poner
+En una carpetita
+Administrativo
+Y le vamos a decir
+Mirá que estos son los pasaportes
+De las compañías
+Tanto
+Te armamos un zip
+Con el nombre de la compañía
+Y los pasaportes
+¿Te parece?
+Y si le pasamos
+Cuando le pasemos esto
+Cuando terminemos la migración
+Le pasamos este zip
+Y le pasamos esto
+Y le pasamos esto
+¿Está?
+Ustedes se encargan de subir
+No nos rompan la pelota
+Nosotros no vamos a hacer documento
+En esta migración
+¿Te parece bien?
+Bien
+O sea que yo entro
+A estos links
+Y descargo los pasaportes
+Sí
+O creo una columna
+Con los links
+O sea
+Una
+Olvídate de los pasaportes
+Una vez que completemos
+La migración
+¿Sí?
+Tendrías que volver
+A este Excel
+Y para las
+Como vos este Excel
+Lo vas a hacer
+Lo vas a tener ordenado
+¿Sí?
+Porque vos lo vas a tener ordenado
+Por sí o por no
+Vamos a descargar
+Todos esos pasaportes
+O sea vas a entrar
+Uno por uno
+Vamos a ver cuántos son
+Pero no
+Creo que
+Por lo que vi rápido
+No son más de 20
+O sea lo descargas
+Le pones el nombre de carpeta
+Y me pasás un zip
+Y le pasamos a administrativo
+¿Te parece?
+Ok
+Poner en
+No vi
+No vi muchos
+Sí, decime
+O sea
+El nombre de la carpeta
+Es el
+El de el
+Ponemos el nombre
+De la carpeta
+Que sea
+Correo electrónico
+Primero el correo electrónico
+Y segundo el nombre
+De la compañía
+O sabes
+Sí
+Poné
+Poné directamente
+El primer nombre
+De la compañía
+Ya está
+No te compliques la vida
+Vamos a hacerlo más sencillo
+Separado por guiones bajos
+O con espacios
+Es lo mismo
+¿Ah?
+Entonces
+Claro
+Una consulta
+En las primeras
+Puta madre
+En las primeras
+Columnas
+Estas
+Nombre
+El primer nombre
+Es un nombre
+¿De qué?
+¿De la compañía?
+¿De la compañía?
+O del usuario
+De la compañía
+Está
+Claro
+Esta es compañía info
+Para
+Para el primer nombre
+Y segundo nombre
+Del usuario
+Vas a usar
+Vas a poner
+Primer y segundo nombre
+O sea
+No es primer nombre
+Es más
+Ordenalos todos juntos
+Primera opción de nombre
+Segunda opción de nombre
+Nombre final de la compañía
+Ahí va
+Ahora sí
+Ahora sí
+Viste que cuando querés poder
+Cuando querés poder
+Primera opción de nombre
+Segunda opción de nombre
+Y después ponés ya abajo
+Nombre final de la compañía
+Después abajo
+Abajo de eso
+Ponés
+Primer nombre
+Primer nombre
+Porque nosotros pedimos
+Como un
+Creamos un user
+Entonces ponés primer nombre
+Y segundo nombre
+¿Está?
+Del usuario
+Sí
+Ahí lo importante es
+Agarrar a un director al azar
+Y le ponés ese usuario
+¿Está?
+Ya está
+¿Está?
+O sea
+Basándose en el correo electrónico
+¿Está?
+En cuál se registró
+O sea, si querés ponés
+Basándose en el correo electrónico
+En el cual se registró la compañía
+Y en el director
+Setear
+En base a los partners
+Un primer nombre y segundo nombre
+Igual ahora vamos a ver
+Cómo rellenar cada una de estas
+¿Sí?
+Entonces
+¿Qué es lo que voy a tener que hacer acá?
+Que es donde viene la parte
+Pool
+¿Sí?
+¿Está bien?
+Viene la parte cool
+¿Está?
+Y vamos a hacer concreto
+Pero hay una manera
+De hacerlo más rápido
+Pero
+Ahí ves vos
+Si te sirve
+Que creo que podés hacer un script
+Pero no hagas un script
+Dentro del site
+Hacés un script
+Dentro de un proyectito tuyo
+¿Está?
+Podés hacerlo dentro del site
+Pero
+Bueno
+Vamos a hacer una cosa
+Vos tenés que rellenar esto
+Entonces primero lo que vas a hacer
+Es como vos ya rellenaste los puntos
+Vos ya sabés cuál es
+De todo este Excel
+Tenés que emigrar
+¿Sí o no?
+Sí
+Está genial
+Entonces
+Vayamos bien contra la izquierda
+Ah
+Me faltó una columna
+Y es
+Estado
+Pase en la que se encuentra la compañía
+Viste
+La compañía puede estar iniciada
+Cancelada
+Redis por BancaCount
+Y todas esas cosas
+¿Sí?
+¿Está?
+Y otra
+Otro campo
+Que tenés que rellenar
+Este no es de los partners
+Es genérico
+Tomamos
+El estado
+Tenemos que poner
+Fecha de creación
+De la compañía me dijo
+Sí
+¿Sí?
+¿Sí?
+¿Dónde pusiste el otro?
+Después
+Antes
+Capaz que mejor
+Antes de todos los partners
+Sí, claro
+Sí, te iba a decir eso
+Está bien
+Ok
+Perfecto
+Bueno
+Acá viene la parte importante
+Vos ya lo vas a tener organizado
+Entonces ahí vos vas a decir
+Bueno
+Tal compañía
+¿Cómo sé qué mierda de compañía es?
+Opción 1
+Vas a tener que mirar
+Todo esto de forma manual
+¿Está?
+Entonces vos vas a
+Andá a tal Chrome
+Suponéle que vos tenés que poner
+Holo Cargo Solution
+¿Vos?
+Entonces vas al Chrome
+Andáte al Chrome
+Ahí va
+Abrite
+No, arriba
+Y corponet
+El de la izquierda
+O sea
+El sitio de incorponet
+A la izquierda
+S
+¿Está?
+Andamos a Company Requested
+Esto no está ni paginado
+Ponemos Paid
+Y en vez de Not Archived
+Ponemos Any
+Entonces ahí
+Vamos a hacer la búsqueda juntos
+Para así que ha grabado
+Movete al siguiente parque
+Página
+Hasta que lo encontremos
+Que buscamos Holo
+Sí
+Dale
+Dale
+Ahí ya lo pasaste
+Página 5
+Callejo
+Perdió
+Vos entrás ahí
+Pará
+Pará
+Vos entrás ahí
+Y ahí tenés
+Vamos a analizar lo que tenemos
+Company Name
+Option
+Opción 1
+Opción 2
+¿Sí?
+No te pongas putita
+Opción
+La otra opción
+Es tenemos la industria
+¿Sí?
+Que en este caso
+Nosotros tenemos industrias
+Que son precargadas
+Y industrias que son opcionales
+Igual que tenemos en nuestro sitio
+Eso Guille lo mantuvo
+¿Ah?
+En su momento
+Tenemos el email
+Del guacho este
+Tenemos los servicios
+Fíjate que ahí por ejemplo
+Tenemos Her
+No sé cuánto
+Fiction
+¿No?
+Entonces
+Tenemos un director
+El director es un partner
+¿Está?
+O sea como que
+En este caso
+¿Cuántos partners tenemos?
+Dos
+¿Sí?
+Perdón
+No dije nada
+No dije nada
+No dije nada
+Nada, nada, nada
+El director
+Ahí lo único que te muestra
+Es información del director
+¿Está?
+Que es para poner la casilla
+Pero el director es un partner
+Ahora
+Ya el director
+Hay veces que no está el director
+Creo yo
+No, creo que está en todo
+El director
+Puede ser más de uno
+Creo
+Pero vos ahí te tenés que fijar
+Por el correo electrónico
+Para poder crear el user
+Porque una cosa es el user
+Y otra cosa es el partner
+Es más
+Hay veces que los chupadargas
+Ponen distinto
+Correo electrónico al director
+Que el correo que se registra
+Pero lo importante
+Es que del director
+Vos tenés que sacar
+El nombre de usuario
+Del user
+¿Entendés?
+¿Está?
+Y ahí tenés el número de teléfono
+¿Sí?
+Luego tenés los partners
+Si el SSN y ITIN está vacío
+Tenés el equity
+Que es el porcentaje
+Tenés el nombre
+Que ahí vos tenés que usar
+ChaGPT
+Inteligencia Artificial
+Y Mandinga
+Para deducir
+Qué es apellido
+Y qué es nombre
+¿Sí?
+¿Está?
+Pará
+Todavía no terminé
+Todavía no terminé
+¿Sí?
+Y vos acá también
+Hay algo que
+Si vos seleccionás en el director
+Abriste en el director
+Vos ahí tenés
+El correo electrónico
+El número de teléfono
+Tenés el address
+Ahí del address
+Tenés que sacar tres cosas
+Y prestar bastante atención
+La dirección es
+Núñez 5157
+La ciudad es Buenos Aires
+Y el país es Argentina
+¿Está?
+Tranquil
+Tranquil
+Ahora vamos a ver
+Cómo solucionar esto
+Tenemos el postal code
+Y el correo electrónico
+Y el company address
+Que eso sería
+El company address
+Es la línea
+La línea de dirección 2
+¿Sí?
+¿Está?
+¿Bien?
+Después
+Si vamos a la parte de partner
+Tenemos la misma información
+Si haces click
+Ok
+Si vos haces click
+Tenés la misma dirección
+No puedo hacer click en partner
+Sí
+¿No te deja?
+No puedo
+Está
+Entonces si en partner
+No te deja nada
+Lo que vamos a hacer es
+Crear un string
+Que es
+Que eso lo vamos a
+O sea
+A nivel
+A nivel de Excel
+Lo dejabas
+Todos los datos que nos consiga
+Los dejabas ir
+¿Está?
+A nivel de migración
+Lo que vamos a
+O sea
+A nivel de migración
+Lo que nosotros vamos a hacer
+Es lo siguiente
+Vamos a generar
+Una cantidad de strings
+Que sean tipo
+Error
+Falta tal cosa
+Tipo todo con mayúscula
+Y un bajo
+¿Entendés?
+O sea que
+No es que vamos a dejar
+Campos vacíos
+Porque no se permiten
+Los campos vacíos
+Lo que vamos a hacer
+Es que
+Si falla
+Le ponés
+Tal y tal cosa
+Pufo
+¿Estamos?
+Ok
+¿Estamos o no estamos?
+Buah
+Carajo
+Bien
+Ahora
+Vos me decís
+Esto Santi es una pija
+Bueno
+Como todo
+Te pregunto
+A ver
+Con todo el conocimiento
+Que tenés hasta ahora
+¿Cómo podemos hacer
+Esto más eficiente?
+O sea
+¿Estás pensando
+En un script?
+No
+¿Un script para sacar esto?
+No
+Lo que vamos a hacer
+Es lo siguiente
+Este informativo
+Es un informativo
+La deben sacar
+De una API
+¿No?
+Sí
+Si lo analizamos
+Y en mi vasta experiencia
+Esto es Angular
+¿Por qué?
+Porque tenemos la A de Angular
+Ahí arriba
+Entonces los tipos son bien caseros
+Vamos a abrir la developer tool
+Lo mismo que hicimos con
+En su momento lo hice con Guille
+Vamos a abrir el network
+Vamos a recargar la página
+Pica
+Ahí tenemos el input
+Accounts
+Lookup
+Hacé clic ahí
+Pará
+Pará
+Borrá todo
+Borrá todo
+Borrá todo
+Te pego con un palo
+A ver
+Borrá todo ahí
+Cambiá en archivo status
+Pone any
+A ver si eso hace una request nueva
+No, no, no
+En el sitio
+Archive de status
+Any
+Bueno, cosa de zoom
+No
+Está, no
+No
+No pasa nada
+Se quiere decir que
+Estos hijos de mil putas
+Hacen filtrado en el frontend
+Recargá
+En account
+Te están trayendo todo
+Ojo con ese detalle
+Pero si vos
+Abrite bien la developer tool
+O sea
+Abrí bien
+Como tenés que hacer
+El ojete
+Abrir la developer tool
+Bueno
+No tanto
+No quería saber
+No quería saber
+Pero está bien
+¿Ah?
+Este
+Culo roto
+Fijate los hijos de puta
+Esto
+Si vos vas a response
+Porque en preview
+La ves vacía
+A ver
+Anda preview
+No
+Entonces está en channel
+Está en
+El endpoint es channel
+Vamos a ver el endpoint
+Pasemos al siguiente endpoint
+De abajo
+No, este no es
+El de abajo
+Dale response
+Pica
+Acá lo tenés
+Capi, caloma
+Mirá como te devuelven
+La data
+Yo trabajo
+Casi todas las integraciones
+Que hago con este tipo
+De mierdas
+Por eso he aprendido mucho
+Así que esto es
+Una oportunidad excelente
+Para salir
+Del mundo
+De lo hermoso
+Que es nuestra API
+Y que tenga una experiencia real
+Como tenemos
+Martín y yo
+Ahí está toda la info
+La ve
+Ajá
+Ajá
+Viste a gente registrado
+Reenvío de correo
+Dirección virtual
+Y tenemos una info
+Que sí tenemos que sacar de ahí
+Que es la fecha de creación
+¿Sí?
+Update
+Paso por la web
+Ah, la fecha de creación
+Entonces
+Fuera del chiste
+El
+Lo que yo te digo
+Es lo siguiente
+Esto tenemos que liquidarlo
+Porque tenemos que hacer más cosas
+¿Va?
+Vos ahí
+Podés hacer click derecho
+En response
+Mirá, hacé click derecho
+En response
+Si hacé
+Si hacé click derecho
+En la response
+Creo que
+O podés
+Hacé controlar
+Podés hacer control
+Para seleccionar todo
+La copiás
+Y la pegás
+Para un archivo
+Y ya está
+Acá tenemos
+Tenemos dos cosas
+Que
+Esto tiene que quedar claro
+Esta migración
+No tiene la complejidad
+En este lado
+Yo quiero que vos
+Armés este Excel
+Lo más rápido posible
+Que para mí
+Sinceramente
+Si lo hacés bien
+Lo hacés rápido
+Te lleva
+Una
+Dos horas
+Tres
+¿Va?
+No hay necesidad
+Que hagas ningún script
+¿Va?
+Porque el script
+Te va a llevar más tiempo
+¿Por qué te muestro esto?
+Para que vos tengas la opción
+De sacar la fecha de creación
+Y ver si hay alguna info más
+Que de repente
+Puedas recolectar
+¿Tá?
+¿Sí?
+Mi recomendación
+Mi recomendación encarecida
+Es que lo hagas manual
+Porque la dificultad
+O lo que yo realmente quiero
+Que vos te choques
+Es con la migración
+¿Tá?
+No con esto
+No me aporta nada esto
+Quiero que le dediques tiempo a la migración
+Y no estemos corriendo con la migración
+Además ten en cuenta
+De que va a haber un tiempo
+Donde vamos a estar en pausa
+Porque la migración
+Va a estar en pausa
+Porque la migración
+Vamos a pasar esto
+A los administrativos
+Y van a tener que rellenar datos
+¿Sí?
+Entonces
+Ahí lo que te pido
+Por favor
+Es
+Si vos querés hacer un script
+Para sacar alguna data
+O lo que sea
+Hacete algo
+Que te devuelva
+La fecha de creación
+De una compañía X
+O que te devuelva
+Haciendo información más rápido
+¿Tá?
+¿Sí?
+Pero ojo
+Hasta dónde vas con eso
+¿Tá?
+Ten en cuenta
+Que estos hijos de puta
+Por eso
+El preview no anda
+¿Ves?
+Porque estos hijos de puta
+Están trayendo
+Las 108 compañías
+De una cita
+Que ataca
+Con toda la info
+¿Tá?
+Entonces
+Es más
+Nosotros hasta
+Tenemos paginado
+Hasta 75 compañías
+Que es una locura
+Pero es opcional
+Pero nosotros
+La devolvemos en JSON
+Estos hijos de puta
+Nada
+Se ve que no sabían programar
+Entonces
+Ahí lo que yo te digo es
+Hagamos estas tareas
+Porque la idea
+Es concentrarnos
+En la migración
+El flujo complejo
+Y lo que realmente
+Aporta valor
+Es la migración
+Y cuanto
+Antes tengamos esto
+Antes podemos
+Podemos empezar
+A pinchar a estos tipos
+Pasarlo para nuestra
+Plataforma
+Cortar los problemas
+Que tenemos
+¿Tá?
+Y realmente
+Tenemos que sentarnos
+A idear
+La migración
+Yo meto
+Nos tenemos que sentar
+Contigo
+Y yo te voy a decir
+Bueno
+Lo que vas a hacer
+Es esto
+¿Tá?
+Si no tiene información
+Vas a hacer esto
+Si ya existe el usuario
+Lo vas a imprimir
+Si no tienes
+Try Connect
+Lo vas a crear
+Tienes que crear
+Cuentas de cognito
+¿Tá?
+Ya te saqué
+La dificultad
+De trabajar
+Con
+Con documentos
+¿Sí?
+Eso está bueno
+¿Tá?
+¿Bien?
+Bien
+Es más
+Por ejemplo
+Lo que va a pasar
+Es lo siguiente
+En producción
+Vos en Stripe
+Ya vas a tener registrados
+Los usuarios
+¿Sí?
+Pero algo que tenemos
+Que hacer
+Es que en Stripe
+Si ya tenés registrado
+El correo electrónico
+Un pequeño detalle
+Es que nosotros
+Tenemos que pasar
+Todo este correo electrónico
+A minúscula
+Para evitar problemas chotos
+Tanto en Stripe
+Como los nuevos
+Que registremos
+Entonces tenemos que agarrar
+Buscar el correo electrónico
+Platten
+Platten
+Exacto
+Pero antes de hacer un platen
+Buscar en Stripe
+Con el correo tal cual
+Te lo pasan
+¿Tá?
+Sí
+Vos ya tenés
+El Customer ID
+Entonces vos deberías
+O sea
+En realidad para mí
+A ese Excel
+Deberías agregarle
+El Customer ID
+Porque vos deberías
+Directamente buscar
+Con esos Customer ID
+Que ya existen
+¿Tá?
+No deberías usar el correo
+Vos deberías agarrar
+Vos deberías ignorar
+El correo electrónico
+¿Sí?
+Para mí la migración
+Y ahí ponete
+Ponete más arriba
+Eso iría
+Arriba del todo
+Para mí vos deberías
+Ignorar el correo electrónico
+Ahora que me pongo a pensar
+Y obtenerlo directamente
+De Stripe
+Ok
+¿Tá?
+Es más
+Algo que podemos ver después
+Y eso
+Ya no necesitas
+Ni el Excel
+Entonces
+Inhalar el email
+Y usar el Customer ID
+O sea
+Poné el email en el Excel
+Para que quede registro
+Pero ¿Qué pasa?
+Nosotros
+O sea
+En el Excel
+Poné el email
+Pero agregar la columna
+Customer ID
+Y usar el Customer ID
+¿Tá?
+Ahora lo que va a pasar
+Es que vos
+En Dev
+No vas a tener
+Esos Customer ID
+Entonces
+Vas a tener que hacer
+Una vueltita de tuerca
+Para poder probar
+Que esto anda en Dev
+¿Se entiende?
+Sí
+Entonces vamos a tener
+Que de repente
+Crear un Excel mágico
+Donde solo migramos
+Tres compañías
+Cinco
+Y yo te creo
+A mano
+Los Customer ID
+¿Se entiende?
+¿Tá?
+Una consulta
+Ah
+Otra cosa que ponemos ahí
+De los Customer ID
+Probablemente nos sirve
+Para sacar
+Viste que yo te dije
+Que el primer nombre
+Del usuario
+Lo saques del parque
+¿Tá?
+El Customer ID
+Te devuelve
+Ya te devuelve
+El nombre y el apellido
+Lo podemos jugar
+¿Tá?
+No, olvidate
+No dije no
+Yo creo que
+Te devuelve el nombre
+Y apellido
+Todo de una
+Ahora déjame ver
+Claro, te devuelve
+El nombre y apellido
+Todo de una
+No
+Olvidate
+¿Y el número de teléfono?
+Del director también
+Tenemos solo un dígito
+Del número de teléfono
+Porque después para Partner
+No pedimos número de teléfono
+Entonces en sí
+El número de teléfono
+Es uno solo
+Ah
+No sé si podés tener
+Dos directores
+Pero si tenés dos directores
+Pero si tenés dos directores
+Pero si tenés dos directores
+Agarrás el primero
+Y ya está
+O sea, vos agarrás
+Es sencillo
+Es sencillo
+Vos mirás el correo
+Que se registró
+Y si tiene diez directores
+Te fijás
+Cuál es el que se asemeja
+Más al correo
+Y lo elegís
+De forma randómica
+¿Tá?
+Sí
+Como digo
+Si nosotros sacamos esto
+Traemos a los clientes
+Podemos traer una cantidad
+De plata con contabilidad
+Es importante
+Hacer esta migración
+Cuanto antes
+Entonces ahí
+Lo que le pido
+¿Tá?
+Lo que le pido
+Lo que le pido es
+Prioricemos
+¿Tá?
+Sacar la migración
+Cuanto antes
+Y toda esta parte
+Pelotuda
+Que sea lo más práctica posible
+Son 108 compañías
+¿Tá?
+Sé que es un trabajo
+Administrativo de mierda
+Lo sé
+Son 108 compañías
+Fijémonos
+¿Cuántas son?
+Yo te diría
+Que si son 50
+Si son 40
+Hacelo manual
+Y salimos de eso
+Ya está
+¿Tá?
+Este
+Y ya está
+¿Sí?
+Y jalo así
+O sea
+No te compliques
+La fecha de creación
+La idea es que la busques
+Pero tampoco quiero
+Que te mates
+Si vos no encontrás
+Ningún patrón
+Ponemos fecha de creación
+Este año
+Y ya está
+Y se finí
+¿Te entendemos?
+¿Tá?
+O sea
+Si podemos traer
+La fecha de creación
+Mejor
+Porque sabemos realmente
+Cuándo se creó la compañía
+Si no podemos
+No podemos
+Y ya está
+¿Tá?
+¿Sí?
+Ok
+¿Alguna consulta más?
+¿Algo más?
+¿Me estoy comiendo?
+Todavía con todas
+Esta mierda
+Hay que vivirla
+En sus tasks
+Y recién
+Cuando vos tengas
+Todo esto
+Que tengas el zip
+Que tengas el excel
+Que tengas la
+O sea
+En el momento que vos tengas
+La cantidad real
+De cuentas que hay que mirar
+Ahí pásamela
+Si vos mirás
+Al final son
+50
+Al final son 60
+¿Entendés?
+Porque así yo ya le digo
+Yo ya
+Ese número ya se lo paso a Guillermo
+Yo che
+Mirá que Enrique ya hizo
+Primero porque está bueno
+Está bueno empezar
+A darle esa info a Guillermo
+Y mostrar que estamos laburando
+Che mirá que
+Enrique ya hizo
+Este primer approach
+Y tenemos 60
+Cuentas familiar
+Que tienen suscripciones
+Activas
+¿Va?
+Y el otro
+El otro punto es
+Una vez que tengas
+Todo esto
+Lo que vamos a hacer
+Es pasárselo a la parte
+Yo lo voy a hablar con Guillermo
+Y le voy a decir
+Mirá Guillermo
+Tengo estas cosas
+¿Qué hago?
+¿Me rellenan
+Ustedes de parte administrativa
+O
+Se lo meten en el orden
+O
+O lo que hacemos es
+Ponemos el primer nombre
+Y ya fue
+¿O qué hacemos?
+Como nombre final
+¿Qué hacemos?
+¿Va?
+Bien
+Bien
+Bueno
+El auguro es trabajo
+Creo que ya estamos
+Sobre la hora
+Descanse
+Este
+Y mañana
+Con esto va a tener
+Para entretenerse
+Un ratazo
+Sí
+A ver
+Para mí
+Y corregime vos
+Esto de
+Medianamente
+Debería estar
+Ya mañana
+Deberíamos tener
+Por lo menos
+O sea no te digo
+Que termines el Excel
+Puede ser que este dios
+Iba a llevar tiempo
+¿Va?
+Pero para mí
+Para mañana
+Deberíamos tener ya
+Cuántas
+Deberíamos pasarle
+Al mediodía
+O por algún momento
+¿Cuántas compañías
+Tenemos que emigrar a Guillermo?
+Eso tenemos que pasárselo
+Cuanto antes
+¿Va?
+Y lo que estaría bueno
+Mañana que jueves
+Y lo que estaría bueno
+Es ya el viernes
+¿Va?
+Que el viernes
+Este
+O sea que
+El viernes
+Al mediodía
+O bueno
+Puede ser el jueves
+O si no
+El viernes
+En algún momento
+Este esto
+Y nosotros ya nos sentemos
+A hablar de la migración
+¿Va?
+Estaría bueno
+Que para el fin de semana
+Nosotros le tiremos
+El documento
+Con los zip
+¿Va?
+Y nos sentemos
+A orquestar
+La arquitectura
+De la migración
+¿Sí?
+Mira
+Este
+Porque en realidad
+El sprint
+El sprint termina
+El 23
+Sí, claro
+¿Va?
+O sea
+Nos sentemos
+A orquestar
+La arquitectura
+De la migración
+Que no va a ser
+Muy difícil
+O sea
+Pasando
+Pasando lo que ya tenemos
+O sea
+Te vas a basar
+En la que ya tenemos
+Y vas a sacar
+La parte de documentos
+Vas a sacar
+La parte de envío de mails
+Porque eso ya lo hace
+El script actual
+Entonces vas a sacar
+La parte del envío de mail
+¿Va?
+Este
+Vamos a ver
+Cómo lo encaramos
+Pero vas a sacar
+La mierda
+La parte de envío de mail
+Vamos a ver
+Qué hacemos
+Así que bueno
+Una de Cali
+Y una de Linn
+Vamos arriba
+¿Qué piensas?
+Bueno
+Está bueno
+Yo que sé
+Usted dice que es administrativo
+Pero no sé
+No lo encuentro tan aburrido
+Está dentro de todo
+Interesante
+Así que
+Una puta gente
+Andate a la ruta
+No, a ver
+A ver
+A ver
+Hay que hacerlo
+Si se divierte bien
+Si no, también
+Hay que hacerlo
+Lo positivo
+O sea, esto es así
+O sea, ya está
+Hay que hacerlo
+¿Te gusta?
+Bien
+¿No te gusta?
+Bien
+Es como lo te regresión
+Y bueno, está
+Hay que hacerlo
+Lo importante acá que es
+Que lo podés hacer
+Desde tu casa en pelota
+Yo creo que es lo más importante
+Y podés hacerlo tranquilo
+Y en serio
+A ver
+Seamos sinceros
+Hoy, por ejemplo
+Vos podés haber comido
+Diez horas
+Y si me laburaste
+Y me sacaste el script
+No pasa nada
+O sea
+Yo creo que
+Es otro tipo de calidad de vida
+¿Eh?
+¿Eh?
+O sea
+No sé cómo te venís sintiendo vos
+Es muy temprano para decir
+Estoy apenas adaptándome
+A todo
+A la negra
+Y a todo
+Pero sí
+Tengo fe en que
+Sin duda
+Es un cambio para bien
+Sin duda
+Pero está
+Por ahora
+Claro, a ver
+El tema es que usted ahora
+Tiene la negra
+La negra que tiene
+Entre las patas
+La negra que tiene
+En el apartamento
+Entonces
+Este
+Yo creo que también
+Hay
+Hay
+Claro, o sea
+Yo no sé
+Cómo está manejando
+El ejercicio
+Y todas esas cosas
+Está mal
+Es raro
+Porque vos ya estás grande
+Pero también
+Se está haciendo una etapa
+Donde debería
+O sea
+Tenés que
+Tenés que meterla a estudiar
+Y todas esas cosas
+Por un lado
+Estás grande
+Y ya
+En cualquier momento
+Formás un nene
+Y por el otro lado
+Tenés que meterla a estudiar
+Y esas cosas
+Que bueno
+Bueno
+Lo dejo
+Cuídese
+Gracias
+Creo que quedó bastante
+Creo que quedó bastante claro
+Todo
+Cualquier duda
+¿Está?
+Y como digo
+Este Excel
+Que vas a crear
+Nos va a permitir
+A nosotros
+Migrar todo
+Y hacer todo bien
+Entonces
+Tiene que ser algo
+Tiene que ser algo
+Que quede práctico
+¿Está?
+No puede ser un clavo
+¿Sí?
+Tiene que ser algo
+Que quede práctico
+Por eso te digo que
+Yo pienso poner
+Fijate si es un
+Y querés que sea un Excel
+Si querés que sea un SVG
+Yo me parece
+Que el Excel es mejor
+¿Está?
+Pero capaz
+Como decís
+No, mirá
+Para leerlo
+Es mejor el SVG
+Y me descargué
+Tal viewer de Windows
+Descárgatelo así
+Lo vemos también
+Los dos bien
+El tema es que
+Si ya van a ser
+Los administrativos
+Creo que lo mejor
+Es el Excel
+Pero bueno
+Lo falamos
+Dale
+Bien
+Estoy pensando en un JSON
+Y a partir de un JSON
+Después un Excel
+Automáticamente
+O no sé
+Sí, a ver
+El problema que tiene
+El JSON con eso
+Es que
+Para los administrativos
+Que te tienen que rellenar data
+Va a ser un cáncer
+No, por eso
+Por eso
+Que a partir de un JSON
+Que se cree
+Un Excel
+Lo veo, lo veo
+No creo que tiene
+Para entretenerse
+Lo que sí
+Pongamos deadline
+¿Está?
+Mañana
+Al mediodía
+Para lo menos
+Yo necesito saber
+Cuántas compañías
+Tengo que dar
+Y el viernes
+Esto tendría que estar
+Bastante encaminado
+¿Está?
+No sé en qué momento
+El viernes
+Nosotros el viernes
+Tendríamos
+A ver
+El viernes
+Tiene que estar esto
+Pasar
+Para poder pasarse
+A la administración
+Y que la pelota
+Pase a estar de su lado
+Capaz que Guillermo
+Me dice
+No sabés qué
+Déjalo así
+Mi viejo
+Queremos así como está
+¿Está?
+Es una chance
+Y tenemos que sentarnos
+A discutir la arquitectura
+Porque vos el lunes
+Entre el lunes y martes
+Tenés que terminar el script
+O sea el lunes
+Tenés para desarrollarlo
+Martes desarrollarlo
+Y probarlo
+Y ya está
+¿Sí?
+No hay
+La migración
+Ahí está
+No hay mucho más
+No debería durar más
+¿Sí?
+Bien
+Así que bueno
+Es
+Vamos a Rook
+Cuídese
+Bueno
+Hasta luego
+Hasta luego
+Chao

@@ -1,0 +1,16 @@
+La siguiente es una guía de cómo realizar testeos en tareas que involucren correos electrónicos de la plataforma.
+En particular, cómo realizar un testeo que se acerque lo más posible a un flujo end-to-end.
+Porque el camino más fácil para realizar testeos en estos casos es generar un ejemplo local del HTML, del email que se quiera trabajar, un renderizado local.
+Pero el problema es que los servicios más usados como Gmail y Outlook tienen particularidades que generan problemas.
+Y son problemas que no pueden ser predichos, no se pueden predecir.
+El único camino es efectivamente enviar un mail a Outlook o a Gmail y efectivamente visualizarlo en Gmail o Outlook para darse cuenta de los errores que pueden surgir.
+Un correo puede verse bien en Outlook y puede verse mal en Gmail al mismo tiempo y viceversa.
+Entonces hay que hacer, es necesario hacer el testeo tanto en Gmail como en Outlook y algún otro servicio que sea frecuentemente usado.
+Hay que hacer el testeo porque no alcanza con simplemente hacer una visualización local de ese correo.
+¿Cómo podemos hacer eso?
+Bueno.
+Lo podemos hacer corriendo el worker localmente y disparando la lógica y los cambios que nosotros estamos trabajando.
+Una particularidad a tener en cuenta es que el worker en todos los casos lee los emails o los templates, mejor dicho, de S3.
+Pero nosotros, si estamos realizando cambios en uno de los mails existentes.
+O si directamente estamos implementando un correo nuevo, lógicamente esos cambios no van a estar en S3.
+Entonces nuestros cambios o directamente el mail que estemos implementando no va a surgir efecto.

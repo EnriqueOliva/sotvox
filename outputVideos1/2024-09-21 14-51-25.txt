@@ -1,0 +1,1099 @@
+Sí. A ver, prioridad es la ciento... ¿Estás grabando? Sí. La ciento noventa y tres, ¿sí? Y la doscientos veintiuno. Eso es lo que tiene que salir sí o sí este sprint. Y además, al menos un sesenta por ciento de las que quedan de Company Draft. ¿Está? O sea, eso es el mínimo deseable. ¿Está?
+Claro, después de la de Company Draft, está.
+Para que yo empiece a entender cómo funciona
+tus tiempos. ¿Está?
+Y que yo de a poquito
+podamos trackear
+esa mejora de que, bueno,
+que yo más o menos cada vez entiendo más
+cómo funcionan tus tiempos.
+¿Entendés? Sí.
+Entonces, yo ahí lo que necesito es,
+obviamente que vos vas a ir haciendo la cosa
+más rápido y eso, pero también necesito
+yo comprender en tu
+estado actual ahora
+de ser,
+cómo funciona
+tu tiempo. Entonces, ahí lo que necesito,
+es que me pases
+la tarea tanto,
+¿está? ¿Sí?
+O sea, me pases en Slack
+ahora, después que termines,
+terminemos el
+sprint pasado, prioridad
+uno, eso. Una vez que terminemos
+el sprint pasado, me pases en Slack.
+Por ejemplo, Santi, ¿cómo estás?
+La tarea, y ahí me decís,
+tarea ciento cincuenta y uno
+tiene tres history points,
+para mí son cinco.
+¿Está?
+¿Está? ¿Sí? Pasame un listado
+de eso. Y después, si querés, me podés mandar
+un audio para que no pierdas tanto tiempo
+explicándome
+por qué
+hiciste los cambios. Pero quiero que me mandes algo
+concreto de tipo, tanto, para mí cambia
+tanto, tanto.
+Yo ahí escucho tu audio
+y realizo los cambios.
+Y te digo, está bien.
+Si veo algo raro, te aviso.
+¿Te parece?
+¿Qué?
+¿En qué canal?
+No, eso lo pasás por privado.
+Ok.
+Eso ya es algo
+mío y tuyo.
+Después,
+¿qué más? Bueno,
+tenemos eso.
+O sea, ahora vos te vas a centrarte
+en liquidar lo del sprint
+pasado, en pasarme
+los history points, pero
+calculo que tenés alguna duda de las tareas.
+Sí.
+Pero lo que te lo pongo ahora,
+te lo digo ahora por privado.
+Sí.
+Decímelo ahora.
+O sea, las dudas.
+Yo lo que veo es que
+estas tareas son muy, como, o sea, siempre nos ha pasado hasta ahora de que
+yo la puedo, quizá la termino, como vos decís, en esto, en este
+puntaje, o sea, en un día o menos de un día la termino,
+hago el dev review, pongo el dev review,
+pero después, siempre, yo no estoy, creo, a un nivel
+en el que la tarea se haga de manera 100% perfecta.
+Entonces, siempre surge algún detalle.
+Como este as unknown, que después hace que yo tenga que estar
+otros dos días más con la tarea o algo así, me explico.
+Ah, pero a ver, el history point ahí estimado es,
+no es, no podemos estimar el tiempo que va a llevar,
+estimar, es que yo voy a llevar la PR, ¿sí?
+No podemos estimarlo, ¿está?
+Entonces, ahí, como que, digamos,
+vos estás haciendo la estimación según lo que vos entendés que te lleva, ¿está?
+Si surgen problemas grandes, bueno,
+quiere decir que le estamos cerrando, o sea,
+que una tarea estén de review mucho rato, quiere decir,
+o que vos no tenías contexto, o que, bueno, está,
+que hay algo que se encaró muy mal, ¿está?
+Este, o también hay una parte de aprendizaje también.
+Entonces, son como ese triángulo de esos tres factores de,
+se encaró muy mal, faltaba contexto, o, este,
+también la parte del aprendizaje que está, que es normal.
+Vos estimá hasta que vos me envíe la PR.
+Va a haber un momento en que está, que, naturalmente,
+vamos a ver que las PR se aprueban rápido y tienen pocos comentarios.
+Pero, bueno, está.
+Estos son cosas que yo no puedo, no podemos,
+podemos darle un poco de holgura, me parece perfecto, eso ya lo hablamos,
+pero no podemos decir diez días para una tarea que es cortita,
+porque también ahí, a ver, lo importante es que vos,
+como quien dice, como que estén de review.
+Ah, sí, bueno, la mandé y están de review.
+Ah, después, bueno, es perseguir juntos el, el don, pero tranqui,
+en eso no, no te, no te pongas nervioso.
+Yo me refería más a preguntas tipo de entendimiento de qué es lo que hay que hacer.
+O sea, a mí creo que capaz lo que me serviría, digo, yo sé que vos estás al palo,
+pero a veces, este, siento que está, que no, que necesito como una explicación más,
+más, más en general, unos dos o tres detallecitos más en, en descripción, es lo que siento.
+A veces.
+Sí, acuérdate que esas tareas las, las dividiste vos.
+Esas tareas de Company Draft.
+Este, o sea, las únicas que creé yo son las de confirmar y eso, esas divisiones las hiciste vos.
+O sea, ahí sí que, si querés, por ejemplo,
+podemos agarrar cualquiera de esas tareas de Company Draft y te voy a comentar,
+te, te comento rapidito lo que yo entiendo que, o sea, cómo es el flujo.
+La de Company Draft, no, yo me refiero a las, a las otras.
+Dale, sí, vale.
+Vayamos a esas.
+Vayamos, por ejemplo, a la de regresión.
+Arranquemos por esa y seguimos bajando.
+Ah, no, no sé cuál es la primera después de la, la, la 193.
+Está, la 193 en este caso, tanto en el sitio como en el back office,
+el tema que hay, porque es la idea de esto, o sea, la idea es que vos investigues lo que dice ahí,
+me vengas y yo te doy una explicación más,
+era ideal que esto sucediera el viernes.
+Me estoy mudando, no se pudo hacer, por eso lo estamos haciendo media hora las carreras.
+Pero la idea a partir de ahora es eso, es que cuando arranca el sprint,
+yo les asigno tareas, les asigno puntos, ustedes investigan, preparan preguntas,
+nos juntamos, aclaramos todos y se terminó, a lo que estamos haciendo ahora.
+Sí, este, está, o sea, una vez que nosotros nos juntamos,
+vos ahí me pasás una reestimación en base a lo que hablamos y listo.
+Bien, yo creo que esta, este mecanismo es más rápido que, que yo me ponga,
+escribir una descripción, después vos me venís a hacer preguntas de la descripción,
+después hay que actualizar esa descripción para que no quede desactualizada,
+¿te parece? Lo que planteo, lo que estoy diciendo es que no,
+no sé qué preguntar ni siquiera, yo ya lo hice ayer, ya vi una.
+Ah, perfecto, en eso, esos casos van a pasar,
+y yo creo que aunque ponga mucha descripción, van a pasar, entonces, este,
+está, aprovechemos, o sea, hagamos esa investigación, tengamos eso,
+y cuando no tenés ni contexto, esperás, tranqui, te pones a hacer otra,
+otra cosa, y, y esperás, este, a tener esta reunión.
+La idea de esta reunión es que nosotros el miércoles salimos a producción,
+ya el miércoles deberían tener el sprint también armado,
+es algo que este sprint la venimos peleando,
+pero la idea del sprint que viene va a ser, el miércoles ya salimos a producción,
+entonces, ustedes ya tienen el sprint armado, el jueves ustedes revisan las tareas que tienen,
+preparan preguntas, cambio de estimaciones, sobre lo que entiendan,
+si hay algo que no entienden, se va a atacar, y el jueves de noche,
+o el viernes, en la medida de lo posible, ahí tengo que ver como si yo estoy de tiempo,
+porque esta vez, como te digo, como estaba con Mudanza, esto y lo otro,
+ya más con Guille, jueves no me pude reunir mucho con ustedes,
+pero la idea es que sea, ahí nos juntamos, y yo me decís, Santi, mirá,
+esta tarea no tengo ni idea qué hacer, lo que me decís ahora, Santi, mirá,
+esta tarea para mí tiene tal cosa, me estoy comiendo algo,
+yo estoy viendo así, tal cosa, para mí tanto, ¿tá?
+Para mí estas tareas, tal cosa, aclarás todas tus dudas,
+y ahí me decís, bueno, está, en base a lo que hablamos,
+pienso que estos son los nuevos puntajes que deberíamos asignar,
+y después me comentás ahí un poco por qué creés el cambio.
+Una justificación muy sencilla, puedo decir, para mí,
+a mí esto no me lleva cinco, no me lleva una hora,
+me lleva más tiempo, o esto a mí me lleva menos tiempo, ¿bien?
+¿Te parece? Arranquemos por la, ah, perdón, ¿qué vas a decir?
+Perfecto, arranquemos por la 193.
+La 193, dice, ¿cuál es la diferencia entre la 191 y la 192?
+El 192, ¿cuál es la diferencia?
+La 192, ¿cuál es la diferencia?
+Ya me acabo ahora con la 191, porque la 192 no es la 191.
+Una 90, la 192 no es la 192, la 192 no.
+Aquí está, así que, bueno, pues,
+a右, la 192, la 192, está el, la 192, está el 31.
+No, no.
+Ahí está, ahí está.
+Entonces, repito, la 192 no es la 192,
+la 192 sí es la 192, el 31 no es la 192.
+¿Va?
+Sí.
+las lógicas, hay un mensaje
+que tiene un log error
+que dice
+user not found
+o por ejemplo, si vos te estás
+registrando
+o cuando creas un usuario, dice
+user already exist
+o algo así, están en los servicios
+en el back office es más fácil
+encontrarlos, porque el back office no tiene
+muchos
+no tiene muchos endpoints
+no tiene tantos endpoints
+como
+como el sitio
+entonces el back office es más sencillo encontrarlos
+pero igual esto ya lo charlamos
+pero lo estoy haciendo
+una repasada, entonces ahí es donde
+yo necesito que vos generes
+esos casos, más que nada para
+el recurso user
+si vos vas a user tenés
+no los de refresh token
+y eso porque ya lo vas a hacer en esos tests
+pero digo para los tests
+que ya están, por ejemplo, el test de login
+el test de crear
+el test de login
+el test de crear
+el test de refrescar token
+el test de logout
+todos esos tests
+de esos endpoints
+los que tengan
+que tiren esas excepciones
+debería haber un caso donde se fije
+que por ejemplo te estás loggeando
+y el user no existe
+que ahí
+no es complicado eso
+porque lo único que deberías hacer es retornar
+simular que el find one
+por ejemplo el user no existe
+simular que el find one
+retorna nul
+entonces ahí el usuario no existe
+y ta, eso
+ojo, capaz que vos ya lo pusiste
+pero con otro nombre
+yo no encontré, esto lo vimos juntos
+porque surgió juntos este problema
+no encontré este caso en particular
+ta, nada de eso
+bien
+estamos ok?
+seguimos?
+perfecto
+el test de regresión
+ahí yo te puse comentarios
+en esa si te puse un poco de comentarios
+y viste que puse
+consultar validación de flujo válido
+porque la idea era esta
+o sea nos juntábamos y validábamos estas cosas
+yo ahí te puse una cantidad de tarjetas
+la idea es que vos pruebes con tarjetas de débito
+y tarjetas de crédito
+que más?
+ta, bueno, los países con prioridad alta
+ya lo hablamos pero creo que estás grabando
+así que podemos decir que
+Colombia, Perú, Argentina
+Venezuela
+si
+, esos son
+capaz que ahí podemos meter Estados Unidos
+España y Estados Unidos
+son los países de prioridad alta
+y después bueno, el resto de Latinoamérica
+prioridad baja
+prioridad media
+y ya después el resto prioridad
+sumamente baja hasta el punto de que no tiene sentido
+correrlo
+ahí cuando vos compras
+por eso te digo que estaba
+no sé que tanto chequeaste el flujo de pago actual
+pero vos podés hacerle un poco de dinero
+vos podés hacer compras con esas tarjetas
+porque nosotros hoy en día no nos estamos contactando
+a la API de Stripe real
+sino a una API de prueba
+entonces vos podés crearte cuentas
+y poner esas tarjetas
+y te va a validar la compra
+pues son tarjetas que Stripe tiene
+para que vos puedas hacer compras de prueba
+en ambientes de prueba
+entonces ahí hay una cantidad de tarjetas
+es más
+algo que tenés que investigar un poquito es
+hay tarjetas de prueba que no son de prueba
+hay tarjetas que fallan
+o sea ya hay tarjetas que fallan
+por ejemplo tarjetas que fallan únicamente
+nosotros tenemos cuando vos compras
+viste que vos seleccionás los servicios adicionales
+entonces nosotros tenemos
+primero el pago único del estado
+donde vos pones el estado y te cobran
+que es el mayor costo
+luego tenemos lo que es los servicios adicionales
+los servicios adicionales tienen
+el costo
+ay me tranqué
+los servicios adicionales tienen
+el costo de
+de pago único
+que es igual que el estado
+lo pagan una vez y listo
+y tienen los costos de suscripción
+las suscripciones
+son cosas que generan
+pagos recurrentes como Netflix
+te va a cobrar todos los meses
+y lo otro es pago único
+entonces ahí
+lo que vos tenés que jugar un poco es esto
+vos podés jugar con una única cuenta
+si querés después podemos hacerlo
+para que te quede claro
+pero va a ser un poco distinto
+la manera de chequear que todo salió bien
+a lo que teníamos antes
+o sea
+cuando vos crees esto
+cuando pagues
+hay dos flujos
+cuando vos pagás
+hay dos flujos
+estaría bueno que lo experimentes
+y juegues un poco en de velo
+con usuarios tuyos
+pero cuando vos pagás
+hay dos flujos
+si tu cuenta ya existe
+te asigna los datos a tu cuenta
+o sea
+te redirige al login
+vos te logueás
+y ves en suscripciones
+las suscripciones que vos tenés
+si tu cuenta no existe
+te va a pedir que te crees una cuenta
+entonces
+el paso de crear una cuenta
+o loguear una cuenta
+me parece que no es la prioridad
+yo te diría que hagas de repente
+un caso de prioridad
+donde creas una cuenta
+y después reutilices esa cuenta
+para chequear las cosas
+entonces lo único que haces es
+completas el paso 1 o 2
+pagás
+y una vez que pagás
+lo que haces es
+te va a redirigir al loguear
+porque la cuenta ya existe
+y ahí vos tenés una tab
+que es suscripciones
+entonces lo que tenés que validar
+es que las suscripciones
+que vos seleccionaste
+están ahí
+ya está
+eso es la validación del pago
+y la fallas
+es obviamente que fallas ahí mismo
+te va a decir
+el servidor falló
+por ejemplo pruebo con una tarjeta inválida
+y el servidor falló
+esta es la parte
+este es uno de los flujos de pago
+que tenemos
+después tenemos flujos de pagos
+adentro del sitio
+pero este es uno de los flujos de pago
+bien
+después
+bueno esto es en cuanto a lo que es el flujo de pago
+la validación sería esa
+saltear un poquito
+lo que es la diferencia de loguear
+y crear cuenta
+o sea tener solo un caso
+donde que pagaste
+creaste la cuenta y listo
+y en el resto de casos
+reutilice la misma cuenta
+y ahí lo que vas haciendo
+es bueno
+reutilizo la misma cuenta
+y pago
+y me fijo que las suscripciones están
+por ejemplo
+yo que sé
+compré voy report
+me aparece voy report
+perfecto
+después
+algo que no está
+pero el sprint que viene
+vamos a agregar un paso
+que te envío un mail
+con la factura
+te digo porque
+probablemente tengamos que hacer
+un pequeño refactor a esto
+que es que te envío un mail
+con la factura
+nada más
+sí
+o sea chequear que te llega el mail
+que también capaz que no lo agregamos
+para todos los casos
+lo agregamos para algún caso en particular
+hacer ese doble chequeo
+porque qué pasa
+los mails no llegan a todas las cuentas
+pero bueno nada eso
+el flujo de pagos es como un flujo donde está
+es interesante porque
+hay que o sea
+lo que sucede por detrás interesante y también
+hacer pruebas en esto y realizar pagos
+acopado
+creo que es una de las partes más copadas del sitio
+entonces entenderla
+genera mucho valor
+y después obviamente que
+vos al ver esto
+los test unitarios los vas a sacar a más fácil
+o eso esperemos
+porque fíjate que
+como vos me decías hace un rato
+yo estimo
+si vamos a sentir errores
+o sea fíjate que ahora vas a tener que bloquear
+los métodos de pago
+vas a tener que bloquear el stripe
+capaz que te sale rápido
+no sé
+entendés
+tendremos que ir probando
+en qué tarea decís eso
+no no no digo para el sprint que viene
+el sprint no
+vamos por campo
+después las historias de company draft
+ahí si vos ves que hay algo del flujo
+que te genera duda
+o una tarea que
+o sea
+o sea
+o sea
+uno tiene sentido
+mirando la lógica del servicio
+y lo que haces
+no tiene sentido
+lo que sea
+podemos hablar de reescribirla
+sacarla
+o mergearla
+o dividirla
+pero la idea de las company draft
+es que son más o menos independientes
+y cada una va en un archivo
+y después las últimas dos
+que yo
+sinceramente las asigné
+pero
+racionalmente
+nosotros llevamos tres días del sprint
+y
+y
+todavía no liquidamos cosas anteriores
+entonces
+no creo que lleguemos a esas
+en el back office y en el sitio
+se agregó dos endpoints
+donde
+no sé si vos
+calculo que sí
+alguna vez te olvidás la contraseña
+y la reseteaste
+alguna vez en la vida
+en alguna plataforma
+te olvidaste la contraseña
+y la reseteaste
+sí
+está bueno
+el flujo que nosotros hacemos
+es el siguiente
+vos cuando te olvidás la contraseña
+vos pones tu correo
+que ese es el primer
+es el test 192
+que existe para el sitio
+y para el back office
+o sea vos pones tu correo
+y yo te envío un correo
+o sea te va a llegar un correo
+te llega un mensajito
+diciendo che
+este es tu código para recuperar
+¿está?
+ese es un endpoint
+que está nuevo en el back office
+en el site
+entonces esos son los test unitarios
+que habría que agregar para ese endpoint
+¿está?
+o sea
+no es tan difícil
+utiliza cognito
+y el repositorio user
+es un poco más de lo mismo
+pero está
+pero no
+no tiene tanta dificultad
+es más
+no tiene muchos
+tantos casos
+y después
+el de confirmar código
+es bueno
+el mismo proceso
+o sea confirmás el código
+y seteás la nueva contraseña
+¿está?
+son dos endpoints distintos
+el primer paso es
+che me olvidé la contraseña
+bueno ¿cuál es tu correo electrónico?
+tanto
+perfecto
+te envío un código
+para que te reinicie tu cuenta
+perfecto
+el segundo paso
+el segundo endpoint es
+envío el código
+que recibí por correo
+y te envío ya la nueva contraseña
+por eso lo dividí en dos endpoints
+porque en sí son dos endpoints distintos
+y
+y es más o menos
+más o menos no
+los mismos textos
+que vas a hacer en un lado
+lo vas a hacer en otro
+¿ah?
+bien
+o sea
+debería hacer eso
+y bueno
+es esto
+esto es todo amigos
+¿cómo?
+ah
+al final el código
+ahí está
+bien
+yo me pegaría
+Sander
+ya te pago
+te paso la reestimación
+por
+por
+la
+sí
+y después
+y si querés
+y si querés
+después
+más o menos
+nos mandás un audio
+comentándome lo que hiciste
+ok
+yo
+lo que te puedo contar
+por ahora
+digo es
+a mí me gustaría pegarme
+a la estrategia
+que vos decías
+siempre
+sí
+sí
+tranqui
+más que tenemos
+tres
+tres
+este
+cosas
+lo que sí
+a ver
+yo generé
+lo que
+más o menos
+entendí
+con la velocidad
+que tenemos
+pero también
+quiero que lo analices vos
+lo mires vos
+la experiencia
+y todo
+y lo conoces
+lo corrigamos
+que no te intimide
+la estimación
+que hago yo
+porque la idea
+es que yo
+de alguna manera
+nosotros
+tenemos que
+yo me tengo que acercar
+a tu estimación
+y vos te tenés que acercar
+a la mía
+también como de alguna manera
+que yo lo estime
+es para que yo me acomode
+a vos
+pero también
+para pincharte un poco
+a vos
+para saber
+si bueno
+a dónde tengo que llegar
+sí
+pero es algo
+que lo hacemos
+entre los dos
+porque este es un trabajo
+entre los dos
+como hablamos
+en un principio
+obviamente
+que además
+de eso
+pueden surgir problemas
+pueden surgir cosas
+pueden surgir cosas
+que están surgiendo ahora
+por ejemplo
+che mirá
+que hay que tener en cuenta
+esto
+que hay que tener en cuenta
+ah mirá
+esto no lo tuve en cuenta
+hasta cuando yo lo estimé
+de repente
+ah yo no lo tuve en cuenta
+¿sí?
+yo porque yo tengo en claro
+más o menos
+también lo que hay que hacer
+pero también
+tengo que acercarme
+a
+tenemos que acercarnos
+a los dos
+¿sí?
+tenemos que llegar
+a un punto medio
+y después
+la idea es que eso
+cada vez vaya bajando más
+sin contar
+los casos excepcionales
+imprevistos
+esas cosas
+¿sí?
+pero venimos bien
+venimos bien
+o sea
+sí
+apegate a eso
+es más
+no me calentaría
+por eso te dije
+el nice to
+o sea
+lo que tenemos que llegar
+el goal
+de este sprint
+es
+liquidar las tareas
+de arriba del todo
+las que
+estamos poniendo
+la prioridad
+la de
+la de validar
+si los usuarios
+existen o no
+y los test de regresión
+y un
+y al menos
+un 60%
+de los test
+de company draft
+unitario
+ah o sea
+es posible
+darle cierre
+a company draft
+pero si no
+al menos un 60%
+yo creo que
+creo que
+en un momento
+en el sprint
+vos vas a agarrar velocidad
+o sea
+yo le tengo fe a eso
+y después bueno
+fíjate
+si querés dedicarle un tiempito
+como te digo
+lo de cypress
+sé que
+sé que la documentación
+es una cagada
+en teoría
+company draft
+y todo lo que vos vas creando
+de test unitario
+no deberían
+tener muchos más cambios
+o sea
+para darte una tranquilidad
+porque ya están aprobados
+por guille
+y ya está
+si
+pero también decirte
+que está
+que puede surgir
+puede surgir
+algún cambio
+pero
+sinceramente creo que
+van a ser más cambios
+como che mirá
+esto no es un bug
+o lo que sea
+como hablamos otra vez
+antes de
+de otra cosa
+si te parece a vos
+más copado
+pasarlos a markdown
+escribirlos en markdown
+lo que sea
+en vez de un doc
+en un word
+y te
+te entretiene más
+para mí es lo mismo
+¿está?
+ahí lo que te propongo
+es literal
+el mismo formato
+porque el formato
+ya está muy
+pulido
+me parece que
+no tendríamos que alterarlo
+capaz que
+podemos debatir
+algún cambio
+pero me parece
+que ya está pulido
+y sería bueno
+una carpeta
+y lo mismo
+una carpeta
+company draft
+la única diferencia
+que te diría
+un readme
+por caso de uso
+¿está?
+así hasta
+queda más atómico
+cada archivo
+este
+porque no
+como
+como vos en el markdown
+es un culo
+hacer índices
+o sea
+se puede hacer
+pero es un culo
+esto
+me parece que
+lo más atómico
+es eso
+o sea
+para darnos
+un hito
+mamá vino
+vino alguien
+mamá
+me parece que
+lo mejor
+es encararlo así
+o sea
+un
+este
+no sé qué pensás
+ahí
+podés echarlo
+echarlo
+fíjate que te queda
+más cómodo
+yo qué sé
+capaz que te queda
+mucho más cómodo
+porque ya tenés
+los repositorios
+ahí
+tenés todo
+en el ambiente
+visual
+y el copilot
+te va ayudando
+pero yo
+el cambio
+que se me viene
+a la cabeza
+es
+es
+todos los
+o sea
+un repositorio
+que adentro
+tiene carpetas
+y por cada caso
+de uso
+es tipo
+caso de uso
+uno
+el título
+uno
+guión
+el título
+y adentro
+tiene el formato
+y listo
+yo qué sé
+digo
+lo que te quede
+más cómodo
+capaz que hasta
+podés hacerte
+dentro de ese repositorio
+un script
+que ya te cree
+los templates
+y vos le decís
+créame 50 casos de uso
+y te los crea
+y después le cambias
+los nombres
+capaz que podés
+hacer un repositorio
+que es
+un comando
+que le pones un nombre
+y ya te crea
+todo el template
+del caso de uso
+todo lo que vos puedas
+optimizar
+está bien
+lo que yo digo es
+no podemos pasar a Cypress
+por un tema
+de que no hay tiempo
+no hay tiempo
+no hay tiempo de chequeo
+yo tendría que ponerme
+a chequear todo eso
+como lo hagamos
+vos pensá
+la curva de aprendizaje
+que venimos pasando
+con los test unitarios
+donde vos estuviste
+un mes entero
+puliéndote en código
+antes de entrar
+o sea
+no da
+estamos a
+dos meses
+de salida de producción
+no da
+pero todo lo que vos puedas
+optimizar para esos
+markdowns
+o lo de Word
+bienvenido a ser
+¿sí?
+o también las propuestas
+de cómo encarar
+mejoras para eso
+ahí
+nada
+eso
+así que bueno
+me mantenés al tanto
+hoy no hay problema
+si tenés que terminar
+antes de las nueve
+y eso
+pero que sí
+anda avisándome
+yo voy a ir mirando
+desde el celular
+y voy esperando
+tus mensajes
+de date
+¿sí?
+hoy
+es la despedida
+de la consulta
+tengo que ir
+porque se va el lunes
+tranqui
+no pasa nada
+esto
+yo voy a cancelar
+la daily
+porque ya me reuní
+con ustedes
+bien
+así que bueno
+pero si anda
+pasándome un date
+de todo lo que vas haciendo
+así yo mañana
+o hoy de noche
+si tengo que chequear
+si tengo que chequear
+algo intento
+si es algo urgente
+o veo que es algo
+que vale la pena
+lo voy chequeando
+el celular
+y si no hay de noche
+me siento tranquilo
+a ver todos esos progresos
+¿está?
+bien
+ok
+bueno
+¿cómo viene?
+¿viene bien?
+¿lo desmotivó
+un poco
+el tema
+de los documentos
+o qué pasó?
+me desmotivó
+bastante
+encontrar ahí
+ese error
+que no puedo resolver
+a último minuto
+ya estaba terminado
+todo
+y ese error
+del last unknown
+siento que me cambia
+todo el archivo
+no sé
+o eso
+presiento
+que no hay solución fácil
+no sé
+siempre pasa eso
+o sea
+está terminado todo
+y surge algo
+y después
+no sé
+sí
+es que deberíamos usar
+un tipado
+más correcto
+para el backend
+yo soy un poquito
+más estricto
+en el backend
+pero bueno
+está a ver
+no es prioritario
+está
+el tema
+que ya
+un doble casteo
+yo prefiero
+que pongas
+hasta any
+directo
+antes que un doble
+casteo
+parece súper peligroso
+o sea
+pero bueno
+está
+es como que
+no le tengo
+tanta confianza
+a JavaScript
+prefiero directamente
+que digas
+esto es any
+y tengas que verificar
+todas las putas
+variables
+que saques de eso
+antes de un doble casteo
+pero bueno
+este
+nada
+a ver
+Kike
+tranquilo
+lo importante
+yo lo que necesito
+es que vos sigas
+metiéndole
+y trabajando
+vos venís trabajando
+que tanto Guille
+como yo
+en ese sentido
+estamos súper contentos
+tenemos que
+tenemos que tener
+la meta
+en la B1
+y después
+en tu tiempo libre
+tenés que meterte
+con Cypress
+a ver si podemos
+optimizar
+esos casos
+reautomatizar
+sí
+chao
+a mí lo que me gustaría
+es que antes
+de hacer una
+algo con Cypress
+hagamos pruebas
+de concepto
+tipo
+POC
+o sea
+antes
+antes de que llegue
+diciembre
+o
+o sea
+o durante diciembre
+cuando estemos
+ya salidos
+de la producción
+me interesaría mucho
+que usted vaya haciendo
+pruebas de concepto
+ahí
+¿cómo se crea?
+pero
+la diferencia
+que ya lo puedes hacer
+con el repo real
+con el sitio real
+bien
+bueno nada
+aquí que lo dejo
+porque tengo que sentarme
+a comer
+y tengo que reunirme
+con Martina
+después
+y tengo que hacer
+la mudanza
+en el camioncito
+abrazo
+bueno hasta luego
+abrazo
+gracias
+chao
+por la info

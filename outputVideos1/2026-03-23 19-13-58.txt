@@ -1,0 +1,77 @@
+aquí que pudiera encontrar algo no yo no podía encontrar nada todavía negativo vieron que está
+vamos a hacer una cosa que es muy raro pero pero pudieron generar el mismo problema que yo no está
+cambiando el evento del vídeo el evento de estudio camino camino a ver en si él es cuando cambia el
+esposo para el estado en esos casos se está enviando el evento se vea siempre al worker
+y recibe una transacción así que anda bien si lo estoy cambiando de vídeo y me están llegando los
+mails no entiendo realmente creo que la pista está en que vos decís que en un momento funcionaba o
+sea funcionaba y ahora no o sea que tiene olor a doble s o algo de eso no no no el
+código
+lo raro es que es el único mail que no me llega a vos vos probaste digamos generar el evento
+directamente en sns y te llega o por todos ambos si vivió también a qué correo te llega
+bien si es un outlook incluso estás probando sólo con mail y neto no tengo las dos cuentas
+la de santi arrojaban
+más bien lo que me llegan solo de contar party de party socesa de poder parte de los
+críos en el chat voy a fijar en él me llega hasta el team mente incluso que es un gmail
+cuando genera el evento del vídeo
+y eso sí pero te llega el desacceso y compite si fondos recibidos correctamente tu operación
+fue completada con éxito la cara te llevo cambiamos nada así es raro es más yo del
+viernes también tengo los otros mails que estuvimos probando eso lo raro y estuve
+mirando todos los completos también puede ser algo importante es que usted le llega cambiando
+el vídeo puede ser algo mío de mi gmail es tanto que enviaron los bloquean no sé
+si cambiaron su cuenta de jonathan y que le llega correcto
+si incluso quise fijarme en el cns
+pero no tenemos permiso para acceder a eso por lo menos yo no tenía pero el de
+deps y el de deps y tendría que chequear eso por las dudas escúcheme vamos a ver si
+andando tan antes no a ver si les está llegando usted ya está puede ser que también con la
+avalancha de mails mi mail de nart o 10.000 puede ser que lo esté bloqueando hagamos una cosa y que
+después de esto que
+quedaba seguir pavos yo tengo los el botón que ya tengo las perlas tengo que
+ser o sea sólo publicar no más perfecto
+y después de la ferre de los botones de botones de accounting y esto o sea la
+alas como es los mails en mobile que eso ya también lo mismo y más temprano
+es más ya le es
+voy a ir mandando lo que le van a caer ahí nos da igual estás ahora no sé dónde
+vamos a tener que salir a probar y bueno aquí dos todo lo de
+bueno quedó todo esto pronto lo de lo de lo de los mails todas esas cosas el selector y
+multiplicador yo ya lo probé
+y me lo voy a poner por que tendría que hacer a mi manera de ver si se puede mirar
+a ver si me lo van a preguntar y si no no lo van a saber ya que no lo tienen en cuenta
+mañana ya mañana de cabeza también si ya me aprobó hace unos minutos lo de el auto complete así que
+eso ya lo tengo para mandar en el site así que mañana lo mandaré después que ustedes lo aprueben y
+que no haya que hacerle ninguna iteración ya lo replicó bien todo en el back office hidro pi y ya con eso ya libero esa pdr también y ya me metí ya estoy de lleno con con esto
+del multiselector
+capaz que ahí me pongo en contacto con
+Nahue mañana para ver
+porque ahí viste que hay como algunos componentes
+y esos son bastante parecidos
+lo que él tiene y lo que yo tendría que hacer
+capaz que se podrían reutilizar
+cosas para no pisarnos y hacer
+cosas dobles
+si, ahí coordina el centro ustedes
+vamos a intentar
+vamos a intentar a ver si
+esto del selector
+a ver si podemos ir sacándolo
+para miércoles, jueves
+ustedes, cuando yo charlen
+mañana para la daily
+pasamos un estimativo
+que podrían pasar la PR
+con esas tres cosas
+en múltiples
+compañías, selección de empresas
+y también tenés el selector múltiple de team
+ojo al gol con eso
+pero son esas tres
+cosas media parecidas, a ver como
+podemos ir con eso, y que si podés quedate
+5, Jonah, nos vemos
+nos vemos, cuídense
+y que donde estás
+donde estás
+escuchame una cosa
+tengo tareas pero necesito pensar bien
+que te voy a dar
+así que lo que te voy a pedir es lo siguiente
+necesito que vos

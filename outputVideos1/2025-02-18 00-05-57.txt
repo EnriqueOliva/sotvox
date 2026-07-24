@@ -1,0 +1,378 @@
+como quieras.
+Bien.
+Ahí están viendo Shira.
+Sí.
+La idea es
+que en realidad son tres tareas.
+Para, Marta,
+¿pareciamos tu PR?
+Sí.
+Ah, bien.
+Son tres tareas
+que tienen que ver
+con declaraciones.
+La primera es
+esta que está acá,
+que básicamente es, ¿qué pasa?
+Ahora yo creé tres tablas
+nuevas.
+Una se llama Commercial Activity Codes,
+que básicamente tiene
+una lista de códigos
+de actividad,
+que
+están acá en este link.
+Es un documento
+que me pasó Guillermo.
+Y básicamente lo que tiene son todo un listado de códigos
+con cierta descripción
+o título.
+Y tal, la idea es poder pasar esto
+a la tabla, o sea que cada
+fila de la tabla
+sea un código
+y son
+unos dos mil y algo de códigos.
+La idea de esto es tenerlos almacenados acá
+porque después
+en el flujo de declaraciones
+hay una parte que hay un drop-down
+que te pide seleccionar un código
+y la idea es ya tenerlos precargados, digamos,
+y que el usuario
+pueda seleccionar ya esta lista
+que existe.
+Bueno, y ahí después hay otra tarea
+relacionada que tiene que ver con cómo manejar
+el tema de obtener esos códigos
+y eso de la base de datos.
+Pero en principio esta tarea
+es a partir de esa lista
+pasar esos códigos
+a la tabla
+y vas a ver
+que en la tabla mismo
+los tres atributos más importantes
+van a ser el code,
+que es el código, el número.
+Después hay dos
+atributos más que son el title
+y que básicamente
+uno es la versión en español
+y el otro en inglés
+de el nombre, que en este caso ponele
+acá yo pongo un ejemplo cualquiera
+que tenés el 11 como code
+y esto sería el title.
+En la lista están en inglés
+si no me equivoco, ¿sí?
+Así que habría que pasarlos al español
+pero ta, la idea es tener ya
+todas esas tres cosas ahí
+almacenadas
+en base a esa lista.
+Esta sería la primera tarea
+y
+esto es en el site.
+Después, bueno, hasta ahí
+no sé si tenés alguna pregunta.
+Sí.
+Mm-hmm.
+O sea, vos tenés que hacer una migración
+que básicamente lo que va a hacer es agregar
+las filas que contienen
+esos
+esos códigos
+donde cada uno va a tener que agregar
+por cada
+acá, por cada entrada de este archivo
+vas a tener que poner, ponerle el 11
+va a ser el code
+y esto va a ser el title.
+En inglés y en español.
+Y eso así con todos.
+Y en realidad la idea de eso es correr esa migración
+y que se genere automáticamente en la base de datos.
+Es simplemente un archivo de migración
+en realidad lo que tenés que crear.
+Pero, eh, ahí la, eh, ajá.
+Ahí tenemos el docker con,
+el tablaje que habíamos hecho un docker con Fold.
+Ahí la idea, Kiketo, es que vos
+no te conectes a la base de datos de dev
+porque si no la, la podemos romper toda.
+¿Sí?
+Si no que que te conectes con el docker.
+Con el docker compose a esa instancia.
+Levantar todas las migraciones y correr el docker compose.
+¿Tá?
+Y fijarte que se inserten todos esos,
+todos esos registros.
+Eso es lo que...
+No sé si te acordás lo de docker compose
+si no estudiatelo un poco y si querés lo vemos juntos.
+Pero lo importante es que en el .en
+vos no podés seguir apuntando a la base de datos de producción
+ni de, ni de stage ni de desarrollo.
+En realidad lo único que tenés es la de desarrollo.
+Si no que deberías apuntar a una base de datos local
+que levantás con el docker compose
+luego de correr todas las migraciones.
+¿Tá? O sea, ahí vos corres todas las migraciones
+y después creás la tuya.
+La tu migración va a ser, si vos vas adentro de
+de service migration,
+hay archivos de migración.
+Lo que tenés que hacer es crear uno que lo que haga es una query
+en la base, ¿cómo se llama, Marto?
+Commercial activity code.
+Lo que tiene que hacer es
+insertar todo eso con el formato que tiene Martín.
+Y vos tenés que validar que a nivel local esa migración anda.
+Una vez que valides eso, vas a hacer un commit.
+Y bueno, una vez que estemos en develop,
+nos fijaremos en develop a ver si anduvo o no.
+Pero en teoría, si te anduvo local, debería andar en develop.
+¿Algo que agregar ahí, Marto?
+O sea, lo importante es que vos no podés correr esto en develop.
+Porque si no, ponele que vos le erraste algo o lo que sea
+y tenés que hacer un rollback o lo que sea, estamos en problema.
+Vos esto tenés que correrlo en una base de datos copia.
+O sea, cuando nosotros probamos las migraciones
+y es una migración muy jodida,
+hacemos lo del docker compose que debería estar en readme.
+Que en realidad lo único que hace es levantar una base de datos de pogres
+y vos te conectabas a esa base de datos.
+Ese es a la mierda, se quedó sin voz el click.
+Bueno, es...
+Eh, OK.
+Está, si no hay más dudas de esto, paso a la siguiente.
+A esa ya asignásela aquí, quieto.
+Así ya le queda.
+OK.
+Todo esto es prioridad número uno.
+Sí, sí porque es declaración.
+O sea, pasa a ser prioridad número uno.
+Lastimosamente hay que hacer pausa con los otros.
+OK.
+Después la siguiente es...
+Voy a ir con esta, que es similar.
+Que nada, esto es otra migración.
+Es lo mismo, pero es otra migración para agregar los códigos de países.
+Esta es otra tabla que también creé,
+que se llama Countries.
+Básicamente es una lista de códigos de país.
+La idea de esto es lo mismo que en esa tabla Countries.
+El atributo Code, en este caso, corresponde al código del país,
+que es esta lista que está acá.
+Y tenemos también un atributo Priority que corresponde a si el país debería
+listarse entre los primeros o no.
+O sea, la finalidad de esto es porque también es un drop down que se muestra
+en el flujo, en una parte del form, y la idea es que nosotros tengamos,
+como arriba, o sea, al principio de la lista, tener como una serie de países
+que van a ser como prioritarios, o se van a mostrar primero,
+y después el resto de los países.
+Entonces, el atributo representa eso.
+Y en este caso, si debería mostrarse entre los primeros, tendría que tener un 1.
+Y si no, debería tener un valor de nul.
+Es como lo definimos.
+Y acá, la lista de países prioritarios son estos.
+La idea es que estos tengan justamente el 1, y el resto va a tener todo nul.
+Después, la lista de códigos de países es esta que está acá.
+La idea es solo tener estos códigos en el atributo Code, así como están, y ta, y la
+prioridad.
+Nada más.
+Pero, en cuanto a lo que hay que hacer, es básicamente lo mismo que el anterior.
+O sea, una migración, se corre, pero no es nada tipo a nivel de lo que es el código,
+ni lógica, ni nada.
+O sea, es simplemente una migración.
+Y acá, no sé si hay algún comentario.
+Ok.
+Ya te lo asigno.
+Ok.
+Y después, el otro que queda, este sí, ya es la parte de backend, es crear un endpoint
+para obtener los códigos de actividad con límite.
+Esto, volviendo a los códigos de la primera tabla, básicamente es como la parte de poder
+obtener esos códigos, una vez que estén en la base de datos.
+La idea de esto es que los códigos de la primera tabla, básicamente es como la parte
+de poder obtener los códigos de la primera tabla.
+La idea de esto es que se cree un endpoint que tenga, bueno, este nombre acá, sea un
+get, y esta es la ruta.
+Después, que tenga dos queries, dos parámetros queries, que básicamente uno es limit, los
+dos son opcionales.
+El primero es limit, que esto va a definir la cantidad máxima de resultados a retornar.
+Si no envían este valor, por defecto toma 30, y el límite máximo igualmente lo permitimos
+hasta 100.
+No pueden, son limit, no pueden ser limitados.
+El segundo es limit, que esto va a definir la cantidad máxima de resultados a retornar.
+Si no envían este valor, por defecto toma 30, y el límite máximo igualmente lo permitimos
+hasta 100.
+No pueden, son limit, no pueden ser limitados.
+Entonces, te mandan un 101, no se puede.
+Después, el code, también es opcional, y bueno, si se proporciona te retornarán los
+códigos que comienzan con este valor.
+Y si no se proporciona, devuelve ese valor.
+Siete y medio.
+Lo que se manda acá de limit
+En códigos aleatorios
+Acá lo mismo
+Si no te dan el limit
+Sería 30
+Básicamente te guías por lo que es limit
+O si no es 30
+Sería como esa condición
+Y después
+Una cosa a tener en cuenta es
+Que este endpoint requiere
+Usar el iconito middleware
+Y la idea
+También es implementar
+Algunos test básicos
+Para probarlo
+Y después en cuanto a lo que
+Retornaría
+Sería una lista de códigos que cumplan con la condición
+Por ejemplo, start, switch
+Y el código que te llega
+Y los códigos se devuelven
+Ordenados por longitud
+De menor a mayor
+Y acá una cosa importante a tener en cuenta
+Es que el orden se aplica
+En lo que es los archivos del repository
+A nivel de base de datos
+No una vez que obtenes la respuesta
+O sea
+Por ejemplo
+No es que vos obtenés
+De la tabla
+Los códigos
+Y los ordenás
+Por ejemplo con un for
+Sino que vos
+Ya en la query
+Que haces a la base de datos
+Deberías ya tratar
+Ese orden
+Digamos de los datos
+Y hay un ejemplo
+Para tener tipo de ideas
+Los códigos
+Si son tipo de este estilo
+Si vos recibirías
+Acá sería el input 92
+Por ejemplo
+La idea es que
+La respuesta sea en este estilo
+En este orden
+Y a su vez teniendo en cuenta
+Que en sí lo que retorna
+Es una lista que contiene objetos
+Con la data de cada código
+En ese orden
+No es que te devuelve solo los códigos
+Sino que te devuelve un objeto por código
+Con toda la data
+De lo que es la base de datos
+Y tal
+Un ejemplo de uso nomás
+Como para ver
+Como sería con los query params
+Y tal
+Básicamente es eso
+Son dos migraciones
+Y un endpoint
+Este
+Pasa a ser prioridad 1
+Frente a cualquier cosa
+¿Querés que le ponga acá
+Prioridad alta
+O no estamos usando esto?
+Sí, ponele si querés
+Como para que quede registro
+Pero en sí
+Lo importante es que
+Está
+O sea que quede muy claro
+Que esto
+Quique es
+Es prioridad number one
+O sea
+No hay nada más prioritario
+Que esto
+Ahora
+O sea que necesitaríamos sacarlo cuanto antes
+Esto va contra dev
+Contra dev
+Así que
+Si querés hacer las dos migraciones
+Capaz que recomiendo
+Que ataques primero lo de la migración
+Envíes una pdr con la migración
+Una vez que la migración esté pronto
+Seguir con el endpoint
+Porque el endpoint en realidad
+Vos al tener la migración ya hecha
+Ya una vez que esté en dev
+Vos el endpoint ya podés probarlo
+Con datos que ya tenés en dev
+Entonces yo iría
+Primero con el endpoint
+Con los dos
+Y después con el otro
+Pero bueno
+Y Tai
+Respecto a
+Cualquier duda que tengas
+Quique
+En cuanto a la implementación de esto
+Nada
+Avisa nomás
+Hay ejemplos
+Si querés mirar
+Hay ejemplos ya hechos
+En los repository
+Que usan
+Queries por ejemplo
+Del estilo para ordenar
+Pero nada
+Igual si te surgen dudas
+O lo que sea
+Consultá nomás
+Y Tai
+A mi lado creo que es eso
+Si no hay más comentarios
+No hay más comentarios
+No había ni duda
+No
+No
+No laburá
+No laburá
+No pero si es lo que te decía
+Transacciones y relaciones
+Es como la prioridad
+Más allá que Guillermo quiere
+Sacar algunas cositas más
+Es como la prioridad number one
+Si
+Entonces es
+Vamos a Rook
+Hay cualquier duda consulta
+Escribís en el grupo ahí con Martu
+Lo que sea
+Es para Martu esto
+Más allá que yo voy a usar alguna cosita
+La verdad es que no tengo nada más que decirte
+Bueno
+Nos vemos pronto por ahora
+Y que cualquier cosa me pegás el grito
+Yo igual ahí te dejé comentarios
+Pero esos comentarios
+En pausa
+Y vamos con esto
+También con respecto a los puntos
+Son puntos iniciales
+Después los podemos actualizar
+Bien
+Cuídese
+Buen fin de semana

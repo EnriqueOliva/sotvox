@@ -1,0 +1,859 @@
+Buenas, buenas, buenas, buenas, buenas, buenas, buenas, bueno, nada, antes de arrancar con la daily quiero hablar un tema importante y delicado con ustedes, ahí uno se, ponemos a que Martina entre un poquito, ahí, bueno, bien de bien,
+quería hablar un tema importante y delicado, que bueno que ahí se unió Martu también, para así puede estar, este, nada, nosotros venimos trabajando hace bastantes meses, venimos teniendo reuniones, este, y nada, lo que pasó la última vez, este, no puede volver a ocurrir, entonces, este, nada, quiero que estando todos acá presentes puedan hablar con Gastón y le diga que no vuelva a ser nunca más
+el baile que hizo, nada, este, nada, se cagaron, eh, les tembló el culo, buenos días, buenos días, cómo andan, andan bien, bueno, bien, este, bueno, cómo andás Kike, estás en la vuelta, nada, por ahora no hay despido, no hay malas señales, nada, nada, respiren un poco, respiren un poco, eh, bueno, viste, es el shock de adrenalina del lunes temprano, verdad, este, claro, claro, ahora ya sabes cómo en la tarde sacas
+diez tiques, todos los diseños, todo, quedan despertitos, ya ni, ni comer, me decís, ¿está? Igual, mirá que iba en serio, Gastón, eh, ojo, no sé qué están tramando vos y el otro Ramiro, pero cuidado con eso, bien, este, ¿cómo te fue Kike, todo bien?
+Sí, todo bien, muy bueno, la verdad, primera vez que viajaba, así que, todo nuevo para mí.
+¿Pisaste la nieve?
+No, no, nevó en Bariloche antes de que yo fuera, no, era otoño, o sea, todo otoño, igual que acá.
+Pues todo bien, digo.
+No, no, no, no, acá, acá, acá, acá, acá más, este, vas a tener que esperar el año que viene tomarte licencia porque está, no te quedan más diez, pero bueno, empecemos lo positivo, ¿está? Este, hay que trabajar nueve horas, horas extras, esas cosas, viste, bueno, alegremosnos, ¿está? Bueno, bien de bien.
+No, mirá, ha pedido de los chicos ahí también, lo charlamos, pusimos en el random una para votar.
+lo que es el día de la juntada
+Gastón nunca podía
+después el otro, no sé, Jonathan
+también, que no sé qué, que yo no
+vengo, que la complica
+entonces, este, nada
+pusimos ahí unos días, por lo que estoy
+viendo, la opción
+es
+está complicado, dice 6-5
+la opción es la 5 que es el
+sábado 6 de junio
+¿está?
+así que bueno
+igual vayamos viendo, si surge alguna otra fecha
+lo charlamos
+¿sí? bueno, ahora
+sí, dicho todo esto, viendo
+los despertados, vamos con la de él
+bueno, bien de bien
+nada, de mi lado
+estoy atacando dos frentes
+tengo dos cositas para que estoy
+atacando, una es el
+refactor de Stripe, ¿sí?
+tenemos que hacer un refactor ahí
+con los métodos de pago, Martina me va
+a estar dando una mano con eso
+que es importante
+y lo otro es
+la sincronización de los archivos
+¿está?
+de los archivos, de las transacciones
+lo que hablamos la otra vez
+un croncho para poder quedarnos tranquilos
+de todas las transacciones que están al día
+y poder, en otras palabras, dormir tranquilos
+¿está?
+asimismo mandé una PR con el tema
+de los decimales, ¿está?
+mandé PRs a todos los sitios, ¿está?
+que lo estuve trabajando
+la idea a partir de ahora es hacer las sumas
+y todas las cosas con los decimales
+no me estaba dejando enviar
+la riqueza Copilot
+no sé si a ustedes les pasa
+también
+ahí, justo ahí que Martu dejó
+a ver si ahora me deja
+no, sigue sin tirarme la riqueza Copilot
+y tengo el plan, pero no
+tengo el plan PRO, pero no sé si a ustedes
+también les pasa
+este
+a mí la opción me salta, ¿eh?
+si podés a mis PRs
+tirarle una iteracioncita
+de Copilot, te agradezco
+me está saltando y viste que ahora
+por el tema de los tokens
+y la subida de
+¿cómo se llama? de Cloud
+y también de
+de chat GPT, cambiaron la modalidad
+y no sé, yo igual
+fui a contratar el PRO más
+para hacerlo y tampoco me dejó
+o están bloqueados, así que Yonah
+si podés darme una más, por lo menos una iteración a cada una
+ahí lo asigné
+y ya está laburando
+está, sí, serían las cuatro esas que son
+medias clave
+y bueno, está, eso
+bien de bien
+bueno, voy a estar con eso de mi lado
+Kike, no sé si te pudiste poner al día
+contato ahí, comentá un poquito
+sí, me estuve contactando
+con Fernando, con Yonah y con Abuelo
+¿se fue de vacaciones?
+¿otra vez?
+no volvió todavía
+¿qué decís, Abuelo? lo saco
+lo saco
+pensando que lo corré
+bueno, vayamos contigo
+Yonah
+bueno, yo
+estuve poniendo al día
+todas las PRs que tenía
+con lo del security check
+actualizando ahí todo para que
+con las que habían fallado el viernes
+para que quedaran bien
+estuve corrigiendo la PR de Nahue
+del club de los backoffice
+ya les dejé ahí unos comentarios
+que me había quedado pendiente del viernes
+y nada, ahora estoy subiendo
+la PR de unos ajustes
+de las tablas del backoffice
+y haciendo la PR también de los
+del refactor
+de los CSS de los componentes
+que ya estuve testeando y eso
+y no se rompió nada
+así que ya estoy grabando los videos
+y subiendo eso
+también, el refactor de los componentes
+de solo estilo
+también es que cumpla con el diseño
+ahí ya no me acuerdo que hablamos
+por ahora es
+que cumpla solo con el tema
+de los tokens
+o sea, que use las mismas variables
+que no tengan así tipo
+números randoms
+bien, perfecto
+o sea, y había diferencia ahí
+de 3, 4 pixeles
+que eso estaba lo que medio
+que me preocupaba
+pero la de las variables
+ya está mergeada en el site
+no, esa todavía no
+o sea, yo esta de los componentes
+la saqué de ahí
+habíamos dicho de
+de sacar
+te acordás que yo tenía un par
+que tenía en el número 0
+pero
+que eso ya lo volví
+ya lo corregí
+lo volví a mandar
+pero quedó ahí pendiente todavía
+mandalo ahí en el channel
+con Martín y conmigo
+así lo revisamos
+o así
+esas son bolazos
+se mergean
+sí, dale
+y está
+y después vas a seguir
+con los componentes
+¿qué más teníamos ahí?
+yo creo que
+tenemos
+¿sabés qué tenemos, Jona?
+además de la charla
+que Martina va a estar trabajando
+en el cron shop
+tenemos
+tenemos el tema de
+ya mergeamos también
+si no me equivoco
+los que es el refactor del modelo
+con el stripe ID
+sí
+sí, del site sí
+falta lo de los otros repo
+la actualización de los modelos
+de los otros repo
+que yo ya sincronicé
+todo con dev
+¿no se hizo?
+no
+hay en algunos repos
+que no
+o sea
+en el worker
+ya la tengo en el extracto
+y ya te digo
+yo creo que están
+creo que Martín
+que están en todos
+¿no?
+el security check
+sí, justo iba a mandar
+un mensaje
+logré
+para que
+pero los modelos
+la actualización
+de modelos de Jona
+sí
+no
+en el
+en side drop
+y está todavía
+o sea
+está la PR
+sí
+sí
+pero no veo
+la PR
+PR
+ah, acá
+sí, actualización de modelo
+de company additional service
+selected plan
+con el stripe ID
+y teníamos que sincronizar
+algo
+Martú
+creo que está todo sincronizado
+¿no?
+a ver
+Bacofi
+a la puta madre
+Bacofi
+Wordpress
+hay drop
+el Bacofi
+tiene acá la 23
+y si voy a dev
+está
+drop
+y creo que está
+creo que está
+creo que el viernes
+ya habíamos hecho todo
+en la llamada
+cuando estábamos ahí
+en la reunión
+creo que habíamos sincronizado
+pero ¿por qué no mergeamos?
+no sé
+creo que no mergeamos
+porque faltaba
+lo del security check
+y yo me fui antes
+de que se hicieran
+ah, y no mergeamos
+y no mergeamos
+yo las actualicé
+hoy de mañana
+todas las ramas
+a ver, ¿dónde estás?
+está esta
+y la del Bacofi también
+la del site está mergeada
+¿no?
+la del site está mergeada
+sí
+fue la única que mergeamos
+que era la que tenía
+la migración
+y la de Bacofi
+y estas están todas actualizadas ya
+sí
+exacto
+listo
+yo ahora me las dejo acá
+y ya las
+creo que tienen todas
+el approve de Martu
+o por lo menos un chequeo
+está
+revisé a mi Martu
+y aprobó
+está bien
+genial John
+después
+capaz que
+una vez que termines
+con lo del componente
+sí
+en vez de seguir con los
+o sea
+vamos a mergear esto
+lo que es importante
+es que se mergeen
+los
+los tokens
+y todo eso
+para que también
+para que los empecemos a utilizar
+sí
+este
+eso estaría bueno
+que esos mismos tokens
+los envíes al
+estaría bueno
+¿sabes qué?
+que esos tokens
+ahora cuando los aprobemos
+los envíes a Bacofi
+y ya ahí
+cagamos a Nahue
+pero hacemos que también
+lo empecemos a usar
+¿está?
+o sea si
+por lo menos
+o sea
+¿por qué pasa?
+ahí es solamente
+por lo menos
+que algunos
+los empecemos a usar
+¿está?
+podemos agregar mucho código
+ahí Nahue
+entonces
+capaz que ahí
+podés mandar una iteración
+y decirle que
+que utilice las constantes
+que haya
+¿está?
+tampoco complicar la vida
+tampoco te va a complicar la vida
+pero digo
+este
+creo que está bueno ya
+todo lo que generemos
+de código de front
+que ya empecemos
+a usar esos tokens
+¿está?
+entonces
+enviémoslo al Bacofi
+y que por lo menos
+lo nuevo
+utilice esos tokens
+¿está?
+o sea si podés
+volvés a refrescarnos
+de esa
+y ya
+una vez que la probemos
+mandá la misma
+directo al channel
+de PurriQuest
+con Bacofi
+y después
+antes de seguir
+arreglando diseño
+y cosas
+me interesa
+de tu lado
+Jonah
+que
+te pongas
+con el refactor
+del
+refactor
+A
+de lo que sería
+la barra de navegación
+¿sí?
+más que nada
+es
+es el Drawer
+¿sí?
+y
+o sea
+este
+esto es bastante delicado
+porque toca mucho
+servers
+y renders
+y todas estas manos
+entonces
+este
+ahí
+eh
+eh
+eh
+eh
+,
+Nahuel
+tenía una tarea
+que era para ocultar
+ocultar los servicios
+directamente ocultarlos
+¿está?
+si
+este
+vayamos viendo
+cómo está Nahuel
+porque todavía van a ir surgiendo
+cosas
+de estas PRs
+pero mi idea sería
+Santi ya esos diseños
+están aprobados
+¿no?
+lo de la
+lo del Drawer nuevo
+sí
+sí, sí
+eso está aprobado
+entonces la idea sería
+que empieces a trabajar
+en el Drawer nuevo
+¿está?
+bien
+este
+o sea
+hoy cuando termine con eso
+he trabajado en el Drawer nuevo
+y este
+principalmente
+lo que es
+eh
+hay un refactor bastante grande
+que es en la versión mobile
+donde la idea es que el título
+y el botón de ir hacia atrás
+lo toma arriba
+¿está?
+eso
+eso tiene que tocarlo
+con mucho cuidado
+más que nada
+en la parte de banking
+¿sí?
+en la parte de banking
+hay que tocarlo con mucho cuidado
+la idea es que sea tipo
+mover eso hacia arriba
+pero toda la
+banking
+¿qué pasa?
+cuando vas hacia atrás
+y adelante
+es como que
+va cambiando
+todo con el comportamiento
+padre
+entonces
+habría que hacer
+mucho testeo de eso
+que banking
+no corrompe nada
+y bueno
+también accounting y todo
+pero principalmente banking
+que toda la navegación
+no la tiene con React
+la tiene de forma
+interna
+a mano
+¿está?
+bien
+perfecto
+ahí si querés
+le pedís los diseños a Santi
+nos pasás tareas
+¿bien?
+pues eso
+después probablemente
+el que se
+o sea
+esas son las prioridades
+porque
+ese rediseño
+va a habilitar
+que nosotros empecemos
+a trabajar
+en lo que es el panel
+de notificaciones
+de notificaciones
+de notificaciones
+de notificaciones
+que probablemente
+lo continúes vos
+y Nahue
+probablemente
+cuando liquide con esto
+que no creo que sea
+o sea
+quedan bastantes cositas
+para chequear y rever
+probablemente
+Nahue empiece
+a ver
+lo del chatbot
+este
+que bueno
+ahora vamos a ver Santi
+cómo viene con eso
+pero la idea es
+es que Nahue
+se ponga con eso
+¿está?
+bien de bien
+Nahue
+bien
+yo aproveché hoy
+este
+para iterar un poco
+en el cron shop
+de la asignación
+de
+ejecutivos
+que si bien ya tenía la PR
+había quedado
+como una semana
+y algo
+ahora la mando
+al canal de pull request
+fuera de eso
+aproveché
+para iterar
+sobre los comentarios
+que hizo Johanna
+en la PR del CRUD
+ahí se los voy a mandar
+y aproveché
+para ver una PR
+de Johanna
+también que me faltaba
+revisar
+y después
+lo que me estaría quedando
+pendiente
+es agregar
+el tema
+de la configuración
+de las variables
+en la tab
+de configuraciones
+bien
+si
+IOSCO
+que eso va a tocar
+todo
+o sea
+va a ser que tengamos
+que sacar una variable
+de entorno
+bien
+bien
+perfecto
+bien de bien
+así que
+nada
+eso
+genial
+bueno
+es
+Nahue
+Santi
+¿cómo venimos?
+buenas
+¿cómo va?
+este
+bueno
+hoy tuvimos la reunión
+con el equipo
+de marketing
+ahí aproveché
+para ya mostrar
+los avances
+que tenía
+con el chatbot
+este
+en general
+está
+ok
+y ahora voy a hacer
+algunos ajustes
+que estoy
+charlando
+con Matías
+y bueno
+hoy voy a estar
+trabajando ahí
+con esos ajustes
+del chatbot
+después
+¿qué les debemos?
+nosotros
+a ellos
+por ahora
+solamente
+un
+algo
+de Instagram
+de funcionalidad
+pero
+del chatbot
+por ahora
+estamos
+viendo
+los diseños
+y me pidieron
+pulir
+justamente
+unas cosas
+que yo mismo
+les sugerí
+y nada
+y voy a estar ajustando
+eso
+y ahí les
+ya se los paso
+a ustedes
+directamente
+pero quedó
+quedó ok
+del lado de ellos
+más o menos
+lo que les mostré
+y a vos
+a vos
+en particular
+¿qué te vemos Martín
+y yo?
+¿te vemos algo?
+yo quería consultarles
+¿cómo es que va a funcionar
+el chatbot?
+si ustedes tienen idea
+de
+porque yo había colocado
+en los diseños
+un
+cosa que te muestra
+si está en línea
+el chat
+y
+No, no saca la mierda
+eso
+a mí me dijeron
+como que va a estar
+24-7
+eso activado
+y que probablemente
+no tuviéramos
+status
+mira
+la idea
+es la siguiente
+pero como recién vino
+de licencia
+no lo quería arruinar
+Enrique va a estar
+siempre ahí conectado
+porque está
+nos salía caro
+hacer toda la integración
+la idea que Kike
+esté ahí conectado
+y pueda resolver
+todo
+y ya que se está riendo
+también
+vamos a poner a Nahue
+ahí también
+con eso
+Nahue va a cubrir
+los sábados y domingos
+así que
+no, pero hablando en serio
+va a estar 24-7
+o sea, no tiene sentido
+lo que sí sabe
+es que podemos hacer
+tipo un pensando
+o alguna cosa
+mientras que respondemos
+tipo
+alguna especie de
+creo que estaría muy lindo
+hacer una animación
+mientras que va respondiendo
+tipo como
+como que está escribiendo
+o algo
+como que
+que dé la sensación
+lo más humana posible
+bien
+eso
+este
+es un mensaje
+un mensaje
+entonces
+vos envías un mensaje
+y se te bloquea
+pensás
+pensá lo siguiente
+también ahí Santi
+vos envías un mensaje
+se bloquea el teclado
+no es que podés enviar varios
+¿está?
+no es como
+no es un chat humano
+en ese sentido
+entonces
+vos envías un mensaje
+y es como que se te bloquea
+y está pensando
+¿está?
+no
+por como está diseñado
+hoy en día
+no podemos darle a entender
+que vos podés enviar
+10 mensajes
+y te van a responder
+los 10 mensajes
+¿está?
+bien
+sí, sí
+como
+como Chacho y ti
+viste
+te frena cuando estás
+después de enviar un mensaje
+literal lo hace
+exacto
+literal lo hace eso
+porque hay un modelo
+atrás que está
+pensando
+entonces
+no le podés tirar 10 cosas
+porque te va a tirar
+10 mensajes
+¿está?
+perfecto
+bien de bien
+está impecable
+bueno
+bien de bien
+Gastón
+¿qué te vemos a vos?
+¿cómo venís?
+cuéntame
+bien
+yo estuve
+trabajando
+en el
+en el flujo
+de configuración
+ajustando unos cambios
+que me había pedido
+Santiago
+eso ya quedó
+ajustado
+y
+y Santiago
+lo aprobó
+así que
+se lo pasé
+a Design
+para que
+para que lo
+lo vean
+cuando puedan
+a su vez
+también le pasé
+les pasé a ustedes
+también lo de notificaciones
+para que vean
+ese flujo
+y
+por último
+estuve trabajando
+en
+en una
+presentación
+que me había pedido
+Luciano
+que nada
+eran unos ajustes
+que ya quedó
+terminado
+y
+ahora
+estaba
+,
+terminando unas cosas
+de marketing
+que me habían pedido hoy
+para sacar rápido
+pero nada
+me puse a hacer eso ahora
+mientras estaba esperando
+a que revisen
+estos flujos
+para ya
+seguir trabajando
+en
+como es
+en tablet
+y mobile
+en la parte
+de configuración
+bien
+dos cositas
+ya te lo comento
+con respecto a
+bueno
+lo vemos ahora
+como posconfiguración
+ahora
+vale
+bueno
+vamos a ver
+bueno
+vamos a ver
+además
+de estar
+y
+y
+que
+cualquier
+persona
+en
+master
+planea
+hoja
+que
+muchos
+sientes
+que
+este
+último
+trabajo
+mucho
+y
+te
+like
+es
+muy
+bueno
+gracias
+a todos
+nos vemos
+en el próximo
+truco
+chau
+chau
+chau
+chau
+chau
+chau
+chau

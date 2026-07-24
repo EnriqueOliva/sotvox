@@ -1,0 +1,606 @@
+As for now, everyone's going to run around this track ten times.
+Every time you pass this line, that counts as a lap.
+You're going to do it ten times to equal to your mile.
+You understand?
+Yes, sir.
+That does not sound like everybody.
+Do you understand?
+Hey, once you're done, you're going to stop at this line.
+You understand?
+Yes, sir.
+Yes, sir.
+Go, run, run, run.
+This is so much fun.
+Oh, looks like we lost a soldier.
+All right, I did ten laps.
+Red comms, red comms.
+Everybody, shoulder to shoulder.
+Now, move it.
+You know, there's an 06 right behind you too, right?
+So if I ask him who spoke, and it's going to point to you.
+That guy looks like he has jaundice.
+So I'm not...
+No, shut up.
+Shoulder to shoulder.
+Move now.
+I don't understand.
+We got Batman.
+I don't know what rank Batman is.
+All right, everybody, plank position.
+Move.
+The more people I hear talking, the more time I'm going to add to it.
+I can make this an hour, and you guys won't be doing...
+You guys...
+You guys won't complete the whole training.
+How about this?
+If you guys want to complete this training and get your ranks, get your ass up.
+Go to the starting line where the starting course is.
+This is my signal.
+For everyone else that wants to be a complete dumbass, stay here and get your planks in.
+Everybody, listen.
+Control face.
+If you don't know what that means, look at me.
+Some of y'all wanted it to act so tough.
+All right?
+So you decided to basically get your rank.
+And continue with the training and not goof off, right?
+So since y'all, some of y'all are Marines, act like Marines.
+I will train you like Marines like I did.
+All right?
+I did five years for it.
+I'm not scared to get you all heartbroken and crying about it.
+Yes, sir.
+Yes, sir.
+I'm an officer.
+Sir, I have a question.
+All right.
+What?
+What rank is Batman?
+He is a VIP.
+Oh, okay.
+So if you guys see him...
+He said begin.
+Let's go.
+All right.
+Fine.
+I didn't say...
+You just said begin.
+I said if I say it.
+If I say it.
+You said it three times, though.
+Okay.
+Everyone else that was listening...
+Who started the...
+Wait.
+Who started the accusation?
+Active military?
+I am in active military.
+I served in Operation Metro.
+Buenas.
+Buenas.
+¿Cómo?
+Buenas.
+Buenas.
+Buenas.
+Buenas.
+¿Qué?
+Buenas.
+¿Qué?
+Buenas.
+Buenas.
+Buenas.
+Síguenos en Twitter.
+¡Gracias!
+¡Gracias!
+¡Gracias!
+¡Gracias!
+¡Gracias!
+Fernando
+estaba estudiando los test
+y yo les comentaba
+por ahora la prioridad
+sigue siendo documentos
+y las PRs abiertas
+que no están relacionadas a esto
+pero si la gente termina con esto
+necesito que
+o sea primero necesitamos
+cuidado de eso por favor
+no puede ser que nosotros
+en los test en este sentido
+no queremos añadir una variación tan delicada
+que no estén
+aplicando el técnico
+porque hablar en concreto
+no están sirviendo
+no es lo mismo que la nada
+no estaba fallando
+pero nosotros tenemos que encontrar un mecanismo
+para poder atrapar eso
+si no al final no nos aporta valor
+si tienen alguna duda
+lo podemos comprar
+o necesitan una estrategia
+pero es importantísimo
+eso, lo básico de los test unitarios
+es que yo cambio el código
+y eso es importante
+que lo prueben
+si yo cambio el código
+no puede ser que no estemos validando
+en realidad lo que estamos haciendo es bokear
+pero no aporta valor
+todo el esfuerzo que están destinando
+ahí sinceramente como uno
+tristemente
+hay que tener mucho cuidado
+con eso y cuando hacemos
+otras pruebas hay que avaliar
+esos casos
+voy, cambio la validación
+vaya
+voy, pongo algo distinto
+tengamos en cuenta eso
+si no al final los test unitarios
+no aportan valor
+entonces ahí terminemos con las declaraciones
+y las declaraciones pendientes
+y después necesito que se pongan a dar una vuelta
+de todo el carácter
+que tengan cuidado para cuando se hagan
+esas cosas
+si no al final vamos a hacer 10.000 test unitarios
+y no aportan valor
+no tenemos nada
+mucho cuidado con eso
+ok
+bueno
+el punto es que
+la pantalla de liquidación
+no es lo que estaba en base
+a eso
+así que
+nosotros
+lo que nos resulta
+la verdad
+el punto
+es que
+la verdad
+es que
+la verdad
+se nos pasó
+esta pantalla
+la verdad
+no sé
+que increíble
+esta cómo se nos pasó
+no podía creer
+lo que se nos haya
+pasado
+en la pantalla
+de liquidación
+para construir ventas
+pero se nos pasó
+un comentario ahí
+el subtítulo de lo que tenemos. Pero después la pantalla va a ser la misma, ya la está
+trabajando Gastón.
+No puedo creer de nuevo que se nos haya, o sea, que no esté en el link, porque un poco
+se nos pasa. Revisamos tantas veces que tantas veces lo hablo y no vimos algo tan obvio que
+estaba faltando a la acción. Igual ahí me hago el error, no puedo creerlo, por favor.
+Dale.
+Bien, bueno, yo estoy viendo las PRs más prioritarias y ahora estoy literalmente armando
+la PR. Tuve que revisar ahí, ya estuve testeando y está funcionando todo. Va a quedar todo
+pronto, pero está más bien limpiando el código y así puedo dejar la PR pronta y
+no sé si va a pasar que no pueda cambiar el componente que creó Gastón.
+Sí, sí, sí.
+Bueno, aparte de subir con rodantes, quita básicamente eso y ya no sé qué es, me voy
+a poner con retiros que debería salir más rápido, con todo esto que tengo de base.
+Vamos a ver.
+Bien, eh...
+¿Cómo, perdón?
+Se te escucha un poco bajo, no sé si soy solo yo.
+Sí, se te escucha bajo.
+Bastante bajito.
+No sé.
+Pero ahí no sé si pudieron poner la PR en la revisión.
+La PR, tickets...
+¿La había visto ayer, creo?
+Ayer.
+Sí, yo hoy de mañana hice, corregí todos los comentarios, todo lo que me dejaron y
+ya la volví a enviar.
+Ya está para corregir de nuevo.
+Hay Martina que se puso en la prioridad, no me lo creo.
+Ahora voy a intentar atacarla, pero necesito que por lo menos vuelva y vaya a esperar todo
+un año.
+Todo ya la miro.
+Todo lo que sea, igualito.
+Ahí está.
+Bien, bueno.
+Eso, hoy de mañana corregí todos los comentarios de esa PR, ya la volví a enviar y me puse
+a terminar todo lo que faltaba ahí de la tabla, conectar todas las tabs con los diferentes
+endpoints.
+Ya quedó todo hecho.
+Tuve que hacer ahí, hoy justo nos juntamos con Nahue, un cachito ahí como para ponernos
+al día bien todo.
+Tuve que hacer unos cambios en el backend del endpoint tuyo.
+Eh...
+Para poder aceptar más de un estado, porque en la tab de transferencia y complete necesitaba
+traerme los dos estados y para no traer todo y filtrar desde el front, modifiqué ahí
+para poder mandarle tipo estado completo, reject o refund y eso, para mostrar en esas
+tabs.
+Y nada, ahora también lo que hice fue agregar el tema del ID en el backend para el tema
+del negociador y el approve.
+Para poder filtrar también por esos.
+Porque estábamos enviando solo nombre y apellido y si habían dos nombres, para poder mapear
+bien el tema de los negociadores y eso.
+Eso ya quedó todo funcional y ahora lo que estaba haciendo era también empezando a limpiar
+un poco el código, ver bien el tema de las constantes, todo como para dejarlo lo más
+prolijo posible.
+Porque está, esto va a ser una PR bastante grande.
+Ok.
+y una vez eso ya quedaría ahí para
+para corregir y faltaría solo conectar las acciones
+la UI de todas las acciones y eso, los modales
+ya estaría, solo faltaría nomás
+conectar los endpoints de las acciones, nomás
+para que quede todo listo
+¿De todas las acciones de esta parte?
+Sí
+¿Sí?
+Sí, yo más que nada para que no quedara
+la misma PR y todo
+si no, si no se podría hacer
+Yo te diría ahí cuando son todos
+si mirás a PR
+trabajás las acciones
+si mirás todas las acciones terminadas
+te vas a tener bastante
+te vas a tener comentarios
+porque una cosa no son libros de tan grande
+Sí, seguramente
+Entonces, este
+nada, pero seguí trabajando
+en las acciones que ya están
+y ahí, nada wey, ya por los flujos
+de liquidation y refunds
+Ahí va, perfecto
+Perfecto, sí por eso, o sea
+también enviás a PR
+para que una web pueda salir
+de esta PR
+con el flujo de refunds y comentarios
+Sí, ya voy a correr
+... y comentarios con sus documentos
+Bien, perfecto
+Quería decir, lo que es importante también
+en cuanto a los, no sé si te expliqué
+para la búsqueda por Customers
+lo que es unir
+y qué es la web
+para salir un ejemplo de cómo funciona el SER
+por Customers
+Lo del SER por Customers, Jonah
+es el Customers ID
+como hemos visto en el RAIL
+Sí, te acordás que arrancaba por
+cast, barra baja
+y le agregaba
+el CryptoBlob al QIB
+Sí, bueno
+Yo una idea es mandar una PR
+Es más, yo te quería dar
+mandar una PR de esa challenge
+para mandar tú y nosotros
+y ni hacer videos
+ni hacer videos
+para poder ir analizando códigos
+te recuerdo que voy a dar muchos códigos
+Sí, está, perfecto
+Lo que tenés ahora
+lo limpia todo
+mandame una PR
+vamos analizando un código
+y después eso
+Martín ahí no le des bola
+a esas pedagas
+Te aviso
+cuando vos tenés que revisar todo
+yo personalmente te aviso
+la idea sería
+que yo pueda revisar todo lo que sea
+y a vos únicamente dejarme
+cuando casi esté liquidado
+como para el reto
+Bien
+No quiere decir que cuando envíe un PR
+no le haga problema
+Eso
+Bien
+Ayer dejamos liquidados los endpoints
+que estaban faltando de parte del backend
+y tal
+como dijo Jonah y nos juntamos a ver eso
+el tema de lo que necesitó
+el ajuste que precisó hacer Jonah en el backend
+por el tema del
+parámetro de status
+fue el endpoint que retorna de las operaciones
+cae básicamente
+lo pasamos de recibir un status
+a recibir un arreglo de status
+que fue similar
+a lo que habíamos hecho
+para la tab de solicitudes
+en la primera tarea que tuvimos
+de los filtros del back office
+eso vas a ver que es igual
+Fuera
+Si en cerrada de operaciones
+se pierden todos
+en status pre
+si vamos a la de finalizados
+son solo reject o complete
+Bueno podemos
+filtrar por uno de los dos
+en realidad vamos a agregar uno de los dos
+si vamos a la tab de
+dependientes
+por transferir
+solo tiene el status waiting point
+y el default
+es importante que lo explicamos consistente
+y el único que podría tener cualquiera
+de estos dos es la tab de
+operaciones
+operaciones ahí va
+Nahue ahí también
+bienvenido para revisar todo esto
+Dale golazo
+Antes de regresar al código
+pero digo si terminás con esos
+sumate acá en la revisión del código
+Dale
+lo otro es lo que estaba
+revisando también ahí lo que
+había comentado Gaston
+Lo que sería el flujo
+de riff
+es así lo mismo
+que lo que está en triangulaciones
+y ahí me surgió una duda
+como se muestra
+como es el tema
+amount y el currency, tanto por parte de lo que deposita DASBANK como lo que deposita el usuario,
+pero lo vemos como postgram. Buenas, ¿cómo va? Ya terminé con los mails de compra-venta y ahí
+se los mando ahora en breves para que los revisen. Continúo con los de triangulaciones, supongo que
+eso ya quedará entre hoy y más tarde, el lunes. Quedarán prontos. Y ahora estaba viendo lo de
+liquidaciones, que estaba trabajando Gastón y me pasó para que lo dichara.
+Bien.
+Bueno, bien, yo ayer y hoy estuve trabajando en la presentación que me había pedido Alberto,
+ya quedó terminada y se la pasé para que la revise. Lo que sí me había mandado, que está,
+esto va a quedar para después de que…
+De que termine de hacerlo de liquidación, es pasar esa presentación a tres idiomas distintos.
+Pero nada, ahora salió esto que me mandó Nahue de lo de liquidación, que básicamente es igual a lo
+que había hecho Santi para triangulación, pero lo dejo en la sección de compra y venta para que se
+entienda bien cómo van a ser los…
+Las monedas y eso. Así que nada, voy a estar con eso y yo les aviso cuando quede pronto, pero
+está. Y después lo otro de devolución es lo mismo.
+Está, genial. Ahí Gastón, ya Gastón respondió por confirmación.
+Bien.
+Ahí Gastón y Santi quedó todo también en dev preview, no? Lo que hacemos en producción. Se quedó todo en dev preview.
+¿Está bien esto?
+Sí.
+Ok.
+Así que lo que vamos a hacer, vamos, vamos.
+Bueno.
+Quedó todo, quedó todo también en dev preview, lo que hacemos en producción. Quedó todo también en dev preview, lo que hacemos en producción.
+Yo en DevReview1 de mi lado no tengo nada porque pase todo a Ready4Dev
+No, no, pero digo los antes consul que me echan el design, los de la columna de aprobados, los de comparte con financiación, los de Martina del estado de cuenta
+El mirando está muy bien, los seguimos pidiendo, están ambos, los de Martina del estado de cuenta están ambos
+Si, si, si, están ambos
+Los míos si están ambos, pero lo bastante bueno
+Un doble check a eso porque después de si no lo volvemos a trabajar en DevReview por lo que sea y queden ambos lados
+Bien
+Bien de bien
+Bien
+Está, y Gastón, la autoridad se fue un poco a Bolivia después
+Y terminás con la presentación, vas a darle una mano con los médicos, Gastón
+Y terminan con los médicos
+Que siguen con la revisión de las maquinarias, la revisión de las maquinarias públicas de la tienda están sobre DevReview por los asesores
+Santi ahí tenemos unas cosas ahí de marketing que nos están pidiendo
+Ah bueno, entonces Santi que la revisión de las maquinarias ya sale de marketing
+Porque si ya están, ya están todas las maquinarias
+Y los mails de compra y venta, mandarlos y ahí acaban llevando
+No quiero que separen lo de Bolivia, pero volviendo a lo que decías con los mails de compra y venta
+Podrías mandarlos y hacer alguna cita de marketing
+Si, no sé que te parece bien, pero eso para mi sería ideal
+Yo ahora estoy trabajando en la parte de triangulaciones, compra y venta se lo envío ahora a ustedes
+Entonces ya tendríamos, estaría trabajando en toda la parte de mails
+Gastón y bien termine con esto del...
+De liquidar operación para compra y venta
+Que eran los ajustes ahí que pidió Nahuel
+Ya se puede pasar a trabajar en esos ajustecitos, son medio rápidos
+Son unas cositas de marketing ahí que nos pidieron
+Para ya liquidar esas cosas
+Y después bueno, si continuamos con lo que quieras
+En orden de prioridad sería los mails de compra y venta
+Una vez que estén esos, ahí a Roben y a Enrique también van a estar dando todo eso de enseña
+A este...
+Ya tanto el grupo
+Serían esos mails
+Después...
+O sea, después está...
+Lo que sería...
+O sea, las traducciones y lo demás
+Ahí después siguen todos los mails de triangulación
+Ahora calculo que lo de marketing esto no debería llevar más que hoy o un poquito desde el lunes
+Entonces ya los de triangulación, los mails de triangulación los pueden arrancar
+Igual de acá al lunes no vamos a tener todos los mails de triangulación
+Entonces ya los pueden arrancar
+Y después sería la emisión del orden de prioridad
+¿Sí?
+Bien de bien
+Por las dudas, de nuevo, las páginas públicas...
+Creo que vamos a ir a producción, pero por las dudas realizan las de...
+Para los últimos años
+Porque puede ser que en producción hagan cosas que todavía no hacen
+Bien de bien
+¿Dato?
+Bien, estuve con lo de los archivos
+Con el F1120
+Estoy terminando de probar...
+Tipo, probar en el sitio
+Estuve viendo lo de S3 y eso
+Creo que ya estoy terminando
+O sea, está la APR
+Estuve hablando con Kike ahí
+Me comentó lo de probarla, probarla
+Entonces saqué todavía...
+O sea, saqué el review de Slack
+Después sí lo mando
+Así que estoy trabajando en eso
+Y creo que no me falta tanto
+Pero está como pesado
+Y después voy a seguir, sí, con lo de los test
+BRS, o bien, qué pasa...
+Es genial
+Ahí antes que los test, Dato, tenemos PRS de...
+¿Cómo se llama?
+Ah, con lo de tu JSON
+¿Hay alguna así?
+No, pero tenemos PRS con lo que les decíamos
+Las PRS que no son tres unitarios abiertos
+Tienen prioridad
+Ok, dale
+Tenés las PRS de gramos y cartas
+Tenés otras PRS de cosas que realmente...
+De cosas que no sabes
+Entonces hagámoslo
+Lo siguiente, en orden
+Primero de documentos
+Que la idea era aprovechar esta oportunidad
+Para que también vos pudieras saber
+Cómo arreglar esto
+Entonces vuelve a pasar
+Ok
+O sea, por eso es que...
+En realidad he trabajado mucho con SS4
+Estuve trabajando con lo que es SS4
+Y lo presenté en la guinda en el rellenado
+Siempre me acordaba que yo había hecho esto
+Igual algún ajuste ya había hecho
+Y la idea es que también sí
+Que algo, documentos
+Poder tener a vos
+También hicimos un referente bastante grande
+Entonces quedó mucho más prolífico esto
+La idea es que también se puedan cumplir
+Lo mismo con los emails
+Que hay que armar
+O sea, que hayan logrado que podamos ir
+Pero ahora el orden de prioridad
+Y esto va para ambos es
+Bueno, primero todo lo relacionado a documentos
+En prioridad uno
+Tiene que ligiarse de alguna manera
+Y segundo después de eso sería
+Todas las PRS abiertas que tengan
+Que no sea un test unitario
+No, terminado eso
+La siguiente prioridad sería
+Ver lo que yo respondo
+Claro
+Bueno, yo estuve trabajando con los documentos
+Ahí ya quedaron los dos mergeados
+Después estuve también con la PR del cronjo
+Que eso, ahí surgieron comentarios
+Y bueno, también hay comentarios de otras PRs
+Nada, básicamente ya lo dijiste
+La idea es atacar todos los comentarios
+De las PRs abiertas
+Y bueno, después ver eso de los test unitarios
+Hay necesidad
+No sé cómo organizarse
+O sea, desde que hemos iniciado
+He documentado lo antes
+Porque ahí es como la prioridad una
+En realidad dos son las otras PRs abiertas
+Una sería el cronjo de documentos
+Es como, no, enfocémonos en eso
+Si tienen alguna duda
+Lo pinchamos
+Y ojo que el comentario
+Para el comentario para el test unitario
+Igual para todos
+Los principios de test unitarios
+No sé, yo sé que a Enrique y Fernando los tocan
+Pero también hay Nahuel y Ollona
+Que es como indignado
+Pero hemos arreglado test unitarios
+Cuando tocan algo
+Para el test unitario
+Entonces es importante eso
+O sea, que tengamos en cuenta
+Que los test unitarios
+Tienen que estar acopilados al código
+Tienen que variarlo
+Que es la lógica que estamos aplicando
+Entonces si algo tan clave
+Nos lo están facilitando
+Está en off-site en un carril
+Bien, bueno
+Veamos hasta dónde llegamos hoy
+La idea hoy sería
+Poder salir a producción
+Para tener mejor compra-venta
+Está
+O por lo menos dejar toda la salida de producción
+Para que se lo haga el fin de semana
+Ahí veremos
+Pero poder intentar salir con el
+Compro y venta
+Declaraciones
+Y bueno, todos los chicos ahí Fernando y Enrique
+Queden para mandar
+Veamos eso
+Y vamos pidiendo como viene la tarde
+Bien, bien
+No sé quién tenía post-cran
+Dos cosas
+Una, la reunión que tiene el DETEC
+Ana le envió a todos
+Muy picada esa reunión
+No tiene que ir nadie
+En realidad lo único que tiene que hacer es sumarse con Tina
+Porque comentamos que se va a sumar
+Así que no tiene que ir nadie
+No
+Tiene que sumarse con yo
+Después a todos les llegó un email con el contrato
+A avisar
+Sí
+Si tienen alguna duda o algo que realizar
+Me avisan
+Insignado directamente
+Lo envían y ya está
+Sí
+Lo que sea montos o cualquier cosa rara
+Pega en el history
+No es nada del otro mundo
+Para todos esos
+Para que tengan idea
+Todos esos mismos contratos
+Varía lo que es
+La fecha de ingreso
+Lo que
+Cualquier duda que tengan
+Lo que sea
+Hacen por privado
+Bien bueno
+Que tengan post-cran sin quedarlo
+Chau, buen fin de semana
+Nos vemos
+Buen provecho
+Chau, chau
+Gracias
+Chau

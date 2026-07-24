@@ -1,0 +1,154 @@
+saque todos los servicios adicionales
+de los test unitarios
+en el backend
+no se envían
+en el backend
+no se envían
+y en el frontend
+en el backend no se envían
+y en el frontend están bloqueados
+para que solo se visualice
+porque para crear un servicio adicional
+yo estoy trabajando en un flujo
+que tengo que mandar ahora pero usted no me deja trabajar
+que ese flujo se encarga
+de enviar
+los servicios adicionales
+vos compras un servicio adicional
+y se crea una especie de solicitud
+se te aprueba y todo y lo podes usar
+pero se crea una especie de solicitud
+¿por qué?
+porque hay algunos servicios que
+se van a dar de alta automático
+¿sí?
+y otros servicios que no
+eso, nada más
+entonces saque
+de todas las perras que tiene
+de
+editar, saque los servicios adicionales
+los servicios adicionales en el editar
+lo único que tienen que hacer en los test de
+regresión
+tienen que chequear que estén bien
+que se visualicen chequeados
+los servicios que compró, nada más
+nada más
+no podés editar, no podés
+agregar a mano que tiene un servicio
+adicional, tiene que pagar
+no podés agregar a mano
+tipo tiene que pagar
+lo que sí podemos hacer es cambiar la ubicación
+y es, ¿por qué?
+yo le di la funcionalidad y le dije a Guillermo
+¿querés que te los agregue así a mano?
+y me dijo no
+porque en esos casos
+hasta donde, si lo quieren dar
+hasta nosotros podríamos
+hacer que lo paguen
+y darles un refund del 100%
+o de mañana hasta darles
+cupón
+o reintegrar, hacer lo que lo paguen
+y reintegrarle todo el dinero
+pero no hay caso
+no se le ocurre caso
+a don Guillermo donde se tenga
+que agregar servicios adicionales
+y con eso forzás también
+porque nosotros también venimos
+trabajando mucho lo que es la comartina
+la programación defensiva
+de alguna manera como que
+si el loco la caga
+o nuestro sistema falla que en la próxima
+acción nosotros nos demos cuenta
+que el sistema falló
+e intente autocorregirse
+es demasiado para usted hasta ahora pero le voy a poner
+un ejemplo, supongamos que usted
+intenta subir un documento
+el proceso de subir un documento
+lleva varias etapas
+supongamos que el documento por alguna razón
+se registra en la base de datos que se guardó
+pero, pero, pero
+no se guarda
+pero el documento
+no se guarda
+¿cómo se llama?
+o sea, no se guarda como que existe
+¿a qué me refiero con esto?
+voy de nuevo, yo agarro el documento
+guardo un documento
+¿sí?
+o sea, creo un documento
+para un partner
+pero por alguna razón no se guarda en S3
+la programación defensiva
+lo que hace es que por más que
+la recagamos y quedó un string
+guardado, o sea, como que tiene
+el documento en nuestra base de datos
+cuando lo vas a visualizar
+el cristiano
+el peruano, el venezolano
+que use nuestra cosa y le da click
+¿está?
+lo que pasa es que yo veo y digo
+¡upa! mirá, no está el documento
+y se ve, perfecto, lo elimino
+¡uf!
+recargo el sitio y automáticamente
+en vez de mostrar el documento le digo
+mirá que el documento no existe
+entonces me autocorrijo un error nuestro
+o sea, es
+el nombre es como una especie de programación defensiva
+de alguna manera es como que nos autocorregimos
+las cagadas
+que son inevitables
+hay flujos que pueden fallar
+porque dependen del frontend
+y bueno, hay que hacer que
+pasa muchas veces
+¿no viste que de repente vos subís un documento
+y decís ¡ah! se está viendo
+recargar la página y ya no se vea
+bueno
+es como por detrás hay un programador
+que hizo esa programación defensiva
+y cuando carga que el documento no está
+le avisa de alguna manera al baqueco diciendo
+borralo y ya no se lo muestre más
+o sea, como que la cagué
+el programa detecta que la cagó
+y automáticamente corrige los problemas
+eso, entonces
+una de las cosas que también hacemos con eso
+es bloquear las acciones a los usuarios
+una de las cosas que me decía Guillermo es
+yo no quiero que si alguien
+compra un servicio adicional
+un vendedor o alguien del equipo
+de administración
+le devuelva la plata y saque el servicio
+si no quiero que le busque
+alternativas porque no puede cancelar
+el servicio adicional
+para así no perdemos plata
+o sea, que sea un problemón de la concha de la madre
+o lo de la plata del cliente
+o sea, esto en una clase
+si lo explico es como que este trofeo
+roba la plata
+pero no hay que pensar
+como personas, hay que pensar como hijos
+de puta
+hay que hacer plata
+hay que hacer plata
+entonces está
+haga eso y se termina

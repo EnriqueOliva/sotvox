@@ -1,0 +1,503 @@
+Buenas
+Buenas
+Buenos días
+¿Qué me está faltando?
+1, 2, 3, 4, 5, 6, 7, 8
+¿Estamos todos?
+Estamos todos
+Qué locura
+Bueno, bien
+Ayer me llevamos
+Todo lo de pagos
+Y la verdad lo hemos estado probando
+He sacado varios fixes
+Con eso
+El dolor de huevos
+Que estoy teniendo ahora
+Más allá de que hay que rever algún problema
+O lo que sea
+Es el tema de los
+De los cupones
+Obviamente que nosotros al agrupar todo
+En una sola suscripción
+Cuando entras tenemos que ver
+Cómo aplicar esos cupones
+Y es un poco ahí donde
+Se complejiza un poco la cosa
+Este
+Que es un poco lo que estoy viendo hasta ahora
+Entonces ahí voy a seguir con eso
+Enrique
+Bueno
+Como decías vos ayer estuvimos con Fernando
+Haciendo pruebas, hicimos un parate
+Hicimos, estuvimos viendo esto del tema de pagos
+Ahí Fernando encontró algunas cosas
+Yo dejé
+Pronto, ahora vos justamente
+Mencionabas esto de los
+De los cupones, yo dejé pronto
+Como un set de pruebas para correr cuando me indiques
+Digo, ya tengo
+Tenemos como más pruebas para hacer ahí cuando esté pronto
+Eso
+Así que nada
+Después está, obviamente seguimos
+Yo seguí con lo del comprobante de pago
+Te tengo que responder ahí unos comentarios del Word
+Porque ya agregué dos casos que vos pedías
+Eso de cuando muestra el IMAD
+Y el VTR
+Así que nada
+Eso ya está casi por enviarse
+Hoy ya queda, digo no sé cuántas iteraciones
+De comentarios surjan pero
+Si no surgen muchos comentarios eso ya estaría
+Para hoy
+Y después bueno
+Ah, Nahuel me etiquetó
+Como reviewer ahí en una PR que voy a estar mirando
+Ya estuve bichando más o menos
+Así que tengo eso para hacer también
+Y está
+No sé si me estoy olvidando de algo pero
+No, lo del back office
+Quique
+Lo tenés también en el
+O sea, eso está en el backlog
+Como para ver
+Y tenemos el back office y tenemos el Word
+O sea, el comprobante de pago
+Tiene esas tres
+O sea, tiene
+El back office tiene dos partes
+Actualizarlo y correr el cronjo
+Para actualizar todo
+Y después el worker, perdón
+Y el back office tiene la opción de visualizarlo
+Con idioma
+¿Está?
+Sí
+La opción Santi, el tema de back office
+Solo se me estaba complicando ahora grabar el video
+Estaba buscando una manera de encontrar las transacciones
+Y de grabar
+Nada más cosa de grabar el video
+Pero eso ya está
+Y me falta así el cronjo del worker
+Iba a decir también
+Antes de que nos olvidemos
+Les mandé allí el mensaje
+¿Verdad?
+Que salía prodigio
+Si lo quieren ir bichando
+Eso ya está ahí
+Le puedo retocar cuando ustedes me digan
+Bien, bien, bien, Kiket
+¿Fernando?
+Bueno, como comentó Kiket
+Estuvimos ahí haciendo full test
+De
+De lo que nos habías pedido ayer
+Que era
+El imprevisto
+Que no quería que pase a ver si ya podía subir
+OTCOM
+Y hoy ya estoy con OTCOM de vuelta
+Y espero que no haya ningún imprevisto
+Así ya puedo
+Puedo subirlo
+Por favor
+Que no haya nada raro
+Si puedo subirlo hoy ya queda todo
+Para subirlo y lo subo
+Y queda
+Bueno, bien de bien
+Bien de bien ahí está
+Gastón
+Buenas
+Bueno, yo estuve trabajando ayer
+En un carrusel
+Para mostrar la cifra del mayo
+Que me había pedido marketing
+Después estuve también
+Ajustando
+Unas cosas del Navar
+Que había hecho Santi
+Faltaba agregar un botón
+Y hoy tuvimos
+La reunión
+De la planificación
+De la roundup que viene
+Y nada
+Mi idea es hoy guiar
+Lo que es el carrusel
+Y ya empezar con
+La última tarea que me quedaba de marketing
+Que bueno, la terminaría
+Entre hoy y el lunes
+O capaz que
+Le
+Capaz que hago algo el fin de
+Así ya el lunes
+Se puede subir eso
+Trato de terminarlo
+Bien de bien
+Está ahí Gastón
+Organízate ahí también con el tema de tiempos
+Y esas cosas
+Bien
+Shona
+Bien, bueno
+Estoy con todo el refactor
+Del droguer
+La sidebar
+La reestructura
+La reestructura
+La reestructura
+Las páginas
+Todo para alinear con el diseño nuevo
+Me está llevando más
+De lo que pensé
+Igual ya ahora ya lo tengo
+Estoy ahora prolijando el código y eso
+Me junté con Santi hoy también
+Que tenía ahí unas preguntitas
+Que ya de ahí
+Nos alineamos con el diseño así que
+Ahora después
+De la daily ya creo que ya puedo dejar la PR
+Pronta
+Y nada, después estuve un poco ahí con unos bugs
+Que están reportando
+Que hay bastantes
+Como que bastantes personas
+No están pudiendo acceder a la plataforma
+Pero no estoy encontrando
+Qué está pasando
+Como que todos reportan lo mismo
+Que no pueden acceder
+Pero no estoy encontrando en los logs
+Ni nada
+Contestable es eso
+O sea, contestable que lo vamos a ver
+Pero es por un tema
+De costo de bloqueo
+Lo que te digo es
+Esperemos a
+Tenemos que salir a producción
+Cuando salgamos a producción
+Probablemente se va a solucionar
+Todos nuestros problemas
+Sí, sí
+Yo lo contesté
+Eso, pero
+Como que están presionando bastante
+Hay uno ahí que dice
+Que bueno, está buscando alternativas externas
+Y no le resolvemos el asunto
+Sí, sí, sí
+Vamos a ver si hoy podemos solucionar todo
+Al final
+Más de eso
+Bien
+Fíjate si podés concentrarte
+A ver si sale eso
+Sí, sí, bueno
+Estuve con la PR de Nahue también
+De la landing
+Que ya se la dejé
+Ya la revisé
+Ya está aprobada también
+Así ya salíamos
+Eso
+Gol
+Vamos arriba
+Martu
+Bien
+Yo ayer estuve con
+Una
+Una
+¿Cómo es?
+Una mejora
+Un cambio en realidad
+Para que en las tablas de triangulación
+Se mostrara
+El nombre de la compañía
+En lugar del nombre del usuario
+Tanto para el site
+Como para el back office
+Toda la parte de
+Triangulación
+Compraventa
+Y tickets
+Eso ya quedó pronto
+Después
+Nada
+Seguí con
+Un poco el tema
+De la autorización
+En la documentación
+Para los nuevos flujos
+Y el tema
+Del análisis de métricas
+Que en realidad ya lo tengo
+O sea
+Estaba enterando un poquito
+Sobre eso
+Pero
+Y después
+Tengo
+Nada
+Me gustaría
+Cuando tengas un tiempo
+Ver lo de
+Lo de los prompts
+A ver si podemos ya
+Mergearle
+Que lo puedan empezar a usar
+Porque por lo menos
+De mi lado ya estaría
+Y
+Está básicamente
+Bueno estuve también
+Ahí ando en una mano
+Bastante
+Con
+El tema de los pagos
+El tema de testing
+Y viendo cosas
+Del flujo
+Y está
+Básicamente eso
+Bien
+Bien
+Perfecto
+Bien
+Por mi lado
+La landing
+Como decía
+El contabilidad
+Ahí ya quedó
+Este
+El diseño aprobado
+Quedó interno
+Ya la aprobó Jonah
+Falta nada más
+Que la vea Kike
+Y ya la dejo
+De hecho
+En el de pull request
+Este
+También
+Ahí este
+La
+También tengo la landing
+De banca digital
+Pero no sé si ya está
+No no no
+Es así
+Ahorita un big hair model
+Está
+La dejo pausada
+Entonces eso nomás
+Este
+También estaba
+Ahora terminando
+De utilizar
+Los componentes genéricos
+Que habían quedado
+Despasados
+Por la tarea
+De
+Así que hay siete ejecutivos
+Que bueno
+Se habían actualizado
+Este
+Así que en un rato
+Llamamos a PR
+Esas PRs también
+Bien
+Fíjate si ahí
+Después de eso
+Querés arrancar con notificaciones
+O te sirve más
+Arrancar con teammates
+Yo me
+Me interesaría
+Que se empiece a mover
+Notificaciones
+Antes
+Ya
+Le metemos a notificaciones
+Entonces
+Bien de bien
+Y por último
+Santi
+Buenas
+¿Cómo va?
+Bueno
+Ayer estuve
+Realizando una PR
+Que me mandó
+Nahue
+También
+Me junté hoy
+Con Jona
+Para
+Para ver
+Cómo venía
+La parte de navegaciones
+Que tenía unas consultas
+Estuve trabajando
+La parte de configuración
+Eso ya lo tengo
+Prácticamente pronto
+Si querés
+Ahora nos quedamos
+Como post-clam
+Y lo echamos
+Tengo ahí
+Alguna consultita
+Para
+Para Gastón
+Pero
+Este ya
+Ya quedó aprobada
+Por Cloud
+La
+La review
+Y
+Estaría todo
+Todo pronto
+La idea
+De hoy
+Sería
+Ver
+Con qué mail
+Arranco a
+Atacar
+Y
+Y en paralelo
+Ya comenzar
+Con la parte de
+Este
+Los diseños
+De la parte
+De teammates
+Yo tenía
+Ahí un
+Comentario
+Que
+Me
+Tengo que crearme
+La tarea
+Para atacar
+Terminar de atacar
+Los
+¿Cómo se llama?
+Los pop-ups
+De
+De volver
+Al sitio
+Y de
+De
+De cuando
+Cerrar sesión
+Que tal
+Eso no sé si
+Si conviene
+Que lo ataque ya
+Para que
+Capaz que entre
+La PR esta
+Que está atacando
+A Oshona ahora
+Eh
+Para darle
+No
+Porque se cortó
+A lo último
+Te consultaba
+Si
+Si no le debería
+Dar prioridad
+A los pop-ups
+De volver al sitio
+Y de cerrar sesión
+Ah
+Sí, sí, sí
+Porque
+Sí porque
+En sí
+Oshona
+Lo está trabajando
+Sí, sí, sí
+Eso saqué
+Se me ocurrió eso
+Y está
+Este
+Me debería llevar
+Poquito tiempo
+Además
+Me creo tarea
+Para eso
+Y ya
+Ya le paso los diseños
+Bien, perfecto
+Este
+Muy bien
+Bueno
+Martina y Santi
+Les aviso
+Después del
+Después del almuerzo
+Para juntarnos
+¿Tá?
+Este
+Les digo para juntarse
+Con las cositas
+Este
+Martu
+Si querés ir avanzando
+O sea
+Si tenés todo pronto
+Y querés ir avanzando
+No sé
+Me acuerdo las tareas que tenía
+Pero si querés ir avanzando
+Podés ir avanzando
+A la compra interna
+Porque eso ahora
+Con todo lo de pago mercheado
+Más allá que algún ajuste
+O lo que sea
+Podés ir
+Podés ir avanzando
+A lo que es compra interna
+¿Sí?
+Este
+No me acuerdo
+Qué más teníamos
+Y Santi
+Nos juntamos después del almuerzo
+Y les escribo
+¿Bien?
+Dale, bien
+Aprovecho para ir avanzando
+Con
+Con los de Oshona
+Y entonces
+Sí, pero avanzá
+Liquidále lo de Oshona
+Porque ya
+Ya lo está desarrollando
+Entonces este
+Que quede pronto
+¿Tá?
+Dale, perfecto
+Bueno, buen provecho
+Vamos arriba
+Salud a la muchacha
+Provechito
+Bueno, buen provecho

@@ -1,0 +1,246 @@
+por ahora vamos a pausar lo sigue hasta que nos confirme nos confirme
+hay que tratarlo antes de que vean eso es preferible los clientes grandes
+tratarlo a bajo nivel con ellos y después por último más
+está sigo con el tema de guardar cuentas que no he podido cerrar voy a ver si lo
+puedo cerrar y decía que estaba con los días y después bueno estoy mirando todas
+las perras que vienen mandando así que enseguida que ahora la idea después la
+daily también pidiendo algún diseño y alguna cosita más ahora la idea es que
+fue la daily si podemos vayamos viendo en la nos quedemos con los los que
+tienen pr de migraciones para que podamos ver cuál mayor primero así que
+un poquito es enrique bueno de mi lado se ha movido mucho la bola entre ayer y
+hoy mucha cosa este
+y
+Sién
+en primer lugar bueno estuve atacando todos los comentarios que han surgido de
+de parte de usted de voz y martina de las perras que estaban en los chaneles
+principales la de esa y pres lo que es hay presta
+ajuste todo lo que ustedes indicaron pero ahora estoy corriendo a los test
+porque bueno estoy probando por ejemplo el nuevo comando de correr todos los
+test por todos los idiomas que está quiero estar seguro de que no se haya
+roto nada pero apenas termine lo mando después hice hicimos con co review con
+Fernando, ahí yo dejé
+a Fernando al día, básicamente todas las PR
+que él tenía
+comentarios y demás
+que él había ajustado, yo ya miré
+todo, después
+de las PR que yo tenía
+también en channels internos
+que algunas quedaron aprobadas
+por Nahuel, Fernando y Yona
+que ya las mandé, eso también quedó
+atacado, lo que son las tareas de
+Audilogs, los buscadores
+la tarea del botón
+de explicar con IA
+y bueno, después estuve avanzando
+¿el botón de IA está en diseño
+o en interno?
+ya pasó, se fue de diseño
+y si no me equivoco ahora está en interno
+o incluso fue aprobado en interno
+me tendría que chequear
+pero lo que es diseño quedó aprobado
+casi seguro
+pero eso ya se movió
+a ver si podemos
+mover esa PR
+ahí le digo a los implicados
+y mismo Martina, cuando lleguen las PRs
+de los Audilogs
+estaría bueno
+poder moverlo
+a ver que podemos
+cuanto antes podamos sacar esa mejor
+ya ahí me había confundido
+hoy es miércoles
+mañana es jueves
+así que la idea es
+salir a producción mañana
+y con todo lo que tengamos
+mismo sea migración
+Enrique, si no me equivoco la configuración
+de los prompts y todas esas cosas
+se mergeó, ¿es correcto?
+si
+¿y quedó bien en develop con todo?
+tendría que doble chequear
+no estoy seguro
+doble chequear
+siempre que mergeemos migraciones
+chequeemos que quede todo ok
+siempre la responsabilidad
+es que el merge a la migración
+o la realidad es que tiene la tarea
+de la migración que cuando se merge
+puede ser que la merge yo
+chequear que la migración se haya corrido y haya salido todo ok, ¿está?
+igual ahora lo vamos viendo todos juntos
+las que están
+si podes en background chequeate
+mientras que vamos la de ahí
+y me confirmás si quedó bien todo lo de la configuración
+¿algo más, Quique?
+si, bueno
+después lo que es la tarea
+de los extractos, los PDFs en el worker
+eso ya avancé todo lo que pude
+lo que es diseño ya quedó muy bien logrado
+todos los distintos casos desde
+los casos donde hay muchos extractos
+muchas transacciones y hay muchas páginas
+hasta el caso en que no hay ninguna página, etc.
+una transacción, digo eso
+lo que es diseño creo que ya quedó muy muy bien
+y avancé todo lo que pude con la lógica
+pero bueno como ya sabemos falta
+alguna cosa del lado de ustedes así que
+por ahora eso no lo estoy enviando pero
+ya está bastante logrado así que eso está
+está en marcha
+si, hay cosas que podes trabajar
+es por ejemplo si el PDF tiene
+cinco páginas, cuánto
+qué tamaño queda
+o sea no es la idea guardar megas
+sino trabajar con kbyte
+entonces este
+cuando puedas pasarnos un reporte
+de cómo estaría generándose
+eso
+qué más te iba a decir
+y podes ir haciéndote el endpoint
+que te traiga las
+transacciones, o sea de los
+extractos, vos tenés el OTC
+Transaction
+Repository que creo que lo tenés en la B2
+si no me equivoco
+en el backoffice
+para que esto es importante entonces vamos a hacer
+una pausa, en la B2
+tenés un
+repositorio
+vas a tener que crear un
+vas a tener que crear un
+repositorio
+en la B2
+para lo que es
+el OTC Transaction
+Repository que ya lo tiene en la B1
+pero vas a tener que crearlo en la B2
+OTC Transaction
+que son las transacciones
+que vas a manejar
+ahí el filtrado que podés ir
+manejando por ahora medio precario
+todavía no filtremos por cuenta
+en sí, filtremos
+únicamente por
+como se llama
+filtremos
+por fecha de inicio
+fecha de fin con el update de dat
+y el proveedor
+que hay una constante
+te podés crear un OTC Transaction Repository
+que te traiga las transacciones
+paginadas
+eso es importante, paginadas
+no traigas todas
+nunca sabemos cuantas puede tener un cliente en un mes
+entonces vos tenés que ir trayendo
+las paginadas, seguir guardándolas
+para poder tenerlas
+pero no mandes a la base de datos a traer todas
+Site Worker
+es esto
+esto es el Worker, perdón
+ah, estaba mirando el Backoffice Worker
+Worker no tiene B2
+ok
+muy buena aclaración
+ya tenés el OTC Transaction Repository
+si
+tenés que traerte las
+si, tenés que traerte las transacciones
+trae las paginadas, cosas que sean
+paginadas de a 50
+paginadas de a 50
+paginadas de a 50
+paginemos de a 20
+de a 20
+y lo que ponés es
+fecha de inicio, fecha de fin
+y por ahora el proveedor
+hay información básica que vos ya podés
+mostrar, por ejemplo
+se va a basar
+en el update de dat
+entonces podés mostrar el tiempo
+la hora, el orden
+ya de la base de datos tienen que venir
+ordenada
+ya de la base de datos tienen que venir
+ordenada, después
+el tipo de transacción lo tenés
+si es Withdrawal, si es de
+Retiro, Depósito, Exchange
+eso está en una columna que lo podés ver
+no importa si es de Rail
+o One Money, eso es genérico
+el monto
+también el monto
+permite ver si está en una columna o no
+si
+y otra cosa que vos podés hacer
+es calcular el, o sea
+otra cosa que podés ir viendo
+que es otra función
+que vas a tener en Transaction
+Repository
+es eso de calcular el saldo inicial
+y el total de ingresos
+y egresos, podés hacerlo
+va a tirarte cualquier cosa
+porque no vas a filtrar por cuenta
+entonces podés hacerlo
+y después vemos cómo agregar
+el filtrado por cuenta
+para ir haciendo esas lógicas
+vos tenés que hacer una lógica que te calcule
+cuál es el inicio
+y ahora cuando tengas el modelo
+también vas a poder fijarte si ya tenés
+una base como para que
+ese cálculo sea más reducido
+te vas a poder hacer
+esa base para que ese cálculo sea más
+escueto
+esa es un poco la idea
+ok
+bien
+ahí podés ir avanzando
+en rellenar
+el PDF y también algo que me gustaría
+tener aquí que es
+cuándo está quedando un PDF de 5 páginas
+es un caso totalmente excesivo
+sí, seamos sinceros
+es un caso totalmente excesivo
+cuándo está quedando un PDF de 5 páginas
+cuándo está quedando un PDF de 1 página, 2 páginas
+y de 5 páginas
+vayamos de un extremo a los casos comunes
+que es 1 a 2 páginas
+está en draft si quieren ir monitoreando
+por eso si quisieran chusmear
+yo voy subiendo los cambios ahí
+igual informanos
+en los tamaños
+eso es clave
+Fernando
+muy bien, si Santi puede hacer una optimización
+de la imagen o si vos podés iterar un poco
+Tato, adelante
+bien, esto

@@ -1,0 +1,71 @@
+Lo único que sucede ahí, si te fijás, es, o sea, vos haces, primero haces los reintentos de obtener,
+pero después si falla un mail, no lo guardás, porque después imprimís, C, error.
+Y lo que haces es al final, fíjate que imprimís cuántos enviaste.
+Estos logs nos permiten a nosotros, si nosotros queremos hacer control shift F,
+por ejemplo, si encontramos un error, lo mismo que vos haces por consola, que te salta todo,
+lo vamos a hacer nosotros en producción.
+Tenemos un lugar que se llama AWS CloudWatch, que vamos a mirar toda esa información.
+No es que sea fácil de conseguir, pero yo puedo ir a fijarme, bueno,
+¿cuántas veces apareció el mensaje send email reminder error?
+Ah, mirá, apareció cinco.
+Uh, le estamos ahorrando, hay algo que le estamos ahorrando.
+O capaz que decimos, oh, mirá, esto está pasando muy repetitivo para tal caso.
+Vamos a empezar a hacer tal cosa.
+Está bueno.
+¿Se entiende?
+Será interesante.
+Es el CloudWatch.
+Claro, es, ¿por qué te pensás que yo meto logs por todos lados?
+Porque después, vos, ponele que a vos te falla algo local, ¿qué es lo que haces?
+¿De Bayaz?
+No, claro.
+Ahora, ¿cómo mierda haces para recrear un caso de algo que pasa en producción,
+que está corriendo en una máquina en Houston, andás a ver, en Oregon en realidad?
+No, en Ohio, creo que es Ohio.
+¿Dónde sabes?
+¿Dónde mierda?
+Tenés ni idea.
+Lo único que tenés son los logs, que los logs, vos identificás un log y decís,
+está perfecto, pasó tal fecha, está bien, perfecto, vamos a agarrar,
+y vamos a buscar qué fue lo que pasó, qué fue lo que insertó, y ahí recreás el caso.
+Por eso, por eso la importancia de los logs.
+Y por eso de la importancia de que nosotros podamos recuperarnos y volver a tomar acciones frente a fallas.
+Por ejemplo, ahí, en el caso de que falla el obtener páginas, intentás de nuevo.
+Porque capaz que justo está saturada la base de datos, entonces, intentamos de nuevo.
+Es eso.
+Capaz que de mañana vemos, vos, ya, cuando se borran, cuando se envían estos mails, muchas veces, como estás
+enviando mucho, el servicio de SNS se satura.
+Entonces, en este caso, me chupó un huevo, porque es publicidad enviarle dos veces.
+El tema es que hay que tener cuidado con el envío de dos veces, porque nos pueden romper las pelotas con...
+Nos pueden bloquear la cuenta.
+Claro.
+Por eso es el tema, porque podemos, nos pueden catalogar, porque hay todo un estándar internacional en cuanto a lo que es spam,
+y entonces, si nos catalogan mal, después salir es un huevo.
+Hay que cuidarnos, son...
+Es todo, todo es detalle, todo detalle.
+Por eso, es más fácil errar...
+En vocable que en vocable, pero yo, es por eso, tanta métrica, tanto mecanismo, que yo, fallar no es una opción.
+Entonces, está, tenemos que cubrirnos por todos lados.
+Entiendo.
+A ver, hasta Facebook tiene bugs, Facebook se ha caído, todo nos puede pasar.
+Lo que tenemos que hacer es, trabajar frente a esas fallas y cubrirnos el ojete de la mejor manera.
+Es eso.
+Bueno, pero es eso, o sea, los mails se envían, ¿está? Vos ahí tendrías que moquear el...
+Dentro del SNS.
+El SNS es el repositorio y el método, si no me equivoco, es un .send, con el prototype, no moquea el repositorio y ya está.
+Hay veces que vos tendrías que simular que ese método explota, que lo que pasa es que explota acá, ¿sí?
+O sea, ¿qué pasa? Andate al SendMail, SendEmail.
+Y acá abajo del todo, el tipo te tira, te tira excepciones, ¿está?
+Bueno, vas a tener que simular que te tira la excepción genérica, o sea, siempre...
+Ahí, por ejemplo, tenés dos if.
+Que eso ya es una difurcación de rama que vos tendrías que testear.
+Vos tendrías que testear el caso de que te tira un error genérico y el caso de que te tira un error que no es del tipo error, pero explota.
+Entonces, imprime el mensaje generic dbr.
+Eso es más o menos para todos los repos de base de datos deberías tener ese test.
+¿Son dos?
+Sí, o sea, son dos casos.
+Ya cuando ves un if decís, está, perfecto, tengo que contemplar todo caso.
+El caso que explota por un error y el caso que explota por algo que puede no ser en una instancia un error.
+Entonces, hay que, hay que trabajar en eso, ¿sí?
+Pero, pero, a ver, tenemos cosas a pasar.
+Yo ahora tengo que subir las gráficas, ya, ya hice unas gráficas, ahora ya me tiene el Wacoff y Rolles.

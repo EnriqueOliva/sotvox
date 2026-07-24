@@ -1,0 +1,475 @@
+Ayer envié las PRs orientadas a lo que sería la parte de triangulaciones del backend, algunas de las PRs orientadas a triangulaciones del backend, ahora voy a estar corrigiendo algún comentario y enviando un poco eso, también trabajé en dos ajustes de seguridad, uno en sanitizar lo que serían los webhooks y después en los blogs, así que bueno voy a estar viendo eso.
+Ahí está Enrique, Nahuel, Jonathan, ya creé las tareas, creé tareas para que trigunalen, Enrique ya para lo que serían los mails, ayer Santi liquidó y Jonathan también para lo que sería la parte del order book y Nahuel para unos endpoints que quedaban, así que bueno, ya está también la progresión.
+Enrique.
+Bueno.
+De mi lado, ayer estuvimos trabajando con, bueno, lo vimos por la parte de los test unitarios, allí estuvimos viendo los ajustes de los test de teammates, estuve trabajando también con la PR de lo que es el refactor chico que había que hacer para los mails también de teammates, que ahí surgió un comentario de Santiago Pantin que bueno, ya lo tengo corregido, pero estoy retomando todos los screenshots,
+las imágenes.
+No sé cómo quedan los mails en los distintos casos y estuve haciendo un poco de co-review también justamente por el tema de los test unitarios y me tomé un momento hace un rato para ajustar mi board porque ahí, bueno, como no estamos llegando a los puntos, pero con unos ajustes quedaría bastante bien y bueno, la idea sería ahora seguir obviamente con, primero liquidar este comentario que surgió de Santiago Pantin y empezar con, justamente, los test unitarios.
+Y finalmente las tareas que creaste recién de lo que son los mails, los nuevos mails de compra-venta.
+Bien, perfecto.
+Bien de bien.
+Fernando.
+Bien, ahí he estado antes de juntarnos ayer con el tema de las impresiones y los pop-ups, después hice las actualizaciones de las tres PRs de los test del crew de teammates, después ahora estoy con las tres PRs de los test de teammates.
+De las correcciones de los test, ya actualicé una, ya la arreglé y me faltan las otras dos para antes de terminar de corregir los test del crew.
+Eso.
+Bien de bien.
+Bien de bien.
+Después está todavía analizar una propuesta de cambio de puntos, vamos a ver si le podemos meter ahí junto con Kike para liquidar estos test unitarios, por lo menos a ver si entre hoy el...
+...y el lunes podemos liquidarlos y analizar una propuesta de cambio de puntos.
+Estamos bastante lejos, mismo si termináramos todo en lo azul, estamos bastante lejos con los puntos.
+Martina.
+Bien, yo ayer trató de actualizar el gol, pero yo ayer saqué...
+Y ojo que en tu caso vamos a tener que, creo que es muy parecido al de Nahue, vamos a tener que reducir puntos, porque tenemos 106 terminados.
+Sí, al final...
+Yo en realidad metí más horas.
+Pero cuánto, o sea, ya hoy en día marca un día más y faltan dos días de sprint, ojo con eso.
+O sea, yo entiendo que por ejemplo, si metieron el fin de semana terminarían 110, metieron dos días de fin de semana, que está bien, pero tengan en cuenta con eso.
+Adelante, sí.
+Bien, de mi lado ayer saqué unos empalas justas.
+Con el tema de las cookies, para hacer unos refactors en todos los repos.
+Y después, en realidad, terminé lo de los ajustes de retiros y depósitos.
+En realidad estaba armando la PR con el tema de los videos y las facturas, pero pausé un poco para ver las PR que mandaste.
+Así yo te voy a dejar en los comentarios.
+Y ya, después ya contamos.
+Terminé con eso, armo la PR y sigo con la parte de triangulación.
+Estaba viendo que se envió una PR de site.
+En realidad, se envió una PR.
+Nada más.
+Viene bien.
+Está ahí, son PR bastante largas.
+Así que, nada, le cale un tiempito.
+Mismo tocan todo lo...
+Como te decía, tanto en tu caso.
+O sea, en tu caso tocan todo lo que hay que hacer.
+Pero faltaría visitar.
+Lo que es...
+Faltaría visitar lo que es la transacción en sí.
+En Aue.
+Bien, yo vi las tareas que dejaste hoy.
+Como eran tres semplos y medio, boludo, ya dejé la PR y se la pasé a Yona.
+Ahí, como había un cambio en la base de datos, que creo que agregaste el parámetro source account.
+Hemos estado complicando un poco para probar bien los semplos y esos.
+Así que, capaz que falta correr alguna migración ahí.
+En el site.
+Confirmame, capaz que el lunes, cuando lo conecto, las pruebo bien.
+Pero si querés, ya dejo la...
+Mando la PR a internos y ya la va mirando con Martina.
+Sí, sí, sí, ahí.
+Y Yona la prueba.
+Sí, porque en el site está la...
+Porque ya vos...
+Es justo la PR que acabo de mirar.
+Esta es...
+Si quiero saber si los devaluan, si apuestan el drop-down.
+Están que están.
+La 26, el 33.
+Ah, eso tengo que dejar un comentario.
+Porque falta que apure en la PR de Yona de los cambios del drop-down, que tiene bastantes cambios.
+Este, porque tendría que traerme yo eso en el back-office para dejar la PR del back-office.
+Voy a dejar un comentario ahora ahí.
+Voy a linkear la PR de Yona, del back-office mismo.
+Quiero usarlo en toda la conferencia.
+Después asignale puntos a estas y ponelas sin progresos en dev-review.
+Dale.
+Y al lunes, después este, volvemos con veces a PR y lo del drop-down.
+Y si no, seguimos con RAID.
+Si no surge nada, seguimos con RAID.
+Genial.
+Bien de bien.
+Está genial.
+Yo ahí mandé tres PRs a share.
+La que, si querés, podés mirar un poco también como para evaluar que está todo ok.
+Es la de back-office.
+Digo porque...
+Sí, jamás ramifiqué de esa PR mismo también para mantenerme alineado.
+Sí, lo mismo le dije a Yona.
+Porque, ¿qué pasa?
+Esa PR no solo hace las migraciones, hace las modelos y eso.
+Sino que también tengan en cuenta que en esa PR está...
+O sea, en tu caso y en Yona, ahí están los samples, o los ajustes de los samples para la parte de simulación.
+Ahí es la simulación.
+O sea, por ejemplo...
+La triangulación, similar a los diseños, tiene para subir los residuos.
+Yo ahí lo que digo, o sea, lo que hace es...
+Dice, bueno, está.
+En el caso de triangulación, el cliente estuvo en destination, residuo.
+Está.
+Y el cliente todavía no subió destination, residuo.
+En el flujo quiere decir que el cliente todavía no pasó por ese estado.
+Entonces quiere decir que era...
+O sea, como que sí...
+Y la verdad, la transacción se respondea, solo hay que devolverle la plata al vendedor.
+Y nosotros tenemos destination, residuo.
+Quiere decir que hay que devolver...
+O sea, recordemos que estamos triangulando entre dos personas.
+Estamos haciendo cambio entre dos personas.
+Entonces, si tenemos esa información, hay que devolverla a los dos.
+Entonces, es un poco la lógica que tiene la subida de documentos.
+Es como el mismo panel que tenemos, pero dos veces.
+Entonces, es como...
+El IF.
+Que utilizamos es, bueno, tenemos los documentos del comprador.
+Si los tenemos, quiere decir que tenemos que devolverlos a los dos.
+Si no los tenemos, tenemos que devolverlos a uno solo.
+Y eso también es los bloqueos que hace lo aquel.
+Digo, para que lo tengan en cuenta.
+Después, en triangulación empezamos a sumar lo que es el counterparty triangulation.
+Que son los endpoints que yo te puse ahí.
+Y el counterparty que es...
+O sea, en ese caso...
+Tenemos dos puntas.
+Uno, lo que es el counterparty triangulation.
+Que es el comprador.
+O sea, literal es el comprador.
+Y después tenemos el counterparty manual, que en realidad es la cuenta a la cual tenemos que transferirle la plata al vendedor.
+Recordemos que al vendedor se le saca los dólares y se le deposita a bolivianos.
+Entonces, es la cuenta de bolivianos a la cual tendrían que depositar.
+Pero bueno, eso lo vamos a ver.
+Eso lo vamos a ir viendo cuando toquen el content.
+Bien.
+Bien.
+Eh...
+¿Joná?
+Bien.
+Yo hoy de mañana estuve haciendo los cambios del...
+De lo que hablamos ayer del...
+Para el tema de los montos.
+En los inputs y eso.
+Y en la tabla.
+Todo lo que...
+Para todo lo del formato americano.
+Me fijé ahí en el site.
+Como se estaba haciendo.
+Y lo que hice fue replicarlo.
+Así que ta.
+Esos cambios ya quedaron subidos.
+Aumenté también ahí el tamaño del...
+Del label y del monto.
+Lo separé un poquito del formulario en sí.
+Eso ya quedó para corregir de nuevo.
+Y ahora ya estaba...
+Ya había empezado con el tema de...
+De separar el...
+El hook para que mande solo compra y venta.
+Al backend.
+Para ya tener separado eso con lo de triangulaciones.
+Para que pues estaba mandando...
+O sea, para que solo se traiga...
+En compra-venta se traiga solo compra-venta.
+Como vamos a tener triangulaciones ahí.
+Ya estaba con eso.
+Ya estaba con eso.
+Y estaba mirando ahí un poquito el...
+El backend a ver si había que hacerle algún cambio para aceptar...
+Los diferentes filtros o algo.
+Si eso ya estaba.
+Y...
+Ahora estaba...
+WeekendAweb había mandado ya la...
+La PR esa de los samples.
+Ya le estaba dando una...
+Una miradita ahí por arriba.
+Así ya...
+La dejo...
+La dejo pronta.
+Ahí te hago una especie de cambio.
+Enfoquémonos en el orden.
+Y después en el...
+Veamos a ver si...
+Capaz que es muy ambicioso.
+Pero el order sale de la mía.
+Y el flujo...
+Y este ajustecito.
+Capaz que esta es el temo lo más para mí.
+A ver hasta dónde llegamos con esta orden.
+Porque...
+Ahí...
+Este...
+Como hoy nada vuelvo a gastar...
+Ya la PR pasaba directo al channel de FoodRequest.
+Ah.
+Eh...
+Martina, estás junto con mis PRs.
+Estás de PR de zonas en la actividad.
+Sí.
+A ver si...
+O sea que la...
+Para estar alineado ahí la 2700 la dejo en pausa y arranco con la del order book y la
+de...
+Sí.
+Está.
+Perfecto.
+Porque sería genial poder marchar el order book.
+No creo.
+Pero a ver si lo podemos sacar el lunes.
+No creo.
+O sea, pero podemos tenerlo lanzado el lunes.
+El mediodía y eso.
+Pero veo muy complicado para sacarlo antes.
+¿Qué pasa?
+¿Lunes temprano?
+Si me dirige una reunión.
+Entonces quería reunirme.
+¿Qué pasa?
+¿Qué pasa?
+¿Qué pasa?
+¿Qué pasa?
+¿Qué pasa?
+¿Qué pasa?
+Entonces quería tenerlo en la vida compleja.
+Pero bueno.
+Intentémoslo.
+Bien.
+O por lo menos igual lo dejás medio armadito para que podamos...
+Podemos marchar.
+Bien.
+Perfecto.
+Marchamos junto.
+Me pongo con eso.
+Lo que tendríamos que hacer es aprobar mis PRs.
+Bien.
+¿Sí?
+Están los dos.
+Sí.
+Yo te hubo comentado lo que teníamos.
+El order book es visual.
+El order book es visual.
+Ahí...
+Perdón.
+Ahí el order book es visual.
+Ahí perdón.
+Ahí el order book es visual.
+Ahí perdón.
+Ahí el order book es visual.
+Perdón.
+Perdón.
+Ahí el order book es visual.
+Y el order book es visual.
+Perdón, ahí el order book es un deck
+Y es una tablita ahí que muestra tipo tres cositas
+Pero o sea, tiene una parte movida y eso, ahí está el deck
+Lo jodido
+Y esto tal vez es un calco
+Ahí no sé yo nada, a ver si podemos limpiarlo, sería un buen ase
+Pero bueno, tal vez veamos
+Veamos qué comunidad tiene
+Bien, Martín
+No, un comentario que tenía era
+Respecto a lo de los montos
+Para que estemos todos alineados
+Que nosotros queremos mostrar
+Siempre en formato americano
+Porque está, en el site se estaba mostrando ya así
+Pero creo que nunca lo mencionamos para el back office
+Porque está, creo que nunca se llevó a mostrar montos
+Y ahí, Jonah, si usaste la función del site por las jugas también
+Yo en esto de los refactores que hice noté que
+Hay un archivo de útil que tenemos todos
+Formatters de temas de montos
+Eh...
+Yo uno de los refactores que hice fue
+Porque nosotros hoy en día en la tabla de transacciones de
+Cripto usamos una función
+Y después en todo el resto de lugares usamos otra
+Por las dudas
+Yo saqué todas las funciones para que se usen
+Las de útils
+Porque así no tenemos lógica repetida
+Entonces ahí si hiciste algo de eso
+Estaría bueno que quede centralizado en un archivo
+Nada más de útils
+Y no hacerlo en el componente
+Porque así después si hoy en mañana
+Tenemos que agregar más cosas
+No tenemos que ir por acá
+A componente a cambiar
+Cómo se formatea
+Y que quede todo en una función sola
+Está eso nomás
+Sí, lo puse todo dentro de útils formatters
+Puse todo ahí
+El sanity site, numeric input
+Que estaba en el site
+Lo puse todo dentro de formatters
+Pero le pego una doble chequeada por las dudas
+Ok, eso nomás
+Bien, bien
+Está ahí, Jonah
+Estas dos las podés sacar
+Esta no, esta creo que la podés sacar
+Pero esta sí
+Sacá la de mi rama, del botón
+De tu rama, perfecto
+Sí
+Está más o menos que va a tener ajustes
+Eh... Santi
+Buenas, por mi parte de taller
+Mandé...
+Eh... hoy ya mandé a revisar los...
+Los emails
+De la parte de compra-venta
+Ahora estoy haciendo algunos ajustecitos en los de...
+En los de triangulaciones
+Así ya hoy sacamos eso
+Eh...
+Gastón me dijo que él se iba a encargar de los ajustes que pasaste vos de...
+De... De los ajustes que pasaste vos de...
+De las tablas de...
+De hacer este...
+Esos ajustes para la nomenclatura
+Y... bueno
+Eh... nada
+Voy a tratar de sacar los mails para hoy
+Y ya después continúo con el...
+La parte de los estados de cuenta
+Bien ahí, Santi, miremos
+Eh... ya pasaste a Dev...
+¿Actualizaste el link que le enviaste ahí, que no?
+Eh... el link que le pasé ahí ya se lo mandé en Dev Review
+Pero ya está en Dev... en...
+En RAID 4.0
+Porque a mí ayer me redirigió...
+Me redirigió para...
+Para Dev Review
+O sea, no para RAID 4.0
+El link...
+Para ahí
+Eh... sí, el que le mandé ahí ya es para Dev Review
+Porque claro, es para que ellos lo revisen
+Pero el... ya tenemos...
+No, no, no, claro, por eso te dije
+Pasáselo para RAID 4.0
+Es lo que te decía
+Ya está
+O sea, mandalo como terminado
+Sí, sí, sí, o sea, mandalo como terminado
+Porque está...
+Están con lo de Bolivia, no nos van a dar bola
+Entonces, este...
+Lo damos con bien
+Pero...
+Quieren verlo, se lo voy a escribir
+Si quieren verlo
+Ya modifico el...
+El link
+El link igual
+Este...
+El que falta bicharlo a ver sería Ille
+Si no, ya tengo el...
+El ok de Alberto y de Carlos por ahora
+Está, por eso, o sea, ya tenemos el ok de dos
+O sea, ahora...
+Ahora le pido esos dos ok
+Ya está, pasémoslo a RAID 4.0
+Y también, este...
+Por privado, compartíselo a Enrique
+Para que lo tenga
+Está, perfecto
+Está atacando con eso ya con RAID 4.0
+Para que lo...
+Para que lo biche
+Sí, dale
+Bien de bien
+Chequeemos los puntos, ahí, Santi
+Bueno, en realidad va para todos
+Tengamos en cuenta que no termina el lunes
+Este, si liquea los mails
+Creo que va a estar bien de puntos
+Bien de bien
+¿Acto?
+Actualizando el flujo de triangulación
+Con los filtros que me habían pedido ayer
+Después también seguí trabajando en...
+En el PDF de Accounting
+Y hoy estuve...
+Haciendo los ajustes...
+Algunos ajustes que habías pedido ayer de noche
+Ya quedó...
+Lo de las comas en lugar de puntos
+Y que otra cosa...
+Y la parte de TCI total
+En triangulación
+Faltaría ahora lo de...
+Que origen y destino sean dos columnas separadas
+Eso es un poco más...
+Nada, me va a llevar un poco más de tiempo
+Pero...
+Porque son varias pantallas
+Pero nada
+Voy a estar con eso hoy
+Bien de bien
+Bueno, bien de bien
+Creo que no me falta nadie, ¿no?
+Está ahí del lado de...
+Ahí Fernando
+Arrancar con los...
+O sea, seguir con los tests
+A ver si creo que podamos liquidar ahí
+Liquidarlo en la mano a Tato
+En las revisiones internas
+Y volver a enviar esos PR
+Al final del día, antes de ir desde Tato
+Pasame el status de qué test tenemos que revisar
+Y qué está...
+O sea, pasame las PR que están del lado de Quique
+Y las PR que están de tu lado
+O sea, de nuestro lado va a volver a revisar
+Ah, o sea...
+Así este...
+El fin de semana le pegamos una iteración
+Hacia el lunes hasta ese término
+Más allá de que vos vas a ir enviando
+Los follow-up a los PR
+Y que nada
+Ordenar lo que tenemos y...
+Las tareas que tenías ahí de team
+Es que eso, volver a enviarlo
+Y dar esos ajustes de Santi
+De nuevo, eso es solo texto, ¿no?
+O sea, no debería ser más que eso
+Con respecto a la de teammates
+Por eso yo también le aclaré a Santi
+Y empezar a atacar los emails
+¿Sí?
+Yo ya llamo a la notificación
+En todas las tres PR que envié
+Y ya se va a ir el evento al worker
+Vos podés agregarlo
+Pero ya se va a ir el evento al worker
+Así que sería empezar a trabajar con eso
+Y empezar a ver los templates
+En cada caso de la operación
+De la OTC Transacción Humana
+Cómo se envía
+Ok
+Jonah, cualquier cosa me avisas
+Ahí, este...
+La idea sería atacar esas dos tareas
+Hasta Santi y Gastón
+Recuerden que si llegan a liguear todo
+Tienen que arrancar con la revisión
+Pero creo que faltaban
+Estaban tocando unas cositas ahí
+Pero me avisan...
+Pero me avisan...
+¿Quién va a tocar de los dos el estado de cuenta?
+Porque eso también...
+Yo me voy a encargar de eso
+Si terminás con los mails
+Y vas a ir para eso, ¿no?
+Exactamente, sí
+Bien de bien
+Y bueno Martina, sería revisar esas PRs
+Y si llegan a surgir las PRs de Jonah
+Ahí también pegarle
+Encargar una revisada
+Vamos a ver si las podemos liguear
+Bueno, buen provecho
+Vamos arriba
+Te puedo pedir unos minutos
+Sí, dale
+Nos vemos
+Chau, buen provecho
+Chau, nos vemos
+Que pasen bien
+Chau, chau

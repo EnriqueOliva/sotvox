@@ -1,0 +1,864 @@
+de gringo europeo
+arroba a Mario y Mario
+jardinero, Mario
+está ahí
+está laburando con la laptop al lado
+y sacando ahí torta frita
+bueno
+bien, terminada la anécdota
+hoy voy a usar
+la famosa frase
+del señor Enrique
+y no es que
+estuve con alguien del mismo sexo
+y nada de esas cosas, sino que estoy atacando
+no te rías Gastón
+qué cosa, qué complicidad
+le mandaste un mensaje a Carola, ¿no?
+no, no
+el Kiki un día va a ir a hablar con él
+y va a decir, tío, es podrido
+ay Dios mío, pero bueno
+bueno, antes de arrancar con
+con la daily también formal
+quiero comentarles que
+Gastón
+me mandó un mensaje por vía emocional
+emocional total, que dijo que
+que va a destinar el premio
+para un asado para todos
+que los va a invitar, así que bueno
+quería comentárselos a todos
+este
+muchas gracias
+va a ser la hora
+un aplauso para Gastón
+yo no te voy a dejar
+a Gastón para que no te emociones
+Santi está ahí nomás
+a Santi cualquier momento
+ya lo bajo
+a 20 puntos
+si llega a ganar
+Santi de nuevo está mal
+11 puntos
+estaba bravo
+si se olvida poner los resultados
+capaz que ahí
+no quedan muchos partidos
+no quedan muchos partidos
+bueno, bien
+me quedan varias PRs por revisar
+ahí Jonas se marchó la del chatbot
+¿sí?
+lo vi, lo vi
+tengo que pasarte las variables de entorno
+tengo que pasarles las variables de entorno
+para el chatbot
+¿sí? para Dev
+¿te animás a pedirme cuáles son?
+¿así me das una manito?
+porque son dos
+y yo ya he atrapado
+literal, ¿qué pasa?
+¿por qué te lo pido?
+porque terminé seteando con ParamStore
+y tengo un pedo
+entonces tengo que buscarla
+bueno, ¿en qué ando?
+estoy sacando RAIDs
+o sea, ayer me reuní con Guille
+y ahora tuve la reunión de partnership
+tenemos que sacar RAID
+tenemos que sacar algo rápido
+de una plataforma para fees de OneMoney
+porque hoy en día lo estamos seteando con un Excel
+y ellos sacaron una API
+así que voy a estar también con eso
+hay que ocultar la sección de contacto
+tengo que mostrar un memo
+a la dirección del ELSI
+hay que hacer la parte de subir comprobante
+y bloquear el banco de unión
+además de eso
+necesito ahí
+hay que probar ahí
+por eso te di las dos variables de entorno
+y yo te paso los valores
+literal, tengo que buscarlo
+literal, tengo que buscarlo
+no lo tengo a mano
+pero con eso
+te digo que pasé la PR
+porque ahí tenés todo el flujo
+el flujo te permite
+todo se basa con el ID del usuario
+para que todos lo sepan
+el chatbot se basa con el ID del usuario
+entonces en realidad vos le pegás una endpoint
+y automáticamente el token de Cognito
+saca la información y ya lo obtiene
+¿está?
+entonces
+nada, eso
+ahí tenés
+vas a tener
+una web
+una web
+yo la vas a tener para subir documentos
+para
+fíjate que podés subir documentos
+cualquier cosa
+podés subir documentos
+obtener sesiones
+borrar sesiones
+deberías usar todas las funcionalidades
+y puede llevar un poquito más de tiempo
+pero nada
+eso
+y bueno
+después tengo que seguir con la
+reglamentación de AFI que por ahora voy
+dos documentos de cinco
+así que nada, voy a tener para entretenerme
+un ratito con eso
+y tengo para ver una cantidad de PR
+voy a ver si ahora
+creo que ahora
+post-crank con Marty también y vamos a hacer un poco de limpieza
+de PR
+las que fueron quedando
+vamos a arrancar
+por el final, Santi
+buenas, por mi parte
+estuve trabajando
+en el ajustecito ese que había pedido
+Fernando, ya lo tengo pronto en desktop
+lo estoy ajustando ahora a mobile y tablet
+después
+el mail, estoy trabajando en el mail
+de nuevas correspondencias, ya lo tengo pronto
+para pasar a Stone
+estoy esperando ahí que se terminen las traducciones
+de armar
+así que eso ya estaría para enviar
+dejé enviado ayer a Guille
+el mail de
+cerrar sesiones, ya quedó
+aprobado
+y después
+voy a enviar el otro mail
+que también quedó aprobado ayer por
+Martina y no me dio el tiempo de
+enviarlo, y bien después
+continúo trabajando con la parte de
+de teammates
+el mail de
+cerrar sesiones
+ya está aprobado
+lo que estamos
+lo que nos está pasando que me transmitieron
+Guille y Beto recién
+lo del scroll
+lo del scroll
+eso es porque la imagen de arriba es muy grande
+nada, júntense con Gastón
+vean cómo atacarlo porque justo
+estamos sacando todos los refactor de mail
+entonces
+júnten
+o sea, trabajémoslo con prioridad uno
+eso, o sea, júntense con Gastón ahora
+después del almuerzo, porfa
+se juntan
+y me dicen la solución y ya lo empezamos
+a atacar, porque vos, estamos haciendo
+un refactor de todos los emails, de acá que
+volvamos a hacerlo, va a pasar
+bastante tiempo, entonces
+capaz que lo que podemos hacer es achicarlo un poco
+o alguna, algo tenemos que hacer
+o sea, capaz que mismo
+una B1 y una B2, pero
+si pasa, y es más, te digo algo
+en el mail de la transacción
+que nosotros ponemos la información de una
+no pasa eso
+entonces, capaz que lo que podemos hacer
+es o reducir el tamaño
+para que sea un poco más chico, más
+concreto
+o no sé, pero piénsenlo
+y ataquémoslo ya, porque tenemos a Enrique
+a Fernando, tenemos también una cantidad
+de mails sueltos por ahí
+y creo que todos estamos
+tomando, corríjame, pero todos estamos
+tomando la misma medida de ponerlo
+arriba, ¿está? después el email
+de cerrar
+cuentas, ya tómenlo como aprobado
+así que, no sé ahí
+en qué quedó Jonah, ese
+mail, si llegaste a atacar esa parte
+de cerrar cuentas
+¿lo de cerrar las sesiones de configuración?
+sí, ya está en el
+worker y ya está la APR enviada a todos
+con el diseño del mail, todo
+está perfecto, genial, entonces eso está todo aprobado
+y después, hay que hacer un ajuste
+igual a ese mail, porque vos me pediste un cambio
+le agregamos la parte
+de soporte, es el único ajuste que habría
+que hacer en ese mail, Jonah
+está bien, perfecto
+eso es la parte de soporte
+bien, lo que hay que hacer
+con la parte de soporte
+es siempre tener en cuenta las
+dev notes que están poniendo los diseñadores
+para analizar
+si mostramos uno o el otro
+o dependiendo el caso, cómo separamos
+¿sí? bien
+eso es importante
+y Santi Gastón, quédense
+un segundito en postgram también, que tengo algo
+para charlar con ustedes dos
+no sé si tienes algo más Santi
+no, nada más
+bueno, está bien
+nada bueno
+te escucho
+bien, por mi parte
+estaba pasando las PR que estaban en internet
+a pull request, sacaron todas las que tenían
+en internet aprobadas
+y fuera de eso arranqué con teammates
+o sea que estamos ahora
+100% con PRs de
+o sea que las PRs de, ¿cómo se llama?
+de notificaciones
+los bugs que habían surgido
+también
+de la parte
+de triangulación
+no, esas faltas
+creo que todavía las pruebe Kike
+los casos de QA
+está, pero ya está abierta
+sí
+bien
+está
+buenazo
+perfecto
+ahí vamos a ver si podemos mover
+todo eso con Marti
+a ver hasta cuándo
+y ya incluiste el módulo de notificaciones
+en la barra a la izquierda, ¿no?
+sí
+hermoso
+muy bien
+bien
+pasamos con el CQA
+a ver
+¿qué onda?
+bien
+yo he aparecido en AWS ya en interno lo único que me faltaba era la PR, ¿no?
+sí
+que me faltaba era la PR de configuraciones
+que ya hoy me la terminó de aprobar Nahua
+así que ahora estoy haciendo ahí un
+un pequeño ajustecito porque había conflictos
+con esto del chatbot en las rutas
+y ya queda en pull request y después está
+ahí ya todo lo que es configuración ya está al lado de ustedes
+ta, quedaría actualizar eso de contacto
+hagámoslo ya
+bien
+perfecto
+hagámoslo ya y mandáselo
+y volvamos a chequear el flujo solo de diseño
+o es una cosa, no la... si ya están pulmones, ¿no?
+si ya está en pull request
+avisale solo en el channel
+avisale a Santi nomás
+para que chequee que esté bien
+porque habría un recuadro
+creo que nosotros no la vimos
+si nosotros no la vimos
+todavía no le hicieron ninguna iteración
+ya borrala de pull request
+así no perdemos tiempo mirándola
+porque eso va a agregar lógica y todo
+y hay que reverlo
+ya borrala de pull request y volvá a pasar
+el flujo de
+de design
+de diseño
+y después el de código
+recuerden
+que está el excel para que vayan usando
+o sea que yo
+no deberían
+a partir de ahora no sé cómo lo vienen haciendo
+pero en intern no deberían
+volver a asignar
+a uno y al otro
+no deberían volver a asignar
+a uno
+a tres personas en ningún momento
+siempre a dos
+¿está?
+sí
+eso ya arrancamos ya con las PR
+con las que ya estaban
+es como que
+si no había que hacer todo de vuelta
+y volver a llenar todo
+Jonah te iba a consultar
+con respecto a
+la PR de
+o sea los ajustecitos del Drawer
+eso que bajaba un poquito
+y el piquito que estaba raro
+eso ya está también
+está enviada ayer
+en la 9.10
+está perfecto
+también está del lado de ustedes
+y después hay una
+que quedó bastante arriba
+que es la del Worker
+para el cambio de los e-mails
+que yo ayer les hice follow up también
+pero quedó muy arriba
+Martina ya la aprobó creo
+si no me equivoco ¿no?
+no, la que aprobó Marti
+es la de cambio de contraseña
+la de los e-mails
+solo vos habías hecho una iteración ahí
+pero Marti todavía no la revisó esa
+si podés pasala en el chat
+que estamos con Martina
+y yo ya la reviso
+y la revisa ella también
+perfecto
+y nada después estuve con lo del chatbot
+que avancé bastante
+así que
+todo lo que es UI
+ya casi lo tengo
+ahora me faltaría conectar ahí
+con todo lo tuyo
+yo ya metí toda la conexión directamente
+ya te dejé todo en el client
+bien
+entonces la idea sería
+que capaz que lo pruebes
+o sea, probalo
+y fíjate que todos los permisos estén bien
+a ver si está faltando algo
+porque puede ser que
+con tu usuario no tengas acceso
+por ejemplo
+a la parte de Parameter
+o lo que sea
+entonces este
+nada, probar el chatbot
+ande bien
+integrarlo
+también algo que es importante es
+hacerle preguntas
+fijarte que te responda
+y yo te agregué
+los agregué
+te agregué un tablero de Canvas
+si
+los agregué a todos
+entonces
+hay determinados casos
+donde
+tendría que generarse esa tarea
+en el tablero
+si
+y es algo que
+que también tendríamos
+probar que esté funcionando
+está
+perfecto
+ahí creo que ya te envié
+encontré las variables de entorno
+ya te las envié ahí
+al chatbot
+Marti
+a ver si eran esas
+yo ya te paso los valores
+ya los paso por develop
+así le quedan a todos
+y todos lo pueden agregar
+¿sí?
+excelente
+perfecto
+gracias
+antes de pasar
+¿puede ser Jonas
+que la PR
+de configuraciones
+también ya esté
+para chequear?
+porque esa creo que
+la había visto
+como que estaba hace tiempo
+estaba en intern
+pero
+sí
+tengo que
+estoy haciendo un ajuste
+ahí con el
+tema de que había
+un conflicto
+¿sí?
+en las rutas
+y ya la mando
+a pull request
+ok
+nada más ir a eso
+bien de bien
+Gastón
+buenas
+bueno por mi lado
+estuve trabajando
+en la landing
+ya quedó adaptada
+a tablet y mobile
+hice también
+los
+algunos ajustes
+que me habían pedido
+después por otro lado
+estuve
+trabajando en el mail
+de
+de payment fail
+el que se manda
+cuando hay un error
+de pago
+y
+, bueno,
+también lo estuve
+ajustando
+con los comentarios
+que me había puesto
+vos, Santi
+de, bueno,
+de mostrar un poco
+los pasos a seguir
+en base a cada
+cada posible error
+y eso ya quedó
+aprobado hoy
+por Santiago
+ahora se los mando
+a design
+y, bueno,
+y otra cosa
+estuve trabajando
+estuve revisando
+la PR
+de configuración
+y, bueno,
+y otra cosa
+estuve trabajando
+estuve revisando
+la PR
+de configuración
+de configuración
+de configuración
+de configuración
+de configuración
+programadas
+de configuración
+de configuración
+el que es
+la PR
+se llama
+y la PR
+es la PR
+del promotor
+el software
+de los procesadores
+de los procesadores
+de los procesadores
+de los procesadores
+seleccionado
+en el formato
+de la PR
+la PR
+y, bueno,
+estuve trabajando
+con un相信
+en el software
+de Microsoft
+en el software
+de Microsoft
+todo
+fue
+puedan ver los mails
+y eso ya después
+los ajusto con los comentarios
+que son
+Dale, ahora cuando podamos sacamos una iteración
+más con los mails
+faltantes, viene bien
+Fernando
+Fernando, tenemos una cantidad de tareas
+de estas creadas, ¿por qué se enviaron
+nuevas solicitudes?
+Porque son según
+la nueva
+o sea, como
+se vio tipo que es lo prioritario
+entonces
+Ah, son de los webhooks
+Claro
+por eso
+Bien
+Ataquemos estas, los webhooks tienen
+o sea, tienen una
+complejidad interna enorme
+Sí, lo estuve viendo
+O sea, veo que pusiste tres puntos
+y los webhooks literal
+tienen una complejidad interna enorme
+enorme
+no me parece que esté mal
+pero agarremos estas
+o sea, tenemos
+que ya las tenemos creadas
+¿sí?
+Mirá que estoy bastante encaminado con los
+con los tres esos que mandé
+No, no, no, pero es
+a ver, esas tareas en sí no están aprobadas
+y no se deberían atacar a no ser que estén aprobadas
+y los webhooks tienen una
+complejidad enorme, entonces
+¿en cuál, en cuál avanzaste?
+Un poco en todos
+de este tipo de avances
+Ah, los webhooks son para trabajar semanas, ¿no?
+Los webhooks son para trabajar semanas, porque si no vamos a hacer cualquier chanchada
+¿sí?
+O sea, si hay uno que avanzaste bien, estamos bien
+pero si no, lo mismo que te dije
+la daily pasada, tenemos una cantidad
+de tareas acá para trabajar
+¿está?
+Entonces, metámonos con esas
+borremos esas solicitudes
+así no quedan
+o yo las cancelo, porque literal
+los webhooks tienen una
+complejidad, o sea, creo que
+capaz que el de payment, si querés el de payment
+quídalo
+como para dejar, para que ese trabajo que hiciste
+ya no lo...
+Prefiero, o sea, en todo caso, prefiero
+así que...
+¿Pero cuál avanzaste? ¿Avanzaste en uno en particular?
+Porque, mirá, te digo algo
+Rail, ya te voy diciendo que ni lo vamos
+a trabajar
+entonces Rail no se va a trabajar
+Rail, yo estoy trabajando
+como dije en mi daily en sacarlo
+en 100%, entonces
+no vamos a agregar más tests unitarios
+para nada de Rail, por ahora
+¿ah?
+El endpoint de OneMoney
+tiene una complejidad de la puta madre
+el endpoint de Play también
+el webhook de Play también
+y el de Bridge también
+el único que es medio sencillo
+es el de payment
+¿está?
+Entonces, si querés trabajar uno
+o sea, es más
+te lo voy a probar
+porque si lo sacás creo que nos aporta valor
+o sea, está bueno
+pero después el resto por ahora
+y no, y tampoco por
+por esa calidad de
+por esos puntos
+porque literal
+lleva una descomposición de la puta madre
+vos fijate que por ejemplo OneMoney
+tenés dependiendo los tipos de eventos
+y qué hacés según el estado
+según cada tipo de transacción
+y todo eso tenemos que validarlo
+termina generando cosas en S3
+concatenando eventos, o sea
+desencadenando eventos
+lo mismo pasa con
+con Bridge y Play
+Play tiene una lógica que la verdad
+está muy vieja
+y me parece que hay que hacer un refactor
+antes de atacarla
+o sea, la lógica de Play, si te fijás
+si tomás 5 para mirarla
+tiene console logs horribles
+fue algo que se sacó muy rápido cuando salió
+y tiene una deuda técnica
+o sea, anda de vuelo
+porque no hemos tenido
+quejas por ahora
+pero tiene una deuda técnica de la puta madre
+o sea, entonces
+concentrémonos
+en estos testatos
+si querés, sabés
+algo que le podés dar una mano también a Enrique
+que eso coordínenlo con Kike
+es en la parte de Cypress de Teammates
+¿tá?
+que eso para mí es más importante incluso que esto
+ok
+o sea, pero si querés
+el único que me parece que está bueno
+para dejar constancia y que es
+sumamente sencillo
+es el de Payment, el de Payment es tipo bastante
+cortito
+si querés liquidarlo
+como estaba haciendo tipo en
+batch, prefería ya
+dejar como una especie
+de indicio de lo que sería una
+un buen setup
+de test en batch
+justamente
+claro, ojo que también todos los test que pasaste
+están mal nombrados
+¿tá?
+todas las tareas que pasaste están
+o sea, test unitarios para el endpoint
+pero están mal nombrados
+o sea, como que está al revés, no sé
+pusiste la descripción y después el nombre del test
+ojo, acoplate ahí
+el estándar, porfa
+fijate ahí por ejemplo las PRs de
+las tareas de Nahue
+o las tareas que envió Gastón
+ahí tenés en el canal
+bastantes ejemplos
+tenés razón, sí
+te voy a poner acá
+renombrar
+igual si están canceladas también
+no, la de Payment
+si podés sacarla, si ya te tomaste el tiempo
+de sacar una, sacala
+porque ya deja constancia
+y aporta valor
+yo para mí lo importante que tienen que atacar ahora vos y Enrique
+son los correos
+Cypress de TeamMate
+creo que Cypress de TeamMate tiene muchas variantes
+que necesitamos testear
+y después acá tenemos
+ya tenemos creadas una cantidad de tareas
+o sea, relacionadas al BackOffice
+a la parte de Banking dentro de BackOffice
+que me gustaría poder
+empezar a
+a testear
+agregar la parte de test unitario
+creo que esto es un flujo bastante delicado
+que está ocurriendo en el BackOffice
+y tenemos que tenerlo pronto
+bien
+querés que arranque con mi Daily
+o
+si, si, si, decime, decime
+bueno, estuve haciendo un poco de Code Review
+también
+estuve con corrección
+de comentarios
+estuve
+terminando la PR
+de correos que tengo algunos comentarios
+y sobre eso
+justamente
+estaba el tema de
+no sé si de repente convendría
+crear un Channel
+o algo por el estilo de
+saber qué es lo que está
+en
+Ready4Dev
+de parte de diseño y qué de Ready4Dev
+está tomado por cada desarrollador
+capaz que
+pero ¿por qué?
+no, para saber
+qué correos poder atacar
+porque ayer me pasó
+bien
+no sé ahí Enrique
+¿cómo lo viene manejando eso con
+diseño?
+pista manual nomás
+ingresando en cada
+mensaje y bichando
+y por ahora lo que yo decía de
+reaccionar con un visto
+al correo que vamos a atacar
+no mucho nada
+si quieren
+odio lo que te voy a decir
+pero si quieren pueden crear un excel
+como para ir matando correos
+y ahí también se lo pasan a
+diseño entonces van pasando
+o sea también
+está bien
+recién creo que tengo que modificar
+el nombre de esa tarea
+pero bueno y por último eso
+que estuve con los test
+de esos de Bebeo
+que había hecho propuesta
+y
+que nos íbamos a juntar con Nahue
+para ver el tema
+de las skills y avanzar en eso
+bien perfecto
+si tenemos que setear prioridades
+para vos tenés
+todos estos del back office
+está lo que dicen
+o sea no sé por qué acá quedó uno del
+site, revisate esta tarea
+y fijate si hay que poner el renombrar
+después tenés todos estos del back office
+que más ya los voy a asignar al sprint
+cosa de que te queden
+ahí creo que son todos
+test unitarios que están usando el equipo
+de Bolivia y quiero ya
+o sea son todos endpoints que están
+usando mucho el equipo de Bolivia y quiero ya
+me encantaría ya tener test
+es más Nahue en este momento está trabajando
+en cambios en eso entonces
+creo que está muy bueno que
+se arranquen a hacer test de estas cosas
+sí
+y después también además de los correos tenés
+pueden coordinarse
+para juntarse con Kike para dividirse
+cómo atacar la parte de Cypress de TeamMate
+que es algo
+que tiene una cantidad de flujos
+y tenemos que incorporar
+Cypress bien
+cualquier cosa igual
+si no nos escribís a mi a Martina
+si medio que ahí estás perdido
+y te ubicamos
+después si ya avanzaste
+con esta
+de Payment de Wehu que es un test unitario
+que creo que es bastante sencillo
+y deja algo armado
+dale adelante déjalo pronto
+bien yo ahí lo que te puse
+es que renombres o sea que
+vuelvas a ordenar lo que es la tarea de la descripción
+y ya se apruebe
+Kike
+hay de mi lado algunas cosas que
+están allí en curso
+la idea es obviamente a medida que surjan
+comentarios y eso ir atacándolos
+como prioridad
+si querés Santi vos decías que
+van a estar atacando con Martina
+esas PRs abiertas yo les puedo pasar
+de repente una lista de mis
+PRs abiertas para que les sea más fácil
+y bueno y mientras tanto estuve
+ya obviamente estuvimos moviendo correos
+ya hubo por ejemplo
+hay algunos que les llegaron a ustedes
+hay otro que hay el de bienvenida por ejemplo
+lo aprobó Gastón
+así que eso ya se está moviendo en Intag
+y bueno la idea es
+seguir agarrando
+correos a medida que estén en
+Ready4Dev
+y bueno y también
+como detalle menor
+tengo registrada de la
+reunión del otro día
+una tarea para atacar lo del
+Prominent Engineering
+allí lo que tenía asignado yo
+eso capaz que también lo
+ataco en paralelo
+y bueno y quedo atento
+en realidad a lo que decías
+con Gastón y Santiago hace un rato
+del tema de las imágenes de los correos
+digo capaz que
+me coordino con ellos para ver como
+hacer con el tema de la imagen
+de los correos
+lo que está aquí
+que ahí también
+juguemos con dejar de tareas
+a Tato con la parte de teammates
+eso si pueden capaz que al final del día
+o lo que sea ya juntarse cosa que
+semana que viene ya arranquemos
+un poco mejor con eso
+para por lo menos estarlo separado
+bien?
+un segundito
+y Martu creo que falta solo vos
+si
+bien de mi lado
+estoy viendo PRs
+y después estoy
+con el testeo de lo de pago
+interno que sigo encontrando
+errores en casos bordes
+creo que ya lo solucioné
+igual pero
+tengo un caso para ver
+post-scrum
+de un a ver como queremos
+encarar una
+uno de los casos
+bien de bien
+si pueden quédense
+alguien tiene post-scrum además de Marti
+y lo que tiene para hablar de diseño
+si pueden quédense el equipo de diseño
+y Marti un segundito
+resto buen provecho
+disculpen la demora hoy que se me atraso un poco
+vamos a arriba
+chao

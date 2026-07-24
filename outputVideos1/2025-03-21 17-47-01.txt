@@ -1,0 +1,327 @@
+Ok, si
+Hola
+Si, te escucho
+Pachoclo acá, Cabo Sandía
+Pachoclo, Cabo Sandía, ¿me escucha Cabo Sandía?
+Pará, estás muteado
+Ahí va
+Cabo Sandía
+Los auriculares andan bien por lo menos, ¿no?
+Si
+El año que viene te voy a regalar uno de cable, hijo de puta
+Este
+Cámara esta, no sé, no prende
+O sea, la conecta y prende y se
+Yo tengo una
+Yo tengo una
+Yo acomodo eso que dijo Guillermo, quedá tranquilo
+Escuchame
+Escuchame, necesito
+Anotate esto
+Todos los activity codes
+O sea
+Cuando vos ponés single partner
+¿Podés compartirme worker?
+Si
+No puedo
+Ahí
+Si vos vas a
+A los documentos template
+Ah, bajate el dev
+Porque ya subí tu documento
+Ya quedó en S3
+O sea, debería quedar ahora en S3
+Por más que también quedó ahí
+Quedó en S3
+Fue el último que me pasaste
+Si hay que actualizarlo
+Revisalo
+Si lo puse mal
+Ahora no, ahora no
+Revisalo y me pasás el nuevo
+Sí, está bien
+Ya veo que está bien
+Está bien
+Escuchame una cosa
+Abriste un documento, por ejemplo, el 10
+65
+Hay varios
+Ojo con eso, que no sé que te abre mierda
+Bueno, el 10 65
+Subí arriba del todo
+¿Viste donde dice activity code en el C?
+Siempre debería aparecer con ceros a la izquierda
+O sea, si es 55
+Tiene que ser de largo 6
+Y con 6 ceros a la izquierda
+Largo 6
+O sea, siempre son 6 dígitos
+Y con ceros a la izquierda
+Vamos
+Dígitos
+Ok
+Segundo punto
+Este activity code
+El 10 65 se usa para multicompañía
+Pero también el activity code
+Aparece en el
+Aparece en el
+F1-1-20
+Ok
+Sí, 11-20, ahí va
+A ver
+Dale click
+El 11-20 tiene el activity code
+No, debe ser el otro
+A ver, fíjate
+El otro, el F54-72
+¿Dónde está?
+Activity code, ahí, lo tenés en el 1-E
+También hay que chequear que suceda lo mismo
+Y dejá abierto los dos
+Porque ya vamos a trabajar con esos dos
+Siguiente punto
+Esto con respecto al activity code
+Entonces acá hay que probar
+Estos de guiones no los voy a arreglar en dev
+Van a quedar corruptos en dev
+Me chupo un huevo por ahora
+Hasta que nos genere un error
+Ok
+Ok
+Ok
+, no hay problema
+Si lo vamos a agregar en stage
+Si lo voy a arreglar en producción
+Ahora
+Si vamos a esos dos archivos
+Volvemos a esos dos archivos
+Vos cuando hacés la declaración
+Hay un punto que te pregunta
+Hay un punto que te pregunta
+Por la actividad principal
+Te dice cuál es tu actividad
+Normalmente toma la industria
+Que vos rellenás por defecto
+¿Sí?
+Sí
+Entonces ahí necesito que pruebes dos cosas
+Vos entras a ese punto
+El sitio y el sitio lo ves en español
+¿Correcto?
+Sí
+No, no
+El sitio normalmente es en inglés
+¿Por qué?
+Cuando hagas la declaración
+Hacelo en español
+¿Vos deberías dejar
+Primero crear una compañía
+Con una industria de las que viene
+¿Vos deberías completar el formulario en español?
+¿Sí?
+O sea vos entrar
+Cuando crees esta compañía
+Hacelo todo en español
+¿Vos?
+Pero
+Pero, pero, pero
+Cuando vos ves el formulario
+Deberías ver
+Te debería aparecer
+La actividad
+La industria
+O sea la actividad
+En estos formularios
+En Main Activity
+Te debería aparecer en ambos formularios
+El de Multicomplanía y Simple Compañía
+Te debería aparecer en inglés
+¿Está?
+Si vos rellenás en español
+Te tendría que aparecer en inglés
+Punto número uno
+O sea si vos creás una compañía
+Con una industria existente
+¿Está?
+En español
+Rellenás el formulario
+O sea
+Cambiar la configuración de navegador a español
+Rellenás el formulario
+Pa, pa, pa
+Para
+Digo por las dudas
+Podés cambiar la configuración del idioma arriba
+Pero lo más sano es que cambies la configuración del idioma a nivel navegador
+Para estar seguro de que lo estás haciendo bien
+¿Está?
+Y segundo punto
+Deberías poner otra industria
+Que deberías escribirla en español
+Y cuando veas el Main Activity
+Se te debería traducir al inglés
+¿Está?
+¿Y eso cómo va a funcionar?
+Utilizo una librería gratis de traducción
+Que lo que hace es robarle a la API de Google
+Anda
+Y podríamos pagar la API de traducción de Google
+Pero no lo voy a hacer
+¿Qué más?
+Después
+O sea
+Tenemos que hacerlo para direcciones
+Sí tenemos que hacerlo para direcciones
+Y está
+No voy a perder tiempo ahora de eso
+Parte 3
+¿En qué persona debe estar chequeada?
+Ah, bueno
+Otra pelotudez
+Pero si vamos al formulario
+Creo que es el SK1
+A ver, no, SK1
+¿Cuál es cambio yo?
+Andate al primero de todos
+Al 65
+Al 65 Rulai
+Bajate a la página 4
+Ahí va
+El punto 30
+Vos cuando ponés múltiple compañía
+Tenés un checkbox
+Cuando ponés múltiple compañía
+En el step 1
+2
+Tenés un checkbox
+Que te pregunta
+Si vos hiciste transacciones
+Con activos digitales o no
+¿Está?
+¿Sí?
+O sea
+Es un checkbox
+Es obligatorio
+Y te pregunta
+Che, negro
+¿Vos hiciste transacciones
+Con activos digitales o no?
+Es solo para multisocio
+Vos lo que deberías hacer
+Es chequear ese checkbox
+Con una y otra
+Sí
+Este
+Dependiendo de si es multisocio o no
+¿Me entiendes?
+O sea
+Que se vea reflejado en el PDF
+Sí
+Exacto
+Vos deberías
+Te deberías setear
+Te debería aparecer una crucecita con el yes
+O una crucecita con el no
+Cuando se genere el PDF
+Y la última prueba
+La última prueba
+Estas las podés hacer
+Podés hacer varias en una
+¿No?
+La última prueba es
+Tenés que crear
+Tres compañías
+O sea
+Esto podés hacerlo
+Digamos
+En una de estas pruebas
+Una de las compañías
+No tiene que tener la palabra LLC
+¿Está?
+Otra de las compañías
+Tiene que tener LLC
+Pero en minúscula
+O sea
+Tiene que decir
+Mi compañía
+Y no dice LLC
+La otra tiene que decir
+Mi compañía
+Final
+LLC
+Pero en minúscula
+Y la otra
+Que ya diga
+Mi compañía
+LLC
+En mayúscula
+¿Sí?
+Y que se chequea
+Cuando vos
+Vas a rellenar el formulario
+Arriba del todo
+El formulario
+Que te dice el nombre de la compañía
+El
+El 65
+Por ejemplo
+Te dice arriba del todo
+El nombre de la compañía
+Y después también
+Te lo dice el
+F1
+1B
+El 11.000
+El 1.120
+También te lo dice
+El nombre de la compañía
+Pues son para ambos casos
+¿Está?
+Deberías validar
+Que está generando
+O sea
+Que está funcionando bien
+Eso del LLC
+Porque ¿Qué es lo que hago yo?
+Esto es como sociedad anónima
+O sea
+Siempre tiene que ser en mayúscula
+Siempre tiene que cumplir con esto
+Entonces
+Si no lo tiene al final
+Se lo agrego
+Si ya lo tiene con minúscula
+Se lo paso a mayúscula
+Y si no
+Y si ya lo tiene
+No hago nada
+¿Está?
+Bien
+Esto ya está en dev
+Y es
+Y es lo que yo voy a estar esperando
+Que vos me des el ok
+Para salir a stage
+Ok
+Ave María
+Ando de las mías
+Eso
+Ando de las mías
+Ando
+Ave María
+Bueno
+Nada
+Lo dejo
+Lo dejo así le mete
+Y liquidamos
+Liquidamos cortito
+A ver si te da ahora
+En esta media hora
+Capaz que mezclás casos
+Y
+Y lo sacamos en esta media hora
+Antes de la daily
+Así ya queda pronto
+Cuídense
+Hasta luego

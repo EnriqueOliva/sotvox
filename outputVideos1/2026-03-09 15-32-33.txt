@@ -1,0 +1,309 @@
+Martina, ¿se acuerdan cuando estábamos en una reunión con Guillermo y me agarró y me dijo, ¿cómo fue que me dijo?
+Que yo le dije que teníamos que modular las transacciones para mostrarla y Guillermo me dijo que no.
+Que estábamos con, creo que estaba con Santi, ¿no? Y Beto estaba también. Y Martina también estaba.
+¿Cómo Santi? No, no te entendí.
+¿Se acuerdan cuando estábamos en una reunión con Guillermo y yo le agarré y le dije varias veces que teníamos que modular la transacción?
+No sé si se acuerdan. Y me dijo, no, no, no, eso se hace solo.
+Bueno, nada, que ni idea. No sabría decirte. ¿Te acuerdas al menos de qué era la reunión?
+Sí, sí, sí, la parte boliviana. No, no pasa nada.
+Bueno, ayer salimos a Prod con lo que teníamos ahí. Ahora he estado corrigiendo algunos problemitas que han estado pasando con los flujos.
+Todavía tengo un bug ahí que no sé, hicimos.
+Una compra. Y no sé, estamos saliendo con probantes en el propio auto para explicar qué está pasando.
+Hay que sacar un hotfix del order book.
+Ay, Martina, ¿vos ya hiciste el rollback?
+Sí.
+Vengo peleando con eso y vengo trabajando en eso. Ahora voy a estar trabajando en algunos hotfix y algunas cositas más.
+Bueno, yo estuve con varios frentes. Entre ellos creé allí el viernes, creo, el mensaje para la salida Pro 19.
+Y ahora, hoy de mañana, mandé la 19.5. Estuve haciendo co-review con las tareas de tratato de test unitarios.
+Y lo más importante es, estuve trabajando con lo que es la parte de mails de compra-venta, con la de cancelación.
+Ya estoy a punto de mandarlo. Lo único que estoy haciendo es sacando los screenshots y eso, pero eso ya está pronto.
+Y creo que había quedado relegada una PR mía también de ajuste de email.
+De teammates, del ajuste de texto. Eso ahí había comentarios de Martina y eso ya quedó enviado también.
+Está para revisión. La idea sería, obviamente, seguir con mails. Salvo que surja otra cosa, seguir con lo de mails.
+Bien, perfecto.
+Ah, perdón, perdón, Santi. Yo le mandé ahí al chat con ustedes el ajuste de puntos y eso.
+Vos habías pedido complementar más los comentarios. Allí yo lo volví a mandar.
+No sé si quieren que yo lo vuelva a mandar el mensaje o si lo pueden encontrar allí cuando tengan tiempo.
+Dale, perfecto. Bien, Fernando.
+Estuve con las tres PRs de correcciones de los test con respecto a los cambios de Tinder.
+Estuve con las tres PRs de test de CRUD, que están, o sea, las seis.
+Ya están con los comentarios resueltos y todo.
+Corrigiendo PRs de impresiones.
+Y la de bloqueo de los cambios de estatus de CryptoCrossBorder.
+Y ahora sigo con la de los pop-ups.
+Ya la estoy medio cerrando.
+Ah, les estoy armando, ya estoy por terminar, la propuesta del cambio de puntos.
+Bien, de otro lado tenemos esta de QA y después las otras.
+O sea, la única que estoy viendo así es la...
+6.82, ¿no?
+O sea, la única que mandaste, volviste a mandar es 6.82.
+Tu pantalla, pero...
+No, no, estoy viendo el channel del QA.
+O sea, ¿cuáles tendrías pronta para mandar de nuevo?
+O sea, están todas, pasa que todavía creo que están en un caso.
+Si no me equivoco, están en un caso, sí.
+Algo, hago un recheck, pero sí.
+Creo, Sati, capaz que el viernes hay una más.
+Si no me equivoco, el día viernes, que puede estar en Cubaya.
+Así que hay solo una que estamos viendo con Tatato.
+Hay un pequeño detalle en los tests.
+Porque en QA tenemos solo la de Tatato, solo la 6.82, y tenemos tres de...
+Tenemos tres de Teammate.
+A ver si pueden llegar a QA esas tres de Teammate, Tatato.
+6.81 está en QA.
+¿Te acordás que dijimos que no íbamos a volver a mandar el vídeo, que íbamos a mandar todas nuevas?
+¿Te acordás que lo hablamos eso, no?
+Ah, ok.
+Está.
+Está muy genial.
+Voy a avisar de eso.
+No, no, tranqui, tranqui.
+No, no, tranqui, tranqui.
+Bueno, revisa eso para así las volvemos a chequear.
+Los siglos viejos los dejémoslo para el caso excepcional, porque lo he charlado.
+Bien.
+Bien de bien.
+Y pasanos propuestas de puntos, porque tu caso es bastante alarmante, o sea, no sé qué
+hacer ahí.
+Tenemos mucha cosa ahí, no sé qué pasó, que no se fue actualizando, pero a ver si
+por lo menos podemos cerrar la de test.
+Igual.
+No.
+No sé qué hacer ahí en este caso.
+Si mañana, no sé si arrasa o se va a cerrar.
+Sí, como hablamos antes.
+No podemos dejarlo hasta el último momento.
+Que por lo menos pasen estas de test a ver qué podemos hacer.
+Ah, pero está mágico.
+Yo no voy a sumar, a parecer, 80 puntos.
+Y tampoco estas se fueron a actualizar.
+Sí.
+Entonces, veamos qué se puede hacer.
+Pero tampoco vamos a hacer puntos.
+Bien.
+Bien.
+El viernes estuve con lo del order book y lo del dashboard.
+Ahí ya quedó mergeado todo eso.
+Lo mergeaste ahí el finde.
+Quedó la tarea por ahí.
+No sé si la pasamos a DOM.
+Yo no la pasé todavía, por las dudas.
+No sé si habías creado otra o usamos esa misma y ya la pasamos a DOM.
+Y hoy de mañana estaba atacando las PRs que tenía abierta.
+Que Nahue me había dejado ahí unos comentarios.
+Y después resolviendo los conflictos del custom button.
+Que se habían hecho ahí unos cuantos cambios y eso.
+Ahora estaba terminando de testear que no se rompiera nada.
+Con los conflictos y ya volverla a mandar.
+Y con eso ya quedaría libre.
+No sé ahí después con qué crees que siga ahí después de tarde.
+No sé si se juntaron porque vino temprano.
+Sí.
+Sí, sí.
+Nos estuvimos alineando ahí un poco.
+Sería con lo de la tabla y luego arrancar con lo de triangulaciones.
+Ahí por lo menos los gates ya los tenés para poder ver la triangulación.
+Así que serían más o menos esas dos cosas.
+Igual un poco.
+Dale, gracias.
+Nahue.
+Bien.
+Ya está.
+Aproveché hoy para revisar las cosas que habían subido entre el viernes y el finde.
+Poniéndome un poco al día.
+También aproveché para...
+Aproveché para en ese interim revisar las PRs de Jona.
+También ahí había pusheado un cambio para el tema de poder navegar a través del drop down con las flechas.
+Que eso se había perdido.
+Que ya lo revisó Jona.
+La idea era resolver eso y subir esas PRs.
+Y también había visto que tal como yo obviamente había esmergeado la PR del tema del order book.
+Y eso.
+Que yo había ramificado por el tema de haber hecho los 3 endpoints para aprobar, rechazar el tema de la counter party.
+También asignarle el crypto al KYB.
+El tema de cambiar el spread.
+Eso ya lo actualizé a esa PR también.
+Y fue la última vez que mandé al canal de pull request.
+Bien.
+Bien, perfecto.
+O sea que ahora ¿con qué seguimos?
+Ahora...
+Voy a terminar.
+Voy a terminar los comentarios que me dejó Jona en las PRs del drop down del site.
+Vamos.
+Y ya libero con eso la de dropi y la de vivió.
+Entonces ahí tendríamos para volver a atacarlo de raíz.
+Si.
+Exacto.
+Bien.
+Santi.
+Vamos.
+Buenas.
+¿Cómo va?
+Bueno, está por ahí en mi parte.
+Al fin estoy atacando unas cosas que había pedido Ille.
+Eso ya quedó liquidado.
+Ahora estoy...
+Ya terminé con la parte de triangulaciones.
+Hacer todos esos ajustecitos que me habías pedido, Santi.
+Estoy pegando una última revisada.
+Y voy a terminar...
+¿A los...
+A los mails?
+Sí.
+Claro.
+Paso una última revisada.
+Ya se lo mando a Gastón.
+Así que eso debería salir para hoy.
+Y...
+Y después me voy a poner a trabajar en la parte de...
+¿Cómo se llama?
+De los estados de cuenta.
+Pero ya con lo de los mails y el code overview creo que ya estoy OK con los puntos.
+Bien.
+Bien.
+Gastón.
+Bueno, yo estuve trabajando en los cambios que había pedido el viernes.
+En la parte de triangulación y compra y venta.
+Ya quedó hecho eso.
+Se los pasé hoy.
+Después seguí trabajando con...
+Con la pantalla de contabilidad del PDF.
+Pasándolo todo a Dropi.
+Y...
+Que ya quedó.
+Ahora se los voy a pasar.
+Para ver si está todo OK.
+Como para traducir todo a los tres idiomas.
+Así que...
+Nada, eso por mi lado.
+Y después tuvimos la reunión con Marketing.
+Que nos estuvieron pidiendo dos cositas más.
+Unos...
+¿Cómo es esto?
+Unos posteos.
+Y...
+Para redes sociales.
+Así que nada.
+Después lo quería ver contigo.
+A ver si...
+Como es el tema en la prioridad.
+Eh...
+Pero nada.
+Sigo con la contabilidad.
+Y ya con eso...
+Quedaría cerca del 100 puntos.
+Bien.
+Perfecto.
+Te quiero estar al ojo.
+Ojo que tenemos dos tareas.
+La de CodeReview no sé.
+Pero esta la tenemos sin...
+Sin puntos.
+O sea, hay problemas.
+Sí.
+Eh...
+Un comentario ahí.
+La de CodeReview.
+Ahí, Gastón.
+Este...
+Acordate de agregarle la descripción.
+Porque...
+Sé que vas...
+Has trabajado como dos o tres...
+Creo que tres tareas.
+De CodeReview.
+Este...
+Agregarles ahí los links.
+Sí.
+Lo que no estaba seguro era si...
+Eh...
+Si eran del sprint pasado.
+O...
+O sea...
+Fue doble el sprint.
+Así que...
+Son de...
+Ah, es verdad.
+Es verdad.
+Son de este.
+Ah, perfecto.
+Al fin le saqué un par de ajustes de...
+Que surgieron.
+Con el tema de...
+Tickets.
+Para validar los tipos.
+Y después...
+Algunos mejores ahí estilos.
+Eh...
+Lo que era la parte de la tabla.
+O algo así.
+O algo así.
+O algo así.
+Con el tema de...
+Los datos que se estaban mostrando.
+Eh...
+Está ahí.
+Lógicamente hoy...
+Eh...
+Bueno, de mañana me junté con Jonah.
+Estamos...
+Eh...
+Alineándonos...
+Con el tema de...
+Toda la parte del video.
+Y después...
+Eh...
+Voy a seguir con lo que es triangulación.
+Que yo estoy en la parte de...
+Básicamente...
+Implementar...
+Toda la parte de las tabs.
+En una época...
+Uno...
+El tema de los comprobantes.
+Y...
+Y las tablas.
+Y después...
+Eh...
+Voy a seguir con lo que es triangulación.
+Que yo estoy en la parte de...
+Básicamente...
+Implementar...
+Toda la parte del video.
+Y después...
+Va a estar ahí.
+Con el tema de las tablas.
+Y después...
+Voy a seguir con lo que es triangulación.
+Que yo estoy en la parte de...
+Trabajando.
+De...
+Contar partes.
+Bien, bien.
+Muy bien.
+Eh...
+Para todos ahí.
+Revisen al final del día.
+Yo voy a cerrar el sprint mañana.
+Que revisen.
+Mismo.
+Porque hoy estamos...
+Con bastantes cositas de O'Livern.
+Entonces...
+Revisen porfa.
+Que...
+Revisen todo.
+Porfa.
+Que esté.
+Como chaman.
+Como está su sprint.
+Al final del día.
+Manden alguna propuesta.
+vayan revisando, a ver si tenemos que ajustar algo
+lo que sea
+bien
+los que tenían postcrank, quédense
+el resto puede bajar
+nos vemos
+hasta luego, gracias

@@ -1,0 +1,1075 @@
+No le tocó esta vez a usted trabajar el fin de semana
+Esta vez a
+Ya le digo que el lunes se organice
+Porque vamos a estar hasta última hora
+O sea, de verdad le digo
+Por favor
+No sé que tiene, ¿tiene algo el lunes?
+¿Cogida ahí?
+¿Apertura de ano?
+No, no, no
+¿Cuándo arranca las clases?
+¿Cuándo arranca las clases?
+¿Usted arranca una semana?
+Yo arranco la siguiente semana
+¿Cuándo arranca las clases?
+Entiendo que 16 de marzo
+Bueno
+¿Usted está hablando de que usted arranca a dar clases?
+Sí
+Bueno, capaz que yo arranco el 16 de marzo
+Lo que yo vi ayer o antes de ayer era 16
+Hoy comienzo
+Próximos comienzos
+Carreras aniversarias
+16 de marzo
+No, nosotros ¿qué somos?
+Ah, yo no soy contador público
+¿Qué carreras somos?
+16 de marzo
+Capaz que yo creo que ahora todos arrancamos igual
+Bueno
+Bueno
+No, lo que sí le digo
+O sea, Dropi se marchó
+El lunes puedo tener una mañana un poco compleja
+Pero sí, me quedo hasta última hora sin problemas
+No tengo nada
+No, no, no
+O sea, ahí el lunes necesito
+O sea, de corazón necesito contar con usted
+Porque, ¿qué pasa?
+Vamos a salir a producción a las trompadas
+Va a ser a último momento
+Entonces yo voy a tener que
+O sea, si querés entrarte a las 12
+Vamos a ver
+Entrá para la day
+Muerta 3, carajo
+Este, necesito que
+Necesito poder contar contigo
+Necesito contar contigo para poder correr los test de Cypress y eso y demás
+Voy a intentar hacer una pequeña salida stage
+Para ir vaticinando lo que puede ser
+Ah, qué bueno
+Capaz que hacemos
+Sí, estaría bueno
+Por si empieza a fallar todo
+Estaría bueno
+Sí, porque no nos podemos
+O sea, la idea de ese día es
+Capaz que te digo
+Dile, create las PRs a stage
+Y salimos como estemos a stage
+Y nos vamos
+Nos vamos para casa
+Bueno, se me cayó la de
+La de los documentos
+Yo voy a entrar a la
+Pase de datos de develop
+Y borrar el cronshot que me había olvidado
+Sí, por favor
+Si no vamos a estar haciendo
+Haciendo concha todo
+Ahí se borró
+¿Cuál es la otra?
+Bueno
+Lo que sí
+Quería tener una charla con usted por esto
+Este
+Porque está
+Es muy probable
+O sea, la idea es que
+La idea es que
+La idea es que
+Es más, vamos a hacer esto
+La idea del lunes
+Es tipo 2D
+Que es una PR
+Para
+Para poder salir a
+¿Cómo es la mano?
+Para poder salir a
+A producción
+Para salir a stage
+O sea, es tipo una salida
+Es como que
+Fijate la última versión
+Si querés podés dejarla hoy
+O en semana
+O el lunes mismo
+¿Está?
+Cuanto antes las tengas mejor
+Porque antes podemos atajar problemas
+O sea, es solo
+Es solo salir a stage
+Yo no sé
+A recorrer el lunes
+Porque la salida a stage
+Son tipo 18.5
+La última
+Es 18.5.1
+Y agregamos un tercer nivel
+¿Está?
+Ok
+Nosotros recordá que tenemos
+Tenemos tres niveles
+Tenemos
+El nivel principal
+Que es tipo cuando sacamos una
+Una actualización jodida
+Después lo que tenemos
+Que es
+Creo que estamos en 18
+19
+Después el nivel intermedio
+Cuando sacamos pequeñas features
+O ajustes chiquitos
+Y el último nivel
+Es cuando hacemos una salida a stage
+Entonces ahí agarramos
+El último nivel que está
+La que te digo es
+Fijate todos los repos
+¿Está?
+El master
+Fijate todos
+Y cuando quieras
+Dejá las PRs contra stage
+¿Por qué es importante
+Las PRs contra stage?
+Porque una vez que se marchen
+Vos podés correr
+Los test de regresión
+Y ver qué mierda está pasando
+O sea, tu tarea el lunes
+¿Está?
+Es correr los test de regresión
+Y ver si está todo bien
+Si está todo bien
+Ya no va a haber nada
+De basquín que rompa nada
+Entonces
+Y si se rompe cosas
+Tenemos que sacar una PR
+Para arreglar eso
+¿Está?
+Entonces
+¿Cuánto tiempo?
+Si vos las mandás ahora
+Yo te las mando yo ahora
+Vamos
+Hasta ese punto
+No sé que
+O sea, si querés
+¿Vos para qué querés
+Dejar corriendo todo ahora?
+Porque está tranquilo
+Y ya
+El lunes no estamos
+No estamos con
+Con la soda del cuello
+Así que si querés
+Si querés ya mandale
+Yo ya las apruebo
+Y ya hacemos el rol
+Pero la idea es
+Lo que ya está en site
+No debería
+O sea, creo que
+Los más jodidos ya está
+Ah, entonces
+Entonces
+Es eso
+Después de eso
+O sea, la idea es que se pongan
+Con mails
+Se tienen que poner con mails
+Realizar tipo la parte de mails
+Dale que dale
+A la parte de mails
+¿Sí?
+Este
+Entonces ahí con esa parte de mails
+La idea es que
+Pues no
+O sea, que se dividan con datos
+O
+Y ataquen test unitarios
+Y los mails
+¿Sí?
+Este
+Tenemos 10.000 mails
+Y después hay
+Hay varios cronjoves
+Hay varios cronjoves
+Que hay que analizarlo
+Y crear
+Que yo no he
+O sea, de limpieza de ti
+Y esas cosas
+Voy a crear las tareas
+Y ya te las voy a asignar a vos
+Porque tenemos varios cronjoves
+Que tenemos que
+Además lo voy a hacer ahora
+Porque me voy a olvidar
+Porque tengo tantas cosas
+En la cabeza
+Me voy a olvidar
+Lo que me viene pasando
+Es que vengo trabajando
+De madrugada
+Para sacar cosas
+Para que los gurises trabajen
+Y en el día
+Corrijo 10.000 PRs
+Y hago
+Hoy tengo una reunión
+De una hora y media
+Con Ramiro
+Y toda la gente
+No
+Dios
+Estaba con una cara de gorro
+Que ya no aguantaba
+No, no, no
+Una hora con Ramiro
+No, no, no
+Una hora y media
+Una hora y media
+No, no, no
+Con respecto al contrato
+Todo bien
+Aparecen los 2.800
+Todo en orden
+Está
+Es excepción de derechos
+No hay nada raro
+Está
+Es formalización
+O sea, si hay algo
+Que te hace ruido
+Me lo podés consultar
+A mí o a Ana
+Pero
+Leételo el fin de semana
+Tranquilo
+No, no
+No tiene ninguna ciencia
+No hay nada
+O sea, es un contrato normal
+Con todas las cosas
+Para
+Protegernos
+Y que vos también
+Vos trabajás
+Tranquilo
+Una de las cosas
+Que está bueno
+Es que agregamos
+Es que si te vamos a despedir
+Tenemos que
+Tenés hasta
+Para pagarte
+14 días
+Eso está bueno
+Porque la realidad
+Es que yo
+Como independiente
+Te podemos echar
+Cuando quieran
+De Estados Unidos
+¿Entiendes?
+Entonces eso es un negociado
+Una de las cosas
+Por las que yo peleé
+No quería
+Tampoco me voy a hacer
+El defensor
+El defensor del pueblo
+Pero
+Una de las cosas
+Que yo peleé
+Le dije
+Está, mirá
+No podés
+O sea, tenemos que también
+Darle a la gente acá
+No es que va a quedar
+Sin trabajo
+Y un día para otro se va
+¿No?
+Entonces ese tipo de detalles
+Está bueno
+La realidad
+Que ese contrato
+Se lo pasan por el orto
+O sea, vos
+Que tendrías que ir a Estados Unidos
+Y contratar a un abogado
+Ir al estado de Wyoming
+Para poder
+Refutarlo
+Pero es una formalidad
+Que si hoy o mañana
+Pasara algo grande
+Vos tendrías
+Para defenderte
+¿Está?
+Y también nosotros
+Como empresa grande
+Tenemos que empezar a hacerlo
+Porque si queremos
+Tener fondo de inversión
+Tenemos que tener
+El contrato
+De todos los empleados
+Que tenemos planillo
+Claro
+Entonces está
+Es eso
+El único
+Que me falta regularizar
+Es Tatato
+Pero se lo vamos a regularizar
+Dentro de poco
+Ok
+Pues el único
+Que le estoy pagando yo
+A mi madre también
+Donde está
+Pero bueno
+Este
+Bueno, pero viene bien
+Y sale el flujo
+De compra, de venta
+Viste que tenemos
+Dos oficinas, ¿no?
+O sea, no sé si
+Viste que tenemos
+Una en Santa Cruz
+Y otra en La Paz
+Además de la de Wyoming
+La de Miami
+Estoy viendo fotos, sí
+Matías y Luciano
+Y
+La de la vida
+Actividad
+Entonces
+La verdad
+Yo si te pregunto
+Yo tengo pilas
+Sí
+Si te pregunto algo
+Te voy a matar, creo
+Este
+La última que veo
+Versión es 18.4.1
+Pero no
+No creo que vos sepas
+No, cuál es la última
+No
+Estoy viendo todos los repositorios
+Sí, la última es
+18.4.1
+Es la última
+Está
+O sea, es entrada máster
+A los cuatro repositorios
+Que hay
+Ver
+Es máster
+El último momento
+No tiene muchas cien
+Sí
+Es
+Sí, sí
+No lo
+No
+Deberíamos tenerlo en algún lado
+Pero tal vez
+Es como la
+No veo
+Tiene Walker
+El Walker tiene la
+18.2
+Sí
+Walker tiene 18.2
+Bacoffice
+Scythe
+Inside Drop
+No, mirá
+Máster de Bacoffice
+Tiene 18.6
+Scythe tiene
+18.4
+Y creo que sería 18.6.1
+Tal vez es
+18.6.1
+Va
+Solo crear las PRs a stage
+Y
+Droppy no se toca
+Claro
+Está
+Ok
+Bien de bien
+No, con este fix de Droppy
+Por lo menos aplazamos todo el tema de TeamMate de Droppy
+Que creo que tenemos muchas más prioridades
+Y darles más funcionalidad a Droppy que no requiere
+Entonces
+Ok
+Vamos a tener que actualizarle
+Vamos a tener que actualizarlo, pero...
+No es prioridad ahora, así que
+Ok
+Tal vez
+Vos mandala, yo las mergeo
+Y hacemos el rol
+Ok
+Bueno, bien de bien
+Sí
+Sí, no, después
+La idea sería arrancar con mails
+Pero antes de arrancar con mails
+Me interesaría que usted se siente contratado
+Y le den una vuelta de tuerca a esos tres unitarios
+Este
+Que nada
+O sea
+Porque en sí
+No tiene sentido seguir actualizando
+Y seguir haciendo todas las cosas
+Si
+Voy a mañana, yo cambio los permisos
+Y los tengo en explot
+Pero
+Si
+Si
+Si
+Si
+Si
+No
+Si
+Acabamos
+Si
+Al final ¿no?
+Tenemos que dar una vuelta de tuerca
+Porque
+O si no de verdad
+Si vale la pena seguir actualizando
+Porque
+Tenemos que checar que realmente te llegan
+O por lo menos yo qué sé
+Es que Bevölker que los permisos que
+Están
+Si
+Son
+Acá
+Mana
+Code
+permisos y te aplica.
+Hay que llegar a un estándar una vez
+que realmente hacer una, vos hagas
+una prueba de un
+refactor de archivos
+que funcione con esos permisos, ahí ya lo ponemos
+a tatato a que siga con todo
+y vos te pasás directo a los mails
+y después una vez que te ha dado termines con los test unitarios
+que ya los estaba por redondear, los test unitarios
+graves que quedaban
+sigamos con
+te de una mano con los
+emails
+yo creo que tatato lo que está teniendo es eso
+yo se lo dije, yo se lo vengo diciendo
+pero creo que lo que está teniendo es que le falta
+como yo a usted le digo que de repente
+le falta cierto tecnicismo a veces
+o sea, aparte
+como que te lo da el estudio
+la experiencia, yo creo que a tatato lo que le falta es
+tiene como el problema
+del junior, es el problema
+de que luego no quiere
+hablar, quiere atacar, hace todo
+la otra vez estuvo con algo de las gráficas, estuvo
+dos días
+y manda la PR y mandó
+varias cosas y vos lo tenías que validar
+por ejemplo con lo del color
+todo una vuelta cuando era borrar
+los destinos
+yo le dije que vos
+no es una duda
+o sea, investigatelo, investigás media hora
+una hora
+somos una cantidad de gente
+somos una cantidad de gente ahora
+yo te tengo que cagar
+contra trompadas
+yo te tengo que cagar a trompadas
+18, 18
+no, no, 16
+18, 18.6.2
+fíjate que es el backoffice
+el que tiene esta bola
+soy disléxico
+no, pero es que me fijé en el backoffice
+el backoffice es
+18.6
+18.6.1 o no?
+18.6.1
+ah mirá, fui yo que lo escribí mal
+me mandó
+son dos ochos
+son dos ochos
+un uno, un ocho, punto ocho
+claro, me llevó el correo
+miro y digo
+escuchame
+no, bueno
+ahora le apruebo estas pederres
+le apruebo estas pederres
+y mandamos a Rollo
+yo le hablé
+a Tatato, le dije
+yo siempre le digo menos es más
+pero está
+claro que sí
+a ver, esto de los documentos
+se puso a chequear una cantidad de cosas
+preguntaron
+te digo vos
+si Enrique te dice que este shot
+yo le dije
+le abrí por priori
+mirá que estamos dando documentos fácil
+son cargos fácil
+la idea es que vos entiendas cómo funciona
+ahí va, claro
+y estuvo como un día y algo con esto
+entonces está
+ojo, es normal
+a mí me pasó
+a vos también te pasó
+a todo el mundo nos pasa
+que queremos atacar
+el tema que está
+tiene que mejorarlo
+pero está bien
+yo no digo que el loco no se meta con eso
+está genial
+me encanta lo que le mete
+pues yo sé que al loco le mete
+con todos los problemas que tiene
+le mete una banda
+más allá de que sea mi hermano
+yo sé que él le mete
+pero está
+tiene que corregir esas cosas porque
+necesito
+o sea necesito que él
+empiece a formar el señor
+pues es un tipo que los estudios los tiene
+necesito que forme el señor
+pero bueno
+vamos arriba Kike
+manda
+yo voy a
+vamos a marchar primero el site
+si querés mandame el site primero
+mandalo derecho a Pulp Recuerd
+mandalo derecho a Pulp Recuerd
+porque el site tiene que correr las migraciones
+vos tenés acceso a la base de datos de stage
+si
+pará
+entonces vamos a ver el site
+vamos a hacer una cosa
+vamos a marchar ya al site
+porque se tiene que correr migración
+está compilando todo
+y
+vos sabés que
+en esta nos manda el copilot
+porque es para ponernos
+para ponernos a llorar
+vamos a arreglarlo
+ok
+claro
+ok yo lo
+no no los comentarios que nos tiran no
+no no
+no somos buenos
+no hay uno que está bueno este
+me lo voy a llevar
+o sea que si tiene código no lo regenere
+me lo voy a llevar para mí para pensarlo
+pero no yo quiero que siempre se ponga el código
+el tema que nosotros estamos enviando mal
+ese código nunca se debería enviar
+ahí
+o sea
+porque siempre tiene que generarse uno único
+noo
+no hay comentario que valga la p...
+no hay comentario
+pena
+ah mirá este si está bueno
+empresarial
+ah este si
+empresarial la p...
+site
+si
+lo voy a mandar
+al voleo
+como
+un guadañazo
+está bien sabés que olvidate
+olvidate
+olvidate
+el
+pre
+como te dije eso vamos
+empresarial
+consultoría empresarial
+yo creo que pegué esto
+puede ser que guille me lo haya matado mal
+o puede ser que yo soy un disléxico de mierda
+yo tengo sospecha de que yo soy un disléxico
+por lo de recién por ejemplo
+voy a llamar a guillermo
+porque es que esto
+empresarial y fitness
+financiera notaría empresa dial
+la dial y final
+voy a asumir que
+fingir demencia
+que te parió kike
+puta que te reparo
+loco
+la puteada loco
+rompí todo
+a la aerobisa
+a file changed
+291
+eh
+un montón
+un montón ya vamos ya
+vamos a poner un tubo acá
+vamos a poner un tubo
+después te puedo hacer un comentario y...
+cuando puedas
+no bueno
+perdone
+no no pasa nada
+no te perdono pero
+bueno
+ey la c..
+Sí, hablame Kike.
+Noté al correr el cronjob de declaración este, de los documentos de regeneración,
+viste que hicimos una limpieza en dev, o sea, solo había creo que dos declaraciones,
+y aún así demoró tipo cinco minutos, seis minutos, o sea, en correr el cronjob entero.
+No, se va a tener que correr de madrugada.
+Pero está bien esa demora, o sea, en producción, con la cantidad que haya de declaraciones, digo,
+demoraría horas y horas.
+Va a tener que correr de madrugada y va a demorar una hora o dos.
+Sí, es un gran problema que tenemos esto, lo admito.
+Lo admito, es un gran problema que tenemos.
+Hago mea culpa en eso porque debemos haber dividido el worker hace rato.
+Hace rato.
+Y no lo hemos hecho.
+¿Sabés a lo que no le di bola en esta tarea?
+Al tamaño de los PDF de declaración.
+Capaz que se pueden comprimir, o algo así.
+¿Con una herramienta online?
+No, no, hay que usar los formales.
+Lo que tiene que pasar es que esto de generación de PDF tiene que ser un servicio aparte.
+Eso es lo que tiene que pasar.
+Generación de PDF tiene que ser un servicio aparte.
+No, no hay vuelo.
+No podemos tenerlo en el mismo servicio.
+Porque demora.
+Bueno, vamos arriba.
+Nos vamos con fritas, nos vamos.
+Vamos, vamos.
+No, porque yo lo que quiero es mergear esto.
+Y fijarme que corra la migración.
+Para mí es lo más importante.
+Y si no llegase a correr la migración, está más problema.
+Si corre la migración y sale todo bien.
+Vamos, con ese uri.
+Bueno, ahí se terminaron de correr los test.
+El build, dale loco.
+Está el build.
+Ya está.
+Bueno.
+Vamos contra stage.
+Bueno, a ver si corre la migración en stage.
+Después vamos a ver.
+Cruzando los labios.
+Siguiendo el flujo.
+Uy,� liaison a día.
+¿Qué pasa?
+Es que me da mucho dolor.
+Me da mucho miedo.
+A ver.
+Esto es un error.
+Sigo mirando la línea.
+10.000 líneas de SID.
+No me hace nada mal.
+No me da nada mal.
+Estoy viendo backup.
+8.000 líneas.
+O sea, estoy viendo backoffice, 8.000 líneas de más.
+El site, 10.000 línea.
+O sea, hace rato que estamos trabajando acá, ¿no?
+Site, 10.000 líneas.
+Backoffice, 8.000 líneas.
+Worker, 2.000 líneas.
+Ojo, Worker casi se quitó y se arregló.
+El site se sumaron 10.000 pero se quitaron 4.000.
+Los backoffice se sumaron 8.000 y solo 1.000 se quitaron.
+O sea, hay mucho código que se está agregando.
+Eso está vivo.
+Corra la migración bien y así somos todos felices.
+¿Te acordás que nosotros habíamos empezado con el POC, el proof of concept,
+de crear una compañía con código y por ahora solo...
+Ah, bueno, tengo malas noticias con eso.
+¿Qué le pasa?
+Viste, viste, viste que vos tocás la puerta del diablo, ¿no?
+Vos tocás la puerta del diablo.
+Bueno, vamos a tener que desactivar eso.
+Y eso es algo que a vos te viene bien.
+Entonces, vamos a hacerlo siguiendo.
+Ahí tengo que poner a Martina con eso porque lo ha trabajado.
+O capaz que lo toco yo.
+A ver, capaz que lo agarro yo.
+Pero lo que vamos a tener que hacer es, para el flujo...
+Es más, eso tendremos que hacerlo.
+Bueno, capaz que lo toco yo el fin de semana.
+Pero bueno, es mismo.
+Vamos a tener que desactivar el cupón para la compra e inmigración.
+Solo va a poder utilizarse.
+Lo que le decía Guille es, hoy en día nosotros estamos vendiendo compañías de 1.200 dólares.
+Y no tenemos ni idea cuál entró por cupón o no.
+Entonces, en CryptoCrossBorder no pasa nada.
+Pero supone que la única opción que tiene es crear CryptoCrossBorder.
+Entonces, ahí nos vamos a enterar.
+Y si de ahí que no viene a poder flujo, no nos jode.
+Así se filtrase, ¿no?
+El cupón.
+¿Qué es lo que puede pasar?
+Lo que siempre pasa con el cupón.
+Pero ahora no podemos permitir que gente entre gratis y nosotros le paguemos compañía de 500 dólares gratis.
+¿Cómo afecta eso a Cypress?
+¿Cómo va a afectar eso a Cypress?
+El endpoint debería dejar de funcionar.
+Pero yo lo que quiero poner es una flag.
+Es decir, if Cypress.mode para seguir habilitando la función.
+Entonces, ahí te la voy a habilitar en stage para que lo puedas seguir usando.
+No, sí, está.
+Porque ya que lo hicimos...
+Todas esas logísticas nos van a mover para atrás.
+Ok, estaría genial.
+Igual redujimos un montón de tiempo solo con los waits.
+Así que eso está bueno.
+Porque, o sea, lo que yo te quería decir es que esa reducción, viste, de 45 minutos a 15 minutos ocurrió solo con los waits.
+No con lo de cupón.
+Porque lo de cupón no está.
+Lo de cupones es solamente una compañía.
+Es un proof of concept.
+O sea, que si agregáramos lo de esto de los cupones, crear con código,
+perdón, código, se reduciría todavía más el tiempo.
+O sea, quedaría bastante menos.
+No, sí.
+No, sí, es la idea.
+Es a dónde tenemos que ir.
+Se animan a entrar a AWS, eh.
+Ok.
+Esta cam, por alguna razón, nunca, cuando usaba la laptop, nunca me reconocía la mano, el pulgar.
+O sea, no sé qué, si es algo de la cámara o qué onda, pero ahora funciona.
+Sí, veo todo en verde.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Update relation between company a Crypto Global.
+Precioso. ¿Cuántas migraciones tenemos? 200, pero cuadrado.
+Están mergeados ambos. Voy a arrancar con el rollback del site.
+¿Terminó el merge del site y backoffice? Terminó el merge del site.
+Recordemos que como había migraciones había que correr primero el site y después el...
+Nosotros lo que tenemos que hacer es generar librerías de NPM para las cosas que se reutilizan.
+Componentes, constantes, lo que sea.
+Eso tenemos que hacerlo. Yo lo que quiero es, ahora que estamos en un equipo más grande, quiero registrar esas librerías y empezar a delegar esas tareas.
+Hay muchas cosas. Lo que está bueno es que hay tantas cosas por hacer.
+Si seguimos generando plata, lo bueno es que no solo vamos a poder agregar más features, sino que tenemos para mantener código y para arreglar.
+Ahora Beto está como loco y quiere meternos en la parte de seguridad.
+Yo estoy reuniéndome con otro equipo de desarrollo que está haciendo una API para nosotros y después nosotros lo vamos a quedar manteniendo eso también.
+O sea, con toda diligencia artificial. Porque la idea es, ¿qué pasa?
+Nosotros como estamos, tenemos un equipo grande, pero está todo dedicado a esto.
+¿De qué estamos todos al culo?
+Entonces, lo que pasa ahí es que ellos ahora están con...
+Tenemos temas de soporte y esas cosas, porque además Guillermo es habilitado de intercom porque no lo configuró y yo nunca me senté a configurarlo porque dije,
+no, no tengo vida, no me voy a poner a configurar a intercom.
+Si querés me siento a configurar a intercom, pero me quedo de sentado.
+Y tengo diez mil cosas.
+Y él me dijo que se encargaba y al final lo configuró y lo tiró para atrás.
+Y ahí lo que sacamos, lo que terminó sucediendo, es que...
+Se nos acabaron los créditos.
+Lo que va a pasar ahí es que Matías consiguió que la empresa, que es partnership oficial de AWS,
+consiguiera créditos para desarrollarnos cosas y la idea es que después con ellos nosotros pudiéramos conseguir créditos.
+Porque fíjate que hoy en día estamos gastando casi mil quinientos dólares por mes en AWS.
+O sea, entonces la idea es conseguir esos créditos.
+¿Te acordás que hasta hace un tiempo estábamos medio como en la cuerda?
+Sí.
+En la cuerda floja, que Guillermo andaba hasta con préstamos y cosas que estaba complicada de la mano por la falta de compañía.
+Eso ya como...
+Yo no sé cuál es la situación de los préstamos, pero la realidad es que contratamos más gente porque tenemos más plata.
+Claro, o sea, ya acá, digamos, nos alejamos un poco de eso ya, ¿no?
+Yo no sé qué préstamos tiene porque perdí trazabilidad de eso.
+Últimamente no he tenido esa charla con Guillermo.
+Pero después voy a, o sea, me tengo que sentar a charlar con Guillermo para ver el estatus de la empresa.
+Y la realidad es que, está, estoy dejando que se encargue de las finanzas.
+No me he metido mucho en eso, últimamente.
+O sea, pero es dos más dos.
+O sea, no sé de dónde está sacando la plata, pero yo creo que en realidad fue porque Beto puso plata también.
+Por eso es que está más, está más metido.
+Claro.
+También, ¿no?
+Por eso es que Beto compró más parte de las acciones.
+Sí, se ha metido gente salada.
+Vi, vi mucho ahí en el roundup, tipo, gerente de no sé qué, gerente de esto u otro.
+Parecen, tipo, pesos pesados.
+Es que sacamos gente que trabajaba hace años en bancos y las vamos a traer para acá.
+Para que trabajen con nosotros.
+Entonces, sí, trajimos gente, trajimos gente.
+O sea, tal cual.
+Este, no solo, o sea, creo que no solo trajimos gente, sino que estamos apuntando fuerte acá a Bolivia.
+O sea, yo creo que.
+O sea, ya hay un negocio comprobado y estamos a meter una cantidad de gente.
+Yo creo que en un mes vamos a ver cómo sale, pero yo creo que las condiciones van a ser saladas.
+Esperemos que, yo espero poder ver.
+O sea, yo te voy a contar en la interna si eso sirvió o no.
+Porque está, sumamos desarrolladores, te subieron el sueldo a vos, subimos todas esas cosas.
+Entonces, todo eso fue un cambio bastante.
+¿No te acordás que?
+O sea, no solo las, es que es más, seguimos teniéndole el sí.
+Seguimos teniendo como 15.000 dólares nuevos de encima de los 30.
+Casi 37.000 dólares que tenemos fijos de ingreso.
+Y eso es lo que yo puedo controlar.
+Porque después lo de Ray tendría que sentarme a hacer cálculos.
+La última vez que saqué cálculos, de Ray le estábamos sacando 60.000 dólares.
+60.000 dólares por mes.
+Pero teníamos que pagar una factura de 30.000.
+Entonces, ponele que le estábamos ganando 30.000 dólares más.
+O sea, bien, bien.
+Claro, el tema es que si vos calculás.
+Yo te voy a decir algo.
+En desarrollo, más o menos, nosotros se van entre 20.000 a 30.000 dólares.
+Por el equipo de desarrollo.
+Sí, una banda.
+Entonces, está.
+Si vos empezás a hacer cálculos.
+Yo justo tenía para pasarles.
+O sea, yo por ejemplo, desde que me pasé, no he tenido ajuste.
+Yo soy el único que no tenía ajuste.
+Porque yo estoy buscando el bono.
+Lo estoy buscando y me llegué una masadita fuerte.
+Yo estoy 100% sincero.
+Pero está.
+Está bien.
+Ahí lo que...
+Merecido.
+Mi deseo es que todo...
+O sea, en teoría todo debería salir más que bien, ¿no?
+No hay...
+O sea, viene todo bien.
+El tema es que también yo me he deslindado un poco de esa parte.
+Porque con todo lo que tengo que hacer, es como que no puedo estar tan atrás de...
+Por chusma, con guinje, de ciertas cosas.
+Es la realidad también, ¿no?
+O sea...
+Pero no hay mucho que razonar tampoco.
+O sea, si vos ves...
+O sea, si vos ves las cuentas o Guille está sacando préstamos y en cualquier momento nos fundimos.
+Y me llega la noticia.
+O nos está yendo muy bien.
+Y yo no creo que sea el caso que nos estemos por fundir.
+Uy.
+Entonces está.
+Este...
+A mí me da la impresión de que la estamos rompiendo.
+Pero la estamos rompiendo mal.
+O sea, y ahora con esto de Bolivia la vamos a terminar de romper.
+Además tenemos muchas vueltas para hacer.
+Hay mucho desarrollo que se tiene que hacer.
+Hay mucho desarrollo que se tiene que hacer.
+Este...
+Así que está.
+Oh, genial.
+Veremos y consideramos.
+Yo, Santi, obviamente confío totalmente en lo que me decís y no dudo.
+Digo, yo no hago estas preguntas por dudar, sino simplemente por chusma nomás.
+Por tener una idea de cómo vamos.
+No, no, no.
+Yo te digo.
+Yo te digo.
+O sea, bien.
+Y creo que también a las pruebas está que hoy en día, o sea, vos tenés una tranquilidad.
+Quieras o no.
+Estás cobrando un salario.
+Estás trabajando en esto.
+Trabajás de tu casa.
+Tenés todos los chinches.
+O sea, creo que también, o sea, vos lo has vivido ese crecimiento.
+Sí, obvio.
+La idea en algún momento es, o sea, calculo que más a fin de año, no sé, en algún momento.
+Porque ya has tenido...
+O sea, yo no te puedo decir cuándo vas a hacer el próximo ajuste de tu parte.
+Pero la idea...
+La idea no sé cuál va a ser en cuanto a...
+Te vas a depender de cada desarrollador y eso.
+De acá a seis meses, un año.
+No, capaz que hay ajustes, capaz que hay opciones.
+No sé.
+Capaz que no hay nada.
+Pero...
+Te digo lo que se ha hablado.
+Estaba en varios momentos.
+Le dije a Richard.
+Le dije, mirá, tenemos que empezar a trabajar con esto.
+O sea, si nosotros vemos que venimos bien y tenemos un equipo y todas las cosas, o sea,
+podemos hacer el ajuste, pero también yo creo que vamos a hacer algo.
+Pero mañana vos digas a la puta madre cuál es la pena que me quede acá un año o dos.
+Porque esto viene bien y quiero invertir en esto.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+cuídate entonces no está bien es más lo que algo que me gusta es que al tener más recursos también
+podemos hacer mucho para mientras que haya trabajo podemos hacer muchas aristas muchas cosas
+entonces está y lo bueno es eso lo bueno es que por más que vos ves que jonathan y nahuel se
+meten en nuestro bar nuestro sitio yo no te lo meto en tu campo yo te lo he dicho yo no te lo
+meto en tu territorio antes los intentó meter es unitarios 4 entonces hoy mañana que hace una
+reducción para que no te desacuerdos pero si se va como que se va mandando primero después
+cada uno tiene sus sectores lo mismo que elijas antiguos yo te traigo enseñar más se complica
+sacamos 16 están iguales antes nuevamente se está arrastrando el orto así como que saca las cosas
+carrascas
+y están todos muy muy
+no te dejan ser muy contento con gastón a mí es una competencia sana pero pero está todo
+mundo muy contento con la historia innovación de gastón y yo le dije
+santi o lo estás levantando
+y que para tener cuidado con eso
+pero bueno bueno que no lo damos un segundo porque estoy corriendo los test pero no carga
+stage todavía debe ser como que está todavía está arreglándose que fíjate fíjate si terminó
+la salida producción
+de greide site de greide site stage soy yo que es capaz que le estoy mandando 500
+querés compartir en pantalla ok o sea lo único literal lo único que veo es capaz que era yo que
+soy que estoy tirando a los test de stage es de cypress no sin lugar a dudas que es muy probable
+que es porque es un sinvergüenza warning que no lo deje cargar pero estaba todo en verde cuando empecé
+no puede ser que se haya degradado un poco por el palo de la salida en producción no puede ser que se haya degradado un poco por el palo de la salida en producción
+como se trancó un poco puede ser que se haya degradado
+fallo es ahora
+ves mi pantalla
+o sea no es cypress
+no es el test de cypress es algo de stage
+imagino yo
+pero el stage está cargando
+está cargando aquí
+si está cargando
+o sea me permite ir a iniciar sesión
+y el backoffice también
+algo distinto
+un login cambió la url
+cambió la url
+la par no? no por la url la par no? no por la url la par no? no por la url la par no? no por la url la par no?
+porque están dando
+por eso le digo osea importante chequear ahí
+donde está tu 503?
+han abierto
+pero entrá el link de stage
+lo logueaste con una cuenta o algo así
+sí sí mirá esto es stage
+funciona sé que
+así funciona
+porque entonces con
+que raro no?
+fijate que es como que
+no carga la vagina de una manera
+yo lo miro a ver
+dice 503 como respuesta
+lo hice en la actualización obviamente no no es que éste ya está actualizado nosotros desde que
+actualizamos actualizamos aquí tenemos una salida state para actualizar no todo es donde falta
+actualizar el no digo yo a nivel local yo esto ya lo hice pero a ver no donde donde falta actualizar
+la versión de no es en producción de ahí creo que sea esto pero por las dudas yo ya lo hice esto
+estar acá no tengo nada que hacer así que voy a seguir con esto no más digo puedo darle una vuelta
+de tuerca si hace falta digo no y capaz que me bajo y le doy una vuelta de tuerca a darle un
+vestido a ver qué puede estar pasando piensa piensa que esto funciona bueno te dejo Kikett
+o sea es la idea de la versión de no
+era la idea de era la idea de hacer esta salida state no ver qué estaba pasando
+si bueno voy a bichar esto entonces a ver que puede ser una pelotudez me parece muy seguramente
+dale vamos arriba dígase bueno hasta luego

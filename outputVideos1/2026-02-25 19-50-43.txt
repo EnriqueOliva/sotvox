@@ -1,0 +1,139 @@
+¿Kike? ¿Me escuchas? ¿Me escuchas? ¿Kike, ahí me estás escuchando? Sí. Escuchamos.
+Primer punto, nosotros habíamos generado un cronjo que lo que hacía era que corría un solo documento.
+Este proceso al completed era un cronjo que generamos.
+Me estoy mirando a la publicación.
+Este cronjo que se llama así y que está como cronjo, cambiamos el nombre de esto, pasa a process all not completed.
+Fijate ahí en inglés, pero tendría que pasar ahí a eso, ¿está?
+Ok.
+Y acá nosotros estamos mandando a esto.
+Vamos a decir, ah, tax form, pero nosotros no tenemos.
+Tax form, pará que me esté agarrando un pedo aquí.
+Nosotros tenemos tax form, claro, cuando completamos, ¿cuándo se crea el tax form?
+¿Cuándo mierda se crea?
+¿Cuándo se termina?
+¿Cuándo se termina se crea?
+¿O no?
+Cuando arranca a procesarse.
+Tenemos mucha lógica repetida acá.
+Vos estuviste tocando en ciertos lugares puntuales, ¿no?
+Sí, líneas nomás.
+Porque este lo que hace es agarra, el proceso este lo que agarra es, se fija, vos traes todos los drafts, todos los drafts que están completos, pero no fueron procesados.
+Y acá lo que hicimos para todos esos drafts que están completos, los agarramos, fijamos que ese tax form draft, nos fijamos que lo trajeron, le llenamos el documento, había que llenar.
+Porque esto es una copia del otro, generamos el documento, en algún momento generamos el documento, no sé, lo subimos, PDF buffer, no sé qué mierda hacemos, por acá lo, vamos a poner el caso de que no es nuevo, lo empleéis, lo subís a S3, después te fijás el tax form, creás un tax form document, que es una tabla nueva, acá buscás, ah, buscás el tax form, porque fue creado.
+Este find, se usa una sola vez, no, yo he sacado, claro, porque se supone que para este caso, ya existía el tax form, lo que hacés es lo asociás, porque esta mierda, esta función de mierda, era para, por si no te acordás, esta función de mierda lo que hacía era agregaba a los tax forms, les agregaba un documento.
+Bueno, nosotros nos dimos cuenta que faltaba un documento, lo que sea, les agregaba un documento.
+Entonces, supone que ya estaban completados los tax forms.
+Y les agregaba un documento, lo habíamos dejado para agregar un documento, sí, lo que yo te digo es como medio desafío, claro, porque esto, esto es casi igual en ambos, solo que, casi igual, solo que acá, cuando hacías el mapeo, les, vos acá, este form, mirá, fijate que está hasta dos veces, está dos veces,
+es igual, es la misma, creo que es lo mismo, doble chequear es lo mismo, pero yo creo que esto, esta parte de acá, no sé si la busco, si yo busco cualquier parte, yo qué sé, vamos a buscar esto, está dos veces, esto que está acá, esto que crea los archivos, esta mierda, creo que es igual acá, mirá, voy a ir un poquito para arriba, un poquito para arriba,
+es la misma mierda que está acá, nos podríamos preguntar la hecha GPT, a ver si nota alguna diferencia,
+2.64, 3.70 y la línea 4.64, 5.67.
+¿Por qué estoy rompiendo las vuelas con esto, Kike? Porque vos vas a hacer cambios arriba y esto abajo también vas a tener que copiarlos y pegar, ¿eh?
+Capaz que, no sé hasta qué punto son.
+Son iguales, o sea, ¿hasta qué punto se puede traer? Los bloques son idénticos, son idénticos, es lógico, idénticos, o sea, yo sé que ahora es un cambio de mierda, pero son idénticos, lo que vos ajustes acá lo vas a tener que ajustar abajo, es una re verga, no voy a corregir, interrumpime en algún momento si podés crear una compañía ahorrada.
+Y la ves en el bajo óxido.
+Sí, ahora está mirando porque parece que no quedó la migración.
+Te hago la columna Crypto Global QYB ID.
+Podés fijarte en CloudWatch, creo que lo que vos sos.
+¿Cómo hago una cuncha? No.
+Decime y yo lo arreglo directo contra Devil.
+En CloudWatch me tira eso, lo que pasa.
+Y no sabés qué, porque es, no, te dejo ahí.
+Kike, Kike, sigamos un poquito que si no, no termino.
+Si vos tocaste líneas, querés que yo me encargue y mande una PR con este refactor y vos seguís trabajando,
+y lo otro que te iba a decir es dónde tenés que mirar.
+No sé ahí cómo querés trabajarlo.
+Puede estar bueno, sí.
+Y yo mismo sigo con él.
+Creo que ya en cuando, o sea, tengo encarado ya el primer archivo, tengo para mandarle la PR.
+Ah, bueno, tengo para preguntarte eso, que prefieren todos los tres, o sea, una PR por documento,
+entonces, ¿no? Así Tato puede hacer su propia PR con su propio documento.
+Sí, sí, yo voy a hacer.
+Yo voy a mandar, yo voy a mandar ahora los refactores, yo voy a hacer los refactores ahora.
+Claro, lo voy a dejar pronto en algún momento.
+Pero lo importante es que vos te fijes acá los field mappings, porque vos acá tenés cada uno donde se está mapeando.
+O sea, los más complicados son los que vos, tipo, tenés que setear un, o sea, un true o false, tipo que esto es, ¿me entendés?
+O sea, que esto es medio complicado.
+Hay algunos que son medio retorcidos.
+Acá tenés que averiguar, reactualizar estas mierdas.
+Pero esta lógica afecta los tres documentos que yo estoy tocando, decís vos.
+Hay que ver, por ejemplo, porque acá tenés la lógica para el multi-partner mapping.
+Hay alguna, estos son los mappers que se hacen para el multi-partner cosas.
+Entonces vos acá, por ejemplo, vos venís y ponés company name en el archivo y va ahí lo suplanta.
+¿Está?
+Esto es igual que el st4, ¿sí?
+Porque es la misma, el mismo approach.
+Ok.
+Después, yo hago refactor, yo mando refactor y lo hago yo.
+¿Vos te animás a compartir en pantalla para ver el módulo de declaraciones cómo ponés la fecha?
+Sí, obvio.
+Que es lo que te decía, si tenés esa la fecha.
+No.
+¿Esto es del address?
+No.
+Esto es de los partners.
+¿El address de los partners no se usa o sí?
+No.
+No, yo creo que sí.
+Creo que sí.
+Se usa esta, company address en USA.
+Por lo menos, a ver, yo estoy hablando del 1065.
+En el multi, a ver acá, ¿cómo cambiaron eso?
+A ver, ahí ponés el address en USA.
+Poneme el site nuevo para ver cómo se pone.
+Pero no te salta nada de Google ni nada de esas cosas.
+A ver, dale control Z.
+A ver, analicémoslo.
+Santi consulta, ¿en qué paso es que se corren las migraciones?
+Lo que estoy mirando es el deploy.cg, no lo veo.
+Las migraciones se corren cuando se hace el build.
+La vos hacés el build y luego corres las migraciones y luego lo iniciás.
+Deberían estar en CloudWatch cuando arranca, tipo cuando arranca el servicio.
+Qué mierda esto, che.
+O sea, claro, ese es el tema, ¿no?
+Tenemos que ver cómo separar la dirección.
+Yo hice un parsing.
+Está, lo que...
+Viste que nosotros cuando fallaba poníamos algo, ¿no?
+En el SD4.
+Sí, tipo completar o algo así.
+Sí, error file.
+Para que lo complete la administrativa.
+Creo que ahora lo ponemos, acá yo lo pongo como error.
+Está error file, ponemos error.
+Hagamos una cosa, pongamos un todo grande como una casa en estas cosas,
+asumamos casos hermosos, ¿sí?
+Con algún parser y ya está.
+Bien.
+Porque acá tenemos que agregar campos, ¿sí?
+Y pongamos caso de error y acá le digamos a Guille que para el año que viene tenemos que cambiar esto a que ingrese en la dirección con Google.
+Eso lo tenemos para abrir ya.
+Bien.
+Yo voy a llamar a Guille y le voy a comentar de esto.
+Está tirando un error la migración de Calendly.
+Por eso no llega con la otra.
+¿Qué pasa? ¿No corrió la de Calendly?
+No.
+Pero ya había corrido, ¿eh?
+Pasa el error que está tirando.
+O sea, ya está registrada en SQL Ison.
+Ya tiene un error de cast a JSON, lo que tú decís.
+Pero ya, qué mierda, o sea, ya corrió en SQL Ison.
+O sea, yo la tenía registrada.
+Play ticket, OTC draft, anoté y recibo.
+Calendly nunca se corrió, se corrió parcial.
+Venimos a compartirme, está aquí que ahí, te libero y yo voy a hacer ese refactor y enviar la PR para que el cambio de todas maneras debería ser puntual.
+¿Ves?
+Entonces.
+Este, a mañana te sincronizás a eso, ¿vale?
+OK.
+Dale.
+Dale, yo el refactor lo único que voy a hacer es unificar ambas funciones para que utilicen lo mismo, porque te haré el código repetido nada más.
+Así, por lo menos mejoramos un poco ese, ese componente.
+Dale.
+Está, te dejo Kike, te aviso vos cuando quede.
+Dale.
+Un abrazo entonces.
+Vamos arriba.
+Dale.
+Dale.
+Eh.

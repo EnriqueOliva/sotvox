@@ -1,0 +1,313 @@
+Entonces podemos sacar todo esto.
+Yo lo que te diría es.
+La primisa es la siguiente.
+El fix to redondea hacia arriba.
+¿Sí?
+Cuando pones el to fix to redondea hacia arriba.
+¿Está?
+La primisa es.
+Si es monto es truncate.
+¿Está?
+O sea, si es monto nosotros ya enviábamos.
+Si no me equivoco en la mayoría dejábamos dos decimales.
+¿Está?
+Vamos a separar en casitos.
+Primer caso.
+Los casos que no formateábamos.
+Porque hay casos que ya estábamos formateando.
+Entonces, por ejemplo, toda la parte de banca.
+Que toda se formateaba.
+Se mostraba lindo y toda esa cosa.
+Está todo bien.
+Lo que seguramente está funcionando mal es la factura.
+¿Pero por qué está funcionando mal la factura?
+Porque, por ejemplo.
+Los recibos de notificaciones de RAIL.
+De Bridge.
+O los de RAIL ya formateaban.
+O sea, yo creo que eso van a seguir llegando bien.
+El problema son los de Bridge.
+Que no formateaban una mierda.
+Entonces lo que hay que hacer es.
+Truncarlos.
+Y formatearlos.
+¿Está?
+Y la primisa tiene que ser la siguiente.
+Si es plata.
+Tiene que estar formateada.
+Y truncada en dos decimales.
+¿Por qué truncada?
+Porque nosotros.
+Cuando estamos hablando de plata.
+Es preferible comernos algunos dígitos.
+Pero nosotros no podemos decir que te enviamos un centavo más.
+¿Se entiende?
+Ahí es donde está el problema.
+Entonces, cuando hablamos de plata.
+Yo te redondeo hacia abajo.
+No te digo nada.
+No redondeo.
+Porque Das Bank no se hace cargo.
+De esos puchitos.
+¿Está?
+Entonces, si vos envías 0,9.
+La verdad.
+Es que en tu cuenta está esa plata.
+A efectos visuales.
+Nosotros truncamos y mostramos dos dígitos.
+Creo que ya para los email de Das Bank funcionaba.
+La idea sería copiar la lógica.
+Porque yo ya hice ese refactor.
+En los email de Rail.
+Los email de Bridge.
+De lo que es OTC Transaction.
+Yo te diría.
+Copiala.
+Copy-paste.
+Pero lo conceptualmente que tenés que ver es.
+Lo ideal es truncar.
+¿Está?
+O sea.
+Si estamos hablando de montos.
+Si no estamos hablando de montos.
+Podés redondear.
+Porque no va a pasar nada.
+Pero si estamos hablando de plata.
+Siempre trunquemos.
+No redondemos.
+Ok.
+¿Está?
+Eso es el idea.
+En el front también.
+Naturalmente.
+Lo que está pasando es que los price ahora de las cosas.
+Se está mostrando con una cantidad de ceros.
+Pero nosotros nunca vamos a tener price con decimales.
+Entonces también.
+Bajo la misma lógica.
+Nos trunquemos.
+¿Está?
+O sea.
+Trunquemos y listo.
+O sea.
+Todo lo que sea plata.
+Hay que truncarlo.
+Eso es muy delicado eso.
+La realidad es como te digo.
+Nosotros.
+La cuenta de banco tiene 10.000 ceros.
+¿Está?
+Y el cliente.
+Eso es algo que después tenemos que ver.
+Y todas esas cosas.
+Pero hablándolo con Guillelo es más sano.
+Decimos.
+Bueno.
+¿Está?
+Nosotros te mostramos que tu balance tenés esto.
+¿Está?
+Tenés tanto con tanto cero.
+Si después tenés millones de ceros de dólares.
+Centavos.
+Centavos de dólares.
+¿Está?
+Son.
+Cosas.
+La realidad es que la plata está ahí.
+¿Está?
+Pero ponemos lo que te llegó.
+¿Está?
+Y es un poco eso.
+Cuando nosotros hacemos las facturas.
+Y guardamos los datos.
+Mismo para generar por ejemplo un balance.
+Nosotros guardamos todos los decimales que nos mandan.
+Ese es el cambio grande.
+Entonces.
+Nunca nosotros vamos a generar.
+Porque una cosa como decís.
+Bueno.
+Todos esos puchitos que truncas.
+Hoy o mañana pueden hacer un centavo más.
+Y te puede hacer mal el balance.
+Hay que entrar en esas mierdas.
+Matemáticas.
+Pero.
+Pero es sencillo.
+Se resuelve sencillo.
+¿Por qué?
+Porque nosotros lo truncamos al visual del usuario.
+En un mail.
+En una cosa.
+En la matemática de contabilidad.
+Nosotros tenemos exacto cuánto enviaste y cuándo te llegó negro.
+Y también nosotros truncamos en cuanto a los inputs.
+Entonces ya el usuario no puede sacar con más de dos ceros.
+Entonces.
+Es como que simplificás por todos lados.
+Pero como nosotros no somos una entidad bancaria.
+Está.
+Es preferible que te queden milésimas de centavos en la cuenta.
+O un centavo en la cuenta.
+Que nadie te va a hacer problemas sentado en la cuenta.
+Y está.
+Bueno.
+Si vos vas sumando.
+Bueno.
+Te va a aparecer esa plata.
+Este.
+Todo esto es por el extracto bancario.
+O sea.
+Literal.
+Todo este refacto.
+Estas perras gigantes por el extracto bancario.
+Al usuario le mostramos truncado.
+Que es lo seguro.
+Lo tranquilo.
+Lo recomendado.
+Nunca.
+Nunca le mostramos plata de más.
+¿Está?
+Y esa plata truncada.
+Que son decimales.
+De despreciables.
+Si están.
+Si hoy mañana.
+Los piden.
+Están.
+A efectos contables.
+Nosotros no sirven.
+Pero.
+Solo son visuales.
+En el estado de cuenta bancaria.
+¿Sí?
+Bien.
+Yo te diría.
+Que teniendo esa primisa.
+Los intentes arreglar.
+¿Está?
+Y mandes un APR.
+Con la explicación.
+Dale varias iteraciones.
+De cloud.
+Así.
+Si querés.
+Create otro chat.
+Iteralo.
+Y mandalo.
+¿Cuántos repositorios toca esto?
+¿Los cuatro?
+En esencia.
+Sí.
+Está.
+¿Qué?
+Ah.
+Me tocó Timber de la Negra.
+Pudo.
+Tengo el mercado.
+Sí, sí, sí.
+No, no, no.
+Vaya tranquilo.
+Como quiera, como quiera.
+Dame un segundo.
+Un segundo.
+Dale.
+Arroz con...
+¿Está ahí?
+Yo estoy acá.
+Está.
+Vamos a ver.
+Estoy pasando en el radar.
+¿Qué es eso?
+O sea.
+Por eso es que yo agarré.
+Y vamos a guardar de más.
+Y vamos a gastar de más.
+Ahora estoy trabajando en algo que está.
+Está súper copado.
+¿Qué es eso?
+O sea, súper tedioso, pero súper copado.
+Que es tipo.
+Por ejemplo, nosotros, viste, guardamos logs por siete días.
+O lo que sea.
+Bueno, tenemos que empezar a guardar logs de acá a diez años.
+Entonces, estoy entrando en conceptos de estado.
+Tipo lo que es S3 Glacier y todas esas cosas.
+Estoy enviando solicitudes.
+No entiendo.
+Tiene la pija en la web.
+No tiene sentido, pero.
+Pero está bueno.
+O sea, por eso.
+Pero, viste, este tipo de cosas es lo que yo te decía lo que te dije, ¿no?
+O sea, quieras o no, directa o indirectamente, milanesa o frito, estamos viviendo procesos,
+estamos creciendo, estamos haciendo cosas que están de más, ¿no?
+O sea, yo te digo.
+O sea, yo me encantaría que me acompañes a Bolivia, que veas las oficinas de Bolivia
+y vos vayas conmigo.
+Sí, vos.
+Está todo dado.
+El boleto es gratis y el hospedaje.
+Perdón.
+El boleto es lo que hay que pagar, que es el vuelo.
+El vuelo, pero el hospedaje es gratis.
+Nos quedamos en uno de los apartamentos que tiene ahí, que consigue Guillermo.
+Yo le digo, che, mirá, quiero ir con Enrique y con Martina y nos vamos los tres para Bolivia.
+Vamos.
+Vamos a las oficinas, todos los bolivianos ahí.
+Bueno, Enrique, este es el jefe de aseguramiento de calidad de tecnología.
+Lo que le decía Martina, technical líder, que hoy vas a esa experiencia, ¿viste?
+O sea, son todas cositas lindas que se vienen.
+Y gracias a Dios, ahora que yo puedo hacerla y no tengo el dedo en el orto,
+lo dejo así, a ver hasta dónde puede llegar.
+Ok.
+Dale, métale.
+Y lo que sí capaz que sí podés probar es correr el dev o site local.
+Porque ahí lo que yo te voy a pedir es, bueno, está, yo voy a confiar un poco en la pederra que vos estés mandando.
+Capaz que lo podés hacer es, bueno, ese mismo chequeo, algunas cosas, enviarlas con dev.
+Van a surgir errores el lunes y lo vamos a poder corregir, porque también estamos yendo medio contra el reloj.
+Pero el problema es que yo necesito sacar...
+Voy a sacar esto para poder sacarlo el fin de semana, sincronizar todas las suscripciones y pagos y regularizar eso, que para mí es lo más clave.
+Ok.
+O sea, para mí, literal, es lo más importante, poder regularizar ese tema de pago.
+¿Sí?
+Ok.
+O sea, entonces, después los bancitos, chotada, y una vez que nosotros tengamos todo esto en producción, sale lo de extracto bancario como ped.
+Eso es clave también.
+Entonces, nada.
+Cuídese.
+Bueno, me manda un abrazo.
+Gracias por la guía, por la ayuda.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.
+Gracias.

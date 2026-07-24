@@ -1,0 +1,110 @@
+es solo para el
+millware, ahí vos estás
+moqueando una función como el
+findOne
+y borrar la 47
+a ver, probar ahora
+debería ser solo para
+el millware, toda esta vuelta
+la hicimos por el millware
+y los casos que no tenían millware
+dijimos de estandarizarlos y seguirlos igual
+¿sí?
+bien
+era eso
+bueno, o sea
+si vos sabés como mirar los que tienen
+millware y no, andate
+a rutas
+index, dentro de
+B1
+arriba, arriba, arriba
+sí, pero
+dentro de B1
+index es
+arriba
+arriba, un poquitito
+ahí, eso
+bien, ves todo lo que dicen
+con NitoMillware que se lo pasás
+por ejemplo línea 16
+17
+línea 29
+son rutas que acceden
+usuarios que se acaban de loguear
+a la página
+¿sí?
+las otras son rutas públicas que podás acceder a cualquier
+cardanco, para esos casos
+en particular es donde tenemos que hacer
+esa modificación del signón
+¿está? o sea lo que hacemos es
+ese millware no lo moqueamos
+como es un mock genérico
+no lo moqueamos dentro del sandbox
+¿está?
+¿está?
+pero después el resto debería funcionar
+para todo
+por ejemplo refresh
+¿qué habíamos hecho recién en zoom?
+¿dónde estaba?
+refresh no tiene
+con NitoMillware
+¿qué fue lo que hicimos? perdón, el get my info
+get my info, pero pará
+quedate quieto ahí, si vas a la línea
+16
+ves el get my info
+ahí está, perfecto
+bien
+ahí va
+listo
+¿cómo se ve?
+claro, porque eso lo estás haciendo
+en otra rama
+o sea
+ahí deberías hacer los cambios
+que hicimos juntos en la otra rama
+o sea
+pasás la línea 47
+a sandbox.reset
+que eso fue lo que hiciste vos
+y después pasás la línea
+30, le ponés en vez de sandbox
+y ya está, y con eso
+va a quedar más
+o sea va a quedar más sencillo
+si vos pensás
+estos casos no se ve tanto de repente
+pero el create user
+fijate que vos en el after each
+tenías como 3 mocks
+que tenías que darle .reset
+sí, sí, sí
+y después el create draft
+que vos también estuviste trabajando
+una cantidad tuviste que darle .reset
+sí, en el after
+ponemos reset
+con Nito
+claro, es eso, es esos ajustecitos
+bien
+sí, porque como no está dentro del sandbox
+tenemos que hacerlo al final del todo
+no le damos reset en el after each
+porque queremos que se mantenga
+luego de cada ejecución
+le damos reset en el after
+bien
+buenísimo
+bien
+bueno, voy a comer que me van a pegar un tiras
+tal vez
+sigo, ok
+pare, organícese, no sé
+yo lo voy a hacer hasta tarde hoy
+dale, vamos arriba
+vamos arriba
+bueno, hasta luego
+hasta luego

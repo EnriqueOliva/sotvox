@@ -1,0 +1,13 @@
+Dos cosas muy importantes. Con respecto al counterparty fiat ID, lo obtenés de la columna memo.
+Si vos te fijás, en la columna memo está el counterparty fiat ID.
+Y con eso vos podés obtener, con el counterparty fiat ID vos podés obtener la información del banco,
+podés obtener la dirección, podés obtener todo, porque están todas las tablas relacionadas a counterparty fiat.
+¿Está? Algo muy importante que yo te lo marqué y te lo vuelvo a remarcar.
+Vos no podés generar estos documentos.
+Si vos recibís una OTC transaction, OTC transaction, y vos tenés que agarrar la columna provider transaction ID
+y fijarte en la tabla OTC transaction manuals, que ese ID, ese provider transaction ID de la tabla OTC transaction
+no esté asociado a ninguna OTC transaction.
+OTC transaction manual en la columna source provider transaction ID.
+¿Está? Si eso está, quiere decir que no es una transacción excepcional, sino que es una transacción del estilo de venta.
+¿Está? Entonces hace la factura de Bolivia, que vos ya hiciste el flujo.
+Entonces no deberías incluirlo.

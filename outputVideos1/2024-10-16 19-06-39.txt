@@ -1,0 +1,396 @@
+Ah, pero me faltan los test de regresión
+Nueva
+No hizo nada de eso, ¿no?
+Hice, sí
+Había una confusión, ¿cuál es cuál?
+Fíjese, si quiere puede entrar en el Excel
+Yo estoy escribiendo
+Los de inicio de sesión y registro
+No sé, es APR, creo que era eso
+No, no hay PR para eso
+No hay PR
+Pero los tengo
+No hay PR, entonces no podemos cerrar esto
+Por eso
+Test de regresión
+Para el flujo de inicio de sesión y registro
+Está en el Excel
+Estoy por hacer la PR del desarrollo
+Digamos
+El desarrollo
+¿Está faltando esto?
+Sí, hoy no hay problema
+Esto sí
+Tenemos que liquidarlo
+Después, la de
+Confe, confe
+Quiero validar que se eliminó en compañía
+Vamos a hacer confe
+Confe
+Voy a marcarla como don
+Esta
+Vale, quiero crear
+Cronchow Controller
+Voy a marcarla como don
+Pero hay que chequear que se termine esa PR
+Y esta
+Vamos a crear una nueva
+Como
+Desarrollador
+Bien
+Cronchow
+Ahí está
+Y esta lo
+Esa es lo que quedó pendiente
+Y técnicamente
+Los test del método
+El segundo método de Cronchow Controller
+El Send Reminders
+Bien
+Sí, pero eso no creo que lo ataquemos ahora
+No creo
+Creo que lo va a quedar pendiente
+Ok
+Esta sí tenemos que terminarla
+Sí, sí
+¿Cuántos puntos tenemos?
+Solo esos tres
+Ah, ¿dónde dice usted?
+En el sprint actual
+Lo primero para resetear
+Creo que es
+Quiero validar que se envíen
+Correos para desearle los ahorritos vacíos
+Sí, sí
+Ah, estos son los test que quedaron pendientes
+Quiero
+Para, para que me agarren un pedo azul
+Esta
+2.63
+Vos te vas para
+Cronchow Manager
+Vamos a ponerla a todo
+Y vamos a pasarla
+Para
+Dijimos 2.63, ¿no?
+2.63, 2.63
+Pero como si me apareció
+¿Por qué?
+2.63
+Le pongo 2.63 y no me aparece
+Y clase
+Comunismo
+Esto es un programa
+Yo fui usted
+La hizo el Kiko
+Ah, para
+Para que tenga un pedo azul en la cabeza
+Esta la pasó
+Y esta el worker
+Quedó con esa tareita
+Que quedó simbólica
+Acá
+¿Sí?
+Bueno, voy a marcar como don
+Porque te vas a olvidar
+De marcarla
+Pero la tarea es la grande
+¿Está?
+Ok
+Tenemos
+Del sprint pasado
+Solo nos está
+Quedamos bien de puntos
+Y nos está quedando
+Únicamente esto
+¿Sí?
+Sí
+Bien
+De este sprint
+Nuevo
+La idea es
+Sí
+Con desarrollo
+Quiero hacer caso de prueba
+Para resetear password
+Para todo es un bolazo
+Con desarrollo
+Porque ya más o menos
+Es lo mismo que la otra vez
+Esta
+Con desarrollo
+Quiero validar
+Que se envíen correos
+Para avisarle
+Que su carrito vacío
+Cuando no se conecta
+A la compañera
+Porque
+Envíen correos
+Para avisarle
+Que su carrito vacío
+Cuando no se
+Concreta
+La compañera
+Work
+Sí, pero esta
+No podemos agarrar
+No sé si agarraba
+Este sprint o no
+Con desarrollo
+Quiero cambiar el método
+Esta
+De cambiar el método
+Lo que voy a hacer
+Es
+Se la voy a asignar
+A Martina
+¿Eh?
+Porque quiero que usted
+Investigue el flujo de pago
+Y no le va a dar el tiempo
+Para hacer todo
+En el sprint que viene
+Guillermo
+Asignásela a ella
+Entonces
+¿Cómo?
+La hace y ya
+Se la voy a asignar
+A Martina
+Y cuando Martina termine
+Haga un ejemplo
+¿Tá?
+Vos lo que tenés que hacer
+Es actualizarlo
+En todos lados
+¿Tá?
+Pero mi idea
+Es que vos
+Este sprint
+Vamos a ver
+Cómo quedamos de punto
+Quiero hacer caso de prueba
+Para resetear password
+Para que voy a ir a Martina
+Martina es esta
+Como desarrollador
+Quiero cambiar el método
+Que se
+¿Tá?
+Porque yo quiero
+Que usted se centre
+En la parte de payment
+Que es lo que
+Tenemos que empezar a moquear
+Bien
+Que es un flujo
+Bastante jodido
+De alguna manera
+Es una cagada
+Porque estamos dejando
+Cosas importantes colgadas
+Pero tá
+Vamos a ver
+Como desarrollador
+Quiero hacer
+Los casos de prueba
+Para resetear power
+Bien
+Sencillo
+Tres puntos
+No debería llevar
+Más que eso
+Y ya están
+Los casos
+Que ya mergeaste
+Y todo
+Así que
+No debería
+Ser muy muy complejo
+Ok
+Bueno
+Desarrollador
+Quiero correr
+Igual después
+Chequeas los puntos
+Pero tá
+Yo te voy a decir
+Mi análisis
+Como desarrollador
+Quiero correr
+Los test de regresión
+Para revisar
+Esto vamos a aplazarlo
+También para abajo
+Porque ahora
+No es prioritario
+Bueno desarrollador
+Quiero validar
+Que se elimine
+Company draft
+Cuando
+Llega el momento
+Paso los días
+Definidos
+Sin que se compre
+Pero
+Esta me quedó colgada
+En realidad
+Suena muy parecido
+A lo que hicimos
+Si, si
+Tiene razón
+Como desarrollador
+Como desarrollador
+Quiero crear
+Test de regresión
+Para el flujo
+De comprar
+Una subvención
+Luego de
+Sí
+Esto
+Esto vamos a darle
+Otro
+Ocho puntos
+No, no es muy complicado
+Para mí esto sale con menos
+Porque en realidad
+Bueno, esto lo dices vos
+Para mí sale con menos
+Porque en realidad
+No es, no es ni
+Ni actualizar el método de pago
+Es solamente
+Comprar suscripciones
+Sí, capaz que tiene
+Más vueltas
+Vamos a ver ocho
+Pero más de ocho
+No debería llevar
+Más de un día y algo
+No debería llevar
+Porque realmente es
+Comprar una suscripción
+Con
+Con un método de pago
+Con
+con un método de pago existente
+bla bla bla, no debería
+lo puedo charlar
+pero acá es
+yo compré una compañía
+lo que hago es, asigno una nueva
+compro una nueva suscripción a esa compañía
+ahí está, le doy agregar
+exacto
+le doy agregar a la suscripción
+y ahí lo que tengo que ver es, bueno
+se agregó, me va a llegar un mail con la compra
+bla bla bla
+también acá hay que empezar a tener en cuenta de que
+le tiene que llegar un mail a los teammates también
+de que se compró una suscripción
+¿sí?
+te lo voy a agregar acá en los detalles
+¿bien? o sea, no solo
+tiene que llegar el mail a mí y al teammate
+sino que también tenés que probar flujos
+en donde yo pruebo comprar suscripciones
+y un teammate prueba
+comprar suscripción, ¿entiendes?
+porque yo le cedí el control y el loco
+puede comprar suscripción
+¿sí?
+esto es solo la parte de comprar suscripciones
+vas a suscripciones y le das a agregar
+no es cambiar método de pago, eso vamos a hacer
+test de regresión aparte
+¿está?
+ok, ok, ok
+quiero validar, envíen correos
+para avisarle del carrito vacío
+estos son test unitarios
+está bueno que los hagamos
+ahora, pero vamos a ver
+lo del crunch on manager, yo creo que va a llevar
+8 puntos o más
+¿cuántos estamos ahí?
+estamos bastante bien
+quiero correr los test de regresión, es algo que vamos a tener que hacer
+en algún momento, te voy a decir
+Kike, cortás con todo y corré los test de regresión
+¿cuántos días?
+estamos con 35 puntos, nos quedan 15 puntos
+¿cuántos días pensás
+no vamos a terminar con el flujo
+de test unitarios de pago
+pero ¿cuántos días necesitas
+para pasar los de company draft
+que está en un word
+a
+a github
+si yo tiro un día a la basura
+por eso, ¿vos lo podés pasar?
+sí
+si yo le asigno 5 puntos
+llegás
+yo diría
+día y medio
+y después yo diría día y medio
+o sea, ya está
+medio
+medio automático
+pero está, sí, vamos a asignarlo 8 puntos
+como desarrollador
+y
+esto es
+en el repositorio de regresión
+pero yo pongo el sitio
+que toca
+en este caso
+no voy a poner el repositorio de regresión
+no le pongo sitio
+porque en realidad
+yo pongo dónde es que vos tenés que trabajar
+o sea, dónde es que está
+para los test de regresión
+no te puedo poner regression
+en este caso
+yo siempre estoy poniendo
+el repositorio que aplica
+que vos hagas la prueba
+donde tenés que agregar código
+y los repositorios que involucra
+es
+no me acuerdo cómo se llama
+el repositorio de regresión
+y después vamos a decir
+que esto involucra al site
+y a este que también
+tenemos
+dónde está
+este involucra al site
+porque tenés que chequear
+qué es el site
+y después
+perfecto
+y esto habíamos dicho 8
+que es un día y medio
+efectivamente
+esto de carrito vacío
+vamos a tirarlo para atrás
+lo que necesito que haga hoy
+además de analizar
+esta tarea
+no la vamos a agarrar este sprint
+eso quiere decir que tenemos
+menos
+8 puntos
+lo que necesito que haga hoy
+es que entre
+al flujo de pago
+que en particular
+es este
+es este

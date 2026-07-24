@@ -1,0 +1,263 @@
+Nosotros acá con el flujo de TeamMate lo que queremos lograr es, ¿cómo se llama?
+Nosotros con el flujo de TeamMate lo que queremos lograr es chequear que está TeamMate y chequear ciertas funcionalidades que son clave que los TeamMate puedan hacer de otras compañías.
+O sea, no solo que yo creo un TeamMate, hay dos flujos de creación de TeamMate.
+El primer flujo de creación de TeamMate es crear e invitar a alguien a la cuenta que no existe.
+O sea, que no existe, que no es dueño de compañías ni que administra otros equipos.
+¿Cómo que no? ¿No era que para poder registrarte tenías que ser dueño de una compañía?
+Claro, pero vos podés entrar al dashboard, tener una cuenta.
+Si yo te invito a vos. Supongamos un flujo, ¿no? Yo me compro una compañía en Dashband y quiero invitarte a vos para que entres a administrármela.
+¿Qué suele suceder muchas veces? Influencer o personas que se arman en el LLC, por ejemplo OpenAI es una LLC, o sea, ahí nos damos cuenta de lo grande que puede llegar a ser la compañía.
+Hay compañías grandes, tenemos más de mil y algo de compañías.
+Entonces, hay compañías grandes que el que la crea no lo administra y de repente yo te digo, mira, quiero agregar a mi contador, pero no le quiero dar mi contraseña.
+¿Me entendés? Entonces, te doy participación a mis recursos y yo te creo una cuenta de TeamMate.
+El contador únicamente va a ver la cuenta desde el lado de TeamMate, porque es un compañero y tiene acceso a, por ahora como lo hicimos nosotros,
+el TeamMate tiene acceso a todas las compañías del usuario.
+¿Y qué es lo que puede hacer el TeamMate con esa empresa que tiene acceso?
+Bien, hoy en día lo que puede hacer es actualizarle las suscripciones, ¿está?
+Comprarle suscripciones, o sea, actualizar el método de pago, comprar suscripciones y agregar servicios adicionales, que los servicios adicionales son dentro de la compañía.
+¿Me querés comentar qué es eso de las suscripciones?
+Sí, ¿tenés una cuenta creada?
+Sí.
+Pará, Kike, mostráselo vos ahí, en el Dev.
+Lo muestro que no trabajo nada y queda en evidencia, porque yo se enojo.
+Pará, Kike11 arroba el Gmail.
+Ah, claro.
+Mirá, mirá, mirá, no le abro nada, no le abro nada, no le abro nada, mirá, se enoja, se enoja el tío, mirá, se enoja, ¿viste?
+Yo le iba a matar un video a este, Guillermo.
+Pará, yo tengo unos datos ahí.
+No, no, no, pará, creá una compañía, Kike, rápido.
+No, yo tengo, yo tengo, te paso.
+Pará, que creé una compañía, que creé una compañía.
+Se borró todo.
+Tanto, tanto, ¿creaste una después de que se haya limpiado?
+Tengo, tengo.
+Ah, pero que creé, que creé una ya le queda.
+Bueno, sí, dale, dale, creá una, creé una.
+Pesa.
+No sé, pero test queda bañado, ¿no era? A ver.
+Sí, acordate, acordate, acordate que ya podés usar cuentas personales.
+Ahí tenemos que habilitar para Dev Mailinator, para que vos puedas chequear que te llegan los correos y eso.
+Sí.
+Ah, pero ojo, vamos a usar teammates entonces, ¿no?
+O sea, cosas, invitaciones, tengo que usar lo mío.
+Sí.
+Ah, mirá.
+O el DAS Bank, ¿no? Se puede usar el DAS Bank.
+Sí, sí, el que quieras. Hoy en día llegamos correo a todo el mundo.
+Tenemos que habilitar para Dev solamente, que puedas usar mails como de, para motivo de test.
+Ahí, ahí si quieren, eso investiguenlo. Vos hay, hay aplicaciones que podés usar para crear mails temporales.
+Que hagas casillas temporales.
+Eh.
+Eh, confirmen entre ustedes dos cuál es la aplicación que les queda más cómoda y yo habilito esos dominios.
+¿Les parece?
+Ok.
+¿Para qué, perdón? Para crear casillas temporales.
+O sea, claro, yo bloqueo, estoy bloqueando una cantidad de esos.
+Porque le pedí a HGPT que me generara una cantidad de mails que generan casillas temporales.
+Ya vos ponés pepito arroba el dominio que administran esos tipos y podés entrar a ver los correos que tiene esa cuenta sin contraseña.
+Solo los ves si vos estás activo.
+Está, investiganlo un poquito ahí.
+Creo que, Kike, ¿vos has manejado eso?
+Mmm.
+Está, uno es Mailinator.
+¿Está?
+Anótenselo por ahí, Mailinator.
+Igual va a quedar grabado.
+Está, pero investiguen el que les parezca mejor a ustedes dos y yo se los habilito únicamente para ellos.
+Mailinator.
+Claro, vos ahí en Mailinator, eh, entrás, ponés, eh, creo, no sé si te tenés que registrar o como decís antes.
+Escritar ahí, supongo.
+A ver ahí.
+No, dale para atrás.
+En el mail.
+A ver, dale public inbox, arriba de todo, en la esquina, ahí va.
+Creo que si vos le tenés que poner, le ponés cualquier correo y el loco te genera un correo arroba mailinator, entonces vos lo podés usar para recibir correos.
+Y esto está bueno para lo que es testeo.
+También algo que tienen que pensar es que todos los mails que van a llegar ahí está bueno que no sea un mail genérico que utilice mucha gente.
+¿Viste?
+Entra un mail, viste que te lo envía a, creo que es hola arroba mailinator o algo así.
+Está, bueno, el punto es, investiguenlo y me avisan, y me avisan el que les parezca mejor.
+También piensen un mecanismo de protección.
+O sea, que estos mails, digamos, tengan algo de randómico, no sea que cualquier Carlitos pueda, o sea, que varias, que cualquiera pueda entrar a ver estos mails, porque son mails son públicos.
+Yo pensé eso.
+Ah, ok, ok, ok, ya entendí.
+No hay otro tema también que es que, o sea, no hay problema con que queden estos usuarios registrados y que compremos compañías porque están en el sitio de Dev.
+Por eso, yo les voy a habilitar el dominio de mailinator únicamente para Dev o la aplicación que a ustedes les quede cómoda.
+Lo que sí es, véndanme también la seguridad.
+Por ejemplo, en su momento creo que mailinator cuando les llegaba un mail lo borraba siempre.
+Entonces, solo lo veían si ustedes estaban activos en la web de la casilla de correo.
+Ahí investiguen ustedes el que les parezca mejor y yo se los habilito.
+Ah, perdón.
+Esto te pasa cuando buscas la compañía.
+Consulta, perdón, hago un paréntesis.
+Santiago, ¿viste ese mensaje?
+Sí.
+¿Vos no considerás que es demasiado corto?
+¿Qué opinión tenés al respecto?
+Bah, tengo que ver esas cosas con Santi, pero puede ser que tenga...
+El tema es que, ¿qué pasa?
+Dejárselo...
+¿Viste?
+Que sale.
+Pero sí, puede ser que tenga que ponerlo más tiempo.
+O dejarlo y que poner una crucecita, no sé, para que lo saque el usuario o que lo cierre el usuario.
+En sí, si hacés clic en cualquier lado se va.
+Claro, pero se va automáticamente.
+Sí, capaz que lo dejo un poquito más.
+Yo nunca llego a leer.
+¿Qué?
+Yo tampoco.
+No, está bien, está bien.
+Lo voy a aumentar.
+Ya le aumento a él.
+Lo que dice él es que lo podés dejar lo que quieras, pero que tenga una crucecita para cerrarlo en vez de que se cierre solo.
+Creo que el cerrado solo me lo pidió Guille.
+Ah, bueno.
+Pero lo voy a dejar más tiempo.
+Y también dice que si clickeás en cualquier lado se va.
+Pero...
+Pero solo.
+Creo que Guille me pidió que cerrara solo, igual lo vemos.
+Porque son cosas que me las pidió en un inicio y que fui agregando yo y...
+Santi tiene una lista de puntos de Refactor de diseño a la concha la madre, tengo que ponerme a ver.
+Pero ya lo...
+Creo que está en tres segundos.
+Lo voy a poner en diez segundos.
+O seis.
+Ahí es.
+Es eso.
+Bien.
+Bueno.
+Seguimos con esto.
+Ta.
+Hoy en día lo que podés hacer es ver las compañías, subirle...
+Si vos entrás ahí en OVNET Company, sería lo mismo que si vos entrás en Associate Company.
+Abajo del todo podés subirle documentos al partner.
+¿Sí?
+Podés subirle documentos, podés visualizarlos.
+Ta.
+Y también podés compartirlo.
+Podés comprar.
+¿Ves esos servicios adicionales que están ahí?
+Está todo.
+Esos son...
+Ah, estos tres.
+Sí.
+Esos son servicios adicionales que vos no pusiste cuando compraste.
+Podés comprarlos una vez que estás adentro de la empresa.
+Por ejemplo, el Good Report es una declaración personal tuya de que sos una persona, una cantidad de cosas.
+El Company Banking es una compañía de banco para tu LLC.
+Es una cuenta de banco para tu LLC.
+El Reseller Tax Certificate.
+Es un Tax...
+Es un costo de impuestos.
+Lo pagás una sola vez.
+Son trámites que, si no los hacés, los vendedores, cuando vos creés una compañía, te van a contactar y te van a decir, mirá que si no lo hacés...
+Es más, el Good Report, por ejemplo, es algo que, si no lo hacés, el Estado te bloquea la compañía y por más que vos pagaste, se te cancela.
+Igual a vos te van a contactar los vendedores para informarte de esto.
+Pero son cosas adicionales, porque hay mucha gente que quiera hacer el Good Report manual y no los envía a nosotros.
+Ahí hay carnitos que lo hacen.
+Entonces, como digo, este producto está súper estudiado por Guillermo.
+Hay muchas cosas que el loco dice, ta, es así, así funciona, porque recordemos que él es el que maneja toda la parte del negocio.
+Hay muchas cosas que el loco dice, che, te entiendo, pero esto en la práctica no funciona así.
+Me ha explicado muchas cosas.
+Yo digo, oh, ¿por qué estas cosas no las incluimos una a una?
+Y me dice, en la práctica muchas veces me joden, entonces tengo que crear una devolución.
+Entonces lo puse como servicio adicional.
+Y tenemos que obtenerlo buscando y que lo agreguen.
+Son de pago único los tres.
+Son de pago único. Vos pagas una vez y ya te quedan.
+Te quedan para siempre.
+Ahora, si vos vas a suscripciones, en suscripciones vos podés agregar suscripciones como Netflix.
+La parte de accounting es que te hagan la contabilidad, ¿si?
+Que es lo que va a hacer accounting y AI.
+O sea, vos, hoy en día es manual.
+Vos nos envías una factura, nosotros tenemos que pasar todo manual.
+La idea de eso, como contaba hoy al equipo, es que pase a ser con OpenAI.
+¿Ah?
+Todo esto, menos la parte de team mate.
+Porque el team mate no puede ver, a no ser que tenga empresas de él, no puede asignar team mate.
+Todo esto es la parte de team.
+O sea, todo esto lo puede hacer un team.
+Ajá.
+Si te parece, Enrique, para mí lo que habría que testear acá es lo siguiente.
+Con respecto a las suscripciones y con respecto a lo que es dentro de compañías.
+¿Si?
+Lo único que...
+A las suscripciones dentro de compañías.
+¿Viste?
+Esas que vimos de compra única.
+De un solo pago.
+Habría...
+Ah, pará.
+¿No eran servicios adicionales?
+Sí.
+Estos también son servicios adicionales.
+La diferencia es que unos son...
+Te digo cómo los manejamos nosotros.
+Son todos servicios adicionales.
+Unos son de un solo pago y otros son suscripciones.
+Viste que al final te dice monthly payment.
+Ajá.
+¿Está?
+Si te parece, Kike, yo lo que quiero es que acá en la parte de team mate se haga un chequeo rápido.
+Tipo, se intente agregar un servicio adicional.
+Se intente cambiar la tarjeta.
+¿Está?
+Y lo mismo se intente comprar...
+Porque vos vas a hacer test de servicios adicionales.
+Que me parece que de un solo pago.
+Que esos no se están faltando.
+Sí.
+Eso me parece que está bueno que sigan lo que nosotros tenemos.
+Y que cuando se hace los test de regresión de team mate, lo único que se chequee sea que vos podés comprar uno que no es tuyo.
+Cambiar el método de pago.
+¿Está?
+Y que se cambió.
+¿Si?
+Y después en la parte de...
+Y después en la parte de companies que podés subirle documentos.
+¿Está?
+O sea, a lo que iba.
+Hay dos tipos de team mate.
+Esos documentos.
+Hay dos tipos de team mate.
+Uno.
+El team mate que ya tiene una cuenta.
+¿Está?
+Ya sea porque alguien te le cedió otra compañía.
+¿Si?
+Ajá.
+Y...
+O porque él es dueño de compañía.
+¿Está?
+Y después tenés el team mate que es como el caso de que vos querés pasarla a tu contador.
+Y el tipo es contador de Uruguay.
+Entonces querés pasar las cosas de team mate.
+Lo agregás.
+Y ahí el tipo no es que te va a llegar un mail.
+Te llega un mail.
+¿Está?
+Eso es algo que tenemos que involucrar Kike en los procesos de test.
+Los mails.
+En los test de regresión.
+Eso es una de las cosas que, por ejemplo, yo hablaba ayer con Kike.
+Algunas cosas que van a ser jodidas meter con Cypress.
+El tema de los mails.
+Revisar que llegue el mail.
+Como es un proceso que el mail puede...
+Es asíncrono.
+Y demora.
+Hay que ver cómo podemos encargarlo de eso.
+Capaz que hasta donde llegamos nosotros es ver que se publicó el evento.
+En SNS.
+Bueno, nos estamos yendo un poco de test.
+Lo que les iba a decir es lo siguiente.
+En team mate lo que vos tenés que chequear es...
+El flujo de que yo invito a alguien que no tiene cuentas.
+El flujo que yo invito a alguien que tiene compañías propias.
+El flujo que yo invito a alguien que no tiene compañías propias pero ya lo invitaron.
+Y el flujo que yo invito a alguien que tiene compañías propias y ya lo invitaron.
+O sea, son cuatro flujos.
+Pará.
+Los últimos dos me sonaron igual.

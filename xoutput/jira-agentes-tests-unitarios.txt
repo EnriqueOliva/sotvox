@@ -1,0 +1,12 @@
+TÍTULO
+======
+Como desarrollador quiero actualizar los agentes codegen y reviewer para que detecten los tests unitarios impactados por un cambio y agreguen los casos faltantes [site]
+
+DESCRIPCIÓN
+===========
+Actualizar los prompts de los agentes codegen y reviewer para que, cuando un cambio en el código fuente impacte tests unitarios ya existentes, lo detecten de forma automática y no se limiten a parchear el test sino que lo complementen y mejoren.
+
+Comportamiento esperado:
+- Detectar cuándo un cambio afecta tests unitarios existentes.
+- Que el reviewer avise que hace falta agregar más casos de test.
+- Desarrollar y agregar esos casos, ejecutarlos y justificar su cobertura.

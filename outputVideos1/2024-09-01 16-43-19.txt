@@ -1,0 +1,98 @@
+pero ahí es ahí si tenés si vos tenés el flujo este el logout si te fijas a diferencia de por
+ejemplo lo que se haga uno que hiciste o refresco con respecto a que en tiro una excepción este no
+tiró en hacer porque qué pasa si falla porque el toque no es viejo lo que sea yo quiero que
+reinicie igual y que le limpie las cookies está entonces acá lo que hago es tirar un error con lo
+que pasó que queda registro de qué pasó esto a nivel del hogar de login pero pero nada sigue
+el flujo normal es más si vamos a el controlador o de la ruta y usar controller estos vacos pisclar
+si nosotros vamos a logout voy a más al servicio pero se supone que si esto no tira excepción
+explote o no vas a seguir por estos casos por eso es que a vos te está funcionando pero yo
+necesito que vos chequees que se está cumpliendo el flujo si es un caso muy particular donde en
+realidad nosotros intentamos avisar la cognito che deshabilita este token para que nadie se
+pueda lograr con esto pero si por alguna razón cognito falla yo te tengo que limpiar las cookies
+igual si ya te vacío las cookies y con más razón si falla le vacío las cookies para que ya no tenga
+no las puedo utilizar más se entiende aún con más razón para que se tengan que lograr de nuevo
+entonces este es un caso particular pero yo necesito que chequees que se está llamando
+cognito que está llegando cognito que el método cognito se está llegando y se está llamando y
+por eso yo en la pr te había comentado que era la cama rapidito que más allá de que no sea
+bloqueante es necesario que el test pruebe valide que se está llamando cognito chequeando con un
+caso que explote igual retornes es su acceso o sea que vos tenés que agregar un test más
+primero los tendrías que probar los test normales que pasa por cognito y flujo normal y después
+tendrías que agregar un caso en particular donde cognito explote e igual retornes access
+o sea que cognito explota cuando vos le decís eliminar este token en su base de datos pero
+igual retornas access es más común claro es modificar los otros y agregar un caso exclusivo
+donde lo único que haga sea que cognito explota pero
+devuelves access igual porque por lo que yo te decía o sea el token es algo que a vos te da para
+validar entonces nada ahí por más que sea inválido yo te lo voy a admitir igual sí y si falla cognito
+con más razón en vez de volver error y explotar te limpio las cookies y cuando vos limpias las
+cookies del sitio lo que pasa es que te desbloquea porque ya no tenés el token a nivel de web para
+con la con los flujos si esto creo que martu cuando yo lo hice lo lo validaste pero estaba
+bueno que lo escuche bien y los otros test también entonces sí es hacer este tendría que hacerle la
+modificación para todos los test o sea porque todos llaman a cognito y deberías agregar un
+test donde cognito falla y nada y no limpio y limpia las cookies igual y hace todo correcto
+bien ese es el mismo moqueo cognito que hiciste en otros test sólo que para eso
+si hay martu cuando yo puse comentarios pero también está bueno para que vos le des un
+doble check a la a la pr de las queries de kick yo puse una cantidad de comentarios del
+flujo que tendría que tener creo que es por eso decido si vos copias esto y lo tiras te lo hace
+más haga como yo tengo la query es más o menos esto está si no te sale lo que sea me avisas y
+las del delete también o sea tiene que ser algo que es como que como si fuera un método o sea yo
+lo copio en pobres le cambió una cosa y me vacía todo entender está o lo corro en pueblo que crece
+algo útil porque y también esto va para vos martu por eso te pido que le dé sobre check porque esto
+van a ser cosas que probablemente no sé que utilicemos bastante nosotros dos martos
+y más ahora que vas a arrancar a ser migración entonces este pegarle doble check si podemos
+hacer algún refactor o algún ajuste o algo que pueda hacerlo esto más óptimo si la idea es que
+cada repositorio tenga una lista de queries de sql a mano de útiles por ejemplo está no sé qué
+tanto has visto de esto martu pero la idea es que puedas crear una compañía con una query y no
+tengas que pasar por todo el flujo a nivel de front-end yo acá una de las cosas que digo es
+que vos tenés que crear una company draft y después tenés que crear una company entonces
+se supone que la primera query crea la company draft y la segunda query utiliza la id de la
+company draft crea la company real y le asigna los datos de la primera se supone que vos para crear
+una company no es que tenés una query gigante que hace las dos cosas sino que vos corriste una
+query y después corriste otra si quedó para ambos pero fíjense que eso facilita no tener que entrar
+todos los elementos datos si está eso no facilita bastante igual y hay otra query que yo te agregué
+acá aquí es crear usuario que también surge de eso bien lo había hecho justamente porque la precisaba
+si acá está acá está hardcodeado el uso el correo pero después agrega la está es este bien bueno
+chequeemos ahí hasta dónde se llega
+para ambos que mañana mañana tenemos que juntarnos 6 y media como si fuera una daily para para hacer
+chequeo pues yo después tengo clase y eso y se complica y igual me vas me vas escribiendo
+de cosa hoy y mañana pero mañana necesito tener una una reunión contigo antes de las clases a eso
+es seis y media a siete en la medida lo posible seis y media está porque la idea es que puedas
+tener un tiempo para que puedas tener un tiempo para que puedas tener un tiempo para que puedas
+tener un tiempo en teoría para para lo que hablemos redondear sí y martú hoy cuando liquides me
+pegas el que está haciendo esa gente me pegas el grito está bueno bueno vamos arriba entonces un
+abrazo enorme y buen fin de semana trabajos quiere quedarte un segundito no no bueno cómo le fue
+qué pasa
+tengo el celular de emergencia la consultoría que fuera a comprar una cuerda porque siempre
+es así viste si vos sos demasiado bueno éste ya se empiezan a usar yo siempre les digo que sí a
+todo y las hijas de obviamente se empezaron a aprovechar de eso no ya me empezaron a pedir
+cualquier tenía que comprar una cuerda y la consulta de español lo puedo hacer
+perfectamente pero le quedaba más cómodo que lo hiciera yo yo la mandé a básicamente
+antes de ir al aeropuerto o sea después de eso tuve que ir al aeropuerto en el puerto salió todo más o
+menos un problema y con las valijas pero que se enojó pero que te dijo por lo de la cuerda que
+el que tiene que estar que tiene el celular de emergencia es el que está de guardia y tiene que
+ser capaz de responder no sé qué pero lo que habíamos hablado siempre fue
+el que está de guardia atiende casos de emergencia no se pone a laburar como si fuera un día normal
+y ahí hay una línea muy fina entre bueno que es una emergencia y que no para los juegos yo creo
+que no iba a salir a comprar una cuerda de no es una emergencia una cuerda que
+no habla un choto español por ahí la puedo llegar a llevar pero la loca
+pero ahí lo que hay lo que podría estar hecho es decir está perfecto
+la cuerda sale tanto y la encarga por mercado libre es más ahí va sí sí tal cual ya me llamé
+como a tres ferreterías y le dije mira ya me tenés acá y acá y acá puedes ir y comprarla
+una que queda a media cuadra de la embajada puedes comprar acá acá y acá ya me y ahí
+pero ahí lo que puedes hacer es cálculo que fue sábado se me ha complicado el sabor lo que puedes
+hacer es claro
+pedir y y marcador libre te envía si es de mañana y marcador libre le envía
+busqué el mercado libre una ferretería y pregunté si hacían envíos y el lunes
+todo el día estuve todo el día así para más mierda
+me tuve que volver en ómnibus del aeropuerto
+te extraña el bora y pero con más razón viste con este tipo de cosas con más razón tenés que
+aguantarlo porque esta vuelta lo que yo te digo estaría genial que pueda hacer un ahorrito y
+comprarte aunque sea un gol yo que sea algo para poder moverte viste choques es el auto
+de mi viejo cuando vendió los 89 ahora fíjate que un bolsito o cualquier cosa que te permita
+moverte viste lo que está igual en teoría ya el año que viene cuando llegue ese momento
+te va a chupar un huevo
+capaz que hasta ni necesitas el auto porque como seguir laburando para guille
+trabajar en tu casa ni te preocupas bueno bueno pero me alegro que haya disfrutado
+este cuéntenme el tema exámenes médicos no no muy lindo no no pero resulta más allá de eso y
+esa cosa resultado el 4 el 4 más o menos me lo mandan a mí
+y ya como es el hospital militar
+Gracias.

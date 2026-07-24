@@ -1,0 +1,116 @@
+cuando vos iniciás sesión tenés un token
+que se ponen las cookies
+ese token
+expira, o sea, si vos iniciás sesión
+y te quedás quieto, se renueva
+a ciertas cantidades de iteraciones
+o sea, literal el token
+se renueva cuando faltan
+unos minutos o lo que sea, el loco se renueva
+si vos estás trabajando en el sitio
+y te faltan 10, 15 minutos
+lo que sea, el tipo se va renovando
+eso está bueno
+pero
+pero, pero, pero
+como se renueva
+el token se renueva
+lo que pasa es que
+Guille, no sé por qué, que le está pasando
+que se le cierra la sesión, pasan 10 minutos
+estábamos charlando 20 minutos
+15, y se le cierra la sesión
+entonces yo necesito
+que haga un poco de exploración de eso
+porque es gravísimo
+esto que lo haga mañana, es gravísimo
+porque quedamos
+como el orto
+con Guillermo
+si el loco está 20 minutos
+y de la nada te deja de cargar las cosas
+y te tira para afuera
+entonces yo lo que voy a hacer es agrandar el tiempo
+a 4 horas
+la renovación la voy a hacer
+más frecuente
+y lo que
+y lo que te voy a pedir
+es que hagas, que mañana
+yo esto lo voy a dejar pronto hoy
+que mañana vos hagas un poco de investigación sobre eso
+o sea, ¿qué quiere decir eso?
+bueno, mientras que haces otra cosa
+en un segundo monitor
+dejas abierto el sitio de Nstage
+y dejas un rato corriendo
+o sea, dejas un rato
+y antes de que terminen los 60 minutos
+volvés a interactuar
+y no se te tiene que cerrar
+¿entiendes?
+abrís otra pestaña y el loco no se choteó
+o sea, 60 minutos
+tiene que aguantar
+vos teniéndolo abierto
+sin haber cerrado sesión, deberías poder seguir interactuando
+por 60 minutos
+si te pasa
+y esto
+es lo más importante
+si te pasa que se cae, necesito que me digas exacto
+entre la hora
+y entre qué rango de minutos pasó
+porque así yo lo puedo traquear en los logs
+lo mismo puede hacerlo usted
+para atrapar el error
+es medio
+es un bug de exploración
+yo lo voy a arreglar
+pero necesito validar que esté arreglado
+sí, y si falla
+si quiere investigar
+el log y eso
+me viene muy bien
+entrar a CloudWatch
+y eso, investigarlo
+está invitado
+pero más que nada necesito validarlo
+yo ya lo dejé con esta solución
+y al parecer anda
+pero está, necesito
+es algo que podés hacer en segundo plano
+yo igual ya lo hice, estuve hasta ahora
+mientras que hablaba con usted y eso lo fui haciendo
+y ahora cuando se te vence la sesión
+te saca para atrás
+entonces con más importancia aún
+yo no puedo sacarlo cada 5 minutos
+¿entiendes?
+está eso
+entonces el orden de prioridad es el siguiente
+test de regresión, eso
+y después cerrar los comentarios
+incluso después de hacer eso
+puede pasarme mañana o el sábado
+la nueva estimación de puntos
+o sea
+no quiero que dedique más tiempo
+otra cosa que no sean test de regresión
+y esto de puntos
+y este bug
+la PR tiene que quedar arreglada
+antes del lunes
+debería estar quedando en el lunes
+arreglada antes del lunes
+por eso le digo ahí de repente analícelo
+capaz que quiere tomarse este sábado
+y el viernes lo charlamos
+pero sería clave que la PR del test
+de crear company draft
+se manden los test unitarios
+antes del lunes
+es eso
+esa es la lista de cosas
+vaya a ser
+había entendido que

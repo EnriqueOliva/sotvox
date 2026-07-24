@@ -1,0 +1,347 @@
+esto dije quién puedo poner a hacer esto para que me dejen hinchar la pelota y el
+kit el kit bien nosotros tenemos estos audi
+blog el mayor problema es que mierda lo que está pasando cuando pasa este audi
+blog o sea que sólo lo entendemos nosotros como hacemos nosotros para que
+el cliente entienda qué mierda está pasando acá
+si bien bueno entonces cómo hacemos eso
+vamos dos cosas necesito una usted tiene acceso a esto en producción estamos
+teniendo un bar que está guardando las imágenes ya acá necesito que esto no se
+guarde en el lobo porque es súper pesado estos bytes son súper pesados entonces
+este que todo está guardando como detalle y esto literal es es súper
+pesado
+esto que es mirar entonces cuando se audita en sí en todos los lugares que se
+audita si se encuentra que es un data application base 24 algo así necesitaría
+que no que no se guarde
+el primer punto es eso ese sería el primer punto y el segundo punto que es
+el interesante los clientes acuérdense que acuérdense que no ven los detalles
+no hay detalle
+se vea en cualquier minuto final usanğu leó que muestro que está trabajando
+sí
+si hoy en directo voy a ir ah sí entonces yo lo quiero usar porque si no vamos a
+empezar a gastar доoris avOne
+hasta el bruño
+aunque son problemas
+estoy de nuevo
+no quiero usar para gastar toque así rápido lo que yo quiero es primero
+agregar un filtro para que podamos buscar por usuarios
+e tipo escrever el nombre de un usuario o de una empresa pero lo primero que lo que yo quiero es primero agregar un filtro para que vamos a buscar por usuarios a qué tipo
+lo primero que yo quiero es primero agregar un filtro para que podamos buscar por usuarios a qué tipo
+que escribir el nombre de un usuario o de una empresa y te aparezca sí y lo
+otro es nosotros ya tenemos el repositorio con openEI
+o sea ya lo tenemos sí lo que quiero es un botoncito acá que lo que haga sea
+tipo que el cliente o sea que la persona de administración haga un clic acá y con
+esta información y lo que está acá tipo chagGPT con un prompt bien básico te diga
+esta información no la ve el cliente pero si la puedes usar para el prompt
+entonces la idea con estos detalles y la información y el portal, recursos
+lo que sea chagGPT como que si vos le das clic le haces una respuesta al endpoint y el
+endpoint te tiene una especie de qué mierda puede estar pasando
+sin brindar ninguna clave
+ni nada en particular
+te interpreta el error
+quiero un beta testing
+de eso
+la idea sería por ahora usar
+el modelo de GPT
+que ya tenemos
+y tenemos con token allí
+lo estamos usando para Whatsapp, para responder Whatsapp
+entonces ya está en el repositorio
+probablemente te va a pasar las claves
+para probar
+que usa el modelo de GPT-5
+si no me equivoco
+y de nuevo, para lo que es esto
+es algo para que a nivel administrativo
+cuando ocurra un bug
+yo lo que quiero es que los administrativos puedan entrar acá
+y ver que mierda está pasando
+mismo Guillen, ver que mierda está pasando
+que este panel administrativo
+pase a ser también, registro de auditoría
+pase a ser también algo
+que le sirva a ellos
+porque la realidad es que hay muchos problemas
+con tarjetas y cosas
+que podemos evitar
+o sea que podemos evitar
+tener que andar viendo
+o sea directamente si el cliente ve
+la acción es esta
+proceso
+y yo que sé
+y acá por ejemplo
+fíjate el caso de
+el invoice
+no puede ser pagado
+con ese voice
+o sea
+la idea siempre le tendría que recomendar
+consulta con el equipo de tecnología
+pero ya como que nos da más información
+o sea
+esto lo que yo creo es que
+lo tengo que solucionar yo
+no hay vuelta
+pero hay algunos casos
+que puedo no solucionar yo
+o que ellos pueden interpretar
+que mierda pasó
+y es lo que quiero que pase
+que tengamos que
+no puede ser que estén saliendo 10 bugs
+todos los días
+resolviendo pelotudeces
+y nosotros estamos atacando 10 fichos
+entonces disminuir eso
+es un 10-20%
+pero lo interesante acá
+es que
+bueno tenés que usar la API de OpenIDI
+para este
+para resolver esto
+la idea es agregar un botoncito más
+o sea
+acá tenés
+como tenemos el lugar detalles
+es una columna más
+sí
+y acá es agregar un filtro por
+por nombre de empresa
+o por
+por usuario
+entonces ahí
+y o por
+por usuario que pueda ser por
+por correo
+vamos a que sea el correo del usuario
+viste salta sobre correo
+entonces saco el correo y nombre de empresa
+entonces yo ahí
+el cliente busca
+paca paca
+entonces puede filtrar
+y decir bueno
+qué está pasando con esta empresa
+el administrativo
+quien sea busca esto
+puede hacer un research
+y además también ve estos detalles
+que solo vemos nosotros
+si
+genial
+buenísimo
+o sea
+como te digo
+la mayoría de issues
+lo vamos a tener que seguir resolviendo nosotros
+pero si ya por ejemplo
+este mirá
+GAR con insuficiente FOAM
+esto es algo que nosotros
+lo tenemos nosotros a nivel interno
+nosotros no podemos
+formarnos un validador de tarjeta de crédito
+pero si ya estos todos estos casos
+el cliente los
+los revisa y lo resuelve él
+ya nos ahorramos
+un montón de cosas
+entonces
+hay un sanitizador
+a nivel del back office
+del site
+y el worker de los audi log
+a ese sanitizador
+hay que agregarle que no
+no viste que nosotros
+en un momento lo trabajaste con Martina esto
+ta
+que no
+que no guardes ciertos niveles de profundidad
+o lo que sea
+creo que tiene un max tip de 10 o algo así
+no me acuerdo
+no sé que lo
+lo trabajaste
+ah
+este
+capaz que solo que
+si detecta un patrón de que es base 64
+solo te guarde tipo
+los primeros 20 caracteres o algo así
+cosa de que podamos guardar
+el tipo de
+viste que acá el data del base 64 te dice
+qué tipo de documento es
+y todas esas cosas
+pero nada eso
+no te quería robar mucho
+mucho tiempo
+pero a la par de lo que son los datos de la base 64
+de lo que son los test unitarios
+creo que es una linda tarea para desarrollar
+este
+y nos va a ser súper útil
+para poder atacar un Pax
+que si nosotros podemos hacer que
+que la gente de administración
+empiece a usar todo este panel
+ellos no van a ver
+acordate que ellos no ven los detalles
+eso lo vemos nosotros
+pero la idea sería que el chat GPT te genere ahí un
+un ajuste con ese detalle
+ah
+ok
+eso no
+después me pasás una tareita
+tiene frontend y backend
+ok
+una tareita para pulir el backoffice
+si
+ok
+genial
+este
+y también lo que es el filtro
+la sanitización
+de todo lo que es la data que se guarda
+que no me esté guardando más archivo
+ah
+bien
+eso nomás
+el propio ingeniero usted lo terminó no?
+si
+correcto
+rapidito como era que fue?
+bien
+ahora hay que ver a ver
+en la práctica como incide
+veamos y teremos a ver que onda
+bien
+piensa que va a ser útil
+por ejemplo para fernando piensa que es útil
+que usted y fernando tengan estandarizado lo mismo
+si
+si si
+tiene sentido
+tiene coherencia digamos
+de nuevo
+yo voy a intentar
+anaue y jonathan los puse a hacer otras cosas
+seguimos con pila de tareas
+pero después
+voy a intentar con tatato
+van a trabajar ellos van a trabajar
+les comento nomás si les interesa
+si no están muy apurados les comento muy rapidito
+los
+nabo y jonathan van a trabajar en una especie de selector
+que lo que o sea ellos iban a trabajar en lo de team mate y después notificaciones
+pero surgió una tarea que para mí es más importante
+porque lo de team mate y notificaciones son mejoras
+para el cliente
+yo quiero mejoras para el cliente a nivel de atención y soporte
+si entonces ahí
+lo que van a trabajar es una especie de round robin
+o lo que hace es
+bueno viene
+cuando hay un cliente sin asignar
+a quien es ejecutivo que se está rascando las bolas
+y lo asignamos
+entonces la idea es esa
+que genera una especie de políticas
+de roles
+de tipo bueno
+por ejemplo las criptoborders que son de brasil
+se la dividen entre estos
+entonces si pasan más de 48 horas
+y no se asigna el ejecutivo
+automáticamente te va a llegar un email a vos
+una notificación por slack
+una integración por slack
+y algo a ellos
+que llegue el ejecutivo
+y además el cliente va a poder empezar a ver los mensajes
+ahí ellos te van a romper las pelotas
+cuando estén los correos para que le hagas el correo
+pero probablemente todo lo que es el worker
+inmigraciones la toquen ellos
+eso es porque cuando vuelva martínez
+nosotros vamos a encararnos 100% en bridge
+que eso nos va a llevar bastante tiempo
+que vuelve el martes
+entonces ellos van a estar trabajando de eso
+de todas maneras
+viendo los test unitarios
+me preocupa la situación del worker
+pero ta sé que es muy complicado esos test unitarios
+tenemos bastante para laburar ahí
+y nada
+capaz que hay que dedicarme a eso
+por un día
+o sea hay presa a estabilizarlo
+porque si no viste que se pasa el tiempo
+y es como que todo ese código se vuelve obsoleto
+pero ahí laburo para rato
+y quiero empezar a
+ahora que
+realmente ahora que estoy viendo el potencial más
+o sea creo que
+ya veo lo que pude sacar
+y tipo metiéndole yo lo que puedo sacar
+y todas esas cosas
+quiero empezar a
+a sacar features tipo que aporten valor
+aprovechando este tiempo que literal
+no quiero robarle mucho tiempo
+sé que son las 8
+pero
+metimos
+una banda de cosas
+o sea literal la idea era que cuando viniera Martina
+nada de esto estuviera
+y hoy en día Guamoni ya está todo en producción
+entonces este
+salimos con Guamoni en producción
+se están haciendo las facturas excelentes
+se puede ajustar una cantidad de cosas
+entonces como yo me puedo
+centrar más en esto
+digo bueno perfecto
+vamos a ver que el resto del equipo
+haga 500 cosas que están pendientes
+seguro
+hay 10.000 cosas pero está muy bueno
+no le quiero robar mucho tiempo
+tuve la charla con Gastón y Nahuel
+vimos lo que es Cloud Design
+es cómico porque hace unos días me decían
+Figma no
+Figma tiene para un tiempo
+no se pasa
+y ahora
+ya le contraté la suscripción
+este
+escenario curio
+si si
+pero
+ta sigue estando esa parte de análisis interno
+está muy complicado ustedes
+iban a ir a comer
+a dar vueltas
+me están puteando aquello
+íbamos a cenar pero
+ta ta ta
+vaya vaya vaya
+tranquilo
+hablamos en otro rato
+ta
+bueno
+era eso
+cuídese
+le mando un abrazo
+espero que esté todo bien por ahí
+dale
+vamos arriba
+chau chau
+hasta luego

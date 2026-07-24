@@ -1,0 +1,216 @@
+Y nada, ahora estaba por empezar la de actualizar el detalle de compañías
+para mostrar el teléfono, el email de los ejecutivos.
+No sé, ahí como dijiste hoy de las prioridades, si querés que siga con eso
+o antes de empezar eso querés que ataque a otra cosa.
+Por ahora sí, pero voy a necesitar que antes del final del día
+te reúnas con Santi y Pantin, porque la idea es que Nahue en teoría,
+ahora vemos que anda Nahue, pero la idea es que Nahue en teoría que siga con eso
+y que vos te pongas con todo lo que es la estilización del sitio.
+Todo lo que son los márgenes y todas esas cosas.
+Entonces, seguí avanzando con esto, pero la idea es que Nahue continúe.
+Por eso es la idea de que se dividan esas tasks, porque la migración capaz que la podemos
+mergear medio hoy, si salimos a producción, así ya quedan todos los repos,
+eso podría estar bueno porque les permite a ustedes trabajar más tranquilos.
+Y lo que les voy a pedir ahí es...
+Pónganse, ponete en contacto con Santi para que te muestre, Santi o Gastón,
+lo que hablamos de los márgenes, lo del clamp que comentó Gastón,
+todas esas cosas que la idea es que se estandaricen.
+En todos los lugares donde se aplican márgenes, padding o font-size con ciertos tamaños,
+que tenga este patrón, que cumpla con el diseño.
+Entonces la idea es que te junte con eso y hagas un refactor.
+En un principio...
+En un principio vamos a atacar solo el site, el backoffice lo vamos a dejar ahí,
+y después creamos una tarea para el backoffice.
+Pero en un principio vamos a atacar solo el site.
+Bien, perfecto.
+Bien de bien.
+Después ahí capaz que lo que hacemos es, una vez que vos tengas el site pronto,
+y tengas esa PR pronta y toda ajustada, muy probablemente lo que hacemos es
+le asignemos a Fernando o a Enrique, probablemente a Fernando, que se ponga a trabajar en el frontend,
+de eso, ya con la base de lo tuyo ya pronto y testeado y aprobado, ¿tá?
+O sea, es muy parecido a lo que estamos haciendo con Dropi.
+O sea, esperar un poco.
+Bueno, en este caso capaz que podemos delegarlo, ¿sí?
+Y después hacer lo mismo en el backoffice.
+Esto es importante, o sea, por más que parece una bobada, es súper importante,
+por el simple hecho de que nosotros de acá unos meses, como venimos trabajando,
+es posible, existe la posibilidad.
+De que salga otro wild level.
+Entonces, cuanto más generalicemos el sitio en cuanto a estos usos,
+es más sencillo poder incorporar cosas, como los componentes genéricos o lo que sea, ¿tá?
+Después, otra tarea que te tengo que asignar ahí, Jonah, para que me pases,
+además de esto, de los padding, márgenes y font size,
+capaz que ahí Santi te muestra algo más, espaciados, gaps, lo que sea, que tenemos que estandarizar.
+Eh...
+La idea es que sigas después de eso con lo que son los componentes en cuanto a diseño, ¿tá?
+O sea, nosotros tenemos los custom buttons, ¿sí?
+Y tenemos los input, tenemos los drop down, ¿sí?
+Esa tarea la tiene Jonah ya creada, ¿tá?
+Y no sé si hay algún compon...
+Creo que los switch, por ejemplo, ¿tá?
+Los checks, o sea, todo eso está en el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Lo que quiero es estandarizarlo, o sea, que cumpla todo con el sistema de diseño.
+Entonces, ahí, mi idea es como perderte un poco a vos, ¿tá?
+Pero que podamos estandarizar eso, cosa de que si en unos meses, que es algo que...
+Un trabajo que va a llevar tiempo, unos meses nosotros tenemos que sacar un white level,
+copiar y pegar, y los componentes salen más rápido si siguen el mes táctico, ¿tá?
+Perfecto.
+Y asimismo, la generación de componentes, una vez que saque esto, va a ser más rápido,
+¿tá?
+Perfecto.
+Entonces, son esas...
+Una tarea que se hace en Python y otra tarea por componente para fijarse que cumpla con
+diseño, ¿tá?
+Lo que es los botones, lo que es los drop-down, o sea, ahí la idea es pasarte a vos a cien
+por ciento a que te asegures la calidad del diseño del frontend, ¿bien?
+Perfecto.
+Así que, ¿tá?
+Como te digo, hay una tarea que ya no tiene nada, entonces, este, y nada, y los custom
+button, la idea es que, por ejemplo, el primario, secundario y terciario, que son configuraciones
+que ya se pueden hacer props en los botones.
+Que tengan sentido con el diseño que hiciste antes, ¿tá?
+Este, y si alguien, y bueno, eso va a tener muchos cambios, o sea, porque va a impactar
+en muchas páginas, entonces, eso involucra estar muy pegado a diseño, a fijarse de que
+no se corrompa nada, de, bueno, que todo tenga sentido, ¿tá?
+O sea, esto nos va a llevar tiempo, entonces, por eso te quiero, quiero dedicarte a vos,
+¿bien?
+Este, Nahuel.
+Bien.
+Yo, por un lado, este, ya había dejado de ser lo que era la APR de...
+¿no?
+La APR del cambio de Teammate, este, por el tema de los permisos, de que se active el
+full access.
+Después de eso, este, hice una revisión a la APR de las migraciones de Yona y le dejó,
+este, le faltó un comentario para ver.
+Fuera de eso, este, vi que Marty ya, este, me dejó comentarios en la APR, lo terminé
+de corregir, estoy probando que no se haya, esté todo ok, y ya volvamos a mandar la APR
+de Teammates, para que la puedan revisar, y ahí, este, voy a descontarme con Yona para
+ver qué tarea agarro en este puesto de la nueva tarea.
+Bien.
+Perfecto.
+Está.
+Ahí, está, es, o sea, no hay mucho más para, no hay mucho más para decir, o sea,
+la idea es que en el momento en que vos te liberás con Teammate, capaz que después
+del almuerzo, lo que sea, ya puedas ir tomando y liberamos a Yona de ese lado, ¿está?
+Bien.
+Bien de bien.
+La idea es que...
+Bien.
+Que lo vayas validando con Yona, pero que puedan ir atacando esos dos problemitas que
+tenemos, ¿está?
+Este, y bueno, vamos, vamos bichando ahí, este, así que nada, eso, bien de bien.
+Después este, está, es, por ahora, esas son las, las prioridades que tenemos, ¿sí?
+Entonces ataquémoslas y llegamos a terminar.
+Eh, Santi, ¿vos ya fuiste?
+Santi.
+No, pero ya te comenté un poco ahí en qué estaba trabajando.
+Estoy trabajando en la parte del extracto, eh, hasta ayer no me había quedado claro
+si era que el extracto tenía que ser solamente el PDF, entonces me puse a trabajar en principio
+en la página que iba a contener eso, y ahora me centré en lo que vendría a ser el PDF
+que vamos a poder descargar.
+Igual está, ya tengo un avance, también Gastón me estuvo pasando recién lo que había
+generado él con inteligencia...
+Con inteligencia artificial para, para que lo tuviera en cuenta a la hora de diseñar,
+y tomé un par de ideas ahí que estaban buenas, que las estaba aplicando, y nada, continúo
+trabajando ahí con el extracto, bien, tenga eso ahí, te aviso.
+Bien, perfecto.
+Eh, ¿dónde está?
+Gastón.
+Ah, después de tarde nos vamos a tener que, capaz que después de la reunión de QA o
+antes o después, nos juntamos ahí a ver todas las partes de diseño, una vez que tengamos
+avance en el extracto, ¿está?
+Este.
+Bien.
+Eh, Gastón.
+Bien, eh, bueno, yo estuve, eh, entrenando unas skills de cloud, eh, con, con los archivos
+que mandó Mati, eh, de los usapersona y, y esas cosas, eh, y aproveché para probarlo
+con, con esto que habías mandado de extracto, que, que bueno, algunas cosas no me habían
+quedado claras y, y, ta, eh, más o menos.
+Lo, lo estuvimos viendo con Santiago y, y, y nada, y, y quedó ahí un avance, una base
+de diseño.
+Eh, y por otro lado, también lo estuve probando con, con el, con la presentación del roundup,
+que, que va a ser el miércoles que viene, eh, por otro lado, eh, sigo con el, con el
+video presentando los flujos de, de, de Bolivia, eh, y también estuve ajustando la presentación,
+eh.
+La presentación de, de la propuesta de, de las inteligencias.
+Dale, perfecto.
+Soy yo.
+Bien de bien.
+Eh, Fernando.
+Bien, eh, hice la tab de renovaciones, eh, hice también, eh, la 3054, el trim de search
+y después estuve con la de abajo del todo, la de pinchando ahí y corrigiendo los demás
+buscadores.
+Eh.
+Eh, resolviendo algún comentario y.
+¿Estuviste trabajando en estas dos, Toto?
+¿Cuál?
+Estos dos.
+Eh, quedaron un poco separadas, eh, en realidad es, eh, la, o sea, la tercera abajo pa' arriba
+y la primera.
+Eh, hoy, si querés, trabajo en la 3056, o sea, estuve trabajando la 3054 que, que está
+y la 3055 que casi que está.
+Bien.
+La 3054.
+¿Trabajo querés en la 3056 ahora, a partir de ahora?
+Sí.
+Buscador de solicitudes.
+Sí, o sea, sí, o sea, hagámoslas en este orden, o sea, 3054, 3056 y después la 55,
+¿tá?
+Ah, ok.
+En este orden.
+Porque, eh, porque en sí el problema en el trim es acá, ¿sí?
+Y después acá tenemos otro issue que son las transacciones y después esto es más
+de.
+Search para, tipo, más cubada, a ver si hay algo más que está andando mal.
+¿Sí?
+Entonces, este, la prioridad está en estas dos.
+¿Tá?
+Ok.
+O sea, literal, trabajarlas en este orden con PRS parada.
+Porque esta puede ser que no surja nada, o sea, que todos los otros lugares estén bien.
+Dale.
+¿Sí?
+Eh, igual en la 3054, eh, en el mismo archivo había otro que era cambiar un par de líneas,
+eh, corregir también.
+Ah, está, está bien, podés meterlo, pero no la, no la cierres, o sea, si encontrás
+una no está bien.
+Podés hacer el research fuerte, hacelo después, para así poder sacar la 3056, este, y vos,
+y podemos ver el flujo total de, de transacciones que hoy en día no la estamos viendo.
+Viene bien.
+Eh, Martina.
+Eh, bien, de mi lado, bueno, estoy viendo PRS y después, eh, estoy con la parte de,
+ahí no se, ah, no, está más arriba, pero estoy con uno de los documentos, eh, estaba
+leyendo un poco la PR para trasladar esos, la validación de los documentos.
+La validación de los documentos del Worker a, a la parte del site, y eso, básicamente.
+Bien.
+La traducción del documento del Worker, ah, sí, este, si querés ahora lo vemos, o sea,
+hay unos métodos ahí raros que agregué.
+Bien, este, está, Yona quedó pendiente del, de las tareas ahí que vayan coordinando,
+una vez que lleguen las migraciones a, a PurriQuest las, las miro yo, este, Martina, eh, está,
+este, Enrique.
+Sí.
+Enrique, tenemos la presentación de hoy y ahí Enrique y Tato, además de las tareas,
+porfa, vayan avanzando todo lo que puedan de, de test unitario, todo lo que nos pueda
+llegar a nosotros para que con Martina podamos mirarlo por si, o por lo menos yo, que podamos
+avanzar con revisiones el fin de semana de test unitario y cuá, les pido ahí a ambos
+que el final, al final del día me pasen, porfa, este, todo lo que serían las PRs pendientes
+en PurriQuest de su lado, viejas, nuevas, lo que sea, ¿tá?
+Este.
+Eh, porque sé que quedaron medias, pueden haber quedado medias, este, colgadas, Castón
+y Santi, nos tenemos que juntar, pero antes necesito ver lo del extracto bancario y así
+se lo pasamos a Carlos, que lo va a ver con Guille, ¿tá?
+Este, eh, está, Inaue, atento a lo de, a lo de teammates, así lo podemos, eh, mergear,
+¿tá?
+Que probablemente eso también tengamos que meterle QA y le pegamos una manita a Enrique
+o a Fernan, ¿tá?
+Eh, bueno, buen provecho Martina, te tocó quedarte hoy.
+Gracias.
+Chau.
+Chau.
+Buen provecho.
+Bueno.

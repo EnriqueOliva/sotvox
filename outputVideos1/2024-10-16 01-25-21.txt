@@ -1,0 +1,335 @@
+a la lógica. Vos lo que
+estás testeando acá
+no es CronShopController
+Spect. Eso porque está desactualizado.
+Pero eso está en Delete.
+¿No? A ver,
+fíjate. Fíjate en los archivos.
+Enchain.
+Claro, pero no, pero pará.
+¿Y dónde está la del Delete?
+¿Quiere decir que la de Manager le pusiste Delete?
+Capaz que por eso es...
+No, porque este es
+el método. Vos acá estás probando el Delete.
+Yo lo vi que decía
+Delete esto. A ver, si lo hice en el
+CronShopManager, ¿por qué le cambió
+el nombre? No, le cambió
+el nombre.
+Este test que estaba
+bien el nombre es
+DeleteCronShopController
+y no es...
+¿Desde cuándo ponemos Spect?
+Kike, ¿por qué dicen
+.spect? ¿Nosotros ponemos
+Spect? No, no, no, no.
+No trabaje dormido.
+Nosotros tenemos que
+seguir los mecanismos
+que tenemos en los otros sitios.
+La verdad es que el Worker
+no tenía nada. Digo porque
+también si hoy en mañana creamos un nuevo repositorio
+la idea es trasladar
+todas las convenciones que venimos
+moviendo al otro sitio.
+Lo que estaba no me interesa.
+Es como te dije la numeración.
+La numeración es un mecanismo que nosotros definimos que se
+tiene que empezar a aplicar. Perfecto. Todos los nuevos
+sitios tienen que aplicarlo. Entonces
+si hay algo viejo, perfecto.
+Además, yo necesito que hay algo
+que es importante porque el sitio va a ir creciendo
+y va a pasar.
+Yo necesito que a medida que nosotros vayamos agregando
+cosas, te va a pasar muchas veces que
+vos tenés dos tipos de desarrolladores.
+El pija y
+el tipo bien.
+El poronga es el tipo que, por ejemplo,
+cuando vos cambiás algo
+no lo digo por este caso.
+Digo porque, por ejemplo, vos cambiás el nombre de una
+variable y tendrías que cambiar otra
+por nomenclatura. Decís, no, no lo hago.
+La tarea es cambiar esto.
+No, yo necesito, si vos estabas haciendo un refactor,
+y ves que hay otras cosas
+que también están mal, vas y las
+mejorás. ¿Se entiende?
+O sea, yo nunca te voy a criticar
+por eso. Puede haber una vez que yo te diga
+vos, mirá, justo esto impacta en la funcionalidad
+y rompe tal cosa, entonces vamos a hacerlo después.
+Pero siempre que sea
+cambiar algo, refactorear, lo que sea,
+que sea medianamente, o sea,
+que el impacto no sea jodido,
+lo voy a decir.
+O sea, lo voy a alabar.
+En el caso, por ejemplo, me decís, no, mirá, voy a
+renombrar todos los...
+No, pará que...
+Porque cambiamos la nomenclatura en uno.
+Digo, no, esto es progresivo, vamos haciéndolo a poquito.
+Entonces, todo lo que nosotros
+venimos trabajando en los otros sitios, necesito que lo
+transportes para este lado. O sea, ahí
+nosotros, todos los sitios,
+tienen que... A lo que voy es,
+cualquier desarrollador
+que contratemos ahora, o que venga, o mismo
+vos, si yo trabajo
+en un sitio, voy a otro y
+sigo las mismas políticas,
+sigo la misma estructura,
+la misma identación,
+todo lo mismo
+debería seguir.
+Entonces, en sí,
+en cuanto a prolijidad, en cuanto
+a separación de código, en cuanto a
+estándares, la idea es
+eso mismo. Entonces, ahí,
+primero, debería
+ser punto test,
+segundo,
+ay, me trancé.
+Primero, debería ser punto
+test, segundo,
+es un...
+es un test exclusivo del delete.
+Está eso.
+Y cuarto,
+está esto del send.
+Yo lo que le digo, que es como es el delete,
+y nosotros cuando eliminamos, no enviamos,
+sí enviamos en el otro
+método que usted no generó
+pruebas. Por eso digo que este
+test en particular, es solo
+del delete. Porque si vos te mirás,
+el controller, tiene otro método
+que es para enviar
+carritos vacíos. Y ahí,
+ahí es donde utilizamos el send.
+Ahí sí es donde se tendría
+que moquear esto. Pero en este
+caso, yo creo que si lo sacás,
+no lo... no afecta
+en nada, o técnicamente
+no debería afectar en nada.
+Bueno.
+Bien.
+Mire que la 65 ya está aprobada.
+Claro, es solo el delete, porque
+acuérdate que el otro lo vamos a encargar después.
+Entonces, ahora, con esas
+dos, sin encontrar la de crunch on manager,
+¿está?
+Ya, siempre que hagas eso,
+acuérdate de hacer seguimiento, porque entiendo que
+estamos cansados de lo que sea, pero
+hay que hacer seguimiento del deploy y todas las cosas.
+Esto es como que estás
+de guardia. Vos haces un deploy,
+tenés que fijarte que de velo,
+iniciás sesión, es nada más entrar, iniciás sesión,
+está, anda. Hoy o mañana, cuando vos
+agregues una funcionalidad, es entrar a de velo y fijarte
+que tu funcionalidad anda.
+¿Sí?
+¿Qué más? ¿Qué te iba a decir?
+No, bueno, está.
+Entonces, te quedan esas dos PRs,
+con esto aprobado, te quedan
+esas dos PRs por...
+por liquidar.
+La de crunch on controller y la...
+y el bolazo de
+regression test.
+Otra cosa que es una buena
+costumbre,
+no marques una tarea
+don hasta que en dev no esté
+bien. Y también cuando
+venga alguien nuevo,
+o sea, transmití eso.
+¿Por qué? ¿Qué pasa?
+Si vos
+la marcas como don, te olvidás
+de chequear dev.
+Entonces,
+tiene que ser como algo como que...
+Ah, tengo que marcarla como don, pero antes de marcarla
+como don, te van... Pues si vos la marcas como don
+y la marcas
+y después vas a de velo y explota,
+¿está? Hoy o mañana
+va a pasar lo que pasó la otra vez,
+que yo entré a de velo y digo, la puta que le valió
+el quique, la concha, la lloré.
+¿Está? Este...
+Y por ahora no pasa nada.
+Pero hoy o mañana vos vas a ser
+un señor de velo, pero vamos a tener
+más gente en el proyecto.
+Entonces,
+son cosas que vos tenés que cuidarte
+el culo. Errar,
+todos podemos errarlo.
+Pero la diferencia
+que va a marcar es cómo le errás.
+¿Se entiende?
+O sea, hay errores
+como quien dice... Es como
+todo, ¿no? Ya el cadete
+del último año ya hay cosas por las que no
+pasa, no la sanciona.
+Ya la tiene automatizada.
+Entonces, eso también es algo que yo
+le quiero transmitir.
+Tiene que ir mejorando.
+Yo realmente quiero que usted mejore.
+Recuerde que la idea mía no es que usted sea
+un tester y el año que viene sea un tester y
+me siga laburando de tester.
+Quiero poder ir a más.
+O sea, realmente decir, oh, este loco
+es autodidacta, estudia bien,
+loco, vamos a buscarle la puta
+vuelta.
+Sé que lo recalco
+mucho, pero tengo mucha fe
+en usted. Capaz que
+le estoy errando, tendría que echarlo a la mierda
+y contratar tres briscas que me chupen
+la verga todo el día.
+No, yo solo
+me estreso.
+Ni a el golf, el plancha
+que vendió, que los tipos me compraron
+el auto. Sinceramente no quiero saber
+qué fue, mi amor.
+Bueno, perdón.
+Estoy cansado, ¿qué querés?
+Bueno, está. ¿Nos queda algo pendiente?
+¿Mañana qué? ¿Jueves?
+No, mañana es jueves.
+Ah, viste, pegané.
+Ya, te calentás conmigo,
+me ponés el HDR ese
+para que no me...
+No, no, déjalo, déjalo, déjalo. Escúchame, este...
+Eh...
+Bueno, bueno, venimos, o sea, fuera
+de todo, creo que
+si pulimos alguna cosa, y eso venimos bastante.
+Toco ponemos con el Word,
+que el Spring viene, tengo que meterle más
+con el WordPress ese de mierda.
+No creo que venimos bien.
+No, no, ya me están sentando
+a la pija, no estoy pudiendo meter con nada
+en Dashbank por el trabajo, mirá.
+Ah, hoy hablé con...
+Estoy hablando con...
+Con abogados y eso, por el tema
+de contratar gente y eso.
+Para el diseñador.
+Porque estaría bueno
+contratarlo. Además,
+algo que también estaría... Tengo que ver.
+Tengo que ver.
+Que hay una pequeña chance que usted también
+lo contrate. Entonces, ahí
+empieza a facturar para el exterior.
+Y le pago IVA. Entonces,
+ya no me tienen que cagar a mí, va ahí y se compra
+sus cosas.
+Además de la plata,
+sería una parte en IVA que te llegaría.
+No, no, eso sería
+más adelante. Estoy hablando
+de febrero. Tengo que hacer número ahí
+porque también tengo que ver si te conviene.
+Sí, yo también quiero estar tranquilo, no te voy
+a mentir, ¿no? Me encantaría
+tipo... Sí.
+Capaz que te lo extiendo un rato hasta
+que lleguemos a un número más alto, pero
+para mí me gustaría hacer tonrel.
+Hay un tema, hay un tema. Yo mientras
+que esté en código te puedo pagar con IVA.
+Porque te pago con el IVA de código.
+O sea...
+Vos, cuando vas a comprar una hamburguesa
+la compras con IVA.
+¿Sí? Perfecto.
+Entonces yo a fin de mes, todo lo que compro
+con IVA,
+las cosas que corresponden, lo descuento
+del IVA que me paga la empresa a mí, porque a mí
+la empresa me paga un salario masivo.
+Como vos cuando compras una hamburguesa pagás
+salario masivo, a mí me pagan
+mi salario masivo. ¿Entiendes?
+Entonces,
+o sea, entonces, todo ese
+IVA que yo recolecto,
+si yo no compro nada con IVA
+te lo cojo ahí. Pero si yo compro cosas con IVA
+entonces mi idea es, como usted es profesor,
+profesional, yo lo puedo
+comprar a usted. Por mes.
+Usted me hace una factura,
+entonces yo te compro con IVA.
+Claro, no puede...
+Ese es el tema. Yo quiero ver, va a llegar
+un punto, o sea, probablemente
+tengo que ver ahí.
+Yo también, yo quiero que pase,
+todo lo que diga era pagarte la plata y todo,
+pero también quiero estar tranquilo
+y que mañana no me pase nada.
+¿Entendés?
+Y también está por el tema de que si yo contrato
+a un diseñador o lo que sea, o mismo con
+Martina, si mañana pasa
+algo, yo quiero tenerlos a todos en regla.
+Porque si no me vienen, me rompen
+el culo, y se
+termina Guille, y terminamos todas las
+puteadas y todo hecho una mierda.
+Pero además el problema, algo que estoy
+hablando con mi contador y abogados
+es que eso se puede dar con que
+uno revuelva la bolsa.
+¿Entendés? Eso es lo que a mí me da más miedo.
+No es que me caga
+seguir con esta modalidad contigo.
+¿Entendés? Capaz que lo que
+hago, sinceramente, es muy
+probable que eso lo pase el diseñador.
+Y al diseñador le diga, no, sí, ellos
+también están. O sea, y yo
+ahí te diga a vos y a Martina, a ver,
+vos no sabés cuánto cobra Martina, Martina no sabe cuánto
+cobra vos.
+Esas son cosas que yo hablo contigo.
+Entonces mi idea es
+que eso siga así
+porque
+la industria del software es así.
+Pero
+más allá de eso,
+hay una gran probabilidad de que yo capaz que,
+digo, bueno, ¿sabés qué? Paso solo al diseñador
+facturando.
+Porque al diseñador, ¿qué pasa?
+El diseñador, ¿sabés cuál es
+mi miedo? Que el diseñador
+habla con Guille.

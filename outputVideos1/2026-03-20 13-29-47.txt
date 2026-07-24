@@ -1,0 +1,172 @@
+no sé si es una venta ver comprobantes no tenemos
+y el tema de ayer de los que era por el tema del formato no estamos hablando de
+los comprobantes o sea sé que nunca va a pasar
+el site lo estaba cargando mal en el caso de la triangulación
+sí pero los que yo había subido por ejemplo eran punto txt no eran pdf ni jpg ya sé que
+nunca vas a subir un comprobante que no existe un comprobante txt pero el tema es como que ahí
+no estamos validando ningún tipo de formato o sea yo podía subir un txt y puedo confirmar
+y estamos validando formato válido en el repositorio de ese 3 ahí nos fijamos que
+el mime contenta y sea de cierto tipo pero no estamos limitando por ahora para chimpanes
+administrativo y está
+si eso es lo que pensaba después digo está nadie das banca un empleado va a subir un txt
+y no lo estamos super validando porque si no y lo empezamos a limitar tendríamos que limitar
+por todo lo que pasa es que es un administrativo subo un club incorrecto lo que vas a hacer es
+algo que es importante es nosotros sacar una tenemos que bloquear el
+botón de la venta de la venta de la venta de la venta de la venta de la venta de la venta
+o la venta de la venta de la venta de la venta de la venta de la venta de la venta de la
+venta de la venta de la venta de la venta de la venta de la venta de la venta de la venta
+de la venta de la venta de la venta
+o está temperature o si estás en mi rama no 76 y cambió cambiar la cambies los
+ème perfecto es Couldn suggested todo six
+así es que la verdad que pasa por todo un primero pero como se nos pasa por loco
+a la máxima se tengamos beton y lo que está a Cristoين vois no le más vamos así
+es una oko eso pero con comparable esta imagen un examen el nombraje no marcado
+igual también para en la que están los primeros diréxiles equidades
+los crossover a loves fishermen conocer los varios objetivos de equipación
+Sí, sí, yo tengo que pasar todos los cambios que hice, los paso ahí.
+Ah, vos hiciste bastantes chiches ahí.
+Entonces, en triangulación hay una cosa que es importante también.
+Cuando nosotros seleccionamos liquidar o refundear,
+estamos agregando un comprobante o borrando uno, deberías bloquear todo.
+Yo no puedo estar subiendo un comprobante y estar borrando otro
+o algo así.
+O cuando borro, por ejemplo, ahí cuando borro un comprobante
+no puedo estar subiendo, no tiene que estar habilitada la opción D.
+Lo que falta es el borrar.
+Ah, es este el borrar, sí.
+Sí, o sea, mientras estás borrando...
+Los agregar tiene que estar bloqueado.
+Yo te recomendaría que lo primero que hagas sea pasarte a tu rama,
+porque hiciste bastantes cambios, cosa de que ya cuando vas subiendo
+vas testeando y vas viendo que está todo ok.
+Bien, perfecto.
+Sí, lo otro que quería arreglar era esto.
+Estás arcodeado de la página de reconciliación que siempre vuelvas a compra-venta.
+Entonces vos estás en la triangulación.
+No, no, pero ya lo arreglé.
+¿Eso está arreglado en la ruta?
+Sí, ya arreglé la ruta, agregué otra cosa.
+Si vos entras a reconciliación y no te...
+Algo que es importante que tenemos que tener en cuenta,
+y yo a nivel de contento, es que si vos entras a una página y no tenés permiso,
+tenés que ir.
+Te tenés que ir para atrás.
+Te tenés que ir para atrás.
+Ahí, por ejemplo, en reconciliación, lo que hice fue agregar esa lógica
+de que te navegas hacia atrás.
+Si vos entras, vos podrías sacarte los permisos ahí, en tu caso,
+por ejemplo, sacarte los permisos de reconciliar, ponerte como cripto-assistant
+y entrar al link de una reconciliación.
+De una reconciliación, en vez de tener...
+Tendría que llevar, si es triangulación, te lleva a triangulación,
+si no, te lleva a compra-venta.
+Perfecto.
+Este flujo va a tener que hacer que...
+Guau, Enrique, va a ser el primer, la primer Cypress que va a tener de back-office oficial.
+No, no como un flujo del site.
+Va a tener que hacer...
+Ok.
+Bien.
+Bueno.
+Por eso te decía, Jonah, que te pases para la rama,
+porque yo agregué cosas como, por ejemplo, la edición del spread,
+los diseñitos, saqué el texto que dice solicitudes,
+le agregué un padding ahí en el mobile,
+pasate a mobile,
+están todos pegados,
+le agregué un padding,
+por eso te dije,
+saqué el solicitudes, lo saqué a la mierda,
+porque me gustaba,
+eso no me importa que el diseño esté,
+después si querés le comentás a Santi,
+te sacás a la mierda.
+Dice que los covers,
+me gustó el cover que hiciste ahí para contrapartes,
+entonces lo apliqué también para el dashboard,
+lo que no me dio para hacer,
+o sea, que las tareas que tenés que sumar vos es,
+además de los tres que te marqué,
+el modelo,
+y hay algo que quedó mal de lo que hizo Nau.
+Volvamos al dashboard.
+Seleccioná día.
+No está bien.
+No me dio para arreglarlo.
+Está perfecto.
+Me quedaron esos tres detalles de estilo que tenés,
+a eso le sumás el bloqueo y esto.
+¿Está?
+Bien.
+Pero parate en mi rama,
+parate en mi rama,
+porque la mayoría de cosas que reportaste ayer están solucionadas.
+Sí, están solucionadas.
+Está perfecto.
+Sí, después lo que yo hice es que,
+bloquear el sprint cuando lo estás modificando,
+no podés aprobarlo.
+El sprint cuando lo modificaste puso...
+Sí, vi que le agregaste un check como para confirmar el,
+al editar y no en el blur.
+Sí, sí.
+Está perfecto.
+Una cosa que hice fue que cuando vos aprobás la triangulación,
+le asignás el negociador,
+que eso no estaba sucediendo.
+Sí, no estaba pasando, sí.
+Ah, entonces.
+No tenía ni idea de quién era el negociador.
+En realidad, estoy pensando eso.
+Vos deberías, cuando la aprobás,
+si la rechazás, no sabés quién la mierda la rechazó.
+Algo que es importante es que si el estado es Validating
+y vos lo pasás a Refunding,
+también deberías asignarle al negociador.
+Así que les anotate.
+O sea, si el estado actual, si vos la rechazás,
+ojo que es un estado final.
+Claro.
+Igual rechazás.
+Está validando y la rechazás.
+Claro, debería quedar el negociador quien fue el que la rechazó.
+Está, perfecto.
+Perfecto, se lo han anotado.
+Por lo que vos decías, pasate a la rama esa y ya chequeás esos ajustecitos.
+Haceme follow up ahora en un ratito a la tarea.
+A ver qué tengo que crear de tarea y la descripción que le voy a poner adentro.
+Con los cambios.
+Así estamos alineados, que no nos esté faltando nada.
+Claro.
+Ahí sona medio ambicioso, pero estaría bueno liquidar con esto
+y con lo del Dayo.
+Para hoy.
+Sí, no sé, fíjate vos.
+Yo creo que son medio ajustes pelotudos y lo de Dayo.
+Hay que testearlo bastante bien.
+Alguien puede comarme esta mole a eso, a ver si podemos liquidar.
+Claro.
+Lo del Dayo.
+te referís a estos drogas perdón lo del site que no lo es no es lo del auto cumplir y eso
+sino lo de lo de la service y la autenticación y eso es así hoy podemos ver si eres a dos cosas
+estaríamos genial bien porque ya no sabía bien perfecto si después lo otro que te iba
+a consultar justo ahí que el no service el componente s y el empty state o sea si bien
+tienen nombre distinto pero por dentro son prácticamente idénticos ya me causaba la
+duda porque el no services estaba dentro de la carpeta de containers pero no tiene como
+ninguna lógica como para hacer un container por eso me había llamado la atención y cuando lo
+estuve volviendo genérico si cambio no sé qué cambio tenía pero lo que podemos hacer con una
+especie de de b1 y después hacemos nave 2 es pasar adentro del no service el no
+b2 es pasar adentro del no service el no b2 es pasar adentro del no service el no
+ven
+el no service es como una versión de lo único que hace es no me acuerdo que era lo que hacía
+pero que te llevaba a comprar el producto en particular entonces podemos hacer que el no
+service sea un ráper del no bueno eso podría estar bueno entonces es como que guardar el
+no es el empty state es como el genérico y el no y el no service es como una opción que utiliza lo
+mismo lo recito del safety state sin importar que lo utilizaban pero les fijaba cierto comportamiento
+que es la la la lógica que es media buscadita si no me equivoco jd no sé es que no hay otro
+el componente no tiene lógica o sea la única diferencia es que recibe una prop que es con
+sus SCRIBE pero me parece que tipo la profesión y la lógica de lo que hace está por fuera del
+componente entonces si no perfectamente podríamos eliminar el no usar si yo te de cualquier cosa te
+lo los te pongo una diferencia de lo que hay pero para mí son prácticamente idénticos y hacen lo
+mismo que va a terminar terminando con esto y eliminar no usar a dejar en ti está ahí y está
+como las dos estos ajustes y todos acá y vamos a ver y acá estaba

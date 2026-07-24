@@ -1,0 +1,6 @@
+O sea, presentarme algo que podamos ver que los test realmente cumplen su función
+y detectar los issues que están teniendo, o sea, o que puede llegar a tener, ¿sí?
+Más que nada como para validar que lo que está ahí anda y que va a andar a lo largo del tiempo.
+Pero bueno, lo charlamos ahora, cinco, después de la edición.
+Ok.
+¡Lato!

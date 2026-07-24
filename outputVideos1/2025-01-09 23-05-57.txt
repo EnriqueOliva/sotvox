@@ -1,0 +1,116 @@
+GetValueByPath
+es el que se está utilizando
+para obtener los valores y asignárselo
+al objeto, para detectar qué valores
+querés modificar o no. Naturalmente
+85.3
+RadioCard
+Entonces
+acá lo importante es lo siguiente
+Primero hay que descomponer esto
+GetValueByPath se está haciendo en una línea
+estás haciendo dos llamadas a una función en una línea
+eso está mal
+Primero habría que fijarse que el path
+es algo
+no tendrías
+por qué fijarte, pero podrías hacer
+un cheque. Supone que ya
+se validó el path, o sea que
+a esta altura vos solo estás descomponiendo
+porque ya la validación se hizo en el servidor
+Entonces, primero tendrías que hacer
+un split. Si ese split tiene
+resultado, vos lo que tendrías que hacer es un
+reduce. Está bien el reduce
+Podés hacerlo con un for
+capaz que yo te diría que en vez de un
+un reduce
+que queda muy raro
+lo hagas con un for
+Trabajalo como un for each
+Entonces, el resultado del path.split
+que es un array
+transforma el path, que es un string
+a un array
+En el caso de company.name
+va a quedar un array con el primer lugar
+company y el segundo name
+Abajo de eso vos harías un for each
+Y lo que tendrías que preguntar es
+si el tipo
+cuando lo vas, o sea
+abajo haces un for each
+haces esta misma lógica pseudo recursiva
+O sea, primero
+vas a hacerle el previa
+y estas cosas. Sale con chasgpt y lo podés analizar
+podés decirle literalmente esto
+Haceme el split aparte
+y el reduce pasalo a un for each
+El resultado del for each
+va a ser el valor
+que usted quiere obtener
+que es el valor del name
+En este caso yo le ponía
+si era company y adentro tenía una property name
+era
+Entonces
+A eso usted tiene que hacerle un for each, ¿sí?
+Tiene que hacerle un type of
+Si es string y le aplica
+el método sanitize
+¿Qué es lo que hace el método sanitize?
+Saca los espacios duplicados
+y trimerea
+Entonces en sí no hay valor
+que eso esté mal
+Porque una dirección si tiene muchos espacios
+debería estar mal
+Un nombre si tiene muchos espacios
+debería estar mal. Una dirección si tiene
+espacios adelante o al final deberían eliminarse
+Entonces se aplica para todo
+¿Sí?
+Pero bueno esto hacerlo en el frontend
+En el backend, perdón
+Bueno, pausemos la cosa
+y charlemos otra cosa
+No, yo creo que con eso
+vos ya matás company
+Después tenés que hacer desunitario y capaz que descubrís algo
+Con esto cubrirías lo mismo que en el site
+Es más
+cubrirías más que en el site
+Con esto vos cubrís el nombre completo
+el apellido
+el primer nombre de la compañía
+segundo nombre de la compañía
+nombre final y web
+El número de teléfono creo que lo cubrís también
+Y de todas maneras si vos
+un número de teléfono, de nuevo bajo el mismo razonamiento
+El número de teléfono
+normalmente se formatea con espacios
+Si tiene dos espacios
+está perfecto que se lo saques y lo transformes a uno
+No hay razón
+por la que yo vea
+para este tipo de valores para guardar con varios espacios
+No
+No perdamos tiempo
+Porque website no es un valor clave
+¿Qué pasa?
+A mí me interesan estos valores
+Por eso también la importancia de sacarlo del site
+Porque nosotros los utilizamos
+como índices en la base de datos
+Entonces hacemos búsquedas
+optimizadas en base a estos valores
+Pero estos valores no se pueden corromper
+No podemos permitir que
+alguien porque ingresa a lugar más mal
+ya sea de nuestro lado o del cliente
+se corrompa
+website no
+Bueno

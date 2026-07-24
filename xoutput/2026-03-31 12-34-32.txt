@@ -1,0 +1,260 @@
+bueno bueno bueno ayer envié la primera migración para poder tener todo lo que es
+las transacciones o te sé que para por proveedor también todas las modificaciones correspondientes
+al sal y trabajando en el web y como siguiente paso una vez que se marchen esa tarea voy a
+tener que arreglar cositas en el worker y nada voy a poder enviar lo del hueco y además voy a
+tener que continuar con lo que sería mapear el valor voy a tener que mapear lo que sería vuelta
+la los retiros exchange y depósitos a lo que tiene la nueva así que yo voy a estar trabajando con eso
+más alguna reunión y ver
+bien yo ayer estuve ultimando hay algunos detalles de las modales y empecé con el tema
+de los centros que habíamos hablado ahí en la postgraaf que está ahora y que respondiste a
+hilo del mensaje que te dejas un ratito así que voy a estar con eso modificando a hilos
+los va haciendo los centros para para terminar eso si vos pensar que por como estaba antes
+lo que hacíamos era enviar todas vamos siempre enviamos todas y analizamos en ese enviar todas
+ahora la idea es este solo enviar las que se removieron o agregar por ahora modificar no
+porque este modificar no tiene mucho sentido porque de nuevo nosotros lo que hacemos es
+remover o eliminar y el modificar va a ser un nuevo empuje cuando se toque al modificar los
+permisos por compañía así que lo que hacemos es modificar los permisos por compañía así que lo que
+lo que sí también es importante es que los gets acuérdate que los gets del múltiple selector
+también tienen que traer los o sea vos tendrías que poder enviar algún filtro por query param para
+poder filtrar lo que sería la seleccionada o sea capaz que ahí reutilizar en los employs que
+tienen AWE ponerle un query más que pueda decir bueno traeme solo las que son de tal
+team eh perdón traeme solo las que las que le cedí a tal team te traes eso y las nuevas que vas
+agregando y modificando las tenés en ese array una vez que vos guardás la selección ahí jona ahí
+volvés a refrescar este y se resetea todo bien perfecto bueno genial perfecto en cuanto a diseño
+y eso venís bastante avanzado en el diseño y eso venís bastante avanzado en el diseño y eso venís bastante avanzado
+con eso no o sea es más que nada los cambios en sí más que nada lo del drop down de ponerlo volver los botoncitos ahí como hablamos ayer y nada más después lo otro está prácticamente terminado ya
+bien está revisemos los hovers y todas esas cosas y recordemos que tiene que pasar por santi y todo esto
+sí nada bueno bien yo ayer había vuelto a mandar la APR para que la revise este por un lado santi de nuevo este por todos unos comentarios que había dejado de
+diseño y ya se la pase a la jona porque ya iteré este esa APR con ocupario un par de veces y ahí
+está no sabemos juntado con jona para definir si que te habíamos mandado y ahora este me lo estaba
+esperando la asignación de tareas sobre porque todavía creo que no está lo de teammates este de
+propicios por compañía había arrancado a verlo de promp y bien está tenemos lo de pero y mate tenemos un
+factor que es bastante
+grande, ahora nos quedamos en el
+post-cram para encargar lo que sería
+lo siguiente
+te lo resumo para que
+lo hayamos
+viendo, pero lo que sería
+sería
+hoy en día nosotros tenemos el
+agregar y auditar teammates en la
+misma página
+eso pasa a ser dos páginas
+y después
+está la opción
+de, como se llama
+y el editar también pasa a ser
+otra página
+eso es una de las cosas que
+podés atacar
+en AWE
+lo otro que podés atacar
+es
+capaz que es lo mejor
+que podés atacar
+es el switch genérico
+vos tenés el switch genérico
+que te muestra
+mis compañías, ahora lo vemos en poco
+para hablarlo a nivel genérico
+tenés mis compañías
+y las que yo tengo
+y dentro de los que me cedieron el permiso
+como teammate, vos ahí podés
+eliminar o
+eliminarte como
+teammate, que es una nueva funcionalidad
+que va a estar, o también
+ver su permiso
+yo creo que eso va a ser mejor
+porque como yo no estoy trabajando en el
+panel de edición y agregar
+lo mejor capaz que es trabajar en el switch
+es eliminar y ver
+los permisos de los teams
+¿está?
+lo vemos en el postgram y nos organizamos
+bien
+Martina
+yo estoy con
+el testeo del KYB
+ya pude
+con los accesos de sandbox y eso
+ya pude hacer la primera prueba
+y ahora estoy iterando para
+ir arreglando los errores que me va tirando
+la API, pero básicamente
+estoy con eso y también
+voy a revisar
+las PRs de
+más que nada las de
+las migraciones, así también tengo la tabla
+actualizada con campos de
+One Money y básicamente voy a estar con eso
+Bien, ah sí, hay
+yo ya iteré varias veces con
+Popeye en esa
+en esa PR
+me mandé ayer, así que
+me mandé hoy, para repetar
+Así que, en
+seguida que se mergée
+tendría que mandarla del back office
+y en el worker ayer te subí los cambios
+pero yo te diría que pongas los cambios a descarga de las APs, ¿es cierto?
+pero yo te diría que pongas los cambios a descarga de las APs, ¿es cierto?
+pongas todo tu esfuerzo
+en esa PR mía
+una vez que la terminemos
+de ver ya se me ha llegado y podemos empezar a probar
+que está todo ok
+bien de bien
+Fernando
+quedó la PR base con los archivos
+de los tests
+que les pasé ahí al chat
+contigo y Martina
+que de esas
+depende el resto
+de las PRs de test
+o sea que
+es la que bloquea digamos
+yo no entendí mucho eso de la PR
+base o sea no me queda muy
+claro la lógica
+te acordás que había comentado
+que habían archivos que compartían
+todas las PRs
+entonces a una
+de las PRs le puse
+porque si no serían
+todas las PRs con 5 archivos
+de más que son
+5 cambios que
+generan conflicto
+como?
+generan conflicto
+claro si no los modifico
+todos juntos
+generan conflicto
+lo que te pido
+que te diera una mano con eso
+armar un esquema del orden
+que nosotros tenemos que mirar las cosas
+y como tenemos que mirarlas
+pero la verdad no me quedaba claro
+todo eso que estabas haciendo
+solo con que
+bitch en esta PR
+te pido si podés pasarnos
+el orden de esa PR
+cual les seguirían después
+en el orden de revisar
+así nosotros podemos mirarlas
+ה
+comprimirlo
+para que sea concreto
+cosa que nosotros podemos dedicarle el tiempo
+para poder
+desbloquear tal y tal
+otra cosa es
+yo le había dicho que no toquen company out y después y además de eso conquistar bien
+hice lo de bloqueo me quedan algunos ajustes porque habían unas cosas como que funcionaban
+medio mal entonces lo anduvimos viendo un poquito con enrique me pasó su pr y eso así que me quedan
+hacer algunos ajustes porque fue mientras que hacía la demo que surgieron pero está
+cosas que quizás no tengan mucho que ver en realidad con lo que se tocan a ver algo que
+es importante es vos no deberías pararte en la rama de rey que no lo hago porque si no
+así no tenemos el mismo efecto y por último calculo que mañana me quedo sin tareas
+por fuera de las dos tareas que surgieron ayer en en la reunión
+bien vayamos viendo lo que estamos viendo en los comentarios de los tres unitarios y si no pueden
+empezar a ver los tres unitarios dentro del banco pis de todo lo que sería triangulación y compra y
+venta también ahí se crearon muchos en points en b2 que hay que empezar a testear así que sí que
+quieres coordinar
+la tarde como para verlos para arriba y empezar a apartar
+pero tenemos todos esos en point está dentro de lo que se lo acopla y cosas que testeamos
+y podrá que no lo que me interesaría es toda la parte de triangulación es y bueno yo te sé
+transacción manual todo eso así que si quieren y crees pero que se arma de cinco tareas de esos en
+point van a quedar quietitos así como estaban van a cambiar muy poquitos y cambios
+enrique bueno yo básicamente te pasé te pasé así lo que es el pequeño reporte o explicación de cómo
+se usa allí la propiedad y general info el worker y después bueno había muchas perras que tenían
+comentarios ya dije todo enviado básicamente este
+así y bueno la idea ahora es vos me marcaste santí mientras no surja ni indicaciones nuevas sobre
+esto del worker de adicional info me había marcado hallar si no me equivoco una tarea
+también en el worker de hacer nada una columna y hacer una migración el tema de guardar la
+cantidad de socios que tiene una compañía en una declaración de conversation hallados por atacar
+lo pasé para que tengas hago para atacar y si no también tenemos dos 3 unitarios
+que es algo que está bastante estable dentro de todo lo que está cambiando mi idea sería atacar
+eso y bueno obviamente hay que coordinar con fernando el tema de las tareas ya tenemos tres
+unitarias que hay comentarios que estaba faltando cuando resuelvas ese hay algunas no tengo no tengo
+los comentarios todavía resuelto cuando termines con todos los comentarios capaz que lo mismo que
+le pedía fernando desde que voy a mandar este mensaje pero de repente volver a mandarlo para
+apoyar así a nosotros nos queda más claro que está martina que está faltando revisar ahí vamos
+derecho al gran cosa de poder en los momentos que tengamos libres de bloquear los temas que
+se pueda usted bien bien de bien pero hay bastante cositas construyó trabajando estaría mayor cuanto
+antes así que este
+intentemos cuando tengas todos los comentarios volver a apoyarnos así nosotros cuando antes
+vamos a revisar vamos a recordemos que también vos te vas para todos hasta mañana deberíamos
+marchar casi todas tus tareas entonces ahí cuando tengas todos los comentarios voy a apoyar es bien
+de bien y lo importante es que puedas dejar las tareas de test sonitarias
+de trивал y continuamente sembrar lo mismo pero que no están de los primeros 3 años vamos a ir
+más adelante tampoco va a pasar entonces entonces este barrio no tiene más de la misma lentitud
+que tendremos que hacer ahora nada más después de no tener ustedes más dos o tres años de самомen
+pero que te haremos las pistas para nada me parece una linda parte de las ventanas pero
+además fernando va a estar encargándose jueves y viernes de una salida nunca creo de esa empresa
+van ya directamente por ejemplo con tu nombre o con él es con el responsable en cuestión por
+ejemplo si tiene tu nombre si está no no ignórenlo ignórenlo en mi mente pensé que lo había tratado
+mati creó una idea para que cuando los de ventas ponen algo quien sea que genera algo te dice
+exactamente aplican ante el proponente y donde todo va a ir a mi nombre y me va a notificar a
+mí pero en realidad ustedes en los canales de bach bach marketing administrativo previenta
+transacciones responde el encargado a mí no yo lo que le pedí a mati es como como nosotros todavía
+está esta lógica de usted no la puede hacer semanalmente compasar cuenta quién va está
+siempre me roba a mí pero siempre
+bien una cosita importante en el caso de la licencia no me acuerdo como hemos hablado pero
+como no vas a estar jueves y viernes está ahí te cubriría lo que sigue en abuelo entonces háblate
+con él eso para que esté preparado pero después la idea sería que vos lo curas anabuelo en el
+martes a lo que sabe que sea equitativo bien organiza el centro ustedes es a este o sea
+tengan los tengan en clave y organícense bien pero está la idea es es que recordemos fernando
+por ahora no está en esta en esa respuesta y de nuevo para que declaró a todos los mensajes van
+a estar arrojados a mi amigo puede hacer cualquier cosa por el camino crea sus propios mensajes de su
+propiedad
+pero no importa lo que pongan siempre tienen que contestar ustedes hasta no importa que me
+arrojen sólo a mí o arrojen a mí a martina lo que sea siempre constante bien o el encargado de la
+semana santi buenas como este bueno por mi parte estoy emparejando todo lo que es el firma estoy
+unificando la parte sobre todo lo que es teammates y autentication que está todo repartido por varias
+pantallas este después vamos a ver si hay alguna pregunta si hay alguna pregunta si hay alguna pregunta
+si hay alguna pregunta si hay alguna pregunta si hay alguna pregunta si hay alguna pregunta
+si hay alguna pregunta si hay alguna pregunta si hay alguna pregunta si hay alguna pregunta
+contabilidad que también está todo separado una es liquide esto llamó de paso a la parte de
+notificaciones a no ser que que esto no haya retomado lo de los teammates de los permisos
+en ese caso pasaría a trabajar en eso del persis bien perfecto y ahí
+yo ayer estuve
+trabajando en el carrusel de marzo que me había pedido marketing
+eso ya lo terminé, se lo pasé a Sandy
+lo aprobó y después se lo mandé a
+Matías y a Samuel, estoy esperando a que me respondan
+y después pasé a trabajar
+a seguir trabajando en el flujo
+de permisos de teammates por empresa
+que eso está por mi lado, ya quedó terminado
+pero lo quiero ver bien con vos, capaz que si lo podemos ver
+en la postgram
+vemos bien si está todo correcto
+bien, perfecto, genial, lo que sí me queda
+nosotros teníamos la actualización del switch
+y eso con Guillermo lo habíamos aclarado, pero no me acuerdo si vos me mandaste
+el IC
+o en qué quedó, porque no lo encontré
+actualización del switch, de qué switch?
+de banca, el que tenía tipo persona, empresa
+legacy, empresa, pinball
+creo que estaba en
+design review, pero yo me fijo
+y te lo mando, cualquier cosa lo mando de vuelta a design
+si no está bien
+bien, perfecto, bueno genial
+estamos todos, así que
+los que tengan postgram se quedan
+el resto se puede retirar
+buen proyecto
+chau, nos vemos

@@ -1,0 +1,414 @@
+Buenas, buenas.
+Buenas, buenas.
+Bueno, los rescaté, ¿eh?
+De nada, nada, nada.
+De nada.
+De nada.
+A ver, ¿podemos decir que fuiste la causa por la que estuvimos en esa reunión?
+Ah, sí, obviamente.
+También.
+No, no.
+A ver, en teoría, ahí...
+Está bueno que todos estén alineados.
+Naturalmente estamos atacando a nosotros los canales.
+Los canales, con Enrique y con Marcinato,
+es importante que todos estemos en la misma página con esto,
+si no estamos en el horno.
+También, viste, ahí surgieron algunas discusiones, ¿cierto?
+Son esas charlas que tristemente hay que estar...
+Pero está, allá lo básico se había visto, así que pasemos a la de ahí.
+¿Qué me está faltando?
+Bien.
+Bueno, bien, bien, bien.
+Bueno, allá salimos a producción,
+ahora hay que hacer un pequeño hotfix con un tema de las variables de entorno.
+Ahí Enrique, a vos te anduvo viendo ese código, ¿no?
+Sí.
+Te parece, Moli?
+Bueno, está bien, Moli.
+Muy bien.
+Sin mierda, con el...
+Ay, no le actualizamos las variables, no le actualizamos los permisos.
+Bueno, todo no puede ser.
+Bueno, está.
+Ahora, hoy tengo que mirar los correos de...
+Los correos que se tienen que crear.
+Las notificaciones que se tienen que crear, que Santi ya mandó.
+No sé si la de...
+Las de triagulaciones, pero sí la de popri y beta de los tipos de tratados.
+Tengo que sacar este hotfix ahí, que vamos a estar trabajando con Martina rapidito.
+Tengo que arrancar ya con el backend de triagulaciones.
+Tengo que reunirme con Guille para hacer demo de todo lo que salimos a producción.
+No sé si me está faltando algo más.
+Pero bueno, felicitamos a todos, la verdad.
+No solo salieron declaraciones, salió compra y venta,
+salieron una cantidad de chistes ahí, dandy, coso.
+Salió la actualización de Node.
+Salió la actualización...
+Salió la actualización de Stripe.
+Salió una actualización de Stripe sobre la actualización de Stripe
+ayer en el momento cuando estábamos saliendo a producción.
+Entonces salió la actualización de la actualización.
+Nada, creo que fue la salida a producción más jodida.
+Si no es la más jodida, una de las más jodidas que hemos tenido
+de actualizaciones y cosas.
+Creo que la más jodida fue cuando salimos a production por primera vez
+ahí, antes que Martina y Santi que estaban.
+Pero este...
+Me acuerdo.
+Que estaba todo, todo con dudas si iba a andar o no.
+Pero este, pero esta estuvo bastante complicada.
+Tuvo una cantidad de archivos cambiados y modificados.
+Así que nada, y creo que fue la primer salida a producción
+que salimos realmente trabajando todo el equipo full-time.
+O sea, inclusive incluyéndome.
+Entonces, por eso la cantidad de cambios y archivos.
+Eh...
+Que bueno, nada.
+Vamos a ver...
+Ahora hay que estar atentos a ver si algo se rompió o no.
+En teoría debe estar todo funcionando.
+Hay una cosita ahí.
+Pero bueno, bien de bien.
+Enrique.
+Bueno, yo estuve, finalicé el tema de lo que era Cypress.
+No los quiero aburrir con los detalles técnicos.
+Pero básicamente surgieron unos ajustes más ahí en la salida a producción.
+Por ejemplo, se había marchado una de mis PRs que ocultaba uno de un servicio adicional.
+Y eso jorobó unos tests ahí, por poner un ejemplo, y otras cosas más.
+Eso ya queda enviada allí la PR, Santi, cuando quieran.
+Y ahora estaba con el mensaje, justamente, hablando de todo lo que sacamos.
+Yo estoy escribiendo...
+La idea sería un mensaje con la descripción de todos los cambios de las últimas dos grandes salidas a producción.
+O sea, no sé, digamos, de B-17 a B-19.
+Y referenciar en ese mensaje.
+Una carpeta, digamos, un drive con los PDFs de los mensajes anteriores.
+O sea, poner todos los mensajes de todas las salidas a PRO anteriores en un PDF individual.
+Y bueno, referenciar en este último mensaje esos documentos.
+Nada, los estoy por mandar.
+Y bueno, después quedo a disposición.
+Entiendo que van a surgir ahora cuestiones relacionadas a mail, por ejemplo.
+O lo que vos indiques, básicamente.
+Sí.
+Ahí.
+Enrique, por las dudas, el mensaje a partir de ahora se envía como mensaje a Slack, pero también tiene que quedar como PDF.
+¿Está?
+Ok.
+Ahí lo hablé con Guille y me lo dijo.
+Digamos, el mismo protocolo de enviar el mensaje, pero tiene que quedar en PDF.
+O sea, que automáticamente, cuando mandas ese mensaje a Slack, ya generás el PDF, el doc y el PDF.
+¿Está?
+Ok.
+Yo no sé si podemos hacer...
+Generar el doc y que no sea editable, que sea solo de Vue.
+Creo que lo más sencillo es generar el PDF, para así no tenemos problema.
+Enseguida de eso, necesito...
+O sea, hoy no va a estar Fernando, entonces es una excelente oportunidad para que hagas lo que sería el ajuste de los test unitarios.
+Sé que tenemos que arrancar con correos, pero que hagas el ajuste de los test unitarios.
+Ok.
+¿Está?
+Hay dos cosas que me interesaría que salgan hoy, con PR, SADEV.
+Uno es el ajuste de los test unitarios y lo otro es el typo de team-mate, del mail de team-mate que te dice todas las compañías.
+Yo ahí te lo puse.
+Sí.
+La idea es que el tipo diga algo como, te dio acceso y ya está.
+Ahora, para acceder a...
+O sea, te agregaron como team-mate y te dio acceso a su cuenta.
+¿Está?
+Sí.
+O sea, no quiero que especifique todos los permisos, pero también que quede genérico, cosa que aplique para todos los casos y ya está.
+Porque si no, pueden pensar, decir, no, mirá, a mí me está llegando el mail.
+Imagino, a mí me está llegando el mail.
+La realidad fue porque a mí me llegó el mail y yo vi, ya veo que va a dar problemas y con Daniel, que estaba haciendo pruebas, estaba dando problemas, que te dice, che, te dio acceso a todas las compañías.
+En realidad, no estamos ni chequeando los permisos ahí.
+Entonces, ajustar esas dos cosas.
+Y después, ya te van a, en el correo de la tarde, te van a ir llegando las tareas de los mails.
+O nos juntaremos a crear las tareas de los mails.
+O sea, yo ahí tengo que mirar los mails de Santi con Zumbi.
+Ok.
+Bien de bien.
+Bueno, eso es de tu lado.
+Ahí lo de los tres unitarios está genial desbloquearlo, porque si podemos solucionarlo para uno, ya después tenemos tareas para Fernando o para...
+John.
+Bien.
+Nada, ayer terminé de pasar lo del use clipboard.
+Para el back office.
+Ya lo tengo en dropi, pero tal, lo iba a dejar para juntar más componentes.
+Hoy de mañana estuve con el tema de lo que mandaste ahí en frontend.
+Cambiando para el drop down ahí en la vista de mobile y tablet.
+Ya de paso ajusté un par de cositas más que vi, como el hover de los botones.
+Y también lo otro que vi es que el drop down acá en el back office le faltaban un montón de cosas de clase de estilos y eso que...
+Que ya estaban en el SAT y entonces lo actualicé también en el back office.
+A raíz de eso, pude sacar ahí varias cosas que estaban...
+Que no estaban cumpliendo con BEM, por eso mismo.
+Porque al drop down le faltaban clases y props.
+Entonces ya ajusté todo eso.
+Así que capaz que ahora te pido ahí una tareita como para sacar esto.
+Así ya después ya solo me centro en que queden los componentes iguales en todos lados y ya con eso ya terminaría toda esta parte.
+Yo ahí tenía un comentario.
+Yo ahí tenía un comentario, ya que mencionabas los drop downs.
+No sé si soy yo, pero me pareció que por ejemplo antes nosotros podíamos...
+Boludeces, ¿no?
+8 y 14 de la mañana.
+Vos cuando te movés en un farm, se te van seleccionando todos los campos.
+Pero antes me pasaba que los drop down también se me seleccionaban y ahora no me estaba pasando.
+Y ahí me quedó la duda porque capaz que quedó para atrás eso o directamente...
+O sea, muerte.
+O sea que los drop down nuevos no te podés mover como tal.
+Yo por lo menos, por ejemplo, en el flujo de check out no me pasaba.
+Tipo, ahora no me pasa. Antes sí.
+O en los de crear mismo.
+Andate a crear una compañía, tipo, en cualquier flujo.
+Puede ser porque no son un selector en sí mismo, sino son un div.
+Ah, no. Eso tenemos que ajustar.
+Eso ahí es un div para...
+Debería poder ser un selector contable.
+Claro, porque no es un...
+Yo me acuerdo que se me seleccionaban solos.
+Sí.
+Eh...
+Está.
+Y ahora ahí sí podés pegarle un... capaz que consultarle a Nahue, pero pegarle una bichada a eso.
+Y de última hay que sacar un pick para todos los prepos porque ese drop down está aplicándose para todos, ¿no, Nahue?
+Sí.
+O sea, es en la nueva versión.
+Sí.
+Y acá en el backoffice es el que cambiamos para usar, así que también habría que hacerle un pick para todos.
+Tiene que cumplir con eso.
+Está, perfecto. Perfecto.
+Está.
+Lo otro que te pasé ahí, que te comuniqué con Santi, pero fue la única crítica de tu verdad, es el tema de la montu, de que está muy gris.
+Y parece que es por un input.
+Entonces, si lo dejamos muy negro va a quedar como un input.
+Entonces transformémoslo en un label.
+¿Está?
+Vamos a que sea un label ahí.
+Sí, Santi.
+Santi también.
+Eso, revísenlo entre ustedes.
+Pero nada más que sea un label, es negrita, lo que sea.
+Cosa que se note que es un campo, o sea, cuando no hay valor, que tipo, se mete con un guioncito y después, tipo, cuando se pone, se auto-opina el label.
+¿Está?
+Pero que no quede como un input porque no se puede modificar.
+Perfecto.
+Después, lo otro que te iba a preguntar, que teníamos que charlar ahí o confirmar.
+¿Vos sabés qué estoy pensando?
+Estoy pensando.
+Estoy pensando.
+Porque lo que podemos hacer, Jonah, es habilitarlo.
+¿Ves?
+Lo deshabilitamos.
+Hagamos esto.
+¿Sabés qué?
+No le preguntemos a Santi.
+Habilitémoslo el amount to debit siempre y cuando esté el TC.
+Cuando esté el TC, es como que podés escribir de ambos.
+Ahí tenés una dificultad.
+¿Se entiende?
+O sea, si está el tipo de...
+El money siempre está activo.
+El amount to debit sólo está si está el TC porque es un valor precalculado.
+¿Está bien?
+Bien.
+Y, tipo, si vos escribís en amount to debit, se modifica el TC y si en el otro, lo otro que te parece es Santi.
+Cosa que le demos, tipo, le demos a ellos para poner lo que quieran.
+¿O no?
+No, no, no.
+Pasémoslo al AID.
+Pasémoslo al AID.
+Va a ser más sencillo.
+Pasémoslo al AID.
+No, no, no.
+Mucha vuelta, mucha vuelta.
+Estoy pensando en Carola y eso de que se van a mezclar.
+Pasémoslo...
+Pasémoslo al AID.
+¿Está?
+Hagámoslo en un AID.
+¿Está?
+Ahí comunícate...
+Johanna, comunícate con Santi.
+Y en vez de ser un input bloqueado, que sea un AID.
+¿Está?
+Que diga amount to debit y te precalcule los bolivianos.
+O amount to credit y te calcule los bolivianos.
+¿Bien?
+Bien.
+Espero que se vean en la web seguir.
+¿Se entiende bien?
+Bien.
+Pará.
+Antes de pasar...
+Perdón.
+No.
+Había una pregunta que quedamos en conversar y confirmar.
+¿Qué íbamos a mostrar ahí en promedio ponderado y cómo calculábamos eso?
+¿Qué quedamos ahí?
+No me he reunido...
+No me he reunido con Guille, pero voy antes de irte a hacer mi follow up.
+De eso si no te dije nada.
+¿Te animás?
+Si querés programarte un mensaje, tipo yo que sé, 5 o 6 de la tarde.
+Tipo al canal en que estamos todos.
+Che, qué carajos hacemos esto.
+Está.
+Perfecto.
+Y yo no te dije nada.
+Bien, buenísimo.
+Bien.
+Bien por acordaros.
+Martina.
+Bien.
+De mi lado, bueno.
+Estaba con...
+Estaba viendo un tema del hotfix y estaba con los arreglos de...
+Bueno, los ajustes de los detalles que quedaron para el flujo de retiros y depósitos.
+Que básicamente son cosas más que nada de estilos.
+Así que está.
+Me voy a poder dedicarle como mucho hoy nomás.
+Y ya ponerme con...
+Después pon triangulación.
+Bien.
+De bien.
+Voy a ver si hoy puedo sacar un endpoint de triangulación.
+Nahuel.
+Bien.
+Yo estaba chequeando ahora donde había faltado aplicar el nuevo estilo de los dropdowns.
+En el sidebackoffice y dropping.
+Capaz que lo de los dropdowns podés tocarlo...
+Lo del tab podés tocarlo vos.
+Si ya estabas viendo eso.
+Sí.
+No sé.
+Ahí...
+Yona, organícense.
+Este...
+Adelante, perdón.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+Pero eso ya lo vos capaz que estés más sencillo.
+Está.
+Lo aprovecho y ahora ahora igual.
+Eeeh...
+No.
+Ahora lo único para decir es...
+Yona.
+Cuando tengas el drop down subido en el backoffice, si tenés que compartirme la PR así lo he dejado
+alineado también en el backoffice por si llegué a tocar algo.
+Bien.
+Perfecto.
+Y después de terminar con esto, cómo empezaría de nuevo con Rail.
+Bien.
+Sí.
+Sí.
+Vamos a intentar.
+A ver.
+y a ver si podemos liquidarlo
+o avanzar un poco con eso
+que nos vendría re bien
+genial
+Andy
+Buenas, por mi parte
+hasta ayer pasé lo de triangulaciones
+se lo había mandado Gastón
+y después se lo mandé a ustedes
+estuve ajustando ahí algunas
+cosas que me puso ahí
+Gastón para corregir
+después
+nos juntamos con Alberto
+estuve trabajando
+en cómo mostrar ahí
+esas pantallas para cuando
+hay una cuenta que está bloqueada
+o está pausada
+cómo podíamos hacer
+para mostrar eso
+ya más o menos tengo armado unas opciones
+me estaría faltando que Alberto
+me pase los textos
+que me quedó de pasar
+voy a ver si hoy
+le hago follow up de eso
+y
+voy a terminar
+de publicar
+esas opciones
+y después voy a ponerme a trabajar
+con los estados de cuenta
+bien perfecto
+la prioridad sería Santi
+los estados de cuenta
+avanzar de eso
+de mi lado sería
+lo más relevante dentro de lo que tenés
+bien de bien
+ahí tenés
+si necesitas algún estado de cuenta
+lo que sea
+podemos conseguirlo
+están en dev
+mpfs
+ah si, si tienen eso sí
+este me vendría bien ahí parece que sí
+ahí si querés
+hay que irme a la charla de design
+y claro
+dale
+dale, perfecto
+y ya de paso les voy a mandar unas
+tareas que creé
+y nunca se las
+se las pasé
+ah si, hay que avanzar eso
+dale, fijate
+bueno yo estuve trabajando en la presentación
+que me había pedido Alberto
+ya la
+estuve ajustando una cosa que me pidió ayer
+y
+traduciéndola a
+los idiomas que me había pedido
+ya quedó perfecto
+aprobado por él, después estuve también haciendo los ads que me habían pedido los de marketing, hoy me lo corrigieron y la estuve trabajando en esas correcciones, se las pasé a Santi, después se las pasé a ellos y que recién pasé a probar, así que dejé terminado eso también y ahora voy a estar trabajando en lo que había pedido Enrique de la pantalla de contabilidad, de los ajustes en esa pantalla,
+ahí tenemos los ajustes y después de eso de contabilidad que había pasado Enrique, la idea sería ponerse con el review de las landing, bien salió todo el flujo de compra y venta en el video, pero lo más importante sería ese review, bien?
+Ya creé tarea para Gastón, para mí como para Gastón, excelente.
+Una cosa, chicos,
+que todos se las asignó a esa y PR y eso no la tienen.
+No, la tarea de revisar PR es sólo si, en su caso Santi y Gastón, es sólo en el caso de que vendan PR a Channel de Zhang, si vino una o no vino ninguna la dejan en cero y lo que nosotros hacemos, le hacemos carry over, la pasamos para el siguiente sprint porque no, no se tocó, está bien?
+Bien.
+O sea, sí, eso, yo lo que voy a hacer es revisar que tengan tareas, si no tienen tareas,
+la paso a cero y la vuelvo a pasar.
+Por más que Paul a veces pueda tener tres o lo que sea, si no tiene tareas asignadas o si no revisaron nada, la paso a cero y la vuelvo a pasar, bien?
+En tu caso Gastón debería tener alguna asignada porque creo que trabajaba este...
+El tipo que se printa en todo el internet, así que se queden bien, la gente se puede usar.
+De BB-8 yo le dije a Nahuel y yo a Nathan que no revisaron nada y ahí Nahuel y yo a Nathan también, para estar todos alineados.
+Las PRs de front, ahí Enrique y Fernando cuando toquen PRs de front, la idea es que los arroben a uno de ustedes dos.
+Digo, porque ya Fernando les arrobó a una, y ahí Jonathan y Nahuel volvamos a enviar las PRs al channel Intan.
+Así que ahora con lo del video ajustamos un poco el truco, pero volvamos a mejorar más, bien?
+Bien.
+Bueno, quedó alguna duda, alguna consulta?
+Está.
+Quique revisando.
+Ya revisamos eso, Santi ya voy a revisar los mails, así también libero a Quique.
+Bueno y Nahuel aprovechemos hoy, antes de empezar a tirarles cosas de triangulación,
+intentemos aprovechar hoy con esta especie de pausa técnica para ajustar estas cosas y avanzar un poquito con Ray.
+Martina si podés quedarte un segundito y lo bichamos el otro.
+Vamos arriba, buen provecho.
+Bueno, nos hablamos, que pasen bien.
+Nos vemos, aprovecho.
+Chau, buen provecho.
+Chau.

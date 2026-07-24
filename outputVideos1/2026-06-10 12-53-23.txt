@@ -1,0 +1,179 @@
+Y yo de mi lado había puesto que por un tema de consistencia y por los cambios implicaría hacer eso, para mí no valía la pena que lo dejáramos con la versión abreviada, digamos, que taquen, si una vez que lo buscás después sabes que GTS es eso, tampoco que lleve demasiado tiempo darse cuenta de eso, me parecía como que ahora no, porque aparte si lo cambiamos para ese repo hay que cambiarlo para el resto, más que nada por eso, y ahí preguntaban, estaban preguntando eso.
+No sé qué te parece ahí, pero me pueden mostrar ahí, me pueden compartir pantalla o algo para...
+Si bajas un poquito, Kike, está ahí, esa es, son las dos iguales, Greater Dan y GT es lo mismo, lo mismo aplica para las otras, creo que son LT, bueno, todo lo que es decimal.
+O sea.
+Decide cambiarlo, no sé.
+No, no, yo lo que puse ahí abajo es que no, que no valía la pena para mí.
+El tema es que ya se usa por todos lados, no sé, ahí.
+O sea, entiendo lo de, o sea, por un lado yo pensaba, ta, nosotros siempre decimos de dejar las cosas claras, sin abreviaciones, pero en este caso es un tema también, creo yo, de que son funciones definidas, creo que...
+Claro, pero son funciones definidas, o sea.
+Nosotros no las definimos las funciones, no son funciones definidas ya de decimal.
+Sí.
+Ah, entonces está, no hay discusión.
+Está listo.
+Nada más, o sea, si querés mantener la consistencia después, por ejemplo, los ORM, la mayoría, tipo, utilizan la versión acotada, o sea, utilizan GT.
+No, no, yo me estaba confundiendo porque vi Fernando que puso la definición, pero en realidad, pero también está Greater Dan.
+Ah, pero también está definido Greater Dan.
+Claro, ya la...
+Las dos.
+La librería de décimas ya lo tiene definido, por eso la duda que planteaba Fer.
+A ver, lo más ideal sería siempre usar el Greater Dan, porque es más claro, más concreto, cumple con todo lo que veníamos hablando, pero también GT es un estándar.
+Entonces no me calienta, pero cualquiera de las dos son válidas, de mi lado.
+No sé, y Marty decidimos, sinceramente.
+O sea, sin lugar a dudas, siempre voy a, mi postura siempre va a estar más por la parte de clean code y entendible, entonces...
+Más allá de lo que es GT, ahora, si estamos tratando de un decimal, bueno, GT es una función por el estilo y tal, no queda feo.
+No voy a complicar la vida, pero no sé, y vos, Marty, qué pensás.
+No, o sea, por mí era por un tema de que si lo hacíamos ahora, teníamos que ir cambiándolo en el resto, y acordarse de cambiarlo de eso, porque tal, no va a ser prioritario.
+Para mí eso, en realidad, si lo queremos hacer, estaría bueno en una perra.
+Aparte, que sea para todos los repos de una, pero para ahora, en este momento, me parecía que no, que lo dejáramos así nomás, acortado.
+Solo para este caso de decimal, ¿no?
+Bien, perfecto.
+Bien, genial.
+Está, dejémoslo así, o sea, dejémoslo así y sigamos adelante con eso.
+Santi y Martina ya está pronto esta perra, que no sé si me fijo si la reenvío en el channel ahí, pero está, sepa nomás.
+Porque en el interno ahí terminaste robando a Martina.
+Martina y a mí siempre va en el channel de Pull Request.
+Nosotros ahora estamos trabajando en dejar todo eso documentado igual, pero en el channel de interno nunca va a nosotros.
+O sea, siempre va uno de ustedes dos.
+A la mierda.
+Ok.
+Se empezaron a asignar a ejecutivo otra vez.
+Corten el croncho, hijos de puta.
+Resignación, resignación.
+Ah, fue resignación.
+Está bien, está bien, no hay que nada, no hay que nada.
+Bueno, Nau y yo, Enrique, mandala a Pull Request y ya la aprobamos.
+Nau y yo nada, no sé qué tenés.
+Ok.
+Pero habrá dos dudas.
+¿Cómo es?
+Lo primero, el tema de la consumición del email, la reutilización.
+Estábamos viendo de consumir lo mismo ya sea desde el worker, para no estar duplicando en la base de datos o subir efecto en el site.
+Que también nos planteó otra cuestión, de poderlo desacoplar del worker.
+El tema del guardado de los...
+Los templates y dejarlos en un S3.
+Queríamos validar qué les parece esa opción, si seguimos indagando en eso o los dejamos en el worker, no más los templates y los consumimos de ahí, desde el site.
+Dale de nuevo, no entendí.
+Perdón.
+No.
+Porque viste que hoy, en un principio sí íbamos a abordar los HTML en la base de datos.
+Pero encontramos otra forma que era...
+Guardar las variables que se iban a utilizar, por ejemplo, el nombre de la empresa, alguna fecha o algún monto.
+Que esa metadata se guarde en la base de datos.
+Se guarda obviamente alguna aquí para identificar el template.
+Y que eso se consuma, ya sea se obtenga ese HTML desde el site, mandándole alguna request al worker.
+O se extraiga de un S3 ese template.
+O sea, lo que están diciendo para los mails es guardar como la versión genérica en HTML.
+Claro.
+Y después tener las variables de traducciones también en la base de datos.
+Sí, sería lo más espemónico.
+Entonces ahí vos tenés las variables de traducciones en la base de datos.
+Tenés...
+A la mierda con las migraciones.
+Tenés las variables de traducciones en la base de datos.
+Tenés los HTML en S3, ¿sí?
+Y lo que vos haces ahí es, en la notificación, únicamente guardás la información de la data a rellenar.
+Ah, ahí va.
+Exacto.
+Entonces en el worker, cuando llega el evento, lo que hace es busca la información de la base de datos del idioma,
+levanta el S3 y genera una notificación con referencia a esas dos cosas.
+Entonces el site puede rellenarlo.
+Mi propuesta...
+El problema ahí es cómo cortamos el footer o cómo hacemos ese corte desde el sitio.
+Porque imaginen el sitio cada vez que va a mostrar una notificación, levantar un archivo de S3 y regenerarlo.
+No es más sencillo, lo consulto, pero no es más sencillo ya guardar el HTML genérico, ¿sí?
+Con los datos rellenados y guardar las traducciones para esa notificación.
+Y que cuando obtenemos la notificación lo rellenemos.
+Todos pregunto.
+O capaz que saben qué podemos hacer.
+Podemos sí guardar las traducciones en base de datos, ¿está?
+Como para así saber cuál es consultar.
+Pero en la notificación guardamos el HTML con la información ya rellenada.
+Entonces es como con la información rellenada parcial.
+Lo que me duele acá es...
+Una cosa es el worker, que es asíncrono leyendo de un...
+Un HTML de S3, ¿sí?
+No le veo problemas a eso, ¿está?
+No le veo inconvenientes a eso.
+Otra cosa es el worker asíncrono leyendo de...
+O sea, como que lo veo bastante, un poquito más complejo.
+El worker asíncrono leyendo de HTML y rellenando todo...
+Es síncrono, rellenando todo eso.
+¿Saben qué se me ocurre?
+Podemos tener dos tablas.
+Podemos tener una tabla con la notificación.
+¿Está?
+¿Sí?
+O sea, esto se me acaba de ocurrir ahora y puede ser la solución final.
+Podemos tener una tabla con la notificación.
+Y después podemos guardar un HTML ya armado para cada idioma.
+Entonces, cuando nosotros cargamos...
+Que eso sería clave.
+Porque cuando nosotros cargamos la notificación,
+hacemos un get all a todas las notificaciones que tiene el usuario.
+¿Sí?
+Porque al final del día son las notificaciones del usuario.
+¿Está?
+O sea, la pregunta es si la notificación...
+¿Va contra una compañía?
+¿Va contra alguien?
+¿Va lo que sea?
+¿Sí?
+¿O va contra la compañía o es personal?
+¿Está?
+Pero son notificaciones que siempre se van a replicar contra el usuario.
+Es como el mail.
+O sea, se le va a generar un input en la tabla de notificación.
+Y después lo que podemos hacer es otra tabla que tenga los HTMLs por idioma.
+Entonces, si vos haces clic en la notificación,
+te va a buscar el idioma que vos estás cargando en concreto.
+Entonces, ahí ya tenés el HTML renderizado.
+No tenemos que en el mismo récord de la notificación guardar el HTML.
+No sé, lo estoy tirando como opción.
+Y ahí ya podemos generar los tres idiomas y dejarlos ahí.
+Total, en 30 días eso se va a limpiar.
+O sea, se van a ir haciendo limpiezas automáticas.
+Podemos limpiar menos.
+En 20 días limpiamos la notificación.
+No sé qué pienso.
+Si ahí de esa manera estamos desacoplando lo que es el get all de notificaciones,
+que el usuario pueda hacerlo 500 veces,
+a el hecho de que decidimos...
+Yo ir a buscar, abrir una notificación en particular para ver sus detalles.
+Piense que va a ser algo más difícil.
+Porque a vos de repente te llegan 10 notificaciones,
+muy probable que la mayoría de usuarios ni entren a hacerles clic.
+Muchos, muy pocos van a entrar a hacer clic.
+Y el que entra a hacer clic, bueno, es otra tabla que está.
+Que ya tenés toda la notificación.
+Que decís, bueno, quiero tener de la notificación tal,
+quiero que me des el HTML para el idioma tal.
+Entonces, la clave única de esa tabla sería el idioma.
+Sí, el HTML y el ID.
+Y ahí no tenemos que hacer lectura de S3,
+rellenado de S3, con handlebar, todo, desde el site dinámico.
+Fíjense que el Word, los blogs en sí,
+por más que podríamos tenerlos en S3 o lo que sea, funcionan bastante rápido.
+O sea, si los probamos en producción,
+si nosotros los cargáramos un archivo en S3,
+lo descomprimieramos, lo llenáramos, serían mucho más lentos los blogs.
+Fíjense que es algo que se consume mucho.
+Y hoy o mañana, si eso se complejiza, bueno, podemos
+separarlo en...
+Con servicios o que sea una base de datos exclusiva
+para lectura de notificaciones.
+Podríamos pasar a algo más como clave de valor.
+No sé qué piensan.
+Yo lo tiro, ¿eh?
+Lo tiro.
+No quiere decir que sea la solución.
+Lo estoy tirando porque yo lo que veo es como que un problema
+al rellenar todo ese HTML en el site.
+En el WordCamp no pasa nada porque es asíncrono.
+Si demora un minuto o dos...
+¿Se dicen ahí?
+No, no, Kike, no.
+Andate acá.
+Andate acá.
+Andate acá.
+No, no, no, no, no, no, no.

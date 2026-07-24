@@ -1,0 +1,163 @@
+igual lo vemos
+yo lo creo como tarea, creo que lo generé
+a ver, quiero cambiar el método
+que se utiliza para evolucionar
+si, ya lo tenemos para el próximo sprint
+ya lo vamos a atacar el próximo sprint
+porque no está bueno, o sea, la idea es que
+no puede ser
+que cada vez que agarres una PR
+te haga resolver conflictos, o sea, si ya tenemos ese problema
+tenemos ahí
+un overhead, un cuello de botella
+que solucionamos ya
+entonces lo ataquemos en el próximo sprint
+ahora cerremos estas PRs, andá mandándola
+una y enseguida que la vas aprobando
+vas mandándola a otra, enseguida que se va marchando
+pero después la idea es
+primero pasarlo a clases
+y después una vez
+que lo pasemos a clases
+como se llama
+generamos una property estática
+la property estática tiene
+el ciclo de vida, no está
+dentro del contexto de cada new
+de cada instancia, sino que es compartida
+por todos los objetos
+entonces ahí vos podés registrar
+podés ir registrando en un array
+los nombres
+de los archivos
+¿se entiende?
+¿te parece?
+entonces vos cada vez que haces new de la clase
+como habías dicho vos
+registrás el nombre en un array
+estático, si ese nombre
+no existe no va a pasar nada
+porque vos estás escribiendo algo en ese array
+y otro escribe algo también
+ahora, sin embargo, si uno escribe
+el nombre bien, en tiempo de compilación
+no va a pasar nada
+cuando corren los tests va a fallar
+porque durante que se inician los tests
+se van a inicializar todos
+se van a registrar esos nombres
+y en algún momento va a saltar que ya se registró
+o sea, uno de los tests va a correr
+y el otro cuando se ponga el mismo nombre va a fallar
+¿sí? o sea, porque no va a permitir
+o sea, o no deberíamos permitir
+que tengan la misma property
+es más, ¿sabés cómo podemos hacerlo?
+como objeto
+sí, es chequear si ya existe
+y si no existe
+no, pero lo hacemos como un objeto
+lo que tenemos que ver
+es ahí, yo no sé cómo es el ciclo
+de vida de los tests
+tenemos que estudiarlo un poco más
+porque yo no sé, cuando vos le das run a los tests
+yo no sé si se ejecutan secuencialmente
+o se ejecutan en paralelo
+¿se entiende lo que voy?
+o sea, cuando vos le das run
+la consola es un único punto de salida
+entonces la consola hace
+que todo parezca que se ejecute secuencial
+pero la realidad
+es que pueden haberse ejecutado en paralelo
+entonces ahí empezás con condiciones
+de carreras porque empezás con problemas
+como lo que es la concurrencia
+que dos métodos se ejecutan a la vez
+entonces empezás con condiciones de carrera
+es bueno, ¿quién escribió en el array primero?
+hasta el punto de que si los dos escriben en el array primero
+supongamos que vos tenés un if
+a ver
+no, pero buscá mocha
+creo que es
+si es opcional
+no, pero está bueno que sea paralizable
+pero tenemos que tener cuidado
+claro, este mecanismo que nosotros hacemos
+que da conflicto
+es un mecanismo que garantiza
+que cada uno es único porque Enrique
+en ese objeto de Javascript
+define siempre nuevos números
+hay capas que hay que meterle un pienso
+a eso, Kike
+pero tenemos que tener algo de que tome
+esos archivos
+¿sabés cómo podría ser?
+estoy pensando
+el tema es que la lectura de archivos hace que demore
+mucho
+porque vos podés leer los archivos Javascript
+y utilizar los nombres directamente
+que tienen los archivos
+bueno, esto ejecuta las pruebas en serie
+ya me lo trae otro
+y bueno, vamos a tener que hacer pruebas
+pero tiene sentido que sean en orden
+porque si es en orden que te imprimen
+está bueno, yo sé que puede terminar antes
+no, pero están en orden, sí
+y por más que las paralelice Jest
+debe tener órdenes para imprimir
+por eso, a imprimir, imprime en orden
+no, capaz que con un arreglo estático
+se lo solucionó
+pero estaría bueno que vos ahí, por ejemplo
+cuando registres, viste que vos registras
+la descripción, Kike
+y después chequeás que registren todos siempre la misma descripción
+bueno, esto sería
+agregar un array más, pero que sea
+estático, el array estático
+es compartido por todas las instancias
+por todos los new que vos vas a hacer
+de esta clase
+y ahí evitamos este problema
+porque siempre te va a dar conflicto
+y eso es un cáncer
+o sea
+siempre tener que estar resolviendo esos conflictos
+es una pesadez
+si te parece
+anda enviándonos esas PR
+y no decís, che, tengo esta para probar
+cuando me aprueben esta
+y mientras tanto tenés
+otras cosas para ir haciendo
+los T de regresión, no sé si los pudiste arrancar
+no
+si ya más o menos
+lo del worker, como estamos hasta ahí
+ojo que la del worker
+pongo in progress la del worker
+pues ya está, mandaste la PR
+está el chat
+o sea, sí, no sé
+cómo funta eso
+claro, no, pero tenés que poner
+siempre pone el padre
+aunque tenga
+está muy bueno esto
+asignátela a vos
+o sea, no me vas a calentar
+pero el
+esto está bueno
+lo que siempre está
+el padre tiene que
+es como que
+ponele que el child
+vos vas teniendo su estado
+entonces
+pero si vos ya estás trabajando un child

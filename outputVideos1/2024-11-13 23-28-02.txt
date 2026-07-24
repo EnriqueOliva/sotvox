@@ -1,0 +1,142 @@
+Esto es sumamente importante porque puede hacer que nos caguen o que se joda el sitio y tenemos que atajar de estos errores.
+Cuando vos cargas un frontend tenés dos maneras de cargarlo.
+Una es del lado del cliente, o sea con código javascript, lo que haces es cargar el sitio.
+Y otra es, una lástima, Tatato no estaba ahora, pero también estaba a explicarle esto.
+Y otra cosa es con server site rendering.
+¿Qué quiere decir esto? Vamos a ver un ejemplo.
+Cuando usted carga el crear, vamos a ver la network.
+Usted abre esta consola y ve la network.
+Cuando usted carga el crear, vamos a recargar, del lado del cliente se renderiza todo el sitio.
+Se pone toda la información.
+Todo esto se obtiene del backend.
+Pero se obtiene, vos acá no ves ninguna request.
+Que llame al backend.
+Porque ¿qué es lo que pasa? Esto es server site rendering.
+Yo ya, cuando hago la request al servidor, ya le inyecto los datos.
+Entonces me devuelve un html con los datos precargados.
+Sin embargo, me voy a loguear rápidamente para que lo vea.
+Cuando yo me logueo, por ejemplo en la página de suscripciones, no tienes client site rendering.
+Si yo recargo esto, no tiene server site rendering.
+Si vos ves acá, no se carga un choto.
+O sea, no hay nada de eso.
+Se carga el footer, que es la parte de abajo.
+Y se carga esto.
+¿Por qué? Porque si nosotros filtramos por fecha, vemos que acá, en algún lugar, entre las requests que hace Stripe, se está trayendo la información de las compañías.
+Lo importante a ver acá, es que hay algunas páginas que...
+Pensá lo siguiente.
+Cuando vos cargas un sitio desde el celular.
+Si yo en la request, ya tengo...
+Si yo en la request, ya tengo...
+Si yo le doy toda la información a mostrar.
+Vos no tenés que, una vez que cargas el sitio, renderizar todo y hacerme otra solicitud a lo aquel.
+Yo ya te doy una solicitud más completa.
+Te doy una página más completa.
+¿Sí?
+Eso hacemos que sea más óptimo.
+Hay para ciertos lados, como por ejemplo en la parte de crear.
+Voy a crear.
+En la parte de crear.
+Si vos ves, voy a poner al.
+En la parte de crear, acá adentro.
+Ya se está levantando todo.
+¿Viste?
+Se crean todos los inputs, todo.
+Se pone todo.
+¿Sí?
+¿Se ve?
+¿Qué es lo que pasa?
+Hay un concepto complicado.
+Pero...
+Hay un concepto complicado que se llama hidratación.
+Que de alguna manera, yo recibo todo este HTML sin estilo.
+Y lo hidrato para que renderice con React.
+¿Ah?
+No quiero que entienda ese concepto.
+Lo que quiero que entienda es que cuando usted se loguea.
+Acá anda bien, ¿viste?
+Y en la consola.
+Hay errores.
+Pero si vos mirás, los errores son todos de Stripe.
+Está bien.
+O sea, son mierdas de Stripe.
+¿Sí?
+Y no...
+Esos son porque usamos integraciones de Stripe y las bloqueé.
+Va.
+Eh...
+O sea, estos son bolazos.
+No aparecen en todos los sitios.
+Esto es porque yo también tengo un Puki sin mierda.
+Sin embargo.
+Acá yo estoy haciendo renderizado.
+Estoy navegando.
+Y estoy cambiando todo esto con Javascript.
+Fijate que esto no se recarga.
+¿Lo ves?
+¿Ves el icono?
+Mirá.
+¿Ves que no se recarga?
+Se cambia el nombre, pero no se recarga.
+No hace esto cuando navego.
+Fijate que si yo cargo, por ejemplo, esta.
+La cargo de una.
+Me tira estos errores feos.
+¿Qué es lo que está pasando?
+Hay una inconsistencia entre el frontend y el backend.
+¿Sí?
+Si nosotros vamos acá.
+Que te tira.
+Hay veces que te lo dice, pero si no te lo tira así.
+Si vamos acá.
+Te lo dice bien clarito.
+¿No te he dicho?
+Te dice que...
+Que es un error con la hidratación.
+¿Está?
+¿Sí?
+Eso hace que el sitio empiece a funcionar de manera aleatoria.
+Mirá.
+Acá te lleva login.
+No anda el crear.
+¿Viste?
+Eso ya lo solucioné.
+Pero si usted cuando está navegando.
+Carga alguna página de una y ve esos errores.
+Alerte me.
+¿Está?
+Ok.
+Cargar de una.
+Usted me dice.
+O sea, eso se refiere con darle ahí el icono, digamos.
+A recargar.
+Sí.
+O sea.
+Una navegación desde el sitio.
+Porque yo acá, por ejemplo, me estoy logueando.
+Voy a suscripciones.
+Estoy haciendo navegación desde el sitio.
+Yo lo que te digo es cargar desde el link.
+Por ejemplo, hacer esto.
+¿Está?
+Si usted ve esto.
+Me avisa enseguida.
+Y.
+Lo.
+Lo chequeamos.
+¿Bien?
+Ok.
+¿Ah?
+No más para comentarlo eso.
+Vamos arriba.
+Continúen.
+Pero ténganlo en cuenta.
+¿Está?
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.
+No.

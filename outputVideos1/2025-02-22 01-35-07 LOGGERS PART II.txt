@@ -1,0 +1,1023 @@
+Pero ese endpoint
+¿Es parecido a los otros?
+¿También los otros tienen eso de app.us?
+¿Con express?
+¿Por qué me están creando?
+¿Usamos express desde?
+No, ¿sí?
+Sí, sí lo hacen
+Express, JSON, papapá
+Sí, sí, lo que dijimos es
+Lo que habíamos dicho
+Eso está bien
+Lo que habíamos dicho es de ahí a poner
+Un app.us, sea un millware
+Y setearle
+No sé si tenés el ejemplo que hicimos
+En el video
+O en algún lugar guardaste el código
+Que hicimos
+La línea 48
+Pará, pará
+Copia la línea 48
+De la línea 48
+O sea, copia de la línea 48 a la 54
+Ya entendí el problema
+¿Qué es lo que vamos a copiar?
+Bajá un poquito
+Abajo en el before
+Lo que vamos a hacer, dale un enter
+Después de la línea 104
+Ahí está
+Ahí, pégalo
+¿Qué es lo que estamos haciendo?
+Diciéndole, bueno, a partir de ahora
+Usa este millware
+El IFS de la línea 107 a la 109
+Era específico para algunos casos
+Que necesitas la IP
+Para probar los casos de la IP
+Vos no lo necesitás
+O sea que sacalo al carajo
+Por ahora no lo necesitas
+Si hoy o mañana vos necesitas cargar algo en la IP
+¿Sí?
+¿Sí?
+Dale control Z
+No tendrías que hacer todo eso
+Sino que tendrías que hacer directamente la línea 108
+¿Está?
+O sea, ahí
+Mirá, si vos quisieras cargar una IP falsa
+Borrá la línea 107 y la 109
+O sea, ahí va
+Y dentá
+Ya que estamos
+Vamos a ver si se ha prendido el comando
+Hijo del puto
+Y en vez del igual
+En vez de request header
+Este
+En vez de request header
+Borrate todo eso de request.header
+Y ponele ahí el IP que vos quisieras
+Entonces ahí
+Ponés un IP
+Son strings
+Lo tomamos como string
+Pero ahí ponés el IP que se te canta el truja
+Usted no entiende nada
+Está bien
+Entonces ahí
+Volvamos para atrás
+Volvamos para
+Para el test que hicimos juntos
+No, no, no
+No, no, dejemos como estaba
+Eso está bien
+O sea, eso está bien
+Vos ahí justo en este caso
+No necesitás
+Moquear la IP
+Pero si necesitarías
+Moquear la IP
+Por alguna razón
+Lo hacés como la línea 107
+¿Está?
+Ahora volvamos
+Porque no lo completamos
+Volvamos al
+Coso rojo ese
+Y después lo que nos faltó
+Es la línea
+Es la línea 46
+Vamos
+Pegálo
+Ahí está
+En vez de poner
+Lo que
+Es más, borrá eso
+Borrá eso
+No, no, no, no, no
+No dije nada
+Borrá el de la línea 104
+Obvio
+Miremos el paralelismo
+Ajá
+Déjame
+Hola
+Hola
+Voy a hacer dibujo
+Voy a hacer dibujo
+Dios me libre
+Qué año se viene
+¿Ves estos dos?
+¿Sí?
+La idea
+Vos ahí lo que está
+Es sencillo
+No necesitamos hacerlo de UID ni nada
+Lo que habíamos dicho
+Es que es un bolazo probar esto
+¿Está?
+Y estoy hablando 100% en serio
+Porque
+Lo que nosotros vamos a hacer acá
+Es decir, bueno
+La idea es que
+La única
+Miremos
+Analicemos las diferencias
+Lo
+Vos acá crea
+Moqueabas
+Al log static
+Le decías
+Moqueate el info
+Y después
+Al log static
+Le moqueabas el error
+¿Estamos de acuerdo?
+La diferencia
+Es que vos
+Internamente
+Vos
+Internamente
+Como pasa
+Esto se va
+Como pasa
+En los test
+¿Está?
+Y ahora vamos a ver
+Por qué se va
+Vos no haces
+Yo te pregunto
+Vos haces
+New el controlador
+Del servicio
+De reposición
+O dejás que lo haga solo
+¿Está?
+Esto es lo mismo
+El logger
+Lo va
+Como vos pusiste esto
+¿Está?
+Y acá le asignás
+Al log stat
+El stat
+Miremos
+Miremos este de acá arriba
+¿Quién?
+¿Está?
+Volvamos a este
+Sigue haciendo dibujo
+No, quería chequear esto
+Porque encontré un problemita
+¿Volvamos para atrás?
+O sea, no
+Quedémonos
+En esto
+La cosa
+Es que
+Ahí está
+Ahí está
+Acá
+Sigue haciendo todo
+Y bueno
+Y acá
+Bueno
+Ya
+Entonces
+La cosa es así
+Acá
+Si vos
+Acá
+Por ejemplo
+Mirá
+Acá lo que
+Lo que hay que hacer
+Es un tema
+No
+El problema
+Que estoy viendo acá
+Voy a limpiar todo
+No me deja
+No me deja
+No me deja
+Bueno antes que trabajar así
+Toda la noche
+El problema que estoy viendo acá
+Que calculo que vos también
+Lo estás viendo
+Es que vos acaso
+Lo estás pudiendo moquear
+La función
+Error
+¿Te animás a ir a
+Cualquier
+Al
+Al get my company
+O a algún
+Un endpoint de teammates
+De teammates
+A testes
+Perdón
+Testes
+Cualquier
+Ojalá
+Ojalá lentamente
+Que
+Concha de la madre
+La puta que lo parió
+Ojalá lentamente
+Pero la puta que lo parió
+Ojalá lentamente
+Ojalá lentamente
+Ojalá lentamente
+Madre
+Claro
+Claro acá tenemos
+Presentamos una dificultad
+A ver
+Volvé para atrás
+Tenemos un problemita
+No es log error
+Nosotros en esa línea
+La 99
+Deberíamos
+Moquear el info
+Y el error
+No sé cómo hacer
+Al mismo tiempo
+Sí
+Hacé una cosa
+Borrar la línea
+111
+Y 112
+Porque
+Eso ya no lo vamos a hacer más
+Porque
+¿Qué es lo que nosotros
+Queremos validar?
+No nos interesa
+Lo del UID
+Lo que nosotros
+Tenemos que validar
+Es que
+Es que está usando
+LoggerApp.pro
+Prototype
+Nada más
+Si está usando
+LoggerApp
+Quiere decir que está usando
+La clase que yo tengo
+Que sé que imprime el UID
+Y ya está
+Es eso
+Hay que ver
+A ver qué te está tirando
+Ah
+En la línea 104
+Después de request
+Pone dos puntos
+Rec
+Después de
+Rec
+Pone dos puntos
+Y ponele any
+A ver si ahí se va el error
+A ver qué te está tirando ahí
+O ponele request extension
+Ponele request extension
+No, no
+El request extension
+Que le aparece abajo
+¿Por qué te está tirando ahí?
+No sé
+Rere
+Ahora volvemos al test
+Que hicimos juntos
+De Santi
+Stab
+LoggerApp
+Ah, pará
+Usamos logger
+Stab
+Ah, en la línea 27
+No dije nada
+Copiemos de nuevo
+La línea 27
+Pará, pará
+Ahí va
+Está bien
+Tenemos que hacer un new
+Ya me acuerdo
+Lo que hicimos
+Hacíamos un new
+Está bien
+Hacelo justo
+Hacelo justo debajo
+En cualquier constante
+Ponelo en cualquier constante
+En cualquier constante
+Ahora sí
+Usemos loggerStab
+Ah, ya me acordé
+Y ahora
+Lo que nos falta hacer
+Es duplicar la línea 101
+Y moquear el info
+Porque ahí lo que estamos diciendo
+Es, bueno
+Estabia
+O sea, cada vez que el prototype
+O sea
+Estás modificando a nivel raíz
+La clase loggerApp
+Cada vez que se llame
+Al prototype
+En realidad estás llamando
+A ese stab
+Y lo mismo con el info
+Y lo mismo con el info
+Ya está
+Quedó pronto
+Entonces vos ahora
+Abajo del todo
+O sea
+Bajá si querés
+A cualquiera que tenga log
+Yo te digo algo
+LoggerStabInfo
+Se debería llamar con esto
+Con una
+Con una property
+Que sea así
+Y después con otra property
+Que sea
+GetCodes
+Porque se llama
+O sea
+¿Por qué se llama con dos?
+Porque en realidad
+La llamada que nosotros hacemos
+Es log.info
+¿Por qué se llama con dos?
+No, estoy hablando con Kike
+Será que tengo asentido acá
+¿Cómo es eso?
+Hola
+¿Te puedo llamar en unos minutos?
+¿Unos minutos?
+Bueno, voy, voy
+Me han echado de mi casa
+Ahí es log.info
+Stab
+Y log.error
+Stab
+Debería ser lo mismo
+O sea, no debería cambiar
+Lo que digo es que vos en realidad
+Llamás con log.info
+Llamás con log.info
+Y después le pasás acá
+El
+Me
+Me
+, eso
+Entonces en tu caso
+Vos lo llamarías
+O sea, a log.info
+Lo estás llamando
+Con las siguientes properties
+Lo estás llamando con
+Para que lo voy a separar
+Para que lo
+Para que lo aprecie
+Así se llama log.info
+Siempre
+O sea, cada vez que entra
+Se llama así
+Eso es lo que vos tenés que validar
+Que log.info
+Se lo llama con dos parámetros
+No
+No eso de
+O sea
+Deberías fijarte
+Que recibe dos argumentos
+O sea
+Ahí está bien
+Pero ponele adelante
+El otro
+Debería andar
+Entonces analicemos
+Analicemos
+Vayamos arriba del todo
+Y analicemos
+Lo que hicimos
+Primero que nada
+Primero que nada
+Definimos la clase
+Porque necesitamos definir una clase
+Bueno
+Quieto
+Quieto aquí
+Definimos la clase
+¿Está?
+Exacto
+Luego que definimos la clase
+Lo que hicimos es
+Vamos a crear un stab
+Por la clase
+Por cada función
+¿Sí?
+Ahora
+Nosotros lo que queremos hacer es
+Que en vez de
+En vez de llamar
+A estas instancias de clase
+Cuando llamen a los métodos oficiales
+En realidad queremos
+Modificar el prototype
+Que es como la base
+¿Sí?
+Que en vez de que
+Por más que vos acá
+Creaste una instancia de logra
+Todo
+Mientras que se corran estos test
+Todos van a
+Mientras que se corran este test
+Todo lo que van a hacer es
+Vas a moquear y van a
+Cuando llamen a error
+Vas a llamar a este test
+Le va a llegar a este stab
+Este stab lo que está haciendo
+Está modificando la raíz de la clase
+Lo mismo acá
+En este prototype
+Para decir bueno
+Cada vez que llames a error
+De todas las veces
+No importa cuántos news haya
+En este caso va a ser uno
+Porque por T vamos a hacer uno
+Vas a llamar a ese
+Vas a llamar al error
+Y al input
+Y lo único que hacemos acá
+Es generar un millware
+Simulando lo que nosotros
+Hacemos realmente
+¿Está?
+¿Sí?
+Haciendo dos cosas
+Uno
+Metiéndole una IP
+Que vos acá podés meter
+La IP que quieras
+¿Está?
+O sea vos acá podés meter
+La IP que vos quieras testear
+Y después lo que hacemos es
+Metiendo el logger
+¿Sí?
+Sí, sí
+Sí, está bien
+En realidad en este caso
+No necesitamos moquear la IP
+Pero está
+Ponelo porque así
+Te queda un ejemplo completo
+O sea si vos acá querés probar una IP
+Ponés una IP
+¿Está?
+Y ya me aburriste todo el dibujo
+Una vez que hacemos esto
+Vamos a hacer un test
+No hay diferencias
+Con lo que hacías vos abajo
+Porque vos antes abajo
+Antes de todo este problema
+Vos lo único que hacías
+Era te fijabas
+Si info lo habías llamado
+Con ciertas properties
+Y si error
+Lo habías llamado
+Con ciertas properties
+¿Sí?
+Vos acá lo único que tenés
+Fijarte es esto
+Y no le vas a poner el UID
+¿Por qué?
+Porque vos estás suplantando
+El error original por ese
+¿Entendés?
+Entonces
+¿Qué pasa?
+Vos no vas a ver el resultado
+Por consola
+Lo que realmente imprime
+Vos solo necesitas validar
+Lo que
+Con qué fue llamado
+¿Entendés?
+¿Está?
+Bajamos abajo
+A ver si queda alguna más
+Ahí ese también
+Todos tienen ese llamado
+Deberían tenerlo
+Y ese
+Y ahora
+Volvemos a lo sencillo
+O sea
+El estándar es
+Meter esas mierdas
+Meter
+La clase que vimos arriba
+¿Está?
+Los stabs de error info
+Vamos a ver
+Vamos a ver
+Vamos a ver qué pasa
+Pero pará
+Pará
+Hagamos una cosa
+Hagamos una cosa
+Agarremos
+Fijémonos
+¿Cuál es esta fallante?
+Por ejemplo
+El 1 está fallando
+El caso 1 está fallando
+Pará, pará, pará
+Hagamos al primer
+Vayamos al primer test
+Porque después eso
+Lo podés trabajar vos
+Lo
+Copia
+Borrá
+Comentá todos los specs
+Hasta los dos de logs
+Del primer error
+Inclusive ese
+De si fue llamado una sola vez
+El de cofer
+Está, ahí va
+Es
+Corramos de nuevo los tests
+Porque lo importante acá
+Es ver los logs
+Lo otro
+Lo otro lo podés arreglar
+Porque seguramente
+Es un tema
+De que cambió
+Cambiaste el código
+Y pa, pa, pa
+¿Cuántos fallaron ahora?
+No fallaron
+¿Qué te tiró?
+Pará
+¿A qué te referís?
+No pusiste log
+Pero
+Acordate que siempre
+Se llama ese log
+Se llama log
+Que te pasé por Slack
+Siempre se llama ese log
+Siempre se llama ese log
+Pero pará
+Lo que no me cierra es
+Expected info
+To have
+Info
+Algo
+Algo
+¿Cómo que no se llama?
+A ver
+¿Cómo que no se llama?
+Pará
+Pará que estoy parado
+Subamos arriba del todo
+Andamos
+Vayamos a API Router
+Ahí
+Ah, pará
+Pará
+Dejame pensar
+Porque con el log error
+Sí lo
+Con el log error
+Sí se estaba llamando
+Andate a
+Async Handler
+Abajo de const
+Tenés la carpeta
+Utils
+Const
+Async Handler
+Alexa, prender aire cuarto
+Ahí donde se está llamando
+Login
+Y ese hijo de puta
+Se está llamando
+¿Qué?
+Pero creo que
+Descubrí el error
+Volvamos para atrás
+En teoría
+Se debería estar llamando
+Al info
+A ver
+¿Qué le podemos estar errando?
+Porque con los test
+Había andado
+Subamos
+¿Será el use?
+A ver
+Mostrame el IP
+Registry
+Que hicimos juntos
+Ah, ahí está el problema
+La concha del puto
+Volvemos para atrás
+Claro
+Andate arriba del todo
+En la línea 81
+La
+La
+La
+La
+La
+La
+La
+La
+La
+La
+La
+La
+how
+La hacemos
+La hacemos
+Adentro del before
+Fijate
+Porque ¿Qué pasa?
+Vos primero
+Definís el millwall
+Si no
+Si vos lo definís después
+Es como que se define
+Después de ese millwall
+Los millwall se definen
+Por capa
+Son como
+Filtros
+Cuando viene la request
+Entonces tenés que
+Definirlo abajo
+Del before
+Bajá al before
+Ahí
+Abajo
+Del use
+Que en realidad
+Es el estándar
+Que tenemos en los otros test
+No lo definimos
+Arriba
+No lo definimos
+Ahí
+Sí
+Eso no lo definimos
+Arriba
+ahí o no debe o no ahora no deberíamos definirlo ahí si había algún caso pero por ejemplo si vamos
+vayamos uno rando vayamos al get a cualquiera de team mate cualquiera entra y que a dar baja
+lo definimos ahí bueno está a partir de ahora no lo definimos más ahí lo definimos exacto porque lo
+que tenemos que hacer es al bajamos no volvamos al empo y nuevo y ahora corramos los test a ver
+qué bueno bueno yo bueno está a ver cómo hacíamos en el get y perros y test mira bueno está ahí
+tienes que estudiar la lógica cuál es la mejor lógica pasada porque vos tendrías que fijarte
+todos los argumentos mira que vamos a hacer copiarlo de eso a ver pegar
+abajo a la línea 175 no pero pongamos el blog blog info staff suplantemos los guerreros por
+lo que está igual me parece una chanchada eso que estamos acá y ahí en poner pongamos get
+cause y fíjate que lo que vamos a hacer es poner que el argumento es el 2 a ver si el 1 perdón el
+1 porque comentemos la línea 175 igual eso después darle una iteración con gpt esto para ver si
+lo podemos mejorar porque está como el orto ya no me gusta debería hay algo que le está morrando
+a este seguro a ver si falla el 1 o sea no puede ser que tengamos que obtener la llamada del argumento
+y todas las cosas ese es el 1 patch se está llamando ahora vayamos a ver el log info hay
+algo que me estoy comiendo porque me dice lo primero que está raro si el blog info se llama
+con una cantidad de chiches se llama se llama alguna cantidad de chiches
+log info se llama con una cantidad de chiches lo que puedes hacer ahí es no ahí no fíjate en
+el index dentro de road entrar a rutas pero fíjate que se baja un poquito mira todos los
+log info que tenés ahí va claro o sea eso es algo que tenemos que ver bueno tendríamos que encontrar
+a ver preparamos a contar las llamadas 1 2 3 4 5 6 entonces ponerle la llamada 7 a ver y tenemos un
+poquito hallamos al test hagamos ahí está bien el argumento 1 está bien es get call 7 o sea la
+llamada número 7 porque es la 7 pero ahora está después de eso capaz que lo estandarizamos puede
+ser puede ser que sea la 6
+a ver ahora habría que mejorarlo de su favor ya que nosotros podríamos deberíamos ir al log info
+staff y preguntarle che fuiste llamado al menos una vez con esto debería haber alguna cosita y
+deberíamos mejorar ese estándar pero bueno pero ya está funcionando alguna cosa rara
+está bueno si haces este test pues ya nos deja un estándar que después lo podemos empezar a
+pasar eso me gustó escucharme
+y vas a tener que hacer obtener la llamada y lo único que tenés que chequear es que se haya llamado
+con los argumentos ya porque vos que estás chequeando que en algún momento cuando sucedió
+todo el flujo fue llamado con lo que te pase por slack entonces por ejemplo el error vas a ver que
+fue llamado con un mensaje de error bueno vos tenés que validar eso en el caso del error sería
+lo mismo o sea sería el equivalente total entonces acá lo importante sería aquí que
+vamos a definir definir un roadmap primero que nada estaría bueno que no tengamos que agarrar y
+preguntar che dame la llamada número 7,5 con la 4 era bueno decir che tuviste alguna llamada con
+esto y ya está eso sería como el nice to have de esto te pregunta que le preguntas a GPT que le diga che mirá estoy haciendo toda esta lógica acá de la línea 176 tengo que obtener me gustaría poder validar
+la cert, si alguna vez fue llamado
+con estos parámetros, nada más
+o sea, me gustaría hacerlo
+más genérico, eso es lo que tenés que pedir
+¿sí?
+para no tener que andar diciendo la llamada
+5, la llamada 4, porque si no para el error
+sería lo mismo, tendrías que decirle
+dame tu primera llamada de error y decirme
+que falló, es una cagada
+no, no es include
+es si fue llamado con
+o sea, to be have
+está bien lo de la línea
+175, hay que ver por qué está fallando
+claro, sí, por eso te digo
+hay que ver si
+estaría bueno hacer algo
+o capaz que mismo podés hacer alguna función auxiliar
+que lo que te haga sea, chequee
+que esté esa llamada
+¿sá? esa es parte de la
+investigación, ¿sí?
+o sea, mejorar un poco
+esto, ya, a ver, en este momento
+están dando, si vos sabés
+el número de llamada, podés
+moquearlo, pero estaría bueno tener
+algo más genérico y también para el error decir
+che, mirá, te llamaron con esto
+y el loco se fije en todo el flujo
+desde la request, el caso del error
+va a ser más sencillo, porque el error lo llamás
+una o dos veces, entonces está
+te va a invocar más
+el problema es el caso del login
+el loginfo se llama muchas
+veces, entonces si necesitamos algo
+que vos chequees, che, ¿alguna vez
+pasaste por acá? es como
+el ayer pasé por tu casa
+bien, ¿eso queda claro?
+después, claro, viste
+call once with, ay mirá
+ahí lo tenés, llamado una vez
+a ver, fijate, probémoslo rapidito
+a ver, pasale
+pasale, no, pero pasale con
+la barra también, pasale coma a la barra
+ay, so cheap
+a ver, ahora, correlo
+no, pero el wit
+a ver, ¿qué te dice?
+no, dice que nunca se está llamando
+hay algo raro ahí
+hay algo raro ahí
+hay algo raro ahí
+hay algo raro
+hay algo raro
+bueno, está, a ver, pará, pará
+esa es parte de la investigación
+¿sí?
+y si no te haces una función
+auxiliar, que le haces
+una especie de utils, que vos
+hagas ese expect, te haces
+un expect custom
+que recibe dos parámetros
+el loginfo
+y
+los parámetros
+que querés validar
+recordemos que el wit en realidad
+recibe la cantidad de parámetros que vos supuestamente
+recibís, por eso en este caso tendríamos
+estoy pasando dos
+bueno, pará
+¿cuál es la otra pregunta?
+bien
+el divag es
+una función
+que se usa
+que se pone para nivel local
+cuando nosotros corremos y lo probamos
+y funciona, y está activo
+los ambientes de dev y staging
+¿está?
+en el caso de
+en el caso de
+de los regreso
+en test
+está bueno que uses divag
+cuando vos, cuando corres las cosas
+querés dejar información que recurrentemente
+te es útil
+y está bueno que para esos casos
+cuando decís, mirá, esto no me interesa
+tenerlo en producción, yo qué sé
+voy a poner un ejemplo
+yo imprimo cuando se configuran todas las
+todas las traducciones
+y también imprimo, vos habrás visto cuando conecto
+imprimo todas las queries que hace
+automático el ORM que es
+Securalize
+¿sí?
+y en
+y en
+en
+en test
+en stage y dev
+también lo hace imprimo
+¿está? o sea, imprimo todo para ver cómo está armando las queries
+y todas esas cosas y cómo las arma en producción
+pero en producción no imprimo las queries que yo hago
+porque sería llenar los logs de basura
+¿se entiende?
+o sea, cuando yo corro el programa
+me interesa ver
+que está, que
+que se hizo una query a la base de datos
+cómo, cómo
+se armó esa query a la base de datos
+qué info se le pasó a esa query
+me interesa
+ahora
+si yo no corro el programa me chupo un huevo
+ahora, si yo no corro el programa me chupo un huevo
+ahí está la diferencia
+¿me expliqué?
+a lo que voy a ir
+el log error es para errores
+el log info
+es información que es útil saberla siempre
+¿está?
+y si hoy o mañana los retes de regresión salen a producción
+es importante poder tener esos logs
+el log de val
+¿sí?
+ahí te anduvo
+que, que
+que cambiamos
+está bien
+el log de val
+¿sí?
+está genial
+ya está, llegamos al estándar
+ya está, se terminó
+¿qué es esto?
+Unpossible others
+ahí está
+está bien
+pará, te decía
+y el, y el log está perfecto
+entonces ahora ya tenés el estándar
+¿ya está?
+¿ya está?
+o sea
+ahora, ahora es bueno
+trabajarlo un poquito
+pero esto va a hacer que empecemos a trabajar de nuevo de forma prolija con los logs
+¿está?
+ahora, esto es importante
+otro detalle
+los endpoints que no usan
+este, el log
+no hay endpoints que no usen este log
+o sea, no hay endpoints que usan logs
+pero si hay alguno, algo viejo o algún lugar que no se pasó o lo que sea
+está bueno que me digas
+che, mirá, esto no me están dando
+y ahí lo discutimos
+por ejemplo, no creo que te pase acá
+pero con el worker
+con el worker calculo que te va a pasar
+porque los cron no tienen logs
+tienen logs static
+¿se entiende?
+pará
+pero voy, voy de nuevo a los logs
+¿log error?
+es error
+log info es información que siempre es útil
+¿ya? y en producción también es útil que se logue
+¿ya?
+logs debug
+se puede utilizar cuando vos querés, por ejemplo
+eh
+pasar información sensible o alguna cosa así que no
+que tenes que tener cuidado o lo que sea
+es decir, bueno, lo paso como logs debug
+¿ya?
+es eso
+¿sí?
+o sea
+por ejemplo, yo quiero
+yo quiero en Endem tener algo
+quiero, quiero en Endem tener algo muy legal
+Quiero en dev poner cuando la gente...
+Es una mala práctica, pero quiero poner
+siempre cuando se registra un correo
+quiero ver qué correo registró el tipo.
+Porque necesito verlo en dev
+para ver cómo está pasando un flujo en producción.
+Bueno, uso log de bug.
+Si eso sin querer se va a producción,
+producción no se llena de basura.
+Los logs de producción. ¿Se entiende?
+O sea, vos pensalo así.
+Hay veces que yo compilo cosas local,
+pero quiero ver cómo funciona en el ambiente de AWS.
+Entonces lo que hago es
+pongo un log de bug.
+Al poner un log de bug, también es como
+una tranquilidad y que sé que eso no va a explotar.
+Pará, dame un segundito porque
+necesito ir al bug.
+Ya hice la caca. Bien.
+Entonces,
+pará, pará. Compartime el tablero.
+Vamos a organizar un poco
+así también ya lo... Bien.
+Esas tareas, la mayoría,
+las de... Está faltando
+solo la 826.
+¿Sí? Estás muteado.
+La puta madre, el viejo chulo.
+Después, podremos
+terminar la 860.
+La 860.
+Estoy escuchando yo. Yo no sé si soy varón
+o nena. Eso es lo que estoy escuchando yo.
+Yo no sé si soy varoncito.
+O sea, yo hoy
+quiero cerrar PR pendientes del Spring 18.
+¿Qué nos queda pendiente del Spring 18?
+Nombre de partner.
+Ya no murió.
+Login.
+Vamos a pasar. Mirá, esta, así como está,
+la voy a pasar.
+Así como está, ya la voy a pasar.
+La voy a pasar para el Spring que viene.
+La voy a dejar en el back.
+Entonces, nos quedó así el Spring.
+Hagamos una cosa.
+A ver si podemos cerrar
+inclusive el lunes, si te lleva
+algo de tiempo, la 226
+y
+liquidar la 860.
+¿Estamos bien?
+Y lo otro que le pido
+es
+siga con esas tareas
+y si no,
+te dejé el backlog en orden.
+Quiero ajustar los test unitarios
+para que atrapen los dos con el UID,
+solucionar el parche que se aplicó.
+O sea, que ya empezamos con ese refactor.
+En el caso que termines
+con todas las otras tareas,
+con el que terminás con la 830,
+827, terminás con todo,
+el lunes,
+seguís en el orden que está en el backlog.
+El backlog
+que está lleno de firuletas.
+¿Estamos?
+Eso. Entonces tenemos laburo para
+tenemos laburo para rato.
+¿Ah?
+Lo de los logs, lo de express,
+lo de... Se vienen cositas lindas, Kike.
+Y lo bueno es que tenemos para rato.
+¡Ah!
+Sí. Yo lo que quiero es que termine
+este parcial y bueno, salvarlo o perderlo,
+pero...
+Ahora ya le pedí a Guillermo ahí
+un poco de... Le dije, mirá, vamos,
+dame un poco de vida.
+No le dije...
+O sea, Martina todavía no se lo...
+No le comuniqué, pues se lo voy a hablar, pero...

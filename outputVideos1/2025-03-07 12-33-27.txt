@@ -1,0 +1,416 @@
+está ahora, entonces lo pasé por WhatsApp, pero no sé si le voy a dar para mirarlo.
+Bien, entonces, ¿qué es lo que me tienes a pedir?
+Primero, a partir de ahora cuando abrís el Calendly, lo cerrás y dentro de declaraciones
+no te tendría que enviar de nuevo para accounting.
+Punto número uno, puse un botón en naranja que es el botón de verde en accounting.
+Luego, cuando haces acciones por bache, en transacciones, seleccionás varias transacciones,
+le das clic a una acción, a chequearlas, y ahora cuando le volvés a dar clic,
+ya no se te queda con el estado anterior, se te tendría que quedar como para chequear.
+¿Te acordás que lo habíamos charlado de eso?
+Es el switch.
+Cuando vos estás en transacciones, seleccionás de abache.
+La idea es que vos puedas verificarlo.
+Verificar de abache, no que puedas desverificar.
+¿Qué más?
+Agregué todas las traducciones en portugués.
+Ahora, con lo que hiciste vos, más los ajustes que hice, más todo lo que hicimos ayer de noche,
+vos deberías poder cambiar a portugués y te debería poner todo en portugués.
+Entonces, es una pasadita rápida porque esté todo en portugués.
+Lo mismo para el backoffice.
+El backoffice pasó a estar en portugués.
+Entonces,
+y tiene el selector para cambiar de idioma.
+Entonces, también,
+esto no lo necesitas correr local.
+Cuando mergemos,
+necesito que lo pruebes.
+Lo que te estoy diciendo ahora es,
+primero, las cosas que hice,
+y segundo, cuando mergemos, lo que necesito que pruebe.
+Cuando vas a hacer una declaración,
+necesito que crees una compañía virgen.
+Cuando haces una declaración,
+qué cara de drogado que tenés.
+Cuando haces una declaración,
+necesito,
+la fecha de creación de la compañía,
+el field del paso 2,
+no se rellene más.
+Tanto si tenés una LLC con un socio o con varios socios.
+¿Te acordás que esos eran dos flujos aparte de la declaración?
+Cuando vos tenías una LLC de la declaración con un socio o con varios socios,
+te preguntaban el paso 2 o 6 preguntas o 8.
+Si vos tenés una LLC de un solo socio,
+te pregunta de qué país solés trabajar.
+Si tenés una LLC,
+si tenés una LLC de más socios,
+ya no te pregunta eso.
+¿Sí?
+Luego,
+entonces,
+lo que vos deberías probar es que cuando entras al paso 2,
+la fecha de creación de la compañía no te la marca,
+vos deberías ponerle una fecha de creación,
+avanzar para el paso 3,
+después retroceder con la flechita que está en la esquina superior izquierda,
+y deberías ver que la fecha es la misma.
+¿Está?
+O sea, que la que vos seteaste en el paso anterior,
+se mantiene.
+Algo interesante,
+es que vos deberías pasar al paso 3,
+es recargar,
+¿sí?
+O sea, recargar el sitio.
+Te debería que recargar en el paso 3 para esa compañía.
+Cuando vos lo volvés para atrás,
+tenés que chequear que la fecha que vos usiste siga siendo la misma.
+¿Se entiende?
+O sea, son dos flujos.
+Flujo número 1.
+Voy para...
+Seteo una fecha, voy para adelante, para atrás,
+la fecha está.
+¿Está?
+Flujo número 2.
+Seteo una fecha, voy para adelante,
+recargo,
+porque nosotros guardamos el progreso,
+recargo,
+y ahí tiene, cuando vamos para atrás,
+luego recargar,
+nos tiene que aparecer la fecha que pusimos antes.
+Porque esa fecha ya no es que la está cargando,
+la está trayendo del backend.
+Porque vos guardaste el progreso.
+¿Sí?
+Otra cosa,
+bueno, tenés que chequear el flujo de crear compañía,
+y eso, chequear que en portuguesa ya quedó bien,
+más o menos,
+o sea, que se esté cargando todo.
+Cuando vas a crear una company draft,
+que se esté cargando todo,
+que esté apareciendo todo,
+rulay, rulay.
+¿Está?
+Y último punto.
+Cuando vos vas a hacer una declaración,
+y te tiene que saltar siempre un pop-up,
+a no ser,
+si vos creás la compañía por primera vez,
+no te tiene que saltar el pop-up de declaraciones
+que ahora te está volviendo loco.
+¿Está?
+¿Sí?
+Ese pop-up te salta,
+y si hacés clic en cancelar o la X,
+te tendría que cancelar.
+Si hacés clic en ir a declaración,
+te tiene que llevar a declaración.
+Lo importante de ese pop-up,
+es que lo que vos tenés que chequear en sí,
+es que si recargas el sitio,
+siempre tiene que aparecer.
+Pero cuando hacés el flujo de declaración,
+comprar una compañía por primera vez,
+no te tendría que aparecer.
+¿Está?
+O sea, te sale el pop-up del tipo con la mano así,
+y no te aparece esto.
+Solo para ese caso.
+Si vos recargas, ya te aparece.
+¿Está?
+¿Qué más, qué más, qué más, qué más,
+que me estoy olvidando?
+Ah, importantísimo.
+Importantísimo.
+Dos casos.
+Necesito que pruebes.
+Cuando vos vas a hacer la declaración,
+vos podés hacer la declaración de otro guacho.
+¿Está?
+Otra guacha, otro guacho.
+¿Sí?
+Entonces,
+yo lo que agregué ahora
+es que vos creé una especie de
+Additional Service Special,
+que es como un servicio adicional
+que vos podés comprar 500 veces.
+¿Sí?
+¿Está?
+Te va a llegar mail y todo.
+Lo que necesito que pruebes es,
+vos como usuario,
+o sea, como usuario dueño de la compañía,
+que puedas comprar ese servicio
+y te llegue el mail
+y te aparezca ese servicio en detalle de la compañía.
+¿Está?
+¿Cómo lo compras?
+Cuando arrancás el paso,
+aparece un botón que dice
+comprar en el,
+en el flujo de,
+en donde están los socios.
+En la declaración,
+voy de nuevo,
+la declaración,
+viste que vos rellenás datos de los socios.
+¿Está?
+A la derecha hay un botón que dice
+comprar que antes no andaba,
+ahora anda.
+Te lleva al flujo de pago
+y haces un pago único de 200 dólares.
+¿Está?
+Lo que hay que chequear,
+buen provecho,
+es, este,
+que tanto vos podés comprarte,
+vos,
+como que podés comprar
+a un,
+siendo vos un team,
+a lo que voy es,
+yo puedo comprar,
+puedo ir a una compañía mía,
+hacer la declaración
+y cuando voy a hacer la declaración,
+comprar el ITIN.
+¿Está?
+¿Sí?
+Pero también,
+si yo me cediste,
+me cediste el control de la compañía,
+debería poder ir a declaraciones,
+comprar el ITIN también.
+Y cuando voy a los detalles de la compañía,
+tiene que aparecer ITIN.
+¿Se entendió?
+La idea es que yo pueda comprar ITIN,
+tanto de la compañía,
+tanto mío,
+como si soy un team,
+si soy un team
+y estoy administrando una compañía,
+también le puedo comprar el ITIN.
+¿Dónde veo el ITIN?
+En los detalles de la compañía.
+Porque el ITIN es un servicio especial
+de un solo pago.
+Entonces, lo veo en los detalles de la compañía.
+¿Está?
+Otra cosa que deberías chequear,
+que eso no tiene control,
+es que vos volvés a declaraciones
+y podrías volver a comprar otro ITIN
+y te tendría que llegar un correo
+que compraste otro ITIN.
+¿Está?
+O sea, no es como los servicios adicionales
+que vos lo comprás una vez
+y ya te aparece
+y no te aparece la opción de comprar más.
+No.
+Vos compras un ITIN
+y después, cuando vayas a declaración,
+te va a salir el botón de comprar
+y vos podés comprar de nuevo.
+¿Está?
+Porque en realidad
+no lo asociamos a un socio
+porque la declaración no está completada.
+Entonces, es como que...
+Es como una pasarela
+de vos comprar los ITIN que quieras.
+¿Sí?
+Es un poco la diferencia.
+En los detalles de la compañía
+te va a aparecer una sola vez
+que vos compraste el ITIN.
+Pero vos lo que deberías probar
+es que si compras tres veces el ITIN
+para la misma compañía,
+¿sí?
+Tendrían que llegar tres correos.
+¿Sí?
+Mi recomendación es que en esa prueba
+te tomes al menos un plazo de un minuto o dos
+porque hay veces que Gmail
+detecta que te llega casi el mismo correo
+y no te lo toma.
+¿Está?
+Porque piensa que es un correo duplicado.
+Entonces, ahora lo importante es
+que chequee todo el código.
+Una vez que usted me dé la proof,
+yo voy a mergear.
+Más allá que no esté Martínez.
+Una vez que usted me dé la proof,
+yo voy a mergear.
+O sea, voy a estar en reunión
+porque entro ahora en 45,
+pero voy a mergear.
+¿Sí?
+Vamos.
+Vamos a mergear.
+Y una vez que mergeemos,
+¿está?
+Tenés que arrancar a probar esto.
+Esa es la última tarea.
+Una vez que vos me digas,
+está todo rule-like,
+vamos a pasar a stage,
+a hacer unos pequeños chequeos de esto en stage
+y nos vamos para el producto.
+¿Sí?
+Es importante que también,
+como complemento,
+¿viste?
+Como te dije que crearas una compañía desde cero
+para fijarte que está todo bien,
+también completes una declaración,
+¿está?
+Y te fijes que la declaración se completa.
+¿Está?
+Y que se bloquearon sus transacciones.
+¿Sí?
+Es una genérica.
+O sea, como punto,
+una vez que validás todo esto,
+lo que hacés es,
+completás una declaración,
+después volvés a cargar,
+te dice que no,
+que la declaración ya la hiciste
+y vas a transacciones
+y todas las transacciones de 2024
+tendrían que aparecer bloqueadas.
+¿Sí?
+Está.
+Bien.
+¿Cómo?
+Todo esto está en dos PRs
+que están enviadas
+en el channel de Good Request.
+Una vez que usted las analice,
+no las tiene que correr.
+Solo analice el código
+a ver si encuentra algún defecto,
+algo que yo la haya,
+achoteado o lo que sea.
+Martina las va a revisar después.
+Pero, ¿qué pasa?
+Yo no puedo esperar a Martina
+para margear.
+¿Sí?
+Entonces,
+si están fallando los test,
+necesito que los arregles.
+¿Está?
+Que te tome cinco de los arregles.
+¿Está?
+Subís un commit derecho.
+O sea, te bajás la rama,
+arreglás los test
+y subís un commit.
+¿Sí?
+Una vez que arreglás eso,
+te fijás si yo la achoteé
+en algo de código,
+si hay alguna cosa
+a la que nosotros te corregimos.
+O sea,
+una code review como siempre,
+como harías normalmente.
+Una vez que vos me des ese approve,
+yo voy a margear.
+¿Qué es lo que va a pasar?
+Martina en paralelo a esa PR
+la va a chequear.
+¿Está?
+Martina en paralelo a esa PR
+la va a chequear
+y después yo capaz que subo algún cambio
+antes de salir a este.
+Pero si ella no me dice nada,
+no subo nada.
+¿Está?
+Entonces,
+el flujo de ustedes es el siguiente.
+Primero,
+corrijo los test
+y me fijo que pasen
+los dos checks de las PR.
+¿Está?
+Punto número uno.
+Punto número dos.
+Análisis estático
+de las PR,
+de ambas.
+¿Está?
+Análisis estático.
+A ver, Santiago,
+¿tienes algún choteo?
+¿Te boteaste algo?
+¿Dejaste algo comentado?
+Lo que sea.
+Cualquier duda,
+me lo decís
+y yo voy a estar atento.
+Punto número tres.
+Me dejás el approve,
+me arrobas en ambas el approve
+y ya margeamos.
+¿Está?
+Punto,
+o sea,
+y punto número cuatro,
+una vez que esté margeado,
+¿está?
+Es hacer todas estas pruebas
+que tengo diciendo.
+¿Sí?
+Esto,
+si vos,
+si esto lo hacemos
+antes de que vos te vayas,
+yo no tengo problema.
+Puede ser lo que quieras.
+¿Vale?
+Organízalo.
+Lo que sí le pido es,
+esto tiene que quedar hoy.
+Tenemos que salir a approve
+con esto hoy.
+¿Está?
+Si sale hoy
+a las cinco de la tarde,
+si sale hoy
+a las tres de la tarde,
+para mí,
+cuanto antes
+salga esto a approve,
+antes termina
+como quien dice su día.
+Así que está.
+Eso,
+coordínelo.
+Haga lo que quiera
+en el horario de descanso,
+lo que sea.
+¿Sí?
+Vamos arriba,
+Kieto,
+un abrazo.
+Cualquier cosa me escribís,
+estoy por Slack,
+no creo poder juntarme de nuevo.
+Dale.
+Vamos arriba
+y saluda a la patrona.
+Feliz cumple.
+Déjalo.
+Otro ron.

@@ -1,0 +1,68 @@
+Hola. Disculpe que le cortamos la comilona. Escúcheme. Necesitamos agarrar al menos cinco usuarios de RAIL y cinco usuarios de WebMoney, ¿sí? ¿Está? De producción y exportar, o sea, exportar sus transactions, sus OTC transactions, ¿sí? Voy de nuevo, por las dudas.
+La idea es lo siguiente. Son cinco usuarios de RAIL, ¿está? ¿Sí? Esos cinco usuarios de RAIL, lo que vos vas a hacer es, solo vas a agarrar de esos usuarios las transacciones que sean del provider de RAIL y las vas a generar en un CBC.
+Entonces, vas a agarrar el usuario uno, ¿está? Las transacciones de RAIL, las vas a hacer un CBC. Usuario dos, transacciones de RAIL, así con cinco. Lo mismo por WebMoney.
+Puede ser que un usuario tenga transacciones de RAIL y de WebMoney, pero van en dos CBCs. Suponiendo que vos, Enrique, trabajaste con transacciones de RAIL y trabajaste con transacciones de WebMoney, entonces vos me decís, va, este usuario está súper cargado de transacciones, es súper interesante, súper enriquecedor, pues la idea es no agarrar a un usuario con diez transacciones, sino cuantas más mejor, ¿sí? Y cuanto más variados los tipos de transacciones, entonces ahí necesito que vos agarres esos y generes, serían cinco y cinco.
+¿Cuál es la idea de esto, Quiqueto? La idea es que esos CBC, vos se lo vas a decirle a Martina, Martina te va a indicar a qué usuario, ella lo que va a hacer ahora es simular un usuario, te va a pedir que simules un usuario, ¿sí? Para la parte de banking, eso lo ven, y la idea es que esas transacciones vos las agarrás y las insertás contra ese usuario.
+¿Qué quiere decir? Que vas a tener que ponerle...
+Vamos, ¿no? El usuario que te indica Martina tiene un Company ID y un Crypto Global KYB, entonces vos te vas a decir, bueno, insertame un usuario con transacciones de RAID o de WebMoney. Vas a agarrar todas esas transacciones, las vas a insertar contra ese usuario, y la manera de insertarlo es en Develop, suplantando el Crypto Global KYB y el Company ID por el de ese usuario, ¿sí?
+¿Ok?
+Entonces, para que vos vayas trabajando, la idea es que ahora después del almuerzo, te sientes a armar esos CBCBG, así ya te quedan, ¿sí?
+¿Ok?
+Y en el momento que Martina termine de hacer las indicaciones que tiene con Sonopan, ¿sá?
+La idea es que ahí Marti y vos de repente intentemos, yo qué sé, podés buscar algún usuario en Dev, te creás alguna compañía en Dev, ¿sá?
+Le ponés el Crypto Global KYB, apruebe.
+Y lo que hacemos es, les insertás transacciones, ¿sí?
+¿Te parece bien, Marti?
+Lo ven.
+La idea de eso, Martu, es que vos con eso vas a poder generar extractos bancarios, ¿sí?
+Simulando esas transacciones que va a cargar Scronceo, ¿sá?
+Capaz que esto pueden verlo con Jonathan.
+Lo importante del trabajo de Enrique es que Enrique va a armar todos los CCB con transacciones reales,
+y lo mismo lo puede hacer Jonathan, o sea, le podés delegar esa zona,
+le podés decir, che, mirá, decime un usuario, porque ni tenemos que probarlo desde el site, Marti.
+Podemos directamente probarlo con TryWorker.
+O sea, lo que hace es generar un usuario nuevo, que le inyecta todas esas transacciones,
+y después Jonathan lo que hace es generar el evento para generar los extractos bancarios, ¿sí?
+Sí, pero yo quería tenerlo para probarlo desde el site para ver que funcione.
+Sí.
+El site, lo único que debería hacer es...
+Lo único que debería hacer es enviar un evento.
+Entonces, no me preocupa tanto.
+Podemos sacarlo en lunes.
+Está también el tema de las notificaciones, de tipo el toast que te aparece,
+tipo si te ponés y ya está descargando o no.
+Está, hagamos una cosa.
+El site no me preocupa tanto porque podemos sacarlo en tres días de semana,
+o mismo puede salir el lunes a última hora.
+Lo que a mí me interesa es que los cálculos que esté haciendo Jonathan estén bien.
+Eso es la parte más importante, Marti.
+Los cálculos que esté haciendo Jonathan estén bien.
+Toda esa parte de matemática esté haciendo bien.
+Los balances estén saliendo bien.
+O sea, esa es la parte más delicada.
+Que los balances estén saliendo bien, que las transacciones estén saliendo bien,
+que esté haciendo bien las cuentas.
+Ahí es importante que se basen también en...
+Que puedan apalancarse con Kikres para decirle, bueno, mirá,
+Jonathan agarre y de transacciones reales genere todo ese destato
+y Kikres se siente a fijarse, puedes usar el destato también,
+a fijarse que los extractos están bien.
+¿Sí?
+Utilicemos a todo el equipo por esto porque es muy delicado.
+No me calienta salir el lunes.
+Lo que me calienta es que esté bien tosteado.
+¿Sí?
+Entonces, ahí Kikres, si vos podés ir armándote esos SVG para poder insertarlo como que ponlo pronto,
+es más, ya te digo, vos lo que vas a tener que hacer es,
+probablemente lo que Jonathan te pase es un Company ID o un Crypto Global KYB.
+Entonces vas a agarrar todas esas otras transacciones, vas a modificarles esos dos datos,
+pim, va a encontrar un usuario.
+Entonces, si vos, una vez que armes los SVG, capaz que podés armarte un script,
+que lo que hace el develop es, selecciona un SSD y se lo carga a un Company ID
+y a un Crypto Global KYB reasignado.
+¿Ya?
+Bien.
+Liberado Kikres.
+Hasta luego.
+Hasta luego.
+Chao.

@@ -1,0 +1,251 @@
+poco es probablemente ahí vayamos necesitando ya tengamos que configurar la vpn tengamos que
+configurar el proyecto ahí no tiene sentido correr lo local con la vpn así que lo único que vamos a
+configurar en sí es la vpn y por si quieres que tampoco es más que nada por si quieres cambiar
+algo a nivel de base de datos para lo que las pruebas regresión pero va a ser cambiar cosas a
+nivel de base de datos y capaz que para estas pruebas de regresión capaz que muchas veces te
+puedes manejar con postman sí ya que también además de todo esto podemos ir creando una
+conexión de postman si a vos te sirve no sinceramente no veo caso que se me ocurra
+que tenga sentido ahora rápido postman pero está estaría bueno también
+ya de paso ir actualizando los pero está así rápido no veo caso que tenga sentido capaz que
+lo lo vamos a actualizar bien y eso va a ser tu sprint así que está ahí si querés pone una
+de creo que estaban en orden poner las 150 si querés in progress como para marcar el inicio
+del sprint siempre los miércoles esto es rutina hasta diciembre los miércoles agarran la se fijan
+una tarea y la pone in progress la última después cambian pero siempre los miércoles cuando arranca
+el día
+del miércoles agarra una tarea y pone in progress no esperen a la daily a poner algo in progress
+por cuanto antes arranque con algo mejor bien Kike por ese lado Martu en tu caso toda la parte
+del flujo de pago y todo está todo en develop sí está todo el endpoint y eso así que está todo así
+que debería en tu caso es solucionar los conflictos que tengas de develop ahí si querés hacemos una
+call y lo lo solucionamos está tenemos que matar la Perre de Kike yo yo la miré medio para arriba
+pero si podés no lo aplacemos y lo más importante es la salida PROD así que cuando salgamos a abordó
+y tengamos todo en PROD ahí reciente pido que vaya a saberla la perra de Kike estaba prioricemos la
+salida product que si o si tiene que quedar para hoy para que mañana podemos hacerle la demo
+que se la voy a hacer, voy a ver si se la hago mañana o hoy de noche, dependiendo de cómo termine,
+sería ideal hacerlo hoy para que mañana no tengamos que hacer nada, pero bueno,
+eso lo vamos viendo. Con respecto a tu sprint Martu, lo mismo, parte de investigación yo fui
+poniendo comentarios en algunas, no me acuerdo, bueno en esta por ejemplo puse comentarios,
+hay pequeños comentarios sueltos en algunas, ya me fui tomando el laburo de esto, esta ya
+sabes cómo funciona, en tu caso tenés 50 story point, pero hay una tarea que debería terminarse
+que está por fuera del sprint, que es un bolazo, pero quiero que hagas el mismo análisis,
+lo biches y acá vas a, la idea es que acá vamos a trabajar con migraciones y una cantidad de cosas,
+y hay que hacer, y necesito que también vayas agarrando más ownership por ese lado Martu,
+porque así yo puedo ir desprendiéndome de eso también, bien, bueno, creo que en realidad no
+hay mucho para decir del inicio del sprint, yo tengo en claro sus actividades, creo que era
+más que nada esto, no sé si alguno quería decir algo, Kike, Martu, querían comentar algo?
+Sí. No. Sí Kike. Yo no les quiero robar tiempo la idea de esta, creo que
+está Illis medio rápido ya arrancar, nada más si vos me podías contar Santiago, alguna pista más,
+más o menos, vos me decías ahora hace un rato, son test unitarios, yo en estos últimos, en realidad
+en todos los test unitarios que hice, yo tenía como un archivo que ustedes habían creado y yo
+lo refactorizaba, le añadía pruebas, en este caso estamos hablando de crear como pruebas desde cero,
+vamos a decir, en la ciencia. Sí, esto lo hablamos y después
+quedó colgado, esto lo que habíamos hablado, te acordás, era que si vos vas al, esto es solo en
+el sitio, pero si vos vas al, dame un segundito que tengo que abrir el sitio, Martu si querés vos escuchar de
+fondo, si no. Sí, por eso. Este, acá si vos vas al sitio, lo que tenemos es, nosotros si vamos a los
+tests, tenemos una carpetita de use, que es por cada recurso, sí,
+entonces, y yo voy a, voy a lo que son las rutas, dame un segundito del encuentro, vamos, vamos a cerrar
+todo, porque así lo vemos, ser, servicios, rutas, b1, index, acá tenemos, mirá todo lo que se fueron
+agregando, teníamos solo lo de use, tenemos companies y tenemos payment, esto va a ser, esta es la parte
+más sensible y esto, si ya que estás escuchando Martu te lo cuento, esta va a ser la parte más sensible,
+la parte de crear compañía, la parte de pagos, van a ser la parte más sensible, porque
+dependemos mucho de las integraciones que no manejamos, por eso la importancia de que Enrique
+este Spring arranque con test de regresión, por las dudas para ambos, vuelvo a repetir, test de
+regresión, está Martu vos ya lo sabés, pero la idea es que, cuando salgamos a prod, Enrique, después vamos a
+tener un ambiente de test, el flujo normal cuál sería, nosotros pasamos de dev a test, ahí Enrique
+en este caso se va a encargar de hacer toda una prueba de regresión, para fijarse que todo lo
+que estaba, está funcionando bien y después va a fijarse que, y después,
+ya está, una vez que se prueba que todo lo que estaba, está funcionando bien, lo que va a hacer es
+un testeo rápido, para medir de alguna manera, las nuevas funcionalidades que también están,
+pero primero hay que hacer la prueba de regresión para garantizar que lo que estaba no se corrompió,
+o sea, ya con eso estamos sumando cosas a producción y después obviamente que
+vamos a tener que hacer testeos para chequear, como se llama, que ahí probablemente nosotros
+ya no, cuando tengamos, cuando sacamos la B1 realmente nosotros ya el flujo va a ser distinto,
+el flujo va a cambiar un poco, porque iba a cambiar, porque en realidad hoy en día como lo vamos a hacer,
+es lo siguiente, este sprint lo desarrollamos y Enrique, cuando salimos a prod, hace las pruebas
+de regresión y se fija que lo que estaba sigue andando bien, bien y después y ya está, y ya
+estamos en prod y después lo que empieza a hacer es pruebas de regresión, Ese 50 por ciento, 5% de
+ciento de su sprint empieza a ser prueba de regresión de las nuevas funcionalidades ya
+crear pruebas de regresión de las nuevas funcionalidades sí pero ya está todo en
+pro de guille lo ve ya que está ahí es como que mientras que es como que corremos es un va a ser
+una carrera contra el tiempo está como este como llama este no me sale el conejo y la tortuga pero
+de alguna manera de ver de quién quién llega quién llega primero a darse cuenta de los bugs
+y enrique o guille eso van a ser los próximos sprint sea literal la primera semana va a ser
+quien se da cuenta primero en los vasos va a ser eso bien ese va a ser el flujo cuando nosotros
+terminemos y sacamos a producción se supone que tendríamos que tener pruebas de regresión para
+todo lo que ya tenemos hecho si entonces puede ser que allí y que va a ser vamos a ver qué
+tanto te demora crearlas porque ahí tendremos que ir progresando bien pero cuando salga
+como la b1 tendríamos que haber hecho pruebas de regresión para todo lo que tenemos una vez que
+hagamos eso el flujo va a cambiar en realidad nosotros no vamos a agregar funcionalidades
+en pro todos los días o cada cinco de sprint sino que vamos a subir todo nosotros vamos
+a ir trabajando en de velo como venimos haciendo pero vamos a pasar a lo que es un ambiente de test
+o stage en ese stage lo que se va a hacer es se va a probar todo lo que se va a hacer una prueba
+de regresión para fijarse no se rompió nada se va a probar las nuevas funcionalidades o sea
+y ahí vas a tener una semana del siguiente sprint donde la primera semana lo que haces es no sólo
+hiciste la prueba de regresión para detectar bugs sino que corriste con llama creaste te dedicaste
+la primera semana a crear una prueba de regresión para las nuevas funcionalidades y ahí cuando
+probablemente a mitad o sea termina el sprint esto lo vamos a documentar pero termina el sprint y
+pasa una semana más la idea que no debería demorar una semana tres días si hay cuando vemos
+este que tan estamos si podemos salir a prodo no y salimos a pro y sumamos funcionalidades al
+cliente final como que se va a agregar un pasito intermedio cuando estemos en producción pero por
+ahora es es eso así es terminar el sprint enrique hace pruebas de regresión va a empezar a generar
+los famosos bugs y vamos a ver quién los atacando porque son cosas que se van a ir sumando que vamos
+a ir teniendo que atacar y la idea es que enrique tenga todo es todo el sprint como para una vez que
+es una regreso que literal correr vos manualmente la progresión te voy a llevar un una hora hora y
+media la idea es que sea lo más rápido posible por eso en un en algún momento la idea es ir
+automatizando esas cosas ahí vos vas a ponerte a crear prueba regresión de lo que hiciste de nuevo
+de lo que hicimos nuevo yo que sé por ejemplo ahora yo voy a crear las suscripciones entonces
+cuando salimos a producción vos corres la regresión para que toda la parte de crear
+compañía login que ya estaba anda bien y después te pones a crear prueba de regresión donde ya
+creas esas pruebas vas a ir chequeando funcionalidad está eso por las pruebas de regresión con respecto
+a esto en particular este en point company draft tiene una cantidad de validación si nosotros hasta
+ahora si vamos a la parte de test teníamos por recurso acá ves users está habíamos metido a la
+parte de login logon refresh todo dentro de user y porque en realidad es el mismo controlador bien
+es como se crearía otra carpeta bien pero no vamos a tener una lo que nosotros habíamos discutido es
+que para hay casos muy complejos en donde no vamos a tener un solo archivo de test porque si vos mirás
+la user history sería imposible esperar a corregir una pr con todos esos test con todas esas cosas
+entonces lo que habíamos charlado a hacer era lo siguiente crear una carpeta de compañías y adentro
+de esa compañía es de esa carpeta crear una carpeta en particular para
+yo que sé create company draft sí ya es un endpoint en particular y ahí lo que vos vas haciendo es la
+idea es que vos crearás una rama en paralelo a lo que es de este develop sí y vos vas a ir generando
+archivos deberías tener un archivo por cada tarea bien por cada tarea archivo y lo vas marchando a
+esa rama obviamente que tenés que crear todo eso tú o sea todo nuevo es en base a lo que ya estaba
+o sea no debería ser
+o sea es más o menos siguiendo la guía de lo que ya estaba pero es crear todo nuevo ya no hay template
+acá pero claro o sea es todo 100% nuevo y podés tener dificultades o lo que sea al fin de que vos
+termines todas estas tareas vos deberías la última tarea cuando la terminás deberías enviar una pr
+para cerrar esa rama genérica esa rama genérica vos podés agarrar y poner la primera tarea ponerle 150
+rama genérica sí o crear 150 crear compañía y después crear transl Years 50 para cada 151
+o sea poder crear una 150 que es la inicial sí que lo que indica es esa rama genérica ahí le pones
+barra test crear company draft y después por cada una de estas lo que haces es creat o sea crear una en específico
+es más puedes volver a crear una 150 es más poder volver a crear 150 y Done tá in
+o sea crearse una en específico es más puede computer la tec bleu Gmail Walk through, use e taxes.com
+2019 y Wstein blog. writings.com resurre una de estas lo que hace es crear o sea creas un specifico asia crea las una específico es más poder volver a crear una 150
+lander y desde luego está una franquicia que ATC por debe volver a implementar una rama genérica es más puedes volver a crear una 150
+pero va a tener distinto nombre
+eso lo hice para no crear
+una épica, porque me parece un montón crear una épica
+por eso entonces
+nada de eso
+pero sí, en teoría
+viendo la cantidad de archivos
+1, 2, 3, 4, 5, 6, deberían ser
+6 archivos
+es importante
+que se valide toda esa lógica
+porque nos garantiza que las compañías se están creando bien
+entonces
+vos fíjate que cada vez
+que nosotros mandamos una PR o lo que sea
+va a haber que crear
+hay que asegurar eso
+ya te digo
+para que veas
+que en realidad hay una cantidad de cosas para hacer
+con Martut vemos lo que es fiction
+pero a nivel de pruebas
+ya vas a tener pruebas de regresión
+de la parte de pagos y todas esas cosas
+mucho laburo para hacer
+y después vamos a tener que empezar a hacer
+los test unitarios de la parte de pagos
+y un bichito nuevo
+que hay que investigarlo, que eso va a ser
+complicado, lo voy a aplazar un poco
+ahí probablemente
+juguemos con las pruebas de regresión
+para poder aplazarlo porque requiere una investigación
+pero va a venir el bichito nuevo
+que es el worker
+el worker son cron y tiene una cantidad de dificultades
+entonces por eso la importancia
+de tener las pruebas de regresión
+que prueba más lo que ve el usuario
+la interacción del usuario y después bueno
+con él, después hoy o mañana
+si hacer pruebas unitarias
+pero lo que voy a decir es que hay un montón de laburo a pasar
+o sea realmente hay
+y está bueno a nivel de Martut, Martut ve lo que son features
+y esas cosas también ve que hay una cantidad
+de cosas a pasar y literal cuando
+terminemos esto y saquemos la B1 que vamos a tener
+que corregir cosas, esto y lo otro
+este
+se vienen cosas nuevas
+hay una cantidad de cosas para hacer
+hay generación de documentos PDF
+yo ya le dije que cada estado tiene una API
+distinta entonces son comunicaciones distintas
+o sea y todo eso
+tiene que ser testeado, probado, validado
+van a empezar a surgir
+obviamente que el sitio va creciendo entonces
+empiezan a surgir bugs
+cambios que Guille empieza a decir cosas
+o sea hay mucho laburo a pasar
+realmente hay mucho laburo a pasar
+yo realmente creo muy difícil que terminemos en agosto o octubre
+del año que viene
+obviamente que la idea es que en febrero
+aumentemos el ritmo
+en cuanto a dedicación
+yo ya no puedo dedicarle más
+pero si la idea es que ustedes como hablamos con cada uno
+en el caso de Martut
+es mantener digamos
+la dedicación que le está haciendo actualmente
+pero sin el posgrado, eso ya es un montón
+y en el caso de Quique
+es pasar directamente a las 8 horas
+o sea o por lo menos
+asignar tareas pensando en que
+Quique está a 8 horas
+más allá de que el cambio
+se va a notar a nivel de las tareas que agarre
+o que va a bajar la puntuación de las tareas
+entonces está, pero lo que digo es
+hay un montón de cosas a pasar, realmente hay
+muchas cosas a pasar
+y obviamente que esto es algo que se está
+probando, que entra una cantidad
+de clientes por
+día al sitio
+fíjense que solo soretes
+que intentan registrar y cagarnos
+la vida, tenemos aproximadamente
+15, 20 personas
+seres humanos que entran al sitio
+es un montón y creamos
+muchas compañías, eso quiere decir que hay una cantidad
+que quedan por la mitad, que hacen pruebas, lo que sea
+entonces
+van a surgir millones de cosas, van a surgir
+actualizaciones
+o una cosa a nivel de diseño, por ejemplo
+vamos a tener que crear las landing
+vamos a tener que hacer strike connect
+o sea, strike connect va a ser lo más difícil
+pero después vamos a tener que crear las landing
+que Guille quiere hacer landings por país
+entonces eso requiere no solo hacerlas sino actualizarlas
+entonces hay muchas cosas a pasar
+realmente va a haber mucho tiempo
+quiero dejárselo en claro porque
+es más, cada vez que hablo con Guille es como que me surge con algo nuevo y
+y está todo muy line up pero hay una planificación
+pero nada, sepan que realmente está salado esto, se viene con todo así que a metábulos
+¿bien?
+consultas, dudas, preguntas, milanesas de pollo, ¿algo?
+milanesas de pollo
+bien
+Martu, ¿andás resolviendo conflictos?
+estoy al tanto y Guille, Guille, Guille, Guille de Mariano
+y que cualquier cosa me pegase el grito
+vas poniendo en el canal preguntas, esas cosas
+y si no, bueno, más o menos ya sabes cómo arrancar
+así que está
+eso
+bueno, vamos arriba entonces
+nos vemos
+hasta luego
+hasta luego
+chau

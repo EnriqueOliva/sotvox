@@ -1,0 +1,52 @@
+Nosotros tenemos WhatsApp Calendar Links,
+Dashback Knowledge, System Pro y Chat Config.
+¿Sí? O sea, tenemos esas cosas.
+Entonces, nosotros de repente podríamos tener
+WhatsApp Chat Config y movemos todo esto
+para el WhatsApp Chat Config.
+¿Sí? O sea, literal, lo que tenga Matías
+hoy en día en producción,
+literal, lo que tenga Matías en producción,
+lo copias y lo pegas.
+¿Está? Para la migración.
+¿Sí?
+Cosa que ya quede en el site.
+Y después lo que haces es generás
+uno que sea tipo AI Coso Config.
+Y ahí tenés el Chat Config para AI
+y la Prompt para AI.
+¿Se entiende?
+Entonces, es como que empezamos en configuración
+a tener distintas configuraciones.
+Todo lo que está hoy en día es de WhatsApp
+y está suelto.
+Entonces, englobémoslo en WhatsApp.
+Todo lo que está...
+Todo lo que sea para el tuyo, al tuyo.
+Entonces, hoy o mañana nosotros queremos cambiar esto.
+Tenemos como distintas properties.
+Una property de WhatsApp que engloba
+todo lo que tiene Matías hoy en día en producción.
+¿Sí? Que sería copiar y pegar eso.
+¿Está?
+Y otra property genérica que engloba
+todo lo que usamos para el modelo de AI predictivo.
+Entonces, si hoy o mañana, por ejemplo,
+nosotros queremos utilizar todo esto,
+todo este Chat Config, todas estas cosas,
+para, por ejemplo, las transacciones.
+¿Sí? Cuando nosotros no podemos categorizar
+una transacción, ¿qué es lo que hacemos?
+Perfecto. Le decimos al modelo de AI
+con una Prompt.
+Entonces, generamos otra property en configuración
+que diga Transaction Analyzer o Predictor
+o lo que sea.
+¿Está? Entonces, ahí él va a tener su Chat Config,
+su Prompt, su Null Base.
+¿Está? ¿Entendés?
+Y eso está bueno.
+¿Está? Porque cada cosa que nosotros necesitemos
+vamos a tener como una predicción ahí
+para poder hacer.
+¿Está?

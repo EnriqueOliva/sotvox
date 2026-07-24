@@ -1,0 +1,203 @@
+La siguiente es una guía de cómo trabajar con testeos en tareas que involucren correos electrónicos de la plataforma, particularmente cómo acercarse lo más posible a un flujo end-to-end, porque el camino más fácil para realizar pruebas en estos casos es, lógicamente, generar un ejemplo local, un renderizado local de cómo se ve el template que nosotros estamos trabajando,
+pero el problema que tiene eso es que los servicios más usados como Gmail y Outlook tienen muchas particularidades y se presentan problemas que son imposibles de predecir simplemente con un renderizado local, con una prueba local.
+La única manera es efectivamente enviar un correo a Gmail o Outlook y visualizar ese correo en Gmail o Outlook.
+Otra cosa a tener en cuenta es que por más bien que se vea un correo en Outlook,
+en Gmail puede presentar errores visuales por ciertos requisitos o restricciones de Gmail y viceversa.
+Entonces hay que fijarse en ambos lados, en Gmail y en Outlook y en otras plataformas que también sean populares.
+¿Cómo podemos hacer este testeo?
+Bueno, obviamente el trabajo se centra en el worker, es el worker quien envía correos electrónicos.
+En la inmensa mayoría de los casos, el worker es el que envía correos electrónicos.
+En la inmensa mayoría de los casos, este envío se ejecuta mediante un mensaje SNS con un evento que llega desde el site, por lo general.
+Quizás a veces en algún caso muy particular lo puede enviar el back office, pero por lo general el site le envía un mensaje SNS con un evento al worker y el worker ejecuta la lógica de envío de determinado correo a determinados usuarios.
+Hay un conjunto muy pequeño de correos.
+Hay correos electrónicos que se ejecutan no a partir de un mensaje SNS, sino a partir de lo que se llaman cronjobs, que son básicamente acciones preprogramadas con determinada frecuencia.
+Como lo es, por ejemplo, el mensaje del correo de año nuevo, que es un correo ya programado para enviarse a todos los usuarios a fin de año, por ejemplo.
+Pero lo que nos interesa principalmente es los correos que se envían.
+A partir de mensajes SNS, que son la inmensa mayoría de los que tenemos en la plataforma.
+Nosotros no necesitamos al site en realidad.
+Podemos reemplazar la función del site con una herramienta como, por ejemplo, Postman.
+Con Postman también podemos realizar el envío de este mensaje SNS con el evento para que el worker ejecute la lógica.
+Es mucho más fácil de esta manera.
+Para eso vamos a necesitar tener levantado el worker localmente.
+Voy a ver.
+Vamos a tener que levantar el worker localmente, con el prerequisito de tener la VPN prendida.
+En este caso estamos trabajando en Develop, así que tenemos la VPN de Develop.
+Y tener actualizadas las credenciales de AWS, que lo podemos hacer corriendo este script.
+Pero antes de levantar el worker, hay que considerar algo muy importante.
+Es que en todos los casos, el worker renderiza los mails.
+En base a templates HTML, archivos HTML, que se encuentran subidos en AWS en S3.
+Pero ¿qué pasa?
+Si nosotros estamos trabajando localmente, estamos haciendo algún refactor de algún correo ya existente, directamente estamos implementando un correo nuevo,
+obviamente ese correo nuevo o esos cambios no van a estar en S3.
+Entonces, lo que nosotros enviemos no va a ser los cambios nuevos o el mail nuevo.
+Entonces, lo que nosotros enviemos no va a ser los cambios nuevos o el mail nuevo.
+Sino que vamos a estar usando lo que está en S3.
+Para eso necesitamos asegurarnos de que la lógica lea efectivamente nuestros cambios o nuestro archivo nuevo.
+Y para eso, lo que tenemos que hacer es irnos a SES Repository.
+Si nos vamos a SES Repository, en la línea 127, actualmente 127, 128.
+Ya tenemos comentada una línea.
+Que básicamente lo que le dice a la lógica es que lea los templates HTML, los archivos HTML localmente, en vez de buscarlos en S3.
+Esto requiere dos dependencias que ya están acá también comentadas normalmente.
+Estos son cambios temporales que una vez terminada la prueba se pueden revertir.
+Lo que va a suceder ahora con estos cambios es que la lógica va a utilizar los templates locales que están acá.
+En templates.
+En templates.
+En vez de utilizarlos.
+Utilizar los que están en S3.
+Una vez que tenemos esto, podemos levantar el worker.
+Y como mencionaba, podemos utilizar una herramienta como Postman para enviar el evento, el mensaje.
+En este caso, lo que estoy mostrando es un caso muy sencillo.
+El caso de...
+Este es el evento para la recuperación de contraseña.
+Básicamente un usuario solicita la recuperación de su contraseña.
+Lo que va a hacer es que el usuario solicita la recuperación de su contraseña.
+Lo que va a hacer es que el usuario solicita la recuperación de su contraseña.
+Lo que necesita saber la lógica, la data que necesitamos es simplemente el correo del usuario en cuestión.
+Pero esto cambia evidentemente para cada caso, para cada evento, la data que se necesita es diferente.
+Para el caso de, por ejemplo, una persona que es añadida como teammate por otra,
+la data necesaria, por ejemplo, va a ser...
+Bueno, el correo electrónico de la persona que está siendo agregada como teammate
+y el correo electrónico de la persona que está agregada como teammate.
+agregando a esas otras personas como
+teammates, por ejemplo. Es decir, acá
+siempre se van a requerir cosas
+distintas. Este caso, bueno, es sencillo
+y solamente requiere un
+correo electrónico. Es importante
+mencionar que en este
+caso, el correo no
+puede ser cualquier correo, sino que tiene que ser
+el correo electrónico de un usuario
+de Dashbank, ¿sí? En este caso
+de Develop, porque nosotros estamos trabajando
+en Develop. Otra herramienta
+que podemos usar justamente para
+conseguir un usuario que esté
+en Develop es
+pgAdmin4. Nos podemos ir a la tabla
+de Users, de Usuarios, ¿sí?
+De nuevo, estamos en Develop,
+nos podemos ir a Databases,
+nos vamos a Schemas,
+a Tables, ¿sí?
+A la tabla Users,
+esperamos un poco porque demora,
+¿sí? Pero acá, en la
+columna Email,
+vamos a tener el email
+de los usuarios, ¿sí?
+De nuevo, como
+cada caso, cada evento, cada correo
+requiere
+data diferente, acá
+con pgAdmin, vamos a poder buscar
+la data que necesitemos. En este caso
+es muy sencilla, solo podemos, solo
+necesitamos un correo. Pero
+si necesitáramos otra data,
+el ID de una transacción,
+por ejemplo, una
+cuenta de banking,
+bueno, esta es la forma
+de hacerlo.
+Yo ya, en realidad, ya tengo
+separado
+un correo para la prueba,
+¿sí? Tengo este usuario,
+lo que voy a hacer es,
+en Postman,
+voy a mandar este correo, le voy a
+mandar con Postman este mensaje
+al Worker, ¿sí?
+Y el Worker va a ejecutar la lógica de
+envío de correo, y como vemos acá,
+se va a enviar el correo efectivamente
+a Outlook,
+que nos va a aparecer acá.
+Una vez que nos llega el correo,
+tenemos varios chequeos para hacer.
+En primer lugar,
+bueno, los correos se envían
+en distintos idiomas, en inglés.com,
+en portugués y español.
+El idioma depende del idioma del usuario.
+Si nosotros nos vamos acá,
+a la tabla Users, el usuario tiene
+una columna que se llama Language,
+¿sí? Que si nosotros
+la cambiamos, por ejemplo,
+a español,
+y volvemos a realizar
+la prueba, a mandar el mensaje,
+el Worker va a enviar
+el correo en español.
+¿Sí? Eso es lo primero,
+chequear el idioma.
+Lo otro que tenemos para chequear es, por ejemplo,
+las dimensiones,
+la vista mobile.
+Es importante el dimensionado, que se vea bien,
+¿sí? Que el correo se vea bien
+en todas las dimensiones,
+que se vea bien en mobile.
+Nosotros podemos también, si pudiéramos,
+chequear desde el celular,
+agarrar el celular y,
+por las dudas, mirar desde el celular también.
+Eso es importante, ¿sí?
+Y otro elemento importante
+es la nueva opción que están
+ofreciendo los servicios como
+Gmail o Outlook, que es el tema
+del modo oscuro o modo claro.
+¿Por qué? Porque hay iconos
+y hay imágenes que a veces
+son muy claras o muy oscuras
+y se pueden confundir un poco con el fondo,
+entonces es importante verificar
+que no hay problemas
+en ese sentido.
+Si volvemos al modo oscuro,
+por ejemplo, Dashbank es bastante oscuro,
+entonces es importante verificar este tipo
+de detalles.
+Todo lo que acabo de decir aplica también a Gmail,
+evidentemente, si nosotros
+lógicamente usamos un
+correo de Gmail, también va a llegar
+a Gmail.
+Es muy importante tener
+en cuenta que, como se está viendo en pantalla,
+el remitente
+es el remitente oficial de Dashbank,
+es el que se utiliza en producción.
+Estos servicios como Gmail
+y Outlook tienen ciertas restricciones,
+sobre todo en relación
+a prevención de spam,
+y si nosotros enviamos muchos correos
+en poco tiempo, se pueden activar
+esas medidas de seguridad
+y podemos terminar
+perjudicando a lo que es este remitente,
+que es el que se utiliza en producción
+para clientes reales.
+Es muy importante realizar
+estas pruebas con responsabilidad,
+porque si nosotros abusamos
+de esta funcionalidad, vamos a terminar
+activando restricciones
+al remitente oficial que estamos
+utilizando en producción.
+Es importante tener en cuenta
+esto a la hora de modificar
+la lógica, de tener cuidado que
+nuestra lógica no termine enviando
+un correo a todos los usuarios,
+por ejemplo.
+Tenemos que tener cuidado con la cantidad
+de mails que estamos enviando,
+de no enviar muchos
+en poco tiempo.
+Ese sería básicamente el flujo
+de prueba para correos electrónicos.

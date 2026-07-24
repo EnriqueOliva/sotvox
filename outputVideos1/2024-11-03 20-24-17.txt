@@ -1,0 +1,593 @@
+En el sentido de la línea 80
+Para mí tendría que separarlo
+La línea 80 tendría que ser
+En la primera llamada devolvés tanto
+Y después crear otra línea en la segunda llamada tanto
+No hagas tantas llamadas anidadas
+Primero que nada es una mala práctica en cuanto a Clean Code
+Hacer acceder a más de dos
+Niveles de parámetros
+Y segundo, creo que vos estás seteando
+Cosas sobre el seteo
+Vos querés setear que para la primera llamada devuelva tanto
+Para la segunda otra
+Son dos cosas distintas
+No hacerla toda en una línea
+Esos son los principios de nivel de programación
+Que en un principio vos decís
+Pero esto funciona
+Pero tiene que ser entendible lo que yo estoy desarrollando
+Porque no se lo voy a pasar a HGPT
+La idea es que lo que yo estoy desarrollando
+Yo lo entiendo, yo lo abro del celular
+Miro tu código celular y entiendo la chota que estás haciendo
+Entonces para eso
+Tenemos que tener un orden
+Hablá en serio, fuera de chiste
+Tenemos que mantener un orden
+Lo mismo con la línea 84
+Es tipo
+Que yo ahí
+Ahí calculo que
+Para mí, sinceramente
+Lo que está sucediendo
+Es que al tipo le importa a tres carajos
+Lo que le estás pasando
+A ver, baja un poquito
+Primero no estás moqueando el método refresh
+¿Está?
+O sea, no hay un método refresh
+Que estés moqueando
+O sea, nunca se llama refresh
+Y capaz que vos querés que se llame
+Para mí el withArgs
+Hay que chequear bien qué está haciendo
+Porque está haciendo un equals con el crontime
+O
+Para mí puede ser que lo que está pasando
+Es que
+Le pase lo que le pase
+Va a llamar al primero
+Después otra cosa que
+Sí, como que hay que meterle un pienso más a esto
+Capaz que un poco de console.log
+Para mirar a ver qué chota se está haciendo
+Pero primero yo arrancaría por separarlo
+Y también ver qué es lo que querés probar
+Yo intentaría hacer un test
+En que meto un solo método
+Y llama a un método
+Una vez que hago eso
+Intento hacer un segundo test
+Donde llame a varios métodos
+¿Se entiende?
+Donde, por ejemplo
+Donde seteo dos métodos
+Pero llama al segundo
+No intentes abarcar
+Que se ejecute el delete
+Y el send y todos
+Hace uno por cada uno
+¿Está?
+De repente
+Y que haya un solo test
+Que se ejecute en dos
+Como trabajos, decís vos
+Exacto
+Como trabajos
+Claro, exacto
+Ok
+¿Entendés?
+Yo intentaría arrancar por un poquito
+Claro, yo intentaría arrancar por uno
+Una vez que logro
+Que uno se ejecuta
+Intento hacer ejecutar dos
+Y ahí creo que también
+Te va a servir a vos
+Porque vas a poder comparar
+¿Cuál es la diferencia
+Entre que se ejecute uno y otro
+Frente a los mods que estoy haciendo?
+¿Qué es lo que tengo que cambiar?
+Capaz que sea anidado
+Está bueno a nivel de código
+Pero hay algo que está haciendo
+Que vos querés aplicárselo
+Directo al
+TronJobSchedule
+No aplicarlo anidado
+Eso también
+Meterle un pienso
+Porque capaz que vos lo que querés
+No es cuando se llame con esto
+Es cuando se llame
+Como vos ya sabés
+Que se va a llamar en orden
+No es cuando se llame con esto
+Por eso podés predecirlo
+Vos podés decir
+Bueno, cuando llame la primera vez
+Con tanto
+Retorno tanto
+Cuando llame la segunda vez
+Retorno tanto
+Ni tenés que chequear
+Con qué se va a llamar
+Porque vos ya sabés
+El orden de ejecución
+Que van a tener
+Los métodos
+O podés predecir
+Después
+Los test de delete
+De fallos
+De la base de datos
+Creo que
+Ese tiene sentido
+En teoría no se debería
+Llamar nada
+Después agarro
+Actualizar un show
+Pero también
+Claro
+Acá también
+Pienso que hay que hacer
+Un refactor
+De cómo se hacen los métodos
+Cómo se están haciendo las llamadas
+Eso
+Después
+Pero puede tener sentido
+Este test
+O sea, tiene sentido este test
+Arrojá
+¿Cuál es la diferencia?
+Esto es removal
+Uno es actualizar
+Otro es
+Ah, bien, bien, bien
+No leí
+Arrojá
+Al siguiente
+Arrojá
+¿Sí?
+Preen, perfecto
+Está bien
+Bien
+Ajá
+Línea 202
+Cuando hay un error
+En la ejecución de un show
+Uno de estos surge un error
+En la ejecución de un show
+O sea, que se ejecuta un schedule
+Sí
+Tiene sentido
+Y falla y ya está
+O sea, no debería joder a nadie
+Debería haberse llamado
+Log de error
+Ahí estaría bueno
+Que no lo dejes tan genérico
+Que llame al log de error
+Con un parámetro en particular
+¿Sí?
+Ok
+Pero está bueno el caso
+Pero claro
+Si vos no cazás
+Un mensaje en particular
+¿Cómo sé que
+Que realmente está funcionando
+Como debería funcionar?
+O sea, que está llegando
+A ese flujo
+Y no está flotando
+Por otra cosa
+No creo que sea el caso
+Pero digo
+Tenemos que estar seguro
+¿Qué debería?
+Bueno, y este
+En el init
+Poder detener un show
+De nuevo
+Está perfecto
+Está bien
+Está bien la idea
+Refactorear un poco
+Las llamadas
+Y los moqueos
+Los puntos de resolvo
+Y todas esas cosas
+No tener
+Crunch show
+Punto first card
+Punto resolver
+Punto c
+Hacerlo concreto
+Pero me parece
+Que está bien el caso
+A ver, bajá
+Creo que
+También cuando refactorees
+El primero de arriba
+Y entiendas bien
+Cómo hacerlo
+Cómo moquear uno
+Cómo moquear
+Esto naturalmente
+Lo vas a refactorear
+O vas a decir
+Ah, entiendo lo que pasa
+Tengo que cambiar acá
+Y acá
+Y ya está
+Después
+En el init
+Y le cambiamos
+Le ponemos un schedule
+Perfecto
+Acá, obviamente
+Un show que está corriendo
+Que es lo que decíamos recién
+Cuando está en running through
+No lo puede detener
+Lo quiere detener
+Y no puede
+Stop show
+Delete
+Perfecto
+No se puede, obviamente
+No, y además esto hace
+Que no se corra dos veces
+Y no se corra dos veces
+A ver
+Debería
+Debería estar el caso
+A ver
+Mostrame
+Mostrame el método del worker
+Del worker
+O sea, quedate ahí
+Quedate ahí
+Y andá al cron show manager
+Cron show manager
+Está modificado
+Porque los hice públicos
+Hice esto público
+Bien
+Pero pará
+Baja
+¿Cuál quiere ver?
+Baja
+Más abajo
+El execute
+Ahí va ese
+Pará
+Quedate ahí
+¿Dónde es que ponemos
+A running through?
+A ver
+A ver, estoy
+Estoy
+Estoy
+¿Qué quiere ver?
+Perdón
+No, creo que estoy analizando
+Un poquito
+¿Dónde llamamos al start show?
+Start show se llama ahí
+Ah, claro
+Ahí está
+Nosotros en realidad
+Lo que es
+Que dobleamos
+Es una función
+Que cuando se llama
+Marcamos una property
+Running through
+Que no permite borrarlo
+Pero mire
+Encontramos un bug
+¿Por qué?
+¿Qué pasa si este show
+Se llama dos veces?
+¿De problema?
+O sea, no se puede
+Dos veces no se puede
+Entonces
+No
+Es un bug
+Es muy raro que pase
+Pero es un bug
+¿Qué pasa si
+Por alguna razón
+Pensamos en el siguiente caso
+Yo programo un cron
+Para que se ejecute
+Cada un minuto, ¿no?
+Sí
+¿Qué pasa si
+Yo vuelvo a ejecutar el cron
+Y todavía no terminó
+De correr el otro?
+¿Se vuelve a levantar?
+De nuevo
+Es más
+Hasta puede tener
+Una condición de carrera
+Donde uno se deshabilita
+Y el otro se habilita
+Sí
+Pasa que
+Un show
+Delete
+El delete company
+Draft
+O sea
+¿Por qué yo no puedo borrar
+Dos distintas?
+No sé
+Company
+No es dos distintas
+Es el mismo
+¿Qué pasa si se ejecuta
+Dos veces?
+¿Pero cómo uno
+Identifica el mismo show?
+Pero
+Vos programás un show
+Que se ejecute
+Cada un minuto
+¿Tá?
+Entonces
+Cuando suceda el schedule
+Se va a ejecutar
+La línea 48
+Uno lo marca en true
+Corre la 42
+Y corre la 43
+Y ahí se queda eliminando
+¿Sí?
+Sí
+Pasa el minuto
+Y eso sigue corriendo
+¿Tá?
+Ven
+Se
+Pasa el minuto
+Se va
+El schedule
+Vuelve a llamar
+Sí, sí
+Porque no
+¿Tá?
+¿Tá?
+Esto es un issue
+Porque fíjate que
+Si pasa un minuto
+Yo vengo
+Lo marco
+A ver
+Para que estoy pensando
+Sí, o sea
+No creo que tengas problemas
+Con ir y running
+Porque vos entraste
+Quedás ahí
+Lo marcaste en true
+Después
+Por él
+Que demoran
+Los dos lo marcan en true
+Sí, o sea
+Deberíamos tener un if
+Ahí diciendo
+Che, si estás corriendo
+No, corras de nuevo
+Porque en realidad
+Yo solo ir running
+Lo pensé como
+Che
+Y vos estás
+Si vos querés eliminarlo
+¿Tá?
+No lo elimines
+Igual de todas maneras
+Viste que tenemos dos casos
+En el caso de que
+Ir running es false
+Y en el caso de que
+Ir running
+En el caso de que
+Ir running es false
+Ir running es true
+Cuando vamos a borrar un trabajo
+Tenemos el caso de
+Ir running es false
+Sí
+¿No?
+Sí
+Yo tengo un caso
+Que lo borra
+Claro, o sea
+Pero
+Hay un caso en que
+Ir running es false
+Pero lo va a borrar
+Y sigue ejecutando
+Se jodió
+O sea, si vas
+Más abajo al stop
+Ves que vos tenés un caso
+En que
+Hacés el stop
+Y falló
+Y falló
+O sea, ponerle que explota
+En la línea 58
+Lo atrapa
+Lo atrapa el catch
+Y falló
+Este bug
+De que
+De que nosotros
+Antes de correr un cron
+Tenemos que fijarnos
+Si está corriendo
+Sí
+Si ir running
+Es un bolazo
+Pero
+Pero hay que agregarlo
+A este caso
+Marque long
+Y después yo lo
+Y vemos
+Vemos quién lo trabaja
+Ok
+Porque hay que
+Hay que probarlo con el send
+Y eso
+Pero es súper realista
+O sea
+Si vos estás eliminando compañía
+Si no pasó el tiempo
+Y por alguna razón
+Se la dio
+Vos no deberías seguir
+Volver a llamar
+A eliminar compañía
+Son
+Son chotadas
+Son tecnicismos
+Son chotadas
+Pero hay que hacerlo
+Lo anoté
+Muy bien
+Está
+Y a ver después
+Que seguíamos
+O sea, cuando me reporte
+Los bugs de regression
+Que hablamos hoy
+Sí
+Marqueme este también
+Marquemelo en el chat de Cuba
+Está
+A ver
+No, no
+Parece la solución rápida
+Con un if
+Pero tengo que meterme en el chat de Cuba
+Tengo que meterle un pienso
+A ver si me estoy comiendo algo más
+Después de ver
+¿Qué me hiciste?
+Está
+Está bien
+El de la línea 324
+Está bien
+Y después tenemos
+Mismo, o sea
+When it's running
+Ah, está corriendo
+Y el de arriba
+¿Cuál es la diferencia?
+Porque uno es
+Lo quiere actualizar
+Ah, y el otro
+Falla cuando quiere mover
+Pero mover
+Está, no es que nada
+Está perfecto
+File
+Nunca explota todo
+O sea
+¿Cuál sería el caso?
+Simulamos un error crítico
+Que, de hecho
+Yo estaba fijando
+Y en otras partes también
+Como posible refactor
+Usar constantes
+No usar los errores
+Ah
+Sí, nos está
+Este salió
+Este tiene ese refactor
+Ahora leí
+En invalid response
+Por ejemplo
+Por ejemplo
+Yo usé
+Invalid crontime
+Usé en el
+Y en el
+En realidad tendría que usar esto
+Eso es lo que me acordé
+Ah, está
+Por ejemplo
+Están cosas
+Está bien, está bien
+Está bien
+Sí, sí, sí
+Qué tipo
+Sí, nada más
+Y agregar un caso más
+También los casos
+Creo que hay que ver
+Esos refactores
+Esas cosas
+Añadir un poquito
+Ordenarlo un poco
+Y entender un poco más
+Esa parte de
+Cuando los esqueduleo
+Qué pasa
+Cómo se llama
+Pero creo que viene bien
+La mano
+Lo que hay
+Hay que
+Creo que hay que hacer eso
+Las constantes
+Y agregaré un caso más
+En el que intentás
+Borrar un cron
+Que el
+Is running
+Es false
+Pero que falla
+Al hacerle stop
+Bien
+Porque no sabes
+Por qué mierda
+Puedes fallar
+Al hacerle stop
+Entonces tenemos que
+Controlar ese error
+O sea
+Quiero parar un caso
+De tener un show
+Que en realidad
+Ya está en
+Running false
+Exacto
+Ok
+Mi idea
+Probablemente en enero
+Además de que va a tener
+Que arrancarlo usted
+De regresión
+Es probablemente
+Usted capaz
+Que arranque a hacer
+Algún endpoint de backend
+Con respecto a los cron
+Alguna migración
+Algo medio light
+Pero
+Eh

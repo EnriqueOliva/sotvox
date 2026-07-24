@@ -1,0 +1,1060 @@
+No, claro, exacto
+Ya no sería por usuario
+Esto es lo que estás presentando
+Por empresa
+Ah, porque ahí vi que había
+Por los dos quedaron usuarios
+Ah, no, perdón
+En cuanto a las compartidas
+Sí sería por usuario
+Por lo que me dijiste
+De que mostraríamos todas las empresas
+Claro, pero ahí ya
+Si replicamos toda la lógica
+Podríamos hacerlo
+Supongamos la premisa
+Que lo que vamos a validar ahora
+Yo traje de la Patagonia
+Un experto
+Que ahora nos va a dar una mano
+Que ahí vamos a ver un poco
+Porque si tenemos la premisa
+De que todas las empresas
+Todas las notificaciones que hacen
+Siempre van a una empresa
+Y nunca al usuario
+Que sea un poquito más global
+Nosotros podemos agarrar así
+Que el filtro sea bueno
+Te muestro todas las notificaciones
+Que vos tenés
+Ya no te pongo ese switch
+De notificaciones tuyas
+O las otras
+Te muestro todas las notificaciones
+Y vos si querés
+Podés filtrar por una empresa en particular
+Sea tuya o de otra persona
+¿Se entiende?
+Me encantó
+La verdad me encantó
+Entonces ahora
+Vamos a dejar hablar a Kike
+¿Qué quieren que les comparte?
+No, la pregunta es Kike
+¿Hay algún correo o notificación
+Que hayas hecho
+Que te acuerdes
+Que vaya contra el usuario
+No contra la empresa
+También aplica a CronJob
+Déjame pensar
+No
+Lo tendría que bichar
+Sinceramente
+Hicimos una banda
+Pero
+Que sea directo al usuario
+No, no estoy seguro
+Igual
+Lo tengo que chequear
+Si no me equivoco
+Capaz que el mensaje
+De fin de año
+Lo enviamos por usuario
+O alguna novedad
+Nosotros no la enviábamos
+Duplicada
+Y la enviábamos
+Contra el usuario
+Ajá
+O sea
+Las únicas notificaciones
+Ahí Gastón y Santi
+Que veo
+Son anuncios
+Globales
+Que de repente
+Se lo enviás
+Contra un usuario
+En particular
+Y no contra todas las empresas
+Siendo el costo
+De fin de año
+No me parece un problema
+O sea
+La solución práctica
+Que veo ahí
+Es que enviamos
+Un mensaje
+De fin de año
+Por empresa
+¿Se entiende?
+Como para evitar problemas
+Porque como nosotros
+Tenemos el
+Siempre tenemos que enlazar
+Mirá
+Volvamos un poquito
+Hacia la derecha
+A la izquierda
+A la izquierda
+Sí
+A la selección
+No
+Ese, ese, ese
+Vos ahí
+No tendrías nunca
+Gastón
+O sea
+Fondos recibidos
+No tendría Gastón
+Siempre tendrías la empresa
+Es una notificación
+Que se hace a la empresa
+Claro
+Claro
+Lo que podríamos
+Tenemos dos enfoques
+Que podemos hacer
+La otra es
+Dentro de
+En el seleccionar
+Empresa
+Podríamos
+Porque me encantó
+Esta idea
+Pero las
+Las tres, cuatro notificaciones
+Que son
+De repente
+Personal para vos
+¿Está?
+Podríamos tenerla
+De repente
+En una sección
+De seleccionar
+Empresa
+O
+Y para
+Para no tener que modificar
+El modal
+Agregar un switch
+Que sea tipo
+Notificaciones propias
+Entonces esas notificaciones
+No tiene una empresa
+Son como
+Y va directo al usuario
+Entonces en el fin de año
+Nosotros lo que hacemos
+Es enviamos
+Esas notificaciones
+Por ejemplo
+¿No?
+Enviamos esas notificaciones
+Para los usuarios tuyos
+Y los teammates
+Entonces ahí ya no
+No duplicamos
+¿Se entiende?
+Ok
+O sea
+Si vos te
+Si vos te
+Por ejemplo
+Porque vos
+En los casos retorcidos
+¿No?
+Vos tenés
+Empresa
+O enviamos
+Fin de año
+Tenés empresas propias
+Y tenés de
+De
+Tenés empresas propias
+Y tenés empresas
+De este otro usuario
+Cualquiera ¿No?
+Entonces vos no vas a agarrar
+Y enviar un mensaje
+No vas a agarrar
+Agarrar y enviar
+El mensaje
+De notificación
+Duplicado
+A vos
+Te va a llegar un mensaje
+Por vos
+Y por cada una
+De las empresas que manejás
+Al final nos van a
+Nos van a recagar a palo
+Tendrías que enviar
+Una sola notificación
+Tiene sentido eso ¿No?
+Entonces
+Lo mismo cuando
+Por ejemplo
+Hacemos un anuncio
+A partir de ahora
+Sacamos dirección
+O lo que sea
+Deberíamos enviar
+Una sola notificación
+Que es una notificación personal
+A no ser que sea
+Una notificación
+Para cierto estado
+En particular
+¿Sí?
+Entonces
+Capaz que lo que podemos
+Me encantó la B2
+Me encantó la B2
+Y a no ser que
+Si Kike
+Si no se acuerda
+De ningún caso
+Yo creo que son casos
+Muy puntuales
+Que los podríamos
+Cachear
+Teniendo ahí
+Manejar
+Teniendo un switch
+De notificaciones personales
+Donde te enviamos
+Notificaciones
+Que no están asociadas
+A la empresa
+Están asociadas
+A voz directa
+¿Está?
+Entonces por ejemplo
+Cuando yo tengo que notificar
+El mensaje de fin de año
+Lo que vamos a hacer es
+Guardar todos los correos
+Y no vamos a enviar
+Correos duplicados
+¿Está?
+Ahí entrarían también
+Las notificaciones
+Por ejemplo
+Esa de transferencia
+Porque en realidad
+La transferencia
+No se la hace
+A una empresa
+Bueno pero
+Sí la transferencia
+Es de la empresa
+O sea
+Claro pero está mostrando
+De quién es
+No a quién
+Tras mostrando
+Porque ahí por ejemplo
+En los que
+Hay transferencia
+Dependiente de aprobación
+Mostras DASBAN
+El ELSI
+O sea siempre va a la empresa
+Vos lo único
+El único filtro
+Que yo digo
+De agregar acá
+Es notificaciones personales
+Por ejemplo
+Fin de año
+Queremos agradecerte
+Por estudiar
+Todo el año
+Entonces
+Si vos tenés
+Empresas propias
+Más team
+Para lo que sea
+No te voy a enviar
+Una por empresa
+Fin de año
+Fin de año
+Fin de año
+Fin de año
+Fin de año
+Nos van a
+Terminamos como spam
+Porque también eso
+En correo
+Tampoco es correcto
+Si está bien
+Por ejemplo
+Entonces ahí vos
+Siendo team
+Mateowner
+O lo que sea
+Te tendría que llegar
+Una sola notificación
+Nada más
+Y un solo correo
+¿Sí?
+Tiene sentido
+Una sola notificación
+Un solo correo
+Si está bien
+Que te lleguen
+Diez notificaciones iguales
+Cuando hacemos esos
+Cronjo
+Por ejemplo
+Cuando este
+Corramos el estado
+¿No?
+O sea
+Si vos tenés
+Por ejemplo
+Un cambio que aplica
+Para Montana
+Y vos tenés
+Diez empresas de Montana
+Y bueno
+Te vamos a notificar
+Por cada una de las empresas
+Que tiene problemas
+Porque si no vos
+Te podés confundir
+No sé qué piensan ahí
+Y además cualquier cosa
+La podés desactivar
+Exacto
+En la configuración
+Bien de bien
+Sí
+Recordemos que
+Estas notificaciones
+No son las que se pueden desactivar
+Solo se puede desactivar
+El email
+O sea
+El correo
+Que es ahí
+Donde después
+Vamos a poder
+Habilitar
+Lo que ustedes hicieron
+De suscribirse
+Que es lo que va a llevar
+Esas configuraciones
+Todo eso
+De suscribirse
+Suscribirse
+Va a llevar a configuración
+¿Sí?
+Este
+O sea
+Debería llevarlos
+A configuración
+¿No?
+Y ya
+Ahí
+Matamos dos pájaros
+Un tiro
+Volvemos a habilitar
+El footer
+Yo haría esta
+Yo me quedaría
+Con esta versión
+Gastón
+Santi
+Y le agregaría
+Un filtro nomás
+Como para poder
+Tener notificaciones
+Contra la persona
+Entonces
+Son notificaciones
+Que no van
+O sea
+Pueden tener un tipo
+O no
+Dejémoslo genérico
+Este
+Pero pueden no tener
+Un tipo
+Y van contra la persona
+Bien
+Yo lo vería
+Bien
+Después otra cosa es
+En la iconografía
+No sé cómo pensaba
+Manejarlo
+Veo los iconos
+Ahí de importante
+Click
+Todo eso
+Estos
+Sí
+Según la relevancia
+Sí
+En realidad
+No es según la relevancia
+Sino el
+El estado
+O sea
+De lo que tiene que hacer
+La persona
+O sea
+Si aparece el cheque
+Porque no tenés que hacer nada
+Se confirmó
+Este warning
+Es porque
+Está de tu lado
+Hacer algo
+Como acá
+Transferencia
+Pendiente de aprobación
+Se requiere un documento
+Bancario adicional
+Esto es como
+De información
+Y
+Que este capaz
+Le damos vuelta
+Y también está rechazado
+Sí
+La solución
+Para alertas informativas
+En la naranja
+Es algo que está pendiente
+Está verde
+Cuando está listo
+Y rojo
+Algún error
+Lo que falta
+Piensa que
+Piensa que nosotros
+Vamos a ir acá
+Cada correo
+Y le vamos a decir
+Bueno en cada correo
+Vamos a agarrar
+Cada vez que se envía un correo
+Vamos a decirle
+Bueno
+El icono
+Que tenés que enviar
+Para esta notificación
+Está
+¿Está?
+¿Sí?
+El
+, el tipo de notificación
+Es de la empresa
+O es
+Contra un usuario
+Y después vas a decir
+¿Tiene o no tiene
+Una categorización?
+¿Compañía?
+¿Contabilidad?
+¿O no tiene?
+¿Está?
+Y después va a estar
+El mensaje
+Y está
+O sea
+En lo que es el header de arriba
+¿Está?
+Que literal va a ser el mismo
+Que, que, que, que
+Están poniendo en el subject
+Cuando te llega el correo
+¿Está?
+O sea
+Vamos a duplicarlo
+Este
+Y lo que vamos a
+Y después el contenido del correo
+Que es lo que vamos a usar
+Y después
+También lo que tenemos que tener
+Es la categoría de los botones
+No sé si eso lo pudiste ver
+Gastón
+Los tipos de botones
+Ah, no
+Me, me falta eso
+Está
+Sí, sí
+Ustedes piensen que ese tipo de cosas
+Tienen que ser genéricas
+Entonces
+Cosa de que
+Cuando Enrique
+O quien sea
+Vaya trabajando en eso
+Lo que van a ir haciendo
+Es asignando
+Una categoría a cada uno
+¿Bien?
+Bien, bien
+Entonces van a asignar
+Una categoría a uno
+Van a asignar
+Una categoría a otro
+Van a asignar
+Una categoría a otro
+Y todo anda divino
+¿Está?
+Entonces
+Y queda súper genérico
+Entonces
+Ustedes tienen que dejar
+También una guía
+En cuanto a desarrollo
+Para decir
+Bueno, está
+Si la notificación requiere acción
+Usar infinito amarillo
+Si la notificación
+Si la notificación
+Es de bank account
+¿Está?
+Va a tener este botón
+De acción
+¿Está?
+Eso
+Sí, hasta te diría
+De
+De ponerlo opcional
+Como para las notificaciones
+Que
+Que no
+No
+Tenga
+O sea, por ejemplo
+El saludo de fin de año
+No va a tener ningún
+Icono
+Que no tenga nada
+Como para no
+No obligar tampoco
+Al desarrollador
+A que
+Le ponga uno
+A cada notificación
+Bien, perfecto
+Ahí estaría faltando
+El modal
+Para mostrar
+Qué pasa
+Cuando apretás
+La torquita, ¿no?
+O eso está también
+En realidad
+No va a ser un modal
+Esto
+Lo que teníamos pensado
+Con Santiago
+Era que
+Que
+Si no
+Que sea como
+Un acceso directo
+A la parte
+De configuración
+Y que filtre
+Directamente
+O sea
+Que entre
+Notificaciones
+A ver
+Están filtrando
+La tabla
+La parte
+A ver
+Ahí va el Figma
+Te sigo un segundo
+Pero este botón
+De acá
+Martina
+La idea es que te llegues
+Justamente a esta parte
+De configuración
+De toda la parte
+Del usuario
+Ok
+Y está
+Ahí vamos a poder
+Analizar la cuenta
+Las notificaciones
+Creo que esto
+De preferencias
+Al final se va
+Pero la idea
+Es que
+Dentro de notificaciones
+Si querés acceder
+Rápido
+A la configuración
+De notificaciones
+Te va a llegar
+Directamente
+A esta
+Como con este filtro
+Vamos a decir
+A esta pantalla
+Con este filtro
+Ah, ok
+Bien
+Ah, sí
+Entonces
+Sería
+Esta opción
+Pero agregándole
+La parte
+De ver notificaciones
+Personales
+Sí
+Sí
+Yo creo que te lleve
+Te lo sorprende
+Te lleve directo
+Estamos pronto
+Sí
+Ah, y
+Para las dudas
+Ojalá
+Si ponen
+Tooltips
+Asegúrense
+Que queden los textos
+Así sabemos
+Que va
+No sé
+Si es un tooltip
+Yo
+Ah, ok
+Este, sí
+Ok, vas
+Sí
+Si es necesario
+Por otra
+Las dev notes
+Sí
+Son de una persona
+Cantina
+Sí
+Con el cambio
+Este
+De
+Del header
+Y del drawer
+Tiene
+O sea, viste que yo en este caso
+Puse
+Puse el icono del tooltip
+En el título
+Sí
+Eh
+En el caso del mobile
+Queda muy
+Eh
+Queda raro
+Queda raro
+Como mucha info
+Sí
+Eh
+No sé si
+Después lo vemos
+Si querés
+Yo
+A mí no se me ocurrió nada
+Pero
+Yo creo que
+Lo dejaría fuera de eso
+Capaz que
+A
+A la derecha
+Eh
+Para que vaya el film
+No
+Si me ves
+Pero lo dejaría capaz que acá
+Como un botón de ayuda
+O algo así
+Que quede en esa parte
+Te estoy siguiendo
+Ahí
+Ahora sí
+Para ahí
+Me fui
+Eh
+Donde estamos
+Ah
+A la derecha de esta tablet
+Ahí va
+Sería
+Colocaría acá creo
+El
+El botón
+Que queda en esta parte acá
+Eh
+No sé qué opinás
+Pero
+Sí
+De última
+Si acá lo querés separar
+Y lo querés dejar
+No sé qué opinás
+Pero
+Si lo querés separar
+Y lo querés dejar al lado
+Del de configuración
+Puede ser también
+Puede llegar a funcionar
+Claro
+Y
+En tablet
+Eh
+También te parece lo mismo
+Eh
+Te lo estaba mostrando en tablet
+O sea
+En este acá a la derecha
+Y
+Ah
+Perdón
+En Modal
+La configuración
+Sí
+En Modal
+Que daría lo mismo
+Acá a la derecha
+Hay que tener en cuenta
+Que esto
+No lo utilizamos
+En ninguna parte del sitio
+Yo no sé
+Si no lo
+No lo ajustaría
+Igualmente
+Igualmente
+Igualmente
+Me parece
+Una buena alimentación
+Eso
+Yo
+Yo hay fondos recibidos
+Correctamente
+Yo sacaría eso
+Al carajo
+O sea
+Que de repente
+En vez de centro de notificaciones
+Da
+Como que
+O sea
+No agreguemos un re-header ahí
+Estamos agregando
+Como un re
+Otro header más
+Ah
+Creo que
+O sea
+No está mal
+No está mal
+Porque en realidad
+Es como un blog
+Pero
+Es que
+Dejenlo
+Está bien
+Porque es muy fin
+Debería ser algo muy finito
+¿No?
+Sí
+O sea
+Son las migas de pan
+Que se usan siempre
+En
+En este tipo de
+Sí
+Los breakrooms
+Esto
+Vamos
+Los breakrooms
+Sí
+Esto
+Para mí
+Es algo
+Una buena implementación
+Para utilizar
+En otros lados
+Del sitio
+También
+A nivel UX
+Es algo
+Que está
+Muy bien
+Porque
+No suele ser lineal
+En todo el sitio
+El tema es que
+Es sólo
+Para una navegación doble
+Acá
+Yo lo
+Piense
+A ver
+Les pongo el desafío
+Piensen cómo podemos hacer
+Para no tenerlo
+Pero está
+Si no lo ven
+Si ven que
+Sería más sencillo
+No tenerlo
+Para no tener que reinventarlo
+Y que
+Como hacemos
+De repente
+Podemos poner
+Una abreviación
+De la notificación
+O algo en el título
+Pero si no
+Lo dejamos
+Pero piensen
+Cómo para sacar
+Ese header
+Más que nada
+En mobile
+Que no me gusta
+En desktop
+Sí
+Me gusta
+Pero sí
+Piensen a ver
+Si podemos hacer algo
+Como para no
+Reagregar ese título
+Que te está diciendo
+Como estás
+O sea
+Lo que me
+Causa impacto
+Ahí es
+Centro de notificaciones
+Dos veces
+¿Está?
+Una de las cosas
+Que podemos hacer
+¿Saben qué es?
+Dejarlo
+Poner una casita
+O una
+Vieron que ahí
+Están los breakrooms
+Que tienen
+Este directamente
+El icono
+Entonces ahí podemos poner
+Tipo
+En vez de centro de notificaciones
+Para que no quede repetido
+Podemos poner la campanita
+¿Está?
+No sé
+Esto me ocurre
+Y de repente
+Ahí podemos hacerle
+Con alguna iconografía
+Un poquito más
+Algún borde
+Alguna cosa
+El impacto
+Que a mí no me gusta
+Que es lo que va a ver
+El cliente
+Y a mí visualmente
+No me gusta
+El centro de notificaciones
+Dos veces
+Y más arriba del todo
+Está ocupando espacio
+Que toca este botón acá
+Claro
+Por eso
+Y también tenés
+Como funcionalidad repetida
+Entonces este
+Por eso
+O sea
+Y también
+Nunca va a haber más
+Si me dicen
+Está no
+Pero lo hacemos
+Porque hoy o mañana
+Vas a entrar
+Y vas a tener otra navegación
+No, no
+Nunca va a haber más que eso
+Entonces
+Para mí lo ideal
+Sería sacarlo de la mierda
+Y ya está
+Pero
+Veanlo
+Los últimos
+Si lo dejan
+No dejan repetidos los títulos
+Para mí lo ideal
+Ahora que lo veo
+Mismo mobile y todo
+Sacarlo de la mierda
+Porque se sobreentiende
+Que yendo hacia atrás
+Vas a ir a
+A las notificaciones de nuevo
+Pero
+Son ustedes los diseñadores
+¿Está?
+Veanlo
+Es que
+Justo esto
+Lo he diseñado
+Cuando no estaba
+El nuevo
+El nuevo header
+Que no tenía la flecha
+Para atrás
+Entonces en ese caso
+Sí capaz que era más necesario
+Ahora sí
+Lo voy a repetir
+Hay Kike
+Para darte un poco
+Contexto también
+Porque probablemente
+Vos vas a estar metido
+En este bichito
+Sí
+La idea de esto acá
+Ves que
+Viste que nosotros
+Con Helmet
+Cuando enviamos el correo
+Tipo armamos
+Componemos lo que es
+El HTML
+¿No?
+Cuando en el worker
+¿Sí?
+Sí
+Bien
+Entonces vos cuando
+Compones ese correo
+Vos en realidad
+El HTML
+Lo tenés como un string
+Ni más ni menos
+Como un string
+Y eso es lo que vos
+Le envías a
+A ese S
+Para que envíe el correo
+¿Está?
+O sea le envías
+Ese HTML
+Como string
+La idea es
+Ese HTML
+Como string
+También
+Además de enviarlo en correo
+Guardarlo
+En base de datos
+Y renderizárselo
+Acá al cliente
+¿Está?
+Eso lo que nos va a permitir
+Es que el cliente
+En notificaciones
+Va a ver siempre lo mismo
+¿Está?
+¿Sí?
+Y nosotros
+Cada vez que vos
+Actualices un correo
+Nos vas a tener que venir
+Y hacer un duplicado
+De la
+De la lógica
+Esta
+¿Está?
+Esa es un poco la idea
+Si te fijás
+Ese HTML
+Como string
+Va a ver ciertas cosas
+Que estamos
+Que vas a tener
+Que vamos a tener que sacar
+No sé si vos
+O que sea
+La idea es que vamos a tener que sacar
+Y vamos a tener que verar
+Ahí
+Como encararlo
+Pero por ejemplo
+No va a tener el footer
+Y no va a tener el call to action
+¿Sí?
+Bien
+Este
+Pero es un poco también
+La idea de eso
+Te digo nada más
+Para que tengas contexto
+¿Bien?
+Bueno
+Algo más chicos
+Ahí luego
+Santi
+Nada
+Martu
+Si querés quedate cinco
+Nos vemos
+Bueno
+Cuidense
+Nos hablamos
+Que va a ser bien
+Chau chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau
+Chau

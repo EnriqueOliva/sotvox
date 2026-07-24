@@ -1,0 +1,153 @@
+generamos un archivo
+si ese método
+si vos ahí en vez de user
+find one, moquearas
+el user repository con el
+email, alarma
+fíjate que siempre
+moqueamos cosas que nosotros no tenemos
+que en realidad no sabemos la lógica
+que hay por detrás, pero no
+nos interesa, porque sabemos que realmente
+por ejemplo en el caso cognito, el send
+hace la llamada a la API
+¿sí? o sea, llama
+cognito, eso nosotros queremos evitarlo
+en ese caso, sabemos que
+user, cuando hace find one
+llama a la base de datos, nosotros queremos que
+nos llame a la base de datos, queremos simular
+eso, ¿está? yo creo
+que con esos cambios estamos
+o sea, quedó, creo que
+a ver, me tira
+me comí lo de los repositorios
+eso es un culo
+pero creo que está bueno lo de
+transaction, a ver si podemos lograr
+con el enfoque correcto
+y los resolve, bueno
+pueden estar bien
+claro, el tema, subí
+subí los resolve, claro, el tema es que nosotros
+claro, ahí está el tema
+no tenemos que moquear repositorio
+fíjate que
+en el caso de cognito es la única forma que
+nosotros encontramos de moquear
+una clase que nosotros no implementamos
+¿está?
+pero en el repositorio
+lo moqueamos nosotros, si nosotros decimos
+en vez de llamar al find by email, llames
+a nuestro método, estás evitando
+código que nosotros escribimos con las manos
+¿entendés?
+tengo una pregunta
+¿qué moquearíamos nosotros
+vos me sabrías decir
+de baninfo repositorio?
+entra, analicémoslo juntos
+entra baninfo repositorio
+¿cómo se, no sé que
+shortcut
+usás vos?
+andate a rutas, b1
+no, no, no, rutas
+repositorio
+repositorio, ahí va
+no se, no se, no se, no se
+nosotros ahí
+¿qué tenemos que moquear?
+¿cuál es el modelo? ¿dónde ves los modelos?
+¿cuáles son los modelos que estamos
+importando ahí?
+mirá arriba del todo
+en este, ah, dentro
+de baninfo
+claro, ahí va
+esos dos modelos
+y si te fijás, de toda esa
+información que está en el método
+get baninfo
+¿cuándo es que se llama esos modelos?
+¿qué operaciones se utilizan
+de esos modelos?
+exacto, esa es la que hay que moquear
+después el promise
+al set es algo
+nuestro
+ok, ese es capaz del 50%
+de mi pregunta
+porque yo tengo, en realidad mi pregunta es
+la lista de usuarios
+de emails y teléfonos
+baneados, en teoría están
+en el back office, puede ser
+o están acá también
+la base de datos es la misma
+la base de datos es la misma
+la base de datos es la misma
+no es que
+el back office expone un endpoint
+para Axios
+pero la base de datos es la misma
+o sea que acá lo único que
+vos deberías generar un caso en el que te devuelve
+para, damos un dito
+pero te voy respondiendo
+vos deberías generar un caso en el que te devuelve
+elementos
+o sea que te devuelve un email
+y justo es el email que ingresó el hijo de puta
+entonces ahí luego lo que hace
+o sea, es como el caso
+que falta en realidad
+la base de datos te devuelve
+que ya existe el usuario
+entonces vos simulás
+ah, mirá, ya existe
+entonces te tira un error
+porque no te dejo crear un usuario
+porque ya existe
+bueno, esto es lo mismo
+vos acá, el find all
+debería retornar un usuario
+un correo
+que es el mismo que está queriendo ingresar el tip
+entonces ahí, pimba
+está baneado, ¿entienden?
+viene por ahí
+esto va a bajar
+el pedido
+bueno, cortamos y sigo
+como algo rapidito
+dale, sí, sí
+metedle un ratito más
+y yo creo que con estos ajustes
+sí
+y después
+sí, está, no, sí es
+después, sí, con más tiempo
+te haría capaz que mirar los casos
+bien, a ver si falta alguno
+no, yo creo que lo primero que tenemos que hacer
+es hacer estos ajustes
+y después ya empezamos a mirar los casos
+como digo, también necesito
+esa visión
+más de análisis
+viendo también cuando yo digo
+mira, falta esto, falta lo otro
+vamos a
+yo lo voy a setear
+hoy seteamos la VPN
+porque tenemos que setearlo
+¿está?
+así que hoy seteamos la VPN
+¿está?
+nos tomamos un ratito y la seteamos
+así ya queda pronto
+dale, te hablo en un rato
+Bueno, hasta luego
+Hasta luego

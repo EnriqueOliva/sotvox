@@ -1,0 +1,1586 @@
+Entonces, un poco hablarles de las metas que nos estamos planteando de aquí a 10 años, es convertirnos en la infraestructura financiera global de referencia para el comercio B2B, importadores y exportadores, moviendo más de 10 billones de dólares al mes.
+Estamos cerca, pero no estamos lejos, tenemos 10 años. Yo creo que un poco más a detalle, pues, somos la infraestructura financiera con control extremo, extremo, que es el de última milla, y estamos creando un hub transaccional de comercio B2B, entonces, rampas, pagos, liquidez y conexión entre la oferta y la demanda,
+que es lo que hoy en día está trabajando el equipo de Bolivia y estamos trabajando también.
+Desde el punto de vista técnico, en crear un order book, la ventaja estructural que tenemos hoy en día son conexiones bancarias directas con muchos bancos a nivel global, permisos, y estamos sacando, digamos, licencias a nivel local hoy en día en Bolivia y la idea es expandir esto cada vez más.
+Siempre bajo un modelo de iteración rápida, por eso siempre presiono y presiono al departamento técnico, porque creo que iterar...
+Es lo más importante de todo. Creo que la verdad es que tenemos una idea de lo que puedan querer las personas, pero la mejor manera de saberlo es sacando el producto y viendo cómo lo están usando y hacer los cambios necesarios.
+Creo que, pues, de la escala ya hablamos. ¿Qué no somos? Y creo que eso siempre es importante recalcarlo. No somos una app de remesa retail ni un revendedor indefinido de terceros.
+Estamos siempre tratando de buscar la manera, buscar a los clientes finales que tienen la necesidad.
+Estamos siempre tratando de buscar la manera, buscar a los clientes finales que tienen la necesidad.
+Y creo que es la solución más cercana y donde estamos hoy en día más enfocados es tener presencia regulada en tres países y ser la solución elegida por las empresas líderes y una infraestructura con acceso a esta infraestructura global.
+Hoy en día, pues, Bolivia se ha convertido en nuestra prioridad y estamos evaluando ya directamente si Perú, si es México, si es Argentina, si es Brasil.
+Creo que Brasil es lo que tenemos un poco más de cerca hoy en día. Pero la idea es siempre estar en constante movimiento y siempre tratar de expandirnos lo más posible.
+Entonces, yo creo que, pues, eso, el alcance. Entonces, tres países operativos con permisos y banco funcional. El ritmo realista es poder lograr esto uno por país, un país por año.
+Entonces, ya hoy en día estamos hablando muy de cerca Brasil y México.
+Dependiendo de la atracción que tengamos y la capacidad, pues, vamos a elegir, estamos iterando de nuevo, yendo al punto de iteración.
+Vamos a ir por lo que veamos como la oportunidad más clara.
+Los clientes, una base mixta, importadores y exportadores que nos envuelvan recurrentes, fintechs o corporativos que construyen sobre nuestra infraestructura con mínimos y contratos de servicio.
+Creo que ya hemos experimentado mucho con eso del lado de Bolivia.
+Lo hemos visto mucho en mesas de cambio de Venezuela.
+Son mesas de cambio, hay fintechs también, entonces creo que es manera de crecer un poco más rápido también aún en los productos que estamos, digamos, en vías de desarrollo, white label, una ruta de APIs propias para que la gente se pueda conectar a nosotros y eventualmente sacar una ventana de factories, invoices, financing, que creo que es un poco más producto financiero, targeteado a nuestro tipo de clientes.
+Creo que es un poco más producto financiero, targeteado a nuestro tipo de clientes.
+Creo que es un poco más producto financiero, targeteado a nuestro tipo de clientes.
+Eso es lo que usan obtoy y hoy en día usan muchas letras de crédito los que trabajan con
+bancos y tienen esa posibilidad y la gobernante entonces mater regulatorio por país contratos
+firmados para revenda y uso compradores críticos, riesgo controlado por políticas propricas
+de cada país para poder segmentar bastante bien nuestros riesgos.
+Eh, siguen.
+Entonces yo creo que meta un año de este año 2026.
+es validar el modelo en producción
+con dos corredores activos
+y entre 3 y 5 clientes claves
+operando de punta a punta comenzando por Bolivia
+yo creo que ya estamos ahí
+Bolivia está en operativos
+estamos
+ahí a un centímetro de la meta
+la entidad constituida ya está
+la cuenta bancaria abierta ya está
+y funcionando
+está funcionando
+nos faltan detalles
+los bombos y los platillos
+como los llamamos nosotros desde el punto de vista de tecnología
+las contrataciones
+ya están a un 90%
+estamos esperando dos respuestas
+o una respuesta
+verdaderamente estamos esperando una respuesta
+y el trámite regulatorio que estamos ahorita corriéndolo
+la presentación de la carta
+de AFI
+intención para que nos den la licencia
+de funcionamiento
+deberíamos estar presentándola esta semana
+ya hicimos una revisión con los abogados
+la semana pasada
+queremos hacer pues
+un call life real
+de hacer un white label
+de hacer un primer white label
+en producción
+y entonces digamos
+una primera operación
+de que ese white label
+pues está funcional
+desde el punto de vista
+de cross border payments
+tenemos uno funcional desde el punto de vista de compañías
+que nos está yendo muy bien tenemos una operación que está muy bien
+tenemos que trabajar cuando tengamos tiempo
+en estandarizar
+esas dos cosas el white label
+y los APIs
+y después el punto de vista de cadencia comercial
+foco en clientes con volumen y recurrencia
+un pipeline
+que nos diseñó Mati
+el equipo comercial con señal dura y parámetros
+de autorización por país
+la comisión documentada
+y KPIs vivos
+para que todo el mundo pueda tener visualización
+de eso
+y tenemos la parte del snuff donde estamos
+paseando toda la data
+además de tener automatizaciones
+para contactar a clientes
+y una base de datos gigante
+y para eso estamos haciendo reuniones
+y lo estamos segmentando
+por países
+para que estén mucho más focalizados
+después
+yo creo que la plataforma
+viene bastante bien
+tenemos ya una arquitectura de redundancia
+con varios bancos
+con varios proveedores
+ya tenemos la web publicada y actualizada
+creo que está al 95%
+hoy en día
+no quiero decir 100% porque no sé si falta algo
+pero creo que está bastante bien
+todo lo que hemos trabajado
+nos falta saber si queremos hacer
+alguna calculadora que llevamos tratando de hacer
+por dos años sin tiempo
+y esperemos algún día
+hacerla y completarla
+para que los clientes puedan meterse a nuestra página
+y puedan calcular sus fees y demás
+en Brasil estamos esperando tener
+una señal dura
+para entonces hacer un go live
+tenemos acceso al producto
+la cosa es destinar
+los recursos
+si vemos la señal clara
+y desde el punto de vista
+regulatorio y capital
+tenemos un poco la ruta clara desde el punto de vista de Bolivia
+al menos hoy en día lo tenemos bastante bien agarrado
+entonces un poco
+cuáles son los valores centrales
+desde el punto de vista
+de recursos humanos tenemos cinco
+desde mi punto de vista
+tenemos dos en verdad
+que es criterio
+y discrecionalidad
+y creo que lo llevo diciendo por mucho tiempo
+para mi es
+las dos cosas están
+intrínsecamente unidas
+hay que tener criterio
+para poder tener discrecionalidad
+si tienes discrecionalidad
+sin criterio entonces tenemos que apagar
+fuegos y viceversa entonces
+yo creo que poco a poco
+y con más experiencia
+y vamos todos agarrando
+también confianza
+para poder tomar decisiones
+en nombre de la compañía cada uno
+de ustedes nos representa lo quieran o no
+hoy en día si
+el peso de cada uno de nosotros
+vale más que la compañía
+y sin embargo cada día que pasa
+la queja va hacia
+la compañía y no tanto hacia
+Luciano o hacia Guillermo o hacia Alberto
+o hacia Carola o hacia Sergio está yendo
+mucho más cada vez hacia
+nosotros como compañía
+entonces
+representan y entonces hay que tener criterio
+y discrecionalidad
+de tomar las decisiones que ustedes crean
+correctas para todos
+y cuando estén tomando esas decisiones
+piensen siempre en
+qué es lo mejor para la compañía
+nunca se ha tratado de qué es lo mejor para Guillermo
+no es lo mejor para Alberto
+no es lo mejor para Santiago
+no es lo mejor para cada uno de ustedes
+es lo mejor para la compañía que somos todos
+y así es como tomamos
+las decisiones y por eso también yo
+trato de involucrar la mayor cantidad
+de personas posibles en las decisiones
+porque creo que es importante
+que todos estemos contentos que todos estemos bien
+y entonces cuando tomemos esas decisiones
+pues las tomemos pensando
+en todos esto le va a ocasionar
+un problema administrativo esto le va a ocasionar
+un problema de tecnología esto le va a ocasionar
+un problema a Guillermo
+a Alberto o a mí
+a mí a la persona entonces
+creo que para mí eso es lo más importante
+de verdad desde el punto de vista
+de recursos humanos todo bonito
+entonces responsabilidad real un dueño
+resultado que es un poco
+de hacer del owner
+de esa decisión que se tomó
+y tomar esa responsabilidad y tomar
+digamos esa decisión
+de verdad y asumirla
+realismo operativo de metas
+alcanzables yo creo que siempre bajar
+un poco tierra que de verdad
+no sé algunas cosas
+estratosféricas yo igual siempre
+voy a exigir lo máximo
+pero viene de
+un lugar donde
+si les pido lo mínimo es fácil
+cumplirlo si les pido lo máximo
+no lo vamos a cumplir esa es la realidad
+no lo vamos a cumplir nunca ha sido así
+y siempre se lo he dicho Santiago que
+siempre lo debatimos y él lo puede hablar
+mucho más en carne propia
+pero creo que la idea de
+poner metas que son irreales
+es que no las vamos a cumplir pero nos vamos a forzar
+lo máximo en llegar
+a esa meta que no la vamos a cumplir
+pero en vez de cumplirla en cinco meses
+vamos a cumplirla
+en tres meses
+o en cuatro meses
+siempre unos deadlines imposibles
+para que las cosas
+siempre salgan un poco antes
+de lo que normalmente saldrían
+si ponemos unos deadlines más realistas
+no me canso
+de repetirlo compliance es
+extremadamente importante en lo que
+hacemos es fundamental
+para mí hay
+siempre tres límites muy grandes
+que son la de dinero, financiamiento de terrorismo
+financiamiento del narcotráfico
+esos son los tres límites más claros de
+yo y a mayor
+medida todos acá somos muy blancos
+para ir presos
+yo creo que eso es muy americano decirlo
+pero es importante
+que lo tengamos en cuenta porque pues
+estamos moviendo dinero
+y esa es la parte cross border
+y pues sí
+hay diferentes niveles y de
+complejidades de responsabilidades
+pero es importante de cara
+a nosotros pues
+estar bien con nosotros mismos
+y estar involucrados
+con las cosas que queremos estar involucradas
+y separarnos de las que no
+y Ana
+se está muriendo de la risa
+y no sé por qué y después te preguntaré
+yo creo que velocidad con foco
+creo que
+estamos yendo a eso
+y es lo que estamos haciendo y creo que
+lo repiten muchas veces
+aquí especialmente en Estados Unidos
+siempre lo están repitiendo
+de buscar un nicho
+buscar un nicho, buscar un nicho y por
+tanto tiempo no teníamos un nicho
+hoy en día tenemos un nicho
+y hoy en día estamos enfocados completamente en Bolivia
+a un nicho específico
+que es importadores y exportadores
+y nosotros tenemos un producto
+que funciona específicamente
+para ese tipo de clientes entonces
+creo que hace que no tengamos que
+estar inventando mucho más de lo que
+tenemos y creo que la
+confianza del cliente o sea estamos
+hoy en día manejando dinero y no hay
+nada más personal que el dinero por una persona
+de repente la esposa y la mamá
+pero
+es lo más
+lo más personal que hay
+donde la gente más se pone nerviosa
+entonces la confianza es lo más
+grande de todo es lo que mejor
+podemos transmitir hoy en día y
+lo damos desde el punto de vista de
+trazabilidad
+dejar tranquilo a los changers que no lo escucho antes
+no sé si es un chiste
+pero no lo voy a leer así que
+yo creo que ya
+yo creo que ya yo estoy
+hoy también el equipo
+de colectivos para estos primeros 90 días
+entonces elige entre
+cinco y siete para asegurar foco y avance
+real o sea yo creo que cada uno de
+nosotros tenemos que elegir a 5 o 7 clientes
+para atacar
+en estos próximos
+90 días y cerrar y estar detrás
+de ellos y que cada uno
+tenga un dueño claro
+para que lo podamos medir
+o sea ahí 5 y 7
+no está horrible
+no está horrible pero cada uno que se pueda
+responsabilizar por 5 o 7 clientes
+creo que está bien
+obviamente como yo no hice esta presentación
+pusieron 90 días y lo hubiese hecho
+yo pongo 12 más
+pero bueno
+y ya
+el Tainé Cartos
+hola equipo querido, ¿cómo están?
+espero que me escuchen bien, la verdad
+no estoy con
+no estoy, bueno
+con la cámara
+pero quiero que sepan que
+acabamos de recibir justamente las oficinas
+de Santa Cruz
+en ese momento están como pueden ver
+están totalmente vacías
+obviamente no hay
+internet, obviamente Guillermo domina
+esto, sabe que acá en Santa Cruz
+la señal no es mala
+es pésima
+entonces he quitado justamente
+la cámara para que tengan eso
+en cuenta y bueno
+para que de alguna manera yo pueda escucharlos
+mejor ustedes y también
+que ustedes me puedan escuchar bien a mí
+con la presentación
+primero gracias a todos por la confianza
+gracias Ana por
+de nuevo por armar toda esta presentación
+todo este round up, este primer round up
+y bueno
+empezamos ¿no? para que sepan
+un poco como estamos
+armando Bolivia, como poco a poco
+se va armando
+si de alguna manera ya Guillermo ha dicho la mayoría
+yo de alguna manera voy a
+volverles a repetir
+tal vez algunos puntos
+¿no? pero bueno, como ustedes saben
+eh
+eh, Dazban se ha comprado una empresa
+acá en Bolivia que es Gamolite
+entonces justamente ya estamos en la
+en la fase final
+ya podemos decir lo que estaba diciendo
+Guillermo, es que ya tenemos el poder
+completo de todas las cuentas bancarias
+bueno, solo hay una cuenta bancaria
+acá en, que tenía esta empresa
+Gamolite, pero ahora sí
+ya tenemos hasta los poderes
+eh, hasta mañana para apertura
+nuevas cuentas en nuevos bancos
+eh, ya tenemos todo el acceso
+a las áreas, todo lo que tiene que ver
+con la parte impositiva, laboral
+cajas de salud, contabilidad
+hoy hemos terminado de hacer
+toda esa parte con Roberto, mañana
+nos tocó una parte más y con eso
+finalizamos ¿no?
+finalizamos todo lo que tiene que ver
+el cambio formal del nuevo representante
+legal esta semana aquí en Santa Cruz
+entonces realmente vamos a
+decir que Gamolite es
+nuestra, es totalmente nuestra
+¿no? eh, en cuanto
+a la adecuación eh, regulatoria
+¿no? eh
+ustedes saben que
+que bueno, es todo un proceso
+normativo y todo eso
+igual lo ha comentado Guillermo
+ya estamos terminando la carta, ya vamos
+a poder detallar a clientes
+diciéndoles que justamente
+eh, ya estamos totalmente
+dentro de la normativa boliviana para que
+puedan operar sin ningún problema con nosotros
+y que nuestra venta y que el
+el ingreso de tener los clientes a la
+plataforma sea de manera
+sea de, sea de, o sea, bueno
+que sea de manera constante ¿no?
+entonces lo que estamos haciendo
+es eh, eh
+meternos a, como Gamolite
+y DasBank a un tema normativo
+rígido para poder
+operar de alguna manera sin ningún
+problema en, en el país ¿no?
+en cuanto a lo que es el
+el despliegue operativo nacional
+igual lo ha comentado Guillermo que ahorita
+solo nos falta conseguir
+bueno, solo nos falta cerrar el
+el despliegue en realidad con una persona
+ya tenemos a todo el equipo armado
+tenemos en La Paz a, a Carlos
+Serrell que va a ser el líder
+de, de Bolivia como Country Manager
+tenemos a, a Carola, tenemos a Sergio
+en la parte de operaciones, Carola en la parte
+de, de mesa de dinero en toda La Paz
+y posiblemente
+muchos temas de Occidente
+en tema de Santa Cruz
+van a conocer pronto a la nueva persona que es
+eh, Lorena Mengar se va a encargar de
+de ver todo el tema de, de la
+de la gerencia de Santa Cruz y por debajo
+va a tener a, a
+a Fernanda y a Tania
+quiero que sepan que
+realmente todas estas personas que les
+estoy mencionando, bueno y seguiré
+en Cochabamba va a estar Ariel
+y en Potosí ya, ya conocen
+a Roberto que está en esta reunión ¿no?
+todas las personas que estamos incorporando
+al equipo son todas las personas
+que han pasado por banca
+todas personas expertas en manejar clientes
+entonces sin ir
+lejos seguramente
+ya, ya
+todos los que lo saben
+el hecho de
+en el caso de Carola digamos que hemos tenido una reunión
+ayer y como
+una persona influye tanto
+en un cliente ¿no?
+y eso ha pasado no solo con Carola sino
+con Roberto, sino con mi persona
+que es como que yo confío
+en Carola, yo confío en Roberto
+yo confío en Carlos Babel, yo confío en Sergio
+yo confío en Ariel, yo confío en Lorena
+lo que de alguna manera vamos a generar
+un equipo muy pero muy muy fuerte
+en Bolivia, sin
+lugar a duda acá igual juega
+un gol muy muy fuerte
+Luciano y Sergio Durán, Luciano
+Lacaba y Sergio Durán que obviamente ellos son
+un soporte nacional
+totalmente estratégico en todos los clientes
+que ya ha habido y todos los clientes
+que siguen capturando día a día
+¿no? día a día Luciano está
+correteando, mencionándome ahí este cliente
+ahí este nuevo, cuando reuniones, cuando
+no y luego ya obviamente
+ya con Luciano se va a tomar
+seguramente
+otras decisiones
+acá en el país
+que seguramente eso es igual
+que se van a enterar en su momento
+entonces seguimos trabajando ahí
+con toda esa parte ese soporte estratégico
+nacional ¿no? muy muy
+muy feliz de tenerlos
+y muy feliz de que
+apenas haya iniciado yo
+trabajando en Bausan que hayan estado
+semejantes personas
+tan increíbles
+profesionales, lo voy a llamar así ¿no?
+para que lo tengan en cuenta
+el inicio operativo
+real que estamos viendo en Bolivia
+cuando ya de alguna
+manera ya todo el equipo va a estar
+consolidado porque obviamente están
+renunciando a los bancos para trabajar con nosotros
+ya va a ser entre la primera
+y la segunda semana de marzo
+entonces realmente vamos a estar al 100%
+operativos, en este momento
+Carola y Roberto son las personas
+que se están dedicando a
+a poner a todos los clientes
+ya vamos a tener a cargos
+igual metiendo clientes entonces
+realmente
+todo el equipo de Bolivia
+va a apoyar mucho a Bausan
+desde acá ¿no?
+en cuanto a lo que es
+el proyecto ¿no?
+el estado del proyecto y próximos hitos
+lo voy a llamar así ¿no?
+ahorita ya
+ya he comentado ¿no? ahorita ya todo este tema
+la parte societaria, bancaria, contable
+asegurado, un equipo
+conformado a nivel nacional
+aperturas físicas
+en La Paz y Santa Cruz
+les he mostrado
+las oficinas que tenemos en La Paz
+que están súper lindas
+sería clave tal vez tener algún grupo
+para pasárselas a las personas que todavía no las han visto
+a mi me interesa mucho que vean las oficinas
+todo lo que se está armando acá en Bolivia
+y bueno acá han
+han podido observar
+en el video como estamos iniciando
+en Santa Cruz
+en este momento no hay nada sin embargo ya
+Guillermo ha hablado con la arquitecta
+Sergio ha hablado con la parte de internet
+entonces en nada de que
+y bueno mañana vamos a hablar con Roberto
+con el tema de los escritorios y todo eso
+entonces estimamos que ya la próxima
+semana esta oficina ya va a tener
+de alguna manera mucha más vida
+¿no? próximos sitios
+finalización
+de la documentación legal
+que estamos trabajando muy duro ahí con
+con Guillermo
+con Roberto obviamente
+en todo el tema presencial
+presentación formal
+ante ASFI con todo el tema de la carta
+aperturas de cuentas en
+actividades financieras
+que eso va a ser la parte más dura
+que no podíamos aperturar cuentas
+sin hacer toda esta
+de la regularización y quedarnos
+realmente con
+con lo que existe de Gammolite
+o sea ya es realmente cambios en
+Gammolite que sea realmente nuestro nuestro nuestro
+entonces eso
+empezamos en marzo
+equipo querido con todo
+ahí quería Vero quería Moni
+vamos a necesitar bastante su apoyo porque yo creo
+que va a ser entrar la empresa
+otra empresa otra empresa otra empresa otra empresa
+otra empresa y a generar
+más más más ingresos para que
+de alguna manera hagamos crecer la empresa
+entonces eso es
+todo por mi lado les
+agradezco muchísimo por su tiempo
+y y bueno
+vamos arriba vamos con todo y
+y arriba Gammolite equipo querido
+gracias
+bueno
+excelente Carlos excelente
+Ije excelente Ana y Mati ahí
+que fueron hablando y presentando
+también bueno
+primero que nada decirles que es un placer
+tener a casi todos porque vi que no estamos todos
+faltaron algunos
+pero es un placer tenerlos a todos
+verles a todas las caras creo que al estar
+remoto es algo que
+nada que se extraña o
+parece raro de repente
+hay algunos que nos conocemos otros no
+entonces estas oportunidades para mi son
+re valiosas mi objetivo
+es comentarles
+todo lo que sería relacionado al
+producto que tenemos
+como meta para el
+31 de marzo calculo que muchas
+de estas cosas las vamos a tener antes
+ahí para sorpresa
+pero vamos a seguir trabajando
+este
+o calculo que no
+bueno primero que nada lo que voy a arrancar
+en desorden
+más allá que los puntos
+tienen un orden específico
+con lo que fueron las contrataciones
+nosotros cuando empezamos a planearnos
+estos objetivos una de las cosas que estuvimos
+hablando tanto a nivel
+técnico como
+con Guille y Beto
+fue la idea de sumar personas
+para poder acelerar los
+flujos los desafíos que se venían
+requerían que nosotros aceleráramos
+y nos empezáramos a mover un poco más rápido
+entonces ahí sumamos
+como bien dijo Ana
+al principio de la presentación sumamos
+a Nahuel, sumamos a Jonas
+sumamos a Gastón que realmente
+ha hecho un cambio
+en cuanto a
+como nos movemos y como vamos a
+avanzando en el desarrollo de funcionalidades
+obviamente que al tener un equipo más grande
+es un desafío organizar
+pero también
+es un gran avance en cuanto a
+lo que podemos hacer
+habrán visto que el cambio en cuanto a funcionalidades
+es más o sea realmente creo que
+hoy en día podemos
+este
+de que
+el avance en cuanto a
+features y
+requerimientos y cosas que se van
+sacando mismo ajuste
+que tienen escala menor es mucho
+mayor antes que teníamos menos personas
+en el área de desarrollo
+luego una de las cosas
+que sacamos fue la compra y manejo
+de empresas esto fue algo que
+como siempre mismo cuando salimos con
+Crypto Cross Border
+nos empezó a
+complicar el hecho de bueno queremos
+tener un nuevo tipo de empresa
+como hacemos para poder registrarlo como hacemos
+para machearlo ahí
+con equipo de administración también
+pasó en su momento que teníamos las
+empresas normales después teníamos que macharla con las
+migradas después teníamos empresas migradas
+en realidad era en Crypto Cross Border
+bueno esto fue también otro mecanismo que
+teníamos que buscar una vuelta
+para poder traer a estos clientes de Bolivia
+que de repente no necesitan una
+suscripción pero no
+podemos permitirle
+a cualquiera que ingrese a la plataforma
+sin método de pago entonces como lo manejamos
+bueno ahí fue donde sacamos
+el código si ahí por
+ahora este Carlos
+y Guillermo se brindaron ciertos
+códigos de acceso y a la hora de ir
+al checkout de las compañías
+se pueden aplicar estos códigos para evitar
+lo que es el mecanismo de pago
+eso ya está implementado y está en producción
+hasta donde tengo entendido
+se ha aplicado varias veces
+ya es con éxito y
+es algo que después vamos a ir
+ahora con este
+con esta nueva movida de compra y venta vamos
+a ir
+chequeando a ver si necesita algún ajuste más
+creo que más que nada a nivel de seguridad
+que es algo que se puede
+mejorar y bueno
+está capaz que el código que se vea un poquito más tinto
+ahí Carlos que había pedido
+después con respecto a
+lo que es TeamMate
+TeamMate surge no me quiero esclayar
+mucho pero TeamMate surge como una charla un día
+de madrugada con
+Guillermo que le dije che vamos a
+ya que estamos vamos a hacer esto
+vamos a sumarlo
+para poder tener la funcionalidad
+esforcémonos un poco
+que eso también otra charla
+de madrugada de por allá por 2024
+esforcémonos en tener
+múltiples compañías porque es algo que
+puede ser útil y eso
+al final terminó
+dando sus frutos
+y lo que empezó a pasar
+con TeamMate es que era una funcionalidad que teníamos
+que ahora con la parte de Banking
+Crypto teníamos que darle mucho más
+setear
+sus límites en cuanto a lo que es permisos
+en cuanto a lo que es permisos
+de retiros hoy en día la
+funcionalidad de TeamMate está en producción
+ahí creo que Vero y bueno
+varios clientes ya lo han utilizado
+seguimos teniendo mejoras más que nada
+a nivel visual
+pero ya está funcional
+y bueno tenemos algunos ajustes
+que se pueden hacer en producción
+a nivel de
+seguridad que creo que es lo que se puede
+mejorar un poco o
+especificidad de repente
+en vez de seleccionar
+todas las compañías poder
+setear permisos por compañías pero la
+arquitectura está bajo nivel para poder hacerlo
+vamos a seguir trabajando en base
+a las necesidades que sufren
+algo que se ve gracias a las
+contrataciones es que nosotros en un mes
+en un mes y medio
+nosotros normalmente lo que hacíamos
+era en un mes nos encargábamos de ir sacando
+un mes, dos meses y vamos sacando
+una feature grande
+sacamos a Conti, sacamos
+Bridge, sacamos Ray
+fuimos sacando todo el proceso de KYD
+algo que se pudo ver
+en lo que fue enero
+es que nosotros pudimos sacar
+TeamMate
+que era una funcionalidad que veníamos arrastrando
+de diciembre y también
+logramos completar
+muchas landings, una de las
+cosas que cuando Mati volvió de licencia
+charlamos de las páginas
+y yo le dije ya están
+eso creo que fue un cambio bastante
+grande y está bueno
+así mismo
+la parte de transacciones
+de bloqueos y aprobaciones
+eso también
+ya están en producción
+ahí
+falta testearlo pero es como el siguiente
+paso de TeamMate
+si nosotros tenemos un límite
+de retiro que pueda quedar
+pendiente y alguien pueda aprobarlo
+este punto en particular
+de bloqueos y aprobaciones
+junto del TeamMate por más que está en producción
+ahora con estos nuevos clientes
+probablemente surjan algunos ajustes
+y ahora el objetivo principal
+es que está enfocado todo el equipo más allá
+de algunos ajustes en cualquiera de los puntos
+2, 3, 4
+o 6
+en la parte de Exchange
+como bien viene hablando
+Guillermo y Carlos
+nosotros ahora vamos a empezar a trabajar
+con el mercado boliviano
+y vamos a hacer este modelo
+de Exchange primero de compra y venta
+la idea es
+poder salir a producción
+primero con el modelo de compra y venta
+tanto a nivel
+del sitio como
+de lo que sería
+el BBO
+hay una de las cosas que nosotros vamos a
+a trabajar
+porque el otro día justo nos reunimos
+con el equipo que se había ingresado de Bolivia
+uno de los ajustes que vamos a hacer es
+permitir e intentar
+generar en stage que se pueda trabajar
+con el modelo de compra y venta sin hacer
+transacciones reales
+eso es algo que también vamos a poder trabajar
+cosa que la capacitación sea más sencilla
+y las pruebas sean más sencillas
+una dificultad que hemos tenido
+y ahí bien lo sabrán todos con lo que es Bridge y Rail
+que todos han tenido que crear una cuenta
+para poder probarlo
+y es algo que venimos trabajando también
+con el equipo de tecnología
+y es la idea que en la medida de lo posible
+tener en stage, que es el ambiente de pruebas
+que hay una de las cosas que vamos a tener
+que compartir
+es cómo acceder a ese ambiente
+es algo que yo había pasado manual
+y estamos trabajando en un manual de cómo utilizarlo
+y la idea
+después de eso es continuar con el
+flujo de triangulaciones
+que sería para poder funcionar
+como intermediarios entre dos
+clientes, un vendedor y una contraparte
+el flujo de compra y venda
+algo que es muy importante con todo esto
+es que
+Pedro y Mónica lo sabrán
+nosotros con todo el flujo de lo que es Rail
+estamos trabajando en un
+KYB global
+desarrollado 100% de nuestro lado
+no tiene validaciones
+en cuanto a documentos
+o en cuanto a
+si es del todo correcto
+pero si nos acoplamos muchísimo a las validaciones
+que tiene tanto Conduit como Rail
+que son dos plataformas bastante
+grandes en el mercado
+entonces este modelo de KYB
+de Know Your Business
+ya es tan genérico que hoy en día
+lo único que nos faltaría es
+ver si seguimos trabajando con Rail
+con la parte de validarlo
+o empezar a nosotros funcionar como validarlo
+a lo que voy es
+ya toda esa información la tenemos
+y si nosotros hoy en día cuando
+Guillermo también hablaba de redundancia
+si nosotros hoy en día tendríamos
+que cambiar o ver algún operador
+ya hay muchos procesos
+que ya tenemos de nuestro lado
+y mucha información que tenemos de nuestro lado
+así mismo también tenemos redundancia
+porque quiera o no
+más que nada que nos estamos enfocando en Rail
+seguimos teniendo toda la arquitectura de Bridge hecha
+y funcional
+entonces estos objetivos
+de nuevo
+estamos hablando del 31 de marzo
+pero la idea
+la mayoría ya están en producción
+algunos faltan algunos ajustes
+más que nada validación de producto
+y el máximo creo que el que va a tener bastante impacto
+que es el punto uno
+es el que va a salir a producción
+y que se va a estar validando todo lo que es marzo
+estos son los objetivos que tenemos hasta ahora
+a nivel desarrollo
+siempre comentar que como dice Guille
+son charlas de noche
+mucho debate
+mucho tequeo
+mi objetivo también como CTO
+de la empresa no solo es
+tener en cuenta la parte del negocio
+tan clave
+sino también buscar
+como bien lo saben todos
+la plataforma
+solucionar sus problemas que a ustedes les agrade
+trabajar en la plataforma
+y también priorizar lo que son los habilities
+lo que es la seguridad
+lo que es la mantenibilidad
+este
+como se llama
+bueno ta redundancia
+todas esas cosas que nosotros tenemos que
+buscar obviamente priorizando
+y poder atacar todo lo que es el negocio
+yo ahí siempre al equipo de desarrollo
+siempre le digo si es posible
+metámosle un poquito más y dejemos lo mejor
+que esto después hoy o mañana lo vamos a
+lo vamos a agradecer
+hay veces que no se puede
+pero siempre le buscamos la vuelta
+así que bueno vamos a seguir trabajando
+obviamente que estos son objetivos
+a nivel macro
+como bien sabrán nosotros venimos trabajando
+con muchas cosas en segundo plano
+por ejemplo ahora estamos trabajando
+con la parte de declaraciones
+hemos hecho bastantes ajustes ahí
+para decir cosas
+Isabel sacamos el filtro
+para validar muchas operaciones
+en bookkeeping con Ramiro
+también estamos trabajando en los nuevos
+documentos Mati
+hemos pulido a nivel
+de whatsapp o sea
+hemos hecho muchas cositas
+que de repente no son los objetivos
+a nivel prioritario pero si
+están en segundo plano y se vienen a atacar
+así que bueno super contento
+en estos casi
+dos años que vengo acá trabajando
+en Dashbank y bueno a seguir metiendole
+como siempre digo los que me conocen
+vamos arriba y que va a estar todo bien
+grande
+buenísimo
+nada me sumo brevemente
+a las palabras de Guillermo
+gracias al equipo de diseño
+y a Ana Cecilia por hacer esta reunión
+y a las palabras de Santiago
+creo que estos espacios
+ciertamente
+cuando estamos remotos son muy valiosos
+pues estamos
+en distintos países todos
+en distintas partes del mundo
+entonces bueno siempre
+manteniendo un contacto y una reunión todos
+y verles las caras a todos es super valioso
+entonces nada contento por este momento
+y gracias a los que lo hicieron posible
+bueno para este primer trimestre
+a nivel comercial
+básicamente tenemos
+cuatro puntos
+voy a ir en orden el primero de ellos
+la política de las comisiones
+queremos
+tener más trazabilidad y métricas
+aquí vamos a
+hacer una reformula
+de cómo se están llevando
+el control y el planteamiento
+de las comisiones
+entonces
+nada
+una de las metas es mejorar el proceso
+de estas
+luego
+en cuanto al playbook comercial
+estamos implementando gates por país
+para poder tener
+utilizar todas estas bases de datos
+como data sur
+que hemos venido trabajando últimamente
+una prospección más focalizada
+con más información
+y implementar esto en los procesos
+comerciales que tenemos
+hoy en día
+obviamente bueno tener el tema de
+white label versus integración
+handoff al equipo de administración
+y banca esto viene un poco de la mano
+con crear
+un manual de
+procesos internos
+para el equipo comercial
+donde tengamos más orden
+más estructuración
+más en el punto número 3 del CRM
+y las métricas
+tenemos una herramienta súper poderosa
+que es Snop
+hoy en día bueno Matías
+y yo estamos trabajando en este punto
+sobre cómo configurarlo y adaptarlo
+un poco más a nuestras necesidades
+siempre para que tengamos
+el CRM
+lo más actualizado posible
+hoy en día
+creo que hay mucha data que se está perdiendo
+hay contactos
+que no estamos prospectando
+y no estamos haciendo follow up
+como es debido
+entonces bueno una de las metas para este trimestre
+es armar todo el workflow
+el dashboard
+manejar los stage a nivel comercial
+súper atados
+y de la mano con el equipo también
+de cumplimiento
+bueno para que tengamos el flujo
+lo más estructurado posible
+no se nos escape nada
+no se nos escape un cliente
+no se nos escape un correo
+tengamos todos los cabos atados
+porque es aquí donde nosotros
+obviamente con esta expansión
+que estamos haciendo hoy en día
+a nivel comercial
+en Bolivia y de cara al futuro
+vamos a estar teniendo más clientes
+cada vez más
+y tenemos que estar nosotros
+a nivel interno
+lo más organizado posible
+lo más determinado posible
+a seguir los procesos
+porque es aquí donde nosotros vamos a ver
+como decimos en Venezuela
+el queso a la tostada
+porque necesitamos atajar
+lo más posible
+y necesitamos aplicar procesos
+que todo el equipo
+desde Guillermo
+hasta cualquier persona hasta mi
+nos fijamos
+y sigamos los pasos
+para materializar
+y tener todo en nuestra agenda
+en nuestro CRM
+y bueno estamos trabajando
+en este diseño de
+flujos y manual de procesos
+cuarto punto
+cadencia comercial
+bueno esto es un poco
+hoy tuvimos una primera reunión
+del E10 con
+con Taro
+y Sergio Velasco
+en Bolivia
+es básicamente llevar este tipo de reuniones
+a los equipos
+semanalmente cada dos semanas
+por país
+y bueno mantener una reunión
+cada dos días también semanal
+con los ejecutivos de ambos
+entonces bueno implementar
+en este trimestre es prioridad
+y bueno creo que
+para el Q2 de este año
+vamos a ver mejorías
+en el departamento
+y en los procesos que estamos llevando hoy en día
+si me puedes pasar
+bueno a nivel
+de objetivos del primer trimestre de Brasil
+bueno
+aquí tenemos los criterios de señal dura
+o sea tenemos en el pipeline
+manejar 20 millones mensuales
+o más
+tener un decisorio identificado
+una ventana de go live
+aquí les adelanto que
+ya estamos trabajando de la mano
+con el equipo de Bridge para habilitar
+el producto de Crosswater Payments
+en Brasil
+es un mercado super competitivo
+super particular
+totalmente distinto al mercado en Bolivia
+pero bueno
+aquí estamos buscando
+llevar este punto
+al equipo comercial
+y ver como lo vamos
+a desarrollar en las próximas semanas
+con Leo y Ricardo
+plan de acción, conferencias
+establecer un presupuesto
+y bueno
+y también tener la decisión estratégica
+de como vamos a enfocarnos
+en Brasil
+hoy en día el producto estrella en Brasil
+han sido las LLCs y la apertura de LLCs
+entonces de la mano con el equipo de marketing
+vamos a
+focalizar un poco más
+a nivel de Ads y a nivel de presupuesto
+de marketing
+un poco más
+orientados al tema de LLCs
+sin dejar de la mano
+el producto de Crosswater Payments
+que bueno que va a estar ahí
+va a estar un producto que va a estar ahí
+pero tenemos que ir desarrollando y capacitando al equipo
+para poder comercializarlo adecuadamente
+entonces
+equipo super contento de lo que viene
+este primer trimestre
+y bueno vamos con todo
+vamos para arriba como dice Santi
+y nada buenisimo
+ahorita volvo yo a hablar
+porque me extrañaba
+un poquito los procesos internos
+y lo que hemos estado viendo
+como pueden ver esta reunión
+es parte de los resultados
+el punto número uno
+es cadencia de comunicación
+entonces mejorar la comunicación
+tener flujos y entender como
+está pasando la comunicación
+la información dentro de la empresa
+hacer reuniones recurrentes
+implementar la agenda L10
+como dijo Alberto
+y mejorar Slack
+la segunda parte de la estructura organizacional
+formalizar los títulos
+tener un organigrama
+tener un equipo de liderazgo
+formalizado también
+y reestructuración de cualquier rol
+o no sé
+cualquier rol dentro de la empresa
+después el marco operativo y compliance
+les mandé el
+formulario HR
+entonces es tener esa información
+empezar a crear las políticas
+y formalizar la contratación
+tener contratos etc
+y desarrollo y desempeño
+hacer capacitaciones
+coaching one on one
+y planes de crecimiento
+para personas en el equipo
+eso es un poco de lo que hemos estado haciendo
+vamos a seguir haciendo
+y ya
+yo paso porque ya estamos sobre la hora
+siguientes Matías
+te doy la palabra
+he seguido último yo
+hace que esto sea peligroso
+porque todos saben cuanto me gusta hablar
+así que voy a ir punto por punto
+mencionando algunos hitos
+y planificación
+para todo lo que es el cierre
+de este primer trimestre
+como bien vemos ahí el primer paso
+y lo que más estuvimos trabajando
+a principio de año fue
+todo lo que es la automatización
+del prospecting comercial
+a través de la herramienta
+que se llama Snop
+para dar contexto es la herramienta
+que nosotros estamos utilizando como CRM
+y tiene una integración de bases de datos
+de miles de perfiles
+miles de empresas
+y es toda una herramienta para prospectar
+automáticamente vía email
+y vía Linkedin
+entonces hoy en día nos da la posibilidad
+de trabajar junto y a la par del equipo comercial
+tanto en Bolivia como en Brasil
+para hacer toda una prospección
+de manera 100% automatizada
+sin que el comercial
+tenga que abrir la puerta
+y llegar a una empresa
+todo 100% manual
+mandando mensajes o llamando
+hoy en día se puede hacer algo mixto
+y se puede hacer el levantamiento
+de bits de forma masiva
+a su vez
+lo que junto con
+esta nueva plataforma
+como dijo Beto
+en su presentación
+a principio de año hicimos lo que era
+una migración ya que nosotros nos
+encontrabas en otro CRM
+y se presentó la oportunidad de
+justamente migrar a Snop
+entonces fue cuando ahí trabajamos
+junto con el equipo comercial
+que eran los que más utilizan
+si se quiere el CRM y toda esa información
+decidimos hacer la migración
+de todos los contactos
+y también todo lo que es el armado
+de la plataforma justamente como
+para que ellos lo puedan utilizar
+de la mejor manera ya que es la herramienta
+que hace que el equipo comercial en parte
+pueda vender al 100%
+para hacer seguimiento
+para llegar a los contactos
+para guardarse las tareas
+para el equipo IT
+es como compararlo con un Jira
+si no está en el CRM no existe
+así que es fundamental
+para lo que es el final del trimestre
+estamos trabajando en
+mejorarlo y adaptarlo
+a todo el nuevo ecosistema
+y la nueva infraestructura
+que estamos teniendo
+así que es por eso que se vienen múltiples cambios
+a nivel de ampliar
+el alcance de la plataforma
+y que cada vez tengamos
+segmentado todo por
+la unidad de negocio ya sea el del CEE
+ya sea cross border, el país
+cuáles son los clientes activos
+y mencionando clientes activos
+voy ya por el tercer punto
+que para mí es algo que
+a mí me encanta y es
+el tema de la segmentación y fidelización de clientes
+o sea
+como dijo Santi Tona
+parte de la fidelización
+se da a tener una buena herramienta
+y una infraestructura
+que acompañe al cliente
+y que le permite utilizar algo que funciona
+como cualquiera de nosotros
+cualquier aplicación como WhatsApp
+entonces es parte
+de esa iniciativa
+y creo que la estamos trabajando
+excelente y acá es donde
+entra la otra parte
+que es más a nivel marketing
+y desarrollo de negocio
+es decir cómo hacemos que ese cliente
+que hoy en día por ejemplo está
+moviendo X montos
+pueda mover más en base a ganar
+confianza o que gane
+una confianza extra en nosotros
+y cómo hacemos que siempre
+la comparativa o el ejemplo de marketing
+es si viene un dashboard con
+X y le ofrece una comisión
+mejor que nosotros o algo más competitivo
+cómo hacemos que igual sigue vistiéndonos
+frente a cambiarse a un competidor
+entonces es ahí donde
+empezamos a planificar junto con Beto
+esto de poder hacer tiers
+de clientes
+hoy Carola me planteó
+un escenario que capaz no había
+considerado el 100% entonces
+me parece que está buenísimo y es mucho
+recibir feedback e iterar
+y es que vamos a empezar a
+calificar a los clientes
+en distintos universos
+distintas categorías para que
+en base a eso tengamos un plan de acción
+para cada cliente
+no es lo mismo un cliente que es recurrente
+que hoy en día tiene un
+health core que vamos a implementar
+alto que es el cliente
+que ya está muy cercano
+a nosotros que las acciones
+que tenemos que hacer con el que se registró
+hace dos meses está pagando el mantenimiento
+pero no hizo ni siquiera una transacción
+y por último
+y cuando vamos a la parte
+del posicionamiento y captación
+vamos a estar trabajando
+100% con las cuentas
+del c-level del LinkedIn
+para poder generar el contenido
+también a su vez eso implica que vamos a empezar a
+generar más contenido y revivir
+el contenido para todo nuestro Instagram
+y el LinkedIn de la empresa
+vamos a intentar
+poder sacar el target account
+que esto fue una
+surgió en una reunión de hoy con el equipo
+Bolivia y es poder empezar a
+tener un targeting
+de cuentas de forma trimestral
+que son las cuales
+cada account manager se va a enfocar
+o va a poner el 100%
+el 80% de su foco
+en poder relevar y sumar
+ese tipo de cuentas como clientes
+después vamos a seguir buscando
+cualquier tipo de partnership
+institucional ya sea con Caimco
+con Lampchamp con las distintas cámaras
+de comercio de los distintos países
+principalmente Bolivia y Brasil
+y también vamos a estar haciendo un farming
+de reviews positivas seguramente
+alguien pudo haber visto el Instagram
+o el perfil hemos recibido
+algunos ataques
+de reviews negativos principalmente
+por todo lo que tiene que ver con renovaciones
+cosas así que están
+no están infundadas son dos o tres
+personas pero que terminan replicando
+desde distintos perfiles
+así que vamos a estar trabajando justamente
+en mejorar eso de forma realista
+con
+reviews de los clientes y demás
+pero bueno va a ser algo que la idea es
+para final de este Q que también
+ya lo tengamos solucionado y
+hacemos página de eso
+así que eso
+por mi parte y bueno y como dijo
+Beto vamos
+a estar encendiendo campañas
+para las aperturas
+de compañías en Estados Unidos volvemos
+un pasito atrás para lo que es Brasil
+así que vamos a estar enfocando junto con
+los account managers de Brasil en trabajar
+en la captación de lo que son
+las sociedades
+en Estados Unidos
+a nivel low level no es que vamos
+a ir como
+los que estábamos antes conocíamos
+y íbamos 100% con el foco
+en las compañías sino que va a ser
+potenciar igualmente
+esa unidad de negocio que vendría
+podemos atender y
+cerrar varios clientes y cuentas
+me monto yo
+a la presentación un poco
+del equipo que creo que es la parte que más
+me gusta hoy en día
+eso está un poquito
+desactualizado pero muy poquito
+porque esta semana pues
+ya hay
+tres propuestas más
+tres ofertas más
+que aceptaron en Bolivia
+y estamos esperando esta noche por una
+cuarta que
+vamos a dar por lo menos por
+completado por el próximo tiempo
+el equipo
+hoy en día pues
+tenemos 27 personas
+en este llamado hay 25
+los dos que no están de vacaciones
+y
+tres o cuatro personas de nuevo que se están
+llevando más al equipo de Bolivia
+y nueve personas en Uruguay
+está todo el equipo de desarrollo
+y todo el equipo de diseño en
+Uruguay lo cual me parece
+estupendo porque también hace que
+haya mejor comunicación
+del equipo
+en Bolivia pues
+tenemos a Roberto
+tenemos a Sergio tenemos a Carlos
+tenemos a Carlos se está
+uniendo tenemos a
+Carola se está uniendo
+Lorena se
+está uniendo
+¿quién?
+se está uniendo Lorena Ariel
+Ricardo siempre se me olvida el nombre
+de esta persona
+Fernanda Fernanda Fernanda y Tania
+no, María Fernanda es esta noche
+la otra
+Tania
+por alguna razón siempre me olvida la palabra Tania
+está Tania
+en Venezuela
+tenemos a Vero
+tenemos a Rami
+tenemos a Andrea
+en Argentina está Mati
+está Luciano y está Sergio
+en España
+está Isabel
+está
+Ana
+y está bueno
+entonces Carlos está en Bolivia y en España
+al mismo tiempo
+en Brasil tenemos a Leo y a Ricardo
+aquí en Estados Unidos
+estamos yo y Alberto
+Alberto y yo
+y en Tailandia
+tenemos a Samuel
+dando vueltas por el mundo
+somos un equipo que está en diferentes lugares
+pero estoy muy contento
+y si podemos llegar a donde
+vamos a llegar
+vamos a tener oficinas en todos estos lugares
+para también vernos la cara
+y creo que la presencialidad
+siempre contando con flexibilidad
+pero la presencialidad creo que es súper importante
+hoy en día y creo que nos va a ayudar
+un montón
+siguiente lámina
+¿quieres que hable más del equipo?
+¿sí? ¿no?
+siguiente lámina
+puntaje individual
+hazlo más del equipo
+te estás riendo
+bueno aquí estamos todos
+quedó bello de nuevo
+gracias Gastón por esto
+la verdad está hermoso
+está digno de presentárselo
+a cualquier persona
+del universo
+así que
+ahí lo tienen un poco
+todos tienen fotos más bonitas
+que las mías
+los felicito a todos también
+desde cuando
+desde ahora
+cuando eran chicos
+si doy el comentario
+ese reclamo
+viene desde que éramos
+incorporados hace varios años
+viene siempre el reclamo de la foto
+hay que actualizar
+igual esta está con barba
+esta está con barba
+peor es la de Slack
+eso es una foto que me tomé yo
+por una entrevista de trabajo
+hace diez años
+bueno
+yo aquí voy a interrumpir
+interrumpo
+porque en verdad el organigrama
+si está bien está actualizado
+porque somos las personas que estamos hoy
+y en esta llamada
+la próxima llamada el organigrama va a cambiar
+pero bueno ahí pueden ver un poco además
+los títulos y en dónde están cada uno
+ven que en verdad la organización
+tiene departamentos tiene líderes
+y hay un montón de trabajo
+y para llegar a esta llamada
+y llegar a los objetivos y que cada uno presente
+y todo es un trabajo que tienen haciendo
+desde hace dos años
+pero realmente hoy en día lo tenemos
+documentado organizado y lo podemos presentar
+me llegó un mensaje que me dice
+ya se siente oficialmente como
+una empresa y es eso
+ya estamos estandarizando
+estamos formalizando
+y en verdad el trabajo es de todos ustedes
+así que gracias
+voy a
+vamos a ir hacia las preguntas
+porque ya estamos sobre la hora
+y nada más recibimos una pregunta
+que fue de Andrea
+y la pregunta va dirigida
+a Santiago Tonarelli
+me imagino porque dice Santi Guille
+y a Guillermo
+y es cómo va el estatus
+de los forms de las declaraciones single member
+estaban desactualizadas
+del año 2024
+bien contesto yo tomo la iniciativa
+y este
+como comenté
+los objetivos
+de lo que es este trimestre
+nosotros ahí ya estamos
+ya nos dimos cuenta de ese issue
+como también de algunas mejoras
+lo estamos
+mechando o sea haciendo en paralelo
+junto con lo que es la parte de compra y venta
+la idea es poder tenerlo
+para el viernes más o menos
+la idea es tener estos documentos
+yo también ahí ya hablé con
+Ramiro
+la idea es que no toquen todavía
+ningún documento
+porque lo que vamos a hacer
+es volver a generarlos todos
+que tengan todos 2025
+entonces las declaraciones que ya estén
+no tocarlas hasta que salgan
+pero ya estamos
+ya se está atacando eso
+y enseguida que tengamos novedades vamos a alzar
+lo mismo ahí Isabel
+con el tema de validar
+de poder filtrar las que faltan sin validar
+porque hay clientes que tienen muchas transacciones
+y de repente quedan transacciones
+en el principio de 2025 sin validar
+y moverse hacia esa página es muy complejo
+pero también va a salir
+el viernes lo tenemos un poco atrasado
+pero realmente estamos intentando
+mechar con esto y con lo de compra y venta
+gracias Santi
+y gracias Andrea por tomarte el tiempo
+gracias por escribir
+y gracias por leer
+así que gracias
+ya estamos sobre la hora ya se acabó la llamada
+gracias a todos también
+por unirse antes
+por jugar con nosotros por reírse
+Matías
+¿opino una foto después?
+esta que no quiero salir en movimiento Mati
+no me estreses otra vez
+no no no
+por eso por eso vamos
+ahora volvemos a la pestaña
+donde estaba
+bueno que
+para los que estamos hace bastante
+ver este número es como impactante
+y muy bueno así que
+si quieren sacamos la foto acá
+yo cuento tres y las salgamos
+uno
+tres
+dos
+two
+uno
+esta sale
+así que después
+los etiquetamos a los que estén
+y sigan a la página
+un reporteo nos sirve mucho
+gracias Rami
+gracias Gastón
+gracias Matías
+por su trabajo para ayudar a hacer la presentación
+gracias a todos por estar
+feliz tarde
+vamos arriba
+gracias a todos
+nos vemos
+buenas tardes a todos

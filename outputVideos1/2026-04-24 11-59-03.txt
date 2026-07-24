@@ -1,0 +1,181 @@
+¡Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+Gracias!
+¡Hola! ¡Hola!
+¿Cómo andan?
+¡Buen día, buen día!
+¡Buenos días!
+¡Adiós!
+¿Cómo andan?
+un segundito poner a cargar a la nena
+cuando tuve que adelantar la daily porque tenemos la charla de haití tristemente la única que me va
+a acompañar ahí va a ser martina así que nada el resto se pierde ahí esa charla va a tener que no
+le va a quedar otra que poder irse a comer o lo que tenga que hacer así que nada lamento mucho
+la pérdida de esa charla de este a lo que si al final cuando viene la sesión de preguntas
+hay que que te llamo para que le conteste esa ramita porque si no ya y vos vos entras y le
+contestas todas las dudas que tengo a este bien para que santísima la cámara bueno arrancando
+ayer salimos a producción
+porque tenemos que salir a producción entonces arrancamos la salida de producción si éste
+yo y lo que lo que pasó es que salimos a producción sin cositas o por ejemplo en agua o éste
+o lo de los blogs pero la cagada que lo en agua y no se fue yo pensaba que la charla
+de tira más tarde pero se ve que es ahora entonces está estamos cagados con eso no
+vamos a poder hacer mucho
+sí sí
+así que en ese sentido no tiene que salir hoy pero no lo trabajé muy en el día pero tiene que
+tenerse hoy para que lo podamos sacar a prota está este cosa de que tengamos el fin de semana
+para ver alguna cosita de una cosa como dije ahora has visto se me llegaron muchas cosas
+de team mail ajustes y arreglos nada vamos a tener que mejorar ahí la parte de mejorar y
+seguir trabajando en la parte de cuba que es clave para todo este módulo de team mail y
+también eso involucra meter todo lo que es banca entonces bueno vayamos bien por ahora la idea es
+que cada uno siga con lo que tiene nada bueno no me acuerdo que ahora voy a escuchar que tenía la
+url vamos viendo pero aparecieron nuevas prioridades sí este así que en cuanto a eso
+este vamos a vamos viendo cómo vamos distribuyendo el equipo la salida de producción ayer también fue
+porque teníamos sacar términos y condiciones que hizo el queridísimo zona y alguna cosita más ahí
+este y muy todo esto de team mail para poder tener ajustes y esas cosas más que más que más bueno
+tenemos pendiente lo del propio ingeniero por las dudas que son la idea de nuevo era que martín
+hoy en día se todavía se sigue poniendo al día este ahí alguien puede mandar el sticker mío pero
+martina todavía sigue poniéndose al día este laburando con eso y tenemos otras prioridades
+como lo que es el que guay y está la validación del igual y que las empresas que están entrando
+que se le está enviando el documento en blanco por nosotros no estamos validando eso ahí marto
+entonces necesito que lo
+necesito que eso sea la prioridad está o sea este necesito poder sacar eso hoy lo más posible que
+replicar lo que ya hace el worker a nivel genérico que más que más que más bueno hoy tenemos una
+reunión de cuba donde el señor oliva va a presentar este
+o
+y hay dos cosas que estuvimos hablando
+a ver ahora se escucha ahí bien parte claro de todo se escucha la puta más espectacular de esta computadora este bien
+nada lo que les iba a decir ahí tenemos la reunión de cubaca presentar oliva
+ayer pasó y la idea es que si lo pueda correr cualquier persona asimismo
+queremos aumentar lo que son las revisiones tanto de cuba hacia lo que es desarrollo como de lo que es desarrollo
+o sea lo que desarrollo puede aportar a lo que es la validación que hace cual consta y press y test unitarios y
+entonces eso lo vamos a hablar un poquito de la reunión
+pero este y también la idea es que todos puedan ver cómo corrales hay prestes
+yo de mi lado estoy trabajando en dos cosas además de verlo de factura y delegarlo este
+estoy guardando las cuentas
+tenemos que guardar las cuentas ahí y probablemente esté trabajando también
+o delegando la parte de la igual de la factura cuando salta después de eso que otra cosita tengo para ver más
+para tengo te diré viendo las perras y ahora tengo
+tengo varias reuniones tengo la reunión de haití
+tengo tenemos la reunión de cuba y después tengo la reunión continuo de tarde
+y a las 8 me corta el pelo si no hay esto así que es nada daily daily y pronto
+quique
+yo sigo trabajando con tengo 22 frente vamos a decir por ahora además de además de test unitarios
+la pr que en la que agregó estos dos campos de búsqueda en la página de audi blogs que hay santi
+me dejó varios comentarios que estoy atacando ya que son de
+de variada índole
+y también estoy con en paralelo
+la tarea también de audi blogs de lo que es
+implementar la guía para que explique los audi blogs que por lo que veo está funcionando bastante bien está respondiendo bastante bien solamente estoy
+corrigiendo detalles menores así que eso debería estar dos cosas deberían quedar prontas para hoy es básicamente de medida sería seguir con eso
+bien
+recordemos que la respuesta de la guía va a depender del idioma del usuario
+si está eso es importante porque el punto número uno
+y después el otro punto es
+Yo lo vi medio de costado pero ojo porque ahora ya no podemos o sea nosotros en teoría
+en teoría el audi blog
+de o sea cuando se crea el blog
+se deberían estar buscando lo que son toquen a piquito a esas cosas o sea
+no debería haber un problema
+digo porque lo vi por algún lado pero te lo digo por las dudas
+se genera blog no se tendría que estar logueando nada eso quiere decir que eso podríamos pasárselo literal a la guía si nosotros
+encontramos que alguna audi blog no se está buscando correctamente el problema no es la guía
+no es lo que no es buscarlo para mandárselo a la guía sino el problema está en una capa más atrás que tenemos que
+que que ofuscar
+o sea eso es súper importante más allá que podemos aplicar una segunda capa de seguridad como para la guía no pasarle ninguna clave
+pero si llegas a encontrar algo y que
+o sea o más esa obfuscación debería ser casi la misma que ya se corre para lo
+o sea es ese método que ofusca o quita las claves o lo que sea
+debería ser el mismo que ya se usa en el audi blog está
+para tener consistencia si ya eso es importante lo vi en algún comentario
+pero es súper importante que si vos encontrás que hay una clave o algo raro que se esté pasando
+hay que agregarlo al audi blog para que
+a los filtros la sanitización del audi blog para que no pase
+porque esté
+bien ahí de santi gastón para darle un poco más de
+contexto esto como el pacofi yo lo único que le pedí el único que les pido ustedes es más o menos que se fijen que
+explique y use el input por ejemplo el input y los botones más o menos como están en los
+estándares si está este y que tenga un poco de orden a nivel mobile a nivel responsivo si
+este
+nada y este ya en el back office está todo hay componentes genéricos para lo que es ingreso de texto y
+hacer clic en los botones
+entonces no debería
+o sea mientras que coincida con el diseño ya estaría no hay que crear por las bajas y que nadie quería ningún input ni chat box
+y nada
+este y los iconos los sacas de
+anti o sea a no ser que es anti te pase algo si no los sacas de react
+sigue sin reggaeta y
+justamente tomando esta pr como ejemplo en donde bueno estoy agregando un botón y demás hay cosas de front end
+capaz que lo vamos a charlar entonces pero no sabría dónde enviarla ser primero a design intern para que la beach en santiago y gastón
+y después a dónde
+si a las perres de código las perras de código que hagan ustedes o sea tanto vos como tratado
+Siempre tiene que pasar por intern
+Y arrobar a Yonah o a Nau
+¿Tá? O sea, y si requiere
+Y si tiene frontend
+Tiene que pasar por diseño
+O sea, si tiene modificaciones en el frontend
+Por ejemplo, la PR de TATATO eran modificaciones lógicas
+Entonces no incluía diseño
+Era solo pasar en intern a Yonah y a Nau
+Y a vos, ¿tá?
+¿Sí? En este caso
+Como requiere cambios en lo que es
+La UI, también pasa
+A Sant, ¿tá?
+Y él
+Este, perfecto
+Una cosa
+Un desafío que tenemos ahí, Kike
+Digo, para que ya lo vayas viendo
+Es que pensemos qué pasa
+O sea, que intentemos que quede lo más abstracto
+Posible la llamada a repositorio
+Es complicado
+Pero, este, o que siga
+El patrón del chat GPT
+Porque pensemos que hoy en mañana
+Tenemos que usar Gemini o por ejemplo
+Cloud para este
+Para esto
+O sea, la idea es que siga respetando
+Como un patrón genérico
+No tipo que vos le pases el modelo
+Y nada de esas cosas
+Sino que lo que le pasas a repositorio es
+La data
+Y a repositorio es el que se encarga
+De, bueno, de acoplar
+Qué modelo uso, lo que sea
+Ya tenés las constantes de usar el modelo
+Utilizamos el modelo 5
+Si no me equivoco
+Y las tenés de configuración
+O sea, se obtienen de configuración
+Esas cosas
+La configuración de WhatsApp
+Así que, este
+Eso es importante
+¿Por qué te digo que es importante?
+Puede ser que las configuraciones
+De producción
+Sean distintas a las de Dev
+Entonces de última
+Entrás a la base de datos de Prod
+Y te mirás cómo está la configuración
+Y las clonás a la de Dev
+¿Sí?
+Eso nomás
+¿Algo más?
+Ok, genial
+¿No?
+Genial
+Vamos con Sean

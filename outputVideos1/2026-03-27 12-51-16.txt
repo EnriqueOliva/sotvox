@@ -1,0 +1,84 @@
+serían las que no
+capaz que me maría ahí la explicación
+pero las no enviadas serían las que no existen
+en la tabla taxform
+y tendrían que existir
+o sea
+creo que eso está bien
+pero chequealo, pero las no enviadas
+son las que
+no existen en la tabla taxform
+no taxform
+taxform
+o sea, no existen y tendrían que existir
+porque fueron creadas antes de 2026
+y después las enviadas
+son solo las que existen
+en
+taxform
+solo las que existen en taxform
+creo que eso está bien
+porque acá dice case
+o completed
+o si está pendiente
+claro
+el tema es que podemos tener alguna que esté asignada
+a alguien
+hagámoslo más sencillo
+las no enviadas son las que no existen
+en taxform
+y deberían existir
+entonces si no existen en taxform
+y deberían existir
+están no enviadas
+y las enviadas
+son las que existen en taxform
+y deberían existir
+no importa cuál es el status
+no interesa el status
+lo que sí
+mientras que existan ya está
+no interesa el status
+lo que yo te decía es que por ejemplo
+si un status dice Andrea
+porque la tiene asignada
+a ella
+vos ahí lo que tenés que ponerle
+es pendiente
+si dice completada
+ponés completada
+pero si
+podés ir pendiente
+o podés tener directamente el usuario asignado
+chequeate eso
+y te pido si podemos mergear los dos excel
+una vez que chequees eso
+me confirma chequeé esto
+y si podemos mergear los dos excel
+para pasárselo
+así me facilitas el trabajo
+¿preferís un archivo query
+y un excel entonces?
+uno solo a la una
+no, pueden ser dos queries pero
+armá un solo excel
+copialo y pegalo
+lo que te quede práctico
+ok
+pueden ser dos queries
+pero necesito enviarle todo en un excel
+así es más práctico
+le ponemos una hoja que sea pendiente
+y otra que sea
+o si querés podés ponerle toda una hoja con filtro
+fíjate lo que te queda más práctico
+capaz que querés poner una sola hoja
+y ponés todas las compañías
+y le ponés no enviada, pendiente y completada
+y le ponés no enviada, pendiente y completada
+y ahí hacés solo una query
+capaz que eso te queda más práctico
+ok, genial
+fíjate
+vamos arriba
+después pasanos al channel con Martina

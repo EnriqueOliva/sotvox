@@ -1,0 +1,218 @@
+Estamos todos, creo yo.
+Buenas, ¿cómo van?
+Buenas, buenas.
+Muy bien.
+Arrancandón.
+Yo en particular el fin de semana estuve trabajando con lo de alinear el extracto bancario.
+Ahora surgió un nuevo VAG que estoy mirando.
+Hay una cuenta que no le está permitiendo generar el extracto bancario.
+Creo que eso es un catch que tenemos, ¿no, Yona?
+Que si el balance da negativo, tipo, no lo genera, ¿no?
+Sí, exacto.
+Está.
+Sí, hay unas transacciones que estoy viendo por qué está pasando eso.
+Y después ahí, nada, estuve revisando PR.
+Ya revisé todas las PR de mi lado de ahí, de Fernando y Enrique.
+Me queda una que es la del QR, pero hasta que no salga el VAG, el fix, no lo vamos a sacar.
+Después, nada, ¿qué más?
+Estoy con la parte de pagos.
+También le di una iteración a las PR de Nahue.
+Tengo que poder iterarla.
+Me reuní con Nahue y Jonathan un poquito para, particularmente con Yona, para mirar lo que sería el Drawer.
+Que la idea es que el título pase hacia arriba.
+Y con Nahue para, además de alinear las PR, que él se encargara de la prueba de concepto de renderizar el mail.
+Un poquito ahí, bueno.
+También está el tema de los idiomas, a ver cómo podemos manejarlo.
+Enrique, te voy a necesitar que te quedes como post-cram un segundito con Santi.
+También revisamos el viernes ahí las cosas de notificaciones y configuración con Gastón y Santi.
+Pero nos quedaron cosas pendientes.
+Igual habían algunos ajustes que ya marcamos.
+Está pendiente lo que sería el refactor ahí, Santi, de las navegaciones internas.
+Marti, la idea sería a ver si podemos margear.
+Las PR es principalmente las de Nahue, para que las puedan empezar a probar los chicos.
+Hacer toda la parte de QA.
+Y después probablemente Nahue y Jonathan van a tener que...
+O sea, si liquidan con todo lo que tienen, la idea es que ellos ataquen lo de notificaciones mientras que yo sigo con lo de paus.
+Eso de mi lado.
+Nahuel.
+Bien, yo estoy terminando.
+Antes de resolverlo desde como es, los comentarios que dejó Santi.
+Y ya voy a mandar las PRs.
+Y después me queda pendiente juntarme con Jona para ver el tema de las notificaciones.
+Bien, perfecto.
+Bien, bien.
+¿En los comentarios le falta algo?
+¿Me dijiste?
+En realidad ahora iba a ser el commit de lo que habíamos hablado del tema de las variables de Slack.
+Para que queden consolidadas en una misma property del JSON que se guarda en la base de datos.
+A un commit de eso al worker y también a la migración.
+Que es lo último que me falta.
+De todos los comentarios.
+Bien de bien.
+Jona.
+Bien.
+Nada, yo hoy estuve avanzando un poquito en el tema de los emails.
+De esto de lo que hablamos para las notificaciones.
+Que tal que me quedé ahí juntar ahora con Nahue después.
+Para pasarle ahí lo que yo tengo.
+Más o menos lo que había pensado.
+Y ahora ya me puse enseguida que terminamos ahí la reunión.
+A hacer esos ajustes del Drawer.
+Así que voy a andar con eso.
+Ojo que no está en progre la tarea.
+¿Cuál, perdón?
+La del Drawer.
+Ah, no. Es una de las que está abajo de continuar.
+La tengo que pasar ahí. Está en todo ahí abajo.
+Que es la de... Quiero cerrar ahí abajo.
+31.66
+31.
+36. Está ahí en el backlog en todo.
+¿31?
+Sí.
+¿Dónde dice 31?
+En la descripción de la PR.
+Ah.
+Tramposa, tramposa.
+O sea, te la muevo para arriba.
+Voy a asignarle la épica ahí.
+Sí.
+Perfecto lo que tenía.
+Y ponerle en progre.
+Bien.
+Y no te olvides de asignar los puntos.
+Sí.
+Ah.
+Bien de bien.
+Gastón.
+Buenas.
+Bueno, yo el viernes estuve haciendo unos ads que me habían pedido.
+Para la cuenta de Down Basic.
+Por otro lado, también estuve trabajando en una presentación.
+Que requería ajustes.
+De LLC.
+Eso ya quedó terminado.
+Lo que sí.
+Le quería preguntar a Santi.
+A Santi Pantin.
+¿A quién le tendría que mandar eso?
+O si te lo mando a vos.
+Y vos se lo compartís.
+Porque me lo habías pedido en Design.
+Pero no sé quién lo requirió.
+¿Qué cosa?
+Gastón, lo de la presentación.
+En fin.
+Sí.
+Eso no es para Carlos.
+Lo pidieron para Carlos.
+Para Carlos.
+Estaba viendo él.
+Bueno, eso quedó terminado.
+Después estuve haciendo los ajustes que estuvimos viendo el viernes de notificaciones.
+Eso ya ahora lo mando y paso a trabajar en los de configuración.
+Pero los de notificaciones ya están.
+Básicamente.
+Me faltan algunas, ¿no?
+Y bueno, la idea es terminar esto de notificaciones y configuración.
+Y seguir con unas cosas que vimos hoy en la reunión de marketing.
+Que me pidieron nuevas tareas.
+Perfecto.
+Fernando.
+Bien, estuve con los test de cripto OTCOM.
+Y calculo que si todo sale bien, para hoy estarían al menos...
+Hechos todos.
+Quizás sin la descripción, porque la descripción lleva un poco de tiempo.
+Un poco bastante de tiempo.
+Pero también por el tema del reporte de los bugs y eso que se fueron encontrando.
+Así que está.
+Y sobre eso.
+No sé si tenías algo para comentar.
+Me habías dicho, Santiago.
+No, no. O sea, muy probable que los tenga.
+O sea, si marchamos sobre el enagüe, tengan que ponerse a probar todo eso.
+Yo ya probé tus PDRs.
+Falta el lado de Marti.
+Ahora, si hay que se libere de parte del enagüe, ya sigue con esas PDRs.
+A ver si podemos mergear todo eso.
+Dale. Y bueno, sigo con eso nomás.
+Después que termine, pensás que...
+No, nada. Lo planteo por chat después.
+O sea, la idea es que después que termines con todo esto de cripto.
+O sea, de la parte manual.
+De cripto, ¿no? Que es lo que estás trabajando.
+No, no. Ahora es One Money.
+La parte manual fue la que se encargó Enrique en la, creo que, 8.31.
+Acá, Tato, pero acá tenés las tareas estas.
+OTCOM. One Money.
+Ah, One Money. No dije nada, no dije nada.
+Se confunden, sí, se confunden.
+Está bien, está bien.
+Yo creo que está bien, perfecto.
+Estamos bichando y después de esto, una vez que quede todo eso,
+yo le había pasado una lista de prioridades a Enrique.
+Sí, sí, sí, ya las...
+O sea, ya están todas las de prioridad.
+Las prioritarias ya estarían todas cuando termine esto de OTCOM.
+Pues estaría, tipo, Rail y todos los otros controladores.
+Había, había, había de...
+Yo le pasé una cantidad...
+O sea, teníamos que contar parties, tenemos mucho tempo.
+Eso está en la 8.31.
+Está, por eso. Y después hay que seguir con el backoffice, que tiene una cantidad
+de endpoints también sin probar, que yo ahí le había dicho por último,
+Enrique, una vez que terminen todo lo de SitePress y todo, si no me equivoco,
+Kike, corregime, pero que después de terminar todo el site,
+ahí recién pasar a los endpoints del backoffice, ¿no?
+Sí.
+Ok, bien de bien. Perfecto.
+Bien de bien.
+Está igual.
+Vamos a ver si podemos hoy sacar, mergear por lo menos todas esas PRs que ya fueron
+mandando de nuestro lado, ¿está?
+No se olviden acá, Tato, que por ahora están todas in progress.
+Si alguna de estas tareas pasa a estar
+en el channel interno, hay que pasarla al nuevo status, ¿está?
+Sí, sí, sí, ok, gracias.
+Lo mismo para todos. Enrique.
+Sí, bueno, yo de mi lado también.
+Es un poco lo mismo.
+Estuve con las PRs de SitePress, que ahí quedó aprobada Santi por una web.
+Y bueno, incluso Jonas.
+Así que ahí ya quedó enviada.
+Y bueno, la idea sería seguir con los casos de QR y también capaz puedo paralizar
+con test unitarios, con ayudar Fernando, pero bueno, ahí vos decías que va a surgir
+algo de testing hoy, así que la idea también es estar atento a eso, básicamente.
+Bien, perfecto.
+Bien de bien.
+Gastón, Abuel, Santi.
+Buenas, ¿cómo va?
+Bueno, por mi parte,
+el viernes ya dejé enviado al canal de diseño para que revisen
+el documento este que había pedido, el comprobante de pago que pidió Carlos.
+Ya vi que
+dejaste un comentario ahí.
+Estarían faltando solamente agregar esos dos campos.
+No sé si estaría ok ese ajuste y si se lo puedo mandar a Carlos.
+Supongo que eso será lo que veremos.
+Vamos con Óscar, con Enrique.
+Después
+también estuve trabajando en la parte de los mails.
+Ya lo tengo armado.
+Ahora en breve se los comparto.
+Y también estuve trabajando en la parte de la barra de navegación.
+Ya se lo mandé a Gastón para que lo revise.
+Y
+ahí lo de los mails también creo que se lo pasé a Gastón para que lo revise.
+Se lo pasé el viernes, si no me equivoco.
+Ya quedaron ajustados los mails.
+En los comentarios de ambas cosas y ahora en breve se lo comparto al canal de diseño.
+Bien, perfecto.
+Bien de bien.
+Y Marti.
+Bien, el viernes básicamente estuvimos con lo del extracto y todavía he estado con
+la revisión de PRs y calculo que voy a seguir con eso.
+Y algunos problemas de admin, lo que han pedido.
+Bien de bien.
+Bueno, genial.
+Entonces nos quedamos solo con Postcran con.

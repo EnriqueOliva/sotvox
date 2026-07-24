@@ -1,0 +1,2407 @@
+Bueno, contentos, contentos por la demo hoy
+Me imagino, súper emocionado
+Se los ve, se los ve contentos, sí
+Hablando de todo un poco, creo que desde el auto es la primera vez que hago una demo en español
+Sí, raro
+No tenés la excusa del idioma acá
+Exactamente
+Yo ayer les mandé la demo con los puntos de los que les había dicho ayer
+Como para tener ahí, si quieren, tipo de costado
+Más que nada porque hay cosas que capaz que está bueno comentar
+Pero igual mi idea ahora es
+Primero, ahí, no sé si viste Kike
+Yo te agregué
+El correo de Asban
+Si te parece bien usar ese, ya te agrego como teammate
+Y vamos probando que te lleguen
+Perfecto
+Sí, lo tengo abierto
+Bien
+Creo que va a ser por Zoom
+Por lo que estaba viendo, pero
+Como en Zoom ahora
+Tengo el
+El límite de tiempo
+Lo hacemos por acá
+Espero que ya te voy a compartir
+No creo que ellos lo vean bien
+No lo voy a compartir
+En el otro creo que lo van a ver
+Vamos a simular bien
+Los dos
+Y después
+Bien, ok
+Ahí creo que sí
+Y
+La idea de ahora es
+Ir por el flujo
+Y ya de paso ir creando las cosas
+Para repasar
+La demo en sí
+Puede que salga un poco más corta
+Pero
+Pero acá por si está
+Si surge alguna duda del flujo
+Y eso repasarlo bien
+Y cualquier problema, no creo
+En teoría está todo bien, pero
+A ver
+Yo tengo
+Demo A
+Que va a ser
+El vendedor
+Ah
+Esto quedó
+De mierda
+Yo
+Yo sí
+Ok
+Vos ahí, Joana, si querés
+Ponete en el papel de
+Algunos de los de Bolivia
+Tengo una sugerencia
+Me gustaría cambiar toda esta página
+Bien
+La primero igual voy a agregar
+Aquí que
+Clicar acá
+Mirá que lindo cómo funciona ese Drawer
+Impresionante
+Igual
+Una cosa yo nada acá me parece que no está alineado esto
+Mirá que lindo cómo funciona ese Drawer
+¿Qué pasó?
+¿Qué pasó?
+Si no
+La alineación ahí falló la regla
+Se me dio visco lo que pasa
+Bien
+Acá
+Esto lo voy a mencionar obviamente en la demo no lo voy a hacer
+Voy a poner Enrique
+Te voy a dar permiso de admin para que no haya problemas
+Ahí fíjate te iba a llevar una notificación
+¿Uso cualquier cosa esto?
+No fue el nombre que le di al teammate
+Me dio raro eso ¿no?
+Si
+Ok
+¿Encontraste un vago me parece a mí?
+No
+No
+No
+No
+Hemos encontrado
+Uh, pará, acá encontré otro bar, chicos
+Chicos
+No, no hacemos trim acá
+Bueno
+Baxitos
+Ok
+Acabaría que chequear esto
+Si no estamos haciendo un trim
+Hay que hacerlo
+Porque algún banco que copie y pegue con espacios
+La va a acabar ahí
+Acá
+Oillona
+Que son los que están con Bax, creo
+No sé si pasa lo mismo con el nombre
+Y lo que llega
+Y lo del nombre
+A ver si también
+Es un Bax
+Voy a ir a sacarle fotos acá también
+Sí, está raro esto
+Habría que revisar
+Puede ser porque ya existe Enrique
+El usuario
+Pero no debería igual respetar el que yo le puse
+Puede ser, ¿no?
+No, porque el usuario sigue siendo único
+No
+Debe estar marchando por el email
+Un usuario, el usuario existente
+¿Le suena ese nombre aquí, qué?
+Enrique Prova, Enrique Prova
+Sí, sí, es tal cual
+Ok
+O sea que cuando
+Allí cuando le ponemos un nombre al email
+Que estamos agregando
+Es para el caso en que no hay
+Ese usuario no existe
+Me imagino yo
+Sí, porque
+En la tabla de T-Mails
+Nunca se junta un parámetro username
+O para distinguirlo
+O para distinguirlo
+O como para poner un apodo
+Ok, está
+No sé si es un bug
+No sé si pasa en la vida real, ¿no?
+Pero está
+O que no pasa
+Lo dejo para ver
+Eh, ok
+¿Por qué esto está con...?
+Bien, la idea de acá
+Es que yo voy a arrancar
+Entrando acá
+Para decirles
+Voy a simular
+Lo que es
+La vida real
+El vendedor
+Y el comprador
+De mi lado
+Bueno, ahí les tengo que aclarar
+Yo no sé qué conceptos usan ellos
+Porque tenemos vendedor
+Eh, no sé
+Vendedor
+Exportador
+Y el otro lado es el comprador
+El importador
+Y la contraparte
+Entonces, está
+Te voy a tirar todos los términos
+Cosas que no se mareen ahí, ¿no?
+Porque, no sé
+Eh
+Está bien
+Yo voy a decir
+Está, acá vamos a entrar
+Al final
+El flujo de triangulación
+Que
+Por este lado
+Voy a estar simulando
+Lo que es
+Con demo A
+El vendedor
+Y por el otro lado
+Con la cuenta del demo B
+Voy a estar simulando
+El comprador
+O la contraparte
+Y después del lado de Nahue
+Vamos a estar simulando
+Lo que es
+Eh
+El negociador
+Sí
+Está para la aprobación
+La liquidación
+Y después el refund
+Pero
+En realidad
+Vos vas a tomar el rol
+De Dashbank
+De Dashbank
+Claro
+O sea, lo que le sería
+Utilizar
+A el equipo de Bolivia
+Claro
+Sí, eso lo voy a aclarar antes
+Porque
+Para que entiendan
+Eh
+Y después
+Está
+Enrique va a estar mostrándoles
+La parte de
+Emails
+Que se van a estar enviando
+A lo largo de todo este flujo
+Y
+Y que le llevan
+A las distintas formas de enviar
+A las distintas formas de enviar
+A las distintas formas de enviar
+A las distintas partes
+Yo ahí en el guión
+Puse
+A quién le debería llegar
+Y en qué estados
+Como para ordenar
+Pero igual lo vamos chequeando ahora
+Por los grupos que me haya comido algo
+Eh
+Está bien
+En sí
+Empezaría con la venta
+De la parte del vendedor
+Que acá
+Selección de la moneda
+En este caso
+Va a ser desde dólares
+A bolivianos
+Y en el caso de la cuenta de origen
+Acá está
+Tenemos tres tipos
+Estos datos están moqueados
+No son reales
+Y acá podemos seleccionar
+Cualquiera de estas tres cuentas
+Y tenemos que completar este form
+Para poder crear la solicitud
+Para la venta
+Acá tenemos las validaciones
+De cada campo
+Por ejemplo
+En el caso de que la cuenta
+No tenga los fondos suficientes
+Bueno
+Validamos
+Obviamente que el monto sea inválido
+Pero también validamos
+Que si
+El monto es mayor
+A los fondos de la cuenta
+También
+Lo mostramos
+Como un error
+El tipo de cambio
+Todos los campos son aleatorios
+Acá tiene que ser mayor a cero
+En este caso
+Vamos a poner 10
+Voy a cambiar la cuenta
+Para que sea una válida
+En el caso de la contraparte
+Acá nosotros podemos seleccionar
+Si es que ya tiene existentes
+O solo las que están en estado activo
+Las que están en estado procesando
+Quiere decir que todavía no ha sido aprobada
+Entonces no vamos a poder seleccionarlas
+Y en el caso de crear una nueva
+Lo que hacemos es
+Acá hacemos clic
+Se nos muestra el form
+Se nos muestra el form
+Para escenar los datos
+Podemos agregarlo
+Desde que sea de tipo
+Persona o empresa
+Por ejemplo acá
+Voy a aprobar
+Poner
+Test
+Empresa
+Del party 1
+Enviamos la solicitud
+Una vez que enviamos
+La contraparte
+Se muestra acá
+Como en estado procesando
+Y acá lo que sucede
+Es que del lado de ustedes
+En el video
+Si ustedes entran a la parte
+De bank account
+De la gran 7
+De la gran 7
+Ustedes entran a la parte
+De triangulación
+Y acá en contrapartes
+Les va a aparecer
+Esa nueva solicitud
+Y acá los requisitos
+Antes de poder aprobarla
+O rechazarla
+Antes de poder aprobarla
+En realidad la podemos rechazar
+De una
+Pero necesitamos llenar acá
+La contraparte embordeada
+Que podemos buscarla
+En este caso yo quiero que sea
+Lo que sería por ejemplo
+La cuenta
+Del comprador
+Acá le seleccionamos
+Y aparece
+Y lo que va a pasar
+Es que
+Acá le podemos dar a aprobar
+Y eso habilita
+La contraparte
+Y lo que va a hacer
+Es que del lado del cliente
+Ya pueda verlo como activo
+Acá un comentario
+Es que también tenemos esta opción
+Para activar
+Que es empresa propia
+Esto es en el caso de que
+Ambas empresas
+O sea el cliente
+Y lo que es la contraparte
+Sean activados
+Del mismo usuario
+Podemos tener esa chance
+De indicarlo
+Hay que activar esto primero
+Y bueno
+Y luego el mecanismo
+Es el mismo
+Del lado de
+Volviendo a lo que es el vendedor
+Lo que va a ver ahora
+Si el recarga
+Es
+Yo acá voy a hacer esto
+Porque si recargo
+Se me da toda la mierda
+Es lo mismo
+Acá una vez que
+Que recarga
+Y vuelve a seleccionar
+El
+La lista
+Va a ver que la que acabo de
+Solicitar
+Ya está como activa
+Y la puede seleccionar
+Y
+En este caso voy a seleccionar esta
+Para que quede claro
+Que es la
+Son todas del mismo
+Para que quede claro
+Que es el
+El comprador
+Acá va a ser esta
+Después también tenemos
+Para seleccionar
+Lo que es la cuenta de liquidación
+O sea la cuenta
+Donde vamos a
+Depositar los
+Los bolivianos
+Que acá
+El funcionamiento
+Es similar
+A lo que es la contraparte
+Tenemos las cuentas
+Que en este caso
+Aparecen activas
+Y la única diferencia
+Es que
+Acá también podemos añadir
+Las cuentas
+Pero
+No van a requerir
+Aprobación
+Simplemente
+Acá se llenan los datos
+Necesarios
+Y una vez que
+Se da click
+En agregar cuentas
+Se va
+A aparecer
+En este listado
+Y
+El usuario
+Le va a poder seleccionar
+Y
+Yo acá en este caso
+Voy a seleccionar
+Una de las que ya tengo
+Y
+Voy a darle a continuar
+Y acá lo que vemos es
+La pantalla de confirmación
+De datos
+Antes de poder
+Hacer la solicitud
+Por si quieren revisar
+Efectivamente
+Los datos del form
+Antes de
+Concretar la solicitud
+Acá básicamente
+Se le señala que
+De la cuenta
+De lo que es el vendedor
+Se van a transferir
+Siendo
+Dólares
+Y
+Acá se van a
+Recibir
+Mil bolivianos
+Esto es porque
+Ya aplica directamente
+La tasa de cambio
+Y también
+Acá la aclaración
+Que hacemos
+Es que al monto
+Que transferirá
+La contraparte
+Se le sumará
+El spread de Dashbank
+Eso acá
+No se muestra
+Pero si se va a mostrar
+Más adelante en el flujo
+Y lo van a ver
+Y una vez que está esto
+Bueno que está
+Todo bien los datos
+Acá
+Poder confirmar
+Y esto es lo que va a hacer
+Es
+Concretar la solicitud
+De la venta
+Una vez que se
+Envía
+Bueno acá se le
+Se le notifica
+Que fue así enviada
+Y desde el lado
+Del vendedor
+No va a tener
+Visibilidad
+Por como tenemos
+Hoy implementado esto
+No va a tener
+Visibilidad
+De lo que es
+El estado
+De esa solicitud
+Hasta que
+Se concrete
+Que eso sería
+Que llegue a un estado
+De éxito
+O de
+Rechazo
+Digamos
+De la venta
+Pero de su lado
+Acá
+Lo va a ver
+Cuando
+Cuando alcance
+Digamos ese
+Ese estado
+En esta pantalla
+De
+En este tab de historial
+Y
+Otro comentario acá
+Es que como
+Estamos
+Moqueando
+Y en realidad
+No estamos
+Moviendo dinero
+No
+No aparecen
+Las transacciones acá
+Pero en realidad
+Le deberían aparecer
+Al vendedor
+Cuando
+Cuando haga
+Lo que es
+El movimiento
+De dinero
+Y
+Ahora
+En este
+En este paso
+Ya de mi lado
+Del vendedor
+No puedo hacer nada
+Así que acá
+Lo que haríamos
+Es
+Quedaría de su lado
+En el video
+La parte de
+Aprobar
+Esa operación
+Esa solicitud de venta
+Que acá
+Nahuel
+Les va a estar mostrando
+Cómo funciona
+Ese flujo
+Bien
+Acá
+Ahí no sé
+Si vas a seguir
+Compartiendo pantalla
+Ya directamente
+Compartir
+Yo y quedan
+Las dos compartidas
+Y
+Esto va a ser
+En Zoom
+Pero yo para mí
+Que estos tipos
+Son de madera
+Y no se van a dar cuenta
+Yo voy a dejar
+El presentar
+Y vamos a hacer
+El presentar
+Eventuoso
+Bien
+Vamos a aprovechar
+Acá
+Y
+Pantalla completa
+Sí
+Bien
+La pregunta
+Que se la hace
+Todo el mundo
+¿Pueden ver
+Mi pantalla?
+Sí
+Ahí nos quedamos
+Seguros
+Ah, ahí va
+El boliviano
+Llora
+No está
+Aprochonado
+No, no, no
+No estoy viendo
+No estoy viendo
+No
+No se me vea
+Bueno, de nuestro lado
+Una vez el entrada
+Ya creado la triangulación
+Lo que vamos a hacer
+En primera instancia
+Es
+Ver que haya entrado acá
+Y que estén
+Estados validando
+Bien
+Lo que vamos a tener
+En esta tabla
+Va a ser el origen
+Que va a ser
+La compañía del exportador
+El destino
+La compañía del comprador
+Y
+Las
+Dos monedas
+En
+Dólares
+O bolivianos
+También
+Vamos a ver
+El tipo de cambio
+Que solicitaron
+Y acá
+Tenemos el spread
+Que solo lo podemos cambiar
+Como están
+Estaba validando
+Que
+Si le damos
+El icono de acá
+Lo podemos editar
+Podemos poner un número
+Mayor a uno
+O
+Hay una salvedad
+Que puede ser
+Que la cuenta
+De origen
+Y la cuenta
+Del destino
+Sean del mismo usuario
+Acá
+Como tenemos
+Como ejemplo
+El spread es cero
+Pero quitando
+Esa salvedad
+Este
+Acá podemos editar
+El spread
+Bien
+Creo que no tenemos
+Ningún campo más acá
+Más que
+Para fecha
+El negociador
+Va a aparecer
+Este
+Luego
+Y a su vez
+También el finalizador
+Aparecerá cuando
+Se concluya
+La operación
+Ya sea liquidación
+O
+La evolución
+De la misma
+Bien
+Para aceptarla
+Le damos acá nomás
+Ahí nos sale
+El modal para
+Confirmar
+Y
+Este
+Acá vemos
+La compañía del exportador
+Y la compañía del
+Exportador
+Comprador
+Ahí
+Estaría bueno
+Que
+Que aclares
+Nahuel
+Que viste que se sentió
+A vos como negociador
+Porque vos le diste
+A
+A probar
+Como para que sepan
+Ahí
+Bien
+Ahí va
+No estaba viendo esto
+Estaba buscando acá
+Bien
+Y como les decía
+El negociador
+Se senta al momento
+De aprobar
+Este
+La planta de aprobar
+Sí, eso lo va a aprobar
+Porque acá quedó rechazado
+Bien
+Sí
+Ahí cuando rechazás
+Y el finalizador
+Más directo
+Está
+Solo en un momento
+Este
+Solo cuando se aprueba
+Que hace
+El usuario
+Que está logueado
+Queda como negociador
+Ahí va
+Y ahí como menciono
+Que ya la
+Queda al lado
+Del comprador
+¿No?
+Acá
+No, acá
+Claro
+Vuelve al vendedor
+El vendedor
+Tiene que hacer la transferencia
+¿No?
+Subir la comprobada
+Sí, estoy pensando
+La papelera
+Ahí hoy en día
+Vos ya aceptaste
+Bueno, no
+Pero eso sería
+El flujo de rechazo
+Bueno, no
+Ahí lo que podés mencionar
+Por si querés
+Por si lo ven ellos
+Es
+Que acá
+Yo me lié
+Pero lo voy a mencionar
+Cuando arranque
+Pero de nuevo
+Para estar recordándoles
+No pasa nada
+Si les decimos
+A veces lo mismo
+Que este flujo
+Como va a ser el de aprobación
+En sí
+Ahí tienen la opción
+De poder
+Rechazar la operación
+Pero ese flujo
+Se lo vamos a mostrar después
+Claro
+Cuando aprueben
+Les menciono
+La parte de que
+El usuario logueado
+Queda como negociador
+Y que
+Ya aparece
+En esta instancia
+La opción de cancelar
+Pero como estamos haciendo
+El happy path
+No lo vamos a hacer
+Sí, ahí me decís
+Ahora volveríamos a
+Lo que es el vendedor
+Bien, para volvermos
+A lo que es el vendedor
+Para continuar con el proceso
+De triangulación
+Y tú
+Lo podés compartir
+Bien
+Y acá
+Bueno, yo ahora
+Lo que voy a hacer es
+Del lado del comprador
+También
+Ingresé a triangulación
+Y acá en mi caso
+En vez de ir a la tabla de venta
+Voy a ir a la tabla de compra
+Y en este momento
+Me va a aparecer
+Deberíamos
+Voy a eliminar
+Esto acá quedó
+Para que no pase esto
+Porque ahora no tengo los mismos montos
+Pero básicamente
+Está la fecha
+Lo único que
+Acá me aparece
+Como comprador
+Como comprador
+Me aparece en todas las
+Operaciones
+Que están aprobadas
+Pero están
+Ahora
+Lo que es en el estado de aprobación
+De mi lado, digamos
+Que acá
+Vemos la operación
+Que recién
+Nau acaba de aprobar
+Entonces
+Acá vemos los datos
+Son los mismos datos
+Que se
+Se veían hoy
+Al momento
+Del vendedor
+Cuando creó
+La solicitud
+Acá está el monto
+Ya incluyendo
+Lo que es la tasa de cambio
+El spread
+En este caso
+Ya aparece
+Y
+Bueno
+Y los datos
+De cada cuenta
+Y acá tengo la opción
+De aprobar y rechazar
+De nuevo
+Como este es el camino
+Donde vamos a hacer
+Que la operación
+Sea exitosa
+Voy a
+Hacer clic en aprobar
+Y en este caso
+Lo que va a pasar
+Es que la operación
+Por acá
+Nos avisa
+Que fue aceptada
+Exitosamente
+Y la operación
+Va a pasar
+Estar en estado
+Esperando pago
+Que del lado
+Del comprador
+De nuevo
+Acá sí
+Selecciona
+También le va a aparecer
+Los mismos datos
+Y esta vez
+Acá le va a pedir
+La información
+Para abonar
+Que tiene que seleccionar
+Primero un banco
+Acá le aparecen
+Los datos
+De las cuentas
+Y demás
+Y acá
+Va a subir
+Tiene la opción
+De subir comprobantes
+Hasta tres
+En este caso
+Yo acá voy a subir
+Un comprobante
+Que va a ser
+De prueba
+No va a tener
+Ningún dato
+Real
+Digamos
+Y una vez
+Que está
+Listo
+Acá
+Se da clic
+En enviar
+Y lo que va a pasar
+Es que
+Va a aparecer
+Este modal
+Que le va a avisar
+Que los comprobantes
+Fueron enviados
+Y se le notificará
+Cuando se valide
+La operación
+En este caso
+Ahora la operación
+Pasa a estar
+En estado
+Enviando fondos
+Que básicamente
+Del lado
+Del comprador
+No debería
+Hacer nada más
+Lo único
+Que puede hacer
+En este momento
+Es
+Bueno acá se le notifica
+Que estamos
+Validando la transacción
+Y se le notificará
+Una vez que el proceso
+Finalice
+Y puede
+Tener la opción
+De ver el comprobante
+Que acaba de subir
+En este caso
+Bueno acá se le muestra
+Una ventana nueva
+Y
+Del lado del comprador
+Ahora no
+No puede hacer
+Nada más
+En este caso
+Volveríamos
+A lo que es
+El
+El VBO
+Porque
+Ahora
+Digamos
+Que el rol
+Queda del lado
+Nuestro
+O sea
+El lado
+De Das Bank
+Para
+Para seguir
+El flujo
+Ahí de nuevo
+Con una web
+Bien
+Nuevamente
+Estamos en el VBO
+Este
+Ahora vemos
+La operación
+Ya la vemos
+En estado
+De liquidación
+O sea que el
+Founds
+Y a la operación
+Aparece ahora
+Donde el estado
+Va a estar
+Enviando fondos
+Este
+Seguimos teniendo
+La misma información
+Hasta ahora
+Acá obviamente
+La podemos cancelar
+Bueno
+En este paso
+Pero como estamos
+Haciendo el
+Happy Pass
+No lo vamos a hacer
+Tenemos la opción
+De ver comprobante
+Tendríamos que ver
+Ahí está
+El recibido
+Que lo podemos bajar
+Ahí
+Una vez veamos
+El comprobante de pago
+Lo que podemos hacer
+Es liquidar la operación
+Y acá vamos a tener
+Que subir
+Este
+Las transacciones
+Tanto
+Que le hicimos
+Al exportador
+Como
+Al comprador
+O al importador
+Y aquí
+Venimos ahí
+Subimos la transacción
+Mismo ejemplo
+Que Marty
+Un PDF
+Este de prueba
+Acá también
+Y podemos ver
+Los comprobantes
+Que subimos acá
+Al vendedor
+Ahí
+Comprobante de transferencia
+Obviamente
+Esto es falso
+Ahí está
+Podemos ver
+Tanto el exportador
+Como el importador
+Y ya con eso
+Acá estaría
+Lo que lo que
+El usuario tiene que transferir
+O transfirió
+Este
+El exportador
+Y
+Lo que el importador
+Tiene que transferirle a Dasbank
+Ya con esa información
+Podríamos darle a confirmar y liquidar
+Nos sale el modal de confirmación
+Y confirmamos la operación
+Acá nos sale otro modal
+Que
+Este ya este es de éxito
+Operación realizada correctamente
+Donde
+Vemos
+Este
+En este caso
+La
+Los montos que irían
+Al
+Importador
+Y
+Al exportador
+Al importador
+En este caso
+Le entrarían 200 dólares
+Y al exportador
+Le entrarían
+Este
+2000 bolivianos
+Sin
+Que aparezca el spread de Dasbank acá
+Porque esta plata va directa a la cuenta del
+Del usuario
+Ahí va
+Ahora si vemos la operación queda en estado finalizada
+Este
+Nos da
+Nos aparece ahora que el finalizador
+Es el usuario
+Que
+Liquidó la operación
+En este caso voy a aparecer yo
+Aquí
+Y tenemos la acción de poder
+Visualizar
+Los 3 comprobantes
+Este
+Y ya con eso quedaría
+De nuestro lado
+Este
+Liquidada la operación
+Ok
+Ahí yo puedo
+Voy a tener que mostrar yo de nuevo
+Bien
+Para mostrarles que del lado del comprador y vendedor también
+Se ve
+Bien
+Bien
+Y ahora lo que va a pasar es que una vez que tanto el comprador acá recargue y vuelva a la tab de compra,
+ya no va a ver la operación acá porque ya fue finalizada.
+En esta tab de compra solo se ven las activas.
+Lo que va a pasar es que en el historial ahora le va a aparecer esa misma transacción como finalizada
+y acá lo mismo, puede ver los detalles y también puede ver los comprobantes, en este caso que subió,
+que es el mismo que mostré, acá están, los mismos que mostramos también los puede visualizar,
+pero en este caso ya no hay ninguna acción, ya está finalizada.
+Y en el caso del vendedor va a pasar lo mismo, en este caso si va al historial,
+también.
+También va a ver acá la transacción en estado de finalizada y le van a aparecer los mismos datos acá
+y también va a poder ver el comprobante asociado a la operación.
+Y básicamente esto es el flujo en sí donde ambas partes, digamos, reciben el dinero y no hay ningún inconveniente.
+Y ahora lo que vamos a hacer es mostrarles.
+Les voy a mostrarles también, porque durante todo este proceso se envían mails para notificar justamente los cambios de estado de la operación y demás.
+Así que ahora le dejo a Enrique para que comparte y nos muestre los mails.
+Ahí, Marti.
+Nada que ver, pero estoy viendo que el spread tiene muchos ceros.
+Estás viendo que el spread abajo del motor transferido.
+Uy, hermoso.
+Eso.
+No, pero esto yo lo arreglé.
+¿Por qué esto así?
+Claramente no, Marti.
+Ah, son dos componentes distintos de la gran 7.
+Creo que es porque yo lo arreglé para acá.
+¿Para acá?
+Sí, ahí está.
+Lo arreglé para acá, pero no lo arreglé para acá.
+Ok, bueno.
+Ah, estás en local.
+Hacela ahí.
+Una opereta, una opereta media rara.
+Le pongo ahí el inspector.
+No, está ok, ya lo arreglo.
+Enrique, todo tuyo.
+Sí, ahí lo están viendo.
+Yes.
+Bueno, acá podemos, capaz que nosotros podemos aprovechar a justamente revisar los correos que se están mandando,
+porque nosotros tenemos, según lo que yo veo allí en la guía, la habilitación de la contraparte, que es esta, ¿no?
+No.
+Tu triangulación.
+No.
+No.
+Si querés ahí, filtrate por arroba.dasvan.com, porque así te va a quedar más a mano.
+A ver.
+Bueno, no, no te iba a quedar más a mano.
+No te apareció el no replay, a ver.
+The fuck.
+El no replay, sí.
+Ahí va.
+A ver.
+Es que acá me agregan como teammate.
+Sí.
+Y después.
+Ahí está, mirá, arriba.
+Sí, pero triangulación fue creada con éxito, no sé por qué está, tipo, cambiado.
+Ah, mirá, no está flat.
+No.
+What the fuck?
+¿Cómo podemos ordenarlo por fate?
+No entiendo por qué, viste, no.
+Ah, no está ordenado, ¿no?
+No, no, por eso.
+Ok, fijate, ahí tenés most relevant.
+Capaz que cambió el filtro, a ver si te deja ahí al lado de, viste, ahí a la derecha.
+Sí.
+Con él, a ver.
+Ahí te pone.
+Capaz que es mejor.
+Ah, no.
+No, no, ningún filtro.
+Bueno, a ver.
+Incluso en esta vista se me ve así, no entiendo por qué.
+No, ahí está bien.
+Ahí está bien.
+El 40, 23.
+Ahí está bien.
+Está.
+Ok, tenemos el primer mail que es la editación.
+Pero yo te decía, lo que podés probar, digo, para que no te, para que te sea más fácil,
+lo podés filtrar y lo podés poner ahí, te dejaba ordenarlo.
+Si le pones no reply y ahí a la derecha, a ver, ahí, ahí está, ahí, ahí podés mostrarles.
+Ahí está, ahí está.
+Tu solicitud de contraparte fue aprobada, ahí está.
+Sí.
+Ahí tenemos la fecha y la contraparte.
+Y una de las preguntas que me surgía era, todos los emails tienen como un botón que te lleva a distintos lugares.
+Si yo menciono eso, no lo puedo, obviamente no lo voy a poder cliquear.
+No sé qué pasa.
+No, le podés decir, sí, o sea, los botones acá lo llevan a justamente lo que dice ahí.
+Este, a poder crear triangulaciones, pero o sea, es opcional, no es que tengan que hacerlo.
+Nosotros, los correos acá lo importante es que ellos vean la, más que nada la parte de detalle y la solicitud
+que les pone los datos justamente que les mostramos, pero en sí la navegación de los emails.
+No la vamos a mostrar, no.
+Ok, tenemos el primer mail que nos llega, es justamente la aprobación de la contraparte.
+La creación de la operación, también se nos notifica.
+Que la triangulación fue creada con éxito, que bueno, que tiene el monto y el estado actual.
+Que es validando, en este paso es validando.
+Acá tenemos el nombre de la contraparte.
+Y acá.
+Bueno, y acá también les aprovecho y les pregunto, había visto esto, me llega como dos, en este paso,
+que vendría a ser, si supongo yo, que es la aprobación del negociador, de nosotros.
+Sí.
+Llega como dos.
+El vendedor, nos dice, en uno nos dice el vendedor, en el otro nos dice la contraparte.
+Claro, porque eso es lo que, sí.
+¿Qué pasa? Viste que yo ahí puse a quienes les notifica.
+Eso también habría que mencionarlo.
+El primero, cuando, si vos vos para atrás, al de la creación de la venta, ahí la triangulación, perdón, la triangulación ahí, viste que abajo te pone, ahora está, ahí, la contraparte está, no sé qué.
+Este correo se le envía solo al vendedor, en teoría.
+Porque, y ahí lo ves, porque no llegaron dos, llegó una.
+Esto es solamente del lado del vendedor.
+Eso es importante mencionarlo.
+Y el otro, lo que es, en realidad los otros que vienen después, que son la parte de los cambios de estado, por así decirlo,
+esos sí se les envían a los dos, por eso tenés dos.
+Ahí lo que hay que explicar es que, mostrando los datos, ahí les decís, acá se puede ver, poner en la de, ¿cuál es la reciente? La primera.
+La de arriba o la de abajo.
+Viste, ahí le podés decir, este es el correo que le llega al vendedor.
+Porque se le especifica la contraparte, y ahí el estado es enviando fondos.
+Y el de abajo, este es el que se le envía al comprador, porque les pone el vendedor, y el estado es el mismo, en este caso, enviando datos.
+Ahí está.
+Solo mencionar eso para que sepan, porque en realidad, ellos como administradores, salvo que sean teammates, que no, creo que no sé el caso, no van a poder verlos.
+Pero es para que ellos sepan.
+Para que ellos sepan, no más, que existen estos correos, y entiendan a quién les llegan.
+Ok.
+Y después, en realidad, allí en la guía, está como listado más correos que en este, hasta ahora no han llegado.
+¿Es normal? ¿Sí?
+Ok. Tenemos, eso es lo que yo quería chequear.
+Tenemos la aprobación, no, tenemos la creación, tenemos la aprobación de la contraparte.
+No llegó, ¿cuál?
+No llegó.
+Carga de comprobante de pago por parte del vendedor, y operación finalizada.
+No sé si la finalizamos o no.
+Sí, ¿no te llegó?
+No.
+No llegó esto ni esto.
+Chan, chan.
+Voy a chequear a ver si a mí me llegaron.
+Ok.
+A vos no te llegaron, pero a mí creo que sí, eh.
+A ver, porque yo soy un teammate.
+Sí, pero igual te deberían haber...
+A ver...
+Te debería haber llegado igual.
+Los fondos... No, a ver.
+No, llegaron los mismos.
+Quedó en enviando fondos.
+Es la misma que tenés vos, o sea que quedó...
+O sea, se le notifica que llegaron los fondos a...
+Pero nunca se les notifica que está finalizada.
+Ok.
+Ok.
+Bueno.
+Chan, chan.
+Está.
+Eh...
+En realidad, entiendo que deberíamos estar mandando un correo.
+Eh...
+Habría quedado de chequear eso.
+O sea, lo que hacemos para esto es...
+Eh...
+Obviemos esos dos casos.
+No los mencione.
+O sea, te los voy a mandar acá porque los voy a dejar en la guía para chequearlos.
+Eh...
+Los voy a dejar en rojo.
+No los menciones.
+Mostrá...
+Los que te llegan.
+Hacete el pelotudo.
+los motivos que te llegan ellos no tienen manera
+y nosotros internamente
+revisamos porque
+el de enviando fondos
+está bien, el de esperando aprobación
+no sé
+porque tengo la idea que debería estar mandándose
+y obviamente el de finalizado
+también está raro, pero lo revisamos
+después, igual a ellos no les va
+a afectar
+en lo que es de su lado
+esto es más del cliente
+así que mostrate esos tres
+mostrate solicitud
+de contraparte fue aprobada
+la creación de la
+triangulación
+no, que voy a poner
+porque el correo dice triangulación
+triangulación
+y
+los fondos recibidos
+ok, bien
+está, de ahí
+una vez que mostres eso
+ahí si querés
+está
+me das a mí
+me pasas a mí
+yo empiezo a compartir
+lo más incómodo de las demos
+es la transición
+bueno y ahora vamos con fulano
+es un partido de fútbol
+a ver
+acá lo que va a pasar es que
+voy a hablar yo
+ahora lo que vamos a hacer es mostrarles
+el flujo
+los flujos en realidad que tenemos
+para lo que son los rechazos de la venta
+esto quiere decir que
+como estados final la operación
+va a quedar en rechazada
+pero tenemos varios caminos para llegar a eso
+yo acá no les voy a mostrar todo esto
+lo voy a hacer con ustedes para crear las operaciones
+pero
+pero ya van a estar creadas para la demo
+porque no no voy a volver a hacer todo esto
+y
+acá vamos a ponerle
+Tengo que hacer otros montos para no confundir, pero acá vamos a tener, necesitamos uno del lado de enviando fondos, otro del lado de esperando pagos y una tercera para rechazarla al final, montos pelotudos.
+Y después una tercera, bien, este flujo, yo cuando lo muestre voy a arrancar así, voy a decir bueno acá, para estos flujos simulamos que ya están creadas las transacciones, pero el proceso fue el mismo de solicitar una venta, y acá lo que va a pasar es que,
+esperen que las tengo que aprobar,
+la dejamos, el spread va a quedar con uno, para no variarla tampoco, aprobar, aprobar, aprobar,
+bien, yo voy a compartir y voy a arrancar, lo que voy a decir, bien, para ahora los flujos de rechazo, lo que vamos a tener son operaciones que están en los estados donde se permite rechazar,
+y ahora que lo,
+lo pienso de la KB,
+vamos a necesitar una cuarta,
+en realidad, que es para el flujo
+de rechazo del video,
+directamente,
+acá,
+ah bien,
+ahora sí,
+bien, en el caso
+de rechazo, acá nosotros
+tenemos las transacciones
+en estado de esperando aprobación,
+yo acá por ejemplo voy a
+tomar una de ellas,
+y uno de los casos que puede suceder es que el comprador, en este caso, la transacción ya fue aprobada de su lado, o sea, del lado de Asbank, y el comprador acá tiene la opción de aprobar y acá la de rechazar, yo acá hago clic en rechazar, lo que va a pasar es que la operación ya no va a aparecer en esta tabla,
+ya no va a aparecer en esta tabla,
+y lo que sucede es que de nuestro lado,
+en el video, va a pasar,
+esperen, estoy chequeando una cosa,
+estos flujos de mierda,
+claro, porque nosotros en realidad,
+nos va a aparecer,
+ah, sí,
+mi idea era mostrar ese flujo primero para venir y venir,
+yo creo que es un flujo,
+ese flujo es donde
+el comprador rechaza,
+y en realidad lo que pasó ahí,
+como el comprador no llegó a transferir,
+nada,
+o sea, no llegó a subir ningún comprobante,
+el vendedor debería ver eso,
+no era que sea el refund,
+por eso,
+no me está cerrando esto,
+Jan,
+capaz que aparece cuando se hace el refund en el video,
+no me apareció en el video,
+a mí sí me apareció, quedó listado en cuarta,
+no es,
+a ver,
+tenía creo,
+ah, está acá, sí, sí,
+está por abajo,
+ok,
+ahí va,
+está,
+ahí,
+eh,
+porque todas las que vienen de rechazo
+van a quedar al lado del video,
+yo ahí,
+lo que había pensado era
+hacer ese primer paso para ya pasar,
+para que vos puedas ya pasar al video
+para no estar yendo y viniendo,
+porque en realidad el primer caso debería ser,
+si vamos por orden,
+debería ser el caso donde
+el video rechaza de una,
+acá,
+pero,
+para mí era mejor,
+yo arranco diciendo eso,
+hago eso de cancelarla,
+de rechazarla,
+y ahí ya digo,
+bueno,
+acá lo que pasó
+es que
+el comprador no llegó a hacer,
+a subir el comprobante,
+ni a realizar las transferencias,
+y
+pasa a estar del lado del video,
+la parte de la devolución de fondos,
+por eso acá la transacción no aparece,
+ni en la tab de compra,
+ni en la tab de historial,
+y ahí,
+ahora vamos con lo que sería el flujo
+del BBO,
+para que vean cómo se maneja
+el proceso de devolución de fondos.
+Bien,
+perfecto,
+estamos nuevamente en el BBO,
+el campo de la continuidad del hilo,
+o sea,
+de tu operación hago el refund primero,
+¿no?
+Nada bien,
+voy a hacer unoll,
+rifa lo primero que podemos hacer es no tendríamos en este caso un documento hay
+nada por las dudas siempre ponerte en español usted pasa el mismo que a mí
+no lo que estaba diciendo es este podemos verificar que no se haya subido ningún
+documento por la calle el comprador no se va a hacer ninguna transferencia canceló
+la operación antes entonces vamos derecho a hacer la devolución al exportador acá
+subimos el comprobante de la transferencia que hicimos este como baja que el exportador
+esto es lo que había transferido el exportador básicamente se le volvemos
+ahora si vamos a ver comprobante vamos a ver que al vendedor
+el comprobante listo y ahora sólo liquidamos este la devolución confirmamos y vamos a ver
+la operación nuevamente realizada correctamente con el monto a devolver y ya con eso él pasa a
+estar en un estado de rechazada obviamente yo quedo como finalizador y si voy ahora a
+los comprobantes sí que me carga el comprobante del vendedor
+y para continuar con el proceso de cancelación en este caso esta sería una tripulación donde
+el vendedor la creó pero nosotros se vea aprobarla directamente la rechazamos vamos
+a rechazar y acá nuevamente tendremos que hacer el proceso de liquidación pero como ya lo hicimos no
+En este caso, ya la aprobamos, pero podemos liquidar la operación.
+Este era el caso, ¿no?
+A ver, este es el caso.
+No tenés la aprobación.
+Acá tenemos que...
+A ver, ¿qué estado tiene?
+Sí, yo en realidad...
+A ver, tengo que aprobar.
+Sí, tenés que aprobar.
+Voy a aprobar dos, y voy a aprobar otra, y voy a subir los comprobantes.
+Entonces vas a tener una en Esperando Pago, y vas a tener una en Enviando Fondos.
+Enviando Fondos, ahí va.
+Yo ahí envié, deberías tener una en Esperando Pago y otra en...
+Ahí, Enviando Fondos.
+¿Pasa nuevamente español?
+Ahí va.
+Ahí está, ¿cómo es?
+Esperando Pagos.
+Bien, esta es la de Esperando Pagos.
+Es la de que todavía no... o sea, la aprobó, pero no subió el comprobante.
+El comprobador, entonces, no vamos a tener ningún documento para ver.
+Vamos a cancelar la operación.
+Si la cancelamos, y por ejemplo, vamos nuevamente a ver el comprobante, no tenemos nada.
+Y ahora, la otra que vamos a cancelar es el caso donde...
+El comprador aprobó, hizo la transferencia, por ende, subió los documentos, y ese dinero está de nuestro lado.
+Por ejemplo, si yo voy a ver comprobante, voy a ver que recibidos acá, tengo solo los que me mandó el comprador.
+Acá sería el PDF que subió Marty.
+Ahí, simple PDF.
+Y si le voy a cancelar, y cancelo la operación, en este caso, cuando vayamos a hacer el refund,
+tendríamos que hacer el refund para los dos.
+Como ya lo hicimos, el refund no lo vamos a hacer nuevamente.
+Pero tendríamos que subir los documentos, tanto para devolverle al exportador el dinero que transfirió, en este caso los 500 dólares,
+y al comprador el dinero que transfirió, en este caso, los 5.050 bolivianos, que ya incluyen, en este caso, el spread.
+Ahí está.
+Ahí, una cosa, te faltó mostrar el caso de la devolución cuando tenías el esperando pago,
+porque ahí si entras, vas a ver que tenés ahí en la segunda fila, mostrarles ahí, porque ahí en ese caso es solo el vendedor.
+Claro.
+Ese también mostrémoslo.
+Bien.
+Estoy pensando...
+El caso que no, que me parece que no está hecho es, estoy soltando un caso acá,
+porque tenemos el caso donde rechaza el negociador, digamos, de una,
+el caso donde la contraparte rechaza,
+el caso donde el operador rechaza, ya sea en esperando pago, en enviando fondos,
+y hay un caso más, me parece, porque vos cuando estás esperando aprobación del lado del video,
+cancelar la operación.
+Sí.
+Y ahí, pero qué caso es ese, porque no, no, lo contamos como el operador cancela la operación.
+Bueno, no está contemplado en film ahora, creo, ¿verdad?
+Porque nosotros, ahí, por ejemplo, viste que los que están en falta de aprobación, los podés cancelar.
+Ese sería el caso donde yo, o sea, el comprador no aprobó.
+Claro, este es el caso donde...
+El exportador creó la triangulación, ya pasó al lado del video,
+yo el lado del video apruebo, y enseguida apruebo,
+me salta este estado de falta de aprobación, que ahora ya falta aprobación, pero del lado del comprador.
+O sea, pero ese flujo debería mostrarlo, o no, porque es un flujo válido.
+Si vos le, a ver, ¿cuál es esa? La de 100 dólares.
+Claro.
+Sí, sí, sí.
+A ver, probemos, dale ahí en...
+A ver, si yo puedo cancelar, acá tendría que ser un refund.
+Eso lo he aprendido.
+Claro.
+Ok.
+No, mi única duda acá es el caso de uso que se da de esto.
+Está, calculo que es tipo, no le damos la chance a la contraparte directamente de aprobar o no.
+Aprobar o rechazar, simplemente está.
+Claro.
+O sea, cancelarlo, pero lo que es interno y eso se da.
+Caso de uso, no sé, el comprador, bueno, ya repitió, no quiere y tampoco sabe cómo cancelar, porque es un tosco, bueno, hoy se la cancelo.
+Sí, está.
+Igual mostrémoslo, mostrémoslo delito.
+Tipo...
+Vale.
+Pero acá lo importante de este flujo, en realidad, porque esto sí va a ser de su lado, es que ellos vean cómo funciona el tema de las devoluciones.
+O sea, eso de mostrar, en este caso, qué es lo que aparece en la pantalla de devolución, el vendedor, en este caso aparecen los dos, eso nomás que lo tengan claro, para que, porque en realidad, el punto de la reunión es que ellos entiendan mejor el funcionamiento del video, más allá del site, ellos van a manejar el video.
+Sí.
+Esperen un segundito.
+Está dormido.
+No vio que decía PM, no, a mí me...
+Creo que no, güey.
+Viendo todo tu pantalla, no me puedo ver.
+A ver, ponés a cuenta bancaria.
+Estás mutiado, por favor.
+Qué lo parió, yo poniendo la cuenta bancaria.
+Para que me transfieran, claro, están negativos a cuenta.
+Esperá, paso de correo a formato, no sé qué.
+Porque acá hay cuatro tareas.
+Pueden ser las del worker.
+Las que usan los assets del worker.
+Ah, esta es el site, ahí va.
+Ahí le sumo calidad.
+Está allá en el diseño.
+Ya tiene tu aprobación, pero...
+Nos vamos para arriba.
+Ya tiene tu aprobación, pero sí sumó una tarita.
+Para la descripción del correo.
+Claro, esta suma 0,0001 punto.
+Hagámosle cuenta que Martín no está escuchando.
+Claro, vamos a dejar de compartir, ahora sí.
+No podemos venir acá.
+No actualizó su foto.
+La penca.
+Por eso se me di cuenta.
+Lo que tiene es el presidente de la AUF.
+Está estancado ahí en ciento veintipico.
+Alemania se deja ganar.
+Subió, 132.
+¿Ah, subió?
+¿Pegó allí?
+Sí.
+Sí, le pegó al Ecuador.
+No viene como Alemania, se dejó ganar todo para la corrupción.
+¿Los paraguayos?
+Hizo la transferencia a Ecuador.
+¿Los paraguayos?
+¿Los paraguayos?
+¿Los paraguayos?
+¿Los paraguayos?
+¿Los paraguayos?
+¿Los paraguayos?
+¿Los paraguayos?
+Sí.
+A mí mismo desdeしいe las bancas.
+Sí.
+Tengo razón.
+Al exportador le falta la plata.
+Se pasó así bast !"
+Igual desde que se empezó a quejar mucho, Santi empezó a subir.
+No sé si...
+Venía casi último, y de la nada ahora ya tiene 118 puntos.
+Pará.
+Santi le hubiera dicho, che empecé a subir y empezó a recortar ese three points.
+¿Qué tenemos hoy?
+Puse resultados para hoy, sí.
+¿Qué pusiste?
+La partida...
+Uruguay, le puse dos dos, cero.
+Uruguay.
+Toda la fe
+Nos comimos gol en todos los partidos
+En este no
+Toda la fe que Olivera se saca una ronja
+Y lo parte a la Emilia Maya Cucurella
+1-0
+Uruguay
+Y Cabo Verde
+Arabia Saudita
+Yo ahí puse 1-1
+No se van a hacer nada
+Son horrendos los dos
+Solo a nosotros nos hacen gol
+Yo puse 0-0
+Partidazo, no lo voy a Francia
+Va a estar lindo hoy
+Pelotazo para acá, pelotazo para allá
+Francia va a jugar sin TT
+Pero echaron
+No, no, se le falleció la madre
+Ayer o antes de ayer
+Y comunicaron que van a jugar sin TT
+No se sabe si el resto del Mundial
+O solo estas fechas
+Supongo que se quedará algún ayudante
+Claro, alguien va a tomar
+Pero por lo que dijeron
+Al menos para este partido no tiene TT
+El dictador de Kylian Mbappé se va a poner ahí
+De Kylian Mbappé
+Y el otro partidazo
+Senegal-Irak
+Y la madre los mira
+Creo que el que queda como capitán es Bele
+Senegal-Irak
+Puse 2-1 para Senegal
+Yo lo único que quiero es que
+En algún momento se cruce Estados Unidos con Irán
+En alguna ya
+Quiero ver qué pasa ahí
+Por cada gol una bomba para cada lado
+No sé, viste, algo
+Tiene que pasar ahí
+No sé dónde se van a cruzar
+La cancha o en el campo
+Con trampa en el estadio
+Sería un montón
+Lo pasan a cobre
+Si es normal ahora en el estadio
+Hay fracotiradores
+Estados Unidos-Irán-Irak
+Pero
+Arranca a correr un jugador de Irán
+Y lo ves que empieza a subir la tribuna
+Y se empieza a sacar la remera
+Ves que tirás un centro de la pelota
+Ves la sobra de la pelota en la cancha
+Pero mentira, está cayendo un piscín
+Joder, Marti, escuchando todas las boludeces que decimos
+Se fue a dormir la siesta, Marti
+Hay que
+Puntar energías para la demo
+Mañana está lleno de partidos
+En realidad arrancan hoy a las 12
+Y mañana hay un montón
+Sí, pasa que
+Como metieron
+Banda de equipos
+Tenemos para ver
+Croacia gana, eso va a ser un partidazo
+Y el de Colombia-Portugal, ni te digo
+La Colombia-Portugal
+La Colombia-Portugal
+La Colombia-Portugal
+Estaba tan lindo
+Congo-Ufesquistán
+Me voy a poner a mirar ese
+Y bueno, Jordania-Argentina
+A ver quién hace más goles
+Los hat-tricks de Messi
+Sí, todo va a depender si hoy
+Kylian hace goles
+Si hace goles y lo alcanza
+Con Jordania le van a dejar
+Pero todos los penales
+Le van a tratar de dar todos los pases
+No parece infantil
+Y le dicen, che
+Después de la partida
+Después se con Jordania
+Hacen cuenta, hermano
+Fue que
+Hacemos 3-1 España
+Hay que
+Poner una gallina a la esquina
+Algo hay que hacer ahí
+Yo no lo veo metiéndole varios goles a España
+Ojalá me equivoque
+Pasa que España
+Sí o sí también tiene que salir a ganar
+O mínimo empatar
+Está bien que ya está identificado
+Pero si no se quieren cruzar con Argentina
+Ni nada de esto
+Tiene que salir a ganarmos también
+Ustedes conocen a Davos en Eise
+Sí
+Escucharon el pacto de la Iguala
+Para que funcione
+Tiene que empatar
+A este Cabo Verde
+Igual
+No, pero si gana Cabo Verde
+Tenés chance de pasar como mejor tercero
+Mejor tercero, sí
+Por el saldo de goles
+Porque quedaríamos con cero
+Y hay muchas selecciones que tienen 3 puntos también
+Pero tienen menos goles
+2, 2, menos 3
+Igual para pasar como mejor tercero
+No ganan tu partido
+No nos merecemos
+Claro, no nos merecemos ni clasificar
+Pero además, lo bueno
+Es que pasando como mejor tercero
+Te puede tocar una llave mejor
+Que la que te tendría que tocar
+Si quedás segundo
+Porque pasando tercero
+Te puede llegar a tocar Bélgica
+En vez de Argentina
+Siendo Uruguay
+Tenemos chance de ganar la Argentina
+Y perder con Bélgica, por goleada
+¿Qué pasa si ganan los árabes con Cabo Verde?
+Y pasan como terceros
+O segundos
+Sí, depende de cómo vaya nuestro partido
+Porque si nosotros empatamos
+Básicamente el ganador de Arabia Saudita y Cabo Verde
+Clasifica
+Y si nosotros perdemos
+Tenemos chance de quedar afuera
+Directamente
+Y que Cabo Verde y Arabia Saudita
+Clasifiquen como segundo y mejor tercero
+Si empatamos
+Tienen que empatar básicamente
+Los otros básicamente
+Porque también depende
+No, creo que si empatamos
+Tienen que ganar Cabo Verde
+Si ganan Arabia
+Ahora ya queda tercero
+Es que podría llegar a pasar
+Hasta que Cabo Verde pase como primera de grupo
+Le tiene que hacer por lo menos
+Cuatro o cinco a Arabia Saudita
+Sí
+Porque si nosotros empatamos
+Y Cabo Verde gana
+Queda con los mismos puntos que España
+Pasa que España tiene muchos saldos
+Pero si Cabo Verde se enciende
+Y le pone unos cuantos
+Puede pasar hasta primera de grupo
+España con Argentina
+Y nosotros nos vamos por la llave de Bélgica
+Y fácil, fácil hongo
+Y después nos encontramos a Colombia
+En octavo de final de vuelta
+Y nos hacen ocho
+Como hicieron en Brasil
+¿Y en qué escenario quedamos afuera?
+Si perdemos básicamente
+Sí, perdemos
+Ayer mostraban la tabla de mejores terceros
+Y lo mínimo que necesitás son tres puntos
+Menos de tres ya quedas afuera
+O sea, ya si pasás como mejor tercero con dos puntos
+O sea, es cualquier cosa el mundial
+No sé si queremos eso
+La triangulación
+¿Viste qué vos hacés?
+Estuve escuchando, estuve escuchando
+No, estaba hablando con Santiago
+Me dice que lo mejor
+Acá un cambio que deberíamos hacer
+Es que los correos no los mostremos al final
+Porque
+Está
+Al parecer los de Bolivia son demasiado
+Pelotudos
+Como para asociar los correos
+Entonces ahí lo mejor capaz
+Que es que mostremos los correos
+Junto con el flujo
+Teniendo en cuenta que en teoría
+Hay
+Kiki vos me podés confirmar en el worker
+Si tenemos correos creados para
+Para lo que es la operación
+Finalizada y
+Y el esperando aprobación
+Que eran los que quedaron colgados
+Son los que no llegaron
+Hace un rato
+Sí
+Encontrar parte de triangulación
+Review result
+Sí
+Es cuando se
+Aprobás, rechazás
+Y cuando pasa completado
+Porque si hay correos
+Y no se están mandando es un problema
+Te disculpen
+Tuve la mala liga de que estos correos
+Justo yo no los
+Son los que cuando tuve licencia
+No sé quién nos atacó
+Hice todo lo demás
+Tranquilo
+Tenemos
+La operación cancelada
+No me interesa ahora pero
+Triangulación
+Igual estoy encontrando el mailing
+Tenemos lo de
+Bueno no
+La operación fue completada
+Correctamente
+Este
+Que no se manda
+Completé
+O sea tenemos en el
+La waiting fan
+La waiting fan sin embargo
+Se está mandando
+O sea que está entrando
+Se me ocurre que
+A ver
+No tenemos por lo que veo
+No tenemos correo para lo que es
+Esperando pago
+Para
+Sí no estoy viendo
+No lo tenemos
+Para
+El hombre y los estados
+Es a waiting
+Pero nosotros en la
+A waiting fans
+Y a waiting payment
+Pero nosotros
+El a waiting payment
+Asumo que es esperando pago
+Y el a waiting fans
+Asumo que es enviando fondos
+Si es así
+El a waiting payment nunca se manda
+¿Qué pasó con esto?
+El a waiting payment
+No mandamos notificación
+No mandamos notificación
+No mandamos notificación
+por lógica está salteando eso pero si debería mandar para finalizar ahora lo raro es que lo
+que no estoy me parece a mí por cómo está hecho muy por arriba mirando lo que puede estar pasando
+que se triguería el primero y después no se triguería más como que alguna condición que lo
+acepte a los que no tienen sentido de datos mi estatus y lo que para él enviando fondos
+lo triguería el site o sea que el site y estar funcionando un equívoco si ahora el
+back office debería triviar esto para las otras
+para los otros son los estados de la cof y lo triguería de esta semana
+para los mails de rechazo nos llegaron y llegó puede ser cancelación
+3
+de cancelación 3 ok está la operación fue cancelada está afectada cancelada por el equipo
+ok la evolución
+también eso está funcionando bien el único que no está funcionando es el finalizado dónde está ese
+correo
+sí pero es al final no no está
+pero no existe
+si existe la operación finalizada que no lo estoy viendo pero está
+ahí vengo
+y
+y
+y
+ANS
+que sihan
+que delito
+sol
+de mientras
+con respecto al orden si les parece para danny
+sieszas es de finalizar
+para evitar que mostremos los medios al final
+nosotros tenemos tres bailes tres males para ir el camino de éter y después tenemos tres miles
+internet es naked
+para el camino área médica que hace la colle es café nos demuestra como un 1940
+un montón de rechazo
+ok, ahí
+creo que se me ocurre
+porque no, si queremos
+hacer eso no va a servir dividirnos
+o sea, mostrar
+tipo
+yo no hago de aquí, que yo no hago de aquí
+eso me parece que no
+lo que me parece
+mejor ahí es que
+reorganicemos y que
+para la parte de rechazo
+porque la parte de éxito
+de la realidad es que son dos segundos
+mostrarlo, porque es literal
+si lo hacemos en el momento, es decir, acá se manda
+un correo, se muestra el correo y se vuelve
+el flujo, o sea, no tiene
+mucha explicación
+ahí lo que se me ocurre es
+que aquí
+nosotros
+tenemos, de rechazo
+tenemos
+dijimos
+cuatro flujos del lado del vivido en sí
+porque el quinto lo hace
+el comprador rechazando
+la
+¿cómo es la transacción?
+ahí lo que podemos hacer, si son cuatro
+hacemos dos y dos
+que Nahue muestre dos
+y que Kike muestre dos, que es básicamente
+lo que hizo Nahue ahí
+que es mostrar, cancelar la operación
+o sea, rechazarla
+y mostrar la parte de evolución
+nosotros
+tenemos
+completar la evolución
+rechazo del negociador
+y cancelación del operador
+ahí puede variar un poco
+los conceptos, pero básicamente
+lo podemos
+o sea, en el sentido
+de que ambos son del lado de Dasbank
+el vídeo, pasa que está
+el negociador puede no ser el mismo
+que el finalizador
+se me ocurre que Nahue muestre
+los dos primeros que son
+para respetar el orden
+que Nahue
+muestre los que son del lado
+nosotros tenemos del lado del vendedor
+deberían ser cuando
+la contraparte todavía no aprobó
+ni rechazó, esa es una
+y la otra es cuando
+la contraparte
+aprobó pero no envió el pago
+esos son los dos que son
+del lado del vendedor
+capaz que ahí queda más claro
+mostrarlo así que Nahue muestre
+los dos que son del lado
+que la devolución solo se hace del lado del vendedor
+y que Kike muestre la que se hace
+de los dos lados, comprador
+y vendedor
+¿en qué consistiría
+la parte básicamente?
+esa es la parte
+para ahí
+para mapear
+yo haría la devolución
+de cuando rechaza
+el comprador y después
+los de cancelación
+que es
+ni siquiera apruebo directamente
+cancelo la triangulación
+y después sé el otro
+que es este
+cuando yo apruebo
+desde el video
+pensando
+porque ya cuando yo apruebo
+quedo esperando fondos del comprador
+ya después ahí
+no queda el caso
+donde apruebo y puedo cancelar
+enseguida
+y no darle chance al comprador
+de subir
+de hacer el pago
+¿se animan a ir al Zoom
+de Santiago?
+que ahí me dice que ya está
+bien
+seguimos por ahí
+¿cómo andan? buen día
+ya moví la daily así que tranquilos con eso
+hasta las 4
+no sé si puedo a las 4, arrebeo
+¿se animan a compartirme?
+no sé qué estaban haciendo
+¿se animan a compartirme pantalla y mostrarme los mails
+que están llegando?
+el que sea que los tenga
+así lo dichan
+¿se animan a compartirme?
+porque así vemos y
+vamos a corregirlo
+¿ahí llegué?
+sí
+los que están llegando son estos de acá
+estos
+tu operación
+fue creada con éxito
+tu operación de triangulación
+la contraparte rechazó tu operación de triangulación
+ese está bien
+la evolución
+ese está bien
+los fondos recibidos correctamente
+o sea
+entiendo que los templates que tenemos
+están bien
+está bien que no llegue
+el de esperando pago
+los fondos recién
+están faltando acá
+estaría faltando un de finalizado
+pero el de esperando aprobación
+por lo que
+me parece no está en el worker
+no, esperando aprobación no
+ese no va
+ese no se envía
+no está ni el template en
+en ping
+no
+está en ping así
+pero está por eso
+no, no, no
+esperando aprobación no está
+estoy mirando
+si está, está arriba
+para
+lujo
+¿dónde está?
+¿estás en ping más?
+no
+¿estás animando a hacer la ping más?
+o sea
+lo tengo acá
+no, no, no
+pero
+no, no, los correos de los templates
+no, no hay mail
+se lo notifica al vendedor
+y la contraparte por mail
+cuando se aprueba
+pero fíjate que
+cuando el cliente
+baja un poquito
+cuando el cliente aprueba
+desde que aprueba
+esperando
+pago
+la línea es recta
+no tiene mail
+está, pero este de acá
+ese llega
+sí, ese es el momento
+subí un poquito
+no está llegando
+se notifica donde va la contraparte
+por mail
+que la triangulación se aprobó
+de nuestro lado
+ese no está
+estoy mirándolo
+¿dónde están los mails?
+no sé, salgo que estoy flojo
+este
+¿dónde carajo está?
+está bastante confuso
+o sea
+si este es el de aprobación
+está bien
+¿dónde está?
+¿dónde está?
+¿dónde está?
+pero
+pero debería estar acá
+o sea
+acá lo tenemos el mail
+estoy seguro
+estoy seguro que esto se revisó
+es este
+si es este está bien
+¿o no?
+ajá
+no, es el de validando
+por eso
+ese entiendo que es este
+está
+este no lo estoy viendo en blanco
+pero este lo aprobamos desde el BBO
+claro, pero no
+no está
+yo no sé
+ya hicimos toda la demo
+todo el flujo
+pará, tu demoración fue creada
+te lo dije
+no está
+pero pará
+pero no está
+no está llegando
+pero a ver
+lo que necesito
+porfa
+es que nos fijemos
+no está llegando
+pero está implementado
+no está implementado
+no está
+todos los mails
+todos los mails fueron verificados
+y chequeados con diseño
+todos
+cada uno y todo
+entonces hay un bug
+me juego las bolas
+que quiero creer enormemente
+porque con diseño
+miramos cada uno de los mails
+y replicamos cada una parte del flujo
+para chequear que cada uno de los mails
+que están en el Figma
+tenían que llegar
+en su momento
+puede ser que se haya jodido algo
+que haya perdido algo
+que haya pasado algo
+pero
+por ejemplo acá tenemos
+tu triangulación fue aprobada
+se le envía solo al vendedor
+lo tenemos acá en Figma
+y estoy seguro
+mirá
+vamos a entrar
+claro
+pero como Timmy
+te tiene que llegar
+y acá no está llegando
+pero Marti
+salvo que sea el error en Timmy
+capaz que me estoy expresando mal
+y esto va para todos
+averigüenme si está implementado
+porque así nos ponemos
+o sea y bajamos a Jona
+que está acá
+y lo dedicamos
+y nos ponemos a revisar
+eso con Jona
+porque
+o sea
+por ejemplo
+tú
+acá
+acá está
+lo estoy leyendo
+tu operación fue revisada
+y aprobada
+por el equipo de Dasbank
+o sea
+está en el worker
+existe
+está
+o sea hay un bug
+cuando la
+es más
+está pending approval
+tu triangulación fue aprobada
+lo estoy leyendo
+o sea
+está cada uno de los mails
+o sea
+cuando
+ahí tenés el cancelada
+la aprobada
+lo estoy leyendo en el worker
+no
+es en el worker
+tenemos los emails
+que tenemos acá
+cuando el caso es
+cuando el estado es
+como se llama
+pending approval
+sí
+pending approval
+la situación fue aprobada
+no la estoy viendo
+no está acá
+este es el caso
+este es el título
+no está acá
+pará
+vamos a hacer una cosa
+me vas a compartir a mí
+y vos me vas a confirmar
+dónde están los flujos
+vamos marcándolos
+así vamos fijándonos
+que están
+de la contraparte
+tanto que se apruebe
+como que se desapruebe
+la contraparte
+están
+sí o no
+los dos mails
+aprobar
+aprobar contraparte
+sí
+el rechazar
+no lo testigo
+porque en realidad
+Jona
+vos podés poner
+una contraparte
+en base de datos
+como
+como pendiente
+y rechazarla
+a ver si llega el correo
+dale ya lo hago
+dale genial
+sigamos
+se notifica el vendedor
+por mail
+validando llega
+¿no?
+se notifica el vendedor
+¿qué correo es?
+¿qué dice el correo?
+tenemos la E
+seguida que pone
+que el estado
+prestemos
+prestemos atención
+validando
+validando
+está listo
+llega
+perfecto
+bien
+después
+se notifica el vendedor
+y a la contraparte
+por mail
+cuando se aprueba
+la triangulación
+el mail es este
+en realidad
+esto está mal
+en el flujo
+porque
+en realidad
+su triangulación
+fue aprobada
+creo que no sé
+de dónde
+esa no llega
+a ver
+no está llegando
+este es esperando
+aprobación
+¿no le llega al vendedor?
+porque lo tenemos acá
+no
+a mí por lo menos
+yo no veo
+en el Twitter
+ni al vendedor
+ni al comprador
+no le llega a ninguno
+de los dos
+ojo acá dice
+que no le llega
+no le llega al vendedor
+ni a la contraparte
+por mail
+acá ya tenemos un bug
+porque solo le estamos
+notificando al vendedor
+o sea
+el flujo de esperando
+aprobación
+o sea
+de contraparte
+tendríamos que tener
+estos dos
+¿está?
+que es que se rechazó
+y se canceló
+después
+este mail está
+hay que entender
+por qué no está
+es una acción
+que se hace en el back office
+cuando se aprueba
+¿está?
+sí
+supuestamente
+en el back office
+pareciera estar
+ese evento
+en particular
+lo está enviando
+¿está?
+mirando justo
+eso mismo
+es como que
+valida que el contraparte
+esté en status pending
+sería ese ¿no?
+esperando
+aprobación
+pending approval
+y
+acá dice que
+también
+o sea
+estamos verificando
+si tiene un
+crypto QAVID
+capaz que está
+faltando eso
+por eso no está enviando
+el evento
+porque verifica
+primero eso
+antes de enviar
+el email
+QAVID
+lo tenemos
+sí
+hay un
+assigned
+crypto QAVID
+a ver
+este está faltando
+o sea
+el de la aprobación
+está faltando
+hasta ahora revisamos
+por qué carajo
+está faltando
+después
+si cancelamos
+la operación
+en este flujo
+se le envía
+solo al vendedor
+que se canceló
+la operación
+sí o no
+si cancelamos
+acá
+enseguida que están
+validando
+y la cancelamos
+esa
+esa difícil
+de
+o sea
+no llegan
+los de cancelación
+pero llegan
+vosotros
+tenés tres correos
+¿no?
+ese es el caso
+de
+pueden agarrar
+el pase de datos
+bueno
+pueden agarrar
+el pase de datos
+Enrique
+te animás a
+vos tenés acceso
+al correo
+¿qué?
+¿qué correo decís vos?
+el que llega
+a las notificaciones
+los dos
+correos
+agregaron
+como teammate
+a la contraparte
+y al vendedor
+¿no?
+o sea
+deberían poder recibir
+los correos
+de ambos
+sí
+¿quique lo tiene eso?
+¿quique vos te animás
+a aprobar
+a agarrar
+cualquier triangulación
+ponerla en validando
+en dev
+y rechazarla
+con la papelera
+a ver si te llega
+algún mail?
+ok
+sería
+sería solo eso
+la ponés
+como validando
+en status
+y la rechazás
+con la papelera
+está
+este nos falta
+ok
+madre
+dejame cambiar el color
+che peleador
+entonces
+este nos está
+no
+quiero poner
+en otro color
+bueno
+vamos a poner
+una cruz
+este nos falta

@@ -1,0 +1,628 @@
+Buenas tardes, ¿cómo andamos? ¿todo bien?
+Bueno, bien de bien.
+Otro de lo que se puede decir bien.
+Yo informalmente le quiero decir que no voy a participar en una mierda en la penca de Carlos.
+Capaz que lo hago por compromiso, porque formo parte de la empresa.
+Pero si le soy 100% honesto.
+Yo hoy entré a la reunión y dije, bueno, ahí estuve el fin de semana buscando otros deportes,
+otras cosas, el campeonato de voleibol.
+Qué triste, ¿eh? Qué mierda.
+Y todavía vos, Gastón, que los defendías.
+O sea, que parte de la U fue Gastón.
+Claro, es parte de la U, está en una mafia ahí.
+Sí, lo mejor fueron todos los memes el fin de semana, eso fue lo mejor.
+No, vos sabés que yo miraba los memes, me reía, pero me sentía mal.
+O sea, había como una especie de terapia, escuchaba cómo puteaba.
+Este, el youtuber, no sé qué va a hacer, Fabri, no sé cuánto, cuando dice, ¡mulá, mulá!
+Ah, besa, besa todo.
+Pero vos sabés que, o sea, 10 veces, yo me sentí mal.
+O sea, no me sentía bien, no me reía.
+No causaba gracia, me sentía mal.
+Mirá que me he saltado ayer, fue un loco que hizo, agarró una guitarra,
+puso ese video de Fabri de fondo y empezó a tocar un metal, tipo, entonando el grito.
+Ah, creo que lo vi, pero no lo soporté.
+O sea, lo arranqué a ver y lo saqué.
+Que yo cuando se le escapó, creo que tuve la misma reacción casi.
+Sí, no, no, no, es que es increíble.
+Si vos, otra vez vos, otra vez.
+Igual era, resulta que estaba como...
+40, 41 de febre, muslera, y el cuerpo médico no le dijo a Bielsa.
+Así que ya explica a todos lados.
+Es como Bielsa, pobre, no, porque no le hicieron caso a los jugadores.
+4 millones cobrás al año.
+4 millones cobrás al año.
+El contrato total fueron 13.900.
+13.900.000.
+Entre eso y Araujo, que fue a pasear.
+¿Araujo fue a pasear?
+Ya es dos mundiales, se conoce el mal que es.
+Fijate, joder.
+Puta madre.
+Pero bueno, está.
+Hablemos de otra cosa que no sea fútbol.
+Vamos a hacer una penca, yo que sé.
+Esto de que juega el Quique, como se llama el padel.
+Pobre Quique.
+Con el frío que tiene el Quique.
+Hijo de puta, sacate la bufata, parece que no te pagamos la mierda.
+Está caro el frío.
+Ay, la concha de la madre.
+Bueno, vamos a compartir pantallas, este sprint.
+Ah, puta madre.
+Y yo sigo apostando nomás para no dejar que Gastón se vaya a la mierda nomás.
+Por lo mío que subo, sigo metiendo cosas.
+Bueno, está, a ver.
+Bueno, en particular sigo con lo de AFI.
+Hoy tuve plagados reuniones.
+Tengo que sacar lo de PIX.
+Ahora estoy con un hotfix que probablemente tenga que sacar.
+¿Qué sacará?
+Ahí, con algo de One Money.
+Y bueno, nada, voy a seguir con eso.
+Tenemos que ver lo de Chatbot.
+Voy a ver si mañana me da voluntad de vivir y analizo toda la arquitectura y ya lo dejo todo en producción.
+Ahí probablemente Marty te esté metiendo en eso también.
+Todo lo que entregaron estos muchachos de...
+Es más, ¿saben qué?
+Voy a hacerlo ya porque si no después me olvido.
+Colaboretos Antin.
+Un segundito.
+Porque ya te voy a dar acceso a Santi de nuevo.
+Además, ¿saben qué fue lo peor?
+Que yo tengo el SofaScore, no sé qué mierda, la aplicación que te avisa.
+Está buena para mirar los resultados y estas mierdas.
+Entonces me vibra el celular, miro la notificación y decía gol de España.
+Y después, claro, después tipo Disney de mierda.
+Era ver cómo iba a ser el gol.
+Y yo digo, pa.
+Tiene que haber metido un golazo.
+Y cuando vi lo que fue fue tipo, la puta que lo remil parió.
+Yo no puedo creerlo.
+Pero bueno, está.
+Bien.
+Santi, Gastón, ¿vos tenés cuenta de GitHub?
+Sí, pero no la...
+Pero...
+O sea, yo para ver las PR usaba la de Santi que era...
+Pero tenés cuenta propia.
+Sí, sí, propia sí.
+Sí.
+Santi, ¿cómo era la tuya?
+Estoy fantín.
+¿Cómo era?
+¿Se venían a pasarme las cuentas de GitHub?
+¿Así ya los dejo?
+Porque si no...
+A ver si no lo demoramos más.
+Si quieren pásenla por developer, Santi y Gastón, ya les doy acceso a los dos.
+Así cada uno tiene su cuenta y ya no...
+No tenemos más problemas para revisar PR si ya sabemos quién la hizo y quién la revisó
+ahorita.
+Esa es la tuya, Santi.
+Ahí.
+Santi, te invité.
+Y estoy Gastón también, a partir de ahora ya.
+Para que no nos vayas a ver.
+Te va a llegar un correo, Gastón.
+Te llevo un correo, Gastón.
+No encontré tu cuenta con ese correo.
+Lo voy a revisar.
+Me fijo.
+Bien.
+Bueno, por las dudas, tenemos que cerrar el sprint.
+Así que vayamos viendo eso.
+Enrique.
+Sí.
+De mi lado, bueno, hay un montón de cosas allí que tengo abiertas.
+Estuve ahora atacando comentarios que han surgido desde la tarea de...
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+¿Cómo se llama?
+Ahora, atacando comentarios que han surgido desde la tarea de la configuración de WhatsApp
+hasta la limpieza del Worker.
+Ya, están surgiendo comentarios por lo menos del lado de Martina.
+Y habían surgido comentarios tuyos, Santi.
+Así que estoy atacando comentarios básicamente y hoy estuve también, ya quedó en intern
+la APR de Cypress, que completa básicamente la cobertura de test relacionados a QRs.
+Bien.
+así que eso ya está en marcha también
+y nada, la idea es seguir
+con lo que surja, que ya están surgiendo
+varias cosas allí, yo les mencioné
+algunos comentarios ahí
+que están capaz como para resolver
+entre vos y Martina, Santi
+uno de ellos por ejemplo
+en una de las
+PR que Martina realizó
+ahora, así que nada
+y bueno, y de mi sprint ahí como ves
+tengo 47 puntos
+que hay muchas cosas de review y eso así que
+capaz que les puedo pasar una propuesta
+de cierre de tareas o de continuación
+vamos a esperar hasta mañana, porque yo calculo
+que se va a atrasar un poquito, mismo porque hoy Fernando
+no estuvo, entonces
+vamos a esperar hasta mañana
+pero vayamos todos encaminando como para cerrarlo
+ok
+igual bien
+ahí lo que te digo es
+antes del final, cuando finalizo
+el día
+pasanos todas las PR que están abiertas
+y Marti si podemos pegarle una iteración por lo menos
+de tu lado, así
+yo después lo reviso, bien?
+genial
+Gastón
+buenas
+yo estuve trabajando
+en unos posteos
+que me había pedido marketing
+uno era
+el roundup
+y otro
+más para LLC
+y bueno
+y por otro lado seguí
+con la landing
+que nada, ya
+la estoy terminando de iterar con cloud
+y ahora la estaba
+por pasar a Figma
+por mi lado eso
+ya para
+para hoy o mañana
+van a estar pronto los posteos
+y la landing
+y voy a pasar a trabajar en
+en los correos
+que tenía pendiente
+bien
+me dijo Marti que habló con ustedes
+por el tema, bueno con la responde de Marti
+para las landings y esas cosas
+para remanecharse
+todo bien eh?
+todo bien
+me encargo de eso
+ojo ahí Gastón con los puntos
+lo mismo que Enrique
+juguemos con hoy y mañana
+ya mañana para la daily
+veamos con una propuesta un poquito más sólida
+en realidad tengo
+me pasó lo mismo que Enrique
+que tengo varias tareas
+en review
+tengo la daily
+y bueno
+review
+bueno se cierra
+y nada
+te dije que ya terminamos
+lo terminamos hoy
+y la landing
+si era
+era una corrección de sacar
+el tipo de empresa
+en el main que no hay
+perdón que
+me cargaron algo genial
+no sé si vos me contestas
+yo te lo voy a pasar de mañana
+no sé si viste ese
+no
+ahora casi ya lo he dicho
+y ya quedamos igual
+tenemos hasta mañana y ahí
+vemos como liquidado
+lo bueno es que viene entrando el CIS
+o sea
+no sólo se viene moviendo lo de Bolivia
+que eso es súper bueno
+porque se está moviendo
+se está moviendo plata
+pero este
+pero
+está bien y bien
+si no que bueno Leo tiene la agenda llena
+está bien asentando la cantidad de gente
+y trabajando bien
+y ya bueno
+no son grandes números
+pero venimos arreglando algo en la SEL en sí
+y con que se mueva ya justifica
+hoy una cantidad
+se viene teniendo el valerio lleno
+y es algo que por todos lados
+la reunión interna después estamos más contentos
+así que bueno
+veamos los resultados de esta campaña
+así que eso es positivo
+bien
+está bueno que los dos sectores se muevan
+y también
+algo que está muy bueno es la separación
+que estamos teniendo
+hoy mismo Marte participó
+también en la reunión del CIS
+como que va haciendo algo
+va haciendo dos corrientes de negocio
+separadas con la misma plataforma
+sacando el potencial
+pero como dos rojos totalmente distintos
+y eso está bueno
+hay muchos
+y para todos
+hay muchas cosas que vamos a tener
+jugamos con tiempo ahora
+pero los periodos complicados se vienen ahora después
+así que hay muchas cosas que vamos a tener que
+elaborar después
+pero bueno eso viene bien
+eh Joan
+pará pará
+no me acuerdo que te había dicho el tipo de compañía
+sí
+en el segundo mail
+o sea en el de mano derecha
+ahí le saqué el tipo de compañía
+estaba abajo del nombre
+donde dice el taller de la compañía
+acá decía crossboard
+el tipo de compañía
+eso no va
+acá ha sido
+el tipo de compañía
+pero en este caso sí es crossboard
+información del usuario
+el taller de la compañía
+educación e industria
+acá
+esto habla con Santi
+te voy a poner el comentario acá
+este
+eh
+para eh
+para eh
+para los
+emails
+ah
+lo hablas con los comentarios
+porque acá eh
+si la compañía
+es de un tipo va
+se utiliza un email
+y si la compañía es de otro tipo
+se utiliza otro email
+en otras palabras
+si la compañía es
+es una compañía de Estados Unidos se utiliza
+y si no se utiliza otro se hace abajo
+pero está bueno ya dejarlo
+como down out
+o sea después el resto está todo bien
+o sea después el resto está todo bien
+así que cuando regrese a down out ya lo apruebo y ya se mueve
+viste el primer email me dejaba acá
+viste el primer email me dejaba acá
+si fue porque lo saqué de la página
+de Instagram
+bien
+bueno
+eh
+Joana
+bien eh bueno hoy
+ahí ya quedó la navegación ya quedó todo funcionando
+perfecto estuve ahí ya
+testeando ahí está todo
+está todo bien
+ahora lo que estoy haciendo con las configuraciones es
+grabar todos los videos
+eh
+si están en
+Inter recién quedó la de
+Worker así que ahora ya la voy a
+mandar o no sé si querés que la mande derecho
+todas a Putre Quest pero están
+no no no sigamos los grupos
+sigamos los grupos perfecto
+ahí ahí este
+porque en realidad es una migración medio
+a medio tuba
+eso lo pasamos
+entonces no quiero que estemos arrancados por eso
+bien y nada estoy
+grabando y ahora estoy armando las PRs
+me falta ahí que ya mandé
+una solicitud ahí de un ticket
+que faltaron 3 iconos
+para los templates que no están
+en un lado ahí en el site
+para subirlos
+y nada con eso ya quedarían las
+PRs y ahí ya arrancaría primero por
+Design y ya arrancamos todos
+los grupos con lo que está hecho de configuración
+ya lo mismo que lo dijo Enrique
+te lo digo vos al final del día mandamos
+a nuestra amiguita amiga Marti
+con las PRs que quedaron
+bien bien perfecto
+lo tengo para revisar más rápido
+bien está
+mucho Improgress
+pero bueno vamos a finalizar
+si si ya ahora esos que están en
+Improgress deberían pasar ya a Design Review
+y hoy de mañana también estuve
+corrigiendo bastante
+un request así que tengo que
+actualizar también ahí el ticket de
+CorriView y ya estuve
+atacando los bugs también que
+habíamos hablado del otro día
+hoy de mañana así que también tengo para subir
+esas PRs
+bolas
+Marti
+bien de mi lado
+bueno básicamente
+visto que más que nada estamos
+haciendo el review de las PRs
+y
+también tengo para
+revisar también los cambios del
+bug que
+encontré que era el tema de
+triangulaciones con el
+PRs que se mostraba con muchos
+señales
+eso va a ser un cambio muy
+muy duro pero el día a día
+y después tengo también para
+hacer los cambios para hacer
+un pequeño refactor del
+hotfix que había donado
+Nauwe que es
+más bien solamente para
+modificar algunas cosas pero no
+en términos de lo que es funcionalidad
+no afectaría
+y
+está ahí esto de los puntos
+me falta actualizar porque en realidad
+tengo que actualizar otras tareas que me dieron tiempo
+que no son tan de
+o sea más que nada por el review y el tema
+de capacitar las reuniones
+y está la preparación
+de la refugia ahí
+pero me falta actualizar
+el plugin más adelante con
+esas tareas
+genial
+este
+y después seguiría con lo con Pintarma
+si
+como era para limpiarlo esta semana
+esto con Pintarma
+seguramente lo pueda terminar
+el tema es que
+capaz que mi foco
+va a ser en pulir
+más que nada
+el caso bode
+que había encontrado que en realidad
+eso es un poco nuevo
+y capaz que ya mandarla
+para ver si podemos testear en dev
+yo estoy tratando
+de cubrir todos los casos
+para probar
+para que sea también más fácil probar
+pero
+voy a intentar que quede lo antes posible
+yo lo tenía bastante pulido
+pero con todas las cosas que surgieron en el medio
+tuve que hacer un pare
+así que no creo
+que me llegue, capaz que ya para mañana
+lo podría tener
+por como está, si no encuentro nada más
+está
+bien de bien
+niña
+vamos arriba
+Nahue
+bien, yo tengo varias cositas
+pero ahí
+pasé tarea para los
+bugs que se habían reencontrado el viernes
+así ya puedo dejar la PR de eso
+que básicamente con lo que habíamos
+repartido con Jonah
+que llevaba a trabajar los que estaban en el proceso de
+triangulación en el back office
+este que era
+hay que mostrar la información del bug
+cuando no debería, porque se devolvía el dinero
+directamente a la cuenta del cliente
+o del
+comprador o vendedor
+y el bug que yo había
+encontrado que cuando se había hecho una
+hicimos la devolución
+que involucraba las dos partes
+sólo mostraba la devolución hacia el comprador
+no mostraba la
+información o la plata que se le devolvía
+al vendedor
+sacando eso ya estaba terminando con lo que es
+los ajustes que me habían faltado
+de notificaciones
+que era especialmente el mobile
+el tablet que faltaba a la página
+que mostraba el contenido de HTML
+este de la notificación
+y ya en breve ya dejo
+la PR para que queden
+en design review que van a ser
+tres tareas que van a pasar a
+design review, que va a ser la de la página
+la del modal
+este y la de
+componente para renderizar el contenido de HTML
+¿Quién de los dos
+asignó el correo que está faltando
+para trabajarlo?
+creo que Santi todavía no lo tiene pronto pero
+el que le llega a la contraparte
+si lo tenés Joana
+si no me lo asigno yo
+porque creo que tenías tres
+bugs vos
+o sea asígnenselo
+todavía falta pero me gustaría que la ataré ahí
+para asignarlo para que enseguida que puedan
+ya lo saque
+después me confirman ahí por privado quién lo
+atacó
+bien
+lo mismo
+de tu lado Nahue
+PR es pendiente lo que sea al final del día
+un chat con Martina y conmigo
+nos enviarás ahí los links
+Santi dale vos
+bueno por mi parte
+el plan para
+cerrar el sprint sería poder
+liquidar las que están en design review y poder
+mandárselas a IG hoy
+ya estoy trabajando en los ajustecitos de los mails
+que me dejaste Santi
+después
+dejé el mail ese que estabas comentando
+justo a Nahue
+ya está en design
+review interno
+lo hice Gastón
+así que también es eso
+liquidar con los mails hoy
+estuve avanzando la parte de teammates
+pero no creo que
+no voy a llegar realmente a terminar eso
+así que voy a crear continuación de esa tarea
+y
+nada una vez liquidado ahora con los mails
+que me queda poco
+porque son los ajustes esos que dejaste
+ya paso a trabajar en
+a continuar ahí con los teammates
+otro comentario
+no sé si Mati te comentó algo hoy
+pero tuvimos reunión con él y nos dijo
+que le gustaría agregar
+mail de satisfacción de los clientes
+de ver alguna
+forma de poderle enviar
+alguna encuesta a los clientes viendo
+las satisfacciones
+yo lo que
+se me había ocurrido es
+que una vez
+que se envíen estos mails
+a los clientes que nos den una review positiva
+enviarle
+para que dejen sus
+reviews en Google o algo de eso
+y de esa forma tratar
+de mejorar las
+las valoraciones que tenemos en Google
+no sé que
+que tan viable sería armar eso
+no perfectamente se puede
+serían dos mails
+prácticamente y ver
+el tema de la encuesta por donde lo llevamos
+si va a ser algo desarrollado por nosotros
+o si usamos alguna cosa de Google
+básico y fue
+mirá yo lo que te diría es
+podemos hacer algo medio que automático
+pero este
+pero a ver yo lo primero que haría sería
+trabajar en los mails
+o sea los mails los links
+extenderían y todas esas cosas y después vemos
+vemos como ponerlos
+pero si no
+y en cuanto a los
+puntos Santi vos como estás
+y debería quedar bien de puntos
+voy a tener que crear a continuación
+para la de 13 puntos esa que estoy trabajando
+ahora
+pero tenemos 16 terminados
+pero tengo 1, 2
+3, 4
+5 tareas en Design Review
+que mi idea es cerrar todas esas
+a la vez que queden todas semillas ahí
+está
+bien de bien
+bueno vayamos actualizando hoy igual
+lo vamos a cerrar mañana así que juguemos un poco con eso
+bien
+bueno alguien tiene alguna cosa más
+alguna dudita más
+yo tengo un comentario nomás para
+que a partir de ahora
+quedó sumada la columna de dos
+con continuación
+para usarla para las tareas que les
+queden para señalizar que van a ser tareas
+que van a quedar totalmente abiertas
+y van a seguir
+en el sprint ahí no sé si
+en realidad las deberían dejar
+en el sprint nuevo no
+si claro o sea no las tareas
+las terminan con continuación o sea en vez de
+ponerle done lo que hacen es terminarla
+con done with continuación
+o sea es lo mismo
+y lo que hacen es le agregan
+o sea cuando crean la...
+normalmente lo que hacían era
+cerraban la tarea y creaban la de continuación
+ahora lo que hacen es la cierran pero con done with continuación
+para poder tener trazabilidad
+y crean la continuación
+en los comentarios también deberían poner
+la continuación
+bien genial
+yo te pido
+dos minutos para ver algo
+dale genial
+el resto nos vemos
+estamos a las doce
+bye bye
+algo tiene seguro
+porque está confi...

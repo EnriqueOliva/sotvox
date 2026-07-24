@@ -1,0 +1,46 @@
+Que es PaymentHook
+No, no importa
+Este es un hook
+Que le pega
+PaymentHook
+Este no está dentro de la B1
+Porque tuve que ignorar algunas cosas de seguridad
+Entra al método de controlador
+En el controlador
+De PaymentController
+Entra ahí
+Y un método que se llama PaymentHook
+Yo no uso estas cosas
+No, no, no, pero en la línea 20
+Porque eso se hace con inyección de dependencia
+Pero en la línea 20 ahí puedes hacer click en PaymentController
+Pero no puedo
+Al final de la línea 20
+Parate sobre PaymentController
+Hace control click
+Hay magia
+PaymentHook
+Tuve tres
+Un segundo, no corte
+Mandénganse el línea por favor
+Va a ser atendido ahora
+Porque justo encontré un bug
+De la parte de Payment
+Y esto es
+Prioridad number one
+Después lo que tenemos que seguir
+Que sigue en la lista
+De temas a tratar
+Es el
+El controlador
+La perra del controller
+Esa la hiciste
+¿Está guardada?
+Esa la tenés
+Sí
+Sí
+La madre que lo ha perdido
+Bueno, lo sigo viendo después
+Eh
+En esa PR
+Tenemos un tema

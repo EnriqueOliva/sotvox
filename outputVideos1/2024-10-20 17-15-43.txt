@@ -1,0 +1,413 @@
+ya ni me acuerdo
+vayamos a ver esta PR
+primero de nada
+no, estaba bien mirarla en colo, estaba bueno
+estaba mejor mirarla de viso
+arranquemos de arriba, de arriba hacia abajo
+primer método
+todo eso está bien, bajamos
+ves que ahí hay cosas que dice como que no se usan
+se acuerda que se chotea
+que se chotea
+vice del estudio
+y bueno, no sé
+baja, baja
+bajamos
+no, no, está bien
+eso es raro igual
+bajamos
+eso está bien
+eso está mal
+a ver
+acá
+no sé qué hacen
+es insoportable
+12 de la noche estaban en los gritos
+una casa delinado
+pasa que sos un intolerante
+bajá un poquito
+bajá
+bajá
+bajá un poquito al 4
+el 4 en este caso
+es muy parecido por no decir
+casi igual al 2
+¿no?
+¿qué tiene diferente del 2?
+pica, lo atrapé
+lo atrapé
+atrapamos al imposter
+no, es que yo creo que
+con el 2
+acá hay casos que están faltando
+el caso de arriba del todo, el caso 1
+vos devolvés un
+company draft
+vos ahí en Rose
+si en ese arreglo
+agregás uno más
+podrías hacer el caso
+de testear 2
+¿sí?
+entonces
+yo lo que necesito
+lo que está faltando acá
+es primero nada
+chequeé esos test
+porque me parece que
+hay uno que no tiene
+me parece no
+hay uno que no tiene sentido
+¿está bien?
+capaz que hay algo
+que yo no estoy viendo
+pero
+así rápido
+no le veo nada
+así que a ver
+si tiene sentido
+porque si el código
+es el mismo
+quiere decir que
+estás testeando lo mismo
+¿está bien?
+¿está bien?
+y después
+necesito
+un caso
+exitoso
+en que no haya ninguna compañía
+que capaz que es lo que
+quiso hacer con alguno de esos
+porque no es un caso de error
+si no hay ninguna compañía
+es un caso exitoso
+un caso exitoso
+en que no haya ninguna compañía
+¿sí?
+¿qué vendría a ser exitoso?
+¿qué es lo exitoso
+en ese caso?
+exitoso quiere decir
+que intentó borrar
+y no encontró ninguna
+y ya está
+y no hizo nada
+andate al método
+eh
+de
+eh
+company service
+o sea que ahí
+cuando obtenés compañías
+no
+no elimina nudo
+y otra cosa
+que estaba bueno
+que usted había hecho
+¿qué pasa?
+nosotros acá
+las funciones
+no tenemos return
+o sea no es como
+tenemos return
+entonces está muy bueno
+que usted
+chequee
+qué se está llamando
+con el log.info
+y qué es lo que se llama
+por ejemplo
+en ese caso
+si nosotros
+simulamos un flujo
+donde
+cuando llamás
+a la línea 41
+y decís
+get company
+draft
+without payment
+ponele que te devuelve
+cero
+o en realidad
+debería hacer
+get company draft
+eh
+without payment
+en
+en
+tres
+en
+hace 20 días
+en realidad
+quedaba muy largo
+pero en realidad
+te trae
+las que
+no tienen pagos
+hace 20 días
+eso quiere decir
+que si en los últimos
+10 días
+todas funcionan bien
+no elimina ninguna
+claro
+¿va?
+entonces ahí
+lo que estaría bueno
+en ese caso
+chequear
+es que
+moqueaste todo
+el get company
+se llama
+el get company
+se llama
+no tenés que
+moquear el
+delete company draft
+lo único que tendrías
+que chequear
+es que no se llamó
+al delete
+get company draft
+porque no se llama
+porque vos entras
+al
+vos lo primero que haces
+es traes
+decís que no hay
+ninguna página
+en la línea 41
+decís
+no hay
+no hay nada
+entonces
+no entras al for
+y ya está
+y salís
+del
+y salís
+entonces al final
+¿cómo
+cómo podés chequear
+que ese es el caso?
+bueno porque
+de haber llamado
+en la línea
+59
+con total company
+draft deleted
+y lo llamó
+con un cero
+porque no eliminaste
+ninguna
+¿entendés?
+entonces
+está faltando un caso
+donde se eliminen
+por ejemplo
+estaría bueno
+tener un caso
+donde se eliminan
+cinco
+un caso
+donde se elimina
+una
+¿está?
+un caso
+donde no se elimina
+ninguna
+y un caso
+y después
+los casos de error
+son casos que falla
+el get company draft
+without payment
+y después
+otro caso de error
+es falla
+el delete company draft
+without payment
+que ahí tiran
+fíjate que tiran
+distintos
+tiran distintos
+mensajes de error
+viste
+uno imprime un log
+delete company draft
+error
+y otro imprime
+delete company draft
+un paid error
+¿sí?
+uno es más genérico
+¿está?
+y el otro especifica
+cuando querés borrar
+una compañía
+el de abajo del todo
+es como que
+el de la línea
+para ser más claro
+el de la línea 55
+es que falló
+cuando estabas trayendo
+las compañías
+¿está?
+y el
+de todas maneras
+sigue
+sigue intentando
+el hijo de puta
+o sea
+va a seguir intentando
+¿está?
+¿qué más?
+ahí estaría bueno
+que en la línea 55
+ahora que lo veo
+eso es un loop infinite
+mierda
+en la línea 55
+Kike
+pone
+fix me
+infinite loop
+if
+fix me
+dos puntos
+y
+infinite loop
+if
+get company draft
+without payment
+throw an error
+if
+ahí pones el nombre
+del método
+de la línea 41
+if line
+41
+throw an error
+o always throw an error
+a ver si
+te das cuenta por qué
+¿qué pasa si la línea 41
+siempre da error?
+¿cuándo cortás el bucle?
+why?
+nunca
+me dio mucho
+infinite loops
+muchos
+durante mis pruebas
+yo decía
+la puta madre
+claro
+vos estabas simulando
+que eso tira un error
+sí
+sí claro
+es un loop infinito
+ahora bajate
+al otro método público
+sí
+estaba pensando en eso
+creo que tenés el mismo problema
+sí porque
+porque
+después el otro no
+los otros de abajo
+le creéis company draft
+no
+no pasa
+tirás error
+y seguís del arco
+ajá
+no también
+tirás error
+y seguís del arco
+y después
+add new services
+también
+tirás error
+y retornás
+está
+SNS no
+los primeros dos
+los primeros dos
+yo ya
+viste por ahí
+ese caso
+si te está dando raro
+y lo que sea
+esos son los bugs
+que me tenían que reportar
+igual está bueno
+porque ahora surgió
+este bug
+yo ya voy a ver
+si ya lo
+lo arreglo
+entre hoy y mañana
+ya lo arreglo
+si querés
+hacete ese caso de prueba
+y comentalo
+no
+no
+no
+no
+No
+Enviálo como un comentario
+¿Me entendés?
+¿Cómo?
+Que si querés
+hacete ese caso de prueba
+pero envíalo como un comentario
+No estaría entendiendo
+muy bien
+a qué se refiere
+Hacé el caso de prueba
+de que tiré un error
+en la línea
+69
+pero lo comentás
+diciendo
+que cuando se arregle
+el issue
+No, ese comentario
+está bien
+No, la línea es
+Ah
+La línea es
+la
+Ah, no
+la 70
+Ah, porque este es el
+SEM
+Tiene que dar
+Hacete el caso de prueba
+donde tendría que tirar
+un error ahí
+y yo lo voy a refactorear
+No creo que me dé
+para hacerlo hoy
+pero está
+Si querés
+Hacelo
+Bueno
+Poné un to do
+que falta este caso
+Pero acá tendría que
+A ver
+Vamos a contabilizar
+la cantidad
+de test unitarios
+que tendrías que hacer acá
+para el delete
+Volvamos al delete
+Espera, espera, espera
