@@ -5,6 +5,8 @@ VENV_DIR = os.path.join(PROJECT_ROOT, ".venv")
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_ROOT, "output")
 LOG_DIR = os.path.join(PROJECT_ROOT, "log")
 SOUNDS_DIR = os.path.join(PROJECT_ROOT, "sounds")
+ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")
+ICON_PATH = os.path.join(ASSETS_DIR, "sotvox.ico")
 
 SUPPORTED_EXTENSIONS = {
     ".mp3", ".wav", ".m4a", ".ogg", ".flac", ".wma", ".aac",

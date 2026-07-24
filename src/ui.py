@@ -17,7 +17,7 @@ from faster_whisper import WhisperModel
 
 from constants import (
     SUPPORTED_EXTENSIONS, VIDEO_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP,
-    LOG_DIR, SOUNDS_DIR,
+    LOG_DIR, SOUNDS_DIR, ICON_PATH, ASSETS_DIR,
 )
 from engine import extract_audio, transcribe_audio, transcribe_audio_multilingual, save_transcript, probe_file
 
@@ -180,14 +180,19 @@ class SotvoxApp:
         self.multilingual_var = tk.BooleanVar(value=False)
         self.output_var = tk.StringVar(value=DEFAULT_OUTPUT_DIR)
 
-        self.root.overrideredirect(True)
-        self.root.bind("<Map>", self._on_map)
+        self._icon_big = None
+        self._icon_small = None
+        self._hwnd = None
 
+        self.root.withdraw()
+        self.root.bind("<Map>", self._on_remap)
+
+        self._set_icon()
         self._build_ui()
         os.makedirs(DEFAULT_OUTPUT_DIR, exist_ok=True)
         self.root.protocol("WM_DELETE_WINDOW", self._on_close)
 
-        self.root.after(60, self._apply_taskbar_presence)
+        self.root.after(0, self._reveal)
 
         self._init_log()
         self.language_var.trace_add("write", lambda *_: self._slog(f"Setting changed: language = {self.language_var.get()}"))
@@ -199,17 +204,98 @@ class SotvoxApp:
     def px(self, n):
         return max(1, int(round(n * self.S)))
 
-    def _apply_taskbar_presence(self):
+    def _set_icon(self):
+        self._icon_images = []
         try:
+            for size in (48, 32, 16):
+                png = os.path.join(ASSETS_DIR, f"sotvox_{size}.png")
+                if os.path.exists(png):
+                    self._icon_images.append(tk.PhotoImage(file=png))
+            if self._icon_images:
+                self.root.iconphoto(True, *self._icon_images)
+        except Exception:
+            pass
+        try:
+            if os.path.exists(ICON_PATH):
+                self.root.iconbitmap(default=ICON_PATH)
+        except Exception:
+            pass
+        try:
+            if os.path.exists(ICON_PATH):
+                user32 = ctypes.windll.user32
+                user32.LoadImageW.restype = ctypes.c_void_p
+                user32.LoadImageW.argtypes = [ctypes.c_void_p, ctypes.c_wchar_p, ctypes.c_uint,
+                                              ctypes.c_int, ctypes.c_int, ctypes.c_uint]
+                LR_LOADFROMFILE = 0x00000010
+                IMAGE_ICON = 1
+                self._icon_big = user32.LoadImageW(None, ICON_PATH, IMAGE_ICON, 32, 32, LR_LOADFROMFILE)
+                self._icon_small = user32.LoadImageW(None, ICON_PATH, IMAGE_ICON, 16, 16, LR_LOADFROMFILE)
+        except Exception:
+            pass
+
+    def _reapply_icon(self):
+        try:
+            if self._icon_images:
+                self.root.iconphoto(True, *self._icon_images)
+        except Exception:
+            pass
+        try:
+            user32 = ctypes.windll.user32
+            user32.GetParent.restype = ctypes.c_void_p
+            user32.GetParent.argtypes = [ctypes.c_void_p]
+            user32.SendMessageW.argtypes = [ctypes.c_void_p, ctypes.c_uint, ctypes.c_void_p, ctypes.c_void_p]
+            WM_SETICON = 0x0080
+            hwnd = user32.GetParent(self.root.winfo_id()) or self.root.winfo_id()
+            if self._icon_big:
+                user32.SendMessageW(hwnd, WM_SETICON, ctypes.c_void_p(1), ctypes.c_void_p(self._icon_big))
+            if self._icon_small:
+                user32.SendMessageW(hwnd, WM_SETICON, ctypes.c_void_p(0), ctypes.c_void_p(self._icon_small))
+        except Exception:
+            pass
+
+    def _reveal(self):
+        self.root.update_idletasks()
+        self._make_borderless()
+        self.root.deiconify()
+        self.root.after(30, self._reapply_icon)
+
+    def _make_borderless(self):
+        try:
+            user32 = ctypes.windll.user32
+            user32.GetParent.restype = ctypes.c_void_p
+            user32.GetParent.argtypes = [ctypes.c_void_p]
+            GWL_STYLE = -16
             GWL_EXSTYLE = -20
+            WS_CAPTION = 0x00C00000
+            WS_THICKFRAME = 0x00040000
+            WS_BORDER = 0x00800000
+            WS_DLGFRAME = 0x00400000
+            WS_MINIMIZEBOX = 0x00020000
+            WS_MAXIMIZEBOX = 0x00010000
+            WS_SYSMENU = 0x00080000
             WS_EX_APPWINDOW = 0x00040000
             WS_EX_TOOLWINDOW = 0x00000080
-            hwnd = ctypes.windll.user32.GetParent(self.root.winfo_id()) or self.root.winfo_id()
-            style = ctypes.windll.user32.GetWindowLongW(hwnd, GWL_EXSTYLE)
-            style = (style & ~WS_EX_TOOLWINDOW) | WS_EX_APPWINDOW
-            ctypes.windll.user32.SetWindowLongW(hwnd, GWL_EXSTYLE, style)
-            self.root.withdraw()
-            self.root.after(10, self.root.deiconify)
+            WS_EX_WINDOWEDGE = 0x00000100
+            WS_EX_CLIENTEDGE = 0x00000200
+            WS_EX_DLGMODALFRAME = 0x00000001
+            WS_EX_STATICEDGE = 0x00020000
+            SWP_FRAMECHANGED = 0x0020
+            SWP_NOMOVE = 0x0002
+            SWP_NOSIZE = 0x0001
+            SWP_NOZORDER = 0x0004
+            SWP_NOACTIVATE = 0x0010
+            hwnd = user32.GetParent(self.root.winfo_id()) or self.root.winfo_id()
+            self._hwnd = hwnd
+            style = user32.GetWindowLongW(hwnd, GWL_STYLE)
+            style = (style & ~(WS_CAPTION | WS_THICKFRAME | WS_BORDER | WS_DLGFRAME)) \
+                | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SYSMENU
+            user32.SetWindowLongW(hwnd, GWL_STYLE, style)
+            ex = user32.GetWindowLongW(hwnd, GWL_EXSTYLE)
+            ex = (ex & ~(WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE | WS_EX_CLIENTEDGE
+                         | WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE)) | WS_EX_APPWINDOW
+            user32.SetWindowLongW(hwnd, GWL_EXSTYLE, ex)
+            user32.SetWindowPos(hwnd, 0, 0, 0, 0, 0,
+                                SWP_FRAMECHANGED | SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE)
         except Exception:
             pass
 
@@ -685,13 +771,11 @@ class SotvoxApp:
         self.root.geometry(f"{new_w}x{new_h}")
 
     def _minimize(self):
-        self.root.update_idletasks()
-        self.root.overrideredirect(False)
         self.root.iconify()
 
-    def _on_map(self, event):
-        if str(event.widget) == "." and not self.root.overrideredirect():
-            self.root.overrideredirect(True)
+    def _on_remap(self, event):
+        if str(event.widget) == ".":
+            self.root.after(10, self._make_borderless)
 
     def _toggle_max(self):
         if self._maximized:
