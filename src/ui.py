@@ -1,17 +1,15 @@
 import os
 import re
 import sys
-import glob
 import time
-import math
 import ctypes
-import random
 import platform
 import threading
 import traceback
 import subprocess
 import winsound
 import tkinter as tk
+import tkinter.font as tkfont
 from tkinter import filedialog
 from datetime import datetime
 import tkinterdnd2 as tkdnd
@@ -24,129 +22,134 @@ from constants import (
 from engine import extract_audio, transcribe_audio, transcribe_audio_multilingual, save_transcript, probe_file
 
 
-P = {
-    "bg":           "#08080f",
-    "elevated":     "#111119",
-    "surface":      "#1a1a24",
-    "border":       "#252530",
-    "text":         "#f5f0eb",
-    "text_sec":     "#b0a8c0",
-    "text_dim":     "#5a5570",
-    "accent":       "#a78bfa",
-    "accent_hover": "#c4b5fd",
-    "cyan":         "#67e8f9",
-    "amber":        "#fbbf24",
-    "red":          "#f87171",
-    "red_hover":    "#fca5a5",
-    "log_bg":       "#0a0a12",
-    "log_fg":       "#8b85a0",
-    "entry_bg":     "#0e0e16",
-    "entry_fg":     "#d8d0e8",
-}
+FACE = "#c0c0c0"
+LIGHT = "#dfdfdf"
+HILIGHT = "#ffffff"
+SHADOW = "#808080"
+DKSHADOW = "#000000"
+WHITE = "#ffffff"
+BLACK = "#000000"
+GRAYTEXT = "#808080"
+NAVY = "#000080"
+TITLETEXT = "#ffffff"
+TEAL = "#008080"
+SELBG = "#000080"
+SELFG = "#ffffff"
+
+FONT_UI = ("MS Sans Serif", 8)
+FONT_TITLE = ("MS Sans Serif", 8, "bold")
+FONT_MONO = ("Fixedsys", 9)
 
 
-def _hex_to_rgb(h):
-    h = h.lstrip("#")
-    return int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE):
+    if fill:
+        canvas.create_rectangle(x0, y0, x1, y1, fill=fill, outline="")
+    if raised:
+        tl_out, br_out, tl_in, br_in = HILIGHT, DKSHADOW, LIGHT, SHADOW
+    else:
+        tl_out, br_out, tl_in, br_in = SHADOW, HILIGHT, DKSHADOW, LIGHT
+    canvas.create_line(x0, y0, x1, y0, fill=tl_out)
+    canvas.create_line(x0, y0, x0, y1, fill=tl_out)
+    canvas.create_line(x0, y1, x1, y1, fill=br_out)
+    canvas.create_line(x1, y0, x1, y1, fill=br_out)
+    canvas.create_line(x0 + 1, y0 + 1, x1 - 1, y0 + 1, fill=tl_in)
+    canvas.create_line(x0 + 1, y0 + 1, x0 + 1, y1 - 1, fill=tl_in)
+    canvas.create_line(x0 + 1, y1 - 1, x1 - 1, y1 - 1, fill=br_in)
+    canvas.create_line(x1 - 1, y0 + 1, x1 - 1, y1 - 1, fill=br_in)
 
 
-def _rgb_to_hex(r, g, b):
-    return f"#{max(0,min(255,int(r))):02x}{max(0,min(255,int(g))):02x}{max(0,min(255,int(b))):02x}"
+class _Win95Scrollbar(tk.Canvas):
+    BAR = 16
 
-
-def _lerp(c1, c2, t):
-    r1, g1, b1 = _hex_to_rgb(c1)
-    r2, g2, b2 = _hex_to_rgb(c2)
-    return _rgb_to_hex(r1 + (r2 - r1) * t, g1 + (g2 - g1) * t, b1 + (b2 - b1) * t)
-
-
-def _ease(t):
-    return t * t * (3 - 2 * t)
-
-
-class _ThumbScrollbar(tk.Canvas):
-    def __init__(self, parent, command=None, track_color=None, **kwargs):
-        super().__init__(parent, width=10, highlightthickness=0, bd=0,
-                         bg=track_color or P["elevated"], **kwargs)
+    def __init__(self, parent, command=None, **kwargs):
+        super().__init__(parent, width=self.BAR, height=48, highlightthickness=0,
+                         bd=0, bg=FACE, **kwargs)
         self._command = command
-        self._track_color = track_color or P["elevated"]
         self._lo = 0.0
         self._hi = 1.0
-        self._dragging = False
-        self._drag_y = 0
-        self._drag_pos = 0.0
-        self._hovered = False
-
-        self.bind("<Configure>", self._draw)
-        self.bind("<ButtonPress-1>", self._on_press)
-        self.bind("<B1-Motion>", self._on_drag)
-        self.bind("<ButtonRelease-1>", self._on_release)
-        self.bind("<Enter>", lambda e: (setattr(self, "_hovered", True), self._draw()))
-        self.bind("<Leave>", lambda e: (setattr(self, "_hovered", False), self._draw()))
+        self._drag = None
+        self.bind("<Configure>", lambda e: self._draw())
+        self.bind("<ButtonPress-1>", self._press)
+        self.bind("<B1-Motion>", self._motion)
+        self.bind("<ButtonRelease-1>", lambda e: setattr(self, "_drag", None))
 
     def set(self, lo, hi):
         self._lo = float(lo)
         self._hi = float(hi)
         self._draw()
 
-    def _draw(self, event=None):
+    def _metrics(self):
+        h = self.winfo_height()
+        bar = self.BAR
+        track_h = max(0, h - bar * 2)
+        span = self._hi - self._lo
+        if span >= 1.0:
+            return h, bar, track_h, bar, track_h
+        thumb_h = max(bar, int(track_h * span))
+        movable = max(1, track_h - thumb_h)
+        thumb_y = bar + int(movable * (self._lo / max(1e-6, 1.0 - span)))
+        return h, bar, track_h, thumb_y, thumb_h
+
+    def _draw(self):
         self.delete("all")
         w = self.winfo_width()
-        h = self.winfo_height()
-        if h < 1 or self._hi - self._lo >= 1.0:
+        h, bar, track_h, thumb_y, thumb_h = self._metrics()
+        if h < bar * 2 + 4:
             return
-        thumb_h = max(24, int(h * (self._hi - self._lo)))
-        thumb_y = int((h - thumb_h) * self._lo / max(0.001, 1.0 - (self._hi - self._lo)))
-        pad_x = 2
-        r = 3
-        color = P["text_dim"] if (self._hovered or self._dragging) else P["border"]
-        x0, y0, x1, y1 = pad_x, thumb_y, w - pad_x, thumb_y + thumb_h
-        self.create_rectangle(x0 + r, y0, x1 - r, y1, fill=color, outline="")
-        self.create_rectangle(x0, y0 + r, x1, y1 - r, fill=color, outline="")
-        self.create_oval(x0, y0, x0 + r * 2, y0 + r * 2, fill=color, outline="")
-        self.create_oval(x1 - r * 2, y0, x1, y0 + r * 2, fill=color, outline="")
-        self.create_oval(x0, y1 - r * 2, x0 + r * 2, y1, fill=color, outline="")
-        self.create_oval(x1 - r * 2, y1 - r * 2, x1, y1, fill=color, outline="")
+        self.create_rectangle(0, bar, w, h - bar, fill=FACE, outline="")
+        self.create_rectangle(0, bar, w, h - bar, fill=WHITE, outline="", stipple="gray50")
+        _bevel_lines(self, 0, 0, w - 1, bar - 1, raised=True, fill=FACE)
+        self._triangle(w // 2, bar // 2, "up")
+        _bevel_lines(self, 0, h - bar, w - 1, h - 1, raised=True, fill=FACE)
+        self._triangle(w // 2, h - bar // 2 - 1, "down")
+        if self._hi - self._lo < 1.0:
+            _bevel_lines(self, 0, thumb_y, w - 1, thumb_y + thumb_h, raised=True, fill=FACE)
 
-    def _on_press(self, event):
-        h = self.winfo_height()
-        if h < 1 or self._hi - self._lo >= 1.0:
-            return
-        thumb_h = max(24, int(h * (self._hi - self._lo)))
-        thumb_y = int((h - thumb_h) * self._lo / max(0.001, 1.0 - (self._hi - self._lo)))
-        if thumb_y <= event.y <= thumb_y + thumb_h:
-            self._dragging = True
-            self._drag_y = event.y
-            self._drag_pos = self._lo
+    def _triangle(self, cx, cy, direction):
+        if direction == "up":
+            self.create_polygon(cx, cy - 3, cx - 4, cy + 2, cx + 4, cy + 2, fill=BLACK, outline="")
         else:
-            frac = event.y / h
-            self._command("moveto", str(max(0.0, min(1.0, frac))))
+            self.create_polygon(cx, cy + 3, cx - 4, cy - 2, cx + 4, cy - 2, fill=BLACK, outline="")
 
-    def _on_drag(self, event):
-        if not self._dragging:
+    def _press(self, event):
+        if not self._command:
             return
-        h = self.winfo_height()
-        if h < 1:
+        h, bar, track_h, thumb_y, thumb_h = self._metrics()
+        if event.y < bar:
+            self._command("scroll", -1, "units")
+        elif event.y > h - bar:
+            self._command("scroll", 1, "units")
+        elif thumb_y <= event.y <= thumb_y + thumb_h:
+            self._drag = (event.y, self._lo)
+        elif event.y < thumb_y:
+            self._command("scroll", -1, "pages")
+        else:
+            self._command("scroll", 1, "pages")
+
+    def _motion(self, event):
+        if not self._drag or not self._command:
             return
-        dy = event.y - self._drag_y
+        h, bar, track_h, thumb_y, thumb_h = self._metrics()
+        start_y, start_lo = self._drag
         span = self._hi - self._lo
-        delta = dy / max(1, h - max(24, int(h * span)))
-        new_pos = max(0.0, min(1.0 - span, self._drag_pos + delta * (1.0 - span)))
-        self._command("moveto", str(new_pos))
-
-    def _on_release(self, event):
-        self._dragging = False
-        self._draw()
+        movable = max(1, track_h - thumb_h)
+        delta = (event.y - start_y) / movable
+        new_lo = min(max(0.0, start_lo + delta * (1.0 - span)), max(0.0, 1.0 - span))
+        self._command("moveto", str(new_lo))
 
 
 class SotvoxApp:
     def __init__(self):
         self.root = tkdnd.Tk()
         self.root.title("Sotvox")
-        _s = self.root.winfo_fpixels('1i') / 96.0
-        self.root.geometry(f"{int(840 * _s)}x{int(800 * _s)}")
-        self.root.minsize(int(700 * _s), int(660 * _s))
-        self.root.configure(bg=P["bg"])
+        self.root.configure(bg=FACE)
+        win_w, win_h = 588, 690
+        screen_w = self.root.winfo_screenwidth()
+        screen_h = self.root.winfo_screenheight()
+        pos_x = (screen_w - win_w) // 2
+        pos_y = max(0, (screen_h - win_h) // 2 - 20)
+        self.root.geometry(f"{win_w}x{win_h}+{pos_x}+{pos_y}")
+        self._maximized = False
 
         self.files = []
         self.model = None
@@ -155,14 +158,11 @@ class SotvoxApp:
         self.is_transcribing = False
         self.cancel_requested = False
         self._progress_value = 0
-        self._tick_count = 0
-        self._shimmer_phase = 0.0
-        self._particles = []
-        self._waves = []
         self._session_log = []
         self._log_flush_idx = 0
         self._log_path = None
         self._session_start = time.time()
+        self._drag_offset = (0, 0)
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3")
@@ -170,10 +170,14 @@ class SotvoxApp:
         self.multilingual_var = tk.BooleanVar(value=False)
         self.output_var = tk.StringVar(value=DEFAULT_OUTPUT_DIR)
 
+        self.root.overrideredirect(True)
+        self.root.bind("<Map>", self._on_map)
+
         self._build_ui()
         os.makedirs(DEFAULT_OUTPUT_DIR, exist_ok=True)
         self.root.protocol("WM_DELETE_WINDOW", self._on_close)
-        self._tick()
+
+        self.root.after(60, self._apply_taskbar_presence)
 
         self._init_log()
         self.language_var.trace_add("write", lambda *_: self._slog(f"Setting changed: language = {self.language_var.get()}"))
@@ -182,425 +186,475 @@ class SotvoxApp:
         self.multilingual_var.trace_add("write", lambda *_: self._slog(f"Setting changed: multilingual = {self.multilingual_var.get()}"))
         self.output_var.trace_add("write", lambda *_: self._slog(f"Setting changed: output path = {self.output_var.get()}"))
 
-    def _hover_bind(self, widget, bg_from, bg_to):
-        anim = [0.0, 0, None]
+    def _apply_taskbar_presence(self):
+        try:
+            GWL_EXSTYLE = -20
+            WS_EX_APPWINDOW = 0x00040000
+            WS_EX_TOOLWINDOW = 0x00000080
+            hwnd = ctypes.windll.user32.GetParent(self.root.winfo_id()) or self.root.winfo_id()
+            style = ctypes.windll.user32.GetWindowLongW(hwnd, GWL_EXSTYLE)
+            style = (style & ~WS_EX_TOOLWINDOW) | WS_EX_APPWINDOW
+            ctypes.windll.user32.SetWindowLongW(hwnd, GWL_EXSTYLE, style)
+            self.root.withdraw()
+            self.root.after(10, self.root.deiconify)
+        except Exception:
+            pass
 
-        def step():
-            if anim[2]:
-                widget.after_cancel(anim[2])
-                anim[2] = None
-            anim[0] = max(0.0, min(1.0, anim[0] + 0.1 * anim[1]))
-            color = _lerp(bg_from, bg_to, _ease(anim[0]))
-            widget.configure(bg=color, activebackground=bg_to)
-            if 0.0 < anim[0] < 1.0:
-                anim[2] = widget.after(16, step)
+    def _bevel(self, parent, style="raised", bg=FACE):
+        if style == "raised":
+            ring = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
+        elif style == "sunken":
+            ring = [SHADOW, HILIGHT, DKSHADOW, LIGHT]
+        else:
+            ring = [SHADOW, HILIGHT, HILIGHT, SHADOW]
+        a = tk.Frame(parent, bg=ring[0])
+        b = tk.Frame(a, bg=ring[1]); b.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
+        c = tk.Frame(b, bg=ring[2]); c.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
+        d = tk.Frame(c, bg=ring[3]); d.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
+        content = tk.Frame(d, bg=bg); content.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
+        return a, content
 
-        widget.bind("<Enter>", lambda e: (anim.__setitem__(1, 1), step()))
-        widget.bind("<Leave>", lambda e: (anim.__setitem__(1, -1), step()))
+    def _mk_button(self, parent, text, command=None, font=None, pad_x=10, pad_y=3,
+                   width_chars=0, default=False):
+        font = font or FONT_UI
+        raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW, FACE]
+        sunken = [SHADOW, HILIGHT, DKSHADOW, LIGHT, FACE]
+        state = {"enabled": True}
 
-    def _dropdown(self, parent, variable, values, width=16):
-        outer = tk.Frame(parent, bg=P["entry_bg"], highlightbackground=P["border"],
-                         highlightthickness=1, cursor="hand2")
-        lbl = tk.Label(outer, textvariable=variable, font=("Bahnschrift", 10),
-                       bg=P["entry_bg"], fg=P["entry_fg"], anchor="w",
-                       width=width, padx=8, pady=4, cursor="hand2")
+        holder = tk.Frame(parent, bg=BLACK if default else FACE)
+        ring_pad = 1 if default else 0
+        a = tk.Frame(holder, bg=raised[0]); a.pack(padx=ring_pad, pady=ring_pad)
+        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(1, 0), pady=(1, 0))
+        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, 1), pady=(0, 1))
+        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(1, 0), pady=(1, 0))
+        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, 1), pady=(0, 1))
+        label_kwargs = {"text": text, "font": font, "bg": FACE, "fg": BLACK}
+        if width_chars:
+            label_kwargs["width"] = width_chars
+        lbl = tk.Label(face, **label_kwargs)
+        lbl.pack(padx=pad_x, pady=pad_y)
+        rings = [a, b, c, d, face]
+
+        def press(_=None):
+            if not state["enabled"]:
+                return
+            for fr, col in zip(rings, sunken):
+                fr.configure(bg=col)
+            lbl.pack_configure(padx=(pad_x + 1, pad_x - 1), pady=(pad_y + 1, pad_y - 1))
+
+        def release(event=None):
+            if not state["enabled"]:
+                return
+            for fr, col in zip(rings, raised):
+                fr.configure(bg=col)
+            lbl.pack_configure(padx=pad_x, pady=pad_y)
+            if event is not None and command:
+                ex, ey = event.x_root, event.y_root
+                fx, fy = face.winfo_rootx(), face.winfo_rooty()
+                if 0 <= ex - fx <= face.winfo_width() and 0 <= ey - fy <= face.winfo_height():
+                    command()
+
+        for widget in (lbl, face):
+            widget.bind("<ButtonPress-1>", press)
+            widget.bind("<ButtonRelease-1>", release)
+
+        def set_text(t):
+            lbl.configure(text=t)
+
+        def set_enabled(v):
+            state["enabled"] = v
+            lbl.configure(fg=BLACK if v else GRAYTEXT)
+
+        holder.set_text = set_text
+        holder.set_enabled = set_enabled
+        return holder
+
+    def _group(self, parent, title):
+        holder = tk.Frame(parent, bg=FACE)
+        border, content = self._bevel(holder, style="etched", bg=FACE)
+        border.pack(fill="both", expand=True, pady=(8, 0))
+        tk.Label(holder, text=f" {title} ", bg=FACE, fg=BLACK, font=FONT_UI).place(x=9, y=0)
+        return holder, content
+
+    def _combo(self, parent, variable, values, width_chars=14):
+        border, content = self._bevel(parent, style="sunken", bg=WHITE)
+        content.configure(bg=WHITE)
+        lbl = tk.Label(content, textvariable=variable, font=FONT_UI, bg=WHITE, fg=BLACK,
+                       anchor="w", width=width_chars, padx=3, pady=1, cursor="arrow")
         lbl.pack(side="left", fill="both", expand=True)
-        arrow = tk.Label(outer, text="\u25be", font=("Bahnschrift", 11),
-                         bg=P["entry_bg"], fg=P["text_dim"], padx=6, cursor="hand2")
-        arrow.pack(side="right")
-        menu = tk.Menu(outer, tearoff=0, bg=P["surface"], fg=P["text_sec"],
-                       activebackground=P["accent"], activeforeground=P["text"],
-                       font=("Bahnschrift", 10), borderwidth=1, relief="solid")
+
+        arrow_raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
+        aa = tk.Frame(content, bg=arrow_raised[0])
+        ab = tk.Frame(aa, bg=arrow_raised[1]); ab.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
+        ac = tk.Frame(ab, bg=arrow_raised[2]); ac.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
+        ad = tk.Frame(ac, bg=arrow_raised[3]); ad.pack(fill="both", expand=True, padx=(1, 0), pady=(1, 0))
+        aface = tk.Frame(ad, bg=FACE); aface.pack(fill="both", expand=True, padx=(0, 1), pady=(0, 1))
+        arrow_canvas = tk.Canvas(aface, width=15, height=15, bg=FACE, highlightthickness=0, bd=0)
+        arrow_canvas.pack(padx=2, pady=1)
+        arrow_canvas.create_polygon(4, 6, 11, 6, 7, 10, fill=BLACK, outline="")
+        aa.pack(side="right", fill="y")
+
+        menu = tk.Menu(content, tearoff=0, bg=FACE, fg=BLACK,
+                       activebackground=NAVY, activeforeground=WHITE,
+                       font=FONT_UI, borderwidth=1, relief="raised")
         for val in values:
             menu.add_command(label=val, command=lambda v=val: variable.set(v))
 
-        def show(e=None):
-            menu.post(outer.winfo_rootx(), outer.winfo_rooty() + outer.winfo_height())
+        def show(_=None):
+            menu.post(border.winfo_rootx(), border.winfo_rooty() + border.winfo_height())
 
-        for w in (outer, lbl, arrow):
+        for w in (content, lbl, arrow_canvas, aface):
             w.bind("<Button-1>", show)
-        outer.bind("<Enter>", lambda e: outer.configure(highlightbackground=P["accent"]))
-        outer.bind("<Leave>", lambda e: outer.configure(highlightbackground=P["border"]))
-        return outer
+        return border
 
-    def _toggle(self, parent, variable, label_text, hint_text=None):
-        outer = tk.Frame(parent, bg=P["elevated"], cursor="hand2")
-
-        box = tk.Canvas(outer, width=32, height=18, bg=P["elevated"],
-                        highlightthickness=0, cursor="hand2")
-        box.pack(side="left", padx=(0, 8))
-
-        label = tk.Label(outer, text=label_text, font=("Bahnschrift", 10),
-                         bg=P["elevated"], fg=P["text_sec"], cursor="hand2")
-        label.pack(side="left")
-
-        state = {"hovered": False}
+    def _check(self, parent, variable, text):
+        outer = tk.Frame(parent, bg=FACE, cursor="arrow")
+        box = tk.Canvas(outer, width=13, height=13, bg=FACE, highlightthickness=0, bd=0)
+        box.pack(side="left", padx=(0, 5))
+        lbl = tk.Label(outer, text=text, font=FONT_UI, bg=FACE, fg=BLACK)
+        lbl.pack(side="left")
 
         def draw():
             box.delete("all")
-            is_on = variable.get()
-            canvas_width = 32
-            canvas_height = 18
-            if is_on:
-                track_color = P["accent_hover"] if state["hovered"] else P["accent"]
-                knob_color = P["bg"]
-            else:
-                track_color = P["text_dim"] if state["hovered"] else P["border"]
-                knob_color = P["text"]
-            corner_radius = canvas_height // 2
-            box.create_oval(0, 0, canvas_height, canvas_height, fill=track_color, outline="")
-            box.create_oval(canvas_width - canvas_height, 0, canvas_width, canvas_height,
-                            fill=track_color, outline="")
-            box.create_rectangle(corner_radius, 0, canvas_width - corner_radius, canvas_height,
-                                 fill=track_color, outline="")
-            knob_diameter = canvas_height - 4
-            knob_x = (canvas_width - knob_diameter - 2) if is_on else 2
-            box.create_oval(knob_x, 2, knob_x + knob_diameter, 2 + knob_diameter,
-                            fill=knob_color, outline="")
+            box.create_rectangle(0, 0, 12, 12, fill=WHITE, outline="")
+            box.create_line(0, 0, 12, 0, fill=SHADOW)
+            box.create_line(0, 0, 0, 12, fill=SHADOW)
+            box.create_line(1, 1, 11, 1, fill=DKSHADOW)
+            box.create_line(1, 1, 1, 11, fill=DKSHADOW)
+            box.create_line(0, 12, 12, 12, fill=HILIGHT)
+            box.create_line(12, 0, 12, 12, fill=HILIGHT)
+            box.create_line(1, 11, 11, 11, fill=LIGHT)
+            box.create_line(11, 1, 11, 11, fill=LIGHT)
+            if variable.get():
+                box.create_line(3, 6, 5, 9, fill=BLACK, width=1)
+                box.create_line(3, 7, 5, 10, fill=BLACK, width=1)
+                box.create_line(5, 9, 10, 3, fill=BLACK, width=1)
+                box.create_line(5, 10, 10, 4, fill=BLACK, width=1)
 
-        def on_enter(e):
-            state["hovered"] = True
-            draw()
-
-        def on_leave(e):
-            state["hovered"] = False
-            draw()
-
-        def on_click(e=None):
+        def toggle(_=None):
             variable.set(not variable.get())
 
-        widgets_to_bind = [outer, label, box]
-
-        if hint_text:
-            hint = tk.Label(outer, text=hint_text, font=("Bahnschrift Light", 9),
-                            bg=P["elevated"], fg=P["text_dim"], cursor="hand2")
-            hint.pack(side="left", padx=(8, 0))
-            widgets_to_bind.append(hint)
-
-        for widget in widgets_to_bind:
-            widget.bind("<Button-1>", on_click)
-            widget.bind("<Enter>", on_enter)
-            widget.bind("<Leave>", on_leave)
-
+        for w in (outer, box, lbl):
+            w.bind("<Button-1>", toggle)
         variable.trace_add("write", lambda *_: draw())
         draw()
         return outer
 
+    def _title_button(self, parent, glyph, command, enabled=True):
+        raised = [HILIGHT, DKSHADOW, LIGHT, SHADOW]
+        a = tk.Frame(parent, bg=raised[0])
+        b = tk.Frame(a, bg=raised[1]); b.pack(padx=(1, 0), pady=(1, 0))
+        c = tk.Frame(b, bg=raised[2]); c.pack(padx=(0, 1), pady=(0, 1))
+        d = tk.Frame(c, bg=raised[3]); d.pack(padx=(1, 0), pady=(1, 0))
+        face = tk.Frame(d, bg=FACE); face.pack(padx=(0, 1), pady=(0, 1))
+        canvas = tk.Canvas(face, width=13, height=11, bg=FACE, highlightthickness=0, bd=0)
+        canvas.pack(padx=1, pady=1)
+        gcol = BLACK if enabled else SHADOW
+        if glyph == "min":
+            canvas.create_rectangle(2, 8, 9, 10, fill=gcol, outline="")
+        elif glyph == "max":
+            canvas.create_rectangle(1, 1, 11, 10, outline=gcol, width=1)
+            canvas.create_line(1, 2, 11, 2, fill=gcol, width=1)
+        elif glyph == "restore":
+            canvas.create_rectangle(3, 1, 10, 6, outline=gcol, width=1)
+            canvas.create_line(3, 2, 10, 2, fill=gcol)
+            canvas.create_rectangle(1, 4, 8, 9, outline=gcol, width=1)
+            canvas.create_line(1, 5, 8, 5, fill=gcol)
+            canvas.create_rectangle(2, 5, 7, 8, fill=FACE, outline="")
+        elif glyph == "close":
+            for dx in (0, 1):
+                canvas.create_line(2 + dx, 1, 10 + dx, 9, fill=gcol)
+                canvas.create_line(10 + dx, 1, 2 + dx, 9, fill=gcol)
+        if enabled and command:
+            for w in (canvas, face):
+                w.bind("<Button-1>", lambda e: command())
+        return a
+
     def _build_ui(self):
-        main = tk.Frame(self.root, bg=P["bg"])
-        main.pack(fill="both", expand=True, padx=26, pady=(0, 20))
+        shell_border, shell = self._bevel(self.root, style="raised", bg=FACE)
+        shell_border.pack(fill="both", expand=True)
+        self._shell = shell
 
-        self._build_header(main)
-        self._build_drop_zone(main)
-        self._build_file_list(main)
-        self._build_settings(main)
-        self._build_action_bar(main)
+        self._build_titlebar()
+        self._build_menubar()
+        self._build_statusbar()
+
+        main = tk.Frame(shell, bg=FACE)
+        main.pack(fill="both", expand=True, padx=8, pady=(4, 2))
+
+        self._build_files(main)
+        self._build_options(main)
+        self._build_output(main)
+        self._build_actions(main)
         self._build_progress(main)
+        self._build_log(main)
 
-    def _build_header(self, parent):
-        self.header_canvas = tk.Canvas(parent, bg=P["bg"], highlightthickness=0, height=72)
-        self.header_canvas.pack(fill="x", pady=(14, 14))
+    def _build_titlebar(self):
+        bar = tk.Frame(self._shell, bg=NAVY, height=20)
+        bar.pack(fill="x", side="top")
+        bar.pack_propagate(False)
+        self.titlebar = bar
 
-        wave_alphas = [0.07, 0.10, 0.05]
-        for a in wave_alphas:
-            color = _lerp(P["bg"], P["accent"], a)
-            line = self.header_canvas.create_line(0, 36, 1, 36, fill=color, width=1.5, smooth=True)
-            self._waves.append(line)
+        icon = tk.Canvas(bar, width=16, height=16, bg=NAVY, highlightthickness=0, bd=0)
+        icon.pack(side="left", padx=(3, 3), pady=2)
+        icon.create_rectangle(2, 1, 12, 15, fill=WHITE, outline=BLACK)
+        icon.create_line(4, 4, 10, 4, fill=NAVY)
+        icon.create_line(4, 6, 10, 6, fill=NAVY)
+        icon.create_line(4, 8, 8, 8, fill=NAVY)
+        icon.create_polygon(11, 9, 14, 6, 14, 14, 11, 11, fill=TEAL, outline=BLACK)
 
-        self.header_canvas.create_text(
-            26, 16, text="SOTVOX", anchor="w",
-            fill=P["text"], font=("Bahnschrift SemiBold", 18)
-        )
-        self.header_canvas.create_text(
-            26, 54, text="Drag & drop audio/video files to transcribe them locally using AI",
-            anchor="w", fill=P["text_dim"], font=("Bahnschrift Light", 9)
-        )
+        self.title_label = tk.Label(bar, text="Sotvox", bg=NAVY, fg=TITLETEXT, font=FONT_TITLE)
+        self.title_label.pack(side="left")
 
-    def _build_drop_zone(self, parent):
-        self.drop_canvas = tk.Canvas(parent, bg=P["surface"], highlightthickness=0,
-                                      height=90, cursor="hand2")
-        self.drop_canvas.pack(fill="x", pady=(0, 12))
+        btns = tk.Frame(bar, bg=NAVY)
+        btns.pack(side="right", padx=2, pady=1)
+        self._title_button(btns, "close", self._on_close).pack(side="right", padx=(2, 0))
+        self._title_button(btns, "max", None, enabled=False).pack(side="right")
+        self._title_button(btns, "min", self._minimize).pack(side="right")
 
-        self._init_particles()
+        for w in (bar, icon, self.title_label):
+            w.bind("<ButtonPress-1>", self._drag_start)
+            w.bind("<B1-Motion>", self._drag_move)
 
-        self.drop_canvas.create_text(0, 0, text="", tags="drop_main",
-                                      fill=P["text_dim"], font=("Bahnschrift", 11))
-        self.drop_canvas.create_text(0, 0, text="", tags="drop_sub",
-                                      fill=P["text_dim"], font=("Bahnschrift Light", 9))
+    def _build_menubar(self):
+        bar = tk.Frame(self._shell, bg=FACE)
+        bar.pack(fill="x", side="top")
 
-        self.drop_canvas.bind("<Configure>", self._redraw_drop_zone)
-        self.drop_canvas.bind("<Enter>", lambda e: self._redraw_drop_zone(None, hover=True))
-        self.drop_canvas.bind("<Leave>", lambda e: self._redraw_drop_zone(None, hover=False))
-        self.drop_canvas.bind("<Button-1>", lambda e: self._browse_files())
+        file_menu = tk.Menu(bar, tearoff=0, bg=FACE, fg=BLACK, activebackground=NAVY,
+                            activeforeground=WHITE, font=FONT_UI, borderwidth=1, relief="raised")
+        file_menu.add_command(label="Add Files...", command=self._browse_files, underline=0)
+        file_menu.add_command(label="Open Output Folder", command=self._open_output, underline=0)
+        file_menu.add_separator()
+        file_menu.add_command(label="Exit", command=self._on_close, underline=1)
 
-        self.drop_canvas.drop_target_register(tkdnd.DND_FILES)
-        self.drop_canvas.dnd_bind("<<Drop>>", self._on_drop)
-        self._drop_hover = False
+        edit_menu = tk.Menu(bar, tearoff=0, bg=FACE, fg=BLACK, activebackground=NAVY,
+                            activeforeground=WHITE, font=FONT_UI, borderwidth=1, relief="raised")
+        edit_menu.add_command(label="Remove Selected", command=self._remove_selected, underline=0)
+        edit_menu.add_command(label="Clear List", command=self._clear_files, underline=0)
 
-    def _init_particles(self):
-        self._particles = []
-        for _ in range(18):
-            self._particles.append({
-                "x": random.random(), "y": random.random(),
-                "dx": random.uniform(-0.0008, 0.0008),
-                "dy": random.uniform(-0.0008, 0.0008),
-                "r": random.uniform(1.5, 3.0),
-                "phase": random.uniform(0, math.pi * 2),
-                "id": None,
-            })
+        help_menu = tk.Menu(bar, tearoff=0, bg=FACE, fg=BLACK, activebackground=NAVY,
+                            activeforeground=WHITE, font=FONT_UI, borderwidth=1, relief="raised")
+        help_menu.add_command(label="About Sotvox...", command=self._about, underline=0)
 
-    def _create_particle_items(self):
-        for p in self._particles:
-            if p["id"] is None:
-                p["id"] = self.drop_canvas.create_oval(0, 0, 1, 1, fill=P["surface"], outline="")
-                self.drop_canvas.tag_lower(p["id"])
+        for text, menu in (("File", file_menu), ("Edit", edit_menu), ("Help", help_menu)):
+            self._menu_item(bar, text, menu)
 
-    def _redraw_drop_zone(self, event=None, hover=None):
-        if hover is not None:
-            self._drop_hover = hover
-        w = self.drop_canvas.winfo_width()
-        h = self.drop_canvas.winfo_height()
-        if w < 10:
-            return
-        text_color = P["accent"] if self._drop_hover else P["text_dim"]
-        self.drop_canvas.itemconfigure("drop_main", fill=text_color,
-                                        text="Drop audio or video files here")
-        self.drop_canvas.coords("drop_main", w // 2, h // 2 - 10)
-        sub_color = P["text_sec"] if self._drop_hover else _lerp(P["text_dim"], P["bg"], 0.3)
-        self.drop_canvas.itemconfigure("drop_sub", fill=sub_color,
-                                        text="or click to browse")
-        self.drop_canvas.coords("drop_sub", w // 2, h // 2 + 14)
-        self._create_particle_items()
+    def _menu_item(self, bar, text, menu):
+        font = tkfont.Font(family="MS Sans Serif", size=8)
+        pad = 7
+        first_w = font.measure(text[0])
+        baseline = 2 + font.metrics("ascent")
+        canvas = tk.Canvas(bar, width=font.measure(text) + pad * 2,
+                           height=baseline + 4, bg=FACE, highlightthickness=0, bd=0)
+        canvas.pack(side="left")
 
-    def _build_file_list(self, parent):
-        list_frame = tk.Frame(parent, bg=P["elevated"])
-        list_frame.pack(fill="both", expand=True, pady=(0, 12))
+        def redraw(bg, fg):
+            canvas.delete("all")
+            canvas.configure(bg=bg)
+            canvas.create_text(pad, 2, text=text, anchor="nw", fill=fg, font=font)
+            canvas.create_line(pad, baseline + 1, pad + first_w, baseline + 1, fill=fg)
 
-        header = tk.Frame(list_frame, bg=P["elevated"])
-        header.pack(fill="x", padx=(14, 44), pady=(10, 0))
-        self.file_count_label = tk.Label(header, text="Files (0)", bg=P["elevated"],
-                                          fg=P["text"], font=("Bahnschrift SemiBold", 10))
-        self.file_count_label.pack(side="left")
+        def post(event):
+            menu.post(canvas.winfo_rootx(), canvas.winfo_rooty() + canvas.winfo_height())
 
-        clear_frame = tk.Frame(header, bg=P["border"], padx=1, pady=1)
-        clear_frame.pack(side="right")
-        clear_btn = tk.Button(clear_frame, text="Clear all", font=("Bahnschrift", 9),
-                              bg=P["surface"], fg=P["text_sec"],
-                              activebackground=P["border"], activeforeground=P["accent"],
-                              borderwidth=0, relief="flat", cursor="hand2",
-                              padx=14, pady=7, command=self._clear_files)
-        clear_btn.pack()
-        self._hover_bind(clear_btn, P["surface"], P["border"])
+        canvas.bind("<Button-1>", post)
+        canvas.bind("<Enter>", lambda e: redraw(NAVY, WHITE))
+        canvas.bind("<Leave>", lambda e: redraw(FACE, BLACK))
+        redraw(FACE, BLACK)
 
-        canvas_frame = tk.Frame(list_frame, bg=P["elevated"])
-        canvas_frame.pack(fill="both", expand=True, padx=(14, 6), pady=(6, 12))
+    def _build_files(self, parent):
+        group, content = self._group(parent, "Files")
+        group.pack(fill="both", expand=True)
 
-        self.file_canvas = tk.Canvas(canvas_frame, bg=P["elevated"], highlightthickness=0,
-                                     borderwidth=0, height=120)
-        scrollbar = _ThumbScrollbar(canvas_frame, command=self.file_canvas.yview,
-                                    track_color=P["elevated"])
-        self.file_inner = tk.Frame(self.file_canvas, bg=P["elevated"])
+        hint = tk.Label(content, text="Drag audio or video files onto the list, or click Add Files.",
+                        bg=FACE, fg=BLACK, font=FONT_UI, anchor="w")
+        hint.pack(fill="x", padx=8, pady=(6, 4))
 
-        self.file_inner.bind("<Configure>",
-                             lambda e: self.file_canvas.configure(scrollregion=self.file_canvas.bbox("all")))
-        self._file_window_id = self.file_canvas.create_window((0, 0), window=self.file_inner, anchor="nw")
-        self.file_canvas.configure(yscrollcommand=scrollbar.set)
+        list_row = tk.Frame(content, bg=FACE)
+        list_row.pack(fill="both", expand=True, padx=8, pady=(0, 6))
 
-        scrollbar.pack(side="right", fill="y", padx=(4, 6))
-        self.file_canvas.pack(side="left", fill="both", expand=True)
+        border, well = self._bevel(list_row, style="sunken", bg=WHITE)
+        border.pack(side="left", fill="both", expand=True)
 
-        self.file_canvas.bind("<Configure>", self._on_file_canvas_configure)
-        self.file_canvas.bind("<Enter>", lambda e: self.file_canvas.bind_all("<MouseWheel>", self._on_mousewheel))
-        self.file_canvas.bind("<Leave>", lambda e: self.file_canvas.unbind_all("<MouseWheel>"))
+        self.file_listbox = tk.Listbox(
+            well, bg=WHITE, fg=BLACK, font=FONT_UI, height=6,
+            borderwidth=0, highlightthickness=0, relief="flat",
+            selectbackground=SELBG, selectforeground=SELFG,
+            activestyle="none", selectmode="extended", exportselection=False)
+        scrollbar = _Win95Scrollbar(well, command=self.file_listbox.yview)
+        self.file_listbox.configure(yscrollcommand=scrollbar.set)
+        scrollbar.pack(side="right", fill="y")
+        self.file_listbox.pack(side="left", fill="both", expand=True)
 
-    def _on_mousewheel(self, event):
-        self.file_canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+        self.file_listbox.drop_target_register(tkdnd.DND_FILES)
+        self.file_listbox.dnd_bind("<<Drop>>", self._on_drop)
 
-    def _on_file_canvas_configure(self, event):
-        self.file_canvas.itemconfigure(self._file_window_id, width=event.width)
+        btn_col = tk.Frame(list_row, bg=FACE)
+        btn_col.pack(side="left", fill="y", padx=(6, 0))
+        self._mk_button(btn_col, "Add Files...", command=self._browse_files,
+                        width_chars=10).pack(fill="x", pady=(0, 4))
+        self._mk_button(btn_col, "Remove", command=self._remove_selected,
+                        width_chars=10).pack(fill="x", pady=(0, 4))
+        self._mk_button(btn_col, "Clear All", command=self._clear_files,
+                        width_chars=10).pack(fill="x")
 
-    def _build_settings(self, parent):
-        settings = tk.Frame(parent, bg=P["elevated"])
-        settings.pack(fill="x", pady=(0, 12))
+    def _build_options(self, parent):
+        group, content = self._group(parent, "Options")
+        group.pack(fill="x", pady=(6, 0))
 
-        inner = tk.Frame(settings, bg=P["elevated"])
-        inner.pack(fill="x", padx=14, pady=12)
+        row1 = tk.Frame(content, bg=FACE)
+        row1.pack(fill="x", padx=10, pady=(8, 4))
 
-        row1 = tk.Frame(inner, bg=P["elevated"])
-        row1.pack(fill="x", pady=(0, 8))
+        tk.Label(row1, text="Language:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
+        self._combo(row1, self.language_var,
+                    ["Auto-detect", "Spanish", "English", "Portuguese", "French",
+                     "German", "Italian", "Japanese", "Chinese", "Korean"],
+                    width_chars=11).pack(side="left", padx=(4, 14))
 
-        tk.Label(row1, text="Language", bg=P["elevated"], fg=P["text_sec"],
-                 font=("Bahnschrift", 10)).pack(side="left")
-        self._dropdown(row1, self.language_var,
-                       ["Auto-detect", "Spanish", "English", "Portuguese", "French",
-                        "German", "Italian", "Japanese", "Chinese", "Korean"],
-                       width=14).pack(side="left", padx=(8, 28))
+        tk.Label(row1, text="Model:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
+        self._combo(row1, self.model_var,
+                    ["large-v3", "medium", "small", "base", "tiny"],
+                    width_chars=9).pack(side="left", padx=(4, 14))
 
-        tk.Label(row1, text="Model", bg=P["elevated"], fg=P["text_sec"],
-                 font=("Bahnschrift", 10)).pack(side="left")
-        self._dropdown(row1, self.model_var,
-                       ["large-v3", "medium", "small", "base", "tiny"],
-                       width=14).pack(side="left", padx=(8, 28))
+        tk.Label(row1, text="Device:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
+        self._combo(row1, self.device_var,
+                    ["Auto", "CPU", "GPU (CUDA)"],
+                    width_chars=9).pack(side="left", padx=(4, 0))
 
-        tk.Label(row1, text="Device", bg=P["elevated"], fg=P["text_sec"],
-                 font=("Bahnschrift", 10)).pack(side="left")
-        self._dropdown(row1, self.device_var,
-                       ["Auto", "CPU", "GPU (CUDA)"],
-                       width=12).pack(side="left", padx=(8, 0))
+        row2 = tk.Frame(content, bg=FACE)
+        row2.pack(fill="x", padx=10, pady=(2, 8))
+        self._check(row2, self.multilingual_var,
+                    "Multilingual mode  (auto-detect language per 30s chunk; overrides Language)").pack(side="left")
 
-        row_mid = tk.Frame(inner, bg=P["elevated"])
-        row_mid.pack(fill="x", pady=(0, 8))
-        self._toggle(row_mid, self.multilingual_var, "Multilingual mode",
-                     hint_text="auto-detect language per 30s chunk; overrides Language setting").pack(side="left")
+    def _build_output(self, parent):
+        group, content = self._group(parent, "Output")
+        group.pack(fill="x", pady=(6, 0))
 
-        row2 = tk.Frame(inner, bg=P["elevated"])
-        row2.pack(fill="x")
+        row = tk.Frame(content, bg=FACE)
+        row.pack(fill="x", padx=10, pady=(8, 8))
 
-        tk.Label(row2, text="Output path", bg=P["elevated"], fg=P["text_sec"],
-                 font=("Bahnschrift", 10)).pack(side="left")
-        output_entry = tk.Entry(row2, textvariable=self.output_var, font=("Bahnschrift", 10),
-                                bg=P["entry_bg"], fg=P["entry_fg"], insertbackground=P["accent"],
-                                relief="flat", highlightbackground=P["border"], highlightthickness=1)
-        output_entry.pack(side="left", padx=(8, 8), fill="x", expand=True, ipady=4)
+        tk.Label(row, text="Folder:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
+        border, well = self._bevel(row, style="sunken", bg=WHITE)
+        border.pack(side="left", fill="x", expand=True, padx=(4, 6))
+        entry = tk.Entry(well, textvariable=self.output_var, font=FONT_UI, bg=WHITE, fg=BLACK,
+                         relief="flat", borderwidth=0, highlightthickness=0,
+                         insertbackground=BLACK)
+        entry.pack(fill="both", expand=True, ipady=1, padx=1, pady=1)
+        self._mk_button(row, "Browse...", command=self._browse_output,
+                        width_chars=8).pack(side="left")
 
-        browse_frame = tk.Frame(row2, bg=P["border"], padx=1, pady=1)
-        browse_frame.pack(side="left")
-        browse_btn = tk.Button(browse_frame, text="Browse", font=("Bahnschrift", 9),
-                               bg=P["surface"], fg=P["text_sec"],
-                               activebackground=P["border"], activeforeground=P["accent"],
-                               borderwidth=0, relief="flat", cursor="hand2",
-                               padx=14, pady=7, command=self._browse_output)
-        browse_btn.pack()
-        self._hover_bind(browse_btn, P["surface"], P["border"])
+    def _build_actions(self, parent):
+        action = tk.Frame(parent, bg=FACE)
+        action.pack(fill="x", pady=(8, 2))
 
-    def _build_action_bar(self, parent):
-        action = tk.Frame(parent, bg=P["bg"])
-        action.pack(fill="x", pady=(0, 12))
-
-        self.transcribe_btn = tk.Button(
-            action, text="\u25b6  TRANSCRIBE", font=("Bahnschrift SemiBold", 11),
-            bg=P["accent"], fg=P["bg"], activebackground=P["accent_hover"],
-            activeforeground=P["bg"], borderwidth=0, cursor="hand2",
-            padx=32, pady=11, relief="flat"
-        )
-        self.transcribe_btn.configure(command=self._toggle_transcription)
+        self.transcribe_btn = self._mk_button(
+            action, "Transcribe", command=self._toggle_transcription,
+            pad_x=22, pad_y=3, default=True)
         self.transcribe_btn.pack(side="left")
 
-        self._btn_anim = [0.0, 0, None]
-
-        def btn_step():
-            if self._btn_anim[2]:
-                self.transcribe_btn.after_cancel(self._btn_anim[2])
-                self._btn_anim[2] = None
-            self._btn_anim[0] = max(0.0, min(1.0, self._btn_anim[0] + 0.1 * self._btn_anim[1]))
-            text = self.transcribe_btn.cget("text")
-            if "TRANSCRIBE" in text:
-                color = _lerp(P["accent"], P["accent_hover"], _ease(self._btn_anim[0]))
-                self.transcribe_btn.configure(bg=color)
-            elif "CANCEL" in text and "CANCELLING" not in text:
-                color = _lerp(P["red"], P["red_hover"], _ease(self._btn_anim[0]))
-                self.transcribe_btn.configure(bg=color)
-            if 0.0 < self._btn_anim[0] < 1.0:
-                self._btn_anim[2] = self.transcribe_btn.after(16, btn_step)
-
-        self.transcribe_btn.bind("<Enter>", lambda e: (self._btn_anim.__setitem__(1, 1), btn_step()))
-        self.transcribe_btn.bind("<Leave>", lambda e: (self._btn_anim.__setitem__(1, -1), btn_step()))
-
-        open_frame = tk.Frame(action, bg=P["border"], padx=1, pady=1)
-        open_frame.pack(side="right")
-        open_btn = tk.Button(open_frame, text="Open output \u2192", font=("Bahnschrift", 9),
-                             bg=P["surface"], fg=P["text_sec"],
-                             activebackground=P["border"], activeforeground=P["accent"],
-                             borderwidth=0, relief="flat", cursor="hand2",
-                             padx=14, pady=7, command=self._open_output)
-        open_btn.pack()
-        self._hover_bind(open_btn, P["surface"], P["border"])
+        self._mk_button(action, "Open Output Folder", command=self._open_output,
+                        pad_x=12, pad_y=3).pack(side="right")
 
     def _build_progress(self, parent):
-        prog_frame = tk.Frame(parent, bg=P["elevated"])
-        prog_frame.pack(fill="both", expand=True)
+        group, content = self._group(parent, "Progress")
+        group.pack(fill="x", pady=(6, 0))
 
-        inner = tk.Frame(prog_frame, bg=P["elevated"])
-        inner.pack(fill="both", expand=True, padx=14, pady=12)
-
-        status_row = tk.Frame(inner, bg=P["elevated"])
-        status_row.pack(fill="x")
-
-        self.progress_label = tk.Label(status_row, text="Ready", bg=P["elevated"],
-                                        fg=P["text_sec"], font=("Bahnschrift", 9), anchor="w")
+        status_row = tk.Frame(content, bg=FACE)
+        status_row.pack(fill="x", padx=10, pady=(8, 4))
+        self.progress_label = tk.Label(status_row, text="Ready", bg=FACE, fg=BLACK,
+                                       font=FONT_UI, anchor="w")
         self.progress_label.pack(side="left")
-
-        self.progress_pct = tk.Label(status_row, text="", bg=P["elevated"],
-                                      fg=P["text_dim"], font=("Bahnschrift", 9))
+        self.progress_pct = tk.Label(status_row, text="", bg=FACE, fg=BLACK, font=FONT_UI)
         self.progress_pct.pack(side="right")
 
-        self.progress_canvas = tk.Canvas(inner, bg=P["surface"], highlightthickness=0, height=5)
-        self.progress_canvas.pack(fill="x", pady=(8, 10))
+        bar_border, bar_well = self._bevel(content, style="sunken", bg=FACE)
+        bar_border.pack(fill="x", padx=10, pady=(0, 8))
+        self.progress_canvas = tk.Canvas(bar_well, bg=FACE, highlightthickness=0, bd=0, height=18)
+        self.progress_canvas.pack(fill="x", padx=1, pady=1)
+        self.progress_canvas.bind("<Configure>", lambda e: self._draw_progress())
 
-        log_frame = tk.Frame(inner, bg=P["log_bg"], highlightbackground=P["border"],
-                             highlightthickness=1)
-        log_frame.pack(fill="both", expand=True)
+    def _build_log(self, parent):
+        group, content = self._group(parent, "Log")
+        group.pack(fill="both", expand=True, pady=(6, 0))
 
-        self.log_text = tk.Text(log_frame, bg=P["log_bg"], fg=P["log_fg"],
-                                font=("Cascadia Mono", 9), height=7, wrap="word",
-                                state="disabled", borderwidth=6, relief="flat",
-                                highlightthickness=0, insertbackground=P["accent"],
-                                selectbackground=P["accent"], selectforeground=P["text"])
-        log_scroll = _ThumbScrollbar(log_frame, command=self.log_text.yview,
-                                     track_color=P["log_bg"])
+        border, well = self._bevel(content, style="sunken", bg=WHITE)
+        border.pack(fill="both", expand=True, padx=8, pady=8)
+
+        self.log_text = tk.Text(well, bg=WHITE, fg=BLACK, font=FONT_MONO, height=6,
+                                wrap="word", state="disabled", borderwidth=0,
+                                relief="flat", highlightthickness=0, padx=3, pady=2,
+                                insertbackground=BLACK, selectbackground=SELBG,
+                                selectforeground=SELFG)
+        log_scroll = _Win95Scrollbar(well, command=self.log_text.yview)
         self.log_text.configure(yscrollcommand=log_scroll.set)
-        log_scroll.pack(side="right", fill="y", padx=(4, 6))
+        log_scroll.pack(side="right", fill="y")
         self.log_text.pack(side="left", fill="both", expand=True)
 
-    def _tick(self):
-        self._tick_count += 1
-        self._animate_waveform()
-        self._animate_particles()
-        if self.is_transcribing and self._progress_value > 0:
-            self._shimmer_phase = (self._shimmer_phase + 0.025) % 1.0
-            self._draw_progress()
-        self.root.after(33, self._tick)
+    def _build_statusbar(self):
+        bar = tk.Frame(self._shell, bg=FACE)
+        bar.pack(fill="x", side="bottom")
+        inner = tk.Frame(bar, bg=FACE)
+        inner.pack(fill="x", padx=2, pady=2)
 
-    def _animate_waveform(self):
-        w = self.header_canvas.winfo_width()
-        if w < 20:
-            return
-        t = self._tick_count * 0.04
-        configs = [
-            (14, 0.012, 1.0),
-            (10, 0.018, 1.4),
-            (8, 0.008, 0.6),
-        ]
-        for i, line_id in enumerate(self._waves):
-            amp, freq, speed = configs[i]
-            phase = t * speed
-            points = []
-            for x in range(0, w, 5):
-                y = 36 + math.sin(x * freq + phase) * amp + math.sin(x * freq * 2.3 + phase * 0.7) * amp * 0.3
-                points.extend([x, y])
-            if len(points) >= 4:
-                self.header_canvas.coords(line_id, *points)
+        p1_border, p1 = self._bevel(inner, style="sunken", bg=FACE)
+        p1_border.pack(side="left", fill="x", expand=True)
+        self.status_left = tk.Label(p1, text="Ready", bg=FACE, fg=BLACK, font=FONT_UI,
+                                    anchor="w", padx=4, pady=1)
+        self.status_left.pack(fill="x")
 
-    def _animate_particles(self):
-        w = self.drop_canvas.winfo_width()
-        h = self.drop_canvas.winfo_height()
-        if w < 10 or h < 10:
+        p2_border, p2 = self._bevel(inner, style="sunken", bg=FACE)
+        p2_border.pack(side="left", padx=(2, 0))
+        self.status_files = tk.Label(p2, text="0 files", bg=FACE, fg=BLACK, font=FONT_UI,
+                                     anchor="w", padx=6, pady=1, width=10)
+        self.status_files.pack()
+
+    def _drag_start(self, event):
+        self._drag_offset = (event.x_root - self.root.winfo_x(),
+                             event.y_root - self.root.winfo_y())
+
+    def _drag_move(self, event):
+        if self._maximized:
             return
-        t = self._tick_count * 0.03
-        for p in self._particles:
-            if p["id"] is None:
-                continue
-            p["x"] += p["dx"]
-            p["y"] += p["dy"]
-            if p["x"] < 0: p["x"] += 1
-            if p["x"] > 1: p["x"] -= 1
-            if p["y"] < 0: p["y"] += 1
-            if p["y"] > 1: p["y"] -= 1
-            brightness = 0.12 + 0.08 * math.sin(t + p["phase"])
-            color = _lerp(P["surface"], P["accent"], brightness)
-            px, py, r = p["x"] * w, p["y"] * h, p["r"]
-            self.drop_canvas.coords(p["id"], px - r, py - r, px + r, py + r)
-            self.drop_canvas.itemconfig(p["id"], fill=color)
+        x = event.x_root - self._drag_offset[0]
+        y = event.y_root - self._drag_offset[1]
+        self.root.geometry(f"+{x}+{y}")
+
+    def _minimize(self):
+        self.root.update_idletasks()
+        self.root.overrideredirect(False)
+        self.root.iconify()
+
+    def _on_map(self, event):
+        if str(event.widget) == "." and not self.root.overrideredirect():
+            self.root.overrideredirect(True)
+
+    def _about(self):
+        dialog = tk.Toplevel(self.root, bg=FACE)
+        dialog.overrideredirect(True)
+        dw, dh = 320, 150
+        dx = self.root.winfo_x() + (self.root.winfo_width() - dw) // 2
+        dy = self.root.winfo_y() + (self.root.winfo_height() - dh) // 2
+        dialog.geometry(f"{dw}x{dh}+{dx}+{dy}")
+
+        bar = tk.Frame(dialog, bg=NAVY, height=20)
+        bar.pack(fill="x")
+        bar.pack_propagate(False)
+        tk.Label(bar, text="About Sotvox", bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=6)
+        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=2, pady=2)
+
+        body = tk.Frame(dialog, bg=FACE)
+        body.pack(fill="both", expand=True, padx=12, pady=12)
+        tk.Label(body, text="Sotvox", bg=FACE, fg=BLACK, font=("MS Sans Serif", 14, "bold")).pack(anchor="w")
+        tk.Label(body, text="Local audio / video transcription", bg=FACE, fg=BLACK,
+                 font=FONT_UI).pack(anchor="w", pady=(2, 0))
+        tk.Label(body, text="Powered by faster-whisper. Runs 100% on your machine.",
+                 bg=FACE, fg=BLACK, font=FONT_UI).pack(anchor="w", pady=(8, 0))
+        self._mk_button(body, "OK", command=dialog.destroy, width_chars=8).pack(pady=(12, 0))
+
+        for w in (bar,):
+            w.bind("<ButtonPress-1>", lambda e: dialog.__setattr__("_off", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
+            w.bind("<B1-Motion>", lambda e: dialog.geometry(f"+{e.x_root - dialog._off[0]}+{e.y_root - dialog._off[1]}"))
+        dialog.grab_set()
 
     def _draw_progress(self):
         c = self.progress_canvas
@@ -609,24 +663,15 @@ class SotvoxApp:
         h = c.winfo_height()
         if w < 4:
             return
-        c.create_rectangle(0, 0, w, h, fill=P["surface"], outline="")
+        c.create_rectangle(0, 0, w, h, fill=FACE, outline="")
         if self._progress_value > 0:
-            fill_w = max(2, int(w * self._progress_value / 100))
-            c.create_rectangle(0, 0, fill_w, h, fill=P["accent"], outline="")
-            band_w = 60
-            band_pos = self._shimmer_phase * (fill_w + band_w) - band_w
-            bx0 = max(0, int(band_pos))
-            bx1 = min(fill_w, int(band_pos + band_w))
-            if bx1 > bx0:
-                mid = (bx0 + bx1) / 2
-                half = (bx1 - bx0) / 2
-                for i in range(3):
-                    frac = 1.0 - i * 0.3
-                    sx0 = int(mid - half * frac)
-                    sx1 = int(mid + half * frac)
-                    alpha = 0.4 - i * 0.12
-                    shimmer_color = _lerp(P["accent"], P["cyan"], alpha)
-                    c.create_rectangle(sx0, 0, sx1, h, fill=shimmer_color, outline="")
+            filled = int((w - 4) * self._progress_value / 100)
+            block_w = 8
+            gap = 2
+            x = 2
+            while x + block_w <= 2 + filled:
+                c.create_rectangle(x, 2, x + block_w, h - 2, fill=NAVY, outline="")
+                x += block_w + gap
 
     def _on_drop(self, event):
         raw = event.data
@@ -686,6 +731,21 @@ class SotvoxApp:
             self._slog(f"Total files in queue: {len(self.files)}")
             self._refresh_file_list()
 
+    def _remove_selected(self):
+        selection = list(self.file_listbox.curselection())
+        if not selection:
+            return
+        removed = 0
+        for index in sorted(selection, reverse=True):
+            if 0 <= index < len(self.files):
+                name = os.path.basename(self.files[index])
+                del self.files[index]
+                self._slog(f"File removed: {name}")
+                removed += 1
+        if removed:
+            self._slog(f"Total files in queue: {len(self.files)}")
+            self._refresh_file_list()
+
     def _clear_files(self):
         count = len(self.files)
         self.files.clear()
@@ -693,41 +753,21 @@ class SotvoxApp:
         self._refresh_file_list()
 
     def _refresh_file_list(self):
-        for widget in self.file_inner.winfo_children():
-            widget.destroy()
-
-        self.file_count_label.configure(text=f"Files ({len(self.files)})")
-
-        for idx, path in enumerate(self.files):
-            bg = P["elevated"] if idx % 2 == 0 else _lerp(P["elevated"], P["surface"], 0.3)
-            row = tk.Frame(self.file_inner, bg=bg)
-            row.pack(fill="x", pady=0)
-
+        self.file_listbox.delete(0, "end")
+        for path in self.files:
             name = os.path.basename(path)
             ext = os.path.splitext(path)[1].lower()
-            is_video = ext in VIDEO_EXTENSIONS
-            tag = "VID" if is_video else "AUD"
-            color = P["amber"] if is_video else P["cyan"]
-
-            tk.Label(row, text=tag, bg=bg, fg=color,
-                     font=("Cascadia Mono", 7, "bold")).pack(side="left", padx=(10, 10), pady=5)
-
-            tk.Label(row, text=name, bg=bg, fg=P["text_sec"],
-                     font=("Bahnschrift", 10), anchor="w").pack(side="left", fill="x", expand=True)
-
-            remove_btn = tk.Button(row, text="\u00d7", bg=bg, fg=P["text_dim"],
-                                   font=("Bahnschrift", 14), borderwidth=0, cursor="hand2",
-                                   activebackground=bg, activeforeground=P["red"],
-                                   padx=6, pady=2,
-                                   command=lambda p=path: self._remove_file(p))
-            remove_btn.pack(side="right", padx=(0, 10))
+            tag = "[VID]" if ext in VIDEO_EXTENSIONS else "[AUD]"
+            self.file_listbox.insert("end", f" {tag}  {name}")
+        count = len(self.files)
+        self.status_files.configure(text=f"{count} file{'s' if count != 1 else ''}")
 
     def _toggle_transcription(self):
         if self.is_transcribing:
             self._slog("Cancellation requested by user")
             self.cancel_requested = True
-            self.transcribe_btn.configure(text="CANCELLING...", bg=P["text_dim"],
-                                           activebackground=P["text_dim"], state="disabled")
+            self.transcribe_btn.set_text("Cancelling...")
+            self.transcribe_btn.set_enabled(False)
             return
 
         if not self.files:
@@ -737,8 +777,7 @@ class SotvoxApp:
         self._slog(f"Transcription started: {len(self.files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}, multilingual={self.multilingual_var.get()}")
         self.is_transcribing = True
         self.cancel_requested = False
-        self.transcribe_btn.configure(text="\u25a0  CANCEL", bg=P["red"],
-                                       activebackground=P["red_hover"])
+        self.transcribe_btn.set_text("Cancel")
         threading.Thread(target=self._transcribe_worker, daemon=True).start()
 
     def _resolve_device(self):
@@ -921,7 +960,7 @@ class SotvoxApp:
                         detected = info.language
                     else:
                         detected = language
-                    self._log(f"  Done in {elapsed:.1f}s \u00b7 {detected} \u00b7 {saved_name}")
+                    self._log(f"  Done in {elapsed:.1f}s · {detected} · {saved_name}")
                     succeeded += 1
 
                     if temp_audio and os.path.exists(temp_audio):
@@ -936,13 +975,13 @@ class SotvoxApp:
             if not self.cancel_requested:
                 self._set_progress(100)
                 if failed == 0:
-                    self._update_status(f"Complete \u2014 {succeeded} file(s) transcribed")
+                    self._update_status(f"Complete — {succeeded} file(s) transcribed")
                     winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
                 elif succeeded == 0:
-                    self._update_status(f"Failed \u2014 {failed} file(s) had errors")
+                    self._update_status(f"Failed — {failed} file(s) had errors")
                     winsound.PlaySound(os.path.join(SOUNDS_DIR, "error.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
                 else:
-                    self._update_status(f"Done \u2014 {succeeded} transcribed, {failed} failed")
+                    self._update_status(f"Done — {succeeded} transcribed, {failed} failed")
                     winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
                 self._log(f"All done. Output: {output_dir}")
 
@@ -955,9 +994,8 @@ class SotvoxApp:
         finally:
             self.is_transcribing = False
             self.cancel_requested = False
-            self.root.after(0, lambda: self.transcribe_btn.configure(
-                text="\u25b6  TRANSCRIBE", bg=P["accent"],
-                activebackground=P["accent_hover"], state="normal"))
+            self.root.after(0, lambda: (self.transcribe_btn.set_text("Transcribe"),
+                                        self.transcribe_btn.set_enabled(True)))
 
     def _open_output(self):
         output_dir = self.output_var.get()
@@ -967,7 +1005,10 @@ class SotvoxApp:
 
     def _update_status(self, text):
         self._slog(f"[STATUS] {text}")
-        self.root.after(0, lambda: self.progress_label.configure(text=text))
+        def _update():
+            self.progress_label.configure(text=text)
+            self.status_left.configure(text=text)
+        self.root.after(0, _update)
 
     def _set_progress(self, value):
         self._progress_value = value
