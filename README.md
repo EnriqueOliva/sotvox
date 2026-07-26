@@ -28,7 +28,7 @@ Each file becomes a `.txt` next to the others in `Documents\sotvox-transcripts`.
 | Setting | What it does |
 | --- | --- |
 | **Language** | The language spoken in your files, or *Auto-detect* |
-| **Model** | `large-v3` is the most accurate, `tiny` the fastest |
+| **Model** | `large-v3` is the most accurate, `large-v3-turbo` nearly as good but much faster |
 | **Device** | Leave on *Auto* |
 | **Multilingual mode** | For files that switch between languages |
 | **Folder** | Where transcripts are saved |
