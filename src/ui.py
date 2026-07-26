@@ -19,7 +19,11 @@ from constants import (
     SUPPORTED_EXTENSIONS, VIDEO_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP,
     LOG_DIR, SOUNDS_DIR, ICON_PATH, ASSETS_DIR,
 )
-from engine import extract_audio, transcribe_audio, transcribe_audio_multilingual, save_transcript, probe_file
+from engine import (
+    has_audio_stream, transcribe_audio, transcribe_audio_multilingual,
+    save_transcript, probe_file,
+)
+import gpu_pack
 
 
 FACE = "#c0c0c0"
@@ -173,6 +177,8 @@ class SotvoxApp:
         self._log_flush_idx = 0
         self._log_path = None
         self._session_start = time.time()
+        self._gpu_name = None
+        self._gpu_ready = False
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3")
@@ -648,9 +654,180 @@ class SotvoxApp:
                     width_chars=9).pack(side="left", padx=(self.px(4), 0))
 
         row2 = tk.Frame(content, bg=FACE)
-        row2.pack(fill="x", padx=self.px(10), pady=(self.px(2), self.px(8)))
+        row2.pack(fill="x", padx=self.px(10), pady=(self.px(2), self.px(4)))
         self._check(row2, self.multilingual_var,
                     "Multilingual mode  (auto-detect language per 30s chunk; overrides Language)").pack(side="left")
+
+        row3 = tk.Frame(content, bg=FACE)
+        row3.pack(fill="x", padx=self.px(10), pady=(0, self.px(8)))
+        self.gpu_status_label = tk.Label(row3, text="GPU: checking...", bg=FACE, fg=BLACK,
+                                        font=FONT_UI, anchor="w")
+        self.gpu_status_label.pack(side="left")
+        self.gpu_button = self._mk_button(row3, "Enable GPU Acceleration...",
+                                         command=self._prompt_gpu_install)
+        self._refresh_gpu_row()
+        threading.Thread(target=self._detect_gpu, daemon=True).start()
+
+    def _post(self, callback):
+        try:
+            self.root.after(0, callback)
+        except (tk.TclError, RuntimeError):
+            pass
+
+    def _detect_gpu(self):
+        detected_name = gpu_pack.detect_nvidia_gpu()
+        self._gpu_name = detected_name
+        self._slog(f"GPU detection: {detected_name or 'no NVIDIA GPU found'}")
+        self._post(self._refresh_gpu_row)
+
+    def _refresh_gpu_row(self):
+        self._gpu_ready = gpu_pack.libraries_available()
+        if self._gpu_name is None:
+            self.gpu_status_label.configure(text="GPU: no NVIDIA GPU detected — using CPU")
+            self.gpu_button.pack_forget()
+        elif self._gpu_ready:
+            self.gpu_status_label.configure(text=f"GPU: {self._gpu_name} — acceleration ready")
+            self.gpu_button.pack_forget()
+        else:
+            self.gpu_status_label.configure(text=f"GPU: {self._gpu_name} — acceleration not installed")
+            self.gpu_button.pack(side="right")
+
+    def _prompt_gpu_install(self):
+        dialog, body = self._modal_dialog("GPU Acceleration", self.px(430), self.px(210))
+
+        tk.Label(body, text="Enable GPU acceleration", bg=FACE, fg=BLACK,
+                 font=("MS Sans Serif", 10, "bold")).pack(anchor="w")
+        message = (
+            f"Detected: {self._gpu_name}\n\n"
+            "Sotvox can use your NVIDIA GPU to transcribe much faster.\n"
+            "This downloads NVIDIA's CUDA libraries (about 1.2 GB) from\n"
+            "the official Python package index. It is only needed once."
+        )
+        tk.Label(body, text=message, bg=FACE, fg=BLACK, font=FONT_UI,
+                 justify="left", anchor="w").pack(anchor="w", pady=(self.px(6), 0))
+
+        button_row = tk.Frame(body, bg=FACE)
+        button_row.pack(side="bottom", anchor="e", pady=(self.px(10), 0))
+
+        def start():
+            dialog.destroy()
+            self._run_gpu_install()
+
+        self._mk_button(button_row, "Download and Install", command=start,
+                        default=True).pack(side="left", padx=(0, self.px(6)))
+        self._mk_button(button_row, "Cancel", command=dialog.destroy,
+                        width_chars=8).pack(side="left")
+
+    def _run_gpu_install(self):
+        dialog, body = self._modal_dialog("Installing GPU Acceleration", self.px(430), self.px(170))
+        cancel_state = {"cancelled": False}
+
+        status_label = tk.Label(body, text="Starting...", bg=FACE, fg=BLACK,
+                                font=FONT_UI, anchor="w")
+        status_label.pack(fill="x")
+        detail_label = tk.Label(body, text="", bg=FACE, fg=BLACK, font=FONT_UI, anchor="w")
+        detail_label.pack(fill="x", pady=(self.px(2), self.px(6)))
+
+        bar_border, bar_well = self._bevel(body, style="sunken", bg=FACE)
+        bar_border.pack(fill="x")
+        bar_canvas = tk.Canvas(bar_well, bg=FACE, highlightthickness=0, bd=0, height=self.px(18))
+        bar_canvas.pack(fill="x", padx=self.px(1), pady=self.px(1))
+
+        button_row = tk.Frame(body, bg=FACE)
+        button_row.pack(side="bottom", anchor="e", pady=(self.px(10), 0))
+        cancel_button = self._mk_button(
+            button_row, "Cancel", width_chars=8,
+            command=lambda: cancel_state.__setitem__("cancelled", True))
+        cancel_button.pack()
+
+        def draw_bar(fraction):
+            bar_canvas.delete("all")
+            width = bar_canvas.winfo_width()
+            height = bar_canvas.winfo_height()
+            if width < 4:
+                return
+            margin = self.px(2)
+            filled = int((width - margin * 2) * max(0.0, min(1.0, fraction)))
+            block_width = self.px(8)
+            gap = self.px(2)
+            position = margin
+            while position + block_width <= margin + filled:
+                bar_canvas.create_rectangle(position, margin, position + block_width,
+                                            height - margin, fill=NAVY, outline="")
+                position += block_width + gap
+
+        def on_status(text):
+            self._post(lambda: status_label.configure(text=text))
+
+        def on_progress(done_bytes, total_bytes):
+            fraction = (done_bytes / total_bytes) if total_bytes else 0.0
+            text = f"{done_bytes / (1024 * 1024):.0f} MB of {total_bytes / (1024 * 1024):.0f} MB"
+            def update():
+                detail_label.configure(text=text)
+                draw_bar(fraction)
+            self._post(update)
+
+        def finish(success, error_text):
+            def update():
+                if dialog.winfo_exists():
+                    dialog.destroy()
+                self._refresh_gpu_row()
+                if success:
+                    self._log("GPU acceleration installed — GPU will be used automatically.")
+                    self._message_dialog("GPU Acceleration",
+                                         "GPU acceleration is ready.\n\nSotvox will now use your GPU automatically.")
+                elif cancel_state["cancelled"]:
+                    self._log("GPU acceleration download cancelled.")
+                else:
+                    self._log(f"GPU acceleration install failed: {error_text}")
+                    self._message_dialog("GPU Acceleration",
+                                         f"Could not install GPU acceleration.\n\n{error_text}")
+            self._post(update)
+
+        def worker():
+            try:
+                gpu_pack.install(on_status=on_status, on_progress=on_progress,
+                                 is_cancelled=lambda: cancel_state["cancelled"],
+                                 log=self._slog)
+                finish(True, "")
+            except Exception as error:
+                finish(False, str(error))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _modal_dialog(self, title, width, height):
+        dialog = tk.Toplevel(self.root, bg=FACE)
+        dialog.overrideredirect(True)
+        position_x = self.root.winfo_x() + (self.root.winfo_width() - width) // 2
+        position_y = self.root.winfo_y() + (self.root.winfo_height() - height) // 2
+        dialog.geometry(f"{width}x{height}+{position_x}+{position_y}")
+
+        shell_border, shell = self._bevel(dialog, style="raised", bg=FACE)
+        shell_border.pack(fill="both", expand=True)
+
+        bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
+        bar.pack(fill="x")
+        bar.pack_propagate(False)
+        tk.Label(bar, text=title, bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
+        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
+
+        body = tk.Frame(shell, bg=FACE)
+        body.pack(fill="both", expand=True, padx=self.px(12), pady=self.px(10))
+
+        bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__(
+            "_offset", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
+        bar.bind("<B1-Motion>", lambda e: dialog.geometry(
+            f"+{e.x_root - dialog._offset[0]}+{e.y_root - dialog._offset[1]}"))
+        dialog.transient(self.root)
+        dialog.grab_set()
+        return dialog, body
+
+    def _message_dialog(self, title, message):
+        dialog, body = self._modal_dialog(title, self.px(390), self.px(170))
+        tk.Label(body, text=message, bg=FACE, fg=BLACK, font=FONT_UI,
+                 justify="left", anchor="w").pack(anchor="w")
+        self._mk_button(body, "OK", command=dialog.destroy, width_chars=8,
+                        default=True).pack(side="bottom", pady=(self.px(10), 0))
 
     def _build_output(self, parent):
         group, content = self._group(parent, "Output")
@@ -957,21 +1134,30 @@ class SotvoxApp:
 
     def _resolve_device(self):
         choice = self.device_var.get()
+        libraries_ready = gpu_pack.libraries_available()
+
         if choice == "CPU":
             self._slog("Device resolved: CPU (user selected)")
             return "cpu", "int8"
-        if choice == "GPU (CUDA)":
-            self._slog("Device resolved: CUDA (user selected)")
-            return "cuda", "float16"
-        try:
-            import ctranslate2
-            gpu_count = ctranslate2.get_cuda_device_count()
-            self._slog(f"Auto-detect: {gpu_count} CUDA device(s) found")
-            if gpu_count > 0:
+        elif choice == "GPU (CUDA)":
+            if libraries_ready:
+                self._slog("Device resolved: CUDA (user selected)")
                 return "cuda", "float16"
-        except Exception as e:
-            self._slog(f"CUDA detection failed ({e}), defaulting to CPU")
-        return "cpu", "int8"
+            else:
+                self._slog("GPU requested but CUDA libraries are not installed — using CPU")
+                self._log("GPU acceleration is not installed yet. Using CPU — "
+                          "click 'Enable GPU Acceleration...' to enable it.")
+                return "cpu", "int8"
+        else:
+            try:
+                import ctranslate2
+                gpu_count = ctranslate2.get_cuda_device_count()
+                self._slog(f"Auto-detect: {gpu_count} CUDA device(s), libraries_ready={libraries_ready}")
+                if gpu_count > 0 and libraries_ready:
+                    return "cuda", "float16"
+            except Exception as e:
+                self._slog(f"CUDA detection failed ({e}), defaulting to CPU")
+            return "cpu", "int8"
 
     def _transcribe_worker(self):
         output_dir = self.output_var.get()
@@ -1039,7 +1225,6 @@ class SotvoxApp:
                 try:
                     audio_path = filepath
                     ext = os.path.splitext(filepath)[1].lower()
-                    temp_audio = None
 
                     self._slog(f"  Full path: {filepath}")
                     try:
@@ -1067,9 +1252,8 @@ class SotvoxApp:
                         except Exception as e:
                             self._slog(f"  Probe error (non-fatal): {e}")
 
-                        self._log(f"  Extracting audio from video...")
-                        temp_audio = extract_audio(filepath, output_dir, log=self._slog)
-                        audio_path = temp_audio
+                        if not has_audio_stream(filepath):
+                            raise RuntimeError("Video has no audio track — nothing to transcribe")
 
                     def on_progress(seg_end, duration):
                         pct = (i / total + (seg_end / duration) / total) * 100
@@ -1102,24 +1286,18 @@ class SotvoxApp:
 
                     if status == "timed_out":
                         self._log(f"  Timed out, skipping")
-                        if temp_audio and os.path.exists(temp_audio):
-                            os.remove(temp_audio)
                         continue
 
                     if status == "retry_timed_out":
                         self._log(f"  Retry timed out, skipping")
 
                     if self.cancel_requested:
-                        if temp_audio and os.path.exists(temp_audio):
-                            os.remove(temp_audio)
                         break
 
                     full_text = "\n".join(text_parts)
 
                     if not full_text.strip():
                         self._log(f"  No speech detected, skipping")
-                        if temp_audio and os.path.exists(temp_audio):
-                            os.remove(temp_audio)
                         continue
 
                     saved_name = save_transcript(filepath, full_text, output_dir)
@@ -1137,9 +1315,6 @@ class SotvoxApp:
                         detected = language
                     self._log(f"  Done in {elapsed:.1f}s · {detected} · {saved_name}")
                     succeeded += 1
-
-                    if temp_audio and os.path.exists(temp_audio):
-                        os.remove(temp_audio)
 
                 except Exception as e:
                     self._log(f"  Error: {str(e)}")
@@ -1228,11 +1403,14 @@ class SotvoxApp:
         ]
 
         try:
-            r = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True,
-                               creationflags=subprocess.CREATE_NO_WINDOW)
-            lines.append(f"  FFmpeg: {r.stdout.splitlines()[0]}")
+            import av
+            import ctranslate2
+            import faster_whisper
+            lines.append(f"  PyAV: {av.__version__} (bundled FFmpeg libraries)")
+            lines.append(f"  faster-whisper: {faster_whisper.__version__}")
+            lines.append(f"  CTranslate2: {ctranslate2.__version__}")
         except Exception as e:
-            lines.append(f"  FFmpeg: not found ({e})")
+            lines.append(f"  Component versions unavailable ({e})")
 
         try:
             r = subprocess.run(

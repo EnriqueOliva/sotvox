@@ -6,3 +6,5 @@ __pycache__/
 log/
 .env
 /Sotvox-Setup.exe
+installer/build/
+installer/dist_app/

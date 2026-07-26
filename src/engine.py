@@ -1,73 +1,58 @@
-import json
 import math
 import os
-import subprocess
 import time
 
+import av
 from faster_whisper.audio import decode_audio
-
-from constants import VIDEO_EXTENSIONS
 
 SAMPLING_RATE = 16000
 CHUNK_SECONDS = 30
+MICROSECONDS_PER_SECOND = 1_000_000
 
 
 def probe_file(filepath):
-    result = subprocess.run(
-        ["ffprobe", "-v", "error", "-show_format", "-show_streams",
-         "-print_format", "json", filepath],
-        capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW
-    )
-    if result.returncode != 0 or not result.stdout:
-        return None
     try:
-        return json.loads(result.stdout)
-    except (json.JSONDecodeError, ValueError, TypeError):
+        with av.open(filepath) as container:
+            if container.duration:
+                duration_seconds = f"{container.duration / MICROSECONDS_PER_SECOND:.3f}"
+            else:
+                duration_seconds = "unknown"
+
+            streams = []
+            for stream in container.streams:
+                codec_context = stream.codec_context
+                stream_info = {
+                    "codec_type": stream.type,
+                    "codec_name": getattr(codec_context, "name", "unknown"),
+                }
+                if stream.type == "video":
+                    stream_info["width"] = codec_context.width
+                    stream_info["height"] = codec_context.height
+                    if stream.average_rate:
+                        stream_info["r_frame_rate"] = f"{float(stream.average_rate):.2f}"
+                elif stream.type == "audio":
+                    stream_info["sample_rate"] = codec_context.sample_rate
+                    stream_info["channels"] = codec_context.channels
+                streams.append(stream_info)
+
+            return {
+                "format": {
+                    "format_long_name": container.format.long_name,
+                    "duration": duration_seconds,
+                    "bit_rate": container.bit_rate,
+                },
+                "streams": streams,
+            }
+    except Exception:
         return None
 
 
-def _has_audio_stream(filepath):
-    result = subprocess.run(
-        ["ffprobe", "-v", "error", "-select_streams", "a",
-         "-show_entries", "stream=codec_type", "-of", "csv=p=0", filepath],
-        capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW
-    )
-    return "audio" in (result.stdout or "")
-
-
-def extract_audio(filepath, output_dir, log=None):
-    if not _has_audio_stream(filepath):
-        raise RuntimeError("Video has no audio track — nothing to transcribe")
-
-    name = os.path.basename(filepath)
-    temp_audio = os.path.join(output_dir, f"_temp_{os.path.splitext(name)[0]}.wav")
-    cmd = ["ffmpeg", "-y", "-i", filepath, "-vn", "-acodec", "pcm_s16le",
-           "-ar", "16000", "-ac", "1", temp_audio]
-
-    if log:
-        log(f"  FFmpeg command: {' '.join(cmd)}")
-
-    result = subprocess.run(
-        cmd, capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW
-    )
-
-    stderr = result.stderr or ""
-
-    if log:
-        log(f"  FFmpeg exit code: {result.returncode}")
-        if stderr.strip():
-            for line in stderr.strip().splitlines():
-                log(f"  FFmpeg | {line}")
-
-    if result.returncode != 0:
-        stderr_lines = [l for l in stderr.splitlines() if not l.startswith(("ffmpeg version", "  built with", "  configuration:", "  lib"))]
-        raise RuntimeError(f"FFmpeg error: {' '.join(stderr_lines[-5:])}")
-
-    if log and os.path.exists(temp_audio):
-        size_mb = os.path.getsize(temp_audio) / (1024 * 1024)
-        log(f"  Temp audio created: {size_mb:.1f} MB")
-
-    return temp_audio
+def has_audio_stream(filepath):
+    try:
+        with av.open(filepath) as container:
+            return any(stream.type == "audio" for stream in container.streams)
+    except Exception:
+        return False
 
 
 def transcribe_audio(model, audio_path, lang_code, on_progress=None, is_cancelled=None):

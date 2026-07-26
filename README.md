@@ -20,68 +20,77 @@ Built on [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (a high-per
 
 ## Requirements
 
-- Windows 10/11
-- NVIDIA GPU with updated drivers (optional — enables faster transcription)
-- ~4 GB disk space (dependencies + model cache)
+- Windows 10 or 11 (64-bit)
+- ~700 MB disk space, plus ~1.5 GB for the AI model on first use
+- NVIDIA GPU with current drivers — optional, for much faster transcription
 
-## Dependencies
+**Nothing else.** Python, FFmpeg and every library are bundled inside the app. There is no runtime to install and no setup step.
 
-Managed automatically by the setup script:
+## Install
 
-| Dependency                                                  | Purpose                          | Installed via       |
-| ----------------------------------------------------------- | -------------------------------- | ------------------- |
-| [uv](https://docs.astral.sh/uv/)                            | Python version & package manager | astral.sh installer |
-| [FFmpeg](https://ffmpeg.org/)                               | Audio/video decoding             | winget or choco     |
-| Python 3.11                                                 | Runtime                          | uv                  |
-| [faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Whisper inference engine         | pip (in venv)       |
-| [tkinterdnd2](https://github.com/pmgagne/tkinterdnd2)       | Drag & drop for tkinter          | pip (in venv)       |
-| nvidia-cublas-cu12                                          | CUDA linear algebra (GPU only)   | pip (in venv)       |
-| nvidia-cudnn-cu12                                           | CUDA deep neural networks (GPU only) | pip (in venv)       |
+Run **`Sotvox-Setup.exe`** (~66 MB) — [download the latest release](https://github.com/EnriqueOliva/sotvox/releases/latest).
 
-## Quick Start
+It installs per-user (no admin prompt), adds Start Menu and optional Desktop shortcuts, and the app is ready the moment setup finishes. Uninstall anytime from *Add or remove programs*.
 
-### Install
+The first transcription downloads the selected Whisper model (~1.5 GB for `large-v3`) and caches it for later runs.
 
-**Option A — Installer (recommended).** Run **`Sotvox-Setup.exe`**. It installs Sotvox per-user (no admin needed), adds Start Menu and optional Desktop shortcuts, and offers to install the runtime (Python + dependencies) when it finishes. Uninstall anytime from *Add or remove programs* or the Start Menu.
+### GPU acceleration (optional)
 
-**Option B — Manual setup.** Double-click `setup/setup.vbs`, approve the admin prompt, and wait for setup to complete (~5-10 minutes depending on internet speed).
+Sotvox runs on the CPU out of the box. If it detects an NVIDIA GPU, the **Options** panel offers **Enable GPU Acceleration...**, which downloads NVIDIA's CUDA libraries (~1.2 GB, once) and switches to the GPU automatically. They are kept out of the installer so users without an NVIDIA GPU never download them.
 
-Either way, the first transcription downloads the AI model (~1.5 GB) and caches it.
+## Daily use
 
-### Daily use
-
-1. Launch **Sotvox** (Start Menu / Desktop shortcut, or double-click `launch.vbs`)
-2. Drop files onto the window
+1. Launch **Sotvox** from the Start Menu or Desktop
+2. Drag audio or video files onto the list
 3. Click **Transcribe**
-4. Click **Open Output Folder** to see results
+4. Click **Open Output Folder** to see the transcripts
 
-### Building the installer
+Transcripts are written to `Documents\sotvox-transcripts`. Session logs go to `%LOCALAPPDATA%\Sotvox\logs`.
 
-Install [Inno Setup](https://jrsoftware.org/isinfo.php) (`winget install --id JRSoftware.InnoSetup -e`), then run `installer\build.ps1`. It produces **`Sotvox-Setup.exe`** in the project root.
+## Building from source
+
+```powershell
+setup\setup.vbs          # one-time developer environment (uv, Python 3.11, dependencies)
+installer\build.ps1      # freezes the app and produces Sotvox-Setup.exe
+```
+
+Building the installer also needs [Inno Setup](https://jrsoftware.org/isinfo.php) (`winget install --id JRSoftware.InnoSetup -e`). `build.ps1` runs PyInstaller, verifies no CUDA libraries leaked into the bundle, then compiles the installer into the project root.
+
+To run from source without freezing: `.venv\Scripts\pythonw.exe src\main.py`
+
+To verify a build end-to-end (decoding, VAD, CPU and GPU inference):
+
+```powershell
+Sotvox.exe --selftest "C:\path\to\some.mp4"    # writes %LOCALAPPDATA%\Sotvox\logs\selftest.txt
+```
 
 ## Project Structure
 
 ```
 sotvox/
-├── Sotvox-Setup.exe        # Built installer (produced by installer/build.ps1)
-├── launch.vbs              # App launcher (double-click to run)
+├── Sotvox-Setup.exe        # Built installer (produced by installer/build.ps1, not in git)
+├── launch.vbs              # Convenience launcher for running from source
 ├── installer/              # Installer build sources
+│   ├── sotvox.spec         # PyInstaller recipe (bundles Python, excludes CUDA)
+│   ├── version_info.txt    # Windows file/product version resource
 │   ├── sotvox.iss          # Inno Setup script
-│   └── build.ps1           # Compiles Sotvox-Setup.exe into the project root
+│   └── build.ps1           # Freeze + compile, produces Sotvox-Setup.exe
 ├── setup/
-│   ├── setup.vbs           # Setup launcher (requests admin, runs setup.ps1)
-│   └── setup.ps1           # Automated installer (uv, FFmpeg, Python, dependencies)
+│   ├── setup.vbs           # Developer environment launcher
+│   └── setup.ps1           # Developer environment (uv, Python 3.11, dependencies)
 ├── assets/                 # App icon (sotvox.ico + PNGs)
 ├── src/
-│   ├── main.py             # Entry point (CUDA path setup, app launch)
-│   ├── ui.py               # GUI (tkinter + tkinterdnd2)
-│   ├── engine.py           # Transcription logic (faster-whisper, ffmpeg, file I/O)
-│   └── constants.py        # Config (colors, extensions, paths)
-├── output/                 # Default transcript output directory
-├── log/                    # Session logs (auto-generated, one file per last session)
+│   ├── main.py             # Entry point (DPI, CUDA paths, self-test, app launch)
+│   ├── ui.py               # GUI (tkinter + tkinterdnd2, Windows 95 styling)
+│   ├── engine.py           # Transcription and media decoding (faster-whisper, PyAV)
+│   ├── gpu_pack.py         # Optional CUDA library download and install
+│   └── constants.py        # Paths, supported formats, languages
 ├── LICENSE                 # MIT License
-└── .venv/                  # Python virtual environment (created by setup)
+└── .venv/                  # Developer virtual environment (created by setup)
 ```
+
+At runtime the app writes only to user locations: `Documents\sotvox-transcripts` (transcripts),
+`%LOCALAPPDATA%\Sotvox\logs` (session logs) and `%LOCALAPPDATA%\Sotvox\cuda` (optional GPU pack).
 
 ## Configuration
 
@@ -92,7 +101,7 @@ All settings are available in the app UI:
 | Language      | Auto-detect, Spanish, English, +7 more         | Spanish           |
 | Model         | large-v3, medium, small, base, tiny            | large-v3          |
 | Device        | Auto, CPU, GPU (CUDA)                          | Auto              |
-| Output folder | Any local path                                 | `./output/`       |
+| Output folder | Any local path                                 | `Documents\sotvox-transcripts` |
 
 ## Model Information
 
