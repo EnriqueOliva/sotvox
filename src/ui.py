@@ -17,7 +17,7 @@ from faster_whisper import WhisperModel
 
 from constants import (
     SUPPORTED_EXTENSIONS, VIDEO_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP,
-    LOG_DIR, SOUNDS_DIR, ICON_PATH, ASSETS_DIR,
+    LOG_DIR, ICON_PATH, ASSETS_DIR,
 )
 from engine import (
     has_audio_stream, transcribe_audio, transcribe_audio_multilingual,
@@ -43,6 +43,9 @@ SELFG = "#ffffff"
 FONT_UI = ("MS Sans Serif", 8)
 FONT_TITLE = ("MS Sans Serif", 8, "bold")
 FONT_MONO = ("Fixedsys", 9)
+
+SOUND_SUCCESS = winsound.MB_ICONASTERISK
+SOUND_FAILURE = winsound.MB_ICONHAND
 
 
 def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE, t=1):
@@ -181,7 +184,7 @@ class SotvoxApp:
         self._gpu_ready = False
 
         self.language_var = tk.StringVar(value="Spanish")
-        self.model_var = tk.StringVar(value="large-v3")
+        self.model_var = tk.StringVar(value="large-v3-turbo")
         self.device_var = tk.StringVar(value="Auto")
         self.multilingual_var = tk.BooleanVar(value=False)
         self.output_var = tk.StringVar(value=DEFAULT_OUTPUT_DIR)
@@ -667,6 +670,12 @@ class SotvoxApp:
                                          command=self._prompt_gpu_install)
         self._refresh_gpu_row()
         threading.Thread(target=self._detect_gpu, daemon=True).start()
+
+    def _notify(self, sound):
+        try:
+            winsound.MessageBeep(sound)
+        except Exception as error:
+            self._slog(f"Could not play notification sound: {error}")
 
     def _post(self, callback):
         try:
@@ -1327,20 +1336,20 @@ class SotvoxApp:
                 self._set_progress(100)
                 if failed == 0:
                     self._update_status(f"Complete — {succeeded} file(s) transcribed")
-                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+                    self._notify(SOUND_SUCCESS)
                 elif succeeded == 0:
                     self._update_status(f"Failed — {failed} file(s) had errors")
-                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "error.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+                    self._notify(SOUND_FAILURE)
                 else:
                     self._update_status(f"Done — {succeeded} transcribed, {failed} failed")
-                    winsound.PlaySound(os.path.join(SOUNDS_DIR, "success.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+                    self._notify(SOUND_SUCCESS)
                 self._log(f"All done. Output: {output_dir}")
 
         except Exception as e:
             self._log(f"Fatal error: {str(e)}")
             self._slog(f"Fatal traceback:\n{traceback.format_exc()}")
             self._update_status("Error occurred")
-            winsound.PlaySound(os.path.join(SOUNDS_DIR, "error.wav"), winsound.SND_FILENAME | winsound.SND_ASYNC)
+            self._notify(SOUND_FAILURE)
 
         finally:
             self.is_transcribing = False

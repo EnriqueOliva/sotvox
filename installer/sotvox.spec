@@ -8,7 +8,6 @@ SRC_DIR = os.path.join(PROJECT_ROOT, 'src')
 
 datas = [
     (os.path.join(PROJECT_ROOT, 'assets'), 'assets'),
-    (os.path.join(PROJECT_ROOT, 'sounds'), 'sounds'),
 ]
 binaries = []
 hiddenimports = ['constants', 'engine', 'gpu_pack', 'ui']

@@ -26,7 +26,6 @@ APP_DATA_DIR = _resolve_app_data_dir()
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.expanduser("~"), "Documents", "sotvox-transcripts")
 LOG_DIR = os.path.join(APP_DATA_DIR, "logs")
 CUDA_DIR = os.path.join(APP_DATA_DIR, "cuda")
-SOUNDS_DIR = os.path.join(RESOURCE_DIR, "sounds")
 ASSETS_DIR = os.path.join(RESOURCE_DIR, "assets")
 ICON_PATH = os.path.join(ASSETS_DIR, "sotvox.ico")
 
