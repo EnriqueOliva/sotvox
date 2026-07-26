@@ -645,8 +645,8 @@ class SotvoxApp:
 
         tk.Label(row1, text="Model:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.model_var,
-                    ["large-v3", "medium", "small", "base", "tiny"],
-                    width_chars=9).pack(side="left", padx=(self.px(4), self.px(14)))
+                    ["large-v3", "large-v3-turbo", "medium", "small", "base", "tiny"],
+                    width_chars=13).pack(side="left", padx=(self.px(4), self.px(14)))
 
         tk.Label(row1, text="Device:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.device_var,
@@ -1197,8 +1197,9 @@ class SotvoxApp:
             device_label = "GPU (CUDA)" if device == "cuda" else "CPU"
             self._log(f"Model '{model_name}' loaded on {device_label}")
 
-            if device == "cpu" and model_name in ("large-v3",):
-                self._log("Note: large-v3 on CPU may be slow. Consider small or medium.")
+            if device == "cpu" and model_name == "large-v3":
+                self._log("Note: large-v3 on CPU is slow. Try large-v3-turbo — much faster, "
+                          "almost as accurate.")
 
             language = self.language_var.get()
             multilingual = self.multilingual_var.get()
