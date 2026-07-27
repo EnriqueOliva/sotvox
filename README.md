@@ -38,6 +38,7 @@ Each file becomes a `.txt` next to the others in `Documents\sotvox-transcripts`.
 - The first transcription downloads the speech model (about 1.5 GB). It only happens once.
 - Have an NVIDIA graphics card? Click **Enable GPU Acceleration** in Options to transcribe much faster.
 - Windows may say the publisher is unknown. Choose **More info → Run anyway**.
+- Automating it? There's a [headless batch mode](automation/auto-transcribe/).
 
 ## License
 
