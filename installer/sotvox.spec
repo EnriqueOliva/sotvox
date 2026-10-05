@@ -7,7 +7,7 @@ from PyInstaller.utils.hooks import collect_all, collect_data_files
 PROJECT_ROOT = os.path.dirname(SPECPATH)
 SRC_DIR = os.path.join(PROJECT_ROOT, 'src')
 IS_MAC = sys.platform == 'darwin'
-APP_VERSION = '1.3.0'
+APP_VERSION = '1.4.0'
 
 datas = [
     (os.path.join(PROJECT_ROOT, 'assets'), 'assets'),
