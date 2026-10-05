@@ -18,7 +18,7 @@ Windows 10 or 11. Nothing else to install.
 
 1. Download **Sotvox-macOS.dmg** (or build it yourself, see [Build on macOS](#build-on-macos))
 2. Open it and drag **Sotvox** into **Applications**
-3. The first time, right-click **Sotvox** → **Open** → **Open** (the app is not notarized by Apple)
+3. The first time, macOS will refuse to open it because the app is not notarized by Apple. Go to **System Settings** → **Privacy & Security**, scroll down and click **Open Anyway**
 
 macOS 11 or newer on Apple Silicon. Nothing else to install.
 

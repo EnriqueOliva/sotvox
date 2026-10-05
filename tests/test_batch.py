@@ -26,6 +26,8 @@ def fake_home(tmp_path):
     home.mkdir()
     env = dict(os.environ)
     env["HOME"] = str(home)
+    env["USERPROFILE"] = str(home)
+    env["LOCALAPPDATA"] = str(home)
     env["HF_HOME"] = os.environ.get("HF_HOME", os.path.join(os.path.expanduser("~"), ".cache", "huggingface"))
     return home, env
 
