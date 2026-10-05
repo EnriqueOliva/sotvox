@@ -1,10 +1,13 @@
 # -*- mode: python ; coding: utf-8 -*-
 import os
+import sys
 
 from PyInstaller.utils.hooks import collect_all, collect_data_files
 
 PROJECT_ROOT = os.path.dirname(SPECPATH)
 SRC_DIR = os.path.join(PROJECT_ROOT, 'src')
+IS_MAC = sys.platform == 'darwin'
+APP_VERSION = '1.3.0'
 
 datas = [
     (os.path.join(PROJECT_ROOT, 'assets'), 'assets'),
@@ -58,8 +61,22 @@ def _is_cuda_payload(entry):
         return basename.startswith(CUDA_LIBRARY_PREFIXES)
 
 
-a.binaries = TOC([entry for entry in a.binaries if not _is_cuda_payload(entry)])
-a.datas = TOC([entry for entry in a.datas if not _is_cuda_payload(entry)])
+TKDND_PLATFORM_DIRS = ('win-x64', 'win-x86', 'win-arm64', 'linux-x64', 'linux-arm64', 'osx-x64', 'osx-arm64')
+TKDND_KEEP = {
+    ('darwin', 'arm64'): 'osx-arm64', ('darwin', 'x86_64'): 'osx-x64',
+}.get((sys.platform, os.uname().machine if hasattr(os, 'uname') else ''))
+
+
+def _is_foreign_tkdnd(entry):
+    if not TKDND_KEEP:
+        return False
+    parts = str(entry[0]).replace('\\', '/').split('/')
+    platforms = [part.split('-tcl')[0] for part in parts]
+    return any(name in TKDND_PLATFORM_DIRS and name != TKDND_KEEP for name in platforms)
+
+
+a.binaries = TOC([entry for entry in a.binaries if not _is_cuda_payload(entry) and not _is_foreign_tkdnd(entry)])
+a.datas = TOC([entry for entry in a.datas if not _is_cuda_payload(entry) and not _is_foreign_tkdnd(entry)])
 
 pyz = PYZ(a.pure)
 
@@ -79,8 +96,8 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=os.path.join(PROJECT_ROOT, 'assets', 'sotvox.ico'),
-    version=os.path.join(SPECPATH, 'version_info.txt'),
+    icon=os.path.join(PROJECT_ROOT, 'assets', 'sotvox.icns' if IS_MAC else 'sotvox.ico'),
+    version=None if IS_MAC else os.path.join(SPECPATH, 'version_info.txt'),
 )
 
 coll = COLLECT(
@@ -92,3 +109,22 @@ coll = COLLECT(
     upx_exclude=[],
     name='Sotvox',
 )
+
+if IS_MAC:
+    app = BUNDLE(
+        coll,
+        name='Sotvox.app',
+        icon=os.path.join(PROJECT_ROOT, 'assets', 'sotvox.icns'),
+        bundle_identifier='io.github.enriqueoliva.sotvox',
+        version=APP_VERSION,
+        info_plist={
+            'CFBundleName': 'Sotvox',
+            'CFBundleDisplayName': 'Sotvox',
+            'CFBundleShortVersionString': APP_VERSION,
+            'CFBundleVersion': APP_VERSION,
+            'LSMinimumSystemVersion': '11.0',
+            'NSHighResolutionCapable': True,
+            'NSRequiresAquaSystemAppearance': True,
+            'NSDocumentsFolderUsageDescription': 'Sotvox saves transcripts to Documents/sotvox-transcripts.',
+        },
+    )

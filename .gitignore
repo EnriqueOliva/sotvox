@@ -8,3 +8,5 @@ log/
 /Sotvox-Setup.exe
 installer/build/
 installer/dist_app/
+/Sotvox-macOS.dmg
+.pytest_cache/

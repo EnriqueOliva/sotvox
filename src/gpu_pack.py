@@ -6,7 +6,7 @@ import subprocess
 import urllib.request
 import zipfile
 
-from constants import CUDA_DIR
+from constants import CUDA_DIR, IS_WINDOWS
 
 PYPI_JSON_URL = "https://pypi.org/pypi/{package}/json"
 WINDOWS_WHEEL_TAG = "win_amd64"
@@ -38,7 +38,9 @@ def is_installed():
 
 
 def libraries_available():
-    if is_installed():
+    if not IS_WINDOWS:
+        return False
+    elif is_installed():
         return True
     else:
         for library in REQUIRED_LIBRARIES:
@@ -50,6 +52,8 @@ def libraries_available():
 
 
 def detect_nvidia_gpu():
+    if not IS_WINDOWS:
+        return None
     try:
         result = subprocess.run(
             ["nvidia-smi", "--query-gpu=name", "--format=csv,noheader"],

@@ -3,6 +3,8 @@ import sys
 
 APP_NAME = "Sotvox"
 IS_FROZEN = getattr(sys, "frozen", False)
+IS_WINDOWS = sys.platform == "win32"
+IS_MAC = sys.platform == "darwin"
 
 
 def _resolve_resource_dir():
@@ -13,6 +15,8 @@ def _resolve_resource_dir():
 
 
 def _resolve_app_data_dir():
+    if IS_MAC:
+        return os.path.join(os.path.expanduser("~"), "Library", "Application Support", APP_NAME)
     local_app_data = os.environ.get("LOCALAPPDATA")
     if local_app_data:
         return os.path.join(local_app_data, APP_NAME)
@@ -24,7 +28,10 @@ RESOURCE_DIR = _resolve_resource_dir()
 APP_DATA_DIR = _resolve_app_data_dir()
 
 DEFAULT_OUTPUT_DIR = os.path.join(os.path.expanduser("~"), "Documents", "sotvox-transcripts")
-LOG_DIR = os.path.join(APP_DATA_DIR, "logs")
+if IS_MAC:
+    LOG_DIR = os.path.join(os.path.expanduser("~"), "Library", "Logs", APP_NAME)
+else:
+    LOG_DIR = os.path.join(APP_DATA_DIR, "logs")
 CUDA_DIR = os.path.join(APP_DATA_DIR, "cuda")
 ASSETS_DIR = os.path.join(RESOURCE_DIR, "assets")
 ICON_PATH = os.path.join(ASSETS_DIR, "sotvox.ico")

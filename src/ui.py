@@ -4,10 +4,10 @@ import sys
 import time
 import ctypes
 import platform
+import queue
 import threading
 import traceback
 import subprocess
-import winsound
 import tkinter as tk
 import tkinter.font as tkfont
 from tkinter import filedialog
@@ -17,7 +17,7 @@ from faster_whisper import WhisperModel
 
 from constants import (
     SUPPORTED_EXTENSIONS, VIDEO_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP,
-    LOG_DIR, ICON_PATH, ASSETS_DIR,
+    LOG_DIR, ICON_PATH, ASSETS_DIR, IS_WINDOWS, IS_MAC,
 )
 from engine import (
     has_audio_stream, transcribe_audio, transcribe_audio_multilingual,
@@ -40,12 +40,25 @@ TEAL = "#008080"
 SELBG = "#000080"
 SELFG = "#ffffff"
 
-FONT_UI = ("MS Sans Serif", 8)
-FONT_TITLE = ("MS Sans Serif", 8, "bold")
-FONT_MONO = ("Fixedsys", 9)
+if IS_MAC:
+    UI_FAMILY = "Tahoma"
+    FONT_MONO = ("Monaco", 9)
+else:
+    UI_FAMILY = "MS Sans Serif"
+    FONT_MONO = ("Fixedsys", 9)
+FONT_UI = (UI_FAMILY, 8)
+FONT_TITLE = (UI_FAMILY, 8, "bold")
 
-SOUND_SUCCESS = winsound.MB_ICONASTERISK
-SOUND_FAILURE = winsound.MB_ICONHAND
+if IS_WINDOWS:
+    import winsound
+    SOUND_SUCCESS = winsound.MB_ICONASTERISK
+    SOUND_FAILURE = winsound.MB_ICONHAND
+else:
+    SOUND_SUCCESS = "/System/Library/Sounds/Glass.aiff"
+    SOUND_FAILURE = "/System/Library/Sounds/Basso.aiff"
+
+NO_WINDOW = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+UI_POLL_MS = 50
 
 
 def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE, t=1):
@@ -155,7 +168,7 @@ class SotvoxApp:
         self.root.configure(bg=FACE)
 
         self.S = self.root.winfo_fpixels("1i") / 96.0
-        self._ui_line = tkfont.Font(family="MS Sans Serif", size=8).metrics("linespace")
+        self._ui_line = tkfont.Font(family=UI_FAMILY, size=8).metrics("linespace")
 
         win_w, win_h = self.px(588), self.px(690)
         self._min_w, self._min_h = self.px(560), self.px(520)
@@ -164,6 +177,7 @@ class SotvoxApp:
         pos_x = (screen_w - win_w) // 2
         pos_y = max(0, (screen_h - win_h) // 2 - self.px(20))
         self.root.geometry(f"{win_w}x{win_h}+{pos_x}+{pos_y}")
+        self.root.minsize(self._min_w, self._min_h)
         self._normal_geometry = f"{win_w}x{win_h}+{pos_x}+{pos_y}"
         self._maximized = False
         self._resize = None
@@ -182,6 +196,7 @@ class SotvoxApp:
         self._session_start = time.time()
         self._gpu_name = None
         self._gpu_ready = False
+        self._ui_queue = queue.Queue()
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3-turbo")
@@ -200,8 +215,12 @@ class SotvoxApp:
         self._build_ui()
         os.makedirs(DEFAULT_OUTPUT_DIR, exist_ok=True)
         self.root.protocol("WM_DELETE_WINDOW", self._on_close)
+        if IS_MAC:
+            self.root.createcommand("tk::mac::Quit", self._on_close)
+            self.root.createcommand("tkAboutDialog", self._about)
 
         self.root.after(0, self._reveal)
+        self.root.after(UI_POLL_MS, self._drain_ui_queue)
 
         self._init_log()
         self.language_var.trace_add("write", lambda *_: self._slog(f"Setting changed: language = {self.language_var.get()}"))
@@ -224,6 +243,8 @@ class SotvoxApp:
                 self.root.iconphoto(True, *self._icon_images)
         except Exception:
             pass
+        if not IS_WINDOWS:
+            return
         try:
             if os.path.exists(ICON_PATH):
                 self.root.iconbitmap(default=ICON_PATH)
@@ -248,6 +269,8 @@ class SotvoxApp:
                 self.root.iconphoto(True, *self._icon_images)
         except Exception:
             pass
+        if not IS_WINDOWS:
+            return
         try:
             user32 = ctypes.windll.user32
             user32.GetParent.restype = ctypes.c_void_p
@@ -269,6 +292,8 @@ class SotvoxApp:
         self.root.after(30, self._reapply_icon)
 
     def _make_borderless(self):
+        if not IS_WINDOWS:
+            return
         try:
             user32 = ctypes.windll.user32
             user32.GetParent.restype = ctypes.c_void_p
@@ -506,7 +531,8 @@ class SotvoxApp:
         shell_border.pack(fill="both", expand=True)
         self._shell = shell
 
-        self._build_titlebar()
+        if not IS_MAC:
+            self._build_titlebar()
         self._build_menubar()
         self._build_statusbar()
 
@@ -575,7 +601,7 @@ class SotvoxApp:
             self._menu_item(bar, text, menu)
 
     def _menu_item(self, bar, text, menu):
-        font = tkfont.Font(family="MS Sans Serif", size=8)
+        font = tkfont.Font(family=UI_FAMILY, size=8)
         pad = self.px(7)
         first_w = font.measure(text[0])
         baseline = self.px(2) + font.metrics("ascent")
@@ -653,7 +679,7 @@ class SotvoxApp:
 
         tk.Label(row1, text="Device:", bg=FACE, fg=BLACK, font=FONT_UI).pack(side="left")
         self._combo(row1, self.device_var,
-                    ["Auto", "CPU", "GPU (CUDA)"],
+                    ["Auto", "CPU"] if IS_MAC else ["Auto", "CPU", "GPU (CUDA)"],
                     width_chars=9).pack(side="left", padx=(self.px(4), 0))
 
         row2 = tk.Frame(content, bg=FACE)
@@ -673,15 +699,28 @@ class SotvoxApp:
 
     def _notify(self, sound):
         try:
-            winsound.MessageBeep(sound)
+            if IS_WINDOWS:
+                winsound.MessageBeep(sound)
+            else:
+                subprocess.Popen(["afplay", sound], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except Exception as error:
             self._slog(f"Could not play notification sound: {error}")
 
     def _post(self, callback):
-        try:
-            self.root.after(0, callback)
-        except (tk.TclError, RuntimeError):
-            pass
+        """Run callback on the Tk thread. Safe to call from worker threads, which must never touch Tk directly."""
+        self._ui_queue.put(callback)
+
+    def _drain_ui_queue(self):
+        while True:
+            try:
+                callback = self._ui_queue.get_nowait()
+            except queue.Empty:
+                break
+            try:
+                callback()
+            except tk.TclError:
+                pass
+        self.root.after(UI_POLL_MS, self._drain_ui_queue)
 
     def _detect_gpu(self):
         detected_name = gpu_pack.detect_nvidia_gpu()
@@ -691,7 +730,10 @@ class SotvoxApp:
 
     def _refresh_gpu_row(self):
         self._gpu_ready = gpu_pack.libraries_available()
-        if self._gpu_name is None:
+        if IS_MAC:
+            self.gpu_status_label.configure(text="GPU: CUDA is not available on macOS — using CPU")
+            self.gpu_button.pack_forget()
+        elif self._gpu_name is None:
             self.gpu_status_label.configure(text="GPU: no NVIDIA GPU detected — using CPU")
             self.gpu_button.pack_forget()
         elif self._gpu_ready:
@@ -705,7 +747,7 @@ class SotvoxApp:
         dialog, body = self._modal_dialog("GPU Acceleration", self.px(430), self.px(210))
 
         tk.Label(body, text="Enable GPU acceleration", bg=FACE, fg=BLACK,
-                 font=("MS Sans Serif", 10, "bold")).pack(anchor="w")
+                 font=(UI_FAMILY, 10, "bold")).pack(anchor="w")
         message = (
             f"Detected: {self._gpu_name}\n\n"
             "Sotvox can use your NVIDIA GPU to transcribe much faster.\n"
@@ -806,7 +848,6 @@ class SotvoxApp:
 
     def _modal_dialog(self, title, width, height):
         dialog = tk.Toplevel(self.root, bg=FACE)
-        dialog.overrideredirect(True)
         position_x = self.root.winfo_x() + (self.root.winfo_width() - width) // 2
         position_y = self.root.winfo_y() + (self.root.winfo_height() - height) // 2
         dialog.geometry(f"{width}x{height}+{position_x}+{position_y}")
@@ -814,19 +855,24 @@ class SotvoxApp:
         shell_border, shell = self._bevel(dialog, style="raised", bg=FACE)
         shell_border.pack(fill="both", expand=True)
 
-        bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
-        bar.pack(fill="x")
-        bar.pack_propagate(False)
-        tk.Label(bar, text=title, bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
-        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
+        if IS_MAC:
+            dialog.title(title)
+            dialog.resizable(False, False)
+        else:
+            dialog.overrideredirect(True)
+            bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
+            bar.pack(fill="x")
+            bar.pack_propagate(False)
+            tk.Label(bar, text=title, bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
+            self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
+            bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__(
+                "_offset", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
+            bar.bind("<B1-Motion>", lambda e: dialog.geometry(
+                f"+{e.x_root - dialog._offset[0]}+{e.y_root - dialog._offset[1]}"))
 
         body = tk.Frame(shell, bg=FACE)
         body.pack(fill="both", expand=True, padx=self.px(12), pady=self.px(10))
 
-        bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__(
-            "_offset", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
-        bar.bind("<B1-Motion>", lambda e: dialog.geometry(
-            f"+{e.x_root - dialog._offset[0]}+{e.y_root - dialog._offset[1]}"))
         dialog.transient(self.root)
         dialog.grab_set()
         return dialog, body
@@ -988,7 +1034,6 @@ class SotvoxApp:
 
     def _about(self):
         dialog = tk.Toplevel(self.root, bg=FACE)
-        dialog.overrideredirect(True)
         dw, dh = self.px(320), self.px(150)
         dx = self.root.winfo_x() + (self.root.winfo_width() - dw) // 2
         dy = self.root.winfo_y() + (self.root.winfo_height() - dh) // 2
@@ -997,23 +1042,29 @@ class SotvoxApp:
         shell_border, shell = self._bevel(dialog, style="raised", bg=FACE)
         shell_border.pack(fill="both", expand=True)
 
-        bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
-        bar.pack(fill="x")
-        bar.pack_propagate(False)
-        tk.Label(bar, text="About Sotvox", bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
-        self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
+        if IS_MAC:
+            dialog.title("About Sotvox")
+            dialog.resizable(False, False)
+            dialog.transient(self.root)
+        else:
+            dialog.overrideredirect(True)
+            bar = tk.Frame(shell, bg=NAVY, height=self.px(20))
+            bar.pack(fill="x")
+            bar.pack_propagate(False)
+            tk.Label(bar, text="About Sotvox", bg=NAVY, fg=WHITE, font=FONT_TITLE).pack(side="left", padx=self.px(6))
+            self._title_button(bar, "close", dialog.destroy).pack(side="right", padx=self.px(2), pady=self.px(2))
+            bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__("_off", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
+            bar.bind("<B1-Motion>", lambda e: dialog.geometry(f"+{e.x_root - dialog._off[0]}+{e.y_root - dialog._off[1]}"))
 
         body = tk.Frame(shell, bg=FACE)
         body.pack(fill="both", expand=True, padx=self.px(12), pady=self.px(12))
-        tk.Label(body, text="Sotvox", bg=FACE, fg=BLACK, font=("MS Sans Serif", 14, "bold")).pack(anchor="w")
+        tk.Label(body, text="Sotvox", bg=FACE, fg=BLACK, font=(UI_FAMILY, 14, "bold")).pack(anchor="w")
         tk.Label(body, text="Local audio / video transcription", bg=FACE, fg=BLACK,
                  font=FONT_UI).pack(anchor="w", pady=(self.px(2), 0))
         tk.Label(body, text="Powered by faster-whisper. Runs 100% on your machine.",
                  bg=FACE, fg=BLACK, font=FONT_UI).pack(anchor="w", pady=(self.px(8), 0))
         self._mk_button(body, "OK", command=dialog.destroy, width_chars=8).pack(pady=(self.px(12), 0))
 
-        bar.bind("<ButtonPress-1>", lambda e: dialog.__setattr__("_off", (e.x_root - dialog.winfo_x(), e.y_root - dialog.winfo_y())))
-        bar.bind("<B1-Motion>", lambda e: dialog.geometry(f"+{e.x_root - dialog._off[0]}+{e.y_root - dialog._off[1]}"))
         dialog.grab_set()
 
     def _draw_progress(self):
@@ -1354,28 +1405,33 @@ class SotvoxApp:
         finally:
             self.is_transcribing = False
             self.cancel_requested = False
-            self.root.after(0, lambda: (self.transcribe_btn.set_text("Transcribe"),
+            self._post(lambda: (self.transcribe_btn.set_text("Transcribe"),
                                         self.transcribe_btn.set_enabled(True)))
 
     def _open_output(self):
         output_dir = self.output_var.get()
         os.makedirs(output_dir, exist_ok=True)
         self._slog(f"Opened output folder: {output_dir}")
-        os.startfile(output_dir)
+        if IS_WINDOWS:
+            os.startfile(output_dir)
+        elif IS_MAC:
+            subprocess.Popen(["open", output_dir])
+        else:
+            subprocess.Popen(["xdg-open", output_dir])
 
     def _update_status(self, text):
         self._slog(f"[STATUS] {text}")
         def _update():
             self.progress_label.configure(text=text)
             self.status_left.configure(text=text)
-        self.root.after(0, _update)
+        self._post(_update)
 
     def _set_progress(self, value):
         self._progress_value = value
         def _update():
             self._draw_progress()
             self.progress_pct.configure(text=f"{int(value)}%" if value > 0 else "")
-        self.root.after(0, _update)
+        self._post(_update)
 
     def _log(self, text):
         self._slog(text)
@@ -1384,7 +1440,7 @@ class SotvoxApp:
             self.log_text.insert("end", text + "\n")
             self.log_text.see("end")
             self.log_text.configure(state="disabled")
-        self.root.after(0, _append)
+        self._post(_append)
 
     def _slog(self, text):
         self._session_log.append(f"[{datetime.now().strftime('%H:%M:%S')}] {text}")
@@ -1426,7 +1482,7 @@ class SotvoxApp:
             r = subprocess.run(
                 ["nvidia-smi", "--query-gpu=name,memory.total,driver_version",
                  "--format=csv,noheader,nounits"],
-                capture_output=True, text=True, creationflags=subprocess.CREATE_NO_WINDOW)
+                capture_output=True, text=True, creationflags=NO_WINDOW)
             if r.returncode == 0 and r.stdout.strip():
                 parts = [p.strip() for p in r.stdout.strip().split(",")]
                 lines.append(f"  GPU: {parts[0]} ({float(parts[1])/1024:.1f} GB VRAM)")
@@ -1436,7 +1492,7 @@ class SotvoxApp:
 
         try:
             r = subprocess.run(["nvidia-smi"], capture_output=True, text=True,
-                               creationflags=subprocess.CREATE_NO_WINDOW)
+                               creationflags=NO_WINDOW)
             for line in r.stdout.splitlines():
                 if "CUDA Version" in line:
                     lines.append(f"  CUDA: {line.split('CUDA Version:')[1].strip().rstrip('|').strip()}")
@@ -1444,18 +1500,25 @@ class SotvoxApp:
         except Exception:
             pass
 
-        try:
-            class _MEMSTAT(ctypes.Structure):
-                _fields_ = [("dwLength", ctypes.c_ulong), ("dwMemoryLoad", ctypes.c_ulong),
-                            ("ullTotalPhys", ctypes.c_ulonglong), ("ullAvailPhys", ctypes.c_ulonglong),
-                            ("ullTotalPageFile", ctypes.c_ulonglong), ("ullAvailPageFile", ctypes.c_ulonglong),
-                            ("ullTotalVirtual", ctypes.c_ulonglong), ("ullAvailVirtual", ctypes.c_ulonglong),
-                            ("ullAvailExtendedVirtual", ctypes.c_ulonglong)]
-            stat = _MEMSTAT(dwLength=ctypes.sizeof(_MEMSTAT))
-            ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(stat))
-            lines.append(f"  RAM: {stat.ullTotalPhys / (1024**3):.1f} GB total, {stat.ullAvailPhys / (1024**3):.1f} GB available")
-        except Exception:
-            pass
+        if IS_WINDOWS:
+            try:
+                class _MEMSTAT(ctypes.Structure):
+                    _fields_ = [("dwLength", ctypes.c_ulong), ("dwMemoryLoad", ctypes.c_ulong),
+                                ("ullTotalPhys", ctypes.c_ulonglong), ("ullAvailPhys", ctypes.c_ulonglong),
+                                ("ullTotalPageFile", ctypes.c_ulonglong), ("ullAvailPageFile", ctypes.c_ulonglong),
+                                ("ullTotalVirtual", ctypes.c_ulonglong), ("ullAvailVirtual", ctypes.c_ulonglong),
+                                ("ullAvailExtendedVirtual", ctypes.c_ulonglong)]
+                stat = _MEMSTAT(dwLength=ctypes.sizeof(_MEMSTAT))
+                ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(stat))
+                lines.append(f"  RAM: {stat.ullTotalPhys / (1024**3):.1f} GB total, {stat.ullAvailPhys / (1024**3):.1f} GB available")
+            except Exception:
+                pass
+        else:
+            try:
+                total_bytes = os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")
+                lines.append(f"  RAM: {total_bytes / (1024**3):.1f} GB total")
+            except (ValueError, OSError):
+                pass
 
         lines += [
             "",

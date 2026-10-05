@@ -10,6 +10,14 @@ Every supported file in that folder that does not already have a transcript gets
 
 Requires Sotvox **1.3.0** or newer.
 
+On macOS, call the binary inside the app bundle:
+
+```bash
+/Applications/Sotvox.app/Contents/MacOS/Sotvox --transcribe ~/Recordings
+```
+
+The options, exit codes and skip rules below are the same; the log is at `~/Library/Logs/Sotvox/batch.txt`. The scheduling examples further down are Windows-only (on macOS use `launchd` or cron).
+
 ## Options
 
 | Flag | Default | What it does |

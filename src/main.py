@@ -1,17 +1,25 @@
 import ctypes
+import multiprocessing
 import os
 import sys
 import time
+
+# In the frozen app, multiprocessing helpers (e.g. the resource tracker that tqdm's lock
+# starts on macOS) re-launch this executable; this hands those launches to the helper
+# instead of opening a second Sotvox window.
+multiprocessing.freeze_support()
 
 DPI_AWARENESS_SYSTEM = 1
 
 if not getattr(sys, "frozen", False):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from constants import CUDA_DIR, IS_FROZEN, RESOURCE_DIR
+from constants import CUDA_DIR, IS_FROZEN, IS_WINDOWS, RESOURCE_DIR
 
 
 def _enable_dpi_awareness():
+    if not IS_WINDOWS:
+        return
     try:
         ctypes.windll.shcore.SetProcessDpiAwareness(DPI_AWARENESS_SYSTEM)
     except Exception:
@@ -19,6 +27,8 @@ def _enable_dpi_awareness():
 
 
 def _register_cuda_directories():
+    if not IS_WINDOWS:
+        return
     candidate_dirs = [CUDA_DIR]
     if not IS_FROZEN:
         site_packages_nvidia = os.path.join(RESOURCE_DIR, ".venv", "Lib", "site-packages", "nvidia")
