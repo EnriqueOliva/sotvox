@@ -10,3 +10,7 @@ installer/build/
 installer/dist_app/
 /Sotvox-macOS.dmg
 .pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/

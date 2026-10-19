@@ -1,8 +1,12 @@
 import pytest
-
 from conftest import AUDIO_FORMATS
+
 from engine import (
-    has_audio_stream, probe_file, save_transcript, transcribe_audio, transcribe_audio_multilingual,
+    has_audio_stream,
+    probe_file,
+    save_transcript,
+    transcribe_audio,
+    transcribe_audio_multilingual,
 )
 
 ENGLISH_WORDS = ("fox", "dog", "speech")

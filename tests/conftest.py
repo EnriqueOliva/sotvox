@@ -1,9 +1,13 @@
+"""Shared fixtures for the Sotvox test suite."""
+
 import os
 import shutil
 import subprocess
 import sys
+import urllib.request
 
 import pytest
+from doubles import FakeClock, make_app
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = os.path.join(PROJECT_ROOT, "src")
@@ -130,3 +134,78 @@ def media_dir(tmp_path_factory):
 def tiny_model():
     from faster_whisper import WhisperModel
     return WhisperModel("tiny", device="cpu", compute_type="int8")
+
+
+@pytest.fixture(autouse=True)
+def block_network(monkeypatch, request):
+    if request.node.get_closest_marker("allow_network"):
+        return
+
+    def refuse(*args, **kwargs):
+        raise AssertionError(
+            "a test reached the network; patch the transport or mark it allow_network")
+
+    monkeypatch.setattr(urllib.request, "urlopen", refuse)
+
+
+@pytest.fixture
+def fake_clock():
+    return FakeClock()
+
+
+@pytest.fixture
+def app():
+    return make_app()
+
+
+@pytest.fixture
+def cuda_dir(tmp_path, monkeypatch):
+    import gpu_pack
+
+    directory = tmp_path / "cuda"
+    directory.mkdir()
+    monkeypatch.setattr(gpu_pack, "CUDA_DIR", str(directory))
+    return directory
+
+
+@pytest.fixture(scope="session")
+def main_module():
+    saved_argv = list(sys.argv)
+    saved_path = os.environ.get("PATH", "")
+    sys.argv = ["sotvox"]
+    try:
+        import main
+    finally:
+        sys.argv = saved_argv
+        os.environ["PATH"] = saved_path
+    return main
+
+
+@pytest.fixture(scope="session")
+def tk_root():
+    tkdnd = pytest.importorskip("tkinterdnd2")
+    try:
+        root = tkdnd.Tk()
+    except Exception as error:
+        pytest.skip(f"no usable Tk display: {error}")
+    root.withdraw()
+    yield root
+    try:
+        root.destroy()
+    except Exception:
+        pass
+
+
+@pytest.fixture
+def sandboxed_dirs(tmp_path, monkeypatch):
+    import constants
+
+    log_dir = tmp_path / "logs"
+    output_dir = tmp_path / "transcripts"
+    cuda = tmp_path / "cuda"
+    for directory in (log_dir, output_dir, cuda):
+        directory.mkdir()
+    monkeypatch.setattr(constants, "LOG_DIR", str(log_dir))
+    monkeypatch.setattr(constants, "DEFAULT_OUTPUT_DIR", str(output_dir))
+    monkeypatch.setattr(constants, "CUDA_DIR", str(cuda))
+    return {"log": log_dir, "output": output_dir, "cuda": cuda}
