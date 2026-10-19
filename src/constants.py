@@ -27,7 +27,10 @@ def _resolve_app_data_dir():
 RESOURCE_DIR = _resolve_resource_dir()
 APP_DATA_DIR = _resolve_app_data_dir()
 
-DEFAULT_OUTPUT_DIR = os.path.join(os.path.expanduser("~"), "Documents", "sotvox-transcripts")
+if IS_MAC:
+    DEFAULT_OUTPUT_DIR = os.path.join(os.path.expanduser("~"), "Documents", "sotvox-transcripts")
+else:
+    DEFAULT_OUTPUT_DIR = r"C:\dasbanq\dasbanq-learning\transcripts"
 if IS_MAC:
     LOG_DIR = os.path.join(os.path.expanduser("~"), "Library", "Logs", APP_NAME)
 else:

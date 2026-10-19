@@ -73,7 +73,12 @@ class TestDerivedPaths:
     def test_icon_path_points_at_the_ico_inside_assets(self):
         assert constants.ICON_PATH == os.path.join(constants.ASSETS_DIR, "sotvox.ico")
 
-    def test_default_output_dir_is_documents_sotvox_transcripts(self):
+    @pytest.mark.skipif(sys.platform == "darwin", reason="Windows default")
+    def test_default_output_dir_is_the_learning_transcripts_folder(self):
+        assert constants.DEFAULT_OUTPUT_DIR == r"C:\dasbanq\dasbanq-learning\transcripts"
+
+    @pytest.mark.skipif(sys.platform != "darwin", reason="macOS default")
+    def test_default_output_dir_on_macos_is_documents_sotvox_transcripts(self):
         expected = os.path.join(os.path.expanduser("~"), "Documents", "sotvox-transcripts")
         assert constants.DEFAULT_OUTPUT_DIR == expected
 
