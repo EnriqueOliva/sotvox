@@ -8,6 +8,8 @@ from faster_whisper.audio import decode_audio
 SAMPLING_RATE = 16000
 CHUNK_SECONDS = 30
 MICROSECONDS_PER_SECOND = 1_000_000
+TRANSCRIPT_STAMP_FORMAT = "%Y-%m-%d %H-%M-%S"
+FIRST_DUPLICATE_NUMBER = 2
 
 
 def probe_file(filepath):
@@ -180,9 +182,25 @@ def transcribe_audio_multilingual(model, audio_path, on_progress=None, is_cancel
     return text_parts, info_combined, "ok"
 
 
-def save_transcript(filepath, full_text, output_dir):
+def _unused_transcript_path(output_dir, source_base, filepath):
+    try:
+        stamp_source = os.path.getmtime(filepath)
+    except OSError:
+        stamp_source = time.time()
+    stamped_base = f"{source_base} {time.strftime(TRANSCRIPT_STAMP_FORMAT, time.localtime(stamp_source))}"
+    candidate = os.path.join(output_dir, stamped_base + ".txt")
+    copy_number = FIRST_DUPLICATE_NUMBER
+    while os.path.exists(candidate):
+        candidate = os.path.join(output_dir, f"{stamped_base} ({copy_number}).txt")
+        copy_number += 1
+    return candidate
+
+
+def save_transcript(filepath, full_text, output_dir, keep_existing=False):
     source_base = os.path.splitext(os.path.basename(filepath))[0]
     out_path = os.path.join(output_dir, source_base + ".txt")
+    if keep_existing and os.path.exists(out_path):
+        out_path = _unused_transcript_path(output_dir, source_base, filepath)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(full_text)
     return os.path.basename(out_path)

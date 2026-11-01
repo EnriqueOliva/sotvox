@@ -23,7 +23,9 @@ from engine import (
     has_audio_stream, transcribe_audio, transcribe_audio_multilingual,
     save_transcript, probe_file,
 )
+import folder_watch
 import gpu_pack
+import settings
 import system_shell
 
 
@@ -60,6 +62,9 @@ else:
 
 NO_WINDOW = getattr(subprocess, "CREATE_NO_WINDOW", 0)
 UI_POLL_MS = 50
+WATCH_POLL_MS = 1000
+MINIMIZE_DELAY_MS = 120
+WATCH_SETTING = "watch_downloads"
 
 
 def _bevel_lines(canvas, x0, y0, x1, y1, raised=True, fill=FACE, t=1):
@@ -163,7 +168,7 @@ class _Win95Scrollbar(tk.Canvas):
 
 
 class SotvoxApp:
-    def __init__(self):
+    def __init__(self, start_minimized=False):
         self.root = tkdnd.Tk()
         self.root.title("Sotvox")
         self.root.configure(bg=FACE)
@@ -199,12 +204,20 @@ class SotvoxApp:
         self._gpu_name = None
         self._gpu_ready = False
         self._ui_queue = queue.Queue()
+        self._start_minimized = start_minimized
+        self._settings = settings.load_settings()
+        self._watch_folder = system_shell.downloads_folder()
+        self._watcher = None
+        self._watch_queue = []
+        self._run_active = False
 
         self.language_var = tk.StringVar(value="Spanish")
         self.model_var = tk.StringVar(value="large-v3-turbo")
         self.device_var = tk.StringVar(value="Auto")
         self.multilingual_var = tk.BooleanVar(value=False)
         self.output_var = tk.StringVar(value=DEFAULT_OUTPUT_DIR)
+        self.watch_var = tk.BooleanVar(value=bool(self._settings.get(WATCH_SETTING, False)))
+        self.startup_var = tk.BooleanVar(value=system_shell.is_start_with_windows_enabled())
 
         self._icon_big = None
         self._icon_small = None
@@ -230,6 +243,11 @@ class SotvoxApp:
         self.device_var.trace_add("write", lambda *_: self._slog(f"Setting changed: device = {self.device_var.get()}"))
         self.multilingual_var.trace_add("write", lambda *_: self._slog(f"Setting changed: multilingual = {self.multilingual_var.get()}"))
         self.output_var.trace_add("write", lambda *_: self._slog(f"Setting changed: output path = {self.output_var.get()}"))
+        self.watch_var.trace_add("write", lambda *_: self._on_watch_toggled())
+        self.startup_var.trace_add("write", lambda *_: self._on_startup_toggled())
+        if self.watch_var.get():
+            self._begin_watching(announce=False)
+        self.root.after(WATCH_POLL_MS, self._poll_watch)
 
     def px(self, n):
         return max(1, int(round(n * self.S)))
@@ -292,6 +310,8 @@ class SotvoxApp:
         self._make_borderless()
         self.root.deiconify()
         self.root.after(30, self._reapply_icon)
+        if self._start_minimized:
+            self.root.after(MINIMIZE_DELAY_MS, self._minimize)
 
     def _make_borderless(self):
         if not IS_WINDOWS:
@@ -902,6 +922,14 @@ class SotvoxApp:
         entry.pack(fill="both", expand=True, ipady=self.px(1), padx=self.px(1), pady=self.px(1))
         self._mk_button(row, "Browse...", command=self._browse_output,
                         width_chars=8).pack(side="left")
+        row.pack_configure(pady=(self.px(8), self.px(4)))
+
+        watch_row = tk.Frame(content, bg=FACE)
+        watch_row.pack(fill="x", padx=self.px(10), pady=(0, self.px(8)))
+        self._check(watch_row, self.watch_var,
+                    "Transcribe new audio and video saved to Downloads").pack(side="left")
+        if IS_WINDOWS:
+            self._check(watch_row, self.startup_var, "Start with Windows").pack(side="right")
 
     def _build_actions(self, parent):
         action = tk.Frame(parent, bg=FACE)
@@ -1187,18 +1215,79 @@ class SotvoxApp:
             self.cancel_requested = True
             self.transcribe_btn.set_text("Cancelling...")
             self.transcribe_btn.set_enabled(False)
-            return
-
-        if not self.files:
+        elif not self.files:
             self._log("No files to transcribe. Add some files first.")
-            return
+        else:
+            self._start_transcription(list(self.files), keep_existing=False)
 
-        self._slog(f"Transcription started: {len(self.files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}, multilingual={self.multilingual_var.get()}")
+    def _start_transcription(self, files, keep_existing):
+        self._slog(f"Transcription started: {len(files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}, multilingual={self.multilingual_var.get()}")
         self.is_transcribing = True
         self.cancel_requested = False
+        self._run_active = True
         self._publish_transcripts([], copy_now=False)
         self.transcribe_btn.set_text("Cancel")
-        threading.Thread(target=self._transcribe_worker, daemon=True).start()
+        threading.Thread(target=self._transcribe_worker, daemon=True,
+                         kwargs={"files": files, "keep_existing": keep_existing}).start()
+
+    def _finish_run(self, written_transcripts, run_completed):
+        self._publish_transcripts(written_transcripts, copy_now=run_completed)
+        self.transcribe_btn.set_text("Transcribe")
+        self.transcribe_btn.set_enabled(True)
+        self._run_active = False
+
+    def _begin_watching(self, announce):
+        self._watcher = folder_watch.FolderWatcher(self._watch_folder, SUPPORTED_EXTENSIONS)
+        self._slog(f"Watching for new media: {self._watch_folder}")
+        if announce:
+            self._log(f"Watching {self._watch_folder}. New audio and video saved there is transcribed "
+                      "and copied automatically.")
+
+    def _stop_watching(self):
+        self._watcher = None
+        self._watch_queue = []
+        self._slog(f"Stopped watching: {self._watch_folder}")
+        self._log("Stopped watching Downloads.")
+
+    def _on_watch_toggled(self):
+        enabled = bool(self.watch_var.get())
+        self._settings[WATCH_SETTING] = enabled
+        try:
+            settings.save_settings(self._settings)
+        except OSError as error:
+            self._slog(f"Could not save the settings: {error}")
+        if enabled and self._watcher is None:
+            self._begin_watching(announce=True)
+        elif not enabled and self._watcher is not None:
+            self._stop_watching()
+
+    def _on_startup_toggled(self):
+        enabled = bool(self.startup_var.get())
+        try:
+            system_shell.set_start_with_windows(enabled)
+            self._slog(f"Start with Windows set to {enabled}")
+        except OSError as error:
+            self._log(f"Could not change Start with Windows: {error}")
+
+    def _poll_watch(self):
+        try:
+            if self._watcher is not None:
+                arrived = self._watcher.poll()
+                self._watch_queue.extend(path for path in arrived if path not in self._watch_queue)
+                self._start_queued_watch_run()
+        except Exception as error:
+            self._slog(f"Watching failed: {error}")
+        finally:
+            self.root.after(WATCH_POLL_MS, self._poll_watch)
+
+    def _start_queued_watch_run(self):
+        if self._watch_queue and not self._run_active and not self.is_transcribing:
+            batch = self._watch_queue
+            self._watch_queue = []
+            names = ", ".join(os.path.basename(path) for path in batch)
+            self._log(f"New in {os.path.basename(self._watch_folder) or self._watch_folder}: {names}")
+            self._add_files(batch)
+            self._start_transcription(batch, keep_existing=True)
 
     def _resolve_device(self):
         choice = self.device_var.get()
@@ -1227,16 +1316,17 @@ class SotvoxApp:
                 self._slog(f"CUDA detection failed ({e}), defaulting to CPU")
             return "cpu", "int8"
 
-    def _transcribe_worker(self):
+    def _transcribe_worker(self, files=None, keep_existing=False):
+        queue_files = list(self.files) if files is None else list(files)
         output_dir = self.output_var.get()
         os.makedirs(output_dir, exist_ok=True)
-        total = len(self.files)
+        total = len(queue_files)
         written_transcripts = []
         run_completed = False
 
         self._slog(f"Output directory: {output_dir}")
         self._slog(f"Files in queue ({total}):")
-        for f in self.files:
+        for f in queue_files:
             self._slog(f"  - {f}")
 
         try:
@@ -1281,7 +1371,7 @@ class SotvoxApp:
             succeeded = 0
             failed = 0
 
-            for i, filepath in enumerate(self.files):
+            for i, filepath in enumerate(queue_files):
                 if self.cancel_requested:
                     self._log("Transcription cancelled.")
                     break
@@ -1371,7 +1461,7 @@ class SotvoxApp:
                         self._log(f"  No speech detected, skipping")
                         continue
 
-                    saved_name = save_transcript(filepath, full_text, output_dir)
+                    saved_name = save_transcript(filepath, full_text, output_dir, keep_existing=keep_existing)
                     out_path = os.path.join(output_dir, saved_name)
                     written_transcripts.append(os.path.abspath(out_path))
                     self._slog(f"  Text length: {len(full_text)} chars")
@@ -1417,9 +1507,7 @@ class SotvoxApp:
         finally:
             self.is_transcribing = False
             self.cancel_requested = False
-            self._post(lambda: self._publish_transcripts(written_transcripts, copy_now=run_completed))
-            self._post(lambda: (self.transcribe_btn.set_text("Transcribe"),
-                                        self.transcribe_btn.set_enabled(True)))
+            self._post(lambda: self._finish_run(written_transcripts, run_completed))
 
     def _open_output(self):
         output_dir = self.output_var.get()

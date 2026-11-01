@@ -2,7 +2,7 @@
 ; Build with: installer\build.ps1  (freezes the app with PyInstaller, then compiles this)
 
 #define AppName "Sotvox"
-#define AppVersion "1.5.0"
+#define AppVersion "1.6.0"
 #define AppPublisher "EnriqueOliva"
 #define AppURL "https://github.com/EnriqueOliva/sotvox"
 #define AppExeName "Sotvox.exe"
@@ -59,6 +59,9 @@ Name: "{autodesktop}\Sotvox"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app
 [Run]
 Filename: "{app}\{#AppExeName}"; Description: "{cm:LaunchProgram,Sotvox}"; \
     WorkingDir: "{app}"; Flags: nowait postinstall skipifsilent
+
+[Registry]
+Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: none; ValueName: "Sotvox"; Flags: dontcreatekey uninsdeletevalue
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\_internal"

@@ -17,6 +17,7 @@ on_mac = pytest.mark.skipif(sys.platform != "darwin", reason="macOS only")
 def app(tmp_path, monkeypatch):
     monkeypatch.setattr(ui, "DEFAULT_OUTPUT_DIR", str(tmp_path / "transcripts"))
     monkeypatch.setattr(ui, "LOG_DIR", str(tmp_path / "logs"))
+    monkeypatch.setattr(ui.settings, "SETTINGS_PATH", str(tmp_path / "settings.json"))
     launched = []
     monkeypatch.setattr(ui, "subprocess", SimpleNamespace(
         Popen=lambda args, **kwargs: launched.append(args), run=subprocess.run, DEVNULL=subprocess.DEVNULL))

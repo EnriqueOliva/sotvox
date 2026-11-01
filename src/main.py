@@ -237,5 +237,9 @@ if SELFTEST_FLAG in sys.argv:
 import ui
 
 if __name__ == "__main__":
-    app = ui.SotvoxApp()
-    app.run()
+    import system_shell
+    if system_shell.claim_single_instance():
+        app = ui.SotvoxApp(start_minimized=system_shell.MINIMIZED_FLAG in sys.argv)
+        app.run()
+    else:
+        system_shell.focus_running_instance()

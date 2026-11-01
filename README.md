@@ -43,6 +43,8 @@ Each file becomes a `.txt` next to the others in `Documents\sotvox-transcripts` 
 | **Device** | Leave on *Auto* (macOS always uses the CPU) |
 | **Multilingual mode** | For files that switch between languages |
 | **Folder** | Where transcripts are saved |
+| **Transcribe new audio and video saved to Downloads** | Anything new that lands in Downloads is transcribed and copied to the clipboard on its own. An older transcript with the same name is kept, and the new one gets the date added |
+| **Start with Windows** | Opens Sotvox minimized when you sign in, so the Downloads watch is always on (Windows only) |
 
 ## Good to know
 

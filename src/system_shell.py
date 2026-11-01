@@ -1,9 +1,27 @@
 import os
 import struct
 import subprocess
+import sys
 import time
+import uuid
 
-from constants import IS_MAC, IS_WINDOWS
+from constants import IS_FROZEN, IS_MAC, IS_WINDOWS
+
+if IS_WINDOWS:
+    import winreg
+else:
+    winreg = None
+
+RUN_KEY = r"Software\Microsoft\Windows\CurrentVersion\Run"
+RUN_VALUE_NAME = "Sotvox"
+MINIMIZED_FLAG = "--minimized"
+DOWNLOADS_FOLDER_ID = "{374DE290-123F-4565-9164-39C4925E467B}"
+SINGLE_INSTANCE_MUTEX = "Local\\SotvoxSingleInstance"
+ERROR_ALREADY_EXISTS = 183
+SW_RESTORE = 9
+TK_WINDOW_CLASS = "TkTopLevel"
+APP_WINDOW_TITLE = "Sotvox"
+_held_instance_handles = []
 
 CF_HDROP = 15
 GMEM_MOVEABLE = 0x0002
@@ -199,3 +217,112 @@ def _run_mac_script(script, paths):
     except (OSError, subprocess.SubprocessError):
         succeeded = False
     return succeeded
+
+
+def downloads_folder():
+    found = None
+    if IS_WINDOWS:
+        try:
+            found = _known_folder_path(DOWNLOADS_FOLDER_ID)
+        except OSError:
+            found = None
+    return found or os.path.join(os.path.expanduser("~"), "Downloads")
+
+
+def _known_folder_path(folder_id):
+    import ctypes
+    from ctypes import wintypes
+
+    class GUID(ctypes.Structure):
+        _fields_ = [("Data1", wintypes.DWORD), ("Data2", wintypes.WORD),
+                    ("Data3", wintypes.WORD), ("Data4", ctypes.c_ubyte * 8)]
+
+    parsed = uuid.UUID(folder_id)
+    folder_guid = GUID(parsed.time_low, parsed.time_mid, parsed.time_hi_version,
+                       (ctypes.c_ubyte * 8)(*parsed.bytes[8:]))
+    shell32 = ctypes.WinDLL("shell32")
+    ole32 = ctypes.WinDLL("ole32")
+    shell32.SHGetKnownFolderPath.argtypes = [
+        ctypes.POINTER(GUID), wintypes.DWORD, wintypes.HANDLE, ctypes.POINTER(ctypes.c_void_p)]
+    shell32.SHGetKnownFolderPath.restype = ctypes.c_long
+    ole32.CoTaskMemFree.argtypes = [ctypes.c_void_p]
+    ole32.CoTaskMemFree.restype = None
+    path_pointer = ctypes.c_void_p()
+    result = shell32.SHGetKnownFolderPath(ctypes.byref(folder_guid), 0, None, ctypes.byref(path_pointer))
+    try:
+        found = ctypes.wstring_at(path_pointer.value) if result >= 0 and path_pointer.value else None
+    finally:
+        if path_pointer.value:
+            ole32.CoTaskMemFree(path_pointer)
+    return found
+
+
+def startup_command():
+    if IS_FROZEN:
+        command = f'"{sys.executable}" {MINIMIZED_FLAG}'
+    else:
+        windowless_python = os.path.join(os.path.dirname(sys.executable), "pythonw.exe")
+        launcher = windowless_python if os.path.exists(windowless_python) else sys.executable
+        entry_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "main.py")
+        command = f'"{launcher}" "{entry_script}" {MINIMIZED_FLAG}'
+    return command
+
+
+def is_start_with_windows_enabled():
+    if winreg is None:
+        enabled = False
+    else:
+        try:
+            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, RUN_KEY, 0, winreg.KEY_READ) as key:
+                winreg.QueryValueEx(key, RUN_VALUE_NAME)
+            enabled = True
+        except OSError:
+            enabled = False
+    return enabled
+
+
+def set_start_with_windows(enabled):
+    if winreg is None:
+        return False
+    with winreg.OpenKey(winreg.HKEY_CURRENT_USER, RUN_KEY, 0, winreg.KEY_SET_VALUE) as key:
+        if enabled:
+            winreg.SetValueEx(key, RUN_VALUE_NAME, 0, winreg.REG_SZ, startup_command())
+        else:
+            try:
+                winreg.DeleteValue(key, RUN_VALUE_NAME)
+            except FileNotFoundError:
+                pass
+    return True
+
+
+def claim_single_instance():
+    if not IS_WINDOWS:
+        return True
+    import ctypes
+    from ctypes import wintypes
+
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    kernel32.CreateMutexW.argtypes = [ctypes.c_void_p, wintypes.BOOL, wintypes.LPCWSTR]
+    kernel32.CreateMutexW.restype = wintypes.HANDLE
+    handle = kernel32.CreateMutexW(None, False, SINGLE_INSTANCE_MUTEX)
+    already_running = ctypes.get_last_error() == ERROR_ALREADY_EXISTS
+    _held_instance_handles.append(handle)
+    return not already_running
+
+
+def focus_running_instance():
+    if not IS_WINDOWS:
+        return False
+    import ctypes
+    from ctypes import wintypes
+
+    user32 = ctypes.WinDLL("user32")
+    user32.FindWindowW.argtypes = [wintypes.LPCWSTR, wintypes.LPCWSTR]
+    user32.FindWindowW.restype = wintypes.HWND
+    user32.ShowWindow.argtypes = [wintypes.HWND, ctypes.c_int]
+    user32.SetForegroundWindow.argtypes = [wintypes.HWND]
+    window = user32.FindWindowW(TK_WINDOW_CLASS, APP_WINDOW_TITLE)
+    if window:
+        user32.ShowWindow(window, SW_RESTORE)
+        user32.SetForegroundWindow(window)
+    return bool(window)

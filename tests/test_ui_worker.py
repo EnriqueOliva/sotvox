@@ -102,8 +102,9 @@ class SaveTranscriptDouble:
         self.writes_the_file = True
         self.side_effect = None
 
-    def __call__(self, filepath, full_text, output_dir):
-        call = {"filepath": filepath, "full_text": full_text, "output_dir": output_dir}
+    def __call__(self, filepath, full_text, output_dir, keep_existing=False):
+        call = {"filepath": filepath, "full_text": full_text, "output_dir": output_dir,
+                "keep_existing": keep_existing}
         self.calls.append(call)
         if self.error is not None:
             raise self.error
@@ -1178,7 +1179,7 @@ class TestWorkerSuccessfulFile:
 
         assert worker.save_transcript.calls == [
             {"filepath": source, "full_text": "hello world",
-             "output_dir": str(worker.output_directory)}]
+             "output_dir": str(worker.output_directory), "keep_existing": False}]
 
     def test_counts_the_written_file_as_a_success(self, worker):
         worker.queue_file("clip.mp3")
@@ -1791,3 +1792,42 @@ class TestWorkerTranscriptHandoff:
 
         assert worker.system_shell.copied_paths[-1] == [str(worker.output_directory / "second.txt")]
         assert worker.app.last_transcripts == [str(worker.output_directory / "second.txt")]
+
+
+class TestWorkerFileSelection:
+    def test_an_explicit_list_is_transcribed_instead_of_the_visible_queue(self, worker):
+        worker.queue_file("visible.mp3")
+        chosen = worker.media_directory / "chosen.mp3"
+        chosen.write_bytes(b"media")
+
+        worker.app._transcribe_worker(files=[str(chosen)])
+
+        assert worker.transcribe.audio_paths == [str(chosen)]
+
+    def test_runs_started_by_the_watch_keep_older_transcripts(self, worker):
+        source = worker.queue_file("clip.mp3")
+
+        worker.app._transcribe_worker(files=[source], keep_existing=True)
+
+        assert [call["keep_existing"] for call in worker.save_transcript.calls] == [True]
+
+    def test_a_list_changed_during_the_run_does_not_change_the_run(self, worker):
+        first = worker.queue_file("first.mp3")
+        worker.queue_file("second.mp3")
+        worker.transcribe.side_effect = lambda call: worker.app.files.clear()
+
+        worker.app._transcribe_worker(files=list(worker.app.files))
+
+        assert len(worker.transcribe.calls) == 2
+        assert worker.transcribe.audio_paths[0] == first
+
+    def test_the_finish_marks_the_run_as_over_on_the_ui_thread(self, worker):
+        worker.queue_file("clip.mp3")
+        worker.app._run_active = True
+        worker.app.root.run_immediate = False
+
+        worker.run()
+
+        assert worker.app._run_active is True
+        worker.app.root.run_pending()
+        assert worker.app._run_active is False

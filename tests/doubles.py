@@ -364,7 +364,8 @@ APP_ATTRIBUTES = (
     "_icon_big", "_icon_small", "_hwnd", "_icon_images", "_shell", "titlebar",
     "title_label", "_max_button", "file_listbox", "gpu_status_label", "gpu_button",
     "transcribe_btn", "copy_transcripts_button", "progress_label", "progress_pct", "progress_canvas", "log_text",
-    "status_left", "status_files",
+    "status_left", "status_files", "watch_var", "startup_var", "_watcher", "_watch_queue",
+    "_watch_folder", "_run_active", "_settings", "_start_minimized",
 )
 
 
@@ -428,6 +429,14 @@ def make_app(**overrides):
         "log_text": FakeText(),
         "status_left": FakeWidget(text="Ready"),
         "status_files": FakeWidget(text="0 files"),
+        "watch_var": FakeVar(False),
+        "startup_var": FakeVar(False),
+        "_watcher": None,
+        "_watch_queue": [],
+        "_watch_folder": r"C:\Users\someone\Downloads",
+        "_run_active": False,
+        "_settings": {},
+        "_start_minimized": False,
     }
     defaults.update(overrides)
     for name, value in defaults.items():
@@ -585,6 +594,14 @@ class SystemShellDouble:
         self.copy_result = True
         self.reveal_error = None
         self.copy_error = None
+        self.startup_calls = []
+        self.startup_error = None
+
+    def set_start_with_windows(self, enabled):
+        self.startup_calls.append(enabled)
+        if self.startup_error is not None:
+            raise self.startup_error
+        return True
 
     def reveal_files(self, folder, paths):
         self.reveal_calls.append({"folder": folder, "paths": list(paths)})
