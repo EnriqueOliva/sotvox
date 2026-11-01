@@ -357,13 +357,13 @@ class FakeRoot:
 
 APP_ATTRIBUTES = (
     "root", "S", "_ui_line", "_min_w", "_min_h", "_normal_geometry", "_maximized",
-    "_resize", "_drag_offset", "files", "model", "_loaded_model_name", "_loaded_device",
+    "_resize", "_drag_offset", "files", "last_transcripts", "model", "_loaded_model_name", "_loaded_device",
     "is_transcribing", "cancel_requested", "_progress_value", "_session_log",
     "_log_flush_idx", "_log_path", "_session_start", "_gpu_name", "_gpu_ready",
     "language_var", "model_var", "device_var", "multilingual_var", "output_var",
     "_icon_big", "_icon_small", "_hwnd", "_icon_images", "_shell", "titlebar",
     "title_label", "_max_button", "file_listbox", "gpu_status_label", "gpu_button",
-    "transcribe_btn", "progress_label", "progress_pct", "progress_canvas", "log_text",
+    "transcribe_btn", "copy_transcripts_button", "progress_label", "progress_pct", "progress_canvas", "log_text",
     "status_left", "status_files",
 )
 
@@ -391,6 +391,7 @@ def make_app(**overrides):
         "_resize": None,
         "_drag_offset": (0, 0),
         "files": [],
+        "last_transcripts": [],
         "model": None,
         "_loaded_model_name": None,
         "_loaded_device": None,
@@ -420,6 +421,7 @@ def make_app(**overrides):
         "gpu_status_label": FakeWidget(text="GPU: checking..."),
         "gpu_button": FakeButton(),
         "transcribe_btn": FakeButton(text="Transcribe"),
+        "copy_transcripts_button": FakeButton(text="Copy Transcripts"),
         "progress_label": FakeWidget(text="Ready"),
         "progress_pct": FakeWidget(text=""),
         "progress_canvas": FakeCanvas(),
@@ -573,3 +575,29 @@ def write_video_without_audio(path, seconds=0.4, fps=10, width=64, height=48):
     except Exception:
         return None
     return path
+
+
+class SystemShellDouble:
+    def __init__(self):
+        self.reveal_calls = []
+        self.copy_calls = []
+        self.reveal_result = True
+        self.copy_result = True
+        self.reveal_error = None
+        self.copy_error = None
+
+    def reveal_files(self, folder, paths):
+        self.reveal_calls.append({"folder": folder, "paths": list(paths)})
+        if self.reveal_error is not None:
+            raise self.reveal_error
+        return self.reveal_result
+
+    def copy_files_to_clipboard(self, paths, owner_window=None):
+        self.copy_calls.append({"paths": list(paths), "owner_window": owner_window})
+        if self.copy_error is not None:
+            raise self.copy_error
+        return self.copy_result
+
+    @property
+    def copied_paths(self):
+        return [call["paths"] for call in self.copy_calls]

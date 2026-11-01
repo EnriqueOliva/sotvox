@@ -24,6 +24,7 @@ from engine import (
     save_transcript, probe_file,
 )
 import gpu_pack
+import system_shell
 
 
 FACE = "#c0c0c0"
@@ -184,6 +185,7 @@ class SotvoxApp:
         self._drag_offset = (0, 0)
 
         self.files = []
+        self.last_transcripts = []
         self.model = None
         self._loaded_model_name = None
         self._loaded_device = None
@@ -913,6 +915,11 @@ class SotvoxApp:
         self._mk_button(action, "Open Output Folder", command=self._open_output,
                         pad_x=12, pad_y=3).pack(side="right")
 
+        self.copy_transcripts_button = self._mk_button(
+            action, "Copy Transcripts", command=self._copy_transcripts, pad_x=12, pad_y=3)
+        self.copy_transcripts_button.pack(side="right", padx=(0, self.px(6)))
+        self.copy_transcripts_button.set_enabled(False)
+
     def _build_progress(self, parent):
         group, content = self._group(parent, "Progress")
         group.pack(fill="x", pady=(self.px(6), 0))
@@ -1189,6 +1196,7 @@ class SotvoxApp:
         self._slog(f"Transcription started: {len(self.files)} file(s), model={self.model_var.get()}, lang={self.language_var.get()}, multilingual={self.multilingual_var.get()}")
         self.is_transcribing = True
         self.cancel_requested = False
+        self._publish_transcripts([], copy_now=False)
         self.transcribe_btn.set_text("Cancel")
         threading.Thread(target=self._transcribe_worker, daemon=True).start()
 
@@ -1223,6 +1231,8 @@ class SotvoxApp:
         output_dir = self.output_var.get()
         os.makedirs(output_dir, exist_ok=True)
         total = len(self.files)
+        written_transcripts = []
+        run_completed = False
 
         self._slog(f"Output directory: {output_dir}")
         self._slog(f"Files in queue ({total}):")
@@ -1362,9 +1372,10 @@ class SotvoxApp:
                         continue
 
                     saved_name = save_transcript(filepath, full_text, output_dir)
+                    out_path = os.path.join(output_dir, saved_name)
+                    written_transcripts.append(os.path.abspath(out_path))
                     self._slog(f"  Text length: {len(full_text)} chars")
                     try:
-                        out_path = os.path.join(output_dir, saved_name)
                         self._slog(f"  Output file: {out_path} ({self._fmt_size(os.path.getsize(out_path))})")
                     except OSError:
                         pass
@@ -1395,6 +1406,7 @@ class SotvoxApp:
                     self._update_status(f"Done — {succeeded} transcribed, {failed} failed")
                     self._notify(SOUND_SUCCESS)
                 self._log(f"All done. Output: {output_dir}")
+                run_completed = True
 
         except Exception as e:
             self._log(f"Fatal error: {str(e)}")
@@ -1405,12 +1417,23 @@ class SotvoxApp:
         finally:
             self.is_transcribing = False
             self.cancel_requested = False
+            self._post(lambda: self._publish_transcripts(written_transcripts, copy_now=run_completed))
             self._post(lambda: (self.transcribe_btn.set_text("Transcribe"),
                                         self.transcribe_btn.set_enabled(True)))
 
     def _open_output(self):
         output_dir = self.output_var.get()
         os.makedirs(output_dir, exist_ok=True)
+        transcripts_here = self._transcripts_in(output_dir)
+        if not transcripts_here:
+            self._open_folder(output_dir)
+        elif self._reveal_transcripts(output_dir, transcripts_here):
+            self._slog(f"Opened output folder: {output_dir} with {self._count_label(transcripts_here)} selected")
+        else:
+            self._slog("Could not select the transcripts in the file manager, opening the folder instead")
+            self._open_folder(output_dir)
+
+    def _open_folder(self, output_dir):
         self._slog(f"Opened output folder: {output_dir}")
         if IS_WINDOWS:
             os.startfile(output_dir)
@@ -1418,6 +1441,49 @@ class SotvoxApp:
             subprocess.Popen(["open", output_dir])
         else:
             subprocess.Popen(["xdg-open", output_dir])
+
+    def _transcripts_in(self, folder):
+        folder_key = os.path.normcase(os.path.abspath(folder))
+        return [path for path in self.last_transcripts
+                if os.path.isfile(path) and os.path.normcase(os.path.dirname(path)) == folder_key]
+
+    def _count_label(self, paths):
+        count = len(paths)
+        return f"{count} transcript{'s' if count != 1 else ''}"
+
+    def _publish_transcripts(self, paths, copy_now):
+        self.last_transcripts = list(paths)
+        self.copy_transcripts_button.set_enabled(bool(self.last_transcripts))
+        if copy_now and self.last_transcripts:
+            self._copy_transcripts()
+
+    def _clipboard_owner(self):
+        return self._hwnd or self.root.winfo_id()
+
+    def _copy_transcripts(self):
+        existing = [path for path in self.last_transcripts if os.path.isfile(path)]
+        if not existing:
+            self._log("No transcripts to copy yet. Transcribe something first.")
+        elif self._copy_to_clipboard(existing):
+            self._log(f"Copied {self._count_label(existing)} to the clipboard. Paste them anywhere.")
+        else:
+            self._log("Could not copy the transcripts to the clipboard. Try Copy Transcripts again.")
+
+    def _copy_to_clipboard(self, paths):
+        try:
+            copied = system_shell.copy_files_to_clipboard(paths, self._clipboard_owner())
+        except Exception as error:
+            self._slog(f"Clipboard copy raised: {error}")
+            copied = False
+        return copied
+
+    def _reveal_transcripts(self, folder, paths):
+        try:
+            revealed = system_shell.reveal_files(folder, paths)
+        except Exception as error:
+            self._slog(f"Selecting the transcripts raised: {error}")
+            revealed = False
+        return revealed
 
     def _update_status(self, text):
         self._slog(f"[STATUS] {text}")

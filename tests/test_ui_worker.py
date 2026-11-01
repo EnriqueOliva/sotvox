@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 import pytest
-from doubles import FakeVar, FakeWhisperModel, make_info
+from doubles import FakeVar, FakeWhisperModel, SystemShellDouble, make_info
 
 import ui
 from constants import LANG_MAP
@@ -179,6 +179,7 @@ class WorkerHarness:
         self.gpu_pack = GpuPackDouble()
         self.winsound = WinsoundDouble()
         self.threading = ThreadingModuleDouble()
+        self.system_shell = SystemShellDouble()
 
         app.files = []
         app.output_var = FakeVar(str(output_directory))
@@ -196,6 +197,7 @@ class WorkerHarness:
         monkeypatch.setattr(ui, "gpu_pack", self.gpu_pack)
         monkeypatch.setattr(ui, "winsound", self.winsound)
         monkeypatch.setattr(ui, "threading", self.threading)
+        monkeypatch.setattr(ui, "system_shell", self.system_shell)
 
     def queue_file(self, name, contents=b"media bytes"):
         path = self.media_directory / name
@@ -1681,3 +1683,111 @@ class TestWorkerFinallyBlock:
 
         assert len(worker.transcribe.calls) == 2
         assert worker.app.is_transcribing is False
+
+
+class TestWorkerTranscriptHandoff:
+    def test_a_completed_run_copies_every_written_transcript_in_queue_order(self, worker):
+        worker.queue_file("one.mp3")
+        worker.queue_file("two.wav")
+
+        worker.run()
+
+        assert worker.system_shell.copied_paths == [[
+            str(worker.output_directory / "one.txt"), str(worker.output_directory / "two.txt")]]
+
+    def test_a_completed_run_remembers_its_transcripts_for_the_buttons(self, worker):
+        worker.queue_file("one.mp3")
+
+        worker.run()
+
+        assert worker.app.last_transcripts == [str(worker.output_directory / "one.txt")]
+        assert worker.app.copy_transcripts_button.enabled is True
+
+    def test_the_copy_is_announced_after_the_closing_line(self, worker):
+        worker.queue_file("one.mp3")
+        worker.queue_file("two.mp3")
+
+        worker.run()
+
+        assert worker.logged_lines[-2:] == [
+            f"All done. Output: {worker.output_directory}",
+            "Copied 2 transcripts to the clipboard. Paste them anywhere.",
+        ]
+
+    def test_files_that_produced_no_transcript_are_left_out(self, worker):
+        worker.queue_file("failed.mp3")
+        worker.queue_file("silent.mp3")
+        worker.queue_file("timed_out.mp3")
+        worker.queue_file("good.mp3")
+        worker.transcribe.queued_results = [
+            RuntimeError("decoder exploded"),
+            ([], make_info(), "ok"),
+            (["partial"], make_info(), "timed_out"),
+            (["good"], make_info(), "ok"),
+        ]
+
+        worker.run()
+
+        assert worker.system_shell.copied_paths == [[str(worker.output_directory / "good.txt")]]
+
+    def test_a_cancelled_run_keeps_what_it_wrote_without_touching_the_clipboard(self, worker):
+        worker.queue_file("first.mp3")
+        worker.queue_file("second.mp3")
+        worker.save_transcript.side_effect = lambda call: setattr(worker.app, "cancel_requested", True)
+
+        worker.run()
+
+        assert worker.system_shell.copy_calls == []
+        assert worker.app.last_transcripts == [str(worker.output_directory / "first.txt")]
+        assert worker.app.copy_transcripts_button.enabled is True
+
+    def test_a_run_where_every_file_failed_copies_nothing_and_disables_the_button(self, worker):
+        worker.transcribe.default_result = RuntimeError("decoder exploded")
+        worker.queue_file("clip.mp3")
+
+        worker.run()
+
+        assert worker.system_shell.copy_calls == []
+        assert worker.app.last_transcripts == []
+        assert worker.app.copy_transcripts_button.enabled is False
+
+    def test_a_fatal_error_copies_nothing(self, worker):
+        worker.gpu_pack.error = RuntimeError("gpu pack unreadable")
+        worker.queue_file("clip.mp3")
+
+        worker.run()
+
+        assert worker.system_shell.copy_calls == []
+        assert worker.app.last_transcripts == []
+
+    def test_a_relative_output_folder_is_handed_over_as_absolute_paths(self, worker, tmp_path, monkeypatch):
+        monkeypatch.chdir(tmp_path)
+        worker.output_directory = tmp_path / "relative-out"
+        worker.app.output_var = FakeVar("relative-out")
+        worker.queue_file("clip.mp3")
+
+        worker.run()
+
+        assert worker.app.last_transcripts == [str(tmp_path / "relative-out" / "clip.txt")]
+
+    def test_the_handoff_runs_on_the_ui_thread_before_the_button_is_restored(self, worker):
+        worker.queue_file("clip.mp3")
+        worker.app.root.run_immediate = False
+
+        worker.run()
+
+        assert worker.system_shell.copy_calls == []
+        worker.app.root.run_pending()
+        assert len(worker.system_shell.copy_calls) == 1
+        assert worker.app.transcribe_btn.texts[-1] == "Transcribe"
+
+    def test_a_second_run_hands_over_only_its_own_transcripts(self, worker):
+        worker.queue_file("first.mp3")
+        worker.run()
+        worker.app.files = []
+        worker.queue_file("second.mp3")
+
+        worker.run()
+
+        assert worker.system_shell.copied_paths[-1] == [str(worker.output_directory / "second.txt")]
+        assert worker.app.last_transcripts == [str(worker.output_directory / "second.txt")]

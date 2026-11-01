@@ -62,7 +62,8 @@ def test_window_opens_with_every_section(app):
     assert app.root.TkdndVersion
     texts = {w.cget("text") for w in _all_widgets(app.root) if isinstance(w, tk.Label)}
     for expected in (" Files ", " Options ", " Output ", " Progress ", " Log ",
-                     "Add Files...", "Remove", "Clear All", "Transcribe", "Open Output Folder", "Browse..."):
+                     "Add Files...", "Remove", "Clear All", "Transcribe", "Open Output Folder",
+                     "Copy Transcripts", "Browse..."):
         assert expected in texts
 
 

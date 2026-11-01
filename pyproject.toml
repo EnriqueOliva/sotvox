@@ -9,6 +9,7 @@ markers = [
     "integration: exercises a real dependency (PyAV, the filesystem, a subprocess)",
     "slow: takes more than a second",
     "allow_network: permitted to call urllib.request.urlopen for real",
+    "allow_desktop_shell: permitted to touch the real clipboard and file manager",
 ]
 
 [tool.coverage.run]

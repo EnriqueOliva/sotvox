@@ -4,6 +4,7 @@ import os
 import shutil
 import subprocess
 import sys
+import types
 import urllib.request
 
 import pytest
@@ -146,6 +147,23 @@ def block_network(monkeypatch, request):
             "a test reached the network; patch the transport or mark it allow_network")
 
     monkeypatch.setattr(urllib.request, "urlopen", refuse)
+
+
+@pytest.fixture(autouse=True)
+def block_desktop_shell(monkeypatch, request):
+    if request.node.get_closest_marker("allow_desktop_shell"):
+        return
+    import system_shell
+
+    def refuse(*args, **kwargs):
+        raise AssertionError(
+            "a test reached the real clipboard or file manager; use SystemShellDouble "
+            "or mark it allow_desktop_shell")
+
+    monkeypatch.setattr(system_shell, "_load_shell_api", refuse)
+    monkeypatch.setattr(system_shell, "_load_clipboard_api", refuse)
+    monkeypatch.setattr(system_shell, "subprocess", types.SimpleNamespace(
+        run=refuse, SubprocessError=subprocess.SubprocessError))
 
 
 @pytest.fixture

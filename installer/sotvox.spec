@@ -7,13 +7,13 @@ from PyInstaller.utils.hooks import collect_all, collect_data_files
 PROJECT_ROOT = os.path.dirname(SPECPATH)
 SRC_DIR = os.path.join(PROJECT_ROOT, 'src')
 IS_MAC = sys.platform == 'darwin'
-APP_VERSION = '1.4.0'
+APP_VERSION = '1.5.0'
 
 datas = [
     (os.path.join(PROJECT_ROOT, 'assets'), 'assets'),
 ]
 binaries = []
-hiddenimports = ['constants', 'engine', 'gpu_pack', 'ui']
+hiddenimports = ['constants', 'engine', 'gpu_pack', 'system_shell', 'ui']
 
 for package in ('faster_whisper', 'ctranslate2', 'av', 'tkinterdnd2'):
     package_datas, package_binaries, package_hiddenimports = collect_all(package)

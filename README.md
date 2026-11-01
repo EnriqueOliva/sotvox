@@ -26,7 +26,8 @@ macOS 11 or newer on Apple Silicon. Nothing else to install.
 
 1. Drag your files onto the list
 2. Click **Transcribe**
-3. Click **Open Output Folder** to read the results
+3. When it finishes, the new transcripts are already on the clipboard as files. Paste them into a chat, an email or another folder
+4. **Open Output Folder** opens the folder with the new transcripts selected, and **Copy Transcripts** puts them back on the clipboard if you copied something else in between
 
 Each file becomes a `.txt` next to the others in `Documents\sotvox-transcripts` (`~/Documents/sotvox-transcripts` on macOS).
 
