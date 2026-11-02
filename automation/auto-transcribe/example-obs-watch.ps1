@@ -7,7 +7,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$OutputFolder   = (Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'sotvox-transcripts'),
+    [string]$OutputFolder   = 'C:\dasbanq\dasbanq-learning\transcripts',
     [string]$FallbackFolder = (Join-Path $env:USERPROFILE 'Videos\OBS'),
     [string]$LogFile        = (Join-Path $env:LOCALAPPDATA 'Sotvox\logs\auto-transcribe.log'),
     [switch]$DryRun

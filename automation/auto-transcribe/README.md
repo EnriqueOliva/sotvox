@@ -23,7 +23,7 @@ The options, exit codes and skip rules below are the same; the log is at `~/Libr
 | Flag | Default | What it does |
 | --- | --- | --- |
 | `--transcribe <folder>` | *required* | Folder to scan for audio and video |
-| `--output <folder>` | `Documents\sotvox-transcripts` | Where the `.txt` files are written |
+| `--output <folder>` | `C:\dasbanq\dasbanq-learning\transcripts` | Where the `.txt` files are written |
 | `--model <name>` | `large-v3-turbo` | `large-v3`, `large-v3-turbo`, `medium`, `small`, `base`, `tiny` |
 | `--language <name>` | `Auto-detect` | `Spanish`, `English`, `Portuguese`, `French`, `German`, `Italian`, `Japanese`, `Chinese`, `Korean` |
 | `--device <name>` | `Auto` | `Auto` or `CPU` |
