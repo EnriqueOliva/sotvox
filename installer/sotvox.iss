@@ -2,7 +2,7 @@
 ; Build with: installer\build.ps1  (freezes the app with PyInstaller, then compiles this)
 
 #define AppName "Sotvox"
-#define AppVersion "1.6.0"
+#define AppVersion "1.7.0"
 #define AppPublisher "EnriqueOliva"
 #define AppURL "https://github.com/EnriqueOliva/sotvox"
 #define AppExeName "Sotvox.exe"

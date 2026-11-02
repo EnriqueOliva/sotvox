@@ -1,11 +1,13 @@
 """Behaviour of SotvoxApp._toggle_transcription and the background transcription worker."""
 
+import json
 import os
 from pathlib import Path
 
 import pytest
 from doubles import FakeVar, FakeWhisperModel, SystemShellDouble, make_info
 
+import engine
 import ui
 from constants import LANG_MAP
 
@@ -1831,3 +1833,115 @@ class TestWorkerFileSelection:
         assert worker.app._run_active is True
         worker.app.root.run_pending()
         assert worker.app._run_active is False
+
+
+class SpeakerTranscriptionDouble:
+    def __init__(self, lines):
+        self.lines = list(lines)
+        self.calls = []
+
+    def __call__(self, model, audio_path, lang_code, speaker_tracks, on_progress=None, is_cancelled=None):
+        self.calls.append({"audio_path": audio_path, "lang_code": lang_code, "speaker_tracks": speaker_tracks,
+                           "on_progress": on_progress, "is_cancelled": is_cancelled})
+        return list(self.lines), make_info(language="es"), "ok"
+
+
+class TestWorkerSettings:
+    SPEAKER_TRACKS = {"2": "Enrique", "3": "Otros"}
+
+    @pytest.fixture
+    def speaker_transcription(self, monkeypatch):
+        double = SpeakerTranscriptionDouble(["[00:03] Otros: hola", "[00:06] Enrique: dasbank anda"])
+        monkeypatch.setattr(ui, "transcribe_speaker_tracks", double)
+        return double
+
+    def write_settings(self, settings_path, values):
+        settings_path.write_text(json.dumps(values), encoding="utf-8")
+
+    def test_applies_the_configured_replacements_to_the_saved_text(self, worker, sandboxed_settings_file):
+        self.write_settings(sandboxed_settings_file, {"replacements": {"dasbank": "Dasbanq"}})
+        worker.transcribe.default_result = (["entré a DasBank"], make_info(), "ok")
+        worker.queue_file("clip.mp3")
+
+        worker.run()
+
+        assert worker.save_transcript.saved_texts == ["entré a Dasbanq"]
+
+    def test_saves_the_text_unchanged_without_replacements(self, worker):
+        worker.transcribe.default_result = (["entré a DasBank"], make_info(), "ok")
+        worker.queue_file("clip.mp3")
+
+        worker.run()
+
+        assert worker.save_transcript.saved_texts == ["entré a DasBank"]
+
+    def test_transcribes_a_recording_with_speaker_tracks_per_speaker(
+            self, worker, sandboxed_settings_file, speaker_transcription, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {
+            "speaker_tracks": self.SPEAKER_TRACKS, "replacements": {"dasbank": "Dasbanq"}})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        path = worker.queue_file("meeting.mp4")
+
+        worker.run()
+
+        assert [(call["audio_path"], call["lang_code"], call["speaker_tracks"])
+                for call in speaker_transcription.calls] == [(path, "es", [(2, "Enrique"), (3, "Otros")])]
+        assert worker.transcribe.calls == []
+        assert worker.save_transcript.saved_texts == ["[00:03] Otros: hola\n[00:06] Enrique: Dasbanq anda"]
+
+    def test_forwards_progress_and_cancellation_to_the_speaker_tracks(
+            self, worker, sandboxed_settings_file, speaker_transcription, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        worker.queue_file("meeting.mp4")
+
+        worker.run()
+
+        call = speaker_transcription.calls[0]
+        assert callable(call["on_progress"])
+        assert call["is_cancelled"]() is False
+
+    def test_multilingual_mode_lets_each_speaker_track_detect_its_language(
+            self, worker, sandboxed_settings_file, speaker_transcription, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        worker.enable_multilingual_mode()
+        worker.queue_file("meeting.mp4")
+
+        worker.run()
+
+        assert speaker_transcription.calls[0]["lang_code"] is None
+        assert worker.transcribe_multilingual.calls == []
+
+    def test_a_single_track_file_is_transcribed_as_before(
+            self, worker, sandboxed_settings_file, speaker_transcription, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 1)
+        worker.queue_file("note.m4a")
+
+        worker.run()
+
+        assert speaker_transcription.calls == []
+        assert len(worker.transcribe.calls) == 1
+
+    def test_logs_which_speaker_tracks_it_transcribed(
+            self, worker, sandboxed_settings_file, speaker_transcription, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        worker.queue_file("meeting.mp4")
+
+        worker.run()
+
+        assert "  Transcribing 2 speaker tracks (Enrique, Otros)..." in worker.session_log
+
+    def test_reads_the_settings_again_on_every_run(self, worker, sandboxed_settings_file):
+        worker.transcribe.default_result = (["dasbank"], make_info(), "ok")
+        worker.queue_file("first.mp3")
+        worker.run()
+        self.write_settings(sandboxed_settings_file, {"replacements": {"dasbank": "Dasbanq"}})
+        worker.app.files = []
+        worker.queue_file("second.mp3")
+
+        worker.run()
+
+        assert worker.save_transcript.saved_texts == ["dasbank", "Dasbanq"]

@@ -4,6 +4,8 @@ import os
 from constants import APP_DATA_DIR
 
 SETTINGS_PATH = os.path.join(APP_DATA_DIR, "settings.json")
+REPLACEMENTS_SETTING = "replacements"
+SPEAKER_TRACKS_SETTING = "speaker_tracks"
 
 
 def load_settings(path=None):

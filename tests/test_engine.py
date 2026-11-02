@@ -53,6 +53,13 @@ def test_silence_produces_no_text(media_dir, tiny_model):
     assert not "".join(text_parts).strip()
 
 
+@pytest.mark.parametrize("language_code", ["en", "es"])
+def test_silence_produces_no_text_with_a_forced_language(media_dir, tiny_model, language_code):
+    text_parts, _, status = transcribe_audio(tiny_model, str(media_dir / "silence.wav"), language_code)
+    assert status == "ok"
+    assert text_parts == []
+
+
 def test_multilingual_detects_both_languages(media_dir, tiny_model):
     chunks = []
     text_parts, info, status = transcribe_audio_multilingual(

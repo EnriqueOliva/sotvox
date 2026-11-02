@@ -21,7 +21,8 @@ from constants import (
 )
 from engine import (
     has_audio_stream, transcribe_audio, transcribe_audio_multilingual,
-    save_transcript, probe_file,
+    save_transcript, probe_file, apply_replacements, parse_replacements,
+    parse_speaker_tracks, speaker_tracks_for, transcribe_speaker_tracks,
 )
 import folder_watch
 import gpu_pack
@@ -1368,6 +1369,10 @@ class SotvoxApp:
             if multilingual:
                 self._slog("Multilingual mode active — language selection will be ignored")
 
+            current_settings = settings.load_settings()
+            replacements = parse_replacements(current_settings.get(settings.REPLACEMENTS_SETTING))
+            speaker_tracks = parse_speaker_tracks(current_settings.get(settings.SPEAKER_TRACKS_SETTING))
+
             succeeded = 0
             failed = 0
 
@@ -1420,7 +1425,16 @@ class SotvoxApp:
                         pct = (i / total + (seg_end / duration) / total) * 100
                         self._set_progress(min(pct, 99))
 
-                    if multilingual:
+                    file_speaker_tracks = speaker_tracks_for(filepath, speaker_tracks)
+                    if file_speaker_tracks:
+                        labels = ", ".join(label for _track_number, label in file_speaker_tracks)
+                        self._slog(f"  Transcribing {len(file_speaker_tracks)} speaker tracks ({labels})...")
+                        text_parts, info, status = transcribe_speaker_tracks(
+                            self.model, audio_path, None if multilingual else lang_code, file_speaker_tracks,
+                            on_progress=on_progress,
+                            is_cancelled=lambda: self.cancel_requested
+                        )
+                    elif multilingual:
                         def on_chunk(chunk_number, total_chunks, time_start, time_end, detected_lang, probability):
                             self._slog(f"  Chunk [{chunk_number}/{total_chunks}] {time_start:.1f}s-{time_end:.1f}s: language={detected_lang} (probability={probability:.4f})")
 
@@ -1455,7 +1469,7 @@ class SotvoxApp:
                     if self.cancel_requested:
                         break
 
-                    full_text = "\n".join(text_parts)
+                    full_text = apply_replacements("\n".join(text_parts), replacements)
 
                     if not full_text.strip():
                         self._log(f"  No speech detected, skipping")

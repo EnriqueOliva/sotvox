@@ -1,5 +1,6 @@
 """Behaviour of main._run_batch_transcribe, the headless automation entry point."""
 
+import json
 import os
 import re
 import sys
@@ -1399,3 +1400,90 @@ class TestReportFile:
         harness.report_path.unlink()
 
         assert not harness.report_path.exists()
+
+
+class RecordingSpeakerTranscriber:
+    def __init__(self, lines=None):
+        self.lines = list(lines or ["[00:03] Otros: hola", "[00:06] Enrique: hola, ¿qué tal?"])
+        self.calls = []
+
+    def __call__(self, model, audio_path, language_code, speaker_tracks):
+        self.calls.append({"name": os.path.basename(audio_path), "language_code": language_code,
+                           "speaker_tracks": speaker_tracks})
+        return list(self.lines), make_info(duration=DEFAULT_DURATION_SECONDS, language=DEFAULT_LANGUAGE), "ok"
+
+
+class TestSettingsDrivenTranscription:
+    SPEAKER_TRACKS = {"2": "Enrique", "3": "Otros"}
+
+    @pytest.fixture
+    def speaker_transcriber(self, monkeypatch):
+        transcriber = RecordingSpeakerTranscriber()
+        monkeypatch.setattr(engine, "transcribe_speaker_tracks", transcriber)
+        return transcriber
+
+    def write_settings(self, settings_path, values):
+        settings_path.write_text(json.dumps(values), encoding="utf-8")
+
+    def test_applies_the_configured_replacements_to_the_saved_text(self, harness, sandboxed_settings_file):
+        self.write_settings(sandboxed_settings_file, {"replacements": {"dasbank": "Dasbanq"}})
+        harness.add_media("clip.mp3")
+        harness.transcriber.segment_texts["clip.mp3"] = ["entré a dasbank", "y a Das Bank no"]
+
+        harness.run()
+
+        assert harness.saver.calls[0]["full_text"] == "entré a Dasbanq\ny a Das Bank no"
+
+    def test_saves_the_text_unchanged_without_a_settings_file(self, harness):
+        harness.add_media("clip.mp3")
+        harness.transcriber.segment_texts["clip.mp3"] = ["entré a dasbank"]
+
+        harness.run()
+
+        assert harness.saver.calls[0]["full_text"] == "entré a dasbank"
+
+    def test_transcribes_a_recording_with_speaker_tracks_per_speaker(
+            self, harness, sandboxed_settings_file, speaker_transcriber, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        harness.add_media("meeting.mp4")
+
+        harness.run("--language", "Spanish")
+
+        assert speaker_transcriber.calls == [{"name": "meeting.mp4", "language_code": "es",
+                                              "speaker_tracks": [(2, "Enrique"), (3, "Otros")]}]
+        assert harness.transcriber.calls == []
+        assert harness.saver.calls[0]["full_text"] == "[00:03] Otros: hola\n[00:06] Enrique: hola, ¿qué tal?"
+
+    def test_logs_which_speaker_tracks_it_transcribed(
+            self, harness, sandboxed_settings_file, speaker_transcriber, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        harness.add_media("meeting.mp4")
+
+        harness.run()
+
+        assert harness.messages_containing("meeting.mp4: transcribing 2 speaker tracks (Enrique, Otros)")
+
+    def test_a_single_track_file_is_transcribed_as_before(
+            self, harness, sandboxed_settings_file, speaker_transcriber, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {"speaker_tracks": self.SPEAKER_TRACKS})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 1)
+        harness.add_media("note.m4a")
+
+        harness.run()
+
+        assert speaker_transcriber.calls == []
+        assert harness.transcriber.transcribed_names == ["note.m4a"]
+
+    def test_replacements_also_apply_to_the_speaker_lines(
+            self, harness, sandboxed_settings_file, speaker_transcriber, monkeypatch):
+        self.write_settings(sandboxed_settings_file, {
+            "speaker_tracks": self.SPEAKER_TRACKS, "replacements": {"dasbank": "Dasbanq"}})
+        monkeypatch.setattr(engine, "audio_stream_count", lambda filepath: 3)
+        speaker_transcriber.lines = ["[00:03] Otros: entrá a dasbank"]
+        harness.add_media("meeting.mp4")
+
+        harness.run()
+
+        assert harness.saver.calls[0]["full_text"] == "[00:03] Otros: entrá a Dasbanq"

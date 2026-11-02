@@ -46,6 +46,25 @@ Each file becomes a `.txt` next to the others in `C:\dasbanq\dasbanq-learning\tr
 | **Transcribe new audio and video saved to Downloads** | Anything new that lands in Downloads is transcribed and copied to the clipboard on its own. An older transcript with the same name is kept, and the new one gets the date added |
 | **Start with Windows** | Opens Sotvox minimized when you sign in, so the Downloads watch is always on (Windows only) |
 
+## Advanced settings
+
+Two more settings live in `settings.json`, in `%LOCALAPPDATA%\Sotvox` (`~/Library/Application Support/Sotvox` on macOS). Both the window and the headless batch mode read them at the start of every run.
+
+```json
+{
+  "replacements": { "dasbank": "Dasbanq", "das bank": "Dasbanq" },
+  "speaker_tracks": { "2": "Me", "3": "Others" }
+}
+```
+
+- **`replacements`** fixes words the model always mishears, such as a company or product name. Each key is replaced by its value wherever it appears as a whole word, in any case and with any spacing between its words.
+- **`speaker_tracks`** turns a recording with separate audio tracks into a conversation. Each listed track is transcribed on its own and the turns are interleaved with their start time, for example `[12:34] Me: ...` and `[12:41] Others: ...`. A line the microphone only picked up from the speakers is dropped. A file that lacks any of the listed tracks is transcribed as before.
+
+To record your voice and the other side on separate tracks in OBS Studio 29.1 or newer:
+
+1. **Settings → Output → Recording**: pick any quality except *Same as stream*, any format except FLV, and tick audio tracks 1, 2 and 3.
+2. **Edit → Advanced Audio Properties**: leave the microphone on tracks 1 and 2 only, and Desktop Audio on tracks 1 and 3 only. Track 1 keeps the full mix for watching the video.
+
 ## Good to know
 
 - The first transcription downloads the speech model (about 1.5 GB). It only happens once.

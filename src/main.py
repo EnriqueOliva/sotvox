@@ -75,7 +75,11 @@ def _run_batch_transcribe():
     from datetime import datetime
 
     from constants import LOG_DIR, SUPPORTED_EXTENSIONS, DEFAULT_OUTPUT_DIR, LANG_MAP
-    from engine import save_transcript, transcribe_audio
+    from engine import (
+        apply_replacements, parse_replacements, parse_speaker_tracks, save_transcript,
+        speaker_tracks_for, transcribe_audio, transcribe_speaker_tracks,
+    )
+    from settings import REPLACEMENTS_SETTING, SPEAKER_TRACKS_SETTING, load_settings
 
     input_dir = _argument_value(TRANSCRIBE_FLAG)
     output_dir = _argument_value("--output", DEFAULT_OUTPUT_DIR)
@@ -146,14 +150,24 @@ def _run_batch_transcribe():
             model = WhisperModel(model_name, device=device, compute_type=compute_type)
 
         language_code = None if language_name == "Auto-detect" else LANG_MAP.get(language_name)
+        current_settings = load_settings()
+        replacements = parse_replacements(current_settings.get(REPLACEMENTS_SETTING))
+        speaker_tracks = parse_speaker_tracks(current_settings.get(SPEAKER_TRACKS_SETTING))
         succeeded, failed = 0, 0
 
         for source_path in pending:
             name = os.path.basename(source_path)
             started = time.time()
             try:
-                text_parts, info, status = transcribe_audio(model, source_path, language_code)
-                full_text = "\n".join(text_parts)
+                file_speaker_tracks = speaker_tracks_for(source_path, speaker_tracks)
+                if file_speaker_tracks:
+                    labels = ", ".join(label for _track_number, label in file_speaker_tracks)
+                    log(f"  {name}: transcribing {len(file_speaker_tracks)} speaker tracks ({labels})")
+                    text_parts, info, status = transcribe_speaker_tracks(
+                        model, source_path, language_code, file_speaker_tracks)
+                else:
+                    text_parts, info, status = transcribe_audio(model, source_path, language_code)
+                full_text = apply_replacements("\n".join(text_parts), replacements)
                 if not full_text.strip():
                     log(f"  {name}: no speech detected, skipped")
                     continue

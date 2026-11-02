@@ -166,6 +166,15 @@ def block_desktop_shell(monkeypatch, request):
         run=refuse, SubprocessError=subprocess.SubprocessError))
 
 
+@pytest.fixture(autouse=True)
+def sandboxed_settings_file(tmp_path, monkeypatch):
+    import settings
+
+    settings_path = tmp_path / "sandboxed-settings.json"
+    monkeypatch.setattr(settings, "SETTINGS_PATH", str(settings_path))
+    return settings_path
+
+
 @pytest.fixture
 def fake_clock():
     return FakeClock()

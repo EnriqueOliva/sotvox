@@ -2,6 +2,7 @@
 
 import types
 
+import numpy as np
 import pytest
 from doubles import FakeSegment, FakeWhisperModel, make_info
 
@@ -69,6 +70,26 @@ def numbered_segments(count, seconds_per_segment=1.0):
 def clock(fake_clock, monkeypatch):
     monkeypatch.setattr(engine, "time", types.SimpleNamespace(time=fake_clock))
     return fake_clock
+
+
+class RecordingDecoder:
+    def __init__(self, samples):
+        self.samples = np.asarray(samples, dtype=np.float32)
+        self.calls = []
+
+    def __call__(self, source, sampling_rate):
+        self.calls.append((source, sampling_rate))
+        return self.samples
+
+
+QUIET_SAMPLES = [0.001, -0.002, 0.0005]
+
+
+@pytest.fixture(autouse=True)
+def decoder(monkeypatch):
+    recording_decoder = RecordingDecoder(QUIET_SAMPLES)
+    monkeypatch.setattr(engine, "decode_audio", recording_decoder)
+    return recording_decoder
 
 
 class TestTranscribeAudioHappyPath:
@@ -466,19 +487,69 @@ class TestTranscribeAudioEmptyResultRetry:
 
         assert (text_parts, status) == (["recovered", "text"], "ok")
 
-    def test_the_retry_disables_the_voice_activity_filter(self):
+    def test_the_retry_keeps_the_voice_activity_filter_on(self):
         model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
 
         engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
 
-        assert model.calls[RETRY_CALL]["vad_filter"] is False
+        assert model.calls[RETRY_CALL]["vad_filter"] is True
 
-    def test_the_retry_sends_no_vad_parameters(self):
+    def test_the_retry_asks_for_the_same_five_hundred_millisecond_minimum_silence(self):
         model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
 
         engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
 
-        assert "vad_parameters" not in model.calls[RETRY_CALL]
+        assert model.calls[RETRY_CALL]["vad_parameters"] == {"min_silence_duration_ms": 500}
+
+    def test_the_retry_decodes_the_file_at_sixteen_kilohertz(self, decoder):
+        model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
+
+        engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
+
+        assert decoder.calls == [(AUDIO_PATH, 16000)]
+
+    def test_the_retry_raises_the_loudest_sample_to_the_target_peak(self):
+        model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
+
+        engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
+
+        retry_audio = model.calls[RETRY_CALL]["audio"]
+        assert float(np.max(np.abs(retry_audio))) == pytest.approx(engine.RETRY_TARGET_PEAK)
+        assert np.allclose(retry_audio, np.asarray(QUIET_SAMPLES) * (engine.RETRY_TARGET_PEAK / 0.002))
+
+    def test_the_retry_caps_the_gain_for_near_silent_audio(self, decoder):
+        decoder.samples = np.asarray([0.000001, -0.0000005], dtype=np.float32)
+        model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
+
+        engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
+
+        retry_audio = model.calls[RETRY_CALL]["audio"]
+        assert np.allclose(retry_audio, decoder.samples * engine.RETRY_MAXIMUM_GAIN)
+
+    def test_the_retry_passes_digital_silence_through_unchanged(self, decoder):
+        decoder.samples = np.zeros(4, dtype=np.float32)
+        model = FakeWhisperModel([([], make_info()), ([], make_info())])
+
+        text_parts, _info, status = engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
+
+        assert (text_parts, status) == ([], "ok")
+        assert np.array_equal(model.calls[RETRY_CALL]["audio"], np.zeros(4, dtype=np.float32))
+
+    def test_the_retry_does_not_decode_audio_that_arrives_as_samples(self, decoder):
+        samples = np.asarray([0.0, 0.25], dtype=np.float32)
+        model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
+
+        engine.transcribe_audio(model, samples, LANGUAGE_CODE)
+
+        assert decoder.calls == []
+        assert np.allclose(model.calls[RETRY_CALL]["audio"], samples * 2)
+
+    def test_a_first_pass_with_text_never_decodes_the_file(self, decoder):
+        model = FakeWhisperModel([([FakeSegment("heard")], make_info())])
+
+        engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
+
+        assert decoder.calls == []
 
     def test_the_retry_stops_conditioning_on_previous_text(self):
         model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
@@ -487,12 +558,11 @@ class TestTranscribeAudioEmptyResultRetry:
 
         assert model.calls[RETRY_CALL]["condition_on_previous_text"] is False
 
-    def test_the_retry_keeps_the_audio_path_language_and_beam_size(self):
+    def test_the_retry_keeps_the_language_and_beam_size(self):
         model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
 
         engine.transcribe_audio(model, AUDIO_PATH, "pt")
 
-        assert model.calls[RETRY_CALL]["audio"] == AUDIO_PATH
         assert model.calls[RETRY_CALL]["language"] == "pt"
         assert model.calls[RETRY_CALL]["beam_size"] == 5
 
@@ -502,7 +572,7 @@ class TestTranscribeAudioEmptyResultRetry:
         engine.transcribe_audio(model, AUDIO_PATH, LANGUAGE_CODE)
 
         assert set(model.calls[RETRY_CALL]) == {
-            "audio", "language", "beam_size", "vad_filter", "condition_on_previous_text"}
+            "audio", "language", "beam_size", "vad_filter", "vad_parameters", "condition_on_previous_text"}
 
     def test_retries_when_the_cancel_callback_reports_no_cancellation(self):
         model = FakeWhisperModel([([], make_info()), ([FakeSegment("recovered")], make_info())])
